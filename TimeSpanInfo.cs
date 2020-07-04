@@ -8,8 +8,33 @@ namespace StarCalendar
     public struct TimeSpanInfo : IComparable<TimeSpanInfo>, IEquatable<TimeSpanInfo>
     {
         internal BigInteger ticks;
+        internal static TimeSpanInfo Zero;
 
         public static TimeSpanInfo MinValue { get; internal set; }
+
+        private object hours;
+
+        public object GetHours()
+        {
+            return hours;
+        }
+
+        internal void SetHours(object value)
+        {
+            hours = value;
+        }
+
+        private object minutes;
+
+        public object GetMinutes()
+        {
+            return minutes;
+        }
+
+        internal void SetMinutes(object value)
+        {
+            minutes = value;
+        }
 
         public TimeSpanInfo(long ticks)
         {
@@ -168,6 +193,16 @@ namespace StarCalendar
             return t1.ticks > t2.ticks;
         }
 
+        public static bool operator >=(TimeSpanInfo t1, TimeSpanInfo t2)
+        {
+            return (t1 == t2) || (t1 > t2);
+        }
+
+        public static bool operator <=(TimeSpanInfo t1, TimeSpanInfo t2)
+        {
+            return (t1 == t2) || (t1 < t2);
+        }
+
         //internal Dictionary<string, double> timespandata(TimeSpanInfo day)
         //{
         //    Dictionary<string, double> data = new Dictionary<string, double>();
@@ -245,6 +280,11 @@ namespace StarCalendar
         public int days()
         {
             return this / c.Day;
+        }
+
+        internal TimeSpanInfo Negate()
+        {
+            throw new NotImplementedException();
         }
     }
 }

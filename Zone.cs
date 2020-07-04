@@ -422,5 +422,15 @@ namespace StarCalendar
         {
             throw new NotImplementedException();
         }
+
+        internal static TimeSpanInfo GetLocalUtcOffset(Func<StarDate> now)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal static TimeSpanInfo GetLocalUtcOffset(StarDate starDate)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

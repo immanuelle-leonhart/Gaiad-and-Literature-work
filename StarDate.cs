@@ -1,4 +1,4 @@
-﻿using Consul;
+﻿//using Consul;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -336,6 +336,29 @@ namespace StarCalendar
 
         private string note;
         private TimeSpanInfo error;
+        private int ticks;
+
+        public int GetTicks()
+        {
+            return ticks;
+        }
+
+        internal void SetTicks(int value)
+        {
+            ticks = value;
+        }
+
+        private object kind;
+
+        public object GetKind()
+        {
+            return kind;
+        }
+
+        internal void SetKind(object value)
+        {
+            kind = value;
+        }
 
         public StarDate(DateTime utcNow)
         {
@@ -1238,6 +1261,11 @@ namespace StarCalendar
             return dict;
         }
 
+        internal StarDate SpecifyKind(StarDate starDate, object local)
+        {
+            throw new NotImplementedException();
+        }
+
         private bool Sol()
         {
             return this.timeZone.Sol();
@@ -1806,6 +1834,11 @@ namespace StarCalendar
         {
             DateTime o = new StarDate(dt.year(), 12, 1).Convert();
             return GregPurim(o);
+        }
+
+        public static implicit operator DateTime(StarDate dt)
+        {
+            return dt.Convert();
         }
     }
 }
