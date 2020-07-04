@@ -8,6 +8,7 @@ using System.Diagnostics.SymbolStore;
 using System.Globalization;
 using System.IO;
 using System.Net;
+using System.Numerics;
 using System.Reflection.Metadata.Ecma335;
 using System.Runtime.CompilerServices;
 
@@ -279,7 +280,7 @@ namespace StarCalendar
                     return "Horus's second " + this.DayOfWeek();
             }
             return null;
-            return StarDate.GregHoliday(this.Convert());
+            //return StarDate.GregHoliday(this.Convert());
         }
 
         private static string GregHoliday(DateTime dateTime)
@@ -336,28 +337,12 @@ namespace StarCalendar
 
         private string note;
         private TimeSpanInfo error;
-        private int ticks;
+        private StarData metadata;
+        private StarData metadata;
 
-        public int GetTicks()
+        internal void SetKind(StarData value)
         {
-            return ticks;
-        }
-
-        internal void SetTicks(int value)
-        {
-            ticks = value;
-        }
-
-        private object kind;
-
-        public object GetKind()
-        {
-            return kind;
-        }
-
-        internal void SetKind(object value)
-        {
-            kind = value;
+            metadata = value;
         }
 
         public StarDate(DateTime utcNow)
@@ -738,6 +723,10 @@ namespace StarCalendar
             //assign notes
 
             this.note = "";
+
+            //assign unified metadata
+
+            this.metadata = StarData.UTC;
         }
 
         public StarDate(TimeSpanInfo t, Zone uTC) : this(t)
@@ -889,7 +878,7 @@ namespace StarCalendar
                                     }
                                     throw new InvalidOperationException();
                                     throw new NotImplementedException();
-                                    return c.manu;
+                                    //return c.manu;
                                 }
                             }
                             
@@ -1261,6 +1250,16 @@ namespace StarCalendar
             return dict;
         }
 
+        internal StarData GetKind()
+        {
+            return this.metadata;
+        }
+
+        internal BigInteger GetTicks()
+        {
+            return this.atomicTime.ticks;
+        }
+
         internal StarDate SpecifyKind(StarDate starDate, object local)
         {
             throw new NotImplementedException();
@@ -1607,6 +1606,11 @@ namespace StarCalendar
             return MathGregNumbers();
         }
 
+        internal void GetDatePart(out int year, out int month, out int day)
+        {
+            throw new NotImplementedException();
+        }
+
         public int[] MathGregNumbers()
         {
             {
@@ -1782,6 +1786,11 @@ namespace StarCalendar
                     return new int[] { year, m + 1 , d };
                 }
             }
+        }
+
+        internal int DayOfWeekInt()
+        {
+            throw new NotImplementedException();
         }
 
         internal static DateTime GregChineseNewYear(DateTime now)

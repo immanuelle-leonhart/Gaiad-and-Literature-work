@@ -5,6 +5,7 @@
 // ==--==
 using StarCalendar;
 using System;
+using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 using System.Text;
 
@@ -170,6 +171,8 @@ namespace StarCalendar
             "000000",
             "0000000",
         };
+
+        public static StarStringBuilderCache StringBuilderCache { get; private set; }
 
         ////////////////////////////////////////////////////////////////////////////
         //
@@ -352,7 +355,7 @@ namespace StarCalendar
                         //
                         // This means that '\' is at the end of the formatting string.
                         //
-                        Console.WriteLine("throw new FormatException(Environment.GetResourceString(" + " Format_InvalidString" + "));");
+                        Console.WriteLine("throw new FormatException(StarEnvironment.GetResourceString(" + " Format_InvalidString" + "));");
                         throw new NotImplementedException();
                     }
                 }
@@ -368,7 +371,7 @@ namespace StarCalendar
                 //throw new FormatException(
                 //        String.Format(
                 //            CultureInfo.CurrentCulture,
-                //            Environment.GetResourceString("Format_BadQuote"), quoteChar));
+                //            StarEnvironment.GetResourceString("Format_BadQuote"), quoteChar));
                 throw new NotImplementedException();
             }
 
@@ -558,7 +561,7 @@ namespace StarCalendar
             //            }
             //            else
             //            {
-            //                throw new FormatException(Environment.GetResourceString("Format_InvalidString"));
+            //                throw new FormatException(StarEnvironment.GetResourceString("Format_InvalidString"));
             //            }
             //            break;
             //        case 't':
@@ -741,7 +744,7 @@ namespace StarCalendar
             //                // This means that '%' is at the end of the format string or
             //                // "%%" appears in the format string.
             //                //
-            //                throw new FormatException(Environment.GetResourceString("Format_InvalidString"));
+            //                throw new FormatException(StarEnvironment.GetResourceString("Format_InvalidString"));
             //            }
             //            break;
             //        case '\\':
@@ -764,7 +767,7 @@ namespace StarCalendar
             //                //
             //                // This means that '\' is at the end of the formatting string.
             //                //
-            //                throw new FormatException(Environment.GetResourceString("Format_InvalidString"));
+            //                throw new FormatException(StarEnvironment.GetResourceString("Format_InvalidString"));
             //            }
             //            break;
             //        default:
@@ -798,7 +801,7 @@ namespace StarCalendar
                     // accurate than the system's current offset because of daylight saving time.
                     offset = Zone.GetLocalUtcOffset(StarDate.Now);
                 }
-                else if (StarDate.GetKind() == StarDateKind.Utc)
+                else if (StarDate.GetKind() == StarData.Utc)
                 {
 #if FEATURE_CORECLR
                     offset = TimeSpanInfo.Zero;
@@ -809,7 +812,7 @@ namespace StarCalendar
                     // time if it is offset by an incorrect conversion to local time when parsed. Therefore, we need to
                     // explicitly emit the local time offset, which we can do by removing the UTC flag.
                     InvalidFormatForUtc(format, StarDate);
-                    StarDate = StarDate.SpecifyKind(StarDate, StarDateKind.Local);
+                    StarDate = StarDate.SpecifyKind(StarDate, StarData.Local);
                     offset = Zone.GetLocalUtcOffset(StarDate);
 #endif // FEATURE_CORECLR
                 }
@@ -856,20 +859,20 @@ namespace StarCalendar
 
             if (offset == NullOffset)
             {
-                // source is a date time, so behavior depends on the kind.
+                // source is a date time, so behavior depends on the metadata.
                 switch (StarDate.GetKind())
                 {
-                    case StarDateKind.Local:
+                    case StarData.Local:
                         // This should output the local offset, e.g. "-07:30"
                         offset = Zone.GetLocalUtcOffset(StarDate, ZoneOptions.NoThrowOnInvalidTime);
                         // fall through to shared time zone output code
                         break;
-                    case StarDateKind.Utc:
+                    case StarData.Utc:
                         // The 'Z' constant is a marker for a UTC date
                         result.Append("Z");
                         return;
                     default:
-                        // If the kind is unspecified, we output nothing here
+                        // If the metadata is unspecified, we output nothing here
                         return;
                 }
             }
@@ -944,7 +947,7 @@ namespace StarCalendar
                     realFormat = dtfi.YearMonthPattern;
                     break;
                 default:
-                    throw new FormatException(Environment.GetResourceString("Format_InvalidString"));
+                    throw new FormatException(StarEnvironment.GetResourceString("Format_InvalidString"));
             }
             return (realFormat);
         }
@@ -968,7 +971,7 @@ namespace StarCalendar
                         // Convert to UTC invariants mean this will be in range
                         StarDate = StarDate - offset;
                     }
-                    else if (StarDate.GetKind() == StarDateKind.Local)
+                    else if (StarDate.GetKind() == StarData.Local)
                     {
 
                         InvalidFormatForLocal(format, StarDate);
@@ -976,22 +979,22 @@ namespace StarCalendar
                     dtfi = StarDateTimeFormatInfo.InvariantInfo;
                     break;
                 case 'U':       // Universal time in culture dependent format.
-                    if (offset != NullOffset)
-                    {
-                        // This format is not supported by StarDateOffset
-                        throw new FormatException(Environment.GetResourceString("Format_InvalidString"));
-                    }
-                    // Universal time is always in Greogrian calendar.
-                    //
-                    // Change the Calendar to be Gregorian Calendar.
-                    //
-                    dtfi = (StarDateTimeFormatInfo)dtfi.Clone();
-                    if (dtfi.Calendar.GetType() != typeof(GregorianCalendar))
-                    {
-                        dtfi.Calendar = GregorianCalendar.GetDefaultInstance();
-                    }
-                    StarDate = StarDate.ToUniversalTime();
-                    break;
+                    //if (offset != NullOffset)
+                    //{
+                    //    // This format is not supported by StarDateOffset
+                    //    throw new FormatException(StarEnvironment.GetResourceString("Format_InvalidString"));
+                    //}
+                    //// Universal time is always in Greogrian calendar.
+                    ////
+                    //// Change the Calendar to be Gregorian Calendar.
+                    ////
+                    //dtfi = (StarDateTimeFormatInfo)dtfi.Clone();
+                    //if (dtfi.Calendar.GetType() != typeof(GregorianCalendar))
+                    //{
+                    //    dtfi.Calendar = GregorianCalendar.GetDefaultInstance();
+                    //}
+                    //StarDate = StarDate.ToUniversalTime();
+                    //break;
             }
             format = GetRealFormat(format, dtfi);
             return (format);
@@ -1099,7 +1102,7 @@ namespace StarCalendar
             int year, month, day;
             StarDate.GetDatePart(out year, out month, out day);
 
-            result.Append(InvariantAbbreviatedDayNames[(int)StarDate.DayOfWeek]);
+            result.Append(InvariantAbbreviatedDayNames[StarDate.DayOfWeekInt()]);
             result.Append(',');
             result.Append(' ');
             AppendNumber(result, day, 2);
@@ -1218,7 +1221,7 @@ namespace StarCalendar
                     results = new String[] { Format(StarDate, new String(new char[] { format }), dtfi) };
                     break;
                 default:
-                    throw new FormatException(Environment.GetResourceString("Format_InvalidString"));
+                    throw new FormatException(StarEnvironment.GetResourceString("Format_InvalidString"));
 
             }
             return (results);

@@ -14,5 +14,10 @@ namespace StarCalendar
         {
             throw new NotImplementedException();
         }
+
+        internal string GetStringAndRelease(StringBuilder stringBuilder)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
