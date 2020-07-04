@@ -4,7 +4,7 @@ using System.Globalization;
 using System.IO;
 using System.Numerics;
 
-namespace GaianEmpire
+namespace StarCalendar
 {
     internal static class c
     {
@@ -88,7 +88,7 @@ namespace GaianEmpire
             int counter = 0;
             string line;
             List<Locale> formats = new List<Locale>();
-            string path = "C:/Users/ericr/OneDrive/Documents/Github/Manu/ConsoleApp1/Gaian Empire/Languages.csv";
+            string path = "Languages.csv";
             //int lastslash = Gedcom.LastIndexOf('/');
             //string Filename = Gedcom.Substring(lastslash + 1);
             //Gedson ged = new Gedson();

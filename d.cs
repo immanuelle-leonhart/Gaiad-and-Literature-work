@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace GaianEmpire
+namespace StarCalendar
 {
     internal static class d
     {

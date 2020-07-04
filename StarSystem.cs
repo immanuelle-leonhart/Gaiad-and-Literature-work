@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Numerics;
 
-namespace GaianEmpire
+namespace StarCalendar
 {
     public class StarSystem
     {

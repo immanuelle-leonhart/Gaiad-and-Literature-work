@@ -11,7 +11,7 @@ using System.Net;
 using System.Reflection.Metadata.Ecma335;
 using System.Runtime.CompilerServices;
 
-namespace GaianEmpire
+namespace StarCalendar
 {
     public struct StarDate : IComparable<StarDate>, IEquatable<StarDate>
     {

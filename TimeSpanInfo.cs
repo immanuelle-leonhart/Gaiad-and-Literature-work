@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Numerics;
 
-namespace GaianEmpire
+namespace StarCalendar
 {
     public struct TimeSpanInfo : IComparable<TimeSpanInfo>, IEquatable<TimeSpanInfo>
     {

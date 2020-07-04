@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace GaianEmpire
+namespace StarCalendar
 {
     public class Locale
     {
