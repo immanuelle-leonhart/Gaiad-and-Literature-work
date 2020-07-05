@@ -78,11 +78,11 @@ namespace StarCalendar
         "dddd*"             full weekday name                     Monday
 
 
-        "M"     "0"         month w/o leading zero                2
-        "MM"    "00"        month with leading zero               02
-        "MMM"               short month name (abbreviation)       Feb
-        "MMMM"              full month name                       Febuary
-        "MMMM*"             full month name                       Febuary
+        "M"     "0"         Month w/o leading zero                2
+        "MM"    "00"        Month with leading zero               02
+        "MMM"               short Month name (abbreviation)       Feb
+        "MMMM"              full Month name                       Febuary
+        "MMMM*"             full Month name                       Febuary
 
         "y"     "0"         two digit year (year % 100) w/o leading zero           0
         "yy"    "00"        two digit year (year % 100) with leading zero          00
@@ -259,7 +259,7 @@ namespace StarCalendar
 
         private static String FormatMonth(int month, int repeatCount, StarDateTimeFormatInfo dtfi)
         {
-            Contract.Assert(month >= 1 && month <= 12, "month >=1 && month <= 12");
+            Contract.Assert(month >= 1 && month <= 12, "Month >=1 && Month <= 12");
             if (repeatCount == 3)
             {
                 return (dtfi.GetAbbreviatedMonthName(month));
@@ -272,18 +272,18 @@ namespace StarCalendar
         //
         //  FormatHebrewMonthName
         //
-        //  Action: Return the Hebrew month name for the specified StarDate.
-        //  Returns: The month name string for the specified StarDate.
+        //  Action: Return the Hebrew Month name for the specified StarDate.
+        //  Returns: The Month name string for the specified StarDate.
         //  Arguments:
         //        time   the time to format
-        //        month  The month is the value of HebrewCalendar.GetMonth(time).
-        //        repeat Return abbreviated month name if repeat=3, or full month name if repeat=4
+        //        Month  The Month is the value of HebrewCalendar.GetMonth(time).
+        //        repeat Return abbreviated Month name if repeat=3, or full Month name if repeat=4
         //        dtfi    The StarDateTimeFormatInfo which uses the Hebrew calendars as its calendar.
         //  Exceptions: None.
         //
 
         /* Note:
-            If DTFI is using Hebrew calendar, GetMonthName()/GetAbbreviatedMonthName() will return month names like this:
+            If DTFI is using Hebrew calendar, GetMonthName()/GetAbbreviatedMonthName() will return Month names like this:
             1   Hebrew 1st Month
             2   Hebrew 2nd Month
             ..  ...
@@ -296,26 +296,26 @@ namespace StarCalendar
             12  Hebrew 11th Month
             13  Hebrew 12th Month
 
-            Therefore, if we are in a regular year, we have to increment the month name if moth is greater or eqaul to 7.
+            Therefore, if we are in a regular year, we have to increment the Month name if moth is greater or eqaul to 7.
         */
-        //private static String FormatHebrewMonthName(StarDate time, int month, int repeatCount, StarDateTimeFormatInfo dtfi)
+        //private static String FormatHebrewMonthName(StarDate time, int Month, int repeatCount, StarDateTimeFormatInfo dtfi)
         //{
         //    Contract.Assert(repeatCount != 3 || repeatCount != 4, "repeateCount should be 3 or 4");
         //    if (dtfi.Calendar.IsLeapYear(dtfi.Calendar.GetYear(time)))
         //    {
-        //        // This month is in a leap year
-        //        return (dtfi.internalGetMonthName(month, MonthNameStyles.LeapYear, (repeatCount == 3)));
+        //        // This Month is in a leap year
+        //        return (dtfi.internalGetMonthName(Month, MonthNameStyles.LeapYear, (repeatCount == 3)));
         //    }
         //    // This is in a regular year.
-        //    if (month >= 7)
+        //    if (Month >= 7)
         //    {
-        //        month++;
+        //        Month++;
         //    }
         //    if (repeatCount == 3)
         //    {
-        //        return (dtfi.GetAbbreviatedMonthName(month));
+        //        return (dtfi.GetAbbreviatedMonthName(Month));
         //    }
-        //    return (dtfi.GetMonthName(month));
+        //    return (dtfi.GetMonthName(Month));
         //}
 
         //
@@ -399,7 +399,7 @@ namespace StarCalendar
         //
         //  IsUseGenitiveForm
         //
-        //  Actions: Check the format to see if we should use genitive month in the formatting.
+        //  Actions: Check the format to see if we should use genitive Month in the formatting.
         //      Starting at the position (index) in the (format) string, look back and look ahead to
         //      see if there is "d" or "dd".  In the case like "d MMMM" or "MMMM dd", we can use
         //      genitive form.  Genitive form is not used if there is more than two "d".
@@ -592,8 +592,8 @@ namespace StarCalendar
             //            break;
             //        case 'd':
             //            //
-            //            // tokenLen == 1 : Day of month as digits with no leading zero.
-            //            // tokenLen == 2 : Day of month as digits with leading zero for single-digit months.
+            //            // tokenLen == 1 : Day of Month as digits with no leading zero.
+            //            // tokenLen == 2 : Day of Month as digits with leading zero for single-digit months.
             //            // tokenLen == 3 : Day of week as a three-leter abbreviation.
             //            // tokenLen >= 4 : Day of week as its full name.
             //            //
@@ -626,24 +626,24 @@ namespace StarCalendar
             //            // tokenLen >= 4 : Month as its full name.
             //            //
             //            tokenLen = ParseRepeatPattern(format, i, ch);
-            //            int month = cal.GetMonth(StarDate);
+            //            int Month = cal.GetMonth(StarDate);
             //            if (tokenLen <= 2)
             //            {
             //                if (isHebrewCalendar)
             //                {
             //                    // For Hebrew calendar, we need to convert numbers to Hebrew text for yyyy, MM, and dd values.
-            //                    HebrewFormatDigits(result, month);
+            //                    HebrewFormatDigits(result, Month);
             //                }
             //                else
             //                {
-            //                    FormatDigits(result, month, tokenLen);
+            //                    FormatDigits(result, Month, tokenLen);
             //                }
             //            }
             //            else
             //            {
             //                if (isHebrewCalendar)
             //                {
-            //                    result.Append(FormatHebrewMonthName(StarDate, month, tokenLen, dtfi));
+            //                    result.Append(FormatHebrewMonthName(StarDate, Month, tokenLen, dtfi));
             //                }
             //                else
             //                {
@@ -651,13 +651,13 @@ namespace StarCalendar
             //                    {
             //                        result.Append(
             //                            dtfi.internalGetMonthName(
-            //                                month,
+            //                                Month,
             //                                IsUseGenitiveForm(format, i, tokenLen, 'd') ? MonthNameStyles.Genitive : MonthNameStyles.Regular,
             //                                false));
             //                    }
             //                    else
             //                    {
-            //                        result.Append(FormatMonth(month, tokenLen, dtfi));
+            //                        result.Append(FormatMonth(Month, tokenLen, dtfi));
             //                    }
             //                }
             //            }
@@ -729,7 +729,7 @@ namespace StarCalendar
             //            break;
             //        case '%':
             //            // Optional format character.
-            //            // For example, format string "%d" will print day of month
+            //            // For example, format string "%d" will print day of Month
             //            // without leading zero.  Most of the cases, "%" can be ignored.
             //            nextChar = ParseNextChar(format, i);
             //            // nextChar will be -1 if we already reach the end of the format string.

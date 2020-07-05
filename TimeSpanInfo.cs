@@ -9,24 +9,66 @@ namespace StarCalendar
     {
         internal BigInteger ticks;
         internal static TimeSpanInfo Zero;
+        //private int milliseconds;
+        //private int seconds;
+        //private int days;
 
-        public static TimeSpanInfo MinValue { get; internal set; }
-        public static int TicksPerSecond { get; internal set; }
+        //public static TimeSpanInfo MinValue { get; internal set; }
+        public static int TicksPerSecond = (int) c.Second.ticks;
         public int Hours
         {
-            get { return hours; }
-            internal set
-            {
-                hours = value;
-            }
+            get { return this / c.Hour; }
+            //internal set
+            //{
+            //    throw new NotImplementedException();
+            //    //hours = value;
+            //}
         }
         public int Minutes
         {
-            get { return minutes; }
-            internal set
+            get { return this / c.Minute; }
+            //internal set
+            //{
+            //    throw new NotImplementedException();
+            //    //minutes = value;
+            //}
+        }
+
+        public int Days
+        {
+            get
             {
-                minutes = value;
+                return this / c.Day;
             }
+
+            //internal set
+            //{
+            //    days = value;
+            //}
+        }
+        public int Seconds
+        {
+            get
+            {
+                return this / c.Second;
+            }
+
+            //internal set
+            //{
+            //    seconds = value;
+            //}
+        }
+        public int Milliseconds
+        {
+            get
+            {
+                return this / c.Millisecond;
+            }
+
+            //internal set
+            //{
+            //    milliseconds = value;
+            //}
         }
 
         public TimeSpanInfo(long ticks)
@@ -233,7 +275,7 @@ namespace StarCalendar
 
         public override string ToString()
         {
-            return this.data("year") + "-" + this.data("month") + "-" + this.data("day");
+            return this.data("year") + "-" + this.data("Month") + "-" + this.data("day");
         }
 
         private int data(string v)
@@ -247,7 +289,7 @@ namespace StarCalendar
             Dictionary<string, int> k = new Dictionary<string, int>();
             k.Add("year", t / c.Year);
             t %= c.Year;
-            k.Add("month", t / c.month);
+            k.Add("Month", t / c.month);
             t %= c.month;
             k.Add("day", t / c.Day);
             t %= c.Day;
@@ -270,10 +312,10 @@ namespace StarCalendar
             throw new NotImplementedException();
         }
 
-        public int days()
-        {
-            return this / c.Day;
-        }
+        //public int days()
+        //{
+        //    return this / c.Day;
+        //}
 
         internal TimeSpanInfo Negate()
         {

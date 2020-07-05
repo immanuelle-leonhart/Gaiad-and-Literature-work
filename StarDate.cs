@@ -88,8 +88,8 @@ namespace StarCalendar
                 gregdayofyear = g.DayOfYear.ToString();
                 weekday = g.DayOfWeek.ToString();
                 starday = dt.day.ToString();
-                starmonthname = dt.Monthname;
-                starmonthnumber = dt.month.ToString();
+                starmonthname = dt.MonthName;
+                starmonthnumber = dt.Month.ToString();
                 StarYear = dt.year.ToString();
                 Stardayofyear = dt.DayOfYear.ToString();
                 output = g_year + comma + gregmonthname + comma + gregmonthnumber + comma + gregday + comma + gregdayofyear + comma + weekday + comma + StarYear + comma + starmonthname + comma + starmonthnumber + comma + starday + comma + Stardayofyear;
@@ -110,7 +110,7 @@ namespace StarCalendar
                     dt = dt + ":" + data["second"];
                     try
                     {
-                        dt = dt + ":" + data["millisec"];
+                        dt = dt + ":" + data["Milliseconds"];
                         try
                         {
                             dt = dt + ":" + data["ticks"];
@@ -180,9 +180,8 @@ namespace StarCalendar
 
 
 
-        public Zone timeZone;
+        //public Zone timeZone;
 
-        public string note { get; private set; }
 
         internal static StarDate MathFromGreg(int[] v)
         {
@@ -196,10 +195,26 @@ namespace StarCalendar
         private StarData metadata;
         private static StarDate now;
         private static StarDate utcNow;
-        private long fullyear1;
-        private int billion1;
-        private TimeSpanInfo error1;
-        private int dayOfYear;
+        //private Zone timeZone;
+
+        //private int weekInt;
+
+        //private long fullyear1;
+        //private int billion1;
+        //private TimeSpanInfo error1;
+        //private int dayOfYear;
+        //private string monthname;
+        //private TimeSpanInfo timeOfDay;
+        //private string feast;
+        //private string weekDay;
+        //private string monthName;
+        //private BigInteger ticks;
+        //private int milliseconds;
+        //private int day1;
+        //private int month1;
+        //private int year1;
+        //private int million1;
+        //private string note;
 
         //internal int DayOfYear;
 
@@ -240,36 +255,281 @@ namespace StarCalendar
             }
         }
 
-        public static StarDate Now { get => now; internal set => now = value; }
-        public static StarDate UtcNow { get => utcNow; internal set => utcNow = value; }
-        public long fullyear { get => fullyear1; internal set => fullyear1 = value; }
-        public int billion { get => billion1; internal set => billion1 = value; }
-        public int million { get; internal set; }
-        public int year { get; internal set; }
-        public int month { get; internal set; }
-        public int day { get; internal set; }
-        public int Milliseconds { get; internal set; }
-        public int Ticks { get; internal set; }
-        public string MonthName { get; internal set; }
-        public string WeekDay { get; internal set; }
-        public string Feast { get; internal set; }
-        public TimeSpanInfo TimeOfDay { get; internal set; }
-        public string Monthname { get; private set; }
-        public int DayOfYear { get => dayOfYear; internal set => dayOfYear = value; }
-        public TimeSpanInfo error { get => error1; private set => error1 = value; }
-
-        internal void SetKind(StarData value)
+        public static StarDate Now
         {
-            metadata = value;
+            get { return new StarDate(DateTime.UtcNow); }
+            //internal set
+            //{
+            //    now = value;
+            //}
+        }
+        public static StarDate UtcNow
+        {
+            get { return utcNow; }
+            internal set
+            {
+                utcNow = value;
+            }
+        }
+        public long fullyear
+        {
+            get { return this.atomicTime / c.AverageYear; }
+            internal set
+            {
+                long diff = value - this.fullyear;
+                this.atomicTime += diff * c.AverageYear;
+            }
+        }
+        public int billion
+        {
+            get { return this.atomicTime / c.b; }
+            internal set
+            {
+                int diff = value - this.billion;
+                this.atomicTime += diff * c.b;
+            }
+        }
+        public int million
+        {
+            get
+            {
+                TimeSpanInfo t = this.atomicTime % c.b;
+                return t / c.m;
+            }
+            internal set
+            {
+                int diff = value - this.million;
+                this.atomicTime += diff * c.m;
+            }
+        }
+        public int year
+        {
+            get { return LocalData("year")["year"]; }
+            internal set
+            {
+                int[] vs = this.values();
+                vs[2] = value;
+                this.atomicTime = new StarDate(vs).atomicTime;
+                //throw new NotImplementedException(lololololol);
+            }
+        }
+
+        private int[] values()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int Month
+        {
+            get { return LocalData("Month")["Month"]; }
+            internal set
+            {
+                int diff = value - this.Month;
+                this.atomicTime += diff * c.month;
+            }
+        }
+        public int day
+        {
+            get { return LocalData("day")["day"]; }
+            internal set
+            {
+                int diff = value - this.day;
+                this.atomicTime += diff * c.Day;
+            }
+        }
+        public int Milliseconds
+        {
+            get { return LocalData()["Milliseconds"]; }
+            internal set
+            {
+                int diff = value - this.Milliseconds;
+                this.atomicTime += diff * c.Millisecond;
+            }
+        }
+        public BigInteger Ticks
+        {
+            get { return this.atomicTime.ticks; }
+            internal set
+            {
+                this.atomicTime.ticks = value;
+            }
+        }
+        public string MonthName
+        {
+            get { return this.GetMonthName(this.Month, d.getlocale()); }
+            internal set
+            {
+                switch (value)
+                {
+                    case "Sagittarius":
+                        this.Month = 1;
+                        break;
+                    case "Capricorn":
+                        this.Month = 2;
+                        break;
+                    case "Aquarius":
+                        this.Month = 3;
+                        break;
+                    case "Pisces":
+                        this.Month = 4;
+                        break;
+                    case "Aries":
+                        this.Month = 5;
+                        break;
+                    case "Taurus":
+                        this.Month = 6;
+                        break;
+                    case "Gemini":
+                        this.Month = 7;
+                        break;
+                    case "Karkino":
+                        this.Month = 8;
+                        break;
+                    case "Leo":
+                        this.Month = 9;
+                        break;
+                    case "Virgo":
+                        this.Month = 10;
+                        break;
+                    case "Libra":
+                        this.Month = 11;
+                        break;
+                    case "Scorpio":
+                        this.Month = 12;
+                        break;
+                    case "Ophiuchus":
+                        this.Month = 13;
+                        break;
+                    case "Horus":
+                        this.Month = 14;
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
+
+        private int MonthNumberFromName(string value)
+        {
+            throw new NotImplementedException();
+        }
+
+        private string GetMonthName(int month, Locale locale)
+        {
+            throw new NotImplementedException();
+        }
+
+        public string WeekDay
+        {
+            get { return this.GetWeekDayName(this.WeekInt, d.getlocale()); }
+            internal set
+            {
+                switch (value)
+                {
+                    case "Monday":
+                        this.WeekInt = 1;
+                        break;
+                    case "Tuesday":
+                        this.WeekInt = 2;
+                        break;
+                    case "Wednesday":
+                        this.WeekInt = 3;
+                        break;
+                    case "Thursday":
+                        this.WeekInt = 4;
+                        break;
+                    case "Friday":
+                        this.WeekInt = 5;
+                        break;
+                    case "Saturday":
+                        this.WeekInt = 6;
+                        break;
+                    case "Sunday":
+                        this.WeekInt = 7;
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
+
+        private string GetWeekDayName(int weekInt, Locale locale)
+        {
+            throw new NotImplementedException();
+        }
+
+        public TimeSpanInfo TimeOfDay
+        {
+            get { return timeOfDay; }
+            internal set
+            {
+                TimeSpanInfo diff = value - this.TimeOfDay;
+                this.atomicTime += diff;
+            }
+        }
+
+        public int DayOfYear
+        {
+            get { return LocalData()["day of year"]; }
+            internal set
+            {
+                int diff = value - this.DayOfYear;
+                this.atomicTime += diff * c.Day;
+            }
+        }
+        public TimeSpanInfo error
+        {
+            get
+            {
+                return this.metadata.error;
+            }
+
+            private set
+            {
+                this.metadata.error = value;
+            }
+        }
+
+        public string Note
+        {
+            get
+            {
+                return this.metadata.note;
+            }
+
+            private set
+            {
+                this.metadata.note = value;
+            }
+        }
+
+        public int WeekInt
+        {
+            get { return StarDate.DayFromMonth(this.day); }
+            private set
+            {
+                int diff = value - this.WeekInt;
+                this.atomicTime += diff * c.Day;
+            }
+        }
+
+        public Zone TimeZone
+        {
+            get { return this.metadata.timeZone; }
+            private set
+            {
+                this.metadata.timeZone = value;
+            }
         }
 
         public StarDate(DateTime utcNow)
         {
             this.atomicTime = c.netstart.atomicTime + new TimeSpanInfo(utcNow.Ticks);
-            this.timeZone = Zone.Here();
-            //this.note = "";
+
             //this.error = new TimeSpanInfo(0);
             this.metadata = StarData.Standard;
+            //this.timeZone = Zone.Here();
+            //this.Note = "";
         }
 
         public StarDate EasterDate()
@@ -308,7 +568,7 @@ namespace StarCalendar
 
         //internal string Stored()
         //{
-        //    return this.year + "-" + this.month() + "-" + this.day();
+        //    return this.year + "-" + this.Month() + "-" + this.day();
         //}
 
         internal static StarDate GregParse(string[] data)
@@ -480,19 +740,19 @@ namespace StarCalendar
         public StarDate(TimeSpanInfo t) : this()
         {
             this.atomicTime = t;
-            this.timeZone = Zone.Here();
+            this.metadata = StarData.Local;
         }
 
         public StarDate(int v) : this()
         {
             this.atomicTime = new TimeSpanInfo(v);
-            this.timeZone = Zone.Here();
+            this.metadata = StarData.Local;
         }
 
         public StarDate(int v, Zone Zone) : this(v)
         {
             this.atomicTime = new TimeSpanInfo(v) + c.netstart.atomicTime;
-            this.timeZone = Zone;
+            this.metadata = new StarData(Zone);
         }
 
         //internal long DayOfYear()
@@ -508,7 +768,7 @@ namespace StarCalendar
         public StarDate(DateTime utcNow, Zone zone) : this(utcNow)
         {
             this.atomicTime = c.netstart.atomicTime + new TimeSpanInfo(utcNow.Ticks);
-            this.timeZone = zone;
+            this.metadata = new StarData(zone);
         }
 
         private static StarDate AnnoCosmos(params long[] vs)
@@ -537,15 +797,15 @@ namespace StarCalendar
             //long cycle_1 = years;
             //this.atomicTime += cycle_1 * c.Year;
             //data[1]--;
-            //data[2]--; //The 1st of a month is actually zero days, so subtract one from the day, same for months
-            //this.atomicTime += data[1] * c.month + data[2] * c.Day + data[3] * c.Hour + data[4] * c.Minute + data[5] * c.Second + data[6] * c.Millisecond + new TimeSpanInfo(data[7]);
+            //data[2]--; //The 1st of a Month is actually zero days, so subtract one from the day, same for months
+            //this.atomicTime += data[1] * c.Month + data[2] * c.Day + data[3] * c.Hour + data[4] * c.Minute + data[5] * c.Second + data[6] * c.Millisecond + new TimeSpanInfo(data[7]);
             //switch (n)
             //{
             //    case 1:
             //        this.error = c.Year;
             //        break;
             //    case 2:
-            //        this.error = c.month;
+            //        this.error = c.Month;
             //        break;
             //    case 3:
             //        this.error = c.Day;
@@ -577,6 +837,11 @@ namespace StarCalendar
             //this.note = "";
         }
 
+        public StarDate(params int[] vs)
+        {
+            throw new NotImplementedException(bifreiuner);
+        }
+
         public StarDate(params long[] vs)
         {
             long[] data = new long[] { 0, 0, 0, 0, 0, 0, 0, 0 };
@@ -604,54 +869,54 @@ namespace StarCalendar
             long cycle_1 = years;
             this.atomicTime += cycle_1 * c.Year;
             data[1]--;
-            data[2]--; //The 1st of a month is actually zero days, so subtract one from the day, same for months
+            data[2]--; //The 1st of a Month is actually zero days, so subtract one from the day, same for months
             this.atomicTime += data[1] * c.month + data[2] * c.Day + data[3] * c.Hour + data[4] * c.Minute + data[5] * c.Second + data[6] * c.Millisecond + new TimeSpanInfo(data[7]);
-            switch (n)
-            {
-                case 1:
-                    this.error = c.Year;
-                    break;
-                case 2:
-                    this.error = c.month;
-                    break;
-                case 3:
-                    this.error = c.Day;
-                    break;
-                case 4:
-                    this.error = c.Hour;
-                    break;
-                case 5:
-                    this.error = c.Minute;
-                    break;
-                case 6:
-                    this.error = c.Second;
-                    break;
-                case 7:
-                    this.error = c.Millisecond;
-                    break;
-                case 8:
-                default:
-                    this.error = new TimeSpanInfo(0);
-                    break;
-            }
+            //switch (n)
+            //{
+            //    case 1:
+            //        this.error = c.Year;
+            //        break;
+            //    case 2:
+            //        this.error = c.month;
+            //        break;
+            //    case 3:
+            //        this.error = c.Day;
+            //        break;
+            //    case 4:
+            //        this.error = c.Hour;
+            //        break;
+            //    case 5:
+            //        this.error = c.Minute;
+            //        break;
+            //    case 6:
+            //        this.error = c.Second;
+            //        break;
+            //    case 7:
+            //        this.error = c.Millisecond;
+            //        break;
+            //    case 8:
+            //    default:
+            //        this.error = new TimeSpanInfo(0);
+            //        break;
+            //}
 
             //assign timezones
 
-            this.timeZone = c.UTC;
+            //this.timeZone = c.UTC;
 
             //assign notes
 
-            this.note = "";
+            //this.Note = "";
 
             //assign unified metadata
 
-            this.metadata = StarData.UTC;
+            metadata = new StarData(n);
         }
 
         public StarDate(TimeSpanInfo t, Zone uTC) : this(t)
         {
             this.atomicTime = t;
-            this.timeZone = uTC;
+            this.metadata = new StarData(uTC);
         }
 
         //public static StarDate Now()
@@ -696,7 +961,7 @@ namespace StarCalendar
                 if (modifier == "Star")
                 {
                     //long year = long.Parse(parsedinput[1]);
-                    //int month = int.Parse(parsedinput[2]);
+                    //int Month = int.Parse(parsedinput[2]);
                     //int day = int.Parse(parsedinput[3]);
                     int i = 1;
                     long[] vs = new long[] { 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
@@ -723,7 +988,7 @@ namespace StarCalendar
                         year2 = BCParse(parsedinput);
                     }
                     StarDate sd = c.netstart - year2 * c.Year;
-                    sd.timeZone = Zone.Here();
+                    sd.metadata = StarData.Local;
                     return sd;
                     throw new NotImplementedException();
                 }
@@ -847,7 +1112,7 @@ namespace StarCalendar
 
         private void addModifier(string modifier)
         {
-            this.note = modifier;
+            this.Note = modifier;
         }
 
         internal DateTime Convert()
@@ -962,10 +1227,10 @@ namespace StarCalendar
             return local.StarDateString(this.LocalData(), format);
         }
 
-        private bool IsHoliday()
-        {
-            return this.GetHoliday() != null;
-        }
+        //private bool IsHoliday()
+        //{
+        //    return this.GetHoliday() != null;
+        //}
 
         //private int billion()
         //{
@@ -975,7 +1240,7 @@ namespace StarCalendar
         public string time()
         {
             var data = this.LocalData();
-            return addzero(data["hour"]) + ":" + addzero(data["min"]) + ":" + addzero(data["second"]) + ":" + addzero(data["millisec"]) + ":" + addzero(data["ticks"]);
+            return addzero(data["hour"]) + ":" + addzero(data["min"]) + ":" + addzero(data["second"]) + ":" + addzero(data["Milliseconds"]) + ":" + addzero(data["ticks"]);
         }
 
         private string addzero(long v)
@@ -992,9 +1257,9 @@ namespace StarCalendar
 
 
 
-        //public int month()
+        //public int Month()
         //{
-        //    return this.LocalData()["month"];
+        //    return this.LocalData()["Month"];
         //}
 
         //public int day()
@@ -1009,7 +1274,7 @@ namespace StarCalendar
 
         //public string monthname(Locale format)
         //{
-        //    return format.month(this.month());
+        //    return format.Month(this.Month());
         //}
 
         //public string DayOfWeek()
@@ -1021,24 +1286,33 @@ namespace StarCalendar
         //{
         //    return format.weekday(StarDate.DayFromMonth(this.day()));
         //}
-
         private Dictionary<string, int> LocalData()
+        {
+            return LocalData("Full");
+        }
+
+        private Dictionary<string, int> LocalData(string length)
         {
             StarDate adjusted = this;
             try
             {
-                adjusted = this.timeZone.Convert(this);
+                adjusted = this.TimeZone.Convert(this);
             }
             catch (Exception)
             {
 
             }
-            return adjusted.Data();
+            return adjusted.Data(length);
         }
 
         private Dictionary<string, int> Data()
         {
-            TimeSpanInfo LocalDay = this.timeZone.LocalDay();
+            return Data("Full");
+        }
+
+        private Dictionary<string, int> Data(string length)
+        {
+            TimeSpanInfo LocalDay = this.TimeZone.LocalDay();
             Dictionary<string, int> dict = new Dictionary<string, int>();
             TimeSpanInfo rem = this.atomicTime;
             dict.Add("b", rem / c.b);
@@ -1052,19 +1326,19 @@ namespace StarCalendar
                 dict.Add("cycle6", 12);
                 dict.Add("cycleyears", 5);
                 rem %= c.Year;
-                dict.Add("month", 13);
-                //dict.Add("month", rem / c.month);
+                dict.Add("Month", 13);
+                //dict.Add("Month", rem / c.Month);
                 rem %= c.month;
                 dict.Add("day", rem / c.Day);
                 dict["day"]++;
-                dict["month"]++;
+                dict["Month"]++;
                 dict.Add("week of year", 52 + dict["day"] / 7);
                 dict.Add("day of year", 364 + dict["day"]);
                 switch (dict["day"])
                 {
                     case 15:
                         Console.WriteLine("ERROR CAUGHT");
-                        Console.WriteLine(dict["month"]);
+                        Console.WriteLine(dict["Month"]);
                         throw new NotImplementedException();
                     default:
                         break;
@@ -1079,10 +1353,10 @@ namespace StarCalendar
                 {
                     dict.Add("cycleyears", 5);
                     rem %= c.Year;
-                    dict.Add("month", 13);
+                    dict.Add("Month", 13);
                     rem %= c.month;
                     dict.Add("day", rem / c.Day);
-                    dict["month"]++;
+                    dict["Month"]++;
                     dict["day"]++;
                     dict.Add("week of year", 52 + dict["day"] / 7);
                     dict.Add("day of year", 364 + dict["day"]);
@@ -1091,12 +1365,12 @@ namespace StarCalendar
                 {
                     dict.Add("cycleyears", rem / c.Year);
                     rem %= c.Year;
-                    dict.Add("month", rem / c.month);
+                    dict.Add("Month", rem / c.month);
                     dict.Add("week of year", rem / c.week);
                     dict.Add("day of year", rem / c.Day);
                     rem %= c.month;
                     dict.Add("day", rem / c.Day);
-                    dict["month"]++;
+                    dict["Month"]++;
                     dict["day"]++;
                     dict["day of year"]++;
                     //Console.WriteLine("normal year");
@@ -1104,7 +1378,14 @@ namespace StarCalendar
                 }
             }
 
-
+            int year = dict["cycleyears"];
+            year += dict["cycle6"] * 6;
+            year += dict["cycle_78"] * 78;
+            dict.Add("year", year);
+            if ((length == "year") || (length == "Month") || (length == "day"))
+            {
+                return dict;
+            }
 
             if (this.Sol() == false)
             {
@@ -1114,45 +1395,18 @@ namespace StarCalendar
             rem %= c.Day;
             TimeSpanInfo rem2 = rem;
 
-            //if (dict["cycleyears"] >= 5)
-            //{
-            //    if (dict["cycle6"] == 12)
-            //    {
-            //        Console.WriteLine("Double Leap Year");
-            //        throw new NotImplementedException();
-            //    }
-            //    else if (dict["month"] >= 12)
-            //    {
-            //        Console.WriteLine("Do something with week of year");
-            //        Console.WriteLine("week " + dict["week of year"]);
-            //        Console.WriteLine("month " + (dict["month"] + 1));
-            //        Console.WriteLine(d.months[dict["month"]]);
-            //        Console.WriteLine(dict["day"]);
-            //        throw new NotImplementedException();
-            //    }
-
-            //}
 
             dict.Add("hour", rem / c.Hour);
             rem %= c.Hour;
-            //long min = rem / c.Minute;
             dict.Add("min", rem / c.Minute);
             rem %= c.Minute;
-            //long sec = rem / c.Second;
             dict.Add("second", rem / c.Second);
             rem %= c.Second;
-            //long millisec = rem / c.Millisecond;
-            dict.Add("millisec", rem / c.Millisecond);
+            dict.Add("Milliseconds", rem / c.Millisecond);
             rem %= c.Millisecond;
-            //long ticks = (long)rem.ticks;
             dict.Add("ticks", (int)rem.ticks);
-            int year = dict["cycleyears"];
-            year += dict["cycle6"] * 6;
-            year += dict["cycle_78"] * 78;
-            dict.Add("year", year);
             year += 14 * (int)Math.Pow(10, 9);
             dict.Add("big year", year);
-            //Console.WriteLine("Nanodi Ticks " + c.Nanodi.ticks);
             dict.Add("Metric", rem2 / c.Nanodi);
             rem2 %= c.Nanodi;
             int nanoticks = (int)c.Nanodi.ticks;
@@ -1183,7 +1437,7 @@ namespace StarCalendar
 
         private bool Sol()
         {
-            return this.timeZone.Sol();
+            return this.TimeZone.Sol();
         }
 
         internal StarDate addtimezone(string prim)
@@ -1195,7 +1449,7 @@ namespace StarCalendar
         private StarDate addtimezone(Zone timezone)
         {
             StarDate dt = this;
-            dt.timeZone = timeZone;
+            dt.TimeZone = TimeZone;
             return dt;
         }
 
@@ -1380,7 +1634,7 @@ namespace StarCalendar
 
         public static StarDate MathFromGreg(int year, int month, int day, int hour, int min, int sec, int mil)
         {
-            //Console.WriteLine(year + " " + month + " " + day + " " + hour + " " + sec + " " + mil);
+            //Console.WriteLine(year + " " + Month + " " + day + " " + hour + " " + sec + " " + mil);
             // Number of days in a non-leap year
             int DaysPerYear = 365;
             // Number of days in 4 years

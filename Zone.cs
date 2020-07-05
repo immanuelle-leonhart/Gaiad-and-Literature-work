@@ -138,7 +138,7 @@ namespace StarCalendar
 
         public TimeSpanInfo Offset()
         {
-            return Offset(StarDate.Now());
+            return Offset(StarDate.Now);
         }
 
         public TimeSpanInfo Offset(StarDate dt)

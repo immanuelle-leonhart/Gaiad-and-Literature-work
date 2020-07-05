@@ -13,11 +13,23 @@ namespace StarCalendar
             throw new NotImplementedException();
         }
 
-        private string note;
-        private TimeSpanInfo error;
+        public string note;
+        public TimeSpanInfo error;
+        private int arraylength;
+        internal Zone timeZone;
 
         public StarData(string v)
         {
+        }
+
+        public StarData(int arraylength)
+        {
+            this.arraylength = arraylength;
+        }
+
+        public StarData(Zone uTC)
+        {
+            this.timeZone = uTC;
         }
 
         public static StarData Standard { get; internal set; }
