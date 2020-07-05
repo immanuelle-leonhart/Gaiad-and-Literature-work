@@ -11,6 +11,7 @@ namespace StarCalendar
         internal static TimeSpanInfo Zero;
 
         public static TimeSpanInfo MinValue { get; internal set; }
+        public static int TicksPerSecond { get; internal set; }
 
         private object hours;
 

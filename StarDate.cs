@@ -338,7 +338,10 @@ namespace StarCalendar
         private string note;
         private TimeSpanInfo error;
         private StarData metadata;
-        private StarData metadata;
+
+        public BigInteger Hour { get; internal set; }
+        public BigInteger Minute { get; internal set; }
+        public BigInteger Second { get; internal set; }
 
         internal void SetKind(StarData value)
         {
@@ -351,6 +354,7 @@ namespace StarCalendar
             this.timeZone = Zone.Here();
             this.note = "";
             this.error = new TimeSpanInfo(0);
+            this.metadata = StarData.Standard;
         }
 
         public StarDate EasterDate()
@@ -1788,6 +1792,11 @@ namespace StarCalendar
             }
         }
 
+        internal StarDate ToUniversalTime()
+        {
+            throw new NotImplementedException();
+        }
+
         internal int DayOfWeekInt()
         {
             throw new NotImplementedException();
@@ -1848,6 +1857,51 @@ namespace StarCalendar
         public static implicit operator DateTime(StarDate dt)
         {
             return dt.Convert();
+        }
+
+        public StarDate addYears(long years)
+        {
+            throw new NotImplementedException();
+        }
+
+        public StarDate addMonths(long years)
+        {
+            throw new NotImplementedException();
+        }
+
+        public StarDate addWeeks(long years)
+        {
+            throw new NotImplementedException();
+        }
+
+        public StarDate addDays(long years)
+        {
+            throw new NotImplementedException();
+        }
+
+        public StarDate addHours(long years)
+        {
+            throw new NotImplementedException();
+        }
+
+        public StarDate addMinutes(long min)
+        {
+            throw new NotImplementedException();
+        }
+
+        public StarDate addSeconds(long seconds)
+        {
+            throw new NotImplementedException();
+        }
+
+        public StarDate addMilliseconds(long years)
+        {
+            throw new NotImplementedException();
+        }
+
+        public StarDate addTicks(long years)
+        {
+            throw new NotImplementedException();
         }
     }
 }

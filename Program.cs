@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace StarDate
+namespace StarCalendar
 {
     class Program
     {

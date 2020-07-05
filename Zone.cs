@@ -428,6 +428,16 @@ namespace StarCalendar
             throw new NotImplementedException();
         }
 
+        internal static TimeSpanInfo GetLocalUtcOffset(StarDate starDate, bool noThrowOnInvalidTime)
+        {
+            throw new NotImplementedException();
+        }
+
+        public static implicit operator TimeZoneInfo(Zone zone)
+        {
+            return zone.terranTimeZone;
+        }
+
         internal static TimeSpanInfo GetLocalUtcOffset(StarDate starDate)
         {
             throw new NotImplementedException();

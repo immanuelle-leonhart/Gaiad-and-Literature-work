@@ -59,6 +59,7 @@ namespace StarCalendar
 
         internal static Dictionary<string, PlanetZone> Planets = new Dictionary<string, PlanetZone>();
         internal static Dictionary<string, StarSystem> StarSystems = new Dictionary<string, StarSystem>();
+        internal static int TicksPerDay;
 
         //internal static Dictionary<string, NaturalCycle> CachedCycles = new Dictionary<string, NaturalCycle>();
         internal static readonly TimeSpanInfo LunarMonth = Day * 29.53059;

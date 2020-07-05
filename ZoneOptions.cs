@@ -7,6 +7,6 @@ namespace StarCalendar
 {
     internal class ZoneOptions
     {
-        internal static object NoThrowOnInvalidTime;
+        internal static bool NoThrowOnInvalidTime;
     }
 }

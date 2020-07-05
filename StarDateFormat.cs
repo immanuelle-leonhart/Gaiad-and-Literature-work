@@ -7,6 +7,7 @@ using StarCalendar;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
+using System.Numerics;
 using System.Text;
 
 namespace StarCalendar
@@ -835,16 +836,16 @@ namespace StarCalendar
             if (tokenLen <= 1)
             {
                 // 'z' format e.g "-7"
-                result.AppendFormat(CultureInfo.InvariantCulture, "{0:0}", offset.GetHours());
+                result.AppendFormat(CultureInfo.InvariantCulture.GetFormat(), "{0:0}", offset.GetHours());
             }
             else
             {
                 // 'zz' or longer format e.g "-07"
-                result.AppendFormat(CultureInfo.InvariantCulture, "{0:00}", offset.GetHours());
+                result.AppendFormat(CultureInfo.InvariantCulture.GetFormat(), "{0:00}", offset.GetHours());
                 if (tokenLen >= 3)
                 {
                     // 'zzz*' or longer format e.g "-07:30"
-                    result.AppendFormat(CultureInfo.InvariantCulture, ":{0:00}", offset.GetMinutes());
+                    result.AppendFormat(CultureInfo.InvariantCulture.GetFormat(), ":{0:00}", offset.GetMinutes());
                 }
             }
         }
@@ -860,20 +861,22 @@ namespace StarCalendar
             if (offset == NullOffset)
             {
                 // source is a date time, so behavior depends on the metadata.
-                switch (StarDate.GetKind())
+                if (StarDate.GetKind() == StarData.Local)
                 {
-                    case StarData.Local:
-                        // This should output the local offset, e.g. "-07:30"
-                        offset = Zone.GetLocalUtcOffset(StarDate, ZoneOptions.NoThrowOnInvalidTime);
-                        // fall through to shared time zone output code
-                        break;
-                    case StarData.Utc:
-                        // The 'Z' constant is a marker for a UTC date
-                        result.Append("Z");
-                        return;
-                    default:
-                        // If the metadata is unspecified, we output nothing here
-                        return;
+                    // This should output the local offset, e.g. "-07:30"
+                    offset = Zone.GetLocalUtcOffset(StarDate, ZoneOptions.NoThrowOnInvalidTime);
+                    // fall through to shared time zone output code
+                }
+                else if (StarDate.GetKind() == StarData.Utc)
+                {
+                    // The 'Z' constant is a marker for a UTC date
+                    result.Append("Z");
+                    return;
+                }
+                else
+                {
+                    // If the metadata is unspecified, we output nothing here
+                    return;
                 }
             }
             if (offset >= TimeSpanInfo.Zero)
@@ -887,7 +890,7 @@ namespace StarCalendar
                 offset = offset.Negate();
             }
 
-            result.AppendFormat(CultureInfo.InvariantCulture, "{0:00}:{1:00}", offset.GetHours(), offset.GetMinutes());
+            result.AppendFormat(CultureInfo.InvariantCulture.GetFormat(), "{0:00}:{1:00}", offset.GetHours(), offset.GetMinutes());
         }
 
 
@@ -947,7 +950,8 @@ namespace StarCalendar
                     realFormat = dtfi.YearMonthPattern;
                     break;
                 default:
-                    throw new FormatException(StarEnvironment.GetResourceString("Format_InvalidString"));
+                    throw new NotImplementedException();
+                    //throw new FormatException(StarEnvironment.GetResourceString("Format_InvalidString"));
             }
             return (realFormat);
         }
@@ -978,7 +982,7 @@ namespace StarCalendar
                     }
                     dtfi = StarDateTimeFormatInfo.InvariantInfo;
                     break;
-                case 'U':       // Universal time in culture dependent format.
+                //case 'U':       // Universal time in culture dependent format.
                     //if (offset != NullOffset)
                     //{
                     //    // This format is not supported by StarDateOffset
@@ -1012,7 +1016,7 @@ namespace StarCalendar
             if (format == null || format.Length == 0)
             {
                 Boolean timeOnlySpecialCase = false;
-                if (StarDate.GetTicks() < Calendar.TicksPerDay)
+                if (StarDate.GetTicks() < c.TicksPerDay)
                 {
                     // If the time is less than 1 day, consider it as time of day.
                     // Just print out the short time format.
@@ -1027,19 +1031,19 @@ namespace StarCalendar
                     // thrown when we try to get the Japanese year for Gregorian year 0001.
                     // Therefore, the workaround allows them to call ToString() for time of day from a StarDate by
                     // formatting as ISO 8601 format.
-                    switch (dtfi.Calendar.ID)
-                    {
-                        case Calendar.CAL_JAPAN:
-                        case Calendar.CAL_TAIWAN:
-                        case Calendar.CAL_HIJRI:
-                        case Calendar.CAL_HEBREW:
-                        case Calendar.CAL_JULIAN:
-                        case Calendar.CAL_UMALQURA:
-                        case Calendar.CAL_PERSIAN:
-                            timeOnlySpecialCase = true;
-                            dtfi = StarDateTimeFormatInfo.InvariantInfo;
-                            break;
-                    }
+                    //switch (dtfi.Calendar.ID)
+                    //{
+                    //    case Calendar.CAL_JAPAN:
+                    //    case Calendar.CAL_TAIWAN:
+                    //    case Calendar.CAL_HIJRI:
+                    //    case Calendar.CAL_HEBREW:
+                    //    case Calendar.CAL_JULIAN:
+                    //    case Calendar.CAL_UMALQURA:
+                    //    case Calendar.CAL_PERSIAN:
+                    //        timeOnlySpecialCase = true;
+                    //        dtfi = StarDateTimeFormatInfo.InvariantInfo;
+                    //        break;
+                    //}
                 }
                 if (offset == NullOffset)
                 {
@@ -1136,12 +1140,17 @@ namespace StarCalendar
             AppendHHmmssTimeOfDay(result, StarDate);
             result.Append('.');
 
-            long fraction = StarDate.GetTicks() % TimeSpanInfo.TicksPerSecond;
+            BigInteger fraction = StarDate.GetTicks() % TimeSpanInfo.TicksPerSecond;
             AppendNumber(result, fraction, 7);
 
             FormatCustomizedRoundripTimeZone(StarDate, offset, result);
 
             return result;
+        }
+
+        private static void AppendNumber(StringBuilder result, BigInteger fraction, int v)
+        {
+            throw new NotImplementedException();
         }
 
         private static void AppendHHmmssTimeOfDay(StringBuilder result, StarDate StarDate)
@@ -1221,7 +1230,8 @@ namespace StarCalendar
                     results = new String[] { Format(StarDate, new String(new char[] { format }), dtfi) };
                     break;
                 default:
-                    throw new FormatException(StarEnvironment.GetResourceString("Format_InvalidString"));
+                    throw new NotImplementedException();
+                    //throw new FormatException(StarEnvironment.GetResourceString("Format_InvalidString"));
 
             }
             return (results);
