@@ -8,7 +8,7 @@ namespace StarCalendar
 {
     internal static class c
     {
-        internal static List<Locale> formats = getformats();
+        internal static List<CultureInfo> formats = getformats();
 
         //StarSystems
         internal static StarSystem Amaterasu = new StarSystem("Amaterasu");
@@ -34,7 +34,7 @@ namespace StarCalendar
         internal static TimeSpanInfo Centidi = Day / 100;
         internal static TimeSpanInfo Millidi = Day / 1000;
         internal static TimeSpanInfo Microdi = Day / 1000000;
-        internal static TimeSpanInfo  Nanodi = Day / 1000000000; //Only Metric Time needed
+        internal static TimeSpanInfo Nanodi = Day / 1000000000; //Only Metric Time needed
         internal static TimeSpanInfo Sol = 1.02749125 * Day;
         internal static TimeSpanInfo week = Day * 7;
         internal static TimeSpanInfo month = week * 4;
@@ -43,7 +43,7 @@ namespace StarCalendar
         internal static TimeSpanInfo DoubleLeap = Leap + week;
         internal static TimeSpanInfo Sixyear = Year * 6 + week; //6 years, 313 weeks;
         internal static TimeSpanInfo Seventy_Eight = Sixyear * 13 + week; //78 years, 4070 weeks;
-        internal static TimeSpanInfo AverageYear  = Day * 365.256410256;
+        internal static TimeSpanInfo AverageYear = Day * 365.256410256;
         //internal static TimeSpanInfo SiderealYear = Day * 365.25636;
         internal static TimeSpanInfo SiderealYear = Seventy_Eight / 78;
         internal static TimeSpanInfo k = SiderealYear * 1000;
@@ -64,7 +64,7 @@ namespace StarCalendar
 
         internal static Dictionary<string, PlanetZone> Planets = new Dictionary<string, PlanetZone>();
         internal static Dictionary<string, StarSystem> StarSystems = new Dictionary<string, StarSystem>();
-        
+
 
         //internal static Dictionary<string, NaturalCycle> CachedCycles = new Dictionary<string, NaturalCycle>();
         internal static readonly TimeSpanInfo LunarMonth = Day * 29.53059;
@@ -89,11 +89,24 @@ namespace StarCalendar
         internal static readonly TimeSpanInfo NeptunianYear = (60182 * Day);
         internal static readonly TimeSpanInfo PlutonicYear = (90560 * Day);
 
-        private static List<Locale> getformats()
+        public static Zone Local
+        {
+            get
+            {
+                return Zone.Here;
+            }
+
+            //internal set
+            //{
+            //    local = value;
+            //}
+        }
+
+        private static List<CultureInfo> getformats()
         {
             int counter = 0;
             string line;
-            List<Locale> formats = new List<Locale>();
+            List<CultureInfo> formats = new List<CultureInfo>();
             string path = "Languages.csv";
             //int lastslash = Gedcom.LastIndexOf('/');
             //string Filename = Gedcom.Substring(lastslash + 1);
@@ -102,7 +115,7 @@ namespace StarCalendar
             while ((line = file.ReadLine()) != null)
             {
                 Console.WriteLine(line);
-                Locale form = new Locale(line);
+                CultureInfo form = new CultureInfo(line);
                 formats.Add(form);
                 counter++;
             }

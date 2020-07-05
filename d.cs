@@ -14,9 +14,9 @@ namespace StarCalendar
             return format;
         }
 
-        internal static Locale getlocale()
+        internal static CultureInfo getlocale()
         {
-            return Locale.GetLocale(lang);
+            return CultureInfo.GetLocale(lang);
         }
 
         //internal static string[] months = new string[14]

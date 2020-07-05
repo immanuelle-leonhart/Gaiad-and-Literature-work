@@ -62,11 +62,11 @@ namespace StarCalendar
             Console.WriteLine(aDate.ToString("HH:mm:ss"));
             Console.WriteLine(aDate.ToString("yyyy MMMM"));
             Dictionary<string, TimeSpanInfo> times = new Dictionary<string, TimeSpanInfo>();
-            StarDate dt = StarDate.UtcNow;
+            //StarDate dt = StarDate.UtcNow;
             times.Add("atomic", dt.atomic);
-            times.Add("radio", dt.radio);
-            times.Add("Terra", dt.terra);
-
+            times.Add("radio", dt.Radio);
+            times.Add("terra", dt.Terra);
+            times.Add("arrival", dt.Arrival);
         }
     }
 }

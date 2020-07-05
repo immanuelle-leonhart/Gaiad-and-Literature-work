@@ -7,7 +7,7 @@ using System;
 
 namespace StarCalendar
 {
-    internal class StarDateTimeFormatInfo
+    public class StarDateTimeFormatInfo
     {
         internal string[] AbbreviatedDayNames;
         internal string[] AbbreviatedMonthNames;

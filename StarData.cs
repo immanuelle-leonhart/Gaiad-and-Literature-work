@@ -17,9 +17,13 @@ namespace StarCalendar
         public TimeSpanInfo error;
         private int arraylength;
         internal Zone timeZone;
+        private bool hasTimeZone;
+        private bool complexTimeZone;
+        private bool isTerran;
 
         public StarData(string v)
         {
+
             switch (v)
             {
                 case "UTC":
@@ -29,8 +33,12 @@ namespace StarCalendar
                     this.timeZone = Zone.Here;
                     break;
                 default:
+                    this.timeZone = Zone.FindTimeZone(v);
                     break;
             }
+            this.note = "";
+            this.arraylength = 10;
+            this.error = new TimeSpanInfo(0);
         }
 
         public StarData(int arraylength)
@@ -65,23 +73,42 @@ namespace StarCalendar
                     break;
             }
 
-            //assign timezones
-
-            //this.timeZone = c.UTC;
-
-            //assign notes
-
-            //this.Note = "";
-
-            //assign unified metadata
+            this.note = "";
+            this.timeZone = c.UTC;
         }
 
         public StarData(Zone uTC)
         {
             this.timeZone = uTC;
+            this.note = "";
+            this.error = new TimeSpanInfo(0);
+            this.arraylength = 10;
         }
 
         public static StarData Standard { get; internal set; }
         public static StarData Utc { get; internal set; }
+        public bool IsTerran
+        {
+            get
+            {
+                return timeZone.IsTerran;
+            }
+        }
+        public bool ComplexTimeZone
+        {
+            get
+            {
+                return timeZone.ComplexTimeZone;
+            }
+
+        }
+        public bool HasTimeZone
+        {
+            get
+            {
+                return timeZone.hasTimeZone;
+            }
+
+        }
     }
 }

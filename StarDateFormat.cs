@@ -802,7 +802,7 @@ namespace StarCalendar
                     // accurate than the system's current offset because of daylight saving time.
                     offset = Zone.GetLocalUtcOffset(StarDate.Now);
                 }
-                else if (StarDate.GetKind() == StarData.Utc)
+                else if (StarDate.TimeZone == c.UTC)
                 {
 #if FEATURE_CORECLR
                     offset = TimeSpanInfo.Zero;
@@ -851,7 +851,7 @@ namespace StarCalendar
         }
 
         // output the 'K' format, which is for round-tripping the data
-        private static void FormatCustomizedRoundripTimeZone(StarDate StarDate, TimeSpanInfo offset, StringBuilder result)
+        private static void FormatCustomizedRoundripTimeZone(StarDate dt, TimeSpanInfo offset, StringBuilder result)
         {
 
             // The objective of this format is to round trip the data in the type
@@ -861,13 +861,13 @@ namespace StarCalendar
             if (offset == NullOffset)
             {
                 // source is a date time, so behavior depends on the metadata.
-                if (StarDate.GetKind() == StarData.Local)
+                if (dt.TimeZone == c.Local)
                 {
                     // This should output the local offset, e.g. "-07:30"
-                    offset = Zone.GetLocalUtcOffset(StarDate, ZoneOptions.NoThrowOnInvalidTime);
+                    offset = Zone.GetLocalUtcOffset(dt, ZoneOptions.NoThrowOnInvalidTime);
                     // fall through to shared time zone output code
                 }
-                else if (StarDate.GetKind() == StarData.Utc)
+                else if (dt.TimeZone == c.UTC)
                 {
                     // The 'Z' constant is a marker for a UTC date
                     result.Append("Z");
@@ -975,7 +975,7 @@ namespace StarCalendar
                         // Convert to UTC invariants mean this will be in range
                         StarDate = StarDate - offset;
                     }
-                    else if (StarDate.GetKind() == StarData.Local)
+                    else if (StarDate.TimeZone == c.Local)
                     {
 
                         InvalidFormatForLocal(format, StarDate);

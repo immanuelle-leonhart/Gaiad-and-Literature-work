@@ -11,6 +11,10 @@ namespace StarCalendar
         private TimeSpanInfo extraterrestrialoffset;
         public static Zone Here = new Zone(TimeZoneInfo.Local);
 
+        public bool IsTerran { get; internal set; }
+        public bool ComplexTimeZone { get; internal set; }
+        public bool hasTimeZone { get; internal set; }
+
 
         //private PlanetZone planet;
 
@@ -441,6 +445,41 @@ namespace StarCalendar
         }
 
         internal static TimeSpanInfo GetLocalUtcOffset(StarDate starDate)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal TimeSpanInfo ToRadio(TimeSpanInfo atomic)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal TimeSpanInfo FromRadio(TimeSpanInfo value)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal TimeSpanInfo ToTerran(TimeSpanInfo atomic)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal TimeSpanInfo FromTerran(TimeSpanInfo value)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal TimeSpanInfo ToArrival(TimeSpanInfo atomic)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal TimeSpanInfo FromArrival(TimeSpanInfo value)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal TimeSpanInfo Offset(DateTime dateTime)
         {
             throw new NotImplementedException();
         }

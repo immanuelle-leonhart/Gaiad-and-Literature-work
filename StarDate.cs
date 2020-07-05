@@ -18,6 +18,13 @@ namespace StarCalendar
     {
         public TimeSpanInfo atomic;
         private StarData metadata;
+        //private bool isTerran;
+        //private bool complexTimeZone;
+        //private bool hasTimeZone;
+
+        //private TimeSpanInfo radio;
+        //private TimeSpanInfo terra;
+        //private TimeSpanInfo arrival;
 
         internal static int DayFromMonth(int day)
         {
@@ -32,7 +39,7 @@ namespace StarCalendar
             return new StarDate(GregHanukkah());
         }
 
-        private static void DemonstrateLanguage(Locale lang, string format)
+        private static void DemonstrateLanguage(CultureInfo lang, string format)
         {
             //StarDate.SetFormat("numeric");
             StarDate dt = c.maya;
@@ -199,7 +206,7 @@ namespace StarCalendar
 
 
 
-        
+
 
         public int Hour
         {
@@ -244,7 +251,8 @@ namespace StarCalendar
         }
         public static StarDate UtcNow
         {
-            get {
+            get
+            {
                 return new StarDate(DateTime.UtcNow, StarData.Local);
             }
         }
@@ -397,7 +405,7 @@ namespace StarCalendar
             throw new NotImplementedException();
         }
 
-        private string GetMonthName(int month, Locale locale)
+        private string GetMonthName(int month, CultureInfo locale)
         {
             throw new NotImplementedException();
         }
@@ -436,7 +444,7 @@ namespace StarCalendar
             }
         }
 
-        private string GetWeekDayName(int weekInt, Locale locale)
+        private string GetWeekDayName(int weekInt, CultureInfo locale)
         {
             throw new NotImplementedException();
         }
@@ -498,7 +506,8 @@ namespace StarCalendar
 
         public Zone TimeZone
         {
-            get {
+            get
+            {
                 try
                 {
                     return this.metadata.timeZone;
@@ -513,6 +522,67 @@ namespace StarCalendar
             {
                 this.metadata.timeZone = value;
             }
+        }
+
+        public TimeSpanInfo Radio
+        {
+            get
+            {
+                return this.TimeZone.ToRadio(this.atomic);
+            }
+
+            internal set
+            {
+                this.atomic = this.TimeZone.FromRadio(value);
+            }
+        }
+        public TimeSpanInfo Terra
+        {
+            get
+            {
+                return this.TimeZone.ToTerran(this.atomic);
+            }
+
+            internal set
+            {
+                this.atomic = this.TimeZone.FromTerran(value);
+            }
+        }
+        public TimeSpanInfo Arrival
+        {
+            get
+            {
+                return this.TimeZone.ToArrival(this.atomic);
+            }
+
+            internal set
+            {
+                this.atomic = this.TimeZone.FromArrival(value);
+            }
+        }
+
+        public bool IsTerran
+        {
+            get
+            {
+                return this.metadata.IsTerran;
+            }
+        }
+        public bool ComplexTimeZone
+        {
+            get
+            {
+                return this.metadata.ComplexTimeZone;
+            }
+
+        }
+        public bool HasTimeZone
+        {
+            get
+            {
+                return this.metadata.HasTimeZone;
+            }
+
         }
 
         public StarDate(DateTime utcNow)
@@ -860,7 +930,7 @@ namespace StarCalendar
             data[1]--;
             data[2]--; //The 1st of a Month is actually zero days, so subtract one from the day, same for months
             this.atomic += data[1] * c.month + data[2] * c.Day + data[3] * c.Hour + data[4] * c.Minute + data[5] * c.Second + data[6] * c.Millisecond + new TimeSpanInfo(data[7]);
-            
+
 
             metadata = new StarData(n);
         }
@@ -1165,14 +1235,14 @@ namespace StarCalendar
             return this.ToString(d.getlocale(), d.defaultformat());
         }
 
-        public string ToString(Locale local)
+        public string ToString(CultureInfo local)
         {
             return this.ToString(local, d.defaultformat());
         }
 
         public string ToString(string format, string lang)
         {
-            return this.ToString(Locale.GetLocale(lang), format);
+            return this.ToString(CultureInfo.GetLocale(lang), format);
         }
 
         public string ToString(string format)
@@ -1180,7 +1250,7 @@ namespace StarCalendar
             return this.ToString(d.getlocale(), format);
         }
 
-        public string ToString(Locale local, string format)
+        public string ToString(CultureInfo local, string format)
         {
             return local.StarDateString(this.LocalData(), format);
         }
@@ -1230,7 +1300,7 @@ namespace StarCalendar
         //    return monthname(d.getlocale());
         //}
 
-        //public string monthname(Locale format)
+        //public string monthname(CultureInfo format)
         //{
         //    return format.Month(this.Month());
         //}
@@ -1240,7 +1310,7 @@ namespace StarCalendar
         //    return this.DayOfWeek(d.getlocale());
         //}
 
-        //public string DayOfWeek(Locale format)
+        //public string DayOfWeek(CultureInfo format)
         //{
         //    return format.weekday(StarDate.DayFromMonth(this.day()));
         //}
@@ -1251,16 +1321,33 @@ namespace StarCalendar
 
         private Dictionary<string, int> LocalData(string length)
         {
-            StarDate adjusted = this;
-            try
-            {
-                adjusted = this.TimeZone.Convert(this);
-            }
-            catch (Exception)
-            {
-
-            }
+            StarDate adjusted = this.Localize();
             return adjusted.Data(length);
+        }
+
+        private StarDate Localize()
+        {
+            if (!this.IsTerran)
+            {
+                return this;
+            }
+            else if (this.ComplexTimeZone)
+            {
+                return this + this.GetOffset();
+            }
+            else if (this.HasTimeZone)
+            {
+                return this + this.TimeZone.Offset(this.Convert());
+            }
+            else
+            {
+                return this;
+            }
+        }
+
+        private TimeSpanInfo GetOffset()
+        {
+            throw new NotImplementedException();
         }
 
         private Dictionary<string, int> Data()
