@@ -836,16 +836,16 @@ namespace StarCalendar
             if (tokenLen <= 1)
             {
                 // 'z' format e.g "-7"
-                result.AppendFormat(CultureInfo.InvariantCulture.GetFormat(), "{0:0}", offset.GetHours());
+                result.AppendFormat(CultureInfo.InvariantCulture.GetFormat(), "{0:0}", offset.Hours);
             }
             else
             {
                 // 'zz' or longer format e.g "-07"
-                result.AppendFormat(CultureInfo.InvariantCulture.GetFormat(), "{0:00}", offset.GetHours());
+                result.AppendFormat(CultureInfo.InvariantCulture.GetFormat(), "{0:00}", offset.Hours);
                 if (tokenLen >= 3)
                 {
                     // 'zzz*' or longer format e.g "-07:30"
-                    result.AppendFormat(CultureInfo.InvariantCulture.GetFormat(), ":{0:00}", offset.GetMinutes());
+                    result.AppendFormat(CultureInfo.InvariantCulture.GetFormat(), ":{0:00}", offset.Minutes);
                 }
             }
         }
@@ -890,7 +890,7 @@ namespace StarCalendar
                 offset = offset.Negate();
             }
 
-            result.AppendFormat(CultureInfo.InvariantCulture.GetFormat(), "{0:00}:{1:00}", offset.GetHours(), offset.GetMinutes());
+            result.AppendFormat(CultureInfo.InvariantCulture.GetFormat(), "{0:00}:{1:00}", offset.Hours, offset.Minutes);
         }
 
 

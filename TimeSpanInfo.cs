@@ -12,29 +12,21 @@ namespace StarCalendar
 
         public static TimeSpanInfo MinValue { get; internal set; }
         public static int TicksPerSecond { get; internal set; }
-
-        private object hours;
-
-        public object GetHours()
+        public int Hours
         {
-            return hours;
+            get { return hours; }
+            internal set
+            {
+                hours = value;
+            }
         }
-
-        internal void SetHours(object value)
+        public int Minutes
         {
-            hours = value;
-        }
-
-        private object minutes;
-
-        public object GetMinutes()
-        {
-            return minutes;
-        }
-
-        internal void SetMinutes(object value)
-        {
-            minutes = value;
+            get { return minutes; }
+            internal set
+            {
+                minutes = value;
+            }
         }
 
         public TimeSpanInfo(long ticks)
@@ -83,7 +75,7 @@ namespace StarCalendar
             BigInteger big = t1.ticks / t2.ticks;
             d += (int)big;
             return d;
-            
+
         }
 
         public static TimeSpanInfo operator /(TimeSpanInfo t, BigInteger i)
@@ -151,7 +143,7 @@ namespace StarCalendar
 
         public TimeSpan timespan()
         {
-            return new TimeSpan((long) this.ticks);
+            return new TimeSpan((long)this.ticks);
         }
 
         public static bool operator ==(TimeSpanInfo t1, TimeSpanInfo t2)
