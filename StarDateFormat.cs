@@ -144,7 +144,7 @@ namespace StarCalendar
     {
 
         internal const int MaxSecondsFractionDigits = 7;
-        internal static readonly TimeSpanInfo NullOffset = TimeSpanInfo.MinValue;
+        internal static readonly TimeSpanInfo NullOffset = new TimeSpanInfo(0);
 
         internal static char[] allStandardFormats =
         {

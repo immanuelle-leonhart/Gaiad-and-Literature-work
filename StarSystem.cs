@@ -7,8 +7,8 @@ namespace StarCalendar
     public class StarSystem
     {
         //private static string type = "standard";
-        //public BigInteger atomicTicks; //atomic atomicTime ticks
-        public StarDate startDate; //atomicTime that movement starts
+        //public BigInteger atomicTicks; //atomic atomic ticks
+        public StarDate startDate; //atomic that movement starts
         public List<BigInteger> distanceTicks = new List<BigInteger>(); //position, speed, acceleration, etc
         public List<double> polar = new List<double>(); //position, speed, acceleration, etc
         public List<double> azimuthal = new List<double>(); //position, speed, acceleration, etc

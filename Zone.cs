@@ -9,11 +9,8 @@ namespace StarCalendar
         public PlanetZone planet;
         private TimeZoneInfo terranTimeZone;
         private TimeSpanInfo extraterrestrialoffset;
+        public static Zone Here = new Zone(TimeZoneInfo.Local);
 
-        internal static Zone Here()
-        {
-            return new Zone(TimeZoneInfo.Local);
-        }
 
         //private PlanetZone planet;
 
@@ -34,6 +31,11 @@ namespace StarCalendar
             this.planet = c.Terra;
         }
 
+        internal static Zone FindTimeZone(string v)
+        {
+            throw new NotImplementedException();
+        }
+
         public Zone(PlanetZone planet)
         {
             this.planet = planet;
@@ -52,7 +54,7 @@ namespace StarCalendar
             throw new NotImplementedException();
         }
 
-        
+
 
         internal bool IsDaylightSavingTime(StarDate starDate)
         {
@@ -96,7 +98,7 @@ namespace StarCalendar
                     {
                         //Console.WriteLine(zone);
                     }
-                    TimeZoneInfo timeZone = TimeZoneInfo.CreateCustomTimeZone("custom_data timezone " + offset, new TimeSpan((long) offset.ticks), "custom_data timezone " + offset, "custom_data timezone " + offset);
+                    TimeZoneInfo timeZone = TimeZoneInfo.CreateCustomTimeZone("custom_data timezone " + offset, new TimeSpan((long)offset.ticks), "custom_data timezone " + offset, "custom_data timezone " + offset);
                     this.terranTimeZone = timeZone;
                 }
                 else
@@ -149,7 +151,7 @@ namespace StarCalendar
                 {
                     return new TimeSpanInfo(this.terranTimeZone.GetUtcOffset(dt.Convert()));
                 }
-                catch(Exception)
+                catch (Exception)
                 {
                     return new TimeSpanInfo(this.terranTimeZone.BaseUtcOffset);
                 }
@@ -221,15 +223,15 @@ namespace StarCalendar
                     TimeSpanInfo offset = (TimeSpanInfo)this.terranTimeZone.BaseUtcOffset;
                     return input + offset;
                 }
-                
+
             }
             else
             {
                 return input + this.extraterrestrialoffset;
             }
-            
-            
-            
+
+
+
         }
 
         public override string ToString()
@@ -243,7 +245,7 @@ namespace StarCalendar
         //}
 
         public string Name()
-    {
+        {
             switch (this.planet.Name)
             {
                 case "Terra":
@@ -314,7 +316,7 @@ namespace StarCalendar
                     }
                 default:
                     string name = this.planet.Name;
-                    int offset = (int) (this.Offset() / c.Hour);
+                    int offset = (int)(this.Offset() / c.Hour);
                     string offsetstring;
                     if (offset < 0)
                     {
@@ -346,7 +348,7 @@ namespace StarCalendar
                 TimeSpanInfo time = hours * c.Hour;
                 return new Zone(time, c.Terra);
             }
-            else if(prim.Substring(0, 3) == "MTC")
+            else if (prim.Substring(0, 3) == "MTC")
             {
                 int hours = int.Parse(prim.Substring(3));
                 TimeSpanInfo time = hours * c.Hour;

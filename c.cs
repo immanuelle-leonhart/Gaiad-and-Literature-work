@@ -21,10 +21,15 @@ namespace StarCalendar
         internal static Zone UTC = new Zone();
 
         internal static TimeSpanInfo Millisecond = new TimeSpanInfo(10000);
+        internal static int TicksPerMillisecond = 10000;
         internal static TimeSpanInfo Second = Millisecond * 1000;
+        internal static int TicksPerSecond = TicksPerMillisecond * 1000;
         internal static TimeSpanInfo Minute = Second * 60;
+        internal static int TicksPerMinute = TicksPerSecond * 60;
         internal static TimeSpanInfo Hour = Minute * 60;
+        internal static int TicksPerHour = TicksPerMinute * 60;
         internal static TimeSpanInfo Day = Hour * 24;
+        internal static int TicksPerDay = TicksPerHour * 24;
         internal static TimeSpanInfo Decidi = Day / 10;
         internal static TimeSpanInfo Centidi = Day / 100;
         internal static TimeSpanInfo Millidi = Day / 1000;
@@ -45,7 +50,7 @@ namespace StarCalendar
         internal static TimeSpanInfo m = k * 1000;
         internal static TimeSpanInfo b = m * 1000;
         internal static TimeSpanInfo a = 200 * m;
-        internal static StarDate manu = new StarDate(14 * b, UTC);
+        internal static StarDate manu = StarDate.AbstractDate(14 * b);
         internal static StarDate maya = manu + 154 * Seventy_Eight; //10k BC + 154 * 78 = 12012
         internal static DateTime maya_net = new DateTime(2011, 12, 26); //2011-12-26
         //internal static DateTime new_year_12018 = new DateTime(2017, 12, 18, 0, 0, 0, DateTimeKind.Utc); //Sunday Saggittarius 1, 12013
@@ -59,7 +64,7 @@ namespace StarCalendar
 
         internal static Dictionary<string, PlanetZone> Planets = new Dictionary<string, PlanetZone>();
         internal static Dictionary<string, StarSystem> StarSystems = new Dictionary<string, StarSystem>();
-        internal static int TicksPerDay;
+        
 
         //internal static Dictionary<string, NaturalCycle> CachedCycles = new Dictionary<string, NaturalCycle>();
         internal static readonly TimeSpanInfo LunarMonth = Day * 29.53059;

@@ -1,0 +1,13 @@
+C:\Users\ericr\OneDrive\Documents\Github\StarDate\StarDate\obj\Debug\netcoreapp3.1\StarDate.csprojAssemblyReference.cache
+C:\Users\ericr\OneDrive\Documents\Github\StarDate\StarDate\obj\Debug\netcoreapp3.1\StarDate.csproj.CoreCompileInputs.cache
+C:\Users\ericr\OneDrive\Documents\Github\StarDate\StarDate\obj\Debug\netcoreapp3.1\StarDate.AssemblyInfoInputs.cache
+C:\Users\ericr\OneDrive\Documents\Github\StarDate\StarDate\obj\Debug\netcoreapp3.1\StarDate.AssemblyInfo.cs
+C:\Users\ericr\OneDrive\Documents\Github\StarDate\StarDate\bin\Debug\netcoreapp3.1\StarDate.exe
+C:\Users\ericr\OneDrive\Documents\Github\StarDate\StarDate\bin\Debug\netcoreapp3.1\StarDate.deps.json
+C:\Users\ericr\OneDrive\Documents\Github\StarDate\StarDate\bin\Debug\netcoreapp3.1\StarDate.runtimeconfig.json
+C:\Users\ericr\OneDrive\Documents\Github\StarDate\StarDate\bin\Debug\netcoreapp3.1\StarDate.runtimeconfig.dev.json
+C:\Users\ericr\OneDrive\Documents\Github\StarDate\StarDate\bin\Debug\netcoreapp3.1\StarDate.dll
+C:\Users\ericr\OneDrive\Documents\Github\StarDate\StarDate\bin\Debug\netcoreapp3.1\StarDate.pdb
+C:\Users\ericr\OneDrive\Documents\Github\StarDate\StarDate\obj\Debug\netcoreapp3.1\StarDate.dll
+C:\Users\ericr\OneDrive\Documents\Github\StarDate\StarDate\obj\Debug\netcoreapp3.1\StarDate.pdb
+C:\Users\ericr\OneDrive\Documents\Github\StarDate\StarDate\obj\Debug\netcoreapp3.1\StarDate.genruntimeconfig.cache
