@@ -4,14 +4,15 @@
 //
 // ==--==
 using System;
+using System.Globalization;
 
 namespace StarCalendar
 {
-    public class StarDateTimeFormatInfo
+    public class StarDateFormat1
     {
         internal string[] AbbreviatedDayNames;
         internal string[] AbbreviatedMonthNames;
-        internal static StarDateTimeFormatInfo InvariantInfo;
+        //internal static StarDateFormat InvariantInfo;
 
         public object Calendar { get; internal set; }
         public string ShortDatePattern { get; internal set; }
@@ -43,12 +44,17 @@ namespace StarCalendar
             throw new NotImplementedException();
         }
 
+        internal string Format(StarDate dt, string format, DateTimeFormatInfo currentInfo)
+        {
+            throw new NotImplementedException();
+        }
+
         internal string GetMonthName(int month)
         {
             throw new NotImplementedException();
         }
 
-        internal StarDateTimeFormatInfo Clone()
+        internal StarDateFormat Clone()
         {
             throw new NotImplementedException();
         }

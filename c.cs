@@ -8,7 +8,7 @@ namespace StarCalendar
 {
     internal static class c
     {
-        internal static List<CultureInfo> formats = getformats();
+        //internal static List<CultureInfo> formats = getformats();
 
         internal static TimeSpanInfo Millisecond = new TimeSpanInfo(10000);
         internal static int TicksPerMillisecond = 10000;
@@ -92,24 +92,6 @@ namespace StarCalendar
             //}
         }
 
-        private static List<CultureInfo> getformats()
-        {
-            int counter = 0;
-            string line;
-            List<CultureInfo> formats = new List<CultureInfo>();
-            string path = "Languages.csv";
-            //int lastslash = Gedcom.LastIndexOf('/');
-            //string Filename = Gedcom.Substring(lastslash + 1);
-            //Gedson ged = new Gedson();
-            System.IO.StreamReader file = new StreamReader(path);
-            while ((line = file.ReadLine()) != null)
-            {
-                //Console.WriteLine(line);
-                CultureInfo form = new CultureInfo(line);
-                formats.Add(form);
-                counter++;
-            }
-            return formats;
-        }
+        
     }
 }

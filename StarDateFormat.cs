@@ -139,8 +139,7 @@ namespace StarCalendar
     */
 
     //This class contains only static members and does not require the serializable attribute.
-    internal static
-    class StarDateFormat
+    public class StarDateFormat
     {
 
         internal const int MaxSecondsFractionDigits = 7;
@@ -158,7 +157,7 @@ namespace StarCalendar
 
         private const int DEFAULT_ALL_StarDateS_SIZE = 132;
 
-        internal static readonly StarDateTimeFormatInfo InvariantFormatInfo = CultureInfo.InvariantCulture.StarDateFormat;
+        internal static readonly StarDateFormat InvariantFormatInfo = CultureInfo.InvariantCulture.StarDateFormat;
         internal static readonly string[] InvariantAbbreviatedMonthNames = InvariantFormatInfo.AbbreviatedMonthNames;
         internal static readonly string[] InvariantAbbreviatedDayNames = InvariantFormatInfo.AbbreviatedDayNames;
         internal const string Gmt = "GMT";
@@ -174,6 +173,10 @@ namespace StarCalendar
         };
 
         public static StarStringBuilderCache StringBuilderCache { get; private set; }
+        public StarDateFormat CurrentInfo { get; internal set; }
+        public string[] AbbreviatedMonthNames { get; private set; }
+        public string[] AbbreviatedDayNames { get; private set; }
+        public static StarDateFormat InvariantInfo { get; private set; }
 
         ////////////////////////////////////////////////////////////////////////////
         //
@@ -245,28 +248,48 @@ namespace StarCalendar
             return (index - pos);
         }
 
-        private static String FormatDayOfWeek(int dayOfWeek, int repeat, StarDateTimeFormatInfo dtfi)
+        private static String FormatDayOfWeek(int dayOfWeek, int repeat, StarDateFormatInfo sdfi)
         {
             Contract.Assert(dayOfWeek >= 0 && dayOfWeek <= 6, "dayOfWeek >= 0 && dayOfWeek <= 6");
             if (repeat == 3)
             {
-                return (dtfi.GetAbbreviatedDayName((DayOfWeek)dayOfWeek));
+                return (sdfi.GetAbbreviatedDayName((DayOfWeek)dayOfWeek));
             }
-            // Call dtfi.GetDayName() here, instead of accessing DayNames property, because we don't
+            // Call sdfi.GetDayName() here, instead of accessing DayNames property, because we don't
             // want a clone of DayNames, which will hurt perf.
-            return (dtfi.GetDayName((DayOfWeek)dayOfWeek));
+            return (sdfi.GetDayName((DayOfWeek)dayOfWeek));
         }
 
-        private static String FormatMonth(int month, int repeatCount, StarDateTimeFormatInfo dtfi)
+        private string GetDayName(DayOfWeek dayOfWeek)
+        {
+            throw new NotImplementedException();
+        }
+
+        private string GetAbbreviatedDayName(DayOfWeek dayOfWeek)
+        {
+            throw new NotImplementedException();
+        }
+
+        private static String FormatMonth(int month, int repeatCount, StarDateFormatInfo sdfi)
         {
             Contract.Assert(month >= 1 && month <= 12, "Month >=1 && Month <= 12");
             if (repeatCount == 3)
             {
-                return (dtfi.GetAbbreviatedMonthName(month));
+                return (sdfi.GetAbbreviatedMonthName(month));
             }
             // Call month() here, instead of accessing MonthNames property, because we don't
             // want a clone of MonthNames, which will hurt perf.
-            return (dtfi.GetMonthName(month));
+            return (sdfi.GetMonthName(month));
+        }
+
+        private string GetMonthName(int month)
+        {
+            throw new NotImplementedException();
+        }
+
+        private string GetAbbreviatedMonthName(int month)
+        {
+            throw new NotImplementedException();
         }
 
         //
@@ -278,12 +301,12 @@ namespace StarCalendar
         //        time   the time to format
         //        Month  The Month is the value of HebrewCalendar.GetMonth(time).
         //        repeat Return abbreviated Month StarName if repeat=3, or full Month StarName if repeat=4
-        //        dtfi    The StarDateTimeFormatInfo which uses the Hebrew calendars as its calendar.
+        //        sdfi    The StarDateFormat which uses the Hebrew calendars as its calendar.
         //  Exceptions: None.
         //
 
         /* Note:
-            If DTFI is using Hebrew calendar, month()/GetAbbreviatedMonthName() will return Month names like this:
+            If sdfi is using Hebrew calendar, month()/GetAbbreviatedMonthName() will return Month names like this:
             1   Hebrew 1st Month
             2   Hebrew 2nd Month
             ..  ...
@@ -298,13 +321,13 @@ namespace StarCalendar
 
             Therefore, if we are in a regular year, we have to increment the Month StarName if moth is greater or eqaul to 7.
         */
-        //private static String FormatHebrewMonthName(StarDate time, int Month, int repeatCount, StarDateTimeFormatInfo dtfi)
+        //private static String FormatHebrewMonthName(StarDate time, int Month, int repeatCount, StarDateFormatInfo sdfi)
         //{
         //    Contract.Assert(repeatCount != 3 || repeatCount != 4, "repeateCount should be 3 or 4");
-        //    if (dtfi.Calendar.IsLeapYear(dtfi.Calendar.GetYear(time)))
+        //    if (sdfi.Calendar.IsLeapYear(sdfi.Calendar.GetYear(time)))
         //    {
         //        // This Month is in a leap year
-        //        return (dtfi.internalGetMonthName(Month, MonthNameStyles.LeapYear, (repeatCount == 3)));
+        //        return (sdfi.internalGetMonthName(Month, MonthNameStyles.LeapYear, (repeatCount == 3)));
         //    }
         //    // This is in a regular year.
         //    if (Month >= 7)
@@ -313,9 +336,9 @@ namespace StarCalendar
         //    }
         //    if (repeatCount == 3)
         //    {
-        //        return (dtfi.GetAbbreviatedMonthName(Month));
+        //        return (sdfi.GetAbbreviatedMonthName(Month));
         //    }
-        //    return (dtfi.month(Month));
+        //    return (sdfi.month(Month));
         //}
 
         //
@@ -356,7 +379,7 @@ namespace StarCalendar
                         //
                         // This means that '\' is at the end of the formatting string.
                         //
-                        Console.WriteLine("throw new FormatException(StarEnvironment.GetResourceString(" + " Format_InvalidString" + "));");
+                        Console.WriteLine("throw new FormatException(StarLEnvironment.GetResourceString(" + " Format_InvalidString" + "));");
                         throw new NotImplementedException();
                     }
                 }
@@ -372,7 +395,7 @@ namespace StarCalendar
                 //throw new FormatException(
                 //        String.Format(
                 //            CultureInfo.CurrentCulture,
-                //            StarEnvironment.GetResourceString("Format_BadQuote"), quoteChar));
+                //            StarLEnvironment.GetResourceString("Format_BadQuote"), quoteChar));
                 throw new NotImplementedException();
             }
 
@@ -472,11 +495,11 @@ namespace StarCalendar
         //
         //  Actions: Format the StarDate instance using the specified format.
         //
-        private static String FormatCustomized(StarDate StarDate, String format, StarDateTimeFormatInfo dtfi, TimeSpanInfo offset)
+        private static String FormatCustomized(StarDate StarDate, String format, StarDateFormatInfo sdfi, TimeSpanInfo offset)
         {
             throw new NotImplementedException();
 
-            //Calendar cal = dtfi.Calendar;
+            //Calendar cal = sdfi.Calendar;
             //StringBuilder result = StringBuilderCache.Acquire();
             //// This is a flag to indicate if we are format the dates using Hebrew calendar.
 
@@ -497,7 +520,7 @@ namespace StarCalendar
             //    {
             //        case 'g':
             //            tokenLen = ParseRepeatPattern(format, i, ch);
-            //            result.Append(dtfi.GetEraName(cal.GetEra(StarDate)));
+            //            result.Append(sdfi.GetEraName(cal.GetEra(StarDate)));
             //            break;
             //        case 'h':
             //            tokenLen = ParseRepeatPattern(format, i, ch);
@@ -562,7 +585,7 @@ namespace StarCalendar
             //            }
             //            else
             //            {
-            //                throw new FormatException(StarEnvironment.GetResourceString("Format_InvalidString"));
+            //                throw new FormatException(StarLEnvironment.GetResourceString("Format_InvalidString"));
             //            }
             //            break;
             //        case 't':
@@ -571,23 +594,23 @@ namespace StarCalendar
             //            {
             //                if (StarDate.Hour < 12)
             //                {
-            //                    if (dtfi.AMDesignator.Length >= 1)
+            //                    if (sdfi.AMDesignator.Length >= 1)
             //                    {
-            //                        result.Append(dtfi.AMDesignator[0]);
+            //                        result.Append(sdfi.AMDesignator[0]);
             //                    }
             //                }
             //                else
             //                {
-            //                    if (dtfi.PMDesignator.Length >= 1)
+            //                    if (sdfi.PMDesignator.Length >= 1)
             //                    {
-            //                        result.Append(dtfi.PMDesignator[0]);
+            //                        result.Append(sdfi.PMDesignator[0]);
             //                    }
             //                }
 
             //            }
             //            else
             //            {
-            //                result.Append((StarDate.Hour < 12 ? dtfi.AMDesignator : dtfi.PMDesignator));
+            //                result.Append((StarDate.Hour < 12 ? sdfi.AMDesignator : sdfi.PMDesignator));
             //            }
             //            break;
             //        case 'd':
@@ -614,7 +637,7 @@ namespace StarCalendar
             //            else
             //            {
             //                int dayOfWeek = (int)cal.GetDayOfWeek(StarDate);
-            //                result.Append(FormatDayOfWeek(dayOfWeek, tokenLen, dtfi));
+            //                result.Append(FormatDayOfWeek(dayOfWeek, tokenLen, sdfi));
             //            }
             //            bTimeOnly = false;
             //            break;
@@ -643,21 +666,21 @@ namespace StarCalendar
             //            {
             //                if (isHebrewCalendar)
             //                {
-            //                    result.Append(FormatHebrewMonthName(StarDate, Month, tokenLen, dtfi));
+            //                    result.Append(FormatHebrewMonthName(StarDate, Month, tokenLen, sdfi));
             //                }
             //                else
             //                {
-            //                    if ((dtfi.FormatFlags & StarDateFormatFlags.UseGenitiveMonth) != 0 && tokenLen >= 4)
+            //                    if ((sdfi.FormatFlags & StarDateFormatFlags.UseGenitiveMonth) != 0 && tokenLen >= 4)
             //                    {
             //                        result.Append(
-            //                            dtfi.internalGetMonthName(
+            //                            sdfi.internalGetMonthName(
             //                                Month,
             //                                IsUseGenitiveForm(format, i, tokenLen, 'd') ? MonthNameStyles.Genitive : MonthNameStyles.Regular,
             //                                false));
             //                    }
             //                    else
             //                    {
-            //                        result.Append(FormatMonth(Month, tokenLen, dtfi));
+            //                        result.Append(FormatMonth(Month, tokenLen, sdfi));
             //                    }
             //                }
             //            }
@@ -681,9 +704,9 @@ namespace StarCalendar
             //                // We are formatting a Japanese date with year equals 1 and the year number is followed by the year sign \u5e74
             //                // In Japanese dates, the first year in the era is not formatted as a number 1 instead it is formatted as \u5143 which means
             //                // first or beginning of the era.
-            //                result.Append(StarDateTimeFormatInfo.JapaneseEraStart[0]);
+            //                result.Append(StarDateFormat.JapaneseEraStart[0]);
             //            }
-            //            else if (dtfi.HasForceTwoDigitYears)
+            //            else if (sdfi.HasForceTwoDigitYears)
             //            {
             //                FormatDigits(result, year, tokenLen <= 2 ? tokenLen : 2);
             //            }
@@ -714,11 +737,11 @@ namespace StarCalendar
             //            FormatCustomizedRoundripTimeZone(StarDate, offset, result);
             //            break;
             //        case ':':
-            //            result.Append(dtfi.TimeSeparator);
+            //            result.Append(sdfi.TimeSeparator);
             //            tokenLen = 1;
             //            break;
             //        case '/':
-            //            result.Append(dtfi.DateSeparator);
+            //            result.Append(sdfi.DateSeparator);
             //            tokenLen = 1;
             //            break;
             //        case '\'':
@@ -736,7 +759,7 @@ namespace StarCalendar
             //            // Besides, we will not allow "%%" appear in the pattern.
             //            if (nextChar >= 0 && nextChar != (int)'%')
             //            {
-            //                result.Append(FormatCustomized(StarDate, ((char)nextChar).ToString(), dtfi, offset));
+            //                result.Append(FormatCustomized(StarDate, ((char)nextChar).ToString(), sdfi, offset));
             //                tokenLen = 2;
             //            }
             //            else
@@ -745,7 +768,7 @@ namespace StarCalendar
             //                // This means that '%' is at the end of the format string or
             //                // "%%" appears in the format string.
             //                //
-            //                throw new FormatException(StarEnvironment.GetResourceString("Format_InvalidString"));
+            //                throw new FormatException(StarLEnvironment.GetResourceString("Format_InvalidString"));
             //            }
             //            break;
             //        case '\\':
@@ -768,7 +791,7 @@ namespace StarCalendar
             //                //
             //                // This means that '\' is at the end of the formatting string.
             //                //
-            //                throw new FormatException(StarEnvironment.GetResourceString("Format_InvalidString"));
+            //                throw new FormatException(StarLEnvironment.GetResourceString("Format_InvalidString"));
             //            }
             //            break;
             //        default:
@@ -894,33 +917,33 @@ namespace StarCalendar
         }
 
 
-        internal static String GetRealFormat(String format, StarDateTimeFormatInfo dtfi)
+        internal static String GetRealFormat(String format, StarDateFormatInfo sdfi)
         {
             String realFormat = null;
 
             switch (format[0])
             {
                 case 'd':       // Short Date
-                    realFormat = dtfi.ShortDatePattern;
+                    realFormat = sdfi.ShortDatePattern;
                     break;
                 case 'D':       // Long Date
-                    realFormat = dtfi.LongDatePattern;
+                    realFormat = sdfi.LongDatePattern;
                     break;
                 case 'f':       // Full (long date + short time)
-                    realFormat = dtfi.LongDatePattern + " " + dtfi.ShortTimePattern;
+                    realFormat = sdfi.LongDatePattern + " " + sdfi.ShortTimePattern;
                     break;
                 case 'F':       // Full (long date + long time)
-                    realFormat = dtfi.FullStarDatePattern;
+                    realFormat = sdfi.FullStarDatePattern;
                     break;
                 case 'g':       // General (short date + short time)
-                    realFormat = dtfi.GeneralShortTimePattern;
+                    realFormat = sdfi.GeneralShortTimePattern;
                     break;
                 case 'G':       // General (short date + long time)
-                    realFormat = dtfi.GeneralLongTimePattern;
+                    realFormat = sdfi.GeneralLongTimePattern;
                     break;
                 case 'm':
                 case 'M':       // Month/Day Date
-                    realFormat = dtfi.MonthDayPattern;
+                    realFormat = sdfi.MonthDayPattern;
                     break;
                 case 'o':
                 case 'O':
@@ -928,30 +951,30 @@ namespace StarCalendar
                     break;
                 case 'r':
                 case 'R':       // RFC 1123 Standard
-                    realFormat = dtfi.RFC1123Pattern;
+                    realFormat = sdfi.RFC1123Pattern;
                     break;
                 case 's':       // Sortable without Time StarZone Info
-                    realFormat = dtfi.SortableStarDatePattern;
+                    realFormat = sdfi.SortableStarDatePattern;
                     break;
                 case 't':       // Short Time
-                    realFormat = dtfi.ShortTimePattern;
+                    realFormat = sdfi.ShortTimePattern;
                     break;
                 case 'T':       // Long Time
-                    realFormat = dtfi.LongTimePattern;
+                    realFormat = sdfi.LongTimePattern;
                     break;
                 case 'u':       // Universal with Sortable format
-                    realFormat = dtfi.UniversalSortableStarDatePattern;
+                    realFormat = sdfi.UniversalSortableStarDatePattern;
                     break;
                 case 'U':       // Universal with Full (long date + long time) format
-                    realFormat = dtfi.FullStarDatePattern;
+                    realFormat = sdfi.FullStarDatePattern;
                     break;
                 case 'y':
                 case 'Y':       // Year/Month Date
-                    realFormat = dtfi.YearMonthPattern;
+                    realFormat = sdfi.YearMonthPattern;
                     break;
                 default:
                     throw new NotImplementedException();
-                    //throw new FormatException(StarEnvironment.GetResourceString("Format_InvalidString"));
+                    //throw new FormatException(StarLEnvironment.GetResourceString("Format_InvalidString"));
             }
             return (realFormat);
         }
@@ -960,14 +983,14 @@ namespace StarCalendar
         // Expand a pre-defined format string (like "D" for long date) to the real format that
         // we are going to use in the date time parsing.
         // This method also convert the StarDate if necessary (e.g. when the format is in Universal time),
-        // and change dtfi if necessary (e.g. when the format should use invariant culture).
+        // and change sdfi if necessary (e.g. when the format should use invariant culture).
         //
-        private static String ExpandPredefinedFormat(String format, ref StarDate StarDate, ref StarDateTimeFormatInfo dtfi, ref TimeSpanInfo offset)
+        private static String ExpandPredefinedFormat(String format, ref StarDate StarDate, ref StarDateFormatInfo sdfi, ref TimeSpanInfo offset)
         {
             switch (format[0])
             {
                 case 's':       // Sortable without Time StarZone Info
-                    dtfi = StarDateTimeFormatInfo.InvariantInfo;
+                    sdfi = StarDateFormatInfo.InvariantInfo;
                     break;
                 case 'u':       // Universal time in sortable format.
                     if (offset != NullOffset)
@@ -980,39 +1003,46 @@ namespace StarCalendar
 
                         InvalidFormatForLocal(format, StarDate);
                     }
-                    dtfi = StarDateTimeFormatInfo.InvariantInfo;
+                    sdfi = StarDateFormatInfo.InvariantInfo;
                     break;
                 //case 'U':       // Universal time in culture dependent format.
                     //if (offset != NullOffset)
                     //{
                     //    // This format is not supported by StarDateOffset
-                    //    throw new FormatException(StarEnvironment.GetResourceString("Format_InvalidString"));
+                    //    throw new FormatException(StarLEnvironment.GetResourceString("Format_InvalidString"));
                     //}
                     //// Universal time is always in Greogrian calendar.
                     ////
                     //// Change the Calendar to be Gregorian Calendar.
                     ////
-                    //dtfi = (StarDateTimeFormatInfo)dtfi.Clone();
-                    //if (dtfi.Calendar.GetType() != typeof(GregorianCalendar))
+                    //sdfi = (StarDateFormat)sdfi.Clone();
+                    //if (sdfi.Calendar.GetType() != typeof(GregorianCalendar))
                     //{
-                    //    dtfi.Calendar = GregorianCalendar.GetDefaultInstance();
+                    //    sdfi.Calendar = GregorianCalendar.GetDefaultInstance();
                     //}
                     //StarDate = StarDate.ToUniversalTime();
                     //break;
             }
-            format = GetRealFormat(format, dtfi);
+            format = GetRealFormat(format, sdfi);
             return (format);
         }
 
-        internal static String Format(StarDate StarDate, String format, StarDateTimeFormatInfo dtfi)
+        //private static string GetRealFormat(string format, StarDateFormatInfo sdfi)
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+        internal static String Format(StarDate StarDate, String format, StarDateFormatInfo sdfi)
         {
-            return Format(StarDate, format, dtfi, NullOffset);
+            Console.WriteLine(format);
+            //throw new NotImplementedException();
+            return Format(StarDate, format, sdfi, NullOffset);
         }
 
 
-        internal static String Format(StarDate StarDate, String format, StarDateTimeFormatInfo dtfi, TimeSpanInfo offset)
+        internal static String Format(StarDate StarDate, String format, StarDateFormatInfo sdfi, TimeSpanInfo offset)
         {
-            Contract.Requires(dtfi != null);
+            Contract.Requires(sdfi != null);
             if (format == null || format.Length == 0)
             {
                 Boolean timeOnlySpecialCase = false;
@@ -1031,7 +1061,7 @@ namespace StarCalendar
                     // thrown when we try to get the Japanese year for Gregorian year 0001.
                     // Therefore, the workaround allows them to call ToString() for time of day from a StarDate by
                     // formatting as ISO 8601 format.
-                    //switch (dtfi.Calendar.ID)
+                    //switch (sdfi.Calendar.ID)
                     //{
                     //    case Calendar.CAL_JAPAN:
                     //    case Calendar.CAL_TAIWAN:
@@ -1041,7 +1071,7 @@ namespace StarCalendar
                     //    case Calendar.CAL_UMALQURA:
                     //    case Calendar.CAL_PERSIAN:
                     //        timeOnlySpecialCase = true;
-                    //        dtfi = StarDateTimeFormatInfo.InvariantInfo;
+                    //        sdfi = StarDateFormatInfo.InvariantInfo;
                     //        break;
                     //}
                 }
@@ -1066,7 +1096,7 @@ namespace StarCalendar
                     }
                     else
                     {
-                        format = dtfi.StarDateOffsetPattern;
+                        format = sdfi.StarDateOffsetPattern;
                     }
 
                 }
@@ -1082,16 +1112,16 @@ namespace StarCalendar
                         return StringBuilderCache.GetStringAndRelease(FastFormatRoundtrip(StarDate, offset));
                     case 'R':
                     case 'r':
-                        return StringBuilderCache.GetStringAndRelease(FastFormatRfc1123(StarDate, offset, dtfi));
+                        return StringBuilderCache.GetStringAndRelease(FastFormatRfc1123(StarDate, offset, sdfi));
                 }
 
-                format = ExpandPredefinedFormat(format, ref StarDate, ref dtfi, ref offset);
+                format = ExpandPredefinedFormat(format, ref StarDate, ref sdfi, ref offset);
             }
 
-            return FormatCustomized(StarDate, format, dtfi, offset);
+            return FormatCustomized(StarDate, format, sdfi, offset);
         }
 
-        internal static StringBuilder FastFormatRfc1123(StarDate StarDate, TimeSpanInfo offset, StarDateTimeFormatInfo dtfi)
+        internal static StringBuilder FastFormatRfc1123(StarDate StarDate, TimeSpanInfo offset, StarDateFormatInfo sdfi)
         {
             // ddd, dd MMM yyyy HH:mm:ss GMT
             const int Rfc1123FormatLength = 29;
@@ -1181,9 +1211,9 @@ namespace StarCalendar
             BCLDebug.Assert(val == 0, "StarDateFormat.AppendNumber(): digits less than size of val");
         }
 
-        internal static String[] GetAllStarDates(StarDate StarDate, char format, StarDateTimeFormatInfo dtfi)
+        internal static String[] GetAllStarDates(StarDate StarDate, char format, StarDateFormatInfo sdfi)
         {
-            Contract.Requires(dtfi != null);
+            Contract.Requires(sdfi != null);
             String[] allFormats = null;
             String[] results = null;
 
@@ -1201,25 +1231,25 @@ namespace StarCalendar
                 case 'T':
                 case 'y':
                 case 'Y':
-                    allFormats = dtfi.GetAllStarDatePatterns(format);
+                    allFormats = sdfi.GetAllStarDatePatterns(format);
                     results = new String[allFormats.Length];
                     for (int i = 0; i < allFormats.Length; i++)
                     {
-                        results[i] = Format(StarDate, allFormats[i], dtfi);
+                        results[i] = Format(StarDate, allFormats[i], sdfi);
                     }
                     break;
                 case 'U':
                     StarDate universalTime = StarDate.ToUniversalTime();
-                    allFormats = dtfi.GetAllStarDatePatterns(format);
+                    allFormats = sdfi.GetAllStarDatePatterns(format);
                     results = new String[allFormats.Length];
                     for (int i = 0; i < allFormats.Length; i++)
                     {
-                        results[i] = Format(universalTime, allFormats[i], dtfi);
+                        results[i] = Format(universalTime, allFormats[i], sdfi);
                     }
                     break;
                 //
                 // The following ones are special cases because these patterns are read-only in
-                // StarDateTimeFormatInfo.
+                // StarDateFormat.
                 //
                 case 'r':
                 case 'R':
@@ -1227,23 +1257,23 @@ namespace StarCalendar
                 case 'O':
                 case 's':
                 case 'u':
-                    results = new String[] { Format(StarDate, new String(new char[] { format }), dtfi) };
+                    results = new String[] { Format(StarDate, new String(new char[] { format }), sdfi) };
                     break;
                 default:
                     throw new NotImplementedException();
-                    //throw new FormatException(StarEnvironment.GetResourceString("Format_InvalidString"));
+                    //throw new FormatException(StarLEnvironment.GetResourceString("Format_InvalidString"));
 
             }
             return (results);
         }
 
-        internal static String[] GetAllStarDates(StarDate StarDate, StarDateTimeFormatInfo dtfi)
+        internal static String[] GetAllStarDates(StarDate StarDate, StarDateFormatInfo sdfi)
         {
             List<String> results = new List<String>(DEFAULT_ALL_StarDateS_SIZE);
 
             for (int i = 0; i < allStandardFormats.Length; i++)
             {
-                String[] strings = GetAllStarDates(StarDate, allStandardFormats[i], dtfi);
+                String[] strings = GetAllStarDates(StarDate, allStandardFormats[i], sdfi);
                 for (int j = 0; j < strings.Length; j++)
                 {
                     results.Add(strings[j]);

@@ -179,7 +179,7 @@ namespace StarCalendar
 
         public static DateTime GregHanukkah(DateTime now)
         {
-            Calendar HebCal = new HebrewCalendar();
+            System.Globalization.Calendar HebCal = new HebrewCalendar();
             int i = now.Year;
             DateTime h = new DateTime(i, 11, 1);
             int hebyear = HebCal.GetYear(now);
@@ -265,6 +265,12 @@ namespace StarCalendar
                 this.atomic += diff * c.AverageYear;
             }
         }
+
+        internal static bool LegacyParseMode()
+        {
+            throw new NotImplementedException();
+        }
+
         public int billion
         {
             get { return this.atomic / c.b; }
@@ -1276,7 +1282,7 @@ namespace StarCalendar
 
         public string ToString(CultureInfo local, string format)
         {
-            return local.StarDateString(this.LocalData(), format);
+            return local.StarDateString(this, format);
         }
 
         //private bool IsHoliday()
@@ -2035,7 +2041,7 @@ namespace StarCalendar
 
         internal static DateTime GregChineseNewYear(DateTime now)
         {
-            Calendar Chinese = new ChineseLunisolarCalendar();
+            System.Globalization.Calendar Chinese = new ChineseLunisolarCalendar();
             int i = now.Year;
             DateTime h = new DateTime(i, 4, 1);
             int ChinaYear = Chinese.GetYear(now);
@@ -2071,7 +2077,7 @@ namespace StarCalendar
 
         public static DateTime GregPurim(DateTime now)
         {
-            Calendar HebCal = new HebrewCalendar();
+            System.Globalization.Calendar HebCal = new HebrewCalendar();
             int i = now.Year;
             DateTime h = new DateTime(i, 11, 1);
             int hebyear = HebCal.GetYear(now);

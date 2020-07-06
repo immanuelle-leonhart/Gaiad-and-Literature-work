@@ -128,7 +128,7 @@ namespace StarCalendar
         public static TimeSpanInfo operator *(double d, TimeSpanInfo t)
         {
             TimeSpanInfo newtime = t * (int)d;
-            string[] vs = d.ToString(NumberFormatInfo.InvariantInfo).Split('.');
+            string[] vs = d.ToString(System.Globalization.NumberFormatInfo.InvariantInfo).Split('.');
             string s = "00";
             try
             {
