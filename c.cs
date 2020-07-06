@@ -104,7 +104,7 @@ namespace StarCalendar
             System.IO.StreamReader file = new StreamReader(path);
             while ((line = file.ReadLine()) != null)
             {
-                Console.WriteLine(line);
+                //Console.WriteLine(line);
                 CultureInfo form = new CultureInfo(line);
                 formats.Add(form);
                 counter++;

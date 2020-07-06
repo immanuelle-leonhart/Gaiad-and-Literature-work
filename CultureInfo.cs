@@ -26,13 +26,13 @@ namespace StarCalendar
             {"sat", n[6]},
             {"sun", n[7]}
         };
-            this.months = new string[] { n[8], n[9], n[10], n[11], n[12], n[13], n[14], n[15], n[16], n[17], n[18], n[19], n[20], n[21] };
+            this.months = new string[] { "0", n[8], n[9], n[10], n[11], n[12], n[13], n[14], n[15], n[16], n[17], n[18], n[19], n[20], n[21] };
             CultureInfo.dict.Add(this.lang, this);
         }
 
         internal string month(int m)
         {
-            return this.months[m + 1];
+            return this.months[m];
         }
 
         internal string weekday(int d)
@@ -49,6 +49,7 @@ namespace StarCalendar
 
         internal string StarDateString(Dictionary<string, int> dictionary, string format)
         {
+            Console.WriteLine(format);
             throw new NotImplementedException();
         }
 
@@ -86,5 +87,10 @@ namespace StarCalendar
         {
             throw new NotImplementedException();
         }
+
+        //internal string month(int month)
+        //{
+        //    //return this.month
+        //}
     }
 }

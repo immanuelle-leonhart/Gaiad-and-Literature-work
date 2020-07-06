@@ -10,8 +10,10 @@ namespace StarCalendar
 
         static void Main(string[] args)
         {
-            long bi = 14000000000;
-            Console.WriteLine(bi);
+            //long bi = 14000000000;
+            //Console.WriteLine(bi);
+            StarDate d = StarDate.Now;
+            Console.WriteLine((c.maya + c.week).MonthName);
             List<int> Integers = new List<int>();
             StarDate dt = StarDate.Now;
             StarDate utc = StarDate.UtcNow;

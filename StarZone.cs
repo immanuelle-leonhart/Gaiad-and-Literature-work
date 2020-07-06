@@ -171,7 +171,14 @@ namespace StarCalendar
 
         internal TimeSpanInfo Offset(DateTime dateTime)
         {
-            throw new NotImplementedException();
+            if (SupportsDaylightSavingTime)
+            {
+                return new TimeSpanInfo(tz.GetUtcOffset(dateTime));
+            }
+            else
+            {
+                return baseUtcOffset;
+            }
         }
 
         //internal bool Sol

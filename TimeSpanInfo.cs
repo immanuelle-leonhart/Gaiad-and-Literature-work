@@ -245,7 +245,7 @@ namespace StarCalendar
         //    TimeSpanInfo daytime = rem;
         //    data["hour"] = rem / c.Hour;
         //    rem %= c.Hour;
-        //    data["minute"] = rem / c.Minute;
+        //    data["Minute"] = rem / c.Minute;
         //    rem %= c.Minute;
         //    data["second"] = rem / c.Second;
         //    rem %= c.Second;

@@ -119,7 +119,7 @@ namespace StarCalendar
             string dt = "";
             try
             {
-                dt = data["hour"] + ":" + data["min"];
+                dt = data["hour"] + ":" + data["Minute"];
                 try
                 {
                     dt = dt + ":" + data["second"];
@@ -223,7 +223,7 @@ namespace StarCalendar
         }
         public int Minute
         {
-            get { return this.LocalData()["minute"]; }
+            get { return this.LocalData()["Minute"]; }
             internal set
             {
                 int h = value;
@@ -347,7 +347,7 @@ namespace StarCalendar
         }
         public string MonthName
         {
-            get { return this.GetMonthName(this.Month, d.getlocale()); }
+            get { return d.getlocale().month(this.Month); }
             internal set
             {
                 switch (value)
@@ -405,14 +405,14 @@ namespace StarCalendar
             throw new NotImplementedException();
         }
 
-        private string GetMonthName(int month, CultureInfo locale)
-        {
-            throw new NotImplementedException();
-        }
+        //private string month(int month, CultureInfo locale)
+        //{
+        //    return locale.month(month);
+        //}
 
         public string WeekDay
         {
-            get { return this.GetWeekDayName(this.WeekInt, d.getlocale()); }
+            get { return d.getlocale().weekday(this.WeekInt); }
             internal set
             {
                 switch (value)
@@ -444,10 +444,10 @@ namespace StarCalendar
             }
         }
 
-        private string GetWeekDayName(int weekInt, CultureInfo locale)
-        {
-            throw new NotImplementedException();
-        }
+        //private string GetWeekDayName(int weekInt, CultureInfo locale)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
         public TimeSpanInfo TimeOfDay
         {
@@ -1292,7 +1292,7 @@ namespace StarCalendar
         public string time()
         {
             var data = this.LocalData();
-            return addzero(data["hour"]) + ":" + addzero(data["min"]) + ":" + addzero(data["second"]) + ":" + addzero(data["Milliseconds"]) + ":" + addzero(data["ticks"]);
+            return addzero(data["hour"]) + ":" + addzero(data["Minute"]) + ":" + addzero(data["second"]) + ":" + addzero(data["Milliseconds"]) + ":" + addzero(data["ticks"]);
         }
 
         private string addzero(long v)
@@ -1463,7 +1463,7 @@ namespace StarCalendar
 
             dict.Add("hour", rem / c.Hour);
             rem %= c.Hour;
-            dict.Add("min", rem / c.Minute);
+            dict.Add("Minute", rem / c.Minute);
             rem %= c.Minute;
             dict.Add("second", rem / c.Second);
             rem %= c.Second;

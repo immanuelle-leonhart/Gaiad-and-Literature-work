@@ -264,7 +264,7 @@ namespace StarCalendar
             {
                 return (dtfi.GetAbbreviatedMonthName(month));
             }
-            // Call GetMonthName() here, instead of accessing MonthNames property, because we don't
+            // Call month() here, instead of accessing MonthNames property, because we don't
             // want a clone of MonthNames, which will hurt perf.
             return (dtfi.GetMonthName(month));
         }
@@ -283,7 +283,7 @@ namespace StarCalendar
         //
 
         /* Note:
-            If DTFI is using Hebrew calendar, GetMonthName()/GetAbbreviatedMonthName() will return Month names like this:
+            If DTFI is using Hebrew calendar, month()/GetAbbreviatedMonthName() will return Month names like this:
             1   Hebrew 1st Month
             2   Hebrew 2nd Month
             ..  ...
@@ -315,7 +315,7 @@ namespace StarCalendar
         //    {
         //        return (dtfi.GetAbbreviatedMonthName(Month));
         //    }
-        //    return (dtfi.GetMonthName(Month));
+        //    return (dtfi.month(Month));
         //}
 
         //
