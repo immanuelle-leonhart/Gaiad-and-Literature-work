@@ -532,6 +532,7 @@ namespace StarCalendar
         {
             get
             {
+                Console.WriteLine("Breakpoint");
                 Contract.Ensures(Contract.Result<StarDateFormatInfo>() != null);
                 CultureInfo culture = CultureInfo.CurrentCulture;
                 if (!culture.m_isInherited)
@@ -576,6 +577,10 @@ namespace StarCalendar
             return CurrentInfo;
         }
 
+        internal bool GetEraName(object v)
+        {
+            throw new NotImplementedException();
+        }
 
         public Object GetFormat(Type formatType)
         {
@@ -632,9 +637,9 @@ namespace StarCalendar
         {
             get
             {
-                Contract.Ensures(Contract.Result<Calendar>() != null);
+                //Contract.Ensures(Contract.Result<Calendar>() != null);
 
-                Contract.Assert(this.calendar != null, "StarDateFormatInfo.Calendar: calendar != null");
+                //Contract.Assert(this.calendar != null, "StarDateFormatInfo.Calendar: calendar != null");
                 return (this.calendar);
             }
 
@@ -2431,6 +2436,7 @@ namespace StarCalendar
 
         public static Calendar GregorianCalendar { get; }
         public object AppContextSwitches { get; private set; }
+        public bool HasForceTwoDigitYears { get; internal set; }
 
         // This is a callback that the parser can make back into the sdfi to let it fiddle with special
         // cases associated with that culture or calendar. Currently this only has special cases for

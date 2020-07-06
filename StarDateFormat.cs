@@ -171,12 +171,47 @@ namespace StarCalendar
             "000000",
             "0000000",
         };
+        private string[] abbreviatedMonthNames;
+        private string[] abbreviatedDayNames;
+        //private Func<string[]> abbreviatedMonthNames1;
+        //private Func<string[]> abbreviatedDayNames1;
 
-        public static StarStringBuilderCache StringBuilderCache { get; private set; }
+        public StarDateFormat(string[] abbreviatedMonthNames1, string[] abbreviatedDayNames1)
+        {
+            this.abbreviatedMonthNames = abbreviatedMonthNames;
+            this.abbreviatedDayNames = abbreviatedDayNames;
+        }
+
+        //public static StarStringBuilderCache StringBuilderCache { get; private set; }
         public StarDateFormat CurrentInfo { get; internal set; }
-        public string[] AbbreviatedMonthNames { get; private set; }
-        public string[] AbbreviatedDayNames { get; private set; }
+        public string[] AbbreviatedMonthNames
+        {
+            get
+            {
+                return abbreviatedMonthNames;
+            }
+
+            private set
+            {
+                abbreviatedMonthNames = value;
+            }
+        }
+        public string[] AbbreviatedDayNames
+        {
+            get
+            {
+                return abbreviatedDayNames;
+            }
+
+            private set
+            {
+                abbreviatedDayNames = value;
+            }
+        }
         public static StarDateFormat InvariantInfo { get; private set; }
+        public static object StarLEnvironment { get; private set; }
+        public static DateTimeFormatInfoScanner StarDateFormatInfoScanner { get; private set; }
+        public static string JapaneseEraStart { get; private set; }
 
         ////////////////////////////////////////////////////////////////////////////
         //
@@ -497,316 +532,334 @@ namespace StarCalendar
         //
         private static String FormatCustomized(StarDate StarDate, String format, StarDateFormatInfo sdfi, TimeSpanInfo offset)
         {
+            //throw new NotImplementedException();
+            Console.WriteLine("Breakpoint");
+            Calendar cal = sdfi.Calendar;
+            StringBuilder result = StringBuilderCache.Acquire();
+            // This is a flag to indicate if we are format the dates using Hebrew calendar.
+
+            bool isHebrewCalendar = false;// (cal.ID == Calendar.CAL_HEBREW);
+            bool isJapaneseCalendar = false;// (cal.ID == Calendar.CAL_JAPAN);
+
+            // This is a flag to indicate if we are formating hour/minute/second only.
+            bool bTimeOnly = true;
+
+            int i = 0;
+            int tokenLen, hour12;
+
+            while (i < format.Length)
+            {
+                char ch = format[i];
+                int nextChar;
+                switch (ch)
+                {
+                    case 'g':
+                        tokenLen = ParseRepeatPattern(format, i, ch);
+                        result.Append(sdfi.GetEraName(cal.GetEra(StarDate)));
+                        break;
+                    case 'h':
+                        tokenLen = ParseRepeatPattern(format, i, ch);
+                        hour12 = StarDate.Hour % 12;
+                        if (hour12 == 0)
+                        {
+                            hour12 = 12;
+                        }
+                        FormatDigits(result, hour12, tokenLen);
+                        break;
+                    case 'H':
+                        tokenLen = ParseRepeatPattern(format, i, ch);
+                        FormatDigits(result, StarDate.Hour, tokenLen);
+                        break;
+                    case 'm':
+                        tokenLen = ParseRepeatPattern(format, i, ch);
+                        FormatDigits(result, StarDate.Minute, tokenLen);
+                        break;
+                    case 's':
+                        tokenLen = ParseRepeatPattern(format, i, ch);
+                        FormatDigits(result, StarDate.Second, tokenLen);
+                        break;
+                    case 'f':
+                    case 'F':
+                        tokenLen = ParseRepeatPattern(format, i, ch);
+                        if (tokenLen <= MaxSecondsFractionDigits)
+                        {
+                            long fraction = (long)(StarDate.Ticks % Calendar.TicksPerSecond);
+                            fraction = fraction / (long)Math.Pow(10, 7 - tokenLen);
+                            if (ch == 'f')
+                            {
+                                result.Append(((int)fraction).ToString(fixedNumberFormats[tokenLen - 1], (IFormatProvider)CultureInfo.InvariantCulture));
+                            }
+                            else
+                            {
+                                int effectiveDigits = tokenLen;
+                                while (effectiveDigits > 0)
+                                {
+                                    if (fraction % 10 == 0)
+                                    {
+                                        fraction = fraction / 10;
+                                        effectiveDigits--;
+                                    }
+                                    else
+                                    {
+                                        break;
+                                    }
+                                }
+                                if (effectiveDigits > 0)
+                                {
+                                    result.Append(((int)fraction).ToString(fixedNumberFormats[effectiveDigits - 1], (IFormatProvider)CultureInfo.InvariantCulture));
+                                }
+                                else
+                                {
+                                    // No fraction to emit, so see if we should remove decimal also.
+                                    if (result.Length > 0 && result[result.Length - 1] == '.')
+                                    {
+                                        result.Remove(result.Length - 1, 1);
+                                    }
+                                }
+                            }
+                        }
+                        else
+                        {
+                            throw new NotImplementedException();
+                            //throw new FormatException(StarLEnvironment.GetResourceString("Format_InvalidString"));
+                        }
+                        break;
+                    case 't':
+                        tokenLen = ParseRepeatPattern(format, i, ch);
+                        if (tokenLen == 1)
+                        {
+                            if (StarDate.Hour < 12)
+                            {
+                                if (sdfi.AMDesignator.Length >= 1)
+                                {
+                                    result.Append(sdfi.AMDesignator[0]);
+                                }
+                            }
+                            else
+                            {
+                                if (sdfi.PMDesignator.Length >= 1)
+                                {
+                                    result.Append(sdfi.PMDesignator[0]);
+                                }
+                            }
+
+                        }
+                        else
+                        {
+                            result.Append((StarDate.Hour < 12 ? sdfi.AMDesignator : sdfi.PMDesignator));
+                        }
+                        break;
+                    case 'd':
+                        //
+                        // tokenLen == 1 : Day of Month as digits with no leading zero.
+                        // tokenLen == 2 : Day of Month as digits with leading zero for single-digit months.
+                        // tokenLen == 3 : Day of week as a three-leter abbreviation.
+                        // tokenLen >= 4 : Day of week as its full StarName.
+                        //
+                        tokenLen = ParseRepeatPattern(format, i, ch);
+                        if (tokenLen <= 2)
+                        {
+                            int day = cal.GetDayOfMonth(StarDate);
+                            if (isHebrewCalendar)
+                            {
+                                // For Hebrew calendar, we need to convert numbers to Hebrew text for yyyy, MM, and dd values.
+                                HebrewFormatDigits(result, day);
+                            }
+                            else
+                            {
+                                FormatDigits(result, day, tokenLen);
+                            }
+                        }
+                        else
+                        {
+                            int dayOfWeek = (int)cal.GetDayOfWeek(StarDate);
+                            result.Append(FormatDayOfWeek(dayOfWeek, tokenLen, sdfi));
+                        }
+                        bTimeOnly = false;
+                        break;
+                    case 'M':
+                        //
+                        // tokenLen == 1 : Month as digits with no leading zero.
+                        // tokenLen == 2 : Month as digits with leading zero for single-digit months.
+                        // tokenLen == 3 : Month as a three-letter abbreviation.
+                        // tokenLen >= 4 : Month as its full StarName.
+                        //
+                        tokenLen = ParseRepeatPattern(format, i, ch);
+                        int Month = cal.GetMonth(StarDate);
+                        if (tokenLen <= 2)
+                        {
+                            if (isHebrewCalendar)
+                            {
+                                // For Hebrew calendar, we need to convert numbers to Hebrew text for yyyy, MM, and dd values.
+                                HebrewFormatDigits(result, Month);
+                            }
+                            else
+                            {
+                                FormatDigits(result, Month, tokenLen);
+                            }
+                        }
+                        else
+                        {
+                            if (isHebrewCalendar)
+                            {
+                                result.Append(FormatHebrewMonthName(StarDate, Month, tokenLen, sdfi));
+                            }
+                            else
+                            {
+                                if ((sdfi.FormatFlags & StarDateFormatFlags.UseGenitiveMonth) != 0 && tokenLen >= 4)
+                                {
+                                    result.Append(
+                                        sdfi.internalGetMonthName(
+                                            Month,
+                                            IsUseGenitiveForm(format, i, tokenLen, 'd') ? MonthNameStyles.Genitive : MonthNameStyles.Regular,
+                                            false));
+                                }
+                                else
+                                {
+                                    result.Append(FormatMonth(Month, tokenLen, sdfi));
+                                }
+                            }
+                        }
+                        bTimeOnly = false;
+                        break;
+                    case 'y':
+                        // Notes about OS behavior:
+                        // y: Always print (year % 100). No leading zero.
+                        // yy: Always print (year % 100) with leading zero.
+                        // yyy/yyyy/yyyyy/... : Print year value.  No leading zero.
+
+                        int year = cal.GetYear(StarDate);
+                        tokenLen = ParseRepeatPattern(format, i, ch);
+
+                        if (isJapaneseCalendar &&
+                            !AppContextSwitches.FormatJapaneseFirstYearAsANumber &&
+                            year == 1 &&
+                            ((i + tokenLen < format.Length && format[i + tokenLen] == StarDateFormatInfoScanner.CJKYearSuff[0]) ||
+                            (i + tokenLen < format.Length - 1 && format[i + tokenLen] == '\'' && format[i + tokenLen + 1] == StarDateFormatInfoScanner.CJKYearSuff[0])))
+                        {
+                            // We are formatting a Japanese date with year equals 1 and the year number is followed by the year sign \u5e74
+                            // In Japanese dates, the first year in the era is not formatted as a number 1 instead it is formatted as \u5143 which means
+                            // first or beginning of the era.
+                            result.Append(StarDateFormat.JapaneseEraStart[0]);
+                        }
+                        else if (sdfi.HasForceTwoDigitYears)
+                        {
+                            FormatDigits(result, year, tokenLen <= 2 ? tokenLen : 2);
+                        }
+                        else if (cal.ID == Calendar.CAL_HEBREW)
+                        {
+                            HebrewFormatDigits(result, year);
+                        }
+                        else
+                        {
+                            if (tokenLen <= 2)
+                            {
+                                FormatDigits(result, year % 100, tokenLen);
+                            }
+                            else
+                            {
+                                String fmtPattern = "D" + tokenLen;
+                                result.Append(year.ToString(fmtPattern, (IFormatProvider)CultureInfo.InvariantCulture));
+                            }
+                        }
+                        bTimeOnly = false;
+                        break;
+                    case 'z':
+                        tokenLen = ParseRepeatPattern(format, i, ch);
+                        FormatCustomizedTimeZone(StarDate, offset, format, tokenLen, bTimeOnly, result);
+                        break;
+                    case 'K':
+                        tokenLen = 1;
+                        FormatCustomizedRoundripTimeZone(StarDate, offset, result);
+                        break;
+                    case ':':
+                        result.Append(sdfi.TimeSeparator);
+                        tokenLen = 1;
+                        break;
+                    case '/':
+                        result.Append(sdfi.DateSeparator);
+                        tokenLen = 1;
+                        break;
+                    case '\'':
+                    case '\"':
+                        StringBuilder enquotedString = new StringBuilder();
+                        tokenLen = ParseQuoteString(format, i, enquotedString);
+                        result.Append(enquotedString);
+                        break;
+                    case '%':
+                        // Optional format character.
+                        // For example, format string "%d" will print day of Month
+                        // without leading zero.  Most of the cases, "%" can be ignored.
+                        nextChar = ParseNextChar(format, i);
+                        // nextChar will be -1 if we already reach the end of the format string.
+                        // Besides, we will not allow "%%" appear in the pattern.
+                        if (nextChar >= 0 && nextChar != (int)'%')
+                        {
+                            result.Append(FormatCustomized(StarDate, ((char)nextChar).ToString(), sdfi, offset));
+                            tokenLen = 2;
+                        }
+                        else
+                        {
+                            //
+                            // This means that '%' is at the end of the format string or
+                            // "%%" appears in the format string.
+                            //
+                            throw new NotImplementedException();
+                            //throw new FormatException(StarLEnvironment.GetResourceString("Format_InvalidString"));
+                        }
+                        break;
+                    case '\\':
+                        // Escaped character.  Can be used to insert character into the format string.
+                        // For exmple, "\d" will insert the character 'd' into the string.
+                        //
+                        // NOTENOTE : we can remove this format character if we enforce the enforced quote
+                        // character rule.
+                        // That is, we ask everyone to use single quote or double quote to insert characters,
+                        // then we can remove this character.
+                        //
+                        nextChar = ParseNextChar(format, i);
+                        if (nextChar >= 0)
+                        {
+                            result.Append(((char)nextChar));
+                            tokenLen = 2;
+                        }
+                        else
+                        {
+                            //
+                            // This means that '\' is at the end of the formatting string.
+                            //
+                            throw new NotImplementedException();
+                            //throw new FormatException(StarLEnvironment.GetResourceString("Format_InvalidString"));
+                        }
+                        break;
+                    default:
+                        // NOTENOTE : we can remove this rule if we enforce the enforced quote
+                        // character rule.
+                        // That is, if we ask everyone to use single quote or double quote to insert characters,
+                        // then we can remove this default block.
+                        result.Append(ch);
+                        tokenLen = 1;
+                        break;
+                }
+                i += tokenLen;
+            }
+            return StringBuilderCache.GetStringAndRelease(result);
+
+        }
+
+        private static bool FormatHebrewMonthName(StarDate starDate, int month, int tokenLen, StarDateFormatInfo sdfi)
+        {
             throw new NotImplementedException();
+        }
 
-            //Calendar cal = sdfi.Calendar;
-            //StringBuilder result = StringBuilderCache.Acquire();
-            //// This is a flag to indicate if we are format the dates using Hebrew calendar.
+        private static void HebrewFormatDigits(StringBuilder result, int day)
+        {
+            throw new NotImplementedException();
+        }
 
-            //bool isHebrewCalendar = (cal.ID == Calendar.CAL_HEBREW);
-            //bool isJapaneseCalendar = (cal.ID == Calendar.CAL_JAPAN);
-
-            //// This is a flag to indicate if we are formating hour/minute/second only.
-            //bool bTimeOnly = true;
-
-            //int i = 0;
-            //int tokenLen, hour12;
-
-            //while (i < format.Length)
-            //{
-            //    char ch = format[i];
-            //    int nextChar;
-            //    switch (ch)
-            //    {
-            //        case 'g':
-            //            tokenLen = ParseRepeatPattern(format, i, ch);
-            //            result.Append(sdfi.GetEraName(cal.GetEra(StarDate)));
-            //            break;
-            //        case 'h':
-            //            tokenLen = ParseRepeatPattern(format, i, ch);
-            //            hour12 = StarDate.Hour % 12;
-            //            if (hour12 == 0)
-            //            {
-            //                hour12 = 12;
-            //            }
-            //            FormatDigits(result, hour12, tokenLen);
-            //            break;
-            //        case 'H':
-            //            tokenLen = ParseRepeatPattern(format, i, ch);
-            //            FormatDigits(result, StarDate.Hour, tokenLen);
-            //            break;
-            //        case 'm':
-            //            tokenLen = ParseRepeatPattern(format, i, ch);
-            //            FormatDigits(result, StarDate.Minute, tokenLen);
-            //            break;
-            //        case 's':
-            //            tokenLen = ParseRepeatPattern(format, i, ch);
-            //            FormatDigits(result, StarDate.Second, tokenLen);
-            //            break;
-            //        case 'f':
-            //        case 'F':
-            //            tokenLen = ParseRepeatPattern(format, i, ch);
-            //            if (tokenLen <= MaxSecondsFractionDigits)
-            //            {
-            //                long fraction = (StarDate.Ticks % Calendar.TicksPerSecond);
-            //                fraction = fraction / (long)Math.Pow(10, 7 - tokenLen);
-            //                if (ch == 'f')
-            //                {
-            //                    result.Append(((int)fraction).ToString(fixedNumberFormats[tokenLen - 1], CultureInfo.InvariantCulture));
-            //                }
-            //                else
-            //                {
-            //                    int effectiveDigits = tokenLen;
-            //                    while (effectiveDigits > 0)
-            //                    {
-            //                        if (fraction % 10 == 0)
-            //                        {
-            //                            fraction = fraction / 10;
-            //                            effectiveDigits--;
-            //                        }
-            //                        else
-            //                        {
-            //                            break;
-            //                        }
-            //                    }
-            //                    if (effectiveDigits > 0)
-            //                    {
-            //                        result.Append(((int)fraction).ToString(fixedNumberFormats[effectiveDigits - 1], CultureInfo.InvariantCulture));
-            //                    }
-            //                    else
-            //                    {
-            //                        // No fraction to emit, so see if we should remove decimal also.
-            //                        if (result.Length > 0 && result[result.Length - 1] == '.')
-            //                        {
-            //                            result.Remove(result.Length - 1, 1);
-            //                        }
-            //                    }
-            //                }
-            //            }
-            //            else
-            //            {
-            //                throw new FormatException(StarLEnvironment.GetResourceString("Format_InvalidString"));
-            //            }
-            //            break;
-            //        case 't':
-            //            tokenLen = ParseRepeatPattern(format, i, ch);
-            //            if (tokenLen == 1)
-            //            {
-            //                if (StarDate.Hour < 12)
-            //                {
-            //                    if (sdfi.AMDesignator.Length >= 1)
-            //                    {
-            //                        result.Append(sdfi.AMDesignator[0]);
-            //                    }
-            //                }
-            //                else
-            //                {
-            //                    if (sdfi.PMDesignator.Length >= 1)
-            //                    {
-            //                        result.Append(sdfi.PMDesignator[0]);
-            //                    }
-            //                }
-
-            //            }
-            //            else
-            //            {
-            //                result.Append((StarDate.Hour < 12 ? sdfi.AMDesignator : sdfi.PMDesignator));
-            //            }
-            //            break;
-            //        case 'd':
-            //            //
-            //            // tokenLen == 1 : Day of Month as digits with no leading zero.
-            //            // tokenLen == 2 : Day of Month as digits with leading zero for single-digit months.
-            //            // tokenLen == 3 : Day of week as a three-leter abbreviation.
-            //            // tokenLen >= 4 : Day of week as its full StarName.
-            //            //
-            //            tokenLen = ParseRepeatPattern(format, i, ch);
-            //            if (tokenLen <= 2)
-            //            {
-            //                int day = cal.GetDayOfMonth(StarDate);
-            //                if (isHebrewCalendar)
-            //                {
-            //                    // For Hebrew calendar, we need to convert numbers to Hebrew text for yyyy, MM, and dd values.
-            //                    HebrewFormatDigits(result, day);
-            //                }
-            //                else
-            //                {
-            //                    FormatDigits(result, day, tokenLen);
-            //                }
-            //            }
-            //            else
-            //            {
-            //                int dayOfWeek = (int)cal.GetDayOfWeek(StarDate);
-            //                result.Append(FormatDayOfWeek(dayOfWeek, tokenLen, sdfi));
-            //            }
-            //            bTimeOnly = false;
-            //            break;
-            //        case 'M':
-            //            //
-            //            // tokenLen == 1 : Month as digits with no leading zero.
-            //            // tokenLen == 2 : Month as digits with leading zero for single-digit months.
-            //            // tokenLen == 3 : Month as a three-letter abbreviation.
-            //            // tokenLen >= 4 : Month as its full StarName.
-            //            //
-            //            tokenLen = ParseRepeatPattern(format, i, ch);
-            //            int Month = cal.GetMonth(StarDate);
-            //            if (tokenLen <= 2)
-            //            {
-            //                if (isHebrewCalendar)
-            //                {
-            //                    // For Hebrew calendar, we need to convert numbers to Hebrew text for yyyy, MM, and dd values.
-            //                    HebrewFormatDigits(result, Month);
-            //                }
-            //                else
-            //                {
-            //                    FormatDigits(result, Month, tokenLen);
-            //                }
-            //            }
-            //            else
-            //            {
-            //                if (isHebrewCalendar)
-            //                {
-            //                    result.Append(FormatHebrewMonthName(StarDate, Month, tokenLen, sdfi));
-            //                }
-            //                else
-            //                {
-            //                    if ((sdfi.FormatFlags & StarDateFormatFlags.UseGenitiveMonth) != 0 && tokenLen >= 4)
-            //                    {
-            //                        result.Append(
-            //                            sdfi.internalGetMonthName(
-            //                                Month,
-            //                                IsUseGenitiveForm(format, i, tokenLen, 'd') ? MonthNameStyles.Genitive : MonthNameStyles.Regular,
-            //                                false));
-            //                    }
-            //                    else
-            //                    {
-            //                        result.Append(FormatMonth(Month, tokenLen, sdfi));
-            //                    }
-            //                }
-            //            }
-            //            bTimeOnly = false;
-            //            break;
-            //        case 'y':
-            //            // Notes about OS behavior:
-            //            // y: Always print (year % 100). No leading zero.
-            //            // yy: Always print (year % 100) with leading zero.
-            //            // yyy/yyyy/yyyyy/... : Print year value.  No leading zero.
-
-            //            int year = cal.GetYear(StarDate);
-            //            tokenLen = ParseRepeatPattern(format, i, ch);
-
-            //            if (isJapaneseCalendar &&
-            //                !AppContextSwitches.FormatJapaneseFirstYearAsANumber &&
-            //                year == 1 &&
-            //                ((i + tokenLen < format.Length && format[i + tokenLen] == StarDateFormatInfoScanner.CJKYearSuff[0]) ||
-            //                (i + tokenLen < format.Length - 1 && format[i + tokenLen] == '\'' && format[i + tokenLen + 1] == StarDateFormatInfoScanner.CJKYearSuff[0])))
-            //            {
-            //                // We are formatting a Japanese date with year equals 1 and the year number is followed by the year sign \u5e74
-            //                // In Japanese dates, the first year in the era is not formatted as a number 1 instead it is formatted as \u5143 which means
-            //                // first or beginning of the era.
-            //                result.Append(StarDateFormat.JapaneseEraStart[0]);
-            //            }
-            //            else if (sdfi.HasForceTwoDigitYears)
-            //            {
-            //                FormatDigits(result, year, tokenLen <= 2 ? tokenLen : 2);
-            //            }
-            //            else if (cal.ID == Calendar.CAL_HEBREW)
-            //            {
-            //                HebrewFormatDigits(result, year);
-            //            }
-            //            else
-            //            {
-            //                if (tokenLen <= 2)
-            //                {
-            //                    FormatDigits(result, year % 100, tokenLen);
-            //                }
-            //                else
-            //                {
-            //                    String fmtPattern = "D" + tokenLen;
-            //                    result.Append(year.ToString(fmtPattern, CultureInfo.InvariantCulture));
-            //                }
-            //            }
-            //            bTimeOnly = false;
-            //            break;
-            //        case 'z':
-            //            tokenLen = ParseRepeatPattern(format, i, ch);
-            //            FormatCustomizedTimeZone(StarDate, offset, format, tokenLen, bTimeOnly, result);
-            //            break;
-            //        case 'K':
-            //            tokenLen = 1;
-            //            FormatCustomizedRoundripTimeZone(StarDate, offset, result);
-            //            break;
-            //        case ':':
-            //            result.Append(sdfi.TimeSeparator);
-            //            tokenLen = 1;
-            //            break;
-            //        case '/':
-            //            result.Append(sdfi.DateSeparator);
-            //            tokenLen = 1;
-            //            break;
-            //        case '\'':
-            //        case '\"':
-            //            StringBuilder enquotedString = new StringBuilder();
-            //            tokenLen = ParseQuoteString(format, i, enquotedString);
-            //            result.Append(enquotedString);
-            //            break;
-            //        case '%':
-            //            // Optional format character.
-            //            // For example, format string "%d" will print day of Month
-            //            // without leading zero.  Most of the cases, "%" can be ignored.
-            //            nextChar = ParseNextChar(format, i);
-            //            // nextChar will be -1 if we already reach the end of the format string.
-            //            // Besides, we will not allow "%%" appear in the pattern.
-            //            if (nextChar >= 0 && nextChar != (int)'%')
-            //            {
-            //                result.Append(FormatCustomized(StarDate, ((char)nextChar).ToString(), sdfi, offset));
-            //                tokenLen = 2;
-            //            }
-            //            else
-            //            {
-            //                //
-            //                // This means that '%' is at the end of the format string or
-            //                // "%%" appears in the format string.
-            //                //
-            //                throw new FormatException(StarLEnvironment.GetResourceString("Format_InvalidString"));
-            //            }
-            //            break;
-            //        case '\\':
-            //            // Escaped character.  Can be used to insert character into the format string.
-            //            // For exmple, "\d" will insert the character 'd' into the string.
-            //            //
-            //            // NOTENOTE : we can remove this format character if we enforce the enforced quote
-            //            // character rule.
-            //            // That is, we ask everyone to use single quote or double quote to insert characters,
-            //            // then we can remove this character.
-            //            //
-            //            nextChar = ParseNextChar(format, i);
-            //            if (nextChar >= 0)
-            //            {
-            //                result.Append(((char)nextChar));
-            //                tokenLen = 2;
-            //            }
-            //            else
-            //            {
-            //                //
-            //                // This means that '\' is at the end of the formatting string.
-            //                //
-            //                throw new FormatException(StarLEnvironment.GetResourceString("Format_InvalidString"));
-            //            }
-            //            break;
-            //        default:
-            //            // NOTENOTE : we can remove this rule if we enforce the enforced quote
-            //            // character rule.
-            //            // That is, if we ask everyone to use single quote or double quote to insert characters,
-            //            // then we can remove this default block.
-            //            result.Append(ch);
-            //            tokenLen = 1;
-            //            break;
-            //    }
-            //    i += tokenLen;
-            //}
-            //return StringBuilderCache.GetStringAndRelease(result);
-
+        private static void FormatDigits(StringBuilder result, int hour12, int tokenLen)
+        {
+            throw new NotImplementedException();
         }
 
 
@@ -1005,7 +1058,7 @@ namespace StarCalendar
                     }
                     sdfi = StarDateFormatInfo.InvariantInfo;
                     break;
-                //case 'U':       // Universal time in culture dependent format.
+                    //case 'U':       // Universal time in culture dependent format.
                     //if (offset != NullOffset)
                     //{
                     //    // This format is not supported by StarDateOffset
@@ -1034,7 +1087,7 @@ namespace StarCalendar
 
         internal static String Format(StarDate StarDate, String format, StarDateFormatInfo sdfi)
         {
-            Console.WriteLine(format);
+            //Console.WriteLine(format);
             //throw new NotImplementedException();
             return Format(StarDate, format, sdfi, NullOffset);
         }
@@ -1043,11 +1096,13 @@ namespace StarCalendar
         internal static String Format(StarDate StarDate, String format, StarDateFormatInfo sdfi, TimeSpanInfo offset)
         {
             Contract.Requires(sdfi != null);
+            Console.WriteLine("Breakpoint");
             if (format == null || format.Length == 0)
             {
                 Boolean timeOnlySpecialCase = false;
                 if (StarDate.GetTicks() < c.TicksPerDay)
                 {
+                    throw new NotImplementedException();
                     // If the time is less than 1 day, consider it as time of day.
                     // Just print out the short time format.
                     //
@@ -1089,15 +1144,16 @@ namespace StarCalendar
                 }
                 else
                 {
+                    throw new NotImplementedException();
                     // Default StarDateOffset.ToString case.
-                    if (timeOnlySpecialCase)
-                    {
-                        format = RoundtripStarDateUnfixed;
-                    }
-                    else
-                    {
-                        format = sdfi.StarDateOffsetPattern;
-                    }
+                    //if (timeOnlySpecialCase)
+                    //{
+                    //    format = RoundtripStarDateUnfixed;
+                    //}
+                    //else
+                    //{
+                    //    format = sdfi.StarDateOffsetPattern;
+                    //}
 
                 }
 

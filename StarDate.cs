@@ -22,6 +22,7 @@ namespace StarCalendar
         public TimeSpanInfo error;
         private int arraylength;
         internal StarZone timeZone;
+        //private TimeSpanInfo offset1;
 
         internal static int DayFromMonth(int day)
         {
@@ -574,6 +575,27 @@ namespace StarCalendar
             }
 
         }
+
+        public TimeSpanInfo offset
+        {
+            get
+            {
+                if (this.timeZone.SupportsDaylightSavingTime)
+                {
+                    return this.timeZone.Offset(this);
+                }
+                else
+                {
+                    return this.timeZone.BaseUtcOffset;
+                }
+            }
+
+            internal set
+            {
+                this.timeZone = this.timeZone.OffsetClone(value);
+            }
+        }
+
         //public bool HasTimeZone
         //{
         //    get
@@ -1357,18 +1379,7 @@ namespace StarCalendar
 
         private StarDate Localize()
         {
-            if (!this.IsTerran)
-            {
-                return this;
-            }
-            else if (this.SupportsDaylightSavingTime)
-            {
-                return this + this.TimeZone.Offset(this.Convert());
-            }
-            else
-            {
-                return this + this.TimeZone.BaseUtcOffset;
-            }
+            return this + this.offset;
         }
 
         private TimeSpanInfo GetOffset()

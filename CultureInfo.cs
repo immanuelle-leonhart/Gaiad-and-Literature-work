@@ -7,7 +7,7 @@ namespace StarCalendar
 {
     public class CultureInfo //combined cultureinfo and culturedata
     {
-        private string lang;
+        //private string lang;
         private Dictionary<string, string> weekdays;
         private string[] months;
         //private Dictionary<int, string> numbers;
@@ -20,6 +20,7 @@ namespace StarCalendar
             this.CultureName = n[0];
             this.weekdays = new Dictionary<string, string>
         {
+            {"0", "0"},
             {"mon", n[1]},
             {"tue", n[2]},
             {"wed", n[3]},
@@ -56,7 +57,7 @@ namespace StarCalendar
 
         internal string StarDateString(StarDate dt, string format)
         {
-            Console.WriteLine(format);
+            //Console.WriteLine(format);
             return StarDateFormat.Format(dt, format, StarDateFormatInfo.CurrentInfo);
         }
 
@@ -64,8 +65,8 @@ namespace StarCalendar
         //internal StarDateFormat DateTimeFormat;
         //private StarDateFormat starDateFormat;
         //private static CultureInfo currentCulture/* = dict["English"];*/
-        private StarDateFormat starDateFormat;
-        private static object invariantCulture;
+        //private StarDateFormat starDateFormat;
+        //private static object invariantCulture;
 
         //public static CultureInfo CurrentCulture
         //{
@@ -83,13 +84,61 @@ namespace StarCalendar
         {
             get
             {
-                return starDateFormat;
+                
+                
+                return new StarDateFormat(AbbreviatedMonthNames(), AbbreviatedDayNames());
             }
 
-            internal set
+            //internal set
+            //{
+            //    starDateFormat = value;
+            //}
+        }
+
+        private string[] AbbreviatedDayNames()
+        {
+            string[] vs = new string[8];
+            int i = 0;
+            while (i < vs.Length)
             {
-                starDateFormat = value;
+                vs[i] = abbreviate(weekday(i));
+                i++;
             }
+            return vs;
+        }
+
+        private string abbreviate(string v)
+        {
+            string a = "" + v[0];
+            try
+            {
+                a = a + v[1];
+                try
+                {
+                    a = a + v[2];
+                }
+                catch (IndexOutOfRangeException)
+                {
+
+                }
+            }
+            catch (IndexOutOfRangeException)
+            {
+
+            }
+            return a;
+        }
+
+        private string[] AbbreviatedMonthNames()
+        {
+            string[] vs = new string[8];
+            int i = 0;
+            while (i < vs.Length)
+            {
+                vs[i] = abbreviate(months[i]);
+                i++;
+            }
+            return vs;
         }
 
         public string CultureName { get; internal set; }
@@ -136,25 +185,40 @@ namespace StarCalendar
 
         internal string[] AbbreviatedDayNames(object iD)
         {
-            throw new NotImplementedException();
+            return AbbreviatedDayNames();
         }
 
         internal string[] SuperShortDayNames(object iD)
+        {
+            return SuperShortDayNames();
+        }
+
+        private string[] SuperShortDayNames()
         {
             throw new NotImplementedException();
         }
 
         internal string[] DayNames(object iD)
         {
+            return DayNames();
+        }
+
+        private string[] DayNames()
+        {
             throw new NotImplementedException();
         }
 
         internal string[] AbbreviatedMonthNames(object iD)
         {
-            throw new NotImplementedException();
+            return AbbreviatedMonthNames();
         }
 
         internal string[] MonthNames(object iD)
+        {
+            return MonthNames();
+        }
+
+        private string[] MonthNames()
         {
             throw new NotImplementedException();
         }

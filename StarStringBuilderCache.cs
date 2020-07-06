@@ -19,5 +19,10 @@ namespace StarCalendar
         {
             throw new NotImplementedException();
         }
+
+        internal StringBuilder Acquire()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -81,6 +81,7 @@ namespace StarCalendar
                     return baseUtcOffset;
                 }
             }
+
         }
         public string DaylightName
         {
@@ -169,6 +170,11 @@ namespace StarCalendar
             throw new NotImplementedException();
         }
 
+        internal TimeSpanInfo Offset(StarDate now)
+        {
+            return Offset(now.Convert());
+        }
+
         internal TimeSpanInfo Offset(DateTime dateTime)
         {
             if (SupportsDaylightSavingTime)
@@ -189,10 +195,7 @@ namespace StarCalendar
         //    }
         //}
 
-        internal TimeSpanInfo GetOffset(StarDate now)
-        {
-            throw new NotImplementedException();
-        }
+        
 
         internal void ClearCachedData()
         {
@@ -449,6 +452,11 @@ namespace StarCalendar
         }
 
         internal object distance_at_time(StarDate now)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal StarZone OffsetClone(TimeSpanInfo value)
         {
             throw new NotImplementedException();
         }
