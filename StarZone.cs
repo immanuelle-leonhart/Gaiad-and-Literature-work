@@ -5,26 +5,42 @@ using static System.TimeZoneInfo;
 
 namespace StarCalendar
 {
-    public class Zone
+    public class StarZone
     {
-        public PlanetZone planet = PlanetZone.Terra;
+        internal string PlanetName = "Default Planet Name";
+        internal TimeSpanInfo LocalDay = c.Day;
+        public StarDate startDate = new StarDate(0); //atomic time that movement starts
+        public List<BigInteger> distanceTicks = new List<BigInteger> { 0 }; //position, speed, acceleration, etc
+        public List<double> polar = new List<double> { 0 }; //position, speed, acceleration, etc
+        public List<double> azimuthal = new List<double> { 0 }; //position, speed, acceleration, etc
+        public string StarName = "Default Star System Name";
+        public static StarZone Terra;
+        public static StarZone Mars;
+        public static StarZone Amaterasu;
+        public static StarZone Local = new StarZone(TimeZoneInfo.Local);
+        public static StarZone UTC = new StarZone(TimeZoneInfo.Utc);
+        //public static StarZone Amaterasu = new StarZone("Amaterasu");
+        //internal StarZone Sun = StarZone.Amaterasu;
+        //public static StarZone Terra = new StarZone("Terra", c.Day, StarZone.Amaterasu);
+        //public static StarZone Mars = new StarZone("Mars", c.Sol, StarZone.Amaterasu);
+        //public StarZone planet = StarZone.Terra;
         private TimeZoneInfo tz = TimeZoneInfo.Utc;
         private TimeSpanInfo baseUtcOffset = new TimeSpanInfo(0);
-        public static Zone Local = new Zone(TimeZoneInfo.Local);
-        public static Zone UTC = new Zone(TimeZoneInfo.Utc, "UTC", PlanetZone.Terra);
-        private string displayName = "Default TimeZone Name";
+        private string displayName = "Default TimeZone PlanetName";
 
-        public Zone(TimeZoneInfo tz)
+        public StarZone(TimeZoneInfo tz)
         {
             this.tz = tz;
             this.displayName = tz.DisplayName;
+            this.StarName = "Amaterasu";
+            this.PlanetName = "Terra";
         }
 
-        public Zone(TimeZoneInfo tz, string v, PlanetZone planet) : this(tz)
-        {
-            this.displayName = v;
-            this.planet = planet;
-        }
+        //public StarZone(TimeZoneInfo tz, string v, StarZone planet) : this(tz)
+        //{
+        //    this.displayName = v;
+        //    this.planet = planet;
+        //}
 
         public bool hasTimeZone
         {
@@ -37,19 +53,19 @@ namespace StarCalendar
         {
             get
             {
-                return this.planet.Name == "Terra";
+                return this.PlanetName == "Terra";
             }
         }
         public TimeSpanInfo Day
         {
             get
             {
-                return this.planet.LocalDay;
+                return this.LocalDay;
             }
 
             internal set
             {
-                this.planet.LocalDay = value;
+                this.LocalDay = value;
             }
         }
         public TimeSpanInfo BaseUtcOffset
@@ -118,7 +134,7 @@ namespace StarCalendar
             }
         }
 
-        internal static Zone FindTimeZone(string v)
+        internal static StarZone FindTimeZone(string v)
         {
             throw new NotImplementedException();
         }
@@ -158,13 +174,13 @@ namespace StarCalendar
             throw new NotImplementedException();
         }
 
-        internal bool Sol
-        {
-            get
-            {
-                return planet.Sol;
-            }
-        }
+        //internal bool Sol
+        //{
+        //    get
+        //    {
+        //        return planet.Sol;
+        //    }
+        //}
 
         internal TimeSpanInfo GetOffset(StarDate now)
         {
@@ -176,12 +192,12 @@ namespace StarCalendar
             throw new NotImplementedException();
         }
 
-        internal static void ConvertTime(StarDate now, Zone uTC)
+        internal static void ConvertTime(StarDate now, StarZone uTC)
         {
             throw new NotImplementedException();
         }
 
-        internal static void ConvertTime(StarDate now, Zone local, Zone uTC)
+        internal static void ConvertTime(StarDate now, StarZone local, StarZone uTC)
         {
             throw new NotImplementedException();
         }
@@ -201,17 +217,17 @@ namespace StarCalendar
             throw new NotImplementedException();
         }
 
-        internal static StarDate ConvertTimeToUtc(StarDate dt, Zone z)
+        internal static StarDate ConvertTimeToUtc(StarDate dt, StarZone z)
         {
             throw new NotImplementedException();
         }
 
-        internal static Zone FindSystemTimeZoneById(string v)
+        internal static StarZone FindSystemTimeZoneById(string v)
         {
             throw new NotImplementedException();
         }
 
-        internal static Zone FromSerializedString(string v)
+        internal static StarZone FromSerializedString(string v)
         {
             throw new NotImplementedException();
         }
@@ -221,12 +237,12 @@ namespace StarCalendar
             throw new NotImplementedException();
         }
 
-        internal static Zone[] GetSystemTimeZones()
+        internal static StarZone[] GetSystemTimeZones()
         {
             throw new NotImplementedException();
         }
 
-        internal bool HasSameRules(Zone uTC)
+        internal bool HasSameRules(StarZone uTC)
         {
             throw new NotImplementedException();
         }
@@ -260,17 +276,17 @@ namespace StarCalendar
         // returns a simple TimeZoneInfo instance that does
         // not support Daylight Saving Time
         //
-        public static Zone CreateCustomTimeZone(string id, TimeSpan BaseUTCOffset)
+        public static StarZone CreateCustomTimeZone(string id, TimeSpan BaseUTCOffset)
         {
             return CreateCustomTimeZone(id, BaseUTCOffset, id, id);
         }
 
-        public static Zone CreateCustomTimeZone(string id, TimeSpanInfo BaseUTCOffset)
+        public static StarZone CreateCustomTimeZone(string id, TimeSpanInfo BaseUTCOffset)
         {
             return CreateCustomTimeZone(id, BaseUTCOffset.TimeSpan, id, id);
         }
 
-        static public Zone CreateCustomTimeZone(
+        static public StarZone CreateCustomTimeZone(
                 String id,
                 TimeSpan baseUtcOffset,
                 String displayName)
@@ -278,7 +294,7 @@ namespace StarCalendar
             return CreateCustomTimeZone(id, baseUtcOffset, displayName, displayName);
         }
 
-        static public Zone CreateCustomTimeZone(
+        static public StarZone CreateCustomTimeZone(
                 String id,
                 TimeSpanInfo baseUtcOffset,
                 String displayName)
@@ -286,12 +302,12 @@ namespace StarCalendar
             return CreateCustomTimeZone(id, baseUtcOffset.TimeSpan, displayName, displayName);
         }
 
-        public static Zone CreateCustomTimeZone(string id, TimeSpanInfo t, string displayname, string standard)
+        public static StarZone CreateCustomTimeZone(string id, TimeSpanInfo t, string displayname, string standard)
         {
             return CreateCustomTimeZone(id, t.TimeSpan, displayname, standard);
         }
 
-        static public Zone CreateCustomTimeZone(
+        static public StarZone CreateCustomTimeZone(
                 String id,
                 TimeSpan baseUtcOffset,
                 String displayName,
@@ -306,7 +322,7 @@ namespace StarCalendar
                            standardDisplayName,
                            null,
                            false);
-            return new Zone(tz);
+            return new StarZone(tz);
         }
 
         //
@@ -315,7 +331,7 @@ namespace StarCalendar
         // returns a TimeZoneInfo instance that may
         // support Daylight Saving Time
         //
-        static public Zone CreateCustomTimeZone(
+        static public StarZone CreateCustomTimeZone(
                 String id,
                 TimeSpan baseUtcOffset,
                 String displayName,
@@ -331,7 +347,7 @@ namespace StarCalendar
                            standardDisplayName,
                            daylightDisplayName,
                            adjustmentRules,
-                           false); return new Zone(tz);
+                           false); return new StarZone(tz);
         }
 
 
@@ -344,7 +360,7 @@ namespace StarCalendar
         // This class factory method is identical to the
         // TimeZoneInfo private constructor
         //
-        static public Zone CreateCustomTimeZone(
+        static public StarZone CreateCustomTimeZone(
                 String id,
                 TimeSpan baseUtcOffset,
                 String displayName,
@@ -361,7 +377,7 @@ namespace StarCalendar
                             standardDisplayName,
                             daylightDisplayName,
                             adjustmentRules,
-                            disableDaylightSavingTime); return new Zone(tz);
+                            disableDaylightSavingTime); return new StarZone(tz);
         }
 
         internal static TimeSpanInfo GetLocalUtcOffset(StarDate starDate)
@@ -370,6 +386,62 @@ namespace StarCalendar
         }
 
         internal static TimeSpanInfo GetLocalUtcOffset(StarDate dt, bool noThrowOnInvalidTime)
+        {
+            throw new NotImplementedException();
+        }
+
+        public StarZone(string Name, TimeSpanInfo LocalDay)
+        {
+            this.PlanetName = Name;
+            this.LocalDay = LocalDay;
+            //this.Sun = Sun;
+        }
+
+        //public bool Sol
+        //{
+        //    get
+        //    {
+        //        return this.Sun.Sol;
+        //    }
+        //}
+
+        internal static StarZone get(string v)
+        {
+            throw new NotImplementedException();
+        }
+
+
+
+        public bool Sol
+        {
+            get
+            {
+                return StarName == "Amaterasu";
+            }
+        }
+
+        public double[] cartesian()
+        {
+            double x = (long)distanceTicks[0] * Math.Sin(polar[0]) * Math.Cos(azimuthal[0]);
+            double y = (long)distanceTicks[0] * Math.Sin(polar[0]) * Math.Sin(azimuthal[0]);
+            double z = (long)distanceTicks[0] * Math.Cos(polar[0]);
+            return new double[] { x, y, z };
+        }
+
+        public StarZone(StarDate startDate, List<BigInteger> distanceTicks, List<double> polar, List<double> azimuthal)
+        {
+            this.startDate = startDate;
+            this.distanceTicks = distanceTicks;
+            this.polar = polar;
+            this.azimuthal = azimuthal;
+        }
+
+        public StarZone(string name)
+        {
+            this.StarName = name;
+        }
+
+        internal object distance_at_time(StarDate now)
         {
             throw new NotImplementedException();
         }

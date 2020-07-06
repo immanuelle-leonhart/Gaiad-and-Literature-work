@@ -52,8 +52,8 @@ namespace StarCalendar
 
 
 
-        internal static Dictionary<string, PlanetZone> Planets = new Dictionary<string, PlanetZone>();
-        internal static Dictionary<string, StarSystem> StarSystems = new Dictionary<string, StarSystem>();
+        //internal static Dictionary<string, StarZone> Planets = new Dictionary<string, StarZone>();
+        //internal static Dictionary<string, StarZone> StarSystems = new Dictionary<string, StarZone>();
 
 
         //internal static Dictionary<string, NaturalCycle> CachedCycles = new Dictionary<string, NaturalCycle>();
@@ -79,11 +79,11 @@ namespace StarCalendar
         internal static readonly TimeSpanInfo NeptunianYear = (60182 * Day);
         internal static readonly TimeSpanInfo PlutonicYear = (90560 * Day);
 
-        public static Zone Local
+        public static StarZone Local
         {
             get
             {
-                return Zone.Local;
+                return StarZone.Local;
             }
 
             //internal set

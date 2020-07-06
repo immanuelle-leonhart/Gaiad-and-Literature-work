@@ -70,7 +70,7 @@ namespace StarCalendar
             times.Add("terra", dt.Terra);
             times.Add("arrival", dt.Arrival);
 
-            Zone z = Zone.Local;
+            StarZone z = StarZone.Local;
             TimeSpanInfo timeSpanInfo = z.BaseUtcOffset;
             timeSpanInfo = z.GetOffset(StarDate.Now);
             string daylightname = z.DaylightName;
@@ -79,17 +79,17 @@ namespace StarCalendar
             s = z.StandardName;
             bool SupportsDaylightSavingTime = z.SupportsDaylightSavingTime;
             z.ClearCachedData();
-            Zone.ConvertTime(StarDate.Now, Zone.UTC);
-            Zone.ConvertTime(StarDate.Now, Zone.Local, Zone.UTC);
-            Zone.ConvertTimeBySystemTimeZoneId(StarDate.Now, "string");
-            Zone.ConvertTimeBySystemTimeZoneId(StarDate.Now, "Zone.Local", "Zone.UTC");
-            dt = Zone.ConvertTimeToUtc(dt);
-            dt = Zone.ConvertTimeToUtc(dt, z);
-            z = Zone.FindSystemTimeZoneById("string");
-            z = Zone.FromSerializedString("string");
+            StarZone.ConvertTime(StarDate.Now, StarZone.UTC);
+            StarZone.ConvertTime(StarDate.Now, StarZone.Local, StarZone.UTC);
+            StarZone.ConvertTimeBySystemTimeZoneId(StarDate.Now, "string");
+            StarZone.ConvertTimeBySystemTimeZoneId(StarDate.Now, "StarZone.Local", "StarZone.UTC");
+            dt = StarZone.ConvertTimeToUtc(dt);
+            dt = StarZone.ConvertTimeToUtc(dt, z);
+            z = StarZone.FindSystemTimeZoneById("string");
+            z = StarZone.FromSerializedString("string");
             TimeZoneInfo.AdjustmentRule[] adjustmentRules = z.GetAdjustmentRules();
-            Zone[] GetSystemTimeZones = Zone.GetSystemTimeZones();
-            bool HasSameRules = z.HasSameRules(Zone.Local);
+            StarZone[] GetSystemTimeZones = StarZone.GetSystemTimeZones();
+            bool HasSameRules = z.HasSameRules(StarZone.Local);
             bool b = z.IsDaylightSavingTime(dt);
             s = z.ToSerializedString();
             s = z.ToString("overload");

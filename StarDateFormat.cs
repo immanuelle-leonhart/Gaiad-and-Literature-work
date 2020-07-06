@@ -73,16 +73,16 @@ namespace StarCalendar
 
         "d"     "0"         day w/o leading zero                  1
         "dd"    "00"        day with leading zero                 01
-        "ddd"               short weekday name (abbreviation)     Mon
-        "dddd"              full weekday name                     Monday
-        "dddd*"             full weekday name                     Monday
+        "ddd"               short weekday StarName (abbreviation)     Mon
+        "dddd"              full weekday StarName                     Monday
+        "dddd*"             full weekday StarName                     Monday
 
 
         "M"     "0"         Month w/o leading zero                2
         "MM"    "00"        Month with leading zero               02
-        "MMM"               short Month name (abbreviation)       Feb
-        "MMMM"              full Month name                       Febuary
-        "MMMM*"             full Month name                       Febuary
+        "MMM"               short Month StarName (abbreviation)       Feb
+        "MMMM"              full Month StarName                       Febuary
+        "MMMM*"             full Month StarName                       Febuary
 
         "y"     "0"         two digit year (year % 100) w/o leading zero           0
         "yy"    "00"        two digit year (year % 100) with leading zero          00
@@ -101,7 +101,7 @@ namespace StarCalendar
                -Unspecified ""
                -StarDateOffset      "zzzzz" e.g -07:30:15
 
-        "g*"                the current era name                  A.D.
+        "g*"                the current era StarName                  A.D.
 
         ":"                 time separator                        : -- DEPRECATED - Insert separator directly into pattern (eg: "H.mm.ss")
         "/"                 date separator                        /-- DEPRECATED - Insert separator directly into pattern (eg: "M-dd-yyyy")
@@ -272,12 +272,12 @@ namespace StarCalendar
         //
         //  FormatHebrewMonthName
         //
-        //  Action: Return the Hebrew Month name for the specified StarDate.
-        //  Returns: The Month name string for the specified StarDate.
+        //  Action: Return the Hebrew Month StarName for the specified StarDate.
+        //  Returns: The Month StarName string for the specified StarDate.
         //  Arguments:
         //        time   the time to format
         //        Month  The Month is the value of HebrewCalendar.GetMonth(time).
-        //        repeat Return abbreviated Month name if repeat=3, or full Month name if repeat=4
+        //        repeat Return abbreviated Month StarName if repeat=3, or full Month StarName if repeat=4
         //        dtfi    The StarDateTimeFormatInfo which uses the Hebrew calendars as its calendar.
         //  Exceptions: None.
         //
@@ -296,7 +296,7 @@ namespace StarCalendar
             12  Hebrew 11th Month
             13  Hebrew 12th Month
 
-            Therefore, if we are in a regular year, we have to increment the Month name if moth is greater or eqaul to 7.
+            Therefore, if we are in a regular year, we have to increment the Month StarName if moth is greater or eqaul to 7.
         */
         //private static String FormatHebrewMonthName(StarDate time, int Month, int repeatCount, StarDateTimeFormatInfo dtfi)
         //{
@@ -595,7 +595,7 @@ namespace StarCalendar
             //            // tokenLen == 1 : Day of Month as digits with no leading zero.
             //            // tokenLen == 2 : Day of Month as digits with leading zero for single-digit months.
             //            // tokenLen == 3 : Day of week as a three-leter abbreviation.
-            //            // tokenLen >= 4 : Day of week as its full name.
+            //            // tokenLen >= 4 : Day of week as its full StarName.
             //            //
             //            tokenLen = ParseRepeatPattern(format, i, ch);
             //            if (tokenLen <= 2)
@@ -623,7 +623,7 @@ namespace StarCalendar
             //            // tokenLen == 1 : Month as digits with no leading zero.
             //            // tokenLen == 2 : Month as digits with leading zero for single-digit months.
             //            // tokenLen == 3 : Month as a three-letter abbreviation.
-            //            // tokenLen >= 4 : Month as its full name.
+            //            // tokenLen >= 4 : Month as its full StarName.
             //            //
             //            tokenLen = ParseRepeatPattern(format, i, ch);
             //            int Month = cal.GetMonth(StarDate);
@@ -800,9 +800,9 @@ namespace StarCalendar
                 {
                     // For time only format and a time only input, the time offset on 0001/01/01 is less
                     // accurate than the system's current offset because of daylight saving time.
-                    offset = Zone.GetLocalUtcOffset(StarDate.Now);
+                    offset = StarZone.GetLocalUtcOffset(StarDate.Now);
                 }
-                else if (StarDate.TimeZone == Zone.UTC)
+                else if (StarDate.TimeZone == StarZone.UTC)
                 {
 #if FEATURE_CORECLR
                     offset = TimeSpanInfo.Zero;
@@ -814,12 +814,12 @@ namespace StarCalendar
                     // explicitly emit the local time offset, which we can do by removing the UTC flag.
                     InvalidFormatForUtc(format, StarDate);
                     StarDate = StarDate.SpecifyKind(StarDate, StarData.Local);
-                    offset = Zone.GetLocalUtcOffset(StarDate);
+                    offset = StarZone.GetLocalUtcOffset(StarDate);
 #endif // FEATURE_CORECLR
                 }
                 else
                 {
-                    offset = Zone.GetLocalUtcOffset(StarDate);
+                    offset = StarZone.GetLocalUtcOffset(StarDate);
                 }
             }
             if (offset >= TimeSpanInfo.Zero)
@@ -864,10 +864,10 @@ namespace StarCalendar
                 if (dt.TimeZone == c.Local)
                 {
                     // This should output the local offset, e.g. "-07:30"
-                    offset = Zone.GetLocalUtcOffset(dt, ZoneOptions.NoThrowOnInvalidTime);
+                    offset = StarZone.GetLocalUtcOffset(dt, ZoneOptions.NoThrowOnInvalidTime);
                     // fall through to shared time zone output code
                 }
-                else if (dt.TimeZone == Zone.UTC)
+                else if (dt.TimeZone == StarZone.UTC)
                 {
                     // The 'Z' constant is a marker for a UTC date
                     result.Append("Z");
@@ -930,7 +930,7 @@ namespace StarCalendar
                 case 'R':       // RFC 1123 Standard
                     realFormat = dtfi.RFC1123Pattern;
                     break;
-                case 's':       // Sortable without Time Zone Info
+                case 's':       // Sortable without Time StarZone Info
                     realFormat = dtfi.SortableStarDatePattern;
                     break;
                 case 't':       // Short Time
@@ -966,7 +966,7 @@ namespace StarCalendar
         {
             switch (format[0])
             {
-                case 's':       // Sortable without Time Zone Info
+                case 's':       // Sortable without Time StarZone Info
                     dtfi = StarDateTimeFormatInfo.InvariantInfo;
                     break;
                 case 'u':       // Universal time in sortable format.
@@ -1140,7 +1140,7 @@ namespace StarCalendar
             AppendHHmmssTimeOfDay(result, StarDate);
             result.Append('.');
 
-            BigInteger fraction = StarDate.GetTicks() % TimeSpanInfo.TicksPerSecond;
+            BigInteger fraction = StarDate.GetTicks() % c.TicksPerSecond;
             AppendNumber(result, fraction, 7);
 
             FormatCustomizedRoundripTimeZone(StarDate, offset, result);

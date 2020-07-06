@@ -9,12 +9,7 @@ namespace StarCalendar
     {
         internal BigInteger ticks;
         internal static TimeSpanInfo Zero;
-        //private int milliseconds;
-        //private int seconds;
-        //private int days;
-
-        //public static TimeSpanInfo MinValue { get; internal set; }
-        public static int TicksPerSecond = (int) c.Second.ticks;
+        //public static int TicksPerSecond = (int) c.Second.ticks;
         public int Hours
         {
             get { return this / c.Hour; }

@@ -11,20 +11,17 @@ using System.Net;
 using System.Numerics;
 using System.Reflection.Metadata.Ecma335;
 using System.Runtime.CompilerServices;
+using StarCalendar;
 
 namespace StarCalendar
 {
     public struct StarDate : IComparable<StarDate>, IEquatable<StarDate>
     {
         public TimeSpanInfo atomic;
-        private StarData metadata;
-        //private bool IsTerran;
-        //private bool complexTimeZone;
-        //private bool hasTimeZone;
-
-        //private TimeSpanInfo radio;
-        //private TimeSpanInfo terra;
-        //private TimeSpanInfo arrival;
+        //public string note;
+        public TimeSpanInfo error;
+        private int arraylength;
+        internal StarZone timeZone;
 
         internal static int DayFromMonth(int day)
         {
@@ -71,14 +68,14 @@ namespace StarCalendar
             dt = new StarDate(staryear, 1, 1);
             StarDate end = StarDate.FromGreg(gregyear + 1, 1, 1);
             string gregday = "Day of the Gregorian Month";
-            string gregmonthname = "Gregorian Month Name";
+            string gregmonthname = "Gregorian Month PlanetName";
             string gregmonthnumber = "Gregorian Month Number";
             string g_year = "Gregorian Year";
             string gregdayofyear = "Gregorian Day of Year";
             string weekday = "Day of the Week";
             string comma = ",";
             string starday = "Day of the Star Month";
-            string starmonthname = "Star Month Name";
+            string starmonthname = "Star Month PlanetName";
             string starmonthnumber = "Star Month Number";
             string StarYear = "Star Year";
             string Stardayofyear = "Star Day of Year";
@@ -110,7 +107,10 @@ namespace StarCalendar
         internal static StarDate AbstractDate(TimeSpanInfo timeSpanInfo)
         {
             StarDate dt = new StarDate(timeSpanInfo);
-            dt.metadata = StarData.Local;
+
+            dt.timeZone = StarZone.Local;
+            dt.arraylength = 10;
+            dt.error = new TimeSpanInfo(0);
             return dt;
         }
 
@@ -195,7 +195,7 @@ namespace StarCalendar
 
 
 
-        //public Zone timeZone;
+        //public StarZone timeZone;
 
 
         internal static StarDate MathFromGreg(int[] v)
@@ -253,7 +253,7 @@ namespace StarCalendar
         {
             get
             {
-                return new StarDate(DateTime.UtcNow, StarData.Local);
+                return new StarDate(DateTime.UtcNow, StarZone.Local);
             }
         }
         public long fullyear
@@ -468,31 +468,31 @@ namespace StarCalendar
                 this.atomic += diff * c.Day;
             }
         }
-        public TimeSpanInfo error
-        {
-            get
-            {
-                return this.metadata.error;
-            }
+        //public TimeSpanInfo error
+        //{
+        //    get
+        //    {
+        //        return this.metadata.error;
+        //    }
 
-            private set
-            {
-                this.metadata.error = value;
-            }
-        }
+        //    private set
+        //    {
+        //        this.metadata.error = value;
+        //    }
+        //}
 
-        public string Note
-        {
-            get
-            {
-                return this.metadata.note;
-            }
+        //public string Note
+        //{
+        //    get
+        //    {
+        //        return this.metadata.note;
+        //    }
 
-            private set
-            {
-                this.metadata.note = value;
-            }
-        }
+        //    private set
+        //    {
+        //        this.metadata.note = value;
+        //    }
+        //}
 
         public int WeekInt
         {
@@ -504,23 +504,15 @@ namespace StarCalendar
             }
         }
 
-        public Zone TimeZone
+        public StarZone TimeZone
         {
             get
             {
-                try
-                {
-                    return this.metadata.timeZone;
-                }
-                catch (NullReferenceException)
-                {
-                    this.metadata = StarData.Local;
-                    return Zone.UTC;
-                }
+                return this.timeZone;
             }
             private set
             {
-                this.metadata.timeZone = value;
+                this.timeZone = value;
             }
         }
 
@@ -565,34 +557,35 @@ namespace StarCalendar
         {
             get
             {
-                return this.metadata.IsTerran;
+                return this.timeZone.IsTerran;
             }
         }
-        public bool ComplexTimeZone
+        public bool SupportsDaylightSavingTime
         {
             get
             {
-                return this.metadata.ComplexTimeZone;
+                return this.timeZone.SupportsDaylightSavingTime;
             }
 
         }
-        public bool HasTimeZone
-        {
-            get
-            {
-                return this.metadata.HasTimeZone;
-            }
+        //public bool HasTimeZone
+        //{
+        //    get
+        //    {
+        //        return this.timeZone.HasTimeZone;
+        //    }
 
-        }
+        //}
 
         public StarDate(DateTime utcNow)
         {
             this.atomic = c.netstart.atomic + new TimeSpanInfo(utcNow.Ticks);
 
-            //this.error = new TimeSpanInfo(0);
-            this.metadata = StarData.Standard;
-            //this.timeZone = Zone.Local();
+            this.error = new TimeSpanInfo(0);
+            //this.metadata = StarData.Standard;
+            this.timeZone = StarZone.Local;
             //this.Note = "";
+            this.arraylength = 10;
         }
 
         public StarDate EasterDate()
@@ -803,19 +796,20 @@ namespace StarCalendar
         public StarDate(TimeSpanInfo t) : this()
         {
             this.atomic = t;
-            this.metadata = StarData.Local;
+            this.timeZone = StarZone.Local;
         }
 
         public StarDate(int v) : this()
         {
             this.atomic = new TimeSpanInfo(v);
-            this.metadata = StarData.Local;
+            this.timeZone = StarZone.Local;
         }
 
-        public StarDate(int v, Zone Zone) : this(v)
+        public StarDate(int v, StarZone Zone) : this(v)
         {
             this.atomic = new TimeSpanInfo(v) + c.netstart.atomic;
-            this.metadata = new StarData(Zone);
+            this.timeZone = Zone;
+            //this.metadata = new StarData(Zone);
         }
 
         //internal long DayOfYear()
@@ -823,15 +817,16 @@ namespace StarCalendar
         //    return this.LocalData()["day of year"];
         //}
 
-        //public StarDate(DateTime utcNow, Zone zone) : this(utcNow)
+        //public StarDate(DateTime utcNow, StarZone zone) : this(utcNow)
         //{
         //    this.atomic = new TimeSpanInfo(v) + c.netstart.atomic;
         //}
 
-        public StarDate(DateTime utcNow, Zone zone) : this(utcNow)
+        public StarDate(DateTime utcNow, StarZone zone) : this(utcNow)
         {
             this.atomic = c.netstart.atomic + new TimeSpanInfo(utcNow.Ticks);
-            this.metadata = new StarData(zone);
+            this.timeZone = zone;
+            //this.metadata = new StarData(zone);
         }
 
         private static StarDate AnnoCosmos(params long[] vs)
@@ -893,7 +888,7 @@ namespace StarCalendar
 
             ////assign timezones
 
-            //this.timeZone = Zone.UTC;
+            //this.timeZone = StarZone.UTC;
 
             ////assign notes
 
@@ -932,20 +927,49 @@ namespace StarCalendar
             this.atomic += data[1] * c.month + data[2] * c.Day + data[3] * c.Hour + data[4] * c.Minute + data[5] * c.Second + data[6] * c.Millisecond + new TimeSpanInfo(data[7]);
 
 
-            metadata = new StarData(n);
+            this.arraylength = n;
+            switch (arraylength)
+            {
+                case 1:
+                    this.error = c.Year;
+                    break;
+                case 2:
+                    this.error = c.month;
+                    break;
+                case 3:
+                    this.error = c.Day;
+                    break;
+                case 4:
+                    this.error = c.Hour;
+                    break;
+                case 5:
+                    this.error = c.Minute;
+                    break;
+                case 6:
+                    this.error = c.Second;
+                    break;
+                case 7:
+                    this.error = c.Millisecond;
+                    break;
+                case 8:
+                default:
+                    this.error = new TimeSpanInfo(0);
+                    break;
+            }
+            this.timeZone = StarZone.Local;
         }
 
-        public StarDate(TimeSpanInfo t, Zone uTC) : this(t)
+        public StarDate(TimeSpanInfo t, StarZone zone) : this(t)
         {
             this.atomic = t;
-            this.metadata = new StarData(uTC);
+            this.timeZone = zone;
         }
 
-        internal StarDate(DateTime utcNow, StarData local) : this(utcNow)
-        {
-            //this.atomic = utcNow;
-            this.metadata = local;
-        }
+        //internal StarDate(DateTime utcNow, StarData local) : this(utcNow)
+        //{
+        //    //this.atomic = utcNow;
+        //    this.metadata = local;
+        //}
 
         //public static StarDate Now()
         //{
@@ -954,7 +978,7 @@ namespace StarCalendar
 
         //public static StarDate UTCNow()
         //{
-        //    return new StarDate(DateTime.UtcNow, Zone.UTC);
+        //    return new StarDate(DateTime.UtcNow, StarZone.UTC);
         //}
 
         int IComparable<StarDate>.CompareTo(StarDate other)
@@ -1016,7 +1040,7 @@ namespace StarCalendar
                         year2 = BCParse(parsedinput);
                     }
                     StarDate sd = c.netstart - year2 * c.Year;
-                    sd.metadata = StarData.Local;
+                    sd.timeZone = StarZone.Local;
                     return sd;
                     throw new NotImplementedException();
                 }
@@ -1098,7 +1122,7 @@ namespace StarCalendar
                     }
                     //throw new NotImplementedException();
                     StarDate date = new StarDate(dt);
-                    date.addModifier(modifier);
+                    //date.addModifier(modifier);
                     return date;
                 }
             }
@@ -1138,10 +1162,10 @@ namespace StarCalendar
             this.error = error;
         }
 
-        private void addModifier(string modifier)
-        {
-            this.Note = modifier;
-        }
+        //private void addModifier(string modifier)
+        //{
+        //    this.Note = modifier;
+        //}
 
         internal DateTime Convert()
         {
@@ -1331,17 +1355,13 @@ namespace StarCalendar
             {
                 return this;
             }
-            else if (this.ComplexTimeZone)
+            else if (this.SupportsDaylightSavingTime)
             {
                 return this + this.TimeZone.Offset(this.Convert());
             }
-            else if (this.HasTimeZone)
-            {
-                return this + this.TimeZone.BaseUtcOffset;
-            }
             else
             {
-                return this;
+                return this + this.TimeZone.BaseUtcOffset;
             }
         }
 
@@ -1465,10 +1485,10 @@ namespace StarCalendar
             return dict;
         }
 
-        internal StarData GetKind()
-        {
-            return this.metadata;
-        }
+        //internal StarData GetKind()
+        //{
+        //    return this.metadata;
+        //}
 
         internal BigInteger GetTicks()
         {
@@ -1487,11 +1507,11 @@ namespace StarCalendar
 
         internal StarDate addtimezone(string prim)
         {
-            Zone timezone = Zone.FindTimeZone(prim);
+            StarZone timezone = StarZone.FindTimeZone(prim);
             return this.addtimezone(timezone);
         }
 
-        private StarDate addtimezone(Zone timezone)
+        private StarDate addtimezone(StarZone timezone)
         {
             StarDate dt = this;
             dt.TimeZone = TimeZone;

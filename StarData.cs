@@ -7,16 +7,10 @@ namespace StarCalendar
     {
         public static StarData UTC = new StarData("UTC");
         public static StarData Local = new StarData("Local");
-
-        private static StarData GetStandard()
-        {
-            throw new NotImplementedException();
-        }
-
         public string note;
         public TimeSpanInfo error;
         private int arraylength;
-        internal Zone timeZone;
+        internal StarZone timeZone;
         //private bool hasTimeZone;
         //private bool complexTimeZone;
         //private bool IsTerran;
@@ -27,13 +21,13 @@ namespace StarCalendar
             switch (v)
             {
                 case "UTC":
-                    this.timeZone = Zone.UTC;
+                    this.timeZone = StarZone.UTC;
                     break;
                 case "Local":
-                    this.timeZone = Zone.Local;
+                    this.timeZone = StarZone.Local;
                     break;
                 default:
-                    this.timeZone = Zone.FindTimeZone(v);
+                    this.timeZone = StarZone.FindTimeZone(v);
                     break;
             }
             this.note = "";
@@ -74,10 +68,10 @@ namespace StarCalendar
             }
 
             this.note = "";
-            this.timeZone = Zone.UTC;
+            this.timeZone = StarZone.UTC;
         }
 
-        public StarData(Zone uTC)
+        public StarData(StarZone uTC)
         {
             this.timeZone = uTC;
             this.note = "";
