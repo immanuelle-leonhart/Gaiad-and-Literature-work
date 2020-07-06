@@ -17,9 +17,9 @@ namespace StarCalendar
         public TimeSpanInfo error;
         private int arraylength;
         internal Zone timeZone;
-        private bool hasTimeZone;
-        private bool complexTimeZone;
-        private bool isTerran;
+        //private bool hasTimeZone;
+        //private bool complexTimeZone;
+        //private bool IsTerran;
 
         public StarData(string v)
         {
@@ -27,10 +27,10 @@ namespace StarCalendar
             switch (v)
             {
                 case "UTC":
-                    this.timeZone = c.UTC;
+                    this.timeZone = Zone.UTC;
                     break;
                 case "Local":
-                    this.timeZone = Zone.Here;
+                    this.timeZone = Zone.Local;
                     break;
                 default:
                     this.timeZone = Zone.FindTimeZone(v);
@@ -74,7 +74,7 @@ namespace StarCalendar
             }
 
             this.note = "";
-            this.timeZone = c.UTC;
+            this.timeZone = Zone.UTC;
         }
 
         public StarData(Zone uTC)
@@ -91,14 +91,21 @@ namespace StarCalendar
         {
             get
             {
-                return timeZone.IsTerran;
+                try
+                {
+                    return timeZone.IsTerran;
+                }
+                catch (NullReferenceException)
+                {
+                    return false;
+                }
             }
         }
         public bool ComplexTimeZone
         {
             get
             {
-                return timeZone.ComplexTimeZone;
+                return timeZone.SupportsDaylightSavingTime;
             }
 
         }

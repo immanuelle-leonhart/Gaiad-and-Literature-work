@@ -18,7 +18,7 @@ namespace StarCalendar
     {
         public TimeSpanInfo atomic;
         private StarData metadata;
-        //private bool isTerran;
+        //private bool IsTerran;
         //private bool complexTimeZone;
         //private bool hasTimeZone;
 
@@ -515,7 +515,7 @@ namespace StarCalendar
                 catch (NullReferenceException)
                 {
                     this.metadata = StarData.Local;
-                    return c.UTC;
+                    return Zone.UTC;
                 }
             }
             private set
@@ -591,7 +591,7 @@ namespace StarCalendar
 
             //this.error = new TimeSpanInfo(0);
             this.metadata = StarData.Standard;
-            //this.timeZone = Zone.Here();
+            //this.timeZone = Zone.Local();
             //this.Note = "";
         }
 
@@ -893,7 +893,7 @@ namespace StarCalendar
 
             ////assign timezones
 
-            //this.timeZone = c.UTC;
+            //this.timeZone = Zone.UTC;
 
             ////assign notes
 
@@ -954,7 +954,7 @@ namespace StarCalendar
 
         //public static StarDate UTCNow()
         //{
-        //    return new StarDate(DateTime.UtcNow, c.UTC);
+        //    return new StarDate(DateTime.UtcNow, Zone.UTC);
         //}
 
         int IComparable<StarDate>.CompareTo(StarDate other)
@@ -1357,7 +1357,7 @@ namespace StarCalendar
 
         private Dictionary<string, int> Data(string length)
         {
-            TimeSpanInfo LocalDay = this.TimeZone.LocalDay();
+            TimeSpanInfo LocalDay = this.TimeZone.Day;
             Dictionary<string, int> dict = new Dictionary<string, int>();
             TimeSpanInfo rem = this.atomic;
             dict.Add("b", rem / c.b);
@@ -1482,12 +1482,12 @@ namespace StarCalendar
 
         private bool Sol()
         {
-            return this.TimeZone.Sol();
+            return this.TimeZone.Sol;
         }
 
         internal StarDate addtimezone(string prim)
         {
-            Zone timezone = Zone.Parse(prim);
+            Zone timezone = Zone.FindTimeZone(prim);
             return this.addtimezone(timezone);
         }
 

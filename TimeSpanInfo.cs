@@ -183,10 +183,7 @@ namespace StarCalendar
             return (this.ticks - other.ticks).Sign;
         }
 
-        public TimeSpan timespan()
-        {
-            return new TimeSpan((long)this.ticks);
-        }
+        public TimeSpan TimeSpan => new TimeSpan((long)this.ticks);
 
         public static bool operator ==(TimeSpanInfo t1, TimeSpanInfo t2)
         {

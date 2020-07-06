@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 
 namespace StarCalendar
 {
@@ -9,7 +10,8 @@ namespace StarCalendar
 
         static void Main(string[] args)
         {
-            long b = 14000000000;
+            long bi = 14000000000;
+            Console.WriteLine(bi);
             List<int> Integers = new List<int>();
             StarDate dt = StarDate.Now;
             StarDate utc = StarDate.UtcNow;
@@ -67,6 +69,30 @@ namespace StarCalendar
             times.Add("radio", dt.Radio);
             times.Add("terra", dt.Terra);
             times.Add("arrival", dt.Arrival);
+
+            Zone z = Zone.Local;
+            TimeSpanInfo timeSpanInfo = z.BaseUtcOffset;
+            timeSpanInfo = z.GetOffset(StarDate.Now);
+            string daylightname = z.DaylightName;
+            string s = z.DisplayName;
+            s = z.Id;
+            s = z.StandardName;
+            bool SupportsDaylightSavingTime = z.SupportsDaylightSavingTime;
+            z.ClearCachedData();
+            Zone.ConvertTime(StarDate.Now, Zone.UTC);
+            Zone.ConvertTime(StarDate.Now, Zone.Local, Zone.UTC);
+            Zone.ConvertTimeBySystemTimeZoneId(StarDate.Now, "string");
+            Zone.ConvertTimeBySystemTimeZoneId(StarDate.Now, "Zone.Local", "Zone.UTC");
+            dt = Zone.ConvertTimeToUtc(dt);
+            dt = Zone.ConvertTimeToUtc(dt, z);
+            z = Zone.FindSystemTimeZoneById("string");
+            z = Zone.FromSerializedString("string");
+            TimeZoneInfo.AdjustmentRule[] adjustmentRules = z.GetAdjustmentRules();
+            Zone[] GetSystemTimeZones = Zone.GetSystemTimeZones();
+            bool HasSameRules = z.HasSameRules(Zone.Local);
+            bool b = z.IsDaylightSavingTime(dt);
+            s = z.ToSerializedString();
+            s = z.ToString("overload");
         }
     }
 }

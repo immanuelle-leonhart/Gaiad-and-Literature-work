@@ -10,16 +10,6 @@ namespace StarCalendar
     {
         internal static List<CultureInfo> formats = getformats();
 
-        //StarSystems
-        internal static StarSystem Amaterasu = new StarSystem("Amaterasu");
-
-        //Planets
-        internal static PlanetZone Terra = new PlanetZone("Terra", Day, Amaterasu);
-        internal static PlanetZone Mars = new PlanetZone("Mars", Sol, Amaterasu);
-
-        //Zones
-        internal static Zone UTC = new Zone();
-
         internal static TimeSpanInfo Millisecond = new TimeSpanInfo(10000);
         internal static int TicksPerMillisecond = 10000;
         internal static TimeSpanInfo Second = Millisecond * 1000;
@@ -93,7 +83,7 @@ namespace StarCalendar
         {
             get
             {
-                return Zone.Here;
+                return Zone.Local;
             }
 
             //internal set

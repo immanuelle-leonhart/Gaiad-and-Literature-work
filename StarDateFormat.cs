@@ -368,7 +368,7 @@ namespace StarCalendar
 
             if (!foundQuote)
             {
-                // Here we can't find the matching quote.
+                // Local we can't find the matching quote.
                 //throw new FormatException(
                 //        String.Format(
                 //            CultureInfo.CurrentCulture,
@@ -802,7 +802,7 @@ namespace StarCalendar
                     // accurate than the system's current offset because of daylight saving time.
                     offset = Zone.GetLocalUtcOffset(StarDate.Now);
                 }
-                else if (StarDate.TimeZone == c.UTC)
+                else if (StarDate.TimeZone == Zone.UTC)
                 {
 #if FEATURE_CORECLR
                     offset = TimeSpanInfo.Zero;
@@ -867,7 +867,7 @@ namespace StarCalendar
                     offset = Zone.GetLocalUtcOffset(dt, ZoneOptions.NoThrowOnInvalidTime);
                     // fall through to shared time zone output code
                 }
-                else if (dt.TimeZone == c.UTC)
+                else if (dt.TimeZone == Zone.UTC)
                 {
                     // The 'Z' constant is a marker for a UTC date
                     result.Append("Z");

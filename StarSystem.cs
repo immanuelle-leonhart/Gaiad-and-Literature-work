@@ -8,11 +8,20 @@ namespace StarCalendar
     {
         //private static string type = "standard";
         //public BigInteger atomicTicks; //atomic atomic ticks
-        public StarDate startDate; //atomic that movement starts
-        public List<BigInteger> distanceTicks = new List<BigInteger>(); //position, speed, acceleration, etc
-        public List<double> polar = new List<double>(); //position, speed, acceleration, etc
-        public List<double> azimuthal = new List<double>(); //position, speed, acceleration, etc
-        public string name;
+        public StarDate startDate = new StarDate(0); //atomic that movement starts
+        public List<BigInteger> distanceTicks = new List<BigInteger> { 0 }; //position, speed, acceleration, etc
+        public List<double> polar = new List<double> { 0 }; //position, speed, acceleration, etc
+        public List<double> azimuthal = new List<double> { 0 }; //position, speed, acceleration, etc
+        public string name = "Default Star System Name";
+        public static StarSystem Amaterasu = new StarSystem("Amaterasu");
+
+        public bool Sol
+        {
+            get
+            {
+                return name == "Amaterasu";
+            }
+        }
 
         public double[] cartesian()
         {
@@ -33,10 +42,6 @@ namespace StarCalendar
         public StarSystem(string name)
         {
             this.name = name;
-            this.startDate = new StarDate(0);
-            this.distanceTicks = new List<BigInteger> { 0 };
-            this.azimuthal = new List<double> { 0 };
-            this.polar = new List<double> { 0 };
         }
 
         internal object distance_at_time(StarDate now)
