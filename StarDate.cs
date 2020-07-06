@@ -1333,11 +1333,11 @@ namespace StarCalendar
             }
             else if (this.ComplexTimeZone)
             {
-                return this + this.GetOffset();
+                return this + this.TimeZone.Offset(this.Convert());
             }
             else if (this.HasTimeZone)
             {
-                return this + this.TimeZone.Offset(this.Convert());
+                return this + this.TimeZone.BaseUtcOffset;
             }
             else
             {
