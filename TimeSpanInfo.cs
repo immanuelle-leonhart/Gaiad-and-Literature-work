@@ -311,7 +311,7 @@ namespace StarCalendar
 
         internal TimeSpanInfo Negate()
         {
-            throw new NotImplementedException();
+            return this * -1;
         }
     }
 }

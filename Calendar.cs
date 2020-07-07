@@ -12,14 +12,37 @@ namespace StarCalendar
 {
     public class Calendar
     {
-        public int ID { get; internal set; }
+        public int ID
+        {
+            get
+            {
+                if (iD == null)
+                {
+                    iD = 42;
+                }
+                return iD;
+            }
+
+            internal set
+            {
+                iD = value;
+            }
+        }
         public int CurrentEraValue { get; internal set; }
         public int CAL_JAPAN { get; internal set; }
         public int CAL_TAIWAN { get; internal set; }
         public object MinSupportedStarDate { get; internal set; }
         public object MaxSupportedStarDate { get; internal set; }
-        public static int CAL_HEBREW { get; internal set; }
-        public static BigInteger TicksPerSecond { get; internal set; }
+        public static int CAL_HEBREW = 666;
+        private int iD;
+        private StarDateFormatInfo starDateFormatInfo;
+
+        public Calendar(StarDateFormatInfo starDateFormatInfo)
+        {
+            this.starDateFormatInfo = starDateFormatInfo;
+        }
+
+        //public static BigInteger TicksPerSecond { get; internal set; }
 
         internal Calendar GetDefaultInstance()
         {
@@ -63,17 +86,17 @@ namespace StarCalendar
 
         internal int GetDayOfMonth(StarDate starDate)
         {
-            throw new NotImplementedException();
+            return starDate.day;
         }
 
         internal int GetDayOfWeek(StarDate starDate)
         {
-            throw new NotImplementedException();
+            return starDate.WeekInt;
         }
 
         internal int GetMonth(StarDate starDate)
         {
-            throw new NotImplementedException();
+            return starDate.Month;
         }
     }
 }

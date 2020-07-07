@@ -8,29 +8,168 @@ namespace StarCalendar
     public class CultureInfo //combined cultureinfo and culturedata
     {
         //private string lang;
-        private Dictionary<string, string> weekdays;
-        private string[] months;
+        //private Dictionary<string, string> weekdays;
+        //private string[] months;
+        //private string[] genmonths;
+
         //private Dictionary<int, string> numbers;
         private static Dictionary<string, CultureInfo> dict = getformats();
-        private static string[] days = new string[] { "0", "mon", "tue", "wed", "thu", "fri", "sat", "sun" };
+        //private static string[] days = new string[] { "0", "mon", "tue", "wed", "thu", "fri", "sat", "sun" };
 
         public CultureInfo(string line)
         {
             string[] n = line.Split(',');
-            this.CultureName = n[0];
-            this.weekdays = new Dictionary<string, string>
-        {
-            {"0", "0"},
-            {"mon", n[1]},
-            {"tue", n[2]},
-            {"wed", n[3]},
-            {"thu", n[4]},
-            {"fri", n[5]},
-            {"sat", n[6]},
-            {"sun", n[7]}
-        };
-            this.months = new string[] { "0", n[8], n[9], n[10], n[11], n[12], n[13], n[14], n[15], n[16], n[17], n[18], n[19], n[20], n[21] };
-            //CultureInfo.dict.Add(this.lang, this);
+            //this.CultureName = n[0];
+            int i = 0;
+            while (i < n.Length)
+            {
+                switch (i)
+                {
+                    case 0:
+                        this.CultureName = n[i];
+                        if (CultureName == "English")
+                        {
+                            CultureInfo.InvariantCulture = this;
+                        }
+                        if (CultureName == "Symbol")
+                        {
+                            CultureInfo.Symbol = this;
+                        }
+                        break;
+                    case 1:
+                        this.langfam = n[i];
+                        break;
+                    case 2:
+                        this.endonym = n[i];
+                        break;
+                    case 3:
+                        this.SISO639LANGNAME = n[i];
+                        this.ISO = new List<string> { n[i] };
+                        break;
+                    case 4:
+                    case 5:
+                    case 6:
+                        this.ISO.Add(n[i]);
+                        break;
+                    case 7:
+                        this.notes = n[i];
+                        break;
+                    case 8:
+                        this.weekdays = new List<string>() { n[i] };
+                        break;
+                    case 9:
+                    case 10:
+                    case 11:
+                    case 12:
+                    case 13:
+                    case 14:
+                        this.weekdays.Add(n[i]);
+                        break;
+                    case 15:
+                        this.months = new List<string>() { n[i] };
+                        break;
+                    case 16:
+                    case 17:
+                    case 18:
+                    case 19:
+                    case 20:
+                    case 21:
+                    case 22:
+                    case 23:
+                    case 24:
+                    case 25:
+                    case 26:
+                    case 27:
+                    case 28:
+                        this.months.Add(n[i]);
+                        break;
+                    case 29:
+                        this.genmonths = new List<string> { n[i] };
+                        break;
+                    case 30:
+                    case 31:
+                    case 32:
+                    case 33:
+                    case 34:
+                    case 35:
+                    case 36:
+                    case 37:
+                    case 38:
+                    case 39:
+                    case 40:
+                    case 41:
+                    case 42:
+                        this.genmonths.Add(n[i]);
+                        break;
+                    case 43:
+                        this.SAM1159 = n[i];
+                        break;
+                    case 44:
+                        this.SPM2359 = n[i];
+                        break;
+                    case 45:
+                        this.hour_minute = n[i];
+                        break;
+                    case 46:
+                        this.hour_second = n[i];
+                        break;
+                    case 47:
+                        this.misc = new List<string>() { n[i] };
+                        break;
+                    case 48:
+                    case 49:
+                    case 50:
+                    case 51:
+                    case 52:
+                    case 53:
+                    case 54:
+                    case 55:
+                    case 56:
+                    case 57:
+                    case 58:
+                    case 59:
+                    default:
+                        this.misc.Add(n[i]);
+                        break;
+                }
+                i++;
+            }
+        //    this.weekdays = new Dictionary<string, string>
+        //{
+        //    {"0", "0"},
+        //    {"mon", n[1]},
+        //    {"tue", n[2]},
+        //    {"wed", n[3]},
+        //    {"thu", n[4]},
+        //    {"fri", n[5]},
+        //    {"sat", n[6]},
+        //    {"sun", n[7]}
+        //};
+            //this.months = new string[] { "0", n[8], n[9], n[10], n[11], n[12], n[13], n[14], n[15], n[16], n[17], n[18], n[19], n[20], n[21] };
+            //this.genmonths = new string[] { "0", n[22], n[23], n[24], n[25], n[26], n[27], n[28], n[29], n[30], n[31], n[32], n[33], n[34], n[35] };
+            //this.starDateInfo = new StarDateFormatInfo(this);
+            //this.SISO639LANGNAME = n[37];
+            //this.SAM1159 = n[41];
+            //if (SAM1159 == "")
+            //{
+            //    SAM1159 = "AM";
+            //}
+            //this.SPM2359 = n[42];
+            //if (SPM2359 == "")
+            //{
+            //    SPM2359 = "PM";
+            //}
+            //this.hour_minute = n[43];
+            //if (hour_minute == "")
+            //{
+            //    hour_minute = ":";
+            //}
+            //this.hour_second = n[44];
+            //if (hour_second == "")
+            //{
+            //    hour_second = ":";
+            //}
+
         }
 
         public CultureInfo(string line, bool v) : this(line)
@@ -45,7 +184,7 @@ namespace StarCalendar
 
         internal string weekday(int d)
         {
-            return this.weekdays[days[d]];
+            return this.weekdays[d - 1];
         }
 
 
@@ -84,8 +223,8 @@ namespace StarCalendar
         {
             get
             {
-                
-                
+
+
                 return new StarDateFormat(AbbreviatedMonthNames(), AbbreviatedDayNames());
             }
 
@@ -97,8 +236,8 @@ namespace StarCalendar
 
         private string[] AbbreviatedDayNames()
         {
-            string[] vs = new string[8];
-            int i = 0;
+            string[] vs = new string[7];
+            int i = 1;
             while (i < vs.Length)
             {
                 vs[i] = abbreviate(weekday(i));
@@ -131,7 +270,7 @@ namespace StarCalendar
 
         private string[] AbbreviatedMonthNames()
         {
-            string[] vs = new string[8];
+            string[] vs = new string[this.months.Count];
             int i = 0;
             while (i < vs.Length)
             {
@@ -143,12 +282,31 @@ namespace StarCalendar
 
         public string CultureName { get; internal set; }
         public string SISO639LANGNAME { get; internal set; }
+
+        private List<string> ISO;
+
+        //private Dictionary<int, string> ISO;
+
         public CultureInfo m_cultureData { get; internal set; }
         public int IFIRSTDAYOFWEEK { get; internal set; }
-        public int IFIRSTWEEKOFYEAR { get; internal set; }
+        public int IFIRSTWEEKOFYEAR
+        {
+            get
+            {
+                return iFIRSTWEEKOFYEAR;
+            }
+
+            internal set
+            {
+                iFIRSTWEEKOFYEAR = value;
+            }
+        }
         public string SAM1159 { get; internal set; }
         public string SPM2359 { get; internal set; }
-        public string TimeSeparator { get; internal set; }
+
+        private string hour_minute;
+
+        public string TimeSeparator { get { return hour_minute; } internal set => timeSeparator = value; }
         public string[] LongTimes { get; internal set; }
         public string[] ShortTimes { get; internal set; }
         public bool UseUserOverride { get; internal set; }
@@ -166,12 +324,68 @@ namespace StarCalendar
         }
         public int[] CalendarIds { get; internal set; }
         public object SCOMPAREINFO { get; internal set; }
+        public IFormatProvider FormatProvider
+        {
+            get
+            {
+                if (formatProvider == null)
+                {
+                    formatProvider = System.Globalization.NumberFormatInfo.InvariantInfo;
+                }
+                return formatProvider;
+            }
+
+            private set
+            {
+                formatProvider = value;
+            }
+        }
+
+        public string[] MonthGenitives
+        {
+            get
+            {
+                string[] gen = new string[15];
+                int i = 0;
+                while (i < 15)
+                {
+                    if (genmonths[i] == "")
+                    {
+                        gen[i] = dict["Symbol"].genmonths[i];
+                    }
+                    else
+                    {
+                        gen[i] = genmonths[i];
+                    }
+                    i++;
+                }
+                return gen;
+            }
+
+            private set
+            {
+                monthGenitives = value;
+            }
+        }
 
         public static CultureInfo InvariantCulture = dict["English"];
         internal bool m_isInherited = false;
         private bool v;
         internal static CultureInfo CurrentCulture = dict["English"];
-        private StarDateFormatInfo starDateInfo = new StarDateFormatInfo();
+        private StarDateFormatInfo starDateInfo;
+        private IFormatProvider formatProvider;
+        private string[] monthGenitives;
+        private int iFIRSTWEEKOFYEAR;
+        private string hour_second;
+        private string timeSeparator;
+        private static CultureInfo Symbol;
+        private string langfam;
+        private string endonym;
+        private string notes;
+        private List<string> weekdays;
+        private List<string> months;
+        private List<string> genmonths;
+        private List<string> misc;
 
         internal IFormatProvider GetFormat(Type type)
         {
@@ -198,14 +412,21 @@ namespace StarCalendar
             throw new NotImplementedException();
         }
 
-        internal string[] DayNames(object iD)
+        internal string[] DayNames(int iD)
         {
             return DayNames();
         }
 
         private string[] DayNames()
         {
-            throw new NotImplementedException();
+            string[] vs = new string[7];
+            int i = 1;
+            while (i < vs.Length)
+            {
+                vs[i] = weekday(i);
+                i++;
+            }
+            return vs;
         }
 
         internal string[] AbbreviatedMonthNames(object iD)
@@ -220,7 +441,14 @@ namespace StarCalendar
 
         private string[] MonthNames()
         {
-            throw new NotImplementedException();
+            string[] vs = new string[this.months.Count];
+            int i = 0;
+            while (i < vs.Length)
+            {
+                vs[i] = months[i];
+                i++;
+            }
+            return vs;
         }
 
         internal string DateSeparator(int calendarID)
@@ -255,17 +483,36 @@ namespace StarCalendar
 
         internal IFormatProvider GetFormat()
         {
-            throw new NotImplementedException();
+            return this.FormatProvider;
         }
 
         internal string[] AbbreviatedGenitiveMonthNames(int iD)
         {
-            throw new NotImplementedException();
+            return AbbreviatedGenitiveMonthNames();
+        }
+
+        private string[] AbbreviatedGenitiveMonthNames()
+        {
+            string[] gen = new string[15];
+            int i = 0;
+            while (i < 15)
+            {
+                if (genmonths[i] == "")
+                {
+                    gen[i] = abbreviate(dict["Symbol"].genmonths[i]);
+                }
+                else
+                {
+                    gen[i] = abbreviate(genmonths[i]);
+                }
+                i++;
+            }
+            return gen;
         }
 
         internal string[] GenitiveMonthNames(int iD)
         {
-            throw new NotImplementedException();
+            return this.MonthGenitives;
         }
 
         internal string[] AbbreviatedEnglishEraNames(int iD)
@@ -308,9 +555,16 @@ namespace StarCalendar
             return formats;
         }
 
-        //internal string month(int month)
-        //{
-        //    //return this.month
-        //}
+        //
+
+        public IFormatProvider GetFormatProvider()
+        {
+            return this.FormatProvider;
+        }
+
+        internal string[] GetDayNames()
+        {
+            return this.DayNames();
+        }
     }
 }

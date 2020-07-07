@@ -142,6 +142,18 @@ namespace StarCalendar
 
         internal TimeSpanInfo ToRadio(TimeSpanInfo atomic)
         {
+            if (this.Sol)
+            {
+                return atomic;
+            }
+            else
+            {
+                return atomic - this.distance_at_time(atomic);
+            }
+        }
+
+        private TimeSpanInfo distance_at_time(TimeSpanInfo atomic)
+        {
             throw new NotImplementedException();
         }
 
@@ -392,12 +404,12 @@ namespace StarCalendar
 
         internal static TimeSpanInfo GetLocalUtcOffset(StarDate starDate)
         {
-            throw new NotImplementedException();
+            return starDate.offset;
         }
 
         internal static TimeSpanInfo GetLocalUtcOffset(StarDate dt, bool noThrowOnInvalidTime)
         {
-            throw new NotImplementedException();
+            return GetLocalUtcOffset(dt);
         }
 
         public StarZone(string Name, TimeSpanInfo LocalDay)

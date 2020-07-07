@@ -178,11 +178,11 @@ namespace StarCalendar
 
         public StarDateFormat(string[] abbreviatedMonthNames1, string[] abbreviatedDayNames1)
         {
-            this.abbreviatedMonthNames = abbreviatedMonthNames;
-            this.abbreviatedDayNames = abbreviatedDayNames;
+            this.abbreviatedMonthNames = abbreviatedMonthNames1;
+            this.abbreviatedDayNames = abbreviatedDayNames1;
         }
 
-        //public static StarStringBuilderCache StringBuilderCache { get; private set; }
+        //public static StringBuilderCache StringBuilderCache { get; private set; }
         public StarDateFormat CurrentInfo { get; internal set; }
         public string[] AbbreviatedMonthNames
         {
@@ -535,7 +535,8 @@ namespace StarCalendar
             //throw new NotImplementedException();
             Console.WriteLine("Breakpoint");
             Calendar cal = sdfi.Calendar;
-            StringBuilder result = StringBuilderCache.Acquire();
+            //StringBuilder result = StringBuilderCache.Acquire();
+            StringBuilder result = new StringBuilder();
             // This is a flag to indicate if we are format the dates using Hebrew calendar.
 
             bool isHebrewCalendar = false;// (cal.ID == Calendar.CAL_HEBREW);
@@ -583,11 +584,11 @@ namespace StarCalendar
                         tokenLen = ParseRepeatPattern(format, i, ch);
                         if (tokenLen <= MaxSecondsFractionDigits)
                         {
-                            long fraction = (long)(StarDate.Ticks % Calendar.TicksPerSecond);
+                            long fraction = (long)(StarDate.Ticks % c.TicksPerSecond);
                             fraction = fraction / (long)Math.Pow(10, 7 - tokenLen);
                             if (ch == 'f')
                             {
-                                result.Append(((int)fraction).ToString(fixedNumberFormats[tokenLen - 1], (IFormatProvider)CultureInfo.InvariantCulture));
+                                result.Append(((int)fraction).ToString(fixedNumberFormats[tokenLen - 1], CultureInfo.InvariantCulture.FormatProvider));
                             }
                             else
                             {
@@ -685,7 +686,7 @@ namespace StarCalendar
                         // tokenLen >= 4 : Month as its full StarName.
                         //
                         tokenLen = ParseRepeatPattern(format, i, ch);
-                        int Month = cal.GetMonth(StarDate);
+                        int Month = StarDate.Month;
                         if (tokenLen <= 2)
                         {
                             if (isHebrewCalendar)
@@ -728,7 +729,7 @@ namespace StarCalendar
                         // yy: Always print (year % 100) with leading zero.
                         // yyy/yyyy/yyyyy/... : Print year value.  No leading zero.
 
-                        int year = cal.GetYear(StarDate);
+                        int year = StarDate.year;
                         tokenLen = ParseRepeatPattern(format, i, ch);
 
                         if (isJapaneseCalendar &&
@@ -759,7 +760,7 @@ namespace StarCalendar
                             else
                             {
                                 String fmtPattern = "D" + tokenLen;
-                                result.Append(year.ToString(fmtPattern, (IFormatProvider)CultureInfo.InvariantCulture));
+                                result.Append(year.ToString(fmtPattern, CultureInfo.InvariantCulture.FormatProvider));
                             }
                         }
                         bTimeOnly = false;
@@ -854,12 +855,13 @@ namespace StarCalendar
 
         private static void HebrewFormatDigits(StringBuilder result, int day)
         {
-            throw new NotImplementedException();
+            Console.WriteLine("I have no idea what this does but I don't want this to run since I'm not using the Hebrew Calendar");
+            //throw new NotImplementedException();
         }
 
         private static void FormatDigits(StringBuilder result, int hour12, int tokenLen)
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Probably Pointless Method");
         }
 
 
@@ -1357,5 +1359,24 @@ namespace StarCalendar
         }
 
 
+    }
+
+    internal class StringBuilderCache
+    {
+        internal static StringBuilder Acquire(int rfc1123FormatLength)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal static StringBuilder Acquire()
+        {
+            throw new NotImplementedException();
+        }
+
+        internal static string GetStringAndRelease(StringBuilder result)
+        {
+            Console.WriteLine("GetStringAndRelease is not implemented yet");
+            return result.ToString();
+        }
     }
 }

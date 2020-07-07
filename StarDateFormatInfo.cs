@@ -125,7 +125,7 @@ namespace StarCalendar
         //
         // The following are affected by calendar settings.
         //
-        internal Calendar calendar = null;
+        internal Calendar calendar;
 
         internal int firstDayOfWeek = -1;
         internal int calendarWeekRule = -1;
@@ -213,7 +213,7 @@ namespace StarCalendar
             {
                 if (m_name == null)
                 {
-                    m_name = this.m_cultureData.CultureName;
+                    m_name = this.CultureData1.CultureName;
                 }
                 return (m_name);
             }
@@ -239,7 +239,7 @@ namespace StarCalendar
             {
                 if (m_langName == null)
                 {
-                    m_langName = this.m_cultureData.SISO639LANGNAME;
+                    m_langName = this.CultureData1.SISO639LANGNAME;
                 }
                 return (m_langName);
             }
@@ -256,7 +256,7 @@ namespace StarCalendar
             if (this.abbreviatedDayNames == null)
             {
                 // Get the abbreviated day names for our current calendar
-                this.abbreviatedDayNames = this.m_cultureData.AbbreviatedDayNames(Calendar.ID);
+                this.abbreviatedDayNames = this.CultureData1.AbbreviatedDayNames(Calendar.ID);
                 Contract.Assert(this.abbreviatedDayNames.Length == 7, "[StarDateFormatInfo.GetAbbreviatedDayOfWeekNames] Expected 7 day names in a week");
             }
             return (this.abbreviatedDayNames);
@@ -279,7 +279,7 @@ namespace StarCalendar
             if (this.m_superShortDayNames == null)
             {
                 // Get the super short day names for our current calendar
-                this.m_superShortDayNames = this.m_cultureData.SuperShortDayNames(Calendar.ID);
+                this.m_superShortDayNames = this.CultureData1.SuperShortDayNames(Calendar.ID);
                 Contract.Assert(this.m_superShortDayNames.Length == 7, "[StarDateFormatInfo.internalGetSuperShortDayNames] Expected 7 day names in a week");
             }
             return (this.m_superShortDayNames);
@@ -296,7 +296,17 @@ namespace StarCalendar
             if (this.dayNames == null)
             {
                 // Get the day names for our current calendar
-                this.dayNames = this.m_cultureData.DayNames(Calendar.ID);
+                Console.WriteLine(this.CultureData1);
+                Console.WriteLine(Calendar);
+                Console.WriteLine(Calendar.ID);
+                Console.WriteLine("What is Null here");
+                var d = this.CultureData1.GetDayNames();
+                foreach (var entry in d)
+                {
+                    Console.WriteLine(entry);
+                }
+                //Something is a null reference here and I don't understand it
+                this.dayNames = this.CultureData1.DayNames(Calendar.ID);
                 Contract.Assert(this.dayNames.Length == 7, "[StarDateFormatInfo.GetDayOfWeekNames] Expected 7 day names in a week");
             }
             return (this.dayNames);
@@ -313,9 +323,9 @@ namespace StarCalendar
             if (this.abbreviatedMonthNames == null)
             {
                 // Get the month names for our current calendar
-                this.abbreviatedMonthNames = this.m_cultureData.AbbreviatedMonthNames(Calendar.ID);
-                Contract.Assert(this.abbreviatedMonthNames.Length == 12 || this.abbreviatedMonthNames.Length == 13,
-                    "[StarDateFormatInfo.GetAbbreviatedMonthNames] Expected 12 or 13 month names in a year");
+                this.abbreviatedMonthNames = this.CultureData1.AbbreviatedMonthNames(Calendar.ID);
+                //Contract.Assert(this.abbreviatedMonthNames.Length == 12 || this.abbreviatedMonthNames.Length == 13,
+                //    "[StarDateFormatInfo.GetAbbreviatedMonthNames] Expected 12 or 13 month names in a year");
             }
             return (this.abbreviatedMonthNames);
         }
@@ -332,9 +342,9 @@ namespace StarCalendar
             if (this.monthNames == null)
             {
                 // Get the month names for our current calendar
-                this.monthNames = this.m_cultureData.MonthNames(Calendar.ID);
-                Contract.Assert(this.monthNames.Length == 12 || this.monthNames.Length == 13,
-                    "[StarDateFormatInfo.GetMonthNames] Expected 12 or 13 month names in a year");
+                this.monthNames = this.CultureData1.MonthNames(Calendar.ID);
+                //Contract.Assert(this.monthNames.Length == 12 || this.monthNames.Length == 13,
+                //    "[StarDateFormatInfo.GetMonthNames] Expected 12 or 13 month names in a year");
             }
 
             return (this.monthNames);
@@ -356,10 +366,15 @@ namespace StarCalendar
             Contract.Requires(cal != null);
 
             // Remember our culture
-            this.m_cultureData = cultureData;
+            this.CultureData1 = cultureData;
 
             // m_isDefaultCalendar is set in the setter of Calendar below.
             this.Calendar = cal;
+        }
+
+        public StarDateFormatInfo(CultureInfo cultureInfo)
+        {
+            this.cultureInfo = cultureInfo;
         }
 
 #if !FEATURE_CORECLR
@@ -381,10 +396,10 @@ namespace StarCalendar
             if (this.timeSeparator == null) { this.timeSeparator = cultureData.TimeSeparator; }
             if (this.dateSeparator == null) { this.dateSeparator = cultureData.DateSeparator(calendarID); }
 
-            this.allLongTimePatterns = this.m_cultureData.LongTimes;
+            this.allLongTimePatterns = this.CultureData1.LongTimes;
             Contract.Assert(this.allLongTimePatterns.Length > 0, "[StarDateFormatInfo.Populate] Expected some long time patterns");
 
-            this.allShortTimePatterns = this.m_cultureData.ShortTimes;
+            this.allShortTimePatterns = this.CultureData1.ShortTimes;
             Contract.Assert(this.allShortTimePatterns.Length > 0, "[StarDateFormatInfo.Populate] Expected some short time patterns");
 
             this.allLongDatePatterns = cultureData.LongDates(calendarID);
@@ -425,9 +440,9 @@ namespace StarCalendar
         {
             if (this.m_name != null)
             {
-                m_cultureData = CultureInfo.GetCultureData(m_name, m_useUserOverride);
+                CultureData1 = CultureInfo.GetCultureData(m_name, m_useUserOverride);
                 // 
-                if (this.m_cultureData == null)
+                if (this.CultureData1 == null)
                     throw new NotImplementedException(); // throw new NotImplementedException();
                                                          //throw new NotImplementedException(); // throw new CultureNotFoundException(
                                                          //    "m_name", m_name, //LEnvironment.GetResourceString("Argument_CultureNotSupported"));
@@ -447,7 +462,7 @@ namespace StarCalendar
             {
                 CultureInfo.CheckDomainSafetyObject(calendar, this);
             }
-            InitializeOverridableProperties(m_cultureData, calendar.ID);
+            InitializeOverridableProperties(CultureData1, calendar.ID);
 
             //
             //  turn off read only state till we finish initializing all fields and then store read only state after we are done.
@@ -477,7 +492,7 @@ namespace StarCalendar
 #if FEATURE_USE_LCID
             CultureID           = this.m_cultureData.ILANGUAGE;       // Used for serialization compatibility with Whidbey which didn't always serialize the name
 #endif
-            m_useUserOverride = this.m_cultureData.UseUserOverride;
+            m_useUserOverride = this.CultureData1.UseUserOverride;
 
             // make sure the m_name is initialized.
             m_name = this.CultureName;
@@ -637,6 +652,10 @@ namespace StarCalendar
         {
             get
             {
+                if (this.calendar == null)
+                {
+                    this.calendar = new Calendar(this);
+                }
                 //Contract.Ensures(Contract.Result<Calendar>() != null);
 
                 //Contract.Assert(this.calendar != null, "StarDateFormatInfo.Calendar: calendar != null");
@@ -734,7 +753,7 @@ namespace StarCalendar
 
                         // Remember the new calendar
                         calendar = value;
-                        InitializeOverridableProperties(m_cultureData, calendar.ID);
+                        InitializeOverridableProperties(CultureData1, calendar.ID);
 
                         // We succeeded, return
                         return;
@@ -753,7 +772,7 @@ namespace StarCalendar
             {
                 if (this.optionalCalendars == null)
                 {
-                    this.optionalCalendars = this.m_cultureData.CalendarIds;
+                    this.optionalCalendars = this.CultureData1.CalendarIds;
                 }
                 return (this.optionalCalendars);
             }
@@ -920,7 +939,8 @@ namespace StarCalendar
                     this.dateSeparator = this.m_cultureData.DateSeparator(Calendar.ID);
                 }
 #endif
-                Contract.Assert(this.dateSeparator != null, "StarDateFormatInfo.DateSeparator, dateSeparator != null");
+                //Contract.Assert(this.dateSeparator != null, "StarDateFormatInfo.DateSeparator, dateSeparator != null");
+                Console.WriteLine("Contract.Assert(this.dateSeparator != null, " + " StarDateFormatInfo.DateSeparator, dateSeparator != null" + "); ");
                 return (this.dateSeparator);
             }
 
@@ -944,6 +964,7 @@ namespace StarCalendar
         {
             get
             {
+                throw new NotImplementedException();
 #if FEATURE_CORECLR
                 if (this.firstDayOfWeek == -1)
                 {
@@ -1119,7 +1140,7 @@ namespace StarCalendar
                 if (this.monthDayPattern == null)
                 {
                     Contract.Assert(Calendar.ID > 0, "[StarDateFormatInfo.MonthDayPattern] Expected calID > 0");
-                    this.monthDayPattern = this.m_cultureData.MonthDay(Calendar.ID);
+                    this.monthDayPattern = this.CultureData1.MonthDay(Calendar.ID);
                 }
                 Contract.Assert(this.monthDayPattern != null, "StarDateFormatInfo.MonthDayPattern, monthDayPattern != null");
                 return (this.monthDayPattern);
@@ -1147,12 +1168,12 @@ namespace StarCalendar
 #endif
             get
             {
-#if FEATURE_CORECLR
+//#if FEATURE_CORECLR
                 if (this.pmDesignator == null)
                 {
                     this.pmDesignator = this.m_cultureData.SPM2359;
                 }
-#endif
+//#endif
                 Contract.Assert(this.pmDesignator != null, "StarDateFormatInfo.PMDesignator, pmDesignator != null");
                 return (this.pmDesignator);
             }
@@ -1396,12 +1417,12 @@ namespace StarCalendar
         {
             get
             {
-#if FEATURE_CORECLR
+//#if FEATURE_CORECLR
                 if (timeSeparator == null)
                 {
                     timeSeparator = this.m_cultureData.TimeSeparator;
                 }
-#endif
+                //#endif
                 Contract.Assert(this.timeSeparator != null, "StarDateFormatInfo.TimeSeparator, timeSeparator != null");
                 return (timeSeparator);
             }
@@ -1707,18 +1728,18 @@ namespace StarCalendar
             {
                 if (this.m_genitiveAbbreviatedMonthNames == null)
                 {
-                    this.m_genitiveAbbreviatedMonthNames = this.m_cultureData.AbbreviatedGenitiveMonthNames(this.Calendar.ID);
-                    Contract.Assert(this.m_genitiveAbbreviatedMonthNames.Length == 13,
-                        "[StarDateFormatInfo.GetGenitiveMonthNames] Expected 13 abbreviated genitive month names in a year");
+                    this.m_genitiveAbbreviatedMonthNames = this.CultureData1.AbbreviatedGenitiveMonthNames(this.Calendar.ID);
+                    //Contract.Assert(this.m_genitiveAbbreviatedMonthNames.Length == 13,
+                    //    "[StarDateFormatInfo.GetGenitiveMonthNames] Expected 13 abbreviated genitive month names in a year");
                 }
                 return (this.m_genitiveAbbreviatedMonthNames);
             }
 
             if (this.genitiveMonthNames == null)
             {
-                this.genitiveMonthNames = this.m_cultureData.GenitiveMonthNames(this.Calendar.ID);
-                Contract.Assert(this.genitiveMonthNames.Length == 13,
-                    "[StarDateFormatInfo.GetGenitiveMonthNames] Expected 13 genitive month names in a year");
+                this.genitiveMonthNames = this.CultureData1.GenitiveMonthNames(this.Calendar.ID);
+                //Contract.Assert(this.genitiveMonthNames.Length == 13,
+                //    "[StarDateFormatInfo.GetGenitiveMonthNames] Expected 13 genitive month names in a year");
             }
             return (this.genitiveMonthNames);
         }
@@ -1735,7 +1756,7 @@ namespace StarCalendar
             if (this.leapYearMonthNames == null)
             {
                 Contract.Assert(Calendar.ID > 0, "[StarDateFormatInfo.internalGetLeapYearMonthNames] Expected Calendar.ID > 0");
-                this.leapYearMonthNames = this.m_cultureData.LeapYearMonthNames(Calendar.ID);
+                this.leapYearMonthNames = this.CultureData1.LeapYearMonthNames(Calendar.ID);
                 Contract.Assert(this.leapYearMonthNames.Length == 13,
                     "[StarDateFormatInfo.internalGetLeapYearMonthNames] Expepcted 13 leap year month names");
             }
@@ -2034,7 +2055,7 @@ namespace StarCalendar
                 if (this.allYearMonthPatterns == null)
                 {
                     Contract.Assert(Calendar.ID > 0, "[StarDateFormatInfo.UnclonedYearMonthPatterns] Expected Calendar.ID > 0");
-                    this.allYearMonthPatterns = this.m_cultureData.YearMonths(this.Calendar.ID);
+                    this.allYearMonthPatterns = this.CultureData1.YearMonths(this.Calendar.ID);
                     Contract.Assert(this.allYearMonthPatterns.Length > 0,
                         "[StarDateFormatInfo.UnclonedYearMonthPatterns] Expected some year month patterns");
                 }
@@ -2053,7 +2074,7 @@ namespace StarCalendar
                 if (allShortDatePatterns == null)
                 {
                     Contract.Assert(Calendar.ID > 0, "[StarDateFormatInfo.UnclonedShortDatePatterns] Expected Calendar.ID > 0");
-                    this.allShortDatePatterns = this.m_cultureData.ShortDates(this.Calendar.ID);
+                    this.allShortDatePatterns = this.CultureData1.ShortDates(this.Calendar.ID);
                     Contract.Assert(this.allShortDatePatterns.Length > 0,
                         "[StarDateFormatInfo.UnclonedShortDatePatterns] Expected some short date patterns");
                 }
@@ -2071,7 +2092,7 @@ namespace StarCalendar
                 if (allLongDatePatterns == null)
                 {
                     Contract.Assert(Calendar.ID > 0, "[StarDateFormatInfo.UnclonedLongDatePatterns] Expected Calendar.ID > 0");
-                    this.allLongDatePatterns = this.m_cultureData.LongDates(this.Calendar.ID);
+                    this.allLongDatePatterns = this.CultureData1.LongDates(this.Calendar.ID);
                     Contract.Assert(this.allLongDatePatterns.Length > 0,
                         "[StarDateFormatInfo.UnclonedLongDatePatterns] Expected some long date patterns");
                 }
@@ -2088,7 +2109,7 @@ namespace StarCalendar
             {
                 if (this.allShortTimePatterns == null)
                 {
-                    this.allShortTimePatterns = this.m_cultureData.ShortTimes;
+                    this.allShortTimePatterns = this.CultureData1.ShortTimes;
                     Contract.Assert(this.allShortTimePatterns.Length > 0,
                         "[StarDateFormatInfo.UnclonedShortTimePatterns] Expected some short time patterns");
                 }
@@ -2105,7 +2126,7 @@ namespace StarCalendar
             {
                 if (this.allLongTimePatterns == null)
                 {
-                    this.allLongTimePatterns = this.m_cultureData.LongTimes;
+                    this.allLongTimePatterns = this.CultureData1.LongTimes;
                     Contract.Assert(this.allLongTimePatterns.Length > 0,
                         "[StarDateFormatInfo.UnclonedLongTimePatterns] Expected some long time patterns");
                 }
@@ -2156,7 +2177,7 @@ namespace StarCalendar
         {
             get
             {
-                return m_cultureData.CalendarName(Calendar.ID);
+                return CultureData1.CalendarName(Calendar.ID);
             }
         }
 
@@ -2310,10 +2331,10 @@ namespace StarCalendar
                 if (m_fullTimeSpanPositivePattern == null)
                 {
                     CultureInfo cultureDataWithoutUserOverrides;
-                    if (m_cultureData.UseUserOverride)
-                        cultureDataWithoutUserOverrides = CultureInfo.GetCultureData(m_cultureData.CultureName, false);
+                    if (CultureData1.UseUserOverride)
+                        cultureDataWithoutUserOverrides = CultureInfo.GetCultureData(CultureData1.CultureName, false);
                     else
-                        cultureDataWithoutUserOverrides = m_cultureData;
+                        cultureDataWithoutUserOverrides = CultureData1;
                     String decimalSeparator = new NumberFormatInfo(cultureDataWithoutUserOverrides).NumberDecimalSeparator;
 
                     m_fullTimeSpanPositivePattern = "d':'h':'mm':'ss'" + decimalSeparator + "'FFFFFFF";
@@ -2348,7 +2369,7 @@ namespace StarCalendar
                 {
                     // We use the regular GetCompareInfo here to make sure the created CompareInfo object is stored in the
                     // CompareInfo cache. otherwise we would just create CompareInfo using m_cultureData.
-                    m_compareInfo = CompareInfo.GetCompareInfo(m_cultureData.SCOMPAREINFO);
+                    m_compareInfo = CompareInfo.GetCompareInfo(CultureData1.SCOMPAREINFO);
                 }
 
                 return m_compareInfo;
@@ -2387,19 +2408,19 @@ namespace StarCalendar
         {
             get
             {
-                throw new NotImplementedException();
-                //if (formatFlags == StarDateFormatFlags.NotInitialized)
-                //{
-                //    // Build the format flags from the data in this sdfi
-                //    formatFlags = StarDateFormatFlags.None;
-                //    formatFlags |= (StarDateFormatFlags)StarDateFormatInfoScanner.GetFormatFlagGenitiveMonth(
-                //        MonthNames, internalGetGenitiveMonthNames(false), AbbreviatedMonthNames, internalGetGenitiveMonthNames(true));
-                //    formatFlags |= (StarDateFormatFlags)StarDateFormatInfoScanner.GetFormatFlagUseSpaceInMonthNames(
-                //        MonthNames, internalGetGenitiveMonthNames(false), AbbreviatedMonthNames, internalGetGenitiveMonthNames(true));
-                //    formatFlags |= (StarDateFormatFlags)StarDateFormatInfoScanner.GetFormatFlagUseSpaceInDayNames(DayNames, AbbreviatedDayNames);
-                //    formatFlags |= (StarDateFormatFlags)StarDateFormatInfoScanner.GetFormatFlagUseHebrewCalendar((int)Calendar.ID);
-                //}
-                //return (formatFlags);
+                //throw new NotImplementedException();
+                if (formatFlags == StarDateFormatFlags.NotInitialized)
+                {
+                    // Build the format flags from the data in this sdfi
+                    //formatFlags = StarDateFormatFlags.None;
+                    //formatFlags |= (StarDateFormatFlags)StarDateFormatInfoScanner.GetFormatFlagGenitiveMonth(
+                    //    MonthNames, internalGetGenitiveMonthNames(false), AbbreviatedMonthNames, internalGetGenitiveMonthNames(true));
+                    //formatFlags |= (StarDateFormatFlags)StarDateFormatInfoScanner.GetFormatFlagUseSpaceInMonthNames(
+                    //    MonthNames, internalGetGenitiveMonthNames(false), AbbreviatedMonthNames, internalGetGenitiveMonthNames(true));
+                    //formatFlags |= (StarDateFormatFlags)StarDateFormatInfoScanner.GetFormatFlagUseSpaceInDayNames(DayNames, AbbreviatedDayNames);
+                    //formatFlags |= (StarDateFormatFlags)StarDateFormatInfoScanner.GetFormatFlagUseHebrewCalendar((int)Calendar.ID);
+                }
+                return (formatFlags);
             }
         }
 
@@ -2437,6 +2458,22 @@ namespace StarCalendar
         public static Calendar GregorianCalendar { get; }
         public object AppContextSwitches { get; private set; }
         public bool HasForceTwoDigitYears { get; internal set; }
+        public CultureInfo CultureData { get => CultureData1; set => CultureData1 = value; }
+        public CultureInfo CultureData1
+        {
+            get
+            {
+                if (m_cultureData == null){
+                    m_cultureData = CultureInfo.CurrentCulture;
+                }
+                return m_cultureData;
+            }
+
+            set
+            {
+                m_cultureData = value;
+            }
+        }
 
         // This is a callback that the parser can make back into the sdfi to let it fiddle with special
         // cases associated with that culture or calendar. Currently this only has special cases for
@@ -2533,6 +2570,7 @@ namespace StarCalendar
 
         private static volatile StarDateFormatInfo s_jajpsdfi;
         private static volatile StarDateFormatInfo s_zhtwsdfi;
+        private CultureInfo cultureInfo;
 
         //
         // Create a Japanese sdfi which uses JapaneseCalendar.  This is used to parse
