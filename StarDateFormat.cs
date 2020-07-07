@@ -283,7 +283,7 @@ namespace StarCalendar
             return (index - pos);
         }
 
-        private static String FormatDayOfWeek(int dayOfWeek, int repeat, StarDateFormatInfo sdfi)
+        private static String FormatDayOfWeek(int dayOfWeek, int repeat, CultureInfo sdfi)
         {
             Contract.Assert(dayOfWeek >= 0 && dayOfWeek <= 6, "dayOfWeek >= 0 && dayOfWeek <= 6");
             if (repeat == 3)
@@ -305,7 +305,7 @@ namespace StarCalendar
             throw new NotImplementedException();
         }
 
-        private static String FormatMonth(int month, int repeatCount, StarDateFormatInfo sdfi)
+        private static String FormatMonth(int month, int repeatCount, CultureInfo sdfi)
         {
             Contract.Assert(month >= 1 && month <= 12, "Month >=1 && Month <= 12");
             if (repeatCount == 3)
@@ -356,7 +356,7 @@ namespace StarCalendar
 
             Therefore, if we are in a regular year, we have to increment the Month StarName if moth is greater or eqaul to 7.
         */
-        //private static String FormatHebrewMonthName(StarDate time, int Month, int repeatCount, StarDateFormatInfo sdfi)
+        //private static String FormatHebrewMonthName(StarDate time, int Month, int repeatCount, CultureInfo sdfi)
         //{
         //    Contract.Assert(repeatCount != 3 || repeatCount != 4, "repeateCount should be 3 or 4");
         //    if (sdfi.Calendar.IsLeapYear(sdfi.Calendar.GetYear(time)))
@@ -530,7 +530,7 @@ namespace StarCalendar
         //
         //  Actions: Format the StarDate instance using the specified format.
         //
-        private static String FormatCustomized(StarDate StarDate, String format, StarDateFormatInfo sdfi, TimeSpanInfo offset)
+        private static String FormatCustomized(StarDate StarDate, String format, CultureInfo sdfi, TimeSpanInfo offset)
         {
             //throw new NotImplementedException();
             Console.WriteLine("Breakpoint");
@@ -848,7 +848,7 @@ namespace StarCalendar
 
         }
 
-        private static bool FormatHebrewMonthName(StarDate starDate, int month, int tokenLen, StarDateFormatInfo sdfi)
+        private static bool FormatHebrewMonthName(StarDate starDate, int month, int tokenLen, CultureInfo sdfi)
         {
             throw new NotImplementedException();
         }
@@ -972,7 +972,7 @@ namespace StarCalendar
         }
 
 
-        internal static String GetRealFormat(String format, StarDateFormatInfo sdfi)
+        internal static String GetRealFormat(String format, CultureInfo sdfi)
         {
             String realFormat = null;
 
@@ -1040,12 +1040,12 @@ namespace StarCalendar
         // This method also convert the StarDate if necessary (e.g. when the format is in Universal time),
         // and change sdfi if necessary (e.g. when the format should use invariant culture).
         //
-        private static String ExpandPredefinedFormat(String format, ref StarDate StarDate, ref StarDateFormatInfo sdfi, ref TimeSpanInfo offset)
+        private static String ExpandPredefinedFormat(String format, ref StarDate StarDate, ref CultureInfo sdfi, ref TimeSpanInfo offset)
         {
             switch (format[0])
             {
                 case 's':       // Sortable without Time StarZone Info
-                    sdfi = StarDateFormatInfo.InvariantInfo;
+                    sdfi = CultureInfo.InvariantInfo;
                     break;
                 case 'u':       // Universal time in sortable format.
                     if (offset != NullOffset)
@@ -1058,7 +1058,7 @@ namespace StarCalendar
 
                         InvalidFormatForLocal(format, StarDate);
                     }
-                    sdfi = StarDateFormatInfo.InvariantInfo;
+                    sdfi = CultureInfo.InvariantInfo;
                     break;
                     //case 'U':       // Universal time in culture dependent format.
                     //if (offset != NullOffset)
@@ -1082,12 +1082,12 @@ namespace StarCalendar
             return (format);
         }
 
-        //private static string GetRealFormat(string format, StarDateFormatInfo sdfi)
+        //private static string GetRealFormat(string format, CultureInfo sdfi)
         //{
         //    throw new NotImplementedException();
         //}
 
-        internal static String Format(StarDate StarDate, String format, StarDateFormatInfo sdfi)
+        internal static String Format(StarDate StarDate, String format, CultureInfo sdfi)
         {
             //Console.WriteLine(format);
             //throw new NotImplementedException();
@@ -1095,7 +1095,7 @@ namespace StarCalendar
         }
 
 
-        internal static String Format(StarDate StarDate, String format, StarDateFormatInfo sdfi, TimeSpanInfo offset)
+        internal static String Format(StarDate StarDate, String format, CultureInfo sdfi, TimeSpanInfo offset)
         {
             Contract.Requires(sdfi != null);
             Console.WriteLine("Breakpoint");
@@ -1128,7 +1128,7 @@ namespace StarCalendar
                     //    case Calendar.CAL_UMALQURA:
                     //    case Calendar.CAL_PERSIAN:
                     //        timeOnlySpecialCase = true;
-                    //        sdfi = StarDateFormatInfo.InvariantInfo;
+                    //        sdfi = CultureInfo.InvariantInfo;
                     //        break;
                     //}
                 }
@@ -1179,7 +1179,7 @@ namespace StarCalendar
             return FormatCustomized(StarDate, format, sdfi, offset);
         }
 
-        internal static StringBuilder FastFormatRfc1123(StarDate StarDate, TimeSpanInfo offset, StarDateFormatInfo sdfi)
+        internal static StringBuilder FastFormatRfc1123(StarDate StarDate, TimeSpanInfo offset, CultureInfo sdfi)
         {
             // ddd, dd MMM yyyy HH:mm:ss GMT
             const int Rfc1123FormatLength = 29;
@@ -1269,7 +1269,7 @@ namespace StarCalendar
             BCLDebug.Assert(val == 0, "StarDateFormat.AppendNumber(): digits less than size of val");
         }
 
-        internal static String[] GetAllStarDates(StarDate StarDate, char format, StarDateFormatInfo sdfi)
+        internal static String[] GetAllStarDates(StarDate StarDate, char format, CultureInfo sdfi)
         {
             Contract.Requires(sdfi != null);
             String[] allFormats = null;
@@ -1325,7 +1325,7 @@ namespace StarCalendar
             return (results);
         }
 
-        internal static String[] GetAllStarDates(StarDate StarDate, StarDateFormatInfo sdfi)
+        internal static String[] GetAllStarDates(StarDate StarDate, CultureInfo sdfi)
         {
             List<String> results = new List<String>(DEFAULT_ALL_StarDateS_SIZE);
 

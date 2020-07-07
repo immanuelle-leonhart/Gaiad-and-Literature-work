@@ -37,7 +37,7 @@ namespace StarCalendar
             return new StarDate(GregHanukkah());
         }
 
-        private static void DemonstrateLanguage(CultureInfo lang, string format)
+        private static void DemonstrateLanguage(System.Globalization.CultureInfo lang, string format)
         {
             //StarDate.SetFormat("numeric");
             StarDate dt = c.maya;
@@ -1287,14 +1287,14 @@ namespace StarCalendar
             return this.ToString(d.getlocale(), d.defaultformat());
         }
 
-        public string ToString(CultureInfo local)
+        public string ToString(System.Globalization.CultureInfo local)
         {
             return this.ToString(local, d.defaultformat());
         }
 
         public string ToString(string format, string lang)
         {
-            return this.ToString(CultureInfo.GetLocale(lang), format);
+            return this.ToString(System.Globalization.CultureInfo.GetLocale(lang), format);
         }
 
         public string ToString(string format)
@@ -1302,7 +1302,7 @@ namespace StarCalendar
             return this.ToString(d.getlocale(), format);
         }
 
-        public string ToString(CultureInfo local, string format)
+        public string ToString(System.Globalization.CultureInfo local, string format)
         {
             return local.StarDateString(this, format);
         }

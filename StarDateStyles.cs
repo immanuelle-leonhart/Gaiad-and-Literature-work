@@ -34,23 +34,23 @@ namespace StarCalendar
         //
         // Summary:
         //     Leading white-space characters must be ignored during parsing, except if
-        //     they occur in the System.Globalization.StarDateFormatInfo format patterns.
+        //     they occur in the System.Globalization.CultureInfo format patterns.
         AllowLeadingWhite = 1,
         //
         // Summary:
         //     Trailing white-space characters must be ignored during parsing, except if
-        //     they occur in the System.Globalization.StarDateFormatInfo format patterns.
+        //     they occur in the System.Globalization.CultureInfo format patterns.
         AllowTrailingWhite = 2,
         //
         // Summary:
         //     Extra white-space characters in the middle of the string must be ignored
-        //     during parsing, except if they occur in the System.Globalization.StarDateFormatInfo
+        //     during parsing, except if they occur in the System.Globalization.CultureInfo
         //     format patterns.
         AllowInnerWhite = 4,
         //
         // Summary:
         //     Extra white-space characters anywhere in the string must be ignored during
-        //     parsing, except if they occur in the System.Globalization.StarDateFormatInfo
+        //     parsing, except if they occur in the System.Globalization.CultureInfo
         //     format patterns. This value is a combination of the System.Globalization.StarDateStyles.AllowLeadingWhite,
         //     System.Globalization.StarDateStyles.AllowTrailingWhite, and System.Globalization.StarDateStyles.AllowInnerWhite
         //     values.

@@ -35,9 +35,9 @@ namespace StarCalendar
         public object MaxSupportedStarDate { get; internal set; }
         public static int CAL_HEBREW = 666;
         private int iD;
-        private StarDateFormatInfo starDateFormatInfo;
+        private CultureInfo starDateFormatInfo;
 
-        public Calendar(StarDateFormatInfo starDateFormatInfo)
+        public Calendar(CultureInfo starDateFormatInfo)
         {
             this.starDateFormatInfo = starDateFormatInfo;
         }
