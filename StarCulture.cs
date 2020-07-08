@@ -18,6 +18,7 @@ using System.Text;
 using System.Diagnostics.Contracts;
 using System.Runtime.CompilerServices;
 using System.IO;
+using SpaceCalendar;
 //using System.Globalization;
 
 namespace StarCalendar
@@ -1434,15 +1435,15 @@ namespace StarCalendar
             get
             {
                 throw new NotImplementedException();
-#if FEATURE_CORECLR
-                if (this.firstDayOfWeek == -1)
-                {
-                    this.firstDayOfWeek = this.m_cultureData.IFIRSTDAYOFWEEK;
-                }
-#endif
-                Contract.Assert(this.firstDayOfWeek != -1, "StarCulture.FirstDayOfWeek, firstDayOfWeek != -1");
+//#if FEATURE_CORECLR
+//                if (this.firstDayOfWeek == -1)
+//                {
+//                    this.firstDayOfWeek = this.m_cultureData.IFIRSTDAYOFWEEK;
+//                }
+//#endif
+//                Contract.Assert(this.firstDayOfWeek != -1, "StarCulture.FirstDayOfWeek, firstDayOfWeek != -1");
 
-                return ((DayOfWeek)this.firstDayOfWeek);
+//                return ((DayOfWeek)this.firstDayOfWeek);
             }
 
             set
@@ -2605,27 +2606,27 @@ namespace StarCalendar
             }
         }
 
-        public static StarCulture ReadOnly(StarCulture sdfi)
-        {
-            if (sdfi == null)
-            {
-                throw new NotImplementedException(); // throw new ArgumentNullException("sdfi",
-                                                     //LEnvironment.GetResourceString("ArgumentNull_Obj"));
-            }
-            Contract.EndContractBlock();
-            if (sdfi.IsReadOnly)
-            {
-                return (sdfi);
-            }
-            StarCulture newInfo = (StarCulture)(sdfi.MemberwiseClone());
-            // We can use the data member calendar in the setter, instead of the property StarCulture,
-            // since the cloned copy should have the same state as the original copy.
-            throw new NotImplementedException();
-            //newInfo.calendar = StarCulture.ReadOnly(sdfi.StarCulture);
+        //public static StarCulture ReadOnly(StarCulture sdfi)
+        //{
+        //    if (sdfi == null)
+        //    {
+        //        throw new NotImplementedException(); // throw new ArgumentNullException("sdfi",
+        //                                             //LEnvironment.GetResourceString("ArgumentNull_Obj"));
+        //    }
+        //    Contract.EndContractBlock();
+        //    if (sdfi.IsReadOnly)
+        //    {
+        //        return (sdfi);
+        //    }
+        //    StarCulture newInfo = (StarCulture)(sdfi.MemberwiseClone());
+        //    // We can use the data member calendar in the setter, instead of the property StarCulture,
+        //    // since the cloned copy should have the same state as the original copy.
+        //    throw new NotImplementedException();
+        //    //newInfo.calendar = StarCulture.ReadOnly(sdfi.StarCulture);
 
-            newInfo.m_isReadOnly = true;
-            return (newInfo);
-        }
+        //    newInfo.m_isReadOnly = true;
+        //    return (newInfo);
+        //}
 
 
         public bool IsReadOnly
@@ -3757,6 +3758,11 @@ namespace StarCalendar
             }
         }
 
+        internal static StarCulture GetInstance(IFormatProvider provider)
+        {
+            throw new NotImplementedException();
+        }
+
         public int ID
         {
             get
@@ -3836,7 +3842,7 @@ namespace StarCalendar
 
         internal int GetDayOfMonth(StarDate starDate)
         {
-            return starDate.day;
+            return starDate.Day;
         }
 
         internal int GetDayOfWeek(StarDate starDate)

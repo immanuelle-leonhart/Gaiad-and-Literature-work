@@ -10,7 +10,7 @@ using System.Diagnostics.Contracts;
 using System.Numerics;
 using System.Text;
 
-namespace StarCalendar
+namespace SpaceCalendar
 {
     //using System.Text;
     //using System.Threading;
@@ -143,7 +143,7 @@ namespace StarCalendar
     {
 
         internal const int MaxSecondsFractionDigits = 7;
-        internal static readonly TimeSpanInfo NullOffset = new TimeSpanInfo(0);
+        internal static readonly Time NullOffset = new Time(0);
 
         internal static char[] allStandardFormats =
         {
@@ -553,7 +553,7 @@ namespace StarCalendar
         //
         //  Actions: Format the StarDate instance using the specified format.
         //
-        private static String FormatCustomized(StarDate StarDate, String format, StarCulture sdfi, TimeSpanInfo offset)
+        private static String FormatCustomized(StarDate StarDate, String format, StarCulture sdfi, Time offset)
         {
             //throw new NotImplementedException();
             //Console.WriteLine("Breakpoint");
@@ -890,7 +890,7 @@ namespace StarCalendar
 
 
         // output the 'z' famliy of formats, which output a the offset from UTC, e.g. "-07:30"
-        private static void FormatCustomizedTimeZone(StarDate StarDate, TimeSpanInfo offset, String format, Int32 tokenLen, Boolean timeOnly, StringBuilder result)
+        private static void FormatCustomizedTimeZone(StarDate StarDate, Time offset, String format, Int32 tokenLen, Boolean timeOnly, StringBuilder result)
         {
             // See if the instance already has an offset
             Boolean StarDateFormat = (offset == NullOffset);
@@ -924,7 +924,7 @@ namespace StarCalendar
                     offset = StarZone.GetLocalUtcOffset(StarDate);
                 }
             }
-            if (offset >= TimeSpanInfo.Zero)
+            if (offset >= Time.Zero)
             {
                 result.Append('+');
             }
@@ -953,7 +953,7 @@ namespace StarCalendar
         }
 
         // output the 'K' format, which is for round-tripping the data
-        private static void FormatCustomizedRoundripTimeZone(StarDate dt, TimeSpanInfo offset, StringBuilder result)
+        private static void FormatCustomizedRoundripTimeZone(StarDate dt, Time offset, StringBuilder result)
         {
 
             // The objective of this format is to round trip the data in the type
@@ -981,7 +981,7 @@ namespace StarCalendar
                     return;
                 }
             }
-            if (offset >= TimeSpanInfo.Zero)
+            if (offset >= Time.Zero)
             {
                 result.Append('+');
             }
@@ -1064,7 +1064,7 @@ namespace StarCalendar
         // This method also convert the StarDate if necessary (e.g. when the format is in Universal time),
         // and change sdfi if necessary (e.g. when the format should use invariant culture).
         //
-        private static String ExpandPredefinedFormat(String format, ref StarDate StarDate, ref StarCulture sdfi, ref TimeSpanInfo offset)
+        private static String ExpandPredefinedFormat(String format, ref StarDate StarDate, ref StarCulture sdfi, ref Time offset)
         {
             switch (format[0])
             {
@@ -1074,7 +1074,7 @@ namespace StarCalendar
                 case 'u':       // Universal time in sortable format.
                     if (offset != NullOffset)
                     {
-                        // Convert to UTC invariants mean this will be in range
+                        // DateTime to UTC invariants mean this will be in range
                         StarDate = StarDate - offset;
                     }
                     else if (StarDate.TimeZone == c.Local)
@@ -1119,7 +1119,7 @@ namespace StarCalendar
         }
 
 
-        internal static String Format(StarDate StarDate, String format, StarCulture sdfi, TimeSpanInfo offset)
+        internal static String Format(StarDate StarDate, String format, StarCulture sdfi, Time offset)
         {
             Contract.Requires(sdfi != null);
             //Console.WriteLine("Breakpoint");
@@ -1132,9 +1132,9 @@ namespace StarCalendar
                     // If the time is less than 1 day, consider it as time of day.
                     // Just print out the short time format.
                     //
-                    // This is a workaround for VB, since they use ticks less then one day to be
+                    // This is a workaround for VB, since they use _ticks less then one day to be
                     // time of day.  In cultures which use calendar other than Gregorian calendar, these
-                    // alternative calendar may not support ticks less than a day.
+                    // alternative calendar may not support _ticks less than a day.
                     // For example, Japanese calendar only supports date after 1868/9/8.
                     // This will pose a problem when people in VB get the time of day, and use it
                     // to call ToString(), which will use the general format (short date + long time).
@@ -1203,7 +1203,7 @@ namespace StarCalendar
             return FormatCustomized(StarDate, format, sdfi, offset);
         }
 
-        internal static StringBuilder FastFormatRfc1123(StarDate StarDate, TimeSpanInfo offset, StarCulture sdfi)
+        internal static StringBuilder FastFormatRfc1123(StarDate StarDate, Time offset, StarCulture sdfi)
         {
             // ddd, dd MMM yyyy HH:mm:ss GMT
             const int Rfc1123FormatLength = 29;
@@ -1211,7 +1211,7 @@ namespace StarCalendar
 
             if (offset != NullOffset)
             {
-                // Convert to UTC invariants
+                // DateTime to UTC invariants
                 StarDate = StarDate - offset;
             }
 
@@ -1234,7 +1234,7 @@ namespace StarCalendar
             return result;
         }
 
-        internal static StringBuilder FastFormatRoundtrip(StarDate StarDate, TimeSpanInfo offset)
+        internal static StringBuilder FastFormatRoundtrip(StarDate StarDate, Time offset)
         {
             // yyyy-MM-ddTHH:mm:ss.fffffffK
             const int roundTripFormatLength = 28;

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SpaceCalendar;
+using System;
 using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
 
@@ -23,7 +24,7 @@ namespace StarCalendar
             Integers.Add(dt.year);
             Integers.Add(dt.DayOfYear);
             Integers.Add(dt.Month);
-            Integers.Add(dt.day);
+            Integers.Add(dt.Day);
             Integers.Add(dt.Hour);
             Integers.Add(dt.Minute);
             Integers.Add(dt.Second);
@@ -32,13 +33,13 @@ namespace StarCalendar
             string month = dt.MonthName;
             string WeekDay = dt.WeekDay;
             Console.WriteLine(DateTime.Now.TimeOfDay);
-            TimeSpanInfo t = dt.TimeOfDay;
+            Time t = dt.TimeOfDay;
             Integers.Add(t.Days);
             Integers.Add(t.Hours);
             Integers.Add(t.Minutes);
             Integers.Add(t.Seconds);
             Integers.Add(t.Milliseconds);
-            //Integers.Add(t.ticks);
+            //Integers.Add(t._ticks);
             // Get current DateTime. It can be any DateTime object in your code.  
             DateTime aDate = DateTime.Now;
             StarDate bDate = StarDate.Now;
@@ -67,7 +68,7 @@ namespace StarCalendar
             Console.WriteLine(("h:mm tt")); Console.WriteLine(aDate.ToString("h:mm tt")); Console.WriteLine(bDate.ToString("h:mm tt"));
             Console.WriteLine(("HH:mm:ss")); Console.WriteLine(aDate.ToString("HH:mm:ss")); Console.WriteLine(bDate.ToString("HH:mm:ss"));
             Console.WriteLine(("yyyy MMMM")); Console.WriteLine(aDate.ToString("yyyy MMMM")); Console.WriteLine(bDate.ToString("yyyy MMMM"));
-            Dictionary<string, TimeSpanInfo> times = new Dictionary<string, TimeSpanInfo>();
+            Dictionary<string, Time> times = new Dictionary<string, Time>();
             //StarDate dt = StarDate.UtcNow;
             times.Add("atomic", dt.atomic);
             times.Add("radio", dt.Radio);
@@ -75,7 +76,7 @@ namespace StarCalendar
             times.Add("arrival", dt.Arrival);
 
             StarZone z = StarZone.Local;
-            TimeSpanInfo timeSpanInfo = z.BaseUtcOffset;
+            Time timeSpanInfo = z.BaseUtcOffset;
             timeSpanInfo = z.Offset(StarDate.Now);
             string daylightname = z.DaylightName;
             string s = z.DisplayName;

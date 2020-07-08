@@ -1,5 +1,8 @@
-﻿using System;
+﻿using SpaceCalendar;
+using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.Linq;
 using System.Numerics;
 using static System.TimeZoneInfo;
 
@@ -8,11 +11,11 @@ namespace StarCalendar
     public class StarZone
     {
         internal string PlanetName = "Default Planet Name";
-        internal TimeSpanInfo LocalDay = c.Day;
-        public StarDate startDate = new StarDate(0); //atomic time that movement starts
-        public List<BigInteger> distanceTicks = new List<BigInteger> { 0 }; //position, speed, acceleration, etc
-        public List<double> polar = new List<double> { 0 }; //position, speed, acceleration, etc
-        public List<double> azimuthal = new List<double> { 0 }; //position, speed, acceleration, etc
+        internal Time LocalDay = c.Day;
+        public Time start = new Time(0); //atomic time that movement starts
+        public BigInteger[] distanceTicks = new BigInteger[0]; //position, speed, acceleration, etc
+        public double[] polar = new double[0]; //position, speed, acceleration, etc
+        public double[] azimuthal = new double[0]; //position, speed, acceleration, etc
         public string StarName = "Default Star System Name";
         public static StarZone Terra;
         public static StarZone Mars;
@@ -25,8 +28,9 @@ namespace StarCalendar
         //public static StarZone Mars = new StarZone("Mars", c.Sol, StarZone.Amaterasu);
         //public StarZone planet = StarZone.Terra;
         private TimeZoneInfo tz = TimeZoneInfo.Utc;
-        private TimeSpanInfo baseUtcOffset = new TimeSpanInfo(0);
+        private Time baseUtcOffset = new Time(0);
         private string displayName = "Default TimeZone PlanetName";
+        //private int order;
 
         public StarZone(TimeZoneInfo tz)
         {
@@ -56,7 +60,7 @@ namespace StarCalendar
                 return this.PlanetName == "Terra";
             }
         }
-        public TimeSpanInfo Day
+        public Time Day
         {
             get
             {
@@ -68,13 +72,13 @@ namespace StarCalendar
                 this.LocalDay = value;
             }
         }
-        public TimeSpanInfo BaseUtcOffset
+        public Time BaseUtcOffset
         {
             get
             {
                 if (this.IsTerran)
                 {
-                    return new TimeSpanInfo(this.tz.BaseUtcOffset);
+                    return new Time(this.tz.BaseUtcOffset);
                 }
                 else
                 {
@@ -140,58 +144,233 @@ namespace StarCalendar
             throw new NotImplementedException();
         }
 
-        internal TimeSpanInfo ToRadio(TimeSpanInfo atomic)
+        private Time distance(Time atomic)
         {
-            if (this.Sol)
+            switch (Order)
             {
-                return atomic;
+                case 0:
+                    //On Terra
+                    return new Time(0);
+                default:
+                    throw new NotImplementedException();
             }
-            else
+        }
+
+        internal Time ToRadio(Time atomic)
+        {
+            switch (Order)
             {
-                return atomic - this.distance_at_time(atomic);
+                case 0:
+                    //On Terra
+                    return atomic;
+                case 1:
+                    return atomic - distance(atomic); ;
+                case 2:
+                    //Moving at a constant speed relative to Terra
+                    throw new NotImplementedException();
+                case 3:
+                    //accelerating
+                    throw new NotImplementedException();
+                case 4:
+                    //Jerk (changing rate of acceleration)
+                    throw new NotImplementedException();
+                case 5:
+                    //Snap
+                    throw new NotImplementedException();
+                case 6:
+                    //Crackle
+                    throw new NotImplementedException();
+                case 7:
+                    //Pop
+                    throw new NotImplementedException();
+                default:
+                    //I have no idea why someone would use this high an order
+                    throw new NotImplementedException();
             }
         }
 
-        private TimeSpanInfo distance_at_time(TimeSpanInfo atomic)
+
+
+        internal Time FromRadio(Time atomic)
         {
-            throw new NotImplementedException();
+            switch (Order)
+            {
+                case 0:
+                    //On Terra
+                    return atomic;
+                case 1:
+                    //Static distance away from Terra
+                    throw new NotImplementedException();
+                case 2:
+                    //Moving at a constant speed relative to Terra
+                    throw new NotImplementedException();
+                case 3:
+                    //accelerating
+                    throw new NotImplementedException();
+                case 4:
+                    //Jerk (changing rate of acceleration)
+                    throw new NotImplementedException();
+                case 5:
+                    //Snap
+                    throw new NotImplementedException();
+                case 6:
+                    //Crackle
+                    throw new NotImplementedException();
+                case 7:
+                    //Pop
+                    throw new NotImplementedException();
+                default:
+                    //I have no idea why someone would use this high an order
+                    throw new NotImplementedException();
+            }
         }
 
-        internal TimeSpanInfo FromRadio(TimeSpanInfo value)
+        internal Time ToTerran(Time atomic)
         {
-            throw new NotImplementedException();
+            switch (Order)
+            {
+                case 0:
+                    //On Terra
+                    return atomic;
+                case 1:
+                    //Static distance away from Terra
+                    throw new NotImplementedException();
+                case 2:
+                    //Moving at a constant speed relative to Terra
+                    throw new NotImplementedException();
+                case 3:
+                    //accelerating
+                    throw new NotImplementedException();
+                case 4:
+                    //Jerk (changing rate of acceleration)
+                    throw new NotImplementedException();
+                case 5:
+                    //Snap
+                    throw new NotImplementedException();
+                case 6:
+                    //Crackle
+                    throw new NotImplementedException();
+                case 7:
+                    //Pop
+                    throw new NotImplementedException();
+                default:
+                    //I have no idea why someone would use this high an order
+                    throw new NotImplementedException();
+            }
         }
 
-        internal TimeSpanInfo ToTerran(TimeSpanInfo atomic)
+        internal Time FromTerran(Time atomic)
         {
-            throw new NotImplementedException();
+            switch (Order)
+            {
+                case 0:
+                    //On Terra
+                    return atomic;
+                case 1:
+                    //Static distance away from Terra
+                    throw new NotImplementedException();
+                case 2:
+                    //Moving at a constant speed relative to Terra
+                    throw new NotImplementedException();
+                case 3:
+                    //accelerating
+                    throw new NotImplementedException();
+                case 4:
+                    //Jerk (changing rate of acceleration)
+                    throw new NotImplementedException();
+                case 5:
+                    //Snap
+                    throw new NotImplementedException();
+                case 6:
+                    //Crackle
+                    throw new NotImplementedException();
+                case 7:
+                    //Pop
+                    throw new NotImplementedException();
+                default:
+                    //I have no idea why someone would use this high an order
+                    throw new NotImplementedException();
+            }
         }
 
-        internal TimeSpanInfo FromTerran(TimeSpanInfo value)
+        internal Time ToArrival(Time atomic)
         {
-            throw new NotImplementedException();
+            switch (Order)
+            {
+                case 0:
+                    //On Terra
+                    return atomic;
+                case 1:
+                    //Static distance away from Terra
+                    throw new NotImplementedException();
+                case 2:
+                    //Moving at a constant speed relative to Terra
+                    throw new NotImplementedException();
+                case 3:
+                    //accelerating
+                    throw new NotImplementedException();
+                case 4:
+                    //Jerk (changing rate of acceleration)
+                    throw new NotImplementedException();
+                case 5:
+                    //Snap
+                    throw new NotImplementedException();
+                case 6:
+                    //Crackle
+                    throw new NotImplementedException();
+                case 7:
+                    //Pop
+                    throw new NotImplementedException();
+                default:
+                    //I have no idea why someone would use this high an order
+                    throw new NotImplementedException();
+            }
         }
 
-        internal TimeSpanInfo ToArrival(TimeSpanInfo atomic)
+        internal Time FromArrival(Time atomic)
         {
-            throw new NotImplementedException();
+            switch (Order)
+            {
+                case 0:
+                    //On Terra
+                    return atomic;
+                case 1:
+                    //Static distance away from Terra
+                    throw new NotImplementedException();
+                case 2:
+                    //Moving at a constant speed relative to Terra
+                    throw new NotImplementedException();
+                case 3:
+                    //accelerating
+                    throw new NotImplementedException();
+                case 4:
+                    //Jerk (changing rate of acceleration)
+                    throw new NotImplementedException();
+                case 5:
+                    //Snap
+                    throw new NotImplementedException();
+                case 6:
+                    //Crackle
+                    throw new NotImplementedException();
+                case 7:
+                    //Pop
+                    throw new NotImplementedException();
+                default:
+                    //I have no idea why someone would use this high an order
+                    throw new NotImplementedException();
+            }
         }
 
-        internal TimeSpanInfo FromArrival(TimeSpanInfo value)
+        internal Time Offset(StarDate now)
         {
-            throw new NotImplementedException();
+            return Offset(now.DateTime);
         }
 
-        internal TimeSpanInfo Offset(StarDate now)
-        {
-            return Offset(now.Convert());
-        }
-
-        internal TimeSpanInfo Offset(DateTime dateTime)
+        internal Time Offset(DateTime dateTime)
         {
             if (SupportsDaylightSavingTime)
             {
-                return new TimeSpanInfo(tz.GetUtcOffset(dateTime));
+                return new Time(tz.GetUtcOffset(dateTime));
             }
             else
             {
@@ -207,11 +386,11 @@ namespace StarCalendar
         //    }
         //}
 
-        
+
 
         internal void ClearCachedData()
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
         internal static void ConvertTime(StarDate now, StarZone uTC)
@@ -303,7 +482,7 @@ namespace StarCalendar
             return CreateCustomTimeZone(id, BaseUTCOffset, id, id);
         }
 
-        public static StarZone CreateCustomTimeZone(string id, TimeSpanInfo BaseUTCOffset)
+        public static StarZone CreateCustomTimeZone(string id, Time BaseUTCOffset)
         {
             return CreateCustomTimeZone(id, BaseUTCOffset.TimeSpan, id, id);
         }
@@ -318,13 +497,13 @@ namespace StarCalendar
 
         static public StarZone CreateCustomTimeZone(
                 String id,
-                TimeSpanInfo baseUtcOffset,
+                Time baseUtcOffset,
                 String displayName)
         {
             return CreateCustomTimeZone(id, baseUtcOffset.TimeSpan, displayName, displayName);
         }
 
-        public static StarZone CreateCustomTimeZone(string id, TimeSpanInfo t, string displayname, string standard)
+        public static StarZone CreateCustomTimeZone(string id, Time t, string displayname, string standard)
         {
             return CreateCustomTimeZone(id, t.TimeSpan, displayname, standard);
         }
@@ -402,17 +581,17 @@ namespace StarCalendar
                             disableDaylightSavingTime); return new StarZone(tz);
         }
 
-        internal static TimeSpanInfo GetLocalUtcOffset(StarDate starDate)
+        internal static Time GetLocalUtcOffset(StarDate starDate)
         {
             return starDate.offset;
         }
 
-        internal static TimeSpanInfo GetLocalUtcOffset(StarDate dt, bool noThrowOnInvalidTime)
+        internal static Time GetLocalUtcOffset(StarDate dt, bool noThrowOnInvalidTime)
         {
-            return GetLocalUtcOffset(dt);
+            return dt.offset;
         }
 
-        public StarZone(string Name, TimeSpanInfo LocalDay)
+        public StarZone(string Name, Time LocalDay)
         {
             this.PlanetName = Name;
             this.LocalDay = LocalDay;
@@ -442,6 +621,62 @@ namespace StarCalendar
             }
         }
 
+        public int Order
+        {
+            get
+            {
+                int i = 0;
+                if (distanceTicks.Length > i)
+                {
+                    i = distanceTicks.Length;
+                }
+                if (polar.Length > i)
+                {
+                    i = polar.Length;
+                }
+                if (azimuthal.Length > i)
+                {
+                    i = azimuthal.Length;
+                }
+                return i;
+            }
+
+            private set
+            {
+                if (value == Order)
+                {
+                    //Do nothing
+                }
+                else
+                {
+                    BigInteger[] t = new BigInteger[value];
+                    double[] p = new double[value];
+                    double[] a = new double[value];
+                    int i = 0;
+                    while ((i < distanceTicks.Length) && (i < t.Length))
+                    {
+                        t[i] = distanceTicks[i];
+                        i++;
+                    }
+                    distanceTicks = t;
+                    i = 0;
+                    while ((i < polar.Length) && (i < p.Length))
+                    {
+                        p[i] = polar[i];
+                        i++;
+                    }
+                    polar = p;
+                    i = 0;
+                    while ((i < azimuthal.Length) && (i < a.Length))
+                    {
+                        a[i] = azimuthal[i];
+                        i++;
+                    }
+                    azimuthal = a;
+                }
+            }
+        }
+
         public double[] cartesian()
         {
             double x = (long)distanceTicks[0] * Math.Sin(polar[0]) * Math.Cos(azimuthal[0]);
@@ -450,9 +685,9 @@ namespace StarCalendar
             return new double[] { x, y, z };
         }
 
-        public StarZone(StarDate startDate, List<BigInteger> distanceTicks, List<double> polar, List<double> azimuthal)
+        public StarZone(Time startDate, BigInteger[] distanceTicks, double[] polar, double[] azimuthal)
         {
-            this.startDate = startDate;
+            this.start = startDate;
             this.distanceTicks = distanceTicks;
             this.polar = polar;
             this.azimuthal = azimuthal;
@@ -463,14 +698,19 @@ namespace StarCalendar
             this.StarName = name;
         }
 
-        internal object distance_at_time(StarDate now)
+        internal object distance(StarDate now)
+        {
+            return distance(now.atomic);
+        }
+
+        internal StarZone OffsetClone(Time value)
         {
             throw new NotImplementedException();
         }
 
-        internal StarZone OffsetClone(TimeSpanInfo value)
-        {
-            throw new NotImplementedException();
-        }
+        //internal static Time GetLocalUtcOffset(StarDate now)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }

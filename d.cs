@@ -5,7 +5,7 @@ namespace StarCalendar
     internal static class d
     {
         internal static string planetstring = "Terra";
-        internal static TimeSpanInfo offset = new TimeSpanInfo(TimeZoneInfo.Local.BaseUtcOffset);
+        internal static Time offset = new Time(TimeZoneInfo.Local.BaseUtcOffset);
         internal static string format = "numeric";
         internal static string lang = "English";
 

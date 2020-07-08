@@ -3,6 +3,7 @@
 //   Copyright (c) Microsoft Corporation.  All rights reserved.
 //
 // ==--==
+using SpaceCalendar;
 using System;
 using System.Globalization;
 
@@ -54,10 +55,10 @@ namespace StarCalendar
             throw new NotImplementedException();
         }
 
-        internal StarDateFormat Clone()
-        {
-            throw new NotImplementedException();
-        }
+        //internal StarDateFormat Clone()
+        //{
+        //    throw new NotImplementedException();
+        //}
 
         internal string[] GetAllStarDatePatterns(char format)
         {
