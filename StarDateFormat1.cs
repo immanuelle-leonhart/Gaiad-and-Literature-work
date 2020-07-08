@@ -12,7 +12,7 @@ namespace StarCalendar
     {
         internal string[] AbbreviatedDayNames;
         internal string[] AbbreviatedMonthNames;
-        //internal static StarDateFormat InvariantInfo;
+        //internal static StarDateFormat InvariantCulture;
 
         public object Calendar { get; internal set; }
         public string ShortDatePattern { get; internal set; }

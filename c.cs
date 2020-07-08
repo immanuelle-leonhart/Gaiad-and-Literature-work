@@ -8,7 +8,7 @@ namespace StarCalendar
 {
     internal static class c
     {
-        //internal static List<CultureInfo> formats = getformats();
+        //internal static List<StarCulture> formats = getformats();
 
         internal static TimeSpanInfo Millisecond = new TimeSpanInfo(10000);
         internal static int TicksPerMillisecond = 10000;

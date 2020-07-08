@@ -157,9 +157,10 @@ namespace StarCalendar
 
         private const int DEFAULT_ALL_StarDateS_SIZE = 132;
 
-        internal static readonly StarDateFormat InvariantFormatInfo = CultureInfo.InvariantCulture.StarDateFormat;
+        internal static readonly StarDateFormat InvariantFormatInfo = StarCulture.InvariantCulture.StarDateFormat;
         internal static readonly string[] InvariantAbbreviatedMonthNames = InvariantFormatInfo.AbbreviatedMonthNames;
         internal static readonly string[] InvariantAbbreviatedDayNames = InvariantFormatInfo.AbbreviatedDayNames;
+        private static readonly StarDateFormat cal;
         internal const string Gmt = "GMT";
 
         internal static String[] fixedNumberFormats = new String[] {
@@ -173,6 +174,8 @@ namespace StarCalendar
         };
         private string[] abbreviatedMonthNames;
         private string[] abbreviatedDayNames;
+        private static object cal1;
+
         //private Func<string[]> abbreviatedMonthNames1;
         //private Func<string[]> abbreviatedDayNames1;
 
@@ -209,9 +212,29 @@ namespace StarCalendar
             }
         }
         public static StarDateFormat InvariantInfo { get; private set; }
-        public static object StarLEnvironment { get; private set; }
+        //public static object StarLEnvironment { get; private set; }
         public static DateTimeFormatInfoScanner StarDateFormatInfoScanner { get; private set; }
         public static string JapaneseEraStart { get; private set; }
+        public static StarCulture Cal
+        {
+            get
+            {
+                return StarCulture.CurrentCulture;
+            }
+
+            private set
+            {
+                cal1 = value;
+            }
+        }
+
+        //public static StarDateFormat Cal
+        //{
+        //    get
+        //    {
+        //        return StarCulture.CurrentCulture;
+        //    }
+        //}
 
         ////////////////////////////////////////////////////////////////////////////
         //
@@ -283,7 +306,7 @@ namespace StarCalendar
             return (index - pos);
         }
 
-        private static String FormatDayOfWeek(int dayOfWeek, int repeat, CultureInfo sdfi)
+        private static String FormatDayOfWeek(int dayOfWeek, int repeat, StarCulture sdfi)
         {
             Contract.Assert(dayOfWeek >= 0 && dayOfWeek <= 6, "dayOfWeek >= 0 && dayOfWeek <= 6");
             if (repeat == 3)
@@ -305,7 +328,7 @@ namespace StarCalendar
             throw new NotImplementedException();
         }
 
-        private static String FormatMonth(int month, int repeatCount, CultureInfo sdfi)
+        private static String FormatMonth(int month, int repeatCount, StarCulture sdfi)
         {
             Contract.Assert(month >= 1 && month <= 12, "Month >=1 && Month <= 12");
             if (repeatCount == 3)
@@ -356,10 +379,10 @@ namespace StarCalendar
 
             Therefore, if we are in a regular year, we have to increment the Month StarName if moth is greater or eqaul to 7.
         */
-        //private static String FormatHebrewMonthName(StarDate time, int Month, int repeatCount, CultureInfo sdfi)
+        //private static String FormatHebrewMonthName(StarDate time, int Month, int repeatCount, StarCulture sdfi)
         //{
         //    Contract.Assert(repeatCount != 3 || repeatCount != 4, "repeateCount should be 3 or 4");
-        //    if (sdfi.Calendar.IsLeapYear(sdfi.Calendar.GetYear(time)))
+        //    if (sdfi.StarCulture.IsLeapYear(sdfi.StarCulture.GetYear(time)))
         //    {
         //        // This Month is in a leap year
         //        return (sdfi.internalGetMonthName(Month, MonthNameStyles.LeapYear, (repeatCount == 3)));
@@ -414,7 +437,7 @@ namespace StarCalendar
                         //
                         // This means that '\' is at the end of the formatting string.
                         //
-                        Console.WriteLine("throw new FormatException(StarLEnvironment.GetResourceString(" + " Format_InvalidString" + "));");
+                        //Console.WriteLine("throw new FormatException(StarLEnvironment.GetResourceString(" + " Format_InvalidString" + "));");
                         throw new NotImplementedException();
                     }
                 }
@@ -429,7 +452,7 @@ namespace StarCalendar
                 // Local we can't find the matching quote.
                 //throw new FormatException(
                 //        String.Format(
-                //            CultureInfo.CurrentCulture,
+                //            StarCulture.CurrentCulture,
                 //            StarLEnvironment.GetResourceString("Format_BadQuote"), quoteChar));
                 throw new NotImplementedException();
             }
@@ -530,17 +553,17 @@ namespace StarCalendar
         //
         //  Actions: Format the StarDate instance using the specified format.
         //
-        private static String FormatCustomized(StarDate StarDate, String format, CultureInfo sdfi, TimeSpanInfo offset)
+        private static String FormatCustomized(StarDate StarDate, String format, StarCulture sdfi, TimeSpanInfo offset)
         {
             //throw new NotImplementedException();
-            Console.WriteLine("Breakpoint");
-            Calendar cal = sdfi.Calendar;
+            //Console.WriteLine("Breakpoint");
+            //StarCulture cal = sdfi.Calendar;
             //StringBuilder result = StringBuilderCache.Acquire();
             StringBuilder result = new StringBuilder();
             // This is a flag to indicate if we are format the dates using Hebrew calendar.
 
-            bool isHebrewCalendar = false;// (cal.ID == Calendar.CAL_HEBREW);
-            bool isJapaneseCalendar = false;// (cal.ID == Calendar.CAL_JAPAN);
+            bool isHebrewCalendar = false;// (cal.ID == StarCulture.CAL_HEBREW);
+            bool isJapaneseCalendar = false;// (cal.ID == StarCulture.CAL_JAPAN);
 
             // This is a flag to indicate if we are formating hour/minute/second only.
             bool bTimeOnly = true;
@@ -556,7 +579,7 @@ namespace StarCalendar
                 {
                     case 'g':
                         tokenLen = ParseRepeatPattern(format, i, ch);
-                        result.Append(sdfi.GetEraName(cal.GetEra(StarDate)));
+                        result.Append(sdfi.GetEraName(Cal.GetEra(StarDate)));
                         break;
                     case 'h':
                         tokenLen = ParseRepeatPattern(format, i, ch);
@@ -588,7 +611,7 @@ namespace StarCalendar
                             fraction = fraction / (long)Math.Pow(10, 7 - tokenLen);
                             if (ch == 'f')
                             {
-                                result.Append(((int)fraction).ToString(fixedNumberFormats[tokenLen - 1], CultureInfo.InvariantCulture.FormatProvider));
+                                result.Append(((int)fraction).ToString(fixedNumberFormats[tokenLen - 1], StarCulture.InvariantCulture.FormatProvider));
                             }
                             else
                             {
@@ -607,7 +630,7 @@ namespace StarCalendar
                                 }
                                 if (effectiveDigits > 0)
                                 {
-                                    result.Append(((int)fraction).ToString(fixedNumberFormats[effectiveDigits - 1], (IFormatProvider)CultureInfo.InvariantCulture));
+                                    result.Append(((int)fraction).ToString(fixedNumberFormats[effectiveDigits - 1], StarCulture.InvariantCulture.FormatProvider));
                                 }
                                 else
                                 {
@@ -660,7 +683,7 @@ namespace StarCalendar
                         tokenLen = ParseRepeatPattern(format, i, ch);
                         if (tokenLen <= 2)
                         {
-                            int day = cal.GetDayOfMonth(StarDate);
+                            int day = Cal.GetDayOfMonth(StarDate);
                             if (isHebrewCalendar)
                             {
                                 // For Hebrew calendar, we need to convert numbers to Hebrew text for yyyy, MM, and dd values.
@@ -673,7 +696,7 @@ namespace StarCalendar
                         }
                         else
                         {
-                            int dayOfWeek = (int)cal.GetDayOfWeek(StarDate);
+                            int dayOfWeek = (int)Cal.GetDayOfWeek(StarDate);
                             result.Append(FormatDayOfWeek(dayOfWeek, tokenLen, sdfi));
                         }
                         bTimeOnly = false;
@@ -747,7 +770,7 @@ namespace StarCalendar
                         {
                             FormatDigits(result, year, tokenLen <= 2 ? tokenLen : 2);
                         }
-                        else if (cal.ID == Calendar.CAL_HEBREW)
+                        else if (Cal.ID == StarCulture.CAL_HEBREW)
                         {
                             HebrewFormatDigits(result, year);
                         }
@@ -760,7 +783,7 @@ namespace StarCalendar
                             else
                             {
                                 String fmtPattern = "D" + tokenLen;
-                                result.Append(year.ToString(fmtPattern, CultureInfo.InvariantCulture.FormatProvider));
+                                result.Append(year.ToString(fmtPattern, StarCulture.InvariantCulture.FormatProvider));
                             }
                         }
                         bTimeOnly = false;
@@ -778,6 +801,7 @@ namespace StarCalendar
                         tokenLen = 1;
                         break;
                     case '/':
+                        //Console.WriteLine("sdfi == " + sdfi);
                         result.Append(sdfi.DateSeparator);
                         tokenLen = 1;
                         break;
@@ -848,20 +872,20 @@ namespace StarCalendar
 
         }
 
-        private static bool FormatHebrewMonthName(StarDate starDate, int month, int tokenLen, CultureInfo sdfi)
+        private static bool FormatHebrewMonthName(StarDate starDate, int month, int tokenLen, StarCulture sdfi)
         {
             throw new NotImplementedException();
         }
 
         private static void HebrewFormatDigits(StringBuilder result, int day)
         {
-            Console.WriteLine("I have no idea what this does but I don't want this to run since I'm not using the Hebrew Calendar");
+            //Console.WriteLine("I have no idea what this does but I don't want this to run since I'm not using the Hebrew StarCulture");
             //throw new NotImplementedException();
         }
 
         private static void FormatDigits(StringBuilder result, int hour12, int tokenLen)
         {
-            Console.WriteLine("Probably Pointless Method");
+            //Console.WriteLine("Probably Pointless Method");
         }
 
 
@@ -891,7 +915,7 @@ namespace StarCalendar
                     // time if it is offset by an incorrect conversion to local time when parsed. Therefore, we need to
                     // explicitly emit the local time offset, which we can do by removing the UTC flag.
                     InvalidFormatForUtc(format, StarDate);
-                    StarDate = StarDate.SpecifyKind(StarDate, StarData.Local);
+                    //StarDate = StarDate.SpecifyKind(StarDate, StarData.Local);
                     offset = StarZone.GetLocalUtcOffset(StarDate);
 #endif // FEATURE_CORECLR
                 }
@@ -914,16 +938,16 @@ namespace StarCalendar
             if (tokenLen <= 1)
             {
                 // 'z' format e.g "-7"
-                result.AppendFormat(CultureInfo.InvariantCulture.GetFormat(), "{0:0}", offset.Hours);
+                result.AppendFormat(StarCulture.InvariantCulture.GetFormat(), "{0:0}", offset.Hours);
             }
             else
             {
                 // 'zz' or longer format e.g "-07"
-                result.AppendFormat(CultureInfo.InvariantCulture.GetFormat(), "{0:00}", offset.Hours);
+                result.AppendFormat(StarCulture.InvariantCulture.GetFormat(), "{0:00}", offset.Hours);
                 if (tokenLen >= 3)
                 {
                     // 'zzz*' or longer format e.g "-07:30"
-                    result.AppendFormat(CultureInfo.InvariantCulture.GetFormat(), ":{0:00}", offset.Minutes);
+                    result.AppendFormat(StarCulture.InvariantCulture.GetFormat(), ":{0:00}", offset.Minutes);
                 }
             }
         }
@@ -968,11 +992,11 @@ namespace StarCalendar
                 offset = offset.Negate();
             }
 
-            result.AppendFormat(CultureInfo.InvariantCulture.GetFormat(), "{0:00}:{1:00}", offset.Hours, offset.Minutes);
+            result.AppendFormat(StarCulture.InvariantCulture.GetFormat(), "{0:00}:{1:00}", offset.Hours, offset.Minutes);
         }
 
 
-        internal static String GetRealFormat(String format, CultureInfo sdfi)
+        internal static String GetRealFormat(String format, StarCulture sdfi)
         {
             String realFormat = null;
 
@@ -1040,12 +1064,12 @@ namespace StarCalendar
         // This method also convert the StarDate if necessary (e.g. when the format is in Universal time),
         // and change sdfi if necessary (e.g. when the format should use invariant culture).
         //
-        private static String ExpandPredefinedFormat(String format, ref StarDate StarDate, ref CultureInfo sdfi, ref TimeSpanInfo offset)
+        private static String ExpandPredefinedFormat(String format, ref StarDate StarDate, ref StarCulture sdfi, ref TimeSpanInfo offset)
         {
             switch (format[0])
             {
                 case 's':       // Sortable without Time StarZone Info
-                    sdfi = CultureInfo.InvariantInfo;
+                    sdfi = StarCulture.InvariantCulture;
                     break;
                 case 'u':       // Universal time in sortable format.
                     if (offset != NullOffset)
@@ -1058,7 +1082,7 @@ namespace StarCalendar
 
                         InvalidFormatForLocal(format, StarDate);
                     }
-                    sdfi = CultureInfo.InvariantInfo;
+                    sdfi = StarCulture.InvariantCulture;
                     break;
                     //case 'U':       // Universal time in culture dependent format.
                     //if (offset != NullOffset)
@@ -1068,12 +1092,12 @@ namespace StarCalendar
                     //}
                     //// Universal time is always in Greogrian calendar.
                     ////
-                    //// Change the Calendar to be Gregorian Calendar.
+                    //// Change the StarCulture to be Gregorian StarCulture.
                     ////
                     //sdfi = (StarDateFormat)sdfi.Clone();
-                    //if (sdfi.Calendar.GetType() != typeof(GregorianCalendar))
+                    //if (sdfi.StarCulture.GetType() != typeof(GregorianCalendar))
                     //{
-                    //    sdfi.Calendar = GregorianCalendar.GetDefaultInstance();
+                    //    sdfi.StarCulture = GregorianCalendar.GetDefaultInstance();
                     //}
                     //StarDate = StarDate.ToUniversalTime();
                     //break;
@@ -1082,23 +1106,23 @@ namespace StarCalendar
             return (format);
         }
 
-        //private static string GetRealFormat(string format, CultureInfo sdfi)
+        //private static string GetRealFormat(string format, StarCulture sdfi)
         //{
         //    throw new NotImplementedException();
         //}
 
-        internal static String Format(StarDate StarDate, String format, CultureInfo sdfi)
+        internal static String Format(StarDate StarDate, String format, StarCulture sdfi)
         {
-            //Console.WriteLine(format);
+            ////Console.WriteLine(format);
             //throw new NotImplementedException();
             return Format(StarDate, format, sdfi, NullOffset);
         }
 
 
-        internal static String Format(StarDate StarDate, String format, CultureInfo sdfi, TimeSpanInfo offset)
+        internal static String Format(StarDate StarDate, String format, StarCulture sdfi, TimeSpanInfo offset)
         {
             Contract.Requires(sdfi != null);
-            Console.WriteLine("Breakpoint");
+            //Console.WriteLine("Breakpoint");
             if (format == null || format.Length == 0)
             {
                 Boolean timeOnlySpecialCase = false;
@@ -1118,17 +1142,17 @@ namespace StarCalendar
                     // thrown when we try to get the Japanese year for Gregorian year 0001.
                     // Therefore, the workaround allows them to call ToString() for time of day from a StarDate by
                     // formatting as ISO 8601 format.
-                    //switch (sdfi.Calendar.ID)
+                    //switch (sdfi.StarCulture.ID)
                     //{
-                    //    case Calendar.CAL_JAPAN:
-                    //    case Calendar.CAL_TAIWAN:
-                    //    case Calendar.CAL_HIJRI:
-                    //    case Calendar.CAL_HEBREW:
-                    //    case Calendar.CAL_JULIAN:
-                    //    case Calendar.CAL_UMALQURA:
-                    //    case Calendar.CAL_PERSIAN:
+                    //    case StarCulture.CAL_JAPAN:
+                    //    case StarCulture.CAL_TAIWAN:
+                    //    case StarCulture.CAL_HIJRI:
+                    //    case StarCulture.CAL_HEBREW:
+                    //    case StarCulture.CAL_JULIAN:
+                    //    case StarCulture.CAL_UMALQURA:
+                    //    case StarCulture.CAL_PERSIAN:
                     //        timeOnlySpecialCase = true;
-                    //        sdfi = CultureInfo.InvariantInfo;
+                    //        sdfi = StarCulture.InvariantCulture;
                     //        break;
                     //}
                 }
@@ -1179,7 +1203,7 @@ namespace StarCalendar
             return FormatCustomized(StarDate, format, sdfi, offset);
         }
 
-        internal static StringBuilder FastFormatRfc1123(StarDate StarDate, TimeSpanInfo offset, CultureInfo sdfi)
+        internal static StringBuilder FastFormatRfc1123(StarDate StarDate, TimeSpanInfo offset, StarCulture sdfi)
         {
             // ddd, dd MMM yyyy HH:mm:ss GMT
             const int Rfc1123FormatLength = 29;
@@ -1269,7 +1293,7 @@ namespace StarCalendar
             BCLDebug.Assert(val == 0, "StarDateFormat.AppendNumber(): digits less than size of val");
         }
 
-        internal static String[] GetAllStarDates(StarDate StarDate, char format, CultureInfo sdfi)
+        internal static String[] GetAllStarDates(StarDate StarDate, char format, StarCulture sdfi)
         {
             Contract.Requires(sdfi != null);
             String[] allFormats = null;
@@ -1325,7 +1349,7 @@ namespace StarCalendar
             return (results);
         }
 
-        internal static String[] GetAllStarDates(StarDate StarDate, CultureInfo sdfi)
+        internal static String[] GetAllStarDates(StarDate StarDate, StarCulture sdfi)
         {
             List<String> results = new List<String>(DEFAULT_ALL_StarDateS_SIZE);
 
@@ -1375,7 +1399,7 @@ namespace StarCalendar
 
         internal static string GetStringAndRelease(StringBuilder result)
         {
-            Console.WriteLine("GetStringAndRelease is not implemented yet");
+            //Console.WriteLine("GetStringAndRelease is not implemented yet");
             return result.ToString();
         }
     }

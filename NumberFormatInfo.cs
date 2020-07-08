@@ -11,9 +11,9 @@ namespace StarCalendar
 {
     internal class NumberFormatInfo
     {
-        private CultureInfo cultureDataWithoutUserOverrides;
+        private StarCulture cultureDataWithoutUserOverrides;
 
-        public NumberFormatInfo(CultureInfo cultureDataWithoutUserOverrides)
+        public NumberFormatInfo(StarCulture cultureDataWithoutUserOverrides)
         {
             this.cultureDataWithoutUserOverrides = cultureDataWithoutUserOverrides;
         }
