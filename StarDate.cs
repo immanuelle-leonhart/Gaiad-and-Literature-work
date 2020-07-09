@@ -143,6 +143,9 @@ namespace StarCalendar
         private StarZone timeZone;
         private static IEnumerable<string> allFormats;
         private static IEnumerable<StarDate> testYear;
+        private static string defaultFormat = "yyyyy/MM/dd hh:mm:ss tt K";
+
+        //private int julian;
 
         //private StarZone z;
 
@@ -200,7 +203,7 @@ namespace StarCalendar
 
         internal static void SetFormat(string v)
         {
-            d.format = v;
+            DefaultFormat = v;
         }
 
         public static void MakeChart(string v)
@@ -477,7 +480,7 @@ namespace StarCalendar
         //}
         public string MonthName
         {
-            get { return d.getlocale().month(this.Month); }
+            get { return StarCulture.CurrentCulture.month(this.Month); }
             internal set
             {
                 switch (value)
@@ -542,7 +545,7 @@ namespace StarCalendar
 
         public string WeekDay
         {
-            get { return d.getlocale().weekday(this.WeekInt); }
+            get { return StarCulture.CurrentCulture.weekday(this.WeekInt); }
             internal set
             {
                 switch (value)
@@ -1402,12 +1405,12 @@ namespace StarCalendar
 
         public override string ToString()
         {
-            return this.ToString(d.getlocale(), d.defaultformat());
+            return this.ToString(StarCulture.CurrentCulture, StarDate.DefaultFormat);
         }
 
         public string ToString(StarCulture local)
         {
-            return this.ToString(local, d.defaultformat());
+            return this.ToString(local, null);
         }
 
         public string ToString(string format, string lang)
@@ -1467,7 +1470,7 @@ namespace StarCalendar
 
         //public string monthname()
         //{
-        //    return monthname(d.getlocale());
+        //    return monthname(StarCulture.CurrentCulture);
         //}
 
         //public string monthname(StarCulture format)
@@ -1477,7 +1480,7 @@ namespace StarCalendar
 
         //public string DayOfWeek()
         //{
-        //    return this.DayOfWeek(d.getlocale());
+        //    return this.DayOfWeek(StarCulture.CurrentCulture);
         //}
 
         //public string DayOfWeek(StarCulture format)
@@ -3747,6 +3750,33 @@ namespace StarCalendar
             }
         }
 
+        public int Julian
+        {
+            get
+            {
+                return (this - c.julian) / c.Day;
+            }
+
+            set
+            {
+                int diff = value - this.Julian;
+                this += diff * c.Day;
+            }
+        }
+
+        public static string DefaultFormat
+        {
+            get
+            {
+                return defaultFormat;
+            }
+
+            private set
+            {
+                defaultFormat = value;
+            }
+        }
+
         public static List<StarDate> TestYear()
         {
             List<StarDate> stars = new List<StarDate>();
@@ -3778,7 +3808,7 @@ namespace StarCalendar
         //
         //public static StarDate Parse(String s)
         //{
-        //    return (StarDateParse.Parse(s, StarCulture.CurrentInfo, StarDateStyles.None));
+        //    return (StarDateParse.Parse(s, StarCulture.CurrentCulture, StarDateStyles.None));
         //}
 
         //// Constructs a StarDate from a string. The string must specify a
@@ -3919,37 +3949,41 @@ namespace StarCalendar
         public String ToLongDateString()
         {
             Contract.Ensures(Contract.Result<String>() != null);
-            return StarDateFormat.Format(this, "D", StarCulture.CurrentInfo);
+            ////Console.WriteLine(sdfi.CultureName);
+            return StarDateFormat.Format(this, "D", StarCulture.CurrentCulture);
         }
 
         public String ToLongTimeString()
         {
             Contract.Ensures(Contract.Result<String>() != null);
-            return StarDateFormat.Format(this, "T", StarCulture.CurrentInfo);
+            ////Console.WriteLine(sdfi.CultureName);
+            return StarDateFormat.Format(this, "T", StarCulture.CurrentCulture);
         }
 
         public String ToShortDateString()
         {
             Contract.Ensures(Contract.Result<String>() != null);
-            return StarDateFormat.Format(this, "d", StarCulture.CurrentInfo);
+            ////Console.WriteLine(sdfi.CultureName);
+            return StarDateFormat.Format(this, "d", StarCulture.CurrentCulture);
         }
 
         public String ToShortTimeString()
         {
             Contract.Ensures(Contract.Result<String>() != null);
-            return StarDateFormat.Format(this, "t", StarCulture.CurrentInfo);
+            //Console.WriteLine(this.CultureName);
+            return StarDateFormat.Format(this, "t", StarCulture.CurrentCulture);
         }
 
         //public override String ToString()
         //{
         //    Contract.Ensures(Contract.Result<String>() != null);
-        //    return StarDateFormat.Format(this, null, StarCulture.CurrentInfo);
+        //    return StarDateFormat.Format(this, null, StarCulture.CurrentCulture);
         //}
 
         //public String ToString(String format)
         //{
         //    Contract.Ensures(Contract.Result<String>() != null);
-        //    return StarDateFormat.Format(this, format, StarCulture.CurrentInfo);
+        //    return StarDateFormat.Format(this, format, StarCulture.CurrentCulture);
         //}
 
         //public String ToString(IFormatProvider provider)
@@ -3972,7 +4006,7 @@ namespace StarCalendar
         //I don't know what these methods do and whether to replicate them
         //public static Boolean TryParse(String s, out StarDate result)
         //{
-        //    return StarDateParse.TryParse(s, StarCulture.CurrentInfo, StarDateStyles.None, out result);
+        //    return StarDateParse.TryParse(s, StarCulture.CurrentCulture, StarDateStyles.None, out result);
         //}
 
         //public static Boolean TryParse(String s, IFormatProvider provider, StarDateStyles styles, out StarDate result)
@@ -4321,28 +4355,7 @@ namespace StarCalendar
 
         public static void PrintAllFormats()
         {
-            StarDate.TestFormat(("MM/dd/yyyy")); // Console.WriteLine(aDate.ToString("MM/dd/yyyy")); // Console.WriteLine(bDate.ToString("MM/dd/yyyy")); //
-            StarDate.TestFormat(("dddd, dd MMMM yyyy")); // Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy")); // Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy")); //
-            StarDate.TestFormat(("dddd, dd MMMM yyyy")); // Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy")); // Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy")); //
-            StarDate.TestFormat(("dddd, dd MMMM yyyy")); // Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy")); // Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy")); //
-            StarDate.TestFormat(("dddd, dd MMMM yyyy")); // Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy")); // Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy")); //
-            StarDate.TestFormat(("dddd, dd MMMM yyyy")); // Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy")); // Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy")); //
-            StarDate.TestFormat(("dddd, dd MMMM yyyy HH:mm:ss")); // Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy HH:mm:ss")); // Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy HH:mm:ss")); //
-            StarDate.TestFormat(("MM/dd/yyyy HH:mm")); // Console.WriteLine(aDate.ToString("MM/dd/yyyy HH:mm")); // Console.WriteLine(bDate.ToString("MM/dd/yyyy HH:mm")); //
-            StarDate.TestFormat(("MM/dd/yyyy hh:mm tt")); // Console.WriteLine(aDate.ToString("MM/dd/yyyy hh:mm tt")); // Console.WriteLine(bDate.ToString("MM/dd/yyyy hh:mm tt")); //
-            StarDate.TestFormat(("MM/dd/yyyy H:mm")); // Console.WriteLine(aDate.ToString("MM/dd/yyyy H:mm")); // Console.WriteLine(bDate.ToString("MM/dd/yyyy H:mm")); //
-            StarDate.TestFormat(("MM/dd/yyyy h:mm tt")); // Console.WriteLine(aDate.ToString("MM/dd/yyyy h:mm tt")); // Console.WriteLine(bDate.ToString("MM/dd/yyyy h:mm tt")); //
-            StarDate.TestFormat(("MM/dd/yyyy HH:mm:ss")); // Console.WriteLine(aDate.ToString("MM/dd/yyyy HH:mm:ss")); // Console.WriteLine(bDate.ToString("MM/dd/yyyy HH:mm:ss")); //
-            StarDate.TestFormat(("MMMM dd")); // Console.WriteLine(aDate.ToString("MMMM dd")); // Console.WriteLine(bDate.ToString("MMMM dd")); //
-            StarDate.TestFormat(("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss.fffffffK")); // Console.WriteLine(aDate.ToString("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss.fffffffK")); // Console.WriteLine(bDate.ToString("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss.fffffffK")); //
-            StarDate.TestFormat(("ddd, dd MMM yyy HH’:’mm’:’ss ‘GMT’")); // Console.WriteLine(aDate.ToString("ddd, dd MMM yyy HH’:’mm’:’ss ‘GMT’")); // Console.WriteLine(bDate.ToString("ddd, dd MMM yyy HH’:’mm’:’ss ‘GMT’")); //
-            StarDate.TestFormat(("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss")); // Console.WriteLine(aDate.ToString("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss")); // Console.WriteLine(bDate.ToString("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss")); //
-            StarDate.TestFormat(("HH:mm")); // Console.WriteLine(aDate.ToString("HH:mm")); // Console.WriteLine(bDate.ToString("HH:mm")); //
-            StarDate.TestFormat(("hh:mm tt")); // Console.WriteLine(aDate.ToString("hh:mm tt")); // Console.WriteLine(bDate.ToString("hh:mm tt")); //
-            StarDate.TestFormat(("H:mm")); // Console.WriteLine(aDate.ToString("H:mm")); // Console.WriteLine(bDate.ToString("H:mm")); //
-            StarDate.TestFormat(("h:mm tt")); // Console.WriteLine(aDate.ToString("h:mm tt")); // Console.WriteLine(bDate.ToString("h:mm tt")); //
-            StarDate.TestFormat(("HH:mm:ss")); // Console.WriteLine(aDate.ToString("HH:mm:ss")); // Console.WriteLine(bDate.ToString("HH:mm:ss")); //
-            StarDate.TestFormat(("yyyy MMMM")); // Console.WriteLine(aDate.ToString("yyyy MMMM")); // Console.WriteLine(bDate.ToString("yyyy MMMM")); //
+            // Console.WriteLine(aDate.ToString("yyyy MMMM")); // Console.WriteLine(bDate.ToString("yyyy MMMM")); //
 
         }
 

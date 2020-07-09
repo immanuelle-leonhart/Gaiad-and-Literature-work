@@ -555,7 +555,7 @@ namespace StarCalendar
         //
         private static String FormatCustomized(StarDate StarDate, String format, StarCulture sdfi, Time offset)
         {
-            //throw new NotImplementedException();
+            //Console.WriteLine(sdfi.CultureName + " Cats");
             //Console.WriteLine("Breakpoint");
             //StarCulture cal = sdfi.Calendar;
             //StringBuilder result = StringBuilderCache.Acquire();
@@ -801,8 +801,9 @@ namespace StarCalendar
                         tokenLen = 1;
                         break;
                     case '/':
-                        //Console.WriteLine("sdfi == " + sdfi);
-                        result.Append(sdfi.DateSeparator);
+                        //Console.WriteLine(sdfi == null);
+                        //Console.WriteLine(sdfi.GetDateSeparator());
+                        result.Append(sdfi.GetDateSeparator());
                         tokenLen = 1;
                         break;
                     case '\'':
@@ -820,6 +821,7 @@ namespace StarCalendar
                         // Besides, we will not allow "%%" appear in the pattern.
                         if (nextChar >= 0 && nextChar != (int)'%')
                         {
+                            Console.WriteLine("Append");
                             result.Append(FormatCustomized(StarDate, ((char)nextChar).ToString(), sdfi, offset));
                             tokenLen = 2;
                         }
@@ -966,7 +968,7 @@ namespace StarCalendar
                 if (dt.TimeZone == c.Local)
                 {
                     // This should output the local offset, e.g. "-07:30"
-                    offset = StarZone.GetLocalUtcOffset(dt, ZoneOptions.NoThrowOnInvalidTime);
+                    offset = StarZone.GetLocalUtcOffset(dt, StarZone.NoThrowOnInvalidTime);
                     // fall through to shared time zone output code
                 }
                 else if (dt.TimeZone == StarZone.UTC)
@@ -999,6 +1001,10 @@ namespace StarCalendar
         internal static String GetRealFormat(String format, StarCulture sdfi)
         {
             String realFormat = null;
+            if (sdfi == null)
+            {
+                sdfi = StarCulture.CurrentCulture;
+            }
 
             switch (format[0])
             {
@@ -1115,6 +1121,7 @@ namespace StarCalendar
         {
             ////Console.WriteLine(format);
             //throw new NotImplementedException();
+            //Console.WriteLine(sdfi.CultureName);
             return Format(StarDate, format, sdfi, NullOffset);
         }
 
@@ -1123,6 +1130,7 @@ namespace StarCalendar
         {
             Contract.Requires(sdfi != null);
             //Console.WriteLine("Breakpoint");
+            //Console.WriteLine(sdfi.CultureName);
             if (format == null || format.Length == 0)
             {
                 Boolean timeOnlySpecialCase = false;
@@ -1199,7 +1207,8 @@ namespace StarCalendar
 
                 format = ExpandPredefinedFormat(format, ref StarDate, ref sdfi, ref offset);
             }
-
+            //Console.WriteLine(sdfi.CultureName);
+            //Console.WriteLine("Return");
             return FormatCustomized(StarDate, format, sdfi, offset);
         }
 

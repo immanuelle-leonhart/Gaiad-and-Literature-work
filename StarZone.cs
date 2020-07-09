@@ -34,9 +34,9 @@ using System.Security;
 using System.Security.Permissions;
 using System.Text;
 using System.Threading;
-using System;
+//using System;
 using System.Collections.Concurrent;
-using System.Collections.Generic;
+//using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http.Headers;
 using System.Numerics;
@@ -984,6 +984,7 @@ namespace StarCalendar
         private AdjustmentRule[] adjustmentRules;
         private bool v;
         private Time basicUTCOffset;
+        internal static bool NoThrowOnInvalidTime = true;
 
         // ---- SECTION: public properties --------------*
 
@@ -2193,11 +2194,11 @@ namespace StarCalendar
                 {
                     return StarZone.CreateCustomTimeZone(id, BaseUtcOffset, displayName, standardName, daylightName, rules);
                 }
-                catch (ArgumentException ex)
+                catch (ArgumentException)
                 {
                     throw new NotImplementedException(); // throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"), ex);
                 }
-                catch (InvalidTimeZoneException ex)
+                catch (InvalidTimeZoneException)
                 {
                     throw new NotImplementedException(); //throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"), ex);
                 }
@@ -2507,7 +2508,7 @@ namespace StarCalendar
                 {
                     return new Time(0 /* hours */, token /* minutes */, 0 /* seconds */);
                 }
-                catch (ArgumentOutOfRangeException e)
+                catch (ArgumentOutOfRangeException)
                 {
                     throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"), e);
                 }
@@ -2738,7 +2739,7 @@ namespace StarCalendar
                     {
                         transition = TransitionTime.CreateFloatingDateRule(timeOfDay, month, week, (DayOfWeek)dayOfWeek);
                     }
-                    catch (ArgumentException e)
+                    catch (ArgumentException)
                     {
                         throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"), e);
                     }
@@ -2809,6 +2810,11 @@ namespace StarCalendar
                 int comparison = x.BaseUtcOffset.CompareTo(y.BaseUtcOffset);
                 return comparison == 0 ? String.Compare(x.DisplayName, y.DisplayName, StringComparison.Ordinal) : comparison;
             }
+        }
+
+        public override int GetHashCode()
+        {
+            throw new NotImplementedException();
         }
     }
 } // StarZone

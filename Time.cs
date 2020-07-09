@@ -405,27 +405,8 @@ namespace StarCalendar
         [ResourceExposure(ResourceScope.None)]
         [MethodImplAttribute(MethodImplOptions.InternalCall)]
         private static extern bool LegacyFormatMode();
-#endif // !FEATURE_CORECLR
-        //
-        // In Silverlight v4, specifying the APP_EARLIER_THAN_SL4.0 quirks mode allows applications to
-        // run in v2 - v3 legacy behavior.
-        //
-#if !FEATURE_CORECLR
-        [System.Security.SecuritySafeCritical]
-#endif
-//        private static bool GetLegacyFormatMode()
-//        {
-//#if !FEATURE_CORECLR
-//            if (LegacyFormatMode()) // FCALL to check COMPLUS_Time_LegacyFormatMode
-//                return true;
-//            return CompatibilitySwitches.IsNetFx40TimeLegacyFormatMode;
-//#else
-//            return CompatibilitySwitches.IsAppEarlierThanSilverlight4;
-//#endif // !FEATURE_CORECLR
-//        }
 
-        private static volatile bool _legacyConfigChecked;
-        private static volatile bool _legacyMode;
+#endif // !FEATURE_CORECLR
 
         //private static bool LegacyMode
         //{
@@ -691,6 +672,11 @@ namespace StarCalendar
         {
             throw new NotImplementedException();
         }
+
+        //public string ToString(string format, IFormatProvider formatProvider)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
         public static Time operator *(Time t, BigInteger b)
         {

@@ -11,8 +11,9 @@ namespace StarCalendar
 
         static void Main(string[] args)
         {
+            Console.WriteLine(StarDate.Now.ToString());
+            Console.WriteLine(StarDate.Now);
             StarDate.PrintAllFormats(StarDate.Now);
-            //StarDate.FullTest();
         }
     }
 }

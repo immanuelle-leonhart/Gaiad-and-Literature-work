@@ -67,7 +67,7 @@ namespace StarCalendar
 
     [Serializable]
     [System.Runtime.InteropServices.ComVisible(true)]
-    public sealed class StarCulture : ICloneable//, IFormatProvider
+    public sealed class StarCulture : ICloneable, IFormatProvider
     {
         private static Dictionary<string, StarCulture> dict = getformats();
         public static StarCulture InvariantCulture = dict["English"];
@@ -76,19 +76,28 @@ namespace StarCalendar
         internal static StarCulture CurrentCulture = dict["English"];
         private StarCulture starDateInfo;
         private IFormatProvider formatProvider;
+        [NonSerialized]
         private string[] monthGenitives;
         private int iFIRSTWEEKOFYEAR;
-        private string hour_second;
+        [NonSerialized]
         private string timeSeparator;
         private static StarCulture Symbol;
+        [NonSerialized]
         private string langfam;
-        private string endonym;
+        [NonSerialized]
+        private string sNativeName;
+        private int iTwoDigitYearMax = 2029; // Max 2 digit year (for Y2K bug data entry)
+        [NonSerialized]
         private string notes;
-        private List<string> weekdays;
+        [NonSerialized]
+        private string[] saDayNames = new string[7];
+        [NonSerialized]
         private List<string> months;
-        private List<string> genmonths;
+        [NonSerialized]
+        private List<string> saMonthGenitiveNames;
         private List<string> misc;
-        private string dateSeparator1;
+        private string dateSeparator1 = "-";
+
 
         public StarCulture(string line)
         {
@@ -114,7 +123,7 @@ namespace StarCalendar
                         this.langfam = n[i];
                         break;
                     case 2:
-                        this.endonym = n[i];
+                        this.sNativeName = n[i];
                         break;
                     case 3:
                         this.SISO639LANGNAME = n[i];
@@ -129,15 +138,25 @@ namespace StarCalendar
                         this.notes = n[i];
                         break;
                     case 8:
-                        this.weekdays = new List<string>() { n[i] };
+                        this.saDayNames[1] = n[i];
                         break;
                     case 9:
+                        this.saDayNames[2] = n[i];
+                        break;
                     case 10:
+                        this.saDayNames[3] = n[i];
+                        break;
                     case 11:
+                        this.saDayNames[4] = n[i];
+                        break;
                     case 12:
+                        this.saDayNames[5] = n[i];
+                        break;
                     case 13:
+                        this.saDayNames[6] = n[i];
+                        break;
                     case 14:
-                        this.weekdays.Add(n[i]);
+                        this.saDayNames[0] = n[i];
                         break;
                     case 15:
                         this.months = new List<string>() { n[i] };
@@ -158,7 +177,7 @@ namespace StarCalendar
                         this.months.Add(n[i]);
                         break;
                     case 29:
-                        this.genmonths = new List<string> { n[i] };
+                        this.saMonthGenitiveNames = new List<string> { n[i] };
                         break;
                     case 30:
                     case 31:
@@ -173,7 +192,7 @@ namespace StarCalendar
                     case 40:
                     case 41:
                     case 42:
-                        this.genmonths.Add(n[i]);
+                        this.saMonthGenitiveNames.Add(n[i]);
                         break;
                     case 43:
                         this.SAM1159 = n[i];
@@ -185,7 +204,7 @@ namespace StarCalendar
                         this.TimeSeparator = n[i];
                         break;
                     case 46:
-                        this.DateSeparator = n[i];
+                        this.dateSeparator1 = n[i];
                         break;
                     case 47:
                         this.misc = new List<string>() { n[i] };
@@ -208,41 +227,6 @@ namespace StarCalendar
                 }
                 i++;
             }
-            //    this.weekdays = new Dictionary<string, string>
-            //{
-            //    {"0", "0"},
-            //    {"mon", n[1]},
-            //    {"tue", n[2]},
-            //    {"wed", n[3]},
-            //    {"thu", n[4]},
-            //    {"fri", n[5]},
-            //    {"sat", n[6]},
-            //    {"sun", n[7]}
-            //};
-            //this.months = new string[] { "0", n[8], n[9], n[10], n[11], n[12], n[13], n[14], n[15], n[16], n[17], n[18], n[19], n[20], n[21] };
-            //this.genmonths = new string[] { "0", n[22], n[23], n[24], n[25], n[26], n[27], n[28], n[29], n[30], n[31], n[32], n[33], n[34], n[35] };
-            //this.starDateInfo = new StarCulture(this);
-            //this.SISO639LANGNAME = n[37];
-            //this.SAM1159 = n[41];
-            //if (SAM1159 == "")
-            //{
-            //    SAM1159 = "AM";
-            //}
-            //this.SPM2359 = n[42];
-            //if (SPM2359 == "")
-            //{
-            //    SPM2359 = "PM";
-            //}
-            //this.hour_minute = n[43];
-            //if (hour_minute == "")
-            //{
-            //    hour_minute = ":";
-            //}
-            //this.hour_second = n[44];
-            //if (hour_second == "")
-            //{
-            //    hour_second = ":";
-            //}
 
         }
 
@@ -258,7 +242,7 @@ namespace StarCalendar
 
         internal string weekday(int d)
         {
-            return this.weekdays[d - 1];
+            return this.saDayNames[d - 1];
         }
 
 
@@ -270,8 +254,9 @@ namespace StarCalendar
 
         internal string StarDateString(StarDate dt, string format)
         {
-            ////Console.WriteLine(format);
-            return StarDateFormat.Format(dt, format, StarCulture.CurrentCulture);
+            Console.WriteLine(this.CultureName);
+            Console.WriteLine(this == null);
+            return StarDateFormat.Format(dt, format, this);
         }
 
         //internal static StarCulture InvariantCulture;
@@ -312,16 +297,50 @@ namespace StarCalendar
         {
             get
             {
-                string[] vs = new string[7];
-                int i = 1;
-                while (i < vs.Length)
+                if (saAbbrevDayNames1 == null)
                 {
-                    vs[i] = abbreviate(weekday(i));
-                    i++;
+                    string[] vs = new string[7];
+                    int i = 1;
+                    while (i < vs.Length)
+                    {
+                        vs[i] = abbreviate(weekday(i));
+                        i++;
+                    }
+                    saAbbrevDayNames1 = vs;
                 }
-                return vs;
+                return saAbbrevDayNames1;
+            }
+            set
+            {
+                saAbbrevDayNames1 = value;
             }
         }
+
+        public string[] SuperShortDayNames
+        {
+            get
+            {
+                if (superShortDayNames == null)
+                {
+                    string[] days = new string[7];
+                    int i = 0;
+                    while (i < days.Length)
+                    {
+                        days[i] = AbbreviatedDayNames[i].Substring(0, 2);
+                        i++;
+                    }
+                    superShortDayNames = days;
+                }
+                return superShortDayNames;
+            }
+
+            private set
+            {
+                superShortDayNames = value;
+            }
+        }
+
+
 
         private string abbreviate(string v)
         {
@@ -387,14 +406,59 @@ namespace StarCalendar
                 iFIRSTWEEKOFYEAR = value;
             }
         }
-        public string SAM1159 { get; internal set; }
-        public string SPM2359 { get; internal set; }
+        public string SAM1159
+        {
+            get
+            {
+                if (sAM1159 == null)
+                {
+                    sAM1159 = InvariantCulture.SAM1159;
+                }
+                return sAM1159;
+            }
+
+            internal set
+            {
+                sAM1159 = value;
+            }
+        }
+        public string SPM2359
+        {
+            get
+            {
+                if (sPM2359 == null)
+                {
+                    sPM2359 = InvariantCulture.SPM2359;
+                }
+                return sPM2359;
+            }
+
+            internal set
+            {
+                sPM2359 = value;
+            }
+        }
 
         private string hour_minute;
 
         public string TimeSeparator { get { return hour_minute; } internal set => timeSeparator = value; }
-        public string[] LongTimes { get; internal set; }
-        public string[] ShortTimes { get; internal set; }
+        public string[] LongTimes
+        {
+            get
+            {
+                if (this._longtimes == null)
+                {
+                    this._longtimes = InvariantCulture._longtimes;
+                }
+                return _longtimes;
+            }
+
+            internal set
+            {
+                _longtimes = value;
+            }
+        }
+        public string[] ShortTimes { get => shortTimes; internal set => shortTimes = value; }
         public bool UseUserOverride { get; internal set; }
         public StarCulture StarDateInfo
         {
@@ -431,17 +495,17 @@ namespace StarCalendar
         {
             get
             {
-                string[] gen = new string[genmonths.Count];
+                string[] gen = new string[saMonthGenitiveNames.Count];
                 int i = 0;
-                while (i < genmonths.Count)
+                while (i < saMonthGenitiveNames.Count)
                 {
-                    if (genmonths[i] == "")
+                    if (saMonthGenitiveNames[i] == "")
                     {
-                        gen[i] = dict["Symbol"].genmonths[i];
+                        gen[i] = dict["Symbol"].saMonthGenitiveNames[i];
                     }
                     else
                     {
-                        gen[i] = genmonths[i];
+                        gen[i] = saMonthGenitiveNames[i];
                     }
                     i++;
                 }
@@ -454,7 +518,7 @@ namespace StarCalendar
             }
         }
 
-        
+
 
         internal IFormatProvider GetFormat(Type type)
         {
@@ -515,16 +579,26 @@ namespace StarCalendar
         {
             get
             {
-                string[] vs = new string[this.months.Count];
-                int i = 0;
-                while (i < vs.Length)
+                if (saMonthNames == null)
                 {
-                    vs[i] = months[i];
-                    i++;
+                    string[] vs = new string[this.months.Count];
+                    int i = 0;
+                    while (i < vs.Length)
+                    {
+                        vs[i] = months[i];
+                        i++;
+                    }
+                    saMonthNames = vs;
                 }
-                return vs;
+                return saMonthNames;
+            }
+            set
+            {
+                saMonthNames = value;
             }
         }
+
+        //public string[] m_genitiveAbbreviatedMonthNames { get; private set; }
 
         internal string GetDateSeparator(int calendarID)
         {
@@ -538,7 +612,7 @@ namespace StarCalendar
 
         internal string[] ShortDates(int calendarID)
         {
-            throw new NotImplementedException();
+            return this.saShortDates;
         }
 
         internal string[] YearMonths()
@@ -570,21 +644,29 @@ namespace StarCalendar
         {
             get
             {
-                string[] gen = new string[15];
-                int i = 0;
-                while (i < 15)
+                if (m_genitiveAbbreviatedMonthNames == null)
                 {
-                    if (genmonths[i] == "")
+                    string[] gen = new string[15];
+                    int i = 0;
+                    while (i < 15)
                     {
-                        gen[i] = abbreviate(dict["Symbol"].genmonths[i]);
+                        if (saMonthGenitiveNames[i] == "")
+                        {
+                            gen[i] = abbreviate(dict["Symbol"].saMonthGenitiveNames[i]);
+                        }
+                        else
+                        {
+                            gen[i] = abbreviate(saMonthGenitiveNames[i]);
+                        }
+                        i++;
                     }
-                    else
-                    {
-                        gen[i] = abbreviate(genmonths[i]);
-                    }
-                    i++;
+                    m_genitiveAbbreviatedMonthNames = gen;
                 }
-                return gen;
+                return m_genitiveAbbreviatedMonthNames;
+            }
+            set
+            {
+                m_genitiveAbbreviatedMonthNames = value;
             }
         }
 
@@ -630,6 +712,49 @@ namespace StarCalendar
                 formats.Add(form.CultureName, form);
                 counter++;
             }
+            // Set our default/gregorian US calendar data
+            // Calendar IDs are 1-based, arrays are 0 based.
+            //CalendarData invariant = new CalendarData();
+
+            // Set default data for calendar
+            // Note that we don't load resources since this IS NOT supposed to change (by definition)
+            InvariantCulture.sNativeName = "Gregorian Calendar";  // Calendar Name
+
+            // Year
+            //InvariantCulture.iTwoDigitYearMax = 2029; // Max 2 digit year (for Y2K bug data entry)
+
+            // Formats
+            InvariantCulture.saShortDates = new String[] { "MM/dd/yyyy", "yyyy-MM-dd" };          // short date format
+            InvariantCulture.saLongDates = new String[] { "dddd, dd MMMM yyyy" };                 // long date format
+            InvariantCulture.saYearMonths = new String[] { "yyyy MMMM" };                         // year month format
+            InvariantCulture.sMonthDay = "MMMM dd";                                            // Month day pattern
+
+            // Calendar Parts Names
+            //InvariantCulture.saEraNames = new String[] { "A.D." };     // Era names
+            //InvariantCulture.saAbbrevEraNames = new String[] { "AD" };      // Abbreviated Era names
+            //InvariantCulture.saAbbrevEnglishEraNames = new String[] { "AD" };     // Abbreviated era names in English
+            InvariantCulture.saDayNames = new String[] { "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" };// day names
+            InvariantCulture.AbbreviatedDayNames = new String[] { "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" };     // abbreviated day names
+            InvariantCulture.SuperShortDayNames = new String[] { "Su", "Mo", "Tu", "We", "Th", "Fr", "Sa" };      // The super short day names
+            InvariantCulture.MonthNames = new String[] { "Sagittarius", "Capricorn", "Aquarius", "Pisces", "Aries", "Taurus",
+                                                            "Gemini", "Karkino", "Leo", "Virgo", "Libra", "Scorpio", "Ophiuchus", "Horus"}; // month names
+            InvariantCulture.m_genitiveAbbreviatedMonthNames = new String[] { "Sag", "Cap", "Aqu", "Pis", "Ari", "Tau",
+                                                            "Gem", "Kar", "Leo", "Vir", "Lib", "Sco", "Oph", "Hor"}; // abbreviated month names
+                                                                                                                     // Time
+            InvariantCulture._sTimeSeparator = ":";
+            InvariantCulture.SAM1159 = "AM";                   // AM designator
+            InvariantCulture.SPM2359 = "PM";                   // PM designator
+            InvariantCulture._longtimes = new string[] { "HH:mm:ss" };                             // time format
+            InvariantCulture._saShortTimes = new string[] { "HH:mm", "hh:mm tt", "H:mm", "h:mm tt" }; // short time format
+            InvariantCulture._saDurationFormats = new string[] { "HH:mm:ss" };                             // time duration format
+            InvariantCulture.m_genitiveAbbreviatedMonthNames = InvariantCulture.AbbreviatedGenitiveMonthNames;    // Abbreviated genitive month names (same as abbrev month names for invariant)
+                                                                                                                  //InvariantCulture.saLeapYearMonthNames = InvariantCulture.saMonthNames;              // leap year month names are unused in Gregorian English (invariant)
+                                                                                                                  //    public string SAM1159 { get; internal set; }
+                                                                                                                  //public string SPM2359 { get; internal set; }
+            InvariantCulture.bUseUserOverrides = false;
+
+            // Calendar was built, go ahead and assign it...            
+            //Invariant = invariant;
             return formats;
         }
 
@@ -667,7 +792,7 @@ namespace StarCalendar
         [NonSerialized] private String m_langName = null;
 
         // CompareInfo usually used by the parser.
-        [NonSerialized] private CompareInfo m_compareInfo = null;
+        //[NonSerialized] private CompareInfo m_compareInfo = null;
 
         // Culture matches current sdfi. mainly used for string comparisons during parsing.
         [NonSerialized] private StarCulture m_cultureInfo = null;
@@ -712,10 +837,10 @@ namespace StarCalendar
         [OptionalField(VersionAdded = 1)]
         internal String fullStarDatePattern = null;        // long date + long time (whidbey expects, arrowhead doesn't)
 
-        internal String[] abbreviatedDayNames = null;
+        internal String[] saAbbrevDayNames1 = null;
 
         [OptionalField(VersionAdded = 2)]
-        internal String[] m_superShortDayNames = null;
+        internal String[] superShortDayNames = null;
 
         internal String[] dayNames = null;
         internal String[] abbreviatedMonthNames = null;
@@ -726,7 +851,14 @@ namespace StarCalendar
 
         // Cache the abbreviated genitive month names that we retrieve from the data table.
         [OptionalField(VersionAdded = 2)]
+        [NonSerialized]
         internal String[] m_genitiveAbbreviatedMonthNames = null;
+        private string _sTimeSeparator;
+        //private string SAM1159;
+        //private string SPM2359;
+        private string[] _longtimes;
+        private string[] _saShortTimes;
+        private string[] _saDurationFormats;
 
         // Cache the month names of a leap year that we retrieve from the data table.
         [OptionalField(VersionAdded = 2)]
@@ -774,15 +906,15 @@ namespace StarCalendar
         //internal static bool preferExistingTokens = InitPreferExistingTokens();
 
 
-//        [System.Security.SecuritySafeCritical]
-//        static bool InitPreferExistingTokens()
-//        {
-//            bool ret = false;
-//#if !FEATURE_CORECLR
-//            ret = StarDate.LegacyParseMode();
-//#endif
-//            return ret;
-//        }
+        //        [System.Security.SecuritySafeCritical]
+        //        static bool InitPreferExistingTokens()
+        //        {
+        //            bool ret = false;
+        //#if !FEATURE_CORECLR
+        //            ret = StarDate.LegacyParseMode();
+        //#endif
+        //            return ret;
+        //        }
 
 
         // 
@@ -832,11 +964,11 @@ namespace StarCalendar
 
         private String[] internalGetAbbreviatedDayOfWeekNames()
         {
-            //if (this.abbreviatedDayNames == null)
+            //if (this.saAbbrevDayNames1 == null)
             //{
             //    // Get the abbreviated day names for our current calendar
-            //    this.abbreviatedDayNames = this.AbbreviatedDayNames;
-            //    Contract.Assert(this.abbreviatedDayNames.Length == 7, "[StarCulture.GetAbbreviatedDayOfWeekNames] Expected 7 day names in a week");
+            //    this.saAbbrevDayNames1 = this.AbbreviatedDayNames;
+            //    Contract.Assert(this.saAbbrevDayNames1.Length == 7, "[StarCulture.GetAbbreviatedDayOfWeekNames] Expected 7 day names in a week");
             //}
             return this.AbbreviatedDayNames;
         }
@@ -853,16 +985,16 @@ namespace StarCalendar
         //
         ////////////////////////////////////////////////////////////////////////
 
-        private String[] internalGetSuperShortDayNames()
-        {
-            if (this.m_superShortDayNames == null)
-            {
-                // Get the super short day names for our current calendar
-                this.m_superShortDayNames = this.SuperShortDayNames;
-                Contract.Assert(this.m_superShortDayNames.Length == 7, "[StarCulture.internalGetSuperShortDayNames] Expected 7 day names in a week");
-            }
-            return (this.m_superShortDayNames);
-        }
+        //private String[] internalGetSuperShortDayNames()
+        //{
+        //    if (this.superShortDayNames == null)
+        //    {
+        //        // Get the super short day names for our current calendar
+        //        this.superShortDayNames = this.SuperShortDayNames;
+        //        Contract.Assert(this.superShortDayNames.Length == 7, "[StarCulture.internalGetSuperShortDayNames] Expected 7 day names in a week");
+        //    }
+        //    return (this.superShortDayNames);
+        //}
 
         ////////////////////////////////////////////////////////////////////////////
         //
@@ -921,73 +1053,73 @@ namespace StarCalendar
             return this.MonthNames;
         }
 
-            //    return (this.monthNames);
-            //}
+        //    return (this.monthNames);
+        //}
 
 
-            //
-            // Invariant StarCulture doesn't have user-overriden values
-            // Default calendar is gregorian
-            //public StarCulture()
+        //
+        // Invariant StarCulture doesn't have user-overriden values
+        // Default calendar is gregorian
+        //public StarCulture()
         //: this(StarCulture.InvariantCulture.m_cultureData,
         //        GregorianCalendar.GetDefaultInstance())
-//        {
-//        }
+        //        {
+        //        }
 
-//            #region Serialization
-//            // The following fields are defined to keep the serialization compatibility with .NET V1.0/V1.1.
-//            [OptionalField(VersionAdded = 1)]
-//        private int CultureID;
-//        [OptionalField(VersionAdded = 1)]
-//        private bool m_useUserOverride;
-//#if !FEATURE_CORECLR
-//        [OptionalField(VersionAdded = 1)]
-//        private bool bUseCalendarInfo;
-//        [OptionalField(VersionAdded = 1)]
-//        private int nDataItem;
-//        [OptionalField(VersionAdded = 2)]
-//        internal bool m_isDefaultCalendar;                // NEVER USED, DO NOT USE THIS! (Serialized in Whidbey)
-//        [OptionalField(VersionAdded = 2)]
-//        private static volatile Hashtable s_calendarNativeNames;   // NEVER USED, DO NOT USE THIS! (Serialized in Whidbey)
-//#endif // !FEATURE_CORECLR
+        //            #region Serialization
+        //            // The following fields are defined to keep the serialization compatibility with .NET V1.0/V1.1.
+        //            [OptionalField(VersionAdded = 1)]
+        //        private int CultureID;
+        //        [OptionalField(VersionAdded = 1)]
+        //        private bool m_useUserOverride;
+        //#if !FEATURE_CORECLR
+        //        [OptionalField(VersionAdded = 1)]
+        //        private bool bUseCalendarInfo;
+        //        [OptionalField(VersionAdded = 1)]
+        //        private int nDataItem;
+        //        [OptionalField(VersionAdded = 2)]
+        //        internal bool m_isDefaultCalendar;                // NEVER USED, DO NOT USE THIS! (Serialized in Whidbey)
+        //        [OptionalField(VersionAdded = 2)]
+        //        private static volatile Hashtable s_calendarNativeNames;   // NEVER USED, DO NOT USE THIS! (Serialized in Whidbey)
+        //#endif // !FEATURE_CORECLR
 
-//        // This was synthesized by Whidbey so we knew what words might appear in the middle of a date string
-//        // Now we always synthesize so its not helpful
-//        [OptionalField(VersionAdded = 1)]
-//        internal String[] m_dateWords = null;               // calculated, no need to serialze  (whidbey expects, arrowhead doesn't)
+        //        // This was synthesized by Whidbey so we knew what words might appear in the middle of a date string
+        //        // Now we always synthesize so its not helpful
+        //        [OptionalField(VersionAdded = 1)]
+        //        internal String[] m_dateWords = null;               // calculated, no need to serialze  (whidbey expects, arrowhead doesn't)
 
-//            [OnSerializing]
-//        private void OnSerializing(StreamingContext ctx)
-//        {
-//#if FEATURE_USE_LCID
-//            CultureID           = this.m_cultureData.ILANGUAGE;       // Used for serialization compatibility with Whidbey which didn't always serialize the name
-//#endif
-//            m_useUserOverride = this.UseUserOverride;
+        //            [OnSerializing]
+        //        private void OnSerializing(StreamingContext ctx)
+        //        {
+        //#if FEATURE_USE_LCID
+        //            CultureID           = this.m_cultureData.ILANGUAGE;       // Used for serialization compatibility with Whidbey which didn't always serialize the name
+        //#endif
+        //            m_useUserOverride = this.UseUserOverride;
 
-//            // make sure the m_name is initialized.
-//            m_name = this.CultureName;
+        //            // make sure the m_name is initialized.
+        //            m_name = this.CultureName;
 
-//#if !FEATURE_CORECLR
-//            if (s_calendarNativeNames == null)
-//                s_calendarNativeNames = new Hashtable();
-//#endif // FEATURE_CORECLR
+        //#if !FEATURE_CORECLR
+        //            if (s_calendarNativeNames == null)
+        //                s_calendarNativeNames = new Hashtable();
+        //#endif // FEATURE_CORECLR
 
-//            // Important to initialize these fields otherwise we may run into exception when deserializing on Whidbey
-//            // because Whidbey try to initialize some of these fields using calendar data which could be null values
-//            // and then we get exceptions.  So we call the accessors to force the caches to get loaded.
-//            Object o;
-//            o = this.LongTimePattern;
-//            o = this.LongDatePattern;
-//            o = this.ShortTimePattern;
-//            o = this.ShortDatePattern;
-//            o = this.YearMonthPattern;
-//            o = this.AllLongTimePatterns;
-//            o = this.AllLongDatePatterns;
-//            o = this.AllShortTimePatterns;
-//            o = this.AllShortDatePatterns;
-//            o = this.AllYearMonthPatterns;
-//        }
-//        #endregion Serialization
+        //            // Important to initialize these fields otherwise we may run into exception when deserializing on Whidbey
+        //            // because Whidbey try to initialize some of these fields using calendar data which could be null values
+        //            // and then we get exceptions.  So we call the accessors to force the caches to get loaded.
+        //            Object o;
+        //            o = this.LongTimePattern;
+        //            o = this.LongDatePattern;
+        //            o = this.ShortTimePattern;
+        //            o = this.ShortDatePattern;
+        //            o = this.YearMonthPattern;
+        //            o = this.AllLongTimePatterns;
+        //            o = this.AllLongDatePatterns;
+        //            o = this.AllShortTimePatterns;
+        //            o = this.AllShortDatePatterns;
+        //            o = this.AllYearMonthPatterns;
+        //        }
+        //        #endregion Serialization
 
         // Returns a default StarCulture that will be universally
         // supported and constant irrespective of the current culture.
@@ -1013,24 +1145,24 @@ namespace StarCalendar
         // Returns the current culture's StarCulture.  Used by Parse methods.
         //
 
-        public static StarCulture CurrentInfo
-        {
-            get
-            {
-                //Console.WriteLine("Breakpoint");
-                Contract.Ensures(Contract.Result<StarCulture>() != null);
-                StarCulture culture = StarCulture.CurrentCulture;
-                if (!culture.m_isInherited)
-                {
-                    StarCulture info = culture.StarDateInfo;
-                    if (info != null)
-                    {
-                        return info;
-                    }
-                }
-                return culture.StarDateInfo;
-            }
-        }
+        //public static StarCulture CurrentInfo
+        //{
+        //    get
+        //    {
+        //        //Console.WriteLine("Breakpoint");
+        //        Contract.Ensures(Contract.Result<StarCulture>() != null);
+        //        StarCulture culture = StarCulture.CurrentCulture;
+        //        if (!culture.m_isInherited)
+        //        {
+        //            StarCulture info = culture.StarDateInfo;
+        //            if (info != null)
+        //            {
+        //                return info;
+        //            }
+        //        }
+        //        return culture.StarDateInfo;
+        //    }
+        //}
 
 
         //public static StarCulture GetInstance(IFormatProvider provider)
@@ -1086,17 +1218,17 @@ namespace StarCalendar
 
         public String AMDesignator
         {
-//#if FEATURE_CORECLR
-//            [System.Security.SecuritySafeCritical]  // auto-generated
-//#endif
+            //#if FEATURE_CORECLR
+            //            [System.Security.SecuritySafeCritical]  // auto-generated
+            //#endif
             get
             {
-//#if FEATURE_CORECLR
-//                if (this.amDesignator == null)
-//                {
-//                    this.amDesignator = this.m_cultureData.SAM1159;
-//                }
-//#endif
+                //#if FEATURE_CORECLR
+                //                if (this.amDesignator == null)
+                //                {
+                //                    this.amDesignator = this.m_cultureData.SAM1159;
+                //                }
+                //#endif
                 //Contract.Assert(this.amDesignator != null, "StarCulture.AMDesignator, amDesignator != null");
                 if (this.amDesignator == null)
                 {
@@ -1180,8 +1312,8 @@ namespace StarCalendar
         //                    monthDayPattern = null;
 
         //                    dayNames = null;
-        //                    abbreviatedDayNames = null;
-        //                    m_superShortDayNames = null;
+        //                    saAbbrevDayNames1 = null;
+        //                    superShortDayNames = null;
         //                    monthNames = null;
         //                    abbreviatedMonthNames = null;
         //                    genitiveMonthNames = null;
@@ -1439,15 +1571,15 @@ namespace StarCalendar
             get
             {
                 throw new NotImplementedException();
-//#if FEATURE_CORECLR
-//                if (this.firstDayOfWeek == -1)
-//                {
-//                    this.firstDayOfWeek = this.m_cultureData.IFIRSTDAYOFWEEK;
-//                }
-//#endif
-//                Contract.Assert(this.firstDayOfWeek != -1, "StarCulture.FirstDayOfWeek, firstDayOfWeek != -1");
+                //#if FEATURE_CORECLR
+                //                if (this.firstDayOfWeek == -1)
+                //                {
+                //                    this.firstDayOfWeek = this.m_cultureData.IFIRSTDAYOFWEEK;
+                //                }
+                //#endif
+                //                Contract.Assert(this.firstDayOfWeek != -1, "StarCulture.FirstDayOfWeek, firstDayOfWeek != -1");
 
-//                return ((DayOfWeek)this.firstDayOfWeek);
+                //                return ((DayOfWeek)this.firstDayOfWeek);
             }
 
             set
@@ -2007,38 +2139,38 @@ namespace StarCalendar
         //        CheckNullValue(value, value.Length);
         //        ClearTokenHashTable();
 
-        //        abbreviatedDayNames = value;
+        //        saAbbrevDayNames1 = value;
         //    }
         //}
 
 
         // Returns the string array of the one-letter day of week names.
-        [System.Runtime.InteropServices.ComVisible(false)]
-        public String[] ShortestDayNames
-        {
-            get
-            {
-                return ((String[])internalGetSuperShortDayNames().Clone());
-            }
+        //[System.Runtime.InteropServices.ComVisible(false)]
+        //public String[] ShortestDayNames
+        //{
+        //    get
+        //    {
+        //        return ((String[])internalGetSuperShortDayNames().Clone());
+        //    }
 
-            set
-            {
-                if (IsReadOnly)
-                    throw new NotImplementedException(); // throw new InvalidOperationException(//LEnvironment.GetResourceString("InvalidOperation_ReadOnly"));
-                if (value == null)
-                {
-                    throw new NotImplementedException(); // throw new ArgumentNullException("value",
-                                                         //LEnvironment.GetResourceString("ArgumentNull_Array"));
-                }
-                if (value.Length != 7)
-                {
-                    throw new NotImplementedException(); // throw new ArgumentException(//LEnvironment.GetResourceString("Argument_InvalidArrayLength", 7), "value");
-                }
-                Contract.EndContractBlock();
-                CheckNullValue(value, value.Length);
-                this.m_superShortDayNames = value;
-            }
-        }
+        //    set
+        //    {
+        //        if (IsReadOnly)
+        //            throw new NotImplementedException(); // throw new InvalidOperationException(//LEnvironment.GetResourceString("InvalidOperation_ReadOnly"));
+        //        if (value == null)
+        //        {
+        //            throw new NotImplementedException(); // throw new ArgumentNullException("value",
+        //                                                 //LEnvironment.GetResourceString("ArgumentNull_Array"));
+        //        }
+        //        if (value.Length != 7)
+        //        {
+        //            throw new NotImplementedException(); // throw new ArgumentException(//LEnvironment.GetResourceString("Argument_InvalidArrayLength", 7), "value");
+        //        }
+        //        Contract.EndContractBlock();
+        //        CheckNullValue(value, value.Length);
+        //        this.SuperShortDayNames = value; 
+        //    }
+        //}
 
 
         //public String[] DayNames
@@ -2258,23 +2390,23 @@ namespace StarCalendar
 
 
         // Returns the super short day of week names for the specified day of week.
-        [System.Runtime.InteropServices.ComVisible(false)]
-        public String GetShortestDayName(DayOfWeek dayOfWeek)
-        {
+        //[System.Runtime.InteropServices.ComVisible(false)]
+        //public String GetShortestDayName(DayOfWeek dayOfWeek)
+        //{
 
-            if ((int)dayOfWeek < 0 || (int)dayOfWeek > 6)
-            {
-                throw new NotImplementedException(); // throw new ArgumentOutOfRangeException(
-                                                     //"dayOfWeek", //LEnvironment.GetResourceString("ArgumentOutOfRange_Range",
-                                                     //DayOfWeek.Sunday, DayOfWeek.Saturday));
-            }
-            Contract.EndContractBlock();
-            //
-            // Don't call the public property SuperShortDayNames here since a clone is needed in that
-            // property, so it will be slower.  Instead, use internalGetSuperShortDayNames() directly.
-            //
-            return (internalGetSuperShortDayNames()[(int)dayOfWeek]);
-        }
+        //    if ((int)dayOfWeek < 0 || (int)dayOfWeek > 6)
+        //    {
+        //        throw new NotImplementedException(); // throw new ArgumentOutOfRangeException(
+        //                                             //"dayOfWeek", //LEnvironment.GetResourceString("ArgumentOutOfRange_Range",
+        //                                             //DayOfWeek.Sunday, DayOfWeek.Saturday));
+        //    }
+        //    Contract.EndContractBlock();
+        //    //
+        //    // Don't call the public property SuperShortDayNames here since a clone is needed in that
+        //    // property, so it will be slower.  Instead, use internalGetSuperShortDayNames() directly.
+        //    //
+        //    return (SuperShortDayNames()[(int)dayOfWeek]);
+        //}
 
         // Get all possible combination of inputs
         static private String[] GetCombinedPatterns(String[] patterns1, String[] patterns2, String connectString)
@@ -2610,6 +2742,8 @@ namespace StarCalendar
             }
         }
 
+
+
         //public static StarCulture ReadOnly(StarCulture sdfi)
         //{
         //    if (sdfi == null)
@@ -2836,20 +2970,20 @@ namespace StarCalendar
         //
         // Get suitable CompareInfo from current sdfi object.
         //
-        internal CompareInfo CompareInfo
-        {
-            get
-            {
-                if (m_compareInfo == null)
-                {
-                    // We use the regular GetCompareInfo here to make sure the created CompareInfo object is stored in the
-                    // CompareInfo cache. otherwise we would just create CompareInfo using m_cultureData.
-                    m_compareInfo = CompareInfo.GetCompareInfo(SCOMPAREINFO);
-                }
+        //internal CompareInfo CompareInfo
+        //{
+        //    get
+        //    {
+        //        if (m_compareInfo == null)
+        //        {
+        //            // We use the regular GetCompareInfo here to make sure the created CompareInfo object is stored in the
+        //            // CompareInfo cache. otherwise we would just create CompareInfo using m_cultureData.
+        //            m_compareInfo = CompareInfo.GetCompareInfo(SCOMPAREINFO);
+        //        }
 
-                return m_compareInfo;
-            }
-        }
+        //        return m_compareInfo;
+        //    }
+        //}
 
 
         internal const StarDateStyles InvalidStarDateStyles = ~(StarDateStyles.AllowLeadingWhite | StarDateStyles.AllowTrailingWhite
@@ -2933,6 +3067,7 @@ namespace StarCalendar
         //public static StarCulture GregorianCalendar { get; }
         //public object AppContextSwitches { get; private set; }
         public bool HasForceTwoDigitYears { get; internal set; }
+
         //public StarCulture CultureData { get => CultureData1; set => CultureData1 = value; }
         //public StarCulture CultureData1
         //{
@@ -2951,21 +3086,35 @@ namespace StarCalendar
         //    }
         //}
 
-        public string DateSeparator
+        public string GetDateSeparator()
         {
-            get
+            if (dateSeparator1 == null)
             {
-                if (dateSeparator1 == null)
-                {
-                    dateSeparator1 = "-";
-                }
-                return dateSeparator1;
+                dateSeparator1 = "-";
             }
+            return dateSeparator1;
+        }
+        //public StarCulture CultureData { get => CultureData1; set => CultureData1 = value; }
+        //public StarCulture CultureData1
+        //{
+        //    get
+        //    {
+        //        if (m_cultureData == null)
+        //        {
+        //            m_cultureData = StarCulture.CurrentCulture;
+        //        }
+        //        return m_cultureData;
+        //    }
 
-            internal set
-            {
-                dateSeparator1 = value;
-            }
+        //    set
+        //    {
+        //        m_cultureData = value;
+        //    }
+        //}
+
+        internal void SetDateSeparator(string value)
+        {
+            dateSeparator1 = value;
         }
 
         // This is a callback that the parser can make back into the sdfi to let it fiddle with special
@@ -3060,7 +3209,7 @@ namespace StarCalendar
         internal const String KoreanLangName = "ko";
         internal const String JapaneseLangName = "ja";
         internal const String EnglishLangName = "en";
-
+        private const int V = 666;
         private static volatile StarCulture s_jajpsdfi;
         private static volatile StarCulture s_zhtwsdfi;
         private StarCulture cultureInfo;
@@ -3762,19 +3911,38 @@ namespace StarCalendar
             }
         }
 
-        internal static StarCulture GetInstance(IFormatProvider provider)
+        public static StarCulture GetInstance(IFormatProvider provider)
         {
-            throw new NotImplementedException();
+            //// Fast case for a regular CultureInfo
+            //DateTimeFormatInfo info;
+            //CultureInfo cultureProvider = provider as CultureInfo;
+            //if (cultureProvider != null && !cultureProvider.m_isInherited)
+            //{
+            //    return cultureProvider.DateTimeFormat;
+            //}
+            //// Fast case for a DTFI;
+            //info = provider as DateTimeFormatInfo;
+            //if (info != null)
+            //{
+            //    return info;
+            //}
+            //// Wasn't cultureInfo or DTFI, do it the slower way
+            //if (provider != null)
+            //{
+            //    info = provider.GetFormat(typeof(DateTimeFormatInfo)) as DateTimeFormatInfo;
+            //    if (info != null)
+            //    {
+            //        return info;
+            //    }
+            //}
+            // Couldn't get anything, just use currentInfo as fallback
+            return CurrentCulture;
         }
 
         public int ID
         {
             get
             {
-                if (iD == null)
-                {
-                    iD = 42;
-                }
                 return iD;
             }
 
@@ -3788,14 +3956,104 @@ namespace StarCalendar
         public int CAL_TAIWAN { get; internal set; }
         public object MinSupportedStarDate { get; internal set; }
         public object MaxSupportedStarDate { get; internal set; }
-        public string[] SuperShortDayNames { get; private set; }
+        //public string[] SuperShortDayNames { get; private set; }
         public string MonthDayPattern { get; private set; }
+        public string[] saShortDates
+        {
+            get
+            {
+                if (saShortDates1 == null)
+                {
+                    saShortDates1 = InvariantCulture.saShortDates1;
+                }
+                return saShortDates1;
+            }
+
+            private set
+            {
+                saShortDates1 = value;
+            }
+        }
+
+        public string[] saLongDates
+        {
+            get
+            {
+                if (saLongDates1 == null)
+                {
+                    saLongDates1 = InvariantCulture.saLongDates1;
+                }
+                return saLongDates1;
+            }
+
+            private set
+            {
+                saLongDates1 = value;
+            }
+        }
+        public string[] saYearMonths
+        {
+            get
+            {
+                if (saYearMonths1 == null)
+                {
+                    saYearMonths1 = InvariantCulture.saYearMonths1;
+                }
+                return saYearMonths1;
+            }
+
+            private set
+            {
+                saYearMonths1 = value;
+            }
+        }
+        public string sMonthDay
+        {
+            get
+            {
+                if (sMonthDay1 == null)
+                {
+                    sMonthDay1 = InvariantCulture.sMonthDay1;
+                }
+                return sMonthDay1;
+            }
+
+            private set
+            {
+                sMonthDay1 = value;
+            }
+        }
+
         //public static StarCulture InvariantCulture;
 
-        public static int CAL_HEBREW = 666;
-        private int iD;
+        public static int CAL_HEBREW = V;
+        private int iD = 42;
         private StarCulture starDateFormatInfo;
-        
+        [NonSerialized]
+        private string[] saShortDates1;
+        [NonSerialized]
+        private string[] saLongDates1;
+        [NonSerialized]
+        private string sMonthDay1;
+        [NonSerialized]
+        private string[] saYearMonths1;
+        [NonSerialized]
+        private string[] saMonthNames;
+        private bool bUseUserOverrides;
+        private string[] shortTimes;
+        private string[] longTimes;
+        private string sPM2359;
+        private string sAM1159;
+
+
+
+        //private string[] m_genitiveAbbreviatedMonthNames;
+
+        //private string[] saSuperShortDayNames1;
+        //private string[] superShortDayNames;
+
+        //private string[] saAbbrevDayNames1;
+
 
         //public StarCulture(StarCulture starDateFormatInfo)
         //{
@@ -3862,6 +4120,11 @@ namespace StarCalendar
         public object Clone()
         {
             throw new NotImplementedException();
+        }
+
+        object IFormatProvider.GetFormat(Type formatType)
+        {
+            return FormatProvider;
         }
     }
 }
