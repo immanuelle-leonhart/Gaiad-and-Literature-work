@@ -1212,7 +1212,7 @@ namespace StarCalendar
             }
 
             int billion, million, year, month, day;
-            StarDate.GetDatePart(out billion, out million, out year, out month, out day);
+            StarDate.GetDatePart(out year, out month, out day);
 
             result.Append(InvariantAbbreviatedDayNames[StarDate.DayOfWeekInt()]);
             result.Append(',');
@@ -1237,7 +1237,7 @@ namespace StarCalendar
             StringBuilder result = StringBuilderCache.Acquire(roundTripFormatLength);
 
             int billion, million, year, month, day;
-            StarDate.GetDatePart(out billion, out million, out year, out month, out day);
+            StarDate.GetDatePart(out year, out month, out day);
 
             AppendNumber(result, year, 4);
             result.Append('-');

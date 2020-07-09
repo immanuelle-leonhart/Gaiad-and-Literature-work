@@ -819,12 +819,12 @@ namespace StarCalendar
         private const int c_regByteLength = 44;
 
         // Number of 100ns ticks per time unit
-        private const long c_ticksPerMillisecond = 10000;
-        private const long c_ticksPerSecond = c_ticksPerMillisecond * 1000;
-        private const long c_ticksPerMinute = c_ticksPerSecond * 60;
-        private const long c_ticksPerHour = c_ticksPerMinute * 60;
-        private const long c_ticksPerDay = c_ticksPerHour * 24;
-        private const long c_ticksPerDayRange = c_ticksPerDay - c_ticksPerMillisecond;
+        private const long c_TicksPerMillisecond = 10000;
+        private const long c_TicksPerSecond = c_TicksPerMillisecond * 1000;
+        private const long c_TicksPerMinute = c_TicksPerSecond * 60;
+        private const long c_TicksPerHour = c_TicksPerMinute * 60;
+        private const long c_TicksPerDay = c_TicksPerHour * 24;
+        private const long c_TicksPerDayRange = c_TicksPerDay - c_TicksPerMillisecond;
 
         //
         // All cached data are encapsulated in a helper class to allow consistent view even when the data are refreshed using ClearCachedData()

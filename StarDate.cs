@@ -56,11 +56,69 @@ namespace StarCalendar
     {
 
         // Number of 100ns _ticks per time unit
-        private const long ticksPerMillisecond = 10000;
-        private const long ticksPerSecond = ticksPerMillisecond * 1000;
-        private const long ticksPerMinute = ticksPerSecond * 60;
-        private const long ticksPerHour = ticksPerMinute * 60;
-        private const long ticksPerDay = ticksPerHour * 24;
+        internal static Time MillisecondTime = new Time(10000);
+        private const int TicksPerMillisecond = 10000;
+        internal static Time SecondTime = MillisecondTime * 1000;
+        private const int TicksPerSecond = TicksPerMillisecond * 1000;
+        internal static Time MinuteTime = SecondTime * 60;
+        private const long TicksPerMinute = TicksPerSecond * 60;
+        internal static Time HourTime = MinuteTime * 60;
+        private const long TicksPerHour = TicksPerMinute * 60;
+        internal static Time DayTime = HourTime * 24;
+        private const long TicksPerDay = TicksPerHour * 24;
+        internal static Time Decidi = DayTime / 10;
+        internal static Time Centidi = DayTime / 100;
+        internal static Time Millidi = DayTime / 1000;
+        internal static Time Microdi = DayTime / 1000000;
+        internal static Time Nanodi = DayTime / 1000000000; //Only Metric Time needed
+        internal static Time Sol = 1.02749125 * DayTime;
+        internal static Time week = DayTime * 7;
+        private const long TicksPerWeek = TicksPerDay * 7;
+        private const int DaysPerWeek = 7;
+        internal static Time month = week * 4;
+        private const long TicksPerMonth = TicksPerDay * 28;
+        private const int DaysPerMonth = DaysPerWeek * 4;
+        internal static Time YearTime = week * 52;
+        internal static BigInteger TicksPerYear = TicksPerWeek * 52;
+        private const int DaysPerYear = DaysPerMonth * 12;
+        internal static Time Leap = YearTime + week;
+        internal static BigInteger TicksPerLeapYear = TicksPerYear + TicksPerWeek;
+        private const int DaysPerLeapYear = DaysPerYear + DaysPerWeek;
+        internal static Time DoubleLeap = Leap + week;
+        internal static BigInteger TicksPerDoubleLeap = TicksPerLeapYear + TicksPerWeek;
+        private const int DaysPerDoubleLeap = DaysPerLeapYear + DaysPerWeek;
+        internal static Time Sixyear = YearTime * 6 + week; //6 years, 313 weeks;
+        internal static BigInteger TicksPerSixYears = TicksPerYear * 6 + TicksPerWeek;
+        private const int DaysPerSixYears = DaysPerYear * 6 + DaysPerWeek;
+        internal static Time Seventy_Eight = Sixyear * 13 + week; //78 years, 4070 weeks;
+        internal static BigInteger TicksPerSeventyEightYears = TicksPerSixYears * 13 + TicksPerWeek;
+        private const int DaysPer78Years = DaysPerSixYears * 13 + DaysPerWeek;
+        internal static Time AverageYear = DayTime * 365.256410256;
+        private const int DaysPerAverageYear = DaysPer78Years / 78;
+        internal static BigInteger TicksPerAverageYear = TicksPerSeventyEightYears / 78;
+        //internal static Time SiderealYear = Day * 365.25636;
+        internal static Time SiderealYear = Seventy_Eight / 78;
+        internal static Time k = SiderealYear * 1000;
+        internal static BigInteger TicksPerThousand = TicksPerAverageYear * 1000;
+        private const long DaysPerThousand = DaysPerAverageYear * 1000;
+        internal static Time m = k * 1000;
+        internal static BigInteger TicksPerMillion = TicksPerThousand * 1000;
+        private const long DaysPerMillion = DaysPerThousand * 1000;
+        internal static Time b = m * 1000;
+        internal static BigInteger TicksPerBillion = TicksPerMillion * 1000;
+        private const long DaysPerBillion = DaysPerMillion * 1000;
+        private const long DaysPerTrillion = DaysPerBillion * 1000;
+        private const long DaysPerQuadrillion = DaysPerTrillion * 1000;
+        internal static Time a = 200 * m;
+        internal static StarDate manu = StarDate.AbstractDate(14 * b);
+        internal static StarDate maya = manu + 154 * Seventy_Eight; //10k BC + 154 * 78 = 12012
+        internal static DateTime maya_net = new DateTime(2011, 12, 26); //2011-12-26
+        //internal static DateTime new_year_12018 = new DateTime(2017, 12, 18, 0, 0, 0, DateTimeKind.Utc); //Sunday Saggittarius 1, 12013
+        //internal static StarDate Trump1 = manu + 154 * Seventy_Eight + 6 * Year; //new_year_12018, Dec 18 2017
+        //internal static StarDate y2k = manu + (12 * k);
+        internal static StarDate netstart = maya - new Time(maya_net.Ticks);
+        internal static StarDate julian = maya - 2455921 * DayTime;
+        internal static Time tr = b * 1000;
 
         // Number of milliseconds per time unit
         private const int MillisPerSecond = 1000;
@@ -69,9 +127,9 @@ namespace StarCalendar
         private const int MillisPerDay = MillisPerHour * 24;
 
         // Number of days in a non-leap Year
-        private const int DaysPerYear = 365;
+        private const int DaysPerYear2 = 365;
         // Number of days in 4 years
-        private const int DaysPer4Years = DaysPerYear * 4 + 1;       // 1461
+        private const int DaysPer4Years = DaysPerYear2 * 4 + 1;       // 1461
         // Number of days in 100 years
         private const int DaysPer100Years = DaysPer4Years * 25 - 1;  // 36524
         // Number of days in 400 years
@@ -87,25 +145,28 @@ namespace StarCalendar
         private const int DaysTo10000 = DaysPer400Years * 25 - 366;  // 3652059
 
         internal const long MinTicks = 0;
-        internal const long MaxTicks = DaysTo10000 * ticksPerDay - 1;
+        internal const long MaxTicks = DaysTo10000 * TicksPerDay - 1;
         private const long MaxMillis = (long)DaysTo10000 * MillisPerDay;
 
-        private const long FileTimeOffset = DaysTo1601 * ticksPerDay;
-        private const long DoubleDateOffset = DaysTo1899 * ticksPerDay;
+        private const long FileTimeOffset = DaysTo1601 * TicksPerDay;
+        private const long DoubleDateOffset = DaysTo1899 * TicksPerDay;
         // The minimum OA date is 0100/01/01 (Note it's Year 100).
         // The maximum OA date is 9999/12/31
-        private const long OADateMinAsTicks = (DaysPer100Years - DaysPerYear) * ticksPerDay;
+        private const long OADateMinAsTicks = (DaysPer100Years - DaysPerYear) * TicksPerDay;
         // All OA dates must be greater than (not >=) OADateMinAsDouble
         private const double OADateMinAsDouble = -657435.0;
         // All OA dates must be less than (not <=) OADateMaxAsDouble
         private const double OADateMaxAsDouble = 2958466.0;
 
+        private const int DatePartQuadrillion = -4;
+        private const int DatePartTrillion = -3;
         private const int DatePartBillion = -2;
         private const int DatePartMillion = -1;
         private const int DatePartYear = 0;
         private const int DatePartDayOfYear = 1;
         private const int DatePartMonth = 2;
         private const int DatePartDay = 3;
+        private const int DatePartDayOfWeek = 4;
 
         //internal static readonly bool s_isLeapSecondsSupportedSystem = SystemSupportLeapSeconds();
 
@@ -370,7 +431,7 @@ namespace StarCalendar
                 {
                     Contract.Ensures(Contract.Result<int>() >= 0);
                     Contract.Ensures(Contract.Result<int>() < 30);
-                    int h = (int)((AdjustedTicks / ticksPerHour) % 24);
+                    int h = (int)((AdjustedTicks / TicksPerHour) % 24);
                     if (h < 6)
                     {
                         h += 24;
@@ -381,7 +442,7 @@ namespace StarCalendar
                 {
                     Contract.Ensures(Contract.Result<int>() >= 0);
                     Contract.Ensures(Contract.Result<int>() < 24);
-                    return (int)((AdjustedTicks / ticksPerHour) % 24);
+                    return (int)((AdjustedTicks / TicksPerHour) % 24);
                 }
             }
             internal set
@@ -468,7 +529,7 @@ namespace StarCalendar
             {
                 Contract.Ensures(Contract.Result<int>() >= 0);
                 Contract.Ensures(Contract.Result<int>() < 1000);
-                return (int)((AdjustedTicks / ticksPerMillisecond) % 1000);
+                return (int)((AdjustedTicks / TicksPerMillisecond) % 1000);
             }
             internal set
             {
@@ -542,89 +603,6 @@ namespace StarCalendar
         private int MonthNumberFromName(string value)
         {
             throw new NotImplementedException();
-        }
-
-        //private string month(int month, StarCulture locale)
-        //{
-        //    return locale.month(month);
-        //}
-
-        public string WeekDay
-        {
-            get { return StarCulture.CurrentCulture.weekday(this.WeekInt); }
-            internal set
-            {
-                switch (value)
-                {
-                    case "Monday":
-                        this.WeekInt = 1;
-                        break;
-                    case "Tuesday":
-                        this.WeekInt = 2;
-                        break;
-                    case "Wednesday":
-                        this.WeekInt = 3;
-                        break;
-                    case "Thursday":
-                        this.WeekInt = 4;
-                        break;
-                    case "Friday":
-                        this.WeekInt = 5;
-                        break;
-                    case "Saturday":
-                        this.WeekInt = 6;
-                        break;
-                    case "Sunday":
-                        this.WeekInt = 7;
-                        break;
-                    default:
-                        break;
-                }
-            }
-        }
-
-        //private string GetWeekDayName(int weekInt, StarCulture locale)
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-
-
-
-        //public Time error
-        //{
-        //    get
-        //    {
-        //        return this.metadata.error;
-        //    }
-
-        //    private set
-        //    {
-        //        this.metadata.error = value;
-        //    }
-        //}
-
-        //public string Note
-        //{
-        //    get
-        //    {
-        //        return this.metadata.note;
-        //    }
-
-        //    private set
-        //    {
-        //        this.metadata.note = value;
-        //    }
-        //}
-
-        public int WeekInt
-        {
-            get { return StarDate.DayFromMonth(this.Day); }
-            private set
-            {
-                int diff = value - this.WeekInt;
-                this.atomic += diff * c.Day;
-            }
         }
 
         public StarZone TimeZone
@@ -1466,209 +1444,83 @@ namespace StarCalendar
             }
         }
 
-        private Dictionary<string, int> Data(string length)
-        {
-            Time LocalDay = this.TimeZone.Day;
-            Dictionary<string, int> dict = new Dictionary<string, int>();
-            Time rem = this.atomic;
-            dict.Add("b", rem / c.b);
-            rem %= c.b;
-            dict.Add("m", rem / c.m);
-            rem %= c.m;
-            dict.Add("cycle_78", rem / c.Seventy_Eight);
-            rem %= c.Seventy_Eight;
-            if (rem / c.Sixyear >= 13)
-            {
-                dict.Add("cycle6", 12);
-                dict.Add("cycleyears", 5);
-                rem %= c.Year;
-                dict.Add("Month", 13);
-                //dict.Add("Month", rem / c.Month);
-                rem %= c.month;
-                dict.Add("day", rem / c.Day);
-                dict["day"]++;
-                dict["Month"]++;
-                dict.Add("week of Year", 52 + dict["day"] / 7);
-                dict.Add("day of Year", 364 + dict["day"]);
-                switch (dict["day"])
-                {
-                    case 15:
-                        //Console.WriteLine("ERROR CAUGHT");
-                        //Console.WriteLine(dict["Month"]);
-                        throw new NotImplementedException();
-                    default:
-                        break;
-                }
-            }
-            else
-            {
-                dict.Add("cycle6", rem / c.Sixyear);
-                rem %= c.Sixyear;
-                dict.Add("leap", rem / (6 * c.Year));
-                if (dict["leap"] == 1)
-                {
-                    dict.Add("cycleyears", 5);
-                    rem %= c.Year;
-                    dict.Add("Month", 13);
-                    rem %= c.month;
-                    dict.Add("day", rem / c.Day);
-                    dict["Month"]++;
-                    dict["day"]++;
-                    dict.Add("week of Year", 52 + dict["day"] / 7);
-                    dict.Add("day of Year", 364 + dict["day"]);
-                }
-                else
-                {
-                    dict.Add("cycleyears", rem / c.Year);
-                    rem %= c.Year;
-                    dict.Add("Month", rem / c.month);
-                    dict.Add("week of Year", rem / c.week);
-                    dict.Add("day of Year", rem / c.Day);
-                    rem %= c.month;
-                    dict.Add("day", rem / c.Day);
-                    dict["Month"]++;
-                    dict["day"]++;
-                    dict["day of Year"]++;
-                    ////Console.WriteLine("normal Year");
-                    //throw new NotImplementedException();
-                }
-            }
-
-            int year = dict["cycleyears"];
-            year += dict["cycle6"] * 6;
-            year += dict["cycle_78"] * 78;
-            dict.Add("Year", year);
-            if ((length == "Year") || (length == "Month") || (length == "day"))
-            {
-                return dict;
-            }
-
-            if (this.Sol() == false)
-            {
-                ////Console.WriteLine(this.timeZone.Names());
-                throw new NotImplementedException();
-            }
-            rem %= c.Day;
-            Time rem2 = rem;
-
-
-            dict.Add("hour", rem / c.Hour);
-            rem %= c.Hour;
-            dict.Add("Minute", rem / c.Minute);
-            rem %= c.Minute;
-            dict.Add("second", rem / c.Second);
-            rem %= c.Second;
-            dict.Add("Millisecond", rem / c.Millisecond);
-            rem %= c.Millisecond;
-            dict.Add("_ticks", (int)rem._ticks);
-            year += 14 * (int)Math.Pow(10, 9);
-            dict.Add("big Year", year);
-            dict.Add("Metric", rem2 / c.Nanodi);
-            rem2 %= c.Nanodi;
-            int nanoticks = (int)c.Nanodi._ticks;
-            dict.Add("nanodi _ticks", nanoticks);
-            double nanoditick = 1 / (double)nanoticks;
-            double metric = (double)rem2._ticks;
-            double subnano = metric / nanoticks;
-            double nano2 = subnano * Math.Pow(10, 9);
-            int subnano_long = (int)Math.Round(nano2);
-            dict.Add("Subnano", subnano_long);
-            return dict;
-        }
-
         // Returns a given date part of this StarDate. This method is used
         // to compute the Year, day-of-Year, month, or day part.
         private int GetDatePart(int part)
         {
-            BigInteger ticks = AdjustedTicks;
-            // n = number of days since 1/1/0001
-            int n = (int)(ticks / ticksPerDay);
-            // y400 = number of whole 400-Year periods since 1/1/0001
-            int y400 = n / DaysPer400Years;
-            // n = day number within 400-Year period
-            n -= y400 * DaysPer400Years;
-            // y100 = number of whole 100-Year periods within 400-Year period
-            int y100 = n / DaysPer100Years;
-            // Last 100-Year period has an extra day, so decrement result if 4
-            if (y100 == 4) y100 = 3;
-            // n = day number within 100-Year period
-            n -= y100 * DaysPer100Years;
-            // y4 = number of whole 4-Year periods within 100-Year period
-            int y4 = n / DaysPer4Years;
-            // n = day number within 4-Year period
-            n -= y4 * DaysPer4Years;
-            // y1 = number of whole years within 4-Year period
-            int y1 = n / DaysPerYear;
-            // Last Year has an extra day, so decrement result if 4
-            if (y1 == 4) y1 = 3;
-            // If Year was requested, compute and return it
-            if (part == DatePartYear)
+            if (IsTerran == false)
             {
-                return y400 * 400 + y100 * 100 + y4 * 4 + y1 + 1;
+                ////Console.WriteLine(this.timeZone.Names());
+                throw new NotImplementedException();
             }
-            // n = day number within Year
-            n -= y1 * DaysPerYear;
-            // If day-of-Year was requested, return it
-            if (part == DatePartDayOfYear) return n + 1;
-            // Leap Year calculation looks different from IsLeapYear since y1, y4,
-            // and y100 are relative to Year 1, not Year 0
-            bool leapYear = y1 == 3 && (y4 != 24 || y100 == 3);
-            int[] days = leapYear ? DaysToMonth366 : DaysToMonth365;
-            // All months have less than 32 days, so n >> 5 is a good conservative
-            // estimate for the month
-            int m = n >> 5 + 1;
-            // m = 1-based month number
-            while (n >= days[m]) m++;
-            // If month was requested, return it
-            if (part == DatePartMonth) return m;
-            // Return 1-based day-of-month
-            return n - days[m - 1] + 1;
+            //BigInteger ticks = AdjustedTicks;
+            //
+            Int64 n =(long) (AdjustedTicks / TicksPerDay);
+            if (part == DatePartQuadrillion)
+            {
+                return (int)(n / DaysPerQuadrillion);
+            }
+            else if (part == DatePartTrillion)
+            {
+                return (int)((n %= DaysPerQuadrillion) / DaysPerTrillion);
+            }
+            else if (part == DatePartBillion)
+            {
+                return (int)((n %= DaysPerTrillion) / DaysPerBillion);
+            }
+            else if (part == DatePartMillion)
+            {
+                return (int)((n %= DaysPerBillion) / DaysPerMillion);
+            }
+            else
+            {
+                n %= DaysPerMillion;
+                int y78 = (int) (n / DaysPer78Years);
+                n -= y78 * DaysPer78Years;
+                int y6 = (int)(n / DaysPerSixYears);
+                if (y6 == 13) y6 = 12;
+                n -= y6 * DaysPerSixYears;
+                int y1 = (int)(n / DaysPerYear);
+                if (y1 == 6) y1 = 5;
+                if (part == DatePartYear) return 78 * y78 + 6 * y6 + y1;
+                n -= y1 * DaysPerYear;
+                int d = (int)n + 1;
+                if (part == DatePartDayOfYear) return d;
+                if (part == DatePartDayOfWeek) return d % 7;
+                if (part == DatePartMonth) return (d / 28) + 1;
+                if (part == DatePartDay) return (d % 28);
+                else throw new ArgumentException();
+            }
         }
 
         // Exactly the same as GetDatePart(int part), except computing all of
         // Year/month/day rather than just one of them.  Used when all three
         // are needed rather than redoing the computations for each.
-        internal void GetDatePart(out int billion, out int million, out int year, out int month, out int day)
+        internal void GetDatePart(out int year, out int month, out int day)
         {
-            BigInteger ticks = AdjustedTicks;
-            // n = number of days since 1/1/0001
-            int n = (int)(ticks / ticksPerDay);
-            // y400 = number of whole 400-Year periods since 1/1/0001
-            int y400 = n / DaysPer400Years;
-            // n = day number within 400-Year period
-            n -= y400 * DaysPer400Years;
-            // y100 = number of whole 100-Year periods within 400-Year period
-            int y100 = n / DaysPer100Years;
-            // Last 100-Year period has an extra day, so decrement result if 4
-            if (y100 == 4) y100 = 3;
-            // n = day number within 100-Year period
-            n -= y100 * DaysPer100Years;
-            // y4 = number of whole 4-Year periods within 100-Year period
-            int y4 = n / DaysPer4Years;
-            // n = day number within 4-Year period
-            n -= y4 * DaysPer4Years;
-            // y1 = number of whole years within 4-Year period
-            int y1 = n / DaysPerYear;
-            // Last Year has an extra day, so decrement result if 4
-            if (y1 == 4) y1 = 3;
-            // compute Year
-            year = y400 * 400 + y100 * 100 + y4 * 4 + y1 + 1;
-            // n = day number within Year
-            n -= y1 * DaysPerYear;
-            // dayOfYear = n + 1;
-            // Leap Year calculation looks different from IsLeapYear since y1, y4,
-            // and y100 are relative to Year 1, not Year 0
-            bool leapYear = y1 == 3 && (y4 != 24 || y100 == 3);
-            int[] days = leapYear ? DaysToMonth366 : DaysToMonth365;
-            // All months have less than 32 days, so n >> 5 is a good conservative
-            // estimate for the month
-            int m = (n >> 5) + 1;
-            // m = 1-based month number
-            while (n >= days[m]) m++;
-            // compute month and day
-            month = m;
-            day = n - days[m - 1] + 1;
-        }
+            if (IsTerran)
+            {
+                Int64 n = (long)(AdjustedTicks / TicksPerDay);
+                n %= DaysPerMillion;
+                int y78 = (int)(n / DaysPer78Years);
+                n -= y78 * DaysPer78Years;
+                int y6 = (int)(n / DaysPerSixYears);
+                if (y6 == 13) y6 = 12;
+                n -= y6 * DaysPerSixYears;
+                int y1 = (int)(n / DaysPerYear);
+                if (y1 == 6) y1 = 5;
+                year = 78 * y78 + 6 * y6 + y1;
+                n -= y1 * DaysPerYear;
+                int d = (int)n + 1;
+                month = (d / 28) + 1;
+                day = (d % 28);
+            }
+            else
+            {
+                throw new NotImplementedException();
+            }
+                
+            }
 
         // Returns the day-of-month part of this StarDate. The returned
         // value is an integer between 1 and 31.
@@ -1691,10 +1543,7 @@ namespace StarCalendar
             throw new NotImplementedException();
         }
 
-        private bool Sol()
-        {
-            return this.TimeZone.Sol;
-        }
+        //private bool Sol => this.TimeZone.Sol;
 
         internal StarDate addtimezone(string prim)
         {
@@ -2601,7 +2450,7 @@ namespace StarCalendar
         //    }
 
         //    BigInteger ticks = DateToTicks(Year, month, day) + TimeToTicks(hour, minute, second);
-        //    ticks += millisecond * ticksPerMillisecond;
+        //    ticks += millisecond * TicksPerMillisecond;
         //    if (ticks < MinTicks || ticks > MaxTicks)
         //        throw new ArgumentException(); //); //Environment.GetResourceString("Arg_StarDateRange"));
         //    this.dateData = (UInt64)ticks;
@@ -2629,7 +2478,7 @@ namespace StarCalendar
         //    }
 
         //    BigInteger ticks = DateToTicks(Year, month, day) + TimeToTicks(hour, minute, second);
-        //    ticks += millisecond * ticksPerMillisecond;
+        //    ticks += millisecond * TicksPerMillisecond;
         //    if (ticks < MinTicks || ticks > MaxTicks)
         //        throw new ArgumentException(); //); //Environment.GetResourceString("Arg_StarDateRange"));
         //    this.dateData = ((UInt64)ticks | ((UInt64)kind << KindShift));
@@ -2656,7 +2505,7 @@ namespace StarCalendar
         //    }
 
         //    BigInteger ticks = calendar.ToStarDate(Year, month, day, hour, minute, second, 0).Ticks;
-        //    ticks += millisecond * ticksPerMillisecond;
+        //    ticks += millisecond * TicksPerMillisecond;
         //    if (ticks < MinTicks || ticks > MaxTicks)
         //        throw new ArgumentException(); //); //Environment.GetResourceString("Arg_StarDateRange"));
         //    this.dateData = (UInt64)ticks;
@@ -2693,7 +2542,7 @@ namespace StarCalendar
         //    }
 
         //    BigInteger ticks = calendar.ToStarDate(Year, month, day, hour, minute, second, 0).Ticks;
-        //    ticks += millisecond * ticksPerMillisecond;
+        //    ticks += millisecond * TicksPerMillisecond;
         //    if (ticks < MinTicks || ticks > MaxTicks)
         //        throw new ArgumentException(); //); //Environment.GetResourceString("Arg_StarDateRange"));
 
@@ -2822,7 +2671,7 @@ namespace StarCalendar
             long millis = (long)(value * scale + (value >= 0 ? 0.5 : -0.5));
             if (millis <= -MaxMillis || millis >= MaxMillis)
                 throw new ArgumentOutOfRangeException(); //("value", ); //Environment.GetResourceString("ArgumentOutOfRange_AddValue"));
-            return AddTicks(millis * ticksPerMillisecond);
+            return AddTicks(millis * TicksPerMillisecond);
         }
 
         // Returns the StarDate resulting from adding a fractional number of
@@ -2986,7 +2835,7 @@ namespace StarCalendar
                 {
                     int y = year - 1;
                     int n = y * 365 + y / 4 - y / 100 + y / 400 + days[month - 1] + day - 1;
-                    return n * ticksPerDay;
+                    return n * TicksPerDay;
                 }
             }
             throw new ArgumentOutOfRangeException(); //(null, ); //Environment.GetResourceString("ArgumentOutOfRange_BadYearMonthDay"));
@@ -3035,10 +2884,10 @@ namespace StarCalendar
                 millis -= (millis % MillisPerDay) * 2;
             }
 
-            millis += DoubleDateOffset / ticksPerMillisecond;
+            millis += DoubleDateOffset / TicksPerMillisecond;
 
             if (millis < 0 || millis >= MaxMillis) throw new ArgumentException(); //); //Environment.GetResourceString("Arg_OleAutDateScale"));
-            return millis * ticksPerMillisecond;
+            return millis * TicksPerMillisecond;
         }
 
         //#if !FEATURE_CORECLR
@@ -3166,7 +3015,7 @@ namespace StarCalendar
             get
             {
                 BigInteger ticks = InternalTicks;
-                return new StarDate((UInt64)(ticks - ticks % ticksPerDay) | InternalKind);
+                return new StarDate((UInt64)(ticks - ticks % TicksPerDay) | InternalKind);
             }
         }
 
@@ -3198,7 +3047,7 @@ namespace StarCalendar
             {
                 Contract.Ensures(Contract.Result<DayOfWeek>() >= DayOfWeek.Sunday);
                 Contract.Ensures(Contract.Result<DayOfWeek>() <= DayOfWeek.Saturday);
-                return (DayOfWeek)(Day % 7);
+                return (DayOfWeek)(GetDatePart(DatePartDayOfWeek));
             }
         }
 
@@ -3279,7 +3128,7 @@ namespace StarCalendar
             {
                 Contract.Ensures(Contract.Result<int>() >= 0);
                 Contract.Ensures(Contract.Result<int>() < 60);
-                return (int)((AdjustedTicks / ticksPerMinute) % 60);
+                return (int)((AdjustedTicks / TicksPerMinute) % 60);
             }
             set
             {
@@ -3356,8 +3205,8 @@ namespace StarCalendar
         //            // Windows Phone 7.0/7.1 return the ticks up to millisecond, not up to the 100th nanosecond.
         //            if (CompatibilitySwitches.IsAppEarlierThanWindowsPhone8)
         //            {
-        //                BigInteger ticksms = ticks / ticksPerMillisecond;
-        //                ticks = ticksms * ticksPerMillisecond;
+        //                BigInteger ticksms = ticks / TicksPerMillisecond;
+        //                ticks = ticksms * TicksPerMillisecond;
         //            }
         //#endif
         //                return new StarDate(((UInt64)(ticks + FileTimeOffset)) | KindUtc);
@@ -3387,7 +3236,7 @@ namespace StarCalendar
                 StarDate dt = new StarDate(ticks);
 
                 int billion, million, year, month, day;
-                dt.GetDatePart(out billion, out million, out year, out month, out day);
+                dt.GetDatePart(out year, out month, out day);
 
                 wYear = (ushort)year;
                 wMonth = (ushort)month;
@@ -3448,7 +3297,7 @@ namespace StarCalendar
         //    FullSystemTime time = new FullSystemTime();
         //    if (SystemFileTimeToSystemTime(fileTime, ref time))
         //    {
-        //        time.hundredNanoSecond = fileTime % ticksPerMillisecond;
+        //        time.hundredNanoSecond = fileTime % TicksPerMillisecond;
         //        return CreateStarDateFromSystemTime(ref time);
         //    }
 
@@ -3462,7 +3311,7 @@ namespace StarCalendar
         //    FullSystemTime time = new FullSystemTime(ticks);
         //    if (SystemTimeToSystemFileTime(ref time, ref fileTime))
         //    {
-        //        return fileTime + ticks % ticksPerMillisecond;
+        //        return fileTime + ticks % TicksPerMillisecond;
         //    }
 
         //    throw new ArgumentOutOfRangeException(); //(null, ); //Environment.GetResourceString("ArgumentOutOfRange_FileTimeInvalid"));
@@ -3475,7 +3324,7 @@ namespace StarCalendar
         {
             BigInteger ticks = DateToTicks(time.wYear, time.wMonth, time.wDay);
             ticks += TimeToTicks(time.wHour, time.wMinute, time.wSecond);
-            ticks += time.wMillisecond * ticksPerMillisecond;
+            ticks += time.wMillisecond * TicksPerMillisecond;
             ticks += time.hundredNanoSecond;
             return new StarDate(((UInt64)(ticks)) | KindUtc);
         }
@@ -3504,7 +3353,7 @@ namespace StarCalendar
             {
                 Contract.Ensures(Contract.Result<int>() >= 0);
                 Contract.Ensures(Contract.Result<int>() < 60);
-                return (int)((InternalTicks / ticksPerSecond) % 60);
+                return (int)((InternalTicks / TicksPerSecond) % 60);
             }
             internal set
             {
@@ -3536,7 +3385,7 @@ namespace StarCalendar
         {
             get
             {
-                return new Time(InternalTicks % ticksPerDay);
+                return new Time(InternalTicks % TicksPerDay);
             }
             internal set
             {
@@ -3871,13 +3720,13 @@ namespace StarCalendar
         {
             if (value == 0)
                 return 0.0;  // Returns OleAut's zero'ed date value.
-            if (value < ticksPerDay) // This is a fix for VB. They want the default day to be 1/1/0001 rathar then 12/30/1899.
+            if (value < TicksPerDay) // This is a fix for VB. They want the default day to be 1/1/0001 rathar then 12/30/1899.
                 value += DoubleDateOffset; // We could have moved this fix down but we would like to keep the bounds check.
             if (value < OADateMinAsTicks)
                 throw new OverflowException(); //Environment.GetResourceString("Arg_OleAutDateInvalid"));
             // Currently, our max date == OA's max date (12/31/9999), so we don't
             // need an overflow check in that direction.
-            long millis = (value - DoubleDateOffset) / ticksPerMillisecond;
+            long millis = (value - DoubleDateOffset) / TicksPerMillisecond;
             if (millis < 0)
             {
                 long frac = millis % MillisPerDay;
@@ -4242,7 +4091,7 @@ namespace StarCalendar
 
         //        BigInteger ticks = DateToTicks(Year, month, day) + TimeToTicks(hour, minute, second);
 
-        //        ticks += millisecond * ticksPerMillisecond;
+        //        ticks += millisecond * TicksPerMillisecond;
         //        if (ticks < MinTicks || ticks > MaxTicks)
         //        {
         //            return false;

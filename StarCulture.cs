@@ -4108,9 +4108,9 @@ namespace StarCalendar
             return starDate.Day;
         }
 
-        internal int GetDayOfWeek(StarDate starDate)
+        internal DayOfWeek GetDayOfWeek(StarDate starDate)
         {
-            return starDate.WeekInt;
+            return starDate.DayOfWeek;
         }
 
         internal int GetMonth(StarDate starDate)
