@@ -141,6 +141,9 @@ namespace StarCalendar
         private BigInteger dateData;
         private BigInteger errorData;
         private StarZone timeZone;
+        private static IEnumerable<string> allFormats;
+        private static IEnumerable<StarDate> testYear;
+
         //private StarZone z;
 
         public StarDate TickTimeZoneConvert(StarZone z)
@@ -3706,6 +3709,56 @@ namespace StarCalendar
             }
         }
 
+        public static string[] AllFormats
+        {
+            get
+            {
+                List<string> a = new List<string>();
+                a.Add(("MM/dd/yyyy")); // Console.WriteLine(aDate.ToString("MM/dd/yyyy")); // Console.WriteLine(bDate.ToString("MM/dd/yyyy")); //
+                a.Add(("dddd, dd MMMM yyyy")); // Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy")); // Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy")); //
+                a.Add(("dddd, dd MMMM yyyy")); // Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy")); // Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy")); //
+                a.Add(("dddd, dd MMMM yyyy")); // Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy")); // Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy")); //
+                a.Add(("dddd, dd MMMM yyyy")); // Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy")); // Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy")); //
+                a.Add(("dddd, dd MMMM yyyy")); // Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy")); // Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy")); //
+                a.Add(("dddd, dd MMMM yyyy HH:mm:ss")); // Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy HH:mm:ss")); // Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy HH:mm:ss")); //
+                a.Add(("MM/dd/yyyy HH:mm")); // Console.WriteLine(aDate.ToString("MM/dd/yyyy HH:mm")); // Console.WriteLine(bDate.ToString("MM/dd/yyyy HH:mm")); //
+                a.Add(("MM/dd/yyyy hh:mm tt")); // Console.WriteLine(aDate.ToString("MM/dd/yyyy hh:mm tt")); // Console.WriteLine(bDate.ToString("MM/dd/yyyy hh:mm tt")); //
+                a.Add(("MM/dd/yyyy H:mm")); // Console.WriteLine(aDate.ToString("MM/dd/yyyy H:mm")); // Console.WriteLine(bDate.ToString("MM/dd/yyyy H:mm")); //
+                a.Add(("MM/dd/yyyy h:mm tt")); // Console.WriteLine(aDate.ToString("MM/dd/yyyy h:mm tt")); // Console.WriteLine(bDate.ToString("MM/dd/yyyy h:mm tt")); //
+                a.Add(("MM/dd/yyyy HH:mm:ss")); // Console.WriteLine(aDate.ToString("MM/dd/yyyy HH:mm:ss")); // Console.WriteLine(bDate.ToString("MM/dd/yyyy HH:mm:ss")); //
+                a.Add(("MMMM dd")); // Console.WriteLine(aDate.ToString("MMMM dd")); // Console.WriteLine(bDate.ToString("MMMM dd")); //
+                a.Add(("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss.fffffffK")); // Console.WriteLine(aDate.ToString("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss.fffffffK")); // Console.WriteLine(bDate.ToString("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss.fffffffK")); //
+                a.Add(("ddd, dd MMM yyy HH’:’mm’:’ss ‘GMT’")); // Console.WriteLine(aDate.ToString("ddd, dd MMM yyy HH’:’mm’:’ss ‘GMT’")); // Console.WriteLine(bDate.ToString("ddd, dd MMM yyy HH’:’mm’:’ss ‘GMT’")); //
+                a.Add(("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss")); // Console.WriteLine(aDate.ToString("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss")); // Console.WriteLine(bDate.ToString("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss")); //
+                a.Add(("HH:mm")); // Console.WriteLine(aDate.ToString("HH:mm")); // Console.WriteLine(bDate.ToString("HH:mm")); //
+                a.Add(("hh:mm tt")); // Console.WriteLine(aDate.ToString("hh:mm tt")); // Console.WriteLine(bDate.ToString("hh:mm tt")); //
+                a.Add(("H:mm")); // Console.WriteLine(aDate.ToString("H:mm")); // Console.WriteLine(bDate.ToString("H:mm")); //
+                a.Add(("h:mm tt")); // Console.WriteLine(aDate.ToString("h:mm tt")); // Console.WriteLine(bDate.ToString("h:mm tt")); //
+                a.Add(("HH:mm:ss")); // Console.WriteLine(aDate.ToString("HH:mm:ss")); // Console.WriteLine(bDate.ToString("HH:mm:ss")); //
+                a.Add(("yyyy MMMM")); // Console.WriteLine(aDate.ToString("yyyy MMMM")); // Console.WriteLine(bDate.ToString("yyyy MMMM")); //
+                string[] vs = new string[a.Count];
+                int i = 0;
+                while (i < vs.Length)
+                {
+                    vs[i] = a[i];
+                    i++;
+                }
+                return vs;
+            }
+        }
+
+        public static List<StarDate> TestYear()
+        {
+            List<StarDate> stars = new List<StarDate>();
+            StarDate dt = c.maya - c.week * 54;
+            while (dt < c.maya)
+            {
+                stars.Add(dt);
+                dt += c.Day;
+            }
+            return stars;
+        }
+
         // Checks whether a given year is a leap year. This method returns true if
         // year is a leap year, or false if not.
         //
@@ -4252,6 +4305,62 @@ namespace StarCalendar
             }
         }
 
+        public static void TestFormat(string v)
+        {
+            TestFormat(StarDate.Now, v);
+        }
+
+        public static void TestFormat(StarDate dt, string v)
+        {
+            Console.WriteLine(" ");
+            Console.WriteLine(v);
+            Console.WriteLine(dt.DateTime.ToString(v));
+            Console.WriteLine(dt.ToString(v));
+            Console.WriteLine(" ");
+        }
+
+        public static void PrintAllFormats()
+        {
+            StarDate.TestFormat(("MM/dd/yyyy")); // Console.WriteLine(aDate.ToString("MM/dd/yyyy")); // Console.WriteLine(bDate.ToString("MM/dd/yyyy")); //
+            StarDate.TestFormat(("dddd, dd MMMM yyyy")); // Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy")); // Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy")); //
+            StarDate.TestFormat(("dddd, dd MMMM yyyy")); // Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy")); // Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy")); //
+            StarDate.TestFormat(("dddd, dd MMMM yyyy")); // Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy")); // Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy")); //
+            StarDate.TestFormat(("dddd, dd MMMM yyyy")); // Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy")); // Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy")); //
+            StarDate.TestFormat(("dddd, dd MMMM yyyy")); // Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy")); // Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy")); //
+            StarDate.TestFormat(("dddd, dd MMMM yyyy HH:mm:ss")); // Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy HH:mm:ss")); // Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy HH:mm:ss")); //
+            StarDate.TestFormat(("MM/dd/yyyy HH:mm")); // Console.WriteLine(aDate.ToString("MM/dd/yyyy HH:mm")); // Console.WriteLine(bDate.ToString("MM/dd/yyyy HH:mm")); //
+            StarDate.TestFormat(("MM/dd/yyyy hh:mm tt")); // Console.WriteLine(aDate.ToString("MM/dd/yyyy hh:mm tt")); // Console.WriteLine(bDate.ToString("MM/dd/yyyy hh:mm tt")); //
+            StarDate.TestFormat(("MM/dd/yyyy H:mm")); // Console.WriteLine(aDate.ToString("MM/dd/yyyy H:mm")); // Console.WriteLine(bDate.ToString("MM/dd/yyyy H:mm")); //
+            StarDate.TestFormat(("MM/dd/yyyy h:mm tt")); // Console.WriteLine(aDate.ToString("MM/dd/yyyy h:mm tt")); // Console.WriteLine(bDate.ToString("MM/dd/yyyy h:mm tt")); //
+            StarDate.TestFormat(("MM/dd/yyyy HH:mm:ss")); // Console.WriteLine(aDate.ToString("MM/dd/yyyy HH:mm:ss")); // Console.WriteLine(bDate.ToString("MM/dd/yyyy HH:mm:ss")); //
+            StarDate.TestFormat(("MMMM dd")); // Console.WriteLine(aDate.ToString("MMMM dd")); // Console.WriteLine(bDate.ToString("MMMM dd")); //
+            StarDate.TestFormat(("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss.fffffffK")); // Console.WriteLine(aDate.ToString("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss.fffffffK")); // Console.WriteLine(bDate.ToString("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss.fffffffK")); //
+            StarDate.TestFormat(("ddd, dd MMM yyy HH’:’mm’:’ss ‘GMT’")); // Console.WriteLine(aDate.ToString("ddd, dd MMM yyy HH’:’mm’:’ss ‘GMT’")); // Console.WriteLine(bDate.ToString("ddd, dd MMM yyy HH’:’mm’:’ss ‘GMT’")); //
+            StarDate.TestFormat(("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss")); // Console.WriteLine(aDate.ToString("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss")); // Console.WriteLine(bDate.ToString("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss")); //
+            StarDate.TestFormat(("HH:mm")); // Console.WriteLine(aDate.ToString("HH:mm")); // Console.WriteLine(bDate.ToString("HH:mm")); //
+            StarDate.TestFormat(("hh:mm tt")); // Console.WriteLine(aDate.ToString("hh:mm tt")); // Console.WriteLine(bDate.ToString("hh:mm tt")); //
+            StarDate.TestFormat(("H:mm")); // Console.WriteLine(aDate.ToString("H:mm")); // Console.WriteLine(bDate.ToString("H:mm")); //
+            StarDate.TestFormat(("h:mm tt")); // Console.WriteLine(aDate.ToString("h:mm tt")); // Console.WriteLine(bDate.ToString("h:mm tt")); //
+            StarDate.TestFormat(("HH:mm:ss")); // Console.WriteLine(aDate.ToString("HH:mm:ss")); // Console.WriteLine(bDate.ToString("HH:mm:ss")); //
+            StarDate.TestFormat(("yyyy MMMM")); // Console.WriteLine(aDate.ToString("yyyy MMMM")); // Console.WriteLine(bDate.ToString("yyyy MMMM")); //
+
+        }
+
+        internal static void PrintAllFormats(StarDate dt)
+        {
+            foreach (string entry in AllFormats)
+            {
+                StarDate.TestFormat(dt, entry);
+            }
+        }
+
+        internal static void FullTest()
+        {
+            foreach (StarDate star in StarDate.TestYear())
+            {
+                StarDate.PrintAllFormats(star);
+            }
+        }
 
         private StarDate(SerializationInfo serializationInfo, StreamingContext streamingContext)
         {
