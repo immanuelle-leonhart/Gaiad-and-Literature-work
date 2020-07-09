@@ -3,7 +3,7 @@
 //   Copyright (c) Microsoft Corporation.  All rights reserved.
 //
 // ==--==
-using SpaceCalendar;
+using StarCalendar;
 using System;
 using System.Globalization;
 

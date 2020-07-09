@@ -1,4 +1,4 @@
-﻿using SpaceCalendar;
+﻿using StarCalendar;
 using System;
 using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
@@ -86,17 +86,17 @@ namespace StarCalendar
             z.ClearCachedData();
             StarZone.ConvertTime(StarDate.Now, StarZone.UTC);
             StarZone.ConvertTime(StarDate.Now, StarZone.Local, StarZone.UTC);
-            StarZone.ConvertTimeBySystemTimeZoneId(StarDate.Now, "string");
-            StarZone.ConvertTimeBySystemTimeZoneId(StarDate.Now, "StarZone.Local", "StarZone.UTC");
+            //StarZone.ConvertTimeBySystemTimeZoneId(StarDate.Now, "string");
+            //StarZone.ConvertTimeBySystemTimeZoneId(StarDate.Now, "StarZone.Local", "StarZone.UTC");
             dt = StarZone.ConvertTimeToUtc(dt);
             dt = StarZone.ConvertTimeToUtc(dt, z);
-            z = StarZone.FindSystemTimeZoneById("string");
-            z = StarZone.FromSerializedString("string");
+            //z = StarZone.FindSystemTimeZoneById("string");
+            //z = StarZone.FromSerializedString("string");
             TimeZoneInfo.AdjustmentRule[] adjustmentRules = z.GetAdjustmentRules();
             StarZone[] GetSystemTimeZones = StarZone.GetSystemTimeZones();
             bool HasSameRules = z.HasSameRules(StarZone.Local);
             bool b = z.IsDaylightSavingTime(dt);
-            s = z.ToSerializedString();
+            //s = z.ToSerializedString();
             s = z.ToString("overload");
         }
     }

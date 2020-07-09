@@ -1,4 +1,4 @@
-﻿using SpaceCalendar;
+﻿using StarCalendar;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -10,7 +10,7 @@ namespace StarCalendar
     internal static class c
     {
         //internal static List<StarCulture> formats = getformats();
-
+        internal static Time Tick = new Time(1);
         internal static Time Millisecond = new Time(10000);
         internal static int TicksPerMillisecond = 10000;
         internal static Time Second = Millisecond * 1000;

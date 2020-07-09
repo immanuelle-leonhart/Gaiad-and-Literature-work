@@ -18,7 +18,7 @@ using System.Text;
 using System.Diagnostics.Contracts;
 using System.Runtime.CompilerServices;
 using System.IO;
-using SpaceCalendar;
+using StarCalendar;
 //using System.Globalization;
 
 namespace StarCalendar
@@ -1086,18 +1086,22 @@ namespace StarCalendar
 
         public String AMDesignator
         {
-#if FEATURE_CORECLR
-            [System.Security.SecuritySafeCritical]  // auto-generated
-#endif
+//#if FEATURE_CORECLR
+//            [System.Security.SecuritySafeCritical]  // auto-generated
+//#endif
             get
             {
-#if FEATURE_CORECLR
+//#if FEATURE_CORECLR
+//                if (this.amDesignator == null)
+//                {
+//                    this.amDesignator = this.m_cultureData.SAM1159;
+//                }
+//#endif
+                //Contract.Assert(this.amDesignator != null, "StarCulture.AMDesignator, amDesignator != null");
                 if (this.amDesignator == null)
                 {
-                    this.amDesignator = this.m_cultureData.SAM1159;
+                    this.amDesignator = "AM";
                 }
-#endif
-                Contract.Assert(this.amDesignator != null, "StarCulture.AMDesignator, amDesignator != null");
                 return (this.amDesignator);
             }
 

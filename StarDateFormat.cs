@@ -10,7 +10,7 @@ using System.Diagnostics.Contracts;
 using System.Numerics;
 using System.Text;
 
-namespace SpaceCalendar
+namespace StarCalendar
 {
     //using System.Text;
     //using System.Threading;
