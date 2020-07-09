@@ -84,11 +84,11 @@ namespace StarCalendar
         "MMMM"              full Month StarName                       Febuary
         "MMMM*"             full Month StarName                       Febuary
 
-        "y"     "0"         two digit year (year % 100) w/o leading zero           0
-        "yy"    "00"        two digit year (year % 100) with leading zero          00
-        "yyy"   "D3"        year                                  2000
-        "yyyy"  "D4"        year                                  2000
-        "yyyyy" "D5"        year                                  2000
+        "y"     "0"         two digit Year (Year % 100) w/o leading zero           0
+        "yy"    "00"        two digit Year (Year % 100) with leading zero          00
+        "yyy"   "D3"        Year                                  2000
+        "yyyy"  "D4"        Year                                  2000
+        "yyyyy" "D5"        Year                                  2000
         ...
 
         "z"     "+0;-0"     timezone offset w/o leading zero      -8
@@ -107,7 +107,7 @@ namespace StarCalendar
         "/"                 date separator                        /-- DEPRECATED - Insert separator directly into pattern (eg: "M-dd-yyyy")
         "'"                 quoted string                         'ABC' will insert ABC into the formatted string.
         '"'                 quoted string                         "ABC" will insert ABC into the formatted string.
-        "%"                 used to quote a single pattern characters      E.g.The format character "%y" is to print two digit year.
+        "%"                 used to quote a single pattern characters      E.g.The format character "%y" is to print two digit Year.
         "\"                 escaped character                     E.g. '\d' insert the character 'd' into the format string.
         other characters    insert the character into the format string.
 
@@ -369,7 +369,7 @@ namespace StarCalendar
             2   Hebrew 2nd Month
             ..  ...
             6   Hebrew 6th Month
-            7   Hebrew 6th Month II (used only in a leap year)
+            7   Hebrew 6th Month II (used only in a leap Year)
             8   Hebrew 7th Month
             9   Hebrew 8th Month
             10  Hebrew 9th Month
@@ -377,17 +377,17 @@ namespace StarCalendar
             12  Hebrew 11th Month
             13  Hebrew 12th Month
 
-            Therefore, if we are in a regular year, we have to increment the Month StarName if moth is greater or eqaul to 7.
+            Therefore, if we are in a regular Year, we have to increment the Month StarName if moth is greater or eqaul to 7.
         */
         //private static String FormatHebrewMonthName(StarDate time, int Month, int repeatCount, StarCulture sdfi)
         //{
         //    Contract.Assert(repeatCount != 3 || repeatCount != 4, "repeateCount should be 3 or 4");
         //    if (sdfi.StarCulture.IsLeapYear(sdfi.StarCulture.GetYear(time)))
         //    {
-        //        // This Month is in a leap year
+        //        // This Month is in a leap Year
         //        return (sdfi.internalGetMonthName(Month, MonthNameStyles.LeapYear, (repeatCount == 3)));
         //    }
-        //    // This is in a regular year.
+        //    // This is in a regular Year.
         //    if (Month >= 7)
         //    {
         //        Month++;
@@ -748,11 +748,11 @@ namespace StarCalendar
                         break;
                     case 'y':
                         // Notes about OS behavior:
-                        // y: Always print (year % 100). No leading zero.
-                        // yy: Always print (year % 100) with leading zero.
-                        // yyy/yyyy/yyyyy/... : Print year value.  No leading zero.
+                        // y: Always print (Year % 100). No leading zero.
+                        // yy: Always print (Year % 100) with leading zero.
+                        // yyy/yyyy/yyyyy/... : Print Year value.  No leading zero.
 
-                        int year = StarDate.year;
+                        int year = StarDate.Year;
                         tokenLen = ParseRepeatPattern(format, i, ch);
 
                         if (isJapaneseCalendar &&
@@ -761,8 +761,8 @@ namespace StarCalendar
                             ((i + tokenLen < format.Length && format[i + tokenLen] == StarDateFormatInfoScanner.CJKYearSuff[0]) ||
                             (i + tokenLen < format.Length - 1 && format[i + tokenLen] == '\'' && format[i + tokenLen + 1] == StarDateFormatInfoScanner.CJKYearSuff[0])))
                         {
-                            // We are formatting a Japanese date with year equals 1 and the year number is followed by the year sign \u5e74
-                            // In Japanese dates, the first year in the era is not formatted as a number 1 instead it is formatted as \u5143 which means
+                            // We are formatting a Japanese date with Year equals 1 and the Year number is followed by the Year sign \u5e74
+                            // In Japanese dates, the first Year in the era is not formatted as a number 1 instead it is formatted as \u5143 which means
                             // first or beginning of the era.
                             result.Append(StarDateFormat.JapaneseEraStart[0]);
                         }
@@ -1146,23 +1146,10 @@ namespace StarCalendar
                     // For example, Japanese calendar only supports date after 1868/9/8.
                     // This will pose a problem when people in VB get the time of day, and use it
                     // to call ToString(), which will use the general format (short date + long time).
-                    // Since Japanese calendar does not support Gregorian year 0001, an exception will be
-                    // thrown when we try to get the Japanese year for Gregorian year 0001.
+                    // Since Japanese calendar does not support Gregorian Year 0001, an exception will be
+                    // thrown when we try to get the Japanese Year for Gregorian Year 0001.
                     // Therefore, the workaround allows them to call ToString() for time of day from a StarDate by
                     // formatting as ISO 8601 format.
-                    //switch (sdfi.StarCulture.ID)
-                    //{
-                    //    case StarCulture.CAL_JAPAN:
-                    //    case StarCulture.CAL_TAIWAN:
-                    //    case StarCulture.CAL_HIJRI:
-                    //    case StarCulture.CAL_HEBREW:
-                    //    case StarCulture.CAL_JULIAN:
-                    //    case StarCulture.CAL_UMALQURA:
-                    //    case StarCulture.CAL_PERSIAN:
-                    //        timeOnlySpecialCase = true;
-                    //        sdfi = StarCulture.InvariantCulture;
-                    //        break;
-                    //}
                 }
                 if (offset == NullOffset)
                 {
@@ -1224,8 +1211,8 @@ namespace StarCalendar
                 StarDate = StarDate - offset;
             }
 
-            int year, month, day;
-            StarDate.GetDatePart(out year, out month, out day);
+            int billion, million, year, month, day;
+            StarDate.GetDatePart(out billion, out million, out year, out month, out day);
 
             result.Append(InvariantAbbreviatedDayNames[StarDate.DayOfWeekInt()]);
             result.Append(',');
@@ -1249,8 +1236,8 @@ namespace StarCalendar
             const int roundTripFormatLength = 28;
             StringBuilder result = StringBuilderCache.Acquire(roundTripFormatLength);
 
-            int year, month, day;
-            StarDate.GetDatePart(out year, out month, out day);
+            int billion, million, year, month, day;
+            StarDate.GetDatePart(out billion, out million, out year, out month, out day);
 
             AppendNumber(result, year, 4);
             result.Append('-');

@@ -944,12 +944,12 @@ namespace StarCalendar
 
         //            private volatile OffsetAndRule m_oneYearLocalFromUtc;
 
-        //            public OffsetAndRule GetOneYearLocalFromUtc(int year) {
+        //            public OffsetAndRule GetOneYearLocalFromUtc(int Year) {
         //                OffsetAndRule oneYearLocFromUtc = m_oneYearLocalFromUtc;
-        //                if (oneYearLocFromUtc == null || oneYearLocFromUtc.year != year) {
+        //                if (oneYearLocFromUtc == null || oneYearLocFromUtc.Year != Year) {
         //                    StarZone currentYear = GetCurrentOneYearLocal();
         //                    AdjustmentRule rule = currentYear.m_adjustmentRules == null ? null : currentYear.m_adjustmentRules[0];
-        //                    oneYearLocFromUtc = new OffsetAndRule(year, currentYear.BaseUtcOffset, rule);
+        //                    oneYearLocFromUtc = new OffsetAndRule(Year, currentYear.BaseUtcOffset, rule);
         //                    m_oneYearLocalFromUtc = oneYearLocFromUtc;
         //                }
         //                return oneYearLocFromUtc;
@@ -1914,7 +1914,7 @@ namespace StarCalendar
                                             //            && timeZone.DaylightDate.Hour == timeZone.StandardDate.Hour
                                             //            && timeZone.DaylightDate.Minute == timeZone.StandardDate.Minute
                                             //            && timeZone.DaylightDate.Second == timeZone.StandardDate.Second
-                                            //            && timeZone.DaylightDate.Milliseconds == timeZone.StandardDate.Milliseconds);
+                                            //            && timeZone.DaylightDate.Millisecond == timeZone.StandardDate.Millisecond);
                                             //}
 
 
@@ -2074,13 +2074,13 @@ namespace StarCalendar
         //
         // GetDaylightTime -
         //
-        // Helper function that returns a DaylightTime from a year and AdjustmentRule
+        // Helper function that returns a DaylightTime from a Year and AdjustmentRule
         //
-        //static private DaylightTimeStruct GetDaylightTime(Int32 year, AdjustmentRule rule)
+        //static private DaylightTimeStruct GetDaylightTime(Int32 Year, AdjustmentRule rule)
         //{
         //    Time delta = rule.DaylightDelta;
-        //    StarDate startTime = TransitionTimeToStarDate(year, rule.DaylightTransitionStart);
-        //    StarDate endTime = TransitionTimeToStarDate(year, rule.DaylightTransitionEnd);
+        //    StarDate startTime = TransitionTimeToStarDate(Year, rule.DaylightTransitionStart);
+        //    StarDate endTime = TransitionTimeToStarDate(Year, rule.DaylightTransitionEnd);
         //    return new DaylightTimeStruct(startTime, endTime, delta);
         //}
 

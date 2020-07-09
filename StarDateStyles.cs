@@ -58,7 +58,7 @@ namespace StarCalendar
         //
         // Summary:
         //     If the parsed string contains only the time and not the date, the parsing
-        //     methods assume the Gregorian date with year = 1, month = 1, and day = 1.
+        //     methods assume the Gregorian date with Year = 1, month = 1, and day = 1.
         //     If this value is not used, the current date is assumed.
         NoCurrentDateDefault = 8,
         //

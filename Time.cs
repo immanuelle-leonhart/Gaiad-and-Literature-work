@@ -18,7 +18,7 @@ namespace StarCalendar
     // Time is internally represented as a number of milliseconds.  While
     // this maps well into units of time such as hours and days, any
     // periods longer than that aren't representable in a nice fashion.
-    // For instance, a month can be between 28 and 31 days, while a year
+    // For instance, a month can be between 28 and 31 days, while a Year
     // can contain 365 or 364 days.  A decade can have between 1 and 3 leapyears,
     // depending on when you map the Time into the calendar.  This is why
     // we do not provide Years() or Months().
@@ -621,7 +621,7 @@ namespace StarCalendar
 
         //public override string ToString()
         //{
-        //    return this.data("year") + "-" + this.data("Month") + "-" + this.data("day");
+        //    return this.data("Year") + "-" + this.data("Month") + "-" + this.data("day");
         //}
 
         private int data(string v)
@@ -633,7 +633,7 @@ namespace StarCalendar
         {
             Time t = this;
             Dictionary<string, int> k = new Dictionary<string, int>();
-            k.Add("year", t / c.Year);
+            k.Add("Year", t / c.Year);
             t %= c.Year;
             k.Add("Month", t / c.month);
             t %= c.month;

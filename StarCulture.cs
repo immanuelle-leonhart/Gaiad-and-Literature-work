@@ -29,7 +29,7 @@ namespace StarCalendar
     // Flags used to indicate different styles of month names.
     // This is an internal flag used by internalGetMonthName().
     // Use flag here in case that we need to provide a combination of these styles
-    // (such as month name of a leap year in genitive form.  Not likely for now,
+    // (such as month name of a leap Year in genitive form.  Not likely for now,
     // but would like to keep the option open).
     //
 
@@ -86,7 +86,7 @@ namespace StarCalendar
         private string langfam;
         [NonSerialized]
         private string sNativeName;
-        private int iTwoDigitYearMax = 2029; // Max 2 digit year (for Y2K bug data entry)
+        private int iTwoDigitYearMax = 2029; // Max 2 digit Year (for Y2K bug data entry)
         [NonSerialized]
         private string notes;
         [NonSerialized]
@@ -254,8 +254,8 @@ namespace StarCalendar
 
         internal string StarDateString(StarDate dt, string format)
         {
-            Console.WriteLine(this.CultureName);
-            Console.WriteLine(this == null);
+            //Console.WriteLine(this.CultureName);
+            //Console.WriteLine(this == null);
             return StarDateFormat.Format(dt, format, this);
         }
 
@@ -721,12 +721,12 @@ namespace StarCalendar
             InvariantCulture.sNativeName = "Gregorian Calendar";  // Calendar Name
 
             // Year
-            //InvariantCulture.iTwoDigitYearMax = 2029; // Max 2 digit year (for Y2K bug data entry)
+            //InvariantCulture.iTwoDigitYearMax = 2029; // Max 2 digit Year (for Y2K bug data entry)
 
             // Formats
             InvariantCulture.saShortDates = new String[] { "MM/dd/yyyy", "yyyy-MM-dd" };          // short date format
             InvariantCulture.saLongDates = new String[] { "dddd, dd MMMM yyyy" };                 // long date format
-            InvariantCulture.saYearMonths = new String[] { "yyyy MMMM" };                         // year month format
+            InvariantCulture.saYearMonths = new String[] { "yyyy MMMM" };                         // Year month format
             InvariantCulture.sMonthDay = "MMMM dd";                                            // Month day pattern
 
             // Calendar Parts Names
@@ -748,7 +748,7 @@ namespace StarCalendar
             InvariantCulture._saShortTimes = new string[] { "HH:mm", "hh:mm tt", "H:mm", "h:mm tt" }; // short time format
             InvariantCulture._saDurationFormats = new string[] { "HH:mm:ss" };                             // time duration format
             InvariantCulture.m_genitiveAbbreviatedMonthNames = InvariantCulture.AbbreviatedGenitiveMonthNames;    // Abbreviated genitive month names (same as abbrev month names for invariant)
-                                                                                                                  //InvariantCulture.saLeapYearMonthNames = InvariantCulture.saMonthNames;              // leap year month names are unused in Gregorian English (invariant)
+                                                                                                                  //InvariantCulture.saLeapYearMonthNames = InvariantCulture.saMonthNames;              // leap Year month names are unused in Gregorian English (invariant)
                                                                                                                   //    public string SAM1159 { get; internal set; }
                                                                                                                   //public string SPM2359 { get; internal set; }
             InvariantCulture.bUseUserOverrides = false;
@@ -860,7 +860,7 @@ namespace StarCalendar
         private string[] _saShortTimes;
         private string[] _saDurationFormats;
 
-        // Cache the month names of a leap year that we retrieve from the data table.
+        // Cache the month names of a leap Year that we retrieve from the data table.
         [OptionalField(VersionAdded = 2)]
         internal String[] leapYearMonthNames = null;
 
@@ -900,7 +900,7 @@ namespace StarCalendar
         internal bool m_isReadOnly = false;
 
         // This flag gives hints about if formatting/parsing should perform special code path for things like
-        // genitive form or leap year month names.
+        // genitive form or leap Year month names.
         [OptionalField(VersionAdded = 2)]
         internal StarDateFormatFlags formatFlags = StarDateFormatFlags.NotInitialized;
         //internal static bool preferExistingTokens = InitPreferExistingTokens();
@@ -1036,7 +1036,7 @@ namespace StarCalendar
                 // Get the month names for our current calendar
                 this.abbreviatedMonthNames = this.AbbreviatedMonthNames;
                 //Contract.Assert(this.abbreviatedMonthNames.Length == 12 || this.abbreviatedMonthNames.Length == 13,
-                //    "[StarCulture.GetAbbreviatedMonthNames] Expected 12 or 13 month names in a year");
+                //    "[StarCulture.GetAbbreviatedMonthNames] Expected 12 or 13 month names in a Year");
             }
             return (this.abbreviatedMonthNames);
         }
@@ -2069,7 +2069,7 @@ namespace StarCalendar
         {
             get
             {
-                // Initialize our year/month pattern from the 1st array value if not set
+                // Initialize our Year/month pattern from the 1st array value if not set
                 if (this.yearMonthPattern == null)
                 {
                     // Initialize our data
@@ -2285,7 +2285,7 @@ namespace StarCalendar
         //      or full form.
         // Arguments:
         //      month
-        //      style           To indicate a form like regular/genitive/month name in a leap year.
+        //      style           To indicate a form like regular/genitive/month name in a leap Year.
         //      abbreviated     When true, return abbreviated form.  Otherwise, return a full form.
         //  Exceptions:
         //      ArgumentOutOfRangeException When month name is invalid.
@@ -2336,7 +2336,7 @@ namespace StarCalendar
                 {
                     this.m_genitiveAbbreviatedMonthNames = this.AbbreviatedGenitiveMonthNames;
                     //Contract.Assert(this.m_genitiveAbbreviatedMonthNames.Length == 13,
-                    //    "[StarCulture.GetGenitiveMonthNames] Expected 13 abbreviated genitive month names in a year");
+                    //    "[StarCulture.GetGenitiveMonthNames] Expected 13 abbreviated genitive month names in a Year");
                 }
                 return (this.m_genitiveAbbreviatedMonthNames);
             }
@@ -2345,7 +2345,7 @@ namespace StarCalendar
             //{
             //    this.genitiveMonthNames = this.GenitiveMonthNames;
             //    //Contract.Assert(this.genitiveMonthNames.Length == 13,
-            //    //    "[StarCulture.GetGenitiveMonthNames] Expected 13 genitive month names in a year");
+            //    //    "[StarCulture.GetGenitiveMonthNames] Expected 13 genitive month names in a Year");
             //}
             return (this.GenitiveMonthNames);
         }
@@ -2353,8 +2353,8 @@ namespace StarCalendar
         //
         //  internalGetLeapYearMonthNames
         //
-        //  Actions: Retrieve the month names used in a leap year.
-        //      If this culture does not have different month names in a leap year, the normal month name is returned.
+        //  Actions: Retrieve the month names used in a leap Year.
+        //      If this culture does not have different month names in a leap Year, the normal month name is returned.
         //  Agruments: None. (can use abbreviated later if needed)
         //
         internal String[] internalGetLeapYearMonthNames(bool abbreviated)
@@ -2365,7 +2365,7 @@ namespace StarCalendar
                 //Contract.Assert(ID > 0, "[StarCulture.internalGetLeapYearMonthNames] Expected StarCulture.ID > 0");
                 //this.leapYearMonthNames = this.LeapYearMonthNames;
                 //Contract.Assert(this.leapYearMonthNames.Length == 13,
-                //    "[StarCulture.internalGetLeapYearMonthNames] Expepcted 13 leap year month names");
+                //    "[StarCulture.internalGetLeapYearMonthNames] Expepcted 13 leap Year month names");
             }
             return (leapYearMonthNames);
         }
@@ -2664,7 +2664,7 @@ namespace StarCalendar
                     //Contract.Assert(ID > 0, "[StarCulture.UnclonedYearMonthPatterns] Expected StarCulture.ID > 0");
                     this.allYearMonthPatterns = this.YearMonths();
                     //Contract.Assert(this.allYearMonthPatterns.Length > 0,
-                    //    "[StarCulture.UnclonedYearMonthPatterns] Expected some year month patterns");
+                    //    "[StarCulture.UnclonedYearMonthPatterns] Expected some Year month patterns");
                 }
 
                 return this.allYearMonthPatterns;
@@ -3011,7 +3011,7 @@ namespace StarCalendar
 
         //
         // Actions: Return the internal flag used in formatting and parsing.
-        //  The flag can be used to indicate things like if genitive forms is used in this sdfi, or if leap year gets different month names.
+        //  The flag can be used to indicate things like if genitive forms is used in this sdfi, or if leap Year gets different month names.
         //
         internal StarDateFormatFlags FormatFlags
         {
@@ -3040,12 +3040,12 @@ namespace StarCalendar
         //        switch 
         //        {
         //            /*  */
-        //            // If is y/yy, do not get (year % 100). "y" will print
-        //            // year without leading zero.  "yy" will print year with two-digit in leading zero.
-        //            // If pattern is yyy/yyyy/..., print year value with two-digit in leading zero.
-        //            // So year 5 is "05", and year 125 is "125".
-        //            // The reason for not doing (year % 100) is for Taiwan calendar.
-        //            // If year 125, then output 125 and not 25.
+        //            // If is y/yy, do not get (Year % 100). "y" will print
+        //            // Year without leading zero.  "yy" will print Year with two-digit in leading zero.
+        //            // If pattern is yyy/yyyy/..., print Year value with two-digit in leading zero.
+        //            // So Year 5 is "05", and Year 125 is "125".
+        //            // The reason for not doing (Year % 100) is for Taiwan calendar.
+        //            // If Year 125, then output 125 and not 25.
         //            // Note: OS uses "yyyy" for Taiwan calendar by default.
         //            case (StarCulture.CAL_JAPAN):
         //            case (StarCulture.CAL_TAIWAN):
@@ -3121,23 +3121,23 @@ namespace StarCalendar
         // cases associated with that culture or calendar. Currently this only has special cases for
         // the Hebrew calendar, but this could be extended to other cultures.
         //
-        // The return value is whether the year and month are actually valid for this calendar.
-        //internal Boolean YearMonthAdjustment(ref int year, ref int month, Boolean parsedMonthName)
+        // The return value is whether the Year and month are actually valid for this calendar.
+        //internal Boolean YearMonthAdjustment(ref int Year, ref int month, Boolean parsedMonthName)
         //{
         //    if ((FormatFlags & StarDateFormatFlags.UseHebrewRule) != 0)
         //    {
 
-        //        // Special rules to fix up the Hebrew year/month
+        //        // Special rules to fix up the Hebrew Year/month
 
-        //        // When formatting, we only format up to the hundred digit of the Hebrew year, although Hebrew year is now over 5000.
-        //        // E.g. if the year is 5763, we only format as 763.
-        //        if (year < 1000)
+        //        // When formatting, we only format up to the hundred digit of the Hebrew Year, although Hebrew Year is now over 5000.
+        //        // E.g. if the Year is 5763, we only format as 763.
+        //        if (Year < 1000)
         //        {
-        //            year += 5000;
+        //            Year += 5000;
         //        }
 
-        //        // Because we need to calculate leap year, we should fall out now for an invalid year.
-        //        if (year < Calendar.GetYear(Calendar.MinSupportedStarDate) || year > Calendar.GetYear(Calendar.MaxSupportedStarDate))
+        //        // Because we need to calculate leap Year, we should fall out now for an invalid Year.
+        //        if (Year < Calendar.GetYear(Calendar.MinSupportedStarDate) || Year > Calendar.GetYear(Calendar.MaxSupportedStarDate))
         //        {
         //            return false;
         //        }
@@ -3147,7 +3147,7 @@ namespace StarCalendar
         //        // shuffle the other months down.
         //        if (parsedMonthName)
         //        {
-        //            if (!Calendar.IsLeapYear(year))
+        //            if (!Calendar.IsLeapYear(Year))
         //            {
         //                if (month >= 8)
         //                {
@@ -3312,8 +3312,8 @@ namespace StarCalendar
 
         //        if (!AppContextSwitches.EnforceLegacyJapaneseDateParsing && StarCulture.ID == StarCulture.CAL_JAPAN)
         //        {
-        //            // We need to support parsing the dates has the start of era symbol which means it is year 1 in the era.
-        //            // The start of era symbol has to be followed by the year symbol suffix, otherwise it would be invalid date.
+        //            // We need to support parsing the dates has the start of era symbol which means it is Year 1 in the era.
+        //            // The start of era symbol has to be followed by the Year symbol suffix, otherwise it would be invalid date.
         //            InsertHash(temp, JapaneseEraStart, TokenType.YearNumberToken, 1);
         //            InsertHash(temp, "(", TokenType.IgnorableSymbol, 0);
         //            InsertHash(temp, ")", TokenType.IgnorableSymbol, 0);
@@ -3634,12 +3634,12 @@ namespace StarCalendar
         //{
         //    // Allow the parser to recognize the case when having some date part followed by JapaneseEraStart "\u5143"
         //    // without spaces in between. e.g. Era name followed by \u5143 in the date formats ggy.
-        //    // Also, allow recognizing the year suffix symbol "\u5e74" followed the JapaneseEraStart "\u5143"
+        //    // Also, allow recognizing the Year suffix symbol "\u5e74" followed the JapaneseEraStart "\u5143"
         //    if (!AppContextSwitches.EnforceLegacyJapaneseDateParsing && StarCulture.ID == StarCulture.CAL_JAPAN &&
         //        (
-        //            // something like ggy, era followed by year and the year is specified using the JapaneseEraStart "\u5143"
+        //            // something like ggy, era followed by Year and the Year is specified using the JapaneseEraStart "\u5143"
         //            nextCh == JapaneseEraStart[0] ||
-        //            // JapaneseEraStart followed by year suffix "\u5143"
+        //            // JapaneseEraStart followed by Year suffix "\u5143"
         //            (tokenString == JapaneseEraStart && nextCh == CJKYearSuff[0])
         //        ))
         //    {
@@ -4044,6 +4044,7 @@ namespace StarCalendar
         private string[] longTimes;
         private string sPM2359;
         private string sAM1159;
+        internal bool ThirtyHour = false;
 
 
 
