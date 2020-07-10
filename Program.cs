@@ -11,9 +11,19 @@ namespace StarCalendar
 
         static void Main(string[] args)
         {
-            Console.WriteLine(StarDate.DefaultFormat);
-            Console.WriteLine(StarDate.UtcNow.ToString("yyyyy/MM/dd hh:mm:ss tt K"));
-            //Short year doesn't work
+            
+            //int i = 0;
+            //while (i < 100000)
+            //{
+            //    Console.WriteLine(StarDate.Now.ToString("yyyyy/MM/dd hh:mm:ss tt FFFFFFF"));
+            //    i++;
+            //}
+
+            StarDate dt = StarDate.Now;
+            foreach (StarCulture culture in StarCulture.Cultures)
+            {
+                StarDate.ConsoleTest(dt, culture);
+            }
         }
     }
 }

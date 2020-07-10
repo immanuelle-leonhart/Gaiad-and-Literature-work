@@ -162,7 +162,6 @@ namespace StarCalendar
         internal static readonly StarDateFormat InvariantFormatInfo = StarCulture.InvariantCulture.StarDateFormat;
         internal static readonly string[] InvariantAbbreviatedMonthNames = InvariantFormatInfo.AbbreviatedMonthNames;
         internal static readonly string[] InvariantAbbreviatedDayNames = InvariantFormatInfo.AbbreviatedDayNames;
-        private static readonly StarDateFormat cal;
         internal const string Gmt = "GMT";
 
         internal static String[] fixedNumberFormats = new String[] {
@@ -177,6 +176,7 @@ namespace StarCalendar
         private string[] abbreviatedMonthNames;
         private string[] abbreviatedDayNames;
         private static object cal1;
+        //private static StarDateFormat invariantInfo;
 
         //private Func<string[]> abbreviatedMonthNames1;
         //private Func<string[]> abbreviatedDayNames1;
@@ -213,7 +213,13 @@ namespace StarCalendar
                 abbreviatedDayNames = value;
             }
         }
-        public static StarDateFormat InvariantInfo { get; private set; }
+        public static IFormatProvider InvariantInfo
+        {
+            get
+            {
+                return StarCulture.InvariantCulture.FormatProvider;
+            }
+        }
         //public static object StarLEnvironment { get; private set; }
         public static DateTimeFormatInfoScanner StarDateFormatInfoScanner { get; private set; }
         public static string JapaneseEraStart { get; private set; }
@@ -439,7 +445,7 @@ namespace StarCalendar
                         //
                         // This means that '\' is at the end of the formatting string.
                         //
-                        ////Console.WriteLine("throw new FormatException(StarLEnvironment.GetResourceString(" + " Format_InvalidString" + "));");
+                        //////Console.WriteLine("throw new FormatException(StarLEnvironment.GetResourceString(" + " Format_InvalidString" + "));");
                         throw new NotImplementedException();
                     }
                 }
@@ -557,15 +563,13 @@ namespace StarCalendar
         //
         private static String FormatCustomized(StarDate StarDate, String format, StarCulture sdfi, Time offset)
         {
-            ////Console.WriteLine(sdfi.CultureName + " Cats");
-            ////Console.WriteLine("Breakpoint");
+            //////Console.WriteLine(sdfi.CultureName + " Cats");
+            //////Console.WriteLine("Breakpoint");
             //StarCulture cal = sdfi.Calendar;
             //StringBuilder result = StringBuilderCache.Acquire();
             StringBuilder result = new StringBuilder();
             // This is a flag to indicate if we are format the dates using Hebrew calendar.
 
-            bool isHebrewCalendar = false;// (cal.ID == StarCulture.CAL_HEBREW);
-            bool isJapaneseCalendar = false;// (cal.ID == StarCulture.CAL_JAPAN);
 
             // This is a flag to indicate if we are formating hour/minute/second only.
             bool bTimeOnly = true;
@@ -581,26 +585,16 @@ namespace StarCalendar
                 {
                     case 'b':
                     case 'B':
-                        Console.WriteLine("Writing Millions to Quadrillions of Years");
+                        //Console.WriteLine("Writing Millions to Quadrillions of Years");
                         tokenLen = ParseRepeatPattern(format, i, ch);
-                        switch (tokenLen)
-                        {
-                            case 1:
-                            case 2:
-                            case 3:
-                            case 4:
-                            case 5:
-                            default:
-                                Console.WriteLine(tokenLen);
-                                throw new NotImplementedException();
-                        }
+                        result.Append(StarDate.billion);
                         break;
                     case 'g':
-                        tokenLen = ParseRepeatPattern(format, i, ch); throw new NotImplementedException();
-                        result.Append(sdfi.GetEraName(Cal.GetEra(StarDate)));
+                        tokenLen = ParseRepeatPattern(format, i, ch); 
+                        result.Append(StarCulture.CurrentCulture.GetEraName(StarDate));
                         break;
                     case 'h':
-                        tokenLen = ParseRepeatPattern(format, i, ch); throw new NotImplementedException();
+                        tokenLen = ParseRepeatPattern(format, i, ch); 
                         hour12 = StarDate.Hour % 12;
                         if (hour12 == 0)
                         {
@@ -609,32 +603,32 @@ namespace StarCalendar
                         FormatDigits(result, hour12, tokenLen);
                         break;
                     case 'H':
-                        tokenLen = ParseRepeatPattern(format, i, ch); throw new NotImplementedException();
+                        tokenLen = ParseRepeatPattern(format, i, ch); 
                         FormatDigits(result, StarDate.Hour, tokenLen);
                         break;
                     case 'm':
-                        tokenLen = ParseRepeatPattern(format, i, ch); throw new NotImplementedException();
+                        tokenLen = ParseRepeatPattern(format, i, ch); //throw new NotImplementedException();
                         FormatDigits(result, StarDate.Minute, tokenLen);
                         break;
                     case 's':
-                        tokenLen = ParseRepeatPattern(format, i, ch); throw new NotImplementedException();
+                        tokenLen = ParseRepeatPattern(format, i, ch); //throw new NotImplementedException();
                         FormatDigits(result, StarDate.Second, tokenLen);
                         break;
                     case 'f':
                     case 'F':
                         tokenLen = ParseRepeatPattern(format, i, ch);
 
-                        switch (tokenLen)
-                        {
-                            case 1:
-                            case 2:
-                            case 3:
-                            case 4:
-                            case 5:
-                            default:
-                                Console.WriteLine(tokenLen);
-                                throw new NotImplementedException();
-                        }
+                        //switch (tokenLen)
+                        //{
+                        //    case 1:
+                        //    case 2:
+                        //    case 3:
+                        //    case 4:
+                        //    case 5:
+                        //    default:
+                        //        //Console.WriteLine(tokenLen);
+                        //        throw new NotImplementedException();
+                        //}
 
                         if (tokenLen <= MaxSecondsFractionDigits)
                         {
@@ -680,7 +674,7 @@ namespace StarCalendar
                         }
                         break;
                     case 't':
-                        tokenLen = ParseRepeatPattern(format, i, ch); throw new NotImplementedException();
+                        tokenLen = ParseRepeatPattern(format, i, ch); 
                         if (tokenLen == 1)
                         {
                             if (StarDate.Hour < 12)
@@ -703,6 +697,8 @@ namespace StarCalendar
                         {
                             result.Append((StarDate.Hour < 12 ? sdfi.AMDesignator : sdfi.PMDesignator));
                         }
+                        //Console.WriteLine(result);
+                        //throw new NotImplementedException();
                         break;
                     case 'd':
                         //
@@ -713,38 +709,33 @@ namespace StarCalendar
                         //
                         //throw new NotImplementedException();
                         tokenLen = ParseRepeatPattern(format, i, ch);
-                        if (tokenLen <= 2)
-                        {
-                            int day = Cal.GetDayOfMonth(StarDate);
-                            if (isHebrewCalendar)
-                            {
-                                // For Hebrew calendar, we need to convert numbers to Hebrew text for yyyy, MM, and dd values.
-                                HebrewFormatDigits(result, day);
-                            }
-                            else
-                            {
-                                FormatDigits(result, day, tokenLen);
-                            }
-                        }
-                        else
-                        {
-                            int dayOfWeek = (int)Cal.GetDayOfWeek(StarDate);
-                            result.Append(FormatDayOfWeek(dayOfWeek, tokenLen, sdfi));
-                        }
                         bTimeOnly = false;
                         switch (tokenLen)
                         {
                             case 1:
+                                result.Append(StarDate.Day);
+                                break;
                             case 2:
+                                int day = StarDate.Day;
+                                if (day < 10)
+                                {
+                                    result.Append("0" + day);
+                                }
+                                else
+                                {
+                                    result.Append(day);
+                                }
+                                break;
                             case 3:
+                                result.Append(StarCulture.CurrentCulture.GetShortDayName(StarDate.DayOfWeek));
+                                break;
                             case 4:
-                            case 5:
                             default:
-                                Console.WriteLine(tokenLen);
-                                throw new NotImplementedException();
+                                result.Append(StarCulture.CurrentCulture.GetDayName(StarDate.DayOfWeek));
+                                break;
                         }
-                        Console.WriteLine(result);
-                        throw new NotImplementedException();
+                        //Console.WriteLine(result);
+                        //throw new NotImplementedException();
                         break;
                     case 'M':
                         //
@@ -753,52 +744,9 @@ namespace StarCalendar
                         // tokenLen == 3 : Month as a three-letter abbreviation.
                         // tokenLen >= 4 : Month as its full StarName.
                         //
-                        tokenLen = ParseRepeatPattern(format, i, ch);//// throw new NotImplementedException();
+                        tokenLen = ParseRepeatPattern(format, i, ch);
                         int Month = StarDate.Month;
-                        //Console.WriteLine(Month);
-                        //throw new NotImplementedException();
-                        //if (tokenLen <= 2)
-                        //{
-                        //    if (isHebrewCalendar)
-                        //    {
-                        //        // For Hebrew calendar, we need to convert numbers to Hebrew text for yyyy, MM, and dd values.
-                        //        HebrewFormatDigits(result, Month);
-                        //    }
-                        //    else
-                        //    {
-                        //        FormatDigits(result, Month, tokenLen);
-                        //    }
-                        //}
-                        //else
-                        //{
-                        //    if (isHebrewCalendar)
-                        //    {
-                        //        result.Append(FormatHebrewMonthName(StarDate, Month, tokenLen, sdfi));
-                        //    }
-                        //    else
-                        //    {
-                        //        if ((sdfi.FormatFlags & StarDateFormatFlags.UseGenitiveMonth) != 0 && tokenLen >= 4)
-                        //        {
-                        //            result.Append(
-                        //                sdfi.internalGetMonthName(
-                        //                    Month,
-                        //                    IsUseGenitiveForm(format, i, tokenLen, 'd') ? MonthNameStyles.Genitive : MonthNameStyles.Regular,
-                        //                    false));
-                        //        }
-                        //        else
-                        //        {
-                        //            result.Append(FormatMonth(Month, tokenLen, sdfi));
-                        //        }
-                        //    }
-                        //}
                         bTimeOnly = false;
-                        //Console.WriteLine(result);
-        //                "M"     "0"         Month w/ o leading zero                2
-        //                  "MM"    "00"        Month with leading zero               02
-        //                  "MMM"               short Month StarName(abbreviation)       Feb
-        //                  "MMMM"              full Month StarName Febuary
-        //                  "MMMM*"             full Month StarName Febuary
-                        //int length = 1;
                         switch (tokenLen)
                         {
                             case 1:
@@ -814,10 +762,10 @@ namespace StarCalendar
                                 result.Append(sdfi.MonthNames[Month - 1]);
                                 break;
                             default:
-                                result.Append(AddZero(Month));
+                                result.Append(sdfi.MonthNames[Month - 1]);
                                 break;
                         }
-                        Console.WriteLine(result);
+                        //Console.WriteLine(result);
                         //throw new NotImplementedException();
                         break;
                     case 'y':
@@ -829,74 +777,64 @@ namespace StarCalendar
                         int year = StarDate.Year; //throw new NotImplementedException();
                         tokenLen = ParseRepeatPattern(format, i, ch);
 
-                        if (isJapaneseCalendar &&
-                            !AppContextSwitches.FormatJapaneseFirstYearAsANumber &&
-                            year == 1 &&
-                            ((i + tokenLen < format.Length && format[i + tokenLen] == StarDateFormatInfoScanner.CJKYearSuff[0]) ||
-                            (i + tokenLen < format.Length - 1 && format[i + tokenLen] == '\'' && format[i + tokenLen + 1] == StarDateFormatInfoScanner.CJKYearSuff[0])))
-                        {
-                            // We are formatting a Japanese date with Year equals 1 and the Year number is followed by the Year sign \u5e74
-                            // In Japanese dates, the first Year in the era is not formatted as a number 1 instead it is formatted as \u5143 which means
-                            // first or beginning of the era.
-                            result.Append(StarDateFormat.JapaneseEraStart[0]);
-                        }
-                        else if (sdfi.HasForceTwoDigitYears)
-                        {
-                            FormatDigits(result, year, tokenLen <= 2 ? tokenLen : 2);
-                        }
-                        else if (Cal.ID == StarCulture.CAL_HEBREW)
-                        {
-                            HebrewFormatDigits(result, year);
-                        }
-                        else
-                        {
-                            if (tokenLen <= 2)
-                            {
-                                FormatDigits(result, year % 100, tokenLen);
-                            }
-                            else
-                            {
-                                String fmtPattern = "D" + tokenLen;
-                                result.Append(year.ToString(fmtPattern, StarCulture.InvariantCulture.FormatProvider));
-                            }
-                        }
+
                         switch (tokenLen)
                         {
                             case 1:
+                                result.Append(year % 100);
+                                break;
                             case 2:
+                                year %= 100;
+                                if (year.ToString(StarCulture.InvariantCulture.FormatProvider).Length == 1)
+                                {
+                                    result.Append(AddZero(year));
+                                }
+                                else
+                                {
+                                    result.Append(year);
+                                }
+                                break;
                             case 3:
+                                string y = year.ToString(InvariantInfo);
+                                while (y.Length < 3)
+                                {
+                                    y = "0" + y;
+                                }
+                                result.Append(y);
+                                break;
                             case 4:
+                                result.Append(year % 10000);
+                                break;
                             case 5:
                             default:
-                                Console.WriteLine(tokenLen);
-                                throw new NotImplementedException();
+                                result.Append(year);
+                                break;
                         }
                         bTimeOnly = false;
-                        Console.WriteLine(result);
+                        //Console.WriteLine(result);
                         break;
                     case 'z':
                         tokenLen = ParseRepeatPattern(format, i, ch);// throw new NotImplementedException();
                         FormatCustomizedTimeZone(StarDate, offset, format, tokenLen, bTimeOnly, result);
                         break;
                     case 'K':
-                        tokenLen = 1;
-                        throw new NotImplementedException();
-                        FormatCustomizedRoundripTimeZone(StarDate, offset, result);
+                        tokenLen = ParseRepeatPattern(format, i, ch);
+                        result.Append(StarDate.TimeZone.ToString(tokenLen, StarDate));
                         break;
                     case ':':
-                        result.Append(sdfi.TimeSeparator); throw new NotImplementedException();
+                        result.Append(sdfi.TimeSeparator); //throw new NotImplementedException();
                         tokenLen = 1;
                         break;
                     case '/':
-                        ////Console.WriteLine(sdfi == null);
-                        ////Console.WriteLine(sdfi.GetDateSeparator());
+                        //////Console.WriteLine(sdfi == null);
+                        //////Console.WriteLine(sdfi.GetDateSeparator());
                         result.Append(sdfi.GetDateSeparator()); ////throw new NotImplementedException();
                         tokenLen = 1;
-                        Console.WriteLine(result);
+                        //Console.WriteLine(result);
                         break;
                     case '\'':
                     case '\"':
-                        StringBuilder enquotedString = new StringBuilder(); throw new NotImplementedException();
+                        StringBuilder enquotedString = new StringBuilder(); //throw new NotImplementedException();
                         tokenLen = ParseQuoteString(format, i, enquotedString);
                         result.Append(enquotedString);
                         break;
@@ -904,12 +842,12 @@ namespace StarCalendar
                         // Optional format character.
                         // For example, format string "%d" will print day of Month
                         // without leading zero.  Most of the cases, "%" can be ignored.
-                        nextChar = ParseNextChar(format, i); throw new NotImplementedException();
+                        nextChar = ParseNextChar(format, i); //throw new NotImplementedException();
                         // nextChar will be -1 if we already reach the end of the format string.
                         // Besides, we will not allow "%%" appear in the pattern.
                         if (nextChar >= 0 && nextChar != (int)'%')
                         {
-                            //Console.WriteLine("Append");
+                            ////Console.WriteLine("Append");
                             result.Append(FormatCustomized(StarDate, ((char)nextChar).ToString(), sdfi, offset));
                             tokenLen = 2;
                         }
@@ -923,7 +861,7 @@ namespace StarCalendar
                             //throw new FormatException(StarLEnvironment.GetResourceString("Format_InvalidString"));
                         }
                         break;
-                    case '\\': 
+                    case '\\':
                         // Escaped character.  Can be used to insert character into the format string.
                         // For exmple, "\d" will insert the character 'd' into the string.
                         //
@@ -932,7 +870,7 @@ namespace StarCalendar
                         // That is, we ask everyone to use single quote or double quote to insert characters,
                         // then we can remove this character.
                         //
-                        nextChar = ParseNextChar(format, i); throw new NotImplementedException();
+                        nextChar = ParseNextChar(format, i); //throw new NotImplementedException();
                         if (nextChar >= 0)
                         {
                             result.Append(((char)nextChar));
@@ -952,7 +890,7 @@ namespace StarCalendar
                         // character rule.
                         // That is, if we ask everyone to use single quote or double quote to insert characters,
                         // then we can remove this default block.
-                        result.Append(ch); throw new NotImplementedException();
+                        result.Append(ch); //throw new NotImplementedException();
                         tokenLen = 1;
                         break;
                 }
@@ -960,6 +898,16 @@ namespace StarCalendar
             }
             return StringBuilderCache.GetStringAndRelease(result);
 
+        }
+
+        private static void FormatDigits(StringBuilder result, int hour12, int tokenLen)
+        {
+            string output = hour12.ToString();
+            while (output.Length < tokenLen)
+            {
+                output = "0" + output;
+            }
+            result.Append(output);
         }
 
         private static string AddZero(int month)
@@ -972,21 +920,21 @@ namespace StarCalendar
             return s;
         }
 
-        private static bool FormatHebrewMonthName(StarDate starDate, int month, int tokenLen, StarCulture sdfi)
-        {
-            throw new NotImplementedException();
-        }
+        //private static bool FormatHebrewMonthName(StarDate starDate, int month, int tokenLen, StarCulture sdfi)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
-        private static void HebrewFormatDigits(StringBuilder result, int day)
-        {
-            ////Console.WriteLine("I have no idea what this does but I don't want this to run since I'm not using the Hebrew StarCulture");
-            //throw new NotImplementedException();
-        }
+        //private static void HebrewFormatDigits(StringBuilder result, int day)
+        //{
+        //    //////Console.WriteLine("I have no idea what this does but I don't want this to run since I'm not using the Hebrew StarCulture");
+        //    //throw new NotImplementedException();
+        //}
 
-        private static void FormatDigits(StringBuilder result, int hour12, int tokenLen)
-        {
-            ////Console.WriteLine("Probably Pointless Method");
-        }
+        //private static void FormatDigits(StringBuilder result, int hour12, int tokenLen)
+        //{
+        //    //////Console.WriteLine("Probably Pointless Method");
+        //}
 
 
         // output the 'z' famliy of formats, which output a the offset from UTC, e.g. "-07:30"
@@ -1217,9 +1165,9 @@ namespace StarCalendar
 
         internal static String Format(StarDate StarDate, String format, StarCulture sdfi)
         {
-            //////Console.WriteLine(format);
+            ////////Console.WriteLine(format);
             //throw new NotImplementedException();
-            ////Console.WriteLine(sdfi.CultureName);
+            //////Console.WriteLine(sdfi.CultureName);
             return Format(StarDate, format, sdfi, NullOffset);
         }
 
@@ -1227,8 +1175,8 @@ namespace StarCalendar
         internal static String Format(StarDate StarDate, String format, StarCulture sdfi, Time offset)
         {
             Contract.Requires(sdfi != null);
-            ////Console.WriteLine("Breakpoint");
-            ////Console.WriteLine(sdfi.CultureName);
+            //////Console.WriteLine("Breakpoint");
+            //////Console.WriteLine(sdfi.CultureName);
             if (format == null || format.Length == 0)
             {
                 Boolean timeOnlySpecialCase = false;
@@ -1292,8 +1240,8 @@ namespace StarCalendar
 
                 format = ExpandPredefinedFormat(format, ref StarDate, ref sdfi, ref offset);
             }
-            ////Console.WriteLine(sdfi.CultureName);
-            ////Console.WriteLine("Return");
+            //////Console.WriteLine(sdfi.CultureName);
+            //////Console.WriteLine("Return");
             return FormatCustomized(StarDate, format, sdfi, offset);
         }
 
@@ -1493,7 +1441,7 @@ namespace StarCalendar
 
         internal static string GetStringAndRelease(StringBuilder result)
         {
-            ////Console.WriteLine("GetStringAndRelease is not implemented yet");
+            //////Console.WriteLine("GetStringAndRelease is not implemented yet");
             return result.ToString();
         }
     }

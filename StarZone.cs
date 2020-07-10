@@ -68,6 +68,7 @@ namespace StarCalendar
     //[Serializable]
     //[System.Security.Permissions.HostProtection(MayLeakOnAbort = true)]
     //[TypeForwardedFrom("System.Core, Version=3.5.0.0, Culture=Neutral, PublicKeyToken=b77a5c561934e089")]
+    [Serializable]
     public class StarZone : IEquatable<StarZone>, ISerializable, IDeserializationCallback
     {
 
@@ -256,10 +257,10 @@ namespace StarCalendar
             return z;
         }
 
-        internal string ToString(string v)
-        {
-            throw new NotImplementedException();
-        }
+        //internal string ToString(string v)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
         internal static StarDate ConvertTimeToUtc(StarDate dt, StarZone z)
         {
@@ -974,10 +975,6 @@ namespace StarCalendar
             }
         }
 
-        // used by GetUtcOffsetFromUtc (StarDate.Now, StarDate.ToLocalTime) for max/min whole-day range checks
-        //private static StarDate s_maxDateOnly = new StarDate(9999, 12, 31);
-        //private static StarDate s_minDateOnly = new StarDate(1, 1, 2);
-        private StarZone utcTimeZone;
         //private Time BaseUtcOffset;
         private string standardDisplayName;
         private string daylightDisplayName;
@@ -1027,6 +1024,8 @@ namespace StarCalendar
                 
             }
         }
+
+        public string PlanetStandard { get; private set; }
 
 
 
@@ -1099,6 +1098,23 @@ namespace StarCalendar
         public Time GetUtcOffset(StarDate StarDate)
         {
             return (Time)tz.GetUtcOffset(StarDate.DateTime);
+        }
+
+        public string ToString(int tokenLen)
+        {
+            return this.displayName;
+        }
+
+        internal string ToString(int tokenLen, StarDate starDate)
+        {
+            if (this.IsDaylightSavingTime(starDate))
+            {
+                return this.daylightDisplayName;
+            }
+            else
+            {
+                return this.displayName;
+            }
         }
 
         // Shortcut for StarZone.Local.GetUtcOffset
@@ -1632,7 +1648,7 @@ namespace StarCalendar
         //
         public override string ToString()
         {
-            return this.DisplayName;
+            return this.ToString(5);
         }
 
 
@@ -2726,7 +2742,7 @@ namespace StarCalendar
                     {
                         transition = TransitionTime.CreateFixedDateRule(timeOfDay, month, day);
                     }
-                    catch (ArgumentException e)
+                    catch (ArgumentException)
                     {
                         throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"), e);
                     }
@@ -2814,6 +2830,11 @@ namespace StarCalendar
         }
 
         public override int GetHashCode()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected StarZone(SerializationInfo serializationInfo, StreamingContext streamingContext)
         {
             throw new NotImplementedException();
         }
