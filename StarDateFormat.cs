@@ -709,9 +709,10 @@ namespace StarCalendar
                         // tokenLen == 3 : Month as a three-letter abbreviation.
                         // tokenLen >= 4 : Month as its full StarName.
                         //
-                        tokenLen = ParseRepeatPattern(format, i, ch); throw new NotImplementedException();
+                        tokenLen = ParseRepeatPattern(format, i, ch);//// throw new NotImplementedException();
                         int Month = StarDate.Month;
-                        throw new NotImplementedException();
+                        Console.WriteLine(Month);
+                        //throw new NotImplementedException();
                         if (tokenLen <= 2)
                         {
                             if (isHebrewCalendar)
@@ -747,6 +748,7 @@ namespace StarCalendar
                             }
                         }
                         bTimeOnly = false;
+                        Console.WriteLine(result);
                         break;
                     case 'y':
                         // Notes about OS behavior:
@@ -754,7 +756,7 @@ namespace StarCalendar
                         // yy: Always print (Year % 100) with leading zero.
                         // yyy/yyyy/yyyyy/... : Print Year value.  No leading zero.
 
-                        int year = StarDate.Year; throw new NotImplementedException();
+                        int year = StarDate.Year; //throw new NotImplementedException();
                         tokenLen = ParseRepeatPattern(format, i, ch);
 
                         if (isJapaneseCalendar &&
@@ -791,7 +793,7 @@ namespace StarCalendar
                         bTimeOnly = false;
                         break;
                     case 'z':
-                        tokenLen = ParseRepeatPattern(format, i, ch); throw new NotImplementedException();
+                        tokenLen = ParseRepeatPattern(format, i, ch);// throw new NotImplementedException();
                         FormatCustomizedTimeZone(StarDate, offset, format, tokenLen, bTimeOnly, result);
                         break;
                     case 'K':
@@ -806,7 +808,7 @@ namespace StarCalendar
                     case '/':
                         ////Console.WriteLine(sdfi == null);
                         ////Console.WriteLine(sdfi.GetDateSeparator());
-                        result.Append(sdfi.GetDateSeparator()); throw new NotImplementedException();
+                        result.Append(sdfi.GetDateSeparator()); ////throw new NotImplementedException();
                         tokenLen = 1;
                         break;
                     case '\'':
