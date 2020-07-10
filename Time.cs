@@ -688,5 +688,9 @@ namespace StarCalendar
             return t * b;
         }
 
+        internal void GetTimePart(out int h, out int m, out int s, out int s1)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

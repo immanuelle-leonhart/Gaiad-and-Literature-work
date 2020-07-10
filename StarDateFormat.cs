@@ -727,9 +727,12 @@ namespace StarCalendar
                                 }
                                 break;
                             case 3:
-                                result.Append(StarCulture.CurrentCulture.GetShortDayName(StarDate.DayOfWeek));
+                                result.Append(StarCulture.CurrentCulture.GetSuperShortDayName(StarDate.DayOfWeek));
                                 break;
                             case 4:
+                                result.Append(StarCulture.CurrentCulture.GetShortDayName(StarDate.DayOfWeek));
+                                break;
+                            case 5:
                             default:
                                 result.Append(StarCulture.CurrentCulture.GetDayName(StarDate.DayOfWeek));
                                 break;
@@ -802,22 +805,16 @@ namespace StarCalendar
                                 }
                                 result.Append(y);
                                 break;
-                            case 4:
-                                result.Append(year % 10000);
-                                break;
-                            case 5:
                             default:
-                                result.Append(year);
+                                result.Append(StarDate.fullyear % Math.Pow(10, tokenLen));
                                 break;
                         }
                         bTimeOnly = false;
                         //Console.WriteLine(result);
                         break;
                     case 'z':
-                        tokenLen = ParseRepeatPattern(format, i, ch);// throw new NotImplementedException();
-                        FormatCustomizedTimeZone(StarDate, offset, format, tokenLen, bTimeOnly, result);
-                        break;
                     case 'K':
+                        //z and k are the same in StarDate but not in 
                         tokenLen = ParseRepeatPattern(format, i, ch);
                         result.Append(StarDate.TimeZone.ToString(tokenLen, StarDate));
                         break;
@@ -1209,20 +1206,20 @@ namespace StarCalendar
                         format = "G";
                     }
                 }
-                else
-                {
-                    throw new NotImplementedException();
-                    // Default StarDateOffset.ToString case.
-                    //if (timeOnlySpecialCase)
-                    //{
-                    //    format = RoundtripStarDateUnfixed;
-                    //}
-                    //else
-                    //{
-                    //    format = sdfi.StarDateOffsetPattern;
-                    //}
+                //else
+                //{
+                //    throw new NotImplementedException();
+                //    // Default StarDateOffset.ToString case.
+                //    //if (timeOnlySpecialCase)
+                //    //{
+                //    //    format = RoundtripStarDateUnfixed;
+                //    //}
+                //    //else
+                //    //{
+                //    //    format = sdfi.StarDateOffsetPattern;
+                //    //}
 
-                }
+                //}
 
             }
 

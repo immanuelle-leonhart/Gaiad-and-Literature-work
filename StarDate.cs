@@ -4176,17 +4176,10 @@ namespace StarCalendar
 
         internal static void ConsoleTest(StarDate dt)
         {
-            Console.WriteLine(dt);
-            Console.WriteLine(dt.ToString("y/M/d")); //Console.WriteLine("y/M/d");
-            Console.WriteLine(dt.ToString("yy/MM/dd")); //Console.WriteLine("yy/MM/dd");
-            Console.WriteLine(dt.ToString("yyy/MMM/ddd")); //Console.WriteLine("yyy/MMM/ddd");
-            Console.WriteLine(dt.ToString("yyyy/MMMM/dddd")); //Console.WriteLine("yyyy/MMMM/dddd");
-            Console.WriteLine(dt.ToString("yyyyy/MM/dd h:m:s t")); //Console.WriteLine("yyyyy/MM/dd h:m:s t");
-            Console.WriteLine(dt.ToString("yyyyy/MM/dd hh:mm:ss tt K")); //Console.WriteLine("yyyyy/MM/dd hh:mm:ss tt K");
-            foreach (string entry in AllFormats)
+            string[] formats = new string[] { "y/M/d d", "y/M/d dd", "y/M/d ddd", "y/M/d dddd", "y/M/d ddddd", "y/M/d f", "y/M/d ff", "y/M/d fff", "y/M/d ffff", "y/M/d fffff", "y/M/d ffffff", "y/M/d fffffff", "y/M/d F", "y/M/d FF", "y/M/d FFF", "y/M/d FFFF", "y/M/d FFFFF", "y/M/d FFFFFF", "y/M/d FFFFFFF", "y/M/d g", "y/M/d gg", "y/M/d h", "y/M/d hh", "y/M/d H", "y/M/d HH", "y/M/d K", "y/M/d m", "y/M/d mm", "y/M/d M", "y/M/d MM", "y/M/d MMM", "y/M/d MMMM", "y/M/d s", "y/M/d ss", "y/M/d t", "y/M/d tt", "y/M/d y", "y/M/d yy", "y/M/d yyy", "y/M/d yyyy", "y/M/d yyyyy", "y/M/d z", "y/M/d zz", "y/M/d zzz", "y/M/d :", "y/M/d /" };
+            foreach (string format in formats)
             {
-                Console.WriteLine(dt.ToString(entry));
-                Console.WriteLine(entry);
+                Console.WriteLine(dt.ToString(format));
             }
         }
 

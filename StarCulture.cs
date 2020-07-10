@@ -1251,7 +1251,44 @@ namespace StarCalendar
 
         internal string GetEraName(StarDate dt)
         {
-            throw new NotImplementedException();
+            var f = dt.fullyear;
+            if (f < 2 * Math.Pow(10, 8))
+            {
+                return "Yin and Yang";
+            }
+            else if (f < 350 * Math.Pow(10, 6))
+            {
+                return "Cosmic Sutras";
+            }
+            else if (f < (14 - 4.603) * Math.Pow(10, 9))
+            {
+                return "Amaterasu";
+            }
+            else if (f < (14 - 4) * Math.Pow(10, 9))
+            {
+                return "Bios and Viros";
+            }
+            else if (f < (14 - 2.5) * Math.Pow(10, 9))
+            {
+                return "Reign of Hengweh";
+            }
+            else if (f < (14 - 2) * Math.Pow(10, 9))
+            {
+                return "Reign of Horus";
+            }
+            else if (f < 14 * Math.Pow(10, 9))
+            {
+                return "Age of Noah";
+            }
+            else if (f < 18 * Math.Pow(10, 9))
+            {
+                return "Age of Manu";
+            }
+            else if (f < Math.Pow(10, 12))
+            {
+                return "Age of Milkdromeda";
+            }
+            return "Post Star Era";
         }
 
         //public Object GetFormat(Type formatType)

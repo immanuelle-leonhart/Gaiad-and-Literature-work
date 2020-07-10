@@ -246,15 +246,29 @@ namespace StarCalendar
 
         public static StarZone[] GetSystemTimeZones()
         {
-            var t = TimeZoneInfo.GetSystemTimeZones();
-            StarZone[] z = new StarZone[t.Count];
-            int i = 0;
-            while (i < t.Count)
+            if (_sys_zones == null)
             {
-                z[i] = (StarZone)t[i];
-                i++;
+                var t = TimeZoneInfo.GetSystemTimeZones();
+                List<StarZone> z = new List<StarZone>();
+                int i = 0;
+                while (i < t.Count)
+                {
+                    z.Add((StarZone)t[i]);
+                    i++;
+                }
+                foreach (StarZone entry in MartianTimeZones)
+                {
+                    z.Add(entry);
+                }
+                _sys_zones = new StarZone[z.Count];
+                i = 0;
+                while (i < _sys_zones.Length)
+                {
+                    _sys_zones[i] = z[i];
+                    i++;
+                }
             }
-            return z;
+            return _sys_zones;
         }
 
         //internal string ToString(string v)
@@ -982,6 +996,13 @@ namespace StarCalendar
         private bool v;
         private Time basicUTCOffset;
         internal static bool NoThrowOnInvalidTime = true;
+        private bool isMartian;
+        private string planetStandard;
+        private static StarZone[] martianTimeZones;
+        private static StarZone[] _sys_zones;
+
+        //private string planet;
+        //private string star;
 
         // ---- SECTION: public properties --------------*
 
@@ -1021,11 +1042,91 @@ namespace StarCalendar
                 {
                     basicUTCOffset = value;
                 }
-                
+
             }
         }
 
-        public string PlanetStandard { get; private set; }
+        public string PlanetStandard
+        {
+            get
+            {
+                if (planetStandard == null)
+                {
+                    if (IsTerran)
+                    {
+                        planetStandard = "UTC";
+                    }
+                    else if (IsMartian)
+                    {
+                        planetStandard = "MTC";
+                    }
+                    else
+                    {
+                        planetStandard = PlanetName[0] + "TC";
+                    }
+                    return planetStandard;
+                }
+            }
+
+            private set
+            {
+                planetStandard = value;
+            }
+        }
+        public bool IsMartian { get => isMartian; private set => isMartian = value; }
+        public static StarZone[] MartianTimeZones
+        {
+            get
+            {
+                if (martianTimeZones == null)
+                {
+                    martianTimeZones = new StarZone[24];
+                    int counter = 0;
+                    string line;
+                    Dictionary<string, StarCulture> formats = new Dictionary<string, StarCulture>();
+                    string path = "Mars.csv";
+                    //int lastslash = Gedcom.LastIndexOf('/');
+                    //string Filename = Gedcom.Substring(lastslash + 1);
+                    //Gedson ged = new Gedson();
+                    System.IO.StreamReader file = new StreamReader(path);
+                    while ((line = file.ReadLine()) != null)
+                    {
+                        martianTimeZones[counter] = fromCSV(line);
+                        counter++;
+                    }
+                }
+                else
+                {
+                    return martianTimeZones;
+                }
+            }
+
+        }
+
+        private static StarZone fromCSV(string line)
+        {
+            string[] vs = line.Split(',');
+            double d = double.Parse(vs[0]);
+            Time off = StarDate.HourTime * d;
+            string name = vs[1];
+            string planet = vs[2];
+            Time LocalDay = StarDate.DayTime;
+            if (planet == "Terra")
+            {
+                LocalDay = StarDate.DayTime;
+            }
+            else if (planet == "Mars")
+            {
+                LocalDay = StarDate.Sol;
+            }
+            else
+            {
+                double l = double.Parse(vs[3]);
+                LocalDay = l * StarDate.DayTime;
+            }
+            string star = vs[4];
+            return new StarZone(name, off, planet, LocalDay, star);
+        }
 
 
 
@@ -1100,21 +1201,139 @@ namespace StarCalendar
             return (Time)tz.GetUtcOffset(StarDate.DateTime);
         }
 
-        public string ToString(int tokenLen)
+        public override string ToString()
         {
-            return this.displayName;
+            return ToString(4);
         }
 
-        internal string ToString(int tokenLen, StarDate starDate)
+        public string ToString(int tokenLen)
         {
-            if (this.IsDaylightSavingTime(starDate))
+            return ToString(tokenLen, StarDate.Now);
+        }
+
+        internal string ToString(int tokenLen, StarDate dt)
+        {
+            if (IsTerran && (tokenLen == 4) && !IsDaylightSavingTime(dt))
             {
-                return this.daylightDisplayName;
+                return this.DisplayName;
             }
-            else
+            Time o = Offset(dt);
+            int sign, h, m, s;
+            Offset(dt).GetTimePart(out sign, out h, out m, out s);
+            Dictionary<int, string> sig = new Dictionary<int, string>() { { -1, "-" }, { 0, "" }, { 1, "+" } };
+
+            string min = "";
+            if (0 < m)
             {
-                return this.displayName;
+                min = StarCulture.CurrentCulture.TimeSeparator;
+                if (m < 10)
+                {
+                    min += 0;
+                }
+                min += m;
             }
+
+            if (tokenLen == 1)
+            {
+                return sig[sign] + h + min;
+            }
+
+            string hour = "" + h;
+            if (h < 10)
+            {
+                hour = "0" + hour;
+            }
+
+            if (tokenLen == 2)
+            {
+                return sig[sign] + hour + min;
+            }
+
+            if (min == "")
+            {
+                min = StarCulture.CurrentCulture.TimeSeparator + "00";
+            }
+
+            if (tokenLen == 3)
+            {
+                return sig[sign] + hour + min;
+            }
+
+            sig[0] = "+";
+
+            if (tokenLen >= 4)
+            {
+                if (IsTerran && IsDaylightSavingTime(dt))
+                {
+                    return "(UTC" + sig[sign] + hour + min + ") " + this.daylightDisplayName;
+                }
+                else if (IsMartian)
+                {
+                    return "(UTC" + sig[sign] + hour + min + ") " + this.displayName;
+                }
+                else if (!IsTerran)
+                {
+
+                }
+                else
+                {
+                    return this.displayName; //should have worked earlier
+                }
+            }
+
+
+
+            //switch (tokenLen)
+            //{
+            //    case 1:
+            //        return sign + h + min;
+            //    case 2:
+            //        if (Math.Abs)
+            //        {
+            //            h *= -1;
+            //            sign = "-0";
+            //        }
+            //        return sign + h + min;
+            //    case 3:
+            //        if ((h < 0) && (h > -10))
+            //        {
+            //            h *= -1;
+            //            sign = "-0";
+            //        }
+            //        else if (h < 10)
+            //        {
+            //            sign += "0";
+            //        }
+            //        if (min == "")
+            //        {
+            //            min = ":00";
+            //        }
+            //        return sign + h + min;
+            //    case 4:
+            //        if (IsDaylightSavingTime(dt))
+            //        {
+            //            if ((h < 0) && (h > -10))
+            //            {
+            //                h *= -1;
+            //                sign = "-0";
+            //            }
+            //            if (min == "")
+            //            {
+            //                min = ":00";
+            //            }
+            //            return "(UTC" + sign + h + min + ")" +
+            //        }
+            //        else if (IsMartian)
+            //        {
+
+            //        }
+            //        else if (!IsTerran)
+            //        {
+            //            throw new NotImplementedException();
+            //        }
+            //    default:
+            //        throw new NotImplementedException();
+            //}
         }
 
         // Shortcut for StarZone.Local.GetUtcOffset
@@ -1646,10 +1865,10 @@ namespace StarCalendar
         // returns the DisplayName: 
         // "(GMT-08:00) Pacific Time (US & Canada); Tijuana"
         //
-        public override string ToString()
-        {
-            return this.ToString(5);
-        }
+        //public override string ToString()
+        //{
+        //    return this.ToString(5);
+        //}
 
 
         //
@@ -2837,6 +3056,14 @@ namespace StarCalendar
         protected StarZone(SerializationInfo serializationInfo, StreamingContext streamingContext)
         {
             throw new NotImplementedException();
+        }
+
+        public StarZone(string Name, Time Off, string planet, Time LocalDay, string star) : this(Name, LocalDay)
+        {
+            this.PlanetName = planet;
+            this.LocalDay = LocalDay;
+            this.StarName = star;
+            this.BaseUtcOffset = Off;
         }
     }
 } // StarZone
