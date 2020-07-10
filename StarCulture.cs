@@ -364,18 +364,23 @@ namespace StarCalendar
             return a;
         }
 
-        private string[] AbbreviatedMonthNames
+        public string[] AbbreviatedMonthNames
         {
             get
             {
-                string[] vs = new string[this.months.Count];
-                int i = 0;
-                while (i < vs.Length)
+                if (_abbreviatedMonthNames == null)
                 {
-                    vs[i] = abbreviate(months[i]);
-                    i++;
+                    string[] vs = new string[this.months.Count];
+                    int i = 0;
+                    while (i < vs.Length)
+                    {
+                        vs[i] = abbreviate(months[i]);
+                        i++;
+                    }
+                    _abbreviatedMonthNames = vs;
                 }
-                return vs;
+                
+                return _abbreviatedMonthNames;
             }
         }
 
@@ -575,7 +580,7 @@ namespace StarCalendar
         //    return MonthNames();
         //}
 
-        private string[] MonthNames
+        public string[] MonthNames
         {
             get
             {
@@ -843,7 +848,7 @@ namespace StarCalendar
         internal String[] superShortDayNames = null;
 
         internal String[] dayNames = null;
-        internal String[] abbreviatedMonthNames = null;
+        private String[] _abbreviatedMonthNames = null;
         internal String[] monthNames = null;
         // Cache the genitive month names that we retrieve from the data table.
         [OptionalField(VersionAdded = 2)]
@@ -1031,14 +1036,14 @@ namespace StarCalendar
 
         private String[] internalGetAbbreviatedMonthNames()
         {
-            if (this.abbreviatedMonthNames == null)
+            if (this._abbreviatedMonthNames == null)
             {
                 // Get the month names for our current calendar
-                this.abbreviatedMonthNames = this.AbbreviatedMonthNames;
-                //Contract.Assert(this.abbreviatedMonthNames.Length == 12 || this.abbreviatedMonthNames.Length == 13,
+                this._abbreviatedMonthNames = this.AbbreviatedMonthNames;
+                //Contract.Assert(this._abbreviatedMonthNames.Length == 12 || this._abbreviatedMonthNames.Length == 13,
                 //    "[StarCulture.GetAbbreviatedMonthNames] Expected 12 or 13 month names in a Year");
             }
-            return (this.abbreviatedMonthNames);
+            return (this._abbreviatedMonthNames);
         }
 
 
@@ -1315,7 +1320,7 @@ namespace StarCalendar
         //                    saAbbrevDayNames1 = null;
         //                    superShortDayNames = null;
         //                    monthNames = null;
-        //                    abbreviatedMonthNames = null;
+        //                    _abbreviatedMonthNames = null;
         //                    genitiveMonthNames = null;
         //                    m_genitiveAbbreviatedMonthNames = null;
         //                    leapYearMonthNames = null;
@@ -2225,7 +2230,7 @@ namespace StarCalendar
         //        Contract.EndContractBlock();
         //        CheckNullValue(value, value.Length - 1);
         //        ClearTokenHashTable();
-        //        abbreviatedMonthNames = value;
+        //        _abbreviatedMonthNames = value;
         //    }
         //}
 

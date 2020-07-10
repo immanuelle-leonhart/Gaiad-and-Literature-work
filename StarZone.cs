@@ -1070,6 +1070,7 @@ namespace StarCalendar
         }
 
 
+
         public Time[] GetAmbiguousTimeOffsets(StarDate StarDate)
         {
             TimeSpan[] output = tz.GetAmbiguousTimeOffsets(StarDate.DateTime);

@@ -1425,7 +1425,7 @@ namespace StarCalendar
 
         public override string ToString()
         {
-            return this.ToString(StarCulture.CurrentCulture, StarDate.DefaultFormat);
+            return this.ToString(StarDate.DefaultFormat);
         }
 
         public string ToString(StarCulture local)
