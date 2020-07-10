@@ -587,34 +587,34 @@ namespace StarCalendar
         //internal Dictionary<string, double> timespandata(Time day)
         //{
         //    Dictionary<string, double> data = new Dictionary<string, double>();
-        //    data["years"] = this / c.Year;
-        //    Time rem = this % c.Year;
+        //    data["years"] = this / StarDate.Year;
+        //    Time rem = this % StarDate.Year;
         //    data["months"] = rem / day;
-        //    data["weeks"] = rem / c.week;
+        //    data["weeks"] = rem / StarDate.week;
         //    throw new NotImplementedException();
-        //    rem %= c.Day;
+        //    rem %= StarDate.DayTime;
 
         //    data["day"] = rem / day;
         //    rem %= day;
         //    Time daytime = rem;
-        //    data["hour"] = rem / c.Hour;
-        //    rem %= c.Hour;
-        //    data["Minute"] = rem / c.Minute;
-        //    rem %= c.Minute;
-        //    data["second"] = rem / c.Second;
-        //    rem %= c.Second;
-        //    data["millisec"] = rem / c.Millisecond;
-        //    rem %= c.Millisecond;
+        //    data["hour"] = rem / StarDate.HourTime;
+        //    rem %= StarDate.HourTime;
+        //    data["Minute"] = rem / StarDate.MinuteTime;
+        //    rem %= StarDate.MinuteTime;
+        //    data["second"] = rem / StarDate.SecondTime;
+        //    rem %= StarDate.SecondTime;
+        //    data["millisec"] = rem / StarDate.MillisecondTime;
+        //    rem %= StarDate.MillisecondTime;
         //    data["_ticks"] = (int)rem._ticks;
         //    rem = daytime;
-        //    data["Centidi"] = rem / c.Centidi;
-        //    rem %= c.Centidi;
-        //    data["Millidi"] = rem / c.Millidi;
-        //    rem %= c.Millidi;
-        //    data["Microdi"] = rem / c.Microdi;
-        //    rem %= c.Microdi;
-        //    data["Nanodi"] = rem / c.Nanodi;
-        //    rem %= c.Nanodi;
+        //    data["Centidi"] = rem / StarDate.Centidi;
+        //    rem %= StarDate.Centidi;
+        //    data["Millidi"] = rem / StarDate.Millidi;
+        //    rem %= StarDate.Millidi;
+        //    data["Microdi"] = rem / StarDate.Microdi;
+        //    rem %= StarDate.Microdi;
+        //    data["Nanodi"] = rem / StarDate.Nanodi;
+        //    rem %= StarDate.Nanodi;
         //    data["Nanodi Ticks"] = (int)rem._ticks;
         //    return data;
         //}
@@ -624,23 +624,23 @@ namespace StarCalendar
         //    return this.data("Year") + "-" + this.data("Month") + "-" + this.data("day");
         //}
 
-        private int data(string v)
-        {
-            return this.data()[v];
-        }
+        //private int data(string v)
+        //{
+        //    return this.data()[v];
+        //}
 
-        private Dictionary<string, int> data()
-        {
-            Time t = this;
-            Dictionary<string, int> k = new Dictionary<string, int>();
-            k.Add("Year", t / c.Year);
-            t %= c.Year;
-            k.Add("Month", t / c.month);
-            t %= c.month;
-            k.Add("day", t / c.Day);
-            t %= c.Day;
-            return k;
-        }
+        //private Dictionary<string, int> data()
+        //{
+        //    Time t = this;
+        //    Dictionary<string, int> k = new Dictionary<string, int>();
+        //    k.Add("Year", t / StarDate.Year);
+        //    t %= StarDate.Year;
+        //    k.Add("Month", t / StarDate.month);
+        //    t %= StarDate.month;
+        //    k.Add("day", t / StarDate.DayTime);
+        //    t %= StarDate.DayTime;
+        //    return k;
+        //}
 
         //internal static Time Parse(string prim)
         //{
@@ -660,7 +660,7 @@ namespace StarCalendar
 
         //public int days()
         //{
-        //    return this / c.Day;
+        //    return this / StarDate.DayTime;
         //}
 
         internal Time Negate()

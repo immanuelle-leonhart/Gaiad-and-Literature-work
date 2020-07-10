@@ -10,46 +10,46 @@ namespace StarCalendar
     internal static class c
     {
         //internal static List<StarCulture> formats = getformats();
-        internal static Time Tick = new Time(1);
-        internal static Time Millisecond = new Time(10000);
-        internal static int TicksPerMillisecond = 10000;
-        internal static Time Second = Millisecond * 1000;
-        internal static int TicksPerSecond = TicksPerMillisecond * 1000;
-        internal static Time Minute = Second * 60;
-        internal static int TicksPerMinute = TicksPerSecond * 60;
-        internal static Time Hour = Minute * 60;
-        internal static int TicksPerHour = TicksPerMinute * 60;
-        internal static Time Day = Hour * 24;
-        internal static int TicksPerDay = TicksPerHour * 24;
-        internal static Time Decidi = Day / 10;
-        internal static Time Centidi = Day / 100;
-        internal static Time Millidi = Day / 1000;
-        internal static Time Microdi = Day / 1000000;
-        internal static Time Nanodi = Day / 1000000000; //Only Metric Time needed
-        internal static Time Sol = 1.02749125 * Day;
-        internal static Time week = Day * 7;
-        internal static Time month = week * 4;
-        internal static Time Year = week * 52;
-        internal static Time Leap = Year + week;
-        internal static Time DoubleLeap = Leap + week;
-        internal static Time Sixyear = Year * 6 + week; //6 years, 313 weeks;
-        internal static Time Seventy_Eight = Sixyear * 13 + week; //78 years, 4070 weeks;
-        internal static Time AverageYear = Day * 365.256410256;
+        private static Time Tick = new Time(1);
+        private static Time Millisecond = new Time(10000);
+        private static int TicksPerMillisecond = 10000;
+        private static Time Second = Millisecond * 1000;
+        private static int TicksPerSecond = TicksPerMillisecond * 1000;
+        private static Time Minute = Second * 60;
+        private static int TicksPerMinute = TicksPerSecond * 60;
+        private static Time Hour = Minute * 60;
+        private static int TicksPerHour = TicksPerMinute * 60;
+        private static Time Day = Hour * 24;
+        private static int TicksPerDay = TicksPerHour * 24;
+        private static Time Decidi = Day / 10;
+        private static Time Centidi = Day / 100;
+        private static Time Millidi = Day / 1000;
+        private static Time Microdi = Day / 1000000;
+        private static Time Nanodi = Day / 1000000000; //Only Metric Time needed
+        private static Time Sol = 1.02749125 * Day;
+        private static Time week = Day * 7;
+        private static Time month = week * 4;
+        private static Time Year = week * 52;
+        private static Time Leap = Year + week;
+        private static Time DoubleLeap = Leap + week;
+        private static Time Sixyear = Year * 6 + week; //6 years, 313 weeks;
+        private static Time Seventy_Eight = Sixyear * 13 + week; //78 years, 4070 weeks;
+        private static Time AverageYear = Day * 365.256410256;
         //internal static Time SiderealYear = Day * 365.25636;
-        internal static Time SiderealYear = Seventy_Eight / 78;
-        internal static Time k = SiderealYear * 1000;
-        internal static Time m = k * 1000;
-        internal static Time b = m * 1000;
-        internal static Time a = 200 * m;
-        internal static StarDate manu = StarDate.AbstractDate(14 * b);
-        internal static StarDate maya = manu + 154 * Seventy_Eight; //10k BC + 154 * 78 = 12012
-        internal static DateTime maya_net = new DateTime(2011, 12, 26); //2011-12-26
+        private static Time SiderealYear = Seventy_Eight / 78;
+        private static Time k = SiderealYear * 1000;
+        private static Time m = k * 1000;
+        private static Time b = m * 1000;
+        private static Time a = 200 * m;
+        private static StarDate manu = StarDate.AbstractDate(14 * b);
+        private static StarDate maya = manu + 154 * Seventy_Eight; //10k BC + 154 * 78 = 12012
+        private static DateTime maya_net = new DateTime(2011, 12, 26); //2011-12-26
         //internal static DateTime new_year_12018 = new DateTime(2017, 12, 18, 0, 0, 0, DateTimeKind.Utc); //Sunday Saggittarius 1, 12013
         //internal static StarDate Trump1 = manu + 154 * Seventy_Eight + 6 * Year; //new_year_12018, Dec 18 2017
         //internal static StarDate y2k = manu + (12 * k);
-        internal static StarDate netstart = maya - new Time(maya_net.Ticks);
-        internal static StarDate julian = maya - 2455921 * Day;
-        internal static Time tr = b * 1000;
+        private static StarDate netstart = maya - new Time(maya_net.Ticks);
+        private static StarDate julian = maya - 2455921 * Day;
+        private static Time tr = b * 1000;
 
 
 

@@ -57,15 +57,15 @@ namespace StarCalendar
 
         // Number of 100ns _ticks per time unit
         internal static Time MillisecondTime = new Time(10000);
-        private const int TicksPerMillisecond = 10000;
+        internal const int TicksPerMillisecond = 10000;
         internal static Time SecondTime = MillisecondTime * 1000;
-        private const int TicksPerSecond = TicksPerMillisecond * 1000;
+        internal const int TicksPerSecond = TicksPerMillisecond * 1000;
         internal static Time MinuteTime = SecondTime * 60;
-        private const long TicksPerMinute = TicksPerSecond * 60;
+        internal const long TicksPerMinute = TicksPerSecond * 60;
         internal static Time HourTime = MinuteTime * 60;
-        private const long TicksPerHour = TicksPerMinute * 60;
+        internal const long TicksPerHour = TicksPerMinute * 60;
         internal static Time DayTime = HourTime * 24;
-        private const long TicksPerDay = TicksPerHour * 24;
+        internal const long TicksPerDay = TicksPerHour * 24;
         internal static Time Decidi = DayTime / 10;
         internal static Time Centidi = DayTime / 100;
         internal static Time Millidi = DayTime / 1000;
@@ -73,52 +73,49 @@ namespace StarCalendar
         internal static Time Nanodi = DayTime / 1000000000; //Only Metric Time needed
         internal static Time Sol = 1.02749125 * DayTime;
         internal static Time week = DayTime * 7;
-        private const long TicksPerWeek = TicksPerDay * 7;
-        private const int DaysPerWeek = 7;
+        internal const long TicksPerWeek = TicksPerDay * 7;
+        internal const int DaysPerWeek = 7;
         internal static Time month = week * 4;
-        private const long TicksPerMonth = TicksPerDay * 28;
-        private const int DaysPerMonth = DaysPerWeek * 4;
+        internal const long TicksPerMonth = TicksPerDay * 28;
+        internal const int DaysPerMonth = DaysPerWeek * 4;
         internal static Time YearTime = week * 52;
         internal static BigInteger TicksPerYear = TicksPerWeek * 52;
-        private const int DaysPerYear = DaysPerMonth * 12;
+        internal const int DaysPerYear = DaysPerMonth * 13;
         internal static Time Leap = YearTime + week;
         internal static BigInteger TicksPerLeapYear = TicksPerYear + TicksPerWeek;
-        private const int DaysPerLeapYear = DaysPerYear + DaysPerWeek;
+        internal const int DaysPerLeapYear = DaysPerYear + DaysPerWeek;
         internal static Time DoubleLeap = Leap + week;
         internal static BigInteger TicksPerDoubleLeap = TicksPerLeapYear + TicksPerWeek;
-        private const int DaysPerDoubleLeap = DaysPerLeapYear + DaysPerWeek;
+        internal const int DaysPerDoubleLeap = DaysPerLeapYear + DaysPerWeek;
         internal static Time Sixyear = YearTime * 6 + week; //6 years, 313 weeks;
         internal static BigInteger TicksPerSixYears = TicksPerYear * 6 + TicksPerWeek;
-        private const int DaysPerSixYears = DaysPerYear * 6 + DaysPerWeek;
+        internal const int DaysPerSixYears = DaysPerYear * 6 + DaysPerWeek;
         internal static Time Seventy_Eight = Sixyear * 13 + week; //78 years, 4070 weeks;
         internal static BigInteger TicksPerSeventyEightYears = TicksPerSixYears * 13 + TicksPerWeek;
-        private const int DaysPer78Years = DaysPerSixYears * 13 + DaysPerWeek;
+        internal const int DaysPer78Years = DaysPerSixYears * 13 + DaysPerWeek;
         internal static Time AverageYear = DayTime * 365.256410256;
-        private const int DaysPerAverageYear = DaysPer78Years / 78;
+        internal const int DaysPerAverageYear = DaysPer78Years / 78;
         internal static BigInteger TicksPerAverageYear = TicksPerSeventyEightYears / 78;
         //internal static Time SiderealYear = Day * 365.25636;
         internal static Time SiderealYear = Seventy_Eight / 78;
         internal static Time k = SiderealYear * 1000;
         internal static BigInteger TicksPerThousand = TicksPerAverageYear * 1000;
-        private const long DaysPerThousand = DaysPerAverageYear * 1000;
+        internal const long DaysPerThousand = DaysPerAverageYear * 1000;
         internal static Time m = k * 1000;
         internal static BigInteger TicksPerMillion = TicksPerThousand * 1000;
-        private const long DaysPerMillion = DaysPerThousand * 1000;
+        internal const long DaysPerMillion = DaysPerThousand * 1000;
         internal static Time b = m * 1000;
         internal static BigInteger TicksPerBillion = TicksPerMillion * 1000;
-        private const long DaysPerBillion = DaysPerMillion * 1000;
-        private const long DaysPerTrillion = DaysPerBillion * 1000;
-        private const long DaysPerQuadrillion = DaysPerTrillion * 1000;
+        internal const long DaysPerBillion = DaysPerMillion * 1000;
+        internal const long DaysPerTrillion = DaysPerBillion * 1000;
+        internal const long DaysPerQuadrillion = DaysPerTrillion * 1000;
         internal static Time a = 200 * m;
-        internal static StarDate manu = StarDate.AbstractDate(14 * b);
-        internal static StarDate maya = manu + 154 * Seventy_Eight; //10k BC + 154 * 78 = 12012
-        internal static DateTime maya_net = new DateTime(2011, 12, 26); //2011-12-26
-        //internal static DateTime new_year_12018 = new DateTime(2017, 12, 18, 0, 0, 0, DateTimeKind.Utc); //Sunday Saggittarius 1, 12013
-        //internal static StarDate Trump1 = manu + 154 * Seventy_Eight + 6 * Year; //new_year_12018, Dec 18 2017
-        //internal static StarDate y2k = manu + (12 * k);
-        internal static StarDate netstart = maya - new Time(maya_net.Ticks);
-        internal static StarDate julian = maya - 2455921 * DayTime;
-        internal static Time tr = b * 1000;
+        private static readonly StarDate manu = StarDate.AbstractDate(((BigInteger)DaysPerBillion * TicksPerDay), 0, UTC);
+        internal static readonly StarDate maya = manu + 154 * Seventy_Eight; //10k BC + 154 * 78 = 12012
+        internal static readonly DateTime maya_net = new DateTime(2011, 12, 26); //2011-12-26
+        internal static readonly StarDate ADStart = maya - new Time(maya_net.Ticks);
+        internal static readonly StarDate julian = maya - 2455921 * DayTime;
+        internal static readonly Time tr = b * 1000;
 
         // Number of milliseconds per time unit
         private const int MillisPerSecond = 1000;
@@ -203,10 +200,12 @@ namespace StarCalendar
         //               UTC time.
         private BigInteger dateData;
         private BigInteger errorData;
-        private StarZone timeZone;
+        private StarZone _timeZone;
         private static IEnumerable<string> allFormats;
         private static IEnumerable<StarDate> testYear;
         private static string defaultFormat = "yyyyy/MM/dd hh:mm:ss tt K";
+        private static StarDate maya1;
+
         //private int extraTicks;
 
         //private int julian;
@@ -254,14 +253,14 @@ namespace StarCalendar
         private static void DemonstrateLanguage(StarCulture lang, string format)
         {
             //StarDate.SetFormat("numeric");
-            StarDate dt = c.maya;
-            dt -= 379 * c.Day;
+            StarDate dt = StarDate.maya;
+            dt -= 379 * StarDate.DayTime;
             int i = 0;
-            while (dt < c.maya)
+            while (dt < StarDate.maya)
             {
-                dt += c.Day;
+                dt += StarDate.DayTime;
                 i++;
-                //Console.WriteLine(dt.ToString(lang, format));
+                ////Console.WriteLine(dt.ToString(lang, format));
             }
         }
 
@@ -298,7 +297,7 @@ namespace StarCalendar
             string output = g_year + comma + gregmonthname + comma + gregmonthnumber + comma + gregday + comma + gregdayofyear + comma + weekday + comma + StarYear + comma + starmonthname + comma + starmonthnumber + comma + starday + comma + Stardayofyear;
             while (dt <= end)
             {
-                //Console.WriteLine(output);
+                ////Console.WriteLine(output);
                 chart.WriteLine(output);
                 DateTime g = dt.DateTime;
                 gregday = g.Day.ToString();
@@ -313,7 +312,7 @@ namespace StarCalendar
                 StarYear = dt.Year.ToString();
                 Stardayofyear = dt.DayOfYear.ToString();
                 output = g_year + comma + gregmonthname + comma + gregmonthnumber + comma + gregday + comma + gregdayofyear + comma + weekday + comma + StarYear + comma + starmonthname + comma + starmonthnumber + comma + starday + comma + Stardayofyear;
-                dt += c.Day;
+                dt += StarDate.DayTime;
             }
             chart.Flush();
             chart.Close();
@@ -323,7 +322,7 @@ namespace StarCalendar
         {
             StarDate dt = new StarDate(timeSpanInfo);
 
-            dt.timeZone = StarZone.Local;
+            dt.TimeZone = StarZone.Local;
             //dt.arraylength = 10;
             dt.errorData = 0;
             return dt;
@@ -410,7 +409,7 @@ namespace StarCalendar
 
 
 
-        //public StarZone timeZone;
+        //public StarZone _timeZone;
 
 
         internal static StarDate MathFromGreg(int[] v)
@@ -449,14 +448,14 @@ namespace StarCalendar
             {
                 int h = value;
                 int diff = h - this.Hour;
-                this.atomic += diff * c.Hour;
+                this.atomic += diff * StarDate.HourTime;
             }
         }
 
 
         public static StarDate Now
         {
-            get { return new StarDate(DateTime.UtcNow); }
+            get { return new StarDate(DateTime.UtcNow, StarZone.Local); }
             //internal set
             //{
             //    now = value;
@@ -466,22 +465,48 @@ namespace StarCalendar
         {
             get
             {
-                return new StarDate(DateTime.UtcNow, StarZone.Local);
+                return new StarDate(DateTime.UtcNow, StarZone.UTC);
             }
         }
         public long fullyear
         {
-            get { return this.atomic / c.AverageYear; }
+            get { return this.atomic / StarDate.AverageYear; }
             internal set
             {
                 long diff = value - this.fullyear;
-                this.atomic += diff * c.AverageYear;
+                this.atomic += diff * StarDate.AverageYear;
             }
         }
 
         internal static bool LegacyParseMode()
         {
             throw new NotImplementedException();
+        }
+
+        public int quadrillion
+        {
+            get
+            {
+                return GetDatePart(DatePartQuadrillion);
+            }
+            internal set
+            {
+                int diff = value - this.quadrillion;
+                this.atomic += diff * StarDate.tr * 1000;
+            }
+        }
+
+        public int trillion
+        {
+            get
+            {
+                return GetDatePart(DatePartTrillion);
+            }
+            internal set
+            {
+                int diff = value - this.trillion;
+                this.atomic += diff * StarDate.tr;
+            }
         }
 
         public int billion
@@ -493,7 +518,7 @@ namespace StarCalendar
             internal set
             {
                 int diff = value - this.billion;
-                this.atomic += diff * c.b;
+                this.atomic += diff * StarDate.b;
             }
         }
         public int million
@@ -505,9 +530,10 @@ namespace StarCalendar
             internal set
             {
                 int diff = value - this.million;
-                this.atomic += diff * c.m;
+                this.atomic += diff * StarDate.m;
             }
         }
+
         public int Year
         {
             get
@@ -534,7 +560,7 @@ namespace StarCalendar
             internal set
             {
                 int diff = value - this.Millisecond;
-                this.atomic += diff * c.Millisecond;
+                this.atomic += diff * StarDate.MillisecondTime;
             }
         }
         //public BigInteger Ticks
@@ -605,17 +631,17 @@ namespace StarCalendar
             throw new NotImplementedException();
         }
 
-        public StarZone TimeZone
-        {
-            get
-            {
-                return this.timeZone;
-            }
-            set
-            {
-                this.timeZone = value;
-            }
-        }
+        //public StarZone TimeZone
+        //{
+        //    get
+        //    {
+        //        return this.TimeZone;
+        //    }
+        //    set
+        //    {
+        //        this.TimeZone = value;
+        //    }
+        //}
 
         public Time Radio
         {
@@ -658,14 +684,14 @@ namespace StarCalendar
         {
             get
             {
-                return this.timeZone.IsTerran;
+                return this.TimeZone.IsTerran;
             }
         }
         public bool SupportsDaylightSavingTime
         {
             get
             {
-                return this.timeZone.SupportsDaylightSavingTime;
+                return this.TimeZone.SupportsDaylightSavingTime;
             }
 
         }
@@ -674,19 +700,19 @@ namespace StarCalendar
         {
             get
             {
-                if (this.timeZone.SupportsDaylightSavingTime)
+                if (this.TimeZone.SupportsDaylightSavingTime)
                 {
-                    return this.timeZone.Offset(this);
+                    return this.TimeZone.Offset(this);
                 }
                 else
                 {
-                    return this.timeZone.BaseUtcOffset;
+                    return this.TimeZone.BaseUtcOffset;
                 }
             }
 
             internal set
             {
-                this.timeZone = this.timeZone.OffsetClone(value);
+                this.TimeZone = this.TimeZone.OffsetClone(value);
             }
         }
 
@@ -694,7 +720,7 @@ namespace StarCalendar
         //{
         //    get
         //    {
-        //        return this.timeZone.HasTimeZone;
+        //        return this._timeZone.HasTimeZone;
         //    }
 
         //}
@@ -705,12 +731,12 @@ namespace StarCalendar
             errorData = 0;
             if (dt.Kind == DateTimeKind.Local)
             {
-                this.timeZone = Local;
+                this._timeZone = Local;
                 dateData -= Local.Offset(dt).Ticks;
             }
             else
             {
-                this.timeZone = UTC;
+                this._timeZone = UTC;
             }
 
         }
@@ -766,13 +792,13 @@ namespace StarCalendar
 
         //    internal string teststring()
         //    {
-        //        //if (this == c.netstart)
+        //        //if (this == ADStart)
         //        //{
         //        //    return new int[] { 1, 1, 1 };
         //        //}
         //        //else
         //        //{
-        //            Time t = this - c.netstart;
+        //            Time t = this - ADStart;
         //            int DaysPerYear = 365;
         //            // Number of days in 4 years
         //            int DaysPer4Years = DaysPerYear * 4 + 1;       // 1461
@@ -780,42 +806,42 @@ namespace StarCalendar
         //            int DaysPer100Years = DaysPer4Years * 25 - 1;  // 36524
         //                                                           // Number of days in 400 years
         //            int DaysPer400Years = DaysPer100Years * 4 + 1; // 146097
-        //                                                           //Time q = DaysPer400Years * c.Day;
-        //                                                           //Time s = DaysPer100Years * c.Day;
-        //                                                           //Time l = DaysPer4Years * c.Day;
-        //                                                           //Time y = DaysPerYear * c.Day;
+        //                                                           //Time q = DaysPer400Years * StarDate.DayTime;
+        //                                                           //Time s = DaysPer100Years * StarDate.DayTime;
+        //                                                           //Time l = DaysPer4Years * StarDate.DayTime;
+        //                                                           //Time y = DaysPerYear * StarDate.DayTime;
         //            int[] DaysToMonth365 = {
         //                0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334, 365};
         //            int[] DaysToMonth366 = {
         //                0, 31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335, 366};
 
-        //            ////Console.WriteLine("testing");
+        //            //////Console.WriteLine("testing");
 
-        //            ////Console.WriteLine(t);
+        //            //////Console.WriteLine(t);
 
-        //            int days = t / c.Day;
-        //            ////Console.WriteLine("days from netstart = " + days);
+        //            int days = t / StarDate.DayTime;
+        //            //////Console.WriteLine("days from netstart = " + days);
 
         //            int q = days / DaysPer400Years;
         //            int qmod = days % DaysPer400Years;
-        //            ////Console.WriteLine(q);
-        //            ////Console.WriteLine(qmod);
+        //            //////Console.WriteLine(q);
+        //            //////Console.WriteLine(qmod);
         //            if (qmod < 0)
         //            {
         //                qmod = DaysPer400Years + qmod;
         //                q--;
         //            }
-        //            ////Console.WriteLine(q);
-        //            ////Console.WriteLine(qmod);
+        //            //////Console.WriteLine(q);
+        //            //////Console.WriteLine(qmod);
         //            int s = qmod / DaysPer100Years;
         //            int smod = qmod % DaysPer100Years;
         //            int l = smod / DaysPer4Years;
         //            int lmod = smod % DaysPer4Years;
         //            int y = lmod / DaysPerYear;
         //            int ymod = lmod % DaysPerYear;
-        //            ////Console.WriteLine(s);
-        //            ////Console.WriteLine(l);
-        //            ////Console.WriteLine(y);
+        //            //////Console.WriteLine(s);
+        //            //////Console.WriteLine(l);
+        //            //////Console.WriteLine(y);
         //            int m = 500;
         //            int yd = ymod;
         //            int d = 500;
@@ -839,7 +865,7 @@ namespace StarCalendar
         //                bool found = false;
         //                while (!found)
         //                {
-        //                    ////Console.WriteLine(DaysToMonth366[i]);
+        //                    //////Console.WriteLine(DaysToMonth366[i]);
         //                    if (DaysToMonth366[i] > yd)
         //                    {
         //                        m = i - 1;
@@ -854,12 +880,12 @@ namespace StarCalendar
         //            }
         //            else
         //            {
-        //                ////Console.WriteLine(GregLeap(Year));
+        //                //////Console.WriteLine(GregLeap(Year));
         //                int i = 0;
         //                bool found = false;
         //                while (!found)
         //                {
-        //                    ////Console.WriteLine(DaysToMonth366[i]);
+        //                    //////Console.WriteLine(DaysToMonth366[i]);
         //                    if (DaysToMonth365[i] > yd)
         //                    {
         //                        m = i - 1;
@@ -872,11 +898,11 @@ namespace StarCalendar
         //                    }
         //                }
         //            }
-        //        ////Console.WriteLine(Year + " " + m + " " + d + " ");
+        //        //////Console.WriteLine(Year + " " + m + " " + d + " ");
         //        //throw new NotImplementedException();
-        //        if (this > c.netstart)
+        //        if (this > ADStart)
         //        {
-        //            //Console.WriteLine("TEST");
+        //            ////Console.WriteLine("TEST");
         //            Year++;
         //        }
         //        m++;
@@ -923,19 +949,19 @@ namespace StarCalendar
         public StarDate(Time t) : this()
         {
             this.atomic = t;
-            this.timeZone = StarZone.Local;
+            this.TimeZone = StarZone.Local;
         }
 
         //public StarDate(int v) : this()
         //{
         //    this.atomic = new Time(v);
-        //    this.timeZone = StarZone.Local;
+        //    this._timeZone = StarZone.Local;
         //}
 
         public StarDate(BigInteger v, StarZone Zone) : this(v)
         {
-            this.atomic = new Time(v) + c.netstart.atomic;
-            this.timeZone = Zone;
+            this.atomic = new Time(v) + ADStart.atomic;
+            this.TimeZone = Zone;
             //this.metadata = new StarData(Zone);
         }
 
@@ -946,13 +972,13 @@ namespace StarCalendar
 
         //public StarDate(DateTime dt, StarZone zone) : this(dt)
         //{
-        //    this.atomic = new Time(v) + c.netstart.atomic;
+        //    this.atomic = new Time(v) + ADStart.atomic;
         //}
 
         public StarDate(DateTime utcNow, StarZone zone) : this(utcNow)
         {
-            //this.atomic = c.netstart.atomic + new Time(dt.Ticks);
-            this.timeZone = zone;
+            //this.atomic = ADStart.atomic + new Time(dt.Ticks);
+            this.TimeZone = zone;
             //this.metadata = new StarData(zone);
         }
 
@@ -974,38 +1000,38 @@ namespace StarCalendar
             //this.atomic = new Time(0);
             //long years = data[0];
             //long cycle_78 = years / 78;
-            //this.atomic += cycle_78 * c.Seventy_Eight;
+            //this.atomic += cycle_78 * StarDate.Seventy_Eight;
             //years %= 78;
             //long cycle_6 = years / 6;
-            //this.atomic += cycle_6 * c.Sixyear;
+            //this.atomic += cycle_6 * StarDate.Sixyear;
             //years %= 6;
             //long cycle_1 = years;
-            //this.atomic += cycle_1 * c.Year;
+            //this.atomic += cycle_1 * StarDate.Year;
             //data[1]--;
             //data[2]--; //The 1st of a Month is actually zero days, so subtract one from the day, same for months
-            //this.atomic += data[1] * c.Month + data[2] * c.Day + data[3] * c.Hour + data[4] * c.Minute + data[5] * c.Second + data[6] * c.Millisecond + new Time(data[7]);
+            //this.atomic += data[1] * StarDate.Month + data[2] * StarDate.DayTime + data[3] * StarDate.HourTime + data[4] * StarDate.MinuteTime + data[5] * StarDate.SecondTime + data[6] * StarDate.MillisecondTime + new Time(data[7]);
             //switch (n)
             //{
             //    case 1:
-            //        this.error = c.Year;
+            //        this.error = StarDate.Year;
             //        break;
             //    case 2:
-            //        this.error = c.Month;
+            //        this.error = StarDate.Month;
             //        break;
             //    case 3:
-            //        this.error = c.Day;
+            //        this.error = StarDate.DayTime;
             //        break;
             //    case 4:
-            //        this.error = c.Hour;
+            //        this.error = StarDate.HourTime;
             //        break;
             //    case 5:
-            //        this.error = c.Minute;
+            //        this.error = StarDate.MinuteTime;
             //        break;
             //    case 6:
-            //        this.error = c.Second;
+            //        this.error = StarDate.SecondTime;
             //        break;
             //    case 7:
-            //        this.error = c.Millisecond;
+            //        this.error = StarDate.MillisecondTime;
             //        break;
             //    case 8:
             //    default:
@@ -1015,7 +1041,7 @@ namespace StarCalendar
 
             ////assign timezones
 
-            //this.timeZone = StarZone.UTC;
+            //this._timeZone = StarZone.UTC;
 
             ////assign notes
 
@@ -1037,47 +1063,47 @@ namespace StarCalendar
         //        data[i] = vs[i];
         //        i++;
         //    }
-        //    //this = c.manu;
-        //    dateData = c.b.Ticks;
+        //    //this = StarDate.manu;
+        //    dateData = StarDate.b.Ticks;
         //    errorData = 0;
-        //    timeZone = Local;
+        //    _timeZone = Local;
         //    long years = data[0];
         //    long cycle_78 = years / 78;
-        //    this.atomic += cycle_78 * c.Seventy_Eight;
+        //    this.atomic += cycle_78 * StarDate.Seventy_Eight;
         //    years %= 78;
         //    long cycle_6 = years / 6;
-        //    this.atomic += cycle_6 * c.Sixyear;
+        //    this.atomic += cycle_6 * StarDate.Sixyear;
         //    years %= 6;
         //    long cycle_1 = years;
-        //    this.atomic += cycle_1 * c.Year;
+        //    this.atomic += cycle_1 * StarDate.Year;
         //    data[1]--;
         //    data[2]--; //The 1st of a Month is actually zero days, so subtract one from the day, same for months
-        //    this.atomic += data[1] * c.month + data[2] * c.Day + data[3] * c.Hour + data[4] * c.Minute + data[5] * c.Second + data[6] * c.Millisecond + new Time(data[7]);
+        //    this.atomic += data[1] * StarDate.month + data[2] * StarDate.DayTime + data[3] * StarDate.HourTime + data[4] * StarDate.MinuteTime + data[5] * StarDate.SecondTime + data[6] * StarDate.MillisecondTime + new Time(data[7]);
 
 
         //    //this.arraylength = n;
         //    switch (vs.Length)
         //    {
         //        case 1:
-        //            errorData = c.Year.Ticks;
+        //            errorData = StarDate.Year.Ticks;
         //            break;
         //        case 2:
-        //            errorData = c.month.Ticks;
+        //            errorData = StarDate.month.Ticks;
         //            break;
         //        case 3:
-        //            errorData = c.Day.Ticks;
+        //            errorData = StarDate.DayTime.Ticks;
         //            break;
         //        case 4:
-        //            errorData = c.Hour.Ticks;
+        //            errorData = StarDate.HourTime.Ticks;
         //            break;
         //        case 5:
-        //            errorData = c.Minute.Ticks;
+        //            errorData = StarDate.MinuteTime.Ticks;
         //            break;
         //        case 6:
-        //            errorData = c.Second.Ticks;
+        //            errorData = StarDate.SecondTime.Ticks;
         //            break;
         //        case 7:
-        //            errorData = c.Millisecond.Ticks;
+        //            errorData = StarDate.MillisecondTime.Ticks;
         //            break;
         //        case 8:
         //        default:
@@ -1089,7 +1115,7 @@ namespace StarCalendar
         public StarDate(Time t, StarZone zone) : this(t)
         {
             this.atomic = t;
-            this.timeZone = zone;
+            this.TimeZone = zone;
         }
 
         //internal StarDate(DateTime dt, StarData local) : this(dt)
@@ -1127,7 +1153,12 @@ namespace StarCalendar
 
         public static StarDate operator ++(StarDate dt)
         {
-            return dt + c.Day;
+            return dt + DayTime;
+        }
+
+        public static StarDate operator --(StarDate dt)
+        {
+            return dt - DayTime;
         }
 
         public static StarDate GregParse(string input)
@@ -1171,8 +1202,8 @@ namespace StarCalendar
                     {
                         year2 = BCParse(parsedinput);
                     }
-                    StarDate sd = c.netstart - year2 * c.Year;
-                    sd.timeZone = StarZone.Local;
+                    StarDate sd = ADStart - year2 * StarDate.YearTime;
+                    sd.TimeZone = StarZone.Local;
                     return sd;
                     throw new NotImplementedException();
                 }
@@ -1231,13 +1262,13 @@ namespace StarCalendar
                                     {
                                         v = v + decomma[j++];
                                     }
-                                    //Console.WriteLine(v);
+                                    ////Console.WriteLine(v);
                                     int year = int.Parse(v);
                                     return StarDate.FromGreg(year);
                                 }
                                 catch (FormatException)
                                 {
-                                    //Console.WriteLine(input);
+                                    ////Console.WriteLine(input);
                                     if ((parsedinput[1] == "AND"))
                                     {
                                         StarDate a = StarDate.FromGreg(int.Parse(parsedinput[0]));
@@ -1246,7 +1277,7 @@ namespace StarCalendar
                                     }
                                     throw new InvalidOperationException();
                                     throw new NotImplementedException();
-                                    //return c.manu;
+                                    //return StarDate.manu;
                                 }
                             }
 
@@ -1267,7 +1298,7 @@ namespace StarCalendar
             int i = 0;
             while (i < parsedinput.Length)
             {
-                //Console.WriteLine(i + " " + parsedinput[i++]);
+                ////Console.WriteLine(i + " " + parsedinput[i++]);
             }
             return long.Parse(parsedinput[0]);
             throw new NotImplementedException();
@@ -1303,7 +1334,7 @@ namespace StarCalendar
         {
             get
             {
-                DateTime dt = new DateTime((long)(this - c.netstart)._ticks);
+                DateTime dt = new DateTime((long)(this - ADStart)._ticks);
                 DateTime.SpecifyKind(dt, Kind);
                 return dt;
             }
@@ -1429,7 +1460,7 @@ namespace StarCalendar
 
         //public Time TimeOfDay()
         //{
-        //    return this.atomic % c.Day;
+        //    return this.atomic % StarDate.DayTime;
         //}
 
         private string addzero(long v)
@@ -1448,34 +1479,46 @@ namespace StarCalendar
         // to compute the Year, day-of-Year, month, or day part.
         private int GetDatePart(int part)
         {
+            //Console.WriteLine("Getting Date Part: " + part);
+            //Console.WriteLine("dateData = " + dateData);
+            //Console.WriteLine("errorData = " + errorData);
+            //Console.WriteLine("TimeZone = " + _timeZone);
             if (IsTerran == false)
             {
-                ////Console.WriteLine(this.timeZone.Names());
+                //////Console.WriteLine(this._timeZone.Names());
                 throw new NotImplementedException();
             }
-            //BigInteger ticks = AdjustedTicks;
-            //
-            Int64 n =(long) (AdjustedTicks / TicksPerDay);
+            //Console.WriteLine("Is not Terran");
+            //Console.WriteLine("Adjusted Ticks = " + AdjustedTicks);
+            Int64 n = (long)(AdjustedTicks / TicksPerDay);
+            //Console.WriteLine("Days = " + n);
             if (part == DatePartQuadrillion)
             {
                 return (int)(n / DaysPerQuadrillion);
             }
             else if (part == DatePartTrillion)
             {
-                return (int)((n %= DaysPerQuadrillion) / DaysPerTrillion);
+                return (int)((n % DaysPerQuadrillion) / DaysPerTrillion);
             }
             else if (part == DatePartBillion)
             {
-                return (int)((n %= DaysPerTrillion) / DaysPerBillion);
+                return (int)((n % DaysPerTrillion) / DaysPerBillion);
             }
             else if (part == DatePartMillion)
             {
-                return (int)((n %= DaysPerBillion) / DaysPerMillion);
+                return (int)((n % DaysPerBillion) / DaysPerMillion);
             }
             else
             {
+                n %= DaysPerBillion;
                 n %= DaysPerMillion;
-                int y78 = (int) (n / DaysPer78Years);
+                //Console.WriteLine("Days Since Manu = " + n);
+                //Logic Error is here
+                //Console.WriteLine(DaysPerAverageYear);
+                //Console.WriteLine(n / DaysPerAverageYear);
+                ////Console.WriteLine()
+                //throw new NotImplementedException();
+                int y78 = (int)(n / DaysPer78Years);
                 n -= y78 * DaysPer78Years;
                 int y6 = (int)(n / DaysPerSixYears);
                 if (y6 == 13) y6 = 12;
@@ -1519,14 +1562,14 @@ namespace StarCalendar
             {
                 throw new NotImplementedException();
             }
-                
-            }
+
+        }
 
         // Returns the day-of-month part of this StarDate. The returned
         // value is an integer between 1 and 31.
         //
 
-        
+
 
         //internal StarData GetKind()
         //{
@@ -1680,12 +1723,12 @@ namespace StarCalendar
         internal static void Test()
         {
             StarDate dt = StarDate.Now;
-            ////Console.WriteLine(dt);
+            //////Console.WriteLine(dt);
             bool gab = true;
             while (gab)
             {
-                //Console.WriteLine(dt);
-                dt += c.Day;
+                ////Console.WriteLine(dt);
+                dt += StarDate.DayTime;
             }
         }
 
@@ -1739,7 +1782,7 @@ namespace StarCalendar
 
         public static StarDate MathFromGreg(int year, int month, int day, int hour, int min, int sec, int mil)
         {
-            ////Console.WriteLine(Year + " " + Month + " " + day + " " + hour + " " + sec + " " + mil);
+            //////Console.WriteLine(Year + " " + Month + " " + day + " " + hour + " " + sec + " " + mil);
             // Number of days in a non-leap Year
             int DaysPerYear = 365;
             // Number of days in 4 years
@@ -1754,11 +1797,11 @@ namespace StarCalendar
                     0, 31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335, 366};
             bool leapyear = GregLeap(year);
             int[] timespans = GregSpans(year);
-            StarDate output = new StarDate(c.netstart.atomic);
-            output += timespans[0] * DaysPer400Years * c.Day;
-            output += timespans[1] * DaysPer100Years * c.Day;
-            output += timespans[2] * DaysPer4Years * c.Day;
-            output += timespans[3] * DaysPerYear * c.Day;
+            StarDate output = new StarDate(ADStart.atomic);
+            output += timespans[0] * DaysPer400Years * StarDate.DayTime;
+            output += timespans[1] * DaysPer100Years * StarDate.DayTime;
+            output += timespans[2] * DaysPer4Years * StarDate.DayTime;
+            output += timespans[3] * DaysPerYear * StarDate.DayTime;
             int days;
             if (leapyear)
             {
@@ -1768,7 +1811,7 @@ namespace StarCalendar
                 }
                 catch (IndexOutOfRangeException)
                 {
-                    //Console.WriteLine(month - 1);
+                    ////Console.WriteLine(month - 1);
                     throw new NotImplementedException();
                 }
             }
@@ -1777,12 +1820,12 @@ namespace StarCalendar
                 days = DaysToMonth365[month - 1];
             }
             days += day - 1;
-            ////Console.WriteLine(days);
-            output += days * c.Day;
-            output += hour * c.Hour;
-            output += min * c.Minute;
-            output += sec * c.Second;
-            output += mil * c.Millisecond;
+            //////Console.WriteLine(days);
+            output += days * StarDate.DayTime;
+            output += hour * StarDate.HourTime;
+            output += min * StarDate.MinuteTime;
+            output += sec * StarDate.SecondTime;
+            output += mil * StarDate.MillisecondTime;
             return output;
             //throw new NotImplementedException();
         }
@@ -1838,16 +1881,16 @@ namespace StarCalendar
                 yearmod += 400;
             }
             int quattro = (year - yearmod) / 400;
-            ////Console.WriteLine" 400mod = " + yearmod);
-            ////Console.WriteLine" 400count = " + quattro);
+            //////Console.WriteLine" 400mod = " + yearmod);
+            //////Console.WriteLine" 400count = " + quattro);
             int centcount = yearmod / 100;
             yearmod %= 100;
-            ////Console.WriteLine" centcount = " + centcount);
+            //////Console.WriteLine" centcount = " + centcount);
             int leapcount = yearmod / 4;
             yearmod %= 4;
             int yearcount = yearmod;
-            ////Console.WriteLine" q " + quattro + " c +" + centcount + " l +" + leapcount + " y +" + yearcount);
-            ////Console.WriteLine(" ");
+            //////Console.WriteLine" q " + quattro + " c +" + centcount + " l +" + leapcount + " y +" + yearcount);
+            //////Console.WriteLine(" ");
             return new int[] { quattro, centcount, leapcount, yearcount };
         }
 
@@ -1892,50 +1935,50 @@ namespace StarCalendar
                 int DaysPer100Years = DaysPer4Years * 25 - 1;  // 36524
                                                                // Number of days in 400 years
                 int DaysPer400Years = DaysPer100Years * 4 + 1; // 146097
-                                                               //Time q = DaysPer400Years * c.Day;
-                                                               //Time s = DaysPer100Years * c.Day;
-                                                               //Time l = DaysPer4Years * c.Day;
-                                                               //Time y = DaysPerYear * c.Day;
+                                                               //Time q = DaysPer400Years * StarDate.DayTime;
+                                                               //Time s = DaysPer100Years * StarDate.DayTime;
+                                                               //Time l = DaysPer4Years * StarDate.DayTime;
+                                                               //Time y = DaysPerYear * StarDate.DayTime;
                 int[] DaysToMonth365 = {
                     0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334, 365};
                 int[] DaysToMonth366 = {
                     0, 31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335, 366};
-                if (this == c.netstart)
+                if (this == ADStart)
                 {
                     return new int[] { 1, 1, 1 };
                 }
-                else if (this < c.netstart)
+                else if (this < ADStart)
                 {
-                    Time t = this - c.netstart;
+                    Time t = this - ADStart;
 
 
-                    ////Console.WriteLine("testing");
+                    //////Console.WriteLine("testing");
 
-                    ////Console.WriteLine(t);
+                    //////Console.WriteLine(t);
 
-                    int days = t / c.Day;
-                    ////Console.WriteLine("days from netstart = " + days);
+                    int days = t / StarDate.DayTime;
+                    //////Console.WriteLine("days from netstart = " + days);
 
                     int q = days / DaysPer400Years;
                     int qmod = days % DaysPer400Years;
-                    ////Console.WriteLine(q);
-                    ////Console.WriteLine(qmod);
+                    //////Console.WriteLine(q);
+                    //////Console.WriteLine(qmod);
                     if (qmod < 0)
                     {
                         qmod = DaysPer400Years + qmod;
                         q--;
                     }
-                    ////Console.WriteLine(q);
-                    ////Console.WriteLine(qmod);
+                    //////Console.WriteLine(q);
+                    //////Console.WriteLine(qmod);
                     int s = qmod / DaysPer100Years;
                     int smod = qmod % DaysPer100Years;
                     int l = smod / DaysPer4Years;
                     int lmod = smod % DaysPer4Years;
                     int y = lmod / DaysPerYear;
                     int ymod = lmod % DaysPerYear;
-                    ////Console.WriteLine(s);
-                    ////Console.WriteLine(l);
-                    ////Console.WriteLine(y);
+                    //////Console.WriteLine(s);
+                    //////Console.WriteLine(l);
+                    //////Console.WriteLine(y);
                     int m = 500;
                     int yd = ymod;
                     int d = 500;
@@ -1959,12 +2002,12 @@ namespace StarCalendar
                         bool found = false;
                         while (!found)
                         {
-                            ////Console.WriteLine(DaysToMonth366[i]);
+                            //////Console.WriteLine(DaysToMonth366[i]);
                             if (DaysToMonth366[i] > yd)
                             {
                                 m = i - 1;
                                 found = true;
-                                ////Console.WriteLine("366");
+                                //////Console.WriteLine("366");
                                 d = yd - DaysToMonth366[m] + 1;
                             }
                             else
@@ -1975,12 +2018,12 @@ namespace StarCalendar
                     }
                     else
                     {
-                        ////Console.WriteLine(GregLeap(Year));
+                        //////Console.WriteLine(GregLeap(Year));
                         int i = 0;
                         bool found = false;
                         while (!found)
                         {
-                            ////Console.WriteLine(DaysToMonth366[i]);
+                            //////Console.WriteLine(DaysToMonth366[i]);
                             if (DaysToMonth365[i] > yd)
                             {
                                 m = i - 1;
@@ -1993,24 +2036,24 @@ namespace StarCalendar
                             }
                         }
                     }
-                    ////Console.WriteLine(Year + " " + m + " " + d + " ");
+                    //////Console.WriteLine(Year + " " + m + " " + d + " ");
                     //throw new NotImplementedException();
                     if (d == 0)
                     {
                         throw new NotImplementedException();
                     }
                     m++;
-                    if (this > c.netstart)
+                    if (this > ADStart)
                     {
-                        ////Console.WriteLine("TEST");
+                        //////Console.WriteLine("TEST");
                         year++;
                     }
                     return new int[] { year, m, d };
                 }
-                else // this > c.netstart
+                else // this > ADStart
                 {
                     int year;
-                    int t = (this - c.netstart) / c.Day;
+                    int t = (this - ADStart) / StarDate.DayTime;
                     int q = t / DaysPer400Years;
                     t %= DaysPer400Years;
                     int s = t / DaysPer100Years;
@@ -2040,12 +2083,12 @@ namespace StarCalendar
                     bool found = false;
                     while (!found)
                     {
-                        ////Console.WriteLine(DaysToMonth366[i]);
+                        //////Console.WriteLine(DaysToMonth366[i]);
                         if (months[i] > t)
                         {
                             m = i - 1;
                             found = true;
-                            ////Console.WriteLine("366");
+                            //////Console.WriteLine("366");
                             d = t - months[m] + 1;
                         }
                         else
@@ -2287,7 +2330,7 @@ namespace StarCalendar
             //    throw new ArgumentOutOfRangeException(); //("_ticks", ); //Environment.GetResourceString("ArgumentOutOfRange_StarDateBadTicks"));
             //Contract.EndContractBlock();
             dateData = (UInt64)ticks;
-            timeZone = StarZone.Local;
+            _timeZone = StarZone.Local;
             errorData = 0;
         }
 
@@ -2295,7 +2338,7 @@ namespace StarCalendar
         //private StarDate(BigInteger dateData)
         //{
         //    this.dateData = dateData;
-        //    this.timeZone = Local;
+        //    this._timeZone = Local;
         //    errorData = 0;
         //}
 
@@ -2325,7 +2368,7 @@ namespace StarCalendar
             StarDate dt = digitparams(year);
             dateData = dt.dateData;
             errorData = dt.errorData;
-            timeZone = dt.timeZone;
+            _timeZone = dt.TimeZone;
         }
 
         public StarDate(int year, int month)
@@ -2333,7 +2376,7 @@ namespace StarCalendar
             StarDate dt = digitparams(year, month);
             dateData = dt.dateData;
             errorData = dt.errorData;
-            timeZone = dt.timeZone;
+            _timeZone = dt.TimeZone;
         }
 
         public StarDate(int year, int month, int day)
@@ -2341,35 +2384,35 @@ namespace StarCalendar
             StarDate dt = digitparams(year, month, day);
             dateData = dt.dateData;
             errorData = dt.errorData;
-            timeZone = dt.timeZone;
+            _timeZone = dt.TimeZone;
         }
         public StarDate(int year, int month, int day, int hour)
         {
             StarDate dt = digitparams(year, month, day, hour);
             dateData = dt.dateData;
             errorData = dt.errorData;
-            timeZone = dt.timeZone;
+            _timeZone = dt.TimeZone;
         }
         public StarDate(int year, int month, int day, int hour, int minute)
         {
             StarDate dt = digitparams(year, month, day, hour, minute);
             dateData = dt.dateData;
             errorData = dt.errorData;
-            timeZone = dt.timeZone;
+            _timeZone = dt.TimeZone;
         }
         public StarDate(int year, int month, int day, int hour, int minute, int second)
         {
             StarDate dt = digitparams(year, month, day, hour, minute, second);
             dateData = dt.dateData;
             errorData = dt.errorData;
-            timeZone = dt.timeZone;
+            _timeZone = dt.TimeZone;
         }
         public StarDate(int year, int month, int day, int hour, int minute, int second, int millisecond)
         {
             StarDate dt = digitparams(year, month, day, hour, minute, second, millisecond);
             dateData = dt.dateData;
             errorData = dt.errorData;
-            timeZone = dt.timeZone;
+            _timeZone = dt.TimeZone;
         }
 
         public StarDate(int year, int month, int day, int hour, int minute, int second, int millisecond, int ticks)
@@ -2377,256 +2420,21 @@ namespace StarCalendar
             StarDate dt = digitparams(year, month, day, hour, minute, second, millisecond, ticks);
             dateData = dt.dateData;
             errorData = dt.errorData;
-            timeZone = dt.timeZone;
+            _timeZone = dt.TimeZone;
         }
-
-        //public StarDate(int Year, int month, int day, int hour, int minute, int second, DateTimeKind kind)
-        //{
-        //    if (kind < DateTimeKind.Unspecified || kind > DateTimeKind.Local)
-        //    {
-        //        throw new ArgumentException(); //); //Environment.GetResourceString("Argument_InvalidDateTimeKind"), "kind");
-        //    }
-        //    Contract.EndContractBlock();
-
-        //    if (second == 60 && s_isLeapSecondsSupportedSystem && IsValidTimeWithLeapSeconds(Year, month, day, hour, minute, second, kind))
-        //    {
-        //        // if we have leap second (second = 60) then we'll need to check if it is valid time.
-        //        // if it is valid, then we adjust the second to 59 so StarDate will consider this second is last second
-        //        // in the specified minute.
-        //        // if it is not valid time, we'll eventually throw.
-        //        second = 59;
-        //    }
-
-        //    BigInteger ticks = DateToTicks(Year, month, day) + TimeToTicks(hour, minute, second);
-        //    this.dateData = ((UInt64)ticks | ((UInt64)kind << KindShift));
-        //}
-
-        // Constructs a StarDate from a given Year, month, day, hour,
-        // minute, and second for the specified calendar.
-        //
-        //public StarDate(int Year, int month, int day, int hour, int minute, int second, Calendar calendar)
-        //{
-        //    if (calendar == null)
-        //        throw new ArgumentNullException("calendar");
-        //    Contract.EndContractBlock();
-
-        //    int originalSecond = second;
-        //    if (second == 60 && s_isLeapSecondsSupportedSystem)
-        //    {
-        //        // Reset the second value now and then we'll validate it later when we get the final Gregorian date.
-        //        second = 59;
-        //    }
-
-        //    this.dateData = (UInt64)calendar.ToStarDate(Year, month, day, hour, minute, second, 0).Ticks;
-
-        //    if (originalSecond == 60)
-        //    {
-        //        StarDate dt = new StarDate(dateData);
-        //        if (!IsValidTimeWithLeapSeconds(dt.Year, dt.Month, dt.Day, dt.Hour, dt.Minute, 60, DateTimeKind.Unspecified))
-        //        {
-        //            throw new ArgumentOutOfRangeException(); //(null, ); //Environment.GetResourceString("ArgumentOutOfRange_BadHourMinuteSecond"));
-        //        }
-        //    }
-        //}
-
-        // Constructs a StarDate from a given Year, month, day, hour,
-        // minute, and second.
-        //
-        //public StarDate(int Year, int month, int day, int hour, int minute, int second, int millisecond)
-        //{
-        //    if (millisecond < 0 || millisecond >= MillisPerSecond)
-        //    {
-        //        throw new ArgumentOutOfRangeException(); //("millisecond", ); //Environment.GetResourceString("ArgumentOutOfRange_Range", 0, MillisPerSecond - 1));
-        //    }
-        //    Contract.EndContractBlock();
-
-        //    if (second == 60 && s_isLeapSecondsSupportedSystem && IsValidTimeWithLeapSeconds(Year, month, day, hour, minute, second, DateTimeKind.Unspecified))
-        //    {
-        //        // if we have leap second (second = 60) then we'll need to check if it is valid time.
-        //        // if it is valid, then we adjust the second to 59 so StarDate will consider this second is last second
-        //        // in the specified minute.
-        //        // if it is not valid time, we'll eventually throw.
-        //        second = 59;
-        //    }
-
-        //    BigInteger ticks = DateToTicks(Year, month, day) + TimeToTicks(hour, minute, second);
-        //    ticks += millisecond * TicksPerMillisecond;
-        //    if (ticks < MinTicks || ticks > MaxTicks)
-        //        throw new ArgumentException(); //); //Environment.GetResourceString("Arg_StarDateRange"));
-        //    this.dateData = (UInt64)ticks;
-        //}
-
-        //public StarDate(int Year, int month, int day, int hour, int minute, int second, int millisecond, DateTimeKind kind)
-        //{
-        //    if (millisecond < 0 || millisecond >= MillisPerSecond)
-        //    {
-        //        throw new ArgumentOutOfRangeException(); //("millisecond", ); //Environment.GetResourceString("ArgumentOutOfRange_Range", 0, MillisPerSecond - 1));
-        //    }
-        //    if (kind < DateTimeKind.Unspecified || kind > DateTimeKind.Local)
-        //    {
-        //        throw new ArgumentException(); //); //Environment.GetResourceString("Argument_InvalidDateTimeKind"), "kind");
-        //    }
-        //    Contract.EndContractBlock();
-
-        //    if (second == 60 && s_isLeapSecondsSupportedSystem && IsValidTimeWithLeapSeconds(Year, month, day, hour, minute, second, kind))
-        //    {
-        //        // if we have leap second (second = 60) then we'll need to check if it is valid time.
-        //        // if it is valid, then we adjust the second to 59 so StarDate will consider this second is last second
-        //        // in the specified minute.
-        //        // if it is not valid time, we'll eventually throw.
-        //        second = 59;
-        //    }
-
-        //    BigInteger ticks = DateToTicks(Year, month, day) + TimeToTicks(hour, minute, second);
-        //    ticks += millisecond * TicksPerMillisecond;
-        //    if (ticks < MinTicks || ticks > MaxTicks)
-        //        throw new ArgumentException(); //); //Environment.GetResourceString("Arg_StarDateRange"));
-        //    this.dateData = ((UInt64)ticks | ((UInt64)kind << KindShift));
-        //}
-
-        // Constructs a StarDate from a given Year, month, day, hour,
-        // minute, and second for the specified calendar.
-        //
-        //public StarDate(int Year, int month, int day, int hour, int minute, int second, int millisecond, Calendar calendar)
-        //{
-        //    if (calendar == null)
-        //        throw new ArgumentNullException("calendar");
-        //    if (millisecond < 0 || millisecond >= MillisPerSecond)
-        //    {
-        //        throw new ArgumentOutOfRangeException(); //("millisecond", ); //Environment.GetResourceString("ArgumentOutOfRange_Range", 0, MillisPerSecond - 1));
-        //    }
-        //    Contract.EndContractBlock();
-
-        //    int originalSecond = second;
-        //    if (second == 60 && s_isLeapSecondsSupportedSystem)
-        //    {
-        //        // Reset the second value now and then we'll validate it later when we get the final Gregorian date.
-        //        second = 59;
-        //    }
-
-        //    BigInteger ticks = calendar.ToStarDate(Year, month, day, hour, minute, second, 0).Ticks;
-        //    ticks += millisecond * TicksPerMillisecond;
-        //    if (ticks < MinTicks || ticks > MaxTicks)
-        //        throw new ArgumentException(); //); //Environment.GetResourceString("Arg_StarDateRange"));
-        //    this.dateData = (UInt64)ticks;
-
-        //    if (originalSecond == 60)
-        //    {
-        //        StarDate dt = new StarDate(dateData);
-        //        if (!IsValidTimeWithLeapSeconds(dt.Year, dt.Month, dt.Day, dt.Hour, dt.Minute, 60, DateTimeKind.Unspecified))
-        //        {
-        //            throw new ArgumentOutOfRangeException(); //(null, ); //Environment.GetResourceString("ArgumentOutOfRange_BadHourMinuteSecond"));
-        //        }
-        //    }
-        //}
-
-        //public StarDate(int Year, int month, int day, int hour, int minute, int second, int millisecond, Calendar calendar, DateTimeKind kind)
-        //{
-        //    if (calendar == null)
-        //        throw new ArgumentNullException("calendar");
-        //    if (millisecond < 0 || millisecond >= MillisPerSecond)
-        //    {
-        //        throw new ArgumentOutOfRangeException(); //("millisecond", ); //Environment.GetResourceString("ArgumentOutOfRange_Range", 0, MillisPerSecond - 1));
-        //    }
-        //    if (kind < DateTimeKind.Unspecified || kind > DateTimeKind.Local)
-        //    {
-        //        throw new ArgumentException(); //); //Environment.GetResourceString("Argument_InvalidDateTimeKind"), "kind");
-        //    }
-        //    Contract.EndContractBlock();
-
-        //    int originalSecond = second;
-        //    if (second == 60 && s_isLeapSecondsSupportedSystem)
-        //    {
-        //        // Reset the second value now and then we'll validate it later when we get the final Gregorian date.
-        //        second = 59;
-        //    }
-
-        //    BigInteger ticks = calendar.ToStarDate(Year, month, day, hour, minute, second, 0).Ticks;
-        //    ticks += millisecond * TicksPerMillisecond;
-        //    if (ticks < MinTicks || ticks > MaxTicks)
-        //        throw new ArgumentException(); //); //Environment.GetResourceString("Arg_StarDateRange"));
-
-        //    this.dateData = ((UInt64)ticks | ((UInt64)kind << KindShift));
-
-        //    if (originalSecond == 60)
-        //    {
-        //        StarDate dt = new StarDate(dateData);
-        //        if (!IsValidTimeWithLeapSeconds(dt.Year, dt.Month, dt.Day, dt.Hour, dt.Minute, 60, kind))
-        //        {
-        //            throw new ArgumentOutOfRangeException(); //(null, ); //Environment.GetResourceString("ArgumentOutOfRange_BadHourMinuteSecond"));
-        //        }
-        //    }
-        //}
-
-        //private StarDate(SerializationInfo info, StreamingContext context)
-        //{
-        //    throw new NotImplementedException();
-        //    if (info == null)
-        //        throw new ArgumentNullException("info");
-        //    Contract.EndContractBlock();
-
-        //    Boolean foundTicks = false;
-        //    Boolean foundDateData = false;
-        //    Int64 serializedTicks = 0;
-        //    UInt64 serializedDateData = 0;
-
-
-        //    // Get the data
-        //    SerializationInfoEnumerator enumerator = info.GetEnumerator();
-        //    while (enumerator.MoveNext())
-        //    {
-        //        switch (enumerator.Name)
-        //        {
-        //            case TicksField:
-        //                serializedTicks = Convert.ToInt64(enumerator.Value, CultureInfo.InvariantCulture);
-        //                foundTicks = true;
-        //                break;
-        //            case DateDataField:
-        //                serializedDateData = Convert.ToUInt64(enumerator.Value, CultureInfo.InvariantCulture);
-        //                foundDateData = true;
-        //                break;
-        //            default:
-        //                // Ignore other fields for forward compatability.
-        //                break;
-        //        }
-        //    }
-        //    if (foundDateData)
-        //    {
-        //        this.dateData = serializedDateData;
-        //    }
-        //    else if (foundTicks)
-        //    {
-        //        this.dateData = (UInt64)serializedTicks;
-        //    }
-        //    else
-        //    {
-        //        throw new SerializationException(); //); //Environment.GetResourceString("Serialization_MissingStarDateData"));
-        //    }
-        //    BigInteger ticks = InternalTicks;
-        //    if (ticks < MinTicks || ticks > MaxTicks)
-        //    {
-        //        throw new SerializationException(); //); //Environment.GetResourceString("Serialization_StarDateTicksOutOfRange"));
-        //    }
-        //}
-
-        //public StarDate(BigInteger ticks, StarZone uTC1) : this(ticks)
-        //{
-        //    this.timeZone = uTC1;
-        //    errorData = 0;
-        //}
 
         public StarDate(BigInteger ticks, BigInteger error, StarZone zone)
         {
             dateData = ticks;
             errorData = error;
-            timeZone = zone;
+            _timeZone = zone;
         }
 
         internal BigInteger InternalTicks
         {
             get
             {
-                return dateData & ticksMask;
+                return dateData;
             }
         }
 
@@ -2760,11 +2568,11 @@ namespace StarCalendar
         public StarDate AddTicks(long value)
         {
             BigInteger ticks = InternalTicks;
-            if (value > MaxTicks - ticks || value < MinTicks - ticks)
-            {
-                throw new ArgumentOutOfRangeException(); //("value", ); //Environment.GetResourceString("ArgumentOutOfRange_DateArithmetic"));
-            }
-            return new StarDate((UInt64)(ticks + value) | InternalKind);
+            //if (value > MaxTicks - ticks || value < MinTicks - ticks)
+            //{
+            //    throw new ArgumentOutOfRangeException(); //("value", ); //Environment.GetResourceString("ArgumentOutOfRange_DateArithmetic"));
+            //}
+            return new StarDate((ticks + value), errorData, TimeZone);
         }
 
         // Returns the StarDate resulting from adding the given number of
@@ -2986,7 +2794,7 @@ namespace StarCalendar
 
         public Boolean IsDaylightSavingTime()
         {
-            return timeZone.IsDaylightSavingTime(this);
+            return TimeZone.IsDaylightSavingTime(this);
         }
 
         //public static StarDate SpecifyKind(StarDate value, DateTimeKind kind)
@@ -3032,7 +2840,7 @@ namespace StarCalendar
             internal set
             {
                 int diff = value - this.Day;
-                this.atomic += diff * c.Day;
+                this.atomic += diff * StarDate.DayTime;
             }
         }
 
@@ -3065,7 +2873,7 @@ namespace StarCalendar
             internal set
             {
                 int diff = value - this.DayOfYear;
-                this.atomic += diff * c.Day;
+                this.atomic += diff * StarDate.DayTime;
             }
         }
 
@@ -3117,7 +2925,7 @@ namespace StarCalendar
         // Returns the millisecond part of this StarDate. The returned value
         // is an integer between 0 and 999.
         //
-        
+
 
         // Returns the minute part of this StarDate. The returned value is
         // an integer between 0 and 59.
@@ -3134,7 +2942,7 @@ namespace StarCalendar
             {
                 int h = value;
                 int diff = h - this.Minute;
-                this.atomic += diff * c.Minute;
+                this.atomic += diff * StarDate.MinuteTime;
             }
         }
 
@@ -3151,7 +2959,7 @@ namespace StarCalendar
             internal set
             {
                 int diff = value - this.Month;
-                this.atomic += diff * c.month;
+                this.atomic += diff * StarDate.month;
             }
         }
 
@@ -3235,7 +3043,7 @@ namespace StarCalendar
             {
                 StarDate dt = new StarDate(ticks);
 
-                int billion, million, year, month, day;
+                int year, month, day;
                 dt.GetDatePart(out year, out month, out day);
 
                 wYear = (ushort)year;
@@ -3358,7 +3166,7 @@ namespace StarCalendar
             internal set
             {
                 int diff = value - this.Second;
-                this.atomic += diff * c.Second;
+                this.atomic += diff * StarDate.SecondTime;
             }
         }
 
@@ -3430,7 +3238,7 @@ namespace StarCalendar
         {
             get
             {
-                return timeZone.LocalDay;
+                return TimeZone.LocalDay;
             }
         }
 
@@ -3483,7 +3291,7 @@ namespace StarCalendar
         {
             get
             {
-                return c.netstart.Ticks;
+                return ADStart.Ticks;
             }
         }
 
@@ -3492,11 +3300,11 @@ namespace StarCalendar
         {
             get
             {
-                if (timeZone == Local)
+                if (TimeZone == Local)
                 {
                     return DateTimeKind.Local;
                 }
-                else if (timeZone == UTC)
+                else if (TimeZone == UTC)
                 {
                     return DateTimeKind.Utc;
                 }
@@ -3510,11 +3318,11 @@ namespace StarCalendar
             {
                 if (value == DateTimeKind.Local)
                 {
-                    this.timeZone = Local;
+                    this.TimeZone = Local;
                 }
                 else if (value == DateTimeKind.Utc)
                 {
-                    this.timeZone = UTC;
+                    this.TimeZone = UTC;
                 }
             }
         }
@@ -3523,7 +3331,7 @@ namespace StarCalendar
         {
             get
             {
-                return c.netstart;
+                return ADStart;
             }
         }
 
@@ -3531,7 +3339,7 @@ namespace StarCalendar
         {
             get
             {
-                return c.manu;
+                return StarDate.manu;
             }
         }
 
@@ -3540,28 +3348,28 @@ namespace StarCalendar
             get
             {
                 List<string> a = new List<string>();
-                a.Add(("MM/dd/yyyy")); // Console.WriteLine(aDate.ToString("MM/dd/yyyy")); // Console.WriteLine(bDate.ToString("MM/dd/yyyy")); //
-                a.Add(("dddd, dd MMMM yyyy")); // Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy")); // Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy")); //
-                a.Add(("dddd, dd MMMM yyyy")); // Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy")); // Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy")); //
-                a.Add(("dddd, dd MMMM yyyy")); // Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy")); // Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy")); //
-                a.Add(("dddd, dd MMMM yyyy")); // Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy")); // Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy")); //
-                a.Add(("dddd, dd MMMM yyyy")); // Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy")); // Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy")); //
-                a.Add(("dddd, dd MMMM yyyy HH:mm:ss")); // Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy HH:mm:ss")); // Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy HH:mm:ss")); //
-                a.Add(("MM/dd/yyyy HH:mm")); // Console.WriteLine(aDate.ToString("MM/dd/yyyy HH:mm")); // Console.WriteLine(bDate.ToString("MM/dd/yyyy HH:mm")); //
-                a.Add(("MM/dd/yyyy hh:mm tt")); // Console.WriteLine(aDate.ToString("MM/dd/yyyy hh:mm tt")); // Console.WriteLine(bDate.ToString("MM/dd/yyyy hh:mm tt")); //
-                a.Add(("MM/dd/yyyy H:mm")); // Console.WriteLine(aDate.ToString("MM/dd/yyyy H:mm")); // Console.WriteLine(bDate.ToString("MM/dd/yyyy H:mm")); //
-                a.Add(("MM/dd/yyyy h:mm tt")); // Console.WriteLine(aDate.ToString("MM/dd/yyyy h:mm tt")); // Console.WriteLine(bDate.ToString("MM/dd/yyyy h:mm tt")); //
-                a.Add(("MM/dd/yyyy HH:mm:ss")); // Console.WriteLine(aDate.ToString("MM/dd/yyyy HH:mm:ss")); // Console.WriteLine(bDate.ToString("MM/dd/yyyy HH:mm:ss")); //
-                a.Add(("MMMM dd")); // Console.WriteLine(aDate.ToString("MMMM dd")); // Console.WriteLine(bDate.ToString("MMMM dd")); //
-                a.Add(("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss.fffffffK")); // Console.WriteLine(aDate.ToString("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss.fffffffK")); // Console.WriteLine(bDate.ToString("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss.fffffffK")); //
-                a.Add(("ddd, dd MMM yyy HH’:’mm’:’ss ‘GMT’")); // Console.WriteLine(aDate.ToString("ddd, dd MMM yyy HH’:’mm’:’ss ‘GMT’")); // Console.WriteLine(bDate.ToString("ddd, dd MMM yyy HH’:’mm’:’ss ‘GMT’")); //
-                a.Add(("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss")); // Console.WriteLine(aDate.ToString("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss")); // Console.WriteLine(bDate.ToString("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss")); //
-                a.Add(("HH:mm")); // Console.WriteLine(aDate.ToString("HH:mm")); // Console.WriteLine(bDate.ToString("HH:mm")); //
-                a.Add(("hh:mm tt")); // Console.WriteLine(aDate.ToString("hh:mm tt")); // Console.WriteLine(bDate.ToString("hh:mm tt")); //
-                a.Add(("H:mm")); // Console.WriteLine(aDate.ToString("H:mm")); // Console.WriteLine(bDate.ToString("H:mm")); //
-                a.Add(("h:mm tt")); // Console.WriteLine(aDate.ToString("h:mm tt")); // Console.WriteLine(bDate.ToString("h:mm tt")); //
-                a.Add(("HH:mm:ss")); // Console.WriteLine(aDate.ToString("HH:mm:ss")); // Console.WriteLine(bDate.ToString("HH:mm:ss")); //
-                a.Add(("yyyy MMMM")); // Console.WriteLine(aDate.ToString("yyyy MMMM")); // Console.WriteLine(bDate.ToString("yyyy MMMM")); //
+                a.Add(("MM/dd/yyyy")); // //Console.WriteLine(aDate.ToString("MM/dd/yyyy")); // //Console.WriteLine(bDate.ToString("MM/dd/yyyy")); //
+                a.Add(("dddd, dd MMMM yyyy")); // //Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy")); // //Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy")); //
+                a.Add(("dddd, dd MMMM yyyy")); // //Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy")); // //Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy")); //
+                a.Add(("dddd, dd MMMM yyyy")); // //Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy")); // //Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy")); //
+                a.Add(("dddd, dd MMMM yyyy")); // //Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy")); // //Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy")); //
+                a.Add(("dddd, dd MMMM yyyy")); // //Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy")); // //Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy")); //
+                a.Add(("dddd, dd MMMM yyyy HH:mm:ss")); // //Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy HH:mm:ss")); // //Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy HH:mm:ss")); //
+                a.Add(("MM/dd/yyyy HH:mm")); // //Console.WriteLine(aDate.ToString("MM/dd/yyyy HH:mm")); // //Console.WriteLine(bDate.ToString("MM/dd/yyyy HH:mm")); //
+                a.Add(("MM/dd/yyyy hh:mm tt")); // //Console.WriteLine(aDate.ToString("MM/dd/yyyy hh:mm tt")); // //Console.WriteLine(bDate.ToString("MM/dd/yyyy hh:mm tt")); //
+                a.Add(("MM/dd/yyyy H:mm")); // //Console.WriteLine(aDate.ToString("MM/dd/yyyy H:mm")); // //Console.WriteLine(bDate.ToString("MM/dd/yyyy H:mm")); //
+                a.Add(("MM/dd/yyyy h:mm tt")); // //Console.WriteLine(aDate.ToString("MM/dd/yyyy h:mm tt")); // //Console.WriteLine(bDate.ToString("MM/dd/yyyy h:mm tt")); //
+                a.Add(("MM/dd/yyyy HH:mm:ss")); // //Console.WriteLine(aDate.ToString("MM/dd/yyyy HH:mm:ss")); // //Console.WriteLine(bDate.ToString("MM/dd/yyyy HH:mm:ss")); //
+                a.Add(("MMMM dd")); // //Console.WriteLine(aDate.ToString("MMMM dd")); // //Console.WriteLine(bDate.ToString("MMMM dd")); //
+                a.Add(("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss.fffffffK")); // //Console.WriteLine(aDate.ToString("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss.fffffffK")); // //Console.WriteLine(bDate.ToString("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss.fffffffK")); //
+                a.Add(("ddd, dd MMM yyy HH’:’mm’:’ss ‘GMT’")); // //Console.WriteLine(aDate.ToString("ddd, dd MMM yyy HH’:’mm’:’ss ‘GMT’")); // //Console.WriteLine(bDate.ToString("ddd, dd MMM yyy HH’:’mm’:’ss ‘GMT’")); //
+                a.Add(("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss")); // //Console.WriteLine(aDate.ToString("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss")); // //Console.WriteLine(bDate.ToString("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss")); //
+                a.Add(("HH:mm")); // //Console.WriteLine(aDate.ToString("HH:mm")); // //Console.WriteLine(bDate.ToString("HH:mm")); //
+                a.Add(("hh:mm tt")); // //Console.WriteLine(aDate.ToString("hh:mm tt")); // //Console.WriteLine(bDate.ToString("hh:mm tt")); //
+                a.Add(("H:mm")); // //Console.WriteLine(aDate.ToString("H:mm")); // //Console.WriteLine(bDate.ToString("H:mm")); //
+                a.Add(("h:mm tt")); // //Console.WriteLine(aDate.ToString("h:mm tt")); // //Console.WriteLine(bDate.ToString("h:mm tt")); //
+                a.Add(("HH:mm:ss")); // //Console.WriteLine(aDate.ToString("HH:mm:ss")); // //Console.WriteLine(bDate.ToString("HH:mm:ss")); //
+                a.Add(("yyyy MMMM")); // //Console.WriteLine(aDate.ToString("yyyy MMMM")); // //Console.WriteLine(bDate.ToString("yyyy MMMM")); //
                 string[] vs = new string[a.Count];
                 int i = 0;
                 while (i < vs.Length)
@@ -3577,13 +3385,13 @@ namespace StarCalendar
         {
             get
             {
-                return (this - c.julian) / c.Day;
+                return (this - StarDate.julian) / StarDate.DayTime;
             }
 
             set
             {
                 int diff = value - this.Julian;
-                this += diff * c.Day;
+                this += diff * StarDate.DayTime;
             }
         }
 
@@ -3615,14 +3423,32 @@ namespace StarCalendar
             }
         }
 
+        public static StarDate Maya { get => maya; internal set => maya1 = value; }
+        public StarZone TimeZone
+        {
+            get
+            {
+                if (_timeZone == null)
+                {
+                    _timeZone = UTC;
+                }
+                return _timeZone;
+            }
+
+            set
+            {
+                _timeZone = value;
+            }
+        }
+
         public static List<StarDate> TestYear()
         {
             List<StarDate> stars = new List<StarDate>();
-            StarDate dt = c.maya - c.week * 54;
-            while (dt < c.maya)
+            StarDate dt = StarDate.maya - StarDate.week * 54;
+            while (dt < StarDate.maya)
             {
                 stars.Add(dt);
-                dt += c.Day;
+                dt += StarDate.DayTime;
             }
             return stars;
         }
@@ -3739,7 +3565,7 @@ namespace StarCalendar
         // double date.
         public double ToOADate()
         {
-            return TicksToOADate((long)(InternalTicks - c.netstart.Ticks));
+            return TicksToOADate((long)(InternalTicks - ADStart.Ticks));
         }
 
         public long ToFileTime()
@@ -3780,35 +3606,35 @@ namespace StarCalendar
         private StarDate ToZone(StarZone zone)
         {
             StarDate dt = this;
-            dt.timeZone = zone;
+            dt.TimeZone = zone;
             return dt;
         }
 
         public String ToLongDateString()
         {
             Contract.Ensures(Contract.Result<String>() != null);
-            ////Console.WriteLine(sdfi.CultureName);
+            //////Console.WriteLine(sdfi.CultureName);
             return StarDateFormat.Format(this, "D", StarCulture.CurrentCulture);
         }
 
         public String ToLongTimeString()
         {
             Contract.Ensures(Contract.Result<String>() != null);
-            ////Console.WriteLine(sdfi.CultureName);
+            //////Console.WriteLine(sdfi.CultureName);
             return StarDateFormat.Format(this, "T", StarCulture.CurrentCulture);
         }
 
         public String ToShortDateString()
         {
             Contract.Ensures(Contract.Result<String>() != null);
-            ////Console.WriteLine(sdfi.CultureName);
+            //////Console.WriteLine(sdfi.CultureName);
             return StarDateFormat.Format(this, "d", StarCulture.CurrentCulture);
         }
 
         public String ToShortTimeString()
         {
             Contract.Ensures(Contract.Result<String>() != null);
-            //Console.WriteLine(this.CultureName);
+            ////Console.WriteLine(this.CultureName);
             return StarDateFormat.Format(this, "t", StarCulture.CurrentCulture);
         }
 
@@ -4112,68 +3938,80 @@ namespace StarCalendar
             Time error = (dt2 - dt1) / 2;
             dt1 += error;
             dt1.error = error;
-            if (dt1.timeZone != dt2.timeZone)
+            if (dt1.TimeZone != dt2.TimeZone)
             {
-                dt1.timeZone = UTC;
+                dt1.TimeZone = UTC;
             }
             return dt1;
         }
 
-        internal static StarDate fromdigits(int year, int month, int day, int hour, int min, int second, int millisecond, int ticks)
+        internal static StarDate fromdigits(StarZone z, int year, int month, int day, int hour, int min, int second, int millisecond, int ticks)
         {
             StarDate dt = Manu;
-            dt += year * c.Year;
-            dt += month * c.month;
-            dt += day * c.Day;
-            dt += hour * c.Hour;
-            dt += min * c.Minute;
-            dt += second * c.Second;
-            dt += millisecond * c.Millisecond;
-            dt += ticks * c.Tick;
+            int y78 = year / 78;
+            year -= y78 * 78;
+            int y6 = year / 6;
+            year -= y6 * 6;
+            dt += y78 * Seventy_Eight;
+            dt += y6 * Sixyear;
+            dt += year * YearTime;
+            dt += month * StarDate.month;
+            dt += day * StarDate.DayTime;
+            dt += hour * StarDate.HourTime;
+            dt += min * StarDate.MinuteTime;
+            dt += second * StarDate.SecondTime;
+            dt += millisecond * StarDate.MillisecondTime;
+            dt += new Time(ticks);
+            dt -= z.Offset(dt);
+            //throw new NotImplementedException();
             return dt;
         }
 
         internal static StarDate digitparams(params int[] vs)
         {
-            return digitparams(UTC, vs);
+            return digitparams(Local, vs);
         }
 
         internal static StarDate digitparams(StarZone z, params int[] vs)
         {
             StarDate dt1;
             StarDate dt2;
+            foreach (int entry in vs)
+            {
+                //Console.WriteLine(entry);
+            }
             switch (vs.Length)
             {
                 case 1:
-                    dt1 = fromdigits(vs[0], 0, 0, 0, 0, 0, 0, 0);
-                    dt2 = fromdigits(vs[0] + 1, 0, 0, 0, 0, 0, 0, 0);
+                    dt1 = fromdigits(z, vs[0], 0, 0, 0, 0, 0, 0, 0);
+                    dt2 = fromdigits(z, vs[0] + 1, 0, 0, 0, 0, 0, 0, 0);
                     return Between(dt1, dt2);
                 case 2:
-                    dt1 = fromdigits(vs[0], vs[1], 0, 0, 0, 0, 0, 0);
-                    dt2 = fromdigits(vs[0], vs[1] + 1, 0, 0, 0, 0, 0, 0);
+                    dt1 = fromdigits(z, vs[0], vs[1], 0, 0, 0, 0, 0, 0);
+                    dt2 = fromdigits(z, vs[0], vs[1] + 1, 0, 0, 0, 0, 0, 0);
                     return Between(dt1, dt2);
                 case 3:
-                    dt1 = fromdigits(vs[0], vs[1], vs[2], 0, 0, 0, 0, 0);
-                    dt2 = fromdigits(vs[0], vs[1], vs[2] + 1, 0, 0, 0, 0, 0);
+                    dt1 = fromdigits(z, vs[0], vs[1], vs[2], 0, 0, 0, 0, 0);
+                    dt2 = fromdigits(z, vs[0], vs[1], vs[2] + 1, 0, 0, 0, 0, 0);
                     return Between(dt1, dt2);
                 case 4:
-                    dt1 = fromdigits(vs[0], vs[1], vs[2], vs[3], 0, 0, 0, 0);
-                    dt2 = fromdigits(vs[0], vs[1], vs[2], vs[3] + 1, 0, 0, 0, 0);
+                    dt1 = fromdigits(z, vs[0], vs[1], vs[2], vs[3], 0, 0, 0, 0);
+                    dt2 = fromdigits(z, vs[0], vs[1], vs[2], vs[3] + 1, 0, 0, 0, 0);
                     return Between(dt1, dt2);
                 case 5:
-                    dt1 = fromdigits(vs[0], vs[1], vs[2], vs[3], vs[4], 0, 0, 0);
-                    dt2 = fromdigits(vs[0], vs[1], vs[2], vs[3], vs[4] + 1, 0, 0, 0);
+                    dt1 = fromdigits(z, vs[0], vs[1], vs[2], vs[3], vs[4], 0, 0, 0);
+                    dt2 = fromdigits(z, vs[0], vs[1], vs[2], vs[3], vs[4] + 1, 0, 0, 0);
                     return Between(dt1, dt2);
                 case 6:
-                    dt1 = fromdigits(vs[0], vs[1], vs[2], vs[3], vs[4], vs[5], 0, 0);
-                    dt2 = fromdigits(vs[0], vs[1], vs[2], vs[3], vs[4], vs[5] + 1, 0, 0);
+                    dt1 = fromdigits(z, vs[0], vs[1], vs[2], vs[3], vs[4], vs[5], 0, 0);
+                    dt2 = fromdigits(z, vs[0], vs[1], vs[2], vs[3], vs[4], vs[5] + 1, 0, 0);
                     return Between(dt1, dt2);
                 case 7:
-                    dt1 = fromdigits(vs[0], vs[1], vs[2], vs[3], vs[4], vs[5], vs[6], 0);
-                    dt2 = fromdigits(vs[0], vs[1], vs[2], vs[3], vs[4], vs[5], vs[6] + 1, 0);
+                    dt1 = fromdigits(z, vs[0], vs[1], vs[2], vs[3], vs[4], vs[5], vs[6], 0);
+                    dt2 = fromdigits(z, vs[0], vs[1], vs[2], vs[3], vs[4], vs[5], vs[6] + 1, 0);
                     return Between(dt1, dt2);
                 default:
-                    return fromdigits(vs[0], vs[1], vs[2], vs[3], vs[4], vs[5], vs[6], vs[7]);
+                    return fromdigits(z, vs[0], vs[1], vs[2], vs[3], vs[4], vs[5], vs[6], vs[7]);
             }
         }
 
@@ -4184,16 +4022,16 @@ namespace StarCalendar
 
         public static void TestFormat(StarDate dt, string v)
         {
-            Console.WriteLine(" ");
-            Console.WriteLine(v);
-            Console.WriteLine(dt.DateTime.ToString(v));
-            Console.WriteLine(dt.ToString(v));
-            Console.WriteLine(" ");
+            //Console.WriteLine(" ");
+            //Console.WriteLine(v);
+            //Console.WriteLine(dt.DateTime.ToString(v));
+            //Console.WriteLine(dt.ToString(v));
+            //Console.WriteLine(" ");
         }
 
         public static void PrintAllFormats()
         {
-            // Console.WriteLine(aDate.ToString("yyyy MMMM")); // Console.WriteLine(bDate.ToString("yyyy MMMM")); //
+            // //Console.WriteLine(aDate.ToString("yyyy MMMM")); // //Console.WriteLine(bDate.ToString("yyyy MMMM")); //
 
         }
 
@@ -4216,6 +4054,15 @@ namespace StarCalendar
         private StarDate(SerializationInfo serializationInfo, StreamingContext streamingContext)
         {
             throw new NotImplementedException();
+        }
+
+        private static StarDate AbstractDate(BigInteger bigInteger, int v, StarZone uTC)
+        {
+            StarDate dt = new StarDate();
+            dt.dateData = bigInteger;
+            dt.errorData = v;
+            dt._timeZone = UTC;
+            return dt;
         }
 
         //public StarDate(int Year, int month, int day, int hour, int minute, int second, int millisecond, StarZone z) : this(Year, month, day, hour, minute, second, millisecond)

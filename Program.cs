@@ -11,10 +11,8 @@ namespace StarCalendar
 
         static void Main(string[] args)
         {
-            Console.WriteLine(StarDate.Now.Year);
-            //Console.WriteLine(StarDate.Now.ToString());
-            //Console.WriteLine(StarDate.Now);
-            //StarDate.PrintAllFormats(StarDate.Now);
+            Console.WriteLine(StarDate.DefaultFormat);
+            Console.WriteLine(StarDate.UtcNow.ToString());
         }
     }
 }

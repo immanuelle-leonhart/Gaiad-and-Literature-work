@@ -72,7 +72,7 @@ namespace StarCalendar
     {
 
         internal string PlanetName = "Default Planet Name";
-        internal Time LocalDay = c.Day;
+        internal Time LocalDay = StarDate.DayTime;
         public Time start = new Time(0); //atomic time that movement starts
         public double[] speeds = new double[0];
         public BigInteger[] distanceTicks = new BigInteger[0]; //position, speed, acceleration, etc
@@ -86,8 +86,8 @@ namespace StarCalendar
         public static StarZone UTC = new StarZone(TimeZoneInfo.Utc);
         //public static StarZone Amaterasu = new StarZone("Amaterasu");
         //internal StarZone Sun = StarZone.Amaterasu;
-        //public static StarZone Terra = new StarZone("Terra", c.Day, StarZone.Amaterasu);
-        //public static StarZone Mars = new StarZone("Mars", c.Sol, StarZone.Amaterasu);
+        //public static StarZone Terra = new StarZone("Terra", StarDate.DayTime, StarZone.Amaterasu);
+        //public static StarZone Mars = new StarZone("Mars", StarDate.Sol, StarZone.Amaterasu);
         //public StarZone planet = StarZone.Terra;
         private TimeZoneInfo tz = TimeZoneInfo.Utc;
         private Time UTCOffset = new Time(0);
@@ -102,7 +102,7 @@ namespace StarCalendar
             this.PlanetName = "Terra";
         }
 
-        //public StarZone(TimeZoneInfo tz, string v, StarZone planet) : this(tz)
+        //public StarZone(TimeZoneInfo TimeZone, string v, StarZone planet) : this(TimeZone)
         //{
         //    this.displayName = v;
         //    this.planet = planet;
@@ -140,7 +140,7 @@ namespace StarCalendar
         //    {
         //        if (this.IsTerran)
         //        {
-        //            return new Time(this.tz.BaseUtcOffset);
+        //            return new Time(this.TimeZone.BaseUtcOffset);
         //        }
         //        else
         //        {
@@ -842,26 +842,26 @@ namespace StarCalendar
         //    {
         //        lock (this)
         //        {
-        //            StarZone timeZone = m_localTimeZone;
-        //            if (timeZone == null)
+        //            StarZone _timeZone = m_localTimeZone;
+        //            if (_timeZone == null)
         //            {
-        //                timeZone = StarZone.GetLocalTimeZone(this);
+        //                _timeZone = StarZone.GetLocalTimeZone(this);
 
         //                // this step is to break the reference equality
         //                // between StarZone.Local and a second time zone
         //                // such as "Pacific Standard Time"
-        //                timeZone = new StarZone(
-        //                                    timeZone.m_id,
-        //                                    timeZone.BaseUtcOffset,
-        //                                    timeZone.m_displayName,
-        //                                    timeZone.m_standardDisplayName,
-        //                                    timeZone.m_daylightDisplayName,
-        //                                    timeZone.m_adjustmentRules,
+        //                _timeZone = new StarZone(
+        //                                    _timeZone.m_id,
+        //                                    _timeZone.BaseUtcOffset,
+        //                                    _timeZone.m_displayName,
+        //                                    _timeZone.m_standardDisplayName,
+        //                                    _timeZone.m_daylightDisplayName,
+        //                                    _timeZone.m_adjustmentRules,
         //                                    false);
 
-        //                m_localTimeZone = timeZone;
+        //                m_localTimeZone = _timeZone;
         //            }
-        //            return timeZone;
+        //            return _timeZone;
         //        }
         //    }
 
@@ -869,12 +869,12 @@ namespace StarCalendar
         //    {
         //        get
         //        {
-        //            StarZone timeZone = m_localTimeZone;
-        //            if (timeZone == null)
+        //            StarZone _timeZone = m_localTimeZone;
+        //            if (_timeZone == null)
         //            {
-        //                timeZone = CreateLocal();
+        //                _timeZone = CreateLocal();
         //            }
-        //            return timeZone;
+        //            return _timeZone;
         //        }
         //    }
 
@@ -975,8 +975,8 @@ namespace StarCalendar
         }
 
         // used by GetUtcOffsetFromUtc (StarDate.Now, StarDate.ToLocalTime) for max/min whole-day range checks
-        private static StarDate s_maxDateOnly = new StarDate(9999, 12, 31);
-        private static StarDate s_minDateOnly = new StarDate(1, 1, 2);
+        //private static StarDate s_maxDateOnly = new StarDate(9999, 12, 31);
+        //private static StarDate s_minDateOnly = new StarDate(1, 1, 2);
         private StarZone utcTimeZone;
         //private Time BaseUtcOffset;
         private string standardDisplayName;
@@ -1905,16 +1905,16 @@ namespace StarCalendar
         // This check is only meant to be used for "Local".
         //
         [System.Security.SecurityCritical]  // auto-generated
-                                            //static private Boolean CheckDaylightSavingTimeNotSupported(Win32Native.StarZonermation timeZone)
+                                            //static private Boolean CheckDaylightSavingTimeNotSupported(Win32Native.StarZonermation _timeZone)
                                             //{
-                                            //    return (timeZone.DaylightDate.Year == timeZone.StandardDate.Year
-                                            //            && timeZone.DaylightDate.Month == timeZone.StandardDate.Month
-                                            //            && timeZone.DaylightDate.DayOfWeek == timeZone.StandardDate.DayOfWeek
-                                            //            && timeZone.DaylightDate.Day == timeZone.StandardDate.Day
-                                            //            && timeZone.DaylightDate.Hour == timeZone.StandardDate.Hour
-                                            //            && timeZone.DaylightDate.Minute == timeZone.StandardDate.Minute
-                                            //            && timeZone.DaylightDate.Second == timeZone.StandardDate.Second
-                                            //            && timeZone.DaylightDate.Millisecond == timeZone.StandardDate.Millisecond);
+                                            //    return (_timeZone.DaylightDate.Year == _timeZone.StandardDate.Year
+                                            //            && _timeZone.DaylightDate.Month == _timeZone.StandardDate.Month
+                                            //            && _timeZone.DaylightDate.DayOfWeek == _timeZone.StandardDate.DayOfWeek
+                                            //            && _timeZone.DaylightDate.Day == _timeZone.StandardDate.Day
+                                            //            && _timeZone.DaylightDate.Hour == _timeZone.StandardDate.Hour
+                                            //            && _timeZone.DaylightDate.Minute == _timeZone.StandardDate.Minute
+                                            //            && _timeZone.DaylightDate.Second == _timeZone.StandardDate.Second
+                                            //            && _timeZone.DaylightDate.Millisecond == _timeZone.StandardDate.Millisecond);
                                             //}
 
 
