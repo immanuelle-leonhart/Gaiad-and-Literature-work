@@ -12,10 +12,9 @@ namespace StarCalendar
 
         static void Main(string[] args)
         {
-            //Console.WriteLine(StarDate.Now.Year); Console.WriteLine(StarDate.Now.Month); Console.WriteLine(StarDate.Now.Day);
-            //Console.WriteLine(StarDate.Now.ToString()); Console.WriteLine(StarDate.Now);
-            Console.WriteLine(StarDate.Now);
             Console.WriteLine(StarDate.Now.ToString());
+            Console.WriteLine(StarDate.Now);
+            
             //System.Threading.Thread.CurrentThread.CurrentUICulture = new CultureInfo("ja-JP");
             //Console.WriteLine(DateTime.Now);
 
