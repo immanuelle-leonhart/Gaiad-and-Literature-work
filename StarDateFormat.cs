@@ -563,17 +563,7 @@ namespace StarCalendar
         //
         private static String FormatCustomized(StarDate StarDate, String format, StarCulture sdfi, Time offset)
         {
-            //////Console.WriteLine(sdfi.CultureName + " Cats");
-            //////Console.WriteLine("Breakpoint");
-            //StarCulture cal = sdfi.Calendar;
-            //StringBuilder result = StringBuilderCache.Acquire();
             StringBuilder result = new StringBuilder();
-            // This is a flag to indicate if we are format the dates using Hebrew calendar.
-
-
-            // This is a flag to indicate if we are formating hour/minute/second only.
-            bool bTimeOnly = true;
-
             int i = 0;
             int tokenLen, hour12;
 
@@ -590,11 +580,11 @@ namespace StarCalendar
                         result.Append(StarDate.billion);
                         break;
                     case 'g':
-                        tokenLen = ParseRepeatPattern(format, i, ch); 
+                        tokenLen = ParseRepeatPattern(format, i, ch);
                         result.Append(StarCulture.CurrentCulture.GetEraName(StarDate));
                         break;
                     case 'h':
-                        tokenLen = ParseRepeatPattern(format, i, ch); 
+                        tokenLen = ParseRepeatPattern(format, i, ch);
                         hour12 = StarDate.Hour % 12;
                         if (hour12 == 0)
                         {
@@ -603,7 +593,7 @@ namespace StarCalendar
                         FormatDigits(result, hour12, tokenLen);
                         break;
                     case 'H':
-                        tokenLen = ParseRepeatPattern(format, i, ch); 
+                        tokenLen = ParseRepeatPattern(format, i, ch);
                         FormatDigits(result, StarDate.Hour, tokenLen);
                         break;
                     case 'm':
@@ -617,18 +607,6 @@ namespace StarCalendar
                     case 'f':
                     case 'F':
                         tokenLen = ParseRepeatPattern(format, i, ch);
-
-                        //switch (tokenLen)
-                        //{
-                        //    case 1:
-                        //    case 2:
-                        //    case 3:
-                        //    case 4:
-                        //    case 5:
-                        //    default:
-                        //        //Console.WriteLine(tokenLen);
-                        //        throw new NotImplementedException();
-                        //}
 
                         if (tokenLen <= MaxSecondsFractionDigits)
                         {
@@ -674,7 +652,7 @@ namespace StarCalendar
                         }
                         break;
                     case 't':
-                        tokenLen = ParseRepeatPattern(format, i, ch); 
+                        tokenLen = ParseRepeatPattern(format, i, ch);
                         if (tokenLen == 1)
                         {
                             if (StarDate.Hour < 12)
@@ -700,16 +678,35 @@ namespace StarCalendar
                         //Console.WriteLine(result);
                         //throw new NotImplementedException();
                         break;
+                    case 'D':
+                        //
+                        // tokenLen == 1 : Two letter Day of Week
+                        // tokenLen == 2 : Day of week as a three-leter abbreviation.
+                        // tokenLen == 3 : Day of week as its full StarName.
+                        //
+                        tokenLen = ParseRepeatPattern(format, i, ch);
+                        switch (tokenLen)
+                        {
+                            case 1:
+                                result.Append(StarCulture.CurrentCulture.GetSuperShortDayName(StarDate.DayOfWeek));
+                                break;
+                            case 2:
+                                result.Append(StarCulture.CurrentCulture.GetShortDayName(StarDate.DayOfWeek));
+                                break;
+                            case 3:
+                            default:
+                                result.Append(StarCulture.CurrentCulture.GetDayName(StarDate.DayOfWeek));
+                                break;
+                        }
+                        break;
                     case 'd':
                         //
                         // tokenLen == 1 : Day of Month as digits with no leading zero.
                         // tokenLen == 2 : Day of Month as digits with leading zero for single-digit months.
-                        // tokenLen == 3 : Day of week as a three-leter abbreviation.
-                        // tokenLen >= 4 : Day of week as its full StarName.
+                        // tokenLen == 3 : Day of Month as ordinal abbreviation i.e. 1st
+                        // tokenLen >= 4 : Day of Month as ordinal word i.e. First
                         //
-                        //throw new NotImplementedException();
                         tokenLen = ParseRepeatPattern(format, i, ch);
-                        bTimeOnly = false;
                         switch (tokenLen)
                         {
                             case 1:
@@ -727,18 +724,13 @@ namespace StarCalendar
                                 }
                                 break;
                             case 3:
-                                result.Append(StarCulture.CurrentCulture.GetSuperShortDayName(StarDate.DayOfWeek));
+                                result.Append(StarCulture.CurrentCulture.Ordinal(StarDate.Day));
                                 break;
                             case 4:
-                                result.Append(StarCulture.CurrentCulture.GetShortDayName(StarDate.DayOfWeek));
-                                break;
-                            case 5:
                             default:
-                                result.Append(StarCulture.CurrentCulture.GetDayName(StarDate.DayOfWeek));
+                                result.Append(StarCulture.CurrentCulture.LongOrdinal(StarDate.Day));
                                 break;
                         }
-                        //Console.WriteLine(result);
-                        //throw new NotImplementedException();
                         break;
                     case 'M':
                         //
@@ -749,7 +741,6 @@ namespace StarCalendar
                         //
                         tokenLen = ParseRepeatPattern(format, i, ch);
                         int Month = StarDate.Month;
-                        bTimeOnly = false;
                         switch (tokenLen)
                         {
                             case 1:
@@ -805,11 +796,13 @@ namespace StarCalendar
                                 }
                                 result.Append(y);
                                 break;
+                            case 4:
+                                return (year % 10000).ToString();
+                            case 5: return year.ToString(); ;
                             default:
                                 result.Append(StarDate.fullyear % Math.Pow(10, tokenLen));
                                 break;
                         }
-                        bTimeOnly = false;
                         //Console.WriteLine(result);
                         break;
                     case 'z':
@@ -1172,8 +1165,6 @@ namespace StarCalendar
         internal static String Format(StarDate StarDate, String format, StarCulture sdfi, Time offset)
         {
             Contract.Requires(sdfi != null);
-            //////Console.WriteLine("Breakpoint");
-            //////Console.WriteLine(sdfi.CultureName);
             if (format == null || format.Length == 0)
             {
                 Boolean timeOnlySpecialCase = false;
@@ -1206,20 +1197,6 @@ namespace StarCalendar
                         format = "G";
                     }
                 }
-                //else
-                //{
-                //    throw new NotImplementedException();
-                //    // Default StarDateOffset.ToString case.
-                //    //if (timeOnlySpecialCase)
-                //    //{
-                //    //    format = RoundtripStarDateUnfixed;
-                //    //}
-                //    //else
-                //    //{
-                //    //    format = sdfi.StarDateOffsetPattern;
-                //    //}
-
-                //}
 
             }
 

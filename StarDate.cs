@@ -311,7 +311,7 @@ namespace StarCalendar
         private StarZone _timeZone;
         private static IEnumerable<string> allFormats;
         private static IEnumerable<StarDate> testYear;
-        private static string defaultFormat = "yyyyy/MM/dd hh:mm:ss tt K";
+        private static string defaultFormat = "yyyyy/MM/dd hh:mm:ss tt zzzz";
         private static StarDate maya1;
 
         //private int extraTicks;
@@ -4176,7 +4176,7 @@ namespace StarCalendar
 
         internal static void ConsoleTest(StarDate dt)
         {
-            string[] formats = new string[] { "y/M/d d", "y/M/d dd", "y/M/d ddd", "y/M/d dddd", "y/M/d ddddd", "y/M/d f", "y/M/d ff", "y/M/d fff", "y/M/d ffff", "y/M/d fffff", "y/M/d ffffff", "y/M/d fffffff", "y/M/d F", "y/M/d FF", "y/M/d FFF", "y/M/d FFFF", "y/M/d FFFFF", "y/M/d FFFFFF", "y/M/d FFFFFFF", "y/M/d g", "y/M/d gg", "y/M/d h", "y/M/d hh", "y/M/d H", "y/M/d HH", "y/M/d K", "y/M/d m", "y/M/d mm", "y/M/d M", "y/M/d MM", "y/M/d MMM", "y/M/d MMMM", "y/M/d s", "y/M/d ss", "y/M/d t", "y/M/d tt", "y/M/d y", "y/M/d yy", "y/M/d yyy", "y/M/d yyyy", "y/M/d yyyyy", "y/M/d z", "y/M/d zz", "y/M/d zzz", "y/M/d :", "y/M/d /" };
+            string[] formats = new string[] { "", "yyyyy/M/d d", "yyyyy/M/d dd", "yyyyy/M/d ddd", "yyyyy/M/d dddd", "yyyyy/M/d D", "yyyyy/M/d DD", "yyyyy/M/d DDD", "yyyyy/M/d f", "yyyyy/M/d ff", "yyyyy/M/d fff", "yyyyy/M/d ffff", "yyyyy/M/d fffff", "yyyyy/M/d ffffff", "yyyyy/M/d fffffff", "yyyyy/M/d ffffffff", "yyyyy/M/d F", "yyyyy/M/d F", "yyyyy/M/d FF", "yyyyy/M/d FFF", "yyyyy/M/d FFFF", "yyyyy/M/d FFFFF", "yyyyy/M/d FFFFFF", "yyyyy/M/d FFFFFFF", "yyyyy/M/d g", "yyyyy/M/d gg", "yyyyy/M/d G", "yyyyy/M/d GG", "yyyyy/M/d h", "yyyyy/M/d hh", "yyyyy/M/d H", "yyyyy/M/d HH", "yyyyy/M/d K", "yyyyy/M/d m", "yyyyy/M/d mm", "yyyyy/M/d M", "yyyyy/M/d MM", "yyyyy/M/d MMM", "yyyyy/M/d MMMM", "yyyyy/M/d s", "yyyyy/M/d ss", "yyyyy/M/d t", "yyyyy/M/d tt", "yyyyy/M/d y", "yyyyy/M/d yy", "yyyyy/M/d yyy", "yyyyy/M/d yyyy", "yyyyy/M/d yyyyy", "yyyyy/M/d yyyyyyy", "yyyyy/M/d yyyyyyyy", "yyyyy/M/d yyyyyyyyyy", "yyyyy/M/d yyyyyyyyyyyy", "yyyyy/M/d yyyyyyyyyyyyy", "yyyyy/M/d z", "yyyyy/M/d zz", "yyyyy/M/d zzz", "yyyyy/M/d zzzz", "yyyyy/M/d zzzzz", "yyyyy/M/d :", "yyyyy/M/d /" };
             foreach (string format in formats)
             {
                 Console.WriteLine(dt.ToString(format));

@@ -19,6 +19,7 @@ using System.Diagnostics.Contracts;
 using System.Runtime.CompilerServices;
 using System.IO;
 using StarCalendar;
+using System.Collections.Specialized;
 //using System.Globalization;
 
 namespace StarCalendar
@@ -891,6 +892,7 @@ namespace StarCalendar
         [OptionalField(VersionAdded = 2)]
         [NonSerialized]
         internal String[] m_genitiveAbbreviatedMonthNames = null;
+        private bool bUseUserOverrides;
 
         //private string SAM1159;
         //private string SPM2359;
@@ -946,10 +948,14 @@ namespace StarCalendar
         internal String[] m_abbrevEraNames = null;
         [NonSerialized]
         internal String[] m_abbrevEnglishEraNames = null;
-
         internal int[] optionalCalendars = null;
 
         private const int DEFAULT_ALL_StarDateS_SIZE = 132;
+
+        internal string LongOrdinal(int day)
+        {
+            return Ordinal(day); //This is a long process that I don't feel the need to do now for getting all these words, 1st would be First 2nd would be Second and so on
+        }
 
         // StarCulture updates this
         internal bool m_isReadOnly = false;
@@ -4171,11 +4177,8 @@ namespace StarCalendar
         private string[] saYearMonths1;
         [NonSerialized]
         private string[] saMonthNames;
-        private bool bUseUserOverrides;
         [NonSerialized]
         private string[] shortTimes;
-        [NonSerialized]
-        private string[] longTimes;
         [NonSerialized]
         private string sPM2359;
         [NonSerialized]
@@ -4279,6 +4282,45 @@ namespace StarCalendar
         public override int GetHashCode()
         {
             throw new NotImplementedException();
+        }
+
+        internal string Ordinal(int day)
+        {
+            switch (this.SISO639LANGNAME)
+            {
+                case "en":
+                    switch (day)
+                    {
+                        case 11: return "11th";
+                        case 12: return "12th";
+                        case 13: return "13th";
+                        default:
+                            break;
+                    }
+                    String d = day.ToString(InvariantCulture.FormatProvider);
+                    switch (d[d.Length - 1])
+                    {
+                        case '1':
+                            return d + "st";
+                        case '2':
+                            return d + "nd";
+                        case '3':
+                            return d + "rd";
+                        default:
+                            return d + "th";
+                    }
+                case "fr":
+                    if (day == 1)
+                    {
+                        return "1er";
+                    }
+                    else
+                    {
+                        return day + "e";
+                    }
+                default:
+                    return "" + day;
+            }
         }
     }
 }

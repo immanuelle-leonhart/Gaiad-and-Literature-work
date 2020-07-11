@@ -422,6 +422,7 @@ namespace StarCalendar
         //    }
         //}
 
+        [NonSerialized]
         internal BigInteger _ticks;
 
 
@@ -688,9 +689,22 @@ namespace StarCalendar
             return t * b;
         }
 
-        internal void GetTimePart(out int h, out int m, out int s, out int s1)
+        internal void GetTimePart(out int sign, out int h, out int m)
         {
-            throw new NotImplementedException();
+            long dayticks = (long)(this.Ticks % StarDate.TicksPerDay);
+            sign = Zero.CompareTo(this);
+            if (sign == -1)
+            {
+                dayticks *= -1;
+            }
+            h = (int)(dayticks / TicksPerHour);
+            dayticks -= h * TicksPerHour;
+            m = (int)(dayticks / TicksPerMinute);
         }
+
+        //internal void GetTimePart(out int h, out int m, out int s, out int s1)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }
