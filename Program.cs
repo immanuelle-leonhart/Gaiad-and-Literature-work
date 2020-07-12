@@ -12,11 +12,12 @@ namespace StarCalendar
 
         static void Main(string[] args)
         {
-            //CultureInfo.CurrentCulture = CultureInfo.GetCultureInfo("ja");
-            //Console.WriteLine(CultureInfo.CurrentCulture.DateTimeFormat.LongDatePattern);
-            Console.WriteLine(StarDate.Now.ToString());
-            //StarDate.LongDate = true;
-            //Console.WriteLine(StarDate.Now.ToString());
+            StarDate dt = StarDate.Now;
+            Console.WriteLine("DDDD MMMMM ddd yyyyy");
+            Console.WriteLine(StarDateFormat.FormatCustomized(dt, "DDDD MMMMM ddd yyyyy", StarCulture.InvariantCulture, new Time(0)));
+            Console.WriteLine(dt.ToShortDateString());
+            Console.WriteLine(dt.ToLongTimeString());
+            Console.WriteLine(dt.ToShortTimeString());
         }
     }
 }
