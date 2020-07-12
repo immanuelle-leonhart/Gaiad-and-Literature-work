@@ -1205,13 +1205,11 @@ namespace StarCalendar
             {
                 return this.DisplayName;
             }
-            Time o = Offset(dt);
-            int sign, h, m, s;
-            Offset(dt).GetTimePart(out sign, out h, out m);
+            Offset(dt).GetTimePart(out int sign, out int h, out int m);
             Dictionary<int, string> sig = new Dictionary<int, string>() { { -1, "-" }, { 0, "" }, { 1, "+" } };
 
             string min = "";
-            if (0 < m)
+            if (m != 0)
             {
                 min = StarCulture.CurrentCulture.TimeSeparator;
                 if (m < 10)
