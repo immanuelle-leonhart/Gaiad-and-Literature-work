@@ -313,7 +313,7 @@ namespace StarCalendar
         private static IEnumerable<StarDate> testYear;
         private static string defaultFormat = "yyyyy/MM/dd hh:mm:ss tt zzzz";
         private static StarDate maya1;
-        private static bool LongDefault = false;
+        public static bool LongDefault = false;
 
         //private int extraTicks;
 

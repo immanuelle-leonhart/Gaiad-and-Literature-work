@@ -20,6 +20,8 @@ using System.Runtime.CompilerServices;
 using System.IO;
 using StarCalendar;
 using System.Collections.Specialized;
+using System.Net.Http.Headers;
+using System.Globalization;
 //using System.Globalization;
 
 namespace StarCalendar
@@ -70,11 +72,14 @@ namespace StarCalendar
     [System.Runtime.InteropServices.ComVisible(true)]
     public sealed class StarCulture : ICloneable, IFormatProvider
     {
+        private static Dictionary<string, StarCulture> isodict = new Dictionary<string, StarCulture>();
         private static Dictionary<string, StarCulture> dict = getformats();
         public static StarCulture InvariantCulture = dict["English"];
+        public static StarCulture JapaneseCulture = dict["Japanese"];
+        public static StarCulture ChineseCulture = dict["Chinese"];
         internal bool m_isInherited = false;
         private readonly bool v;
-        internal static StarCulture CurrentCulture = dict["English"];
+        internal static StarCulture CurrentCulture = isodict[CultureInfo.CurrentCulture.TwoLetterISOLanguageName];
         private StarCulture starDateInfo;
         private IFormatProvider formatProvider;
         [NonSerialized]
@@ -120,6 +125,14 @@ namespace StarCalendar
                         {
                             StarCulture.Symbol = this;
                         }
+                        if (CultureName == "Japanese")
+                        {
+                            JapaneseCulture = this;
+                        }
+                        if (CultureName == "Chinese")
+                        {
+                            ChineseCulture = this;
+                        }
                         break;
                     case 1:
                         this.langfam = n[i];
@@ -128,7 +141,8 @@ namespace StarCalendar
                         this.sNativeName = n[i];
                         break;
                     case 3:
-                        this.SISO639LANGNAME = n[i];
+                        this.TwoLetterISO = n[i];
+                        isodict.Add(this.TwoLetterISO, this);
                         this.ISO = new List<string> { n[i] };
                         break;
                     case 4:
@@ -234,7 +248,7 @@ namespace StarCalendar
 
         public override string ToString()
         {
-            return this.SISO639LANGNAME + " " + this.sNativeName;
+            return this.TwoLetterISO + " " + this.sNativeName;
         }
 
         public StarCulture(string line, bool v) : this(line)
@@ -406,7 +420,7 @@ namespace StarCalendar
         }
 
         public string CultureName { get => cultureName; internal set => cultureName = value; }
-        public string SISO639LANGNAME { get => sISO639LANGNAME; internal set => sISO639LANGNAME = value; }
+        public string TwoLetterISO { get => sISO639LANGNAME; internal set => sISO639LANGNAME = value; }
 
         [NonSerialized]
         private List<string> ISO;
@@ -774,12 +788,17 @@ namespace StarCalendar
             InvariantCulture._longtimes = new string[] { "HH:mm:ss" };                             // time format
             InvariantCulture._saShortTimes = new string[] { "HH:mm", "hh:mm tt", "H:mm", "h:mm tt" }; // short time format
             InvariantCulture._saDurationFormats = new string[] { "HH:mm:ss" };                             // time duration format
+            InvariantCulture.shortTimePattern = "h:mm tt";
+            InvariantCulture.longTimePattern = "HH:mm:ss";
+            InvariantCulture.LongDatePattern = "DDDD MMMMM ddd yyyyy";
+            InvariantCulture.shortDatePattern = "yyyyy/MM/dd";
             InvariantCulture.m_genitiveAbbreviatedMonthNames = InvariantCulture.AbbreviatedGenitiveMonthNames;    // Abbreviated genitive month names (same as abbrev month names for invariant)
                                                                                                                   //InvariantCulture.saLeapYearMonthNames = InvariantCulture.saMonthNames;              // leap Year month names are unused in Gregorian English (invariant)
                                                                                                                   //    public string SAM1159 { get; internal set; }
                                                                                                                   //public string SPM2359 { get; internal set; }
             InvariantCulture.bUseUserOverrides = false;
-
+            JapaneseCulture.shortTimePattern = "h時m分s秒";
+            ChineseCulture.shortTimePattern = "h時m分s秒";
             // Calendar was built, go ahead and assign it...            
             //Invariant = invariant;
             return formats;
@@ -915,10 +934,15 @@ namespace StarCalendar
         // When we initially construct our string[], we set the string to string[0]
 
         // The "default" Date/time patterns
-        internal String longDatePattern = "DDDD MMMMM ddd yyyyy";
-        internal String shortDatePattern = "yyyyy/MM/dd";
+        [NonSerialized]
+        internal String longDatePattern = null;
+        [NonSerialized]
+        internal String shortDatePattern = null;
+        [NonSerialized]
         internal String yearMonthPattern = null;
+        [NonSerialized]
         internal String longTimePattern = null;
+        [NonSerialized]
         internal String shortTimePattern = null;
 
         // These are Whidbey-serialization compatable arrays (eg: default not included)
@@ -1006,7 +1030,7 @@ namespace StarCalendar
             {
                 if (m_langName == null)
                 {
-                    m_langName = this.SISO639LANGNAME;
+                    m_langName = this.TwoLetterISO;
                 }
                 return (m_langName);
             }
@@ -1941,7 +1965,7 @@ namespace StarCalendar
                 if (this.shortTimePattern == null)
                 {
                     // Initialize our data
-                    this.shortTimePattern = this.UnclonedShortTimePatterns[0];
+                    this.shortTimePattern = InvariantCulture.shortTimePattern;
                 }
                 return this.shortTimePattern;
             }
@@ -4141,6 +4165,7 @@ namespace StarCalendar
             }
         }
 
+
         private static StarCulture[] cultures;
 
         //public static StarCulture InvariantCulture;
@@ -4266,7 +4291,7 @@ namespace StarCalendar
 
         internal string Ordinal(int day)
         {
-            switch (this.SISO639LANGNAME)
+            switch (this.TwoLetterISO)
             {
                 case "en":
                     switch (day)

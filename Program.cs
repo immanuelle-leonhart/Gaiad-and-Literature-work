@@ -12,12 +12,22 @@ namespace StarCalendar
 
         static void Main(string[] args)
         {
-            StarDate dt = StarDate.Now;
-            Console.WriteLine("DDDD MMMMM ddd yyyyy");
-            Console.WriteLine(StarDateFormat.FormatCustomized(dt, "DDDD MMMMM ddd yyyyy", StarCulture.InvariantCulture, new Time(0)));
-            Console.WriteLine(dt.ToShortDateString());
-            Console.WriteLine(dt.ToLongTimeString());
-            Console.WriteLine(dt.ToShortTimeString());
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
+            CultureInfo.CurrentCulture = CultureInfo.GetCultureInfo("ja");
+            int i = 0;
+            StarDate dt = StarDate.Maya;
+            //Console.WriteLine(dt);
+            dt -= 378 * StarDate.DayTime;
+            Console.WriteLine(dt);
+            while (i < 378)
+            {
+                Console.WriteLine(dt);
+                StarDate.LongDefault = true;
+                Console.WriteLine(dt);
+                StarDate.LongDefault = false;
+                dt++;
+                i++;
+            }
         }
     }
 }
