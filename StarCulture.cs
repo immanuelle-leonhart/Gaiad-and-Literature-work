@@ -243,6 +243,15 @@ namespace StarCalendar
                 }
                 i++;
             }
+            try
+            {
+                CultureInfo culture = CultureInfo.GetCultureInfo(this.TwoLetterISO);
+                this.saDayNames = culture.DateTimeFormat.DayNames;
+            }
+            catch (CultureNotFoundException)
+            {
+
+            }
 
         }
 

@@ -14,20 +14,9 @@ namespace StarCalendar
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             CultureInfo.CurrentCulture = CultureInfo.GetCultureInfo("ja");
-            int i = 0;
-            StarDate dt = StarDate.Maya;
-            //Console.WriteLine(dt);
-            dt -= 378 * StarDate.DayTime;
-            Console.WriteLine(dt);
-            while (i < 378)
-            {
-                Console.WriteLine(dt);
-                StarDate.LongDefault = true;
-                Console.WriteLine(dt);
-                StarDate.LongDefault = false;
-                dt++;
-                i++;
-            }
+            StarDate.LongDefault = true;
+            StarDate dt = StarDate.Now.AddDays(6);
+            Console.WriteLine(dt.DayOfWeek);
         }
     }
 }

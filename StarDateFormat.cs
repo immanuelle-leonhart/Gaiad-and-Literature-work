@@ -236,72 +236,6 @@ namespace StarCalendar
             }
         }
 
-        //public static StarDateFormat Cal
-        //{
-        //    get
-        //    {
-        //        return StarCulture.CurrentCulture;
-        //    }
-        //}
-
-        ////////////////////////////////////////////////////////////////////////////
-        //
-        // Format the positive integer value to a string and perfix with assigned
-        // length of leading zero.
-        //
-        // Parameters:
-        //  value: The value to format
-        //  len: The maximum length for leading zero.
-        //  If the digits of the value is greater than len, no leading zero is added.
-        //
-        // Notes:
-        //  The function can format to Int32.MaxValue.
-        //
-        ////////////////////////////////////////////////////////////////////////////
-        //internal static void FormatDigits(StringBuilder outputBuffer, int value, int len)
-        //{
-        //    Contract.Assert(value >= 0, "StarDateFormat.FormatDigits(): value >= 0");
-        //    FormatDigits(outputBuffer, value, len, false);
-        //}
-
-        //[System.Security.SecuritySafeCritical]  // auto-generated
-        //internal unsafe static void FormatDigits(StringBuilder outputBuffer, int value, int len, bool overrideLengthLimit)
-        //{
-        //    Contract.Assert(value >= 0, "StarDateFormat.FormatDigits(): value >= 0");
-
-        //    // Limit the use of this function to be two-digits, so that we have the same behavior
-        //    // as RTM bits.
-        //    if (!overrideLengthLimit && len > 2)
-        //    {
-        //        len = 2;
-        //    }
-
-        //    char* buffer = stackalloc char[16];
-        //    char* p = buffer + 16;
-        //    int n = value;
-        //    do
-        //    {
-        //        *--p = (char)(n % 10 + '0');
-        //        n /= 10;
-        //    } while ((n != 0) && (p > buffer));
-
-        //    int digits = (int)(buffer + 16 - p);
-
-        //    //If the repeat count is greater than 0, we're trying
-        //    //to emulate the "00" format, so we have to prepend
-        //    //a zero if the string only has one character.
-        //    while ((digits < len) && (p > buffer))
-        //    {
-        //        *--p = '0';
-        //        digits++;
-        //    }
-        //    outputBuffer.Append(p, digits);
-        //}
-
-        //private static void HebrewFormatDigits(StringBuilder outputBuffer, int digits)
-        //{
-        //    outputBuffer.Append(HebrewNumber.ToString(digits));
-        //}
 
         internal static int ParseRepeatPattern(String format, int pos, char patternChar)
         {
@@ -358,59 +292,6 @@ namespace StarCalendar
             throw new NotImplementedException();
         }
 
-        //
-        //  FormatHebrewMonthName
-        //
-        //  Action: Return the Hebrew Month StarName for the specified StarDate.
-        //  Returns: The Month StarName string for the specified StarDate.
-        //  Arguments:
-        //        time   the time to format
-        //        Month  The Month is the value of HebrewCalendar.GetMonth(time).
-        //        repeat Return abbreviated Month StarName if repeat=3, or full Month StarName if repeat=4
-        //        sdfi    The StarDateFormat which uses the Hebrew calendars as its calendar.
-        //  Exceptions: None.
-        //
-
-        /* Note:
-            If sdfi is using Hebrew calendar, month()/GetAbbreviatedMonthName() will return Month names like this:
-            1   Hebrew 1st Month
-            2   Hebrew 2nd Month
-            ..  ...
-            6   Hebrew 6th Month
-            7   Hebrew 6th Month II (used only in a leap Year)
-            8   Hebrew 7th Month
-            9   Hebrew 8th Month
-            10  Hebrew 9th Month
-            11  Hebrew 10th Month
-            12  Hebrew 11th Month
-            13  Hebrew 12th Month
-
-            Therefore, if we are in a regular Year, we have to increment the Month StarName if moth is greater or eqaul to 7.
-        */
-        //private static String FormatHebrewMonthName(StarDate time, int Month, int repeatCount, StarCulture sdfi)
-        //{
-        //    Contract.Assert(repeatCount != 3 || repeatCount != 4, "repeateCount should be 3 or 4");
-        //    if (sdfi.StarCulture.IsLeapYear(sdfi.StarCulture.GetYear(time)))
-        //    {
-        //        // This Month is in a leap Year
-        //        return (sdfi.internalGetMonthName(Month, MonthNameStyles.LeapYear, (repeatCount == 3)));
-        //    }
-        //    // This is in a regular Year.
-        //    if (Month >= 7)
-        //    {
-        //        Month++;
-        //    }
-        //    if (repeatCount == 3)
-        //    {
-        //        return (sdfi.GetAbbreviatedMonthName(Month));
-        //    }
-        //    return (sdfi.month(Month));
-        //}
-
-        //
-        // The pos should point to a quote character. This method will
-        // get the string encloed by the quote character.
-        //
         internal static int ParseQuoteString(String format, int pos, StringBuilder result)
         {
             //
