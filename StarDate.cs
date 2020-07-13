@@ -94,9 +94,9 @@ namespace StarCalendar
 
         "d"     "0"         day w/o leading zero                  1
         "dd"    "00"        day with leading zero                 01
-        "ddd"               short weekday StarName (abbreviation)     Mon
-        "dddd"              full weekday StarName                     Monday
-        "dddd*"             full weekday StarName                     Monday
+        "ddd"               short WeekDays StarName (abbreviation)     Mon
+        "dddd"              full WeekDays StarName                     Monday
+        "dddd*"             full WeekDays StarName                     Monday
 
 
         "M"     "0"         Month w/o leading zero                2
@@ -369,7 +369,7 @@ namespace StarCalendar
             {
                 dt += StarDate.DayTime;
                 i++;
-                //////////Console.WriteLine(dt.ToString(lang, format));
+                ////////////Console.WriteLine(dt.ToString(lang, format));
             }
         }
 
@@ -406,7 +406,7 @@ namespace StarCalendar
             string output = g_year + comma + gregmonthname + comma + gregmonthnumber + comma + gregday + comma + gregdayofyear + comma + weekday + comma + StarYear + comma + starmonthname + comma + starmonthnumber + comma + starday + comma + Stardayofyear;
             while (dt <= end)
             {
-                //////////Console.WriteLine(output);
+                ////////////Console.WriteLine(output);
                 chart.WriteLine(output);
                 DateTime g = dt.DateTime;
                 gregday = g.Day.ToString();
@@ -925,33 +925,33 @@ namespace StarCalendar
         //            int[] DaysToMonth366 = {
         //                0, 31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335, 366};
 
-        //            ////////////Console.WriteLine("testing");
+        //            //////////////Console.WriteLine("testing");
 
-        //            ////////////Console.WriteLine(t);
+        //            //////////////Console.WriteLine(t);
 
         //            int days = t / StarDate.DayTime;
-        //            ////////////Console.WriteLine("days from netstart = " + days);
+        //            //////////////Console.WriteLine("days from netstart = " + days);
 
         //            int q = days / DaysPer400Years;
         //            int qmod = days % DaysPer400Years;
-        //            ////////////Console.WriteLine(q);
-        //            ////////////Console.WriteLine(qmod);
+        //            //////////////Console.WriteLine(q);
+        //            //////////////Console.WriteLine(qmod);
         //            if (qmod < 0)
         //            {
         //                qmod = DaysPer400Years + qmod;
         //                q--;
         //            }
-        //            ////////////Console.WriteLine(q);
-        //            ////////////Console.WriteLine(qmod);
+        //            //////////////Console.WriteLine(q);
+        //            //////////////Console.WriteLine(qmod);
         //            int s = qmod / DaysPer100Years;
         //            int smod = qmod % DaysPer100Years;
         //            int l = smod / DaysPer4Years;
         //            int lmod = smod % DaysPer4Years;
         //            int y = lmod / DaysPerYear;
         //            int ymod = lmod % DaysPerYear;
-        //            ////////////Console.WriteLine(s);
-        //            ////////////Console.WriteLine(l);
-        //            ////////////Console.WriteLine(y);
+        //            //////////////Console.WriteLine(s);
+        //            //////////////Console.WriteLine(l);
+        //            //////////////Console.WriteLine(y);
         //            int m = 500;
         //            int yd = ymod;
         //            int d = 500;
@@ -975,7 +975,7 @@ namespace StarCalendar
         //                bool found = false;
         //                while (!found)
         //                {
-        //                    ////////////Console.WriteLine(DaysToMonth366[i]);
+        //                    //////////////Console.WriteLine(DaysToMonth366[i]);
         //                    if (DaysToMonth366[i] > yd)
         //                    {
         //                        m = i - 1;
@@ -990,12 +990,12 @@ namespace StarCalendar
         //            }
         //            else
         //            {
-        //                ////////////Console.WriteLine(GregLeap(Year));
+        //                //////////////Console.WriteLine(GregLeap(Year));
         //                int i = 0;
         //                bool found = false;
         //                while (!found)
         //                {
-        //                    ////////////Console.WriteLine(DaysToMonth366[i]);
+        //                    //////////////Console.WriteLine(DaysToMonth366[i]);
         //                    if (DaysToMonth365[i] > yd)
         //                    {
         //                        m = i - 1;
@@ -1008,11 +1008,11 @@ namespace StarCalendar
         //                    }
         //                }
         //            }
-        //        ////////////Console.WriteLine(Year + " " + m + " " + d + " ");
+        //        //////////////Console.WriteLine(Year + " " + m + " " + d + " ");
         //        //throw new NotImplementedException();
         //        if (this > ADStart)
         //        {
-        //            //////////Console.WriteLine("TEST");
+        //            ////////////Console.WriteLine("TEST");
         //            Year++;
         //        }
         //        m++;
@@ -1372,13 +1372,13 @@ namespace StarCalendar
                                     {
                                         v = v + decomma[j++];
                                     }
-                                    //////////Console.WriteLine(v);
+                                    ////////////Console.WriteLine(v);
                                     int year = int.Parse(v);
                                     return StarDate.FromGreg(year);
                                 }
                                 catch (FormatException)
                                 {
-                                    //////////Console.WriteLine(input);
+                                    ////////////Console.WriteLine(input);
                                     if ((parsedinput[1] == "AND"))
                                     {
                                         StarDate a = StarDate.FromGreg(int.Parse(parsedinput[0]));
@@ -1408,7 +1408,7 @@ namespace StarCalendar
             int i = 0;
             while (i < parsedinput.Length)
             {
-                //////////Console.WriteLine(i + " " + parsedinput[i++]);
+                ////////////Console.WriteLine(i + " " + parsedinput[i++]);
             }
             return long.Parse(parsedinput[0]);
             throw new NotImplementedException();
@@ -1620,11 +1620,11 @@ namespace StarCalendar
             {
                 n %= DaysPerBillion;
                 n %= DaysPerMillion;
-                ////////Console.WriteLine("Days Since Manu = " + n);
+                //////////Console.WriteLine("Days Since Manu = " + n);
                 //Logic Error is here
-                ////////Console.WriteLine(DaysPerAverageYear);
-                ////////Console.WriteLine(n / DaysPerAverageYear);
-                //////////Console.WriteLine()
+                //////////Console.WriteLine(DaysPerAverageYear);
+                //////////Console.WriteLine(n / DaysPerAverageYear);
+                ////////////Console.WriteLine()
                 //throw new NotImplementedException();
                 int y78 = (int)(n / DaysPer78Years);
                 n -= y78 * DaysPer78Years;
@@ -1637,10 +1637,15 @@ namespace StarCalendar
                 n -= y1 * DaysPerYear;
                 int d = (int)n + 1;
                 if (part == DatePartDayOfYear) return d;
-                if (part == DatePartDayOfWeek) return d % 7;
                 if (part == DatePartMonth) return (d / 28) + 1;
-                if (part == DatePartDay) return (d % 28);
-                else throw new ArgumentException();
+                d %= 28;
+                if (d == 0) d = 28;
+                if (part == DatePartDay) return d;
+                else if (part == DatePartDayOfWeek) return d % 7;
+                else
+                {
+                    return 19;
+                }
             }
         }
 
@@ -1831,11 +1836,11 @@ namespace StarCalendar
         internal static void Test()
         {
             StarDate dt = StarDate.Now;
-            ////////////Console.WriteLine(dt);
+            //////////////Console.WriteLine(dt);
             bool gab = true;
             while (gab)
             {
-                //////////Console.WriteLine(dt);
+                ////////////Console.WriteLine(dt);
                 dt += StarDate.DayTime;
             }
         }
@@ -1890,7 +1895,7 @@ namespace StarCalendar
 
         public static StarDate MathFromGreg(int year, int month, int day, int hour, int min, int sec, int mil)
         {
-            ////////////Console.WriteLine(Year + " " + Month + " " + day + " " + hour + " " + sec + " " + mil);
+            //////////////Console.WriteLine(Year + " " + Month + " " + day + " " + hour + " " + sec + " " + mil);
             // Number of days in a non-leap Year
             int DaysPerYear = 365;
             // Number of days in 4 years
@@ -1919,7 +1924,7 @@ namespace StarCalendar
                 }
                 catch (IndexOutOfRangeException)
                 {
-                    //////////Console.WriteLine(month - 1);
+                    ////////////Console.WriteLine(month - 1);
                     throw new NotImplementedException();
                 }
             }
@@ -1928,7 +1933,7 @@ namespace StarCalendar
                 days = DaysToMonth365[month - 1];
             }
             days += day - 1;
-            ////////////Console.WriteLine(days);
+            //////////////Console.WriteLine(days);
             output += days * StarDate.DayTime;
             output += hour * StarDate.HourTime;
             output += min * StarDate.MinuteTime;
@@ -1989,16 +1994,16 @@ namespace StarCalendar
                 yearmod += 400;
             }
             int quattro = (year - yearmod) / 400;
-            //////////Console.WriteLine" 400mod = " + yearmod);
-            //////////Console.WriteLine" 400count = " + quattro);
+            ////////////Console.WriteLine" 400mod = " + yearmod);
+            ////////////Console.WriteLine" 400count = " + quattro);
             int centcount = yearmod / 100;
             yearmod %= 100;
-            //////////Console.WriteLine" centcount = " + centcount);
+            ////////////Console.WriteLine" centcount = " + centcount);
             int leapcount = yearmod / 4;
             yearmod %= 4;
             int yearcount = yearmod;
-            //////////Console.WriteLine" q " + quattro + " c +" + centcount + " l +" + leapcount + " y +" + yearcount);
-            ////////////Console.WriteLine(" ");
+            ////////////Console.WriteLine" q " + quattro + " c +" + centcount + " l +" + leapcount + " y +" + yearcount);
+            //////////////Console.WriteLine(" ");
             return new int[] { quattro, centcount, leapcount, yearcount };
         }
 
@@ -2060,33 +2065,33 @@ namespace StarCalendar
                     Time t = this - ADStart;
 
 
-                    ////////////Console.WriteLine("testing");
+                    //////////////Console.WriteLine("testing");
 
-                    ////////////Console.WriteLine(t);
+                    //////////////Console.WriteLine(t);
 
                     int days = t / StarDate.DayTime;
-                    ////////////Console.WriteLine("days from netstart = " + days);
+                    //////////////Console.WriteLine("days from netstart = " + days);
 
                     int q = days / DaysPer400Years;
                     int qmod = days % DaysPer400Years;
-                    ////////////Console.WriteLine(q);
-                    ////////////Console.WriteLine(qmod);
+                    //////////////Console.WriteLine(q);
+                    //////////////Console.WriteLine(qmod);
                     if (qmod < 0)
                     {
                         qmod = DaysPer400Years + qmod;
                         q--;
                     }
-                    ////////////Console.WriteLine(q);
-                    ////////////Console.WriteLine(qmod);
+                    //////////////Console.WriteLine(q);
+                    //////////////Console.WriteLine(qmod);
                     int s = qmod / DaysPer100Years;
                     int smod = qmod % DaysPer100Years;
                     int l = smod / DaysPer4Years;
                     int lmod = smod % DaysPer4Years;
                     int y = lmod / DaysPerYear;
                     int ymod = lmod % DaysPerYear;
-                    ////////////Console.WriteLine(s);
-                    ////////////Console.WriteLine(l);
-                    ////////////Console.WriteLine(y);
+                    //////////////Console.WriteLine(s);
+                    //////////////Console.WriteLine(l);
+                    //////////////Console.WriteLine(y);
                     int m = 500;
                     int yd = ymod;
                     int d = 500;
@@ -2110,12 +2115,12 @@ namespace StarCalendar
                         bool found = false;
                         while (!found)
                         {
-                            ////////////Console.WriteLine(DaysToMonth366[i]);
+                            //////////////Console.WriteLine(DaysToMonth366[i]);
                             if (DaysToMonth366[i] > yd)
                             {
                                 m = i - 1;
                                 found = true;
-                                ////////////Console.WriteLine("366");
+                                //////////////Console.WriteLine("366");
                                 d = yd - DaysToMonth366[m] + 1;
                             }
                             else
@@ -2126,12 +2131,12 @@ namespace StarCalendar
                     }
                     else
                     {
-                        ////////////Console.WriteLine(GregLeap(Year));
+                        //////////////Console.WriteLine(GregLeap(Year));
                         int i = 0;
                         bool found = false;
                         while (!found)
                         {
-                            ////////////Console.WriteLine(DaysToMonth366[i]);
+                            //////////////Console.WriteLine(DaysToMonth366[i]);
                             if (DaysToMonth365[i] > yd)
                             {
                                 m = i - 1;
@@ -2144,7 +2149,7 @@ namespace StarCalendar
                             }
                         }
                     }
-                    ////////////Console.WriteLine(Year + " " + m + " " + d + " ");
+                    //////////////Console.WriteLine(Year + " " + m + " " + d + " ");
                     //throw new NotImplementedException();
                     if (d == 0)
                     {
@@ -2153,7 +2158,7 @@ namespace StarCalendar
                     m++;
                     if (this > ADStart)
                     {
-                        ////////////Console.WriteLine("TEST");
+                        //////////////Console.WriteLine("TEST");
                         year++;
                     }
                     return new int[] { year, m, d };
@@ -2191,12 +2196,12 @@ namespace StarCalendar
                     bool found = false;
                     while (!found)
                     {
-                        ////////////Console.WriteLine(DaysToMonth366[i]);
+                        //////////////Console.WriteLine(DaysToMonth366[i]);
                         if (months[i] > t)
                         {
                             m = i - 1;
                             found = true;
-                            ////////////Console.WriteLine("366");
+                            //////////////Console.WriteLine("366");
                             d = t - months[m] + 1;
                         }
                         else
@@ -3461,28 +3466,28 @@ namespace StarCalendar
             get
             {
                 List<string> a = new List<string>();
-                a.Add(("MM/dd/yyyy")); // ////////Console.WriteLine(aDate.ToString("MM/dd/yyyy")); // ////////Console.WriteLine(bDate.ToString("MM/dd/yyyy")); //
-                a.Add(("dddd, dd MMMM yyyy")); // ////////Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy")); // ////////Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy")); //
-                a.Add(("dddd, dd MMMM yyyy")); // ////////Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy")); // ////////Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy")); //
-                a.Add(("dddd, dd MMMM yyyy")); // ////////Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy")); // ////////Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy")); //
-                a.Add(("dddd, dd MMMM yyyy")); // ////////Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy")); // ////////Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy")); //
-                a.Add(("dddd, dd MMMM yyyy")); // ////////Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy")); // ////////Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy")); //
-                a.Add(("dddd, dd MMMM yyyy HH:mm:ss")); // ////////Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy HH:mm:ss")); // ////////Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy HH:mm:ss")); //
-                a.Add(("MM/dd/yyyy HH:mm")); // ////////Console.WriteLine(aDate.ToString("MM/dd/yyyy HH:mm")); // ////////Console.WriteLine(bDate.ToString("MM/dd/yyyy HH:mm")); //
-                a.Add(("MM/dd/yyyy hh:mm tt")); // ////////Console.WriteLine(aDate.ToString("MM/dd/yyyy hh:mm tt")); // ////////Console.WriteLine(bDate.ToString("MM/dd/yyyy hh:mm tt")); //
-                a.Add(("MM/dd/yyyy H:mm")); // ////////Console.WriteLine(aDate.ToString("MM/dd/yyyy H:mm")); // ////////Console.WriteLine(bDate.ToString("MM/dd/yyyy H:mm")); //
-                a.Add(("MM/dd/yyyy h:mm tt")); // ////////Console.WriteLine(aDate.ToString("MM/dd/yyyy h:mm tt")); // ////////Console.WriteLine(bDate.ToString("MM/dd/yyyy h:mm tt")); //
-                a.Add(("MM/dd/yyyy HH:mm:ss")); // ////////Console.WriteLine(aDate.ToString("MM/dd/yyyy HH:mm:ss")); // ////////Console.WriteLine(bDate.ToString("MM/dd/yyyy HH:mm:ss")); //
-                a.Add(("MMMM dd")); // ////////Console.WriteLine(aDate.ToString("MMMM dd")); // ////////Console.WriteLine(bDate.ToString("MMMM dd")); //
-                a.Add(("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss.fffffffK")); // ////////Console.WriteLine(aDate.ToString("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss.fffffffK")); // ////////Console.WriteLine(bDate.ToString("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss.fffffffK")); //
-                a.Add(("ddd, dd MMM yyy HH’:’mm’:’ss ‘GMT’")); // ////////Console.WriteLine(aDate.ToString("ddd, dd MMM yyy HH’:’mm’:’ss ‘GMT’")); // ////////Console.WriteLine(bDate.ToString("ddd, dd MMM yyy HH’:’mm’:’ss ‘GMT’")); //
-                a.Add(("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss")); // ////////Console.WriteLine(aDate.ToString("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss")); // ////////Console.WriteLine(bDate.ToString("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss")); //
-                a.Add(("HH:mm")); // ////////Console.WriteLine(aDate.ToString("HH:mm")); // ////////Console.WriteLine(bDate.ToString("HH:mm")); //
-                a.Add(("hh:mm tt")); // ////////Console.WriteLine(aDate.ToString("hh:mm tt")); // ////////Console.WriteLine(bDate.ToString("hh:mm tt")); //
-                a.Add(("H:mm")); // ////////Console.WriteLine(aDate.ToString("H:mm")); // ////////Console.WriteLine(bDate.ToString("H:mm")); //
-                a.Add(("h:mm tt")); // ////////Console.WriteLine(aDate.ToString("h:mm tt")); // ////////Console.WriteLine(bDate.ToString("h:mm tt")); //
-                a.Add(("HH:mm:ss")); // ////////Console.WriteLine(aDate.ToString("HH:mm:ss")); // ////////Console.WriteLine(bDate.ToString("HH:mm:ss")); //
-                a.Add(("yyyy MMMM")); // ////////Console.WriteLine(aDate.ToString("yyyy MMMM")); // ////////Console.WriteLine(bDate.ToString("yyyy MMMM")); //
+                a.Add(("MM/dd/yyyy")); // //////////Console.WriteLine(aDate.ToString("MM/dd/yyyy")); // //////////Console.WriteLine(bDate.ToString("MM/dd/yyyy")); //
+                a.Add(("dddd, dd MMMM yyyy")); // //////////Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy")); // //////////Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy")); //
+                a.Add(("dddd, dd MMMM yyyy")); // //////////Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy")); // //////////Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy")); //
+                a.Add(("dddd, dd MMMM yyyy")); // //////////Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy")); // //////////Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy")); //
+                a.Add(("dddd, dd MMMM yyyy")); // //////////Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy")); // //////////Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy")); //
+                a.Add(("dddd, dd MMMM yyyy")); // //////////Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy")); // //////////Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy")); //
+                a.Add(("dddd, dd MMMM yyyy HH:mm:ss")); // //////////Console.WriteLine(aDate.ToString("dddd, dd MMMM yyyy HH:mm:ss")); // //////////Console.WriteLine(bDate.ToString("dddd, dd MMMM yyyy HH:mm:ss")); //
+                a.Add(("MM/dd/yyyy HH:mm")); // //////////Console.WriteLine(aDate.ToString("MM/dd/yyyy HH:mm")); // //////////Console.WriteLine(bDate.ToString("MM/dd/yyyy HH:mm")); //
+                a.Add(("MM/dd/yyyy hh:mm tt")); // //////////Console.WriteLine(aDate.ToString("MM/dd/yyyy hh:mm tt")); // //////////Console.WriteLine(bDate.ToString("MM/dd/yyyy hh:mm tt")); //
+                a.Add(("MM/dd/yyyy H:mm")); // //////////Console.WriteLine(aDate.ToString("MM/dd/yyyy H:mm")); // //////////Console.WriteLine(bDate.ToString("MM/dd/yyyy H:mm")); //
+                a.Add(("MM/dd/yyyy h:mm tt")); // //////////Console.WriteLine(aDate.ToString("MM/dd/yyyy h:mm tt")); // //////////Console.WriteLine(bDate.ToString("MM/dd/yyyy h:mm tt")); //
+                a.Add(("MM/dd/yyyy HH:mm:ss")); // //////////Console.WriteLine(aDate.ToString("MM/dd/yyyy HH:mm:ss")); // //////////Console.WriteLine(bDate.ToString("MM/dd/yyyy HH:mm:ss")); //
+                a.Add(("MMMM dd")); // //////////Console.WriteLine(aDate.ToString("MMMM dd")); // //////////Console.WriteLine(bDate.ToString("MMMM dd")); //
+                a.Add(("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss.fffffffK")); // //////////Console.WriteLine(aDate.ToString("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss.fffffffK")); // //////////Console.WriteLine(bDate.ToString("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss.fffffffK")); //
+                a.Add(("ddd, dd MMM yyy HH’:’mm’:’ss ‘GMT’")); // //////////Console.WriteLine(aDate.ToString("ddd, dd MMM yyy HH’:’mm’:’ss ‘GMT’")); // //////////Console.WriteLine(bDate.ToString("ddd, dd MMM yyy HH’:’mm’:’ss ‘GMT’")); //
+                a.Add(("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss")); // //////////Console.WriteLine(aDate.ToString("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss")); // //////////Console.WriteLine(bDate.ToString("yyyy’-‘MM’-‘dd’T’HH’:’mm’:’ss")); //
+                a.Add(("HH:mm")); // //////////Console.WriteLine(aDate.ToString("HH:mm")); // //////////Console.WriteLine(bDate.ToString("HH:mm")); //
+                a.Add(("hh:mm tt")); // //////////Console.WriteLine(aDate.ToString("hh:mm tt")); // //////////Console.WriteLine(bDate.ToString("hh:mm tt")); //
+                a.Add(("H:mm")); // //////////Console.WriteLine(aDate.ToString("H:mm")); // //////////Console.WriteLine(bDate.ToString("H:mm")); //
+                a.Add(("h:mm tt")); // //////////Console.WriteLine(aDate.ToString("h:mm tt")); // //////////Console.WriteLine(bDate.ToString("h:mm tt")); //
+                a.Add(("HH:mm:ss")); // //////////Console.WriteLine(aDate.ToString("HH:mm:ss")); // //////////Console.WriteLine(bDate.ToString("HH:mm:ss")); //
+                a.Add(("yyyy MMMM")); // //////////Console.WriteLine(aDate.ToString("yyyy MMMM")); // //////////Console.WriteLine(bDate.ToString("yyyy MMMM")); //
                 string[] vs = new string[a.Count];
                 int i = 0;
                 while (i < vs.Length)
@@ -3726,28 +3731,28 @@ namespace StarCalendar
         public String ToLongDateString()
         {
             Contract.Ensures(Contract.Result<String>() != null);
-            ////////////Console.WriteLine(sdfi.CultureName);
+            //////////////Console.WriteLine(sdfi.CultureName);
             return StarDateFormat.Format(this, "D", StarCulture.CurrentCulture);
         }
 
         public String ToLongTimeString()
         {
             Contract.Ensures(Contract.Result<String>() != null);
-            ////////////Console.WriteLine(sdfi.CultureName);
+            //////////////Console.WriteLine(sdfi.CultureName);
             return StarDateFormat.Format(this, "T", StarCulture.CurrentCulture);
         }
 
         public String ToShortDateString()
         {
             Contract.Ensures(Contract.Result<String>() != null);
-            ////////////Console.WriteLine(sdfi.CultureName);
+            //////////////Console.WriteLine(sdfi.CultureName);
             return StarDateFormat.Format(this, "d", StarCulture.CurrentCulture);
         }
 
         public String ToShortTimeString()
         {
             Contract.Ensures(Contract.Result<String>() != null);
-            //////////Console.WriteLine(this.CultureName);
+            ////////////Console.WriteLine(this.CultureName);
             return StarDateFormat.Format(this, "t", StarCulture.CurrentCulture);
         }
 
@@ -4091,7 +4096,7 @@ namespace StarCalendar
             StarDate dt2;
             foreach (int entry in vs)
             {
-                ////////Console.WriteLine(entry);
+                //////////Console.WriteLine(entry);
             }
             switch (vs.Length)
             {
@@ -4135,16 +4140,16 @@ namespace StarCalendar
 
         public static void TestFormat(StarDate dt, string v)
         {
-            ////////Console.WriteLine(" ");
-            ////////Console.WriteLine(v);
-            ////////Console.WriteLine(dt.DateTime.ToString(v));
-            ////////Console.WriteLine(dt.ToString(v));
-            ////////Console.WriteLine(" ");
+            //////////Console.WriteLine(" ");
+            //////////Console.WriteLine(v);
+            //////////Console.WriteLine(dt.DateTime.ToString(v));
+            //////////Console.WriteLine(dt.ToString(v));
+            //////////Console.WriteLine(" ");
         }
 
         public static void PrintAllFormats()
         {
-            // ////////Console.WriteLine(aDate.ToString("yyyy MMMM")); // ////////Console.WriteLine(bDate.ToString("yyyy MMMM")); //
+            // //////////Console.WriteLine(aDate.ToString("yyyy MMMM")); // //////////Console.WriteLine(bDate.ToString("yyyy MMMM")); //
 
         }
 
@@ -4191,7 +4196,7 @@ namespace StarCalendar
             string[] formats = new string[] { "", "yyyyy/M/d d", "yyyyy/M/d dd", "yyyyy/M/d ddd", "yyyyy/M/d dddd", "yyyyy/M/d D", "yyyyy/M/d DD", "yyyyy/M/d DDD", "yyyyy/M/d f", "yyyyy/M/d ff", "yyyyy/M/d fff", "yyyyy/M/d ffff", "yyyyy/M/d fffff", "yyyyy/M/d ffffff", "yyyyy/M/d fffffff", "yyyyy/M/d ffffffff", "yyyyy/M/d F", "yyyyy/M/d F", "yyyyy/M/d FF", "yyyyy/M/d FFF", "yyyyy/M/d FFFF", "yyyyy/M/d FFFFF", "yyyyy/M/d FFFFFF", "yyyyy/M/d FFFFFFF", "yyyyy/M/d g", "yyyyy/M/d gg", "yyyyy/M/d G", "yyyyy/M/d GG", "yyyyy/M/d h", "yyyyy/M/d hh", "yyyyy/M/d H", "yyyyy/M/d HH", "yyyyy/M/d K", "yyyyy/M/d m", "yyyyy/M/d mm", "yyyyy/M/d M", "yyyyy/M/d MM", "yyyyy/M/d MMM", "yyyyy/M/d MMMM", "yyyyy/M/d s", "yyyyy/M/d ss", "yyyyy/M/d t", "yyyyy/M/d tt", "yyyyy/M/d y", "yyyyy/M/d yy", "yyyyy/M/d yyy", "yyyyy/M/d yyyy", "yyyyy/M/d yyyyy", "yyyyy/M/d yyyyyyy", "yyyyy/M/d yyyyyyyy", "yyyyy/M/d yyyyyyyyyy", "yyyyy/M/d yyyyyyyyyyyy", "yyyyy/M/d yyyyyyyyyyyyy", "yyyyy/M/d z", "yyyyy/M/d zz", "yyyyy/M/d zzz", "yyyyy/M/d zzzz", "yyyyy/M/d zzzzz", "yyyyy/M/d :", "yyyyy/M/d /" };
             foreach (string format in formats)
             {
-                ////Console.WriteLine(dt.ToString(format));
+                //////Console.WriteLine(dt.ToString(format));
             }
         }
 

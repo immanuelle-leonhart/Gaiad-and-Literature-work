@@ -270,9 +270,9 @@ namespace StarCalendar
             return this.months[m];
         }
 
-        internal string weekday(int d)
+        public string WeekDays(int d)
         {
-            return this.saDayNames[d - 1];
+            return this.saDayNames[d];
         }
 
         internal static StarCulture GetLocale(string lang)
@@ -282,8 +282,8 @@ namespace StarCalendar
 
         internal string StarDateString(StarDate dt, string format)
         {
-            //////////Console.WriteLine(this.CultureName);
-            //////////Console.WriteLine(this == null);
+            ////////////Console.WriteLine(this.CultureName);
+            ////////////Console.WriteLine(this == null);
             return StarDateFormat.Format(dt, format, this);
         }
 
@@ -321,7 +321,7 @@ namespace StarCalendar
             //}
         }
 
-        private string[] AbbreviatedDayNames
+        public string[] AbbreviatedDayNames
         {
             get
             {
@@ -331,7 +331,7 @@ namespace StarCalendar
                     int i = 1;
                     while (i < vs.Length)
                     {
-                        vs[i] = abbreviate(weekday(i));
+                        vs[i] = abbreviate(WeekDays(i));
                         if (vs[i] == "")
                         {
                             vs[i] = InvariantCulture.AbbreviatedDayNames[i];
@@ -605,10 +605,10 @@ namespace StarCalendar
             get
             {
                 string[] vs = new string[7];
-                int i = 1;
+                int i = 0;
                 while (i < vs.Length)
                 {
-                    vs[i] = weekday(i);
+                    vs[i] = WeekDays(i);
                     i++;
                 }
                 return vs;
@@ -757,7 +757,7 @@ namespace StarCalendar
             System.IO.StreamReader file = new StreamReader(path);
             while ((line = file.ReadLine()) != null)
             {
-                ////////////Console.WriteLine(line);
+                //////////////Console.WriteLine(line);
                 StarCulture form = new StarCulture(line);
                 formats.Add(form.CultureName, form);
                 counter++;
@@ -811,6 +811,17 @@ namespace StarCalendar
             // Calendar was built, go ahead and assign it...            
             //Invariant = invariant;
             return formats;
+        }
+
+        internal void WriteAllWeekDays()
+        {
+            var names = internalGetDayOfWeekNames();
+            int i = 0;
+            while (i < names.Length)
+            {
+                //Console.WriteLine(i + " " + names[i]);
+                i++;
+            }
         }
 
         //
@@ -1096,14 +1107,14 @@ namespace StarCalendar
             if (this.dayNames == null)
             {
                 // Get the day names for our current calendar
-                //////////Console.WriteLine(this);
-                ////////////Console.WriteLine(Calendar);
-                //////////Console.WriteLine;
-                ////////////Console.WriteLine("What is Null here");
+                ////////////Console.WriteLine(this);
+                //////////////Console.WriteLine(Calendar);
+                ////////////Console.WriteLine;
+                //////////////Console.WriteLine("What is Null here");
                 var d = this.GetDayNames();
                 foreach (var entry in d)
                 {
-                    //////////Console.WriteLine(entry);
+                    //Console.WriteLine(entry);
                 }
                 //Something is a null reference here and I don't understand it
                 this.dayNames = this.DayNames;
@@ -1238,7 +1249,7 @@ namespace StarCalendar
         //{
         //    get
         //    {
-        //        //////////Console.WriteLine("Breakpoint");
+        //        ////////////Console.WriteLine("Breakpoint");
         //        Contract.Ensures(Contract.Result<StarCulture>() != null);
         //        StarCulture culture = StarCulture.CurrentCulture;
         //        if (!culture.m_isInherited)
@@ -1671,7 +1682,7 @@ namespace StarCalendar
         //                }
         //#endif
         //                //Contract.Assert(this.dateSeparator != null, "StarCulture.GetDateSeparator, dateSeparator != null");
-        //                //////////Console.WriteLine("Contract.Assert(this.dateSeparator != null, " + " StarCulture.GetDateSeparator, dateSeparator != null" + "); ");
+        //                ////////////Console.WriteLine("Contract.Assert(this.dateSeparator != null, " + " StarCulture.GetDateSeparator, dateSeparator != null" + "); ");
         //                return (this.dateSeparator);
         //            }
 
@@ -3889,7 +3900,7 @@ namespace StarCalendar
         //    // Remember the current slot.
         //    TokenHashValue previousNode = hashTable[hashcode];
 
-        //    //// //////////Console.WriteLine("   Insert Key: {0} in {1}", str, slotToInsert);
+        //    //// ////////////Console.WriteLine("   Insert Key: {0} in {1}", str, slotToInsert);
         //    // Insert the new node into the current slot.
         //    hashTable[hashcode] = new TokenHashValue(str, tokenType, tokenValue); ;
 
@@ -3906,7 +3917,7 @@ namespace StarCalendar
         //        }
         //        // Put the previous slot into this slot.
         //        hashTable[hashcode] = previousNode;
-        //        //// //////////Console.WriteLine("  Move {0} to slot {1}", previousNode.tokenString, hashcode);
+        //        //// ////////////Console.WriteLine("  Move {0} to slot {1}", previousNode.tokenString, hashcode);
         //        if (temp == null)
         //        {
         //            // Done
@@ -3943,7 +3954,7 @@ namespace StarCalendar
         //            value = hashTable[hashcode];
         //            if (value == null)
         //            {
-        //                //// //////////Console.WriteLine("   Put Key: {0} in {1}", str, hashcode);
+        //                //// ////////////Console.WriteLine("   Put Key: {0} in {1}", str, hashcode);
         //                hashTable[hashcode] = new TokenHashValue(str, tokenType, tokenValue);
         //                return;
         //            }
@@ -4014,7 +4025,7 @@ namespace StarCalendar
         //                    }
         //                }
         //            }
-        //            //// //////////Console.WriteLine("  COLLISION. Old Key: {0}, New Key: {1}", hashTable[hashcode].tokenString, str);
+        //            //// ////////////Console.WriteLine("  COLLISION. Old Key: {0}, New Key: {1}", hashTable[hashcode].tokenString, str);
         //            i++;
         //            hashcode += hashProbe;
         //            if (hashcode >= TOKEN_HASH_SIZE) hashcode -= TOKEN_HASH_SIZE;
@@ -4174,6 +4185,22 @@ namespace StarCalendar
             }
         }
 
+        public string[] DaysOfTheWeek
+        {
+            get
+            {
+                if (this.saDayNames == null)
+                {
+                    this.saDayNames = InvariantCulture.DaysOfTheWeek;
+                }
+                return this.saDayNames;
+            }
+
+            internal set
+            {
+                this.saDayNames = value;
+            }
+        }
 
         private static StarCulture[] cultures;
 
@@ -4204,6 +4231,7 @@ namespace StarCalendar
         private string cultureName;
         [NonSerialized]
         private string monthDayPattern1;
+        private string[] daysOfTheWeek;
 
 
 

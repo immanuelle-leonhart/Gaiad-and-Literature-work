@@ -75,9 +75,9 @@ namespace StarCalendar
 
         "d"     "0"         day w/o leading zero                  1
         "dd"    "00"        day with leading zero                 01
-        "ddd"               short weekday StarName (abbreviation)     Mon
-        "dddd"              full weekday StarName                     Monday
-        "dddd*"             full weekday StarName                     Monday
+        "ddd"               short WeekDays StarName (abbreviation)     Mon
+        "dddd"              full WeekDays StarName                     Monday
+        "dddd*"             full WeekDays StarName                     Monday
 
 
         "M"     "0"         Month w/o leading zero                2
@@ -326,7 +326,7 @@ namespace StarCalendar
                         //
                         // This means that '\' is at the end of the formatting string.
                         //
-                        //////////Console.WriteLine("throw new FormatException(StarLEnvironment.GetResourceString(" + " Format_InvalidString" + "));");
+                        ////////////Console.WriteLine("throw new FormatException(StarLEnvironment.GetResourceString(" + " Format_InvalidString" + "));");
                         throw new NotImplementedException();
                     }
                 }
@@ -456,7 +456,7 @@ namespace StarCalendar
                 {
                     case 'b':
                     case 'B':
-                        //////Console.WriteLine("Writing Millions to Quadrillions of Years");
+                        ////////Console.WriteLine("Writing Millions to Quadrillions of Years");
                         tokenLen = ParseRepeatPattern(format, i, ch);
                         result.Append(StarDate.billion);
                         break;
@@ -556,7 +556,7 @@ namespace StarCalendar
                         {
                             result.Append((StarDate.Hour < 12 ? sdfi.AMDesignator : sdfi.PMDesignator));
                         }
-                        //////Console.WriteLine(result);
+                        ////////Console.WriteLine(result);
                         //throw new NotImplementedException();
                         break;
                     case 'D':
@@ -576,10 +576,12 @@ namespace StarCalendar
                                 break;
                             case 3:
                             default:
+                                //Console.WriteLine(StarDate.DayOfWeek);
+                                StarCulture.CurrentCulture.WriteAllWeekDays();
                                 result.Append(StarCulture.CurrentCulture.GetDayName(StarDate.DayOfWeek));
                                 break;
                         }
-                        //Console.WriteLine(result);
+                        ////Console.WriteLine(result);
                         break;
                     case 'd':
                         //
@@ -613,7 +615,7 @@ namespace StarCalendar
                                 result.Append(StarCulture.CurrentCulture.LongOrdinal(StarDate.Day));
                                 break;
                         }
-                        //Console.WriteLine(result);
+                        ////Console.WriteLine(result);
                         //throw new NotImplementedException();
                         break;
                     case 'M':
@@ -643,7 +645,7 @@ namespace StarCalendar
                                 result.Append(sdfi.MonthNames[Month - 1]);
                                 break;
                         }
-                        //Console.WriteLine(result);
+                        ////Console.WriteLine(result);
                         //throw new NotImplementedException();
                         break;
                     case 'y':
@@ -654,8 +656,8 @@ namespace StarCalendar
 
                         int year = StarDate.Year; //throw new NotImplementedException();
                         tokenLen = ParseRepeatPattern(format, i, ch);
-                        //Console.WriteLine(result);
-                        //Console.WriteLine(tokenLen);
+                        ////Console.WriteLine(result);
+                        ////Console.WriteLine(tokenLen);
 
                         switch (tokenLen)
                         {
@@ -687,7 +689,7 @@ namespace StarCalendar
                                 result.Append(StarDate.fullyear % Math.Pow(10, tokenLen));
                                 break;
                         }
-                        //Console.WriteLine(result);
+                        ////Console.WriteLine(result);
                         //throw new NotImplementedException();
                         break;
                     case 'z':
@@ -701,11 +703,11 @@ namespace StarCalendar
                         tokenLen = 1;
                         break;
                     case '/':
-                        //////////Console.WriteLine(sdfi == null);
-                        //////////Console.WriteLine(sdfi.GetDateSeparator());
+                        ////////////Console.WriteLine(sdfi == null);
+                        ////////////Console.WriteLine(sdfi.GetDateSeparator());
                         result.Append(sdfi.GetDateSeparator()); ////throw new NotImplementedException();
                         tokenLen = 1;
-                        //////Console.WriteLine(result);
+                        ////////Console.WriteLine(result);
                         break;
                     case '\'':
                     case '\"':
@@ -722,7 +724,7 @@ namespace StarCalendar
                         // Besides, we will not allow "%%" appear in the pattern.
                         if (nextChar >= 0 && nextChar != (int)'%')
                         {
-                            ////////Console.WriteLine("Append");
+                            //////////Console.WriteLine("Append");
                             result.Append(FormatCustomized(StarDate, ((char)nextChar).ToString(), sdfi, offset));
                             tokenLen = 2;
                         }
@@ -802,13 +804,13 @@ namespace StarCalendar
 
         //private static void HebrewFormatDigits(StringBuilder result, int day)
         //{
-        //    //////////Console.WriteLine("I have no idea what this does but I don't want this to run since I'm not using the Hebrew StarCulture");
+        //    ////////////Console.WriteLine("I have no idea what this does but I don't want this to run since I'm not using the Hebrew StarCulture");
         //    //throw new NotImplementedException();
         //}
 
         //private static void FormatDigits(StringBuilder result, int hour12, int tokenLen)
         //{
-        //    //////////Console.WriteLine("Probably Pointless Method");
+        //    ////////////Console.WriteLine("Probably Pointless Method");
         //}
 
 
@@ -1023,9 +1025,9 @@ namespace StarCalendar
 
         internal static String Format(StarDate StarDate, String format, StarCulture sdfi)
         {
-            ////////////Console.WriteLine(format);
+            //////////////Console.WriteLine(format);
             //throw new NotImplementedException();
-            //////////Console.WriteLine(sdfi.CultureName);
+            ////////////Console.WriteLine(sdfi.CultureName);
             return Format(StarDate, format, sdfi, NullOffset);
         }
 
@@ -1048,8 +1050,8 @@ namespace StarCalendar
 
                 format = ExpandPredefinedFormat(format, ref StarDate, ref sdfi, ref offset);
             }
-            //////////Console.WriteLine(sdfi.CultureName);
-            //////////Console.WriteLine("Return");
+            ////////////Console.WriteLine(sdfi.CultureName);
+            ////////////Console.WriteLine("Return");
             return FormatCustomized(StarDate, format, sdfi, offset);
         }
 
@@ -1249,7 +1251,7 @@ namespace StarCalendar
 
         internal static string GetStringAndRelease(StringBuilder result)
         {
-            //////////Console.WriteLine("GetStringAndRelease is not implemented yet");
+            ////////////Console.WriteLine("GetStringAndRelease is not implemented yet");
             return result.ToString();
         }
     }
