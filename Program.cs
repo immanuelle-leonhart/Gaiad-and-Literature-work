@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Security.Cryptography.X509Certificates;
 
-namespace StarCalendar
+namespace ConsoleApp
 {
     class Program
     {

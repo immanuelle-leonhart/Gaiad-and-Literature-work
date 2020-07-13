@@ -279,12 +279,6 @@ namespace StarCalendar
             0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334, 365};
         private static readonly int[] DaysToMonth366 = {
             0, 31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335, 366};
-
-        //public static readonly StarDate MinValue = new StarDate(MinTicks, DateTimeKind.Unspecified);
-        //public static readonly StarDate MaxValue = new StarDate(MaxTicks, DateTimeKind.Unspecified);
-        //private readonly StarZone local;
-        //private static readonly StarZone uTC;
-        //private readonly BigInteger netStart;
         private const UInt64 ticksMask = 0x3FFFFFFFFFFFFFFF;
         private const UInt64 FlagsMask = 0xC000000000000000;
         private const UInt64 LocalMask = 0x8000000000000000;
@@ -313,20 +307,14 @@ namespace StarCalendar
         private static IEnumerable<StarDate> testYear;
         private static string defaultFormat = "yyyyy/MM/dd hh:mm:ss tt zzzz";
         private static StarDate maya1;
-        public static bool LongDefault = false;
+        public static bool LongDefault = false; //switches whether the default tostring method prints a long date or a short date
 
-        //private int extraTicks;
-
-        //private int julian;
-
-        //private StarZone z;
-
-        public StarDate TickTimeZoneConvert(StarZone z)
+        public StarDate TickTimeZoneConvert(StarZone z) //converts a timezone by treating the utc ticks in a StarDate as though they were the ticks of that timezone
         {
             return new StarDate(Year, Month, Day, Hour, Minute, Second, Millisecond);
         }
 
-        public Time error
+        public Time error // the margin of error for a time
         {
             get
             {
@@ -339,51 +327,23 @@ namespace StarCalendar
             }
         }
 
-        //private Time atomic1;
-        //private Time error1;
-        //private StarZone uTC1;
-
-        //public static StarCulture English = StarCulture.InvariantCulture;
-        //public static StarZone Local = StarZone.Local;
-
-        internal static int DayFromMonth(int day)
-        {
-            day--;
-            day %= 7;
-            day++;
-            return day;
-        }
-
-        public static StarDate StarHanukkah()
+        public static StarDate StarHanukkah() //gives the date of hannukkah for this year
         {
             return new StarDate(GregHanukkah());
         }
 
-        private static void DemonstrateLanguage(StarCulture lang, string format)
-        {
-            //StarDate.SetFormat("numeric");
-            StarDate dt = StarDate.maya;
-            dt -= 379 * StarDate.DayTime;
-            int i = 0;
-            while (dt < StarDate.maya)
-            {
-                dt += StarDate.DayTime;
-                i++;
-                ////////////Console.WriteLine(dt.ToString(lang, format));
-            }
-        }
 
         internal static void SetFormat(string v)
         {
             DefaultFormat = v;
         }
 
-        public static void MakeChart(string v)
+        public static void MakeChart(string v) //makes a chart for a year at the designated path
         {
             StarDate.MakeChart(v, DateTime.Now.Year);
         }
 
-        public static void MakeChart(string v, int gregyear)
+        public static void MakeChart(string v, int gregyear) //makes a chart for a year at the designated path
         {
             StreamWriter chart = new StreamWriter(v + "StarCalendar.csv");
             StarDate dt = StarDate.FromGreg(gregyear, 6, 1);
@@ -437,55 +397,14 @@ namespace StarCalendar
             return dt;
         }
 
-        //internal static string Time(Dictionary<string, int> data)
-        //{
-        //    string dt = "";
-        //    try
-        //    {
-        //        dt = data["hour"] + ":" + data["Minute"];
-        //        try
-        //        {
-        //            dt = dt + ":" + data["second"];
-        //            try
-        //            {
-        //                dt = dt + ":" + data["Millisecond"];
-        //                try
-        //                {
-        //                    dt = dt + ":" + data["_ticks"];
-        //                }
-        //                catch (KeyNotFoundException)
-        //                {
 
-        //                }
-        //            }
-        //            catch (KeyNotFoundException)
-        //            {
 
-        //            }
-        //        }
-        //        catch (KeyNotFoundException)
-        //        {
-
-        //        }
-        //    }
-        //    catch (KeyNotFoundException)
-        //    {
-
-        //    }
-        //    return dt;
-        //}
-
-        private static string GregHoliday(DateTime dateTime)
-        {
-            throw new NotImplementedException();
-        }
-
-        public static StarDate StarHanukkah(DateTime dt)
+        public static StarDate StarHanukkah(DateTime dt) //
         {
             return new StarDate(GregHanukkah(dt));
         }
 
-        public static StarDate StarHanukkah(StarDate dt)
+        public static StarDate StarHanukkah(StarDate dt)//
         {
             return new StarDate(GregHanukkah(dt));
         }
@@ -495,12 +414,12 @@ namespace StarCalendar
             throw new NotImplementedException();
         }
 
-        public static DateTime GregHanukkah()
+        public static DateTime GregHanukkah()//
         {
             return GregHanukkah(DateTime.Now);
         }
 
-        public static DateTime GregHanukkah(DateTime now)
+        public static DateTime GregHanukkah(DateTime now)//
         {
             System.Globalization.Calendar HebCal = new HebrewCalendar();
             int i = now.Year;
@@ -511,7 +430,7 @@ namespace StarCalendar
         }
 
 
-        public static DateTime GregHanukkah(StarDate dt)
+        public static DateTime GregHanukkah(StarDate dt)//
         {
             DateTime o = new StarDate(dt.Year, 12, 1).DateTime;
             return GregHanukkah(o);
@@ -519,7 +438,6 @@ namespace StarCalendar
 
 
 
-        //public StarZone _timeZone;
 
 
         internal static StarDate MathFromGreg(int[] v)
@@ -532,7 +450,7 @@ namespace StarCalendar
 
 
 
-        public int Hour
+        public int Hour//
         {
             get
             {
@@ -563,7 +481,7 @@ namespace StarCalendar
         }
 
 
-        public static StarDate Now
+        public static StarDate Now//
         {
             get { return new StarDate(DateTime.UtcNow, StarZone.Local); }
             //internal set
@@ -571,14 +489,14 @@ namespace StarCalendar
             //    now = value;
             //}
         }
-        public static StarDate UtcNow
+        public static StarDate UtcNow//
         {
             get
             {
                 return new StarDate(DateTime.UtcNow, StarZone.UTC);
             }
         }
-        public long fullyear
+        public long fullyear//
         {
             get { return this.atomic / StarDate.AverageYear; }
             internal set
@@ -593,7 +511,7 @@ namespace StarCalendar
             throw new NotImplementedException();
         }
 
-        public int quadrillion
+        public int quadrillion//
         {
             get
             {
@@ -673,14 +591,7 @@ namespace StarCalendar
                 this.atomic += diff * StarDate.MillisecondTime;
             }
         }
-        //public BigInteger Ticks
-        //{
-        //    get { return this.atomic._ticks; }
-        //    internal set
-        //    {
-        //        this.atomic._ticks = value;
-        //    }
-        //}
+
         public string MonthName
         {
             get { return StarCulture.CurrentCulture.month(this.Month); }
@@ -736,22 +647,6 @@ namespace StarCalendar
             }
         }
 
-        private int MonthNumberFromName(string value)
-        {
-            throw new NotImplementedException();
-        }
-
-        //public StarZone TimeZone
-        //{
-        //    get
-        //    {
-        //        return this.TimeZone;
-        //    }
-        //    set
-        //    {
-        //        this.TimeZone = value;
-        //    }
-        //}
 
         public Time Radio
         {
@@ -790,14 +685,14 @@ namespace StarCalendar
             }
         }
 
-        public bool IsTerran
+        public bool IsTerran//
         {
             get
             {
                 return this.TimeZone.IsTerran;
             }
         }
-        public bool SupportsDaylightSavingTime
+        public bool SupportsDaylightSavingTime//
         {
             get
             {
@@ -806,7 +701,7 @@ namespace StarCalendar
 
         }
 
-        public Time offset
+        public Time offset//
         {
             get
             {
@@ -826,16 +721,7 @@ namespace StarCalendar
             }
         }
 
-        //public bool HasTimeZone
-        //{
-        //    get
-        //    {
-        //        return this._timeZone.HasTimeZone;
-        //    }
-
-        //}
-
-        public StarDate(DateTime dt)
+        public StarDate(DateTime dt)//
         {
             dateData = NetStart + dt.Ticks;
             errorData = 0;

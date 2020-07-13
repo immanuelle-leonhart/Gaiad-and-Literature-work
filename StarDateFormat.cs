@@ -442,7 +442,7 @@ namespace StarCalendar
         //
         //  Actions: Format the StarDate instance using the specified format.
         //
-        internal static String FormatCustomized(StarDate StarDate, String format, StarCulture sdfi, Time offset)
+        private static String FormatCustomized(StarDate StarDate, String format, StarCulture sdfi, Time offset)
         {
             StringBuilder result = new StringBuilder();
             int i = 0;

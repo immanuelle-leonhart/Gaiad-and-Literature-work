@@ -77,9 +77,10 @@ namespace StarCalendar
         public static StarCulture InvariantCulture = dict["English"];
         public static StarCulture JapaneseCulture = dict["Japanese"];
         public static StarCulture ChineseCulture = dict["Chinese"];
+        private static StarCulture currentCulture = isodict[CultureInfo.CurrentCulture.TwoLetterISOLanguageName];
         internal bool m_isInherited = false;
         private readonly bool v;
-        internal static StarCulture CurrentCulture = isodict[CultureInfo.CurrentCulture.TwoLetterISOLanguageName];
+
         private StarCulture starDateInfo;
         private IFormatProvider formatProvider;
         [NonSerialized]
@@ -4202,6 +4203,36 @@ namespace StarCalendar
             }
         }
 
+        public static StarCulture CurrentCulture
+        {
+            get
+            {
+                return currentCulture;
+            }
+
+            internal set
+            {
+                currentCulture = value;
+                try
+                {
+                    //trying to change current culture for entire program when you change stardate culture
+                    CultureInfo.CurrentCulture = CultureInfo.GetCultureInfo(currentCulture.TwoLetterISO);
+                }
+                catch (CultureNotFoundException)
+                {
+
+                }
+                catch (SecurityException)
+                {
+
+                }
+                catch (Exception)
+                {
+
+                }
+            }
+        }
+
         private static StarCulture[] cultures;
 
         //public static StarCulture InvariantCulture;
@@ -4232,6 +4263,7 @@ namespace StarCalendar
         [NonSerialized]
         private string monthDayPattern1;
         private string[] daysOfTheWeek;
+        
 
 
 
