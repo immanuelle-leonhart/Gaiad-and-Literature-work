@@ -14,18 +14,14 @@ namespace StarCalendar
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             CultureInfo.CurrentCulture = CultureInfo.GetCultureInfo("en");
-            foreach (StarCulture culture in StarCulture.Cultures)
+            StarDate.LongDefault = true;
+            StarDate dt = StarDate.Maya;
+            dt -= 380 * StarDate.DayTime;
+            int i = 0;
+            while (i < 2000)
             {
-                StarCulture.CurrentCulture = culture;
-                Console.WriteLine(StarCulture.CurrentCulture.CultureName);
-                StarDate.LongDefault = true;
-                StarDate dt = StarDate.Maya;
-                int i = 0;
-                while (i < 380)
-                {
-                    Console.WriteLine(dt++);
-                    i++;
-                }
+                Console.WriteLine(dt++);
+                i++;
             }
         }
     }

@@ -1637,7 +1637,7 @@ namespace StarCalendar
                 n -= y1 * DaysPerYear;
                 int d = (int)n + 1;
                 if (part == DatePartDayOfYear) return d;
-                if (part == DatePartMonth) return (d / 28) + 1;
+                if (part == DatePartMonth) return ((d - 1) / 28) + 1;
                 d %= 28;
                 if (d == 0) d = 28;
                 if (part == DatePartDay) return d;
