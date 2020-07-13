@@ -1654,10 +1654,17 @@ namespace StarCalendar
         // are needed rather than redoing the computations for each.
         internal void GetDatePart(out int year, out int month, out int day)
         {
+            Int64 n = (long)(AdjustedTicks / TicksPerDay);
             if (IsTerran)
             {
-                Int64 n = (long)(AdjustedTicks / TicksPerDay);
+                n %= DaysPerBillion;
                 n %= DaysPerMillion;
+                //////////Console.WriteLine("Days Since Manu = " + n);
+                //Logic Error is here
+                //////////Console.WriteLine(DaysPerAverageYear);
+                //////////Console.WriteLine(n / DaysPerAverageYear);
+                ////////////Console.WriteLine()
+                //throw new NotImplementedException();
                 int y78 = (int)(n / DaysPer78Years);
                 n -= y78 * DaysPer78Years;
                 int y6 = (int)(n / DaysPerSixYears);
@@ -1668,8 +1675,10 @@ namespace StarCalendar
                 year = 78 * y78 + 6 * y6 + y1;
                 n -= y1 * DaysPerYear;
                 int d = (int)n + 1;
-                month = (d / 28) + 1;
-                day = (d % 28);
+                month = ((d - 1) / 28) + 1;
+                d %= 28;
+                if (d == 0) d = 28;
+                day = d;
             }
             else
             {
