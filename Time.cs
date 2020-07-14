@@ -71,11 +71,6 @@ namespace StarCalendar
 
         // internal so that DateTime doesn't have to call an extra get
         // method for some arithmetic operations.
-        //internal BigInteger _ticks;
-
-        //public Time() {
-        //    _ticks = 0;
-        //}
 
         public Time(long ticks)
         {
@@ -272,14 +267,6 @@ namespace StarCalendar
             return Interval(value, MillisPerMinute);
         }
 
-        //public Time Negate()
-        //{
-        //    if (Ticks == Time.MinValue.Ticks)
-        //        throw new OverflowException(); //Environment.GetResourceString("Overflow_NegateTwosCompNum"));
-        //    Contract.EndContractBlock();
-        //    return new Time(-_ticks);
-        //}
-
         public static Time FromSeconds(double value)
         {
             return Interval(value, MillisPerSecond);
@@ -347,27 +334,6 @@ namespace StarCalendar
         {
             return t1._ticks != t2._ticks;
         }
-
-        //public static bool operator <(Time t1, Time t2)
-        //{
-        //    return t1._ticks < t2._ticks;
-        //}
-
-        //public static bool operator <=(Time t1, Time t2)
-        //{
-        //    return t1._ticks <= t2._ticks;
-        //}
-
-        //public static bool operator >(Time t1, Time t2)
-        //{
-        //    return t1._ticks > t2._ticks;
-        //}
-
-        //public static bool operator >=(Time t1, Time t2)
-        //{
-        //    return t1._ticks >= t2._ticks;
-        //}
-
 
         //
         // In .NET Framework v1.0 - v3.5 System.Time did not implement IFormattable
@@ -441,16 +407,6 @@ namespace StarCalendar
             return new Time(v);
         }
 
-        //public static Time operator +(Time t1, Time t2)
-        //{
-        //    return new Time(t1._ticks + t2._ticks);
-        //}
-
-        //public static Time operator -(Time t1, Time t2)
-        //{
-        //    return new Time(t1._ticks - t2._ticks);
-        //}
-
         public static Time operator *(long l, Time t)
         {
             return t * l;
@@ -523,11 +479,6 @@ namespace StarCalendar
             throw new NotImplementedException();
         }
 
-        //public bool Equals(Time other)
-        //{
-        //    return this._ticks == other._ticks;
-        //}
-
         int IComparable<Time>.CompareTo(Time other)
         {
             return (this._ticks - other._ticks).Sign;
@@ -535,15 +486,6 @@ namespace StarCalendar
 
         public TimeSpan TimeSpan => new TimeSpan((long)this._ticks);
 
-        //public static bool operator ==(Time t1, Time t2)
-        //{
-        //    return t1.Equals(t2);
-        //}
-
-        //public static bool operator !=(Time t1, Time t2)
-        //{
-        //    return !(t1.Equals(t2));
-        //}
 
         public static bool operator ==(TimeSpan timeSpan, Time timeSpanInfo)
         {
@@ -585,85 +527,6 @@ namespace StarCalendar
             return (t1 == t2) || (t1 < t2);
         }
 
-        //internal Dictionary<string, double> timespandata(Time day)
-        //{
-        //    Dictionary<string, double> data = new Dictionary<string, double>();
-        //    data["years"] = this / StarDate.Year;
-        //    Time rem = this % StarDate.Year;
-        //    data["months"] = rem / day;
-        //    data["weeks"] = rem / StarDate.week;
-        //    throw new NotImplementedException();
-        //    rem %= StarDate.DayTime;
-
-        //    data["day"] = rem / day;
-        //    rem %= day;
-        //    Time daytime = rem;
-        //    data["hour"] = rem / StarDate.HourTime;
-        //    rem %= StarDate.HourTime;
-        //    data["Minute"] = rem / StarDate.MinuteTime;
-        //    rem %= StarDate.MinuteTime;
-        //    data["second"] = rem / StarDate.SecondTime;
-        //    rem %= StarDate.SecondTime;
-        //    data["millisec"] = rem / StarDate.MillisecondTime;
-        //    rem %= StarDate.MillisecondTime;
-        //    data["_ticks"] = (int)rem._ticks;
-        //    rem = daytime;
-        //    data["Centidi"] = rem / StarDate.Centidi;
-        //    rem %= StarDate.Centidi;
-        //    data["Millidi"] = rem / StarDate.Millidi;
-        //    rem %= StarDate.Millidi;
-        //    data["Microdi"] = rem / StarDate.Microdi;
-        //    rem %= StarDate.Microdi;
-        //    data["Nanodi"] = rem / StarDate.Nanodi;
-        //    rem %= StarDate.Nanodi;
-        //    data["Nanodi Ticks"] = (int)rem._ticks;
-        //    return data;
-        //}
-
-        //public override string ToString()
-        //{
-        //    return this.data("Year") + "-" + this.data("Month") + "-" + this.data("day");
-        //}
-
-        //private int data(string v)
-        //{
-        //    return this.data()[v];
-        //}
-
-        //private Dictionary<string, int> data()
-        //{
-        //    Time t = this;
-        //    Dictionary<string, int> k = new Dictionary<string, int>();
-        //    k.Add("Year", t / StarDate.Year);
-        //    t %= StarDate.Year;
-        //    k.Add("Month", t / StarDate.month);
-        //    t %= StarDate.month;
-        //    k.Add("day", t / StarDate.DayTime);
-        //    t %= StarDate.DayTime;
-        //    return k;
-        //}
-
-        //internal static Time Parse(string prim)
-        //{
-        //    TimeSpan time = TimeSpan.Parse(prim);
-        //    return new Time(time);
-        //}
-
-        //public override bool Equals(object obj)
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-        //public override int GetHashCode()
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-        //public int days()
-        //{
-        //    return this / StarDate.DayTime;
-        //}
-
         internal Time Negate()
         {
             return this * -1;
@@ -674,10 +537,6 @@ namespace StarCalendar
             throw new NotImplementedException();
         }
 
-        //public string ToString(string format, IFormatProvider formatProvider)
-        //{
-        //    throw new NotImplementedException();
-        //}
 
         public static Time operator *(Time t, BigInteger b)
         {
@@ -687,6 +546,11 @@ namespace StarCalendar
         public static Time operator *(BigInteger b, Time t)
         {
             return t * b;
+        }
+
+        public static implicit operator BigInteger(Time v)
+        {
+            return v.Ticks;
         }
 
         internal void GetTimePart(out int sign, out int h, out int m)

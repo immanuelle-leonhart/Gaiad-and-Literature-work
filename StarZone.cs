@@ -74,22 +74,17 @@ namespace StarCalendar
 
         internal string PlanetName = "Default Planet Name";
         internal Time LocalDay = StarDate.DayTime;
-        public Time start = new Time(0); //atomic time that movement starts
-        public double[] speeds = new double[0];
-        public BigInteger[] distanceTicks = new BigInteger[0]; //position, speed, acceleration, etc
-        public double[] polar = new double[0]; //position, speed, acceleration, etc
-        public double[] azimuthal = new double[0]; //position, speed, acceleration, etc
-        public string StarName = "Default Star System Name";
+        private Time start = new Time(0); //atomic time that movement starts
+        private double[] speeds = new double[0];
+        private BigInteger[] distanceTicks = new BigInteger[0]; //position, speed, acceleration, etc
+        private double[] polar = new double[0]; //position, speed, acceleration, etc
+        private double[] azimuthal = new double[0]; //position, speed, acceleration, etc
+        private string StarName = "Default Star System Name";
         public static StarZone Terra;
         public static StarZone Mars;
         public static StarZone Amaterasu;
         public static StarZone Local = new StarZone(TimeZoneInfo.Local);
         public static StarZone UTC = new StarZone(TimeZoneInfo.Utc);
-        //public static StarZone Amaterasu = new StarZone("Amaterasu");
-        //internal StarZone Sun = StarZone.Amaterasu;
-        //public static StarZone Terra = new StarZone("Terra", StarDate.DayTime, StarZone.Amaterasu);
-        //public static StarZone Mars = new StarZone("Mars", StarDate.Sol, StarZone.Amaterasu);
-        //public StarZone planet = StarZone.Terra;
         private TimeZoneInfo tz = TimeZoneInfo.Utc;
         private Time UTCOffset = new Time(0);
         private string displayName = "Default TimeZone PlanetName";
@@ -102,12 +97,6 @@ namespace StarCalendar
             this.StarName = "Amaterasu";
             this.PlanetName = "Terra";
         }
-
-        //public StarZone(TimeZoneInfo TimeZone, string v, StarZone planet) : this(TimeZone)
-        //{
-        //    this.displayName = v;
-        //    this.planet = planet;
-        //}
 
         public bool hasTimeZone
         {
@@ -135,21 +124,6 @@ namespace StarCalendar
                 this.LocalDay = value;
             }
         }
-        //public Time BaseUtcOffset
-        //{
-        //    get
-        //    {
-        //        if (this.IsTerran)
-        //        {
-        //            return new Time(this.TimeZone.BaseUtcOffset);
-        //        }
-        //        else
-        //        {
-        //            return UtcOffset;
-        //        }
-        //    }
-
-        //}
         public string DaylightName
         {
             get
@@ -194,7 +168,7 @@ namespace StarCalendar
 
 
 
-        private Time distance(Time atomic)
+        public Time distance(Time atomic)
         {
             switch (Order)
             {
@@ -222,29 +196,12 @@ namespace StarCalendar
             return new StarZone(v);
         }
 
-        internal static StarZone FromSerializedString(string v)
-        {
-            throw new NotImplementedException();
-        }
 
-        internal TimeZoneInfo.AdjustmentRule[] GetAdjustmentRules()
-        {
-            if (IsTerran)
-            {
-                return tz.GetAdjustmentRules();
-            }
-            else
-            {
-                return null;
-            }
-        }
+
+        
+
 
         public static StarZone[] GetSystemStarZones()
-        {
-            return GetSystemTimeZones();
-        }
-
-        public static StarZone[] GetSystemTimeZones()
         {
             return SystemTimeZones;
             //return _sys_zones;
@@ -255,14 +212,14 @@ namespace StarCalendar
         //    throw new NotImplementedException();
         //}
 
-        internal static StarDate ConvertTimeToUtc(StarDate dt, StarZone z)
+        public static StarDate ConvertTimeToUtc(StarDate dt, StarZone z)
         {
             dt.TickTimeZoneConvert(z);
             dt.TimeZone = UTC;
             return dt;
         }
 
-        internal static StarDate ConvertTimeToUtc(StarDate dt)
+        public static StarDate ConvertTimeToUtc(StarDate dt)
         {
             dt.TimeZone = UTC;
             return dt;
@@ -276,17 +233,6 @@ namespace StarCalendar
         internal static void ConvertTimeBySystemTimeZoneId(StarDate now, string v)
         {
             now.TimeZone = FindSystemTimeZoneById(v);
-        }
-
-        internal static void ConvertTime(StarDate now, StarZone local, StarZone uTC)
-        {
-            now.TimeZone = uTC;
-        }
-
-        internal static void ConvertTime(StarDate now, StarZone uTC)
-        {
-            now.TimeZone = uTC;
-            //return now;
         }
 
         internal void ClearCachedData()
@@ -413,6 +359,11 @@ namespace StarCalendar
             }
         }
 
+        internal object distance()
+        {
+            throw new NotImplementedException();
+        }
+
         internal Time ToArrival(Time atomic)
         {
             switch (Order)
@@ -476,25 +427,6 @@ namespace StarCalendar
                 return BaseUtcOffset;
             }
         }
-
-        //internal bool Sol
-        //{
-        //    get
-        //    {
-        //        return planet.Sol;
-        //    }
-        //}
-
-
-
-
-
-
-        //public override string ToString()
-        //{
-        //    return base.ToString();
-        //}
-
 
 
 
@@ -626,15 +558,6 @@ namespace StarCalendar
             this.LocalDay = LocalDay;
             //this.Sun = Sun;
         }
-
-        //public bool Sol
-        //{
-        //    get
-        //    {
-        //        return this.Sun.Sol;
-        //    }
-        //}
-
 
 
 
@@ -820,57 +743,6 @@ namespace StarCalendar
         private const long c_TicksPerDay = c_TicksPerHour * 24;
         private const long c_TicksPerDayRange = c_TicksPerDay - c_TicksPerMillisecond;
 
-        //
-        // All cached data are encapsulated in a helper class to allow consistent view even when the data are refreshed using ClearCachedData()
-        //
-        // For example, StarZone.Local can be cleared by another thread calling StarZone.ClearCachedData. Without the consistent snapshot, 
-        // there is a chance that the internal ConvertTime calls will throw since 'source' won't be reference equal to the new StarZone.Local.
-        //
-        //#pragma warning disable 0420
-        //class CachedData
-        //{
-        //    private volatile StarZone m_localTimeZone;
-        //    private volatile StarZone UTC;
-
-        //    private StarZone CreateLocal()
-        //    {
-        //        lock (this)
-        //        {
-        //            StarZone _timeZone = m_localTimeZone;
-        //            if (_timeZone == null)
-        //            {
-        //                _timeZone = StarZone.GetLocalTimeZone(this);
-
-        //                // this step is to break the reference equality
-        //                // between StarZone.Local and a second time zone
-        //                // such as "Pacific Standard Time"
-        //                _timeZone = new StarZone(
-        //                                    _timeZone.m_id,
-        //                                    _timeZone.BaseUtcOffset,
-        //                                    _timeZone.m_displayName,
-        //                                    _timeZone.m_standardDisplayName,
-        //                                    _timeZone.m_daylightDisplayName,
-        //                                    _timeZone.m_adjustmentRules,
-        //                                    false);
-
-        //                m_localTimeZone = _timeZone;
-        //            }
-        //            return _timeZone;
-        //        }
-        //    }
-
-        //    public StarZone Local
-        //    {
-        //        get
-        //        {
-        //            StarZone _timeZone = m_localTimeZone;
-        //            if (_timeZone == null)
-        //            {
-        //                _timeZone = CreateLocal();
-        //            }
-        //            return _timeZone;
-        //        }
-        //    }
 
         private StarZone CreateUtc()
         {
@@ -1125,17 +997,17 @@ namespace StarCalendar
         //
         // returns a cloned array of AdjustmentRule objects
         //
-        //public AdjustmentRule[] GetAdjustmentRules()
-        //{
-        //    if (m_adjustmentRules == null)
-        //    {
-        //        return new AdjustmentRule[0];
-        //    }
-        //    else
-        //    {
-        //        return (AdjustmentRule[])m_adjustmentRules.Clone();
-        //    }
-        //}
+        public TimeZoneInfo.AdjustmentRule[] GetAdjustmentRules()
+        {
+            if (IsTerran)
+            {
+                return tz.GetAdjustmentRules();
+            }
+            else
+            {
+                return null;
+            }
+        }
 
 
         //
@@ -1189,10 +1061,6 @@ namespace StarCalendar
             return (Time)tz.GetUtcOffset(StarDate.DateTime);
         }
 
-        public override string ToString()
-        {
-            return ToString(4);
-        }
 
         public string ToString(int tokenLen)
         {
@@ -1467,124 +1335,16 @@ namespace StarCalendar
         // Converts the value of the StarDate object from sourceTimeZone to destinationTimeZone
         //
 
-        //static public DateTimeOffset ConvertTime(DateTimeOffset DateTimeOffset, StarZone destinationTimeZone)
-        //{
-        //    if (destinationTimeZone == null)
-        //    {
-        //        throw new ArgumentNullException("destinationTimeZone");
-        //    }
-
-        //    Contract.EndContractBlock();
-        //    // calculate the destination time zone offset
-        //    StarDate utcStarDate = DateTimeOffset.UtcStarDate;
-        //    Time destinationOffset = GetUtcOffsetFromUtc(utcStarDate, destinationTimeZone);
-
-        //    // check for overflow
-        //    Int64 ticks = utcStarDate.Ticks + destinationOffset.Ticks;
-
-        //    if (ticks > DateTimeOffset.MaxValue.Ticks)
-        //    {
-        //        return DateTimeOffset.MaxValue;
-        //    }
-        //    else if (ticks < DateTimeOffset.MinValue.Ticks)
-        //    {
-        //        return DateTimeOffset.MinValue;
-        //    }
-        //    else
-        //    {
-        //        return new DateTimeOffset(ticks, destinationOffset);
-        //    }
-        //}
+        static public DateTimeOffset ConvertTime(DateTimeOffset DateTimeOffset, StarZone destinationTimeZone)
+        {
+            return TimeZoneInfo.ConvertTime(DateTimeOffset, destinationTimeZone.tz);
+        }
 
 
-        //static public StarDate ConvertTime(StarDate StarDate, StarZone sourceTimeZone, StarZone destinationTimeZone)
-        //{
-        //    return ConvertTime(StarDate, sourceTimeZone, destinationTimeZone, StarZoneOptions.None, s_cachedData);
-        //}
-
-
-        //static internal StarDate ConvertTime(StarDate StarDate, StarZone sourceTimeZone, StarZone destinationTimeZone, StarZoneOptions flags)
-        //{
-        //    return ConvertTime(StarDate, sourceTimeZone, destinationTimeZone, flags, s_cachedData);
-        //}
-
-        //static private StarDate ConvertTime(StarDate StarDate, StarZone sourceTimeZone, StarZone destinationTimeZone, StarZoneOptions flags, CachedData cachedData)
-        //{
-        //    if (sourceTimeZone == null)
-        //    {
-        //        throw new ArgumentNullException("sourceTimeZone");
-        //    }
-
-        //    if (destinationTimeZone == null)
-        //    {
-        //        throw new ArgumentNullException("destinationTimeZone");
-        //    }
-        //    Contract.EndContractBlock();
-
-        //    DateTimeKind sourceKind = cachedData.GetCorrespondingKind(sourceTimeZone);
-        //    if (((flags & StarZoneOptions.NoThrowOnInvalidTime) == 0) && (StarDate.Kind != DateTimeKind.Unspecified) && (StarDate.Kind != sourceKind))
-        //    {
-        //        throw new NotImplementedException(); // throw new ArgumentException(Environment.GetResourceString("Argument_ConvertMismatch"), "sourceTimeZone");
-        //    }
-
-        //    //
-        //    // check to see if the StarDate is in an invalid time range.  This check
-        //    // requires the current AdjustmentRule and DaylightTime - which are also
-        //    // needed to calculate 'sourceOffset' in the normal conversion case.
-        //    // By calculating the 'sourceOffset' here we improve the
-        //    // performance for the normal case at the expense of the 'ArgumentException'
-        //    // case and Loss-less Local special cases.
-        //    //
-        //    AdjustmentRule sourceRule = sourceTimeZone.GetAdjustmentRuleForTime(StarDate);
-        //    Time sourceOffset = sourceTimeZone.BaseUtcOffset;
-
-        //    if (sourceRule != null)
-        //    {
-        //        sourceOffset = sourceOffset + sourceRule.BaseUtcOffsetDelta;
-        //        if (sourceRule.HasDaylightSaving)
-        //        {
-        //            Boolean sourceIsDaylightSavings = false;
-        //            DaylightTimeStruct sourceDaylightTime = GetDaylightTime(StarDate.Year, sourceRule);
-
-        //            // 'StarDate' might be in an invalid time range since it is in an AdjustmentRule
-        //            // period that supports DST 
-        //            if (((flags & StarZoneOptions.NoThrowOnInvalidTime) == 0) && GetIsInvalidTime(StarDate, sourceRule, sourceDaylightTime))
-        //            {
-        //                throw new NotImplementedException(); // throw new ArgumentException(Environment.GetResourceString("Argument_StarDateIsInvalid"), "StarDate");
-        //            }
-        //            sourceIsDaylightSavings = GetIsDaylightSavings(StarDate, sourceRule, sourceDaylightTime, flags);
-
-        //            // adjust the sourceOffset according to the Adjustment Rule / Daylight Saving Rule
-        //            sourceOffset += (sourceIsDaylightSavings ? sourceRule.DaylightDelta : Time.Zero /*FUTURE: sourceRule.StandardDelta*/);
-        //        }
-        //    }
-
-        //    DateTimeKind targetKind = cachedData.GetCorrespondingKind(destinationTimeZone);
-
-        //    // handle the special case of Loss-less Local->Local and UTC->UTC)
-        //    if (StarDate.Kind != DateTimeKind.Unspecified && sourceKind != DateTimeKind.Unspecified
-        //        && sourceKind == targetKind)
-        //    {
-        //        return StarDate;
-        //    }
-
-        //    Int64 utcTicks = StarDate.Ticks - sourceOffset.Ticks;
-
-        //    // handle the normal case by converting from 'source' to UTC and then to 'target'
-        //    Boolean isAmbiguousLocalDst = false;
-        //    StarDate targetConverted = ConvertUtcToTimeZone(utcTicks, destinationTimeZone, out isAmbiguousLocalDst);
-
-        //    if (targetKind == DateTimeKind.Local)
-        //    {
-        //        // Because the ticks conversion between UTC and local is lossy, we need to capture whether the 
-        //        // time is in a repeated hour so that it can be passed to the StarDate constructor.
-        //        return new StarDate(targetConverted.Ticks, DateTimeKind.Local, isAmbiguousLocalDst);
-        //    }
-        //    else
-        //    {
-        //        return new StarDate(targetConverted.Ticks, targetKind);
-        //    }
-        //}
+        static public StarDate ConvertTime(StarDate StarDate, StarZone sourceTimeZone, StarZone destinationTimeZone)
+        {
+            throw new NotImplementedException();
+        }
 
 
 
@@ -1594,27 +1354,20 @@ namespace StarCalendar
         // Converts the value of a StarDate object from Coordinated Universal Time (UTC) to
         // the destinationTimeZone.
         //
-        //static public StarDate ConvertTimeFromUtc(StarDate StarDate, StarZone destinationTimeZone)
-        //{
-        //    CachedData cachedData = s_cachedData;
-        //    return ConvertTime(StarDate, cachedData.Utc, destinationTimeZone, StarZoneOptions.None, cachedData);
-        //}
+        static public StarDate ConvertTimeFromUtc(StarDate dt, StarZone destinationTimeZone)
+        {
+            dt = new StarDate(dt.Year, dt.Month, dt.Day, dt.Hour, dt.Minute, dt.Second, dt.Millisecond, dt.ExtraTicks, dt.error, StarZone.UTC);
+            dt.TimeZone = destinationTimeZone;
+            return dt;
+        }
+
+        public static StarDate ConvertToTimeZone(StarDate dt, StarZone zone)
+        {
+            return new StarDate(dt.Year, dt.Month, dt.Day, dt.Hour, dt.Minute, dt.Second, dt.Millisecond, dt.ExtraTicks, dt.error, StarZone.UTC);
+        }
 
 
-        //
-        // ConvertTimeToUtc -
-        //
-        // Converts the value of a StarDate object to Coordinated Universal Time (UTC).
-        //
-        //static public StarDate ConvertTimeToUtc(StarDate StarDate)
-        //{
-        //    if (StarDate.Kind == DateTimeKind.Utc)
-        //    {
-        //        return StarDate;
-        //    }
-        //    CachedData cachedData = s_cachedData;
-        //    return ConvertTime(StarDate, cachedData.Local, cachedData.Utc, StarZoneOptions.None, cachedData);
-        //}
+
 
 
 
@@ -1647,29 +1400,29 @@ namespace StarCalendar
         //    
         // FromSerializedString -
         //
-        //static public StarZone FromSerializedString(string source)
-        //{
-        //    if (source == null)
-        //    {
-        //        throw new ArgumentNullException("source");
-        //    }
-        //    if (source.Length == 0)
-        //    {
-        //        throw new NotImplementedException(); // throw new ArgumentException(Environment.GetResourceString("Argument_InvalidSerializedString", source), "source");
-        //    }
-        //    Contract.EndContractBlock();
+        static public StarZone FromSerializedString(string source)
+        {
+            if (source == null)
+            {
+                throw new ArgumentNullException("source");
+            }
+            if (source.Length == 0)
+            {
+                throw new NotImplementedException(); // throw new ArgumentException(Environment.GetResourceString("Argument_InvalidSerializedString", source), "source");
+            }
+            Contract.EndContractBlock();
 
-        //    return StringSerializer.GetDeserializedStarZone(source);
-        //}
+            return StringSerializer.GetDeserializedStarZone(source);
+        }
 
 
         //
         // GetHashCode -
         //
-        //public override int GetHashCode()
-        //{
-        //    return m_id.ToUpper(CultureInfo.InvariantCulture).GetHashCode();
-        //}
+        public override int GetHashCode()
+        {
+            throw new NotImplementedException();
+        }
 
         internal static StarZone FindTimeZone(string prim)
         {
@@ -1795,10 +1548,10 @@ namespace StarCalendar
         // returns the DisplayName: 
         // "(GMT-08:00) Pacific Time (US & Canada); Tijuana"
         //
-        //public override string ToString()
-        //{
-        //    return this.ToString(5);
-        //}
+        public override string ToString()
+        {
+            return this.ToString(5);
+        }
 
 
         //
@@ -1806,27 +1559,9 @@ namespace StarCalendar
         //
         // returns a StarZone instance that represents Universal Coordinated Time (UTC)
         //
-        //static public StarZone Utc
-        //{
-        //    get
-        //    {
-        //        Contract.Ensures(Contract.Result<StarZone>() != null);
-        //        return s_cachedData.Utc;
-        //    }
-        //}
 
-        //public StarZone UTC
-        //{
-        //    get
-        //    {
-        //        return utcTimeZone;
-        //    }
 
-        //    private set
-        //    {
-        //        utcTimeZone = value;
-        //    }
-        //}
+
 
 
         // -------- SECTION: constructors -----------------*
@@ -1894,29 +1629,6 @@ namespace StarCalendar
         //}
 
         // -------- SECTION: factory methods -----------------*
-
-        //
-        // CreateCustomTimeZone -
-        // 
-        // returns a simple StarZone instance that does
-        // not support Daylight Saving Time
-        //
-        //static public StarZone CreateCustomTimeZone(
-        //        String id,
-        //        Time BaseUtcOffset,
-        //        String displayName,
-        //          String standardDisplayName)
-        //{
-
-        //    return new StarZone(
-        //                   id,
-        //                   BaseUtcOffset,
-        //                   displayName,
-        //                   standardDisplayName,
-        //                   standardDisplayName,
-        //                   null,
-        //                   false);
-        //}
 
         //
         // CreateCustomTimeZone -
@@ -2237,28 +1949,6 @@ namespace StarCalendar
 #endif // FEATURE_WIN32_REGISTRY
 
 
-        //
-        // GetDaylightTime -
-        //
-        // Helper function that returns a DaylightTime from a Year and AdjustmentRule
-        //
-        //static private DaylightTimeStruct GetDaylightTime(Int32 Year, AdjustmentRule rule)
-        //{
-        //    Time delta = rule.DaylightDelta;
-        //    StarDate startTime = TransitionTimeToStarDate(Year, rule.DaylightTransitionStart);
-        //    StarDate endTime = TransitionTimeToStarDate(Year, rule.DaylightTransitionEnd);
-        //    return new DaylightTimeStruct(startTime, endTime, delta);
-        //}
-
-        //public void GetObjectData(SerializationInfo info, StreamingContext context)
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-        //public void OnDeserialization(object sender)
-        //{
-        //    throw new NotImplementedException();
-        //}
 
         //
         // GetIsDaylightSavings -
@@ -2978,15 +2668,7 @@ namespace StarCalendar
             }
         }
 
-        public override int GetHashCode()
-        {
-            throw new NotImplementedException();
-        }
 
-        protected StarZone(SerializationInfo serializationInfo, StreamingContext streamingContext)
-        {
-            throw new NotImplementedException();
-        }
 
         public StarZone(string Name, Time Off, string planet, Time LocalDay, string star) : this(Name, LocalDay)
         {
@@ -2994,6 +2676,11 @@ namespace StarCalendar
             this.LocalDay = LocalDay;
             this.StarName = star;
             this.BaseUtcOffset = Off;
+        }
+
+        protected StarZone(SerializationInfo serializationInfo, StreamingContext streamingContext)
+        {
+            throw new NotImplementedException();
         }
     }
 } // StarZone

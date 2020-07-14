@@ -159,9 +159,6 @@ namespace StarCalendar
 
         private const int DEFAULT_ALL_StarDateS_SIZE = 132;
 
-        internal static readonly StarDateFormat InvariantFormatInfo = StarCulture.InvariantCulture.StarDateFormat;
-        internal static readonly string[] InvariantAbbreviatedMonthNames = InvariantFormatInfo.AbbreviatedMonthNames;
-        internal static readonly string[] InvariantAbbreviatedDayNames = InvariantFormatInfo.AbbreviatedDayNames;
         internal const string Gmt = "GMT";
 
         internal static String[] fixedNumberFormats = new String[] {
@@ -201,18 +198,6 @@ namespace StarCalendar
                 abbreviatedMonthNames = value;
             }
         }
-        public string[] AbbreviatedDayNames
-        {
-            get
-            {
-                return abbreviatedDayNames;
-            }
-
-            private set
-            {
-                abbreviatedDayNames = value;
-            }
-        }
         public static IFormatProvider InvariantInfo
         {
             get
@@ -220,21 +205,7 @@ namespace StarCalendar
                 return StarCulture.InvariantCulture.FormatProvider;
             }
         }
-        //public static object StarLEnvironment { get; private set; }
-        //public static DateTimeFormatInfoScanner StarDateFormatInfoScanner { get; private set; }
-        public static string JapaneseEraStart { get; private set; }
-        public static StarCulture Cal
-        {
-            get
-            {
-                return StarCulture.CurrentCulture;
-            }
 
-            private set
-            {
-                cal1 = value;
-            }
-        }
 
 
         internal static int ParseRepeatPattern(String format, int pos, char patternChar)
@@ -951,7 +922,8 @@ namespace StarCalendar
                     break;
                 case 'm':
                 case 'M':       // Month/Day Date
-                    realFormat = sdfi.MonthDayPattern;
+                    //realFormat = sdfi.MonthDayPattern;
+                    throw new NotImplementedException();
                     break;
                 case 'o':
                 case 'O':
@@ -1070,12 +1042,12 @@ namespace StarCalendar
             int year, month, day;
             StarDate.GetDatePart(out year, out month, out day);
 
-            result.Append(InvariantAbbreviatedDayNames[StarDate.DayOfWeekInt()]);
+            result.Append(StarCulture.InvariantCulture.AbbreviatedDayNames[(int)StarDate.DayOfWeek]);
             result.Append(',');
             result.Append(' ');
             AppendNumber(result, day, 2);
             result.Append(' ');
-            result.Append(InvariantAbbreviatedMonthNames[month - 1]);
+            result.Append(StarCulture.InvariantCulture.AbbreviatedMonthNames[month - 1]);
             result.Append(' ');
             AppendNumber(result, year, 4);
             result.Append(' ');
