@@ -226,7 +226,8 @@
                -Unspecified ""
                -StarDateOffset      "zzzzz" e.g -07:30:15
 
-        "g*"                the current era StarName                  A.D.
+        "g"                the current era StarName                  A.M.
+	"gg*"		   name of the surrent era full		     Anno Manu
 
         ":"                 time separator                        : -- DEPRECATED - Insert separator directly into pattern (eg: "H.mm.ss")
         "/"                 date separator                        /-- DEPRECATED - Insert separator directly into pattern (eg: "M-dd-yyyy")
@@ -288,15 +289,15 @@
 
  Operators
 
- StarDate = Stardate + TimeSpan
- StarDate = Stardate - TimeSpan
- ==
- !=
- <
- >
- <=
- >=
- StarDate++ adds a day
- StarDate-- subtracts a day
- DateTimes and StarDates implicitly cast into each other
- Implicit Casting into string implements ToString()
+ 	StarDate = Stardate + TimeSpan
+ 	StarDate = Stardate - TimeSpan
+ 	==
+ 	!=
+ 	<
+ 	>
+ 	<=
+ 	>=
+ 	StarDate++ adds a day
+ 	StarDate-- subtracts a day
+ 	DateTimes and StarDates implicitly cast into each other
+ 	Implicit Casting into string implements ToString()
