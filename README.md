@@ -1,4 +1,4 @@
-﻿# StarDate
+﻿# Cosmic Calendar
  The Cosmic Calendar of the Order of Life
 
  The StarDate struct represents a Date and Time in the Cosmic Calendar. It is designed to be able to be used interchangably with the 
@@ -7,22 +7,22 @@
  StarZone object supports representation of time zones on earth but also supports timezones on Mars and in space
 
  StarDate constructors
- Base Constructor
- new StarDate(int year, int month, int day, int hour, int minute, int second, int millisecond, int Extraticks)
- These values correspond in a straightforward manner to what they are called except for Extraticks which corresponds to every hundred nanoseconds past the millisecond, or the .NET tick system
- They correspond to months and years and days in the StarDate calendar rather than the gregorian calendar	
- defaults to local timezone according to system
- Any 
- public StarDate(int year, int month, int day, int hour, int minute, int second, int millisecond, int ticks, StarZone timezone, TimeSpan error)
- Further constructors allow you to assign the timezone or the margin of error by adding additional parameters
+     Base Constructor
+     new StarDate(int year, int month, int day, int hour, int minute, int second, int millisecond, int Extraticks)
+     These values correspond in a straightforward manner to what they are called except for Extraticks which corresponds to every hundred nanoseconds past the millisecond, or the .NET tick system
+     They correspond to months and years and days in the StarDate calendar rather than the gregorian calendar	
+     defaults to local timezone according to system
+     Any 
+     public StarDate(int year, int month, int day, int hour, int minute, int second, int millisecond, int ticks, StarZone timezone, TimeSpan error)
+     Further constructors allow you to assign the timezone or the margin of error by adding additional parameters
 
- StarDate(BigInteger ticks, BigInteger error, StarZone timezone) works based on ticks rather than dates
+    StarDate(BigInteger ticks, BigInteger error, StarZone timezone) works based on ticks rather than dates
 
  Conversion from Gregorian
 
- StarDate(DateTime dt), (StarDate) dt, and StarDate.FromGreg(year, month, day, hour, minute, second....) all return a converted StarDate from a Gregorian Date
- the constructor and the cast are the quickest ones as they work based on internal ticks
- StarDate.FromGreg() works by creating a DateTime and converting the ticks if possible, but otherwise will perform a much slower calculation based on the Proleptic Gregorian Calendar
+     StarDate(DateTime dt), (StarDate) dt, and StarDate.FromGreg(year, month, day, hour, minute, second....) all return a converted StarDate from a Gregorian Date
+     the constructor and the cast are the quickest ones as they work based on internal ticks
+     StarDate.FromGreg() works by creating a DateTime and converting the ticks if possible, but otherwise will perform a much slower calculation based on the Proleptic Gregorian Calendar
 
  Non Static Properties
 
@@ -227,7 +227,7 @@
                -StarDateOffset      "zzzzz" e.g -07:30:15
 
         "g"                the current era StarName                  A.M.
-	"gg*"		   name of the surrent era full		     Anno Manu
+	    "gg*"		   name of the surrent era full		     Anno Manu
 
         ":"                 time separator                        : -- DEPRECATED - Insert separator directly into pattern (eg: "H.mm.ss")
         "/"                 date separator                        /-- DEPRECATED - Insert separator directly into pattern (eg: "M-dd-yyyy")
@@ -250,15 +250,15 @@
         "g"                 general date (short date + short time)  culture-specific                        10/28/11999 2:00 AM
         "G"                 general date (short date + long time)   culture-specific                        10/28/11999 2:00:00 AM
         "m"/"M"             Month/Day date                          culture-specific                        Virgo 31
-(G)     "o"/"O"             Round Trip XML                          "yyyy-MM-ddTHH:mm:ss.fffffffK"          11999-10-28 02:00:00.0000000Z
-(G)     "r"/"R"             RFC 1123 date,                          "WWW, dd MMM yyyy HH':'mm':'ss 'GMT'"   Sun, 28 Vir 11999 10:00:00 GMT
-(G)     "s"                 Sortable format, based on ISO 8601.     "yyyy-MM-dd'T'HH:mm:ss"                 11999-10-28T02:00:00
+        "o"/"O"             Round Trip XML                          "yyyy-MM-ddTHH:mm:ss.fffffffK"          11999-10-28 02:00:00.0000000Z
+        "r"/"R"             RFC 1123 date,                          "WWW, dd MMM yyyy HH':'mm':'ss 'GMT'"   Sun, 28 Vir 11999 10:00:00 GMT
+        "s"                 Sortable format, based on ISO 8601.     "yyyy-MM-dd'T'HH:mm:ss"                 11999-10-28T02:00:00
                                                                     ('T' for local time)
         "t"                 short time                              culture-specific                        2:00 AM
         "T"                 long time                               culture-specific                        2:00:00 AM
-(G)     "u"                 Universal time with sortable format,    "yyyy'-'MM'-'dd HH':'mm':'ss'Z'"        11999-10-28 10:00:00Z
+        "u"                 Universal time with sortable format,    "yyyy'-'MM'-'dd HH':'mm':'ss'Z'"        11999-10-28 10:00:00Z
                             based on ISO 8601.
-(U)     "U"                 Universal time with full                culture-specific                        Sunday, Virgo 31, 11999 10:00:00 AM
+        "U"                 Universal time with full                culture-specific                        Sunday, Virgo 31, 11999 10:00:00 AM
                             (long date + long time) format
                             "y"/"Y"             Year/Month day                          culture-specific                        Virgo, 11999
 
@@ -285,6 +285,7 @@
  writes a chart in csv form of date conversions for the given year at the destination given in the path
  CompareTo(StarDate other)
  Implements standard CompareTo Method
+ Documentation for other methods coming soon
 
 
  Operators

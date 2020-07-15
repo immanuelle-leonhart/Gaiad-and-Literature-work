@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ericr\\OneDrive\\Documents\\Github\\StarDate\\StarDate\\StarDate.csproj": {}
+    "C:\\Users\\ericr\\OneDrive\\Documents\\GitHub\\StarDate\\StarDate\\StarDate.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ericr\\OneDrive\\Documents\\Github\\StarDate\\StarDate\\StarDate.csproj": {
+    "C:\\Users\\ericr\\OneDrive\\Documents\\GitHub\\StarDate\\StarDate\\StarDate.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ericr\\OneDrive\\Documents\\Github\\StarDate\\StarDate\\StarDate.csproj",
+        "projectUniqueName": "C:\\Users\\ericr\\OneDrive\\Documents\\GitHub\\StarDate\\StarDate\\StarDate.csproj",
         "projectName": "StarDate",
-        "projectPath": "C:\\Users\\ericr\\OneDrive\\Documents\\Github\\StarDate\\StarDate\\StarDate.csproj",
+        "projectPath": "C:\\Users\\ericr\\OneDrive\\Documents\\GitHub\\StarDate\\StarDate\\StarDate.csproj",
         "packagesPath": "C:\\Users\\ericr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ericr\\OneDrive\\Documents\\Github\\StarDate\\StarDate\\obj\\",
+        "outputPath": "C:\\Users\\ericr\\OneDrive\\Documents\\GitHub\\StarDate\\StarDate\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ericr\\AppData\\Roaming\\NuGet\\NuGet.Config",
