@@ -8,7 +8,7 @@ using System.Globalization;
 using System.Numerics;
 using System.Collections.Generic;
 
-namespace StarCalendar
+namespace CosmicCalendar
 {
     
 

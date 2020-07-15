@@ -3,7 +3,7 @@
 //   Copyright (c) Microsoft Corporation.  All rights reserved.
 //
 // ==--==
-using StarCalendar;
+using CosmicCalendar;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
@@ -12,7 +12,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading;
 
-namespace StarCalendar
+namespace CosmicCalendar
 {
     //using System.Text;
     //using System.Threading;
@@ -531,21 +531,26 @@ namespace StarCalendar
                         //throw new NotImplementedException();
                         break;
                     case 'D':
+                    case 'W':
                         //
-                        // tokenLen == 1 : Two letter Day of Week
-                        // tokenLen == 2 : Day of week as a three-leter abbreviation.
-                        // tokenLen == 3 : Day of week as its full StarName.
+                        // tokenLen == 1 : Symbol Day of the Week
+                        // tokenLen == 2 : Two letter Day of Week
+                        // tokenLen == 3 : Day of week as a three-leter abbreviation.
+                        // tokenLen <= 4 : Day of week as its full StarName.
                         //
                         tokenLen = ParseRepeatPattern(format, i, ch);
                         switch (tokenLen)
                         {
                             case 1:
-                                result.Append(StarCulture.CurrentCulture.GetSuperShortDayName(StarDate.DayOfWeek));
+                                result.Append(StarDate.DaySymbol);
                                 break;
                             case 2:
-                                result.Append(StarCulture.CurrentCulture.GetShortDayName(StarDate.DayOfWeek));
+                                result.Append(StarCulture.CurrentCulture.GetSuperShortDayName(StarDate.DayOfWeek));
                                 break;
                             case 3:
+                                result.Append(StarCulture.CurrentCulture.GetShortDayName(StarDate.DayOfWeek));
+                                break;
+                            case 4:
                             default:
                                 //Console.WriteLine(StarDate.DayOfWeek);
                                 StarCulture.CurrentCulture.WriteAllWeekDays();

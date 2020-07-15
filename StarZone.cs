@@ -41,10 +41,10 @@ using System.Linq;
 using System.Net.Http.Headers;
 using System.Numerics;
 using static System.TimeZoneInfo;
-using StarCalendar;
+using CosmicCalendar;
 using System.Diagnostics.CodeAnalysis;
 
-namespace StarCalendar
+namespace CosmicCalendar
 {
 
 
@@ -74,7 +74,7 @@ namespace StarCalendar
 
         internal string PlanetName = "Default Planet Name";
         internal Time LocalDay = StarDate.DayTime;
-        private Time start = new Time(0); //atomic time that movement starts
+        private Time start = new Time(0); //Atomic time that movement starts
         private double[] speeds = new double[0];
         private BigInteger[] distanceTicks = new BigInteger[0]; //position, speed, acceleration, etc
         private double[] polar = new double[0]; //position, speed, acceleration, etc
@@ -85,6 +85,7 @@ namespace StarCalendar
         public static StarZone Amaterasu;
         public static StarZone Local = new StarZone(TimeZoneInfo.Local);
         public static StarZone UTC = new StarZone(TimeZoneInfo.Utc);
+        public static StarZone Unspecified = new StarZone(TimeZoneInfo.Utc, "Unspecified");
         private TimeZoneInfo tz = TimeZoneInfo.Utc;
         private Time UTCOffset = new Time(0);
         private string displayName = "Default TimeZone PlanetName";
@@ -135,7 +136,8 @@ namespace StarCalendar
         {
             get
             {
-                if (this.IsTerran) { return tz.DisplayName; }
+                if (this.displayName == null) { return this.displayName; }
+                else if (this.IsTerran) { return tz.DisplayName; }
                 else
                 {
                     return this.displayName;
@@ -670,7 +672,7 @@ namespace StarCalendar
 
         internal object distance(StarDate now)
         {
-            return distance(now.atomic);
+            return distance(now.Atomic);
         }
 
 
@@ -850,9 +852,6 @@ namespace StarCalendar
         private bool isMartian;
         private static StarZone[] martianTimeZones;
         private static StarZone[] _sys_zones;
-
-        //private string planet;
-        //private string star;
 
         // ---- SECTION: public properties --------------*
 
@@ -2658,6 +2657,27 @@ namespace StarCalendar
             }
         }
 
+        internal BigInteger GetUtcOffset(BigInteger dateData)
+        {
+            dateData -= StarDate.Manu.Ticks;
+            DateTime dt = new DateTime((Int64)dateData);
+            TimeSpan t = tz.GetUtcOffset(dt);
+            return (BigInteger)t.Ticks;
+        }
+
+        public static StarZone FromKind(DateTimeKind kind)
+        {
+            switch (kind)
+            {
+                case DateTimeKind.Local:
+                    return Local;
+                case DateTimeKind.Utc:
+                    return UTC;
+                default:
+                    return Unspecified;
+            }
+        }
+
         private class StarZoneComparer : System.Collections.Generic.IComparer<StarZone>
         {
             int System.Collections.Generic.IComparer<StarZone>.Compare(StarZone x, StarZone y)
@@ -2681,6 +2701,11 @@ namespace StarCalendar
         protected StarZone(SerializationInfo serializationInfo, StreamingContext streamingContext)
         {
             throw new NotImplementedException();
+        }
+
+        public StarZone(TimeZoneInfo tz, string v1) : this(tz)
+        {
+            this.displayName = v1;
         }
     }
 } // StarZone

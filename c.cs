@@ -1,11 +1,11 @@
-﻿using StarCalendar;
+﻿using CosmicCalendar;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Numerics;
 
-namespace StarCalendar
+namespace CosmicCalendar
 {
     internal static class c
     {

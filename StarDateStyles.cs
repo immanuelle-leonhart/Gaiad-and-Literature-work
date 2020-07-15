@@ -19,7 +19,7 @@ using System.Text;
 using System.Diagnostics.Contracts;
 using System.Runtime.InteropServices;
 
-namespace StarCalendar
+namespace CosmicCalendar
 {
     // Summary:
     //     Defines the formatting options that customize string parsing for the System.StarDate.Parse()

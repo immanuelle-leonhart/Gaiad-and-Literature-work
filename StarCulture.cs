@@ -18,13 +18,13 @@ using System.Text;
 using System.Diagnostics.Contracts;
 using System.Runtime.CompilerServices;
 using System.IO;
-using StarCalendar;
+using CosmicCalendar;
 using System.Collections.Specialized;
 using System.Net.Http.Headers;
 using System.Globalization;
 //using System.Globalization;
 
-namespace StarCalendar
+namespace CosmicCalendar
 {
 
 
@@ -84,7 +84,7 @@ namespace StarCalendar
         private string[] monthGenitives;
         [NonSerialized]
 
-        private static StarCulture Symbol;
+        internal static StarCulture Symbols;
         [NonSerialized]
         private string langfam;
         [NonSerialized]
@@ -118,9 +118,9 @@ namespace StarCalendar
                         {
                             StarCulture.InvariantCulture = this;
                         }
-                        if (CultureName == "Symbol")
+                        if (CultureName == "Symbols")
                         {
-                            StarCulture.Symbol = this;
+                            StarCulture.Symbols = this;
                         }
                         if (CultureName == "Japanese")
                         {
@@ -451,7 +451,7 @@ namespace StarCalendar
                 {
                     if (saMonthGenitiveNames[i] == "")
                     {
-                        gen[i] = dict["Symbol"].saMonthGenitiveNames[i];
+                        gen[i] = dict["Symbols"].saMonthGenitiveNames[i];
                     }
                     else
                     {
@@ -567,7 +567,7 @@ namespace StarCalendar
                     {
                         if (saMonthGenitiveNames[i] == "")
                         {
-                            gen[i] = abbreviate(dict["Symbol"].saMonthGenitiveNames[i]);
+                            gen[i] = abbreviate(dict["Symbols"].saMonthGenitiveNames[i]);
                         }
                         else
                         {
@@ -664,7 +664,7 @@ namespace StarCalendar
             InvariantCulture._saDurationFormats = new string[] { "HH:mm:ss" };                             // time duration format
             InvariantCulture.shortTimePattern = "h:mm tt";
             InvariantCulture.longTimePattern = "HH:mm:ss";
-            InvariantCulture.LongDatePattern = "DDDD MMMMM ddd yyyyy";
+            InvariantCulture.LongDatePattern = "WWWW MMMMM ddd yyyyy";
             InvariantCulture.shortDatePattern = "yyyyy/MM/dd";
             InvariantCulture.m_genitiveAbbreviatedMonthNames = InvariantCulture.AbbreviatedGenitiveMonthNames;    // Abbreviated genitive month names (same as abbrev month names for invariant)                                                      
             InvariantCulture.bUseUserOverrides = false;
@@ -1856,7 +1856,6 @@ namespace StarCalendar
                 case 'M':
                     //result = new String[] { MonthDayPattern };
                     throw new NotImplementedException();
-                    break;
                 case 'o':
                 case 'O':
                     result = new String[] { StarDateFormat.RoundtripFormat };
@@ -3104,8 +3103,11 @@ namespace StarCalendar
         private string[] daysOfTheWeek;
         [NonSerialized]
         private string timeSeparator = ":";
+        [NonSerialized]
         private string shortFormat;
+        [NonSerialized]
         private string longFormat;
+        [NonSerialized]
         private string NumberDecimalSeparator = ".";
 
         internal StarCulture GetDefaultInstance()
