@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ericr\\OneDrive\\Documents\\Github\\StarDate\\StarDate\\StarDate.csproj",
-      "projectName": "StarDate",
-      "projectPath": "C:\\Users\\ericr\\OneDrive\\Documents\\Github\\StarDate\\StarDate\\StarDate.csproj",
+      "projectUniqueName": "C:\\Users\\ericr\\OneDrive\\Documents\\Github\\StarDate\\StarDate\\CosmicCalendar.csproj",
+      "projectName": "CosmicCalendar",
+      "projectPath": "C:\\Users\\ericr\\OneDrive\\Documents\\Github\\StarDate\\StarDate\\CosmicCalendar.csproj",
       "packagesPath": "C:\\Users\\ericr\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\ericr\\OneDrive\\Documents\\Github\\StarDate\\StarDate\\obj\\",
       "projectStyle": "PackageReference",

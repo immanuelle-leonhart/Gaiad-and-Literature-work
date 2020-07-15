@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>CosmicCalendar</id>
+    <version>1.0.0</version>
+    <authors>Silicon Prophet</authors>
+    <owners>Silicon Prophet</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>cropped-dna-tree-logo.jpg</icon>
+    <description>The Cosmic Calendar of the Order of Life</description>
+    <releaseNotes>Initial NuGet release</releaseNotes>
+    <tags>calendar, lifeism, order of life</tags>
+    <repository type="GitHub" url="https://github.com/siliconprophet/CosmicCalendar" />
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\ericr\OneDrive\Documents\Github\StarDate\StarDate\bin\Debug\netcoreapp3.1\CosmicCalendar.dll" target="lib\netcoreapp3.1\CosmicCalendar.dll" />
+    <file src="C:\Users\ericr\Downloads\cropped-dna-tree-logo.jpg" target="cropped-dna-tree-logo.jpg" />
+  </files>
+</package>

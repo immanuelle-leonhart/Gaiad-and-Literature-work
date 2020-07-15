@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <ApplicationIcon>zodiac.ico</ApplicationIcon>
+    <AssemblyName>CosmicCalendar</AssemblyName>
+    <RootNamespace>CosmicCalendar</RootNamespace>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>The Cosmic Calendar of the Order of Life</Description>
+    <PackageId>CosmicCalendar</PackageId>
+    <Authors>Silicon Prophet</Authors>
+    <Company>Order of Life</Company>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/siliconprophet/CosmicCalendar</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <PackageTags>calendar, lifeism, order of life</PackageTags>
+    <PackageReleaseNotes>Initial NuGet release</PackageReleaseNotes>
+    <PackageIcon>cropped-dna-tree-logo.jpg</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\..\Downloads\cropped-dna-tree-logo.jpg">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

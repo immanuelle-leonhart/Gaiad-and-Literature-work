@@ -1,0 +1,9 @@
+C:\Users\ericr\OneDrive\Documents\Github\StarDate\StarDate\bin\Debug\netcoreapp3.1\CosmicCalendar.deps.json
+C:\Users\ericr\OneDrive\Documents\Github\StarDate\StarDate\bin\Debug\netcoreapp3.1\CosmicCalendar.dll
+C:\Users\ericr\OneDrive\Documents\Github\StarDate\StarDate\bin\Debug\netcoreapp3.1\CosmicCalendar.pdb
+C:\Users\ericr\OneDrive\Documents\Github\StarDate\StarDate\obj\Debug\netcoreapp3.1\CosmicCalendar.csprojAssemblyReference.cache
+C:\Users\ericr\OneDrive\Documents\Github\StarDate\StarDate\obj\Debug\netcoreapp3.1\CosmicCalendar.AssemblyInfoInputs.cache
+C:\Users\ericr\OneDrive\Documents\Github\StarDate\StarDate\obj\Debug\netcoreapp3.1\CosmicCalendar.AssemblyInfo.cs
+C:\Users\ericr\OneDrive\Documents\Github\StarDate\StarDate\obj\Debug\netcoreapp3.1\CosmicCalendar.csproj.CoreCompileInputs.cache
+C:\Users\ericr\OneDrive\Documents\Github\StarDate\StarDate\obj\Debug\netcoreapp3.1\CosmicCalendar.dll
+C:\Users\ericr\OneDrive\Documents\Github\StarDate\StarDate\obj\Debug\netcoreapp3.1\CosmicCalendar.pdb

@@ -1,5 +1,7 @@
 ﻿# Cosmic Calendar
  The Cosmic Calendar of the Order of Life
+ https://www.github.com/siliconprophet/CosmicCalendar/
+ https://www.nuget.org/packages/CosmicCalendar/1.0.0
 
  The StarDate struct represents a Date and Time in the Cosmic Calendar. It is designed to be able to be used interchangably with the 
  The Time struct is an alternative struct to the TimeSpan struct. 
