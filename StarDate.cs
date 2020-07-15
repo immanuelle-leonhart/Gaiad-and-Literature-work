@@ -2544,7 +2544,7 @@ namespace CosmicCalendar
         {
             get
             {
-                DateTime dt = new DateTime((long)(this - ADStart)._ticks);
+                DateTime dt = new DateTime((long)(dateData - NetStart));
                 DateTime.SpecifyKind(dt, Kind);
                 return dt;
             }

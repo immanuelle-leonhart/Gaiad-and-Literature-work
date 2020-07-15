@@ -556,7 +556,7 @@ namespace CosmicCalendar
         internal void GetTimePart(out int sign, out int h, out int m)
         {
             long dayticks = (long)(this.Ticks % StarDate.TicksPerDay);
-            sign = Zero.CompareTo(this);
+            sign = Zero.CompareTo(this) * -1;
             if (sign == -1)
             {
                 dayticks *= -1;

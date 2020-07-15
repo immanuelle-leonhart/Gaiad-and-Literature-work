@@ -14,8 +14,11 @@ namespace ConsoleApp
 
         static void Main(string[] args)
         {
-            StarDate.MakeChart();
-            print(new StarDate(10200));
+            int i = 1;
+            while ( i < 10)
+            {
+                Console.WriteLine(StarZone.Local.ToString(i++));
+            }
         }
 
         public static void print(object v)

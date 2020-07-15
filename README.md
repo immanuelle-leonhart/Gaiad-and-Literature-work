@@ -148,6 +148,7 @@
  Parses a string based on the given format, if no format is given it will attempt to use all local formats, if it can't parse it throws an exception. (not yet implemented)
  ToString()
  Returns a string giving the date. Formatting info below for Parsing and ToString()
+ NOTE: weekdays and day of month no longer rely on the same character as .NET so this will break some legacy formatting code
 
       Customized format patterns:
      P.S. Format in the table below is the internal number format used to display the pattern.
@@ -216,18 +217,15 @@
         "yyyyy" "D5"        Year                                  12000
         ...
 
-        "z"     "+0;-0"     timezone offset w/o leading zero      -8
-        "zz"    "+00;-00"   timezone offset with leading zero     -08
-        "zzz"      "+00;-00" for hour offset, "00" for minute offset  full timezone offset   -07:30
-        "zzz*"  "+00;-00" for hour offset, "00" for minute offset   full timezone offset   -08:00
+        "b"                 millions/billions etc for date           14b
 
-        "K"    -Local       "zzz", e.g. -08:00
-               -Utc         "'Z'", representing UTC
-               -Unspecified ""
-               -StarDateOffset      "zzzzz" e.g -07:30:15
+        "z"                 Time zone offset                         -8
+        "zz"                Time Zone Offset                        -8:00
+        "zzz"               Time Zone Offset                        -08:00
+        "zzzz*"             Full Time Zone Name                     (UTC-08:00) Pacific Time (US & Canada)
 
         "g"                the current era StarName                  A.M.
-	    "gg*"		   name of the surrent era full		     Anno Manu
+	    "gg*"		       name of the surrent era full		       Anno Manu
 
         ":"                 time separator                        : -- DEPRECATED - Insert separator directly into pattern (eg: "H.mm.ss")
         "/"                 date separator                        /-- DEPRECATED - Insert separator directly into pattern (eg: "M-dd-yyyy")

@@ -350,7 +350,7 @@ namespace CosmicCalendar
                     }
                     catch (IndexOutOfRangeException)
                     {
-                        //rrrr
+                        
                     }
                 }
                 catch (IndexOutOfRangeException)
@@ -673,6 +673,11 @@ namespace CosmicCalendar
             // Calendar was built, go ahead and assign it...            
             //Invariant = invariant;
             return formats;
+        }
+
+        internal bool GetAbbreviatedEraName(StarDate starDate)
+        {
+            throw new NotImplementedException();
         }
 
         internal bool GetEraName(StarDate starDate)

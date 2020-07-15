@@ -427,13 +427,19 @@ namespace CosmicCalendar
                 {
                     case 'b':
                     case 'B':
-                        ////////Console.WriteLine("Writing Millions to Quadrillions of Years");
                         tokenLen = ParseRepeatPattern(format, i, ch);
                         result.Append(StarDate.billion);
                         break;
                     case 'g':
                         tokenLen = ParseRepeatPattern(format, i, ch);
-                        result.Append(StarCulture.CurrentCulture.GetEraName(StarDate));
+                        if (tokenLen == 1)
+                        {
+                            result.Append(StarCulture.CurrentCulture.GetAbbreviatedEraName(StarDate));
+                        }
+                        else
+                        {
+                            result.Append(StarCulture.CurrentCulture.GetEraName(StarDate));
+                        }
                         break;
                     case 'h':
                         tokenLen = ParseRepeatPattern(format, i, ch);
@@ -668,8 +674,10 @@ namespace CosmicCalendar
                         ////Console.WriteLine(result);
                         //throw new NotImplementedException();
                         break;
+                    case 'Z':
                     case 'z':
                     case 'K':
+                    case 'k':
                         //z and k are the same in StarDate but not in 
                         tokenLen = ParseRepeatPattern(format, i, ch);
                         result.Append(StarDate.TimeZone.ToString(tokenLen, StarDate));

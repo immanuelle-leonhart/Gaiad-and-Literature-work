@@ -209,10 +209,6 @@ namespace CosmicCalendar
             //return _sys_zones;
         }
 
-        //internal string ToString(string v)
-        //{
-        //    throw new NotImplementedException();
-        //}
 
         public static StarDate ConvertTimeToUtc(StarDate dt, StarZone z)
         {
@@ -1086,7 +1082,7 @@ namespace CosmicCalendar
                 min += m;
             }
 
-            if (tokenLen == 1)
+            if (tokenLen <= 1)
             {
                 return sig[sign] + h + min;
             }
@@ -1118,7 +1114,7 @@ namespace CosmicCalendar
             {
                 if (IsTerran && IsDaylightSavingTime(dt))
                 {
-                    return "(UTC" + sig[sign] + hour + min + ") " + this.daylightDisplayName;
+                    return "(UTC" + sig[sign] + hour + min + ") " + tz.DaylightName;
                 }
                 else if (IsMartian)
                 {
