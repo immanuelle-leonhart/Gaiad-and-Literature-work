@@ -15,7 +15,7 @@ The Celestial Year starts with Sagittarius rather than Capricorn because of the 
 
 Leap Years
 
-Every sixth year has a leap week. The leap week is represented in the special month of Chiron and comes between Ophiuchus and Sagittarius Every 78th year there
+Every sixth year has a leap week. The leap week is represented in the special month of Horus and comes between Ophiuchus and Sagittarius Every 78th year there are two leap weeks or 14 week days making the maximum year length 378 days
 
 Years
 
