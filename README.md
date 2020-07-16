@@ -2,6 +2,32 @@
  The Cosmic Calendar of the Order of Life
  Github Repository https://www.github.com/siliconprophet/CosmicCalendar/
  Nuget Package https://www.nuget.org/packages/CosmicCalendar/1.0.0
+ 
+ This is the Celestial Calendar. The Calendar used in the Gaiad. The Celestial Calendar is a sidereal leap week calendar. The new year is defined based on the Earth crossing between Sagittarius A* (called Chiron in the Gaiad) and the sun
+
+Months and Weeks
+
+The Celestial calendar uses 13 months based on the 13 sign zodiac (12 classical signs plus Ophiuchus) Each month has 28 days for four weeks a month. 4 * 13 = 52 weeks per year or 364 days per year The 1st of a month is always a Monday, all days of the year thus have fixed weekdays. This helps with scheduling holidays and business. Friday the 13th as a day never happens Sunday is the seventh day so Sabbath can be performed on the seventh day indisputably
+
+Time of the New Year
+
+The Celestial Year starts with Sagittarius rather than Capricorn because of the precession of the equinoxes. Milankovich cycles cause the Earth's axis to wobble over thousands of years. December 21st was around the beginning of Capricorn in Ancient Greek times Now, however Capricorn only reaches the same location in the sky around January 18th. The Age of Aquarius is the current time period now when the stars are shifted one month away from the time of the Ancient Greeks We decided that the stars are more important than the seasons to an industrialized society, we want people to look up to mankind's future in the stars rather than look at agricultural practices. The Celestial calendar will deviate from seasons in a 26,000 year cycle. In about 6,000 years the year will begin in March rather than December. As in that time the majority of people will not live on Earth, it doesn't matter that the seasons don't match the calendar anymore Around every 150,000 years the Celestial Calendar gains 1 day of error relative to the Earth's movement through space This isn't a major problem because chaotic behavior in the Earth's orbit makes it difficult to make predictions that far into the future anyways Additionally even Earth's location relative to stars is unlikely to matter much then, since by the time we gain a day in error we will have colonized the entire milky way
+
+Leap Years
+
+Every sixth year has a leap week. The leap week is represented in the special month of Chiron and comes between Ophiuchus and Sagittarius Every 78th year there
+
+Years
+
+The Date Object is coded based around a rough estimate of milliseconds since the Big Bang There are two ways of representing years in the Celestial Calendar: Long Dates and Short Dates Short dates have a 1 put before the year. So 2020 becomes 12020. Year zero from this point is roughly when Gobekli Tepe was built and Agriculture began. The story of Manu is present in the Gaiad starting from this point As Manu was born on midnight of Sagittarius 1st Year 1, it means that his mother was pregnant in year zero. This year can be called the 12020th year of Manu Long Years have 14 billion years added to the short calendar. This is an estimate of time from the big bang rounded to the nearest billion 13.8 billion is the proper amount, but adding that significantly increases memory difficulties
+
+Time Zone
+
+Time Zones are based around Star System, Planet, and Location on a planet Time Zones also support movement of ships through space, including acceleration and direction relative to Earth
+
+Space Features (in progress) Martian Days are hard coded into the calendar system. Martian Days are roughly 24:30 in length, so the time counts to that point before rolling over to the next day Mars loses 30 min per day relative to Earth, so time zone conversions are more complex Every few weeks a weekday will be skipped to keep the days in sync with Earth On planets with a longer day the reverse will happen and extra intercalary days will be added instead Lunar Cycle support for all major moons in the solar system. The date in other star systems is based around the time transmissions from Earth will reach them. Thus Alpha Centauri is 4 years in the past relative to Earth. Time adjustment to take into account relativistic time dilation in space travel, alongside increasing distance from Earth.
+
+
 
  The StarDate struct represents a Date and Time in the Cosmic Calendar. It is designed to be able to be used interchangably with the 
  The Time struct is an alternative struct to the TimeSpan struct. 
