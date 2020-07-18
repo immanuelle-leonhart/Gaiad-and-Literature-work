@@ -1,0 +1,169 @@
+{
+  "FilesToCompress": [
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\TZ2IEHvECXVomcz82s8-Bvv8yZpz0J5gDa2wJ729hPc=.hash",
+      "Source": "C:\\Users\\ericr\\OneDrive\\Documents\\Github\\Celestial-Calendar\\Celestial Calendar\\Celestial Calendar\\obj\\Release\\netstandard2.1\\blazor\\linker\\Celestial Calendar.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Celestial Calendar.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\0PXbQcCteYXFGx4vTgm-K2CtGIBE54vy1YToBxrQf4M=.hash",
+      "Source": "C:\\Users\\ericr\\OneDrive\\Documents\\Github\\Celestial-Calendar\\Celestial Calendar\\Celestial Calendar\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.AspNetCore.Components.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\KHv7UvCB5YNnSe7iwkY6QhHsS_iMYdvwsQ-hGufDpXI=.hash",
+      "Source": "C:\\Users\\ericr\\OneDrive\\Documents\\Github\\Celestial-Calendar\\Celestial Calendar\\Celestial Calendar\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.AspNetCore.Components.Forms.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.Forms.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\GTj_ST-k-ctVZQtiA02q25ejG8XISsF-yRkAjMy2m9E=.hash",
+      "Source": "C:\\Users\\ericr\\OneDrive\\Documents\\Github\\Celestial-Calendar\\Celestial Calendar\\Celestial Calendar\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.AspNetCore.Components.Web.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.Web.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\YzNQPKDCE2k_DOa_jnUOTJiODwm-aOdRZpNZyX2erDo=.hash",
+      "Source": "C:\\Users\\ericr\\OneDrive\\Documents\\Github\\Celestial-Calendar\\Celestial Calendar\\Celestial Calendar\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.AspNetCore.Components.WebAssembly.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.WebAssembly.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\jzHgXWAvWMkKIGFjZoT84tbe72E_H7CvTr-Dryh4QPs=.hash",
+      "Source": "C:\\Users\\ericr\\OneDrive\\Documents\\Github\\Celestial-Calendar\\Celestial Calendar\\Celestial Calendar\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Bcl.AsyncInterfaces.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Bcl.AsyncInterfaces.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\hWIjp3jt8gFs070EJdZ6nokCh-S6PFacw-SxsmBdxrU=.hash",
+      "Source": "C:\\Users\\ericr\\OneDrive\\Documents\\Github\\Celestial-Calendar\\Celestial Calendar\\Celestial Calendar\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Configuration.Abstractions.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Configuration.Abstractions.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\y_zFzfhBmaz85sknsh8-pJ8nbsM1aFN-z_OmtuFTuBg=.hash",
+      "Source": "C:\\Users\\ericr\\OneDrive\\Documents\\Github\\Celestial-Calendar\\Celestial Calendar\\Celestial Calendar\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Configuration.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Configuration.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\PBx-JLRYF34X_6S_xS4y-36luA5As7eFDZAc1xM4D0U=.hash",
+      "Source": "C:\\Users\\ericr\\OneDrive\\Documents\\Github\\Celestial-Calendar\\Celestial Calendar\\Celestial Calendar\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Configuration.Json.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Configuration.Json.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\QQfLZ807WbnKU3JqkKg_YLTLxOjSkLZPSKUa__iT7YQ=.hash",
+      "Source": "C:\\Users\\ericr\\OneDrive\\Documents\\Github\\Celestial-Calendar\\Celestial Calendar\\Celestial Calendar\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\ctyncDknFNR7dXr8qO72fVlbEBUHvksLF3xIszYNj0k=.hash",
+      "Source": "C:\\Users\\ericr\\OneDrive\\Documents\\Github\\Celestial-Calendar\\Celestial Calendar\\Celestial Calendar\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.DependencyInjection.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.DependencyInjection.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\SJPO66mi5v3pqcbmmMeHMeqshy60UdNdPbhpRnZHEE8=.hash",
+      "Source": "C:\\Users\\ericr\\OneDrive\\Documents\\Github\\Celestial-Calendar\\Celestial Calendar\\Celestial Calendar\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Logging.Abstractions.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Logging.Abstractions.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\CbTV3YFFysyZqUxtowS2HpWUDaZtVc58ovlpwdmDBYg=.hash",
+      "Source": "C:\\Users\\ericr\\OneDrive\\Documents\\Github\\Celestial-Calendar\\Celestial Calendar\\Celestial Calendar\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Logging.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Logging.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\HQQdJrZXMtTguo8uiJCcOfV5iJnWY3KnXYGhA642udk=.hash",
+      "Source": "C:\\Users\\ericr\\OneDrive\\Documents\\Github\\Celestial-Calendar\\Celestial Calendar\\Celestial Calendar\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Options.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Options.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\Q6QVPjTJ2HyxwsqBjnR8tZ_XVFpnm0gJiWur6FD_Lwo=.hash",
+      "Source": "C:\\Users\\ericr\\OneDrive\\Documents\\Github\\Celestial-Calendar\\Celestial Calendar\\Celestial Calendar\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Primitives.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Primitives.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\GFqkJmxwbf7WMrZ_MCRzaOADzSsVQ9tcMrMt19fsEeo=.hash",
+      "Source": "C:\\Users\\ericr\\OneDrive\\Documents\\Github\\Celestial-Calendar\\Celestial Calendar\\Celestial Calendar\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.JSInterop.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\6g2dLhGUTDM61qYCCZ0XbEEq1ph7WIGsa0EGamodSZQ=.hash",
+      "Source": "C:\\Users\\ericr\\OneDrive\\Documents\\Github\\Celestial-Calendar\\Celestial Calendar\\Celestial Calendar\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.JSInterop.WebAssembly.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\K82__gaQiQb68j_wXHn51afYiyP3t4lyD9P19FrZwc0=.hash",
+      "Source": "C:\\Users\\ericr\\OneDrive\\Documents\\Github\\Celestial-Calendar\\Celestial Calendar\\Celestial Calendar\\obj\\Release\\netstandard2.1\\blazor\\linker\\mscorlib.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/mscorlib.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\SZNHePjtox9qa9caTJzXxsgs-mAlp-iP7Qx0G98TEuw=.hash",
+      "Source": "C:\\Users\\ericr\\OneDrive\\Documents\\Github\\Celestial-Calendar\\Celestial Calendar\\Celestial Calendar\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.ComponentModel.DataAnnotations.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.ComponentModel.DataAnnotations.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\CtcG9WUOru6U2Kh4iXc5lQ8vaK1ykTHO1qs_KVnrbRc=.hash",
+      "Source": "C:\\Users\\ericr\\OneDrive\\Documents\\Github\\Celestial-Calendar\\Celestial Calendar\\Celestial Calendar\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Core.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Core.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\2mtR12-Z6bIXBcOtPluKXOTNIR8d6A_UQ6hGOTd-rJk=.hash",
+      "Source": "C:\\Users\\ericr\\OneDrive\\Documents\\Github\\Celestial-Calendar\\Celestial Calendar\\Celestial Calendar\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\pZQ1ma7l3bkyKZfIotr-xmkiu8_2-OLxwnFxJD3s3Iw=.hash",
+      "Source": "C:\\Users\\ericr\\OneDrive\\Documents\\Github\\Celestial-Calendar\\Celestial Calendar\\Celestial Calendar\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Net.Http.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Net.Http.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\of7AEEsjwea7SnlBYdEBYcseUlEdM10U043LzqA2mto=.hash",
+      "Source": "C:\\Users\\ericr\\OneDrive\\Documents\\Github\\Celestial-Calendar\\Celestial Calendar\\Celestial Calendar\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Net.Http.WebAssemblyHttpHandler.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Net.Http.WebAssemblyHttpHandler.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\Zg6aFwbW3glkx8l5yVO1VGB9NhYWEabGLkrDeJ0PY0k=.hash",
+      "Source": "C:\\Users\\ericr\\OneDrive\\Documents\\Github\\Celestial-Calendar\\Celestial Calendar\\Celestial Calendar\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Numerics.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Numerics.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\lT54DTNvAYJhUdPuZKcZLG97MT4YDnOOdb5y3UbNF9I=.hash",
+      "Source": "C:\\Users\\ericr\\OneDrive\\Documents\\Github\\Celestial-Calendar\\Celestial Calendar\\Celestial Calendar\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Runtime.CompilerServices.Unsafe.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Runtime.CompilerServices.Unsafe.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\3xcwM2Xh7oI_gVjIZ6uZ2S-vuWGdxPeURxm1TR_YCNo=.hash",
+      "Source": "C:\\Users\\ericr\\OneDrive\\Documents\\Github\\Celestial-Calendar\\Celestial Calendar\\Celestial Calendar\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Text.Encodings.Web.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Text.Encodings.Web.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\ujNhqPrJGdiICL0ixC7aLuZTMKDiRQIcUhxYh1yVtA4=.hash",
+      "Source": "C:\\Users\\ericr\\OneDrive\\Documents\\Github\\Celestial-Calendar\\Celestial Calendar\\Celestial Calendar\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Text.Json.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Text.Json.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\MrCcsjIU6XGL28p9bV6cvBorSF2uBB5AANxlUB51y94=.hash",
+      "Source": "C:\\Users\\ericr\\OneDrive\\Documents\\Github\\Celestial-Calendar\\Celestial Calendar\\Celestial Calendar\\obj\\Release\\netstandard2.1\\blazor\\linker\\WebAssembly.Bindings.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/WebAssembly.Bindings.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\iZCHkFXJWYNxCUFwhj_4oqR4fkEJc5YGjfTTvdIuX84=.hash",
+      "Source": "C:\\Users\\ericr\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.runtime\\3.2.0-rc1.20222.2\\tools\\dotnetwasm\\wasm\\dotnet.3.2.0-rc1.20222.2.js",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/wasm\/dotnet.3.2.0-rc1.20222.2.js.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\3S0qzYaBEKOBXarzVLNzNAFXlwJr6nI3lFlYUpQTPH8=.hash",
+      "Source": "C:\\Users\\ericr\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.runtime\\3.2.0-rc1.20222.2\\tools\\dotnetwasm\\wasm\\dotnet.timezones.dat",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/wasm\/dotnet.timezones.dat.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\aFsebAaVKCmJl2K5EZooCF0zL34DsPr_kGZLo6WC_2c=.hash",
+      "Source": "C:\\Users\\ericr\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.runtime\\3.2.0-rc1.20222.2\\tools\\dotnetwasm\\wasm\\dotnet.wasm",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/wasm\/dotnet.wasm.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\SWtTaJ9XhCu62X17HfpwA9cLqrTGBo3YshChG82f6Xg=.hash",
+      "Source": "C:\\Users\\ericr\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.build\\3.2.0-rc1.20223.4\\tools\\blazor\\blazor.webassembly.js",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\zqNR_f6Lrk8MOHOHdYIiuq9PEebe9tGJdnu6pFFRozU=.hash",
+      "Source": "C:\\Users\\ericr\\OneDrive\\Documents\\Github\\Celestial-Calendar\\Celestial Calendar\\Celestial Calendar\\obj\\Release\\netstandard2.1\\blazor\\blazor.boot.json",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.gz"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+﻿@page "/Cel"
+@using GaianEmpire;
+
+<h1>Convert Gregorian to Celestial</h1>
+
+<EditForm Model="@con" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+
+    <p>
+        <label>
+            Production Date:
+            <InputDate @bind-Value="con.dateTime" />
+        </label>
+    </p>
+
+    <button type="submit">Submit</button>
+</EditForm>
+
+<p>Celestial Date: @date</p>
+
+@code {
+    private Converter con = new Converter();
+    private StarDate date = StarDate.Now();
+
+private void HandleValidSubmit()
+    {
+        Console.WriteLine("OnValidSubmit");
+        date = con.GetStarDate();
+    }
+}
