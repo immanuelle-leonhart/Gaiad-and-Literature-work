@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ericr\\OneDrive\\Documents\\GitHub\\Celestial-Calendar\\Celestial Calendar\\Celestial Calendar\\Celestial Calendar.csproj": {}
+    "C:\\Users\\SiliconProphet\\Documents\\GitHub\\CosmicCalendar\\Celestial Calendar\\Celestial Calendar\\Celestial Calendar.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ericr\\OneDrive\\Documents\\GitHub\\Celestial-Calendar\\Celestial Calendar\\Celestial Calendar\\Celestial Calendar.csproj": {
+    "C:\\Users\\SiliconProphet\\Documents\\GitHub\\CosmicCalendar\\Celestial Calendar\\Celestial Calendar\\Celestial Calendar.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ericr\\OneDrive\\Documents\\GitHub\\Celestial-Calendar\\Celestial Calendar\\Celestial Calendar\\Celestial Calendar.csproj",
+        "projectUniqueName": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\CosmicCalendar\\Celestial Calendar\\Celestial Calendar\\Celestial Calendar.csproj",
         "projectName": "Celestial Calendar",
-        "projectPath": "C:\\Users\\ericr\\OneDrive\\Documents\\GitHub\\Celestial-Calendar\\Celestial Calendar\\Celestial Calendar\\Celestial Calendar.csproj",
-        "packagesPath": "C:\\Users\\ericr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ericr\\OneDrive\\Documents\\GitHub\\Celestial-Calendar\\Celestial Calendar\\Celestial Calendar\\obj\\",
+        "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\CosmicCalendar\\Celestial Calendar\\Celestial Calendar\\Celestial Calendar.csproj",
+        "packagesPath": "C:\\Users\\SiliconProphet\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\CosmicCalendar\\Celestial Calendar\\Celestial Calendar\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ericr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\SiliconProphet\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -72,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
