@@ -316,6 +316,7 @@ namespace StarLib
         private static List<string> formats;
 
 
+
         //private StarZone timezone;
 
         public StarDate TickTimeZoneConvert(StarZone z) //converts a timezone by treating the utc ticks in a StarDate as though they were the ticks of that timezone
@@ -526,7 +527,7 @@ namespace StarLib
             return this.Equals(other);
         }
 
-        
+
 
         public static StarDate GregParse(string input)
         {
@@ -810,6 +811,158 @@ namespace StarLib
 
         }
 
+        private int GregDatePart(int part)
+        {
+            try
+            {
+                switch (part)
+                {
+                    case DatePartYear:
+                        return DateTime.Year;
+                    case DatePartDayOfYear:
+                        return DateTime.DayOfYear;
+                    case DatePartMonth:
+                        return DateTime.Month;
+                    case DatePartDay:
+                        return DateTime.Day;
+                    case DatePartDayOfWeek:
+                        return (int)DayOfWeek;
+                    default:
+                        throw new ArgumentException();
+                }
+            }
+            catch (ArgumentOutOfRangeException) { }
+            BigInteger ticks = AdjustedTicks - NetStart;
+            // n = number of days since 1/1/0001
+            int n = (int)(ticks / TicksPerDay);
+            if (n > 0)
+            {
+                // y400 = number of whole 400-year periods since 1/1/0001
+                int y400 = n / DaysPer400Years;
+                // n = day number within 400-year period
+                n -= y400 * DaysPer400Years;
+                // y100 = number of whole 100-year periods within 400-year period
+                int y100 = n / DaysPer100Years;
+                // Last 100-year period has an extra day, so decrement result if 4
+                if (y100 == 4) y100 = 3;
+                // n = day number within 100-year period
+                n -= y100 * DaysPer100Years;
+                // y4 = number of whole 4-year periods within 100-year period
+                int y4 = n / DaysPer4Years;
+                // n = day number within 4-year period
+                n -= y4 * DaysPer4Years;
+                // y1 = number of whole years within 4-year period
+                int y1 = n / DaysPerYear;
+                // Last year has an extra day, so decrement result if 4
+                if (y1 == 4) y1 = 3;
+                // If year was requested, compute and return it
+                if (part == DatePartYear)
+                {
+                    return y400 * 400 + y100 * 100 + y4 * 4 + y1 + 1;
+                }
+                // n = day number within year
+                n -= y1 * DaysPerYear;
+                // If day-of-year was requested, return it
+                if (part == DatePartDayOfYear) return n + 1;
+                // Leap year calculation looks different from IsLeapYear since y1, y4,
+                // and y100 are relative to year 1, not year 0
+                bool leapYear = y1 == 3 && (y4 != 24 || y100 == 3);
+                int[] days = leapYear ? DaysToMonth366 : DaysToMonth365;
+                // All months have less than 32 days, so n >> 5 is a good conservative
+                // estimate for the month
+                int m = n >> 5 + 1;
+                // m = 1-based month number
+                while (n >= days[m]) m++;
+                // If month was requested, return it
+                if (part == DatePartMonth) return m;
+                // Return 1-based day-of-month
+                return n - days[m - 1] + 1;
+            }
+            else if (ticks == 0)
+            {
+                switch (part)
+                {
+                    case DatePartYear:
+                        return 1;
+                    case DatePartDayOfYear:
+                        return 1;
+                    case DatePartMonth:
+                        return 1;
+                    case DatePartDay:
+                        return 1;
+                    case DatePartDayOfWeek:
+                        return (int)DayOfWeek;
+                    default:
+                        throw new ArgumentException();
+                }
+            }
+            else
+            {
+                int y400 = n / DaysPer400Years;
+                y400--;
+                n -= y400 * DaysPer400Years;
+                // y100 = number of whole 100-year periods within 400-year period
+                int y100 = n / DaysPer100Years;
+                // Last 100-year period has an extra day, so decrement result if 4
+                if (y100 == 4) y100 = 3;
+                // n = day number within 100-year period
+                n -= y100 * DaysPer100Years;
+                // y4 = number of whole 4-year periods within 100-year period
+                int y4 = n / DaysPer4Years;
+                // n = day number within 4-year period
+                n -= y4 * DaysPer4Years;
+                // y1 = number of whole years within 4-year period
+                int y1 = n / DaysPerYear;
+                // Last year has an extra day, so decrement result if 4
+                if (y1 == 4) y1 = 3;
+                // If year was requested, compute and return it
+                int year = y400 * 400 + y100 * 100 + y4 * 4 + y1;
+                if (part == DatePartYear)
+                {
+                    return year;
+                }
+                // n = day number within year
+                n -= y1 * DaysPerYear;
+                // If day-of-year was requested, return it
+                n++;
+                if (part == DatePartDayOfYear) return n;
+                // Leap year calculation looks different from IsLeapYear since y1, y4,
+                // and y100 are relative to year 1, not year 0
+                int[] days = DaysToMonth365;
+                if (GregLeap(year))
+                {
+                    days = DaysToMonth366;
+                }
+
+                int i = 0;
+                int mo = 12;
+                while (i < 12)
+                {
+                    if (n < days[i++])
+                    {
+                        mo = i - 1;
+                        i = 12;
+                    }
+                }
+                if (part == DatePartMonth)
+                {
+                    return mo;
+                }
+                n = n - days[mo - 1] + 1;
+                return n;
+            }
+        }
+
+        private static int Modul(int i, int v)
+        {
+            if (i > 0)
+            {
+                return i % v;
+            }
+            int t = i / v;
+            t--;
+            return Modul(i - t * v, v);
+        }
 
 
 
@@ -1032,6 +1185,61 @@ namespace StarLib
             //throw new NotImplementedException();
         }
 
+        public int GregYear
+        {
+            get
+            {
+                return GregDatePart(DatePartYear);
+            }
+
+            set
+            {
+                StarDate dt = StarDate.FromGreg(value, GregMonth, GregDay, Hour, Minute, Second, Millisecond, ExtraTicks);
+                this.AdjustedTicks = dt.Ticks;
+            }
+        }
+
+        public int GregDayOfYear
+        {
+            get
+            {
+                return GregDatePart(DatePartDayOfYear);
+            }
+
+            set
+            {
+                StarDate dt = StarDate.FromGreg(value, GregMonth, GregDay, Hour, Minute, Second, Millisecond, ExtraTicks);
+                this.AdjustedTicks = dt.Ticks;
+            }
+        }
+
+        public int GregMonth
+        {
+            get
+            {
+                return GregDatePart(DatePartMonth);
+            }
+
+            set
+            {
+                StarDate dt = StarDate.FromGreg(GregYear, value, GregDay, Hour, Minute, Second, Millisecond, ExtraTicks);
+                this.AdjustedTicks = dt.Ticks;
+            }
+        }
+        public int GregDay
+        {
+            get
+            {
+                return GregDatePart(DatePartDay);
+            }
+
+            set
+            {
+                StarDate dt = StarDate.FromGreg(GregYear, GregMonth, value, Hour, Minute, Second, Millisecond, ExtraTicks);
+                this.AdjustedTicks = dt.Ticks;
+            }
+        }
+
         public static bool GregLeap(int year)
         {
             if (year < 1)
@@ -1083,272 +1291,6 @@ namespace StarLib
             ////////////Console.WriteLine" q " + quattro + " c +" + centcount + " l +" + leapcount + " y +" + yearcount);
             //////////////Console.WriteLine(" ");
             return new int[] { quattro, centcount, leapcount, yearcount };
-        }
-
-
-
-        public Dictionary<string, int> GregNumbers()
-        {
-            try
-            {
-                DateTime dt = this.DateTime;
-                Dictionary<string, int> data = new Dictionary<string, int>();
-                data.Add("Year", dt.Year);
-                data.Add("Month", dt.Month);
-                data.Add("DayOfYear", dt.DayOfYear);
-                data.Add("Day", dt.Day);
-                data.Add("DayOfWeek", (int)dt.DayOfWeek);
-                data.Add("Hour", dt.Hour);
-                data.Add("Minute", dt.Minute);
-                data.Add("Second", dt.Second);
-                data.Add("Mil", dt.Millisecond);
-                return data;
-            }
-            catch (ArgumentOutOfRangeException)
-            {
-
-            }
-            catch (OverflowException)
-            {
-
-            }
-            return MathGregNumbers();
-        }
-
-
-
-        private Dictionary<string, int> MathGregNumbers()
-        {
-            Dictionary<string, int> data = new Dictionary<string, int>();
-            {
-
-                int DaysPerYear = 365;
-                // Number of days in 4 years
-                int DaysPer4Years = DaysPerYear * 4 + 1;       // 1461
-                                                               // Number of days in 100 years
-                int DaysPer100Years = DaysPer4Years * 25 - 1;  // 36524
-                                                               // Number of days in 400 years
-                int DaysPer400Years = DaysPer100Years * 4 + 1; // 146097
-                                                               //Time q = DaysPer400Years * StarDate.DayTime;
-                                                               //Time s = DaysPer100Years * StarDate.DayTime;
-                                                               //Time l = DaysPer4Years * StarDate.DayTime;
-                                                               //Time y = DaysPerYear * StarDate.DayTime;
-                int[] DaysToMonth365 = {
-                    0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334, 365};
-                int[] DaysToMonth366 = {
-                    0, 31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335, 366};
-                if (this == ADStart)
-                {
-                    //Dictionary<string, int> data = new Dictionary<string, int>();
-                    data.Add("Year", 1);
-                    data.Add("Month", 1);
-                    data.Add("DayOfYear", 1);
-                    data.Add("Day", 1);
-                    data.Add("DayOfWeek", (int)this.DayOfWeek);
-                    data.Add("Hour", this.Hour);
-                    data.Add("Minute", this.Minute);
-                    data.Add("Second", this.Second);
-                    data.Add("Mil", this.Millisecond);
-                    return data;
-                }
-                else if (this < ADStart)
-                {
-                    Time t = this - ADStart;
-
-
-                    //////////////Console.WriteLine("testing");
-
-                    //////////////Console.WriteLine(t);
-
-                    int days = t / StarDate.DayTime;
-                    //////////////Console.WriteLine("days from netstart = " + days);
-
-                    int q = days / DaysPer400Years;
-                    int qmod = days % DaysPer400Years;
-                    //////////////Console.WriteLine(q);
-                    //////////////Console.WriteLine(qmod);
-                    if (qmod < 0)
-                    {
-                        qmod = DaysPer400Years + qmod;
-                        q--;
-                    }
-                    //////////////Console.WriteLine(q);
-                    //////////////Console.WriteLine(qmod);
-                    int s = qmod / DaysPer100Years;
-                    int smod = qmod % DaysPer100Years;
-                    int l = smod / DaysPer4Years;
-                    int lmod = smod % DaysPer4Years;
-                    int y = lmod / DaysPerYear;
-                    int ymod = lmod % DaysPerYear;
-                    //////////////Console.WriteLine(s);
-                    //////////////Console.WriteLine(l);
-                    //////////////Console.WriteLine(y);
-                    int m = 500;
-                    int yd = ymod;
-                    int d = 500;
-                    int year = 400 * q + 100 * s + 4 * l + y;
-                    //if (Year < 1)
-                    //{
-                    //    Year--;
-                    //}
-                    if (s == 4)
-                    {
-                        s = 3;
-                        l = 24;
-                        y = 3;
-                        m = 11;
-                        d = 31;
-                        year--;
-                    }
-                    else if (GregLeap(year) == true)
-                    {
-                        int i = 0;
-                        bool found = false;
-                        while (!found)
-                        {
-                            //////////////Console.WriteLine(DaysToMonth366[i]);
-                            if (DaysToMonth366[i] > yd)
-                            {
-                                m = i - 1;
-                                found = true;
-                                //////////////Console.WriteLine("366");
-                                d = yd - DaysToMonth366[m] + 1;
-                            }
-                            else
-                            {
-                                i++;
-                            }
-                        }
-                    }
-                    else
-                    {
-                        //////////////Console.WriteLine(GregLeap(Year));
-                        int i = 0;
-                        bool found = false;
-                        while (!found)
-                        {
-                            //////////////Console.WriteLine(DaysToMonth366[i]);
-                            if (DaysToMonth365[i] > yd)
-                            {
-                                m = i - 1;
-                                found = true;
-                                d = yd - DaysToMonth365[m] + 1;
-                            }
-                            else
-                            {
-                                i++;
-                            }
-                        }
-                    }
-                    //////////////Console.WriteLine(Year + " " + m + " " + d + " ");
-                    //throw new NotImplementedException();
-                    if (d == 0)
-                    {
-                        throw new NotImplementedException();
-                    }
-                    m++;
-                    if (this > ADStart)
-                    {
-                        //////////////Console.WriteLine("TEST");
-                        year++;
-                    }
-                    //Dictionary<string, int> data = new Dictionary<string, int>();
-                    data.Add("Year", year);
-                    if (GregLeap(year))
-                    {
-                        data.Add("DayOfYear", DaysToMonth366[m - 1]);
-                    }
-                    else
-                    {
-                        data.Add("DayOfYear", DaysToMonth365[m - 1]);
-                    }
-                    data.Add("Month", m);
-                    data.Add("Day", d);
-                    data.Add("DayOfWeek", (int)this.DayOfWeek);
-                    data.Add("Hour", this.Hour);
-                    data.Add("Minute", this.Minute);
-                    data.Add("Second", this.Second);
-                    data.Add("Mil", this.Millisecond);
-                    return data;
-                }
-                else // this > ADStart
-                {
-                    int year;
-                    int t = (this - ADStart) / StarDate.DayTime;
-                    int q = t / DaysPer400Years;
-                    t %= DaysPer400Years;
-                    int s = t / DaysPer100Years;
-                    if (s == 4)
-                    {
-                        year = 1 + 400 * q + 399;
-                        //data = new Dictionary<string, int>();
-                        data.Add("Year", year);
-                        data.Add("Month", 12);
-                        data.Add("Day", 31);
-                        data.Add("DayOfYear", 366);
-                        data.Add("DayOfWeek", (int)this.DayOfWeek);
-                        data.Add("Hour", this.Hour);
-                        data.Add("Minute", this.Minute);
-                        data.Add("Second", this.Second);
-                        data.Add("Mil", this.Millisecond);
-                        return data;
-                        //return new int[] { year, 12, 31 };
-                        //throw new NotImplementedException();
-                    }
-                    t %= DaysPer100Years;
-                    int l = t / DaysPer4Years;
-                    t %= DaysPer4Years;
-                    int y = t / DaysPerYear;
-                    var months = DaysToMonth365;
-                    year = 1 + 400 * q + 100 * s + 4 * l + y;
-                    if (GregLeap(year))
-                    {
-                        months = DaysToMonth366;
-                    }
-                    t %= DaysPerYear;
-
-
-                    int m = 500;
-                    int d = 500;
-
-                    int i = 0;
-                    bool found = false;
-                    while (!found)
-                    {
-                        //////////////Console.WriteLine(DaysToMonth366[i]);
-                        if (months[i] > t)
-                        {
-                            m = i - 1;
-                            found = true;
-                            //////////////Console.WriteLine("366");
-                            d = t - months[m] + 1;
-                        }
-                        else
-                        {
-                            i++;
-                        }
-                    }
-                    //Dictionary<string, int> data = new Dictionary<string, int>();
-                    data.Add("Year", year);
-                    data.Add("Month", m + 1);
-                    data.Add("Day", d);
-                    if (GregLeap(year))
-                    {
-                        data.Add("DayOfYear", DaysToMonth366[m] + d);
-                    }
-                    else
-                    {
-                        data.Add("DayOfYear", DaysToMonth365[m] + d);
-                    }
-                    data.Add("DayOfWeek", (int)this.DayOfWeek);
-                    data.Add("Hour", this.Hour);
-                    data.Add("Minute", this.Minute);
-                    data.Add("Second", this.Second);
-                    data.Add("Mil", this.Millisecond);
-                    return data;
-                    //return new int[] { year, m + 1, d };
-                }
-            }
         }
 
 
@@ -1964,9 +1906,7 @@ namespace StarLib
         //
         public StarDate AddYears(int value)
         {
-            StarDate dt = this;
-            dt.Year += value;
-            return dt;
+            return this + value * YearTime;
         }
 
         // Compares two StarDate values, returning an integer that indicates
@@ -2313,6 +2253,12 @@ namespace StarLib
             {
                 return dateData + offset.Ticks;
             }
+            set
+            {
+                //a = d + o
+                //a - o = d
+                dateData = value - offset.Ticks;
+            }
         }
 
         /// <summary>
@@ -2558,7 +2504,7 @@ namespace StarLib
                 Contract.Ensures(Contract.Result<int>() >= 1 && Contract.Result<int>() <= 1000000);
                 return GetDatePart(DatePartYear);
             }
-            internal set
+            set
             {
                 StarDate dt = new StarDate(Year + 1, Month, Day, Hour, Minute, Second, Millisecond, ExtraTicks);
                 this.Atomic = dt.Atomic;
@@ -2575,7 +2521,7 @@ namespace StarLib
                 Contract.Ensures(Contract.Result<int>() >= 1 && Contract.Result<int>() <= 14);
                 return GetDatePart(DatePartMonth);
             }
-            internal set
+            set
             {
                 int diff = value - this.Month;
                 this.Atomic += diff * StarDate.month;
@@ -2593,7 +2539,7 @@ namespace StarLib
                 Contract.Ensures(Contract.Result<int>() >= 1 && Contract.Result<int>() <= 54);
                 return (DayOfYear / 7) + 1;
             }
-            internal set
+            set
             {
                 int diff = value - this.WeekOfYear;
                 this.Atomic += diff * week;
@@ -2611,7 +2557,7 @@ namespace StarLib
                 Contract.Ensures(Contract.Result<int>() <= 378);  // leap Year
                 return GetDatePart(DatePartDayOfYear);
             }
-            internal set
+            set
             {
                 int diff = value - this.DayOfYear;
                 this.Atomic += diff * StarDate.DayTime;
@@ -2630,7 +2576,7 @@ namespace StarLib
                 Contract.Ensures(Contract.Result<int>() <= 28);
                 return GetDatePart(DatePartDay);
             }
-            internal set
+            set
             {
                 int diff = value - this.Day;
                 this.Atomic += diff * StarDate.DayTime;
@@ -2662,7 +2608,7 @@ namespace StarLib
                     return (int)((AdjustedTicks / TicksPerHour) % 24);
                 }
             }
-            internal set
+            set
             {
                 int h = value;
                 int diff = h - this.Hour;
@@ -2702,7 +2648,7 @@ namespace StarLib
                 Contract.Ensures(Contract.Result<int>() < 60);
                 return (int)((AdjustedTicks / TicksPerSecond) % 60);
             }
-            internal set
+            set
             {
                 int diff = value - this.Second;
                 this.Atomic += diff * StarDate.SecondTime;
@@ -2722,7 +2668,7 @@ namespace StarLib
                 Contract.Ensures(Contract.Result<int>() < 1000);
                 return (int)((AdjustedTicks / TicksPerMillisecond) % 1000);
             }
-            internal set
+            set
             {
                 int diff = value - this.Millisecond;
                 this.Atomic += diff * StarDate.MillisecondTime;
@@ -2741,7 +2687,7 @@ namespace StarLib
                 Contract.Ensures(Contract.Result<int>() < 10000);
                 return (int)((AdjustedTicks % 10000));
             }
-            internal set
+            set
             {
                 int diff = value - this.ExtraTicks;
                 this.dateData += diff;
@@ -2843,7 +2789,7 @@ namespace StarLib
         {
             get
             {
-                return (this - StarDate.julian) / StarDate.DayTime;
+                return ((this - StarDate.julian) / StarDate.DayTime) + 1;
             }
 
             set
@@ -2973,6 +2919,21 @@ namespace StarLib
         }
         public static StarDate Maya { get => maya; internal set => maya1 = value; }
 
+        public static StarDate MinValue
+        {
+            get
+            {
+                return (StarDate)DateTime.MinValue;
+            }
+        }
+
+        public static StarDate MaxValue
+        {
+            get
+            {
+                return (StarDate)DateTime.MaxValue;
+            }
+        }
 
         public static StarZone UnspecifiedTimeZone
         {
@@ -2998,6 +2959,8 @@ namespace StarLib
                 formats = value;
             }
         }
+
+
 
 
 
@@ -3190,7 +3153,7 @@ namespace StarLib
             throw new NotImplementedException();
         }
 
-        
+
 
 
         /// <internalonly/>

@@ -38,7 +38,7 @@ Due to .Net limitations dates before Capricorn 15, 10001 aren't supported
     public string displaydate { get; set; }
     public StarDate sd { get; set; }
     //public DateTime dt { get; set; }
-    private Converter con = new Converter();
+    private BigConverter con = new BigConverter();
 
     public string[] Months { get; set; } = {
        "Sagittarius", "Capricorn", "Aquarius", "Pisces", "Aries", "Taurus", "Gemini", "Karkino", "Leo", "Virgo", "Libra", "Scorpio", "Ophiuchus", "Chiron" };
