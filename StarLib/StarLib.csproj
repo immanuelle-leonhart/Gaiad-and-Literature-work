@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>CosmicCalendar</AssemblyName>
+    <RootNamespace>CosmicCalendar</RootNamespace>
+    <Authors>Silicon Prophet</Authors>
+    <Company>Order of Life</Company>
+    <Product>CosmicCalendar</Product>
+    <Description>The Cosmic Calendar of the Order of Life</Description>
+    <Copyright>Order of Life 2020</Copyright>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <RepositoryUrl>https://github.com/siliconprophet/CosmicCalendar</RepositoryUrl>
+    <RepositoryType>Library</RepositoryType>
+    <PackageTags>Order of Life, Calendar</PackageTags>
+    <PackageReleaseNotes>Switched to .Net Core</PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\CosmicCalendar\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.PowerShell.5.ReferenceAssemblies" Version="1.1.0" />
+  </ItemGroup>
+
+</Project>
