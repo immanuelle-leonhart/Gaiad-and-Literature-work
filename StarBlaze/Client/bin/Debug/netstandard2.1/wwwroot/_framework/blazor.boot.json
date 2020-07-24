@@ -6,7 +6,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
-      "StarBlaze.Client.dll": "sha256-yV19YQGpeP2RwzgFkFp3GI65MWQcYtmbf0jL5NyQ\/mY=",
+      "StarBlaze.Client.dll": "sha256-+YntyQD2Tn7S24WyNNmzOBUJ\/2OyPxuge\/ZQyCCHl4w=",
       "System.Net.Http.Json.dll": "sha256-99dseBOagY3mzu5Y8Eqm8gRI+o8QbbCp7R2Ew9bQ+5E=",
       "System.Buffers.dll": "sha256-ZxXy75PYbzJxNfAc\/SAP1nUYm4gt1jSaOpFnBb9m85M=",
       "mscorlib.dll": "sha256-BaZPMj95+YNe3G4ckTGD6szZFwZeA2MOHn91zTGKDeU=",
@@ -59,12 +59,12 @@
       "Microsoft.Extensions.Options.dll": "sha256-rvTW0d54uLW0iDMAX30lpmr9f8uHoS3YYkEU5zNGhyc=",
       "Microsoft.JSInterop.dll": "sha256-LqwA2Rpm96Ualk0IhLZar87kfRCyKHzHTeTt2jYhm7M=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-czNf3btAeBW\/vvID5LAfgcsNZ+GM3ssVuPaMflcg0rs=",
-      "CosmicCalendar.dll": "sha256-KUcNk7bBWEMY0OfTRRdaPODqGpTn6rz84BuBkuuSX8k="
+      "CosmicCalendar.dll": "sha256-zvWDVSWa8hyAsKgAjBMpysimQ0Vl41vDJjcjrKnIYOc="
     },
     "pdb": {
-      "StarBlaze.Client.pdb": "sha256-kvpV\/UcOdSsoX1UcD9PAFKAUP08UoiI28ZahO0RjDfA=",
+      "StarBlaze.Client.pdb": "sha256-0km0P159iiv+zlUSAIPuk7U1FGyAXpPWWYFLu4LsAvA=",
       "StarBlaze.Shared.pdb": "sha256-bNqJHqm5UNj3XivfIApS1\/IBWjJOj0MST+U+IK6zo18=",
-      "CosmicCalendar.pdb": "sha256-CvXyMwcry+mhvpVXuwilLQAzOyjIwzNNHwuNySa9n8k="
+      "CosmicCalendar.pdb": "sha256-PMUF8usefYl+VsT3eHxN7V\/mw6gQlwTKs8zjvyqA58M="
     },
     "runtime": {
       "dotnet.3.2.0.js": "sha256-mPoqx7XczFHBWk3gRNn0hc9ekG1OvkKY4XiKRY5Mj5U=",

@@ -1,7 +1,21 @@
 ﻿@page "/"
+@using StarLib;
 
 <h1>Hello, world!</h1>
 
 Welcome to your new app.
 
 <SurveyPrompt Title="How is Blazor working for you?" />
+
+<h1>Calendar Converter!</h1>
+
+Minimum Cosmic Date 10001-02-15 12:00 AM 
+Minimum Gregorian Date 0001-01-01 12:00:00 AM
+Maximum Cosmic Date 19999-10-12 11:59 PM 
+Maximum Gregorian Date 9999-12-31 11:59:59 PM
+
+<h1>Greg Date @dt</h1>
+
+@code {
+    private string dt = DateTime.Now.ToString();
+}

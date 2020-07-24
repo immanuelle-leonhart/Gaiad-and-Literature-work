@@ -11,7 +11,7 @@
     <p>
         <label>
             Production Date:
-            <InputDate @bind-Value="con.dateTime" />
+            <InputDate @bind-Value="con.DateTime" />
         </label>
     </p>
 
@@ -21,7 +21,7 @@
 <p>Celestial Date: @date</p>
 
 @code {
-    private Converter con = new Converter();
+    private SmallConverter con = new SmallConverter();
     private StarDate date = StarDate.Now;
 
 private void HandleValidSubmit()
