@@ -65,7 +65,7 @@
       "url": "manifest.json"
     },
     {
-      "hash": "sha256-Z+lpG2XFXtDQA7ZcnV0Hrk5vWdgVYi+oVITx4qeXs34=",
+      "hash": "sha256-yV19YQGpeP2RwzgFkFp3GI65MWQcYtmbf0jL5NyQ\/mY=",
       "url": "_framework\/_bin\/StarBlaze.Client.dll"
     },
     {
@@ -277,12 +277,20 @@
       "url": "_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll"
     },
     {
-      "hash": "sha256-QdljM8viXp1rLLrsIkw46pnuxR7OYxqkPpfn5D620KY=",
+      "hash": "sha256-KUcNk7bBWEMY0OfTRRdaPODqGpTn6rz84BuBkuuSX8k=",
+      "url": "_framework\/_bin\/CosmicCalendar.dll"
+    },
+    {
+      "hash": "sha256-kvpV\/UcOdSsoX1UcD9PAFKAUP08UoiI28ZahO0RjDfA=",
       "url": "_framework\/_bin\/StarBlaze.Client.pdb"
     },
     {
       "hash": "sha256-bNqJHqm5UNj3XivfIApS1\/IBWjJOj0MST+U+IK6zo18=",
       "url": "_framework\/_bin\/StarBlaze.Shared.pdb"
+    },
+    {
+      "hash": "sha256-CvXyMwcry+mhvpVXuwilLQAzOyjIwzNNHwuNySa9n8k=",
+      "url": "_framework\/_bin\/CosmicCalendar.pdb"
     },
     {
       "hash": "sha256-mPoqx7XczFHBWk3gRNn0hc9ekG1OvkKY4XiKRY5Mj5U=",
@@ -301,9 +309,9 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-KTqVHb5A+bGSgnDkvUoLIFoTdMeyeWMjI9SpONmiyxk=",
+      "hash": "sha256-ppPGdh\/Q\/vUozTrWKVwDrrwN28F7pudjhK4sTbs5jzc=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "MjmwCU5H"
+  "version": "i5xn5OvR"
 };

@@ -690,7 +690,6 @@ namespace StarLib
             InvariantCulture.LongDatePattern = "WWWW MMMMM ddd yyyyy";
             InvariantCulture.shortDatePattern = "yyyyy/MM/dd";
             InvariantCulture.m_genitiveAbbreviatedMonthNames = InvariantCulture.AbbreviatedGenitiveMonthNames;    // Abbreviated genitive month names (same as abbrev month names for invariant)                                                      
-            InvariantCulture.bUseUserOverrides = false;
             JapaneseCulture.shortTimePattern = "h時m分s秒";
             ChineseCulture.shortTimePattern = "h時m分s秒";
             // Calendar was built, go ahead and assign it...            
@@ -821,10 +820,6 @@ namespace StarLib
         [OptionalField(VersionAdded = 2)]
         [NonSerialized]
         internal String[] m_genitiveAbbreviatedMonthNames = null;
-        private bool bUseUserOverrides;
-
-        //private string SAM1159;
-        //private string SPM2359;
         [NonSerialized]
         private string[] _longtimes;
         [NonSerialized]
@@ -3082,8 +3077,6 @@ namespace StarLib
         private string sISO639LANGNAME;
         [NonSerialized]
         private string cultureName;
-        [NonSerialized]
-        private string[] daysOfTheWeek;
         [NonSerialized]
         private string timeSeparator = ":";
         [NonSerialized]

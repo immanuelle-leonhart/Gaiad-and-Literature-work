@@ -327,6 +327,15 @@
           "lib/netstandard2.1/Microsoft.JSInterop.WebAssembly.dll": {}
         }
       },
+      "Microsoft.PowerShell.5.ReferenceAssemblies/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net4/System.Management.Automation.dll": {}
+        },
+        "runtime": {
+          "lib/net4/System.Management.Automation.dll": {}
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -429,6 +438,19 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+        }
+      },
+      "CosmicCalendar/1.0.1": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Microsoft.PowerShell.5.ReferenceAssemblies": "1.1.0"
+        },
+        "compile": {
+          "bin/placeholder/CosmicCalendar.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CosmicCalendar.dll": {}
         }
       },
       "StarBlaze.Shared/1.0.0": {
@@ -1314,6 +1336,48 @@
         "microsoft.jsinterop.webassembly.nuspec"
       ]
     },
+    "Microsoft.PowerShell.5.ReferenceAssemblies/1.1.0": {
+      "sha512": "EE87t3aUXlO0Rjq83Ti8z1g4wwsWnB4W+pOn84i3QWzUOOuP5gZg8n4Y8XTZ7GkxGcoSR6w/d/kBJTJbc3VZPQ==",
+      "type": "package",
+      "path": "microsoft.powershell.5.referenceassemblies/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net4/Microsoft.Management.Infrastructure.dll",
+        "lib/net4/Microsoft.PowerShell.Activities.dll",
+        "lib/net4/Microsoft.PowerShell.Activities.xml",
+        "lib/net4/Microsoft.PowerShell.Commands.Diagnostics.dll",
+        "lib/net4/Microsoft.PowerShell.ConsoleHost.dll",
+        "lib/net4/Microsoft.PowerShell.ConsoleHost.xml",
+        "lib/net4/Microsoft.PowerShell.Core.Activities.dll",
+        "lib/net4/Microsoft.PowerShell.Core.Activities.xml",
+        "lib/net4/Microsoft.PowerShell.Diagnostics.Activities.dll",
+        "lib/net4/Microsoft.PowerShell.Diagnostics.Activities.xml",
+        "lib/net4/Microsoft.PowerShell.Editor.dll",
+        "lib/net4/Microsoft.PowerShell.GPowerShell.dll",
+        "lib/net4/Microsoft.PowerShell.GPowerShell.xml",
+        "lib/net4/Microsoft.PowerShell.GraphicalHost.dll",
+        "lib/net4/Microsoft.PowerShell.GraphicalHost.xml",
+        "lib/net4/Microsoft.PowerShell.ISECommon.dll",
+        "lib/net4/Microsoft.PowerShell.ISECommon.xml",
+        "lib/net4/Microsoft.PowerShell.Management.Activities.dll",
+        "lib/net4/Microsoft.PowerShell.Management.Activities.xml",
+        "lib/net4/Microsoft.PowerShell.PSReadLine.dll",
+        "lib/net4/Microsoft.PowerShell.PackageManagement.dll",
+        "lib/net4/Microsoft.PowerShell.Security.Activities.dll",
+        "lib/net4/Microsoft.PowerShell.Security.Activities.xml",
+        "lib/net4/Microsoft.PowerShell.Security.dll",
+        "lib/net4/Microsoft.PowerShell.Security.xml",
+        "lib/net4/Microsoft.PowerShell.Utility.Activities.dll",
+        "lib/net4/Microsoft.PowerShell.Utility.Activities.xml",
+        "lib/net4/Microsoft.PowerShell.Workflow.ServiceCore.xml",
+        "lib/net4/Microsoft.Powershell.Workflow.ServiceCore.dll",
+        "lib/net4/System.Management.Automation.dll",
+        "lib/net4/System.Management.Automation.xml",
+        "microsoft.powershell.5.referenceassemblies.1.1.0.nupkg.sha512",
+        "microsoft.powershell.5.referenceassemblies.nuspec"
+      ]
+    },
     "System.Buffers/4.5.1": {
       "sha512": "Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
       "type": "package",
@@ -1637,6 +1701,11 @@
         "version.txt"
       ]
     },
+    "CosmicCalendar/1.0.1": {
+      "type": "project",
+      "path": "../../StarLib/StarLib.csproj",
+      "msbuildProject": "../../StarLib/StarLib.csproj"
+    },
     "StarBlaze.Shared/1.0.0": {
       "type": "project",
       "path": "../Shared/StarBlaze.Shared.csproj",
@@ -1645,6 +1714,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.1": [
+      "CosmicCalendar >= 1.0.1",
       "Microsoft.AspNetCore.Components.WebAssembly >= 3.2.1",
       "Microsoft.AspNetCore.Components.WebAssembly.Build >= 3.2.1",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 3.2.1",
@@ -1680,6 +1750,9 @@
           "projectReferences": {
             "C:\\Users\\SiliconProphet\\Documents\\GitHub\\CosmicCalendar\\StarBlaze\\Shared\\StarBlaze.Shared.csproj": {
               "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\CosmicCalendar\\StarBlaze\\Shared\\StarBlaze.Shared.csproj"
+            },
+            "C:\\Users\\SiliconProphet\\Documents\\GitHub\\CosmicCalendar\\StarLib\\StarLib.csproj": {
+              "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\CosmicCalendar\\StarLib\\StarLib.csproj"
             }
           }
         }
@@ -1730,5 +1803,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.PowerShell.5.ReferenceAssemblies 1.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.PowerShell.5.ReferenceAssemblies",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.1"
+      ]
+    }
+  ]
 }
