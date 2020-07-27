@@ -8,15 +8,17 @@ namespace TestConsole
         static void Main(string[] args)
         {
             Console.WriteLine(StarDate.UtcNow.Julian);
-            int DaysPer400Years = 146097;
-            StarDate dt = StarDate.UtcNow;
-            dt = dt.AddYears(-2000);
-            int i = DaysPer400Years + 1;
-            while (dt.Julian > 0)
+            StarDate dt = StarDate.FromGreg(9999, 1, 1);
+            bool b = true;
+            while (b)
             {
-                Console.WriteLine(dt.GregYear + "-" + dt.GregMonth + "-" + dt.GregDay + " " + dt.GregDayOfYear + " j = " + dt.Julian); //dt.GregMonth + "-" +
-                dt--;
-                i--;
+                Console.Write(dt.GregYear);
+                Console.Write("-");
+                Console.Write(dt.GregMonth);
+                Console.Write("-");
+                Console.Write(dt.GregDay);
+                Console.WriteLine();
+                dt++;
             }
         }
 

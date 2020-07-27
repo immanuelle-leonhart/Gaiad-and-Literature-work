@@ -783,12 +783,6 @@ namespace StarLib
             {
                 n %= DaysPerBillion;
                 n %= DaysPerMillion;
-                //////////Console.WriteLine("Days Since Manu = " + n);
-                //Logic Error is here
-                //////////Console.WriteLine(DaysPerAverageYear);
-                //////////Console.WriteLine(n / DaysPerAverageYear);
-                ////////////Console.WriteLine()
-                //throw new NotImplementedException();
                 int y78 = (int)(n / DaysPer78Years);
                 n -= y78 * DaysPer78Years;
                 int y6 = (int)(n / DaysPerSixYears);
@@ -832,11 +826,12 @@ namespace StarLib
                 }
             }
             catch (ArgumentOutOfRangeException) { }
-            BigInteger ticks = AdjustedTicks - NetStart;
-            // n = number of days since 1/1/0001
-            int n = (int)(ticks / TicksPerDay);
-            if (n > 0)
+            
+            if (NetStart < this.AdjustedTicks)
             {
+                BigInteger ticks = AdjustedTicks - NetStart;
+                // n = number of days since 1/1/0001
+                int n = (int)(ticks / TicksPerDay);
                 // y400 = number of whole 400-year periods since 1/1/0001
                 int y400 = n / DaysPer400Years;
                 // n = day number within 400-year period
@@ -872,34 +867,27 @@ namespace StarLib
                 // estimate for the month
                 int m = n >> 5 + 1;
                 // m = 1-based month number
-                while (n >= days[m]) m++;
+                try
+                {
+                    while (n >= days[m]) m++;
+                }
+                catch (IndexOutOfRangeException)
+                {
+                    m = 13;
+                }
                 // If month was requested, return it
                 if (part == DatePartMonth) return m;
                 // Return 1-based day-of-month
                 return n - days[m - 1] + 1;
             }
-            else if (ticks == 0)
-            {
-                switch (part)
-                {
-                    case DatePartYear:
-                        return 1;
-                    case DatePartDayOfYear:
-                        return 1;
-                    case DatePartMonth:
-                        return 1;
-                    case DatePartDay:
-                        return 1;
-                    case DatePartDayOfWeek:
-                        return (int)DayOfWeek;
-                    default:
-                        throw new ArgumentException();
-                }
-            }
             else
             {
+                BigInteger ticks = AdjustedTicks - NetStart + (DaysPer400Years * TicksPerDay * 25);
+                // n = number of days since 1/1/0001
+                int n = (int)(ticks / TicksPerDay);
+                // y400 = number of whole 400-year periods since 1/1/0001
                 int y400 = n / DaysPer400Years;
-                y400--;
+                // n = day number within 400-year period
                 n -= y400 * DaysPer400Years;
                 // y100 = number of whole 100-year periods within 400-year period
                 int y100 = n / DaysPer100Years;
@@ -916,41 +904,40 @@ namespace StarLib
                 // Last year has an extra day, so decrement result if 4
                 if (y1 == 4) y1 = 3;
                 // If year was requested, compute and return it
-                int year = y400 * 400 + y100 * 100 + y4 * 4 + y1;
                 if (part == DatePartYear)
                 {
-                    return year;
+                    int y = y400 * 400 + y100 * 100 + y4 * 4 + y1 - 10000;
+                    //Console.WriteLine(y);
+                    //throw new NotImplementedException();
+                    return y;
                 }
                 // n = day number within year
                 n -= y1 * DaysPerYear;
                 // If day-of-year was requested, return it
-                n++;
-                if (part == DatePartDayOfYear) return n;
+                if (part == DatePartDayOfYear) return n + 1;
                 // Leap year calculation looks different from IsLeapYear since y1, y4,
                 // and y100 are relative to year 1, not year 0
-                int[] days = DaysToMonth365;
-                if (GregLeap(year))
+                bool leapYear = y1 == 3 && (y4 != 24 || y100 == 3);
+                int[] days = leapYear ? DaysToMonth366 : DaysToMonth365;
+                // All months have less than 32 days, so n >> 5 is a good conservative
+                // estimate for the month
+                int m = n >> 5 + 1;
+                // m = 1-based month number
+                try
                 {
-                    days = DaysToMonth366;
+                    while (n >= days[m]) m++;
                 }
-
-                int i = 0;
-                int mo = 12;
-                while (i < 12)
+                catch (IndexOutOfRangeException)
                 {
-                    if (n < days[i++])
-                    {
-                        mo = i - 1;
-                        i = 12;
-                    }
+                    m = 13;
                 }
-                if (part == DatePartMonth)
-                {
-                    return mo;
-                }
-                n = n - days[mo - 1] + 1;
-                return n;
+                // If month was requested, return it
+                if (part == DatePartMonth) return m;
+                // Return 1-based day-of-month
+                return n - days[m - 1] + 1;
             }
+            
+            
         }
 
         private static int Modul(int i, int v)
