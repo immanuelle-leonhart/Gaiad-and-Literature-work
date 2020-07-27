@@ -9,7 +9,7 @@ Welcome to your new app.
     private string dt = DateTime.Now.ToString();
 }
 
-<EditForm Model="@con" OnValidSubmit="HandleValidSubmit">
+<EditForm Model="@sdt" OnValidSubmit="HandleValidSubmit">
     <DataAnnotationsValidator />
     <ValidationSummary />
 
@@ -17,9 +17,9 @@ Welcome to your new app.
     <p>
         <label>
             StarDate:
-            <InputStarDate @bind-Value="dt" />
+            <InputStarDate @bind-Value="sdt" />
             Greg Date:
-            <InputDate @bind-Value="dt.DateTime" />
+            <InputDate @bind-Value="sdt.DateTime" />
         </label>
     </p>
 
@@ -27,7 +27,7 @@ Welcome to your new app.
 </EditForm>
 
 @code {
-    private StarDate dt = StarDate.Now;
+    private StarDate sdt = StarDate.Now;
 
     private void HandleValidSubmit()
     {
