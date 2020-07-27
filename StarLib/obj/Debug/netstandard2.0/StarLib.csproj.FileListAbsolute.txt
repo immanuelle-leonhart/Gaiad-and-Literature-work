@@ -10,7 +10,6 @@ C:\Users\SiliconProphet\Documents\GitHub\StarBlaze\StarLib\obj\Debug\netstandard
 C:\Users\SiliconProphet\Documents\GitHub\CosmicCalendar\StarLib\bin\Debug\netstandard2.0\CosmicCalendar.deps.json
 C:\Users\SiliconProphet\Documents\GitHub\CosmicCalendar\StarLib\bin\Debug\netstandard2.0\CosmicCalendar.dll
 C:\Users\SiliconProphet\Documents\GitHub\CosmicCalendar\StarLib\bin\Debug\netstandard2.0\CosmicCalendar.pdb
-C:\Users\SiliconProphet\Documents\GitHub\CosmicCalendar\StarLib\obj\Debug\netstandard2.0\StarLib.csprojAssemblyReference.cache
 C:\Users\SiliconProphet\Documents\GitHub\CosmicCalendar\StarLib\obj\Debug\netstandard2.0\StarLib.AssemblyInfoInputs.cache
 C:\Users\SiliconProphet\Documents\GitHub\CosmicCalendar\StarLib\obj\Debug\netstandard2.0\StarLib.AssemblyInfo.cs
 C:\Users\SiliconProphet\Documents\GitHub\CosmicCalendar\StarLib\obj\Debug\netstandard2.0\StarLib.csproj.CoreCompileInputs.cache
