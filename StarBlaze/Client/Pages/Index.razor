@@ -16,8 +16,10 @@ Welcome to your new app.
 
     <p>
         <label>
-            Gregorian Date:
-            <InputStarDate @bind-Value="con.DateTime" />
+            StarDate:
+            <InputStarDate @bind-Value="dt" />
+            Greg Date:
+            <InputDate @bind-Value="dt.DateTime" />
         </label>
     </p>
 
@@ -25,7 +27,7 @@ Welcome to your new app.
 </EditForm>
 
 @code {
-    private StarDateConverter con = new StarDateConverter();
+    private StarDate dt = StarDate.Now;
 
     private void HandleValidSubmit()
     {
