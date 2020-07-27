@@ -1260,24 +1260,34 @@ namespace StarLib
             {
                 year++;
             }
-            year--;
-            int yearmod = year % 400;
-            if (yearmod < 0)
+            int quent;
+            int qmod;
+            if (year <= 0)
             {
-                yearmod += 400;
+                quent = year / 400;
+                qmod = year % 400;
             }
-            int quattro = (year - yearmod) / 400;
-            ////////////Console.WriteLine" 400mod = " + yearmod);
-            ////////////Console.WriteLine" 400count = " + quattro);
-            int centcount = yearmod / 100;
-            yearmod %= 100;
+            else
+            {
+                quent = year / 400;
+                qmod = year % 400;
+                if (qmod != 0)
+                {
+                    quent--;
+                }
+            }
+            
+            ////////////Console.WriteLine" 400mod = " + quent);
+            ////////////Console.WriteLine" 400count = " + qmod);
+            int centcount = qmod / 100;
+            qmod %= 100;
             ////////////Console.WriteLine" centcount = " + centcount);
-            int leapcount = yearmod / 4;
-            yearmod %= 4;
-            int yearcount = yearmod;
-            ////////////Console.WriteLine" q " + quattro + " c +" + centcount + " l +" + leapcount + " y +" + yearcount);
+            int leapcount = qmod / 4;
+            qmod %= 4;
+            int yearcount = qmod;
+            ////////////Console.WriteLine" q " + qmod + " c +" + centcount + " l +" + leapcount + " y +" + yearcount);
             //////////////Console.WriteLine(" ");
-            return new int[] { quattro, centcount, leapcount, yearcount };
+            return new int[] { quent, centcount, leapcount, yearcount };
         }
 
 

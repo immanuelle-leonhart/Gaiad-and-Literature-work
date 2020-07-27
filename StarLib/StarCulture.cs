@@ -692,6 +692,9 @@ namespace StarLib
             InvariantCulture.m_genitiveAbbreviatedMonthNames = InvariantCulture.AbbreviatedGenitiveMonthNames;    // Abbreviated genitive month names (same as abbrev month names for invariant)                                                      
             JapaneseCulture.shortTimePattern = "h時m分s秒";
             ChineseCulture.shortTimePattern = "h時m分s秒";
+            MonthSymbols = new String[] { "♐︎", "♑︎", "♒︎", "♓︎", "♈︎", "♉︎",
+                                                            "♊︎", "♋︎", "♌︎", "♍︎", "♎︎", "♏︎", "⛎", "🕎"}; // month names
+            DaySymbols = new String[] { "☉", "☾", "火", "☿", "♃", "金", "♄" };// day names
             // Calendar was built, go ahead and assign it...            
             //Invariant = invariant;
             return formats;
@@ -849,6 +852,9 @@ namespace StarLib
         internal String longTimePattern = null;
         [NonSerialized]
         internal String shortTimePattern = null;
+
+        public static string[] MonthSymbols { get; private set; }
+        public static string[] DaySymbols { get; private set; }
 
         // These are Whidbey-serialization compatable arrays (eg: default not included)
         // "all" is a bit of a misnomer since the "default" pattern stored above isn't

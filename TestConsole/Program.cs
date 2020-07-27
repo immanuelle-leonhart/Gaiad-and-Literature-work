@@ -7,8 +7,7 @@ namespace TestConsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(StarDate.UtcNow.Julian);
-            StarDate dt = StarDate.FromGreg(9999, 1, 1);
+            StarDate dt = StarDate.FromGreg(-500, 1, 1);
             bool b = true;
             while (b)
             {

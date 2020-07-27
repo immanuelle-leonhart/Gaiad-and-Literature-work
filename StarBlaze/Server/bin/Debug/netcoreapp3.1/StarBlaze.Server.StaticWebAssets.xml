@@ -1,4 +1,4 @@
 ﻿<StaticWebAssets Version="1.0">
-  <ContentRoot BasePath="/" Path="C:\Users\SiliconProphet\Documents\GitHub\StarBlaze\StarBlaze\Client\wwwroot\" />
-  <ContentRoot BasePath="/" Path="C:\Users\SiliconProphet\Documents\GitHub\StarBlaze\StarBlaze\Client\bin\Debug\netstandard2.1\wwwroot\" />
+  <ContentRoot BasePath="/" Path="C:\Users\SiliconProphet\Documents\GitHub\CosmicCalendar\StarBlaze\Client\wwwroot\" />
+  <ContentRoot BasePath="/" Path="C:\Users\SiliconProphet\Documents\GitHub\CosmicCalendar\StarBlaze\Client\bin\Debug\netstandard2.1\wwwroot\" />
 </StaticWebAssets>
