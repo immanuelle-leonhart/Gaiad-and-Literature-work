@@ -680,11 +680,11 @@ namespace StarLib
         {
             if (StarDate.LongDefault)
             {
-                return this.ToLongDateString() + " " + this.ToLongTimeString();
+                return ToLongString();
             }
             else
             {
-                return this.ToShortDateString() + " " + ToShortTimeString();
+                return ToShortString();
             }
         }
 
@@ -3073,6 +3073,11 @@ namespace StarLib
             return dt;
         }
 
+        public string ToLongString()
+        {
+            return ToLongDateString() + " " + ToLongTimeString();
+        }
+
         public String ToLongDateString()
         {
             Contract.Ensures(Contract.Result<String>() != null);
@@ -3085,6 +3090,11 @@ namespace StarLib
             Contract.Ensures(Contract.Result<String>() != null);
             //////////////Console.WriteLine(sdfi.CultureName);
             return StarDateFormat.Format(this, "T", StarCulture.CurrentCulture);
+        }
+
+        public string ToShortString()
+        {
+            return ToShortDateString() + " " + ToShortTimeString();
         }
 
         public String ToShortDateString()
