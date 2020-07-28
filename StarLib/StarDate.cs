@@ -1531,7 +1531,7 @@ namespace StarLib
                 }
                 else
                 {
-                    dateData += TicksPerDay;
+                    dateData += TicksPerDay * day;
                     //adjusting for timezone
                     //subtract datetime offset because internal ticks refer to UTC Atomic time
                     if (_timeZone.SupportsDaylightSavingTime)
