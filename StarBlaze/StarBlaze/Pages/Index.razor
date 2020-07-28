@@ -3,7 +3,7 @@
 
 <h1>Hello, world!</h1>
 
-Welcome to your new app.
+@*Welcome to your new app.
 
 <SurveyPrompt Title="How is Blazor working for you?" />
 
@@ -22,19 +22,40 @@ Welcome to your new app.
     </p>
 
     <button type="submit">Convert</button>
+</EditForm>*@
+
+
+@today
+
+<EditForm Model="@star" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+
+    <p>
+        <label>
+            Greg Date:
+            <InputDate @bind-Value="dt" />
+            Star Date:
+            <InputStarDate @bind-Value="star" />
+        </label>
+    </p>
+
+    <button type="submit">Convert</button>
 </EditForm>
 
 
 
+
 @code {
-    private StarDate sdt = StarDate.Now;
+    private StarDate star = StarDate.Now;
     private DateTime dt = DateTime.Now;
-    private string today = StarDate.Now.ToLongString();
+    private string today = StarDate.Now.ToLongDateString();
 
     private void HandleValidSubmit()
     {
         Console.WriteLine("OnValidSubmit");
-        sdt = (StarDate)dt;
-        today = sdt.ToLongString();
+        dt = star.DateTime;
+        today = star.ToLongDateString();
     }
 }

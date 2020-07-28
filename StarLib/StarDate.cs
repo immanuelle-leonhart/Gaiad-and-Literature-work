@@ -1462,6 +1462,10 @@ namespace StarLib
 
         public StarDate(int year, int month, int day, int hour, int minute, int second, int millisecond, int ticks, StarZone timezone)
         {
+            if ((year > 1900) && (year < 2100))
+            {
+                year += 10000;
+            }
             //base constructor used to generate all dates from standard digits
             _timeZone = timezone;
             dateData = Manu.Ticks;
@@ -3131,7 +3135,7 @@ namespace StarLib
         }
 
         //I don't know what these methods do and whether to replicate them
-        public static Boolean TryParse(String s, out StarDate result)
+        public static Boolean TryParse(String s, string format, out StarDate result)
         {
             try
             {
@@ -3145,24 +3149,7 @@ namespace StarLib
             }
         }
 
-        public static StarDate Parse(string s)
-        {
-            foreach (string format in StarDate.Formats)
-            {
-                StarDate dt;
-                bool b = TryParse(s, format, out dt);
-                if (b)
-                {
-                    return dt;
-                }
-            }
-            throw new Exception();
-        }
-
-        private static bool TryParse(string s, string format, out StarDate dt)
-        {
-            throw new NotImplementedException();
-        }
+        
 
 
 
@@ -3333,6 +3320,49 @@ namespace StarLib
         string IConvertible.ToString(IFormatProvider provider)
         {
             return ToString(provider);
+        }
+
+        public static bool SpecialParse(string text, string format, CultureInfo cultureInfo, StarDateStyles none, out StarDate converted)
+        {
+            Log.WriteLine(text);
+            //2020-07-16
+            throw new NotImplementedException();
+        }
+
+        public static bool TryParseExact(string text, string format, CultureInfo cultureInfo, StarDateStyles none, out StarDate converted)
+        {
+            throw new NotImplementedException();
+        }
+
+        public static bool TryParse(string text, CultureInfo cultureInfo, StarDateStyles none, out StarDate converted)
+        {
+            throw new NotImplementedException();
+        }
+
+        public static StarDate Parse(string s)
+        {
+            foreach (string format in StarDate.Formats)
+            {
+                StarDate dt;
+                bool b = TryParse(s, format, out dt);
+                if (b)
+                {
+                    return dt;
+                }
+            }
+            throw new Exception();
+        }
+
+        //private static bool TryParse(string s, string format, out StarDate dt)
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+        
+
+        public static bool TryParse(string text, string format, CultureInfo cultureInfo, StarDateStyles none, out object converted)
+        {
+            throw new NotImplementedException();
         }
 
         /// <summary>
