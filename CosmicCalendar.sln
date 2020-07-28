@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarLib", "StarLib\StarLib.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestConsole", "TestConsole\TestConsole.csproj", "{BB2AEE71-2A03-49FA-B19B-4A9F8C62BE54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarBlaze", "StarBlaze\StarBlaze\StarBlaze.csproj", "{7F5F87CD-6382-4527-ABDE-95C6DF01C38D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarBlaze", "StarBlaze\StarBlaze\StarBlaze.csproj", "{7F5F87CD-6382-4527-ABDE-95C6DF01C38D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
