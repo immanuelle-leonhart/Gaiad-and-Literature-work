@@ -7,8 +7,7 @@ namespace TestConsole
     {
         static void Main(string[] args)
         {
-            StarDate dt = StarDate.Now;
-            Console.WriteLine(dt.ToLongDateString());
+            Console.WriteLine(new StarDate(12020, 1, 13));
         }
 
         private static int Modul(int i, int v)

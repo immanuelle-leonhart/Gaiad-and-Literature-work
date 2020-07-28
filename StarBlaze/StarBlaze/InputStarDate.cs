@@ -16,7 +16,7 @@ namespace StarBlaze
     /// An input component for editing date values.
     /// Supported types are <see cref="DateTime"/> and <see cref="DateTimeOffset"/>.
     /// </summary>
-    public class InputStarDate<StarDate> : InputBase<StarDate>
+    public class InputStarDate<TValue> : InputBase<TValue>
     {
         private const int PlaceHolder = 9999999;
 
@@ -32,11 +32,52 @@ namespace StarBlaze
             builder.CloseElement();
         }
 
-        protected override bool TryParseValueFromString(string value, out StarDate result, out string validationErrorMessage)
+        protected override bool TryParseValueFromString(string value, out TValue result, out string validationErrorMessage)
         {
+            // Unwrap nullable types. We don't have to deal with receiving empty values for nullable
+            // types here, because the underlying InputBase already covers that.
+            var targetType = Nullable.GetUnderlyingType(typeof(TValue)) ?? typeof(TValue);
+
+            bool success;
+            //if (targetType == typeof(StarDate))
+            //{
+                success = TryParseDateTime(value, out result);
+            //}
+
+            if (success)
+            {
+                validationErrorMessage = null;
+                return true;
+            }
+            else
+            {
+                validationErrorMessage = "Error";
+                return false;
+            }
+
+        }
+
+        static bool TryParseDateTime(string? value, [MaybeNullWhen(false)] out TValue result)
+        {
+            var success = TryConvertToStarDate(value, out var parsedValue);
+            if (success)
+            {
+                result = (TValue)(object)parsedValue;
+                return true;
+            }
+            else
+            {
+                result = default;
+                return false;
+            }
+        }
+
+        public static bool TryConvertToStarDate(object? obj, out StarDate value)
+        {
+            string va = (string)obj;
             List<string> vs = new List<string> { "" };
             int i = 0;
-            foreach (char n in value)
+            foreach (char n in va)
             {
                 if (char.IsDigit(n))
                 {
@@ -55,11 +96,8 @@ namespace StarBlaze
                 q[i] = int.Parse(vs[i], CultureInfo.InvariantCulture);
                 i++;
             }
-            result = new StarDate(q[0], q[1], q[2], q[3], q[4], q[5], q[6], q[7]);
-            validationErrorMessage = null;
+            value = new StarDate(q[0], q[1], q[2], q[3], q[4], q[5], q[6], q[7]);
             return true;
         }
-
-
     }
 }
