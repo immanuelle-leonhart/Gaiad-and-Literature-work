@@ -3,15 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarBlaze.Server", "StarBlaze\Server\StarBlaze.Server.csproj", "{833B5CDB-E533-40C8-A816-FE101A117D74}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarBlaze.Client", "StarBlaze\Client\StarBlaze.Client.csproj", "{0AF1A1F4-2B9F-4212-BFA6-31128A33AB09}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarBlaze.Shared", "StarBlaze\Shared\StarBlaze.Shared.csproj", "{4F77CD3F-48CC-45D3-9053-87C694880E52}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarLib", "StarLib\StarLib.csproj", "{4447B503-DFA5-4930-A28C-68840D980B11}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestConsole", "TestConsole\TestConsole.csproj", "{BB2AEE71-2A03-49FA-B19B-4A9F8C62BE54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarBlaze", "StarBlaze\StarBlaze\StarBlaze.csproj", "{7F5F87CD-6382-4527-ABDE-95C6DF01C38D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,18 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{833B5CDB-E533-40C8-A816-FE101A117D74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{833B5CDB-E533-40C8-A816-FE101A117D74}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{833B5CDB-E533-40C8-A816-FE101A117D74}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{833B5CDB-E533-40C8-A816-FE101A117D74}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0AF1A1F4-2B9F-4212-BFA6-31128A33AB09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0AF1A1F4-2B9F-4212-BFA6-31128A33AB09}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0AF1A1F4-2B9F-4212-BFA6-31128A33AB09}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0AF1A1F4-2B9F-4212-BFA6-31128A33AB09}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4F77CD3F-48CC-45D3-9053-87C694880E52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4F77CD3F-48CC-45D3-9053-87C694880E52}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4F77CD3F-48CC-45D3-9053-87C694880E52}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4F77CD3F-48CC-45D3-9053-87C694880E52}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4447B503-DFA5-4930-A28C-68840D980B11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4447B503-DFA5-4930-A28C-68840D980B11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4447B503-DFA5-4930-A28C-68840D980B11}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +23,10 @@ Global
 		{BB2AEE71-2A03-49FA-B19B-4A9F8C62BE54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB2AEE71-2A03-49FA-B19B-4A9F8C62BE54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB2AEE71-2A03-49FA-B19B-4A9F8C62BE54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F5F87CD-6382-4527-ABDE-95C6DF01C38D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F5F87CD-6382-4527-ABDE-95C6DF01C38D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F5F87CD-6382-4527-ABDE-95C6DF01C38D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F5F87CD-6382-4527-ABDE-95C6DF01C38D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

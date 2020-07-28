@@ -7,18 +7,8 @@ namespace TestConsole
     {
         static void Main(string[] args)
         {
-            StarDate dt = StarDate.FromGreg(-500, 1, 1);
-            bool b = true;
-            while (b)
-            {
-                Console.Write(dt.GregYear);
-                Console.Write("-");
-                Console.Write(dt.GregMonth);
-                Console.Write("-");
-                Console.Write(dt.GregDay);
-                Console.WriteLine();
-                dt++;
-            }
+            StarDate dt = StarDate.Now;
+            Console.WriteLine(dt.ToLongDateString());
         }
 
         private static int Modul(int i, int v)

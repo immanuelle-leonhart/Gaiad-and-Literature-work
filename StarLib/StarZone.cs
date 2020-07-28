@@ -901,30 +901,42 @@ namespace StarLib
             {
                 if (martianTimeZones == null)
                 {
-                    martianTimeZones = new StarZone[24];
-                    int counter = 0;
-                    string line;
-                    Dictionary<string, StarCulture> formats = new Dictionary<string, StarCulture>();
-                    string assemblyFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-                    string csvFileName = Path.Combine(assemblyFolder, "Mars.csv");
-                    //string csvFileName = "Mars.csv";
-                    //int lastslash = Gedcom.LastIndexOf('/');
-                    //string Filename = Gedcom.Substring(lastslash + 1);
-                    //Gedson ged = new Gedson();
-                    System.IO.StreamReader file = new StreamReader(csvFileName);
-                    while ((line = file.ReadLine()) != null)
+                    martianTimeZones = new StarZone[]
                     {
-                        martianTimeZones[counter] = fromCSV(line);
-                        counter++;
-                    }
-                    return martianTimeZones;
+                        MartianZone(0,"Meridiani Planum"),
+                        MartianZone(1,"Noachis"),
+                        MartianZone(2,"Arabia Terra"),
+                        MartianZone(3,"Huygens"),
+                        MartianZone(4,"West Hellas"),
+                        MartianZone(5,"East Hellas"),
+                        MartianZone(6,"Isidis"),
+                        MartianZone(7,"Hesperia Planum"),
+                        MartianZone(8,"Nepenthe"),
+                        MartianZone(9,"West Elysium"),
+                        MartianZone(10,"Central Elysium"),
+                        MartianZone(11,"East Elysium"),
+                        MartianZone(12,"Amazonis"),
+                        MartianZone(-11,"West Cerebus"),
+                        MartianZone(-10,"East Cerebus"),
+                        MartianZone(-9,"Olympus Mons"),
+                        MartianZone(-8,"Arsia"),
+                        MartianZone(-7,"West Tharsis"),
+                        MartianZone(-6,"East Tharsis"),
+                        MartianZone(-5,"Upper Mariner"),
+                        MartianZone(-4,"Lower Mariner"),
+                        MartianZone(-3,"Argyre"),
+                        MartianZone(-2,"New Cascadia"),
+                        MartianZone(-1,"Oxia Palus")
+                    };
                 }
-                else
-                {
-                    return martianTimeZones;
-                }
+                return martianTimeZones;
             }
 
+        }
+
+        private static StarZone MartianZone(double v1, string v2)
+        {
+            return new StarZone(v2, StarDate.HourTime * v1, "Mars", StarDate.Sol, "Amaterasu");
         }
 
         public static StarZone[] SystemTimeZones
@@ -960,31 +972,6 @@ namespace StarLib
             {
                 _sys_zones = value;
             }
-        }
-
-        private static StarZone fromCSV(string line)
-        {
-            string[] vs = line.Split(',');
-            double d = double.Parse(vs[0]);
-            Time off = StarDate.HourTime * d;
-            string name = vs[1];
-            string planet = vs[2];
-            Time LocalDay = StarDate.DayTime;
-            if (planet == "Terra")
-            {
-                LocalDay = StarDate.DayTime;
-            }
-            else if (planet == "Mars")
-            {
-                LocalDay = StarDate.Sol;
-            }
-            else
-            {
-                double l = double.Parse(vs[3]);
-                LocalDay = l * StarDate.DayTime;
-            }
-            string star = vs[4];
-            return new StarZone(name, off, planet, LocalDay, star);
         }
 
 

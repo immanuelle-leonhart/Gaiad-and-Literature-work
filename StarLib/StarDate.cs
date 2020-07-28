@@ -2486,6 +2486,10 @@ namespace StarLib
                 DateTime.SpecifyKind(dt, Kind);
                 return dt;
             }
+            set
+            {
+                dateData = value.Ticks + NetStart;
+            }
         }
 
 
@@ -2744,7 +2748,7 @@ namespace StarLib
         {
             get
             {
-                return StarCulture.Symbols.GetMonthName(Month);
+                return StarCulture.MonthSymbols[Month];
             }
         }
 
@@ -2778,7 +2782,7 @@ namespace StarLib
         {
             get
             {
-                return StarCulture.Symbols.GetDayName(DayOfWeek);
+                return StarCulture.DaySymbols[(int) DayOfWeek];
             }
         }
 

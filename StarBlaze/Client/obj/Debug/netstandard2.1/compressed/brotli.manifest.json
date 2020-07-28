@@ -1,7 +1,7 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\4HHvoQDwAm-Q1QW4-aR53f2cIQMD3JGKeREdo-BsMnU=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\0d1pHaOf6u6b2z2uvww0xPACbOjLCoFdzO4ZRmx20gE=.hash",
       "Source": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\CosmicCalendar\\StarBlaze\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\StarBlaze.Client.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/StarBlaze.Client.dll.br"
     },
@@ -266,12 +266,12 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\9ZcOO-u6Ulw9ooFHX-uCgYvZz2fkeikcRX8_mZxv7WU=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\caBZ2GjJfUMc21DW2fK5Ck3tyPTQj0kKX2RyxxIs_yI=.hash",
       "Source": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\CosmicCalendar\\StarBlaze\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\CosmicCalendar.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/CosmicCalendar.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\gG8MGvR4o_HGvoYEADOumSKsk5HmSmWWkBpma4IbzhU=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\2z-dsk26ubTa-nW0QKuV3GH4pS3GD3j683ecjJh_QXI=.hash",
       "Source": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\CosmicCalendar\\StarBlaze\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\StarBlaze.Client.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/StarBlaze.Client.pdb.br"
     },
@@ -281,7 +281,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/StarBlaze.Shared.pdb.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\WneXvQk_IMdH6fZ_ep_zDwHJlGUQm3oHY7UwyRgTfEs=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\JKb7WCDKjN3wWvOw4vLTwjwGKqTL6uqZe_x8f3mESGE=.hash",
       "Source": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\CosmicCalendar\\StarBlaze\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\CosmicCalendar.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/CosmicCalendar.pdb.br"
     },
@@ -306,12 +306,12 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\DQcmFRTNBFfKfzmE3JXZUqTvwe5fC44GZgGGvpnLhEY=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\kI4Pok4oKLHixBEZB11mOAKdh1UZcNl2XArAkCYYJ0g=.hash",
       "Source": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\CosmicCalendar\\StarBlaze\\Client\\obj\\Debug\\netstandard2.1\\blazor\\blazor.boot.json",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\Zq-of86i6uGiRhV2qvLuFT9BhmaTbw3ZxJu9mskHKzc=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\qmQQ72e9JtT5BkREHn3boKznEL0_0ZczYhnWCWMEKxA=.hash",
       "Source": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\CosmicCalendar\\StarBlaze\\Client\\obj\\Debug\\netstandard2.1\\blazor\\service-worker-assets.js",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\service-worker-assets.js.br"
     }
