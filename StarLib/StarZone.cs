@@ -2330,7 +2330,7 @@ namespace StarLib
             //{
             //    String token = GetNextStringValue(canEndWithoutSeparator);
             //    StarDate time;
-            //    if (!StarDate.TryParseExact(token, format, StarCulture.InvariantCulture.FormatProvider, StarDateStyles.None, out time))
+            //    if (!StarDate.SpecialParse(token, format, StarCulture.InvariantCulture.FormatProvider, StarDateStyles.None, out time))
             //    {
             //        throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
             //    }
