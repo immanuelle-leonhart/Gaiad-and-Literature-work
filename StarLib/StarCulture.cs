@@ -146,6 +146,7 @@ namespace StarLib
             InvariantCulture.m_genitiveAbbreviatedMonthNames = new String[] { "Sag", "Cap", "Aqu", "Pis", "Ari", "Tau",
                                                             "Gem", "Kar", "Leo", "Vir", "Lib", "Sco", "Oph", "Hor"}; // abbreviated month names
                                                                                                                      // Time
+            InvariantCulture.dateSeparator = "-";
             InvariantCulture.TimeSeparator = ":";
             InvariantCulture.SAM1159 = "AM";                   // AM designator
             InvariantCulture.SPM2359 = "PM";                   // PM designator
