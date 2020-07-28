@@ -5,10 +5,10 @@
   },
   "projects": {
     "C:\\Users\\SiliconProphet\\Documents\\GitHub\\CosmicCalendar\\StarLib\\StarLib.csproj": {
-      "version": "1.0.1",
+      "version": "1.0.0",
       "restore": {
         "projectUniqueName": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\CosmicCalendar\\StarLib\\StarLib.csproj",
-        "projectName": "CosmicCalendar",
+        "projectName": "StarDate",
         "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\CosmicCalendar\\StarLib\\StarLib.csproj",
         "packagesPath": "C:\\Users\\SiliconProphet\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\CosmicCalendar\\StarLib\\obj\\",

@@ -1,12 +1,35 @@
 {
   "version": 2,
-  "dgSpecHash": "cFEgKvuWEI9j0SOo4gDyuUzaGKy5HHZCFbSQsB8MOYhOJE9EEg+QiWIKnQpiG8XrrXmEiTeMIoSzq8pNp9/1bQ==",
+  "dgSpecHash": "5yJXqFUiHcCFIKOvxwmNqJc7WOa+U38G/IgG8d5kuiXbyOVK4Aux980OUurcjumZjBs+bzbkJHI1rm8AfxcGVA==",
   "success": true,
   "projectFilePath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\CosmicCalendar\\StarBlaze\\StarBlaze\\StarBlaze.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\SiliconProphet\\.nuget\\packages\\microsoft.powershell.5.referenceassemblies\\1.1.0\\microsoft.powershell.5.referenceassemblies.1.1.0.nupkg.sha512"
+    "C:\\Users\\SiliconProphet\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.0.0\\microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512",
+    "C:\\Users\\SiliconProphet\\.nuget\\packages\\microsoft.netcore.platforms\\3.0.0\\microsoft.netcore.platforms.3.0.0.nupkg.sha512",
+    "C:\\Users\\SiliconProphet\\.nuget\\packages\\microsoft.powershell.5.referenceassemblies\\1.1.0\\microsoft.powershell.5.referenceassemblies.1.1.0.nupkg.sha512",
+    "C:\\Users\\SiliconProphet\\.nuget\\packages\\microsoft.visualstudio.coreutility\\16.6.255\\microsoft.visualstudio.coreutility.16.6.255.nupkg.sha512",
+    "C:\\Users\\SiliconProphet\\.nuget\\packages\\microsoft.visualstudio.threading\\16.6.13\\microsoft.visualstudio.threading.16.6.13.nupkg.sha512",
+    "C:\\Users\\SiliconProphet\\.nuget\\packages\\microsoft.visualstudio.threading.analyzers\\16.6.13\\microsoft.visualstudio.threading.analyzers.16.6.13.nupkg.sha512",
+    "C:\\Users\\SiliconProphet\\.nuget\\packages\\microsoft.visualstudio.validation\\15.5.31\\microsoft.visualstudio.validation.15.5.31.nupkg.sha512",
+    "C:\\Users\\SiliconProphet\\.nuget\\packages\\microsoft.win32.registry\\4.6.0\\microsoft.win32.registry.4.6.0.nupkg.sha512",
+    "C:\\Users\\SiliconProphet\\.nuget\\packages\\system.collections.immutable\\1.5.0\\system.collections.immutable.1.5.0.nupkg.sha512",
+    "C:\\Users\\SiliconProphet\\.nuget\\packages\\system.componentmodel.composition\\4.5.0\\system.componentmodel.composition.4.5.0.nupkg.sha512",
+    "C:\\Users\\SiliconProphet\\.nuget\\packages\\system.security.accesscontrol\\4.6.0\\system.security.accesscontrol.4.6.0.nupkg.sha512",
+    "C:\\Users\\SiliconProphet\\.nuget\\packages\\system.security.permissions\\4.5.0\\system.security.permissions.4.5.0.nupkg.sha512",
+    "C:\\Users\\SiliconProphet\\.nuget\\packages\\system.security.principal.windows\\4.6.0\\system.security.principal.windows.4.6.0.nupkg.sha512",
+    "C:\\Users\\SiliconProphet\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.3\\system.threading.tasks.extensions.4.5.3.nupkg.sha512"
   ],
   "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Microsoft.VisualStudio.CoreUtility 16.6.255 depends on Microsoft.VisualStudio.Threading (>= 16.6.5-alpha) but Microsoft.VisualStudio.Threading 16.6.5-alpha was not found. An approximate best match of Microsoft.VisualStudio.Threading 16.6.13 was resolved.",
+      "libraryId": "Microsoft.VisualStudio.Threading",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
     {
       "code": "NU1701",
       "level": "Warning",

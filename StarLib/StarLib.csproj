@@ -15,10 +15,18 @@
     <PackageTags>Order of Life, Calendar</PackageTags>
     <PackageReleaseNotes>Switched to .Net Core</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.1</Version>
+    <Version>1.0.0</Version>
+    <PackageId>StarDate</PackageId>
+    <PackageIcon>DNA Tree Logo.jpg</PackageIcon>
+    <NeutralLanguage></NeutralLanguage>
+    <PackageProjectUrl>https://github.com/siliconprophet/CosmicCalendar</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="..\..\..\..\Dropbox\branding images\DNA Tree Logo.jpg">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
     <None Include="..\..\CosmicCalendar\LICENSE">
       <Pack>True</Pack>
       <PackagePath></PackagePath>

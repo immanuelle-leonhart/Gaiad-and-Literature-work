@@ -11,17 +11,17 @@
           "lib/net4/System.Management.Automation.dll": {}
         }
       },
-      "CosmicCalendar/1.0.1": {
+      "StarDate/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Microsoft.PowerShell.5.ReferenceAssemblies": "1.1.0"
         },
         "compile": {
-          "bin/placeholder/CosmicCalendar.dll": {}
+          "bin/placeholder/StarDate.dll": {}
         },
         "runtime": {
-          "bin/placeholder/CosmicCalendar.dll": {}
+          "bin/placeholder/StarDate.dll": {}
         }
       }
     }
@@ -69,7 +69,7 @@
         "microsoft.powershell.5.referenceassemblies.nuspec"
       ]
     },
-    "CosmicCalendar/1.0.1": {
+    "StarDate/1.0.0": {
       "type": "project",
       "path": "../StarLib/StarLib.csproj",
       "msbuildProject": "../StarLib/StarLib.csproj"
@@ -77,7 +77,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "CosmicCalendar >= 1.0.1"
+      "StarDate >= 1.0.0"
     ]
   },
   "packageFolders": {
