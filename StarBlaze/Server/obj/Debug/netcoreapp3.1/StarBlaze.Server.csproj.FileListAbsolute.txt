@@ -431,3 +431,5 @@ C:\Users\SiliconProphet\Documents\GitHub\CosmicCalendar\StarBlaze\Server\obj\Deb
 C:\Users\SiliconProphet\Documents\GitHub\CosmicCalendar\StarBlaze\Server\obj\Debug\netcoreapp3.1\StarBlaze.Server.dll
 C:\Users\SiliconProphet\Documents\GitHub\CosmicCalendar\StarBlaze\Server\obj\Debug\netcoreapp3.1\StarBlaze.Server.pdb
 C:\Users\SiliconProphet\Documents\GitHub\CosmicCalendar\StarBlaze\Server\obj\Debug\netcoreapp3.1\StarBlaze.Server.genruntimeconfig.cache
+C:\Users\SiliconProphet\Documents\GitHub\CosmicCalendar\StarBlaze\Server\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.json
+C:\Users\SiliconProphet\Documents\GitHub\CosmicCalendar\StarBlaze\Server\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.local.json

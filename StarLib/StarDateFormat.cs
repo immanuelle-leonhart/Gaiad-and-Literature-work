@@ -172,7 +172,7 @@ namespace StarLib
         };
         private string[] abbreviatedMonthNames;
         private string[] abbreviatedDayNames;
-        private static object cal1;
+
         //private static StarDateFormat invariantInfo;
 
         //private Func<string[]> abbreviatedMonthNames1;
@@ -1127,79 +1127,6 @@ namespace StarLib
             }
 
             //BCLDebug.Assert(val == 0, "StarDateFormat.AppendNumber(): digits less than size of val");
-        }
-
-        internal static String[] GetAllStarDates(StarDate StarDate, char format, StarCulture sdfi)
-        {
-            Contract.Requires(sdfi != null);
-            String[] allFormats = null;
-            String[] results = null;
-
-            switch (format)
-            {
-                case 'd':
-                case 'D':
-                case 'f':
-                case 'F':
-                case 'g':
-                case 'G':
-                case 'm':
-                case 'M':
-                case 't':
-                case 'T':
-                case 'y':
-                case 'Y':
-                    allFormats = sdfi.GetAllStarDatePatterns(format);
-                    results = new String[allFormats.Length];
-                    for (int i = 0; i < allFormats.Length; i++)
-                    {
-                        results[i] = Format(StarDate, allFormats[i], sdfi);
-                    }
-                    break;
-                case 'U':
-                    StarDate universalTime = StarDate.ToUniversalTime();
-                    allFormats = sdfi.GetAllStarDatePatterns(format);
-                    results = new String[allFormats.Length];
-                    for (int i = 0; i < allFormats.Length; i++)
-                    {
-                        results[i] = Format(universalTime, allFormats[i], sdfi);
-                    }
-                    break;
-                //
-                // The following ones are special cases because these patterns are read-only in
-                // StarDateFormat.
-                //
-                case 'r':
-                case 'R':
-                case 'o':
-                case 'O':
-                case 's':
-                case 'u':
-                    results = new String[] { Format(StarDate, new String(new char[] { format }), sdfi) };
-                    break;
-                default:
-                    throw new NotImplementedException();
-                    //throw new FormatException(StarLEnvironment.GetResourceString("Format_InvalidString"));
-
-            }
-            return (results);
-        }
-
-        internal static String[] GetAllStarDates(StarDate StarDate, StarCulture sdfi)
-        {
-            List<String> results = new List<String>(DEFAULT_ALL_StarDateS_SIZE);
-
-            for (int i = 0; i < allStandardFormats.Length; i++)
-            {
-                String[] strings = GetAllStarDates(StarDate, allStandardFormats[i], sdfi);
-                for (int j = 0; j < strings.Length; j++)
-                {
-                    results.Add(strings[j]);
-                }
-            }
-            String[] value = new String[results.Count];
-            results.CopyTo(0, value, 0, results.Count);
-            return (value);
         }
 
         // This is a placeholder for an MDA to detect when the user is using a
