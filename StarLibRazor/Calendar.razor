@@ -1,0 +1,37 @@
+﻿@inherits CalendarBase
+@using StarLib;
+@using StarLibRazor;
+<h3>Calendar</h3>
+
+<EditForm Model="@dt" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+
+    <p>
+        <label>
+            <InputNumber @bind-Value="@Year"></InputNumber>
+            <select class="form-control" @bind="@Month">
+
+                <option value=""></option>
+                @foreach (var country in MonthList)
+                {
+                    <option value="@country.Key"> @country.Value </option>
+                }
+                }
+            </select>
+            @*<InputNumber @bind-Value="@Day"></InputNumber>*@
+            <select class="form-control" @bind="@Day">
+
+                <option value=""></option>
+                @foreach (var country in DayList)
+                {
+                    <option value="@country"> @country </option>
+                }
+                }
+            </select>
+        </label>
+    </p>
+
+    <button type="submit">Convert</button>
+</EditForm>
