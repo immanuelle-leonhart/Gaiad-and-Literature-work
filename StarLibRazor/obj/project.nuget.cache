@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "mNn5FHcqJSjuouqraqcOdUgdBiObi0OTFXwvw2rQKQkHZpz8EPjgxs6pAktDunTzWSONxbCniQy8ZO7THZOLzA==",
+  "dgSpecHash": "nugfHqoIro5ZlDvbUMHQtL3RLvkzxneZ2mTiL3jPW0QvuQBvnj0d6JCUUHe3lxdhpuolRfXxwuEJ7XXlmssUtg==",
   "success": true,
   "projectFilePath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate\\StarLibRazor\\StarLibRazor.csproj",
   "expectedPackageFiles": [
@@ -97,6 +97,7 @@
     "C:\\Users\\SiliconProphet\\.nuget\\packages\\system.collections.immutable\\1.3.1\\system.collections.immutable.1.3.1.nupkg.sha512",
     "C:\\Users\\SiliconProphet\\.nuget\\packages\\system.componentmodel.annotations\\4.5.0\\system.componentmodel.annotations.4.5.0.nupkg.sha512",
     "C:\\Users\\SiliconProphet\\.nuget\\packages\\system.console\\4.3.0\\system.console.4.3.0.nupkg.sha512",
+    "C:\\Users\\SiliconProphet\\.nuget\\packages\\system.diagnostics.contracts\\4.3.0\\system.diagnostics.contracts.4.3.0.nupkg.sha512",
     "C:\\Users\\SiliconProphet\\.nuget\\packages\\system.diagnostics.debug\\4.3.0\\system.diagnostics.debug.4.3.0.nupkg.sha512",
     "C:\\Users\\SiliconProphet\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.5.1\\system.diagnostics.diagnosticsource.4.5.1.nupkg.sha512",
     "C:\\Users\\SiliconProphet\\.nuget\\packages\\system.diagnostics.fileversioninfo\\4.3.0\\system.diagnostics.fileversioninfo.4.3.0.nupkg.sha512",
