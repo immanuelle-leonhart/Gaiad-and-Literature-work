@@ -45,7 +45,68 @@
     <button type="submit">Convert</button>
 </EditForm>
 
-@star
+<EditForm Model="@m" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+
+    <p>
+        <label>
+            Leap Year Months:
+            <InputSelect @bind-Value="m">
+                <option value=0>Select month ...</option>
+                <option value=1>@StarCulture.CurrentCulture.GetMonthList(1)</option>
+                <option value=2>@StarCulture.CurrentCulture.GetMonthList(2)</option>
+                <option value=3>@StarCulture.CurrentCulture.GetMonthList(3)</option>
+                <option value=4>@StarCulture.CurrentCulture.GetMonthList(4)</option>
+                <option value=5>@StarCulture.CurrentCulture.GetMonthList(5)</option>
+                <option value=6>@StarCulture.CurrentCulture.GetMonthList(6)</option>
+                <option value=7>@StarCulture.CurrentCulture.GetMonthList(7)</option>
+                <option value=8>@StarCulture.CurrentCulture.GetMonthList(8)</option>
+                <option value=9>@StarCulture.CurrentCulture.GetMonthList(9)</option>
+                <option value=10>@StarCulture.CurrentCulture.GetMonthList(10)</option>
+                <option value=11>@StarCulture.CurrentCulture.GetMonthList(11)</option>
+                <option value=12>@StarCulture.CurrentCulture.GetMonthList(12)</option>
+                <option value=13>@StarCulture.CurrentCulture.GetMonthList(13)</option>
+                <option value=14>@StarCulture.CurrentCulture.GetMonthList(14)</option>
+            </InputSelect>
+        </label>
+    </p>
+
+    <button type="submit">Convert</button>
+</EditForm>
+
+
+
+<EditForm Model="@m" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+
+    <p>
+        <label>
+            Common Year Months:
+            <InputSelect @bind-Value="m">
+                <option value=0>Select month ...</option>
+                <option value=1>@StarCulture.CurrentCulture.GetMonthList(1)</option>
+                <option value=2>@StarCulture.CurrentCulture.GetMonthList(2)</option>
+                <option value=3>@StarCulture.CurrentCulture.GetMonthList(3)</option>
+                <option value=4>@StarCulture.CurrentCulture.GetMonthList(4)</option>
+                <option value=5>@StarCulture.CurrentCulture.GetMonthList(5)</option>
+                <option value=6>@StarCulture.CurrentCulture.GetMonthList(6)</option>
+                <option value=7>@StarCulture.CurrentCulture.GetMonthList(7)</option>
+                <option value=8>@StarCulture.CurrentCulture.GetMonthList(8)</option>
+                <option value=9>@StarCulture.CurrentCulture.GetMonthList(9)</option>
+                <option value=10>@StarCulture.CurrentCulture.GetMonthList(10)</option>
+                <option value=11>@StarCulture.CurrentCulture.GetMonthList(11)</option>
+                <option value=12>@StarCulture.CurrentCulture.GetMonthList(12)</option>
+                <option value=13>@StarCulture.CurrentCulture.GetMonthList(13)</option>
+            </InputSelect>
+        </label>
+    </p>
+
+    <button type="submit">Convert</button>
+</EditForm>
 
 
 
@@ -54,6 +115,7 @@
     private StarDate star = StarDate.Now;
     private DateTime dt = DateTime.Now;
     private string today = StarDate.Now.ToLongDateString();
+    private int m;
 
     private void HandleValidSubmit()
     {
