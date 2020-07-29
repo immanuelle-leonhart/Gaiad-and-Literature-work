@@ -6,23 +6,11 @@
 
 
 using System;
-using System.Security;
-using System.Threading;
-using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.Serialization;
-using System.Security.Permissions;
-using System.Runtime.InteropServices;
-using System.Runtime.Versioning;
-using System.Text;
-using System.Diagnostics.Contracts;
-using System.Runtime.CompilerServices;
 using System.IO;
-using StarLib;
-using System.Collections.Specialized;
-using System.Net.Http.Headers;
 using System.Globalization;
 using System.Reflection;
+using System.Diagnostics.Contracts;
 //using System.Globalization;
 
 namespace StarLib
@@ -69,7 +57,7 @@ namespace StarLib
     }
 
 
-    [Serializable]
+    //[Serializable]
     [System.Runtime.InteropServices.ComVisible(true)]
     public sealed class StarCulture : IFormatProvider
     {
@@ -121,26 +109,26 @@ namespace StarLib
 
         internal bool m_isInherited = false;
         private IFormatProvider formatProvider;
-        [NonSerialized]
-        private string[] monthGenitives;
         //[NonSerialized]
+        private string[] monthGenitives;
+        ////[NonSerialized]
 
         //internal static StarCulture Symbols;
-        [NonSerialized]
+        //[NonSerialized]
         private string langfam;
-        [NonSerialized]
+        //[NonSerialized]
         private string sNativeName;
-        [NonSerialized]
+        //[NonSerialized]
         private string notes;
-        [NonSerialized]
+        //[NonSerialized]
         private string[] dayNames = new string[7];
-        [NonSerialized]
+        //[NonSerialized]
         private List<string> months;
-        [NonSerialized]
+        //[NonSerialized]
         private List<string> saMonthGenitiveNames;
-        [NonSerialized]
+        //[NonSerialized]
         private List<string> misc;
-        [NonSerialized]
+        //[NonSerialized]
         private string dateSeparator = "-";
 
         private static Dictionary<string, StarCulture> getformats()
@@ -196,58 +184,7 @@ namespace StarLib
 
         private static Dictionary<string, StarCulture> importformats()
         {
-            isodict = new Dictionary<string, StarCulture>();
-            int counter = 0;
-            string line;
-            //Dictionary<string, StarCulture> formats = new Dictionary<string, StarCulture>();
-            string assemblyFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            string csvFileName = Path.Combine(assemblyFolder, "Languages.csv");
-            //int lastslash = Gedcom.LastIndexOf('/');
-            //string Filename = Gedcom.Substring(lastslash + 1);
-            //Gedson ged = new Gedson();
-            System.IO.StreamReader file = new StreamReader(csvFileName);
-            while ((line = file.ReadLine()) != null)
-            {
-                //////////////Console.WriteLine(line);
-                StarCulture form = new StarCulture(line);
-                //formats.Add(form.CultureName, form);
-                counter++;
-            }
-
-            InvariantCulture.saShortDates = new String[] { "MM/dd/yyyy", "yyyy-MM-dd" };          // short date format
-            InvariantCulture.saLongDates = new String[] { "dddd, dd MMMM yyyy" };                 // long date format
-            InvariantCulture.saYearMonths = new String[] { "yyyy MMMM" };                         // Year month format
-            InvariantCulture.sMonthDay = "MMMM dd";                                            // Month day pattern
-
-            // Calendar Parts Names
-            //InvariantCulture.saEraNames = new String[] { "A.D." };     // Era names
-            //InvariantCulture.saAbbrevEraNames = new String[] { "AD" };      // Abbreviated Era names
-            //InvariantCulture.saAbbrevEnglishEraNames = new String[] { "AD" };     // Abbreviated era names in English
-            InvariantCulture.dayNames = new String[] { "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" };// day names
-            InvariantCulture.AbbreviatedDayNames = new String[] { "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" };     // abbreviated day names
-            InvariantCulture.SuperShortDayNames = new String[] { "Su", "Mo", "Tu", "We", "Th", "Fr", "Sa" };      // The super short day names
-            InvariantCulture.MonthNames = new String[] { "Sagittarius", "Capricorn", "Aquarius", "Pisces", "Aries", "Taurus",
-                                                            "Gemini", "Karkino", "Leo", "Virgo", "Libra", "Scorpio", "Ophiuchus", "Horus"}; // month names
-            InvariantCulture.m_genitiveAbbreviatedMonthNames = new String[] { "Sag", "Cap", "Aqu", "Pis", "Ari", "Tau",
-                                                            "Gem", "Kar", "Leo", "Vir", "Lib", "Sco", "Oph", "Hor"}; // abbreviated month names
-                                                                                                                     // Time
-            InvariantCulture.TimeSeparator = ":";
-            InvariantCulture.SAM1159 = "AM";                   // AM designator
-            InvariantCulture.SPM2359 = "PM";                   // PM designator
-            InvariantCulture._longtimes = new string[] { "HH:mm:ss" };                             // time format
-            InvariantCulture._saShortTimes = new string[] { "HH:mm", "hh:mm tt", "H:mm", "h:mm tt" }; // short time format
-            InvariantCulture._saDurationFormats = new string[] { "HH:mm:ss" };                             // time duration format
-            InvariantCulture.shortTimePattern = "h:mm tt";
-            InvariantCulture.longTimePattern = "HH:mm:ss";
-            InvariantCulture.LongDatePattern = "WWWW MMMMM ddd yyyyy";
-            InvariantCulture.shortDatePattern = "yyyyy/MM/dd";
-            InvariantCulture.m_genitiveAbbreviatedMonthNames = InvariantCulture.AbbreviatedGenitiveMonthNames;    // Abbreviated genitive month names (same as abbrev month names for invariant)                                                      
-                                                                                                                  //JapaneseCulture.shortTimePattern = "h時m分s秒";
-                                                                                                                  //ChineseCulture.shortTimePattern = "h時m分s秒";
-
-            // Calendar was built, go ahead and assign it...            
-            //Invariant = invariant;
-            return isodict;
+            throw new NotImplementedException();
         }
 
 
@@ -421,14 +358,15 @@ namespace StarLib
         {
             try
             {
-                CultureInfo culture = CultureInfo.GetCultureInfo(this.TwoLetterISO);
+                //CultureInfo culture = GetCultureInfo(this.TwoLetterISO);
+                CultureInfo culture = CultureInfo.CurrentCulture;
                 this.dayNames = culture.DateTimeFormat.DayNames;
-                this.timeSeparator = culture.DateTimeFormat.TimeSeparator;
+                //this.timeSeparator = culture.DateTimeFormat.TimeSeparator;
                 this.AMDesignator = culture.DateTimeFormat.AMDesignator;
                 this.PMDesignator = culture.DateTimeFormat.PMDesignator;
                 this.LongDatePattern = NetConvert(culture.DateTimeFormat.LongDatePattern);
                 this.ShortDatePattern = NetConvert(culture.DateTimeFormat.ShortDatePattern);
-                this.dateSeparator = culture.DateTimeFormat.DateSeparator;
+                //this.dateSeparator = culture.DateTimeFormat.DateSeparator;
                 this.longTimePattern = culture.DateTimeFormat.LongTimePattern;
                 this.shortTimePattern = culture.DateTimeFormat.ShortTimePattern;
                 this.FullStarDatePattern = NetConvert(culture.DateTimeFormat.FullDateTimePattern);
@@ -441,6 +379,8 @@ namespace StarLib
 
             }
         }
+
+
 
         private string NetConvert(string pat)
         {
@@ -596,7 +536,7 @@ namespace StarLib
         internal string CultureName { get => cultureName; set => cultureName = value; }
         internal string TwoLetterISO { get => sISO639LANGNAME; set => sISO639LANGNAME = value; }
 
-        [NonSerialized]
+        //[NonSerialized]
         private List<string> ISO;
 
         internal string SAM1159
@@ -818,15 +758,15 @@ namespace StarLib
         //private static volatile StarCulture invariantInfo;
 
         // an index which points to a record in Culture Data Table.
-        //[NonSerialized] private StarCulture m_cultureData;
+        ////[NonSerialized] private StarCulture m_cultureData;
 
         // The culture name used to create this sdfi.
-        [OptionalField(VersionAdded = 2)]
-        [NonSerialized]
+        ////[OptionalField(VersionAdded = 2)]
+        //[NonSerialized]
         internal String m_name = null;
 
         // The language name of the culture used to create this sdfi.
-        [NonSerialized] private String m_langName = null;
+        //[NonSerialized] private String m_langName = null;
 
         //
         // Caches for various properties.
@@ -834,24 +774,24 @@ namespace StarLib
 
         // 
 
-        [NonSerialized]
-        internal String amDesignator = null;
-        [NonSerialized]
-        internal String pmDesignator = null;
-        [OptionalField(VersionAdded = 1)]
-        [NonSerialized]
-        //internal String dateSeparator = null;            // derived from short date (whidbey expects, arrowhead doesn't)
-        //[OptionalField(VersionAdded = 1)]
         //[NonSerialized]
+        internal String amDesignator = null;
+        //[NonSerialized]
+        internal String pmDesignator = null;
+        ////[OptionalField(VersionAdded = 1)]
+        //[NonSerialized]
+        //internal String dateSeparator = null;            // derived from short date (whidbey expects, arrowhead doesn't)
+        //////[OptionalField(VersionAdded = 1)]
+        ////[NonSerialized]
         internal String generalShortTimePattern = null;     // short date + short time (whidbey expects, arrowhead doesn't)
-        [OptionalField(VersionAdded = 1)]
-        [NonSerialized]
+        ////[OptionalField(VersionAdded = 1)]
+        //[NonSerialized]
         internal String generalLongTimePattern = null;     // short date + long time (whidbey expects, arrowhead doesn't)
-        [OptionalField(VersionAdded = 1)]
-        [NonSerialized]
+        ////[OptionalField(VersionAdded = 1)]
+        //[NonSerialized]
         //internal String timeSeparator = null;            // derived from long time (whidbey expects, arrowhead doesn't)
         internal String monthDayPattern = null;
-        [OptionalField(VersionAdded = 2)]                   // added in .NET Framework Release {2.0SP1/3.0SP1/3.5RTM}
+        //////[OptionalField(VersionAdded = 2)]                  // added in .NET Framework Release {2.0SP1/3.0SP1/3.5RTM}
         //internal String StarDateOffsetPattern = null;
 
         //
@@ -870,39 +810,39 @@ namespace StarLib
         internal int firstDayOfWeek = -1;
         internal int calendarWeekRule = -1;
 
-        [OptionalField(VersionAdded = 1)]
-        [NonSerialized]
+        ////[OptionalField(VersionAdded = 1)]
+        //[NonSerialized]
         internal String fullStarDatePattern = null;        // long date + long time (whidbey expects, arrowhead doesn't)
 
-        [NonSerialized]
+        //[NonSerialized]
         internal String[] saAbbrevDayNames1 = null;
 
-        [OptionalField(VersionAdded = 2)]
-        [NonSerialized]
+        ////[OptionalField(VersionAdded = 2)]
+        //[NonSerialized]
         internal String[] superShortDayNames = null;
-        [NonSerialized]
+        //[NonSerialized]
         private String[] _abbreviatedMonthNames = null;
-        [NonSerialized]
+        //[NonSerialized]
         internal String[] monthNames = null;
         // Cache the genitive month names that we retrieve from the data table.
-        [OptionalField(VersionAdded = 2)]
-        [NonSerialized]
+        ////[OptionalField(VersionAdded = 2)]
+        //[NonSerialized]
         internal String[] genitiveMonthNames = null;
 
         // Cache the abbreviated genitive month names that we retrieve from the data table.
-        [OptionalField(VersionAdded = 2)]
-        [NonSerialized]
+        ////[OptionalField(VersionAdded = 2)]
+        //[NonSerialized]
         internal String[] m_genitiveAbbreviatedMonthNames = null;
-        [NonSerialized]
+        //[NonSerialized]
         private string[] _longtimes;
-        [NonSerialized]
+        //[NonSerialized]
         private string[] _saShortTimes;
-        [NonSerialized]
+        //[NonSerialized]
         private string[] _saDurationFormats;
 
         // Cache the month names of a leap Year that we retrieve from the data table.
-        [OptionalField(VersionAdded = 2)]
-        [NonSerialized]
+        ////[OptionalField(VersionAdded = 2)]
+        //[NonSerialized]
         internal String[] leapYearMonthNames = null;
 
         // For our "patterns" arrays we have 2 variables, a string and a string[]
@@ -912,15 +852,15 @@ namespace StarLib
         // When we initially construct our string[], we set the string to string[0]
 
         // The "default" Date/time patterns
-        [NonSerialized]
+        //[NonSerialized]
         internal String longDatePattern = null;
-        [NonSerialized]
+        //[NonSerialized]
         internal String shortDatePattern = null;
-        [NonSerialized]
+        //[NonSerialized]
         internal String yearMonthPattern = null;
-        [NonSerialized]
+        //[NonSerialized]
         internal String longTimePattern = null;
-        [NonSerialized]
+        //[NonSerialized]
         internal String shortTimePattern = null;
 
         public static readonly string[] MonthSymbols = new String[] { "♐︎", "♑︎", "♒︎", "♓︎", "♈︎", "♉︎",
@@ -932,24 +872,24 @@ namespace StarLib
         // These are Whidbey-serialization compatable arrays (eg: default not included)
         // "all" is a bit of a misnomer since the "default" pattern stored above isn't
         // necessarily a member of the list
-        [OptionalField(VersionAdded = 3)]
-        [NonSerialized]
+        //[OptionalField(VersionAdded = 3)]
+        //[NonSerialized]
         private String[] allYearMonthPatterns = null;   // This was wasn't serialized in Whidbey
-        [NonSerialized]
+        //[NonSerialized]
         internal String[] allShortDatePatterns = null;
-        [NonSerialized]
+        //[NonSerialized]
         internal String[] allLongDatePatterns = null;
-        [NonSerialized]
+        //[NonSerialized]
         internal String[] allShortTimePatterns = null;
-        [NonSerialized]
+        //[NonSerialized]
         internal String[] allLongTimePatterns = null;
 
         // Cache the era names for this StarCulture instance.
-        [NonSerialized]
+        //[NonSerialized]
         internal String[] m_eraNames = null;
-        [NonSerialized]
+        //[NonSerialized]
         internal String[] m_abbrevEraNames = null;
-        [NonSerialized]
+        //[NonSerialized]
         internal String[] m_abbrevEnglishEraNames = null;
         internal int[] optionalCalendars = null;
 
@@ -965,7 +905,7 @@ namespace StarLib
 
         // This flag gives hints about if formatting/parsing should perform special code csvFileName for things like
         // genitive form or leap Year month names.
-        [OptionalField(VersionAdded = 2)]
+        //[OptionalField(VersionAdded = 2)]
         internal StarDateFormatFlags formatFlags = StarDateFormatFlags.NotInitialized;
         //internal static bool preferExistingTokens = InitPreferExistingTokens();
 
@@ -997,18 +937,18 @@ namespace StarLib
 
 
         // 
-        private String LanguageName
-        {
-            [System.Security.SecurityCritical]  // auto-generated
-            get
-            {
-                if (m_langName == null)
-                {
-                    m_langName = this.TwoLetterISO;
-                }
-                return (m_langName);
-            }
-        }
+        //private String LanguageName
+        //{
+        //    [System.Security.SecurityCritical]  // auto-generated
+        //    get
+        //    {
+        //        if (m_langName == null)
+        //        {
+        //            m_langName = this.TwoLetterISO;
+        //        }
+        //        return (m_langName);
+        //    }
+        //}
 
         ////////////////////////////////////////////////////////////////////////////
         //
@@ -2137,7 +2077,7 @@ namespace StarLib
         //
         // Positive TimeSpan Pattern
         //
-        [NonSerialized]
+        //[NonSerialized]
         private string m_fullTimeSpanPositivePattern;
         internal String FullTimeSpanPositivePattern
         {
@@ -2161,7 +2101,7 @@ namespace StarLib
         //
         // Negative TimeSpan Pattern
         //
-        [NonSerialized]
+        //[NonSerialized]
         private string m_fullTimeSpanNegativePattern;
         internal String FullTimeSpanNegativePattern
         {
@@ -2283,7 +2223,7 @@ namespace StarLib
         {
             dateSeparator = value;
         }
-        [NonSerialized]
+        //[NonSerialized]
         //private TokenHashValue[] m_sdfiTokenHash;
         private const int SECOND_PRIME = 197;
         private const String dateSeparatorOrTimeZoneOffset = "-";
@@ -2893,13 +2833,13 @@ namespace StarLib
 
         internal string LongFormat { get => longFormat; set => longFormat = value; }
         internal string ShortFormat { get => shortFormat; set => shortFormat = value; }
-        public CultureInfo NetCulture
-        {
-            get
-            {
-                return CultureInfo.GetCultureInfo(TwoLetterISO);
-            }
-        }
+        //public CultureInfo NetCulture
+        //{
+        //    get
+        //    {
+        //        return CultureInfo.GetCultureInfo(TwoLetterISO);
+        //    }
+        //}
 
         public string YearMonthPattern
         {
@@ -2918,38 +2858,40 @@ namespace StarLib
             }
         }
 
+
         private static StarCulture[] cultures;
         private int iD = 42;
-        [NonSerialized]
+        //[NonSerialized]
         private string[] saShortDates1;
-        [NonSerialized]
+        //[NonSerialized]
         private string[] saLongDates1;
-        [NonSerialized]
+        //[NonSerialized]
         private string sMonthDay1;
-        [NonSerialized]
+        //[NonSerialized]
         private string[] saYearMonths1;
-        [NonSerialized]
+        //[NonSerialized]
         private string[] saMonthNames;
-        [NonSerialized]
+        //[NonSerialized]
         private string[] shortTimes;
-        [NonSerialized]
+        //[NonSerialized]
         private string sPM2359;
-        [NonSerialized]
+        //[NonSerialized]
         private string sAM1159;
         internal bool ThirtyHour = false;
-        [NonSerialized]
+        //[NonSerialized]
         private string sISO639LANGNAME;
-        [NonSerialized]
+        //[NonSerialized]
         private string cultureName;
-        [NonSerialized]
+        //[NonSerialized]
         private string timeSeparator = ":";
-        [NonSerialized]
+        //[NonSerialized]
         private string shortFormat;
-        [NonSerialized]
+        //[NonSerialized]
         private string longFormat;
-        [NonSerialized]
+        //[NonSerialized]
         private string NumberDecimalSeparator = ".";
         private string[] LatinGenitives = new string[] { "Sagittarii", "Capricorni", "Aquarii", "Piscium", "Arietis", "Tauri", "Geminorum", "Karkinii", "Leonis", "Virginis", "Librae", "Scorpii", "Ophiuchi", "Horii" };
+        private static Dictionary<string, CultureInfo> localIsoDict;
 
         internal int GetDayOfMonth(StarDate starDate)
         {

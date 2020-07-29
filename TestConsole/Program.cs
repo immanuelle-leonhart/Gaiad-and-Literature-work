@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StarLib;
+using System;
 
 namespace TestConsole
 {
@@ -7,6 +8,7 @@ namespace TestConsole
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            Console.Write(StarDate.Now);
         }
     }
 }
