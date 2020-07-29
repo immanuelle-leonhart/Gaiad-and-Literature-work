@@ -10,7 +10,7 @@ using System.Collections.Generic;
 
 namespace StarLib
 {
-    
+
 
     // Time represents a duration of time.  A Time can be negative
     // or positive.
@@ -32,9 +32,9 @@ namespace StarLib
     [System.Runtime.InteropServices.ComVisible(true)]
     [Serializable]
     public struct Time : IComparable, IComparable<Time>, IEquatable<Time>, IFormattable
-//#if GENERICS_WORK
-//        , IComparable<Time>, IEquatable<Time>, IFormattable
-//#endif
+    //#if GENERICS_WORK
+    //        , IComparable<Time>, IEquatable<Time>, IFormattable
+    //#endif
     {
         public const long TicksPerMillisecond = 10000;
         private const double MillisecondsPerTick = 1.0 / TicksPerMillisecond;

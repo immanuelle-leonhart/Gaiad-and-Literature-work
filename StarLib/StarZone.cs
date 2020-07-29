@@ -16,35 +16,16 @@
 **
 ============================================================*/
 
-using Microsoft.Win32;
-using Microsoft.Win32.SafeHandles;
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Diagnostics;
 using System.Diagnostics.Contracts;
 using System.Globalization;
-using System.IO;
-using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices;
 using System.Runtime.Serialization;
-using System.Runtime.Versioning;
-using System.Security;
-using System.Security.Permissions;
 using System.Text;
-using System.Threading;
 //using System;
-using System.Collections.Concurrent;
 //using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http.Headers;
 using System.Numerics;
 using static System.TimeZoneInfo;
-using StarLib;
-using System.Diagnostics.CodeAnalysis;
-using System.Management.Automation;
-using System.Reflection;
 
 namespace StarLib
 {
@@ -202,7 +183,7 @@ namespace StarLib
 
 
 
-        
+
 
 
         public static StarZone[] GetSystemStarZones()

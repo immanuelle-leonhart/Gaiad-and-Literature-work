@@ -2,24 +2,22 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>CosmicCalendar</AssemblyName>
-    <RootNamespace>CosmicCalendar</RootNamespace>
+    <PackageId>StarDate</PackageId>
+    <Version>1.0.2</Version>
     <Authors>Silicon Prophet</Authors>
     <Company>Order of Life</Company>
-    <Product>CosmicCalendar</Product>
+    <Product>StarLib</Product>
     <Description>The Cosmic Calendar of the Order of Life</Description>
     <Copyright>Order of Life 2020</Copyright>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/siliconprophet/CosmicCalendar</PackageProjectUrl>
+    <PackageIcon>DNA Tree Logo.jpg</PackageIcon>
     <RepositoryUrl>https://github.com/siliconprophet/CosmicCalendar</RepositoryUrl>
     <RepositoryType>Library</RepositoryType>
-    <PackageTags>Order of Life, Calendar</PackageTags>
-    <PackageReleaseNotes>Switched to .Net Core</PackageReleaseNotes>
+    <PackageReleaseNotes>Switched to .Net Standard</PackageReleaseNotes>
+    <PackageTags>Order of Life, Calendar, StarDate</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.1</Version>
-    <PackageId>StarDate</PackageId>
-    <PackageIcon>DNA Tree Logo.jpg</PackageIcon>
-    <NeutralLanguage></NeutralLanguage>
-    <PackageProjectUrl>https://github.com/siliconprophet/CosmicCalendar</PackageProjectUrl>
+    <ApplicationIcon>zodiac.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -27,14 +25,10 @@
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
-    <None Include="..\..\CosmicCalendar\LICENSE">
+    <None Include="..\LICENSE">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.PowerShell.5.ReferenceAssemblies" Version="1.1.0" />
   </ItemGroup>
 
 </Project>

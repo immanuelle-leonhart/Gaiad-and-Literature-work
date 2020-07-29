@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 using System.Globalization;
 using System.IO;
-using System.Management.Automation;
 using System.Numerics;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
@@ -826,7 +825,7 @@ namespace StarLib
                 }
             }
             catch (ArgumentOutOfRangeException) { }
-            
+
             if (NetStart < this.AdjustedTicks)
             {
                 BigInteger ticks = AdjustedTicks - NetStart;
@@ -936,8 +935,8 @@ namespace StarLib
                 // Return 1-based day-of-month
                 return n - days[m - 1] + 1;
             }
-            
-            
+
+
         }
 
         private static int Modul(int i, int v)
@@ -1276,7 +1275,7 @@ namespace StarLib
                     quent--;
                 }
             }
-            
+
             ////////////Console.WriteLine" 400mod = " + quent);
             ////////////Console.WriteLine" 400count = " + qmod);
             int centcount = qmod / 100;
@@ -2786,7 +2785,7 @@ namespace StarLib
         {
             get
             {
-                return StarCulture.DaySymbols[(int) DayOfWeek];
+                return StarCulture.DaySymbols[(int)DayOfWeek];
             }
         }
 
@@ -3149,7 +3148,7 @@ namespace StarLib
             }
         }
 
-        
+
 
 
 
@@ -3322,12 +3321,12 @@ namespace StarLib
             return ToString(provider);
         }
 
-        public static bool SpecialParse(string text, string format, CultureInfo cultureInfo, StarDateStyles none, out StarDate converted)
-        {
-            Log.WriteLine(text);
-            //2020-07-16
-            throw new NotImplementedException();
-        }
+        //public static bool SpecialParse(string text, string format, CultureInfo cultureInfo, StarDateStyles none, out StarDate converted)
+        //{
+        //    Log.WriteLine(text);
+        //    //2020-07-16
+        //    throw new NotImplementedException();
+        //}
 
         public static bool TryParseExact(string text, string format, CultureInfo cultureInfo, StarDateStyles none, out StarDate converted)
         {
@@ -3358,7 +3357,7 @@ namespace StarLib
         //    throw new NotImplementedException();
         //}
 
-        
+
 
         public static bool TryParse(string text, string format, CultureInfo cultureInfo, StarDateStyles none, out object converted)
         {

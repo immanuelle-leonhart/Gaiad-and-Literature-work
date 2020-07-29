@@ -1,23 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "HD5sD3RIemqaXTzef5+wNnLSbx2A3P2FL+Jm1ZjqTtcUT8yMouY47U5xHe+JOF6AkRNH25o/UGOhDn87ORVI0g==",
+  "dgSpecHash": "OqJ7ixrS7wW4XOmEkRDOC2li4IkAIamgcyL7FRUlLZL4PUppC8eqyP4QvlmGmmyfRTzYj/H54TD39xzhsSJbNA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\CosmicCalendar\\StarLib\\StarLib.csproj",
+  "projectFilePath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate\\StarLib\\StarLib.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SiliconProphet\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\SiliconProphet\\.nuget\\packages\\microsoft.powershell.5.referenceassemblies\\1.1.0\\microsoft.powershell.5.referenceassemblies.1.1.0.nupkg.sha512",
     "C:\\Users\\SiliconProphet\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.PowerShell.5.ReferenceAssemblies 1.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.PowerShell.5.ReferenceAssemblies",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    }
-  ]
+  "logs": []
 }
