@@ -82,7 +82,7 @@ using StarLib;
     public partial class Calendar : CalendarBase
     {
         #pragma warning disable 1998
-        protected void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
+        protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
             __builder.AddMarkupContent(0, "<h3>Calendar</h3>\r\n\r\n");
             __builder.OpenComponent<Microsoft.AspNetCore.Components.Forms.EditForm>(1);
