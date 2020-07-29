@@ -86,7 +86,7 @@ using StarLib;
     public partial class Calendar : CalendarBase
     {
         #pragma warning disable 1998
-        protected  void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
+        protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
