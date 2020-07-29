@@ -82,5 +82,5 @@ C:\Users\SiliconProphet\Documents\GitHub\CosmicCalendar\StarBlaze\StarBlaze\bin\
 C:\Users\SiliconProphet\Documents\GitHub\CosmicCalendar\StarBlaze\StarBlaze\bin\Debug\netcoreapp3.1\tr\Microsoft.VisualStudio.Validation.resources.dll
 C:\Users\SiliconProphet\Documents\GitHub\CosmicCalendar\StarBlaze\StarBlaze\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.VisualStudio.Validation.resources.dll
 C:\Users\SiliconProphet\Documents\GitHub\CosmicCalendar\StarBlaze\StarBlaze\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.VisualStudio.Validation.resources.dll
-C:\Users\SiliconProphet\Documents\GitHub\CosmicCalendar\StarBlaze\StarBlaze\obj\Debug\netcoreapp3.1\RazorDeclaration\StarCalendar\Calendar.razor.g.cs
-C:\Users\SiliconProphet\Documents\GitHub\CosmicCalendar\StarBlaze\StarBlaze\obj\Debug\netcoreapp3.1\Razor\StarCalendar\Calendar.razor.g.cs
+C:\Users\SiliconProphet\Documents\GitHub\CosmicCalendar\StarBlaze\StarBlaze\obj\Debug\netcoreapp3.1\RazorDeclaration\Calendar\Calendar.razor.g.cs
+C:\Users\SiliconProphet\Documents\GitHub\CosmicCalendar\StarBlaze\StarBlaze\obj\Debug\netcoreapp3.1\Razor\Calendar\Calendar.razor.g.cs

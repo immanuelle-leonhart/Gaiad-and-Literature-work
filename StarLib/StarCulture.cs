@@ -1880,17 +1880,9 @@ namespace StarLib
         }
 
 
-        internal String GetMonthName(int month)
+        public String GetMonthNameFromIndex(int month)
         {
-            if (month < 1 || month > 13)
-            {
-                throw new NotImplementedException(); // throw new ArgumentOutOfRangeException(
-                                                     //"month", //LEnvironment.GetResourceString("ArgumentOutOfRange_Range",
-                                                     //1, 13));
-            }
-            Contract.EndContractBlock();
-            // Use the internal one so we don't clone the array unnecessarily
-            return (internalGetMonthNames()[month - 1]);
+            return MonthNames[month];
         }
 
         // For our "patterns" arrays we have 2 variables, a string and a string[]
@@ -3035,6 +3027,11 @@ namespace StarLib
         public string GetMonthList(int v)
         {
             return GetMonthList()[v - 1];
+        }
+
+        public string GetMonthName(int i)
+        {
+            throw new NotImplementedException();
         }
     }
 }

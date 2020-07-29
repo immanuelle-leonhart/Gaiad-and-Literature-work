@@ -15,7 +15,7 @@
     <PackageTags>Order of Life, Calendar</PackageTags>
     <PackageReleaseNotes>Switched to .Net Core</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <PackageId>StarDate</PackageId>
     <PackageIcon>DNA Tree Logo.jpg</PackageIcon>
     <NeutralLanguage></NeutralLanguage>
