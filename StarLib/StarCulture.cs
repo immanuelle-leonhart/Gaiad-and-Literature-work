@@ -71,10 +71,10 @@ namespace StarLib
 
     [Serializable]
     [System.Runtime.InteropServices.ComVisible(true)]
-    internal sealed class StarCulture : IFormatProvider
+    public sealed class StarCulture : IFormatProvider
     {
         private static Dictionary<string, StarCulture> isodict = getformats();
-        internal static StarCulture InvariantCulture;
+        private static StarCulture invariantCulture;
         private static StarCulture currentCulture = GetCurrentCulture();
 
         private static StarCulture GetCurrentCulture()
@@ -86,9 +86,38 @@ namespace StarLib
             catch (KeyNotFoundException)
             {
                 isodict = importformats();
-                return isodict[CultureInfo.CurrentCulture.TwoLetterISOLanguageName];
+                try
+                {
+                    return isodict[CultureInfo.CurrentCulture.TwoLetterISOLanguageName];
+                }
+                catch (KeyNotFoundException)
+                {
+                    return InvariantCulture;
+                }
             }
         }
+
+        public static StarCulture CurrentCulture
+        {
+            get
+            {
+                return currentCulture;
+            }
+        }
+
+        public static StarCulture InvariantCulture { get => invariantCulture; }
+
+        public static void UpdateCulture()
+        {
+            currentCulture = GetCurrentCulture();
+        }
+
+        public static StarCulture GetStarCulture(string TwoLetterISOLanguageName)
+        {
+            return isodict[TwoLetterISOLanguageName];
+        }
+
+
 
         internal bool m_isInherited = false;
         private IFormatProvider formatProvider;
@@ -117,7 +146,7 @@ namespace StarLib
         private static Dictionary<string, StarCulture> getformats()
         {
             isodict = new Dictionary<string, StarCulture>();
-            InvariantCulture = new StarCulture("English", "en", "Sagittarius", "Capricorn", "Aquarius", "Pisces", "Aries", "Taurus",
+            invariantCulture = new StarCulture("English", "en", "Sagittarius", "Capricorn", "Aquarius", "Pisces", "Aries", "Taurus",
                                                             "Gemini", "Karkino", "Leo", "Virgo", "Libra", "Scorpio", "Ophiuchus", "Horus");
 
             StarCulture JapaneseCulture = new StarCulture("Japanese", "ja", "日曜日", "月曜日", "火曜日", "水曜日", "木曜日", "金曜日", "土曜日", "射手座", "山羊座", "水瓶座", "魚座", "牡羊座", "牡牛座", "双児宮", "巨蟹宮", "獅子宮", "乙女座", "天秤座", "蠍座", "へびつかい座", "ホルス");
@@ -160,9 +189,6 @@ namespace StarLib
             InvariantCulture.m_genitiveAbbreviatedMonthNames = InvariantCulture.AbbreviatedGenitiveMonthNames;    // Abbreviated genitive month names (same as abbrev month names for invariant)                                                      
             JapaneseCulture.shortTimePattern = "h時m分s秒";
             ChineseCulture.shortTimePattern = "h時m分s秒";
-            MonthSymbols = new String[] { "♐︎", "♑︎", "♒︎", "♓︎", "♈︎", "♉︎",
-                                                            "♊︎", "♋︎", "♌︎", "♍︎", "♎︎", "♏︎", "⛎", "🕎"}; // month names
-            DaySymbols = new String[] { "☉", "☾", "火", "☿", "♃", "金", "♄" };// day names
             // Calendar was built, go ahead and assign it...            
             //Invariant = invariant;
             return isodict;
@@ -216,11 +242,9 @@ namespace StarLib
             InvariantCulture.LongDatePattern = "WWWW MMMMM ddd yyyyy";
             InvariantCulture.shortDatePattern = "yyyyy/MM/dd";
             InvariantCulture.m_genitiveAbbreviatedMonthNames = InvariantCulture.AbbreviatedGenitiveMonthNames;    // Abbreviated genitive month names (same as abbrev month names for invariant)                                                      
-            //JapaneseCulture.shortTimePattern = "h時m分s秒";
-            //ChineseCulture.shortTimePattern = "h時m分s秒";
-            MonthSymbols = new String[] { "♐︎", "♑︎", "♒︎", "♓︎", "♈︎", "♉︎",
-                                                            "♊︎", "♋︎", "♌︎", "♍︎", "♎︎", "♏︎", "⛎", "🕎"}; // month names
-            DaySymbols = new String[] { "☉", "☾", "火", "☿", "♃", "金", "♄" };// day names
+                                                                                                                  //JapaneseCulture.shortTimePattern = "h時m分s秒";
+                                                                                                                  //ChineseCulture.shortTimePattern = "h時m分s秒";
+
             // Calendar was built, go ahead and assign it...            
             //Invariant = invariant;
             return isodict;
@@ -240,7 +264,7 @@ namespace StarLib
                         this.CultureName = n[i];
                         if (CultureName == "English")
                         {
-                            StarCulture.InvariantCulture = this;
+                            StarCulture.invariantCulture = this;
                         }
                         if (CultureName == "Japanese")
                         {
@@ -899,8 +923,11 @@ namespace StarLib
         [NonSerialized]
         internal String shortTimePattern = null;
 
-        public static string[] MonthSymbols { get; private set; }
-        public static string[] DaySymbols { get; private set; }
+        public static readonly string[] MonthSymbols = new String[] { "♐︎", "♑︎", "♒︎", "♓︎", "♈︎", "♉︎",
+                                                            "♊︎", "♋︎", "♌︎", "♍︎", "♎︎", "♏︎", "⛎", "🕎"}; // month names
+        public static readonly string[] DaySymbols = new String[] { "☉", "☾", "火", "☿", "♃", "金", "♄" };// day names
+
+
 
         // These are Whidbey-serialization compatable arrays (eg: default not included)
         // "all" is a bit of a misnomer since the "default" pattern stored above isn't
@@ -2870,35 +2897,7 @@ namespace StarLib
 
 
 
-        internal static StarCulture CurrentCulture
-        {
-            get
-            {
-                return currentCulture;
-            }
 
-            set
-            {
-                currentCulture = value;
-                try
-                {
-                    //trying to change current culture for entire program when you change stardate culture
-                    CultureInfo.CurrentCulture = CultureInfo.GetCultureInfo(currentCulture.TwoLetterISO);
-                }
-                catch (CultureNotFoundException)
-                {
-
-                }
-                catch (SecurityException)
-                {
-
-                }
-                catch (Exception)
-                {
-
-                }
-            }
-        }
 
         internal string LongFormat { get => longFormat; set => longFormat = value; }
         internal string ShortFormat { get => shortFormat; set => shortFormat = value; }
@@ -3019,6 +3018,23 @@ namespace StarLib
                 default:
                     return "" + day;
             }
+        }
+
+        public string[] GetMonthList()
+        {
+            string[] vs = new string[14];
+            int i = 0;
+            while (i < 14)
+            {
+                vs[i] = MonthSymbols[i] + " " + MonthNames[i];
+                i++;
+            }
+            return vs;
+        }
+
+        public string GetMonthList(int v)
+        {
+            return GetMonthList()[v - 1];
         }
     }
 }

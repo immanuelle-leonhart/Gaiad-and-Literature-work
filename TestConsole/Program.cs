@@ -1,5 +1,6 @@
 ﻿using StarLib;
 using System;
+using System.Globalization;
 
 namespace TestConsole
 {
@@ -7,18 +8,24 @@ namespace TestConsole
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
             Console.WriteLine(new StarDate(12020, 1, 13));
+            print(StarCulture.CurrentCulture.GetMonthList());
+            foreach (CultureInfo culture in CultureInfo.GetCultures(CultureTypes.AllCultures))
+            {
+                Console.Write(culture.TwoLetterISOLanguageName + " ");
+                Console.Write(culture.Name + " ");
+                Console.Write(culture.DisplayName);
+                Console.WriteLine();
+            }
         }
 
-        private static int Modul(int i, int v)
+        private static void print(string[] vs)
         {
-            if (i > 0)
+            foreach (string entry in vs)
             {
-                return i % v;
+                Console.WriteLine(entry);
             }
-            int t = i / v;
-            t--;
-            return Modul(i - t * v, v);
         }
     }
 }

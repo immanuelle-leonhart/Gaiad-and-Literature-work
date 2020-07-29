@@ -9,6 +9,7 @@
     <license type="file">LICENSE</license>
     <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
     <icon>DNA Tree Logo.jpg</icon>
+    <projectUrl>https://github.com/siliconprophet/CosmicCalendar</projectUrl>
     <description>The Cosmic Calendar of the Order of Life</description>
     <releaseNotes>Switched to .Net Core</releaseNotes>
     <copyright>Order of Life 2020</copyright>
