@@ -6,7 +6,6 @@ using System.IO;
 using System.Numerics;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
-using System.Runtime.Serialization;
 
 namespace StarLib
 {
@@ -161,8 +160,8 @@ namespace StarLib
 
     */
     [StructLayout(LayoutKind.Auto)]
-    [Serializable]
-    public struct StarDate : IComparable<StarDate>, IEquatable<StarDate>, IComparable, IFormattable, IConvertible, ISerializable, IComparable<DateTime>, IEquatable<DateTime>
+    //[Serializable]
+    public struct StarDate : IComparable<StarDate>, IEquatable<StarDate>, IComparable, IFormattable, IConvertible, IComparable<DateTime>, IEquatable<DateTime>
     {
 
         // Number of 100ns _ticks per time unit
@@ -325,63 +324,63 @@ namespace StarLib
 
 
 
-        public static StarDate StarHanukkah() //gives the date of hannukkah for this year
-        {
-            return new StarDate(GregHanukkah());
-        }
+        //public static StarDate StarHanukkah() //gives the date of hannukkah for this year
+        //{
+        //    return new StarDate(GregHanukkah());
+        //}
 
-        public static void MakeChart()
-        {
-            MakeChart("");
-        }
+        //public static void MakeChart()
+        //{
+        //    MakeChart("");
+        //}
 
-        public static void MakeChart(int gregyear)
-        {
-            MakeChart("", gregyear);
-        }
+        //public static void MakeChart(int gregyear)
+        //{
+        //    MakeChart("", gregyear);
+        //}
 
-        public static void MakeChart(string v) //makes a chart for a year at the designated path
-        {
-            StarDate.MakeChart(v, DateTime.Now.Year);
-        }
+        //public static void MakeChart(string v) //makes a chart for a year at the designated path
+        //{
+        //    StarDate.MakeChart(v, DateTime.Now.Year);
+        //}
 
-        public static void MakeChart(string path, int gregyear) //makes a chart for a year at the designated path
-        {
-            StreamWriter chart = new StreamWriter(path + "CosmicCalendar.csv");
-            StarDate mi = StarDate.FromGreg(gregyear, 6, 2);
-            int y = mi.Year;
-            StarDate[] starDates = new StarDate[] { StarDate.FromGreg(gregyear, 1, 1), StarDate.FromGreg(gregyear, 12, 31), new StarDate(y, 1, 1), new StarDate(y + 1, 1, 1).AddDays(-1) };
-            Array.Sort(starDates);
-            StarDate dt = starDates[0];
-            StarDate end = starDates[3];
-            chart.WriteLine("short stardate, long stardate, Star Year, Star Month, Star Month Name, Month Symbol, Day of Star Year, Day of Star Month, Weekday, Weekday Symbol, short gregdate, long gregdate, gregyear, gegmonth, gregmonth name, greg day of year, greg day of month");
-            while (dt <= end)
-            {
-                string data = "";
-                data += dt.ToShortDateString(); data += ",";
-                data += dt.ToLongDateString(); data += ",";
-                data += dt.Year; data += ",";
-                data += dt.Month; data += ",";
-                data += dt.MonthName; data += ",";
-                data += dt.MonthSymbol; data += ",";
-                data += dt.DayOfYear; data += ",";
-                data += dt.Day; data += ",";
-                data += dt.DayOfWeek; data += ",";
-                data += dt.DaySymbol; data += ",";
-                data += dt.DateTime.ToShortDateString(); data += ",";
-                data += dt.DateTime.ToLongDateString(); data += ",";
-                data += dt.DateTime.Year; data += ",";
-                data += dt.DateTime.Month; data += ",";
-                data += dt.DateTime.ToString("MMMMMMMMM");
-                data += dt.DateTime.DayOfYear; data += ",";
-                data += dt.DateTime.Day; data += ",";
-                chart.WriteLine(data);
-                dt++;
-            }
-            chart.Flush();
-            chart.Close();
-            //throw new NotImplementedException();
-        }
+        //public static void MakeChart(string path, int gregyear) //makes a chart for a year at the designated path
+        //{
+        //    StreamWriter chart = new StreamWriter(path + "CosmicCalendar.csv");
+        //    StarDate mi = StarDate.FromGreg(gregyear, 6, 2);
+        //    int y = mi.Year;
+        //    StarDate[] starDates = new StarDate[] { StarDate.FromGreg(gregyear, 1, 1), StarDate.FromGreg(gregyear, 12, 31), new StarDate(y, 1, 1), new StarDate(y + 1, 1, 1).AddDays(-1) };
+        //    Array.Sort(starDates);
+        //    StarDate dt = starDates[0];
+        //    StarDate end = starDates[3];
+        //    chart.WriteLine("short stardate, long stardate, Star Year, Star Month, Star Month Name, Month Symbol, Day of Star Year, Day of Star Month, Weekday, Weekday Symbol, short gregdate, long gregdate, gregyear, gegmonth, gregmonth name, greg day of year, greg day of month");
+        //    while (dt <= end)
+        //    {
+        //        string data = "";
+        //        data += dt.ToShortDateString(); data += ",";
+        //        data += dt.ToLongDateString(); data += ",";
+        //        data += dt.Year; data += ",";
+        //        data += dt.Month; data += ",";
+        //        data += dt.MonthName; data += ",";
+        //        data += dt.MonthSymbol; data += ",";
+        //        data += dt.DayOfYear; data += ",";
+        //        data += dt.Day; data += ",";
+        //        data += dt.DayOfWeek; data += ",";
+        //        data += dt.DaySymbol; data += ",";
+        //        data += dt.DateTime.ToShortDateString(); data += ",";
+        //        data += dt.DateTime.ToLongDateString(); data += ",";
+        //        data += dt.DateTime.Year; data += ",";
+        //        data += dt.DateTime.Month; data += ",";
+        //        data += dt.DateTime.ToString("MMMMMMMMM");
+        //        data += dt.DateTime.DayOfYear; data += ",";
+        //        data += dt.DateTime.Day; data += ",";
+        //        chart.WriteLine(data);
+        //        dt++;
+        //    }
+        //    chart.Flush();
+        //    chart.Close();
+        //    //throw new NotImplementedException();
+        //}
 
         internal static StarDate AbstractDate(Time timeSpanInfo)
         {
@@ -395,37 +394,37 @@ namespace StarLib
 
 
 
-        public static StarDate StarHanukkah(DateTime dt) //
-        {
-            return new StarDate(GregHanukkah(dt));
-        }
+        //public static StarDate StarHanukkah(DateTime dt) //
+        //{
+        //    return new StarDate(GregHanukkah(dt));
+        //}
 
-        public static StarDate StarHanukkah(StarDate dt)//
-        {
-            return new StarDate(GregHanukkah(dt));
-        }
+        //public static StarDate StarHanukkah(StarDate dt)//
+        //{
+        //    return new StarDate(GregHanukkah(dt));
+        //}
 
-        public static DateTime GregHanukkah()//
-        {
-            return GregHanukkah(DateTime.Now);
-        }
+        //public static DateTime GregHanukkah()//
+        //{
+        //    return GregHanukkah(DateTime.Now);
+        //}
 
-        public static DateTime GregHanukkah(DateTime now)//
-        {
-            System.Globalization.Calendar HebCal = new HebrewCalendar();
-            int i = now.Year;
-            DateTime h = new DateTime(i, 11, 1);
-            int hebyear = HebCal.GetYear(now);
-            DateTime Hanukkah = new DateTime(hebyear, 3, 25, new HebrewCalendar());
-            return Hanukkah;
-        }
+        //public static DateTime GregHanukkah(DateTime now)//
+        //{
+        //    System.Globalization.Calendar HebCal = new HebrewCalendar();
+        //    int i = now.Year;
+        //    DateTime h = new DateTime(i, 11, 1);
+        //    int hebyear = HebCal.GetYear(now);
+        //    DateTime Hanukkah = new DateTime(hebyear, 3, 25, new HebrewCalendar());
+        //    return Hanukkah;
+        //}
 
 
-        public static DateTime GregHanukkah(StarDate dt)//
-        {
-            DateTime o = new StarDate(dt.Year, 12, 1).DateTime;
-            return GregHanukkah(o);
-        }
+        //public static DateTime GregHanukkah(StarDate dt)//
+        //{
+        //    DateTime o = new StarDate(dt.Year, 12, 1).DateTime;
+        //    return GregHanukkah(o);
+        //}
 
 
 
@@ -1290,57 +1289,57 @@ namespace StarLib
         }
 
 
-        public static DateTime GregChineseNewYear(DateTime now)
-        {
-            System.Globalization.Calendar Chinese = new ChineseLunisolarCalendar();
-            int i = now.Year;
-            DateTime h = new DateTime(i, 4, 1);
-            int ChinaYear = Chinese.GetYear(now);
-            DateTime Hanukkah = new DateTime(ChinaYear, 1, 1, new ChineseLunisolarCalendar());
-            return Hanukkah;
-        }
+        //public static DateTime GregChineseNewYear(DateTime now)
+        //{
+        //    System.Globalization.Calendar Chinese = new ChineseLunisolarCalendar();
+        //    int i = now.Year;
+        //    DateTime h = new DateTime(i, 4, 1);
+        //    int ChinaYear = Chinese.GetYear(now);
+        //    DateTime Hanukkah = new DateTime(ChinaYear, 1, 1, new ChineseLunisolarCalendar());
+        //    return Hanukkah;
+        //}
 
-        public static DateTime GregChineseNewYear()
-        {
-            return GregChineseNewYear(DateTime.Now);
-        }
+        //public static DateTime GregChineseNewYear()
+        //{
+        //    return GregChineseNewYear(DateTime.Now);
+        //}
 
 
-        public static StarDate StarPurim()
-        {
-            return new StarDate(GregPurim());
-        }
+        //public static StarDate StarPurim()
+        //{
+        //    return new StarDate(GregPurim());
+        //}
 
-        public static StarDate StarPurim(DateTime dt)
-        {
-            return new StarDate(GregPurim(dt));
-        }
+        //public static StarDate StarPurim(DateTime dt)
+        //{
+        //    return new StarDate(GregPurim(dt));
+        //}
 
-        public static StarDate StarPurim(StarDate dt)
-        {
-            return new StarDate(GregPurim(dt));
-        }
+        //public static StarDate StarPurim(StarDate dt)
+        //{
+        //    return new StarDate(GregPurim(dt));
+        //}
 
-        public static DateTime GregPurim()
-        {
-            return GregPurim(DateTime.Now);
-        }
+        //public static DateTime GregPurim()
+        //{
+        //    return GregPurim(DateTime.Now);
+        //}
 
-        public static DateTime GregPurim(DateTime now)
-        {
-            System.Globalization.Calendar HebCal = new HebrewCalendar();
-            int i = now.Year;
-            DateTime h = new DateTime(i, 11, 1);
-            int hebyear = HebCal.GetYear(now);
-            DateTime Purim = new DateTime(hebyear, 6, 14, new HebrewCalendar());
-            return Purim;
-        }
+        //public static DateTime GregPurim(DateTime now)
+        //{
+        //    System.Globalization.Calendar HebCal = new HebrewCalendar();
+        //    int i = now.Year;
+        //    DateTime h = new DateTime(i, 11, 1);
+        //    int hebyear = HebCal.GetYear(now);
+        //    DateTime Purim = new DateTime(hebyear, 6, 14, new HebrewCalendar());
+        //    return Purim;
+        //}
 
-        public static DateTime GregPurim(StarDate dt)
-        {
-            DateTime o = new StarDate(dt.Year, 12, 1).DateTime;
-            return GregPurim(o);
-        }
+        //public static DateTime GregPurim(StarDate dt)
+        //{
+        //    DateTime o = new StarDate(dt.Year, 12, 1).DateTime;
+        //    return GregPurim(o);
+        //}
 
         // Constructs a StarDate from a tick count. The _ticks
         // argument specifies the date as the number of 100-nanosecond intervals
@@ -2074,10 +2073,10 @@ namespace StarLib
 
         // Creates a StarDate from an OLE Automation Date.
         //
-        public static StarDate FromOADate(double d)
-        {
-            return (StarDate)DateTime.FromOADate(d);
-        }
+        //public static StarDate FromOADate(double d)
+        //{
+        //    return (StarDate)DateTime.FromOADate(d);
+        //}
 
 #if FEATURE_SERIALIZATION
         [System.Security.SecurityCritical /*auto-generated_required*/]
@@ -3238,15 +3237,15 @@ namespace StarLib
         //}
 
         /// <internalonly/>
-        Object IConvertible.ToType(Type type, IFormatProvider provider)
-        {
-            throw new NotImplementedException(); //return Convert.DefaultToType((IConvertible)this, type, provider);
-        }
+        //Object IConvertible.ToType(Type type, IFormatProvider provider)
+        //{
+        //    throw new NotImplementedException(); //return Convert.DefaultToType((IConvertible)this, type, provider);
+        //}
 
-        public void GetObjectData(SerializationInfo info, StreamingContext context)
-        {
-            throw new NotImplementedException();
-        }
+        //public void GetObjectData(SerializationInfo info, StreamingContext context)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
         public int CompareTo(DateTime other) //[AllowNull]
         {
@@ -3286,10 +3285,6 @@ namespace StarLib
 
 
 
-        private StarDate(SerializationInfo serializationInfo, StreamingContext streamingContext)
-        {
-            throw new NotImplementedException();
-        }
 
 
         private static StarDate AbstractDate(BigInteger bigInteger, int v, StarZone uTC)
@@ -3360,6 +3355,11 @@ namespace StarLib
 
 
         public static bool TryParse(string text, string format, CultureInfo cultureInfo, StarDateStyles none, out object converted)
+        {
+            throw new NotImplementedException();
+        }
+
+        public object ToType(Type conversionType, IFormatProvider provider)
         {
             throw new NotImplementedException();
         }

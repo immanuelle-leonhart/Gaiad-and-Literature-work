@@ -20,12 +20,10 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 using System.Globalization;
-using System.Runtime.Serialization;
 using System.Text;
 //using System;
 //using System.Collections.Generic;
 using System.Numerics;
-using static System.TimeZoneInfo;
 
 namespace StarLib
 {
@@ -48,11 +46,11 @@ namespace StarLib
     };
 
 
-    //[Serializable]
+    ////[Serializable]
     //[System.Security.Permissions.HostProtection(MayLeakOnAbort = true)]
     //[TypeForwardedFrom("System.Core, Version=3.5.0.0, Culture=Neutral, PublicKeyToken=b77a5c561934e089")]
-    [Serializable]
-    public class StarZone : IEquatable<StarZone>, ISerializable, IDeserializationCallback
+    //[Serializable]
+    public class StarZone : IEquatable<StarZone>
     {
 
         internal string PlanetName = "Default Planet Name";
@@ -216,10 +214,10 @@ namespace StarLib
             now.TimeZone = FindSystemTimeZoneById(v);
         }
 
-        internal void ClearCachedData()
-        {
-            TimeZoneInfo.ClearCachedData();
-        }
+        //internal void ClearCachedData()
+        //{
+        //    TimeZoneInfo.ClearCachedData();
+        //}
 
         internal Time ToRadio(Time atomic)
         {
@@ -419,54 +417,54 @@ namespace StarLib
         // returns a simple TimeZoneInfo instance that does
         // not support Daylight Saving Time
         //
-        public static StarZone CreateCustomTimeZone(string id, TimeSpan BaseUtcOffset)
-        {
-            return CreateCustomTimeZone(id, BaseUtcOffset, id, id);
-        }
+        //public static StarZone CreateCustomTimeZone(string id, TimeSpan BaseUtcOffset)
+        //{
+        //    return CreateCustomTimeZone(id, BaseUtcOffset, id, id);
+        //}
 
-        public static StarZone CreateCustomTimeZone(string id, Time BaseUtcOffset)
-        {
-            return CreateCustomTimeZone(id, BaseUtcOffset.TimeSpan, id, id);
-        }
+        //public static StarZone CreateCustomTimeZone(string id, Time BaseUtcOffset)
+        //{
+        //    return CreateCustomTimeZone(id, BaseUtcOffset.TimeSpan, id, id);
+        //}
 
-        static public StarZone CreateCustomTimeZone(
-                String id,
-                TimeSpan BaseUtcOffset,
-                String displayName)
-        {
-            return CreateCustomTimeZone(id, BaseUtcOffset, displayName, displayName);
-        }
+        //static public StarZone CreateCustomTimeZone(
+        //        String id,
+        //        TimeSpan BaseUtcOffset,
+        //        String displayName)
+        //{
+        //    return CreateCustomTimeZone(id, BaseUtcOffset, displayName, displayName);
+        //}
 
-        static public StarZone CreateCustomTimeZone(
-                String id,
-                Time BaseUtcOffset,
-                String displayName)
-        {
-            return CreateCustomTimeZone(id, BaseUtcOffset.TimeSpan, displayName, displayName);
-        }
+        //static public StarZone CreateCustomTimeZone(
+        //        String id,
+        //        Time BaseUtcOffset,
+        //        String displayName)
+        //{
+        //    return CreateCustomTimeZone(id, BaseUtcOffset.TimeSpan, displayName, displayName);
+        //}
 
-        public static StarZone CreateCustomTimeZone(string id, Time t, string displayname, string standard)
-        {
-            return CreateCustomTimeZone(id, t.TimeSpan, displayname, standard);
-        }
+        //public static StarZone CreateCustomTimeZone(string id, Time t, string displayname, string standard)
+        //{
+        //    return CreateCustomTimeZone(id, t.TimeSpan, displayname, standard);
+        //}
 
-        static public StarZone CreateCustomTimeZone(
-                String id,
-                TimeSpan BaseUtcOffset,
-                String displayName,
-                  String standardDisplayName)
-        {
+        //static public StarZone CreateCustomTimeZone(
+        //        String id,
+        //        TimeSpan BaseUtcOffset,
+        //        String displayName,
+        //          String standardDisplayName)
+        //{
 
-            TimeZoneInfo tz = TimeZoneInfo.CreateCustomTimeZone(
-                           id,
-                           BaseUtcOffset,
-                           displayName,
-                           standardDisplayName,
-                           standardDisplayName,
-                           null,
-                           false);
-            return new StarZone(tz);
-        }
+        //    TimeZoneInfo tz = TimeZoneInfo.CreateCustomTimeZone(
+        //                   id,
+        //                   BaseUtcOffset,
+        //                   displayName,
+        //                   standardDisplayName,
+        //                   standardDisplayName,
+        //                   null,
+        //                   false);
+        //    return new StarZone(tz);
+        //}
 
         //
         // CreateCustomTimeZone -
@@ -474,24 +472,26 @@ namespace StarLib
         // returns a TimeZoneInfo instance that may
         // support Daylight Saving Time
         //
-        static public StarZone CreateCustomTimeZone(
-                String id,
-                TimeSpan BaseUtcOffset,
-                String displayName,
-                String standardDisplayName,
-                String daylightDisplayName,
-                TimeZoneInfo.AdjustmentRule[] adjustmentRules)
-        {
 
-            TimeZoneInfo tz = TimeZoneInfo.CreateCustomTimeZone(
-                           id,
-                           BaseUtcOffset,
-                           displayName,
-                           standardDisplayName,
-                           daylightDisplayName,
-                           adjustmentRules,
-                           false); return new StarZone(tz);
-        }
+
+        //static public StarZone CreateCustomTimeZone(
+        //        String id,
+        //        TimeSpan BaseUtcOffset,
+        //        String displayName,
+        //        String standardDisplayName,
+        //        String daylightDisplayName,
+        //        TimeZoneInfo.AdjustmentRule[] adjustmentRules)
+        //{
+
+        //    TimeZoneInfo tz = TimeZoneInfo.CreateCustomTimeZone(
+        //                   id,
+        //                   BaseUtcOffset,
+        //                   displayName,
+        //                   standardDisplayName,
+        //                   daylightDisplayName,
+        //                   adjustmentRules,
+        //                   false); return new StarZone(tz);
+        //}
 
 
         //
@@ -503,25 +503,25 @@ namespace StarLib
         // This class factory method is identical to the
         // TimeZoneInfo private constructor
         //
-        static public StarZone CreateCustomTimeZone(
-                String id,
-                TimeSpan BaseUtcOffset,
-                String displayName,
-                String standardDisplayName,
-                String daylightDisplayName,
-                TimeZoneInfo.AdjustmentRule[] adjustmentRules,
-                Boolean disableDaylightSavingTime)
-        {
+        //static public StarZone CreateCustomTimeZone(
+        //        String id,
+        //        TimeSpan BaseUtcOffset,
+        //        String displayName,
+        //        String standardDisplayName,
+        //        String daylightDisplayName,
+        //        TimeZoneInfo.AdjustmentRule[] adjustmentRules,
+        //        Boolean disableDaylightSavingTime)
+        //{
 
-            TimeZoneInfo tz = TimeZoneInfo.CreateCustomTimeZone(
-                            id,
-                            BaseUtcOffset,
-                            displayName,
-                            standardDisplayName,
-                            daylightDisplayName,
-                            adjustmentRules,
-                            disableDaylightSavingTime); return new StarZone(tz);
-        }
+        //    TimeZoneInfo tz = TimeZoneInfo.CreateCustomTimeZone(
+        //                    id,
+        //                    BaseUtcOffset,
+        //                    displayName,
+        //                    standardDisplayName,
+        //                    daylightDisplayName,
+        //                    adjustmentRules,
+        //                    disableDaylightSavingTime); return new StarZone(tz);
+        //}
 
         internal static Time GetLocalUtcOffset(StarDate starDate)
         {
@@ -640,14 +640,14 @@ namespace StarLib
             this.StarName = name;
         }
 
-        public StarZone(string Name, Time LocalDay, string displayName, string standardDisplayName, string daylightDisplayName, AdjustmentRule[] adjustmentRules, bool v) : this(Name, LocalDay)
-        {
-            this.displayName = displayName;
-            this.standardDisplayName = standardDisplayName;
-            this.daylightDisplayName = daylightDisplayName;
-            this.adjustmentRules = adjustmentRules;
-            this.v = v;
-        }
+        //public StarZone(string Name, Time LocalDay, string displayName, string standardDisplayName, string daylightDisplayName, AdjustmentRule[] adjustmentRules, bool v) : this(Name, LocalDay)
+        //{
+        //    this.displayName = displayName;
+        //    this.standardDisplayName = standardDisplayName;
+        //    this.daylightDisplayName = daylightDisplayName;
+        //    this.adjustmentRules = adjustmentRules;
+        //    this.v = v;
+        //}
 
         internal object distance(StarDate now)
         {
@@ -725,34 +725,34 @@ namespace StarLib
         private const long c_TicksPerDayRange = c_TicksPerDay - c_TicksPerMillisecond;
 
 
-        private StarZone CreateUtc()
-        {
-            lock (this)
-            {
-                StarZone timeZone = UTC;
-                if (timeZone == null)
-                {
-                    timeZone = CreateCustomTimeZone(c_utcId, Time.Zero, c_utcId, c_utcId);
-                    UTC = timeZone;
-                }
-                return timeZone;
-            }
-        }
+        //private StarZone CreateUtc()
+        //{
+        //    lock (this)
+        //    {
+        //        StarZone timeZone = UTC;
+        //        if (timeZone == null)
+        //        {
+        //            timeZone = CreateCustomTimeZone(c_utcId, Time.Zero, c_utcId, c_utcId);
+        //            UTC = timeZone;
+        //        }
+        //        return timeZone;
+        //    }
+        //}
 
-        public StarZone Utc
-        {
-            get
-            {
-                Contract.Ensures(Contract.Result<StarZone>() != null);
+        //public StarZone Utc
+        //{
+        //    get
+        //    {
+        //        Contract.Ensures(Contract.Result<StarZone>() != null);
 
-                StarZone timeZone = UTC;
-                if (timeZone == null)
-                {
-                    timeZone = CreateUtc();
-                }
-                return timeZone;
-            }
-        }
+        //        StarZone timeZone = UTC;
+        //        if (timeZone == null)
+        //        {
+        //            timeZone = CreateUtc();
+        //        }
+        //        return timeZone;
+        //    }
+        //}
 
         //
         // GetCorrespondingKind-
@@ -760,15 +760,15 @@ namespace StarLib
         // Helper function that returns the corresponding DateTimeKind for this StarZone
         //
 
-        public void GetObjectData(SerializationInfo info, StreamingContext context)
-        {
-            throw new NotImplementedException();
-        }
+        //public void GetObjectData(SerializationInfo info, StreamingContext context)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
-        public void OnDeserialization(object sender)
-        {
-            throw new NotImplementedException();
-        }
+        //public void OnDeserialization(object sender)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
         //#if FEATURE_WIN32_REGISTRY
         //            public Dictionary<string, StarZone> m_systemTimeZones;
@@ -808,23 +808,23 @@ namespace StarLib
 
         //static CachedData s_cachedData = new CachedData();
 
-        private class OffsetAndRule
-        {
-            public int year;
-            public Time offset;
-            public AdjustmentRule rule;
-            public OffsetAndRule(int year, Time offset, AdjustmentRule rule)
-            {
-                this.year = year;
-                this.offset = offset;
-                this.rule = rule;
-            }
-        }
+        //private class OffsetAndRule
+        //{
+        //    public int year;
+        //    public Time offset;
+        //    public AdjustmentRule rule;
+        //    public OffsetAndRule(int year, Time offset, AdjustmentRule rule)
+        //    {
+        //        this.year = year;
+        //        this.offset = offset;
+        //        this.rule = rule;
+        //    }
+        //}
 
         //private Time BaseUtcOffset;
         private string standardDisplayName;
         private string daylightDisplayName;
-        private AdjustmentRule[] adjustmentRules;
+        //private AdjustmentRule[] adjustmentRules;
         private bool v;
         private Time basicUTCOffset;
         internal static bool NoThrowOnInvalidTime = true;
@@ -860,18 +860,18 @@ namespace StarLib
                 }
             }
 
-            internal set
-            {
-                if (IsTerran)
-                {
-                    tz = TimeZoneInfo.CreateCustomTimeZone(tz.Id + "2", tz.BaseUtcOffset, tz.DisplayName + " 2.0", tz.StandardName + " 2.0", tz.DaylightName + " 2.0", tz.GetAdjustmentRules());
-                }
-                else
-                {
-                    basicUTCOffset = value;
-                }
+            //internal set
+            //{
+            //    if (IsTerran)
+            //    {
+            //        tz = TimeZoneInfo.CreateCustomTimeZone(tz.Id + "2", tz.BaseUtcOffset, tz.DisplayName + " 2.0", tz.StandardName + " 2.0", tz.DaylightName + " 2.0", tz.GetAdjustmentRules());
+            //    }
+            //    else
+            //    {
+            //        basicUTCOffset = value;
+            //    }
 
-            }
+            //}
         }
 
 
@@ -964,17 +964,17 @@ namespace StarLib
         //
         // returns a cloned array of AdjustmentRule objects
         //
-        public TimeZoneInfo.AdjustmentRule[] GetAdjustmentRules()
-        {
-            if (IsTerran)
-            {
-                return tz.GetAdjustmentRules();
-            }
-            else
-            {
-                return null;
-            }
-        }
+        //public TimeZoneInfo.AdjustmentRule[] GetAdjustmentRules()
+        //{
+        //    if (IsTerran)
+        //    {
+        //        return tz.GetAdjustmentRules();
+        //    }
+        //    else
+        //    {
+        //        return null;
+        //    }
+        //}
 
 
         //
@@ -1367,20 +1367,20 @@ namespace StarLib
         //    
         // FromSerializedString -
         //
-        static public StarZone FromSerializedString(string source)
-        {
-            if (source == null)
-            {
-                throw new ArgumentNullException("source");
-            }
-            if (source.Length == 0)
-            {
-                throw new NotImplementedException(); // throw new ArgumentException(Environment.GetResourceString("Argument_InvalidSerializedString", source), "source");
-            }
-            Contract.EndContractBlock();
+        //static public StarZone FromSerializedString(string source)
+        //{
+        //    if (source == null)
+        //    {
+        //        throw new ArgumentNullException("source");
+        //    }
+        //    if (source.Length == 0)
+        //    {
+        //        throw new NotImplementedException(); // throw new ArgumentException(Environment.GetResourceString("Argument_InvalidSerializedString", source), "source");
+        //    }
+        //    Contract.EndContractBlock();
 
-            return StringSerializer.GetDeserializedStarZone(source);
-        }
+        //    return StringSerializer.GetDeserializedStarZone(source);
+        //}
 
 
         //
@@ -1469,15 +1469,15 @@ namespace StarLib
         //
         // Value equality on the "adjustmentRules" array
         //
-        public Boolean HasSameRules(StarZone other)
-        {
-            if (other == null)
-            {
-                throw new ArgumentNullException("other");
-            }
+        //public Boolean HasSameRules(StarZone other)
+        //{
+        //    if (other == null)
+        //    {
+        //        throw new ArgumentNullException("other");
+        //    }
 
-            return this.tz.HasSameRules(other.tz);
-        }
+        //    return this.tz.HasSameRules(other.tz);
+        //}
 
         //
         // Local -
@@ -1603,24 +1603,24 @@ namespace StarLib
         // returns a StarZone instance that may
         // support Daylight Saving Time
         //
-        static public StarZone CreateCustomTimeZone(
-                String id,
-                Time BaseUtcOffset,
-                String displayName,
-                String standardDisplayName,
-                String daylightDisplayName,
-                AdjustmentRule[] adjustmentRules)
-        {
+        //static public StarZone CreateCustomTimeZone(
+        //        String id,
+        //        Time BaseUtcOffset,
+        //        String displayName,
+        //        String standardDisplayName,
+        //        String daylightDisplayName,
+        //        AdjustmentRule[] adjustmentRules)
+        //{
 
-            return new StarZone(
-                           id,
-                           BaseUtcOffset,
-                           displayName,
-                           standardDisplayName,
-                           daylightDisplayName,
-                           adjustmentRules,
-                           false);
-        }
+        //    return new StarZone(
+        //                   id,
+        //                   BaseUtcOffset,
+        //                   displayName,
+        //                   standardDisplayName,
+        //                   daylightDisplayName,
+        //                   adjustmentRules,
+        //                   false);
+        //}
 
 
         //
@@ -1632,25 +1632,25 @@ namespace StarLib
         // This class factory method is identical to the
         // StarZone private constructor
         //
-        static public StarZone CreateCustomTimeZone(
-                String id,
-                Time BaseUtcOffset,
-                String displayName,
-                String standardDisplayName,
-                String daylightDisplayName,
-                AdjustmentRule[] adjustmentRules,
-                Boolean disableDaylightSavingTime)
-        {
+        //static public StarZone CreateCustomTimeZone(
+        //        String id,
+        //        Time BaseUtcOffset,
+        //        String displayName,
+        //        String standardDisplayName,
+        //        String daylightDisplayName,
+        //        AdjustmentRule[] adjustmentRules,
+        //        Boolean disableDaylightSavingTime)
+        //{
 
-            return new StarZone(
-                            id,
-                            BaseUtcOffset,
-                            displayName,
-                            standardDisplayName,
-                            daylightDisplayName,
-                            adjustmentRules,
-                            disableDaylightSavingTime);
-        }
+        //    return new StarZone(
+        //                    id,
+        //                    BaseUtcOffset,
+        //                    displayName,
+        //                    standardDisplayName,
+        //                    daylightDisplayName,
+        //                    adjustmentRules,
+        //                    disableDaylightSavingTime);
+        //}
 
 
 
@@ -2002,35 +2002,35 @@ namespace StarLib
             // static method that instantiates a StarZone from a custom serialized
             // string
             //
-            static public StarZone GetDeserializedStarZone(String source)
-            {
-                StringSerializer s = new StringSerializer(source);
+            //static public StarZone GetDeserializedStarZone(String source)
+            //{
+            //    StringSerializer s = new StringSerializer(source);
 
-                String id = s.GetNextStringValue(false);
-                Time BaseUtcOffset = s.GetNextTimeValue(false);
-                String displayName = s.GetNextStringValue(false);
-                String standardName = s.GetNextStringValue(false);
-                String daylightName = s.GetNextStringValue(false);
-                AdjustmentRule[] rules = s.GetNextAdjustmentRuleArrayValue(false);
+            //    String id = s.GetNextStringValue(false);
+            //    Time BaseUtcOffset = s.GetNextTimeValue(false);
+            //    String displayName = s.GetNextStringValue(false);
+            //    String standardName = s.GetNextStringValue(false);
+            //    String daylightName = s.GetNextStringValue(false);
+            //    AdjustmentRule[] rules = s.GetNextAdjustmentRuleArrayValue(false);
 
-                try
-                {
-                    return StarZone.CreateCustomTimeZone(id, BaseUtcOffset, displayName, standardName, daylightName, rules);
-                }
-                catch (ArgumentException)
-                {
-                    throw new NotImplementedException(); // throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"), ex);
-                }
-                catch (InvalidTimeZoneException)
-                {
-                    throw new NotImplementedException(); //throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"), ex);
-                }
-            }
+            //    try
+            //    {
+            //        return StarZone.CreateCustomTimeZone(id, BaseUtcOffset, displayName, standardName, daylightName, rules);
+            //    }
+            //    catch (ArgumentException)
+            //    {
+            //        throw new NotImplementedException(); // throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"), ex);
+            //    }
+            //    catch (InvalidTimeZoneException)
+            //    {
+            //        throw new NotImplementedException(); //throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"), ex);
+            //    }
+            //}
 
-            private AdjustmentRule[] GetNextAdjustmentRuleArrayValue(bool v)
-            {
-                throw new NotImplementedException();
-            }
+            //private AdjustmentRule[] GetNextAdjustmentRuleArrayValue(bool v)
+            //{
+            //    throw new NotImplementedException();
+            //}
 
             // ---- SECTION: public instance methods --------------*
 
@@ -2076,35 +2076,35 @@ namespace StarLib
             //
             // Helper method to serialize a StarZone.TransitionTime object
             //
-            static private void SerializeTransitionTime(TransitionTime time, StringBuilder serializedText)
-            {
-                serializedText.Append(lhs);
-                Int32 fixedDate = (time.IsFixedDateRule ? 1 : 0);
-                serializedText.Append(fixedDate.ToString(CultureInfo.InvariantCulture));
-                serializedText.Append(sep);
+            //static private void SerializeTransitionTime(TransitionTime time, StringBuilder serializedText)
+            //{
+            //    serializedText.Append(lhs);
+            //    Int32 fixedDate = (time.IsFixedDateRule ? 1 : 0);
+            //    serializedText.Append(fixedDate.ToString(CultureInfo.InvariantCulture));
+            //    serializedText.Append(sep);
 
-                if (time.IsFixedDateRule)
-                {
-                    serializedText.Append(SerializeSubstitute(time.TimeOfDay.ToString(timeOfDayFormat, StarCulture.InvariantCulture.FormatProvider)));
-                    serializedText.Append(sep);
-                    serializedText.Append(SerializeSubstitute(time.Month.ToString(CultureInfo.InvariantCulture)));
-                    serializedText.Append(sep);
-                    serializedText.Append(SerializeSubstitute(time.Day.ToString(CultureInfo.InvariantCulture)));
-                    serializedText.Append(sep);
-                }
-                else
-                {
-                    serializedText.Append(SerializeSubstitute(time.TimeOfDay.ToString(timeOfDayFormat, StarCulture.InvariantCulture.FormatProvider)));
-                    serializedText.Append(sep);
-                    serializedText.Append(SerializeSubstitute(time.Month.ToString(CultureInfo.InvariantCulture)));
-                    serializedText.Append(sep);
-                    serializedText.Append(SerializeSubstitute(time.Week.ToString(CultureInfo.InvariantCulture)));
-                    serializedText.Append(sep);
-                    serializedText.Append(SerializeSubstitute(((int)time.DayOfWeek).ToString(CultureInfo.InvariantCulture)));
-                    serializedText.Append(sep);
-                }
-                serializedText.Append(rhs);
-            }
+            //    if (time.IsFixedDateRule)
+            //    {
+            //        serializedText.Append(SerializeSubstitute(time.TimeOfDay.ToString(timeOfDayFormat, StarCulture.InvariantCulture.FormatProvider)));
+            //        serializedText.Append(sep);
+            //        serializedText.Append(SerializeSubstitute(time.Month.ToString(CultureInfo.InvariantCulture)));
+            //        serializedText.Append(sep);
+            //        serializedText.Append(SerializeSubstitute(time.Day.ToString(CultureInfo.InvariantCulture)));
+            //        serializedText.Append(sep);
+            //    }
+            //    else
+            //    {
+            //        serializedText.Append(SerializeSubstitute(time.TimeOfDay.ToString(timeOfDayFormat, StarCulture.InvariantCulture.FormatProvider)));
+            //        serializedText.Append(sep);
+            //        serializedText.Append(SerializeSubstitute(time.Month.ToString(CultureInfo.InvariantCulture)));
+            //        serializedText.Append(sep);
+            //        serializedText.Append(SerializeSubstitute(time.Week.ToString(CultureInfo.InvariantCulture)));
+            //        serializedText.Append(sep);
+            //        serializedText.Append(SerializeSubstitute(((int)time.DayOfWeek).ToString(CultureInfo.InvariantCulture)));
+            //        serializedText.Append(sep);
+            //    }
+            //    serializedText.Append(rhs);
+            //}
 
             //
             // VerifyIsEscapableCharacter -
@@ -2498,126 +2498,126 @@ namespace StarLib
             //
             // Helper function to read a TransitionTime token.  Takes a boolean "canEndWithoutSeparator".
             //
-            private TransitionTime GetNextTransitionTimeValue(Boolean canEndWithoutSeparator)
-            {
+            //private TransitionTime GetNextTransitionTimeValue(Boolean canEndWithoutSeparator)
+            //{
 
-                // first verify the internal state of the object
+            //    // first verify the internal state of the object
 
-                if (m_state == State.EndOfLine
-                    || (m_currentTokenStartIndex < m_serializedText.Length
-                        && m_serializedText[m_currentTokenStartIndex] == rhs))
-                {
-                    //
-                    // we are at the end of the line or we are starting at a "]" character
-                    //
-                    throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
-                }
+            //    if (m_state == State.EndOfLine
+            //        || (m_currentTokenStartIndex < m_serializedText.Length
+            //            && m_serializedText[m_currentTokenStartIndex] == rhs))
+            //    {
+            //        //
+            //        // we are at the end of the line or we are starting at a "]" character
+            //        //
+            //        throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
+            //    }
 
-                if (m_currentTokenStartIndex < 0 || m_currentTokenStartIndex >= m_serializedText.Length)
-                {
-                    throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
-                }
+            //    if (m_currentTokenStartIndex < 0 || m_currentTokenStartIndex >= m_serializedText.Length)
+            //    {
+            //        throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
+            //    }
 
-                // verify the current token is a left-hand-side marker ("[")
+            //    // verify the current token is a left-hand-side marker ("[")
 
-                if (m_serializedText[m_currentTokenStartIndex] != lhs)
-                {
-                    throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
-                }
-                m_currentTokenStartIndex++;
+            //    if (m_serializedText[m_currentTokenStartIndex] != lhs)
+            //    {
+            //        throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
+            //    }
+            //    m_currentTokenStartIndex++;
 
-                Int32 isFixedDate = GetNextInt32Value(false);
+            //    Int32 isFixedDate = GetNextInt32Value(false);
 
-                if (isFixedDate != 0 && isFixedDate != 1)
-                {
-                    throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
-                }
+            //    if (isFixedDate != 0 && isFixedDate != 1)
+            //    {
+            //        throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
+            //    }
 
-                TransitionTime transition;
+            //    TransitionTime transition;
 
-                StarDate timeOfDay = GetNextStarDateValue(false, timeOfDayFormat);
-                timeOfDay = new StarDate(1, 1, 1, timeOfDay.Hour, timeOfDay.Minute, timeOfDay.Second, timeOfDay.Millisecond);
+            //    StarDate timeOfDay = GetNextStarDateValue(false, timeOfDayFormat);
+            //    timeOfDay = new StarDate(1, 1, 1, timeOfDay.Hour, timeOfDay.Minute, timeOfDay.Second, timeOfDay.Millisecond);
 
-                Int32 month = GetNextInt32Value(false);
+            //    Int32 month = GetNextInt32Value(false);
 
-                if (isFixedDate == 1)
-                {
-                    Int32 day = GetNextInt32Value(false);
+            //    if (isFixedDate == 1)
+            //    {
+            //        Int32 day = GetNextInt32Value(false);
 
-                    try
-                    {
-                        transition = TransitionTime.CreateFixedDateRule(timeOfDay, month, day);
-                    }
-                    catch (ArgumentException)
-                    {
-                        throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"), e);
-                    }
-                }
-                else
-                {
-                    Int32 week = GetNextInt32Value(false);
-                    Int32 dayOfWeek = GetNextInt32Value(false);
+            //        try
+            //        {
+            //            transition = TransitionTime.CreateFixedDateRule(timeOfDay, month, day);
+            //        }
+            //        catch (ArgumentException)
+            //        {
+            //            throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"), e);
+            //        }
+            //    }
+            //    else
+            //    {
+            //        Int32 week = GetNextInt32Value(false);
+            //        Int32 dayOfWeek = GetNextInt32Value(false);
 
-                    try
-                    {
-                        transition = TransitionTime.CreateFloatingDateRule(timeOfDay, month, week, (DayOfWeek)dayOfWeek);
-                    }
-                    catch (ArgumentException)
-                    {
-                        throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"), e);
-                    }
+            //        try
+            //        {
+            //            transition = TransitionTime.CreateFloatingDateRule(timeOfDay, month, week, (DayOfWeek)dayOfWeek);
+            //        }
+            //        catch (ArgumentException)
+            //        {
+            //            throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"), e);
+            //        }
 
-                }
+            //    }
 
-                // verify that the string is now at the right-hand-side marker ("]") ...
+            //    // verify that the string is now at the right-hand-side marker ("]") ...
 
-                if (m_state == State.EndOfLine || m_currentTokenStartIndex >= m_serializedText.Length)
-                {
-                    throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
-                }
+            //    if (m_state == State.EndOfLine || m_currentTokenStartIndex >= m_serializedText.Length)
+            //    {
+            //        throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
+            //    }
 
-                if (m_serializedText[m_currentTokenStartIndex] != rhs)
-                {
-                    // skip ahead of any "v.Next" data at the end of the AdjustmentRule
-                    //
-                    // 
-
-
-                    SkipVersionNextDataFields(1);
-                }
-                else
-                {
-                    m_currentTokenStartIndex++;
-                }
-
-                // check to see if the string is now at the separator (";") ...
-                Boolean sepFound = false;
-                if (m_currentTokenStartIndex < m_serializedText.Length
-                    && m_serializedText[m_currentTokenStartIndex] == sep)
-                {
-                    // handle the case where we ended on a ";"
-                    m_currentTokenStartIndex++;
-                    sepFound = true;
-                }
-
-                if (!sepFound && !canEndWithoutSeparator)
-                {
-                    // we MUST end on a separator
-                    throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
-                }
+            //    if (m_serializedText[m_currentTokenStartIndex] != rhs)
+            //    {
+            //        // skip ahead of any "v.Next" data at the end of the AdjustmentRule
+            //        //
+            //        // 
 
 
-                // finally set the state to either EndOfLine or StartOfToken for the next caller
-                if (m_currentTokenStartIndex >= m_serializedText.Length)
-                {
-                    m_state = State.EndOfLine;
-                }
-                else
-                {
-                    m_state = State.StartOfToken;
-                }
-                return transition;
-            }
+            //        SkipVersionNextDataFields(1);
+            //    }
+            //    else
+            //    {
+            //        m_currentTokenStartIndex++;
+            //    }
+
+            //    // check to see if the string is now at the separator (";") ...
+            //    Boolean sepFound = false;
+            //    if (m_currentTokenStartIndex < m_serializedText.Length
+            //        && m_serializedText[m_currentTokenStartIndex] == sep)
+            //    {
+            //        // handle the case where we ended on a ";"
+            //        m_currentTokenStartIndex++;
+            //        sepFound = true;
+            //    }
+
+            //    if (!sepFound && !canEndWithoutSeparator)
+            //    {
+            //        // we MUST end on a separator
+            //        throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
+            //    }
+
+
+            //    // finally set the state to either EndOfLine or StartOfToken for the next caller
+            //    if (m_currentTokenStartIndex >= m_serializedText.Length)
+            //    {
+            //        m_state = State.EndOfLine;
+            //    }
+            //    else
+            //    {
+            //        m_state = State.StartOfToken;
+            //    }
+            //    return transition;
+            //}
 
             private StarDate GetNextStarDateValue(bool v, string timeOfDayFormat)
             {
@@ -2663,13 +2663,13 @@ namespace StarLib
             this.PlanetName = planet;
             this.LocalDay = LocalDay;
             this.StarName = star;
-            this.BaseUtcOffset = Off;
+            this.basicUTCOffset = Off;
         }
 
-        protected StarZone(SerializationInfo serializationInfo, StreamingContext streamingContext)
-        {
-            throw new NotImplementedException();
-        }
+        //protected StarZone(SerializationInfo serializationInfo, StreamingContext streamingContext)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
         public StarZone(TimeZoneInfo tz, string v1) : this(tz)
         {

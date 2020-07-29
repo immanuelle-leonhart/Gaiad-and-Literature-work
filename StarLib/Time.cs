@@ -30,7 +30,7 @@ namespace StarLib
     // an appropriate custom ILMarshaler to keep WInRT interop scenarios enabled.
     //
     [System.Runtime.InteropServices.ComVisible(true)]
-    [Serializable]
+    //[Serializable]
     public struct Time : IComparable, IComparable<Time>, IEquatable<Time>, IFormattable
     //#if GENERICS_WORK
     //        , IComparable<Time>, IEquatable<Time>, IFormattable
@@ -366,13 +366,13 @@ namespace StarLib
         //        [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework]
         //        "Time_LegacyFormatMode"=dword:00000001
         //
-#if !FEATURE_CORECLR
-        [System.Security.SecurityCritical]
-        [ResourceExposure(ResourceScope.None)]
-        [MethodImplAttribute(MethodImplOptions.InternalCall)]
-        private static extern bool LegacyFormatMode();
+//#if !FEATURE_CORECLR
+//        [System.Security.SecurityCritical]
+//        [ResourceExposure(ResourceScope.None)]
+//        [MethodImplAttribute(MethodImplOptions.InternalCall)]
+//        private static extern bool LegacyFormatMode();
 
-#endif // !FEATURE_CORECLR
+//#endif // !FEATURE_CORECLR
 
         //private static bool LegacyMode
         //{
@@ -388,7 +388,7 @@ namespace StarLib
         //    }
         //}
 
-        [NonSerialized]
+        //[NonSerialized]
         internal BigInteger _ticks;
 
 

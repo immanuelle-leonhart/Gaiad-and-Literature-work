@@ -10,3 +10,7 @@ C:\Users\SiliconProphet\Documents\GitHub\StarDate\TestConsole\obj\Debug\netcorea
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\TestConsole\obj\Debug\netcoreapp3.1\TestConsole.dll
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\TestConsole\obj\Debug\netcoreapp3.1\TestConsole.pdb
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\TestConsole\obj\Debug\netcoreapp3.1\TestConsole.genruntimeconfig.cache
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\TestConsole\obj\Debug\netcoreapp3.1\TestConsole.csprojAssemblyReference.cache
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\TestConsole\bin\Debug\netcoreapp3.1\StarLib.dll
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\TestConsole\bin\Debug\netcoreapp3.1\StarLib.pdb
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\TestConsole\obj\Debug\netcoreapp3.1\TestConsole.csproj.CopyComplete

@@ -1,9 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard1.6</TargetFramework>
     <PackageId>StarDate</PackageId>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
     <Authors>Silicon Prophet</Authors>
     <Company>Order of Life</Company>
     <Product>StarLib</Product>
@@ -29,6 +29,10 @@
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Diagnostics.Contracts" Version="4.3.0" />
   </ItemGroup>
 
 </Project>
