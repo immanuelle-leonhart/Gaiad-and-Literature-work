@@ -241,18 +241,6 @@ namespace StarLib
             throw new NotImplementedException();
         }
 
-        private static String FormatMonth(int month, int repeatCount, StarCulture sdfi)
-        {
-            Contract.Assert(month >= 1 && month <= 12, "Month >=1 && Month <= 12");
-            if (repeatCount == 3)
-            {
-                return (sdfi.GetAbbreviatedMonthName(month));
-            }
-            // Call month() here, instead of accessing MonthNames property, because we don't
-            // want a clone of MonthNames, which will hurt perf.
-            return (sdfi.GetMonthName(month));
-        }
-
         private string GetMonthName(int month)
         {
             throw new NotImplementedException();

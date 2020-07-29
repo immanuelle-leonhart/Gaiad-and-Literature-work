@@ -259,7 +259,7 @@
           "lib/netcoreapp2.1/_._": {}
         }
       },
-      "StarDate/1.0.0": {
+      "StarDate/1.0.1": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
@@ -771,7 +771,7 @@
         "version.txt"
       ]
     },
-    "StarDate/1.0.0": {
+    "StarDate/1.0.1": {
       "type": "project",
       "path": "../../StarLib/StarLib.csproj",
       "msbuildProject": "../../StarLib/StarLib.csproj"
@@ -780,7 +780,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.VisualStudio.CoreUtility >= 16.6.255",
-      "StarDate >= 1.0.0"
+      "StarDate >= 1.0.1"
     ]
   },
   "packageFolders": {
