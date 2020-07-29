@@ -1,21 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "H/eco+ilPLE2X/Nz3Ay4TuC3nzezsl4K06pvBZ18KUB9nwGpENe0WD0MMDraKJp3JhiCb20IEazn2ccaAnIc3A==",
+  "dgSpecHash": "9UxbOusypagLHUkxjDZSAtgTJKQh6SZI4fVS/NoUv5u/PsNcVFogzaWjqjp9l3br85cGBY+khMDaksCPjj4LPw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\CosmicCalendar\\TestConsole\\TestConsole.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\SiliconProphet\\.nuget\\packages\\microsoft.powershell.5.referenceassemblies\\1.1.0\\microsoft.powershell.5.referenceassemblies.1.1.0.nupkg.sha512"
-  ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.PowerShell.5.ReferenceAssemblies 1.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.PowerShell.5.ReferenceAssemblies",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  "projectFilePath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate\\TestConsole\\TestConsole.csproj",
+  "expectedPackageFiles": [],
+  "logs": []
 }

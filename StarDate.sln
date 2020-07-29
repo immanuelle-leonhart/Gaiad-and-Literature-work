@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarBlaze", "StarDate\StarBlaze.csproj", "{6BE58BCF-8A4C-4C36-AFED-E1704C8F7E7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarLib", "StarLib\StarLib.csproj", "{47B3E894-8F14-4A15-9446-D7845494F05F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsole", "TestConsole\TestConsole.csproj", "{8A6468F0-6EBC-4985-B249-9F5446F1FFA9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BE58BCF-8A4C-4C36-AFED-E1704C8F7E7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BE58BCF-8A4C-4C36-AFED-E1704C8F7E7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BE58BCF-8A4C-4C36-AFED-E1704C8F7E7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BE58BCF-8A4C-4C36-AFED-E1704C8F7E7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47B3E894-8F14-4A15-9446-D7845494F05F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47B3E894-8F14-4A15-9446-D7845494F05F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47B3E894-8F14-4A15-9446-D7845494F05F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47B3E894-8F14-4A15-9446-D7845494F05F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A6468F0-6EBC-4985-B249-9F5446F1FFA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A6468F0-6EBC-4985-B249-9F5446F1FFA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A6468F0-6EBC-4985-B249-9F5446F1FFA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A6468F0-6EBC-4985-B249-9F5446F1FFA9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {532FC328-D938-4275-9C65-7217A7A3E977}
+	EndGlobalSection
+EndGlobal
