@@ -6,7 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\StarLibRazor\StarLibRazor.csproj" />
     <ProjectReference Include="..\StarLib\StarLib.csproj" />
   </ItemGroup>
 

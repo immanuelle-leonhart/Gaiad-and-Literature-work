@@ -1,0 +1,91 @@
+﻿@*
+    * author: Sergey Zaikin zaikinsr@yandex.ru
+    * copyright: Copyright (c) 2019 Sergey Zaikin. All rights reserved.
+    * license: Licensed under the MIT license. See http://www.opensource.org/licenses/mit-license.php
+*@
+
+<table class="table-condensed">
+    <thead>
+        <tr>
+            @if (Picker.ShowWeekNumbers == true || Picker.ShowISOWeekNumbers == true)
+            {
+                <th></th>
+            }
+            <th class="@(PrevBtnVisible ? "prev available" : "")" @onclick="@(_ => PrevBtnVisible ? PreviousMonth() : null)"><span></span></th>
+            <th colspan="5" class="month">
+                @if (Picker.ShowDropdowns == true)
+                {
+                    var currentMonth = CalendarData.Month.Month;
+                    var currentYear = CalendarData.Month.Year;
+                    var inMinYear = currentYear == MinYear;
+                    var inMaxYear = currentYear == MaxYear;
+                    <select class="monthselect" @onchange="MonthSelected">
+                        @for (var m = 1; m < 13; m++)
+                        {
+                            var enabled = (!inMinYear || (m >= Picker.MinDate?.Month)) && (!inMaxYear || (m <= Picker.MaxDate?.Month));
+                            var selected = m == currentMonth;
+                            <option @key="m" selected="@selected" disabled="@(!enabled)" value="@m">
+                                @Picker.Culture.DateTimeFormat.GetMonthName(m)
+                            </option>
+                        }
+                    </select>
+
+                    <select class="yearselect" @onchange="YearSelected">
+                        @for (var y = MinYear; y <= MaxYear; y++)
+                        {
+                            <option @key="y" value="@y" selected="@(y == currentYear)">@y</option>
+                        }
+                    </select>
+                }
+                else
+                {
+                    @Picker.Culture.DateTimeFormat.GetMonthName(CalendarData.Month.Month)<text>&nbsp;</text>@CalendarData.Month.Year
+                }
+            </th>
+            <th class="@(NextBtnVisible ? "next available" : "")" @onclick="@(_ => NextBtnVisible ? NextMonth() : null)"><span></span></th>
+
+        </tr>
+        <tr>
+
+            @if (Picker.ShowWeekNumbers == true || Picker.ShowISOWeekNumbers == true)
+            {
+                <th class="week">@Picker.WeekAbbreviation</th>
+            }
+
+            @foreach (var dayOfWeekName in DayNames)
+            {
+                <th>@dayOfWeekName</th>
+            }
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var row in CalendarData.Calendar)
+        {
+            <tr>
+                @if (Picker.ShowWeekNumbers == true)
+                {
+                    <td class="week">
+                        @GetWeekOfYear(row[0].Day.DateTime)
+                    </td>
+                }
+                else if (Picker.ShowISOWeekNumbers == true)
+                {
+                    <td class="week">
+                        @GetIso8601WeekOfYear(row[0].Day.DateTime)
+                    </td>
+                }
+               
+                @foreach (var dt in row)
+                {
+                    if (dt.Hover == null) dt.Hover = () => OnMouseOverDate(dt.Day);
+                    if (dt.Click == null) dt.Click = () => ClickDate(dt);
+
+                    <td class="@(Picker.Loading ? "disabled" : dt.ClassNames)" 
+                        @onmouseover="@dt.Hover" 
+                        @onclick="@dt.Click">@dt.Day.Day</td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>
