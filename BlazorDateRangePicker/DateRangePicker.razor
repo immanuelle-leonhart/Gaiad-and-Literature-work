@@ -1,0 +1,72 @@
+﻿@*
+    * author: Sergey Zaikin zaikinsr@yandex.ru
+    * copyright: Copyright (c) 2019 Sergey Zaikin. All rights reserved.
+    * license: Licensed under the MIT license. See http://www.opensource.org/licenses/mit-license.php
+*@
+
+@if (PickerTemplate == null)
+{
+    <input id="@ParentId" type="text" @attributes="CombinedAttributes" value="@FormattedRange" @oninput="OnTextInput" @onfocusin="Open" @onfocusout="LostFocus" />
+}
+else
+{
+    @PickerTemplate(((object)this) as BlazorDateRangePicker.DateRangePicker);
+}
+<div style="visibility:@(Inline == true || Visible ? "visible" : "hidden");">
+    <div id="@Id" class="daterangepicker @RootStyles">
+
+        <div class="ranges">
+            @if (Ranges != null && Ranges.Any())
+            {
+                <ul>
+                    @foreach (var range in Ranges)
+                    {
+                        <li class="@(range.Key == ChosenLabel ? "active" : "")" @onclick="@(args => ClickRange(args, range.Key))">@range.Key</li>
+                    }
+                    @if (ShowCustomRangeLabel == true)
+                    {
+                        <li class="@(CustomRangeLabel == ChosenLabel ? "active" : "")" @onclick="@(args => ClickRange(args, CustomRangeLabel))">@CustomRangeLabel</li>
+                    }
+                </ul>
+            }
+        </div>
+
+        <CascadingValue Value="this">
+            <div class="drp-calendar left @(SingleDatePicker == true || ShowOnlyOneCalendar == true ? "single" : "")">
+                <div class="calendar-table">
+                    <Calendar Side="@SideType.Left"
+                              CalendarData="@LeftCalendar"
+                              OnMonthChanged="LeftMonthChanged"
+                              OnClickDate="ClickDate"
+                              OnHoverDate="OnHoverDate" />
+                </div>
+            </div>
+            @if (SingleDatePicker != true && ShowOnlyOneCalendar != true)
+            {
+                <div class="drp-calendar right">
+                    <div class="calendar-table">
+                        <Calendar Side="@SideType.Right"
+                                  CalendarData="@RightCalendar"
+                                  OnMonthChanged="RightMonthChanged"
+                                  OnClickDate="ClickDate"
+                                  OnHoverDate="OnHoverDate" />
+                    </div>
+                </div>
+            }
+        </CascadingValue>
+
+        <div class="drp-buttons">
+            @if (ButtonsTemplate == null)
+            {
+                <span class="drp-selected"></span>
+                <button class="cancelBtn @ButtonClasses @CancelButtonClasses" @onclick="ClickCancel" type="button">@CancelLabel</button>
+                <button class="applyBtn @ButtonClasses @ApplyButtonClasses" @onclick="ClickApply" disabled="@(TStartDate == null || TEndDate == null)" type="button">@ApplyLabel</button>
+            }
+            else
+            {
+                @ButtonsTemplate(((object)this) as BlazorDateRangePicker.DateRangePicker);
+            }
+        </div>
+
+    </div>
+</div>
