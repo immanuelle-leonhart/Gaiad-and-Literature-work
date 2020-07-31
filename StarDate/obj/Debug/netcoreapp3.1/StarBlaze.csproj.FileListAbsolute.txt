@@ -52,3 +52,5 @@ C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarDate\obj\Debug\netcoreapp3
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarDate\obj\Debug\netcoreapp3.1\Razor\StarCalendar\Calendar.razor.g.cs
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarDate\bin\Debug\netcoreapp3.1\StarLib.dll
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarDate\bin\Debug\netcoreapp3.1\StarLib.pdb
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarDate\obj\Debug\netcoreapp3.1\RazorDeclaration\StarCalendar\InputStarDate.razor.g.cs
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarDate\obj\Debug\netcoreapp3.1\Razor\StarCalendar\InputStarDate.razor.g.cs
