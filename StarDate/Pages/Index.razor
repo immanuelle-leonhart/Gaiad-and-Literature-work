@@ -4,6 +4,28 @@
 
 Welcome to your new app.
 
-@*<SurveyPrompt Title="How is Blazor working for you?" />*@
+<SurveyPrompt Title="How is Blazor working for you?" />
 
-<StarBlaze.StarCalendar.Calendar/>
+<StarBlaze.StarCalendar.Calendar />
+
+
+
+<EditForm Model="@date" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <InputDate @bind-Value="date" />
+
+    <button type="submit">Submit</button>
+</EditForm>
+
+@code{
+    StarLib.StarDate dt;
+    DateTime date;
+    string CurrentValue;
+
+    private void HandleValidSubmit()
+    {
+        Console.WriteLine("OnValidSubmit");
+    }
+}
