@@ -3427,11 +3427,19 @@ namespace StarLib
 
         public static bool TryParseExact(string text, string format, CultureInfo cultureInfo, StarDateStyles none, out StarDate converted)
         {
+            if (format == "yyyy-MM-dd")
+            {
+                return FastDateParse(text, out converted);
+            }
             throw new NotImplementedException();
         }
 
         public static bool TryParse(string text, CultureInfo cultureInfo, StarDateStyles none, out StarDate converted)
         {
+            //if (format == "yyyy-MM-dd")
+            //{
+            //    return FastDateParse(text, out converted);
+            //}
             throw new NotImplementedException();
         }
 
@@ -3470,6 +3478,8 @@ namespace StarLib
         {
             throw new NotImplementedException();
         }
+
+        
 
         /// <summary>
         /// Operators
