@@ -1,30 +1,64 @@
-﻿@inherits InputStarDate<StarLib.StarDate>
+﻿@*@inherits InputStarDateBase<StarLib.StarDate>*@
 
 
 
 @code {
-    public int Year { get => dt.Year; set => dt.Year = value; }
-    public int Month { get => dt.Month; set => dt.Month = value; }
-    public int Day { get => dt.Day; set => dt.Day = value; }
+    public int Day { get => sdt.Day; set => sdt.Day = value; }
+    public int Month { get => sdt.Month; set => sdt.Month = value; }
+    public int Year { get => sdt.Year; set => sdt.Year = value; }
+    public int MonthDays
+    {
+        get
+        {
+            if (Month == 14)
+            {
+                return sdt.HorusLength();
+            }
+            else
+            {
+                return 28;
+            }
+        }
+    }
+    public int YearMonths
+    {
+        get
+        {
+            if (sdt.isleapyear())
+            {
+                return 14;
+            }
+            else
+            {
+                return 13;
+            }
+        }
+    }
+    public StarLib.StarDate sdt;
 
     public string[] Months { get; set; } = StarLib.StarCulture.CurrentCulture.GetMonthList();
+
+    protected override void OnInitialized()
+    {
+        sdt = StarLib.StarDate.Now;
+    }
 }
 
-<select @bind="dt.Day">
-    @for (int i = 1; i <= 28; i++)
+<select @bind="Day">
+    @for (int i = 1; i <= MonthDays; i++)
     {
         <option>@i</option>
     }
 </select>
-<select @bind="dt.Month">
-    @for (int i = 1; i <= 14; i++)
+<select @bind="Month">
+    @for (int i = 1; i <= YearMonths; i++)
     {
         <option value="@i">@Months[i - 1]</option>
     }
 </select>
-<select @bind="dt.Year">
-    @for (int i = DateTime.Now.Year - 5;
-i <= DateTime.Now.Year + 5; i++)
+<select @bind="Year">
+    @for (int i = sdt.Year - 5;
+i <= sdt.Year + 5; i++)
     {
         <option>@i</option>
     }

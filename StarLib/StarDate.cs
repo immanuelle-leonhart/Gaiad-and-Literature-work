@@ -2538,7 +2538,7 @@ namespace StarLib
                 {
                     dt = new StarDate(value, Month, Day, Hour, Minute, Second, Millisecond, ExtraTicks);
                 }
-                catch (ArgumentException)
+                catch (ArgumentOutOfRangeException)
                 {
                     dt = new StarDate(value + 1, 1, 1, Hour, Minute, Second, Millisecond, ExtraTicks);
                 }
@@ -2682,7 +2682,7 @@ namespace StarLib
                 {
                     Contract.Ensures(Contract.Result<int>() >= 0);
                     Contract.Ensures(Contract.Result<int>() < 24);
-                    return (int)(this.TimeOfDay.Ticks / TicksPerHour);
+                    return (int)(TimeTicks / TicksPerHour);
                 }
             }
             set
@@ -2703,7 +2703,7 @@ namespace StarLib
             {
                 Contract.Ensures(Contract.Result<int>() >= 0);
                 Contract.Ensures(Contract.Result<int>() < 60);
-                return (int)(this.TimeOfDay.Ticks / TicksPerMinute);
+                return (int)((TimeTicks / TicksPerMinute) % 60);
             }
             set
             {
@@ -2723,7 +2723,7 @@ namespace StarLib
             {
                 Contract.Ensures(Contract.Result<int>() >= 0);
                 Contract.Ensures(Contract.Result<int>() < 60);
-                return (int)(this.TimeOfDay.Ticks / TicksPerSecond);
+                return (int)((TimeTicks / TicksPerSecond) % 60);
             }
             set
             {
@@ -2743,7 +2743,7 @@ namespace StarLib
             {
                 Contract.Ensures(Contract.Result<int>() >= 0);
                 Contract.Ensures(Contract.Result<int>() < 1000);
-                return (int)(this.TimeOfDay.Ticks / TicksPerMillisecond);
+                return (int)((TimeTicks / TicksPerMillisecond) % 1000);
             }
             set
             {
@@ -2762,7 +2762,7 @@ namespace StarLib
             {
                 Contract.Ensures(Contract.Result<int>() >= 0);
                 Contract.Ensures(Contract.Result<int>() < 10000);
-                return (int)(this.TimeOfDay.Ticks / 10000);
+                return (int)((TimeTicks % TicksPerMillisecond));
             }
             set
             {
@@ -3037,6 +3037,8 @@ namespace StarLib
             }
         }
 
+        public BigInteger TimeTicks { get => TimeOfDay.Ticks; }
+
 
 
 
@@ -3116,7 +3118,7 @@ namespace StarLib
         public long ToFileTimeUtc()
         {
             // Treats the input as universal if it is not specified
-            //BigInteger ticks = ((Kind & LocalMask) != 0) ? ToUniversalTime().InternalTicks : this.InternalTicks;
+            //BigInteger ticks = ((Kind & LocalMask) != 0) ? ToUniversalTime().TimeTicks : this.TimeTicks;
 
             //if (s_isLeapSecondsSupportedSystem)
             //{
@@ -3219,7 +3221,7 @@ namespace StarLib
             }
         }
 
-        private static bool FastDateParse(string s, out StarDate result)
+        internal static bool FastDateParse(string s, out StarDate result)
         {
             //fast parsing method for yyyy-MM-dd format
             string[] values = s.Split('-');
@@ -3479,7 +3481,17 @@ namespace StarLib
             throw new NotImplementedException();
         }
 
-        
+        internal static StarDate FastParse(string value)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal static bool FastDateParse<StarDate>(string value, out StarDate result, out string validationErrorMessage)
+        {
+            throw new NotImplementedException();
+        }
+
+
 
         /// <summary>
         /// Operators
