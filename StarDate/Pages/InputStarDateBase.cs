@@ -18,7 +18,7 @@ namespace StarBlaze.Pages
         {
             get
             {
-                if (Month == 14)
+                if (Value.Month == 14)
                 {
                     return sdt.HorusLength();
                 }
