@@ -824,8 +824,6 @@ namespace StarLib
         //private Time BaseUtcOffset;
         private string standardDisplayName;
         private string daylightDisplayName;
-        //private AdjustmentRule[] adjustmentRules;
-        private bool v;
         private Time basicUTCOffset;
         internal static bool NoThrowOnInvalidTime = true;
         private bool isMartian;
