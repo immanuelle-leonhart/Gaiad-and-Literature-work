@@ -1,0 +1,32 @@
+﻿@inherits InputStarDateBase<StarLib.StarDate>
+
+
+
+@code {
+    public int Year { get => dt.Year; set => dt.Year = value; }
+    public int Month { get => dt.Month; set => dt.Month = value; }
+    public int Day { get => dt.Day; set => dt.Day = value; }
+
+    public string[] Months { get; set; } = StarLib.StarCulture.CurrentCulture.GetMonthList();
+}
+
+<select @bind="dt.Day">
+    @for (int i = 1; i <= 28; i++)
+    {
+        <option>@i</option>
+    }
+</select>
+<select @bind="dt.Month">
+    @for (int i = 1; i <= 14; i++)
+    {
+        <option value="@i">@Months[i - 1]</option>
+    }
+</select>
+<select @bind="dt.Year">
+    @for (int i = DateTime.Now.Year - 5;
+i <= DateTime.Now.Year + 5; i++)
+    {
+        <option>@i</option>
+    }
+</select>
+<button type="button">Select</button>

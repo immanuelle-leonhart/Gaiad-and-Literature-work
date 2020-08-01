@@ -231,6 +231,7 @@ namespace StarLib
         private const int MillisPerMinute = MillisPerSecond * 60;
         private const int MillisPerHour = MillisPerMinute * 60;
         private const int MillisPerDay = MillisPerHour * 24;
+        private const int MillisPerWeek = MillisPerDay * 7;
 
         // Number of days in a non-leap Year
         private const int DaysPerYear2 = 365;
@@ -312,6 +313,7 @@ namespace StarLib
         public static bool LongDefault = false; //switches whether the default tostring method prints a long date or a short date
         private static string currentCulture;
         private static List<string> formats;
+        private static bool acceptoverflow = false; //determines whether setters throw errors related to leap year overflows or set the date to the next year
 
 
 
@@ -1064,6 +1066,17 @@ namespace StarLib
             return isleapyear(Year) == 2;
         }
 
+        public int LeapLevel()
+        {
+            return isleapyear(Year);
+        }
+
+        public int HorusLength()
+        {
+            int[] vs = new int[] { 0, 7, 14 };
+            return vs[LeapLevel()];
+        }
+
 
         public static int isleapyear(long year)
         {
@@ -1079,6 +1092,12 @@ namespace StarLib
             {
                 return 0;
             }
+        }
+
+        private static int LeapDays(int value)
+        {
+            int[] vs = new int[] { 0, 7, 14 };
+            return vs[isleapyear(value)];
         }
 
         public static StarDate FromGreg(int year)
@@ -1508,7 +1527,7 @@ namespace StarLib
                         switch (LeapType(year))
                         {
                             case 0:
-                                throw new Exception("Invalid Leap Year");
+                                throw new ArgumentException("Invalid Leap Year");
                             case 1:
                                 errorData = 3 * TicksPerDay + 12 * TicksPerHour;
                                 break;
@@ -1815,6 +1834,11 @@ namespace StarLib
         public StarDate AddDays(double value)
         {
             return Add(value, MillisPerDay);
+        }
+
+        public StarDate AddWeeks(double value)
+        {
+            return Add(value, MillisPerWeek);
         }
 
         // Returns the StarDate resulting from adding a fractional number of
@@ -2509,10 +2533,20 @@ namespace StarLib
             }
             set
             {
-                StarDate dt = new StarDate(Year + 1, Month, Day, Hour, Minute, Second, Millisecond, ExtraTicks);
-                this.Atomic = dt.Atomic;
+                StarDate dt;
+                try
+                {
+                    dt = new StarDate(value, Month, Day, Hour, Minute, Second, Millisecond, ExtraTicks);
+                }
+                catch (ArgumentException)
+                {
+                    dt = new StarDate(value + 1, 1, 1, Hour, Minute, Second, Millisecond, ExtraTicks);
+                }
+                this.dateData = dt.dateData;
             }
         }
+
+        
 
         // Returns the month part of this StarDate. The returned value is an
         // integer between 1 and 12.
@@ -2526,8 +2560,16 @@ namespace StarLib
             }
             set
             {
-                int diff = value - this.Month;
-                this.Atomic += diff * StarDate.month;
+                Contract.Ensures(value >= 1 && value <= 14);
+                if ((value == 14) && (HorusLength() < Day))
+                {
+                    Overflow();
+                }
+                else
+                {
+                    int diff = value - this.Month;
+                    this = this.AddMonths(diff);
+                }
             }
         }
 
@@ -2544,8 +2586,13 @@ namespace StarLib
             }
             set
             {
+                Contract.Ensures(value >= 1 && value <= (54));
+                if ((value > 52) && (value > 52 + LeapLevel()))
+                {
+                    Overflow();
+                }
                 int diff = value - this.WeekOfYear;
-                this.Atomic += diff * week;
+                this = this.AddWeeks(diff);
             }
         }
 
@@ -2562,8 +2609,28 @@ namespace StarLib
             }
             set
             {
+                Contract.Ensures(value >= 1);
+                Contract.Ensures(value <= YearLength());  // leap Year
                 int diff = value - this.DayOfYear;
-                this.Atomic += diff * StarDate.DayTime;
+                this = this.AddDays(diff);
+            }
+        }
+
+        private int YearLength()
+        {
+            return 364 + HorusLength();
+        }
+
+        private void Overflow()
+        {
+            if (StarDate.acceptoverflow)
+            {
+                this.dateData += TicksPerYear;
+                this.DayOfYear = 1;
+            }
+            else
+            {
+                throw new ArgumentException();
             }
         }
 
@@ -2581,10 +2648,17 @@ namespace StarLib
             }
             set
             {
+                Contract.Ensures(value >= 1);
+                Contract.Ensures(value <= 28);
+                if (Month == 14)
+                {
+                    Contract.Ensures(value <= HorusLength());
+                }
                 int diff = value - this.Day;
-                this.Atomic += diff * StarDate.DayTime;
+                this = this.AddDays(diff);
             }
         }
+
 
         // Returns the hour part of this StarDate. The returned value is an
         // integer between 0 and 23.
@@ -2597,7 +2671,7 @@ namespace StarLib
                 {
                     Contract.Ensures(Contract.Result<int>() >= 0);
                     Contract.Ensures(Contract.Result<int>() < 30);
-                    int h = (int)((AdjustedTicks / TicksPerHour) % 24);
+                    int h = (int)(this.TimeOfDay.Ticks / TicksPerHour);
                     if (h < 6)
                     {
                         h += 24;
@@ -2608,14 +2682,14 @@ namespace StarLib
                 {
                     Contract.Ensures(Contract.Result<int>() >= 0);
                     Contract.Ensures(Contract.Result<int>() < 24);
-                    return (int)((AdjustedTicks / TicksPerHour) % 24);
+                    return (int)(this.TimeOfDay.Ticks / TicksPerHour);
                 }
             }
             set
             {
                 int h = value;
                 int diff = h - this.Hour;
-                this.Atomic += diff * StarDate.HourTime;
+                this = AddHours(diff);
             }
         }
 
@@ -2629,13 +2703,13 @@ namespace StarLib
             {
                 Contract.Ensures(Contract.Result<int>() >= 0);
                 Contract.Ensures(Contract.Result<int>() < 60);
-                return (int)((AdjustedTicks / TicksPerMinute) % 60);
+                return (int)(this.TimeOfDay.Ticks / TicksPerMinute);
             }
             set
             {
                 int h = value;
                 int diff = h - this.Minute;
-                this.Atomic += diff * StarDate.MinuteTime;
+                this = AddMinutes(diff);
             }
         }
 
@@ -2649,12 +2723,12 @@ namespace StarLib
             {
                 Contract.Ensures(Contract.Result<int>() >= 0);
                 Contract.Ensures(Contract.Result<int>() < 60);
-                return (int)((AdjustedTicks / TicksPerSecond) % 60);
+                return (int)(this.TimeOfDay.Ticks / TicksPerSecond);
             }
             set
             {
                 int diff = value - this.Second;
-                this.Atomic += diff * StarDate.SecondTime;
+                this = AddSeconds(diff);
             }
         }
 
@@ -2669,12 +2743,12 @@ namespace StarLib
             {
                 Contract.Ensures(Contract.Result<int>() >= 0);
                 Contract.Ensures(Contract.Result<int>() < 1000);
-                return (int)((AdjustedTicks / TicksPerMillisecond) % 1000);
+                return (int)(this.TimeOfDay.Ticks / TicksPerMillisecond);
             }
             set
             {
                 int diff = value - this.Millisecond;
-                this.Atomic += diff * StarDate.MillisecondTime;
+                this = AddMilliseconds(diff);
             }
         }
 
@@ -2688,7 +2762,7 @@ namespace StarLib
             {
                 Contract.Ensures(Contract.Result<int>() >= 0);
                 Contract.Ensures(Contract.Result<int>() < 10000);
-                return (int)((AdjustedTicks % 10000));
+                return (int)(this.TimeOfDay.Ticks / 10000);
             }
             set
             {
@@ -2952,7 +3026,7 @@ namespace StarLib
             {
                 if (formats == null)
                 {
-
+                    formats = new List<string> { "yyyy-MM-dd" };
                 }
                 return formats;
             }
@@ -3135,14 +3209,42 @@ namespace StarLib
         //I don't know what these methods do and whether to replicate them
         public static Boolean TryParse(String s, string format, out StarDate result)
         {
+            if (format == "yyyy-MM-dd")
+            {
+                return FastDateParse(s, out result);
+            }
+            else
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        private static bool FastDateParse(string s, out StarDate result)
+        {
+            //fast parsing method for yyyy-MM-dd format
+            string[] values = s.Split('-');
+            int[] dateparts = new int[] { PlaceHolder, PlaceHolder, PlaceHolder };
+            int i = 0;
+            while (i < 3)
+            {
+                try
+                {
+                    dateparts[i] = int.Parse(values[i]);
+                }
+                catch (IndexOutOfRangeException)
+                {
+
+                }
+                i++;
+            }
             try
             {
-                result = StarDate.Parse(s);
+                result = new StarDate(dateparts[0], dateparts[1], dateparts[2]);
                 return true;
             }
             catch (Exception)
             {
-                result = StarDate.Manu;
+                result = default;
                 return false;
             }
         }
@@ -3364,6 +3466,11 @@ namespace StarLib
             throw new NotImplementedException();
         }
 
+        public static bool TryParse(string value, CultureInfo invariantCulture, string dateFormat, out StarDate parsed)
+        {
+            throw new NotImplementedException();
+        }
+
         /// <summary>
         /// Operators
         /// </summary>
@@ -3459,6 +3566,11 @@ namespace StarLib
         public static StarDate operator --(StarDate dt)
         {
             return dt - DayTime;
+        }
+
+        public static implicit operator StarDate(string s)
+        {
+            return Parse(s);
         }
 
         public static implicit operator DateTime(StarDate dt)

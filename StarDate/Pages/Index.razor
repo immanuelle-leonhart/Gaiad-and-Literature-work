@@ -6,13 +6,17 @@ Welcome to your new app.
 
 <SurveyPrompt Title="How is Blazor working for you?" />
 
-<StarBlaze.StarCalendar.Calendar />
+
+
+@*@bind-Value ="dt"*@
 
 
 
 <EditForm Model="@date" OnValidSubmit="HandleValidSubmit">
     <DataAnnotationsValidator />
     <ValidationSummary />
+
+    <InputStarDate @bind-Value="dt" />
 
     <InputDate @bind-Value="date" />
 
