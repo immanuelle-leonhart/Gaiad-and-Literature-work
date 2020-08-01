@@ -1,47 +1,14 @@
-﻿@*@inherits InputStarDateBase<StarLib.StarDate>*@
+﻿@using StarLib
+@inherits InputStarDateBase
 
 
 
 @code {
+
     public int Day { get => sdt.Day; set => sdt.Day = value; }
     public int Month { get => sdt.Month; set => sdt.Month = value; }
     public int Year { get => sdt.Year; set => sdt.Year = value; }
-    public int MonthDays
-    {
-        get
-        {
-            if (Month == 14)
-            {
-                return sdt.HorusLength();
-            }
-            else
-            {
-                return 28;
-            }
-        }
-    }
-    public int YearMonths
-    {
-        get
-        {
-            if (sdt.isleapyear())
-            {
-                return 14;
-            }
-            else
-            {
-                return 13;
-            }
-        }
-    }
-    public StarLib.StarDate sdt;
 
-    public string[] Months { get; set; } = StarLib.StarCulture.CurrentCulture.GetMonthList();
-
-    protected override void OnInitialized()
-    {
-        sdt = StarLib.StarDate.Now;
-    }
 }
 
 <select @bind="Day">

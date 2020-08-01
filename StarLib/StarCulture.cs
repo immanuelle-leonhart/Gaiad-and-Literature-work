@@ -2891,7 +2891,6 @@ namespace StarLib
         //[NonSerialized]
         private string NumberDecimalSeparator = ".";
         private string[] LatinGenitives = new string[] { "Sagittarii", "Capricorni", "Aquarii", "Piscium", "Arietis", "Tauri", "Geminorum", "Karkinii", "Leonis", "Virginis", "Librae", "Scorpii", "Ophiuchi", "Horii" };
-        private static Dictionary<string, CultureInfo> localIsoDict;
 
         internal int GetDayOfMonth(StarDate starDate)
         {

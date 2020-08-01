@@ -1,6 +1,7 @@
 ﻿using StarLib;
-using StarLibRazor;
+//using StarLibRazor;
 using System;
+using System.Collections.Generic;
 
 namespace TestConsole
 {
@@ -8,9 +9,11 @@ namespace TestConsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.Write(StarDate.Now);
-            Console.WriteLine(CalendarBase.test);
+            StarDate dt = StarDate.Now.Date;
+            Console.WriteLine(dt);
+            string s = dt.QuickString();
+            Console.WriteLine(s);
+            Console.WriteLine(StarDate.fromQuickString(s));
         }
     }
 }
