@@ -2563,7 +2563,8 @@ namespace StarLib
                 Contract.Ensures(value >= 1 && value <= 14);
                 if ((value == 14) && (HorusLength() < Day))
                 {
-                    Overflow();
+                    this.DayOfYear = 1;
+                    this.Year++;
                 }
                 else
                 {
@@ -2587,10 +2588,6 @@ namespace StarLib
             set
             {
                 Contract.Ensures(value >= 1 && value <= (54));
-                if ((value > 52) && (value > 52 + LeapLevel()))
-                {
-                    Overflow();
-                }
                 int diff = value - this.WeekOfYear;
                 this = this.AddWeeks(diff);
             }
@@ -3608,6 +3605,35 @@ namespace StarLib
         public static implicit operator StarDate(DateTime v)
         {
             return new StarDate(v);
+        }
+
+        /// <summary>
+        /// Quick String for importing and exporting
+        /// </summary>
+        /// <returns></returns>
+
+        public string QuickString()
+        {
+            return this.dateData + "/" + this.errorData + "/" + this._timeZone.Id;
+        }
+
+        public static StarDate fromQuickString(string data)
+        {
+            string[] vs = data.Split('/');
+            if (vs.Length > 3)
+            {
+                string v = "";
+                int i = 2;
+                while (i < vs.Length)
+                {
+                    v += vs[i++];
+                }
+                vs = new string[] { vs[0], vs[1], v };
+            }
+            BigInteger dateData = BigInteger.Parse(vs[0]);
+            BigInteger errorData = BigInteger.Parse(vs[1]);
+            StarZone zone = StarZone.FindSystemTimeZoneById(vs[2]);
+            return new StarDate(dateData, errorData, zone);
         }
 
     }

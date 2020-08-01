@@ -69,13 +69,13 @@ namespace StarLib
         public static StarZone Unspecified = new StarZone(TimeZoneInfo.Utc, "Unspecified");
         private TimeZoneInfo tz = TimeZoneInfo.Utc;
         private Time UTCOffset = new Time(0);
-        private string displayName = "Default TimeZone PlanetName";
+        private string id = "Default TimeZone PlanetName";
         //private int order;
 
         public StarZone(TimeZoneInfo tz)
         {
             this.tz = tz;
-            this.displayName = tz.DisplayName;
+            this.id = tz.DisplayName;
             this.StarName = "Amaterasu";
             this.PlanetName = "Terra";
         }
@@ -117,11 +117,11 @@ namespace StarLib
         {
             get
             {
-                if (this.displayName == null) { return this.displayName; }
+                if (this.id == null) { return this.id; }
                 else if (this.IsTerran) { return tz.DisplayName; }
                 else
                 {
-                    return this.displayName;
+                    return this.id;
                 }
             }
         }
@@ -133,7 +133,7 @@ namespace StarLib
                 if (this.IsTerran) { return tz.StandardName; }
                 else
                 {
-                    return this.displayName;
+                    return this.id;
                 }
             }
         }
@@ -169,9 +169,9 @@ namespace StarLib
             }
         }
 
-        internal static StarZone FindSystemTimeZoneById(string v)
+        public static StarZone FindSystemTimeZoneById(string v)
         {
-            return (StarZone)TimeZoneInfo.FindSystemTimeZoneById(v);
+            return SystemTimeZonesByID[v];
         }
 
         public static explicit operator StarZone(TimeZoneInfo v)
@@ -430,17 +430,17 @@ namespace StarLib
         //static public StarZone CreateCustomTimeZone(
         //        String id,
         //        TimeSpan BaseUtcOffset,
-        //        String displayName)
+        //        String id)
         //{
-        //    return CreateCustomTimeZone(id, BaseUtcOffset, displayName, displayName);
+        //    return CreateCustomTimeZone(id, BaseUtcOffset, id, id);
         //}
 
         //static public StarZone CreateCustomTimeZone(
         //        String id,
         //        Time BaseUtcOffset,
-        //        String displayName)
+        //        String id)
         //{
-        //    return CreateCustomTimeZone(id, BaseUtcOffset.TimeSpan, displayName, displayName);
+        //    return CreateCustomTimeZone(id, BaseUtcOffset.TimeSpan, id, id);
         //}
 
         //public static StarZone CreateCustomTimeZone(string id, Time t, string displayname, string standard)
@@ -451,14 +451,14 @@ namespace StarLib
         //static public StarZone CreateCustomTimeZone(
         //        String id,
         //        TimeSpan BaseUtcOffset,
-        //        String displayName,
+        //        String id,
         //          String standardDisplayName)
         //{
 
         //    TimeZoneInfo tz = TimeZoneInfo.CreateCustomTimeZone(
         //                   id,
         //                   BaseUtcOffset,
-        //                   displayName,
+        //                   id,
         //                   standardDisplayName,
         //                   standardDisplayName,
         //                   null,
@@ -477,7 +477,7 @@ namespace StarLib
         //static public StarZone CreateCustomTimeZone(
         //        String id,
         //        TimeSpan BaseUtcOffset,
-        //        String displayName,
+        //        String id,
         //        String standardDisplayName,
         //        String daylightDisplayName,
         //        TimeZoneInfo.AdjustmentRule[] adjustmentRules)
@@ -486,7 +486,7 @@ namespace StarLib
         //    TimeZoneInfo tz = TimeZoneInfo.CreateCustomTimeZone(
         //                   id,
         //                   BaseUtcOffset,
-        //                   displayName,
+        //                   id,
         //                   standardDisplayName,
         //                   daylightDisplayName,
         //                   adjustmentRules,
@@ -506,7 +506,7 @@ namespace StarLib
         //static public StarZone CreateCustomTimeZone(
         //        String id,
         //        TimeSpan BaseUtcOffset,
-        //        String displayName,
+        //        String id,
         //        String standardDisplayName,
         //        String daylightDisplayName,
         //        TimeZoneInfo.AdjustmentRule[] adjustmentRules,
@@ -516,7 +516,7 @@ namespace StarLib
         //    TimeZoneInfo tz = TimeZoneInfo.CreateCustomTimeZone(
         //                    id,
         //                    BaseUtcOffset,
-        //                    displayName,
+        //                    id,
         //                    standardDisplayName,
         //                    daylightDisplayName,
         //                    adjustmentRules,
@@ -533,9 +533,9 @@ namespace StarLib
             return dt.offset;
         }
 
-        public StarZone(string Name, Time LocalDay)
+        public StarZone(string id, Time LocalDay)
         {
-            this.PlanetName = Name;
+            this.id = id;
             this.LocalDay = LocalDay;
             //this.Sun = Sun;
         }
@@ -640,9 +640,9 @@ namespace StarLib
             this.StarName = name;
         }
 
-        //public StarZone(string Name, Time LocalDay, string displayName, string standardDisplayName, string daylightDisplayName, AdjustmentRule[] adjustmentRules, bool v) : this(Name, LocalDay)
+        //public StarZone(string Name, Time LocalDay, string id, string standardDisplayName, string daylightDisplayName, AdjustmentRule[] adjustmentRules, bool v) : this(Name, LocalDay)
         //{
-        //    this.displayName = displayName;
+        //    this.id = id;
         //    this.standardDisplayName = standardDisplayName;
         //    this.daylightDisplayName = daylightDisplayName;
         //    this.adjustmentRules = adjustmentRules;
@@ -723,112 +723,15 @@ namespace StarLib
         private const long c_TicksPerHour = c_TicksPerMinute * 60;
         private const long c_TicksPerDay = c_TicksPerHour * 24;
         private const long c_TicksPerDayRange = c_TicksPerDay - c_TicksPerMillisecond;
-
-
-        //private StarZone CreateUtc()
-        //{
-        //    lock (this)
-        //    {
-        //        StarZone timeZone = UTC;
-        //        if (timeZone == null)
-        //        {
-        //            timeZone = CreateCustomTimeZone(c_utcId, Time.Zero, c_utcId, c_utcId);
-        //            UTC = timeZone;
-        //        }
-        //        return timeZone;
-        //    }
-        //}
-
-        //public StarZone Utc
-        //{
-        //    get
-        //    {
-        //        Contract.Ensures(Contract.Result<StarZone>() != null);
-
-        //        StarZone timeZone = UTC;
-        //        if (timeZone == null)
-        //        {
-        //            timeZone = CreateUtc();
-        //        }
-        //        return timeZone;
-        //    }
-        //}
-
-        //
-        // GetCorrespondingKind-
-        //
-        // Helper function that returns the corresponding DateTimeKind for this StarZone
-        //
-
-        //public void GetObjectData(SerializationInfo info, StreamingContext context)
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-        //public void OnDeserialization(object sender)
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-        //#if FEATURE_WIN32_REGISTRY
-        //            public Dictionary<string, StarZone> m_systemTimeZones;
-        //            public ReadOnlyCollection<StarZone> m_readOnlySystemTimeZones;
-        //            public bool m_allSystemTimeZonesRead;
-
-        //            [System.Security.SecuritySafeCritical]
-        //            private static StarZone GetCurrentOneYearLocal() {
-        //                // load the data from the OS
-        //                StarZone match;
-
-        //                Win32Native.StarZonermation StarZonermation = new Win32Native.StarZonermation();
-        //                long result = UnsafeNativeMethods.GetStarZonermation(out StarZonermation);
-        //                if (result == Win32Native.TIME_ZONE_ID_INVALID)
-        //                    match = CreateCustomTimeZone(c_localId, Time.Zero, c_localId, c_localId);
-        //                else
-        //                    match = GetLocalTimeZoneFromWin32Data(StarZonermation, false);               
-        //                return match;
-        //            }
-
-        //            private volatile OffsetAndRule m_oneYearLocalFromUtc;
-
-        //            public OffsetAndRule GetOneYearLocalFromUtc(int Year) {
-        //                OffsetAndRule oneYearLocFromUtc = m_oneYearLocalFromUtc;
-        //                if (oneYearLocFromUtc == null || oneYearLocFromUtc.Year != Year) {
-        //                    StarZone currentYear = GetCurrentOneYearLocal();
-        //                    AdjustmentRule rule = currentYear.m_adjustmentRules == null ? null : currentYear.m_adjustmentRules[0];
-        //                    oneYearLocFromUtc = new OffsetAndRule(Year, currentYear.BaseUtcOffset, rule);
-        //                    m_oneYearLocalFromUtc = oneYearLocFromUtc;
-        //                }
-        //                return oneYearLocFromUtc;
-        //            }
-
-        ////#endif // FEATURE_WIN32_REGISTRY
-        ////    };
-        ////#pragma warning restore 0420
-
-        //static CachedData s_cachedData = new CachedData();
-
-        //private class OffsetAndRule
-        //{
-        //    public int year;
-        //    public Time offset;
-        //    public AdjustmentRule rule;
-        //    public OffsetAndRule(int year, Time offset, AdjustmentRule rule)
-        //    {
-        //        this.year = year;
-        //        this.offset = offset;
-        //        this.rule = rule;
-        //    }
-        //}
-
-        //private Time BaseUtcOffset;
-        private string standardDisplayName;
-        private string daylightDisplayName;
         private Time basicUTCOffset;
+        private Time baseDistance;
         internal static bool NoThrowOnInvalidTime = true;
         private bool isMartian;
         private static StarZone[] martianTimeZones;
         private static StarZone[] _sys_zones;
+        private static Dictionary<string, StarZone> systemTimeZonesByID;
+        private static StarZone[] spaceTimeZones;
+        private static StarZone[] starSystems;
 
         // ---- SECTION: public properties --------------*
 
@@ -839,7 +742,7 @@ namespace StarLib
                 if (this.IsTerran) { return tz.Id; }
                 else
                 {
-                    return this.displayName;
+                    return this.id;
                 }
             }
         }
@@ -872,8 +775,126 @@ namespace StarLib
             //}
         }
 
+        public static StarZone[] StarSystems
+        {
+            get
+            {
+                if (starSystems == null)
+                {
+                    starSystems = new StarZone[]
+                    {
+                        StarSystem("Proxima Centauri", 4.2441),
+                        StarSystem("α Centauri A", 4.3650),
+                        StarSystem("α Centauri B", 4.3650),
+                        StarSystem("Barnard's Star", 5.9577),
+                        StarSystem("Luhman 16A", 6.5029),
+                        StarSystem("Luhman 16B", 6.5029),
+                        StarSystem("WISE 0855−0714", 7.26),
+                        StarSystem("Wolf 359 (CN Leonis)", 7.856),
+                        StarSystem("Lalande 21185", 8.307),
+                        StarSystem("Sirius A", 8.659),
+                        StarSystem("Sirius B", 8.659),
+                        StarSystem("Proxima Centauri Inverse", 4.2441),
+                        StarSystem("α Centauri A Inverse", 4.3650),
+                        StarSystem("α Centauri B Inverse", 4.3650),
+                        StarSystem("Barnard's Star Inverse", 5.9577),
+                        StarSystem("Luhman 16A Inverse", 6.5029),
+                        StarSystem("Luhman 16B Inverse", 6.5029),
+                        StarSystem("WISE 0855−0714 Inverse", 7.26),
+                        StarSystem("Wolf 359 (CN Leonis) Inverse", 7.856),
+                        StarSystem("Lalande 21185 Inverse", 8.307),
+                        StarSystem("Sirius A Inverse", 8.659),
+                        StarSystem("Sirius B Inverse", 8.659),
+                    };
+                }
+                return starSystems;
+            }
+        }
 
-        public bool IsMartian { get => isMartian; private set => isMartian = value; }
+        private static StarZone StarSystem(string id, double distance)
+        {
+            string star = id;
+            //int off = 0;
+            Time LocalDay = StarDate.DayTime;
+            Time Offset = new Time(0);
+            if (id.Contains("Inverse"))
+            {
+                int i = id.IndexOf(" Inverse");
+                Offset = LocalDay / 2;
+                star = id.Substring(0, i + 1);
+            }
+            string planet = "None";
+            Time Distance = distance * StarDate.AverageYear;
+            StarZone zone = new StarZone(id, LocalDay);
+            zone.StarName = star;
+            zone.basicUTCOffset = Offset;
+            zone.baseDistance = Distance;
+            zone.PlanetName = planet;
+            return zone;
+        }
+
+        public bool IsMartian { get => PlanetName == "Mars"; }
+        public static StarZone[] SpaceTimeZones
+        {
+            get
+            {
+                if (spaceTimeZones == null)
+                {
+                    spaceTimeZones = new StarZone[]
+                    {
+                        SpaceTimeZone("Luna"),
+                        SpaceTimeZone("Luna Inverse"),
+                        SpaceTimeZone("Venus"),
+                        SpaceTimeZone("Venus Inverse"),
+                        SpaceTimeZone("Mercury"),
+                        SpaceTimeZone("Mercury Inverse"),
+                        SpaceTimeZone("Belt"),
+                        SpaceTimeZone("Belt Inverse"),
+                        SpaceTimeZone("Ceres"),
+                        SpaceTimeZone("Ceres Inverse"),
+                        SpaceTimeZone("Jupiter"),
+                        SpaceTimeZone("Jupiter Inverse"),
+                        SpaceTimeZone("Io"),
+                        SpaceTimeZone("Io Inverse"),
+                        SpaceTimeZone("Europa"),
+                        SpaceTimeZone("Europa Inverse"),
+                        SpaceTimeZone("Ganymede"),
+                        SpaceTimeZone("Ganymede Inverse"),
+                        SpaceTimeZone("Callisto"),
+                        SpaceTimeZone("Callisto Inverse"),
+                        SpaceTimeZone("Titan"),
+                        SpaceTimeZone("Titan Inverse"),
+                        SpaceTimeZone("Uranus"),
+                        SpaceTimeZone("Uranus Inverse"),
+                        SpaceTimeZone("Titania"),
+                        SpaceTimeZone("Titania Inverse"),
+                        SpaceTimeZone("Neptune"),
+                        SpaceTimeZone("Neptune Inverse"),
+                        SpaceTimeZone("Triton"),
+                        SpaceTimeZone("Triton Inverse"),
+                        SpaceTimeZone("Pluto"),
+                        SpaceTimeZone("Pluto Inverse"),
+                        SpaceTimeZone("Eris"),
+                        SpaceTimeZone("Eris Inverse"),
+                    };
+                }
+                return spaceTimeZones;
+            }
+        }
+
+        private static StarZone SpaceTimeZone(string id)
+        {
+            string planet = id;
+            int off = 0;
+            if (id.Contains("Inverse"))
+            {
+                string[] vs = id.Split(' ');
+                planet = vs[0];
+                off = 12;
+            }
+            return new StarZone(id, StarDate.HourTime * off, planet, StarDate.DayTime, "Amaterasu");
+        }
+
         public static StarZone[] MartianTimeZones
         {
             get
@@ -913,9 +934,9 @@ namespace StarLib
 
         }
 
-        private static StarZone MartianZone(double v1, string v2)
+        private static StarZone MartianZone(double offset, string id)
         {
-            return new StarZone(v2, StarDate.HourTime * v1, "Mars", StarDate.Sol, "Amaterasu");
+            return new StarZone(id, StarDate.HourTime * offset, "Mars", StarDate.Sol, "Amaterasu");
         }
 
         public static StarZone[] SystemTimeZones
@@ -924,25 +945,7 @@ namespace StarLib
             {
                 if (_sys_zones == null)
                 {
-                    var t = TimeZoneInfo.GetSystemTimeZones();
-                    List<StarZone> z = new List<StarZone>();
-                    int i = 0;
-                    while (i < t.Count)
-                    {
-                        z.Add((StarZone)t[i]);
-                        i++;
-                    }
-                    foreach (StarZone entry in MartianTimeZones)
-                    {
-                        z.Add(entry);
-                    }
-                    _sys_zones = new StarZone[z.Count];
-                    i = 0;
-                    while (i < _sys_zones.Length)
-                    {
-                        _sys_zones[i] = z[i];
-                        i++;
-                    }
+                    ImportSystemStarZones();
                 }
                 return _sys_zones;
             }
@@ -950,6 +953,58 @@ namespace StarLib
             private set
             {
                 _sys_zones = value;
+            }
+        }
+
+        public static Dictionary<string, StarZone> SystemTimeZonesByID
+        {
+            get
+            {
+                if(systemTimeZonesByID == null)
+                {
+                    ImportSystemStarZones();
+                }
+                return systemTimeZonesByID;
+            }
+
+            private set
+            {
+                systemTimeZonesByID = value;
+            }
+        }
+
+
+        private static void ImportSystemStarZones()
+        {
+            var t = TimeZoneInfo.GetSystemTimeZones();
+            List<StarZone> z = new List<StarZone>();
+            int i = 0;
+            while (i < t.Count)
+            {
+                z.Add((StarZone)t[i]);
+                i++;
+            }
+            foreach (StarZone entry in MartianTimeZones)
+            {
+                z.Add(entry);
+            }
+            foreach (StarZone entry in SpaceTimeZones)
+            {
+                z.Add(entry);
+            }
+            foreach (StarZone entry in StarSystems)
+            {
+                z.Add(entry);
+            }
+            _sys_zones = new StarZone[z.Count];
+            systemTimeZonesByID = new Dictionary<string, StarZone>();
+            i = 0;
+            while (i < _sys_zones.Length)
+            {
+                //Console.WriteLine(z[i]);
+                _sys_zones[i] = z[i];
+                systemTimeZonesByID.Add(z[i].Id, z[i]);
+                i++;
             }
         }
 
@@ -1026,6 +1081,17 @@ namespace StarLib
             return (Time)tz.GetUtcOffset(StarDate.DateTime);
         }
 
+        //
+        // ToString -
+        //
+        // returns the DisplayName: 
+        // "(GMT-08:00) Pacific Time (US & Canada); Tijuana"
+        //
+        public override string ToString()
+        {
+            return this.ToString(4);
+        }
+
 
         public string ToString(int tokenLen)
         {
@@ -1088,11 +1154,11 @@ namespace StarLib
                 }
                 else if (IsMartian)
                 {
-                    return "(MTC" + sig[sign] + hour + min + ") " + this.displayName;
+                    return "(MTC" + sig[sign] + hour + min + ") " + this.id;
                 }
                 else if (!IsTerran)
                 {
-                    return "(" + this.PlanetName[0] + "TC" + sig[sign] + hour + min + ") " + this.displayName;
+                    return "(" + this.PlanetName[0] + "TC" + sig[sign] + hour + min + ") " + this.id;
                 }
             }
 
@@ -1348,7 +1414,7 @@ namespace StarLib
         {
             return (tz.Equals(other.tz)) && (PlanetName == other.PlanetName) && (LocalDay == other.LocalDay) && (Order == other.Order) && (start == other.start) && (speeds == other.speeds)
                 && (distanceTicks == other.distanceTicks) && (polar == other.polar) && (azimuthal == other.azimuthal) && (StarName == other.StarName)
-                && (BaseUtcOffset == other.BaseUtcOffset) && (displayName == other.displayName);
+                && (BaseUtcOffset == other.BaseUtcOffset) && (id == other.id);
             //return (other != null && String.Compare(this.m_id, other.m_id, StringComparison.OrdinalIgnoreCase) == 0 && HasSameRules(other));
         }
 
@@ -1507,23 +1573,8 @@ namespace StarLib
         }
 
 
-        //
-        // ToString -
-        //
-        // returns the DisplayName: 
-        // "(GMT-08:00) Pacific Time (US & Canada); Tijuana"
-        //
-        public override string ToString()
-        {
-            return this.ToString(5);
-        }
+        
 
-
-        //
-        // Utc -
-        //
-        // returns a StarZone instance that represents Universal Coordinated Time (UTC)
-        //
 
 
 
@@ -1570,7 +1621,7 @@ namespace StarLib
         //private StarZone(
         //        String id,
         //        Time BaseUtcOffset,
-        //        String displayName,
+        //        String id,
         //        String standardDisplayName,
         //        String daylightDisplayName,
         //        AdjustmentRule[] adjustmentRules,
@@ -1587,7 +1638,7 @@ namespace StarLib
 
         //    m_id = id;
         //    BaseUtcOffset = BaseUtcOffset;
-        //    m_displayName = displayName;
+        //    m_displayName = id;
         //    m_standardDisplayName = standardDisplayName;
         //    m_daylightDisplayName = (disableDaylightSavingTime ? null : daylightDisplayName);
         //    m_supportsDaylightSavingTime = adjustmentRulesSupportDst && !disableDaylightSavingTime;
@@ -1604,7 +1655,7 @@ namespace StarLib
         //static public StarZone CreateCustomTimeZone(
         //        String id,
         //        Time BaseUtcOffset,
-        //        String displayName,
+        //        String id,
         //        String standardDisplayName,
         //        String daylightDisplayName,
         //        AdjustmentRule[] adjustmentRules)
@@ -1613,7 +1664,7 @@ namespace StarLib
         //    return new StarZone(
         //                   id,
         //                   BaseUtcOffset,
-        //                   displayName,
+        //                   id,
         //                   standardDisplayName,
         //                   daylightDisplayName,
         //                   adjustmentRules,
@@ -1633,7 +1684,7 @@ namespace StarLib
         //static public StarZone CreateCustomTimeZone(
         //        String id,
         //        Time BaseUtcOffset,
-        //        String displayName,
+        //        String id,
         //        String standardDisplayName,
         //        String daylightDisplayName,
         //        AdjustmentRule[] adjustmentRules,
@@ -1643,7 +1694,7 @@ namespace StarLib
         //    return new StarZone(
         //                    id,
         //                    BaseUtcOffset,
-        //                    displayName,
+        //                    id,
         //                    standardDisplayName,
         //                    daylightDisplayName,
         //                    adjustmentRules,
@@ -2006,14 +2057,14 @@ namespace StarLib
 
             //    String id = s.GetNextStringValue(false);
             //    Time BaseUtcOffset = s.GetNextTimeValue(false);
-            //    String displayName = s.GetNextStringValue(false);
+            //    String id = s.GetNextStringValue(false);
             //    String standardName = s.GetNextStringValue(false);
             //    String daylightName = s.GetNextStringValue(false);
             //    AdjustmentRule[] rules = s.GetNextAdjustmentRuleArrayValue(false);
 
             //    try
             //    {
-            //        return StarZone.CreateCustomTimeZone(id, BaseUtcOffset, displayName, standardName, daylightName, rules);
+            //        return StarZone.CreateCustomTimeZone(id, BaseUtcOffset, id, standardName, daylightName, rules);
             //    }
             //    catch (ArgumentException)
             //    {
@@ -2656,7 +2707,7 @@ namespace StarLib
 
 
 
-        public StarZone(string Name, Time Off, string planet, Time LocalDay, string star) : this(Name, LocalDay)
+        public StarZone(string id, Time Off, string planet, Time LocalDay, string star) : this(id, LocalDay)
         {
             this.PlanetName = planet;
             this.LocalDay = LocalDay;
@@ -2671,7 +2722,8 @@ namespace StarLib
 
         public StarZone(TimeZoneInfo tz, string v1) : this(tz)
         {
-            this.displayName = v1;
+            this.id = v1;
         }
+
     }
 } // StarZone
