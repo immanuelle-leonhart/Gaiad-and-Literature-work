@@ -12,7 +12,7 @@ namespace StarBlaze.Pages
     public class InputStarDateBase : InputBase<StarDate>
     {
 
-        [Parameter] public new StarLib.StarDate Value { get => sdt; set => sdt = value; }
+        //[Parameter] public new StarLib.StarDate Value { get => sdt; set => sdt = value; }
         
         public int MonthDays
         {
