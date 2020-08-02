@@ -20,7 +20,7 @@ namespace StarBlaze.Pages
             {
                 if (Value.Month == 14)
                 {
-                    return sdt.HorusLength();
+                    return Value.HorusLength();
                 }
                 else
                 {
@@ -32,7 +32,7 @@ namespace StarBlaze.Pages
         {
             get
             {
-                if (sdt.isleapyear())
+                if (Value.isleapyear())
                 {
                     return 14;
                 }
@@ -42,17 +42,16 @@ namespace StarBlaze.Pages
                 }
             }
         }
-        public StarLib.StarDate sdt;
 
         public string[] Months { get; set; } = StarLib.StarCulture.CurrentCulture.GetMonthList();
 
         protected override void OnInitialized()
         {
-            sdt = StarLib.StarDate.Now;
+            Value = StarLib.StarDate.Now;
         }
 
         /// <inheritdoc />
-        protected override bool TryParseValueFromString(string? value, [MaybeNull] out StarDate result, [NotNullWhen(false)] out string? validationErrorMessage)
+        protected override bool TryParseValueFromString(string value, [MaybeNull] out StarDate result, [NotNullWhen(false)] out string validationErrorMessage)
         {
             // Unwrap nullable types. We don't have to deal with receiving empty values for nullable
             // types here, because the underlying InputBase already covers that.
@@ -80,6 +79,34 @@ namespace StarBlaze.Pages
             else
             {
                 return value.QuickString();
+            }
+        }
+
+        public int Day
+        {
+            get => Value.Day; set
+            {
+                StarDate dt = Value;
+                dt.Day = value;
+                Value = dt;
+            }
+        }
+        public int Month
+        {
+            get => Value.Month; set
+            {
+                StarDate dt = Value;
+                dt.Month = value;
+                Value = dt;
+            }
+        }
+        public int Year
+        {
+            get => Value.Year; set
+            {
+                StarDate dt = Value;
+                dt.Year = value;
+                Value = dt;
             }
         }
     }

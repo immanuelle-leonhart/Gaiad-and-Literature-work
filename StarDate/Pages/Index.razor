@@ -12,7 +12,7 @@ Welcome to your new app.
 
 
 
-<EditForm Model="@date" OnValidSubmit="HandleValidSubmit">
+<EditForm Model="@dt" OnValidSubmit="HandleValidSubmit">
     <DataAnnotationsValidator />
     <ValidationSummary />
 
@@ -23,14 +23,15 @@ Welcome to your new app.
     <button type="submit">Submit</button>
 </EditForm>
 
-@dt
+@dt.ToShortString()
+@dt.ToLongString()
 
 
 
 @code{
-    StarLib.StarDate dt;
-    DateTime date;
-    string CurrentValue;
+    StarLib.StarDate dt = StarLib.StarDate.Now;
+    //DateTime date;
+    //string CurrentValue;
 
     private void HandleValidSubmit()
     {
