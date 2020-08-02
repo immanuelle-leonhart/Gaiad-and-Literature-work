@@ -1,7 +1,7 @@
 ﻿# Cosmic Calendar
  The Cosmic Calendar of the Order of Life
  Github Repository https://www.github.com/siliconprophet/CosmicCalendar/
- Nuget Package https://www.nuget.org/packages/CosmicCalendar/1.0.0
+ Nuget Package https://www.nuget.org/packages/StarDate
  
  This is the Celestial Calendar. The Calendar used in the Gaiad. The Celestial Calendar is a sidereal leap week calendar. The new year is defined based on the Earth crossing between Sagittarius A* (called Chiron in the Gaiad) and the sun
 
