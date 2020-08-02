@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "rnoB5rQRYnR8R2AhCC98b9khnZFv8xuf37QP7cmXzH7yy0jhj38gTF81wVyKRMtrRNO71We31spKN6sBLLgnmA==",
+  "dgSpecHash": "IQfSAOHWqUhFSUvf7jMK5u2xGVPNbp6w0s0VrmOdlF9BjEyTMirCm4b9EjNgkAkjuvcf6eT7481bWY6rhprS7g==",
   "success": true,
   "projectFilePath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate\\StarDate\\StarBlaze.csproj",
   "expectedPackageFiles": [
@@ -95,8 +95,7 @@
     "C:\\Users\\SiliconProphet\\.nuget\\packages\\system.threading.tasks.extensions\\4.3.0\\system.threading.tasks.extensions.4.3.0.nupkg.sha512",
     "C:\\Users\\SiliconProphet\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\SiliconProphet\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\SiliconProphet\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\SiliconProphet\\.nuget\\packages\\stardate\\1.0.3\\stardate.1.0.3.nupkg.sha512"
+    "C:\\Users\\SiliconProphet\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }
