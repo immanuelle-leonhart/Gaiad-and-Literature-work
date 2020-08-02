@@ -3656,5 +3656,29 @@ namespace StarLib
             }
             return ToString(format);
         }
+
+        public int GetMonthDays()
+        {
+            if (Month == 14)
+            {
+                return HorusLength();
+            }
+            else
+            {
+                return 28;
+            }
+        }
+
+        public int GetYearMonths()
+        {
+            if (isleapyear())
+            {
+                return 14;
+            }
+            else
+            {
+                return 13;
+            }
+        }
     }
 }

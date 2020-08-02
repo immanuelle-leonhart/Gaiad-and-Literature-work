@@ -11,6 +11,11 @@ namespace StarLib.Forms
 {
     public class InputStarDateBase : InputBase<StarDate>
     {
+        private int day;
+        private int month;
+        private int year;
+        private int monthDays;
+        private int yearMonths;
 
         //[Parameter] public new StarLib.StarDate Value { get => sdt; set => sdt = value; }
 
@@ -18,28 +23,14 @@ namespace StarLib.Forms
         {
             get
             {
-                if (Value.Month == 14)
-                {
-                    return Value.HorusLength();
-                }
-                else
-                {
-                    return 28;
-                }
+                return monthDays;
             }
         }
         public int YearMonths
         {
             get
             {
-                if (Value.isleapyear())
-                {
-                    return 14;
-                }
-                else
-                {
-                    return 13;
-                }
+                return yearMonths;
             }
         }
 
@@ -48,6 +39,11 @@ namespace StarLib.Forms
         protected override void OnInitialized()
         {
             Value = StarLib.StarDate.Now;
+            year = Value.Year;
+            month = Value.Month;
+            day = Value.Day;
+            monthDays = Value.GetMonthDays();
+            yearMonths = Value.GetYearMonths();
         }
 
         /// <inheritdoc />
@@ -84,29 +80,44 @@ namespace StarLib.Forms
 
         public int Day
         {
-            get => Value.Day; set
+            get => day; set
             {
                 StarDate dt = Value;
                 dt.Day = value;
                 Value = dt;
+                year = Value.Year;
+                month = Value.Month;
+                day = Value.Day;
+                monthDays = Value.GetMonthDays();
+                yearMonths = Value.GetYearMonths();
             }
         }
         public int Month
         {
-            get => Value.Month; set
+            get => month; set
             {
                 StarDate dt = Value;
                 dt.Month = value;
                 Value = dt;
+                year = Value.Year;
+                month = Value.Month;
+                day = Value.Day;
+                monthDays = Value.GetMonthDays();
+                yearMonths = Value.GetYearMonths();
             }
         }
         public int Year
         {
-            get => Value.Year; set
+            get => year; set
             {
                 StarDate dt = Value;
                 dt.Year = value;
                 Value = dt;
+                year = Value.Year;
+                month = Value.Month;
+                day = Value.Day;
+                monthDays = Value.GetMonthDays();
+                yearMonths = Value.GetYearMonths();
             }
         }
     }
