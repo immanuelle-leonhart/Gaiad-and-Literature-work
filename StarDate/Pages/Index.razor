@@ -1,40 +1,18 @@
 ﻿@page "/"
+@using StarLibForms; 
+@using StarLib;
 
 <h1>Hello, world!</h1>
 
 Welcome to your new app.
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+<StarLib.Forms.Converter />
 
 
 
-@*@bind-Value ="dt"*@
-
-
-
-<EditForm Model="@dt" OnValidSubmit="HandleValidSubmit">
-    <DataAnnotationsValidator />
-    <ValidationSummary />
-
-    <InputStarDate @bind-Value="dt" />
-
-    @*<InputDate @bind-Value="date" />*@
-
-    <button type="submit">Submit</button>
-</EditForm>
-
-@dt.ToShortString()
-@dt.ToLongString()
 
 
 
 @code{
-    StarLib.StarDate dt = StarLib.StarDate.Now;
-    //DateTime date;
-    //string CurrentValue;
 
-    private void HandleValidSubmit()
-    {
-        Console.WriteLine("OnValidSubmit");
-    }
 }

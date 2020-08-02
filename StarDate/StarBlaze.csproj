@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\StarLibForms\StarLibForms.csproj" />
     <ProjectReference Include="..\StarLib\StarLib.csproj" />
   </ItemGroup>
 

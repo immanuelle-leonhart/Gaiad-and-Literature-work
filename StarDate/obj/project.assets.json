@@ -1422,6 +1422,22 @@
         "runtime": {
           "bin/placeholder/StarDate.dll": {}
         }
+      },
+      "StarLibForms/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "StarDate": "1.0.5"
+        },
+        "compile": {
+          "bin/placeholder/StarLibForms.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StarLibForms.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -5037,12 +5053,18 @@
       "type": "project",
       "path": "../StarLib/StarLib.csproj",
       "msbuildProject": "../StarLib/StarLib.csproj"
+    },
+    "StarLibForms/1.0.0": {
+      "type": "project",
+      "path": "../StarLibForms/StarLibForms.csproj",
+      "msbuildProject": "../StarLibForms/StarLibForms.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.VisualStudio.Web.BrowserLink >= 2.2.0",
-      "StarDate >= 1.0.5"
+      "StarDate >= 1.0.5",
+      "StarLibForms >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5071,6 +5093,9 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
+            "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate\\StarLibForms\\StarLibForms.csproj": {
+              "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate\\StarLibForms\\StarLibForms.csproj"
+            },
             "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate\\StarLib\\StarLib.csproj": {
               "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate\\StarLib\\StarLib.csproj"
             }

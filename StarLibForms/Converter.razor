@@ -1,0 +1,38 @@
+﻿@inherits ConverterBase;
+@using Microsoft.AspNetCore.Components.Forms
+
+
+    <EditForm Model="@sd" OnValidSubmit="HandleValidSubmit">
+
+        <p>
+            <label>
+                <InputStarDate @bind-Value="sd" />
+                |||
+                <InputDate @bind-Value="dt" />
+            </label>
+        </p>
+
+        <button type="submit">Submit</button>
+
+        <p>
+            @LongStar
+        </p>
+        <p>
+            @LongDate
+        </p>
+    </EditForm>
+
+
+
+
+
+@code{
+    void HandleValidSubmit()
+    {
+        LongStar = sd.ToLongDateString();
+        LongDate = dt.ToLongDateString();
+    }
+
+    private string LongStar = StarDate.Now.ToLongDateString();
+    private string LongDate = DateTime.Now.ToLongDateString();
+}
