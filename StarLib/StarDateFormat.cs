@@ -1007,7 +1007,10 @@ namespace StarLib
         internal static String Format(StarDate StarDate, String format, StarCulture sdfi, Time offset)
         {
             Contract.Requires(sdfi != null);
-
+            if (format == null)
+            {
+                throw new NotImplementedException();
+            }
             if (format.Length == 1)
             {
                 switch (format[0])

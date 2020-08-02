@@ -9,11 +9,9 @@ namespace TestConsole
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(TimeZoneInfo.Local.DisplayName);
             StarDate dt = StarDate.Now.Date;
             Console.WriteLine(dt);
-            string s = dt.QuickString();
-            Console.WriteLine(s);
-            Console.WriteLine(StarDate.fromQuickString(s));
         }
     }
 }

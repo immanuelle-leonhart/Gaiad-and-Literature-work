@@ -532,11 +532,6 @@ namespace StarLib
             return this * -1;
         }
 
-        public string ToString(string format, IFormatProvider formatProvider)
-        {
-            throw new NotImplementedException();
-        }
-
 
         public static Time operator *(Time t, BigInteger b)
         {
@@ -566,9 +561,20 @@ namespace StarLib
             m = (int)(dayticks / TicksPerMinute);
         }
 
-        //internal void GetTimePart(out int h, out int m, out int s, out int s1)
-        //{
-        //    throw new NotImplementedException();
-        //}
+        // See System.Globalization.TimeSpanParse and System.Globalization.TimeSpanFormat 
+        #region ParseAndFormat
+        public override String ToString()
+        {
+            return TimeSpan.ToString();
+        }
+        public String ToString(String format)
+        {
+            return TimeSpan.ToString(format);
+        }
+        public String ToString(String format, IFormatProvider formatProvider)
+        {
+            return TimeSpan.ToString(format, formatProvider);
+        }
+        #endregion
     }
 }
