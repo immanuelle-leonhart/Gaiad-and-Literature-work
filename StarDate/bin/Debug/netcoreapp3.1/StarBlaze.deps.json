@@ -26,6 +26,7 @@
         "dependencies": {
           "Microsoft.VisualStudio.Web.BrowserLink": "2.2.0",
           "StarDate": "1.0.5",
+          "StarLibForms": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.1.0.0",
@@ -1080,6 +1081,17 @@
         },
         "compile": {
           "StarLib.dll": {}
+        }
+      },
+      "StarLibForms/1.0.0": {
+        "dependencies": {
+          "StarDate": "1.0.5"
+        },
+        "runtime": {
+          "StarLibForms.dll": {}
+        },
+        "compile": {
+          "StarLibForms.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -3427,6 +3439,11 @@
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
     "StarDate/1.0.5": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StarLibForms/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

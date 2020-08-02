@@ -53,3 +53,7 @@ C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarDate\obj\Debug\netcoreapp3
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarDate\obj\Debug\netcoreapp3.1\Razor\Shared\NavMenu.razor.g.cs
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarDate\obj\Debug\netcoreapp3.1\Razor\Shared\SurveyPrompt.razor.g.cs
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarDate\obj\Debug\netcoreapp3.1\Razor\_Imports.razor.g.cs
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarDate\bin\Debug\netcoreapp3.1\StarLibForms.Views.dll
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarDate\bin\Debug\netcoreapp3.1\StarLibForms.Views.pdb
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarDate\bin\Debug\netcoreapp3.1\StarLibForms.dll
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarDate\bin\Debug\netcoreapp3.1\StarLibForms.pdb
