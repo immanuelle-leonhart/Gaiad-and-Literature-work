@@ -1,7 +1,8 @@
-﻿# Cosmic Calendar
+﻿# Gaian Cosmic Calendar
  The Cosmic Calendar of the Order of Life
  Github Repository https://www.github.com/siliconprophet/CosmicCalendar/
  Nuget Package https://www.nuget.org/packages/StarDate
+ Scriptural explanation https://order.life/2020/05/03/sutra-5-saga-of-amaterasu/
  
  This is the Celestial Calendar. The Calendar used in the Gaiad. The Celestial Calendar is a sidereal leap week calendar. The new year is defined based on the Earth crossing between Sagittarius A* (called Chiron in the Gaiad) and the sun
 
@@ -328,3 +329,6 @@ Space Features (in progress) Martian Days are hard coded into the calendar syste
  	StarDate-- subtracts a day
  	DateTimes and StarDates implicitly cast into each other
  	Implicit Casting into string implements ToString()
+
+
+StarLib.Forms is an ASP.NET library that provides web components such as date selectors for the StarDate object
