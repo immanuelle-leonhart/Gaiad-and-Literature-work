@@ -5,9 +5,7 @@
 
 @code {
 
-    public int Day { get => sdt.Day; set => sdt.Day = value; }
-    public int Month { get => sdt.Month; set => sdt.Month = value; }
-    public int Year { get => sdt.Year; set => sdt.Year = value; }
+    
 
 }
 
@@ -24,10 +22,9 @@
     }
 </select>
 <select @bind="Year">
-    @for (int i = sdt.Year - 5;
-i <= sdt.Year + 5; i++)
+    @for (int i = Value.Year - 5;
+i <= Value.Year + 5; i++)
     {
         <option>@i</option>
     }
 </select>
-<button type="button">Select</button>
