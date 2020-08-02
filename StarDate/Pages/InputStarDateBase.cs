@@ -11,9 +11,12 @@ namespace StarBlaze.Pages
 {
     public class InputStarDateBase : InputBase<StarDate>
     {
+        private int day;
+        private int month;
+        private int year;
 
         //[Parameter] public new StarLib.StarDate Value { get => sdt; set => sdt = value; }
-        
+
         public int MonthDays
         {
             get
@@ -48,6 +51,9 @@ namespace StarBlaze.Pages
         protected override void OnInitialized()
         {
             Value = StarLib.StarDate.Now;
+            year = Value.Year;
+            month = Value.Month;
+            day = Value.Day;
         }
 
         /// <inheritdoc />
@@ -84,29 +90,38 @@ namespace StarBlaze.Pages
 
         public int Day
         {
-            get => Value.Day; set
+            get => day; set
             {
                 StarDate dt = Value;
                 dt.Day = value;
                 Value = dt;
+                year = Value.Year;
+                month = Value.Month;
+                day = Value.Day;
             }
         }
         public int Month
         {
-            get => Value.Month; set
+            get => month; set
             {
                 StarDate dt = Value;
                 dt.Month = value;
                 Value = dt;
+                year = Value.Year;
+                month = Value.Month;
+                day = Value.Day;
             }
         }
         public int Year
         {
-            get => Value.Year; set
+            get => year; set
             {
                 StarDate dt = Value;
                 dt.Year = value;
                 Value = dt;
+                year = Value.Year;
+                month = Value.Month;
+                day = Value.Day;
             }
         }
     }
