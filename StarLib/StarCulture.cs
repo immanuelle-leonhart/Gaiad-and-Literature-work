@@ -2430,7 +2430,7 @@ namespace StarLib
         //    return false;
         //}
 
-        [System.Security.SecurityCritical]  // auto-generated
+        //[System.Security.SecurityCritical]  // auto-generated
         //internal bool Tokenize(TokenType TokenMask, out TokenType tokenType, out int tokenValue, ref __DTString str)
         //{
         //    tokenType = TokenType.UnknownToken;
@@ -2680,26 +2680,26 @@ namespace StarLib
 
 
 
-        internal static StarCulture GetInstance(IFormatProvider provider)
-        {
-            //// Fast case for a regular CultureInfo
-            if (CurrentCulture.formatProvider == provider)
-            {
-                return CurrentCulture;
-            }
-            else
-            {
-                foreach (StarCulture culture in cultures)
-                {
-                    if (culture.formatProvider == provider)
-                    {
-                        return culture;
-                    }
-                }
-            }
-            //Couldn't get anything, just use currentInfo as fallback
-            return CurrentCulture;
-        }
+        //internal static StarCulture GetInstance(IFormatProvider provider)
+        //{
+        //    //// Fast case for a regular CultureInfo
+        //    if (CurrentCulture.formatProvider == provider)
+        //    {
+        //        return CurrentCulture;
+        //    }
+        //    else
+        //    {
+        //        foreach (StarCulture culture in cultures)
+        //        {
+        //            if (culture.formatProvider == provider)
+        //            {
+        //                return culture;
+        //            }
+        //        }
+        //    }
+        //    //Couldn't get anything, just use currentInfo as fallback
+        //    return CurrentCulture;
+        //}
 
         internal int ID
         {

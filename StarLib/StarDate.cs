@@ -3188,17 +3188,17 @@ namespace StarLib
 
 
 
-        public String ToString(IFormatProvider provider)
-        {
-            Contract.Ensures(Contract.Result<String>() != null);
-            return StarDateFormat.Format(this, null, StarCulture.GetInstance(provider));
-        }
+        //public String ToString(IFormatProvider provider)
+        //{
+        //    Contract.Ensures(Contract.Result<String>() != null);
+        //    return StarDateFormat.Format(this, null, StarCulture.GetInstance(provider));
+        //}
 
-        public String ToString(String format, IFormatProvider provider)
-        {
-            Contract.Ensures(Contract.Result<String>() != null);
-            return StarDateFormat.Format(this, format, StarCulture.GetInstance(provider));
-        }
+        //public String ToString(String format, IFormatProvider provider)
+        //{
+        //    Contract.Ensures(Contract.Result<String>() != null);
+        //    return StarDateFormat.Format(this, format, StarCulture.GetInstance(provider));
+        //}
 
         public StarDate ToUniversalTime()
         {
@@ -3414,7 +3414,7 @@ namespace StarLib
 
         string IConvertible.ToString(IFormatProvider provider)
         {
-            return ToString(provider);
+            return ToString();
         }
 
         //public static bool SpecialParse(string text, string format, CultureInfo cultureInfo, StarDateStyles none, out StarDate converted)
@@ -3587,20 +3587,32 @@ namespace StarLib
             return dt - DayTime;
         }
 
-        public static implicit operator StarDate(string s)
-        {
-            return Parse(s);
-        }
+        //public static implicit operator StarDate(string s)
+        //{
+        //    return Parse(s);
+        //}
+
+        //public static explicit operator StarDate(string s)
+        //{
+        //    return fromQuickString(s);
+        //}
+
+        //public static implicit operator string(StarDate dt)
+        //{
+        //    return dt.ToString();
+        //}
+
+        //public static explicit operator string(StarDate dt)
+        //{
+        //    return dt.QuickString();
+        //}
+
 
         public static implicit operator DateTime(StarDate dt)
         {
             return dt.DateTime;
         }
 
-        public static implicit operator string(StarDate dt)
-        {
-            return dt.ToString();
-        }
 
         public static implicit operator StarDate(DateTime v)
         {
@@ -3636,5 +3648,13 @@ namespace StarLib
             return new StarDate(dateData, errorData, zone);
         }
 
+        public string ToString(string format, IFormatProvider formatProvider)
+        {
+            if (format == null)
+            {
+                return ToString();
+            }
+            return ToString(format);
+        }
     }
 }
