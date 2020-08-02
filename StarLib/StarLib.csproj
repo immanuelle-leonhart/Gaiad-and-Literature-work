@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.6</TargetFramework>
     <PackageId>StarDate</PackageId>
-    <Version>1.0.3</Version>
+    <Version>1.0.5</Version>
     <Authors>Silicon Prophet</Authors>
     <Company>Order of Life</Company>
     <Product>StarLib</Product>
