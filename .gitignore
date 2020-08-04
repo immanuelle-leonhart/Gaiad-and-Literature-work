@@ -1,2 +1,8 @@
 
 bin/Debug/netcoreapp3.1/CosmicCalendar.csv
+*.cache
+*.cache
+*.pdb
+*.pdb
+StarLibForms/obj/Debug/netcoreapp3.1/RazorDeclaration/StarLibForms.pdb
+StarLibForms/obj/Debug/netcoreapp3.1/StarLibForms.pdb

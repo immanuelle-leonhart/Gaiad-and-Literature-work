@@ -29,3 +29,5 @@ C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibForms\obj\Debug\netcore
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibForms\obj\Debug\netcoreapp3.1\StarLibForms.pdb
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibForms\obj\Debug\netcoreapp3.1\RazorDeclaration\Converter.razor.g.cs
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibForms\obj\Debug\netcoreapp3.1\Razor\Converter.razor.g.cs
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibForms\obj\Debug\netcoreapp3.1\RazorDeclaration\Component1.razor.g.cs
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibForms\obj\Debug\netcoreapp3.1\Razor\Component1.razor.g.cs
