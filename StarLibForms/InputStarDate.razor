@@ -3,18 +3,31 @@
 @using StarLib.Forms;
 @using StarLib;
 @inherits InputStarDateBase
+@*Error is here*@
 
-    @*Error is here*@
 
-    @code {
 
-        public Task ShowCalendar()
-        {
-            throw new NotImplementedException();
-        }
+@code {
 
+    public Task ShowCalendar()
+    {
+        throw new NotImplementedException();
     }
 
+}
+
+<head>
+    <style>
+        .datepicker {
+            border: 1px solid black;
+            display: inline-block
+        }
+    </style>
+</head>
+
+
+
+<div class="datepicker">
     <select @bind="Day">
         @for (int i = 1; i <= MonthDays; i++)
         {
@@ -29,7 +42,7 @@
     </select>
     <select @bind="Year">
         @for (int i = Foundation.Year - 5;
-   i <= Foundation.Year + 5; i++)
+i <= Foundation.Year + 5; i++)
         {
             <option>@i</option>
         }
@@ -38,3 +51,4 @@
             @onclick="ShowCalendar">
         📅
     </button>
+</div>
