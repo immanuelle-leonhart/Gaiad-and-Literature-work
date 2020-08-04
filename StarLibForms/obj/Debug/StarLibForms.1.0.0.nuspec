@@ -27,7 +27,6 @@
     </frameworkReferences>
   </metadata>
   <files>
-    <file src="C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibForms\bin\Debug\netcoreapp3.1\StarLibForms.Views.dll" target="lib\netcoreapp3.1\StarLibForms.Views.dll" />
     <file src="C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibForms\bin\Debug\netcoreapp3.1\StarLibForms.dll" target="lib\netcoreapp3.1\StarLibForms.dll" />
     <file src="C:\Users\SiliconProphet\Dropbox\branding images\DNA Tree Logo.jpg" target="DNA Tree Logo.jpg" />
     <file src="C:\Users\SiliconProphet\Documents\GitHub\StarDate\LICENSE" target="LICENSE" />
