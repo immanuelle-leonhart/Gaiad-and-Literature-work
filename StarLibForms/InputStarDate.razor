@@ -5,25 +5,25 @@
 
 @code {
 
-
+    
 
 }
 
-<select @bind="Day">
+<select @bind-Value="Day">
     @for (int i = 1; i <= MonthDays; i++)
     {
         <option>@i</option>
     }
 </select>
-<select @bind="Month">
+<select @bind-Value="Month">
     @for (int i = 1; i <= YearMonths; i++)
     {
         <option value="@i">@Months[i - 1]</option>
     }
 </select>
-<select @bind="Year">
-    @for (int i = Value.Year - 5;
-i <= Value.Year + 5; i++)
+<select @bind-Value="Year">
+    @for (int i = Foundation.Year - 5;
+i <= Foundation.Year + 5; i++)
     {
         <option>@i</option>
     }

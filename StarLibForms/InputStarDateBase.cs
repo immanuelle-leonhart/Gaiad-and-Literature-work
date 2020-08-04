@@ -14,25 +14,27 @@ namespace StarLib.Forms
         private int day;
         private int month;
         private int year;
-        private int monthDays;
-        private int yearMonths;
+        public bool presentbound = false;
 
         //[Parameter] public new StarLib.StarDate Value { get => sdt; set => sdt = value; }
 
-        public int MonthDays
+        public int MonthDays { get; private set; }
+
+        protected StarDate Foundation
         {
             get
             {
-                return monthDays;
+                if (presentbound)
+                {
+                    return StarDate.Now;
+                }
+                else
+                {
+                    return Value;
+                }
             }
         }
-        public int YearMonths
-        {
-            get
-            {
-                return yearMonths;
-            }
-        }
+        public int YearMonths { get; private set; }
 
         public string[] Months { get; set; } = StarLib.StarCulture.CurrentCulture.GetMonthList();
 
@@ -42,8 +44,8 @@ namespace StarLib.Forms
             year = Value.Year;
             month = Value.Month;
             day = Value.Day;
-            monthDays = Value.GetMonthDays();
-            yearMonths = Value.GetYearMonths();
+            MonthDays = Value.GetMonthDays();
+            YearMonths = Value.GetYearMonths();
         }
 
         /// <inheritdoc />
@@ -88,8 +90,8 @@ namespace StarLib.Forms
                 year = Value.Year;
                 month = Value.Month;
                 day = Value.Day;
-                monthDays = Value.GetMonthDays();
-                yearMonths = Value.GetYearMonths();
+                MonthDays = Value.GetMonthDays();
+                YearMonths = Value.GetYearMonths();
             }
         }
         public int Month
@@ -102,8 +104,8 @@ namespace StarLib.Forms
                 year = Value.Year;
                 month = Value.Month;
                 day = Value.Day;
-                monthDays = Value.GetMonthDays();
-                yearMonths = Value.GetYearMonths();
+                MonthDays = Value.GetMonthDays();
+                YearMonths = Value.GetYearMonths();
             }
         }
         public int Year
@@ -116,8 +118,8 @@ namespace StarLib.Forms
                 year = Value.Year;
                 month = Value.Month;
                 day = Value.Day;
-                monthDays = Value.GetMonthDays();
-                yearMonths = Value.GetYearMonths();
+                MonthDays = Value.GetMonthDays();
+                YearMonths = Value.GetYearMonths();
             }
         }
     }
