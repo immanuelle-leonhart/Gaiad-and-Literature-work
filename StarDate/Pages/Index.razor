@@ -1,31 +1,33 @@
 ﻿@page "/"
-@using StarLibForms; 
+@using StarLib.Forms;
 @using StarLib;
+@*@inherits InputStarDateBase*@
 
 <h1>Hello, world!</h1>
 
-
-<EditForm Model="dt" OnValidSubmit="HandleValidSubmit">
-
-    <p>
-        <label>
-            <StarLib.Forms.InputStarDate @bind-Value="dt" />
-        </label>
-    </p>
-</EditForm>
 
 
 @*<StarLib.Forms.Converter />*@
 
 
-
+<EditForm Model="@sd" OnValidSubmit="HandleValidSubmit">
+    <Component @bind-Value="sd" />
+    <InputDate @bind-Value="dt" />
+</EditForm>
 
 
 
 @code{
-    StarDate dt = StarDate.Now;
     void HandleValidSubmit()
     {
-        Console.WriteLine("ValidSubmit");
+
     }
+    StarDate sd = StarDate.Now;
+    private int Year { get; set; }
+    private int Month { get; set; }
+    private int Day { get; set; }
+    public string[] Months { get; set; } = StarLib.StarCulture.CurrentCulture.GetMonthList();
+    public int MonthDays { get; protected set; } = 28;
+    public int YearMonths { get; protected set; } = 14;
+    private DateTime dt;
 }
