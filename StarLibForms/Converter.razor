@@ -1,26 +1,44 @@
 ﻿@inherits ConverterBase;
 @using Microsoft.AspNetCore.Components.Forms
 
+<head>
+    <style>
+        .datepicker {
+            border: 1px solid black;
+            display: inline-block
+        }
+    </style>
+</head>
 
-    <EditForm Model="@sd" OnValidSubmit="HandleValidSubmit">
 
-        <p>
-            <label>
-                <InputStarDate @bind-Value="sd" />
-                |||
-                <InputDate @bind-Value="dt" />
-            </label>
-        </p>
 
-        <button type="submit">Get Long Names</button>
 
-        <p>
-            StarDate @LongStar
-        </p>
-        <p>
-            Gregorian Date @LongDate
-        </p>
-    </EditForm>
+
+
+
+
+<EditForm Model="@sd" OnValidSubmit="HandleValidSubmit">
+    <div class="datepicker">
+        <label>
+            <p>
+                <label>
+                    <InputStarDate @bind-Value="sd" />
+                    |||
+                    <InputDate @bind-Value="dt" />
+                </label>
+            </p>
+
+            <button type="submit">Get Long Names</button>
+
+            <p>
+                StarDate @LongStar
+            </p>
+            <p>
+                Gregorian Date @LongDate
+            </p>
+        </label>
+    </div>
+</EditForm>
 
 
 

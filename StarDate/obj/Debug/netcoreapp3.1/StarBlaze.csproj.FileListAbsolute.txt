@@ -57,3 +57,5 @@ C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarDate\bin\Debug\netcoreapp3
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarDate\bin\Debug\netcoreapp3.1\StarLibForms.pdb
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarDate\obj\Debug\netcoreapp3.1\RazorDeclaration\Component.razor.g.cs
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarDate\obj\Debug\netcoreapp3.1\Razor\Component.razor.g.cs
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarDate\obj\Debug\netcoreapp3.1\RazorDeclaration\Calendar1.razor.g.cs
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarDate\obj\Debug\netcoreapp3.1\Razor\Calendar1.razor.g.cs
