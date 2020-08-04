@@ -55,3 +55,5 @@ C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarDate\bin\Debug\netcoreapp3
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarDate\bin\Debug\netcoreapp3.1\StarLibForms.Views.pdb
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarDate\bin\Debug\netcoreapp3.1\StarLibForms.dll
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarDate\bin\Debug\netcoreapp3.1\StarLibForms.pdb
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarDate\obj\Debug\netcoreapp3.1\RazorDeclaration\Component.razor.g.cs
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarDate\obj\Debug\netcoreapp3.1\Razor\Component.razor.g.cs
