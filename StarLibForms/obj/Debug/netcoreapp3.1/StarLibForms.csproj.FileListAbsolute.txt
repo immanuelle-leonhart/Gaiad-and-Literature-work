@@ -9,9 +9,6 @@ C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibForms\obj\Debug\netcore
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibForms\obj\Debug\netcoreapp3.1\StarLibForms.TagHelpers.output.cache
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibForms\obj\Debug\netcoreapp3.1\StarLibForms.RazorCoreGenerate.cache
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibForms\obj\Debug\netcoreapp3.1\Razor\InputStarDate.razor.g.cs
-C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibForms\obj\Debug\netcoreapp3.1\Razor\Areas\MyFeature\Pages\Page1.cshtml.g.cs
-C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibForms\obj\Debug\netcoreapp3.1\StarLibForms.RazorAssemblyInfo.cache
-C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibForms\obj\Debug\netcoreapp3.1\StarLibForms.RazorAssemblyInfo.cs
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibForms\bin\Debug\netcoreapp3.1\StarLibForms.deps.json
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibForms\bin\Debug\netcoreapp3.1\StarLibForms.dll
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibForms\bin\Debug\netcoreapp3.1\StarLibForms.pdb
@@ -20,8 +17,6 @@ C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibForms\bin\Debug\netcore
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibForms\bin\Debug\netcoreapp3.1\StarLib.dll
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibForms\bin\Debug\netcoreapp3.1\StarLib.pdb
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibForms\obj\Debug\netcoreapp3.1\StarLibForms.RazorTargetAssemblyInfo.cache
-C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibForms\obj\Debug\netcoreapp3.1\StarLibForms.RazorTargetAssemblyInfo.cs
-C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibForms\obj\Debug\netcoreapp3.1\StarLibForms.Views.pdb
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibForms\obj\Debug\netcoreapp3.1\StarLibForms.csproj.CopyComplete
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibForms\obj\Debug\netcoreapp3.1\staticwebassets\StarLibForms.StaticWebAssets.Manifest.cache
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibForms\obj\Debug\netcoreapp3.1\staticwebassets\StarLibForms.StaticWebAssets.xml
@@ -33,3 +28,7 @@ C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibForms\obj\Debug\netcore
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibForms\obj\Debug\netcoreapp3.1\Razor\Component1.razor.g.cs
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibForms\obj\Debug\netcoreapp3.1\RazorDeclaration\Calendar.razor.g.cs
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibForms\obj\Debug\netcoreapp3.1\Razor\Calendar.razor.g.cs
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibForms\obj\Debug\netcoreapp3.1\RazorDeclaration\Calendar14.razor.g.cs
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibForms\obj\Debug\netcoreapp3.1\RazorDeclaration\Calendar7.razor.g.cs
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibForms\obj\Debug\netcoreapp3.1\Razor\Calendar14.razor.g.cs
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibForms\obj\Debug\netcoreapp3.1\Razor\Calendar7.razor.g.cs
