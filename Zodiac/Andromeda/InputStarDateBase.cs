@@ -23,20 +23,7 @@ namespace Zodiac.Andromeda
 
         public int MonthDays { get; protected set; }
         public int YearMonths { get; protected set; }
-        protected StarDate Foundation
-        {
-            get
-            {
-                if (present)
-                {
-                    return StarDate.Now;
-                }
-                else
-                {
-                    return Value;
-                }
-            }
-        }
+        public int BaseYear { get; protected set; } = StarDate.Now.Year;
 
         public string[] Months
         {

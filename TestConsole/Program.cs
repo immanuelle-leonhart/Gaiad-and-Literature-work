@@ -9,10 +9,15 @@ namespace TestConsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(TimeZoneInfo.Local.DisplayName);
-            StarDate dt = StarDate.Now.Date;
-            Console.WriteLine(dt);
-            dt = new StarDate(dt.GetDatePart());
+            //Console.WriteLine(TimeZoneInfo.Local.DisplayName);
+            StarDate dt = StarDate.Now;
+            int i = 0;
+            while (i < 500)
+            {
+                Console.WriteLine(dt.ToLongString());
+                dt.Year += 1;
+                i++;
+            }
         }
     }
 }

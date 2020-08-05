@@ -51,8 +51,8 @@
     }
 </select></th>
     <th class="tg-0lax"><select @bind="Year" class="input">
-    @for (int i = Foundation.Year - 5;
-i <= Foundation.Year + 5; i++)
+    @for (int i = BaseYear - 5;
+i <= BaseYear + 5; i++)
     {
         <option>@i</option>
     }
