@@ -1,0 +1,83 @@
+﻿@inherits InputStarDateBase
+
+@code {
+    private void ShowCalendar()
+    {
+
+    }
+}
+
+<head>
+    <style>
+        .datepicker {
+            border: 1px solid black;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+
+
+<div class="datepicker">
+    <select @bind="Day">
+        @for (int i = 1; i <= MonthDays; i++)
+        {
+            <option>@i</option>
+        }
+    </select>
+    <select @bind="Month">
+        @for (int i = 1; i <= YearMonths; i++)
+        {
+            <option value="@i">@Months[i - 1]</option>
+        }
+    </select>
+    <select @bind="Year">
+        @for (int i = Foundation.Year - 5;
+i <= Foundation.Year + 5; i++)
+        {
+            <option>@i</option>
+        }
+    </select>
+    <button type="button"
+            @onclick="ShowCalendar">
+        📅
+    </button>
+</div>
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0lax"><select @bind="Day">
+    @for (int i = 1; i <= MonthDays; i++)
+    {
+        <option>@i</option>
+    }
+</select></th>
+    <th class="tg-0lax"><select @bind="Month">
+    @for (int i = 1; i <= YearMonths; i++)
+    {
+        <option value="@i">@Months[i - 1]</option>
+    }
+</select></th>
+    <th class="tg-0lax"><select @bind="Year">
+    @for (int i = Foundation.Year - 5;
+i <= Foundation.Year + 5; i++)
+    {
+        <option>@i</option>
+    }
+</select></th>
+    <th class="tg-0lax"><button type="button"
+        @onclick="ShowCalendar">
+    📅
+</button></th>
+  </tr>
+</thead>
+</table>

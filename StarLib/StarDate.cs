@@ -6,6 +6,7 @@ using System.IO;
 using System.Numerics;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+using System.Text;
 
 namespace StarLib
 {
@@ -314,6 +315,8 @@ namespace StarLib
         private static string currentCulture;
         private static List<string> formats;
         private static bool acceptoverflow = false; //determines whether setters throw errors related to leap year overflows or set the date to the next year
+        //private int[] vs;
+
 
 
 
@@ -776,7 +779,42 @@ namespace StarLib
         // Exactly the same as GetDatePart(int part), except computing all of
         // Year/month/day rather than just one of them.  Used when all three
         // are needed rather than redoing the computations for each.
-        internal void GetDatePart(out int year, out int month, out int day)
+
+        public void GetDatePart(out int year)
+        {
+            year = Year;
+        }
+
+        public void GetDatePart(out int year, out int month)
+        {
+            Int64 n = (long)(AdjustedTicks / TicksPerDay);
+            if (IsTerran)
+            {
+                n %= DaysPerBillion;
+                n %= DaysPerMillion;
+                int y78 = (int)(n / DaysPer78Years);
+                n -= y78 * DaysPer78Years;
+                int y6 = (int)(n / DaysPerSixYears);
+                if (y6 == 13) y6 = 12;
+                n -= y6 * DaysPerSixYears;
+                int y1 = (int)(n / DaysPerYear);
+                if (y1 == 6) y1 = 5;
+                year = 78 * y78 + 6 * y6 + y1;
+                n -= y1 * DaysPerYear;
+                int d = (int)n + 1;
+                month = ((d - 1) / 28) + 1;
+                //d %= 28;
+                //if (d == 0) d = 28;
+                //day = d;
+            }
+            else
+            {
+                throw new NotImplementedException();
+            }
+
+        }
+
+        public void GetDatePart(out int year, out int month, out int day)
         {
             Int64 n = (long)(AdjustedTicks / TicksPerDay);
             if (IsTerran)
@@ -802,6 +840,124 @@ namespace StarLib
             {
                 throw new NotImplementedException();
             }
+
+        }
+
+        public void GetDatePart(out int year, out int month, out int day, out int hour)
+        {
+            GetDatePart(out year, out month, out day);
+            hour = Hour;
+        }
+
+        public void GetDatePart(out int year, out int month, out int day, out int hour, out int min)
+        {
+            GetDatePart(out year, out month, out day);
+            GetTimePart(out hour, out min);
+        }
+
+        public void GetDatePart(out int year, out int month, out int day, out int hour, out int min, out int sec)
+        {
+            GetDatePart(out year, out month, out day);
+            GetTimePart(out hour, out min, out sec);
+        }
+
+        public void GetDatePart(out int year, out int month, out int day, out int hour, out int min, out int sec, out int millisec)
+        {
+            GetDatePart(out year, out month, out day);
+            GetTimePart(out hour, out min, out sec, out millisec);
+        }
+
+        public void GetDatePart(out int year, out int month, out int day, out int hour, out int min, out int sec, out int millisec, out int ticks)
+        {
+            GetDatePart(out year, out month, out day);
+            GetTimePart(out hour, out min, out sec, out millisec, out ticks);
+        }
+
+        private void GetDatePart(out int[] vs)
+        {
+            int y, mo, d, h, mi, s, ms, t;
+            GetDatePart(out y, out mo, out d, out h, out mi, out s, out ms, out t);
+            vs = new int[] { y, mo, d, h, mi, s, ms, t };
+        }
+
+        private void GetDatePart(out Dictionary<string, int> keyValuePairs)
+        {
+            int[] values;
+            GetDatePart(out values);
+            string[] keys = new string[] { "Year", "Month", "Day", "Hour", "Minute", "Second", "Millisecond", "Ticks" };
+            int i = 0;
+            keyValuePairs = new Dictionary<string, int>();
+            while (i < values.Length)
+            {
+                keyValuePairs.Add(keys[i], values[i]);
+                i++;
+            }
+        }
+
+        public int[] GetDatePart()
+        {
+            int[] vs;
+            GetDatePart(out vs);
+            return vs;
+        }
+
+        public void GetTimePart(out int hour, out int min)
+        {
+            Int64 t = (long)TimeOfDay.Ticks;
+            hour = (int)(t / TicksPerHour);
+            t %= TicksPerHour;
+            min = (int)(t / TicksPerMinute);
+            //t %= TicksPerMinute;
+            //sec = (int)(t / TicksPerSecond);
+            //t %= TicksPerSecond;
+            //millisec = (int)(t / TicksPerMillisecond);
+            //t %= TicksPerMillisecond;
+            //ticks = (int)t;
+
+        }
+
+        public void GetTimePart(out int hour, out int min, out int sec)
+        {
+            Int64 t = (long)TimeOfDay.Ticks;
+            hour = (int)(t / TicksPerHour);
+            t %= TicksPerHour;
+            min = (int)(t / TicksPerMinute);
+            t %= TicksPerMinute;
+            sec = (int)(t / TicksPerSecond);
+            //t %= TicksPerSecond;
+            //millisec = (int)(t / TicksPerMillisecond);
+            //t %= TicksPerMillisecond;
+            //ticks = (int)t;
+
+        }
+
+        public void GetTimePart(out int hour, out int min, out int sec, out int millisec)
+        {
+            Int64 t = (long)TimeOfDay.Ticks;
+            hour = (int)(t / TicksPerHour);
+            t %= TicksPerHour;
+            min = (int)(t / TicksPerMinute);
+            t %= TicksPerMinute;
+            sec = (int)(t / TicksPerSecond);
+            t %= TicksPerSecond;
+            millisec = (int)(t / TicksPerMillisecond);
+            //t %= TicksPerMillisecond;
+            //ticks = (int)t;
+
+        }
+
+        public void GetTimePart(out int hour, out int min, out int sec, out int millisec, out int ticks)
+        {
+            Int64 t = (long)TimeOfDay.Ticks;
+            hour = (int)(t / TicksPerHour);
+            t %= TicksPerHour;
+            min = (int)(t / TicksPerMinute);
+            t %= TicksPerMinute;
+            sec = (int)(t / TicksPerSecond);
+            t %= TicksPerSecond;
+            millisec = (int)(t / TicksPerMillisecond);
+            t %= TicksPerMillisecond;
+            ticks = (int)t;
 
         }
 
@@ -1479,13 +1635,23 @@ namespace StarLib
 
         public StarDate(int year, int month, int day, int hour, int minute, int second, int millisecond, int ticks, StarZone timezone)
         {
-            if ((year > 1900) && (year < 2100))
-            {
-                year += 10000;
-            }
+            //if ((year > 1900) && (year < 2100))
+            //{
+            //    year += 10000;
+            //}
             //base constructor used to generate all dates from standard digits
             _timeZone = timezone;
             dateData = Manu.Ticks;
+            //adjusting for timezone
+            //subtract datetime offset because internal ticks refer to UTC Atomic time
+            if (_timeZone.SupportsDaylightSavingTime)
+            {
+                dateData -= _timeZone.GetUtcOffset(dateData);
+            }
+            else
+            {
+                dateData += _timeZone.BaseUtcOffset.Ticks;
+            }
             int y78 = year / 78;
             year -= y78 * 78;
             int y6 = year / 6;
@@ -1549,16 +1715,7 @@ namespace StarLib
                 else
                 {
                     dateData += TicksPerDay * day;
-                    //adjusting for timezone
-                    //subtract datetime offset because internal ticks refer to UTC Atomic time
-                    if (_timeZone.SupportsDaylightSavingTime)
-                    {
-                        dateData -= _timeZone.GetUtcOffset(dateData);
-                    }
-                    else
-                    {
-                        dateData += _timeZone.BaseUtcOffset.Ticks;
-                    }
+                    
                     if (hour == PlaceHolder)
                     {
                         errorData = 12 * TicksPerHour;
@@ -1781,7 +1938,9 @@ namespace StarLib
             this.TimeZone = zone;
         }
 
-
+        public StarDate(int[] vs) : this(vs[0], vs[1], vs[2], vs[3], vs[4], vs[5], vs[6], vs[7])
+        {
+        }
 
         private StarZone fromDateTimeKind(DateTimeKind kind)
         {
@@ -3680,5 +3839,24 @@ namespace StarLib
                 return 13;
             }
         }
+
+        public string BasicString()
+        {
+            int[] vs;
+            GetDatePart(out vs);
+            StringBuilder builder = new StringBuilder();
+            int i = 0;
+            while (i < vs.Length)
+            {
+                builder.Append(vs[i++]);
+                if (i < vs.Length)
+                {
+                    builder.Append("-");
+                }
+            }
+            return builder.ToString();
+        }
+
+        
     }
 }

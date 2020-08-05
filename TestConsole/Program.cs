@@ -12,6 +12,7 @@ namespace TestConsole
             Console.WriteLine(TimeZoneInfo.Local.DisplayName);
             StarDate dt = StarDate.Now.Date;
             Console.WriteLine(dt);
+            dt = new StarDate(dt.GetDatePart());
         }
     }
 }
