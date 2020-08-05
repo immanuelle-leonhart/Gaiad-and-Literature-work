@@ -896,9 +896,9 @@ namespace StarLib
 
         public int[] GetDatePart()
         {
-            int[] vs;
-            GetDatePart(out vs);
-            return vs;
+            int[] values;
+            GetDatePart(out values);
+            return values;
         }
 
         public void GetTimePart(out int hour, out int min)
@@ -3842,20 +3842,65 @@ namespace StarLib
 
         public string BasicString()
         {
-            int[] vs;
-            GetDatePart(out vs);
+            int[] values;
+            GetDatePart(out values);
             StringBuilder builder = new StringBuilder();
-            int i = 0;
-            while (i < vs.Length)
+            int e = values.Length;
+            if (errorData == TicksPerYear)
             {
-                builder.Append(vs[i++]);
-                if (i < vs.Length)
+                e = 1;
+            }
+            else if (!IsTerran && (errorData == TicksPerLocalDay))
+            {
+                e = 3; //Because planet might not be Earth
+            }
+            else
+            {
+                switch ((long)errorData)
                 {
-                    builder.Append("-");
+                    case TicksPerMonth:
+                        e = 2; break;
+                    case TicksPerDay:
+                        e = 3; break;
+                    case TicksPerHour:
+                        e = 4; break;
+                    case TicksPerMinute:
+                        e = 5; break;
+                    case TicksPerSecond:
+                        e = 6; break;
+                    case TicksPerMillisecond:
+                        e = 7; break;
+                    default: break;
                 }
             }
-            return builder.ToString();
+            int i = 0;
+            while (i < e)
+            {
+                builder.Append(values[i++] + "-");
+            }
+            if (e == 8)
+            {
+                builder.Append("e");
+                builder.Append(errorData);
+                builder.Append("-");
+            }
+            if (TimeZone == UTC)
+            {
+                builder.Remove(builder.Length - 1, 1);
+                return builder.ToString();
+            }
+            else
+            {
+                builder.Append(TimeZone.Id);
+                return builder.ToString();
+            }
         }
+
+        //internal int[] ParseBasicString(string basic)
+        //{
+        //    string[] vs = basic.Split('-');
+
+        //}
 
         
     }

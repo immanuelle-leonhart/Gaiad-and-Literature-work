@@ -10,7 +10,6 @@ namespace Zodiac.Andromeda
 {
     public class InputStarDateBase : InputBase<StarDate>
     {
-        public bool present = false;
         private string[] months;
         private int year;
         private int month;
@@ -20,6 +19,7 @@ namespace Zodiac.Andromeda
         private int sec;
         private int millisec;
         private int ticks;
+        private StarDate foundation;
 
         public int MonthDays { get; protected set; }
         public int YearMonths { get; protected set; }
@@ -27,14 +27,18 @@ namespace Zodiac.Andromeda
         {
             get
             {
-                if (present)
+                if (Foundation == null)
                 {
-                    return StarDate.Now;
+                    if (Value != null)
+                    {
+                        foundation = Value;
+                    }
+                    else
+                    {
+                        foundation = StarDate.Now;
+                    }
                 }
-                else
-                {
-                    return Value;
-                }
+                return foundation;
             }
         }
 
