@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestConsole", "TestConsole\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zodiac", "Zodiac\Zodiac.csproj", "{D3FD5425-9EED-4DD5-A848-0D5881806447}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarLib.Forms", "StarLib.Forms\StarLib.Forms.csproj", "{150B28C4-0C32-4C98-AD01-152C072F1F23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorDemonstration", "BlazorDemonstration\BlazorDemonstration.csproj", "{B42513C6-4A78-4983-A445-9DAE8BB43275}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{D3FD5425-9EED-4DD5-A848-0D5881806447}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3FD5425-9EED-4DD5-A848-0D5881806447}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3FD5425-9EED-4DD5-A848-0D5881806447}.Release|Any CPU.Build.0 = Release|Any CPU
+		{150B28C4-0C32-4C98-AD01-152C072F1F23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{150B28C4-0C32-4C98-AD01-152C072F1F23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{150B28C4-0C32-4C98-AD01-152C072F1F23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{150B28C4-0C32-4C98-AD01-152C072F1F23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B42513C6-4A78-4983-A445-9DAE8BB43275}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B42513C6-4A78-4983-A445-9DAE8BB43275}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B42513C6-4A78-4983-A445-9DAE8BB43275}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B42513C6-4A78-4983-A445-9DAE8BB43275}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
