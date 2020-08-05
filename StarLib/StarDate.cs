@@ -2692,15 +2692,12 @@ namespace StarLib
             }
             set
             {
-                StarDate dt;
-                try
-                {
-                    dt = new StarDate(value, Month, Day, Hour, Minute, Second, Millisecond, ExtraTicks);
-                }
-                catch (ArgumentOutOfRangeException)
-                {
-                    dt = new StarDate(value + 1, 1, 1, Hour, Minute, Second, Millisecond, ExtraTicks);
-                }
+                StarDate dt = this;
+                dt.TimeZone = UTC;
+                int[] vs;
+                dt.GetDatePart(out vs);
+                dt = new StarDate(value, vs[1], vs[2], vs[3], vs[4], vs[5], vs[6], vs[7], UTC);
+                dt--;
                 this.dateData = dt.dateData;
             }
         }
