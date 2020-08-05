@@ -62,6 +62,7 @@ namespace Zodiac.Andromeda
                 StarDate dt = Value;
                 dt.Month = value;
                 Update(dt);
+                
             }
         }
         public int Day

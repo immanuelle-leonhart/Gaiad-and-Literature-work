@@ -24,7 +24,7 @@
     ".NETCoreApp,Version=v3.1": {
       "Zodiac/1.0.0": {
         "dependencies": {
-          "StarDate": "1.0.5",
+          "StarDate": "1.0.7",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.1.0.0",
@@ -986,7 +986,7 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
-      "StarDate/1.0.5": {
+      "StarDate/1.0.7": {
         "dependencies": {
           "NETStandard.Library": "1.6.1",
           "System.Diagnostics.Contracts": "4.3.0"
@@ -3216,7 +3216,7 @@
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
-    "StarDate/1.0.5": {
+    "StarDate/1.0.7": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

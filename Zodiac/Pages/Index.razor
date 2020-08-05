@@ -10,19 +10,12 @@ Welcome to your new app.
 
 <EditForm Model="@star">
     <Zodiac.Andromeda.InputStarDate @bind-Value="star" />
-    <button class="btn btn-primary" @onclick="UpdateHeading()">
-        Update heading
-    </button>
+    <InputDate @bind-Value="dt" />
 </EditForm>
 
-@StarString
+
 
 @code{
     private StarLib.StarDate star = StarLib.StarDate.Now;
-    private string StarString = StarDate.Now.ToLongString();
-    public EventCallback UpdateHeading()
-    {
-        StarString = star.ToLongString();
-        return new EventCallback();
-    }
+    private DateTime dt = DateTime.Now;
 }

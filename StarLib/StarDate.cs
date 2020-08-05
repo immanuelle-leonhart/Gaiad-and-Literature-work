@@ -233,6 +233,7 @@ namespace StarLib
         private const int MillisPerHour = MillisPerMinute * 60;
         private const int MillisPerDay = MillisPerHour * 24;
         private const int MillisPerWeek = MillisPerDay * 7;
+        private const long MillisPerMonth = (long)MillisPerWeek * 4;
 
         // Number of days in a non-leap Year
         private const int DaysPerYear2 = 365;
@@ -1984,6 +1985,14 @@ namespace StarLib
             return AddTicks(millis * TicksPerMillisecond);
         }
 
+        private StarDate Add(double value, long scale)
+        {
+            long millis = (long)(value * scale + (value >= 0 ? 0.5 : -0.5));
+            if (millis <= -MaxMillis || millis >= MaxMillis)
+                throw new ArgumentOutOfRangeException(); //("value", ); //Environment.GetResourceString("ArgumentOutOfRange_AddValue"));
+            return AddTicks(millis * TicksPerMillisecond);
+        }
+
         // Returns the StarDate resulting from adding a fractional number of
         // days to this StarDate. The result is computed by rounding the
         // fractional number of days given by value to the nearest
@@ -2052,9 +2061,7 @@ namespace StarLib
         //
         public StarDate AddMonths(int months)
         {
-            StarDate dt = this;
-            dt.Month += months;
-            return dt;
+            return Add(months, MillisPerMonth);
         }
 
         // Returns the StarDate resulting from adding a fractional number of
