@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarLib", "StarLib\StarLib.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestConsole", "TestConsole\TestConsole.csproj", "{8A6468F0-6EBC-4985-B249-9F5446F1FFA9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarLibForms", "StarLibForms\StarLibForms.csproj", "{CAD7C048-EB77-4A6C-8A4A-68C7A5461FCB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zodiac", "Zodiac\Zodiac.csproj", "{D3FD5425-9EED-4DD5-A848-0D5881806447}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{8A6468F0-6EBC-4985-B249-9F5446F1FFA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A6468F0-6EBC-4985-B249-9F5446F1FFA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A6468F0-6EBC-4985-B249-9F5446F1FFA9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CAD7C048-EB77-4A6C-8A4A-68C7A5461FCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CAD7C048-EB77-4A6C-8A4A-68C7A5461FCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CAD7C048-EB77-4A6C-8A4A-68C7A5461FCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CAD7C048-EB77-4A6C-8A4A-68C7A5461FCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3FD5425-9EED-4DD5-A848-0D5881806447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3FD5425-9EED-4DD5-A848-0D5881806447}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3FD5425-9EED-4DD5-A848-0D5881806447}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3FD5425-9EED-4DD5-A848-0D5881806447}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

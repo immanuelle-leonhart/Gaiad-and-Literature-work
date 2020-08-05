@@ -11,13 +11,13 @@
 @*<StarLib.Forms.Converter />*@
 
 
-<EditForm Model="@sd" OnValidSubmit="HandleValidSubmit">
-    <Component @bind-Value="sd" />
+@*<EditForm Model=@sd OnValidSubmit="HandleValidSubmit">
+    <InputStarDate @bind-Value=@sd />
     |||
     <InputDate @bind-Value="dt" />
 </EditForm>
 
-<Calendar1 />
+<Calendar />*@
 
 
 
@@ -26,8 +26,8 @@
     {
 
     }
-    private DateTime date = DateTime.Now;
-    private StarDate star = StarDate.Now;
-    private StarDate sd { get => star; set { date = (DateTime)value; star = value; } }
-    private DateTime dt { get => date; set { date = value; star = (StarDate)value; } }
+    public DateTime date = DateTime.Now;
+    public StarDate star = StarDate.Now;
+    public StarDate sd { get => star; set { date = (DateTime)value; star = value; } }
+    public DateTime dt { get => date; set { date = value; star = (StarDate)value; } }
 }

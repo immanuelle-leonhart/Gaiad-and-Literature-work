@@ -1,0 +1,17 @@
+﻿@page "/"
+@using StarLib
+@using Andromeda
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+
+
+<EditForm Model="@star">
+    <Zodiac.Andromeda.InputStarDate @bind-Value="star" />
+</EditForm>
+
+@code{
+    private StarLib.StarDate star = StarLib.StarDate.Now;
+}
