@@ -3,13 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarBlaze", "StarDate\StarBlaze.csproj", "{6BE58BCF-8A4C-4C36-AFED-E1704C8F7E7F}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarLib", "StarLib\StarLib.csproj", "{47B3E894-8F14-4A15-9446-D7845494F05F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestConsole", "TestConsole\TestConsole.csproj", "{8A6468F0-6EBC-4985-B249-9F5446F1FFA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zodiac", "Zodiac\Zodiac.csproj", "{D3FD5425-9EED-4DD5-A848-0D5881806447}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zodiac", "Zodiac\Zodiac.csproj", "{D3FD5425-9EED-4DD5-A848-0D5881806447}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6BE58BCF-8A4C-4C36-AFED-E1704C8F7E7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6BE58BCF-8A4C-4C36-AFED-E1704C8F7E7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6BE58BCF-8A4C-4C36-AFED-E1704C8F7E7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6BE58BCF-8A4C-4C36-AFED-E1704C8F7E7F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{47B3E894-8F14-4A15-9446-D7845494F05F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{47B3E894-8F14-4A15-9446-D7845494F05F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47B3E894-8F14-4A15-9446-D7845494F05F}.Release|Any CPU.ActiveCfg = Release|Any CPU

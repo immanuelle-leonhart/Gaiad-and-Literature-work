@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.6</TargetFramework>
     <PackageId>StarDate</PackageId>
-    <Version>1.0.5</Version>
+    <Version>1.0.7</Version>
     <Authors>Silicon Prophet</Authors>
     <Company>Order of Life</Company>
     <Product>StarLib</Product>
@@ -14,7 +14,7 @@
     <PackageIcon>DNA Tree Logo.jpg</PackageIcon>
     <RepositoryUrl>https://github.com/siliconprophet/StarDate</RepositoryUrl>
     <RepositoryType>Library</RepositoryType>
-    <PackageReleaseNotes>Switched to .Net Standard</PackageReleaseNotes>
+    <PackageReleaseNotes>Placeholder for dev</PackageReleaseNotes>
     <PackageTags>Order of Life, Calendar, StarDate</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <ApplicationIcon>zodiac.ico</ApplicationIcon>

@@ -52,3 +52,9 @@ C:\Users\SiliconProphet\Documents\GitHub\StarDate\Zodiac\obj\Debug\netcoreapp3.1
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\Zodiac\obj\Debug\netcoreapp3.1\Razor\Andromeda\InputStarDate.razor.g.cs
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\Zodiac\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\Converter.razor.g.cs
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\Zodiac\obj\Debug\netcoreapp3.1\Razor\Shared\Converter.razor.g.cs
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\Zodiac\obj\Debug\netcoreapp3.1\RazorDeclaration\Andromeda\Calendar14.razor.g.cs
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\Zodiac\obj\Debug\netcoreapp3.1\RazorDeclaration\Andromeda\Calendar28.razor.g.cs
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\Zodiac\obj\Debug\netcoreapp3.1\RazorDeclaration\Andromeda\Calendar7.razor.g.cs
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\Zodiac\obj\Debug\netcoreapp3.1\Razor\Andromeda\Calendar14.razor.g.cs
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\Zodiac\obj\Debug\netcoreapp3.1\Razor\Andromeda\Calendar28.razor.g.cs
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\Zodiac\obj\Debug\netcoreapp3.1\Razor\Andromeda\Calendar7.razor.g.cs

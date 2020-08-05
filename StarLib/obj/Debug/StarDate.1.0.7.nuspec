@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>StarDate</id>
-    <version>1.0.5</version>
+    <version>1.0.7</version>
     <authors>Silicon Prophet</authors>
     <owners>Silicon Prophet</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -11,7 +11,7 @@
     <icon>DNA Tree Logo.jpg</icon>
     <projectUrl>https://github.com/siliconprophet/StarDate</projectUrl>
     <description>The Cosmic Calendar of the Order of Life</description>
-    <releaseNotes>Fixed Year Assignment Glitch</releaseNotes>
+    <releaseNotes>Placeholder for dev</releaseNotes>
     <copyright>Order of Life 2020</copyright>
     <tags>Order of Life, Calendar, StarDate</tags>
     <repository type="Library" url="https://github.com/siliconprophet/StarDate" />
