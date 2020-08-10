@@ -416,7 +416,7 @@ namespace StarLib
                     case 'b':
                     case 'B':
                         tokenLen = ParseRepeatPattern(format, i, ch);
-                        result.Append(StarDate.billion);
+                        result.Append(StarDate.Billion);
                         break;
                     case 'g':
                         tokenLen = ParseRepeatPattern(format, i, ch);
@@ -656,7 +656,7 @@ namespace StarLib
                             case 4:
                             case 5: result.Append(year.ToString()); break;
                             default:
-                                result.Append(StarDate.fullyear % Math.Pow(10, tokenLen));
+                                result.Append(StarDate.Fullyear % Math.Pow(10, tokenLen));
                                 break;
                         }
                         ////Console.WriteLine(result);

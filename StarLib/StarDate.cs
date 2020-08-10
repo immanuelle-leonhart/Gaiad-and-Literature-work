@@ -185,7 +185,7 @@ namespace StarLib
         internal static Time week = DayTime * 7;
         internal const long TicksPerWeek = TicksPerDay * 7;
         internal const int DaysPerWeek = 7;
-        internal static Time month = week * 4;
+        internal static Time MonthTime = week * 4;
         internal const long TicksPerMonth = TicksPerDay * 28;
         internal const int DaysPerMonth = DaysPerWeek * 4;
         internal static Time YearTime = week * 52;
@@ -316,6 +316,8 @@ namespace StarLib
         private static string currentCulture;
         private static List<string> formats;
         private static bool acceptoverflow = false; //determines whether setters throw errors related to leap year overflows or set the date to the next year
+        //private bool hasMonth;
+
         //private BigInteger error1;
 
         //private int[] vs;
@@ -883,6 +885,47 @@ namespace StarLib
             vs = new int[] { y, mo, d, h, mi, s, ms, t };
         }
 
+        public int[] GetDateParts()
+        {
+            return GetDateParts(8);
+        }
+
+        public int[] GetDateParts(int length)
+        {
+            if (length < 1) length = 8;
+            int[] vs = new int[length];
+            switch (vs.Length)
+            {
+                case 1:
+                    GetDatePart(out vs[0]);
+                    break;
+                case 2:
+                    GetDatePart(out vs[0], out vs[1]);
+                    break;
+                case 3:
+                    GetDatePart(out vs[0], out vs[1], out vs[2]);
+                    break;
+                case 4:
+                    GetDatePart(out vs[0], out vs[1], out vs[2], out vs[3]);
+                    break;
+                case 5:
+                    GetDatePart(out vs[0], out vs[1], out vs[2], out vs[3], out vs[4]);
+                    break;
+                case 6:
+                    GetDatePart(out vs[0], out vs[1], out vs[2], out vs[3], out vs[4], out vs[5]);
+                    break;
+                case 7:
+                    GetDatePart(out vs[0], out vs[1], out vs[2], out vs[3], out vs[4], out vs[5], out vs[6]);
+                    break;
+                case 8:
+                    GetDatePart(out vs[0], out vs[1], out vs[2], out vs[3], out vs[4], out vs[5], out vs[6], out vs[7]);
+                    break;
+                default:
+                    GetDatePart(out vs); break;
+            }
+            return vs;
+        }
+
         private void GetDatePart(out Dictionary<string, int> keyValuePairs)
         {
             int[] values;
@@ -1228,6 +1271,17 @@ namespace StarLib
         public int LeapLevel()
         {
             return isleapyear(Year);
+        }
+
+        public static int LeapLevel(int year)
+        {
+            return isleapyear(year);
+        }
+
+        public static int HorusLength(int year)
+        {
+            int[] vs = new int[] { 0, 7, 14 };
+            return vs[LeapLevel(year)];
         }
 
         public int HorusLength()
@@ -1861,7 +1915,7 @@ namespace StarLib
             dt += y78 * Seventy_Eight;
             dt += y6 * Sixyear;
             dt += year * YearTime;
-            dt += month * StarDate.month;
+            dt += month * StarDate.MonthTime;
             dt += day * StarDate.DayTime;
             dt += hour * StarDate.HourTime;
             dt += min * StarDate.MinuteTime;
@@ -2022,54 +2076,34 @@ namespace StarLib
             return AddTicks(millis * TicksPerMillisecond);
         }
 
-        // Returns the StarDate resulting from adding a fractional number of
-        // days to this StarDate. The result is computed by rounding the
-        // fractional number of days given by value to the nearest
-        // millisecond, and adding that interval to this StarDate. The
-        // value argument is permitted to be negative.
+        // Returns the StarDate resulting from adding the given number of
+        // years to this StarDate. The result is computed by incrementing
+        // (or decrementing) the Year part of this StarDate by value
+        // years. If the month and day of this StarDate is 2/29, and if the
+        // resulting Year is not a leap Year, the month and day of the resulting
+        // StarDate becomes 2/28. Otherwise, the month, day, and time-of-day
+        // parts of the result are the same as those of this StarDate.
         //
-        public StarDate AddDays(double value)
+        public StarDate AddYears(double value)
         {
-            return Add(value, MillisPerDay);
+            if (value % 1 == 0)
+            {
+                return AddYears((int)value);
+            }
+            else
+            {
+                return this + value * YearTime;
+            }
         }
 
-        public StarDate AddWeeks(double value)
+        public StarDate AddYears(int value)
         {
-            return Add(value, MillisPerWeek);
+            StarDate sd = this;
+            sd.Year += (int)value;
+            return sd;
         }
 
-        // Returns the StarDate resulting from adding a fractional number of
-        // hours to this StarDate. The result is computed by rounding the
-        // fractional number of hours given by value to the nearest
-        // millisecond, and adding that interval to this StarDate. The
-        // value argument is permitted to be negative.
-        //
-        public StarDate AddHours(double value)
-        {
-            return Add(value, MillisPerHour);
-        }
-
-        // Returns the StarDate resulting from the given number of
-        // milliseconds to this StarDate. The result is computed by rounding
-        // the number of milliseconds given by value to the nearest integer,
-        // and adding that interval to this StarDate. The value
-        // argument is permitted to be negative.
-        //
-        public StarDate AddMilliseconds(double value)
-        {
-            return Add(value, 1);
-        }
-
-        // Returns the StarDate resulting from adding a fractional number of
-        // minutes to this StarDate. The result is computed by rounding the
-        // fractional number of minutes given by value to the nearest
-        // millisecond, and adding that interval to this StarDate. The
-        // value argument is permitted to be negative.
-        //
-        public StarDate AddMinutes(double value)
-        {
-            return Add(value, MillisPerMinute);
-        }
+        
 
         // Returns the StarDate resulting from adding the given number of
         // months to this StarDate. The result is computed by incrementing
@@ -2088,9 +2122,50 @@ namespace StarLib
         // or equal to d that denotes a valid day in month m1 of Year
         // y1.
         //
-        public StarDate AddMonths(int months)
+        public StarDate AddMonths(double months)
         {
             return Add(months, MillisPerMonth);
+        }
+
+        public StarDate AddWeeks(double value)
+        {
+            return Add(value, MillisPerWeek);
+        }
+
+        // Returns the StarDate resulting from adding a fractional number of
+        // days to this StarDate. The result is computed by rounding the
+        // fractional number of days given by value to the nearest
+        // millisecond, and adding that interval to this StarDate. The
+        // value argument is permitted to be negative.
+        //
+
+        public StarDate AddDays(double value)
+        {
+            return Add(value, MillisPerDay);
+        }
+
+        
+
+        // Returns the StarDate resulting from adding a fractional number of
+        // hours to this StarDate. The result is computed by rounding the
+        // fractional number of hours given by value to the nearest
+        // millisecond, and adding that interval to this StarDate. The
+        // value argument is permitted to be negative.
+        //
+        public StarDate AddHours(double value)
+        {
+            return Add(value, MillisPerHour);
+        }
+
+        // Returns the StarDate resulting from adding a fractional number of
+        // minutes to this StarDate. The result is computed by rounding the
+        // fractional number of minutes given by value to the nearest
+        // millisecond, and adding that interval to this StarDate. The
+        // value argument is permitted to be negative.
+        //
+        public StarDate AddMinutes(double value)
+        {
+            return Add(value, MillisPerMinute);
         }
 
         // Returns the StarDate resulting from adding a fractional number of
@@ -2104,6 +2179,23 @@ namespace StarLib
             return Add(value, MillisPerSecond);
         }
 
+        // Returns the StarDate resulting from the given number of
+        // milliseconds to this StarDate. The result is computed by rounding
+        // the number of milliseconds given by value to the nearest integer,
+        // and adding that interval to this StarDate. The value
+        // argument is permitted to be negative.
+        //
+        public StarDate AddMilliseconds(double value)
+        {
+            return Add(value, 1);
+        }
+
+        
+
+        
+
+        
+
         // Returns the StarDate resulting from adding the given number of
         // 100-nanosecond _ticks to this StarDate. The value argument
         // is permitted to be negative.
@@ -2114,18 +2206,7 @@ namespace StarLib
             return new StarDate((ticks + value), errorData, TimeZone);
         }
 
-        // Returns the StarDate resulting from adding the given number of
-        // years to this StarDate. The result is computed by incrementing
-        // (or decrementing) the Year part of this StarDate by value
-        // years. If the month and day of this StarDate is 2/29, and if the
-        // resulting Year is not a leap Year, the month and day of the resulting
-        // StarDate becomes 2/28. Otherwise, the month, day, and time-of-day
-        // parts of the result are the same as those of this StarDate.
-        //
-        public StarDate AddYears(int value)
-        {
-            return this + value * YearTime;
-        }
+        
 
         // Compares two StarDate values, returning an integer that indicates
         // their relationship.
@@ -2585,72 +2666,72 @@ namespace StarLib
 
         //returns the amount of years since the Big Bang
 
-        public long fullyear
+        public long Fullyear
         {
             get { return this.Atomic / StarDate.AverageYear; }
-            internal set
+            set
             {
-                long diff = value - this.fullyear;
+                long diff = value - this.Fullyear;
                 this.Atomic += diff * StarDate.AverageYear;
             }
         }
 
         //returns the amount of quadrillion years since the Big Bang (currently zero)
 
-        public int quadrillion
+        public int Quadrillion
         {
             get
             {
                 return GetDatePart(DatePartQuadrillion);
             }
-            internal set
+            set
             {
-                int diff = value - this.quadrillion;
+                int diff = value - this.Quadrillion;
                 this.Atomic += diff * StarDate.tr * 1000;
             }
         }
 
         //returns the amount of trillion years since the Big Bang (currently zero)
 
-        public int trillion
+        public int Trillion
         {
             get
             {
                 return GetDatePart(DatePartTrillion);
             }
-            internal set
+            set
             {
-                int diff = value - this.trillion;
+                int diff = value - this.Trillion;
                 this.Atomic += diff * StarDate.tr;
             }
         }
 
         //returns the amount of billion years since the Big Bang (currently 14)
 
-        public int billion
+        public int Billion
         {
             get
             {
                 return GetDatePart(DatePartBillion);
             }
-            internal set
+            set
             {
-                int diff = value - this.billion;
+                int diff = value - this.Billion;
                 this.Atomic += diff * StarDate.b;
             }
         }
 
         //returns millions of years not included in billion or higher (currently zero)
 
-        public int million
+        public int Million
         {
             get
             {
                 return GetDatePart(DatePartMillion);
             }
-            internal set
+            set
             {
-                int diff = value - this.million;
+                int diff = value - this.Million;
                 this.Atomic += diff * StarDate.m;
             }
         }
@@ -3041,6 +3122,14 @@ namespace StarLib
             }
         }
 
+        public string DayName
+        {
+            get
+            {
+                return StarCulture.CurrentCulture.DayNames[(int)DayOfWeek];
+            }
+        }
+
         //returns the symbol of the day
 
         public string DaySymbol
@@ -3051,7 +3140,7 @@ namespace StarLib
             }
         }
 
-        public int Julian
+        public long Julian
         {
             get
             {
@@ -3060,10 +3149,20 @@ namespace StarLib
 
             set
             {
-                int diff = value - this.Julian;
+                long diff = value - this.Julian;
                 this += diff * StarDate.DayTime;
             }
         }
+
+        public bool HasYear { get => this.error < YearTime; }
+        public bool HasMonth { get => this.error < MonthTime; }
+        public bool HasDay { get => this.error < LocalDay; }
+        public bool HasHour { get => this.error < HourTime; }
+        public bool HasMinute { get => this.error < MinuteTime; }
+        public bool HasSecond { get => this.error < SecondTime; }
+        public bool HasMillisecond { get => this.error < MillisecondTime; }
+        public bool HasTick { get => this.errorData == 0; }
+
 
         //returns Atomic Clock Time
 
@@ -3223,6 +3322,19 @@ namespace StarLib
             private set
             {
                 formats = value;
+            }
+        }
+
+        public static int DaysInMonth(int year, int month)
+        {
+            Contract.Ensures(month >= 1 && month <= 14);
+            if (month == 14)
+            {
+                return HorusLength(year);
+            }
+            else
+            {
+                return 28;
             }
         }
 

@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Dynamic;
 using System.Text;
 
-namespace StarLibPython
+namespace StarLib.Dynamic
 {
-    class StarZonePy : DynamicObject
+    class TimeDynamic : DynamicObject
     {
+        public Time t;
     }
 }
