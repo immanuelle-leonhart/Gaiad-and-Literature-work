@@ -161,7 +161,7 @@ namespace StarLib
 
     */
     [StructLayout(LayoutKind.Auto)]
-    //[Serializable]
+    //[Serializable] readd serializable
     public struct StarDate : IComparable<StarDate>, IEquatable<StarDate>, IComparable, IFormattable, IConvertible, IComparable<DateTime>, IEquatable<DateTime>
     {
 

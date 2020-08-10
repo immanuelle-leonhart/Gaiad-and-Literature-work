@@ -4565,11 +4565,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate\\TestConsole\\TestConsole.csproj",
+      "projectUniqueName": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Manu\\StarDate\\TestConsole\\TestConsole.csproj",
       "projectName": "TestConsole",
-      "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate\\TestConsole\\TestConsole.csproj",
+      "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Manu\\StarDate\\TestConsole\\TestConsole.csproj",
       "packagesPath": "C:\\Users\\SiliconProphet\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate\\TestConsole\\obj\\",
+      "outputPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Manu\\StarDate\\TestConsole\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\SiliconProphet\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4585,8 +4585,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate\\StarLib\\StarLib.csproj": {
-              "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate\\StarLib\\StarLib.csproj"
+            "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Manu\\StarDate\\StarLib\\StarLib.csproj": {
+              "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Manu\\StarDate\\StarLib\\StarLib.csproj"
             }
           }
         }

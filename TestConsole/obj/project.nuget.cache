@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WEDVwHuh6cvhScR6aOuQ5X2/obMWPQSluyreYoRDJToD5+6M5xEyyTghPZV0ZTEORI3FCzw5cHuzKLx4Z3VVqw==",
+  "dgSpecHash": "JUAH+ZabDKubakgHMXtHamLpDz6ClvV35dWU4ZyKOmUqmM0tNfrFjB+0LQPq1RHF5JVJ2qMaoq/efigEiYfShg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate\\TestConsole\\TestConsole.csproj",
+  "projectFilePath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Manu\\StarDate\\TestConsole\\TestConsole.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SiliconProphet\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\SiliconProphet\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
