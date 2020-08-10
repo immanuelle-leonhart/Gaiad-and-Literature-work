@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cMIUoKiIr6Ju4Qi+WUqVHSLIql4/KQ9JXIUbg0GO1/BU41HJVX2+r8YdCd0IdUgr1il6w+b8rU7H7T8wdfoXMw==",
+  "dgSpecHash": "CEOFOCwniwllX3MpqKId6IHcrzfgaFOE2YZl74SgTUG0ip0teFm1C5naS7l8n6LE3hqo3aBEZ0WisCQVYvsBcQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Manu\\StarDate\\StarLib\\StarLib.csproj",
+  "projectFilePath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate\\StarLib\\StarLib.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SiliconProphet\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\SiliconProphet\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
