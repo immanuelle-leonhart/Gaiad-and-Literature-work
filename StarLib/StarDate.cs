@@ -3900,11 +3900,36 @@ namespace StarLib
             }
         }
 
-        //internal int[] ParseBasicString(string basic)
-        //{
-        //    string[] vs = basic.Split('-');
+        public static StarDate BasicParse(string basic)
+        {
+            string[] data = basic.Split('-');
+            int i = 0;
+            bool datepart = true;
+            List<int> dateparts = new List<int>();
+            //List<int> dateparts = new List<int>();
+            BigInteger e = 0;
+            while (i < data.Length)
+            {
+                if (datepart && (data[i][0] != 'e'))
+                {
+                    dateparts.Add(int.Parse(data[i]));
+                }
+                else if (datepart)
+                {
+                    datepart = false;
+                    e = BigInteger.Parse(data[i].Substring(1));
+                }
+                else
+                {
+                    
+                }
+            }
 
-        //}
+            if (e == 0)
+            {
+
+            }
+        }
 
         
     }

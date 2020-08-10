@@ -18,6 +18,8 @@ C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLib.Forms\obj\Debug\netsta
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLib.Forms\obj\Debug\netstandard2.0\staticwebassets\StarLib.Forms.StaticWebAssets.Manifest.cache
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLib.Forms\obj\Debug\netstandard2.0\staticwebassets\StarLib.Forms.StaticWebAssets.xml
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLib.Forms\bin\Debug\netstandard2.0\StarLib.Forms.pdb
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLib.Forms\obj\Debug\netstandard2.0\StarLib.Forms.dll
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLib.Forms\obj\Debug\netstandard2.0\StarLib.Forms.pdb
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLib.Forms\obj\Debug\netstandard2.0\StarLib.Forms.csproj.CoreCompileInputs.cache
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLib.Forms\obj\Debug\netstandard2.0\RazorDeclaration\StarLib.Forms.dll
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLib.Forms\obj\Debug\netstandard2.0\StarLib.Forms.TagHelpers.input.cache
@@ -30,5 +32,3 @@ C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLib.Forms\obj\Debug\netsta
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLib.Forms\obj\Debug\netstandard2.0\Razor\Converter.razor.g.cs
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLib.Forms\obj\Debug\netstandard2.0\Razor\InputStarDate.razor.g.cs
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLib.Forms\obj\Debug\netstandard2.0\Razor\_Imports.razor.g.cs
-C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLib.Forms\obj\Debug\netstandard2.0\StarLib.Forms.dll
-C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLib.Forms\obj\Debug\netstandard2.0\StarLib.Forms.pdb

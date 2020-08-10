@@ -21,7 +21,6 @@ C:\Users\SiliconProphet\Documents\GitHub\StarDate\BlazorDemonstration\bin\Debug\
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\BlazorDemonstration\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\BlazorDemonstration\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\BlazorDemonstration\bin\Debug\netcoreapp3.1\Microsoft.JSInterop.dll
-C:\Users\SiliconProphet\Documents\GitHub\StarDate\BlazorDemonstration\bin\Debug\netcoreapp3.1\System.Management.Automation.dll
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\BlazorDemonstration\bin\Debug\netcoreapp3.1\StarLib.dll
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\BlazorDemonstration\bin\Debug\netcoreapp3.1\StarLib.Forms.dll
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\BlazorDemonstration\bin\Debug\netcoreapp3.1\StarLib.Forms.pdb
@@ -65,3 +64,4 @@ C:\Users\SiliconProphet\Documents\GitHub\StarDate\BlazorDemonstration\obj\Debug\
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\BlazorDemonstration\obj\Debug\netcoreapp3.1\BlazorDemonstration.dll
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\BlazorDemonstration\obj\Debug\netcoreapp3.1\BlazorDemonstration.pdb
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\BlazorDemonstration\obj\Debug\netcoreapp3.1\BlazorDemonstration.genruntimeconfig.cache
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\BlazorDemonstration\bin\Debug\netcoreapp3.1\System.Management.Automation.dll
