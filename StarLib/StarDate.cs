@@ -316,6 +316,8 @@ namespace StarLib
         private static string currentCulture;
         private static List<string> formats;
         private static bool acceptoverflow = false; //determines whether setters throw errors related to leap year overflows or set the date to the next year
+        //private BigInteger error1;
+
         //private int[] vs;
 
 
@@ -1716,7 +1718,7 @@ namespace StarLib
                 else
                 {
                     dateData += TicksPerDay * day;
-                    
+
                     if (hour == PlaceHolder)
                     {
                         errorData = 12 * TicksPerHour;
@@ -1940,6 +1942,22 @@ namespace StarLib
         }
 
         public StarDate(int[] vs) : this(vs[0], vs[1], vs[2], vs[3], vs[4], vs[5], vs[6], vs[7])
+        {
+        }
+
+        public StarDate(int[] vs, BigInteger error1, StarZone timezone) : this(vs, timezone)
+        {
+            this.errorData = error1;
+            this._timeZone = timezone;
+        }
+
+        public StarDate(int year, int month, int day, int hour, int minute, int second, int millisecond, int ticks, BigInteger error1, StarZone timezone) : this(year, month, day, hour, minute, second, millisecond, ticks)
+        {
+            this.error = new Time(error1);
+            TimeZone = timezone;
+        }
+
+        public StarDate(int[] vs, StarZone timezone) : this(vs[0], vs[1], vs[2], vs[3], vs[4], vs[5], vs[6], vs[7], timezone)
         {
         }
 
@@ -2709,7 +2727,7 @@ namespace StarLib
             }
         }
 
-        
+
 
         // Returns the month part of this StarDate. The returned value is an
         // integer between 1 and 12.
@@ -3904,33 +3922,36 @@ namespace StarLib
         {
             string[] data = basic.Split('-');
             int i = 0;
-            bool datepart = true;
-            List<int> dateparts = new List<int>();
-            //List<int> dateparts = new List<int>();
-            BigInteger e = 0;
-            while (i < data.Length)
+            int j = 0;
+            int[] dateparts = new int[] { PlaceHolder, PlaceHolder, PlaceHolder, PlaceHolder, PlaceHolder, PlaceHolder, PlaceHolder, PlaceHolder };
+            BigInteger error;
+            StarZone timezone = UTC;
+            int l = 8;
+            if (data.Length < l)
             {
-                if (datepart && (data[i][0] != 'e'))
+                l = data.Length;
+            }
+            while (i < l)
+            {
+                if (data[i][0] == 'e')
                 {
-                    dateparts.Add(int.Parse(data[i]));
-                }
-                else if (datepart)
-                {
-                    datepart = false;
-                    e = BigInteger.Parse(data[i].Substring(1));
+                    error = BigInteger.Parse(data[i].Substring(1));
+                    i = 8;
+                    j++;
                 }
                 else
                 {
-                    
+                    dateparts[i] = int.Parse(data[i]);
+                    i++;
+                    j++;
                 }
             }
-
-            if (e == 0)
+            i = j;
+            if (i < data.Length)
             {
-
+                timezone = StarZone.FindSystemTimeZoneById(data[i]);
             }
+            return new StarDate(dateparts[0], dateparts[1], dateparts[2], dateparts[3], dateparts[4], dateparts[5], dateparts[6], dateparts[7], error, timezone);
         }
-
-        
     }
 }
