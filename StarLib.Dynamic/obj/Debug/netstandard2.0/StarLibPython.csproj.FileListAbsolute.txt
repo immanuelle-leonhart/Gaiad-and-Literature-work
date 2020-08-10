@@ -1,0 +1,12 @@
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibPython\bin\Debug\netstandard2.0\StarLibPython.deps.json
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibPython\bin\Debug\netstandard2.0\StarLibPython.dll
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibPython\bin\Debug\netstandard2.0\StarLib.dll
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibPython\bin\Debug\netstandard2.0\StarLib.pdb
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibPython\obj\Debug\netstandard2.0\StarLibPython.csprojAssemblyReference.cache
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibPython\obj\Debug\netstandard2.0\StarLibPython.AssemblyInfoInputs.cache
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibPython\obj\Debug\netstandard2.0\StarLibPython.AssemblyInfo.cs
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibPython\obj\Debug\netstandard2.0\StarLibPython.csproj.CopyComplete
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibPython\bin\Debug\netstandard2.0\StarLibPython.pdb
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibPython\obj\Debug\netstandard2.0\StarLibPython.csproj.CoreCompileInputs.cache
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibPython\obj\Debug\netstandard2.0\StarLibPython.dll
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibPython\obj\Debug\netstandard2.0\StarLibPython.pdb

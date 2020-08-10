@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate\\StarLibPython\\StarLibPython.csproj": {}
+    "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate\\StarLibPython\\StarLibDynamic.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate\\StarLibPython\\StarLibPython.csproj": {
+    "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate\\StarLibPython\\StarLibDynamic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate\\StarLibPython\\StarLibPython.csproj",
-        "projectName": "StarLibPython",
-        "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate\\StarLibPython\\StarLibPython.csproj",
+        "projectUniqueName": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate\\StarLibPython\\StarLibDynamic.csproj",
+        "projectName": "StarLibDynamic",
+        "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate\\StarLibPython\\StarLibDynamic.csproj",
         "packagesPath": "C:\\Users\\SiliconProphet\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate\\StarLibPython\\obj\\",
         "projectStyle": "PackageReference",
@@ -47,6 +47,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
             }
           },
           "imports": [

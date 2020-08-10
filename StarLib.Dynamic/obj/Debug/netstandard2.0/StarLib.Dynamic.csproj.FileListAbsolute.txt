@@ -1,0 +1,12 @@
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibPython\bin\Debug\netstandard2.0\StarLib.Dynamic.deps.json
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibPython\bin\Debug\netstandard2.0\StarLib.Dynamic.dll
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibPython\bin\Debug\netstandard2.0\StarLib.Dynamic.pdb
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibPython\bin\Debug\netstandard2.0\StarLib.dll
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibPython\bin\Debug\netstandard2.0\StarLib.pdb
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibPython\obj\Debug\netstandard2.0\StarLib.Dynamic.csprojAssemblyReference.cache
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibPython\obj\Debug\netstandard2.0\StarLib.Dynamic.AssemblyInfoInputs.cache
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibPython\obj\Debug\netstandard2.0\StarLib.Dynamic.AssemblyInfo.cs
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibPython\obj\Debug\netstandard2.0\StarLib.Dynamic.csproj.CoreCompileInputs.cache
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibPython\obj\Debug\netstandard2.0\StarLib.Dynamic.csproj.CopyComplete
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibPython\obj\Debug\netstandard2.0\StarLib.Dynamic.dll
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLibPython\obj\Debug\netstandard2.0\StarLib.Dynamic.pdb

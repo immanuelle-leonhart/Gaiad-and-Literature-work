@@ -4,7 +4,6 @@
     <id>StarDate</id>
     <version>1.0.7</version>
     <authors>Silicon Prophet</authors>
-    <owners>Silicon Prophet</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="file">LICENSE</license>
     <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
