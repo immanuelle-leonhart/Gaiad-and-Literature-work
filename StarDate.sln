@@ -9,9 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestConsole", "TestConsole\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zodiac", "Zodiac\Zodiac.csproj", "{D3FD5425-9EED-4DD5-A848-0D5881806447}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarLib.Forms", "StarLib.Forms\StarLib.Forms.csproj", "{150B28C4-0C32-4C98-AD01-152C072F1F23}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarLib.Forms", "StarLib.Forms\StarLib.Forms.csproj", "{150B28C4-0C32-4C98-AD01-152C072F1F23}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorDemonstration", "BlazorDemonstration\BlazorDemonstration.csproj", "{B42513C6-4A78-4983-A445-9DAE8BB43275}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorDemonstration", "BlazorDemonstration\BlazorDemonstration.csproj", "{B42513C6-4A78-4983-A445-9DAE8BB43275}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PythonConsole", "PythonConsole\PythonConsole.pyproj", "{9393DA12-5385-480F-9A5F-4F85E8B6A2C2}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "NodejsConsoleApp1", "NodejsConsoleApp1\NodejsConsoleApp1.njsproj", "{7F287AE8-CE75-4294-ACBE-D23CAD1F672E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,12 @@ Global
 		{B42513C6-4A78-4983-A445-9DAE8BB43275}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B42513C6-4A78-4983-A445-9DAE8BB43275}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B42513C6-4A78-4983-A445-9DAE8BB43275}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9393DA12-5385-480F-9A5F-4F85E8B6A2C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9393DA12-5385-480F-9A5F-4F85E8B6A2C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F287AE8-CE75-4294-ACBE-D23CAD1F672E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F287AE8-CE75-4294-ACBE-D23CAD1F672E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F287AE8-CE75-4294-ACBE-D23CAD1F672E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F287AE8-CE75-4294-ACBE-D23CAD1F672E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
