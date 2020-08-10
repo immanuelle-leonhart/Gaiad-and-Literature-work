@@ -1932,7 +1932,7 @@ namespace StarLib
 
         }
 
-        public StarDate(StarDate dt)
+        internal StarDate(StarDate dt)
         {
             this.dateData = dt.dateData;
             this.errorData = dt.errorData;
