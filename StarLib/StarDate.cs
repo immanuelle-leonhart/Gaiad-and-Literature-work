@@ -1927,6 +1927,17 @@ namespace StarLib
             this.TimeZone = Zone;
         }
 
+        public StarDate(string basic) : this(StarDate.Parse(basic))
+        {
+
+        }
+
+        public StarDate(StarDate dt)
+        {
+            this.dateData = dt.dateData;
+            this.errorData = dt.errorData;
+            this._timeZone = dt.TimeZone;
+        }
 
 
         public StarDate(DateTime utcNow, StarZone zone) : this(utcNow)
@@ -3625,6 +3636,14 @@ namespace StarLib
 
         public static StarDate Parse(string s)
         {
+            try
+            {
+                return BasicParse(s);
+            }
+            catch (Exception)
+            {
+
+            }
             foreach (string format in StarDate.Formats)
             {
                 StarDate dt;
