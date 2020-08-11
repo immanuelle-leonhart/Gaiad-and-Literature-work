@@ -8,6 +8,6 @@ namespace StarLib.Dynamic
 {
     class StarCultureDynamic : DynamicObject
     {
-        StarCulture culture;
+        StarLib.StarCulture culture;
     }
 }

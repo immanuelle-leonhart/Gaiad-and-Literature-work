@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json.Serialization;
+﻿//using Newtonsoft.Json.Serialization;
 using StarLib;
 using System;
 using System.Dynamic;
@@ -9,21 +9,6 @@ namespace StarLib.Dynamic
     public class StarDateDynamic : DynamicObject
     {
         StarDate starDate;
-        public StarDateDynamic()
-        {
-            starDate = StarDate.Now;
-        }
-
-        public StarDateDynamic(string data)
-        {
-            starDate = new StarDate(data);
-        }
-
-        public StarDateDynamic(StarDate v)
-        {
-            starDate = v;
-        }
-
         public override bool TrySetMember(SetMemberBinder binder, object value)
         {
             switch (binder.Name)
@@ -232,6 +217,21 @@ namespace StarLib.Dynamic
                     return true;
             }
             return false;
+        }
+
+        public StarDateDynamic()
+        {
+            starDate = StarDate.Now;
+        }
+
+        public StarDateDynamic(string data)
+        {
+            starDate = new StarDate(data);
+        }
+
+        public StarDateDynamic(StarDate v)
+        {
+            starDate = v;
         }
 
         public static implicit operator StarDateDynamic(StarDate v)
