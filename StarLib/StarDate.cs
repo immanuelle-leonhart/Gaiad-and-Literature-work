@@ -7,6 +7,7 @@ using System.Numerics;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Text;
+using Newtonsoft.Json;
 
 namespace StarLib
 {
@@ -162,7 +163,7 @@ namespace StarLib
     */
     [StructLayout(LayoutKind.Auto)]
     //[Serializable] readd serializable
-    public struct StarDate : IComparable<StarDate>, IEquatable<StarDate>, IComparable, IFormattable, IConvertible, IComparable<DateTime>, IEquatable<DateTime>
+    public struct StarDate : IComparable<StarDate>, IEquatable<StarDate>, IComparable, IFormattable, IConvertible, IComparable<DateTime>, IEquatable<DateTime> 
     {
 
         // Number of 100ns _ticks per time unit
@@ -4084,5 +4085,6 @@ namespace StarLib
             }
             return new StarDate(dateparts[0], dateparts[1], dateparts[2], dateparts[3], dateparts[4], dateparts[5], dateparts[6], dateparts[7], error, timezone);
         }
+
     }
 }

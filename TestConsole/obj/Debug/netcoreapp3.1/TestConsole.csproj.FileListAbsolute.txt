@@ -14,3 +14,4 @@ C:\Users\SiliconProphet\Documents\GitHub\StarDate\TestConsole\obj\Debug\netcorea
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\TestConsole\bin\Debug\netcoreapp3.1\StarLib.dll
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\TestConsole\bin\Debug\netcoreapp3.1\StarLib.pdb
 C:\Users\SiliconProphet\Documents\GitHub\StarDate\TestConsole\obj\Debug\netcoreapp3.1\TestConsole.csproj.CopyComplete
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\TestConsole\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll

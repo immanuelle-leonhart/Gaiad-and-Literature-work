@@ -1,4 +1,5 @@
-﻿using StarLib;
+﻿using Newtonsoft.Json;
+using StarLib;
 //using StarLibRazor;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,9 @@ namespace TestConsole
             _ = DateTime.Now;
             _ = DateTime.UtcNow;
             _ = StarDate.Now;
+            StarDate sd = StarDate.Now;
+            string json = JsonConvert.SerializeObject(sd);
+            Console.WriteLine(json);
         }
     }
 }

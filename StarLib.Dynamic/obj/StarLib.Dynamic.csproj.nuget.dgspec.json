@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate\\StarLibPython\\StarLib.Dynamic.csproj": {}
+    "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate\\StarLib.Dynamic\\StarLib.Dynamic.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate\\StarLibPython\\StarLib.Dynamic.csproj": {
+    "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate\\StarLib.Dynamic\\StarLib.Dynamic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate\\StarLibPython\\StarLib.Dynamic.csproj",
+        "projectUniqueName": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate\\StarLib.Dynamic\\StarLib.Dynamic.csproj",
         "projectName": "StarLib.Dynamic",
-        "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate\\StarLibPython\\StarLib.Dynamic.csproj",
+        "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate\\StarLib.Dynamic\\StarLib.Dynamic.csproj",
         "packagesPath": "C:\\Users\\SiliconProphet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate\\StarLibPython\\obj\\",
+        "outputPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate\\StarLib.Dynamic\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SiliconProphet\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -47,10 +47,6 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
-            },
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[12.0.3, )"
             }
           },
           "imports": [
@@ -105,6 +101,10 @@
               "target": "Package",
               "version": "[1.6.1, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
             },
             "System.Diagnostics.Contracts": {
               "target": "Package",

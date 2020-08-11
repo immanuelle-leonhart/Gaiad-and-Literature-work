@@ -176,6 +176,10 @@
               "version": "[1.6.1, )",
               "autoReferenced": true
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
             "System.Diagnostics.Contracts": {
               "target": "Package",
               "version": "[4.3.0, )"
