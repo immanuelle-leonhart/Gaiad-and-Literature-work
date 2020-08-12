@@ -1,6 +1,8 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace StarLib
@@ -9,14 +11,27 @@ namespace StarLib
     {
         public override void WriteJson(JsonWriter writer, StarDate value, JsonSerializer serializer)
         {
-            writer.WriteValue(value.ToString());
+            throw new NotImplementedException();
+            JToken t = JToken.FromObject(value);
+
+            if (t.Type != JTokenType.Object)
+            {
+                t.WriteTo(writer);
+            }
+            else
+            {
+                JObject o = (JObject)t;
+                IList<string> propertyNames = o.Properties().Select(p => p.Name).ToList();
+
+                o.AddFirst(new JProperty("Keys", new JArray(propertyNames)));
+
+                o.WriteTo(writer);
+            }
         }
 
         public override StarDate ReadJson(JsonReader reader, Type objectType, StarDate existingValue, bool hasExistingValue, JsonSerializer serializer)
         {
-            string s = (string)reader.Value;
-
-            return new StarDate(s);
+            throw new NotImplementedException();
         }
     }
 

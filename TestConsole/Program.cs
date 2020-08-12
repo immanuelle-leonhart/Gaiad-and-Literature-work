@@ -3,6 +3,7 @@ using StarLib;
 //using StarLibRazor;
 using System;
 using System.Collections.Generic;
+using System.Dynamic;
 
 namespace TestConsole
 {
@@ -10,15 +11,19 @@ namespace TestConsole
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine(TimeZoneInfo.Local.DisplayName);
-            DateTime dt = DateTime.Now;
-            DateTime.DaysInMonth(18, 3);
-            _ = DateTime.Now;
-            _ = DateTime.UtcNow;
-            _ = StarDate.Now;
-            StarDate sd = StarDate.Now;
-            string json = JsonConvert.SerializeObject(sd);
-            Console.WriteLine(json);
+            StarDate myStruct = new StarDate(10, 10, 10, 10);
+
+            var serializedMyStruct = JsonConvert.SerializeObject(myStruct);
+
+            Console.WriteLine("JSON: " + serializedMyStruct);
+
+            var newlyDeserializedMyStruct = JsonConvert.DeserializeObject<StarDate>(serializedMyStruct);
+
+            Console.WriteLine("Standard deserialization result: " + newlyDeserializedMyStruct);
+
+            dynamic dynamicDeSerializedMyStruct = JsonConvert.DeserializeObject<ExpandoObject>(serializedMyStruct);
+
+            Console.WriteLine("Dynamic deserialization result: " + dynamicDeSerializedMyStruct);
         }
     }
 }
