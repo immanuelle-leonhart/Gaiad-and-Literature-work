@@ -726,7 +726,6 @@ namespace StarLib
         private Time basicUTCOffset;
         private Time baseDistance;
         internal static bool NoThrowOnInvalidTime = true;
-        private bool isMartian;
         private static StarZone[] martianTimeZones;
         private static StarZone[] _sys_zones;
         private static Dictionary<string, StarZone> systemTimeZonesByID;

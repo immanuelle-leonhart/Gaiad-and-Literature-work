@@ -1586,18 +1586,33 @@ namespace StarLib
         //
         public StarDate(BigInteger ticks)
         {
-            dateData = (UInt64)ticks;
+            dateData = ticks;
             _timeZone = StarZone.Local;
             errorData = 0;
         }
 
-
-        public StarDate(BigInteger ticks, DateTimeKind kind) : this(ticks)
+        public StarDate(BigInteger ticks, MarginOfError error)
         {
-            StarDate.SpecifyKind(this, kind);
+            dateData = ticks;
+            errorData = error;
+            _timeZone = StarZone.Local;
         }
 
-        public StarDate(BigInteger ticks, DateTimeKind kind, Boolean isAmbiguousDst)
+        public StarDate(BigInteger ticks, StarZone zone)
+        {
+            dateData = ticks;
+            _timeZone = zone;
+            errorData = 0;
+        }
+
+        public StarDate(BigInteger ticks, MarginOfError error, StarZone zone)
+        {
+            dateData = ticks;
+            errorData = error;
+            _timeZone = zone;
+        }
+
+        public StarDate(BigInteger ticks, DateTimeKind kind)
         {
             this.dateData = ticks;
             this.errorData = 0;
@@ -1613,6 +1628,11 @@ namespace StarLib
             {
                 this._timeZone = UnspecifiedTimeZone;
             }
+        }
+
+        public StarDate(BigInteger ticks, MarginOfError error, DateTimeKind kind) : this(ticks, kind)
+        {
+            this.errorData = error;
         }
 
         // Constructs a StarDate from a given Year, month, and day. The
@@ -1922,18 +1942,6 @@ namespace StarLib
             this.errorData = error;
         }
 
-        public StarDate(BigInteger ticks, MarginOfError error, StarZone zone)
-        {
-            dateData = ticks;
-            errorData = error;
-            _timeZone = zone;
-        }
-
-        public StarDate(BigInteger ticks, MarginOfError errorData, DateTimeKind kind) : this(ticks, errorData, StarZone.FromKind(kind))
-        {
-
-        }
-
         public StarDate(DateTime dt)
         {
             dateData = NetStart + dt.Ticks;
@@ -1958,12 +1966,6 @@ namespace StarLib
         {
             this.Atomic = t;
             this.TimeZone = StarZone.Local;
-        }
-
-        public StarDate(BigInteger v, StarZone Zone) : this(v)
-        {
-            this.Atomic = new Time(v) + ADStart.Atomic;
-            this.TimeZone = Zone;
         }
 
         public StarDate(string basic) : this(StarDate.Parse(basic))
@@ -3710,7 +3712,7 @@ namespace StarLib
 
         TypeCode IConvertible.GetTypeCode()
         {
-            throw new NotImplementedException();
+            return TypeCode.Object;
         }
 
         DateTime IConvertible.ToDateTime(IFormatProvider provider)
