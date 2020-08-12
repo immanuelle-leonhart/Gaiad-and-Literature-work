@@ -4,6 +4,7 @@ using StarLib;
 using System;
 using System.Collections.Generic;
 using System.Dynamic;
+using System.Numerics;
 
 namespace TestConsole
 {
@@ -12,6 +13,10 @@ namespace TestConsole
         static void Main(string[] args)
         {
             StarDate myStruct = new StarDate(10, 10, 10, 10);
+
+            BigInteger big = 100000;
+
+            StarDate star = new StarDate(big, 0, StarZone.UTC);
 
             var serializedMyStruct = JsonConvert.SerializeObject(myStruct);
 
