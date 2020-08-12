@@ -14,7 +14,7 @@ namespace StarLib.Dynamic
             switch (binder.Name)
             {
                 case "Fullyear":
-                    starDate.Fullyear = (long)value;
+                    starDate.FullYear = (long)value;
                     return true;
                 case "Quadrillion":
                     starDate.Quadrillion = (int)value;
@@ -77,7 +77,7 @@ namespace StarLib.Dynamic
                     return true;
                 case "Fullyear":
                     result = (Func<long>)(()
-                          => starDate.Fullyear);
+                          => starDate.FullYear);
                     return true;
                 case "Quadrillion":
                     result = (Func<int>)(()

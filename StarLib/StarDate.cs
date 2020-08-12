@@ -7,6 +7,9 @@ using System.Numerics;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Xml;
+using System.Xml.Schema;
+using System.Xml.Serialization;
 using Newtonsoft.Json;
 
 namespace StarLib
@@ -163,7 +166,7 @@ namespace StarLib
     */
     [StructLayout(LayoutKind.Auto)]
     //[Serializable] readd serializable
-    public struct StarDate : IComparable<StarDate>, IEquatable<StarDate>, IComparable, IFormattable, IConvertible, IComparable<DateTime>, IEquatable<DateTime> 
+    public struct StarDate : IComparable<StarDate>, IEquatable<StarDate>, IComparable, IFormattable, IConvertible, IComparable<DateTime>, IEquatable<DateTime>, IXmlSerializable
     {
 
         // Number of 100ns _ticks per time unit
@@ -207,7 +210,8 @@ namespace StarLib
         internal static Time AverageYear = DayTime * 365.256410256;
         internal const int DaysPerAverageYear = DaysPer78Years / 78;
         internal static BigInteger TicksPerAverageYear = TicksPerSeventyEightYears / 78;
-        //internal static Time SiderealYear = Day * 365.25636;
+        public const double DaysPerSiderealYear = 365.25636;
+        //internal const int DaysPer20k 
         internal static Time SiderealYear = Seventy_Eight / 78;
         internal static Time k = SiderealYear * 1000;
         internal static BigInteger TicksPerThousand = TicksPerAverageYear * 1000;
@@ -221,7 +225,8 @@ namespace StarLib
         internal const long DaysPerTrillion = DaysPerBillion * 1000;
         internal const long DaysPerQuadrillion = DaysPerTrillion * 1000;
         internal static Time a = 200 * m;
-        private static readonly StarDate manu = StarDate.AbstractDate(((BigInteger)DaysPerBillion * TicksPerDay), 0, UTC);
+        private static readonly StarDate manu = new StarDate(14 * TicksPerBillion, UTC);
+        private static readonly StarDate maxManu = new StarDate(14 * TicksPerBillion + TicksPerMillion, UTC);
         internal static readonly StarDate maya = manu + 154 * Seventy_Eight; //10k BC + 154 * 78 = 12012
         internal static readonly DateTime maya_net = new DateTime(2011, 12, 26); //2011-12-26
         internal static readonly StarDate ADStart = maya - new Time(maya_net.Ticks);
@@ -307,7 +312,7 @@ namespace StarLib
         //               otherwise ambiguous local times and prevents data loss when round tripping from Local to
         //               UTC time.
         private BigInteger dateData;
-        private BigInteger errorData;
+        private MarginOfError errorData;
         private StarZone _timeZone;
         private static IEnumerable<string> allFormats;
         private static IEnumerable<StarDate> testYear;
@@ -317,6 +322,10 @@ namespace StarLib
         private static string currentCulture;
         private static List<string> formats;
         private static bool acceptoverflow = false; //determines whether setters throw errors related to leap year overflows or set the date to the next year
+        //private bool ageOfManu;
+
+        //private MarginOfError /*marginOfError*/;
+
         //private bool hasMonth;
 
         //private BigInteger error1;
@@ -573,19 +582,19 @@ namespace StarLib
                     return sd;
                     //throw new NotImplementedException();
                 }
-                else if (modifier == "BET")
-                {
-                    try
-                    {
-                        StarDate dt1 = StarDate.GregParse(parsedinput[1] + " " + parsedinput[2] + " " + parsedinput[3]);
-                        StarDate dt2 = StarDate.GregParse(parsedinput[5] + " " + parsedinput[6] + " " + parsedinput[7]);
-                        return Between(dt1, dt2);
-                    }
-                    catch (IndexOutOfRangeException)
-                    {
-                        return Between(StarDate.FromGreg(int.Parse(parsedinput[1])), StarDate.FromGreg(int.Parse(parsedinput[3])));
-                    }
-                }
+                //else if (modifier == "BET")
+                //{
+                //    try
+                //    {
+                //        StarDate dt1 = StarDate.GregParse(parsedinput[1] + " " + parsedinput[2] + " " + parsedinput[3]);
+                //        StarDate dt2 = StarDate.GregParse(parsedinput[5] + " " + parsedinput[6] + " " + parsedinput[7]);
+                //        return Between(dt1, dt2);
+                //    }
+                //    catch (IndexOutOfRangeException)
+                //    {
+                //        return Between(StarDate.FromGreg(int.Parse(parsedinput[1])), StarDate.FromGreg(int.Parse(parsedinput[3])));
+                //    }
+                //}
                 else if (modifier == "ABT")
                 {
                     int l = int.Parse(parsedinput[1]);
@@ -634,21 +643,18 @@ namespace StarLib
                                 }
                                 catch (FormatException)
                                 {
-                                    if ((parsedinput[1] == "AND"))
-                                    {
-                                        StarDate a = StarDate.FromGreg(int.Parse(parsedinput[0]));
-                                        StarDate b = StarDate.FromGreg(int.Parse(parsedinput[2]));
-                                        return Between(a, b);
-                                    }
+                                    throw new NotImplementedException();
+                                    //if ((parsedinput[1] == "AND"))
+                                    //{
+                                    //    StarDate a = StarDate.FromGreg(int.Parse(parsedinput[0]));
+                                    //    StarDate b = StarDate.FromGreg(int.Parse(parsedinput[2]));
+                                    //    return Between(a, b);
+                                    //}
                                 }
                             }
 
                         }
                     }
-                    //throw new NotImplementedException();
-                    //StarDate date = new StarDate(dt);
-                    //date.addModifier(modifier);
-                    return new StarDate((BigInteger)0);
                 }
             }
         }
@@ -669,9 +675,9 @@ namespace StarLib
 
 
 
-        private void adderror(Time error)
+        private void adderror(MarginOfError error)
         {
-            this.error = error;
+            this.errorData = error;
         }
 
         // Returns a StarDate representing the current date. The date part
@@ -1726,16 +1732,16 @@ namespace StarLib
                 switch (LeapType(year))
                 {
                     case 0:
-                        errorData = 26 * TicksPerWeek;
+                        errorData = MarginOfError.Year;
                         break;
                     case 1:
-                        errorData = 26 * TicksPerWeek + 3 * TicksPerDay + 12 * TicksPerHour;
+                        errorData = MarginOfError.Year;
                         break;
                     default:
-                        errorData = 27 * TicksPerWeek;
+                        errorData = MarginOfError.Year;
                         break;
                 }
-                dateData += errorData;
+                //dateData += errorData;
             }
             else if (month < 1 || month > 14)
             {
@@ -1746,25 +1752,7 @@ namespace StarLib
                 dateData += (month - 1) * TicksPerMonth;
                 if (day == PlaceHolder)
                 {
-                    if (month == 14)
-                    {
-                        switch (LeapType(year))
-                        {
-                            case 0:
-                                throw new ArgumentException("Invalid Leap Year");
-                            case 1:
-                                errorData = 3 * TicksPerDay + 12 * TicksPerHour;
-                                break;
-                            default:
-                                errorData = TicksPerWeek;
-                                break;
-                        }
-                    }
-                    else
-                    {
-                        errorData = 14 * TicksPerDay;
-                    }
-                    dateData += errorData;
+                    errorData = MarginOfError.Month;
                 }
                 else if (day < 1 || day > 28)
                 {
@@ -1776,8 +1764,7 @@ namespace StarLib
 
                     if (hour == PlaceHolder)
                     {
-                        errorData = 12 * TicksPerHour;
-                        dateData += errorData;
+                        errorData = MarginOfError.Day;
                     }
                     else if (hour < 0 || hour > 30)
                     {
@@ -1788,8 +1775,7 @@ namespace StarLib
                         dateData += hour * TicksPerHour;
                         if (minute == PlaceHolder)
                         {
-                            errorData = 30 * TicksPerMinute;
-                            dateData += errorData;
+                            errorData = MarginOfError.Hour;
                         }
                         else if (minute < 0 || minute > 59)
                         {
@@ -1800,8 +1786,8 @@ namespace StarLib
 
                             if (second == PlaceHolder)
                             {
-                                errorData = 30 * TicksPerSecond;
-                                dateData += errorData;
+                                errorData = MarginOfError.Second;
+                                //dateData += errorData;
                             }
                             else if (second < 0 || second > 60)
                             {
@@ -1827,8 +1813,7 @@ namespace StarLib
                                 dateData += second * TicksPerSecond;
                                 if (millisecond == PlaceHolder)
                                 {
-                                    errorData = 500 * TicksPerMillisecond;
-                                    dateData += errorData;
+                                    errorData = MarginOfError.Second;
                                 }
                                 else if (millisecond < 0 || millisecond > 1000)
                                 {
@@ -1839,8 +1824,7 @@ namespace StarLib
 
                                     if (ticks == PlaceHolder)
                                     {
-                                        errorData = 5000 * TicksPerMillisecond;
-                                        dateData += errorData;
+                                        errorData = MarginOfError.Millisecond;
                                     }
                                     else if (ticks < 0 || ticks > 10000)
                                     {
@@ -1849,7 +1833,7 @@ namespace StarLib
                                     else
                                     {
                                         dateData += ticks;
-                                        errorData = 0;
+                                        errorData = MarginOfError.None;
                                     }
                                 }
 
@@ -1928,24 +1912,24 @@ namespace StarLib
             return dt;
         }
 
-        public StarDate(int year, int month, int day, int hour, int minute, int second, int millisecond, int ticks, Time error) : this(year, month, day, hour, minute, second, millisecond, ticks, Local)
+        public StarDate(int year, int month, int day, int hour, int minute, int second, int millisecond, int ticks, MarginOfError error) : this(year, month, day, hour, minute, second, millisecond, ticks, Local)
         {
             this.errorData = error;
         }
 
-        public StarDate(int year, int month, int day, int hour, int minute, int second, int millisecond, int ticks, Time error, StarZone uTC) : this(year, month, day, hour, minute, second, millisecond, ticks, uTC)
+        public StarDate(int year, int month, int day, int hour, int minute, int second, int millisecond, int ticks, MarginOfError error, StarZone uTC) : this(year, month, day, hour, minute, second, millisecond, ticks, uTC)
         {
             this.errorData = error;
         }
 
-        public StarDate(BigInteger ticks, BigInteger error, StarZone zone)
+        public StarDate(BigInteger ticks, MarginOfError error, StarZone zone)
         {
             dateData = ticks;
             errorData = error;
             _timeZone = zone;
         }
 
-        public StarDate(BigInteger ticks, BigInteger errorData, DateTimeKind kind) : this(ticks, errorData, StarZone.FromKind(kind))
+        public StarDate(BigInteger ticks, MarginOfError errorData, DateTimeKind kind) : this(ticks, errorData, StarZone.FromKind(kind))
         {
 
         }
@@ -2011,17 +1995,17 @@ namespace StarLib
         {
         }
 
-        public StarDate(int[] vs, BigInteger error1, StarZone timezone) : this(vs, timezone)
+        public StarDate(int[] vs, MarginOfError error1, StarZone timezone) : this(vs, timezone)
         {
             this.errorData = error1;
             this._timeZone = timezone;
         }
 
-        public StarDate(int year, int month, int day, int hour, int minute, int second, int millisecond, int ticks, BigInteger error1, StarZone timezone) : this(year, month, day, hour, minute, second, millisecond, ticks)
-        {
-            this.error = new Time(error1);
-            TimeZone = timezone;
-        }
+        //public StarDate(int year, int month, int day, int hour, int minute, int second, int millisecond, int ticks, MarginOfError error1, StarZone timezone) : this(year, month, day, hour, minute, second, millisecond, ticks)
+        //{
+        //    this.errorData = error1;
+        //    TimeZone = timezone;
+        //}
 
         public StarDate(int[] vs, StarZone timezone) : this(vs[0], vs[1], vs[2], vs[3], vs[4], vs[5], vs[6], vs[7], timezone)
         {
@@ -2104,7 +2088,7 @@ namespace StarLib
             return sd;
         }
 
-        
+
 
         // Returns the StarDate resulting from adding the given number of
         // months to this StarDate. The result is computed by incrementing
@@ -2145,7 +2129,7 @@ namespace StarLib
             return Add(value, MillisPerDay);
         }
 
-        
+
 
         // Returns the StarDate resulting from adding a fractional number of
         // hours to this StarDate. The result is computed by rounding the
@@ -2191,11 +2175,11 @@ namespace StarLib
             return Add(value, 1);
         }
 
-        
 
-        
 
-        
+
+
+
 
         // Returns the StarDate resulting from adding the given number of
         // 100-nanosecond _ticks to this StarDate. The value argument
@@ -2207,7 +2191,7 @@ namespace StarLib
             return new StarDate((ticks + value), errorData, TimeZone);
         }
 
-        
+
 
         // Compares two StarDate values, returning an integer that indicates
         // their relationship.
@@ -2576,25 +2560,25 @@ namespace StarLib
             {
                 StarDate dt = this;
                 dt.Hour = 12;
-                dt.error = StarDate.HourTime * 12;
+                dt.errorData = MarginOfError.Day;
                 return dt;
             }
         }
 
         //returns the margin of error for a time
 
-        public Time error
-        {
-            get
-            {
-                return new Time(errorData);
-            }
+        //public Time error
+        //{
+        //    get
+        //    {
+        //        return new Time(errorData);
+        //    }
 
-            private set
-            {
-                errorData = value.Ticks;
-            }
-        }
+        //    private set
+        //    {
+        //        errorData = value.Ticks;
+        //    }
+        //}
 
         //returns the TimeZone of this date
 
@@ -2667,12 +2651,14 @@ namespace StarLib
 
         //returns the amount of years since the Big Bang
 
-        public long Fullyear
+        public long FullYear
         {
-            get { return this.Atomic / StarDate.AverageYear; }
+            get {
+                throw new NotImplementedException();
+            }
             set
             {
-                long diff = value - this.Fullyear;
+                long diff = value - this.FullYear;
                 this.Atomic += diff * StarDate.AverageYear;
             }
         }
@@ -3155,14 +3141,14 @@ namespace StarLib
             }
         }
 
-        public bool HasYear { get => this.error < YearTime; }
-        public bool HasMonth { get => this.error < MonthTime; }
-        public bool HasDay { get => this.error < LocalDay; }
-        public bool HasHour { get => this.error < HourTime; }
-        public bool HasMinute { get => this.error < MinuteTime; }
-        public bool HasSecond { get => this.error < SecondTime; }
-        public bool HasMillisecond { get => this.error < MillisecondTime; }
-        public bool HasTick { get => this.errorData == 0; }
+        //public bool HasYear { get => this.error < YearTime; }
+        //public bool HasMonth { get => this.error < MonthTime; }
+        //public bool HasDay { get => this.error < LocalDay; }
+        //public bool HasHour { get => this.error < HourTime; }
+        //public bool HasMinute { get => this.error < MinuteTime; }
+        //public bool HasSecond { get => this.error < SecondTime; }
+        //public bool HasMillisecond { get => this.error < MillisecondTime; }
+        //public bool HasTick { get => this.errorData == 0; }
 
 
         //returns Atomic Clock Time
@@ -3283,6 +3269,13 @@ namespace StarLib
                 return StarDate.manu;
             }
         }
+        public static StarDate MaxManu
+        {
+            get
+            {
+                return StarDate.maxManu;
+            }
+        }
         public static StarDate Maya { get => maya; internal set => maya1 = value; }
 
         public static StarDate MinValue
@@ -3340,6 +3333,14 @@ namespace StarLib
         }
 
         public BigInteger TimeTicks { get => TimeOfDay.Ticks; }
+        public MarginOfError MarginOfError { get => errorData; internal set => errorData = value; }
+        public bool AgeOfManu
+        {
+            get
+            {
+                return this >= Manu && this <= MaxManu;
+            }
+        }
 
 
 
@@ -3671,36 +3672,36 @@ namespace StarLib
         }
 
 
-        public static StarDate Between(StarDate dt1, StarDate dt2)
-        {
-            if (dt1 > dt2)
-            {
-                return Between(dt2, dt1);
-            }
-            dt1 = dt1 - dt1.error;
-            dt2 = dt2 + dt2.error;
-            Time error = (dt2 - dt1) / 2;
-            dt1 += error;
-            dt1.error = error;
-            if (dt1.TimeZone != dt2.TimeZone)
-            {
-                dt1.TimeZone = UTC;
-            }
-            return dt1;
-        }
+        //public static StarDate Between(StarDate dt1, StarDate dt2)
+        //{
+        //    if (dt1 > dt2)
+        //    {
+        //        return Between(dt2, dt1);
+        //    }
+        //    dt1 = dt1 - dt1.error;
+        //    dt2 = dt2 + dt2.error;
+        //    Time error = (dt2 - dt1) / 2;
+        //    dt1 += error;
+        //    dt1.error = error;
+        //    if (dt1.TimeZone != dt2.TimeZone)
+        //    {
+        //        dt1.TimeZone = UTC;
+        //    }
+        //    return dt1;
+        //}
 
 
 
 
 
-        private static StarDate AbstractDate(BigInteger bigInteger, int v, StarZone uTC)
-        {
-            StarDate dt = new StarDate();
-            dt.dateData = bigInteger;
-            dt.errorData = v;
-            dt._timeZone = UTC;
-            return dt;
-        }
+        //private static StarDate AbstractDate(BigInteger bigInteger, int v, StarZone uTC)
+        //{
+        //    StarDate dt = new StarDate();
+        //    dt.dateData = bigInteger;
+        //    dt.errorData = (MarginOfError)v;
+        //    dt._timeZone = UTC;
+        //    return dt;
+        //}
 
         public DateTime ToDateTime(IFormatProvider provider)
         {
@@ -3942,24 +3943,24 @@ namespace StarLib
             return this.dateData + "/" + this.errorData + "/" + this._timeZone.Id;
         }
 
-        public static StarDate fromQuickString(string data)
-        {
-            string[] vs = data.Split('/');
-            if (vs.Length > 3)
-            {
-                string v = "";
-                int i = 2;
-                while (i < vs.Length)
-                {
-                    v += vs[i++];
-                }
-                vs = new string[] { vs[0], vs[1], v };
-            }
-            BigInteger dateData = BigInteger.Parse(vs[0]);
-            BigInteger errorData = BigInteger.Parse(vs[1]);
-            StarZone zone = StarZone.FindSystemTimeZoneById(vs[2]);
-            return new StarDate(dateData, errorData, zone);
-        }
+        //public static StarDate fromQuickString(string data)
+        //{
+        //    string[] vs = data.Split('/');
+        //    if (vs.Length > 3)
+        //    {
+        //        string v = "";
+        //        int i = 2;
+        //        while (i < vs.Length)
+        //        {
+        //            v += vs[i++];
+        //        }
+        //        vs = new string[] { vs[0], vs[1], v };
+        //    }
+        //    BigInteger dateData = BigInteger.Parse(vs[0]);
+        //    BigInteger errorData = BigInteger.Parse(vs[1]);
+        //    StarZone zone = StarZone.FindSystemTimeZoneById(vs[2]);
+        //    return new StarDate(dateData, errorData, zone);
+        //}
 
         public string ToString(string format, IFormatProvider formatProvider)
         {
@@ -3998,93 +3999,51 @@ namespace StarLib
         {
             int[] values;
             GetDatePart(out values);
-            StringBuilder builder = new StringBuilder();
-            int e = values.Length;
-            if (errorData == TicksPerYear)
-            {
-                e = 1;
-            }
-            else if (!IsTerran && (errorData == TicksPerLocalDay))
-            {
-                e = 3; //Because planet might not be Earth
-            }
-            else
-            {
-                switch ((long)errorData)
-                {
-                    case TicksPerMonth:
-                        e = 2; break;
-                    case TicksPerDay:
-                        e = 3; break;
-                    case TicksPerHour:
-                        e = 4; break;
-                    case TicksPerMinute:
-                        e = 5; break;
-                    case TicksPerSecond:
-                        e = 6; break;
-                    case TicksPerMillisecond:
-                        e = 7; break;
-                    default: break;
-                }
-            }
             int i = 0;
-            while (i < e)
+            StringBuilder builder = new StringBuilder();
+            while (i < values.Length)
             {
                 builder.Append(values[i++] + "-");
             }
-            if (e == 8)
-            {
-                builder.Append("e");
-                builder.Append(errorData);
-                builder.Append("-");
-            }
-            if (TimeZone == UTC)
-            {
-                builder.Remove(builder.Length - 1, 1);
-                return builder.ToString();
-            }
-            else
-            {
-                builder.Append(TimeZone.Id);
-                return builder.ToString();
-            }
+            builder.Append((int)errorData + "-");
+            builder.Append(TimeZone);
+            return builder.ToString();
         }
 
         public static StarDate BasicParse(string basic)
         {
             string[] data = basic.Split('-');
-            int i = 0;
-            int j = 0;
-            int[] dateparts = new int[] { PlaceHolder, PlaceHolder, PlaceHolder, PlaceHolder, PlaceHolder, PlaceHolder, PlaceHolder, PlaceHolder };
-            BigInteger error;
-            StarZone timezone = UTC;
-            int l = 8;
-            if (data.Length < l)
-            {
-                l = data.Length;
-            }
-            while (i < l)
-            {
-                if (data[i][0] == 'e')
-                {
-                    error = BigInteger.Parse(data[i].Substring(1));
-                    i = 8;
-                    j++;
-                }
-                else
-                {
-                    dateparts[i] = int.Parse(data[i]);
-                    i++;
-                    j++;
-                }
-            }
-            i = j;
-            if (i < data.Length)
-            {
-                timezone = StarZone.FindSystemTimeZoneById(data[i]);
-            }
-            return new StarDate(dateparts[0], dateparts[1], dateparts[2], dateparts[3], dateparts[4], dateparts[5], dateparts[6], dateparts[7], error, timezone);
+            return new StarDate(int.Parse(data[0]), int.Parse(data[1]), int.Parse(data[2]), int.Parse(data[3]), int.Parse(data[4]), int.Parse(data[5]), int.Parse(data[6]), int.Parse(data[7]), (MarginOfError)int.Parse(data[8]), StarZone.FindSystemTimeZoneById(data[9]));
         }
 
+        public XmlSchema GetSchema()
+        {
+            return null;
+        }
+
+        public void ReadXml(XmlReader reader)
+        {
+            reader.MoveToContent();
+            dateData = BigInteger.Parse(reader.GetAttribute("Ticks"));
+            MarginOfError = (MarginOfError)int.Parse(reader.GetAttribute("MarginOfError"));
+            TimeZone = StarZone.FindSystemTimeZoneById(reader.GetAttribute("TimeZone"));
+        }
+
+        public void WriteXml(XmlWriter writer)
+        {
+            Dictionary<string, int> data;
+            GetDatePart(out data);
+            writer.WriteAttributeString("Year", data["Year"].ToString());
+            writer.WriteAttributeString("Month", data["Month"].ToString());
+            writer.WriteAttributeString("Day", data["Day"].ToString());
+            writer.WriteAttributeString("Hour", data["Hour"].ToString());
+            writer.WriteAttributeString("Minute", data["Minute"].ToString());
+            writer.WriteAttributeString("Second", data["Second"].ToString());
+            writer.WriteAttributeString("Millisecond", data["Millisecond"].ToString());
+            writer.WriteAttributeString("ExtraTicks", data["Ticks"].ToString());
+            writer.WriteAttributeString("MarginOfError", ((int)MarginOfError).ToString());
+            writer.WriteAttributeString("TimeZone", TimeZone.Id);
+            writer.WriteAttributeString("Ticks", Ticks.ToString());
+        }
     }
 }

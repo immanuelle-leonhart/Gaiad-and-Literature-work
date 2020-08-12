@@ -1387,14 +1387,14 @@ namespace StarLib
         //
         static public StarDate ConvertTimeFromUtc(StarDate dt, StarZone destinationTimeZone)
         {
-            dt = new StarDate(dt.Year, dt.Month, dt.Day, dt.Hour, dt.Minute, dt.Second, dt.Millisecond, dt.ExtraTicks, dt.error, StarZone.UTC);
+            dt = new StarDate(dt.Year, dt.Month, dt.Day, dt.Hour, dt.Minute, dt.Second, dt.Millisecond, dt.ExtraTicks, dt.MarginOfError, StarZone.UTC);
             dt.TimeZone = destinationTimeZone;
             return dt;
         }
 
         public static StarDate ConvertToTimeZone(StarDate dt, StarZone zone)
         {
-            return new StarDate(dt.Year, dt.Month, dt.Day, dt.Hour, dt.Minute, dt.Second, dt.Millisecond, dt.ExtraTicks, dt.error, StarZone.UTC);
+            return new StarDate(dt.Year, dt.Month, dt.Day, dt.Hour, dt.Minute, dt.Second, dt.Millisecond, dt.ExtraTicks, dt.MarginOfError, StarZone.UTC);
         }
 
 

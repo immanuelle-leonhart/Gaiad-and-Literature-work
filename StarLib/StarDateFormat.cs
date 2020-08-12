@@ -656,7 +656,7 @@ namespace StarLib
                             case 4:
                             case 5: result.Append(year.ToString()); break;
                             default:
-                                result.Append(StarDate.Fullyear % Math.Pow(10, tokenLen));
+                                result.Append(StarDate.FullYear % Math.Pow(10, tokenLen));
                                 break;
                         }
                         ////Console.WriteLine(result);
