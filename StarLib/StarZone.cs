@@ -818,7 +818,7 @@ namespace StarLib
                 Offset = LocalDay / 2;
                 star = id.Substring(0, i + 1);
             }
-            string planet = "None";
+            string planet = "Tick";
             Time Distance = distance * StarDate.AverageYear;
             StarZone zone = new StarZone(id, LocalDay);
             zone.StarName = star;
@@ -1383,14 +1383,14 @@ namespace StarLib
         //
         static public StarDate ConvertTimeFromUtc(StarDate dt, StarZone destinationTimeZone)
         {
-            dt = new StarDate(dt.Year, dt.Month, dt.Day, dt.Hour, dt.Minute, dt.Second, dt.Millisecond, dt.ExtraTicks, dt.MarginOfError, StarZone.UTC);
+            dt = new StarDate(dt.Year, dt.Month, dt.Day, dt.Hour, dt.Minute, dt.Second, dt.Millisecond, dt.ExtraTicks, dt.Accuracy, StarZone.UTC);
             dt.TimeZone = destinationTimeZone;
             return dt;
         }
 
         public static StarDate ConvertToTimeZone(StarDate dt, StarZone zone)
         {
-            return new StarDate(dt.Year, dt.Month, dt.Day, dt.Hour, dt.Minute, dt.Second, dt.Millisecond, dt.ExtraTicks, dt.MarginOfError, StarZone.UTC);
+            return new StarDate(dt.Year, dt.Month, dt.Day, dt.Hour, dt.Minute, dt.Second, dt.Millisecond, dt.ExtraTicks, dt.Accuracy, StarZone.UTC);
         }
 
 
@@ -2356,7 +2356,7 @@ namespace StarLib
             //{
             //    String token = GetNextStringValue(canEndWithoutSeparator);
             //    StarDate time;
-            //    if (!StarDate.SpecialParse(token, format, StarCulture.InvariantCulture.FormatProvider, StarDateStyles.None, out time))
+            //    if (!StarDate.SpecialParse(token, format, StarCulture.InvariantCulture.FormatProvider, StarDateStyles.Tick, out time))
             //    {
             //        throw new Exception(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
             //    }

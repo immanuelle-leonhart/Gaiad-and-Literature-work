@@ -163,9 +163,9 @@ namespace StarLib.Dynamic
                     result = (Func<string>)(()
                           => starDate.ToShortString());
                     return true;
-                case "BasicString":
+                case "Data":
                     result = (Func<string>)(()
-                          => starDate.BasicString());
+                          => starDate.Data);
                     return true;
                 case "AddYears":
                     result = (Func<double, StarDateDynamic>)((double a)
