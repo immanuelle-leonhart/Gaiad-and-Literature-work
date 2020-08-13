@@ -231,26 +231,6 @@ namespace StarLib
             return (sdfi.GetDayName((DayOfWeek)dayOfWeek));
         }
 
-        private string GetDayName(DayOfWeek dayOfWeek)
-        {
-            throw new NotImplementedException();
-        }
-
-        private string GetAbbreviatedDayName(DayOfWeek dayOfWeek)
-        {
-            throw new NotImplementedException();
-        }
-
-        private string GetMonthName(int month)
-        {
-            throw new NotImplementedException();
-        }
-
-        private string GetAbbreviatedMonthName(int month)
-        {
-            throw new NotImplementedException();
-        }
-
         internal static int ParseQuoteString(String format, int pos, StringBuilder result)
         {
             //
@@ -286,7 +266,7 @@ namespace StarLib
                         // This means that '\' is at the end of the formatting string.
                         //
                         ////////////Console.WriteLine("throw new FormatException(StarLEnvironment.GetResourceString(" + " Format_InvalidString" + "));");
-                        throw new NotImplementedException();
+                        ////throw new NotImplementedException();
                     }
                 }
                 else
@@ -302,7 +282,7 @@ namespace StarLib
                 //        String.Format(
                 //            StarCulture.CurrentCulture,
                 //            StarLEnvironment.GetResourceString("Format_BadQuote"), quoteChar));
-                throw new NotImplementedException();
+                ////throw new NotImplementedException();
             }
 
             //
@@ -406,6 +386,7 @@ namespace StarLib
             StringBuilder result = new StringBuilder();
             int i = 0;
             int tokenLen, hour12;
+            tokenLen = -1;
 
             while (i < format.Length)
             {
@@ -443,11 +424,11 @@ namespace StarLib
                         FormatDigits(result, StarDate.Hour, tokenLen);
                         break;
                     case 'm':
-                        tokenLen = ParseRepeatPattern(format, i, ch); //throw new NotImplementedException();
+                        tokenLen = ParseRepeatPattern(format, i, ch); //////throw new NotImplementedException();
                         FormatDigits(result, StarDate.Minute, tokenLen);
                         break;
                     case 's':
-                        tokenLen = ParseRepeatPattern(format, i, ch); //throw new NotImplementedException();
+                        tokenLen = ParseRepeatPattern(format, i, ch); //////throw new NotImplementedException();
                         FormatDigits(result, StarDate.Second, tokenLen);
                         break;
                     case 'f':
@@ -493,7 +474,7 @@ namespace StarLib
                         }
                         else
                         {
-                            throw new NotImplementedException();
+                            ////throw new NotImplementedException();
                             //throw new FormatException(StarLEnvironment.GetResourceString("Format_InvalidString"));
                         }
                         break;
@@ -522,7 +503,7 @@ namespace StarLib
                             result.Append((StarDate.Hour < 12 ? sdfi.AMDesignator : sdfi.PMDesignator));
                         }
                         ////////Console.WriteLine(result);
-                        //throw new NotImplementedException();
+                        //////throw new NotImplementedException();
                         break;
                     case 'D':
                     case 'W':
@@ -586,7 +567,7 @@ namespace StarLib
                                 break;
                         }
                         ////Console.WriteLine(result);
-                        //throw new NotImplementedException();
+                        //////throw new NotImplementedException();
                         break;
                     case 'M':
                         //
@@ -616,7 +597,7 @@ namespace StarLib
                                 break;
                         }
                         ////Console.WriteLine(result);
-                        //throw new NotImplementedException();
+                        //////throw new NotImplementedException();
                         break;
                     case 'y':
                         // Notes about OS behavior:
@@ -624,7 +605,7 @@ namespace StarLib
                         // yy: Always print (Year % 100) with leading zero.
                         // yyy/yyyy/yyyyy/... : Print Year value.  No leading zero.
 
-                        int year = StarDate.Year; //throw new NotImplementedException();
+                        long year = StarDate.Year; //////throw new NotImplementedException();
                         tokenLen = ParseRepeatPattern(format, i, ch);
                         ////Console.WriteLine(result);
                         ////Console.WriteLine(tokenLen);
@@ -660,7 +641,7 @@ namespace StarLib
                                 break;
                         }
                         ////Console.WriteLine(result);
-                        //throw new NotImplementedException();
+                        //////throw new NotImplementedException();
                         break;
                     case 'Z':
                     case 'z':
@@ -671,19 +652,19 @@ namespace StarLib
                         result.Append(StarDate.TimeZone.ToString(tokenLen, StarDate));
                         break;
                     case ':':
-                        result.Append(sdfi.TimeSeparator); //throw new NotImplementedException();
+                        result.Append(sdfi.TimeSeparator); //////throw new NotImplementedException();
                         tokenLen = 1;
                         break;
                     case '/':
                         ////////////Console.WriteLine(sdfi == null);
                         ////////////Console.WriteLine(sdfi.GetDateSeparator());
-                        result.Append(sdfi.GetDateSeparator()); ////throw new NotImplementedException();
+                        result.Append(sdfi.GetDateSeparator()); ////////throw new NotImplementedException();
                         tokenLen = 1;
                         ////////Console.WriteLine(result);
                         break;
                     case '\'':
                     case '\"':
-                        StringBuilder enquotedString = new StringBuilder(); //throw new NotImplementedException();
+                        StringBuilder enquotedString = new StringBuilder(); //////throw new NotImplementedException();
                         tokenLen = ParseQuoteString(format, i, enquotedString);
                         result.Append(enquotedString);
                         break;
@@ -691,7 +672,7 @@ namespace StarLib
                         // Optional format character.
                         // For example, format string "%d" will print day of Month
                         // without leading zero.  Most of the cases, "%" can be ignored.
-                        nextChar = ParseNextChar(format, i); //throw new NotImplementedException();
+                        nextChar = ParseNextChar(format, i); //////throw new NotImplementedException();
                         // nextChar will be -1 if we already reach the end of the format string.
                         // Besides, we will not allow "%%" appear in the pattern.
                         if (nextChar >= 0 && nextChar != (int)'%')
@@ -706,7 +687,7 @@ namespace StarLib
                             // This means that '%' is at the end of the format string or
                             // "%%" appears in the format string.
                             //
-                            throw new NotImplementedException();
+                            ////throw new NotImplementedException();
                             //throw new FormatException(StarLEnvironment.GetResourceString("Format_InvalidString"));
                         }
                         break;
@@ -719,7 +700,7 @@ namespace StarLib
                         // That is, we ask everyone to use single quote or double quote to insert characters,
                         // then we can remove this character.
                         //
-                        nextChar = ParseNextChar(format, i); //throw new NotImplementedException();
+                        nextChar = ParseNextChar(format, i); //////throw new NotImplementedException();
                         if (nextChar >= 0)
                         {
                             result.Append(((char)nextChar));
@@ -730,7 +711,7 @@ namespace StarLib
                             //
                             // This means that '\' is at the end of the formatting string.
                             //
-                            throw new NotImplementedException();
+                            ////throw new NotImplementedException();
                             //throw new FormatException(StarLEnvironment.GetResourceString("Format_InvalidString"));
                         }
                         break;
@@ -739,7 +720,7 @@ namespace StarLib
                         // character rule.
                         // That is, if we ask everyone to use single quote or double quote to insert characters,
                         // then we can remove this default block.
-                        result.Append(ch); //throw new NotImplementedException();
+                        result.Append(ch); //////throw new NotImplementedException();
                         tokenLen = 1;
                         break;
                 }
@@ -759,7 +740,7 @@ namespace StarLib
             result.Append(output);
         }
 
-        private static string AddZero(int month)
+        private static string AddZero(long month)
         {
             string s = month.ToString();
             if (s.Length == 1)
@@ -771,13 +752,13 @@ namespace StarLib
 
         //private static bool FormatHebrewMonthName(StarDate starDate, int month, int tokenLen, StarCulture sdfi)
         //{
-        //    throw new NotImplementedException();
+        //    ////throw new NotImplementedException();
         //}
 
         //private static void HebrewFormatDigits(StringBuilder result, int day)
         //{
         //    ////////////Console.WriteLine("I have no idea what this does but I don't want this to run since I'm not using the Hebrew StarCulture");
-        //    //throw new NotImplementedException();
+        //    //////throw new NotImplementedException();
         //}
 
         //private static void FormatDigits(StringBuilder result, int hour12, int tokenLen)
@@ -992,13 +973,13 @@ namespace StarLib
 
         //private static string GetRealFormat(string format, StarCulture sdfi)
         //{
-        //    throw new NotImplementedException();
+        //    //throw new NotImplementedException();
         //}
 
         internal static String Format(StarDate StarDate, String format, StarCulture sdfi)
         {
             //////////////Console.WriteLine(format);
-            //throw new NotImplementedException();
+            ////throw new NotImplementedException();
             ////////////Console.WriteLine(sdfi.CultureName);
             return Format(StarDate, format, sdfi, NullOffset);
         }
@@ -1042,7 +1023,7 @@ namespace StarLib
                 StarDate = StarDate - offset;
             }
 
-            int year, month, day;
+            long year, month, day;
             StarDate.GetDatePart(out year, out month, out day);
 
             result.Append(StarCulture.InvariantCulture.AbbreviatedDayNames[(int)StarDate.DayOfWeek]);
@@ -1067,7 +1048,7 @@ namespace StarLib
             const int roundTripFormatLength = 28;
             StringBuilder result = StringBuilderCache.Acquire(roundTripFormatLength);
 
-            int year, month, day;
+            long year, month, day;
             StarDate.GetDatePart(out year, out month, out day);
 
             AppendNumber(result, year, 4);
@@ -1089,7 +1070,7 @@ namespace StarLib
 
         private static void AppendNumber(StringBuilder result, BigInteger fraction, int v)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
         private static void AppendHHmmssTimeOfDay(StringBuilder result, StarDate StarDate)

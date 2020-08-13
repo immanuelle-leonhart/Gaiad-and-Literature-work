@@ -335,14 +335,14 @@ namespace StarLib
             isodict.Add(this.TwoLetterISO, this);
         }
 
-        internal bool GetAbbreviatedEraName(StarDate starDate)
+        internal string GetAbbreviatedEraName(StarDate starDate)
         {
-            throw new NotImplementedException();
+            return this.AbbreviatedEraNames[starDate.Era];
         }
 
-        internal bool GetEraName(StarDate starDate)
+        internal string GetEraName(StarDate starDate)
         {
-            throw new NotImplementedException();
+            return this.EraNames[starDate.Era];
         }
 
         public StarCulture(string v1, string v2, string v3, string v4, string v5, string v6, string v7, string v8, string v9, string v10, string v11, string v12, string v13, string v14, string v15, string v16)
@@ -1048,10 +1048,10 @@ namespace StarLib
             set
             {
                 //if (IsReadOnly)
-                //    throw new NotImplementedException(); // throw new InvalidOperationException(//LEnvironment.GetResourceString("InvalidOperation_ReadOnly"));
+                //    ////throw new NotImplementedException(); // throw new InvalidOperationException(//LEnvironment.GetResourceString("InvalidOperation_ReadOnly"));
                 //if (value == null)
                 //{
-                //    throw new NotImplementedException(); // throw new ArgumentNullException("value",
+                //    ////throw new NotImplementedException(); // throw new ArgumentNullException("value",
                 //        //LEnvironment.GetResourceString("ArgumentNull_String"));
                 //}
                 Contract.EndContractBlock();
@@ -1142,11 +1142,11 @@ namespace StarLib
             set
             {
                 if (IsReadOnly)
-                    throw new NotImplementedException(); // throw new NotImplementedException();
-                if (value == null)
-                {
-                    throw new NotImplementedException(); // throw new NotImplementedException();
-                }
+                    ////throw new NotImplementedException(); // ////throw new NotImplementedException();
+                    if (value == null)
+                    {
+                        ////throw new NotImplementedException(); // ////throw new NotImplementedException();
+                    }
                 Contract.EndContractBlock();
 
                 // Remember the new string
@@ -1185,10 +1185,10 @@ namespace StarLib
             set
             {
                 if (IsReadOnly)
-                    throw new NotImplementedException(); // throw new NotImplementedException();
+                    throw new NotImplementedException();
                 if (value == null)
                 {
-                    throw new NotImplementedException(); // throw new NotImplementedException();
+                    throw new NotImplementedException();
                 }
                 Contract.EndContractBlock();
                 ClearTokenHashTable();
@@ -1225,27 +1225,15 @@ namespace StarLib
 
                 return this.shortDatePattern;
             }
-
             set
             {
-                if (IsReadOnly)
-                    throw new NotImplementedException(); // throw new InvalidOperationException(//LEnvironment.GetResourceString("InvalidOperation_ReadOnly"));
-                if (value == null)
-                    throw new NotImplementedException(); // throw new ArgumentNullException("value",
-                                                         //LEnvironment.GetResourceString("ArgumentNull_String"));
-                Contract.EndContractBlock();
-
-                // Remember the new string
                 this.shortDatePattern = value;
-
-                // Clear the token hash table, note that even short dates could require this
-                ClearTokenHashTable();
-
-                // Clean up cached values that will be affected by this property.
-                generalLongTimePattern = null;   // General long time = short date + long time
-                generalShortTimePattern = null;  // General short time = short date + short Time
-                //StarDateOffsetPattern = null;
             }
+        }
+
+        internal int ToFourDigitYear(int tokenValue)
+        {
+            throw new NotImplementedException();
         }
 
 
@@ -1270,12 +1258,12 @@ namespace StarLib
             set
             {
                 if (IsReadOnly)
-                    throw new NotImplementedException(); // throw new InvalidOperationException(//LEnvironment.GetResourceString("InvalidOperation_ReadOnly"));
-                if (value == null)
-                {
-                    throw new NotImplementedException(); // throw new ArgumentNullException("value",
-                                                         //LEnvironment.GetResourceString("ArgumentNull_String"));
-                }
+                    //throw new NotImplementedException(); // throw new InvalidOperationException(//LEnvironment.GetResourceString("InvalidOperation_ReadOnly"));
+                    if (value == null)
+                    {
+                        //throw new NotImplementedException(); // throw new ArgumentNullException("value",
+                        //LEnvironment.GetResourceString("ArgumentNull_String"));
+                    }
                 Contract.EndContractBlock();
 
                 // Remember the new string
@@ -1376,10 +1364,10 @@ namespace StarLib
         //            set
         //            {
         //                if (IsReadOnly)
-        //                    throw new NotImplementedException(); // throw new InvalidOperationException(//LEnvironment.GetResourceString("InvalidOperation_ReadOnly"));
+        //                    //throw new NotImplementedException(); // throw new InvalidOperationException(//LEnvironment.GetResourceString("InvalidOperation_ReadOnly"));
         //                if (value == null)
         //                {
-        //                    throw new NotImplementedException(); // throw new ArgumentNullException("value",
+        //                    //throw new NotImplementedException(); // throw new ArgumentNullException("value",
         //                                                         //LEnvironment.GetResourceString("ArgumentNull_String"));
         //                }
         //                Contract.EndContractBlock();
@@ -1410,8 +1398,8 @@ namespace StarLib
             {
                 if (values[i] == null)
                 {
-                    throw new NotImplementedException(); // throw new ArgumentNullException("value",
-                                                         //LEnvironment.GetResourceString("ArgumentNull_ArrayValue"));
+                    //throw new NotImplementedException(); // throw new ArgumentNullException("value",
+                    //LEnvironment.GetResourceString("ArgumentNull_ArrayValue"));
                 }
             }
         }
@@ -1428,15 +1416,15 @@ namespace StarLib
             set
             {
                 if (IsReadOnly)
-                    throw new NotImplementedException(); // throw new InvalidOperationException(//LEnvironment.GetResourceString("InvalidOperation_ReadOnly"));
-                if (value == null)
-                {
-                    throw new NotImplementedException(); // throw new ArgumentNullException("value",
-                                                         //LEnvironment.GetResourceString("ArgumentNull_Array"));
-                }
+                    //throw new NotImplementedException(); // throw new InvalidOperationException(//LEnvironment.GetResourceString("InvalidOperation_ReadOnly"));
+                    if (value == null)
+                    {
+                        //throw new NotImplementedException(); // throw new ArgumentNullException("value",
+                        //LEnvironment.GetResourceString("ArgumentNull_Array"));
+                    }
                 if (value.Length != 7)
                 {
-                    throw new NotImplementedException(); // throw new ArgumentException(//LEnvironment.GetResourceString("Argument_InvalidArrayLength", 7), "value");
+                    //throw new NotImplementedException(); // throw new ArgumentException(//LEnvironment.GetResourceString("Argument_InvalidArrayLength", 7), "value");
                 }
                 Contract.EndContractBlock();
                 CheckNullValue(value, value.Length);
@@ -1474,15 +1462,15 @@ namespace StarLib
             set
             {
                 if (IsReadOnly)
-                    throw new NotImplementedException(); // throw new InvalidOperationException(//LEnvironment.GetResourceString("InvalidOperation_ReadOnly"));
-                if (value == null)
-                {
-                    throw new NotImplementedException(); // throw new ArgumentNullException("value",
-                                                         //LEnvironment.GetResourceString("ArgumentNull_Array"));
-                }
+                    //throw new NotImplementedException(); // throw new InvalidOperationException(//LEnvironment.GetResourceString("InvalidOperation_ReadOnly"));
+                    if (value == null)
+                    {
+                        //throw new NotImplementedException(); // throw new ArgumentNullException("value",
+                        //LEnvironment.GetResourceString("ArgumentNull_Array"));
+                    }
                 if (value.Length != 13)
                 {
-                    throw new NotImplementedException(); // throw new ArgumentException(//LEnvironment.GetResourceString("Argument_InvalidArrayLength", 13), "value");
+                    //throw new NotImplementedException(); // throw new ArgumentException(//LEnvironment.GetResourceString("Argument_InvalidArrayLength", 13), "value");
                 }
                 Contract.EndContractBlock();
                 CheckNullValue(value, value.Length - 1);
@@ -1571,9 +1559,7 @@ namespace StarLib
             // (actually is 13 right now for all cases)
             if ((month < 1) || (month > monthNamesArray.Length))
             {
-                throw new NotImplementedException(); // throw new ArgumentOutOfRangeException(
-                                                     //"month", //LEnvironment.GetResourceString("ArgumentOutOfRange_Range",
-                                                     //1, monthNamesArray.Length));
+                throw new ArgumentOutOfRangeException();
             }
             return (monthNamesArray[month - 1]);
         }
@@ -1619,11 +1605,7 @@ namespace StarLib
         {
             if (this.leapYearMonthNames == null)
             {
-                throw new NotImplementedException();
-                //Contract.Assert(ID > 0, "[StarCulture.internalGetLeapYearMonthNames] Expected StarCulture.ID > 0");
-                //this.leapYearMonthNames = this.LeapYearMonthNames;
-                //Contract.Assert(this.leapYearMonthNames.Length == 13,
-                //    "[StarCulture.internalGetLeapYearMonthNames] Expepcted 13 leap Year month names");
+                throw new Exception();
             }
             return (leapYearMonthNames);
         }
@@ -1634,9 +1616,7 @@ namespace StarLib
 
             if ((int)dayofweek < 0 || (int)dayofweek > 6)
             {
-                throw new NotImplementedException(); // throw new ArgumentOutOfRangeException(
-                                                     //"dayofweek", //LEnvironment.GetResourceString("ArgumentOutOfRange_Range",
-                                                     //  DayOfWeek.Sunday, DayOfWeek.Saturday));
+                throw new ArgumentOutOfRangeException();
             }
             Contract.EndContractBlock();
             //
@@ -1654,9 +1634,7 @@ namespace StarLib
 
             if ((int)dayOfWeek < 0 || (int)dayOfWeek > 6)
             {
-                throw new NotImplementedException(); // throw new ArgumentOutOfRangeException(
-                                                     //"dayOfWeek", //LEnvironment.GetResourceString("ArgumentOutOfRange_Range",
-                                                     //DayOfWeek.Sunday, DayOfWeek.Saturday));
+                throw new ArgumentOutOfRangeException();
             }
             Contract.EndContractBlock();
             //
@@ -1810,9 +1788,7 @@ namespace StarLib
         {
             if (month < 1 || month > 13)
             {
-                throw new NotImplementedException(); // throw new ArgumentOutOfRangeException(
-                                                     //"month", //LEnvironment.GetResourceString("ArgumentOutOfRange_Range",
-                                                     ////1, 13));
+                throw new ArgumentOutOfRangeException();
             }
             Contract.EndContractBlock();
             // Use the internal one so we don't clone the array unnecessarily
@@ -1883,11 +1859,6 @@ namespace StarLib
             return newPatterns;
         }
 
-        private string[] YearMonths()
-        {
-            throw new NotImplementedException();
-        }
-
         // NOTE: Clone this string array if you want to return it to user.  Otherwise, you are returning a writable cache copy.
         // This won't include default, call AllLongDatePatterns
 
@@ -1936,113 +1907,13 @@ namespace StarLib
                 return (m_isReadOnly);
             }
         }
-        //
-        // Used by custom cultures and others to set the list of available formats. Note that none of them are
-        // explicitly used unless someone calls GetAllStarDatePatterns and subsequently uses one of the items
-        // from the list.
-        //
-        // Most of the format characters that can be used in GetAllStarDatePatterns are
-        // not really needed since they are one of the following:
-        //
-        //  r/R/s/u     locale-independent constants -- cannot be changed!
-        //  m/M/y/Y     fields with a single string in them -- that can be set through props directly
-        //  f/F/g/G/U   derived fields based on combinations of various of the below formats
-        //
-        // NOTE: No special validation is done here beyond what is done when the actual respective fields
-        // are used (what would be the point of disallowing here what we allow in the appropriate property?)
-        //
-        // WARNING: If more validation is ever done in one place, it should be done in the other.
-        //
 
-        [System.Runtime.InteropServices.ComVisible(false)]
-        internal void SetAllStarDatePatterns(String[] patterns, char format)
-        {
-            if (IsReadOnly)
-                throw new NotImplementedException(); // throw new InvalidOperationException(//LEnvironment.GetResourceString("InvalidOperation_ReadOnly"));
-            if (patterns == null)
-            {
-                throw new NotImplementedException(); // throw new ArgumentNullException("patterns",
-                                                     //LEnvironment.GetResourceString("ArgumentNull_Array"));
-            }
 
-            if (patterns.Length == 0)
-            {
-                throw new NotImplementedException(); // throw new ArgumentException(//LEnvironment.GetResourceString("Arg_ArrayZeroError"), "patterns");
-            }
-            Contract.EndContractBlock();
-
-            for (int i = 0; i < patterns.Length; i++)
-            {
-                if (patterns[i] == null)
-                {
-                    throw new NotImplementedException(); // throw new ArgumentNullException(//LEnvironment.GetResourceString("ArgumentNull_ArrayValue"));
-                }
-            }
-
-            // Remember the patterns, and use the 1st as default
-            switch (format)
-            {
-                case 'd':
-                    this.allShortDatePatterns = patterns;
-                    this.shortDatePattern = this.allShortDatePatterns[0];
-                    break;
-
-                case 'D':
-                    this.allLongDatePatterns = patterns;
-                    this.longDatePattern = this.allLongDatePatterns[0];
-                    break;
-
-                case 't':
-                    this.allShortTimePatterns = patterns;
-                    this.shortTimePattern = this.allShortTimePatterns[0];
-                    break;
-
-                case 'T':
-                    this.allLongTimePatterns = patterns;
-                    this.longTimePattern = this.allLongTimePatterns[0];
-                    break;
-
-                case 'y':
-                case 'Y':
-                    this.allYearMonthPatterns = patterns;
-                    this.yearMonthPattern = this.allYearMonthPatterns[0];
-                    break;
-
-                default:
-                    throw new NotImplementedException(); // throw new ArgumentException(//LEnvironment.GetResourceString("Format_BadFormatSpecifier"), "format");
-            }
-
-            // Clear the token hash table, note that even short dates could require this
-            ClearTokenHashTable();
-
-            return;
-        }
-
-        [System.Runtime.InteropServices.ComVisible(false)]
         internal String[] AbbreviatedMonthGenitiveNames
         {
             get
             {
                 return ((String[])internalGetGenitiveMonthNames(true).Clone());
-            }
-
-            set
-            {
-                if (IsReadOnly)
-                    throw new NotImplementedException(); // throw new InvalidOperationException(//LEnvironment.GetResourceString("InvalidOperation_ReadOnly"));
-                if (value == null)
-                {
-                    throw new NotImplementedException(); // throw new ArgumentNullException("value",
-                                                         //LEnvironment.GetResourceString("ArgumentNull_Array"));
-                }
-                if (value.Length != 13)
-                {
-                    throw new NotImplementedException(); // throw new ArgumentException(//LEnvironment.GetResourceString("Argument_InvalidArrayLength", 13), "value");
-                }
-                Contract.EndContractBlock();
-                CheckNullValue(value, value.Length - 1);
-                ClearTokenHashTable();
-                this.m_genitiveAbbreviatedMonthNames = value;
             }
         }
 
@@ -2057,15 +1928,14 @@ namespace StarLib
             set
             {
                 if (IsReadOnly)
-                    throw new NotImplementedException(); // throw new InvalidOperationException(//LEnvironment.GetResourceString("InvalidOperation_ReadOnly"));
+                    throw new InvalidOperationException();
                 if (value == null)
                 {
-                    throw new NotImplementedException(); // throw new ArgumentNullException("value",
-                                                         //LEnvironment.GetResourceString("ArgumentNull_Array"));
+                    throw new ArgumentNullException();
                 }
                 if (value.Length != 13)
                 {
-                    throw new NotImplementedException(); // throw new ArgumentException(//LEnvironment.GetResourceString("Argument_InvalidArrayLength", 13), "value");
+                    throw new ArgumentException();
                 }
                 Contract.EndContractBlock();
                 CheckNullValue(value, value.Length - 1);
@@ -2137,23 +2007,28 @@ namespace StarLib
                                                                | StarDateStyles.AdjustToUniversal | StarDateStyles.AssumeLocal
                                                                | StarDateStyles.AssumeUniversal | StarDateStyles.RoundtripKind);
 
-        internal static void ValidateStyles(StarDateStyles style, String parameterName)
+        internal int GetYear(StarDate starDate)
         {
-            if ((style & InvalidStarDateStyles) != 0)
-            {
-                throw new NotImplementedException(); // throw new ArgumentException(//LEnvironment.GetResourceString("Argument_InvalidStarDateStyles"), parameterName);
-            }
-            if (((style & (StarDateStyles.AssumeLocal)) != 0) && ((style & (StarDateStyles.AssumeUniversal)) != 0))
-            {
-                throw new NotImplementedException(); // throw new ArgumentException(//LEnvironment.GetResourceString("Argument_ConflictingStarDateStyles"), parameterName);
-            }
-            Contract.EndContractBlock();
-            if (((style & StarDateStyles.RoundtripKind) != 0)
-                && ((style & (StarDateStyles.AssumeLocal | StarDateStyles.AssumeUniversal | StarDateStyles.AdjustToUniversal)) != 0))
-            {
-                throw new NotImplementedException(); // throw new ArgumentException(//LEnvironment.GetResourceString("Argument_ConflictingStarDateRoundtripStyles"), parameterName);
-            }
+            throw new NotImplementedException();
         }
+
+        //internal static void ValidateStyles(StarDateStyles style, String parameterName)
+        //{
+        //    if ((style & InvalidStarDateStyles) != 0)
+        //    {
+        //        throw new NotImplementedException(); // throw new ArgumentException(//LEnvironment.GetResourceString("Argument_InvalidStarDateStyles"), parameterName);
+        //    }
+        //    if (((style & (StarDateStyles.AssumeLocal)) != 0) && ((style & (StarDateStyles.AssumeUniversal)) != 0))
+        //    {
+        //        throw new NotImplementedException(); // throw new ArgumentException(//LEnvironment.GetResourceString("Argument_ConflictingStarDateStyles"), parameterName);
+        //    }
+        //    Contract.EndContractBlock();
+        //    if (((style & StarDateStyles.RoundtripKind) != 0)
+        //        && ((style & (StarDateStyles.AssumeLocal | StarDateStyles.AssumeUniversal | StarDateStyles.AdjustToUniversal)) != 0))
+        //    {
+        //        throw new NotImplementedException(); // throw new ArgumentException(//LEnvironment.GetResourceString("Argument_ConflictingStarDateRoundtripStyles"), parameterName);
+        //    }
+        //}
 
         //
         // Actions: Return the internal flag used in formatting and parsing.
@@ -2168,12 +2043,12 @@ namespace StarLib
                 {
                     // Build the format flags from the data in this sdfi
                     //formatFlags = StarDateFormatFlags.None;
-                    //formatFlags |= (StarDateFormatFlags)StarDateFormatInfoScanner.GetFormatFlagGenitiveMonth(
+                    //formatFlags |= (StarDateFormatFlags)StarCultureScanner.GetFormatFlagGenitiveMonth(
                     //    MonthNames, internalGetGenitiveMonthNames(false), AbbreviatedMonthNames, internalGetGenitiveMonthNames(true));
-                    //formatFlags |= (StarDateFormatFlags)StarDateFormatInfoScanner.GetFormatFlagUseSpaceInMonthNames(
+                    //formatFlags |= (StarDateFormatFlags)StarCultureScanner.GetFormatFlagUseSpaceInMonthNames(
                     //    MonthNames, internalGetGenitiveMonthNames(false), AbbreviatedMonthNames, internalGetGenitiveMonthNames(true));
-                    //formatFlags |= (StarDateFormatFlags)StarDateFormatInfoScanner.GetFormatFlagUseSpaceInDayNames(DayNames, AbbreviatedDayNames);
-                    //formatFlags |= (StarDateFormatFlags)StarDateFormatInfoScanner.GetFormatFlagUseHebrewCalendar((int)StarCulture.ID);
+                    //formatFlags |= (StarDateFormatFlags)StarCultureScanner.GetFormatFlagUseSpaceInDayNames(DayNames, AbbreviatedDayNames);
+                    //formatFlags |= (StarDateFormatFlags)StarCultureScanner.GetFormatFlagUseHebrewCalendar((int)StarCulture.ID);
                 }
                 return (formatFlags);
             }
@@ -2858,6 +2733,13 @@ namespace StarLib
             }
         }
 
+        public string[] AbbreviatedEraNames { get; private set; }
+        public string[] EraNames { get; private set; }
+        public CompareInfo CompareInfo { get; internal set; }
+        public string DateSeparator { get => dateSeparator; internal set => dateSeparator = value; }
+        public int[] Eras { get; internal set; }
+        public bool HasForceTwoDigitYears { get; internal set; }
+        public string MonthDayPattern { get; internal set; }
 
         private static StarCulture[] cultures;
         private int iD = 42;
@@ -2891,6 +2773,7 @@ namespace StarLib
         //[NonSerialized]
         private string NumberDecimalSeparator = ".";
         private string[] LatinGenitives = new string[] { "Sagittarii", "Capricorni", "Aquarii", "Piscium", "Arietis", "Tauri", "Geminorum", "Karkinii", "Leonis", "Virginis", "Librae", "Scorpii", "Ophiuchi", "Horii" };
+        private object dateSeparator1;
 
         internal int GetDayOfMonth(StarDate starDate)
         {
@@ -2971,6 +2854,46 @@ namespace StarLib
         }
 
         public string GetMonthName(int i)
+        {
+            return MonthNames[i];
+        }
+
+        //internal static object GetInstance(IFormatProvider provider)
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+        internal static void ValidateStyles(StarDateStyles styles, string v)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal static StarCulture GetInstance(IFormatProvider provider)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal bool YearMonthAdjustment(ref int year, ref int month, bool v)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal string GetEraName(int v)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal string GetAbbreviatedEraName(int v)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal bool Tokenize(TokenType regularTokenMask, out TokenType tempType, out int tempValue, ref __DTString dTString)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal string[] internalGetLeapYearMonthNames()
         {
             throw new NotImplementedException();
         }

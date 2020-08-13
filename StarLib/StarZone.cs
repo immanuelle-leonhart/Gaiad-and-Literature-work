@@ -206,7 +206,7 @@ namespace StarLib
 
         internal static void ConvertTimeBySystemTimeZoneId(StarDate now, string v1, string v2)
         {
-            throw new NotImplementedException();
+            //////throw new NotImplementedException();
         }
 
         internal static void ConvertTimeBySystemTimeZoneId(StarDate now, string v)
@@ -338,10 +338,10 @@ namespace StarLib
             }
         }
 
-        internal object distance()
-        {
-            throw new NotImplementedException();
-        }
+        //internal object distance()
+        //{
+        //    //throw new NotImplementedException();
+        //}
 
         internal Time ToArrival(Time atomic)
         {
@@ -685,10 +685,6 @@ namespace StarLib
             SecurityException = 3
         };
 
-        internal StarZone OffsetClone(Time value)
-        {
-            throw new NotImplementedException();
-        }
 
 
         //#if FEATURE_WIN32_REGISTRY
@@ -1373,7 +1369,8 @@ namespace StarLib
 
         static public StarDate ConvertTime(StarDate StarDate, StarZone sourceTimeZone, StarZone destinationTimeZone)
         {
-            throw new NotImplementedException();
+            StarDate.TimeZone = destinationTimeZone;
+            return StarDate;
         }
 
 
@@ -1438,7 +1435,7 @@ namespace StarLib
         //    }
         //    if (source.Length == 0)
         //    {
-        //        throw new NotImplementedException(); // throw new ArgumentException(Environment.GetResourceString("Argument_InvalidSerializedString", source), "source");
+        //        ////throw new NotImplementedException(); // throw new ArgumentException(Environment.GetResourceString("Argument_InvalidSerializedString", source), "source");
         //    }
         //    Contract.EndContractBlock();
 
@@ -1711,14 +1708,14 @@ namespace StarLib
                 ValidateStarZone(m_id, BaseUtcOffset, m_adjustmentRules, out adjustmentRulesSupportDst);
 
                 if (adjustmentRulesSupportDst != m_supportsDaylightSavingTime) {
-                    throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_CorruptField", "SupportsDaylightSavingTime"));
+                    throw new Exception(); //throw new SerializationException(Environment.GetResourceString("Serialization_CorruptField", "SupportsDaylightSavingTime"));
                 }
             }
             catch (ArgumentException e) {
-                throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"), e);
+                throw new Exception(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"), e);
             }
             catch (InvalidTimeZoneException e) {
-                throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"), e);
+                throw new Exception(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"), e);
             }
         }
 
@@ -2040,7 +2037,7 @@ namespace StarLib
             //
             static public String GetSerializedString(StarZone zone)
             {
-                throw new NotImplementedException();
+                return zone.Id;
             }
 
 
@@ -2067,17 +2064,17 @@ namespace StarLib
             //    }
             //    catch (ArgumentException)
             //    {
-            //        throw new NotImplementedException(); // throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"), ex);
+            //        ////throw new NotImplementedException(); // throw new Exception(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"), ex);
             //    }
             //    catch (InvalidTimeZoneException)
             //    {
-            //        throw new NotImplementedException(); //throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"), ex);
+            //        ////throw new NotImplementedException(); //throw new Exception(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"), ex);
             //    }
             //}
 
             //private AdjustmentRule[] GetNextAdjustmentRuleArrayValue(bool v)
             //{
-            //    throw new NotImplementedException();
+            //    ////throw new NotImplementedException();
             //}
 
             // ---- SECTION: public instance methods --------------*
@@ -2163,7 +2160,7 @@ namespace StarLib
             {
                 if (c != esc && c != sep && c != lhs && c != rhs)
                 {
-                    throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidEscapeSequence", c));
+                    throw new Exception(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidEscapeSequence", c));
                 }
             }
 
@@ -2181,7 +2178,7 @@ namespace StarLib
             {
                 if (m_currentTokenStartIndex < 0 || m_currentTokenStartIndex >= m_serializedText.Length)
                 {
-                    throw new NotImplementedException(); //throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
+                    throw new Exception(); //throw new Exception(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
                 }
                 State tokenState = State.NotEscaped;
 
@@ -2223,7 +2220,7 @@ namespace StarLib
 
                             case '\0':
                                 // invalid character
-                                throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
+                                throw new Exception();
 
                             default:
                                 break;
@@ -2231,7 +2228,7 @@ namespace StarLib
                     }
                 }
 
-                throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
+                throw new Exception();
             }
 
 
@@ -2262,12 +2259,12 @@ namespace StarLib
                     }
                     else
                     {
-                        throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
+                        throw new Exception(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
                     }
                 }
                 if (m_currentTokenStartIndex < 0 || m_currentTokenStartIndex >= m_serializedText.Length)
                 {
-                    throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
+                    throw new Exception(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
                 }
                 State tokenState = State.NotEscaped;
                 StringBuilder token = StringBuilderCache.Acquire(initialCapacityForString);
@@ -2291,7 +2288,7 @@ namespace StarLib
 
                             case lhs:
                                 // '[' is an unexpected character
-                                throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
+                                throw new Exception(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
 
                             case rhs:
                                 if (canEndWithoutSeparator)
@@ -2306,7 +2303,7 @@ namespace StarLib
                                 else
                                 {
                                     // ']' is an unexpected character
-                                    throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
+                                    throw new Exception(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
                                 }
 
                             case sep:
@@ -2323,7 +2320,7 @@ namespace StarLib
 
                             case '\0':
                                 // invalid character
-                                throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
+                                throw new Exception(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
 
                             default:
                                 token.Append(m_serializedText[i]);
@@ -2337,12 +2334,12 @@ namespace StarLib
                 if (tokenState == State.Escaped)
                 {
                     // we are at the end of the serialized text but we are in an escaped state
-                    throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidEscapeSequence", String.Empty));
+                    throw new Exception(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidEscapeSequence", String.Empty));
                 }
 
                 if (!canEndWithoutSeparator)
                 {
-                    throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
+                    throw new Exception(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
                 }
                 m_currentTokenStartIndex = m_serializedText.Length;
                 m_state = State.EndOfLine;
@@ -2361,7 +2358,7 @@ namespace StarLib
             //    StarDate time;
             //    if (!StarDate.SpecialParse(token, format, StarCulture.InvariantCulture.FormatProvider, StarDateStyles.None, out time))
             //    {
-            //        throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
+            //        throw new Exception(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
             //    }
             //    return time;
             //}
@@ -2381,7 +2378,7 @@ namespace StarLib
                 }
                 catch (ArgumentOutOfRangeException)
                 {
-                    throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"), e);
+                    throw new Exception(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"), e);
                 }
             }
 
@@ -2397,280 +2394,13 @@ namespace StarLib
                 Int32 value;
                 if (!Int32.TryParse(token, NumberStyles.AllowLeadingSign /* "[sign]digits" */, CultureInfo.InvariantCulture, out value))
                 {
-                    throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
+                    throw new Exception(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
                 }
                 return value;
             }
 
 
-            //
-            // GetNextAdjustmentRuleArrayValue -
-            //
-            // Helper function to read an AdjustmentRule[] token.  Takes a boolean "canEndWithoutSeparator".
-            //
-            //private AdjustmentRule[] GetNextAdjustmentRuleArrayValue(Boolean canEndWithoutSeparator)
-            //{
-            //    List<AdjustmentRule> rules = new List<AdjustmentRule>(1);
-            //    int count = 0;
 
-            //    // individual AdjustmentRule array elements do not require semicolons
-            //    AdjustmentRule rule = GetNextAdjustmentRuleValue(true);
-            //    while (rule != null)
-            //    {
-            //        rules.Add(rule);
-            //        count++;
-
-            //        rule = GetNextAdjustmentRuleValue(true);
-            //    }
-
-            //    if (!canEndWithoutSeparator)
-            //    {
-            //        // the AdjustmentRule array must end with a separator
-            //        if (m_state == State.EndOfLine)
-            //        {
-            //            throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
-            //        }
-            //        if (m_currentTokenStartIndex < 0 || m_currentTokenStartIndex >= m_serializedText.Length)
-            //        {
-            //            throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
-            //        }
-            //    }
-
-            //    return (count != 0 ? rules.ToArray() : null);
-            //}
-
-            //
-            // GetNextAdjustmentRuleValue -
-            //
-            // Helper function to read an AdjustmentRule token.  Takes a boolean "canEndWithoutSeparator".
-            //
-            //private AdjustmentRule GetNextAdjustmentRuleValue(Boolean canEndWithoutSeparator)
-            //{
-            //    // first verify the internal state of the object
-            //    if (m_state == State.EndOfLine)
-            //    {
-            //        if (canEndWithoutSeparator)
-            //        {
-            //            return null;
-            //        }
-            //        else
-            //        {
-            //            throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
-            //        }
-            //    }
-
-            //    if (m_currentTokenStartIndex < 0 || m_currentTokenStartIndex >= m_serializedText.Length)
-            //    {
-            //        throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
-            //    }
-
-            //    // check to see if the very first token we see is the separator
-            //    if (m_serializedText[m_currentTokenStartIndex] == sep)
-            //    {
-            //        return null;
-            //    }
-
-            //    // verify the current token is a left-hand-side marker ("[")
-            //    if (m_serializedText[m_currentTokenStartIndex] != lhs)
-            //    {
-            //        throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
-            //    }
-            //    m_currentTokenStartIndex++;
-
-            //    StarDate dateStart = GetNextStarDateValue(false, StarDateFormat);
-            //    StarDate dateEnd = GetNextStarDateValue(false, StarDateFormat);
-            //    Time daylightDelta = GetNextTimeValue(false);
-            //    TransitionTime daylightStart = GetNextTransitionTimeValue(false);
-            //    TransitionTime daylightEnd = GetNextTransitionTimeValue(false);
-            //    Time BaseUtcOffsetDelta = Time.Zero;
-            //    // verify that the string is now at the right-hand-side marker ("]") ...
-
-            //    if (m_state == State.EndOfLine || m_currentTokenStartIndex >= m_serializedText.Length)
-            //    {
-            //        throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
-            //    }
-
-            //    // Check if we have BaseUtcOffsetDelta in the serialized string and then deserialize it
-            //    if ((m_serializedText[m_currentTokenStartIndex] >= '0' && m_serializedText[m_currentTokenStartIndex] <= '9') ||
-            //        m_serializedText[m_currentTokenStartIndex] == '-' || m_serializedText[m_currentTokenStartIndex] == '+')
-            //    {
-            //        BaseUtcOffsetDelta = GetNextTimeValue(false);
-            //    }
-
-            //    if (m_state == State.EndOfLine || m_currentTokenStartIndex >= m_serializedText.Length)
-            //    {
-            //        throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
-            //    }
-
-            //    if (m_serializedText[m_currentTokenStartIndex] != rhs)
-            //    {
-            //        // skip ahead of any "v.Next" data at the end of the AdjustmentRule
-            //        //
-            //        // 
-
-
-            //        SkipVersionNextDataFields(1);
-            //    }
-            //    else
-            //    {
-            //        m_currentTokenStartIndex++;
-            //    }
-
-            //    // create the AdjustmentRule from the deserialized fields ...
-
-            //    AdjustmentRule rule;
-            //    try
-            //    {
-            //        rule = AdjustmentRule.CreateAdjustmentRule(dateStart, dateEnd, daylightDelta, daylightStart, daylightEnd, BaseUtcOffsetDelta);
-            //    }
-            //    catch (ArgumentException e)
-            //    {
-            //        throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"), e);
-            //    }
-
-            //    // finally set the state to either EndOfLine or StartOfToken for the next caller
-            //    if (m_currentTokenStartIndex >= m_serializedText.Length)
-            //    {
-            //        m_state = State.EndOfLine;
-            //    }
-            //    else
-            //    {
-            //        m_state = State.StartOfToken;
-            //    }
-            //    return rule;
-            //}
-
-
-            //
-            // GetNextTransitionTimeValue -
-            //
-            // Helper function to read a TransitionTime token.  Takes a boolean "canEndWithoutSeparator".
-            //
-            //private TransitionTime GetNextTransitionTimeValue(Boolean canEndWithoutSeparator)
-            //{
-
-            //    // first verify the internal state of the object
-
-            //    if (m_state == State.EndOfLine
-            //        || (m_currentTokenStartIndex < m_serializedText.Length
-            //            && m_serializedText[m_currentTokenStartIndex] == rhs))
-            //    {
-            //        //
-            //        // we are at the end of the line or we are starting at a "]" character
-            //        //
-            //        throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
-            //    }
-
-            //    if (m_currentTokenStartIndex < 0 || m_currentTokenStartIndex >= m_serializedText.Length)
-            //    {
-            //        throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
-            //    }
-
-            //    // verify the current token is a left-hand-side marker ("[")
-
-            //    if (m_serializedText[m_currentTokenStartIndex] != lhs)
-            //    {
-            //        throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
-            //    }
-            //    m_currentTokenStartIndex++;
-
-            //    Int32 isFixedDate = GetNextInt32Value(false);
-
-            //    if (isFixedDate != 0 && isFixedDate != 1)
-            //    {
-            //        throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
-            //    }
-
-            //    TransitionTime transition;
-
-            //    StarDate timeOfDay = GetNextStarDateValue(false, timeOfDayFormat);
-            //    timeOfDay = new StarDate(1, 1, 1, timeOfDay.Hour, timeOfDay.Minute, timeOfDay.Second, timeOfDay.Millisecond);
-
-            //    Int32 month = GetNextInt32Value(false);
-
-            //    if (isFixedDate == 1)
-            //    {
-            //        Int32 day = GetNextInt32Value(false);
-
-            //        try
-            //        {
-            //            transition = TransitionTime.CreateFixedDateRule(timeOfDay, month, day);
-            //        }
-            //        catch (ArgumentException)
-            //        {
-            //            throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"), e);
-            //        }
-            //    }
-            //    else
-            //    {
-            //        Int32 week = GetNextInt32Value(false);
-            //        Int32 dayOfWeek = GetNextInt32Value(false);
-
-            //        try
-            //        {
-            //            transition = TransitionTime.CreateFloatingDateRule(timeOfDay, month, week, (DayOfWeek)dayOfWeek);
-            //        }
-            //        catch (ArgumentException)
-            //        {
-            //            throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"), e);
-            //        }
-
-            //    }
-
-            //    // verify that the string is now at the right-hand-side marker ("]") ...
-
-            //    if (m_state == State.EndOfLine || m_currentTokenStartIndex >= m_serializedText.Length)
-            //    {
-            //        throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
-            //    }
-
-            //    if (m_serializedText[m_currentTokenStartIndex] != rhs)
-            //    {
-            //        // skip ahead of any "v.Next" data at the end of the AdjustmentRule
-            //        //
-            //        // 
-
-
-            //        SkipVersionNextDataFields(1);
-            //    }
-            //    else
-            //    {
-            //        m_currentTokenStartIndex++;
-            //    }
-
-            //    // check to see if the string is now at the separator (";") ...
-            //    Boolean sepFound = false;
-            //    if (m_currentTokenStartIndex < m_serializedText.Length
-            //        && m_serializedText[m_currentTokenStartIndex] == sep)
-            //    {
-            //        // handle the case where we ended on a ";"
-            //        m_currentTokenStartIndex++;
-            //        sepFound = true;
-            //    }
-
-            //    if (!sepFound && !canEndWithoutSeparator)
-            //    {
-            //        // we MUST end on a separator
-            //        throw new NotImplementedException(); //throw new SerializationException(Environment.GetResourceString("Serialization_InvalidData"));
-            //    }
-
-
-            //    // finally set the state to either EndOfLine or StartOfToken for the next caller
-            //    if (m_currentTokenStartIndex >= m_serializedText.Length)
-            //    {
-            //        m_state = State.EndOfLine;
-            //    }
-            //    else
-            //    {
-            //        m_state = State.StartOfToken;
-            //    }
-            //    return transition;
-            //}
-
-            private StarDate GetNextStarDateValue(bool v, string timeOfDayFormat)
-            {
-                throw new NotImplementedException();
-            }
         }
 
         internal BigInteger GetUtcOffset(BigInteger dateData)
@@ -2716,7 +2446,7 @@ namespace StarLib
 
         //protected StarZone(SerializationInfo serializationInfo, StreamingContext streamingContext)
         //{
-        //    throw new NotImplementedException();
+        //    ////throw new NotImplementedException();
         //}
 
         public StarZone(TimeZoneInfo tz, string v1) : this(tz)
@@ -2724,5 +2454,19 @@ namespace StarLib
             this.id = v1;
         }
 
+        internal static TimeSpan GetLocalUtcOffset(StarDate parsedDate, StarZoneOptions noThrowOnInvalidTime)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal static Time GetUtcOffsetFromUtc(StarDate utcDt, StarZone local, out bool isDaylightSavings, out bool isAmbiguousLocalDst)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal Time GetUtcOffset(StarDate parsedDate, StarZoneOptions noThrowOnInvalidTime)
+        {
+            throw new NotImplementedException();
+        }
     }
 } // StarZone

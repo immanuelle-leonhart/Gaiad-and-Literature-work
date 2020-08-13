@@ -466,7 +466,7 @@ namespace StarLib
 
         public static explicit operator TimeSpan(Time v)
         {
-            throw new NotImplementedException();
+            return new TimeSpan((long)v.Ticks);
         }
 
         public static Time operator %(Time t1, Time t2)
@@ -476,7 +476,7 @@ namespace StarLib
 
         bool IEquatable<Time>.Equals(Time other)
         {
-            throw new NotImplementedException();
+            return this == other;
         }
 
         int IComparable<Time>.CompareTo(Time other)
