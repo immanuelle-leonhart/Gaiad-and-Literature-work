@@ -12,12 +12,12 @@ namespace TestConsole
     {
         static void Main(string[] args)
         {
-            StarDate myStruct = new StarDate(10, 10, 10, 10);
+            StarDate dt = new StarDate(StarDate.TicksPer100k);
+            Console.WriteLine(dt.y100k);
+        }
 
-            BigInteger big = 100000;
-
-            StarDate star = new StarDate(big, 0, StarZone.UTC);
-
+        public static void test(StarDate myStruct)
+        {
             var serializedMyStruct = JsonConvert.SerializeObject(myStruct);
 
             Console.WriteLine("JSON: " + serializedMyStruct);

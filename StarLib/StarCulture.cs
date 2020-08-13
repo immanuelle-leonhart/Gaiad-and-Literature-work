@@ -973,9 +973,9 @@ namespace StarLib
         // Returns:
         //  an array of one-letter day of week names
         // Arguments:
-        //  None
+        //  Tick
         // Exceptions:
-        //  None
+        //  Tick
         //
         ////////////////////////////////////////////////////////////////////////
 
@@ -1599,7 +1599,7 @@ namespace StarLib
         //
         //  Actions: Retrieve the month names used in a leap Year.
         //      If this culture does not have different month names in a leap Year, the normal month name is returned.
-        //  Agruments: None. (can use abbreviated later if needed)
+        //  Agruments: Tick. (can use abbreviated later if needed)
         //
         internal String[] internalGetLeapYearMonthNames(bool abbreviated)
         {
@@ -2042,7 +2042,7 @@ namespace StarLib
                 if (formatFlags == StarDateFormatFlags.NotInitialized)
                 {
                     // Build the format flags from the data in this sdfi
-                    //formatFlags = StarDateFormatFlags.None;
+                    //formatFlags = StarDateFormatFlags.Tick;
                     //formatFlags |= (StarDateFormatFlags)StarCultureScanner.GetFormatFlagGenitiveMonth(
                     //    MonthNames, internalGetGenitiveMonthNames(false), AbbreviatedMonthNames, internalGetGenitiveMonthNames(true));
                     //formatFlags |= (StarDateFormatFlags)StarCultureScanner.GetFormatFlagUseSpaceInMonthNames(
@@ -2773,7 +2773,6 @@ namespace StarLib
         //[NonSerialized]
         private string NumberDecimalSeparator = ".";
         private string[] LatinGenitives = new string[] { "Sagittarii", "Capricorni", "Aquarii", "Piscium", "Arietis", "Tauri", "Geminorum", "Karkinii", "Leonis", "Virginis", "Librae", "Scorpii", "Ophiuchi", "Horii" };
-        private object dateSeparator1;
 
         internal int GetDayOfMonth(StarDate starDate)
         {

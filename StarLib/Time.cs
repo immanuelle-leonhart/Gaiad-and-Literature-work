@@ -275,11 +275,11 @@ namespace StarLib
         public Time Subtract(Time ts)
         {
             BigInteger result = _ticks - ts._ticks;
-            // Overflow if signs of operands was different and result's
-            // sign was opposite from the first argument's sign.
-            // >> 63 gives the sign bit (either 64 1's or 64 0's).
-            if ((_ticks >> 63 != ts._ticks >> 63) && (_ticks >> 63 != result >> 63))
-                throw new OverflowException(); //Environment.GetResourceString("Overflow_TimeTooLong"));
+            //// Overflow if signs of operands was different and result's
+            //// sign was opposite from the first argument's sign.
+            //// >> 63 gives the sign bit (either 64 1's or 64 0's).
+            //if ((_ticks >> 63 != ts._ticks >> 63) && (_ticks >> 63 != result >> 63))
+            //    throw new OverflowException(); //Environment.GetResourceString("Overflow_TimeTooLong"));
             return new Time(result);
         }
 
@@ -368,7 +368,7 @@ namespace StarLib
         //
 //#if !FEATURE_CORECLR
 //        [System.Security.SecurityCritical]
-//        [ResourceExposure(ResourceScope.None)]
+//        [ResourceExposure(ResourceScope.Tick)]
 //        [MethodImplAttribute(MethodImplOptions.InternalCall)]
 //        private static extern bool LegacyFormatMode();
 

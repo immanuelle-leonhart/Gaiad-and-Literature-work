@@ -13,18 +13,18 @@ namespace StarLib.Forms
     {
         public bool present = false;
         private string[] months;
-        private int year;
-        private int month;
-        private int day;
-        private int hour;
-        private int min;
-        private int sec;
-        private int millisec;
-        private int ticks;
+        private long year;
+        private long month;
+        private long day;
+        private long hour;
+        private long min;
+        private long sec;
+        private long millisec;
+        private long ticks;
 
         public int MonthDays { get; protected set; }
         public int YearMonths { get; protected set; }
-        public int BaseYear { get; protected set; } = StarDate.Now.Year;
+        public long BaseYear { get; protected set; } = StarDate.Now.Year;
 
         public string[] Months
         {
@@ -38,11 +38,12 @@ namespace StarLib.Forms
             }
         }
 
+
         public int Year
         {
             get
             {
-                return year;
+                return (int)year;
             }
             set
             {
@@ -56,7 +57,7 @@ namespace StarLib.Forms
         {
             get
             {
-                return month;
+                return (int)month;
             }
             set
             {
@@ -70,7 +71,7 @@ namespace StarLib.Forms
         {
             get
             {
-                return day;
+                return (int)day;
             }
             set
             {
@@ -84,7 +85,7 @@ namespace StarLib.Forms
         {
             get
             {
-                return hour;
+                return (int)hour;
             }
             set
             {
@@ -98,7 +99,7 @@ namespace StarLib.Forms
         {
             get
             {
-                return min;
+                return (int)min;
             }
             set
             {
@@ -115,7 +116,7 @@ namespace StarLib.Forms
         {
             get
             {
-                return sec;
+                return (int)sec;
             }
             set
             {
@@ -129,7 +130,7 @@ namespace StarLib.Forms
         {
             get
             {
-                return millisec;
+                return (int)millisec;
             }
             set
             {
@@ -145,7 +146,7 @@ namespace StarLib.Forms
         {
             get
             {
-                return ticks;
+                return (int)ticks;
             }
             set
             {
@@ -182,7 +183,7 @@ namespace StarLib.Forms
             // types here, because the underlying InputBase already covers that.
             try
             {
-                result = StarDate.fromQuickString(value);
+                result = StarDate.DataParse(value);
                 validationErrorMessage = "Success";
                 return true;
             }
@@ -203,7 +204,7 @@ namespace StarLib.Forms
             }
             else
             {
-                return value.QuickString();
+                return value.Data;
             }
         }
 

@@ -4781,7 +4781,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
 
         [Pure]
         [Conditional("_LOGGING")]
-        //[ResourceExposure(ResourceScope.None)]
+        //[ResourceExposure(ResourceScope.Tick)]
         internal static void LexTraceExit(string message, DS dps)
         {
 #if _LOGGING
@@ -4792,7 +4792,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
         }
         [Pure]
         [Conditional("_LOGGING")]
-        //[ResourceExposure(ResourceScope.None)]
+        //[ResourceExposure(ResourceScope.Tick)]
         internal static void PTSTraceExit(DS dps, bool passed)
         {
 #if _LOGGING
@@ -4803,7 +4803,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
         }
         [Pure]
         [Conditional("_LOGGING")]
-        //[ResourceExposure(ResourceScope.None)]
+        //[ResourceExposure(ResourceScope.Tick)]
         internal static void TPTraceExit(string message, DS dps)
         {
 #if _LOGGING
@@ -4814,7 +4814,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
         }
         [Pure]
         [Conditional("_LOGGING")]
-        //[ResourceExposure(ResourceScope.None)]
+        //[ResourceExposure(ResourceScope.Tick)]
         internal static void DTFITrace(StarCulture dtfi)
         {
 #if _LOGGING

@@ -394,11 +394,6 @@ namespace StarLib
                 int nextChar;
                 switch (ch)
                 {
-                    case 'b':
-                    case 'B':
-                        tokenLen = ParseRepeatPattern(format, i, ch);
-                        result.Append(StarDate.Billion);
-                        break;
                     case 'g':
                         tokenLen = ParseRepeatPattern(format, i, ch);
                         if (tokenLen == 1)
