@@ -214,7 +214,7 @@ namespace StarLib
         internal const int k = 1000;
         internal static BigInteger TicksPerThousand = TicksPerAverageYear * 1000;
         internal const long DaysPer100k = 1282 * DaysPer78Years + 4 * DaysPerYear;
-        public static BigInteger TicksPer100k = DaysPer100k * (BigInteger)TicksPerDay;
+        public static BigInteger TicksPer100k = (BigInteger) DaysPer100k * (BigInteger)TicksPerDay;
         internal const long DaysPerMillion = DaysPer100k * 10;
         public static BigInteger TicksPerMillion = DaysPerMillion * (BigInteger) TicksPerDay;
         private static readonly Time m = new Time(TicksPerMillion);
@@ -746,7 +746,7 @@ namespace StarLib
             }
             int y100k = (int)(n / DaysPer100k);
             if (part == DatePart100k) return 100 * k * y100k;
-            n -= y100k * DaysPer78Years;
+            n -= y100k * DaysPer100k;
             int y78 = (int)(n / DaysPer78Years);
             n -= y78 * DaysPer78Years;
             int y6 = (int)(n / DaysPerSixYears);
@@ -784,7 +784,7 @@ namespace StarLib
             if (IsTerran)
             {
                 int y100k = (int)(n / DaysPer100k);
-                n -= y100k * DaysPer78Years;
+                n -= y100k * DaysPer100k;
                 int y78 = (int)(n / DaysPer78Years);
                 n -= y78 * DaysPer78Years;
                 int y6 = (int)(n / DaysPerSixYears);
@@ -813,7 +813,7 @@ namespace StarLib
             if (IsTerran)
             {
                 int y100k = (int)(n / DaysPer100k);
-                n -= y100k * DaysPer78Years;
+                n -= y100k * DaysPer100k;
                 int y78 = (int)(n / DaysPer78Years);
                 n -= y78 * DaysPer78Years;
                 int y6 = (int)(n / DaysPerSixYears);
@@ -2041,7 +2041,9 @@ namespace StarLib
 
         public StarDate AddTicks(BigInteger ticks)
         {
-            return this + new Time(ticks);
+            StarDate dt = this;
+            dt.internalTicks += ticks;
+            return dt;
         }
 
         // Returns the StarDate resulting from adding a fractional number of
@@ -3662,6 +3664,16 @@ namespace StarLib
             return d.Subtract(t);
         }
 
+        public static StarDate operator +(StarDate d, BigInteger t)
+        {
+            return d.AddTicks(t);
+        }
+
+        public static StarDate operator -(StarDate d, BigInteger t)
+        {
+            return d.AddTicks(-1 * t);
+        }
+
         public static Time operator -(StarDate d1, StarDate d2)
         {
             return d1.Subtract(d2);
@@ -3911,6 +3923,11 @@ namespace StarLib
         public ulong ToUInt64(IFormatProvider provider)
         {
             return ((IConvertible)Data).ToUInt64(provider);
+        }
+
+        public void TestYear()
+        {
+            throw new NotImplementedException();
         }
     }
 }

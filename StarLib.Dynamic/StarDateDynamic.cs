@@ -16,18 +16,6 @@ namespace StarLib.Dynamic
                 case "Fullyear":
                     starDate.FullYear = (long)value;
                     return true;
-                case "Quadrillion":
-                    starDate.Quadrillion = (int)value;
-                    return true;
-                case "Trillion":
-                    starDate.Trillion = (int)value;
-                    return true;
-                case "Billion":
-                    starDate.Billion = (int)value;
-                    return true;
-                case "Million":
-                    starDate.Million = (int)value;
-                    return true;
                 case "Year":
                     starDate.Year = (int)value;
                     return true;
@@ -78,22 +66,6 @@ namespace StarLib.Dynamic
                 case "Fullyear":
                     result = (Func<long>)(()
                           => starDate.FullYear);
-                    return true;
-                case "Quadrillion":
-                    result = (Func<int>)(()
-                          => starDate.Quadrillion);
-                    return true;
-                case "Trillion":
-                    result = (Func<int>)(()
-                          => starDate.Trillion);
-                    return true;
-                case "Billion":
-                    result = (Func<int>)(()
-                          => starDate.Billion);
-                    return true;
-                case "Million":
-                    result = (Func<int>)(()
-                          => starDate.Million);
                     return true;
                 case "Year":
                     result = (Func<int>)(()
@@ -204,7 +176,7 @@ namespace StarLib.Dynamic
                           => starDate.AddTicks(a));
                     return true;
                 case "GetDateParts":
-                    result = (Func<int, int[]>)((int a)
+                    result = (Func<int, long[]>)((int a)
                           => starDate.GetDateParts(a));
                     return true;
                 case "Equals":
