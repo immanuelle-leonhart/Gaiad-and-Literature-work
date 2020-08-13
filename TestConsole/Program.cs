@@ -22,8 +22,7 @@ namespace TestConsole
             while (i < 150)
             {
                 StarDate sd = dt.AddTicks(StarDate.TicksPerMillion * i);
-                Console.WriteLine(sd.Ticks);
-                Console.WriteLine(sd.FullYear);
+                sd.TestYear();
                 Console.WriteLine("million = " + i);
                 i++;
             }

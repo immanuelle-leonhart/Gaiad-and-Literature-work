@@ -3927,7 +3927,35 @@ namespace StarLib
 
         public void TestYear()
         {
-            throw new NotImplementedException();
+            Int64 n = (long)(AdjustedTicks / TicksPerDay);
+            //if (IsTerran == false)
+            //{
+            //    throw new NotImplementedException();
+            //}
+            int y100k = (int)(n / DaysPer100k);
+            int part = 0;
+            if (part == DatePart100k) return 100 * k * y100k;
+            n -= y100k * DaysPer100k;
+            int y78 = (int)(n / DaysPer78Years);
+            n -= y78 * DaysPer78Years;
+            int y6 = (int)(n / DaysPerSixYears);
+            if (y6 == 13) y6 = 12;
+            n -= y6 * DaysPerSixYears;
+            int y1 = (int)(n / DaysPerYear);
+            if (y1 == 6) y1 = 5;
+            if (part == DatePartYear) return 100 * k * y100k + 78 * y78 + 6 * y6 + y1;
+            n -= y1 * DaysPerYear;
+            int d = (int)n + 1;
+            if (part == DatePartDayOfYear) return d;
+            if (part == DatePartMonth) return ((d - 1) / 28) + 1;
+            d %= 28;
+            if (d == 0) d = 28;
+            if (part == DatePartDay) return d;
+            else if (part == DatePartDayOfWeek) return d % 7;
+            else
+            {
+                return 19;
+            }
         }
     }
 }
