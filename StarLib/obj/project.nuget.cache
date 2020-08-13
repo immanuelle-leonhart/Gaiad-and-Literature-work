@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "NzpHvfDuXGTD26SQzHQmXQiLsGIAmUjXm3o8I0v+11jdwf8A9cvnYA4xPVFIGWspaaHAh7bOzpfIEYaq26eSxw==",
+  "dgSpecHash": "SFt6ytL7jtsMySJy5C7uVt/V+RmHkiJR0nqBi53iN8F3Pz7LRrw+OSbtUxn/v6gvJBjUMLTXhcCHPNIGEeMpAQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate\\StarLib\\StarLib.csproj",
   "expectedPackageFiles": [
@@ -85,6 +85,7 @@
     "C:\\Users\\SiliconProphet\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Users\\SiliconProphet\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\SiliconProphet\\.nuget\\packages\\system.threading.tasks.extensions\\4.3.0\\system.threading.tasks.extensions.4.3.0.nupkg.sha512",
+    "C:\\Users\\SiliconProphet\\.nuget\\packages\\system.threading.thread\\4.3.0\\system.threading.thread.4.3.0.nupkg.sha512",
     "C:\\Users\\SiliconProphet\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\SiliconProphet\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\SiliconProphet\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
