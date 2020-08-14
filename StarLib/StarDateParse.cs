@@ -7,7 +7,7 @@
 //
 //  Class:    StarDateParse
 //
-//  Purpose:  This class is called by StarDate to parse a date/time string.
+//  Purpose:  This class is called by StarDate to parse a date/time string. 
 //
 ////////////////////////////////////////////////////////////////////////////
 
