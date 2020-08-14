@@ -20,7 +20,7 @@ namespace StarLib
     // This value type represents a date and time.  Every StarDate
     // object has a private field (Ticks) of type Int64 that stores the
     // date and time as the number of 100 nanosecond intervals since
-    // 12:00 AM January 1, Year 1 A.D. in the proleptic Gregorian Calendar.
+    // the Big Bang (fixed to 14 billion years before the beginning of the Holocene Calendar)
     //
     // Starting from V2.0, StarDate also stored some context about its time
     // zone in the form of a 3-state value representing Unspecified, Utc or
