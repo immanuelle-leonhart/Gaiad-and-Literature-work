@@ -12,21 +12,11 @@ namespace TestConsole
     {
         static void Main(string[] args)
         {
-            long b = 14 * (long)Math.Pow(10, 9);
-            Console.WriteLine(b);
-            
-            StarDate dt = new StarDate(StarDate.TicksPerBillion * 2, StarZone.UTC);
-            //Console.WriteLine(dt.Ticks);
-            //Console.WriteLine(dt.FullYear);
-            int i = 140; 
-            while (i < 150)
-            {
-                StarDate sd = dt.AddTicks(StarDate.TicksPerMillion * i);
-                sd.TestYear();
-                Console.WriteLine("million = " + i);
-                i++;
-            }
+            StarDate dt = DateTime.Now;
+            Console.WriteLine(dt);
+            Console.WriteLine(dt.DateTime);
         }
+
 
         public static void test(StarDate myStruct)
         {

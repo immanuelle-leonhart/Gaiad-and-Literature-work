@@ -754,7 +754,7 @@ namespace StarLib
             n -= y6 * DaysPerSixYears;
             int y1 = (int)(n / DaysPerYear);
             if (y1 == 6) y1 = 5;
-            if (part == DatePartYear) return 100 * k * y100k + 78 * y78 + 6 * y6 + y1;
+            if (part == DatePartYear) return 100 * k * (long) y100k + 78 * (long) y78 + 6 * (long)y6 + (long)y1;
             n -= y1 * DaysPerYear;
             int d = (int)n + 1;
             if (part == DatePartDayOfYear) return d;
@@ -792,7 +792,7 @@ namespace StarLib
                 n -= y6 * DaysPerSixYears;
                 int y1 = (int)(n / DaysPerYear);
                 if (y1 == 6) y1 = 5;
-                year = 100 * k * y100k + 78 * y78 + 6 * y6 + y1;
+                year = 100 * k * (long) y100k + 78 * (long) y78 + 6 * (long)y6 + (long)y1;
                 n -= y1 * DaysPerYear;
                 int d = (int)n + 1;
                 month = ((d - 1) / 28) + 1;
@@ -821,7 +821,7 @@ namespace StarLib
                 n -= y6 * DaysPerSixYears;
                 int y1 = (int)(n / DaysPerYear);
                 if (y1 == 6) y1 = 5;
-                year = 100 * k * y100k + 78 * y78 + 6 * y6 + y1;
+                year = 100 * k * (long) y100k + 78 * (long) y78 + 6 * (long)y6 + (long)y1;
                 n -= y1 * DaysPerYear;
                 int d = (int)n + 1;
                 month = ((d - 1) / 28) + 1;
@@ -1954,9 +1954,13 @@ namespace StarLib
 
         public StarDate(DateTime dt, StarZone zone)
         {
-            internalTicks = dt.Ticks + NetStart - zone.Offset(dt);
+            internalTicks = dt.Ticks + NetStart;
             _timeZone = zone;
             accuracy = Accuracy.Tick;
+            if (dt.Kind != DateTimeKind.Utc)
+            {
+                internalTicks -= zone.Offset(dt);
+            }
         }
 
         public StarDate(DateTime dt, Accuracy margin, StarZone zone) : this(dt, zone)
@@ -2695,7 +2699,7 @@ namespace StarLib
         {
             get
             {
-                DateTime dt = new DateTime((long)(internalTicks - NetStart));
+                DateTime dt = new DateTime((long)(internalTicks - NetStart + offset));
                 DateTime.SpecifyKind(dt, Kind);
                 return dt;
             }
@@ -3933,8 +3937,8 @@ namespace StarLib
             //    throw new NotImplementedException();
             //}
             int y100k = (int)(n / DaysPer100k);
-            int part = 0;
-            if (part == DatePart100k) return 100 * k * y100k;
+            //if (part == DatePart100k) return 100 * k * y100k;
+            Console.WriteLine(100 * k + y100k);
             n -= y100k * DaysPer100k;
             int y78 = (int)(n / DaysPer78Years);
             n -= y78 * DaysPer78Years;
@@ -3943,19 +3947,24 @@ namespace StarLib
             n -= y6 * DaysPerSixYears;
             int y1 = (int)(n / DaysPerYear);
             if (y1 == 6) y1 = 5;
-            if (part == DatePartYear) return 100 * k * y100k + 78 * y78 + 6 * y6 + y1;
+            //if (part == DatePartYear) return 100 * k * (long) y100k + 78 * (long) y78 + 6 * (long)y6 + (long)y1;
+            Console.WriteLine("DatePartYear " + 100 * k * (long)y100k + 78 * (long)y78 + 6 * (long)y6 + (long)y1);
             n -= y1 * DaysPerYear;
             int d = (int)n + 1;
-            if (part == DatePartDayOfYear) return d;
-            if (part == DatePartMonth) return ((d - 1) / 28) + 1;
+            //if (part == DatePartDayOfYear) return d;
+            Console.WriteLine(d);
+            //if (part == DatePartMonth) return ((d - 1) / 28) + 1;
+            Console.WriteLine(((d - 1) / 28) + 1);
             d %= 28;
             if (d == 0) d = 28;
-            if (part == DatePartDay) return d;
-            else if (part == DatePartDayOfWeek) return d % 7;
-            else
-            {
-                return 19;
-            }
+            //if (part == DatePartDay) return d;
+            Console.WriteLine(d);
+            //else if (part == DatePartDayOfWeek) return d % 7;
+            Console.WriteLine(d % 7);
+            //else
+            //{
+            //    return 19;
+            //}
         }
     }
 }
