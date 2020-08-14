@@ -1617,6 +1617,22 @@ namespace StarLib
             this.accuracy = error;
         }
 
+        public StarDate(BigInteger ticks, TimeSpan Offset) : this(ticks, (Time)Offset)
+        {
+
+        }
+
+        public StarDate(BigInteger ticks, Time Offset)
+        {
+            internalTicks = ticks;
+            accuracy = Accuracy.Tick;
+            _timeZone = StarZone.GetStarZoneFromOffset(ticks, Offset);
+        }
+
+        
+
+
+
         // Constructs a StarDate from a given Year, month, and day. The
         // time-of-day of the resulting StarDate is always midnight.
         //
@@ -1966,6 +1982,31 @@ namespace StarLib
         public StarDate(DateTime dt, Accuracy margin, StarZone zone) : this(dt, zone)
         {
             Accuracy = margin;
+        }
+
+        public StarDate(DateTime dt, Time offset) : this(dt, (TimeSpan)offset)
+        {
+
+        }
+
+        public StarDate(DateTime dt, TimeSpan offset) : this(new DateTimeOffset(dt, offset))
+        {
+
+        }
+
+
+        public StarDate(DateTimeOffset dt)
+        {
+            if (dt.Offset == Local.Offset(dt.Date))
+            {
+                _timeZone = Local;
+            }
+            else
+            {
+                _timeZone = StarZone.GetStarZoneFromOffset(dt.UtcDateTime.Ticks + NetStart, (Time)dt.Offset);
+            }
+            internalTicks = dt.Ticks;
+            accuracy = Accuracy.Tick;
         }
 
         public StarDate(Time t) : this()
@@ -2542,13 +2583,13 @@ namespace StarLib
         {
             get
             {
-                return internalTicks + offset.Ticks;
+                return internalTicks + Offset.Ticks;
             }
             set
             {
                 //a = d + o
                 //a - o = d
-                internalTicks = value - offset.Ticks;
+                internalTicks = value - Offset.Ticks;
             }
         }
 
@@ -2678,7 +2719,7 @@ namespace StarLib
 
         //returns utc offset for this date
 
-        public Time offset
+        public Time Offset
         {
             get
             {
@@ -2691,6 +2732,20 @@ namespace StarLib
                     return this.TimeZone.BaseUtcOffset;
                 }
             }
+            set
+            {
+                if (Offset != value)
+                {
+                    if (Offset == Local.Offset(this))
+                    {
+                        TimeZone = Local;
+                    }
+                    else
+                    {
+                        TimeZone = StarZone.GetStarZoneFromOffset(internalTicks, value);
+                    }
+                }
+            }
         }
 
         //returns DateTime equivalent
@@ -2699,7 +2754,7 @@ namespace StarLib
         {
             get
             {
-                DateTime dt = new DateTime((long)(internalTicks - NetStart + offset));
+                DateTime dt = new DateTime((long)(internalTicks - NetStart + Offset));
                 DateTime.SpecifyKind(dt, Kind);
                 return dt;
             }
@@ -2709,10 +2764,23 @@ namespace StarLib
             }
         }
 
-        public long y100k
+        public DateTimeOffset DateTimeOffset
         {
-            get => GetDatePart(DatePart100k);
+            get
+            {
+                return new DateTimeOffset((long)(internalTicks - NetStart), (TimeSpan)Offset);
+            }
+            set
+            {
+                internalTicks = value.Ticks;
+                Offset = (Time)value.Offset;
+            }
         }
+
+        //public long y100k
+        //{
+        //    get => GetDatePart(DatePart100k);
+        //}
 
         public long FullYear
         {

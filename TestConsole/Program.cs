@@ -12,9 +12,11 @@ namespace TestConsole
     {
         static void Main(string[] args)
         {
-            StarDate dt = DateTime.Now;
-            Console.WriteLine(dt);
+            StarDate dt = StarDate.Now;
             Console.WriteLine(dt.DateTime);
+            Console.WriteLine(dt);
+            Console.WriteLine(DateTimeOffset.Now);
+            Console.WriteLine(DateTimeOffset.Now);
         }
 
 

@@ -525,12 +525,12 @@ namespace StarLib
 
         internal static Time GetLocalUtcOffset(StarDate starDate)
         {
-            return starDate.offset;
+            return starDate.Offset;
         }
 
         internal static Time GetLocalUtcOffset(StarDate dt, bool noThrowOnInvalidTime)
         {
-            return dt.offset;
+            return dt.Offset;
         }
 
         public StarZone(string id, Time LocalDay)
@@ -2403,6 +2403,11 @@ namespace StarLib
 
         }
 
+        internal static StarZone GetStarZoneFromOffset(TimeSpan offset)
+        {
+            throw new NotImplementedException();
+        }
+
         internal BigInteger GetUtcOffset(BigInteger dateData)
         {
             dateData -= StarDate.Manu.Ticks;
@@ -2467,6 +2472,18 @@ namespace StarLib
         internal Time GetUtcOffset(StarDate parsedDate, StarZoneOptions noThrowOnInvalidTime)
         {
             throw new NotImplementedException();
+        }
+
+        internal static StarZone GetStarZoneFromOffset(BigInteger ticks, Time value)
+        {
+            foreach (StarZone timezone in SystemTimeZones)
+            {
+                if (timezone.GetUtcOffset(ticks) == value)
+                {
+                    return timezone;
+                }
+            }
+            return UTC;
         }
     }
 } // StarZone
