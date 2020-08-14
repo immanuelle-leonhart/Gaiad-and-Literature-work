@@ -170,7 +170,7 @@ namespace StarLib
             InvariantCulture._longtimes = new string[] { "HH:mm:ss" };                             // time format
             InvariantCulture._saShortTimes = new string[] { "HH:mm", "hh:mm tt", "H:mm", "h:mm tt" }; // short time format
             InvariantCulture._saDurationFormats = new string[] { "HH:mm:ss" };                             // time duration format
-            InvariantCulture.shortTimePattern = "h:mm:ss tt";
+            InvariantCulture.shortTimePattern = "h:mm tt";
             InvariantCulture.longTimePattern = "HH:mm:ss";
             InvariantCulture.LongDatePattern = "WWWW MMMMM ddd yyyyy";
             InvariantCulture.shortDatePattern = "yyyyy/MM/dd";

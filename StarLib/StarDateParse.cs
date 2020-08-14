@@ -3949,7 +3949,6 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             //    return false;
             //}
             throw new NotImplementedException();
-            return true;
         }
 
         // Given a specified format character, parse and update the parsing result.
