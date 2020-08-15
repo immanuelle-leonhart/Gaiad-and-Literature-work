@@ -11,6 +11,7 @@ using System.Xml;
 using System.Xml.Schema;
 using System.Xml.Serialization;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 
 namespace StarLib
 {
@@ -178,7 +179,7 @@ namespace StarLib
         internal const long TicksPerMinute = TicksPerSecond * 60;
         internal static Time HourTime = MinuteTime * 60;
         internal const long TicksPerHour = TicksPerMinute * 60;
-        internal static Time DayTime = HourTime * 24;
+        public static Time DayTime = HourTime * 24;
         internal const long TicksPerDay = TicksPerHour * 24;
         internal static Time Decidi = DayTime / 10;
         internal static Time Centidi = DayTime / 100;
@@ -192,7 +193,7 @@ namespace StarLib
         internal static Time MonthTime = week * 4;
         internal const long TicksPerMonth = TicksPerDay * 28;
         internal const int DaysPerMonth = DaysPerWeek * 4;
-        internal static Time YearTime = week * 52;
+        public static Time YearTime = week * 52;
         internal static BigInteger TicksPerYear = TicksPerWeek * 52;
         internal const int DaysPerYear = DaysPerMonth * 13;
         internal static Time Leap = YearTime + week;
@@ -1156,7 +1157,7 @@ namespace StarLib
 
         //private bool Sol => this.TimeZone.Sol;
 
-        internal StarDate addtimezone(string prim)
+        public StarDate addtimezone(string prim)
         {
             StarZone timezone = StarZone.FindTimeZone(prim);
             return this.addtimezone(timezone);
@@ -3641,6 +3642,11 @@ namespace StarLib
         //
         public static StarDate Parse(String s)
         {
+            StarDate sd;
+            if(StarDate.TryDataParse(s, out sd))
+            {
+                return sd;
+            }
             return (StarDateParse.Parse(s, StarCulture.CurrentCulture, StarDateStyles.None));
         }
 
@@ -3893,13 +3899,56 @@ namespace StarLib
             }
         }
 
-        private static bool TryDataParse(string text, out StarDate converted)
+        public static bool TryDataParse(string text, out StarDate converted)
         {
             string[] data = text.Split('-');
+            StarZone timeZone = UTC;
             try
             {
-                converted = new StarDate(int.Parse(data[0]), int.Parse(data[1]), int.Parse(data[2]), int.Parse(data[3]), int.Parse(data[4]), int.Parse(data[5]), int.Parse(data[6]), int.Parse(data[7]), (Accuracy)int.Parse(data[8]), StarZone.FindSystemTimeZoneById(data[9]));
-                return true;
+                timeZone = StarZone.FindSystemTimeZoneById(data[data.Length - 1]);
+                string[] vs = new string[data.Length - 1];
+                int i = 0;
+                while (i < vs.Length)
+                {
+                    vs[i] = data[i];
+                    i++;
+                }
+                data = vs;
+            }
+            catch (KeyNotFoundException)
+            {
+                //timeZone = UTC;
+            }
+            try
+            {
+                switch (data.Length)
+                {
+                    case 1:
+                        converted = new StarDate(int.Parse(data[0]),  timeZone);
+                        return true;
+                    case 2:
+                        converted = new StarDate(int.Parse(data[0]), int.Parse(data[1]),  timeZone);
+                        return true;
+                    case 3:
+                        converted = new StarDate(int.Parse(data[0]), int.Parse(data[1]), int.Parse(data[2]),  timeZone);
+                        return true;
+                    case 4:
+                        converted = new StarDate(int.Parse(data[0]), int.Parse(data[1]), int.Parse(data[2]), int.Parse(data[3]),  timeZone);
+                        return true;
+                    case 5:
+                        converted = new StarDate(int.Parse(data[0]), int.Parse(data[1]), int.Parse(data[2]), int.Parse(data[3]), int.Parse(data[4]),  timeZone);
+                        return true;
+                    case 6:
+                        converted = new StarDate(int.Parse(data[0]), int.Parse(data[1]), int.Parse(data[2]), int.Parse(data[3]), int.Parse(data[4]), int.Parse(data[5]),  timeZone);
+                        return true;
+                    case 7:
+                        converted = new StarDate(int.Parse(data[0]), int.Parse(data[1]), int.Parse(data[2]), int.Parse(data[3]), int.Parse(data[4]), int.Parse(data[5]), int.Parse(data[6]), timeZone);
+                        return true;
+                    case 8:
+                    default:
+                        converted = new StarDate(int.Parse(data[0]), int.Parse(data[1]), int.Parse(data[2]), int.Parse(data[3]), int.Parse(data[4]), int.Parse(data[5]), int.Parse(data[6]), int.Parse(data[7]), timeZone);
+                        return true;
+                }
             }
             catch (ArgumentOutOfRangeException)
             {
@@ -4033,6 +4082,11 @@ namespace StarLib
             //{
             //    return 19;
             //}
+        }
+
+        public string Stored()
+        {
+            throw new NotImplementedException();
         }
     }
 }
