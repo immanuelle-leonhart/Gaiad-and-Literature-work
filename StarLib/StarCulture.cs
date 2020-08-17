@@ -11,6 +11,9 @@ using System.IO;
 using System.Globalization;
 using System.Reflection;
 using System.Diagnostics.Contracts;
+using System.Xml.Serialization;
+using System.Xml.Schema;
+using System.Xml;
 //using System.Globalization;
 
 namespace StarLib
@@ -59,7 +62,7 @@ namespace StarLib
 
     //[Serializable]
     [System.Runtime.InteropServices.ComVisible(true)]
-    public sealed class StarCulture : IFormatProvider
+    public sealed class StarCulture : IFormatProvider, IXmlSerializable, IConvertible
     {
         private static Dictionary<string, StarCulture> isodict = getformats();
         private static StarCulture invariantCulture;
@@ -253,7 +256,9 @@ namespace StarLib
                         this.dayNames[0] = n[i];
                         break;
                     case 15:
-                        this.months = new List<string>() { n[i] };
+                        //this.months = new List<string>() { n[i] };
+                        this.monthNames = new string[14];
+                        this.monthNames[i - 15] = n[i];
                         break;
                     case 16:
                     case 17:
@@ -268,7 +273,7 @@ namespace StarLib
                     case 26:
                     case 27:
                     case 28:
-                        this.months.Add(n[i]);
+                        this.monthNames[i - 15] = n[i];
                         break;
                     case 29:
                         this.saMonthGenitiveNames = new List<string> { n[i] };
@@ -415,7 +420,7 @@ namespace StarLib
 
         internal string month(int m)
         {
-            return this.months[m];
+            return this.MonthNames[m - 1];
         }
 
         internal string WeekDays(int d)
@@ -1442,11 +1447,11 @@ namespace StarLib
             {
                 if (_abbreviatedMonthNames == null)
                 {
-                    string[] vs = new string[this.months.Count];
+                    string[] vs = new string[this.MonthNames.Length];
                     int i = 0;
                     while (i < vs.Length)
                     {
-                        vs[i] = abbreviate(months[i]);
+                        vs[i] = abbreviate(MonthNames[i]);
                         if (vs[i] == "")
                         {
                             vs[i] = InvariantCulture.AbbreviatedMonthNames[i];
@@ -1486,14 +1491,7 @@ namespace StarLib
             {
                 if (saMonthNames == null)
                 {
-                    string[] vs = new string[this.months.Count];
-                    int i = 0;
-                    while (i < vs.Length)
-                    {
-                        vs[i] = months[i];
-                        i++;
-                    }
-                    saMonthNames = vs;
+                    saMonthNames = InvariantCulture.MonthNames;
                 }
                 return saMonthNames;
             }
@@ -2740,6 +2738,7 @@ namespace StarLib
         public int[] Eras { get; internal set; }
         public bool HasForceTwoDigitYears { get; internal set; }
         public string MonthDayPattern { get; internal set; }
+        public List<string> Months { get => months; set => months = value; }
 
         private static StarCulture[] cultures;
         private int iD = 42;
@@ -2895,6 +2894,125 @@ namespace StarLib
         internal string[] internalGetLeapYearMonthNames()
         {
             throw new NotImplementedException();
+        }
+
+        public TypeCode GetTypeCode()
+        {
+            return ((IConvertible)CultureData).GetTypeCode();
+        }
+
+        public bool ToBoolean(IFormatProvider provider)
+        {
+            return ((IConvertible)CultureData).ToBoolean(provider);
+        }
+
+        public byte ToByte(IFormatProvider provider)
+        {
+            return ((IConvertible)CultureData).ToByte(provider);
+        }
+
+        public char ToChar(IFormatProvider provider)
+        {
+            return ((IConvertible)CultureData).ToChar(provider);
+        }
+
+        public DateTime ToDateTime(IFormatProvider provider)
+        {
+            return ((IConvertible)CultureData).ToDateTime(provider);
+        }
+
+        public decimal ToDecimal(IFormatProvider provider)
+        {
+            return ((IConvertible)CultureData).ToDecimal(provider);
+        }
+
+        public double ToDouble(IFormatProvider provider)
+        {
+            return ((IConvertible)CultureData).ToDouble(provider);
+        }
+
+        public short ToInt16(IFormatProvider provider)
+        {
+            return ((IConvertible)CultureData).ToInt16(provider);
+        }
+
+        public int ToInt32(IFormatProvider provider)
+        {
+            return ((IConvertible)CultureData).ToInt32(provider);
+        }
+
+        public long ToInt64(IFormatProvider provider)
+        {
+            return ((IConvertible)CultureData).ToInt64(provider);
+        }
+
+        public sbyte ToSByte(IFormatProvider provider)
+        {
+            return ((IConvertible)CultureData).ToSByte(provider);
+        }
+
+        public float ToSingle(IFormatProvider provider)
+        {
+            return ((IConvertible)CultureData).ToSingle(provider);
+        }
+
+        public string ToString(IFormatProvider provider)
+        {
+            return ((IConvertible)CultureData).ToString(provider);
+        }
+
+        public object ToType(Type conversionType, IFormatProvider provider)
+        {
+            return ((IConvertible)CultureData).ToType(conversionType, provider);
+        }
+
+        public ushort ToUInt16(IFormatProvider provider)
+        {
+            return ((IConvertible)CultureData).ToUInt16(provider);
+        }
+
+        public uint ToUInt32(IFormatProvider provider)
+        {
+            return ((IConvertible)CultureData).ToUInt32(provider);
+        }
+
+        public ulong ToUInt64(IFormatProvider provider)
+        {
+            return ((IConvertible)CultureData).ToUInt64(provider);
+        }
+
+        XmlSchema IXmlSerializable.GetSchema()
+        {
+            throw new NotImplementedException();
+        }
+
+        void IXmlSerializable.ReadXml(XmlReader reader)
+        {
+            throw new NotImplementedException();
+        }
+
+        void IXmlSerializable.WriteXml(XmlWriter writer)
+        {
+            throw new NotImplementedException();
+        }
+
+        public string CultureData
+        {
+            get
+            {
+                string s = CultureName;
+                int i = 0;
+                while (i < MonthNames.Length)
+                {
+                    s += "-" + MonthNames[i++];
+                }
+                i = 0;
+                while (i < MonthGenitiveNames.Length)
+                {
+                    s += "-" + MonthGenitiveNames[i++];
+                }
+                return s;
+            }
         }
     }
 }

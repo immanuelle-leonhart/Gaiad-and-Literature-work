@@ -24,6 +24,9 @@ using System.Text;
 //using System;
 //using System.Collections.Generic;
 using System.Numerics;
+using System.Xml.Serialization;
+using System.Xml.Schema;
+using System.Xml;
 
 namespace StarLib
 {
@@ -50,7 +53,7 @@ namespace StarLib
     //[System.Security.Permissions.HostProtection(MayLeakOnAbort = true)]
     //[TypeForwardedFrom("System.Core, Version=3.5.0.0, Culture=Neutral, PublicKeyToken=b77a5c561934e089")]
     //[Serializable]
-    public class StarZone : IEquatable<StarZone>
+    public class StarZone : IEquatable<StarZone>, IXmlSerializable, IConvertible
     {
 
         internal string PlanetName = "Default Planet Name";
@@ -2484,6 +2487,114 @@ namespace StarLib
                 }
             }
             return UTC;
+        }
+
+        public TypeCode GetTypeCode()
+        {
+            return ((IConvertible)StarZoneData).GetTypeCode();
+        }
+
+        public bool ToBoolean(IFormatProvider provider)
+        {
+            return ((IConvertible)StarZoneData).ToBoolean(provider);
+        }
+
+        public byte ToByte(IFormatProvider provider)
+        {
+            return ((IConvertible)StarZoneData).ToByte(provider);
+        }
+
+        public char ToChar(IFormatProvider provider)
+        {
+            return ((IConvertible)StarZoneData).ToChar(provider);
+        }
+
+        public DateTime ToDateTime(IFormatProvider provider)
+        {
+            return ((IConvertible)StarZoneData).ToDateTime(provider);
+        }
+
+        public decimal ToDecimal(IFormatProvider provider)
+        {
+            return ((IConvertible)StarZoneData).ToDecimal(provider);
+        }
+
+        public double ToDouble(IFormatProvider provider)
+        {
+            return ((IConvertible)StarZoneData).ToDouble(provider);
+        }
+
+        public short ToInt16(IFormatProvider provider)
+        {
+            return ((IConvertible)StarZoneData).ToInt16(provider);
+        }
+
+        public int ToInt32(IFormatProvider provider)
+        {
+            return ((IConvertible)StarZoneData).ToInt32(provider);
+        }
+
+        public long ToInt64(IFormatProvider provider)
+        {
+            return ((IConvertible)StarZoneData).ToInt64(provider);
+        }
+
+        public sbyte ToSByte(IFormatProvider provider)
+        {
+            return ((IConvertible)StarZoneData).ToSByte(provider);
+        }
+
+        public float ToSingle(IFormatProvider provider)
+        {
+            return ((IConvertible)StarZoneData).ToSingle(provider);
+        }
+
+        public string ToString(IFormatProvider provider)
+        {
+            return ((IConvertible)StarZoneData).ToString(provider);
+        }
+
+        public object ToType(Type conversionType, IFormatProvider provider)
+        {
+            return ((IConvertible)StarZoneData).ToType(conversionType, provider);
+        }
+
+        public ushort ToUInt16(IFormatProvider provider)
+        {
+            return ((IConvertible)StarZoneData).ToUInt16(provider);
+        }
+
+        public uint ToUInt32(IFormatProvider provider)
+        {
+            return ((IConvertible)StarZoneData).ToUInt32(provider);
+        }
+
+        public ulong ToUInt64(IFormatProvider provider)
+        {
+            return ((IConvertible)StarZoneData).ToUInt64(provider);
+        }
+
+        XmlSchema IXmlSerializable.GetSchema()
+        {
+            throw new NotImplementedException();
+        }
+
+        void IXmlSerializable.ReadXml(XmlReader reader)
+        {
+            throw new NotImplementedException();
+        }
+
+        void IXmlSerializable.WriteXml(XmlWriter writer)
+        {
+            throw new NotImplementedException();
+        }
+
+        public string StarZoneData
+        {
+            get
+            {
+                return this.id + "&&" + this.BaseUtcOffset;
+            }
         }
     }
 } // StarZone

@@ -3955,6 +3955,11 @@ namespace StarLib
                 converted = default;
                 return false;
             }
+            catch (FormatException)
+            {
+                converted = default;
+                return false;
+            }
         }
 
         public static StarDate DataParse(string basic)
