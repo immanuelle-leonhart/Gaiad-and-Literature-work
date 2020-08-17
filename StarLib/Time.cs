@@ -7,6 +7,7 @@ using System.Diagnostics.Contracts;
 using System.Globalization;
 using System.Numerics;
 using System.Collections.Generic;
+using System.Xml.Serialization;
 
 namespace StarLib
 {
@@ -31,11 +32,27 @@ namespace StarLib
     //
     [System.Runtime.InteropServices.ComVisible(true)]
     //[Serializable]
-    public struct Time : IComparable, IComparable<Time>, IEquatable<Time>, IFormattable
+    public struct Time : IComparable, IComparable<Time>, IEquatable<Time>, IComparable<TimeSpan>, IEquatable<TimeSpan>, IFormattable, IConvertible
     //#if GENERICS_WORK
     //        , IComparable<Time>, IEquatable<Time>, IFormattable
     //#endif
     {
+
+        public BigInteger Ticks
+        {
+            get { return _ticks; }
+        }
+
+        public Int64 IntTicks
+        {
+            get => (Int64)Ticks;
+        }
+
+        public string TickString
+        {
+            get => Ticks.ToString();
+        }
+
         public const long TicksPerMillisecond = 10000;
         private const double MillisecondsPerTick = 1.0 / TicksPerMillisecond;
 
@@ -95,10 +112,7 @@ namespace StarLib
             _ticks = (long)totalMilliSeconds * TicksPerMillisecond;
         }
 
-        public BigInteger Ticks
-        {
-            get { return _ticks; }
-        }
+        
 
         public int Days
         {
@@ -574,6 +588,101 @@ namespace StarLib
         public String ToString(String format, IFormatProvider formatProvider)
         {
             return TimeSpan.ToString(format, formatProvider);
+        }
+
+        public int CompareTo(TimeSpan other)
+        {
+            return TimeSpan.CompareTo(other);
+        }
+
+        public bool Equals(TimeSpan other)
+        {
+            return TimeSpan.Equals(other);
+        }
+
+        public TypeCode GetTypeCode()
+        {
+            return ((IConvertible)IntTicks).GetTypeCode();
+        }
+
+        public bool ToBoolean(IFormatProvider provider)
+        {
+            return ((IConvertible)IntTicks).ToBoolean(provider);
+        }
+
+        public byte ToByte(IFormatProvider provider)
+        {
+            return ((IConvertible)IntTicks).ToByte(provider);
+        }
+
+        public char ToChar(IFormatProvider provider)
+        {
+            return ((IConvertible)IntTicks).ToChar(provider);
+        }
+
+        public DateTime ToDateTime(IFormatProvider provider)
+        {
+            return ((IConvertible)IntTicks).ToDateTime(provider);
+        }
+
+        public decimal ToDecimal(IFormatProvider provider)
+        {
+            return ((IConvertible)IntTicks).ToDecimal(provider);
+        }
+
+        public double ToDouble(IFormatProvider provider)
+        {
+            return ((IConvertible)IntTicks).ToDouble(provider);
+        }
+
+        public short ToInt16(IFormatProvider provider)
+        {
+            return ((IConvertible)IntTicks).ToInt16(provider);
+        }
+
+        public int ToInt32(IFormatProvider provider)
+        {
+            return ((IConvertible)IntTicks).ToInt32(provider);
+        }
+
+        public long ToInt64(IFormatProvider provider)
+        {
+            return ((IConvertible)IntTicks).ToInt64(provider);
+        }
+
+        public sbyte ToSByte(IFormatProvider provider)
+        {
+            return ((IConvertible)IntTicks).ToSByte(provider);
+        }
+
+        public float ToSingle(IFormatProvider provider)
+        {
+            return ((IConvertible)IntTicks).ToSingle(provider);
+        }
+
+        public string ToString(IFormatProvider provider)
+        {
+            return IntTicks.ToString(provider);
+        }
+
+        public object ToType(Type conversionType, IFormatProvider provider)
+        {
+            return ((IConvertible)IntTicks).ToType(conversionType, provider);
+        }
+
+        public ushort ToUInt16(IFormatProvider provider)
+        {
+            return ((IConvertible)IntTicks).ToUInt16(provider);
+        }
+
+        public uint ToUInt32(IFormatProvider provider)
+        {
+            return ((IConvertible)IntTicks).ToUInt32(provider);
+        }
+
+        public ulong ToUInt64(IFormatProvider provider)
+        {
+            return ((IConvertible)IntTicks).ToUInt64(provider);
         }
         #endregion
     }
