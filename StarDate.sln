@@ -5,17 +5,13 @@ VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarLib", "StarLib\StarLib.csproj", "{47B3E894-8F14-4A15-9446-D7845494F05F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestConsole", "TestConsole\TestConsole.csproj", "{8A6468F0-6EBC-4985-B249-9F5446F1FFA9}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarLib.Forms", "StarLib.Forms\StarLib.Forms.csproj", "{150B28C4-0C32-4C98-AD01-152C072F1F23}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorDemonstration", "BlazorDemonstration\BlazorDemonstration.csproj", "{B42513C6-4A78-4983-A445-9DAE8BB43275}"
-EndProject
-Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "NodejsConsoleApp1", "NodejsConsoleApp1\NodejsConsoleApp1.njsproj", "{7F287AE8-CE75-4294-ACBE-D23CAD1F672E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarLib.Dynamic", "StarLib.Dynamic\StarLib.Dynamic.csproj", "{8B7DDC20-5259-456E-B32B-76044728707E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarLibDesktop", "StarLibDesktop\StarLibDesktop.csproj", "{8824054A-BB60-4D04-9100-E8F6771FDD53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarLib.Desktop", "StarLib.Desktop\StarLib.Desktop.csproj", "{0E8C7B0A-B3CC-4565-B4EC-6934D6ED7A1C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,22 +23,10 @@ Global
 		{47B3E894-8F14-4A15-9446-D7845494F05F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47B3E894-8F14-4A15-9446-D7845494F05F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47B3E894-8F14-4A15-9446-D7845494F05F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8A6468F0-6EBC-4985-B249-9F5446F1FFA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8A6468F0-6EBC-4985-B249-9F5446F1FFA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8A6468F0-6EBC-4985-B249-9F5446F1FFA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8A6468F0-6EBC-4985-B249-9F5446F1FFA9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{150B28C4-0C32-4C98-AD01-152C072F1F23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{150B28C4-0C32-4C98-AD01-152C072F1F23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{150B28C4-0C32-4C98-AD01-152C072F1F23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{150B28C4-0C32-4C98-AD01-152C072F1F23}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B42513C6-4A78-4983-A445-9DAE8BB43275}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B42513C6-4A78-4983-A445-9DAE8BB43275}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B42513C6-4A78-4983-A445-9DAE8BB43275}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B42513C6-4A78-4983-A445-9DAE8BB43275}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7F287AE8-CE75-4294-ACBE-D23CAD1F672E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7F287AE8-CE75-4294-ACBE-D23CAD1F672E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7F287AE8-CE75-4294-ACBE-D23CAD1F672E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7F287AE8-CE75-4294-ACBE-D23CAD1F672E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8B7DDC20-5259-456E-B32B-76044728707E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8B7DDC20-5259-456E-B32B-76044728707E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B7DDC20-5259-456E-B32B-76044728707E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,6 +35,10 @@ Global
 		{8824054A-BB60-4D04-9100-E8F6771FDD53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8824054A-BB60-4D04-9100-E8F6771FDD53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8824054A-BB60-4D04-9100-E8F6771FDD53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E8C7B0A-B3CC-4565-B4EC-6934D6ED7A1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E8C7B0A-B3CC-4565-B4EC-6934D6ED7A1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E8C7B0A-B3CC-4565-B4EC-6934D6ED7A1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E8C7B0A-B3CC-4565-B4EC-6934D6ED7A1C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
