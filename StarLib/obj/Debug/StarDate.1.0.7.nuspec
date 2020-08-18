@@ -24,8 +24,8 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="C:\Users\SiliconProphet\Documents\GitHub\Order\StarDate\StarLib\bin\Debug\netstandard1.6\StarLib.dll" target="lib\netstandard1.6\StarLib.dll" />
-    <file src="C:\Users\SiliconProphet\Documents\Dropbox\branding images\DNA Tree Logo.jpg" target="DNA Tree Logo.jpg" />
-    <file src="C:\Users\SiliconProphet\Documents\GitHub\Order\StarDate\LICENSE" target="LICENSE" />
+    <file src="C:\Users\SiliconProphet\Documents\GitHub\StarDate2\StarLib\bin\Debug\netstandard1.6\StarLib.dll" target="lib\netstandard1.6\StarLib.dll" />
+    <file src="C:\Users\SiliconProphet\Dropbox\branding images\DNA Tree Logo.jpg" target="DNA Tree Logo.jpg" />
+    <file src="C:\Users\SiliconProphet\Documents\GitHub\StarDate2\LICENSE" target="LICENSE" />
   </files>
 </package>
