@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLibDesktop\\StarLibDesktop.csproj": {}
+    "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLibDesktop\\StarLibDesktop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLibDesktop\\StarLibDesktop.csproj": {
+    "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLibDesktop\\StarLibDesktop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLibDesktop\\StarLibDesktop.csproj",
+        "projectUniqueName": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLibDesktop\\StarLibDesktop.csproj",
         "projectName": "StarLibDesktop",
-        "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLibDesktop\\StarLibDesktop.csproj",
+        "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLibDesktop\\StarLibDesktop.csproj",
         "packagesPath": "C:\\Users\\SiliconProphet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLibDesktop\\obj\\",
+        "outputPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLibDesktop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SiliconProphet\\AppData\\Roaming\\NuGet\\NuGet.Config",

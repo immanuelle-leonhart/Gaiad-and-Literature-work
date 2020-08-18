@@ -5545,11 +5545,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib.Desktop\\StarLib.Desktop.csproj",
+      "projectUniqueName": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLib.Desktop\\StarLib.Desktop.csproj",
       "projectName": "StarLib.Desktop",
-      "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib.Desktop\\StarLib.Desktop.csproj",
+      "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLib.Desktop\\StarLib.Desktop.csproj",
       "packagesPath": "C:\\Users\\SiliconProphet\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib.Desktop\\obj\\",
+      "outputPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLib.Desktop\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\SiliconProphet\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5565,14 +5565,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib.Dynamic\\StarLib.Dynamic.csproj": {
-              "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib.Dynamic\\StarLib.Dynamic.csproj"
+            "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLib.Dynamic\\StarLib.Dynamic.csproj": {
+              "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLib.Dynamic\\StarLib.Dynamic.csproj"
             },
-            "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib.Forms\\StarLib.Forms.csproj": {
-              "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib.Forms\\StarLib.Forms.csproj"
+            "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLib.Forms\\StarLib.Forms.csproj": {
+              "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLib.Forms\\StarLib.Forms.csproj"
             },
-            "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib\\StarLib.csproj": {
-              "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib\\StarLib.csproj"
+            "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLib\\StarLib.csproj": {
+              "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLib\\StarLib.csproj"
             }
           }
         }
