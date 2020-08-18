@@ -18,3 +18,5 @@ StarDate/obj/Debug/netcoreapp3.1/StarBlaze.TagHelpers.output.cache
 StarDate/obj/Debug/netcoreapp3.1/StarBlaze.pdb
 StarDate/obj/Debug/netcoreapp3.1/StarBlaze.csprojAssemblyReference.cache
 StarDate/obj/Debug/netcoreapp3.1/StarBlaze.csproj.FileListAbsolute.txt
+StarLibDesktop/bin/Debug/netcoreapp3.1/StarLibDesktop.exe.WebView2/EBWebView/CrashpadMetrics.pma
+samples/BlazorDesktopApp/bin/Debug/netcoreapp3.0/BlazorDesktopApp.exe.WebView2/EBWebView/CrashpadMetrics.pma
