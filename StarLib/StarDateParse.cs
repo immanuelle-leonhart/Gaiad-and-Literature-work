@@ -25,6 +25,7 @@ namespace StarLib
     using System.Diagnostics;
     using System.Diagnostics.Contracts;
     using StarLib;
+    using System.Numerics;
 
     ////////////////////////////////////////////////////////////////////////
 
@@ -50,7 +51,7 @@ namespace StarLib
         internal static bool enableAmPmParseAdjustment = GetAmPmParseFlag();
 #endif
 
-        internal static StarDate ParseExact(String s, String format, DateTimeFormatInfo dtfi, StarDateStyles style)
+        internal static StarDate ParseExact(String s, String format, StarCulture dtfi, StarDateStyles style)
         {
             StarDateResult result = new StarDateResult();       // The buffer to store the parsing result.
             result.Init();
@@ -64,7 +65,7 @@ namespace StarLib
             }
         }
 
-        internal static StarDate ParseExact(String s, String format, DateTimeFormatInfo dtfi, StarDateStyles style, out TimeSpan offset)
+        internal static StarDate ParseExact(String s, String format, StarCulture dtfi, StarDateStyles style, out TimeSpan offset)
         {
             StarDateResult result = new StarDateResult();       // The buffer to store the parsing result.
             offset = TimeSpan.Zero;
@@ -81,7 +82,7 @@ namespace StarLib
             }
         }
 
-        internal static bool TryParseExact(String s, String format, DateTimeFormatInfo dtfi, StarDateStyles style, out StarDate result)
+        internal static bool TryParseExact(String s, String format, StarCulture dtfi, StarDateStyles style, out StarDate result)
         {
             result = StarDate.MinValue;
             StarDateResult resultData = new StarDateResult();       // The buffer to store the parsing result.
@@ -94,7 +95,7 @@ namespace StarLib
             return false;
         }
 
-        internal static bool TryParseExact(String s, String format, DateTimeFormatInfo dtfi, StarDateStyles style, out StarDate result, out TimeSpan offset)
+        internal static bool TryParseExact(String s, String format, StarCulture dtfi, StarDateStyles style, out StarDate result, out TimeSpan offset)
         {
             result = StarDate.MinValue;
             offset = TimeSpan.Zero;
@@ -110,7 +111,7 @@ namespace StarLib
             return false;
         }
 
-        internal static bool TryParseExact(String s, String format, DateTimeFormatInfo dtfi, StarDateStyles style, ref StarDateResult result)
+        internal static bool TryParseExact(String s, String format, StarCulture dtfi, StarDateStyles style, ref StarDateResult result)
         {
             if (s == null)
             {
@@ -140,7 +141,7 @@ namespace StarLib
         }
 
         internal static StarDate ParseExactMultiple(String s, String[] formats,
-                                                DateTimeFormatInfo dtfi, StarDateStyles style)
+                                                StarCulture dtfi, StarDateStyles style)
         {
             StarDateResult result = new StarDateResult();       // The buffer to store the parsing result.
             result.Init();
@@ -156,7 +157,7 @@ namespace StarLib
 
 
         internal static StarDate ParseExactMultiple(String s, String[] formats,
-                                                DateTimeFormatInfo dtfi, StarDateStyles style, out TimeSpan offset)
+                                                StarCulture dtfi, StarDateStyles style, out TimeSpan offset)
         {
             StarDateResult result = new StarDateResult();       // The buffer to store the parsing result.
             offset = TimeSpan.Zero;
@@ -174,7 +175,7 @@ namespace StarLib
         }
 
         internal static bool TryParseExactMultiple(String s, String[] formats,
-                                                   DateTimeFormatInfo dtfi, StarDateStyles style, out StarDate result, out TimeSpan offset)
+                                                   StarCulture dtfi, StarDateStyles style, out StarDate result, out TimeSpan offset)
         {
             result = StarDate.MinValue;
             offset = TimeSpan.Zero;
@@ -192,7 +193,7 @@ namespace StarLib
 
 
         internal static bool TryParseExactMultiple(String s, String[] formats,
-                                                   DateTimeFormatInfo dtfi, StarDateStyles style, out StarDate result)
+                                                   StarCulture dtfi, StarDateStyles style, out StarDate result)
         {
             result = StarDate.MinValue;
             StarDateResult resultData = new StarDateResult();       // The buffer to store the parsing result.
@@ -206,7 +207,7 @@ namespace StarLib
         }
 
         internal static bool TryParseExactMultiple(String s, String[] formats,
-                                                DateTimeFormatInfo dtfi, StarDateStyles style, ref StarDateResult result)
+                                                StarCulture dtfi, StarDateStyles style, ref StarDateResult result)
         {
             if (s == null)
             {
@@ -662,7 +663,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
         // some raw date/time information in raw.
         //
         [System.Security.SecuritySafeCritical]  // auto-generated
-        private static Boolean Lex(DS dps, ref __DTString str, ref StarDateToken dtok, ref StarDateRawInfo raw, ref StarDateResult result, ref DateTimeFormatInfo dtfi, StarDateStyles styles)
+        private static Boolean Lex(DS dps, ref __DTString str, ref StarDateToken dtok, ref StarDateRawInfo raw, ref StarDateResult result, ref StarCulture dtfi, StarDateStyles styles)
         {
 
             TokenType tokenType;
@@ -916,7 +917,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
                         case TokenType.SEP_YearSuff:
                             try
                             {
-                                dtok.num = dtfi.Calendar.ToFourDigitYear(tokenValue);
+                                dtok.num = dtfi.ToFourDigitYear(tokenValue);
                             }
                             catch (ArgumentOutOfRangeException e)
                             {
@@ -1125,37 +1126,37 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
                         return false;
                     }
                     break;
-                case TokenType.JapaneseEraToken:
-                    // Special case for Japanese.  We allow Japanese era name to be used even if the calendar is not Japanese Calendar.
-                    result.calendar = JapaneseCalendar.GetDefaultInstance();
-                    dtfi = DateTimeFormatInfo.GetJapaneseCalendarDTFI();
-                    if (result.era != -1)
-                    {
-                        result.era = tokenValue;
-                        dtok.dtt = DTT.Era;
-                    }
-                    else
-                    {
-                        result.SetFailure(ParseFailureKind.Format, "Format_BadStarDate", null);
-                        LexTraceExit("0160 (JapaneseEraToken seen when result.era already set)", dps);
-                        return false;
-                    }
-                    break;
+                //case TokenType.JapaneseEraToken:
+                //    // Special case for Japanese.  We allow Japanese era name to be used even if the calendar is not Japanese Calendar.
+                //    result.calendar = JapaneseCalendar.GetDefaultInstance();
+                //    dtfi = StarCulture.GetJapaneseCalendarDTFI();
+                //    if (result.era != -1)
+                //    {
+                //        result.era = tokenValue;
+                //        dtok.dtt = DTT.Era;
+                //    }
+                //    else
+                //    {
+                //        result.SetFailure(ParseFailureKind.Format, "Format_BadStarDate", null);
+                //        LexTraceExit("0160 (JapaneseEraToken seen when result.era already set)", dps);
+                //        return false;
+                //    }
+                //    break;
                 case TokenType.TEraToken:
                     /*  */
-                    result.calendar = TaiwanCalendar.GetDefaultInstance();
-                    dtfi = DateTimeFormatInfo.GetTaiwanCalendarDTFI();
-                    if (result.era != -1)
-                    {
-                        result.era = tokenValue;
-                        dtok.dtt = DTT.Era;
-                    }
-                    else
-                    {
-                        result.SetFailure(ParseFailureKind.Format, "Format_BadStarDate", null);
-                        LexTraceExit("0170 (TEraToken seen when result.era already set)", dps);
-                        return false;
-                    }
+                    //result.calendar = TaiwanCalendar.GetDefaultInstance();
+                    //dtfi = StarCulture.GetTaiwanCalendarDTFI();
+                    //if (result.era != -1)
+                    //{
+                    //    result.era = tokenValue;
+                    //    dtok.dtt = DTT.Era;
+                    //}
+                    //else
+                    //{
+                    //    result.SetFailure(ParseFailureKind.Format, "Format_BadStarDate", null);
+                    //    LexTraceExit("0170 (TEraToken seen when result.era already set)", dps);
+                    //    return false;
+                    //}
                     break;
                 case TokenType.TimeZoneToken:
                     //
@@ -1206,12 +1207,12 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
 #if !FEATURE_CORECLR
                     // If StarDateParseIgnorePunctuation is defined, we want to have the V1.1 behavior of just
                     // ignoring any unrecognized punctuation and moving on to the next character
-                    if (Environment.GetCompatibilityFlag(CompatibilityFlag.StarDateParseIgnorePunctuation) && ((result.flags & ParseFlags.CaptureOffset) == 0))
-                    {
-                        str.GetNext();
-                        LexTraceExit("0210 (success)", dps);
-                        return true;
-                    }
+                    //if (Environment.GetCompatibilityFlag(CompatibilityFlag.StarDateParseIgnorePunctuation) && ((result.flags & ParseFlags.CaptureOffset) == 0))
+                    //{
+                    //    str.GetNext();
+                    //    LexTraceExit("0210 (success)", dps);
+                    //    return true;
+                    //}
 #endif // FEATURE_CORECLR
 
                     if ((str.m_current == '-' || str.m_current == '+') && ((result.flags & ParseFlags.TimeZoneUsed) == 0))
@@ -1335,7 +1336,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
         //
         // Return 0 for YMD, 1 for MDY, 2 for DMY, otherwise -1.
         //
-        private static Boolean GetYearMonthDayOrder(String datePattern, DateTimeFormatInfo dtfi, out int order)
+        private static Boolean GetYearMonthDayOrder(String datePattern, StarCulture dtfi, out int order)
         {
             int yearOrder = -1;
             int monthOrder = -1;
@@ -1434,7 +1435,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
         //
         // Return 0 for YM, 1 for MY, otherwise -1.
         //
-        private static Boolean GetYearMonthOrder(String pattern, DateTimeFormatInfo dtfi, out int order)
+        private static Boolean GetYearMonthOrder(String pattern, StarCulture dtfi, out int order)
         {
             int yearOrder = -1;
             int monthOrder = -1;
@@ -1500,7 +1501,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
         //
         // Return 0 for MD, 1 for DM, otherwise -1.
         //
-        private static Boolean GetMonthDayOrder(String pattern, DateTimeFormatInfo dtfi, out int order)
+        private static Boolean GetMonthDayOrder(String pattern, StarCulture dtfi, out int order)
         {
             int monthOrder = -1;
             int dayOrder = -1;
@@ -1629,7 +1630,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
         }
 
         // Processing teriminal case: DS.DX_NN
-        private static Boolean GetDayOfNN(ref StarDateResult result, ref StarDateStyles styles, ref StarDateRawInfo raw, DateTimeFormatInfo dtfi)
+        private static Boolean GetDayOfNN(ref StarDateResult result, ref StarDateStyles styles, ref StarDateRawInfo raw, StarCulture dtfi)
         {
 
             if ((result.flags & ParseFlags.HaveDate) != 0)
@@ -1673,7 +1674,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
         }
 
         // Processing teriminal case: DS.DX_NNN
-        private static Boolean GetDayOfNNN(ref StarDateResult result, ref StarDateRawInfo raw, DateTimeFormatInfo dtfi)
+        private static Boolean GetDayOfNNN(ref StarDateResult result, ref StarDateRawInfo raw, StarCulture dtfi)
         {
             if ((result.flags & ParseFlags.HaveDate) != 0)
             {
@@ -1730,7 +1731,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             return false;
         }
 
-        private static Boolean GetDayOfMN(ref StarDateResult result, ref StarDateStyles styles, ref StarDateRawInfo raw, DateTimeFormatInfo dtfi)
+        private static Boolean GetDayOfMN(ref StarDateResult result, ref StarDateStyles styles, ref StarDateRawInfo raw, StarCulture dtfi)
         {
 
             if ((result.flags & ParseFlags.HaveDate) != 0)
@@ -1794,7 +1795,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
         //
         ////////////////////////////////////////////////////////////////////////
 
-        private static Boolean GetHebrewDayOfNM(ref StarDateResult result, ref StarDateRawInfo raw, DateTimeFormatInfo dtfi)
+        private static Boolean GetHebrewDayOfNM(ref StarDateResult result, ref StarDateRawInfo raw, StarCulture dtfi)
         {
             int monthDayOrder;
             if (!GetMonthDayOrder(dtfi.MonthDayPattern, dtfi, out monthDayOrder))
@@ -1815,7 +1816,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             return false;
         }
 
-        private static Boolean GetDayOfNM(ref StarDateResult result, ref StarDateStyles styles, ref StarDateRawInfo raw, DateTimeFormatInfo dtfi)
+        private static Boolean GetDayOfNM(ref StarDateResult result, ref StarDateStyles styles, ref StarDateRawInfo raw, StarCulture dtfi)
         {
             if ((result.flags & ParseFlags.HaveDate) != 0)
             {
@@ -1871,7 +1872,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             return true;
         }
 
-        private static Boolean GetDayOfMNN(ref StarDateResult result, ref StarDateRawInfo raw, DateTimeFormatInfo dtfi)
+        private static Boolean GetDayOfMNN(ref StarDateResult result, ref StarDateRawInfo raw, StarCulture dtfi)
         {
             if ((result.flags & ParseFlags.HaveDate) != 0)
             {
@@ -1941,7 +1942,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             return false;
         }
 
-        private static Boolean GetDayOfYNN(ref StarDateResult result, ref StarDateRawInfo raw, DateTimeFormatInfo dtfi)
+        private static Boolean GetDayOfYNN(ref StarDateResult result, ref StarDateRawInfo raw, StarCulture dtfi)
         {
 
             if ((result.flags & ParseFlags.HaveDate) != 0)
@@ -1977,7 +1978,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             return false;
         }
 
-        private static Boolean GetDayOfNNY(ref StarDateResult result, ref StarDateRawInfo raw, DateTimeFormatInfo dtfi)
+        private static Boolean GetDayOfNNY(ref StarDateResult result, ref StarDateRawInfo raw, StarCulture dtfi)
         {
 
             if ((result.flags & ParseFlags.HaveDate) != 0)
@@ -2018,7 +2019,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
         }
 
 
-        private static Boolean GetDayOfYMN(ref StarDateResult result, ref StarDateRawInfo raw, DateTimeFormatInfo dtfi)
+        private static Boolean GetDayOfYMN(ref StarDateResult result, ref StarDateRawInfo raw, StarCulture dtfi)
         {
 
             if ((result.flags & ParseFlags.HaveDate) != 0)
@@ -2037,7 +2038,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             return false;
         }
 
-        private static Boolean GetDayOfYN(ref StarDateResult result, ref StarDateRawInfo raw, DateTimeFormatInfo dtfi)
+        private static Boolean GetDayOfYN(ref StarDateResult result, ref StarDateRawInfo raw, StarCulture dtfi)
         {
             if ((result.flags & ParseFlags.HaveDate) != 0)
             {
@@ -2055,7 +2056,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             return false;
         }
 
-        private static Boolean GetDayOfYM(ref StarDateResult result, ref StarDateRawInfo raw, DateTimeFormatInfo dtfi)
+        private static Boolean GetDayOfYM(ref StarDateResult result, ref StarDateRawInfo raw, StarCulture dtfi)
         {
             if ((result.flags & ParseFlags.HaveDate) != 0)
             {
@@ -2073,7 +2074,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             return false;
         }
 
-        private static void AdjustTimeMark(DateTimeFormatInfo dtfi, ref StarDateRawInfo raw)
+        private static void AdjustTimeMark(StarCulture dtfi, ref StarDateRawInfo raw)
         {
             // Specail case for culture which uses AM as empty string.
             // E.g. af-ZA (0x0436)
@@ -2128,7 +2129,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             return true;
         }
 
-        private static Boolean GetTimeOfN(DateTimeFormatInfo dtfi, ref StarDateResult result, ref StarDateRawInfo raw)
+        private static Boolean GetTimeOfN(StarCulture dtfi, ref StarDateResult result, ref StarDateRawInfo raw)
         {
             if ((result.flags & ParseFlags.HaveTime) != 0)
             {
@@ -2149,7 +2150,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             return true;
         }
 
-        private static Boolean GetTimeOfNN(DateTimeFormatInfo dtfi, ref StarDateResult result, ref StarDateRawInfo raw)
+        private static Boolean GetTimeOfNN(StarCulture dtfi, ref StarDateResult result, ref StarDateRawInfo raw)
         {
             Contract.Assert(raw.numCount >= 2, "raw.numCount >= 2");
             if ((result.flags & ParseFlags.HaveTime) != 0)
@@ -2165,7 +2166,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             return true;
         }
 
-        private static Boolean GetTimeOfNNN(DateTimeFormatInfo dtfi, ref StarDateResult result, ref StarDateRawInfo raw)
+        private static Boolean GetTimeOfNNN(StarCulture dtfi, ref StarDateResult result, ref StarDateRawInfo raw)
         {
             if ((result.flags & ParseFlags.HaveTime) != 0)
             {
@@ -2219,7 +2220,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             return true;
         }
 
-        private static Boolean GetDateOfNNDS(ref StarDateResult result, ref StarDateRawInfo raw, DateTimeFormatInfo dtfi)
+        private static Boolean GetDateOfNNDS(ref StarDateResult result, ref StarDateRawInfo raw, StarCulture dtfi)
         {
 
             // For partial CJK Dates, the only valid formats are with a specified year, followed by two numbers, which
@@ -2335,7 +2336,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
         //
         ////////////////////////////////////////////////////////////////////////
 
-        internal static Boolean ProcessHebrewTerminalState(DS dps, ref StarDateResult result, ref StarDateStyles styles, ref StarDateRawInfo raw, DateTimeFormatInfo dtfi)
+        internal static Boolean ProcessHebrewTerminalState(DS dps, ref StarDateResult result, ref StarDateStyles styles, ref StarDateRawInfo raw, StarCulture dtfi)
         {
             // The following are accepted terminal state for Hebrew date.
             switch (dps)
@@ -2429,7 +2430,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
         // A terminal state has been reached, call the appropriate function to fill in the parsing result.
         // Return true if the state is a terminal state.
         //
-        internal static Boolean ProcessTerminaltState(DS dps, ref StarDateResult result, ref StarDateStyles styles, ref StarDateRawInfo raw, DateTimeFormatInfo dtfi)
+        internal static Boolean ProcessTerminaltState(DS dps, ref StarDateResult result, ref StarDateStyles styles, ref StarDateRawInfo raw, StarCulture dtfi)
         {
 
             bool passed = true;
@@ -2509,7 +2510,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             return true;
         }
 
-        internal static StarDate Parse(String s, DateTimeFormatInfo dtfi, StarDateStyles styles)
+        internal static StarDate Parse(String s, StarCulture dtfi, StarDateStyles styles)
         {
             StarDateResult result = new StarDateResult();       // The buffer to store the parsing result.
             result.Init();
@@ -2523,7 +2524,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             }
         }
 
-        internal static StarDate Parse(String s, DateTimeFormatInfo dtfi, StarDateStyles styles, out TimeSpan offset)
+        internal static StarDate Parse(String s, StarCulture dtfi, StarDateStyles styles, out TimeSpan offset)
         {
             StarDateResult result = new StarDateResult();       // The buffer to store the parsing result.
             result.Init();
@@ -2540,7 +2541,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
         }
 
 
-        internal static bool TryParse(String s, DateTimeFormatInfo dtfi, StarDateStyles styles, out StarDate result)
+        internal static bool TryParse(String s, StarCulture dtfi, StarDateStyles styles, out StarDate result)
         {
             result = StarDate.MinValue;
             StarDateResult resultData = new StarDateResult();       // The buffer to store the parsing result.
@@ -2553,7 +2554,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             return false;
         }
 
-        internal static bool TryParse(String s, DateTimeFormatInfo dtfi, StarDateStyles styles, out StarDate result, out TimeSpan offset)
+        internal static bool TryParse(String s, StarCulture dtfi, StarDateStyles styles, out StarDate result, out TimeSpan offset)
         {
             result = StarDate.MinValue;
             offset = TimeSpan.Zero;
@@ -2574,7 +2575,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
         // This is the real method to do the parsing work.
         //
         [System.Security.SecuritySafeCritical]  // auto-generated
-        internal static bool TryParse(String s, DateTimeFormatInfo dtfi, StarDateStyles styles, ref StarDateResult result)
+        internal static bool TryParse(String s, StarCulture dtfi, StarDateStyles styles, ref StarDateResult result)
         {
             if (s == null)
             {
@@ -2616,7 +2617,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             }
             raw.hasSameDateAndTimeSeparators = dtfi.DateSeparator.Equals(dtfi.TimeSeparator, StringComparison.Ordinal);
 
-            result.calendar = dtfi.Calendar;
+            result.calendar = dtfi;
             result.era = Calendar.CurrentEra;
 
             //
@@ -2792,7 +2793,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             }
             if (raw.fraction > 0)
             {
-                time = time.AddTicks((long)Math.Round(raw.fraction * Calendar.TicksPerSecond));
+                time = time.AddTicks((long)Math.Round(raw.fraction * StarDate.TicksPerSecond));
             }
 
             //
@@ -2920,7 +2921,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
                 else
                 {
                     // AssumeLocal causes the offset to default to Local.  This flag is on by default for StarDate.
-                    result.timeZoneOffset = TimeZoneInfo.GetLocalUtcOffset(result.parsedDate, TimeZoneInfoOptions.NoThrowOnInvalidTime);
+                    result.timeZoneOffset = StarZone.GetLocalUtcOffset(result.parsedDate, TimeZoneInfoOptions.NoThrowOnInvalidTime);
                 }
             }
 
@@ -2975,11 +2976,11 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
         //
         private static Boolean AdjustTimeZoneToUniversal(ref StarDateResult result)
         {
-            long resultTicks = result.parsedDate.Ticks;
+            BigInteger resultTicks = result.parsedDate.Ticks;
             resultTicks -= result.timeZoneOffset.Ticks;
             if (resultTicks < 0)
             {
-                resultTicks += Calendar.TicksPerDay;
+                resultTicks += StarDate.TicksPerDay;
             }
 
             if (resultTicks < StarDate.MinTicks || resultTicks > StarDate.MaxTicks)
@@ -3000,11 +3001,11 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
         //
         private static Boolean AdjustTimeZoneToLocal(ref StarDateResult result, bool bTimeOnly)
         {
-            long resultTicks = result.parsedDate.Ticks;
+            BigInteger resultTicks = result.parsedDate.Ticks;
             // Convert to local ticks
-            TimeZoneInfo tz = TimeZoneInfo.Local;
+            StarZone tz = StarZone.Local;
             Boolean isAmbiguousLocalDst = false;
-            if (resultTicks < Calendar.TicksPerDay)
+            if (resultTicks < StarDate.TicksPerDay)
             {
                 //
                 // This is time of day.
@@ -3013,11 +3014,11 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
                 // Adjust timezone.
                 resultTicks -= result.timeZoneOffset.Ticks;
                 // If the time is time of day, use the current timezone offset.
-                resultTicks += tz.GetUtcOffset(bTimeOnly ? StarDate.Now : result.parsedDate, TimeZoneInfoOptions.NoThrowOnInvalidTime).Ticks;
+                resultTicks += (long)tz.GetUtcOffset(bTimeOnly ? StarDate.Now : result.parsedDate, TimeZoneInfoOptions.NoThrowOnInvalidTime).Ticks;
 
                 if (resultTicks < 0)
                 {
-                    resultTicks += Calendar.TicksPerDay;
+                    resultTicks += StarDate.TicksPerDay;
                 }
             }
             else
@@ -3035,7 +3036,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
                     // Convert the GMT time to local time.
                     StarDate utcDt = new StarDate(resultTicks, DateTimeKind.Utc);
                     Boolean isDaylightSavings = false;
-                    resultTicks += TimeZoneInfo.GetUtcOffsetFromUtc(utcDt, TimeZoneInfo.Local, out isDaylightSavings, out isAmbiguousLocalDst).Ticks;
+                    resultTicks += StarZone.GetUtcOffsetFromUtc(utcDt, (StarZone)TimeZoneInfo.Local, out isDaylightSavings, out isAmbiguousLocalDst).Ticks;
                 }
             }
             if (resultTicks < StarDate.MinTicks || resultTicks > StarDate.MaxTicks)
@@ -3149,7 +3150,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             }
 
             StarDate time;
-            Calendar calendar = GregorianCalendar.GetDefaultInstance();
+            StarCulture calendar = StarCulture.InvariantCulture;
             if (!calendar.TryToStarDate(raw.year, raw.GetNumber(0), raw.GetNumber(1),
                     hour, minute, second, 0, result.era, out time))
             {
@@ -3157,7 +3158,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
                 return false;
             }
 
-            time = time.AddTicks((long)Math.Round(partSecond * Calendar.TicksPerSecond));
+            time = time.AddTicks((long)Math.Round(partSecond * StarDate.TicksPerSecond));
             result.parsedDate = time;
             if (!DetermineTimeZoneAdjustments(ref result, styles, false))
             {
@@ -3397,7 +3398,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
         **Exceptions: FormatException if an abbreviated month name can not be found.
         ==============================================================================*/
 
-        private static bool MatchAbbreviatedMonthName(ref __DTString str, DateTimeFormatInfo dtfi, ref int result)
+        private static bool MatchAbbreviatedMonthName(ref __DTString str, StarCulture dtfi, ref int result)
         {
             int maxMatchStrLen = 0;
             result = -1;
@@ -3457,7 +3458,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
         **Exceptions: FormatException if a month name can not be found.
         ==============================================================================*/
 
-        private static bool MatchMonthName(ref __DTString str, DateTimeFormatInfo dtfi, ref int result)
+        private static bool MatchMonthName(ref __DTString str, StarCulture dtfi, ref int result)
         {
             int maxMatchStrLen = 0;
             result = -1;
@@ -3531,7 +3532,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
         **Exceptions: FormatException if a abbreviated day of week name can not be found.
         ==============================================================================*/
 
-        private static bool MatchAbbreviatedDayName(ref __DTString str, DateTimeFormatInfo dtfi, ref int result)
+        private static bool MatchAbbreviatedDayName(ref __DTString str, StarCulture dtfi, ref int result)
         {
             int maxMatchStrLen = 0;
             result = -1;
@@ -3569,7 +3570,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
         **Exceptions: FormatException if a day of week name can not be found.
         ==============================================================================*/
 
-        private static bool MatchDayName(ref __DTString str, DateTimeFormatInfo dtfi, ref int result)
+        private static bool MatchDayName(ref __DTString str, StarCulture dtfi, ref int result)
         {
             // Turkish (tr-TR) got day names with the same prefix.
             int maxMatchStrLen = 0;
@@ -3608,11 +3609,11 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
         **Exceptions: FormatException if an era name can not be found.
         ==============================================================================*/
 
-        private static bool MatchEraName(ref __DTString str, DateTimeFormatInfo dtfi, ref int result)
+        private static bool MatchEraName(ref __DTString str, StarCulture dtfi, ref int result)
         {
             if (str.GetNext())
             {
-                int[] eras = dtfi.Calendar.Eras;
+                int[] eras = dtfi.Eras;
 
                 if (eras != null)
                 {
@@ -3646,7 +3647,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
         **Exceptions: FormatException if a time mark can not be found.
         ==============================================================================*/
 
-        private static bool MatchTimeMark(ref __DTString str, DateTimeFormatInfo dtfi, ref TM result)
+        private static bool MatchTimeMark(ref __DTString str, StarCulture dtfi, ref TM result)
         {
             result = TM.NotSet;
             // In some cultures have empty strings in AM/PM mark. E.g. af-ZA (0x0436), the AM mark is "", and PM mark is "nm".
@@ -3701,7 +3702,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
         **Exceptions: FormatException if a abbreviated time mark can not be found.
         ==============================================================================*/
 
-        private static bool MatchAbbreviatedTimeMark(ref __DTString str, DateTimeFormatInfo dtfi, ref TM result)
+        private static bool MatchAbbreviatedTimeMark(ref __DTString str, StarCulture dtfi, ref TM result)
         {
             // NOTENOTE : the assumption here is that abbreviated time mark is the first
             // character of the AM/PM designator.  If this invariant changes, we have to
@@ -3770,7 +3771,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             return StarDate.Now;
         }
 
-        private static bool CheckDefaultStarDate(ref StarDateResult result, ref Calendar cal, StarDateStyles styles)
+        private static bool CheckDefaultStarDate(ref StarDateResult result, ref StarCulture cal, StarDateStyles styles)
         {
 
             if ((result.flags & ParseFlags.CaptureOffset) != 0)
@@ -3826,7 +3827,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
                             // If there is no year/month/day values, and NoCurrentDateDefault flag is used,
                             // set the year/month/day value to the beginning year/month/day of StarDate().
                             // Note we should be using Gregorian for the year/month/day.
-                            cal = GregorianCalendar.GetDefaultInstance();
+                            cal = StarCulture.InvariantCulture;
                             result.Year = result.Month = result.Day = 1;
                         }
                         else
@@ -3873,7 +3874,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
         // This method also set the dtfi according/parseInfo to some special pre-defined
         // formats.
         //
-        private static String ExpandPredefinedFormat(String format, ref DateTimeFormatInfo dtfi, ref ParsingInfo parseInfo, ref StarDateResult result)
+        private static String ExpandPredefinedFormat(String format, ref StarCulture dtfi, ref ParsingInfo parseInfo, ref StarDateResult result)
         {
             //
             // Check the format to see if we need to override the dtfi to be InvariantInfo,
@@ -3883,13 +3884,13 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             {
                 case 'o':
                 case 'O':       // Round Trip Format
-                    parseInfo.calendar = GregorianCalendar.GetDefaultInstance();
-                    dtfi = DateTimeFormatInfo.InvariantInfo;
+                    parseInfo.calendar = StarCulture.InvariantCulture;
+                    dtfi = StarCulture.InvariantCulture;
                     break;
                 case 'r':
                 case 'R':       // RFC 1123 Standard.  (in Universal time)
-                    parseInfo.calendar = GregorianCalendar.GetDefaultInstance();
-                    dtfi = DateTimeFormatInfo.InvariantInfo;
+                    parseInfo.calendar = StarCulture.InvariantCulture;
+                    dtfi = StarCulture.InvariantCulture;
 
                     if ((result.flags & ParseFlags.CaptureOffset) != 0)
                     {
@@ -3897,12 +3898,12 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
                     }
                     break;
                 case 's':       // Sortable format (in local time)
-                    dtfi = DateTimeFormatInfo.InvariantInfo;
-                    parseInfo.calendar = GregorianCalendar.GetDefaultInstance();
+                    dtfi = StarCulture.InvariantCulture;
+                    parseInfo.calendar = StarCulture.InvariantCulture;
                     break;
                 case 'u':       // Universal time format in sortable format.
-                    parseInfo.calendar = GregorianCalendar.GetDefaultInstance();
-                    dtfi = DateTimeFormatInfo.InvariantInfo;
+                    parseInfo.calendar = StarCulture.InvariantCulture;
+                    dtfi = StarCulture.InvariantCulture;
 
                     if ((result.flags & ParseFlags.CaptureOffset) != 0)
                     {
@@ -3910,41 +3911,41 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
                     }
                     break;
                 case 'U':       // Universal time format with culture-dependent format.
-                    parseInfo.calendar = GregorianCalendar.GetDefaultInstance();
+                    parseInfo.calendar = StarCulture.InvariantCulture;
                     result.flags |= ParseFlags.TimeZoneUsed;
                     result.timeZoneOffset = new TimeSpan(0);
                     result.flags |= ParseFlags.TimeZoneUtc;
-                    if (dtfi.Calendar.GetType() != typeof(GregorianCalendar))
+                    if (true) //(dtfi.GetType() != typeof(GregorianCalendar))
                     {
-                        dtfi = (DateTimeFormatInfo)dtfi.Clone();
-                        dtfi.Calendar = GregorianCalendar.GetDefaultInstance();
+                        dtfi = (StarCulture)dtfi.Clone();
+                        dtfi = StarCulture.InvariantCulture;
                     }
                     break;
             }
 
             //
-            // Expand the pre-defined format character to the real format from DateTimeFormatInfo.
+            // Expand the pre-defined format character to the real format from StarCulture.
             //
             return (StarDateFormat.GetRealFormat(format, dtfi));
         }
 
-        [MethodImplAttribute(MethodImplOptions.AggressiveInlining)]
-        private static bool ParseJapaneseEraStart(ref __DTString str, DateTimeFormatInfo dtfi)
-        {
-            // ParseJapaneseEraStart will be called when parsing the year number. We can have dates which not listing
-            // the year as a number and listing it as JapaneseEraStart symbol (which means year 1).
-            // This will be legitimate date to recognize.
-            if (AppContextSwitches.EnforceLegacyJapaneseDateParsing || dtfi.Calendar.ID != Calendar.CAL_JAPAN || !str.GetNext())
-                return false;
+        //[MethodImplAttribute(MethodImplOptions.AggressiveInlining)]
+        //private static bool ParseJapaneseEraStart(ref __DTString str, StarCulture dtfi)
+        //{
+        //    // ParseJapaneseEraStart will be called when parsing the year number. We can have dates which not listing
+        //    // the year as a number and listing it as JapaneseEraStart symbol (which means year 1).
+        //    // This will be legitimate date to recognize.
+        //    if (AppContextSwitches.EnforceLegacyJapaneseDateParsing || dtfi.ID != Calendar.CAL_JAPAN || !str.GetNext())
+        //        return false;
 
-            if (str.m_current != DateTimeFormatInfo.JapaneseEraStart[0])
-            {
-                str.Index--;
-                return false;
-            }
+        //    if (str.m_current != StarCulture.JapaneseEraStart[0])
+        //    {
+        //        str.Index--;
+        //        return false;
+        //    }
 
-            return true;
-        }
+        //    return true;
+        //}
 
         // Given a specified format character, parse and update the parsing result.
         //
@@ -3952,7 +3953,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             ref __DTString str,
             ref __DTString format,
             ref ParsingInfo parseInfo,
-            DateTimeFormatInfo dtfi,
+            StarCulture dtfi,
             ref StarDateResult result)
         {
 
@@ -3968,12 +3969,12 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
                 case 'y':
                     tokenLen = format.GetRepeatCount();
                     bool parseResult;
-                    if (ParseJapaneseEraStart(ref str, dtfi))
-                    {
-                        tempYear = 1;
-                        parseResult = true;
-                    }
-                    else if (dtfi.HasForceTwoDigitYears)
+                    //if (ParseJapaneseEraStart(ref str, dtfi))
+                    //{
+                    //    tempYear = 1;
+                    //    parseResult = true;
+                    //}
+                    /*else */if (dtfi.HasForceTwoDigitYears)
                     {
                         parseResult = ParseDigits(ref str, 1, 4, out tempYear);
                     }
@@ -4549,7 +4550,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             String s,
             String formatParam,
             StarDateStyles styles,
-            DateTimeFormatInfo dtfi,
+            StarCulture dtfi,
             ref StarDateResult result)
         {
 
@@ -4558,7 +4559,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             ParsingInfo parseInfo = new ParsingInfo();
             parseInfo.Init();
 
-            parseInfo.calendar = dtfi.Calendar;
+            parseInfo.calendar = dtfi;
             parseInfo.fAllowInnerWhite = ((styles & StarDateStyles.AllowInnerWhite) != 0);
             parseInfo.fAllowTrailingWhite = ((styles & StarDateStyles.AllowTrailingWhite) != 0);
 
@@ -4579,7 +4580,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             bool bTimeOnly = false;
             result.calendar = parseInfo.calendar;
 
-            if (parseInfo.calendar.ID == Calendar.CAL_HEBREW)
+            if (parseInfo.calendar.CAL_HEBREW)
             {
                 parseInfo.parseNumberDelegate = m_hebrewNumberParser;
                 parseInfo.fCustomNumberParser = true;
@@ -4717,7 +4718,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             }
             if (result.fraction > 0)
             {
-                result.parsedDate = result.parsedDate.AddTicks((long)Math.Round(result.fraction * Calendar.TicksPerSecond));
+                result.parsedDate = result.parsedDate.AddTicks((long)Math.Round(result.fraction * StarDate.TicksPerSecond));
             }
 
             //
@@ -4750,13 +4751,13 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             switch (result.failure)
             {
                 case ParseFailureKind.ArgumentNull:
-                    return new ArgumentNullException(result.failureArgumentName, Environment.GetResourceString(result.failureMessageID));
+                    return new ArgumentNullException(); //return new ArgumentNullException(result.failureArgumentName, Environment.GetResourceString(result.failureMessageID));
                 case ParseFailureKind.Format:
-                    return new FormatException(Environment.GetResourceString(result.failureMessageID));
+                    return new FormatException(); //return new FormatException(Environment.GetResourceString(result.failureMessageID));
                 case ParseFailureKind.FormatWithParameter:
-                    return new FormatException(Environment.GetResourceString(result.failureMessageID, result.failureMessageFormatArgument));
+                    return new FormatException(); //return new FormatException(Environment.GetResourceString(result.failureMessageID, result.failureMessageFormatArgument));
                 case ParseFailureKind.FormatBadStarDateCalendar:
-                    return new FormatException(Environment.GetResourceString(result.failureMessageID, result.calendar));
+                    return new FormatException(); //return new FormatException(Environment.GetResourceString(result.failureMessageID, result.calendar));
                 default:
                     Contract.Assert(false, "Unkown StarDateParseFailure: " + result);
                     return null;
@@ -4809,13 +4810,13 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
         [Pure]
         [Conditional("_LOGGING")]
         //[ResourceExposure(ResourceScope.None)]
-        internal static void DTFITrace(DateTimeFormatInfo dtfi)
+        internal static void DTFITrace(StarCulture dtfi)
         {
 #if _LOGGING
             if (!_tracingEnabled)
                 return;
 
-            BCLDebug.Trace("StarDate", "[StarDate] DateTimeFormatInfo Properties");
+            BCLDebug.Trace("StarDate", "[StarDate] StarCulture Properties");
             BCLDebug.Trace("StarDate", " NativeCalendarName {0}", Hex(dtfi.NativeCalendarName));
             BCLDebug.Trace("StarDate", "       AMDesignator {0}", Hex(dtfi.AMDesignator));
             BCLDebug.Trace("StarDate", "       PMDesignator {0}", Hex(dtfi.PMDesignator));
@@ -4939,12 +4940,12 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
         // In some cultures, such as mn-MN, it uses "\x0031\x00a0\x0434\x04af\x0433\x044d\x044d\x0440\x00a0\x0441\x0430\x0440" in month names.
         private bool m_checkDigitToken;
 
-        internal __DTString(String str, DateTimeFormatInfo dtfi, bool checkDigitToken) : this(str, dtfi)
+        internal __DTString(String str, StarCulture dtfi, bool checkDigitToken) : this(str, dtfi)
         {
             m_checkDigitToken = checkDigitToken;
         }
 
-        internal __DTString(String str, DateTimeFormatInfo dtfi)
+        internal __DTString(String str, StarCulture dtfi)
         {
             Index = -1;
             Value = str;
@@ -4958,7 +4959,8 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             }
             else
             {
-                m_info = Thread.CurrentThread.CurrentCulture.CompareInfo;
+                throw new NotImplementedException();
+                //m_info = Thread.CurrentThread.CurrentCulture.CompareInfo;
                 m_checkDigitToken = false;
             }
         }
@@ -5008,7 +5010,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
 
         // Used by StarDate.Parse() to get the next token.
         [System.Security.SecurityCritical]  // auto-generated
-        internal void GetRegularToken(out TokenType tokenType, out int tokenValue, DateTimeFormatInfo dtfi)
+        internal void GetRegularToken(out TokenType tokenType, out int tokenValue, StarCulture dtfi)
         {
             tokenValue = 0;
             if (Index >= len)
@@ -5106,7 +5108,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
         }
 
         [System.Security.SecurityCritical]  // auto-generated
-        internal TokenType GetSeparatorToken(DateTimeFormatInfo dtfi, out int indexBeforeSeparator, out char charBeforeSeparator)
+        internal TokenType GetSeparatorToken(StarCulture dtfi, out int indexBeforeSeparator, out char charBeforeSeparator)
         {
             indexBeforeSeparator = Index;
             charBeforeSeparator = m_current;
@@ -5685,7 +5687,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
 
         internal TimeSpan timeZoneOffset;
 
-        internal Calendar calendar;
+        internal StarCulture calendar;
 
         internal StarDate parsedDate;
 
@@ -5733,7 +5735,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
     internal struct ParsingInfo
     {
 
-        internal Calendar calendar;
+        internal StarCulture calendar;
         internal int dayOfWeek;
         internal StarDateParse.TM timeMark;
 
@@ -5753,7 +5755,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
     }
 
     //
-    // The type of token that will be returned by DateTimeFormatInfo.Tokenize().
+    // The type of token that will be returned by StarCulture.Tokenize().
     //
     internal enum TokenType
     {

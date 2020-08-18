@@ -14,6 +14,7 @@ using System.Diagnostics.Contracts;
 using System.Xml.Serialization;
 using System.Xml.Schema;
 using System.Xml;
+using System.Runtime.CompilerServices;
 //using System.Globalization;
 
 namespace StarLib
@@ -194,14 +195,14 @@ namespace StarLib
         private StarCulture(string line)
         {
             string[] n = line.Split(',');
-            //this.CultureName = n[0];
+            var thisName = n[0];
             int i = 0;
             while (i < n.Length)
             {
                 switch (i)
                 {
                     case 0:
-                        this.CultureName = n[i];
+                        thisName = n[i];
                         if (CultureName == "English")
                         {
                             StarCulture.invariantCulture = this;
@@ -332,7 +333,7 @@ namespace StarLib
 
         public StarCulture(string language, string iso, string v, string v2, string v3, string v4, string v5, string v6, string v7, string v8, string v9, string v10, string v11, string v12, string v13, string v14, string v15, string v16, string v17, string v18, string v19, string v20, string v21)
         {
-            this.cultureName = language;
+            var thisName = language;
             this.sISO639LANGNAME = iso;
             this.dayNames = new string[] { v, v2, v3, v4, v5, v6, v7 };
             this.monthNames = new string[] { v8, v9, v10, v11, v12, v13, v14, v15, v16, v17, v18, v19, v20, v21 };
@@ -352,7 +353,7 @@ namespace StarLib
 
         public StarCulture(string v1, string v2, string v3, string v4, string v5, string v6, string v7, string v8, string v9, string v10, string v11, string v12, string v13, string v14, string v15, string v16)
         {
-            this.cultureName = v1;
+            var thisName = v1;
             this.sISO639LANGNAME = v2;
             this.monthNames = new string[] { v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15, v16 };
             this.importnet();
@@ -443,7 +444,7 @@ namespace StarLib
 
         internal string StarDateString(StarDate dt, string format)
         {
-            ////////////Console.WriteLine(this.CultureName);
+            ////////////Console.WriteLine(thisName);
             ////////////Console.WriteLine(this == null);
             return StarDateFormat.Format(dt, format, this);
         }
@@ -592,6 +593,12 @@ namespace StarLib
                 _longtimes = value;
             }
         }
+
+        internal string[] GetAllStarDatePatterns(char v)
+        {
+            throw new NotImplementedException();
+        }
+
         internal string[] ShortTimes { get => shortTimes; set => shortTimes = value; }
         internal bool UseUserOverride { get; set; }
 
@@ -759,8 +766,8 @@ namespace StarLib
         //
 
         // cache for the invariant culture.
-        // invariantInfo is constant irrespective of your current culture.
-        //private static volatile StarCulture invariantInfo;
+        // InvariantCulture is constant irrespective of your current culture.
+        //private static volatile StarCulture InvariantCulture;
 
         // an index which points to a record in Culture Data Table.
         ////[NonSerialized] private StarCulture m_cultureData;
@@ -933,7 +940,7 @@ namespace StarLib
         //    {
         //        if (m_name == null)
         //        {
-        //            m_name = this.CultureName;
+        //            m_name = thisName;
         //        }
         //        return (m_name);
         //    }
@@ -2179,10 +2186,10 @@ namespace StarLib
 
 
         // sdfi properties should call this when the setter are called.
-        private void ClearTokenHashTable()
-        {
+        //private void ClearTokenHashTable()
+        //{
 
-        }
+        //}
 
 
 
@@ -2283,6 +2290,11 @@ namespace StarLib
             return (ch >= '\x0590' && ch <= '\x05ff');
         }
 
+        internal bool IsValidDay(int year, int month, int n2, int era)
+        {
+            throw new NotImplementedException();
+        }
+
         //[MethodImplAttribute(MethodImplOptions.AggressiveInlining)]
         //private bool IsAllowedJapaneseTokenFollowedByNonSpaceLetter(string tokenString, char nextCh)
         //{
@@ -2316,7 +2328,7 @@ namespace StarLib
         //    bool isLetter = Char.IsLetter(ch);
         //    if (isLetter)
         //    {
-        //        ch = Char.ToLower(ch, this.Culture);
+        //        ch = Char.ToLower(ch, this);
         //        if (IsHebrewChar(ch) && TokenMask == TokenType.RegularTokenMask)
         //        {
         //            bool badFormat;
@@ -2357,7 +2369,7 @@ namespace StarLib
         //        // Check this value has the right category (regular token or separator token) that we are looking for.
         //        if (((int)value.tokenType & (int)TokenMask) > 0 && value.tokenString.Length <= remaining)
         //        {
-        //            if (String.Compare(str.Value, str.Index, value.tokenString, 0, value.tokenString.Length, this.Culture, CompareOptions.IgnoreCase) == 0)
+        //            if (String.Compare(str.Value, str.Index, value.tokenString, 0, value.tokenString.Length, this, CompareOptions.IgnoreCase) == 0)
         //            {
         //                if (isLetter)
         //                {
@@ -2428,7 +2440,7 @@ namespace StarLib
         //        // Remember this slot
         //        TokenHashValue temp = hashTable[hashcode];
 
-        //        if (temp != null && Char.ToLower(temp.tokenString[0], this.Culture) != ch)
+        //        if (temp != null && Char.ToLower(temp.tokenString[0], this) != ch)
         //        {
         //            continue;
         //        }
@@ -2463,7 +2475,7 @@ namespace StarLib
         //            if (str.Length == 0)
         //                return;
         //        }
-        //        char ch = Char.ToLower(str[0], this.Culture);
+        //        char ch = Char.ToLower(str[0], this);
         //        int hashcode = ch % TOKEN_HASH_SIZE;
         //        int hashProbe = 1 + ch % SECOND_PRIME;
         //        do
@@ -2482,7 +2494,7 @@ namespace StarLib
         //                {
         //                    // If there are two tokens with the same prefix, we have to make sure that the longer token should be at the front of
         //                    // the shorter ones.
-        //                    if (String.Compare(str, 0, value.tokenString, 0, value.tokenString.Length, this.Culture, CompareOptions.IgnoreCase) == 0)
+        //                    if (String.Compare(str, 0, value.tokenString, 0, value.tokenString.Length, this, CompareOptions.IgnoreCase) == 0)
         //                    {
         //                        if (str.Length > value.tokenString.Length)
         //                        {
@@ -2772,6 +2784,8 @@ namespace StarLib
         //[NonSerialized]
         private string NumberDecimalSeparator = ".";
         private string[] LatinGenitives = new string[] { "Sagittarii", "Capricorni", "Aquarii", "Piscium", "Arietis", "Tauri", "Geminorum", "Karkinii", "Leonis", "Virginis", "Librae", "Scorpii", "Ophiuchi", "Horii" };
+        private DateTimeFormatInfo _dtfi;
+        private bool cAL_HEBREW;
 
         internal int GetDayOfMonth(StarDate starDate)
         {
@@ -2886,10 +2900,10 @@ namespace StarLib
             throw new NotImplementedException();
         }
 
-        internal bool Tokenize(TokenType regularTokenMask, out TokenType tempType, out int tempValue, ref __DTString dTString)
-        {
-            throw new NotImplementedException();
-        }
+        //internal bool Tokenize(TokenType regularTokenMask, out TokenType tempType, out int tempValue, ref __DTString dTString)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
         internal string[] internalGetLeapYearMonthNames()
         {
@@ -3013,6 +3027,787 @@ namespace StarLib
                 }
                 return s;
             }
+        }
+
+        public DateTimeFormatInfo dtfi
+        {
+            get
+            {
+                if (_dtfi == null)
+                {
+                    _dtfi = new DateTimeFormatInfo();
+                    _dtfi.MonthNames = MonthNames;
+                    _dtfi.AbbreviatedMonthNames = AbbreviatedMonthNames;
+                }
+                return _dtfi;
+            }
+        }
+
+        public bool CAL_HEBREW { get => this.TwoLetterISO == "he"; }
+        public string LanguageName { get => TwoLetterISO; }
+        public string[] AbbreviatedEnglishEraNames { get; private set; }
+
+        internal bool TryToStarDate(int year, int v1, int v2, int hour, int minute, int second, int v3, int era, out StarDate time)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal StarCulture Clone()
+        {
+            throw new NotImplementedException();
+        }
+
+
+        //
+        // DateTimeFormatInfo tokenizer.  This is used by DateTime.Parse() to break input string into tokens.
+        //
+        [NonSerialized]
+        TokenHashValue[] m_dtfiTokenHash;
+
+        private const int TOKEN_HASH_SIZE = 199;
+        //private const int SECOND_PRIME = 197;
+        //private const String dateSeparatorOrTimeZoneOffset = "-";
+        //private const String invariantDateSeparator = "/";
+        //private const String invariantTimeSeparator = ":";
+
+        ////
+        //// Common Ignorable Symbols
+        ////
+        //internal const String IgnorablePeriod = ".";
+        //internal const String IgnorableComma = ",";
+
+        ////
+        //// Year/Month/Day suffixes
+        ////
+        //internal const String CJKYearSuff = "\u5e74";
+        //internal const String CJKMonthSuff = "\u6708";
+        //internal const String CJKDaySuff = "\u65e5";
+
+        //internal const String KoreanYearSuff = "\ub144";
+        //internal const String KoreanMonthSuff = "\uc6d4";
+        //internal const String KoreanDaySuff = "\uc77c";
+
+        //internal const String KoreanHourSuff = "\uc2dc";
+        //internal const String KoreanMinuteSuff = "\ubd84";
+        //internal const String KoreanSecondSuff = "\ucd08";
+
+        //internal const String CJKHourSuff = "\u6642";
+        //internal const String ChineseHourSuff = "\u65f6";
+
+        //internal const String CJKMinuteSuff = "\u5206";
+        //internal const String CJKSecondSuff = "\u79d2";
+
+        //internal const string JapaneseEraStart = "\u5143";
+
+        //internal const String LocalTimeMark = "T";
+
+        //internal const String KoreanLangName = "ko";
+        //internal const String JapaneseLangName = "ja";
+        //internal const String EnglishLangName = "en";
+
+        private static volatile StarCulture s_jajpDTFI;
+        private static volatile StarCulture s_zhtwDTFI;
+        private bool preferExistingTokens;
+        private string[] m_dateWords;
+        private string languageName;
+
+        //
+        // Create a Japanese DTFI which uses JapaneseCalendar.  This is used to parse
+        // date string with Japanese era name correctly even when the supplied DTFI
+        // does not use Japanese calendar.
+        // The created instance is stored in global s_jajpDTFI.
+        //
+        internal static StarCulture GetJapaneseCalendarDTFI()
+        {
+            throw new NotImplementedException();
+            //StarCulture temp = s_jajpDTFI;
+            //if (temp == null)
+            //{
+            //    temp = new CultureInfo("ja-JP", false).DateTimeFormat;
+            //    temp.Calendar = JapaneseCalendar.GetDefaultInstance();
+            //    s_jajpDTFI = temp;
+            //}
+            //return (temp);
+        }
+
+        /* 
+
+
+
+
+
+         */
+        //internal static DateTimeFormatInfo GetTaiwanCalendarDTFI()
+        //{
+        //    DateTimeFormatInfo temp = s_zhtwDTFI;
+        //    if (temp == null)
+        //    {
+        //        temp = new CultureInfo("zh-TW", false).DateTimeFormat;
+        //        temp.Calendar = TaiwanCalendar.GetDefaultInstance();
+        //        s_zhtwDTFI = temp;
+        //    }
+        //    return (temp);
+        //}
+
+
+        // DTFI properties should call this when the setter are called.
+        private void ClearTokenHashTable()
+        {
+            m_dtfiTokenHash = null;
+            formatFlags = DateTimeFormatFlags.NotInitialized;
+        }
+
+        [System.Security.SecurityCritical]  // auto-generated
+        internal TokenHashValue[] CreateTokenHashTable()
+        {
+            TokenHashValue[] temp = m_dtfiTokenHash;
+            if (temp == null)
+            {
+                temp = new TokenHashValue[TOKEN_HASH_SIZE];
+
+                bool koreanLanguage = LanguageName.Equals(KoreanLangName);
+
+                string sep = this.TimeSeparator.Trim();
+                if (IgnorableComma != sep) InsertHash(temp, IgnorableComma, TokenType.IgnorableSymbol, 0);
+                if (IgnorablePeriod != sep) InsertHash(temp, IgnorablePeriod, TokenType.IgnorableSymbol, 0);
+
+                if (KoreanHourSuff != sep && CJKHourSuff != sep && ChineseHourSuff != sep)
+                {
+                    //
+                    // On the Macintosh, the default TimeSeparator is identical to the KoreanHourSuff, CJKHourSuff, or ChineseHourSuff for some cultures like
+                    // ja-JP and ko-KR.  In these cases having the same symbol inserted into the hash table with multiple TokenTypes causes undesirable
+                    // DateTime.Parse behavior.  For instance, the DateTimeFormatInfo.Tokenize() method might return SEP_DateOrOffset for KoreanHourSuff
+                    // instead of SEP_HourSuff.
+                    //
+                    InsertHash(temp, this.TimeSeparator, TokenType.SEP_Time, 0);
+                }
+
+                InsertHash(temp, this.AMDesignator, TokenType.SEP_Am | TokenType.Am, 0);
+                InsertHash(temp, this.PMDesignator, TokenType.SEP_Pm | TokenType.Pm, 1);
+
+                // 
+                if (LanguageName.Equals("sq"))
+                {
+                    // Albanian allows time formats like "12:00.PD"
+                    InsertHash(temp, IgnorablePeriod + this.AMDesignator, TokenType.SEP_Am | TokenType.Am, 0);
+                    InsertHash(temp, IgnorablePeriod + this.PMDesignator, TokenType.SEP_Pm | TokenType.Pm, 1);
+                }
+
+                // CJK suffix
+                InsertHash(temp, CJKYearSuff, TokenType.SEP_YearSuff, 0);
+                InsertHash(temp, KoreanYearSuff, TokenType.SEP_YearSuff, 0);
+                InsertHash(temp, CJKMonthSuff, TokenType.SEP_MonthSuff, 0);
+                InsertHash(temp, KoreanMonthSuff, TokenType.SEP_MonthSuff, 0);
+                InsertHash(temp, CJKDaySuff, TokenType.SEP_DaySuff, 0);
+                InsertHash(temp, KoreanDaySuff, TokenType.SEP_DaySuff, 0);
+
+                InsertHash(temp, CJKHourSuff, TokenType.SEP_HourSuff, 0);
+                InsertHash(temp, ChineseHourSuff, TokenType.SEP_HourSuff, 0);
+                InsertHash(temp, CJKMinuteSuff, TokenType.SEP_MinuteSuff, 0);
+                InsertHash(temp, CJKSecondSuff, TokenType.SEP_SecondSuff, 0);
+
+                //if (!AppContextSwitches.EnforceLegacyJapaneseDateParsing && Calendar.ID == Calendar.CAL_JAPAN)
+                //{
+                //    // We need to support parsing the dates has the start of era symbol which means it is year 1 in the era.
+                //    // The start of era symbol has to be followed by the year symbol suffix, otherwise it would be invalid date.
+                //    InsertHash(temp, JapaneseEraStart, TokenType.YearNumberToken, 1);
+                //    InsertHash(temp, "(", TokenType.IgnorableSymbol, 0);
+                //    InsertHash(temp, ")", TokenType.IgnorableSymbol, 0);
+                //}
+
+                // 
+                if (koreanLanguage)
+                {
+                    // Korean suffix
+                    InsertHash(temp, KoreanHourSuff, TokenType.SEP_HourSuff, 0);
+                    InsertHash(temp, KoreanMinuteSuff, TokenType.SEP_MinuteSuff, 0);
+                    InsertHash(temp, KoreanSecondSuff, TokenType.SEP_SecondSuff, 0);
+                }
+
+                if (LanguageName.Equals("ky"))
+                {
+                    // For some cultures, the date separator works more like a comma, being allowed before or after any date part
+                    InsertHash(temp, dateSeparatorOrTimeZoneOffset, TokenType.IgnorableSymbol, 0);
+                }
+                else
+                {
+                    InsertHash(temp, dateSeparatorOrTimeZoneOffset, TokenType.SEP_DateOrOffset, 0);
+                }
+
+                String[] dateWords = null;
+                StarDateFormatInfoScanner scanner = null;
+
+                // We need to rescan the date words since we're always synthetic
+                scanner = new StarDateFormatInfoScanner();
+                // Enumarate all LongDatePatterns, and get the DateWords and scan for month postfix.
+                // The only reason they're being assigned to m_dateWords is for Whidbey Deserialization
+                m_dateWords = dateWords = scanner.GetDateWordsOfDTFI(this);
+                // Ensure the formatflags is initialized.
+                StarDateFormatFlags flag = FormatFlags;
+
+                // For some cultures, the date separator works more like a comma, being allowed before or after any date part.
+                // In these cultures, we do not use normal date separator since we disallow date separator after a date terminal state.
+                // This is determined in StarDateFormatInfoScanner.  Use this flag to determine if we should treat date separator as ignorable symbol.
+                bool useDateSepAsIgnorableSymbol = false;
+
+                String monthPostfix = null;
+                if (dateWords != null)
+                {
+                    throw new NotImplementedException();
+                    //// There are DateWords.  It could be a real date word (such as "de"), or a monthPostfix.
+                    //// The monthPostfix starts with '\xfffe' (MonthPostfixChar), followed by the real monthPostfix.
+                    //for (int i = 0; i < dateWords.Length; i++)
+                    //{
+                    //    switch (dateWords[i][0])
+                    //    {
+                    //        // This is a month postfix
+                    //        case StarDateFormatInfoScanner.MonthPostfixChar:
+                    //            // Get the real month postfix.
+                    //            monthPostfix = dateWords[i].Substring(1);
+                    //            // Add the month name + postfix into the token.
+                    //            AddMonthNames(temp, monthPostfix);
+                    //            break;
+                    //        case StarDateFormatInfoScanner.IgnorableSymbolChar:
+                    //            String symbol = dateWords[i].Substring(1);
+                    //            InsertHash(temp, symbol, TokenType.IgnorableSymbol, 0);
+                    //            if (this.DateSeparator.Trim(null).Equals(symbol))
+                    //            {
+                    //                // The date separator is the same as the ingorable symbol.
+                    //                useDateSepAsIgnorableSymbol = true;
+                    //            }
+                    //            break;
+                    //        default:
+                    //            InsertHash(temp, dateWords[i], TokenType.DateWordToken, 0);
+                    //            // 
+                    //            if (LanguageName.Equals("eu"))
+                    //            {
+                    //                // Basque has date words with leading dots
+                    //                InsertHash(temp, IgnorablePeriod + dateWords[i], TokenType.DateWordToken, 0);
+                    //            }
+                    //            break;
+                    //    }
+                    //}
+                }
+
+                if (!useDateSepAsIgnorableSymbol)
+                {
+                    // Use the normal date separator.
+                    InsertHash(temp, this.DateSeparator, TokenType.SEP_Date, 0);
+                }
+                // Add the regular month names.
+                AddMonthNames(temp, null);
+
+                // Add the abbreviated month names.
+                for (int i = 1; i <= 13; i++)
+                {
+                    InsertHash(temp, GetAbbreviatedMonthName(i), TokenType.MonthToken, i);
+                }
+
+
+                if ((FormatFlags & DateTimeFormatFlags.UseGenitiveMonth) != 0)
+                {
+                    for (int i = 1; i <= 13; i++)
+                    {
+                        String str;
+                        str = internalGetMonthName(i, MonthNameStyles.Genitive, false);
+                        InsertHash(temp, str, TokenType.MonthToken, i);
+                    }
+                }
+
+                if ((FormatFlags & DateTimeFormatFlags.UseLeapYearMonth) != 0)
+                {
+                    for (int i = 1; i <= 13; i++)
+                    {
+                        String str;
+                        str = internalGetMonthName(i, MonthNameStyles.LeapYear, false);
+                        InsertHash(temp, str, TokenType.MonthToken, i);
+                    }
+                }
+
+                for (int i = 0; i < 7; i++)
+                {
+                    //String str = GetDayOfWeekNames()[i];
+                    // We have to call public methods here to work with inherited DTFI.
+                    String str = GetDayName((DayOfWeek)i);
+                    InsertHash(temp, str, TokenType.DayOfWeekToken, i);
+
+                    str = GetAbbreviatedDayName((DayOfWeek)i);
+                    InsertHash(temp, str, TokenType.DayOfWeekToken, i);
+
+                }
+
+                int[] eras = Eras;
+                for (int i = 1; i <= eras.Length; i++)
+                {
+                    InsertHash(temp, GetEraName(i), TokenType.EraToken, i);
+                    InsertHash(temp, GetAbbreviatedEraName(i), TokenType.EraToken, i);
+                }
+
+                // 
+                if (LanguageName.Equals(JapaneseLangName))
+                {
+                    // Japanese allows day of week forms like: "(Tue)"
+                    for (int i = 0; i < 7; i++)
+                    {
+                        String specialDayOfWeek = "(" + GetAbbreviatedDayName((DayOfWeek)i) + ")";
+                        InsertHash(temp, specialDayOfWeek, TokenType.DayOfWeekToken, i);
+                    }
+                    //if (this.GetType() != typeof(JapaneseCalendar))
+                    //{
+                    //    // Special case for Japanese.  If this is a Japanese DTFI, and the calendar is not Japanese calendar,
+                    //    // we will check Japanese Era name as well when the calendar is Gregorian.
+                    //    StarCulture jaDtfi = GetJapaneseCalendarDTFI();
+                    //    for (int i = 1; i <= jaDtfi.Calendar.Eras.Length; i++)
+                    //    {
+                    //        InsertHash(temp, jaDtfi.GetEraName(i), TokenType.JapaneseEraToken, i);
+                    //        InsertHash(temp, jaDtfi.GetAbbreviatedEraName(i), TokenType.JapaneseEraToken, i);
+                    //        // m_abbrevEnglishEraNames[0] contains the name for era 1, so the token value is i+1.
+                    //        InsertHash(temp, jaDtfi.AbbreviatedEnglishEraNames[i - 1], TokenType.JapaneseEraToken, i);
+                    //    }
+                    //}
+                }
+                // 
+                else if (CultureName.Equals("zh-TW"))
+                {
+                    throw new NotImplementedException();
+                    //DateTimeFormatInfo twDtfi = GetTaiwanCalendarDTFI();
+                    //for (int i = 1; i <= twDtfi.Calendar.Eras.Length; i++)
+                    //{
+                    //    if (twDtfi.GetEraName(i).Length > 0)
+                    //    {
+                    //        InsertHash(temp, twDtfi.GetEraName(i), TokenType.TEraToken, i);
+                    //    }
+                    //}
+                }
+
+                InsertHash(temp, InvariantCulture.AMDesignator, TokenType.SEP_Am | TokenType.Am, 0);
+                InsertHash(temp, InvariantCulture.PMDesignator, TokenType.SEP_Pm | TokenType.Pm, 1);
+
+                // Add invariant month names and day names.
+                for (int i = 1; i <= 12; i++)
+                {
+                    String str;
+                    // We have to call public methods here to work with inherited DTFI.
+                    // Insert the month name first, so that they are at the front of abbrevaited
+                    // month names.
+                    str = InvariantCulture.GetMonthName(i);
+                    InsertHash(temp, str, TokenType.MonthToken, i);
+                    str = InvariantCulture.GetAbbreviatedMonthName(i);
+                    InsertHash(temp, str, TokenType.MonthToken, i);
+                }
+
+                for (int i = 0; i < 7; i++)
+                {
+                    // We have to call public methods here to work with inherited DTFI.
+                    String str = InvariantCulture.GetDayName((DayOfWeek)i);
+                    InsertHash(temp, str, TokenType.DayOfWeekToken, i);
+
+                    str = InvariantCulture.GetAbbreviatedDayName((DayOfWeek)i);
+                    InsertHash(temp, str, TokenType.DayOfWeekToken, i);
+
+                }
+
+                for (int i = 0; i < AbbreviatedEnglishEraNames.Length; i++)
+                {
+                    // m_abbrevEnglishEraNames[0] contains the name for era 1, so the token value is i+1.
+                    InsertHash(temp, AbbreviatedEnglishEraNames[i], TokenType.EraToken, i + 1);
+                }
+
+                InsertHash(temp, LocalTimeMark, TokenType.SEP_LocalTimeMark, 0);
+                InsertHash(temp, StarDateParse.GMTName, TokenType.TimeZoneToken, 0);
+                InsertHash(temp, StarDateParse.ZuluName, TokenType.TimeZoneToken, 0);
+
+                InsertHash(temp, invariantDateSeparator, TokenType.SEP_Date, 0);
+                InsertHash(temp, invariantTimeSeparator, TokenType.SEP_Time, 0);
+
+                m_dtfiTokenHash = temp;
+            }
+            return (temp);
+        }
+
+        private void AddMonthNames(TokenHashValue[] temp, String monthPostfix)
+        {
+            for (int i = 1; i <= 13; i++)
+            {
+                String str;
+                //str = internalGetMonthName(i, MonthNameStyles.Regular, false);
+                // We have to call public methods here to work with inherited DTFI.
+                // Insert the month name first, so that they are at the front of abbrevaited
+                // month names.
+                str = GetMonthName(i);
+                if (str.Length > 0)
+                {
+                    if (monthPostfix != null)
+                    {
+                        // Insert the month name with the postfix first, so it can be matched first.
+                        InsertHash(temp, str + monthPostfix, TokenType.MonthToken, i);
+                    }
+                    else
+                    {
+                        InsertHash(temp, str, TokenType.MonthToken, i);
+                    }
+                }
+                str = GetAbbreviatedMonthName(i);
+                InsertHash(temp, str, TokenType.MonthToken, i);
+            }
+
+        }
+
+        ////////////////////////////////////////////////////////////////////////
+        //
+        // Actions:
+        // Try to parse the current word to see if it is a Hebrew number.
+        // Tokens will be updated accordingly.
+        // This is called by the Lexer of StarDate.Parse().
+        //
+        // Unlike most of the functions in this class, the return value indicates
+        // whether or not it started to parse. The badFormat parameter indicates
+        // if parsing began, but the format was bad.
+        //
+        ////////////////////////////////////////////////////////////////////////
+
+        private static bool TryParseHebrewNumber(
+            ref __DTString str,
+            out Boolean badFormat,
+            out int number)
+        {
+
+            number = -1;
+            badFormat = false;
+
+            int i = str.Index;
+            if (!HebrewNumber.IsDigit(str.Value[i]))
+            {
+                // If the current character is not a Hebrew digit, just return false.
+                // There is no chance that we can parse a valid Hebrew number from here.
+                return (false);
+            }
+            // The current character is a Hebrew digit.  Try to parse this word as a Hebrew number.
+            HebrewNumberParsingContext context = new HebrewNumberParsingContext(0);
+            HebrewNumberParsingState state;
+
+            do
+            {
+                state = HebrewNumber.ParseByChar(str.Value[i++], ref context);
+                switch (state)
+                {
+                    case HebrewNumberParsingState.InvalidHebrewNumber:    // Not a valid Hebrew number.
+                    case HebrewNumberParsingState.NotHebrewDigit:         // The current character is not a Hebrew digit character.
+                        // Break out so that we don't continue to try parse this as a Hebrew number.
+                        return (false);
+                }
+            } while (i < str.Value.Length && (state != HebrewNumberParsingState.FoundEndOfHebrewNumber));
+
+            // When we are here, we are either at the end of the string, or we find a valid Hebrew number.
+            Contract.Assert(state == HebrewNumberParsingState.ContinueParsing || state == HebrewNumberParsingState.FoundEndOfHebrewNumber,
+                "Invalid returned state from HebrewNumber.ParseByChar()");
+
+            if (state != HebrewNumberParsingState.FoundEndOfHebrewNumber)
+            {
+                // We reach end of the string but we can't find a terminal state in parsing Hebrew number.
+                return (false);
+            }
+
+            // We have found a valid Hebrew number.  Update the index.
+            str.Advance(i - str.Index);
+
+            // Get the final Hebrew number value from the HebrewNumberParsingContext.
+            number = context.result;
+
+            return (true);
+        }
+
+        //private static bool IsHebrewChar(char ch)
+        //{
+        //    return (ch >= '\x0590' && ch <= '\x05ff');
+        //}
+
+        [MethodImplAttribute(MethodImplOptions.AggressiveInlining)]
+        //private bool IsAllowedJapaneseTokenFollowedByNonSpaceLetter(string tokenString, char nextCh)
+        //{
+        //    // Allow the parser to recognize the case when having some date part followed by JapaneseEraStart "\u5143"
+        //    // without spaces in between. e.g. Era name followed by \u5143 in the date formats ggy.
+        //    // Also, allow recognizing the year suffix symbol "\u5e74" followed the JapaneseEraStart "\u5143"
+        //    if (!AppContextSwitches.EnforceLegacyJapaneseDateParsing && Calendar.ID == Calendar.CAL_JAPAN &&
+        //        (
+        //            // something like ggy, era followed by year and the year is specified using the JapaneseEraStart "\u5143"
+        //            nextCh == JapaneseEraStart[0] ||
+        //            // JapaneseEraStart followed by year suffix "\u5143"
+        //            (tokenString == JapaneseEraStart && nextCh == CJKYearSuff[0])
+        //        ))
+        //    {
+        //        return true;
+        //    }
+
+        //    return false;
+        //}
+
+        [System.Security.SecurityCritical]  // auto-generated
+        internal bool Tokenize(TokenType TokenMask, out TokenType tokenType, out int tokenValue, ref __DTString str)
+        {
+            tokenType = TokenType.UnknownToken;
+            tokenValue = 0;
+
+            TokenHashValue value;
+            Contract.Assert(str.Index < str.Value.Length, "StarDateFormatInfo.Tokenize(): start < value.Length");
+
+            char ch = str.m_current;
+            bool isLetter = Char.IsLetter(ch);
+            if (isLetter)
+            {
+                ch = Char.ToLower(ch);
+                if (IsHebrewChar(ch) && TokenMask == TokenType.RegularTokenMask)
+                {
+                    bool badFormat;
+                    if (TryParseHebrewNumber(ref str, out badFormat, out tokenValue))
+                    {
+                        if (badFormat)
+                        {
+                            tokenType = TokenType.UnknownToken;
+                            return (false);
+                        }
+                        // This is a Hebrew number.
+                        // Do nothing here.  TryParseHebrewNumber() will update token accordingly.
+                        tokenType = TokenType.HebrewNumber;
+                        return (true);
+                    }
+                }
+            }
+
+
+            int hashcode = ch % TOKEN_HASH_SIZE;
+            int hashProbe = 1 + ch % SECOND_PRIME;
+            int remaining = str.len - str.Index;
+            int i = 0;
+
+            TokenHashValue[] hashTable = m_dtfiTokenHash;
+            if (hashTable == null)
+            {
+                hashTable = CreateTokenHashTable();
+            }
+            do
+            {
+                value = hashTable[hashcode];
+                if (value == null)
+                {
+                    // Not found.
+                    break;
+                }
+                // Check this value has the right category (regular token or separator token) that we are looking for.
+                if (((int)value.tokenType & (int)TokenMask) > 0 && value.tokenString.Length <= remaining)
+                {
+                    throw new NotImplementedException();
+                    //if (String.Compare(str.Value, str.Index, value.tokenString, 0, value.tokenString.Length, this, CompareOptions.IgnoreCase) == 0)
+                    //{
+                    //    if (isLetter)
+                    //    {
+                    //        // If this token starts with a letter, make sure that we won't allow partial match.  So you can't tokenize "MarchWed" separately.
+                    //        int nextCharIndex;
+                    //        if ((nextCharIndex = str.Index + value.tokenString.Length) < str.len)
+                    //        {
+                    //            // Check word boundary.  The next character should NOT be a letter.
+                    //            char nextCh = str.Value[nextCharIndex];
+                    //            if (Char.IsLetter(nextCh))
+                    //            {
+                    //                if (!IsAllowedJapaneseTokenFollowedByNonSpaceLetter(value.tokenString, nextCh))
+                    //                    return (false);
+                    //            }
+                    //        }
+                    //    }
+                    //    tokenType = value.tokenType & TokenMask;
+                    //    tokenValue = value.tokenValue;
+                    //    str.Advance(value.tokenString.Length);
+                    //    return (true);
+                    //}
+                    //else if (value.tokenType == TokenType.MonthToken && HasSpacesInMonthNames)
+                    //{
+                    //    // For month token, we will match the month names which have spaces.
+                    //    int matchStrLen = 0;
+                    //    if (str.MatchSpecifiedWords(value.tokenString, true, ref matchStrLen))
+                    //    {
+                    //        tokenType = value.tokenType & TokenMask;
+                    //        tokenValue = value.tokenValue;
+                    //        str.Advance(matchStrLen);
+                    //        return (true);
+                    //    }
+                    //}
+                    //else if (value.tokenType == TokenType.DayOfWeekToken && HasSpacesInDayNames)
+                    //{
+                    //    // For month token, we will match the month names which have spaces.
+                    //    int matchStrLen = 0;
+                    //    if (str.MatchSpecifiedWords(value.tokenString, true, ref matchStrLen))
+                    //    {
+                    //        tokenType = value.tokenType & TokenMask;
+                    //        tokenValue = value.tokenValue;
+                    //        str.Advance(matchStrLen);
+                    //        return (true);
+                    //    }
+                    //}
+                }
+                i++;
+                hashcode += hashProbe;
+                if (hashcode >= TOKEN_HASH_SIZE) hashcode -= TOKEN_HASH_SIZE;
+            } while (i < TOKEN_HASH_SIZE);
+
+            return (false);
+        }
+
+        private bool IsAllowedJapaneseTokenFollowedByNonSpaceLetter(string tokenString, char nextCh)
+        {
+            throw new NotImplementedException();
+        }
+
+        void InsertAtCurrentHashNode(TokenHashValue[] hashTable, String str, char ch, TokenType tokenType, int tokenValue, int pos, int hashcode, int hashProbe)
+        {
+            // Remember the current slot.
+            TokenHashValue previousNode = hashTable[hashcode];
+
+            //// Console.WriteLine("   Insert Key: {0} in {1}", str, slotToInsert);
+            // Insert the new node into the current slot.
+            hashTable[hashcode] = new TokenHashValue(str, tokenType, tokenValue); ;
+
+            while (++pos < TOKEN_HASH_SIZE)
+            {
+                hashcode += hashProbe;
+                if (hashcode >= TOKEN_HASH_SIZE) hashcode -= TOKEN_HASH_SIZE;
+                // Remember this slot
+                TokenHashValue temp = hashTable[hashcode];
+
+                if (temp != null && Char.ToLower(temp.tokenString[0]) != ch)
+                {
+                    continue;
+                }
+                // Put the previous slot into this slot.
+                hashTable[hashcode] = previousNode;
+                //// Console.WriteLine("  Move {0} to slot {1}", previousNode.tokenString, hashcode);
+                if (temp == null)
+                {
+                    // Done
+                    return;
+                }
+                previousNode = temp;
+            };
+            Contract.Assert(true, "The hashtable is full.  This should not happen.");
+        }
+
+        void InsertHash(TokenHashValue[] hashTable, String str, TokenType tokenType, int tokenValue)
+        {
+            // The month of the 13th month is allowed to be null, so make sure that we ignore null value here.
+            if (str == null || str.Length == 0)
+            {
+                return;
+            }
+            TokenHashValue value;
+            int i = 0;
+            // If there is whitespace characters in the beginning and end of the string, trim them since whitespaces are skipped by
+            // StarDate.Parse().
+            if (Char.IsWhiteSpace(str[0]) || Char.IsWhiteSpace(str[str.Length - 1]))
+            {
+                str = str.Trim(null);   // Trim white space characters.
+                // Could have space for separators
+                if (str.Length == 0)
+                    return;
+            }
+            char ch = Char.ToLower(str[0]);
+            int hashcode = ch % TOKEN_HASH_SIZE;
+            int hashProbe = 1 + ch % SECOND_PRIME;
+            do
+            {
+                value = hashTable[hashcode];
+                if (value == null)
+                {
+                    //// Console.WriteLine("   Put Key: {0} in {1}", str, hashcode);
+                    hashTable[hashcode] = new TokenHashValue(str, tokenType, tokenValue);
+                    return;
+                }
+                else
+                {
+                    // Collision happens. Find another slot.
+                    if (str.Length >= value.tokenString.Length)
+                    {
+                        // If there are two tokens with the same prefix, we have to make sure that the longer token should be at the front of
+                        // the shorter ones.
+                        throw new NotImplementedException();
+                        //if (String.Compare(str, 0, value.tokenString, 0, value.tokenString.Length, this, CompareOptions.IgnoreCase) == 0)
+                        //{
+                        //    if (str.Length > value.tokenString.Length)
+                        //    {
+                        //        // The str to be inserted has the same prefix as the current token, and str is longer.
+                        //        // Insert str into this node, and shift every node behind it.
+                        //        InsertAtCurrentHashNode(hashTable, str, ch, tokenType, tokenValue, i, hashcode, hashProbe);
+                        //        return;
+                        //    }
+                        //    else
+                        //    {
+                        //        // Same token.  If they have different types (regular token vs separator token).  Add them.
+                        //        // If we have the same regular token or separator token in the hash already, do NOT update the hash.
+                        //        // Therefore, the order of inserting token is significant here regarding what tokenType will be kept in the hash.
+
+
+                        //        //
+                        //        // Check the current value of RegularToken (stored in the lower 8-bit of tokenType) , and insert the tokenType into the hash ONLY when we don't have a RegularToken yet.
+                        //        // Also check the current value of SeparatorToken (stored in the upper 8-bit of token), and insert the tokenType into the hash ONLY when we don't have the SeparatorToken yet.
+                        //        //
+
+                        //        int nTokenType = (int)tokenType;
+                        //        int nCurrentTokenTypeInHash = (int)value.tokenType;
+
+                        //        // The idea behind this check is:
+                        //        // - if the app is targetting 4.5.1 or above OR the compat flag is set, use the correct behavior by default.
+                        //        // - if the app is targetting 4.5 or below AND the compat switch is set, use the correct behavior
+                        //        // - if the app is targetting 4.5 or below AND the compat switch is NOT set, use the incorrect behavior
+                        //        if (preferExistingTokens || BinaryCompatibility.TargetsAtLeast_Desktop_V4_5_1)
+                        //        {
+                        //            if (((nCurrentTokenTypeInHash & (int)TokenType.RegularTokenMask) == 0) && ((nTokenType & (int)TokenType.RegularTokenMask) != 0) ||
+                        //               ((nCurrentTokenTypeInHash & (int)TokenType.SeparatorTokenMask) == 0) && ((nTokenType & (int)TokenType.SeparatorTokenMask) != 0))
+                        //            {
+                        //                value.tokenType |= tokenType;
+                        //                if (tokenValue != 0)
+                        //                {
+                        //                    value.tokenValue = tokenValue;
+                        //                }
+                        //            }
+                        //        }
+                        //        else
+                        //        {
+                        //            // The following logic is incorrect and causes updates to happen depending on the bitwise relationship between the existing token type and the
+                        //            // the stored token type.  It was this way in .NET 4 RTM.  The behavior above is correct and will be adopted going forward.
+
+                        //            if ((((nTokenType | nCurrentTokenTypeInHash) & (int)TokenType.RegularTokenMask) == nTokenType) ||
+                        //               (((nTokenType | nCurrentTokenTypeInHash) & (int)TokenType.SeparatorTokenMask) == nTokenType))
+                        //            {
+                        //                value.tokenType |= tokenType;
+                        //                if (tokenValue != 0)
+                        //                {
+                        //                    value.tokenValue = tokenValue;
+                        //                }
+                        //            }
+                        //        }
+                        //        // The token to be inserted is already in the table.  Skip it.
+                        //    }
+                        //}
+                    }
+                }
+                //// Console.WriteLine("  COLLISION. Old Key: {0}, New Key: {1}", hashTable[hashcode].tokenString, str);
+                i++;
+                hashcode += hashProbe;
+                if (hashcode >= TOKEN_HASH_SIZE) hashcode -= TOKEN_HASH_SIZE;
+            } while (i < TOKEN_HASH_SIZE);
+            Contract.Assert(true, "The hashtable is full.  This should not happen.");
+        }
+    }   // class StarDateFormatInfo
+
+    internal class TokenHashValue
+    {
+        internal String tokenString;
+        internal TokenType tokenType;
+        internal int tokenValue;
+
+        internal TokenHashValue(String tokenString, TokenType tokenType, int tokenValue)
+        {
+            this.tokenString = tokenString;
+            this.tokenType = tokenType;
+            this.tokenValue = tokenValue;
         }
     }
 }
