@@ -1,0 +1,118 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "WebWindow/0.1.0-20200807.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/WebWindow.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/WebWindow.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/WebWindow.Native.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx-x64/native/WebWindow.Native.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-x64/native/WebView2Loader.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/WebWindow.Native.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WebWindow/0.1.0-20200807.1": {
+      "sha512": "MFRxyXQf/0Gp0CN1wXlc8b9Gwmjs+h4Ij3oen4PqFTeEwuXfkxnixUTJ8prqKZyEwpbtWtN4YxMXygbH7kXE3w==",
+      "type": "package",
+      "path": "webwindow/0.1.0-20200807.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.1/WebWindow.dll",
+        "runtimes/linux-x64/native/WebWindow.Native.so",
+        "runtimes/osx-x64/native/WebWindow.Native.dylib",
+        "runtimes/win-x64/native/WebView2Loader.dll",
+        "runtimes/win-x64/native/WebWindow.Native.dll",
+        "webwindow.0.1.0-20200807.1.nupkg.sha512",
+        "webwindow.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "WebWindow >= 0.1.0-20200807.1"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\SiliconProphet\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLibDesktop\\StarLibDesktop.csproj",
+      "projectName": "StarLibDesktop",
+      "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLibDesktop\\StarLibDesktop.csproj",
+      "packagesPath": "C:\\Users\\SiliconProphet\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLibDesktop\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\SiliconProphet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "dependencies": {
+          "WebWindow": {
+            "target": "Package",
+            "version": "[0.1.0-20200807.1, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

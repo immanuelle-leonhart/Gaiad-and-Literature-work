@@ -4,7 +4,6 @@
     <id>StarDate.Forms</id>
     <version>1.0.1</version>
     <authors>Silicon Prophet</authors>
-    <owners>Silicon Prophet</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="file">LICENSE</license>
     <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
@@ -24,15 +23,15 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLib.Forms\bin\Debug\netstandard2.0\StarLib.Forms.dll" target="lib\netstandard2.0\StarLib.Forms.dll" />
-    <file src="C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLib.Forms\obj\Debug\netstandard2.0\staticwebassets\msbuild.StarDate.Forms.Microsoft.AspNetCore.StaticWebAssets.props" target="build\Microsoft.AspNetCore.StaticWebAssets.props" />
-    <file src="C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLib.Forms\obj\Debug\netstandard2.0\staticwebassets\msbuild.build.StarDate.Forms.props" target="build\StarDate.Forms.props" />
-    <file src="C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLib.Forms\obj\Debug\netstandard2.0\staticwebassets\msbuild.buildMultiTargeting.StarDate.Forms.props" target="buildMultiTargeting\StarDate.Forms.props" />
-    <file src="C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLib.Forms\obj\Debug\netstandard2.0\staticwebassets\msbuild.buildTransitive.StarDate.Forms.props" target="buildTransitive\StarDate.Forms.props" />
-    <file src="C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLib.Forms\wwwroot\background.png" target="staticwebassets\background.png" />
-    <file src="C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLib.Forms\wwwroot\exampleJsInterop.js" target="staticwebassets\exampleJsInterop.js" />
-    <file src="C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLib.Forms\wwwroot\styles.css" target="staticwebassets\styles.css" />
-    <file src="C:\Users\SiliconProphet\Dropbox\branding images\DNA Tree Logo.jpg" target="DNA Tree Logo.jpg" />
-    <file src="C:\Users\SiliconProphet\Documents\GitHub\StarDate\LICENSE" target="LICENSE" />
+    <file src="C:\Users\SiliconProphet\Documents\GitHub\Order\StarDate\StarLib.Forms\bin\Debug\netstandard2.0\StarLib.Forms.dll" target="lib\netstandard2.0\StarLib.Forms.dll" />
+    <file src="C:\Users\SiliconProphet\Documents\GitHub\Order\StarDate\StarLib.Forms\obj\Debug\netstandard2.0\staticwebassets\msbuild.StarDate.Forms.Microsoft.AspNetCore.StaticWebAssets.props" target="build\Microsoft.AspNetCore.StaticWebAssets.props" />
+    <file src="C:\Users\SiliconProphet\Documents\GitHub\Order\StarDate\StarLib.Forms\obj\Debug\netstandard2.0\staticwebassets\msbuild.build.StarDate.Forms.props" target="build\StarDate.Forms.props" />
+    <file src="C:\Users\SiliconProphet\Documents\GitHub\Order\StarDate\StarLib.Forms\obj\Debug\netstandard2.0\staticwebassets\msbuild.buildMultiTargeting.StarDate.Forms.props" target="buildMultiTargeting\StarDate.Forms.props" />
+    <file src="C:\Users\SiliconProphet\Documents\GitHub\Order\StarDate\StarLib.Forms\obj\Debug\netstandard2.0\staticwebassets\msbuild.buildTransitive.StarDate.Forms.props" target="buildTransitive\StarDate.Forms.props" />
+    <file src="C:\Users\SiliconProphet\Documents\GitHub\Order\StarDate\StarLib.Forms\wwwroot\background.png" target="staticwebassets\background.png" />
+    <file src="C:\Users\SiliconProphet\Documents\GitHub\Order\StarDate\StarLib.Forms\wwwroot\exampleJsInterop.js" target="staticwebassets\exampleJsInterop.js" />
+    <file src="C:\Users\SiliconProphet\Documents\GitHub\Order\StarDate\StarLib.Forms\wwwroot\styles.css" target="staticwebassets\styles.css" />
+    <file src="C:\Users\SiliconProphet\Documents\Dropbox\branding images\DNA Tree Logo.jpg" target="DNA Tree Logo.jpg" />
+    <file src="C:\Users\SiliconProphet\Documents\GitHub\Order\StarDate\LICENSE" target="LICENSE" />
   </files>
 </package>
