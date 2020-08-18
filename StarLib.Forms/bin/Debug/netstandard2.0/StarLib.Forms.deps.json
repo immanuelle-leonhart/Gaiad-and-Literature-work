@@ -126,7 +126,7 @@
           "System.Threading.Overlapped": "4.0.3.0",
           "System.Threading.Tasks": "4.0.11.0",
           "System.Threading.Tasks.Parallel": "4.0.1.0",
-          "System.Threading.Thread": "4.0.2.0",
+          "System.Threading.Thread.Reference": "4.0.2.0",
           "System.Threading.ThreadPool": "4.0.12.0",
           "System.Threading.Timer": "4.0.1.0",
           "System.Transactions": "4.0.0.0",
@@ -632,7 +632,7 @@
           "System.Threading.Tasks.Parallel.dll": {}
         }
       },
-      "System.Threading.Thread/4.0.2.0": {
+      "System.Threading.Thread.Reference/4.0.2.0": {
         "compile": {
           "System.Threading.Thread.dll": {}
         }
@@ -825,6 +825,11 @@
           "Microsoft.NETCore.Platforms": "1.1.0"
         }
       },
+      "Newtonsoft.Json/12.0.3": {
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
       "System.Buffers/4.5.1": {
         "compile": {
           "ref/netstandard2.0/System.Buffers.dll": {}
@@ -896,10 +901,17 @@
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
         }
       },
+      "System.Threading.Thread/4.3.0": {
+        "dependencies": {
+          "System.Runtime": "4.3.0"
+        }
+      },
       "StarDate/1.0.7": {
         "dependencies": {
           "NETStandard.Library": "2.0.3",
-          "System.Diagnostics.Contracts": "4.3.0"
+          "Newtonsoft.Json": "12.0.3",
+          "System.Diagnostics.Contracts": "4.3.0",
+          "System.Threading.Thread": "4.3.0"
         },
         "compile": {
           "StarLib.dll": {}
@@ -1011,7 +1023,7 @@
           "System.Threading.Overlapped": "4.0.3.0",
           "System.Threading.Tasks": "4.0.11.0",
           "System.Threading.Tasks.Parallel": "4.0.1.0",
-          "System.Threading.Thread": "4.0.2.0",
+          "System.Threading.Thread.Reference": "4.0.2.0",
           "System.Threading.ThreadPool": "4.0.12.0",
           "System.Threading.Timer": "4.0.1.0",
           "System.Transactions": "4.0.0.0",
@@ -1184,6 +1196,14 @@
           "Microsoft.NETCore.Platforms": "1.1.0"
         }
       },
+      "Newtonsoft.Json/12.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
+          }
+        }
+      },
       "System.Buffers/4.5.1": {
         "runtime": {
           "lib/netstandard2.0/System.Buffers.dll": {
@@ -1285,10 +1305,23 @@
           }
         }
       },
+      "System.Threading.Thread/4.3.0": {
+        "dependencies": {
+          "System.Runtime": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Threading.Thread.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "4.6.24705.1"
+          }
+        }
+      },
       "StarDate/1.0.7": {
         "dependencies": {
           "NETStandard.Library": "2.0.3",
-          "System.Diagnostics.Contracts": "4.3.0"
+          "Newtonsoft.Json": "12.0.3",
+          "System.Diagnostics.Contracts": "4.3.0",
+          "System.Threading.Thread": "4.3.0"
         },
         "runtime": {
           "StarLib.dll": {}
@@ -1421,6 +1454,13 @@
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
+    "Newtonsoft.Json/12.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
+    },
     "System.Buffers/4.5.1": {
       "type": "package",
       "serviceable": true,
@@ -1490,6 +1530,13 @@
       "sha512": "sha512-zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
       "path": "system.threading.tasks.extensions/4.5.4",
       "hashPath": "system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+    },
+    "System.Threading.Thread/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OHmbT+Zz065NKII/ZHcH9XO1dEuLGI1L2k7uYss+9C1jLxTC9kTZZuzUOyXHayRk+dft9CiDf3I/QZ0t8JKyBQ==",
+      "path": "system.threading.thread/4.3.0",
+      "hashPath": "system.threading.thread.4.3.0.nupkg.sha512"
     },
     "StarDate/1.0.7": {
       "type": "project",
@@ -1981,7 +2028,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.Threading.Thread/4.0.2.0": {
+    "System.Threading.Thread.Reference/4.0.2.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""

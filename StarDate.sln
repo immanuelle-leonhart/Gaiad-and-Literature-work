@@ -7,15 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarLib", "StarLib\StarLib.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestConsole", "TestConsole\TestConsole.csproj", "{8A6468F0-6EBC-4985-B249-9F5446F1FFA9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zodiac", "Zodiac\Zodiac.csproj", "{D3FD5425-9EED-4DD5-A848-0D5881806447}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarLib.Forms", "StarLib.Forms\StarLib.Forms.csproj", "{150B28C4-0C32-4C98-AD01-152C072F1F23}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorDemonstration", "BlazorDemonstration\BlazorDemonstration.csproj", "{B42513C6-4A78-4983-A445-9DAE8BB43275}"
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "NodejsConsoleApp1", "NodejsConsoleApp1\NodejsConsoleApp1.njsproj", "{7F287AE8-CE75-4294-ACBE-D23CAD1F672E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarLib.Dynamic", "StarLib.Dynamic\StarLib.Dynamic.csproj", "{8B7DDC20-5259-456E-B32B-76044728707E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarLib.Dynamic", "StarLib.Dynamic\StarLib.Dynamic.csproj", "{8B7DDC20-5259-456E-B32B-76044728707E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarLibDesktop", "StarLibDesktop\StarLibDesktop.csproj", "{8824054A-BB60-4D04-9100-E8F6771FDD53}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,10 +31,6 @@ Global
 		{8A6468F0-6EBC-4985-B249-9F5446F1FFA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A6468F0-6EBC-4985-B249-9F5446F1FFA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A6468F0-6EBC-4985-B249-9F5446F1FFA9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D3FD5425-9EED-4DD5-A848-0D5881806447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D3FD5425-9EED-4DD5-A848-0D5881806447}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D3FD5425-9EED-4DD5-A848-0D5881806447}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D3FD5425-9EED-4DD5-A848-0D5881806447}.Release|Any CPU.Build.0 = Release|Any CPU
 		{150B28C4-0C32-4C98-AD01-152C072F1F23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{150B28C4-0C32-4C98-AD01-152C072F1F23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{150B28C4-0C32-4C98-AD01-152C072F1F23}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,6 +47,10 @@ Global
 		{8B7DDC20-5259-456E-B32B-76044728707E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B7DDC20-5259-456E-B32B-76044728707E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B7DDC20-5259-456E-B32B-76044728707E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8824054A-BB60-4D04-9100-E8F6771FDD53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8824054A-BB60-4D04-9100-E8F6771FDD53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8824054A-BB60-4D04-9100-E8F6771FDD53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8824054A-BB60-4D04-9100-E8F6771FDD53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

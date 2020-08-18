@@ -24,7 +24,7 @@ namespace StarLib.Forms
 
         public int MonthDays { get; protected set; }
         public int YearMonths { get; protected set; }
-        public long BaseYear { get; protected set; } = StarDate.Now.Year;
+        public int BaseYear { get; protected set; } = StarDate.Now.Year;
 
         public string[] Months
         {
