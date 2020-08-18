@@ -5343,11 +5343,11 @@
   "project": {
     "version": "1.0.7",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLib\\StarLib.csproj",
+      "projectUniqueName": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib\\StarLib.csproj",
       "projectName": "StarDate",
-      "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLib\\StarLib.csproj",
+      "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib\\StarLib.csproj",
       "packagesPath": "C:\\Users\\SiliconProphet\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLib\\obj\\",
+      "outputPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\SiliconProphet\\AppData\\Roaming\\NuGet\\NuGet.Config",
