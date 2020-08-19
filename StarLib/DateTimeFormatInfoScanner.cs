@@ -509,7 +509,7 @@ namespace StarLib
         internal String[] GetDateWordsOfDTFI(StarCulture dtfi)
         {
             // Enumarate all LongDatePatterns, and get the DateWords and scan for month postfix.
-            String[] datePatterns = dtfi.GetAllStarDatePatterns('D');
+            String[] datePatterns = dtfi.GetAllDateTimePatterns('D');
             int i;
 
             // Scan the long date patterns
@@ -519,13 +519,13 @@ namespace StarLib
             }
 
             // Scan the short date patterns
-            datePatterns = dtfi.GetAllStarDatePatterns('d');
+            datePatterns = dtfi.GetAllDateTimePatterns('d');
             for (i = 0; i < datePatterns.Length; i++)
             {
                 ScanDateWord(datePatterns[i]);
             }
             // Scan the YearMonth patterns.
-            datePatterns = dtfi.GetAllStarDatePatterns('y');
+            datePatterns = dtfi.GetAllDateTimePatterns('y');
             for (i = 0; i < datePatterns.Length; i++)
             {
                 ScanDateWord(datePatterns[i]);
@@ -535,14 +535,14 @@ namespace StarLib
             ScanDateWord(dtfi.MonthDayPattern);
 
             // Scan the long time patterns.
-            datePatterns = dtfi.GetAllStarDatePatterns('T');
+            datePatterns = dtfi.GetAllDateTimePatterns('T');
             for (i = 0; i < datePatterns.Length; i++)
             {
                 ScanDateWord(datePatterns[i]);
             }
 
             // Scan the short time patterns.
-            datePatterns = dtfi.GetAllStarDatePatterns('t');
+            datePatterns = dtfi.GetAllDateTimePatterns('t');
             for (i = 0; i < datePatterns.Length; i++)
             {
                 ScanDateWord(datePatterns[i]);

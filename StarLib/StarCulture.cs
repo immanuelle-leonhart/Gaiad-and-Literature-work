@@ -594,7 +594,83 @@ namespace StarLib
             }
         }
 
-        internal string[] GetAllStarDatePatterns(char v)
+        public String[] GetAllDateTimePatterns()
+        {
+            List<String> results = new List<String>(DEFAULT_ALL_DATETIMES_SIZE);
+
+            for (int i = 0; i < StarDateFormat.allStandardFormats.Length; i++)
+            {
+                String[] strings = GetAllDateTimePatterns(StarDateFormat.allStandardFormats[i]);
+                for (int j = 0; j < strings.Length; j++)
+                {
+                    results.Add(strings[j]);
+                }
+            }
+            return results.ToArray();
+        }
+
+
+        public String[] GetAllDateTimePatterns(char format)
+        {
+            Contract.Ensures(Contract.Result<String[]>() != null);
+            String[] result = null;
+
+            switch (format)
+            {
+                case 'd':
+                    result = this.AllShortDatePatterns;
+                    break;
+                case 'D':
+                    result = this.AllLongDatePatterns;
+                    break;
+                case 'f':
+                    result = GetCombinedPatterns(AllLongDatePatterns, AllShortTimePatterns, " ");
+                    break;
+                case 'F':
+                case 'U':
+                    result = GetCombinedPatterns(AllLongDatePatterns, AllLongTimePatterns, " ");
+                    break;
+                case 'g':
+                    result = GetCombinedPatterns(AllShortDatePatterns, AllShortTimePatterns, " ");
+                    break;
+                case 'G':
+                    result = GetCombinedPatterns(AllShortDatePatterns, AllLongTimePatterns, " ");
+                    break;
+                case 'm':
+                case 'M':
+                    result = new String[] { MonthDayPattern };
+                    break;
+                case 'o':
+                case 'O':
+                    result = new String[] { StarDateFormat.RoundtripFormat };
+                    break;
+                case 'r':
+                case 'R':
+                    result = new String[] { rfc1123Pattern };
+                    break;
+                case 's':
+                    result = new String[] { sortableDateTimePattern };
+                    break;
+                case 't':
+                    result = this.AllShortTimePatterns;
+                    break;
+                case 'T':
+                    result = this.AllLongTimePatterns;
+                    break;
+                case 'u':
+                    result = new String[] { UniversalSortableDateTimePattern };
+                    break;
+                case 'y':
+                case 'Y':
+                    result = this.AllYearMonthPatterns;
+                    break;
+                default:
+                    throw new ArgumentException(); //(Environment.GetResourceString("Format_BadFormatSpecifier"), "format");
+            }
+            return (result);
+        }
+
+        private string[] GetCombinedPatterns(string[] allLongDatePatterns, object allShortTimePatterns, string v)
         {
             throw new NotImplementedException();
         }
@@ -1674,13 +1750,13 @@ namespace StarLib
         }
 
 
-        //internal String[] GetAllStarDatePatterns()
+        //internal String[] GetAllDateTimePatterns()
         //{
         //    List<String> results = new List<String>(DEFAULT_ALL_StarDateS_SIZE);
 
         //    for (int i = 0; i < StarDateFormat.allStandardFormats.Length; i++)
         //    {
-        //        String[] strings = GetAllStarDatePatterns(StarDateFormat.allStandardFormats[i]);
+        //        String[] strings = GetAllDateTimePatterns(StarDateFormat.allStandardFormats[i]);
         //        for (int j = 0; j < strings.Length; j++)
         //        {
         //            results.Add(strings[j]);
@@ -1690,7 +1766,7 @@ namespace StarLib
         //}
 
 
-        //internal String[] GetAllStarDatePatterns(char format)
+        //internal String[] GetAllDateTimePatterns(char format)
         //{
         //    Contract.Ensures(Contract.Result<String[]>() != null);
         //    String[] result = null;
@@ -3046,6 +3122,40 @@ namespace StarLib
         public bool CAL_HEBREW { get => this.TwoLetterISO == "he"; }
         public string LanguageName { get => TwoLetterISO; }
         public string[] AbbreviatedEnglishEraNames { get; private set; }
+        public IEnumerable<string> DEFAULT_ALL_DATETIMES_SIZE { get; private set; }
+        public string[] AllShortDatePatterns { get; private set; }
+        public string[] AllLongDatePatterns
+        {
+            get
+            {
+                if (allLongDatePatterns1 == null)
+                {
+                    allLongDatePatterns1 = this.Culture.DateTimeFormat.AllLongDatePatterns;
+                }
+                return allLongDatePatterns1;
+            }
+        }
+        public string[] AllShortTimePatterns { get; private set; }
+
+        public string[] AllLongTimePatterns { get; private set; }
+        public string UniversalSortableDateTimePattern { get; private set; }
+        public string[] AllYearMonthPatterns { get; private set; }
+        public CultureInfo Culture
+        {
+            get
+            {
+                if (culture == null)
+                {
+                    culture = CultureInfo.CurrentCulture;
+                }
+                return culture;
+            }
+
+            private set
+            {
+                culture = value;
+            }
+        }
 
         internal bool TryToStarDate(int year, int v1, int v2, int hour, int minute, int second, int v3, int era, out StarDate time)
         {
@@ -3110,6 +3220,9 @@ namespace StarLib
         private bool preferExistingTokens;
         private string[] m_dateWords;
         private string languageName;
+        private string sortableDateTimePattern;
+        private string[] allLongDatePatterns1;
+        private CultureInfo culture;
 
         //
         // Create a Japanese DTFI which uses JapaneseCalendar.  This is used to parse
