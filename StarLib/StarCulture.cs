@@ -2840,7 +2840,22 @@ namespace StarLib
 
         public string[] AbbreviatedEraNames { get; private set; }
         public string[] EraNames { get; private set; }
-        public CompareInfo CompareInfo { get; internal set; }
+        public CompareInfo CompareInfo
+        {
+            get
+            {
+                if (compareInfo == null)
+                {
+                    throw new NotImplementedException();
+                }
+                return compareInfo;
+            }
+
+            internal set
+            {
+                compareInfo = value;
+            }
+        }
         public string DateSeparator { get => dateSeparator; internal set => dateSeparator = value; }
         public int[] Eras { get; internal set; }
         public bool HasForceTwoDigitYears { get; internal set; }
@@ -3233,6 +3248,7 @@ namespace StarLib
         private string[] allLongDatePatterns1;
         private CultureInfo culture;
         private string shortStarDatePattern;
+        private CompareInfo compareInfo;
 
         //
         // Create a Japanese DTFI which uses JapaneseCalendar.  This is used to parse

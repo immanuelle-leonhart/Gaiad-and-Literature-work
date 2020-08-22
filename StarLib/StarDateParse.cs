@@ -4945,6 +4945,8 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
         // The current character to be looked at.
         internal char m_current;
 
+        //internal int TestInt;
+
         private CompareInfo m_info;
         // Flag to indicate if we encouter an digit, we should check for token or not.
         // In some cultures, such as mn-MN, it uses "\x0031\x00a0\x0434\x04af\x0433\x044d\x044d\x0440\x00a0\x0441\x0430\x0440" in month names.
@@ -4979,6 +4981,8 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
         {
             get { return m_info; }
         }
+
+        public static object CurrentCulture { get => StarCulture.CurrentCulture; }
 
         //
         // Advance the Index.
