@@ -215,9 +215,9 @@ namespace StarLib
         internal const int k = 1000;
         internal static BigInteger TicksPerThousand = TicksPerAverageYear * 1000;
         internal const long DaysPer100k = 1282 * DaysPer78Years + 4 * DaysPerYear;
-        public static BigInteger TicksPer100k = (BigInteger) DaysPer100k * (BigInteger)TicksPerDay;
+        public static BigInteger TicksPer100k = (BigInteger)DaysPer100k * (BigInteger)TicksPerDay;
         internal const long DaysPerMillion = DaysPer100k * 10;
-        public static BigInteger TicksPerMillion = DaysPerMillion * (BigInteger) TicksPerDay;
+        public static BigInteger TicksPerMillion = DaysPerMillion * (BigInteger)TicksPerDay;
         private static readonly Time m = new Time(TicksPerMillion);
         internal const long DaysPerBillion = DaysPerMillion * 1000;
         public static BigInteger TicksPerBillion = TicksPerMillion * 1000;
@@ -317,14 +317,17 @@ namespace StarLib
         private StarZone _timeZone;
         private static IEnumerable<string> allFormats;
         private static IEnumerable<StarDate> testYear;
-        private static string defaultFormat = "yyyyy/MM/dd hh:mm:ss tt zzzz";
+
         private static StarDate maya1;
         public static bool LongDefault = false; //switches whether the default tostring method prints a long date or a short date
-        private static string currentCulture;
+        //private static string currentCulture;
         private static List<string> formats;
         private static bool acceptoverflow = false; //determines whether setters throw errors related to leap year overflows or set the date to the next year
         private static StarDate[] eras;
         private static int manuInt = -1;
+        //private static StarCulture currentCulture;
+
+        //private string defaultFormat;
 
         //private int era;
 
@@ -701,11 +704,11 @@ namespace StarLib
         {
             if (StarDate.LongDefault)
             {
-                return ToLongString();
+                return ToString(local.FullStarDatePattern);
             }
             else
             {
-                return ToShortString();
+                return ToString(local.ShortStarDatePattern);
             }
         }
 
@@ -755,7 +758,7 @@ namespace StarLib
             n -= y6 * DaysPerSixYears;
             int y1 = (int)(n / DaysPerYear);
             if (y1 == 6) y1 = 5;
-            if (part == DatePartYear) return 100 * k * (long) y100k + 78 * (long) y78 + 6 * (long)y6 + (long)y1;
+            if (part == DatePartYear) return 100 * k * (long)y100k + 78 * (long)y78 + 6 * (long)y6 + (long)y1;
             n -= y1 * DaysPerYear;
             int d = (int)n + 1;
             if (part == DatePartDayOfYear) return d;
@@ -793,7 +796,7 @@ namespace StarLib
                 n -= y6 * DaysPerSixYears;
                 int y1 = (int)(n / DaysPerYear);
                 if (y1 == 6) y1 = 5;
-                year = 100 * k * (long) y100k + 78 * (long) y78 + 6 * (long)y6 + (long)y1;
+                year = 100 * k * (long)y100k + 78 * (long)y78 + 6 * (long)y6 + (long)y1;
                 n -= y1 * DaysPerYear;
                 int d = (int)n + 1;
                 month = ((d - 1) / 28) + 1;
@@ -822,7 +825,7 @@ namespace StarLib
                 n -= y6 * DaysPerSixYears;
                 int y1 = (int)(n / DaysPerYear);
                 if (y1 == 6) y1 = 5;
-                year = 100 * k * (long) y100k + 78 * (long) y78 + 6 * (long)y6 + (long)y1;
+                year = 100 * k * (long)y100k + 78 * (long)y78 + 6 * (long)y6 + (long)y1;
                 n -= y1 * DaysPerYear;
                 int d = (int)n + 1;
                 month = ((d - 1) / 28) + 1;
@@ -1630,7 +1633,7 @@ namespace StarLib
             _timeZone = StarZone.GetStarZoneFromOffset(ticks, Offset);
         }
 
-        
+
 
 
 
@@ -1764,7 +1767,7 @@ namespace StarLib
             }
             else if (month == PlaceHolder)
             {
-                
+
             }
             else if (month < 1 || month > 14)
             {
@@ -3643,7 +3646,7 @@ namespace StarLib
         public static StarDate Parse(String s)
         {
             StarDate sd;
-            if(StarDate.TryDataParse(s, out sd))
+            if (StarDate.TryDataParse(s, out sd))
             {
                 return sd;
             }
@@ -3663,6 +3666,15 @@ namespace StarLib
         {
             StarCulture.ValidateStyles(styles, "styles");
             return (StarDateParse.Parse(s, StarCulture.GetInstance(provider), styles));
+        }
+
+        // Constructs a StarDate from a string. The string must specify a
+        // date and optionally a time in a culture-specific or universal format.
+        // Leading and trailing whitespace characters are allowed.
+        //
+        public static StarDate ParseExact(String s, String format)
+        {
+            return (StarDateParse.ParseExact(s, format));
         }
 
         // Constructs a StarDate from a string. The string must specify a
@@ -3890,7 +3902,7 @@ namespace StarLib
             set
             {
                 StarDate sd;
-                if(TryDataParse(value, out sd))
+                if (TryDataParse(value, out sd))
                 {
                     internalTicks = sd.internalTicks;
                     accuracy = sd.accuracy;
@@ -3898,6 +3910,10 @@ namespace StarLib
                 }
             }
         }
+
+        public static StarCulture CurrentCulture { get => StarCulture.CurrentCulture; private set => StarCulture.CurrentCulture = value; }
+
+        //"yyyyy/MM/dd hh:mm:ss tt zzzz"
 
         public static bool TryDataParse(string text, out StarDate converted)
         {
@@ -3924,22 +3940,22 @@ namespace StarLib
                 switch (data.Length)
                 {
                     case 1:
-                        converted = new StarDate(int.Parse(data[0]),  timeZone);
+                        converted = new StarDate(int.Parse(data[0]), timeZone);
                         return true;
                     case 2:
-                        converted = new StarDate(int.Parse(data[0]), int.Parse(data[1]),  timeZone);
+                        converted = new StarDate(int.Parse(data[0]), int.Parse(data[1]), timeZone);
                         return true;
                     case 3:
-                        converted = new StarDate(int.Parse(data[0]), int.Parse(data[1]), int.Parse(data[2]),  timeZone);
+                        converted = new StarDate(int.Parse(data[0]), int.Parse(data[1]), int.Parse(data[2]), timeZone);
                         return true;
                     case 4:
-                        converted = new StarDate(int.Parse(data[0]), int.Parse(data[1]), int.Parse(data[2]), int.Parse(data[3]),  timeZone);
+                        converted = new StarDate(int.Parse(data[0]), int.Parse(data[1]), int.Parse(data[2]), int.Parse(data[3]), timeZone);
                         return true;
                     case 5:
-                        converted = new StarDate(int.Parse(data[0]), int.Parse(data[1]), int.Parse(data[2]), int.Parse(data[3]), int.Parse(data[4]),  timeZone);
+                        converted = new StarDate(int.Parse(data[0]), int.Parse(data[1]), int.Parse(data[2]), int.Parse(data[3]), int.Parse(data[4]), timeZone);
                         return true;
                     case 6:
-                        converted = new StarDate(int.Parse(data[0]), int.Parse(data[1]), int.Parse(data[2]), int.Parse(data[3]), int.Parse(data[4]), int.Parse(data[5]),  timeZone);
+                        converted = new StarDate(int.Parse(data[0]), int.Parse(data[1]), int.Parse(data[2]), int.Parse(data[3]), int.Parse(data[4]), int.Parse(data[5]), timeZone);
                         return true;
                     case 7:
                         converted = new StarDate(int.Parse(data[0]), int.Parse(data[1]), int.Parse(data[2]), int.Parse(data[3]), int.Parse(data[4]), int.Parse(data[5]), int.Parse(data[6]), timeZone);
@@ -4092,6 +4108,44 @@ namespace StarLib
         public string Stored()
         {
             throw new NotImplementedException();
+        }
+
+        public string TestToStringAndParse()
+        {
+            return TestToStringAndParse(DefaultFormat);
+        }
+
+        public static string DefaultFormat
+        {
+            get
+            {
+                return defaultFormat();
+            }
+        }
+
+        private static string defaultFormat()
+        {
+            return defaultFormat(CurrentCulture);
+        }
+
+        private static string defaultFormat(StarCulture local)
+        {
+            if (StarDate.LongDefault)
+            {
+                return local.FullStarDatePattern;
+            }
+            else
+            {
+                return local.ShortStarDatePattern;
+            }
+        }
+
+        public string TestToStringAndParse(string v)
+        {
+            string ts = ToString(v);
+            Console.WriteLine(ts);
+            this = ParseExact(ts, v);
+            return ToString(v);
         }
     }
 }
