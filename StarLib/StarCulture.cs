@@ -2084,20 +2084,20 @@ namespace StarLib
         }
 
         //
-        // Get suitable CompareInfo from current sdfi object.
+        // Get suitable StarCompareInfo from current sdfi object.
         //
-        //internal CompareInfo CompareInfo
+        //internal StarCompareInfo StarCompareInfo
         //{
         //    get
         //    {
-        //        if (m_compareInfo == null)
+        //        if (m_starCompareInfo == null)
         //        {
-        //            // We use the regular GetCompareInfo here to make sure the created CompareInfo object is stored in the
-        //            // CompareInfo cache. otherwise we would just create CompareInfo using m_cultureData.
-        //            m_compareInfo = CompareInfo.GetCompareInfo(SCOMPAREINFO);
+        //            // We use the regular GetStarCompareInfo here to make sure the created StarCompareInfo object is stored in the
+        //            // StarCompareInfo cache. otherwise we would just create StarCompareInfo using m_cultureData.
+        //            m_starCompareInfo = StarCompareInfo.GetStarCompareInfo(SCOMPAREINFO);
         //        }
 
-        //        return m_compareInfo;
+        //        return m_starCompareInfo;
         //    }
         //}
 
@@ -2840,20 +2840,20 @@ namespace StarLib
 
         public string[] AbbreviatedEraNames { get; private set; }
         public string[] EraNames { get; private set; }
-        public CompareInfo CompareInfo
+        public StarCompareInfo StarCompareInfo
         {
             get
             {
-                if (compareInfo == null)
+                if (starCompareInfo == null)
                 {
                     throw new NotImplementedException();
                 }
-                return compareInfo;
+                return starCompareInfo;
             }
 
             internal set
             {
-                compareInfo = value;
+                starCompareInfo = value;
             }
         }
         public string DateSeparator { get => dateSeparator; internal set => dateSeparator = value; }
@@ -3248,7 +3248,7 @@ namespace StarLib
         private string[] allLongDatePatterns1;
         private CultureInfo culture;
         private string shortStarDatePattern;
-        private CompareInfo compareInfo;
+        private StarCompareInfo starCompareInfo;
 
         //
         // Create a Japanese DTFI which uses JapaneseCalendar.  This is used to parse

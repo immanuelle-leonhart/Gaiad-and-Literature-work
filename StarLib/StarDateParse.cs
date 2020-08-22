@@ -467,7 +467,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
                 return false;
             }
 
-            if (str.CompareInfo.Compare(str.Value, str.Index, length,
+            if (str.StarCompareInfo.Compare(str.Value, str.Index, length,
                                         target, 0, length, CompareOptions.IgnoreCase) != 0)
             {
                 return (false);
@@ -4947,7 +4947,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
 
         //internal int TestInt;
 
-        private CompareInfo m_info;
+        private StarCompareInfo m_info;
         // Flag to indicate if we encouter an digit, we should check for token or not.
         // In some cultures, such as mn-MN, it uses "\x0031\x00a0\x0434\x04af\x0433\x044d\x044d\x0440\x00a0\x0441\x0430\x0440" in month names.
         private bool m_checkDigitToken;
@@ -4966,18 +4966,18 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             m_current = '\0';
             if (dtfi != null)
             {
-                m_info = dtfi.CompareInfo;
+                m_info = dtfi.StarCompareInfo;
                 m_checkDigitToken = ((dtfi.FormatFlags & StarDateFormatFlags.UseDigitPrefixInTokens) != 0);
             }
             else
             {
                 throw new NotImplementedException();
-                //m_info = Thread.CurrentThread.CurrentCulture.CompareInfo;
+                //m_info = Thread.CurrentThread.CurrentCulture.StarCompareInfo;
                 //m_checkDigitToken = false;
             }
         }
 
-        internal CompareInfo CompareInfo
+        internal StarCompareInfo StarCompareInfo
         {
             get { return m_info; }
         }
