@@ -51,6 +51,11 @@ namespace StarLib
         internal static bool enableAmPmParseAdjustment = GetAmPmParseFlag();
 #endif
 
+        internal static StarDate ParseExact(String s, String format)
+        {
+            return ParseExact(s, format, CurrentCulture, StarDateStyles.None);
+        }
+
         internal static StarDate ParseExact(String s, String format, StarCulture dtfi, StarDateStyles style)
         {
             StarDateResult result = new StarDateResult();       // The buffer to store the parsing result.
@@ -444,6 +449,8 @@ new DS[] { DS.ERROR, DS.TX_NN,   DS.TX_NN,   DS.TX_NN,   DS.ERROR,   DS.T_NNt,  
 new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,   DS.ERROR,   DS.ERROR,   DS.ERROR,   DS.ERROR,   DS.T_S,         DS.T_NNt,     DS.ERROR,   DS.ERROR,   DS.ERROR,   DS.T_NNt,   DS.T_NNt,   DS.TX_NNN},
 
 };
+        //private static StarCulture currentCulture;
+
         //          End       NumEnd      NumAmPm     NumSpace    NumDaySep   NumTimesep  MonthEnd    MonthSpace  MonthDSep   NumDateSuff NumTimeSuff     DayOfWeek     YearSpace   YearDateSep YearEnd     TimeZone    Era        UTCMark
 
         internal const String GMTName = "GMT";
@@ -1330,6 +1337,8 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
         private const int ORDER_MY = 5;     // Month/Year order.
         private const int ORDER_MD = 6;     // Month/Day order.
         private const int ORDER_DM = 7;     // Day/Month order.
+
+        public static StarCulture CurrentCulture { get => StarCulture.CurrentCulture; private set => StarCulture.CurrentCulture = value; }
 
         //
         // Decide the year/month/day order from the datePattern.
@@ -3974,7 +3983,8 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
                     //    tempYear = 1;
                     //    parseResult = true;
                     //}
-                    /*else */if (dtfi.HasForceTwoDigitYears)
+                    /*else */
+                    if (dtfi.HasForceTwoDigitYears)
                     {
                         parseResult = ParseDigits(ref str, 1, 4, out tempYear);
                     }
@@ -4961,7 +4971,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             {
                 throw new NotImplementedException();
                 //m_info = Thread.CurrentThread.CurrentCulture.CompareInfo;
-                m_checkDigitToken = false;
+                //m_checkDigitToken = false;
             }
         }
 
@@ -5260,6 +5270,16 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             {
                 return false;
             }
+
+            
+
+            if (m_info == null)
+            {
+                Console.WriteLine(m_info == null);
+                throw new NullReferenceException();
+            }
+
+
 
             if (m_info.Compare(Value, Index, str.Length, str, 0, str.Length, CompareOptions.Ordinal) == 0)
             {

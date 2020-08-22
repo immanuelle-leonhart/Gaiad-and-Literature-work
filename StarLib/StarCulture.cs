@@ -95,6 +95,10 @@ namespace StarLib
             {
                 return currentCulture;
             }
+            set
+            {
+                throw new NotImplementedException();
+            }
         }
 
         public static StarCulture InvariantCulture { get => invariantCulture; }
@@ -151,7 +155,7 @@ namespace StarLib
             StarCulture Arabic = new StarCulture("Arabic", "ar", "القوس", "الجدي", "الدلو", "الحوت", "الحمل", "الثور", "الجوزاء", "السرطان", "الأسد", "العذراء", "الميزان", "العقرب", "الحواء", "ذو_القرنين");
             // Formats
             InvariantCulture.saShortDates = new String[] { "MM/dd/yyyy", "yyyy-MM-dd" };          // short date format
-            InvariantCulture.saLongDates = new String[] { "dddd, dd MMMM yyyy" };                 // long date format
+            InvariantCulture.saLongDates = new String[] { "WWWW, dd MMMM yyyy" };                 // long date format
             InvariantCulture.saYearMonths = new String[] { "yyyy MMMM" };                         // Year month format
             InvariantCulture.sMonthDay = "MMMM dd";                                            // Month day pattern
 
@@ -171,8 +175,8 @@ namespace StarLib
             InvariantCulture.TimeSeparator = ":";
             InvariantCulture.SAM1159 = "AM";                   // AM designator
             InvariantCulture.SPM2359 = "PM";                   // PM designator
-            InvariantCulture._longtimes = new string[] { "HH:mm:ss" };                             // time format
-            InvariantCulture._saShortTimes = new string[] { "HH:mm", "hh:mm tt", "H:mm", "h:mm tt" }; // short time format
+            InvariantCulture.saLongTimes = new string[] { "HH:mm:ss" };                             // time format
+            InvariantCulture.saShortTimes = new string[] { "HH:mm", "hh:mm tt", "H:mm", "h:mm tt" }; // short time format
             InvariantCulture._saDurationFormats = new string[] { "HH:mm:ss" };                             // time duration format
             InvariantCulture.shortTimePattern = "h:mm tt";
             InvariantCulture.longTimePattern = "HH:mm:ss";
@@ -581,16 +585,16 @@ namespace StarLib
         {
             get
             {
-                if (this._longtimes == null)
+                if (this.saLongTimes == null)
                 {
-                    this._longtimes = InvariantCulture._longtimes;
+                    this.saLongTimes = InvariantCulture.saLongTimes;
                 }
-                return _longtimes;
+                return saLongTimes;
             }
 
             set
             {
-                _longtimes = value;
+                saLongTimes = value;
             }
         }
 
@@ -922,9 +926,9 @@ namespace StarLib
         //[NonSerialized]
         internal String[] m_genitiveAbbreviatedMonthNames = null;
         //[NonSerialized]
-        private string[] _longtimes;
+        private string[] saLongTimes;
         //[NonSerialized]
-        private string[] _saShortTimes;
+        private string[] saShortTimes;
         //[NonSerialized]
         private string[] _saDurationFormats;
 
@@ -1162,7 +1166,22 @@ namespace StarLib
 
 
 
+        internal String ShortStarDatePattern
+        {
+            get
+            {
+                if (shortStarDatePattern == null)
+                {
+                    shortStarDatePattern = ShortDatePattern + " " + ShortTimePattern;
+                }
+                return (shortStarDatePattern);
+            }
 
+            set
+            {
+                shortStarDatePattern = value;
+            }
+        }
 
 
         internal String FullStarDatePattern
@@ -3123,21 +3142,11 @@ namespace StarLib
         public string LanguageName { get => TwoLetterISO; }
         public string[] AbbreviatedEnglishEraNames { get; private set; }
         public IEnumerable<string> DEFAULT_ALL_DATETIMES_SIZE { get; private set; }
-        public string[] AllShortDatePatterns { get; private set; }
-        public string[] AllLongDatePatterns
-        {
-            get
-            {
-                if (allLongDatePatterns1 == null)
-                {
-                    allLongDatePatterns1 = this.Culture.DateTimeFormat.AllLongDatePatterns;
-                }
-                return allLongDatePatterns1;
-            }
-        }
-        public string[] AllShortTimePatterns { get; private set; }
+        public string[] AllShortDatePatterns => saShortDates;
+        public string[] AllLongDatePatterns => saLongDates;
+        public string[] AllShortTimePatterns => saShortTimes;
 
-        public string[] AllLongTimePatterns { get; private set; }
+        public string[] AllLongTimePatterns => saLongTimes;
         public string UniversalSortableDateTimePattern { get; private set; }
         public string[] AllYearMonthPatterns { get; private set; }
         public CultureInfo Culture
@@ -3223,6 +3232,7 @@ namespace StarLib
         private string sortableDateTimePattern;
         private string[] allLongDatePatterns1;
         private CultureInfo culture;
+        private string shortStarDatePattern;
 
         //
         // Create a Japanese DTFI which uses JapaneseCalendar.  This is used to parse
@@ -3363,7 +3373,7 @@ namespace StarLib
                 // This is determined in StarDateFormatInfoScanner.  Use this flag to determine if we should treat date separator as ignorable symbol.
                 bool useDateSepAsIgnorableSymbol = false;
 
-                String monthPostfix = null;
+                //String monthPostfix = null;
                 if (dateWords != null)
                 {
                     throw new NotImplementedException();
