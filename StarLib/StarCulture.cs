@@ -3181,6 +3181,19 @@ namespace StarLib
             }
         }
 
+        public string SortName
+        {
+            get
+            {
+                return sortName;
+            }
+
+            internal set
+            {
+                sortName = value;
+            }
+        }
+
         internal bool TryToStarDate(int year, int v1, int v2, int hour, int minute, int second, int v3, int era, out StarDate time)
         {
             throw new NotImplementedException();
@@ -3249,6 +3262,7 @@ namespace StarLib
         private CultureInfo culture;
         private string shortStarDatePattern;
         private StarCompareInfo starCompareInfo;
+        private string sortName;
 
         //
         // Create a Japanese DTFI which uses JapaneseCalendar.  This is used to parse

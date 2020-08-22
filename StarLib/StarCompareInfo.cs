@@ -15,30 +15,20 @@
 //
 ////////////////////////////////////////////////////////////////////////////
 
+
+//
+// We pass all of the sorting calls to the native side, preferrably to the OS to do
+// the actual work.
+//
+
+using System;
+using System.Reflection;
+using System.Runtime.InteropServices;
+using System.Diagnostics.Contracts;
+using System.Globalization;
+
 namespace StarLib
 {
-
-    //
-    // We pass all of the sorting calls to the native side, preferrably to the OS to do
-    // the actual work.
-    //
-
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Reflection;
-    using System.Runtime.Serialization;
-    using System.Runtime.CompilerServices;
-    using System.Runtime.ConstrainedExecution;
-    using System.Runtime.InteropServices;
-    using System.Runtime.Versioning;
-    using System.Threading;
-    using System.Security.Permissions;
-    using Microsoft.Win32;
-    using System.Security;
-    using System.Security.Principal;
-    using System.Diagnostics.Contracts;
-
     //
     //  Options can be used during string comparison.
     //
@@ -98,7 +88,7 @@ namespace StarLib
         // The interesting part is that since haw-US doesn't have its own sort, it has to point at another
         // locale, which is what SCOMPAREINFO does.
 
-        [OptionalField(VersionAdded = 2)]
+        //[OptionalField(VersionAdded = 2)]
         private String m_name;  // The name used to construct this StarCompareInfo
 
         [NonSerialized]
@@ -118,7 +108,7 @@ namespace StarLib
         ////////////////////////////////////////////////////////////////////////
         // Constructs an instance that most closely corresponds to the NLS locale
         // identifier.
-        internal StarCompareInfo(CultureInfo culture)
+        internal StarCompareInfo(StarCulture culture)
         {
             this.m_name = culture.m_name;
             this.m_sortName = culture.SortName;
@@ -147,7 +137,7 @@ namespace StarLib
                 throw new ArgumentNullException("assembly");
             }
             if (assembly!=typeof(Object).Module.Assembly) {
-                throw new ArgumentException(Environment.GetResourceString("Argument_OnlyMscorlib"));
+                throw new ArgumentException(); //(Environment.GetResourceString("Argument_OnlyMscorlib"));
             }
             Contract.EndContractBlock();
 
@@ -175,11 +165,11 @@ namespace StarLib
                 throw new ArgumentNullException(name == null ? "name" : "assembly");
             }
             Contract.EndContractBlock();
-
-            if (assembly != typeof(Object).Module.Assembly)
-            {
-                throw new ArgumentException(Environment.GetResourceString("Argument_OnlyMscorlib"));
-            }
+            throw new NotImplementedException();
+            //if (assembly != typeof(Object).Module.Assembly)
+            //{
+            //    throw new ArgumentException(); //(Environment.GetResourceString("Argument_OnlyMscorlib"));
+            //}
 
             return GetStarCompareInfo(name);
         }
@@ -201,10 +191,10 @@ namespace StarLib
             if (CultureData.IsCustomCultureId(culture))
             {
                 // Customized culture cannot be created by the LCID.
-                throw new ArgumentException(Environment.GetResourceString("Argument_CustomCultureCannotBePassedByNumber", "culture"));
+                throw new ArgumentException(); //(Environment.GetResourceString("Argument_CustomCultureCannotBePassedByNumber", "culture"));
             }
 
-            return CultureInfo.GetCultureInfo(culture).StarCompareInfo;
+            return StarCulture.GetStarCulture(culture).StarCompareInfo;
         }
 #endif
 
@@ -225,7 +215,7 @@ namespace StarLib
             }
             Contract.EndContractBlock();
 
-            return CultureInfo.GetCultureInfo(name).StarCompareInfo;
+            return StarCulture.GetStarCulture(name).StarCompareInfo;
         }
 
         [System.Runtime.InteropServices.ComVisible(false)]
@@ -250,7 +240,7 @@ namespace StarLib
                 return (false);
             }
 
-            StarCompareInfo c = CultureInfo.InvariantCulture.StarCompareInfo;
+            StarCompareInfo c = StarCulture.InvariantCulture.StarCompareInfo;
 
             return (InternalIsSortable(c.m_dataHandle, c.m_handleOrigin, c.m_sortName, text, text.Length));
         }
@@ -273,17 +263,17 @@ namespace StarLib
 
         private void OnDeserialized()
         {
-            CultureInfo ci;
+            StarCulture ci;
             // If we didn't have a name, use the LCID
             if (this.m_name == null)
             {
                 // From whidbey, didn't have a name
-                ci = CultureInfo.GetCultureInfo(this.culture);
+                ci = StarCulture.GetStarCulture(this.culture);
                 this.m_name = ci.m_name;
             }
             else
             {
-                ci = CultureInfo.GetCultureInfo(m_name);
+                ci = StarCulture.GetStarCulture(m_name);
             }
             this.m_sortName = ci.SortName;
 
@@ -303,7 +293,7 @@ namespace StarLib
         private void OnSerializing(StreamingContext ctx)
         {
             // This is merely for serialization compatibility with Whidbey/Orcas, it can go away when we don't want that compat any more.
-            culture = CultureInfo.GetCultureInfo(this.Name).LCID; // This is the lcid of the constructing culture (still have to dereference to get target sort)
+            culture = StarCulture.GetStarCulture(this.Name).LCID; // This is the lcid of the constructing culture (still have to dereference to get target sort)
             Contract.Assert(m_name != null, "StarCompareInfo.OnSerializing - expected m_name to be set already");
         }
 
@@ -426,14 +416,14 @@ namespace StarLib
             {
                 if (options != CompareOptions.Ordinal)
                 {
-                    throw new ArgumentException(Environment.GetResourceString("Argument_CompareOptionOrdinal"), "options");
+                    throw new ArgumentException(); //(Environment.GetResourceString("Argument_CompareOptionOrdinal"), "options");
                 }
                 return String.CompareOrdinal(string1, string2);
             }
 
             if ((options & ValidCompareMaskOffFlags) != 0)
             {
-                throw new ArgumentException(Environment.GetResourceString("Argument_InvalidFlag"), "options");
+                throw new ArgumentException(); //(Environment.GetResourceString("Argument_InvalidFlag"), "options");
             }
 
             //Our paradigm is that null sorts less than any other string and
@@ -501,31 +491,31 @@ namespace StarLib
             // Verify inputs
             if (length1 < 0 || length2 < 0)
             {
-                throw new ArgumentOutOfRangeException((length1 < 0) ? "length1" : "length2", Environment.GetResourceString("ArgumentOutOfRange_NeedPosNum"));
+                throw new ArgumentOutOfRangeException();//((length1 < 0) ? "length1" : "length2", Environment.GetResourceString("ArgumentOutOfRange_NeedPosNum"));
             }
             if (offset1 < 0 || offset2 < 0)
             {
-                throw new ArgumentOutOfRangeException((offset1 < 0) ? "offset1" : "offset2", Environment.GetResourceString("ArgumentOutOfRange_NeedPosNum"));
+                throw new ArgumentOutOfRangeException();//((offset1 < 0) ? "offset1" : "offset2", Environment.GetResourceString("ArgumentOutOfRange_NeedPosNum"));
             }
             if (offset1 > (string1 == null ? 0 : string1.Length) - length1)
             {
-                throw new ArgumentOutOfRangeException("string1", Environment.GetResourceString("ArgumentOutOfRange_OffsetLength"));
+                throw new ArgumentOutOfRangeException();//("string1", Environment.GetResourceString("ArgumentOutOfRange_OffsetLength"));
             }
             if (offset2 > (string2 == null ? 0 : string2.Length) - length2)
             {
-                throw new ArgumentOutOfRangeException("string2", Environment.GetResourceString("ArgumentOutOfRange_OffsetLength"));
+                throw new ArgumentOutOfRangeException();//("string2", Environment.GetResourceString("ArgumentOutOfRange_OffsetLength"));
             }
             if ((options & CompareOptions.Ordinal) != 0)
             {
                 if (options != CompareOptions.Ordinal)
                 {
-                    throw new ArgumentException(Environment.GetResourceString("Argument_CompareOptionOrdinal"),
-                                                "options");
+                    throw new ArgumentException(); //(Environment.GetResourceString("Argument_CompareOptionOrdinal"),
+                                                //"options");
                 }
             }
             else if ((options & ValidCompareMaskOffFlags) != 0)
             {
-                throw new ArgumentException(Environment.GetResourceString("Argument_InvalidFlag"), "options");
+                throw new ArgumentException(); //(Environment.GetResourceString("Argument_InvalidFlag"), "options");
             }
 
             //
@@ -558,13 +548,14 @@ namespace StarLib
         [System.Security.SecurityCritical]
         private static int CompareOrdinal(string string1, int offset1, int length1, string string2, int offset2, int length2)
         {
-            int result = String.nativeCompareOrdinalEx(string1, offset1, string2, offset2,
-                                                       (length1 < length2 ? length1 : length2));
-            if ((length1 != length2) && result == 0)
-            {
-                return (length1 > length2 ? 1 : -1);
-            }
-            return (result);
+            throw new NotImplementedException();
+            //int result = String.nativeCompareOrdinalEx(string1, offset1, string2, offset2,
+            //                                           (length1 < length2 ? length1 : length2));
+            //if ((length1 != length2) && result == 0)
+            //{
+            //    return (length1 > length2 ? 1 : -1);
+            //}
+            //return (result);
         }
 
         ////////////////////////////////////////////////////////////////////////
@@ -577,51 +568,51 @@ namespace StarLib
         ////////////////////////////////////////////////////////////////////////
 
 
-        [System.Security.SecuritySafeCritical]  // auto-generated
-        public unsafe virtual bool IsPrefix(String source, String prefix, CompareOptions options)
-        {
-            if (source == null || prefix == null)
-            {
-                throw new ArgumentNullException((source == null ? "source" : "prefix"),
-                    Environment.GetResourceString("ArgumentNull_String"));
-            }
-            Contract.EndContractBlock();
-            int prefixLen = prefix.Length;
+        //[System.Security.SecuritySafeCritical]  // auto-generated
+        //public unsafe virtual bool IsPrefix(String source, String prefix, CompareOptions options)
+        //{
+        //    if (source == null || prefix == null)
+        //    {
+        //        throw new ArgumentNullException((source == null ? "source" : "prefix"),
+        //            Environment.GetResourceString("ArgumentNull_String"));
+        //    }
+        //    Contract.EndContractBlock();
+        //    int prefixLen = prefix.Length;
 
-            if (prefixLen == 0)
-            {
-                return (true);
-            }
+        //    if (prefixLen == 0)
+        //    {
+        //        return (true);
+        //    }
 
-            if (options == CompareOptions.OrdinalIgnoreCase)
-            {
-                return source.StartsWith(prefix, StringComparison.OrdinalIgnoreCase);
-            }
+        //    if (options == CompareOptions.OrdinalIgnoreCase)
+        //    {
+        //        return source.StartsWith(prefix, StringComparison.OrdinalIgnoreCase);
+        //    }
 
-            if (options == CompareOptions.Ordinal)
-            {
-                return source.StartsWith(prefix, StringComparison.Ordinal);
-            }
+        //    if (options == CompareOptions.Ordinal)
+        //    {
+        //        return source.StartsWith(prefix, StringComparison.Ordinal);
+        //    }
 
-            if ((options & ValidIndexMaskOffFlags) != 0)
-            {
-                throw new ArgumentException(Environment.GetResourceString("Argument_InvalidFlag"), "options");
-            }
+        //    if ((options & ValidIndexMaskOffFlags) != 0)
+        //    {
+        //        throw new ArgumentException(); //(Environment.GetResourceString("Argument_InvalidFlag"), "options");
+        //    }
 
 
-            // to let the sorting DLL do the call optimization in case of Ascii strings, we check if the strings are in Ascii and then send the flag RESERVED_FIND_ASCII_STRING  to 
-            // the sorting DLL API SortFindString so sorting DLL don't have to check if the string is Ascii with every call to SortFindString.
+        //    // to let the sorting DLL do the call optimization in case of Ascii strings, we check if the strings are in Ascii and then send the flag RESERVED_FIND_ASCII_STRING  to 
+        //    // the sorting DLL API SortFindString so sorting DLL don't have to check if the string is Ascii with every call to SortFindString.
 
-            return (InternalFindNLSStringEx(
-                        m_dataHandle, m_handleOrigin, m_sortName,
-                        GetNativeCompareFlags(options) | Win32Native.FIND_STARTSWITH | ((source.IsAscii() && prefix.IsAscii()) ? RESERVED_FIND_ASCII_STRING : 0),
-                        source, source.Length, 0, prefix, prefix.Length) > -1);
-        }
+        //    return (InternalFindNLSStringEx(
+        //                m_dataHandle, m_handleOrigin, m_sortName,
+        //                GetNativeCompareFlags(options) | Win32Native.FIND_STARTSWITH | ((source.IsAscii() && prefix.IsAscii()) ? RESERVED_FIND_ASCII_STRING : 0),
+        //                source, source.Length, 0, prefix, prefix.Length) > -1);
+        //}
 
-        public virtual bool IsPrefix(String source, String prefix)
-        {
-            return (IsPrefix(source, prefix, 0));
-        }
+        //public virtual bool IsPrefix(String source, String prefix)
+        //{
+        //    return (IsPrefix(source, prefix, 0));
+        //}
 
 
         ////////////////////////////////////////////////////////////////////////
@@ -634,50 +625,50 @@ namespace StarLib
         ////////////////////////////////////////////////////////////////////////
 
 
-        [System.Security.SecuritySafeCritical]  // auto-generated
-        public unsafe virtual bool IsSuffix(String source, String suffix, CompareOptions options)
-        {
-            if (source == null || suffix == null)
-            {
-                throw new ArgumentNullException((source == null ? "source" : "suffix"),
-                    Environment.GetResourceString("ArgumentNull_String"));
-            }
-            Contract.EndContractBlock();
-            int suffixLen = suffix.Length;
+        //[System.Security.SecuritySafeCritical]  // auto-generated
+        //public unsafe virtual bool IsSuffix(String source, String suffix, CompareOptions options)
+        //{
+        //    if (source == null || suffix == null)
+        //    {
+        //        throw new ArgumentNullException((source == null ? "source" : "suffix"),
+        //            Environment.GetResourceString("ArgumentNull_String"));
+        //    }
+        //    Contract.EndContractBlock();
+        //    int suffixLen = suffix.Length;
 
-            if (suffixLen == 0)
-            {
-                return (true);
-            }
+        //    if (suffixLen == 0)
+        //    {
+        //        return (true);
+        //    }
 
-            if (options == CompareOptions.OrdinalIgnoreCase)
-            {
-                return source.EndsWith(suffix, StringComparison.OrdinalIgnoreCase);
-            }
+        //    if (options == CompareOptions.OrdinalIgnoreCase)
+        //    {
+        //        return source.EndsWith(suffix, StringComparison.OrdinalIgnoreCase);
+        //    }
 
-            if (options == CompareOptions.Ordinal)
-            {
-                return source.EndsWith(suffix, StringComparison.Ordinal);
-            }
+        //    if (options == CompareOptions.Ordinal)
+        //    {
+        //        return source.EndsWith(suffix, StringComparison.Ordinal);
+        //    }
 
-            if ((options & ValidIndexMaskOffFlags) != 0)
-            {
-                throw new ArgumentException(Environment.GetResourceString("Argument_InvalidFlag"), "options");
-            }
+        //    if ((options & ValidIndexMaskOffFlags) != 0)
+        //    {
+        //        throw new ArgumentException(); //(Environment.GetResourceString("Argument_InvalidFlag"), "options");
+        //    }
 
-            // to let the sorting DLL do the call optimization in case of Ascii strings, we check if the strings are in Ascii and then send the flag RESERVED_FIND_ASCII_STRING  to 
-            // the sorting DLL API SortFindString so sorting DLL don't have to check if the string is Ascii with every call to SortFindString.
-            return InternalFindNLSStringEx(
-                        m_dataHandle, m_handleOrigin, m_sortName,
-                        GetNativeCompareFlags(options) | Win32Native.FIND_ENDSWITH | ((source.IsAscii() && suffix.IsAscii()) ? RESERVED_FIND_ASCII_STRING : 0),
-                        source, source.Length, source.Length - 1, suffix, suffix.Length) >= 0;
-        }
+        //    // to let the sorting DLL do the call optimization in case of Ascii strings, we check if the strings are in Ascii and then send the flag RESERVED_FIND_ASCII_STRING  to 
+        //    // the sorting DLL API SortFindString so sorting DLL don't have to check if the string is Ascii with every call to SortFindString.
+        //    return InternalFindNLSStringEx(
+        //                m_dataHandle, m_handleOrigin, m_sortName,
+        //                GetNativeCompareFlags(options) | Win32Native.FIND_ENDSWITH | ((source.IsAscii() && suffix.IsAscii()) ? RESERVED_FIND_ASCII_STRING : 0),
+        //                source, source.Length, source.Length - 1, suffix, suffix.Length) >= 0;
+        //}
 
 
-        public virtual bool IsSuffix(String source, String suffix)
-        {
-            return (IsSuffix(source, suffix, 0));
-        }
+        //public virtual bool IsSuffix(String source, String suffix)
+        //{
+        //    return (IsSuffix(source, suffix, 0));
+        //}
 
         ////////////////////////////////////////////////////////////////////////
         //
@@ -785,8 +776,8 @@ namespace StarLib
         }
 
         [System.Security.SecuritySafeCritical]  // auto-generated
-        [ResourceExposure(ResourceScope.None)]
-        [ResourceConsumption(ResourceScope.Process, ResourceScope.Process)]
+        //[ResourceExposure(ResourceScope.None)]
+        //[ResourceConsumption(ResourceScope.Process, ResourceScope.Process)]
         public unsafe virtual int IndexOf(String source, char value, int startIndex, int count, CompareOptions options)
         {
             // Validate inputs
@@ -794,10 +785,10 @@ namespace StarLib
                 throw new ArgumentNullException("source");
 
             if (startIndex < 0 || startIndex > source.Length)
-                throw new ArgumentOutOfRangeException("startIndex", Environment.GetResourceString("ArgumentOutOfRange_Index"));
+                throw new ArgumentOutOfRangeException();//  ("startIndex", Environment.GetResourceString("ArgumentOutOfRange_Index"));
 
             if (count < 0 || startIndex > source.Length - count)
-                throw new ArgumentOutOfRangeException("count", Environment.GetResourceString("ArgumentOutOfRange_Count"));
+                throw new ArgumentOutOfRangeException();//("count", Environment.GetResourceString("ArgumentOutOfRange_Count"));
             Contract.EndContractBlock();
 
             if (options == CompareOptions.OrdinalIgnoreCase)
@@ -809,13 +800,13 @@ namespace StarLib
             // Validate CompareOptions
             // Ordinal can't be selected with other flags
             if ((options & ValidIndexMaskOffFlags) != 0 && (options != CompareOptions.Ordinal))
-                throw new ArgumentException(Environment.GetResourceString("Argument_InvalidFlag"), "options");
+                throw new ArgumentOutOfRangeException();//(Environment.GetResourceString("Argument_InvalidFlag"), "options");
 
             // to let the sorting DLL do the call optimization in case of Ascii strings, we check if the strings are in Ascii and then send the flag RESERVED_FIND_ASCII_STRING  to 
             // the sorting DLL API SortFindString so sorting DLL don't have to check if the string is Ascii with every call to SortFindString.
             return InternalFindNLSStringEx(
                         m_dataHandle, m_handleOrigin, m_sortName,
-                        GetNativeCompareFlags(options) | Win32Native.FIND_FROMSTART | ((source.IsAscii() && (value <= '\x007f')) ? RESERVED_FIND_ASCII_STRING : 0),
+                        GetNativeCompareFlags(options) /*| Win32Native.FIND_FROMSTART | ((source.IsAscii() && (value <= '\x007f')) ? RESERVED_FIND_ASCII_STRING : 0)*/,
                         source, count, startIndex, new String(value, 1), 1);
         }
 
@@ -831,7 +822,7 @@ namespace StarLib
 
             if (startIndex > source.Length)
             {
-                throw new ArgumentOutOfRangeException("startIndex", Environment.GetResourceString("ArgumentOutOfRange_Index"));
+                throw new ArgumentOutOfRangeException();//("startIndex", Environment.GetResourceString("ArgumentOutOfRange_Index"));
             }
             Contract.EndContractBlock();
 
@@ -848,11 +839,11 @@ namespace StarLib
 
             if (startIndex < 0)
             {
-                throw new ArgumentOutOfRangeException("startIndex", Environment.GetResourceString("ArgumentOutOfRange_Index"));
+                throw new ArgumentOutOfRangeException();//("startIndex", Environment.GetResourceString("ArgumentOutOfRange_Index"));
             }
 
             if (count < 0 || startIndex > source.Length - count)
-                throw new ArgumentOutOfRangeException("count", Environment.GetResourceString("ArgumentOutOfRange_Count"));
+                throw new ArgumentOutOfRangeException();// ("count", Environment.GetResourceString("ArgumentOutOfRange_Count"));
 
             if (options == CompareOptions.OrdinalIgnoreCase)
             {
@@ -862,13 +853,13 @@ namespace StarLib
             // Validate CompareOptions
             // Ordinal can't be selected with other flags
             if ((options & ValidIndexMaskOffFlags) != 0 && (options != CompareOptions.Ordinal))
-                throw new ArgumentException(Environment.GetResourceString("Argument_InvalidFlag"), "options");
+                throw new ArgumentOutOfRangeException();//(Environment.GetResourceString("Argument_InvalidFlag"), "options");
 
             // to let the sorting DLL do the call optimization in case of Ascii strings, we check if the strings are in Ascii and then send the flag RESERVED_FIND_ASCII_STRING  to 
             // the sorting DLL API SortFindString so sorting DLL don't have to check if the string is Ascii with every call to SortFindString.
             return InternalFindNLSStringEx(
                         m_dataHandle, m_handleOrigin, m_sortName,
-                        GetNativeCompareFlags(options) | Win32Native.FIND_FROMSTART | ((source.IsAscii() && value.IsAscii()) ? RESERVED_FIND_ASCII_STRING : 0),
+                        GetNativeCompareFlags(options) /*| Win32Native.FIND_FROMSTART | ((source.IsAscii() && value.IsAscii()) ? RESERVED_FIND_ASCII_STRING : 0)*/,
                         source, count, startIndex, value, value.Length);
         }
 
@@ -970,8 +961,8 @@ namespace StarLib
 
 
         [System.Security.SecuritySafeCritical]  // auto-generated
-        [ResourceExposure(ResourceScope.None)]
-        [ResourceConsumption(ResourceScope.Process, ResourceScope.Process)]
+        //[ResourceExposure(ResourceScope.None)]
+        //[ResourceConsumption(ResourceScope.Process, ResourceScope.Process)]
         public unsafe virtual int LastIndexOf(String source, char value, int startIndex, int count, CompareOptions options)
         {
             // Verify Arguments
@@ -984,7 +975,7 @@ namespace StarLib
             if ((options & ValidIndexMaskOffFlags) != 0 &&
                 (options != CompareOptions.Ordinal) &&
                 (options != CompareOptions.OrdinalIgnoreCase))
-                throw new ArgumentException(Environment.GetResourceString("Argument_InvalidFlag"), "options");
+                throw new ArgumentException(); //(Environment.GetResourceString("Argument_InvalidFlag"), "options");
 
             // Special case for 0 length input strings
             if (source.Length == 0 && (startIndex == -1 || startIndex == 0))
@@ -992,7 +983,7 @@ namespace StarLib
 
             // Make sure we're not out of range
             if (startIndex < 0 || startIndex > source.Length)
-                throw new ArgumentOutOfRangeException("startIndex", Environment.GetResourceString("ArgumentOutOfRange_Index"));
+                throw new ArgumentOutOfRangeException();//("startIndex", Environment.GetResourceString("ArgumentOutOfRange_Index"));
 
             // Make sure that we allow startIndex == source.Length
             if (startIndex == source.Length)
@@ -1004,7 +995,7 @@ namespace StarLib
 
             // 2nd have of this also catches when startIndex == MAXINT, so MAXINT - 0 + 1 == -1, which is < 0.
             if (count < 0 || startIndex - count + 1 < 0)
-                throw new ArgumentOutOfRangeException("count", Environment.GetResourceString("ArgumentOutOfRange_Count"));
+                throw new ArgumentOutOfRangeException();//("count", Environment.GetResourceString("ArgumentOutOfRange_Count"));
 
             if (options == CompareOptions.OrdinalIgnoreCase)
             {
@@ -1016,7 +1007,7 @@ namespace StarLib
             // the sorting DLL API SortFindString so sorting DLL don't have to check if the string is Ascii with every call to SortFindString.
             return InternalFindNLSStringEx(
                         m_dataHandle, m_handleOrigin, m_sortName,
-                        GetNativeCompareFlags(options) | Win32Native.FIND_FROMEND | ((source.IsAscii() && (value <= '\x007f')) ? RESERVED_FIND_ASCII_STRING : 0),
+                        GetNativeCompareFlags(options) /*| Win32Native.FIND_FROMEND | ((source.IsAscii() && (value <= '\x007f')) ? RESERVED_FIND_ASCII_STRING : 0)*/,
                         source, count, startIndex, new String(value, 1), 1);
         }
 
@@ -1036,7 +1027,7 @@ namespace StarLib
             if ((options & ValidIndexMaskOffFlags) != 0 &&
                 (options != CompareOptions.Ordinal) &&
                 (options != CompareOptions.OrdinalIgnoreCase))
-                throw new ArgumentException(Environment.GetResourceString("Argument_InvalidFlag"), "options");
+                throw new ArgumentException(); //(Environment.GetResourceString("Argument_InvalidFlag"), "options");
 
             // Special case for 0 length input strings
             if (source.Length == 0 && (startIndex == -1 || startIndex == 0))
@@ -1044,7 +1035,7 @@ namespace StarLib
 
             // Make sure we're not out of range
             if (startIndex < 0 || startIndex > source.Length)
-                throw new ArgumentOutOfRangeException("startIndex", Environment.GetResourceString("ArgumentOutOfRange_Index"));
+                throw new ArgumentOutOfRangeException();//("startIndex", Environment.GetResourceString("ArgumentOutOfRange_Index"));
 
             // Make sure that we allow startIndex == source.Length
             if (startIndex == source.Length)
@@ -1060,7 +1051,7 @@ namespace StarLib
 
             // 2nd half of this also catches when startIndex == MAXINT, so MAXINT - 0 + 1 == -1, which is < 0.
             if (count < 0 || startIndex - count + 1 < 0)
-                throw new ArgumentOutOfRangeException("count", Environment.GetResourceString("ArgumentOutOfRange_Count"));
+                throw new ArgumentOutOfRangeException();//("count", Environment.GetResourceString("ArgumentOutOfRange_Count"));
 
             if (options == CompareOptions.OrdinalIgnoreCase)
             {
@@ -1071,7 +1062,7 @@ namespace StarLib
             // the sorting DLL API SortFindString so sorting DLL don't have to check if the string is Ascii with every call to SortFindString.
             return InternalFindNLSStringEx(
                         m_dataHandle, m_handleOrigin, m_sortName,
-                        GetNativeCompareFlags(options) | Win32Native.FIND_FROMEND | ((source.IsAscii() && value.IsAscii()) ? RESERVED_FIND_ASCII_STRING : 0),
+                        GetNativeCompareFlags(options) /*| Win32Native.FIND_FROMEND | ((source.IsAscii() && value.IsAscii()) ? RESERVED_FIND_ASCII_STRING : 0)*/,
                         source, count, startIndex, value, value.Length);
         }
 
@@ -1083,76 +1074,76 @@ namespace StarLib
         //  Gets the SortKey for the given string with the given options.
         //
         ////////////////////////////////////////////////////////////////////////
-#if !FEATURE_PAL
-        public unsafe virtual SortKey GetSortKey(String source, CompareOptions options)
-        {
-            return CreateSortKey(source, options);
-        }
+//#if !FEATURE_PAL
+//        public unsafe virtual SortKey GetSortKey(String source, CompareOptions options)
+//        {
+//            return CreateSortKey(source, options);
+//        }
 
 
-        public unsafe virtual SortKey GetSortKey(String source)
-        {
-            return CreateSortKey(source, CompareOptions.None);
-        }
+//        public unsafe virtual SortKey GetSortKey(String source)
+//        {
+//            return CreateSortKey(source, CompareOptions.None);
+//        }
 
-        [System.Security.SecuritySafeCritical]
-        private SortKey CreateSortKey(String source, CompareOptions options)
-        {
-            if (source == null) { throw new ArgumentNullException("source"); }
-            Contract.EndContractBlock();
+//        [System.Security.SecuritySafeCritical]
+//        private SortKey CreateSortKey(String source, CompareOptions options)
+//        {
+//            if (source == null) { throw new ArgumentNullException("source"); }
+//            Contract.EndContractBlock();
 
-            // Mask used to check if we have the right flags.
-            const CompareOptions ValidSortkeyCtorMaskOffFlags = ~(CompareOptions.IgnoreCase |
-                                                                  CompareOptions.IgnoreSymbols |
-                                                                  CompareOptions.IgnoreNonSpace |
-                                                                  CompareOptions.IgnoreWidth |
-                                                                  CompareOptions.IgnoreKanaType |
-                                                                  CompareOptions.StringSort);
+//            // Mask used to check if we have the right flags.
+//            const CompareOptions ValidSortkeyCtorMaskOffFlags = ~(CompareOptions.IgnoreCase |
+//                                                                  CompareOptions.IgnoreSymbols |
+//                                                                  CompareOptions.IgnoreNonSpace |
+//                                                                  CompareOptions.IgnoreWidth |
+//                                                                  CompareOptions.IgnoreKanaType |
+//                                                                  CompareOptions.StringSort);
 
-            if ((options & ValidSortkeyCtorMaskOffFlags) != 0)
-            {
-                throw new ArgumentException(Environment.GetResourceString("Argument_InvalidFlag"), "options");
-            }
-            byte[] keyData = null;
-            // The OS doesn't have quite the same behavior so we have to test for empty inputs
-            if (String.IsNullOrEmpty(source))
-            {
-                // Empty strings get an empty sort key
-                keyData = EmptyArray<Byte>.Value;
-                // Fake value to test though so we can verify our flags
-                source = "\x0000";
-            }
+//            if ((options & ValidSortkeyCtorMaskOffFlags) != 0)
+//            {
+//                throw new ArgumentException(); //(Environment.GetResourceString("Argument_InvalidFlag"), "options");
+//            }
+//            byte[] keyData = null;
+//            // The OS doesn't have quite the same behavior so we have to test for empty inputs
+//            if (String.IsNullOrEmpty(source))
+//            {
+//                // Empty strings get an empty sort key
+//                keyData = EmptyArray<Byte>.Value;
+//                // Fake value to test though so we can verify our flags
+//                source = "\x0000";
+//            }
 
-            int flags = GetNativeCompareFlags(options);
+//            int flags = GetNativeCompareFlags(options);
 
-            // Go ahead and call the OS
-            // First get the count
-            int length = InternalGetSortKey(m_dataHandle, m_handleOrigin, m_sortName, flags, source, source.Length, null, 0);
+//            // Go ahead and call the OS
+//            // First get the count
+//            int length = InternalGetSortKey(m_dataHandle, m_handleOrigin, m_sortName, flags, source, source.Length, null, 0);
 
-            // If there was an error, return an error
-            if (length == 0)
-            {
-                throw new ArgumentException(Environment.GetResourceString("Argument_InvalidFlag"), "source");
-            }
+//            // If there was an error, return an error
+//            if (length == 0)
+//            {
+//                throw new ArgumentException(); //(Environment.GetResourceString("Argument_InvalidFlag"), "source");
+//            }
 
-            // If input was empty, return the empty byte[] we made earlier and skip this
-            if (keyData == null)
-            {
-                // Make an appropriate byte array
-                keyData = new byte[length];
+//            // If input was empty, return the empty byte[] we made earlier and skip this
+//            if (keyData == null)
+//            {
+//                // Make an appropriate byte array
+//                keyData = new byte[length];
 
-                // Fill up the array
-                length = InternalGetSortKey(m_dataHandle, m_handleOrigin, m_sortName, flags, source, source.Length, keyData, keyData.Length);
-            }
-            else
-            {
-                source = String.Empty; // back to original
-            }
+//                // Fill up the array
+//                length = InternalGetSortKey(m_dataHandle, m_handleOrigin, m_sortName, flags, source, source.Length, keyData, keyData.Length);
+//            }
+//            else
+//            {
+//                source = String.Empty; // back to original
+//            }
 
-            return new SortKey(Name, source, options, keyData);
-        }
+//            return new SortKey(Name, source, options, keyData);
+//        }
 
-#endif // !FEATURE_PAL
+//#endif // !FEATURE_PAL
 
 
         ////////////////////////////////////////////////////////////////////////
@@ -1213,7 +1204,7 @@ namespace StarLib
 
             if (options == CompareOptions.OrdinalIgnoreCase)
             {
-                return TextInfo.GetHashCodeOrdinalIgnoreCase(source);
+                throw new NotImplementedException();// return TextInfo.GetHashCodeOrdinalIgnoreCase(source);
             }
 
             //
@@ -1239,13 +1230,13 @@ namespace StarLib
         //
         //  This method will never be made public itself, but public consumers of it could be created, e.g.:
         //
-        //      string.GetHashCode(CultureInfo)
+        //      string.GetHashCode(StarCulture)
         //      string.GetHashCode(StarCompareInfo)
-        //      string.GetHashCode(CultureInfo, CompareOptions)
+        //      string.GetHashCode(StarCulture, CompareOptions)
         //      string.GetHashCode(StarCompareInfo, CompareOptions)
         //      etc.
         //
-        //  (the methods above that take a CultureInfo would use CultureInfo.StarCompareInfo)
+        //  (the methods above that take a StarCulture would use StarCulture.StarCompareInfo)
         //
         ////////////////////////////////////////////////////////////////////////
         internal int GetHashCodeOfString(string source, CompareOptions options)
@@ -1266,7 +1257,7 @@ namespace StarLib
 
             if ((options & ValidHashCodeOfStringMaskOffFlags) != 0)
             {
-                throw new ArgumentException(Environment.GetResourceString("Argument_InvalidFlag"), "options");
+                throw new ArgumentException(); //(Environment.GetResourceString("Argument_InvalidFlag"), "options");
             }
             Contract.EndContractBlock();
 
@@ -1300,7 +1291,7 @@ namespace StarLib
         {
             get
             {
-                return CultureInfo.GetCultureInfo(this.Name).LCID;
+                return StarCulture.GetStarCulture(this.Name).LCID;
             }
         }
 #endif
@@ -1332,82 +1323,82 @@ namespace StarLib
             }
         }
 
-        [OptionalField(VersionAdded = 3)]
-        private SortVersion m_SortVersion;
+        //[OptionalField(VersionAdded = 3)]
+        //private SortVersion m_SortVersion;
 
-        public SortVersion Version
-        {
-            [SecuritySafeCritical]
-            get
-            {
-                if (m_SortVersion == null)
-                {
-                    Win32Native.NlsVersionInfoEx v = new Win32Native.NlsVersionInfoEx();
-                    v.dwNLSVersionInfoSize = Marshal.SizeOf(typeof(Win32Native.NlsVersionInfoEx));
-                    InternalGetNlsVersionEx(m_dataHandle, m_handleOrigin, m_sortName, ref v);
-                    m_SortVersion = new SortVersion(v.dwNLSVersion, (v.dwEffectiveId != 0) ? v.dwEffectiveId : LCID, v.guidCustomVersion);
-                }
+        //public SortVersion Version
+        //{
+        //    [SecuritySafeCritical]
+        //    get
+        //    {
+        //        if (m_SortVersion == null)
+        //        {
+        //            Win32Native.NlsVersionInfoEx v = new Win32Native.NlsVersionInfoEx();
+        //            v.dwNLSVersionInfoSize = Marshal.SizeOf(typeof(Win32Native.NlsVersionInfoEx));
+        //            InternalGetNlsVersionEx(m_dataHandle, m_handleOrigin, m_sortName, ref v);
+        //            m_SortVersion = new SortVersion(v.dwNLSVersion, (v.dwEffectiveId != 0) ? v.dwEffectiveId : LCID, v.guidCustomVersion);
+        //        }
 
-                return m_SortVersion;
-            }
-        }
+        //        return m_SortVersion;
+        //    }
+        //}
+
+        //[System.Security.SecurityCritical]
+        //[ResourceExposure(ResourceScope.None)]
+        //[DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
+        //[SuppressUnmanagedCodeSecurity]
+        //[return: MarshalAs(UnmanagedType.Bool)]
+        //private static extern bool InternalGetNlsVersionEx(IntPtr handle, IntPtr handleOrigin, String localeName, ref Win32Native.NlsVersionInfoEx lpNlsVersionInformation);
 
         [System.Security.SecurityCritical]
-        [ResourceExposure(ResourceScope.None)]
-        [DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
-        [SuppressUnmanagedCodeSecurity]
-        [return: MarshalAs(UnmanagedType.Bool)]
-        private static extern bool InternalGetNlsVersionEx(IntPtr handle, IntPtr handleOrigin, String localeName, ref Win32Native.NlsVersionInfoEx lpNlsVersionInformation);
-
-        [System.Security.SecurityCritical]
-        [ResourceExposure(ResourceScope.None)]
-        [DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
-        [SuppressUnmanagedCodeSecurity]
+        //[ResourceExposure(ResourceScope.None)]
+        //[DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
+        //[SuppressUnmanagedCodeSecurity]
         private static extern uint InternalGetSortVersion();
 
 #endif
         [System.Security.SecurityCritical]
-        [ResourceExposure(ResourceScope.None)]
-        [DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
-        [SuppressUnmanagedCodeSecurity]
+        //[ResourceExposure(ResourceScope.None)]
+        //[DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
+        //[SuppressUnmanagedCodeSecurity]
         private static extern IntPtr NativeInternalInitSortHandle(String localeName, out IntPtr handleOrigin);
 
         // Get a locale sensitive sort hash code from native code -- COMNlsInfo::InternalGetGlobalizedHashCode
         [System.Security.SecurityCritical]  // auto-generated
-        [ResourceExposure(ResourceScope.None)]
-        [DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
-        [SuppressUnmanagedCodeSecurity]
+        //[ResourceExposure(ResourceScope.None)]
+        //[DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
+        //[SuppressUnmanagedCodeSecurity]
         private static extern int InternalGetGlobalizedHashCode(IntPtr handle, IntPtr handleOrigin, string localeName, string source, int length, int dwFlags, bool forceRandomizedHashing, long additionalEntropy);
 
         // Use native API calls to see if this string is entirely defined -- COMNlsInfo::InternalIsSortable
         [System.Security.SecurityCritical]  // auto-generated
-        [ResourceExposure(ResourceScope.None)]
-        [DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
-        [SuppressUnmanagedCodeSecurity]
+        //[ResourceExposure(ResourceScope.None)]
+        //[DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
+        //[SuppressUnmanagedCodeSecurity]
         [return: MarshalAs(UnmanagedType.Bool)]
         private static extern bool InternalIsSortable(IntPtr handle, IntPtr handleOrigin, String localeName, String source, int length);
 
         // Compare a string using the native API calls -- COMNlsInfo::InternalCompareString
         [System.Security.SecurityCritical]  // auto-generated
-        [ResourceExposure(ResourceScope.Process)]
-        [DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
-        [SuppressUnmanagedCodeSecurity]
+        //[ResourceExposure(ResourceScope.Process)]
+        //[DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
+        //[SuppressUnmanagedCodeSecurity]
         private static extern int InternalCompareString(IntPtr handle, IntPtr handleOrigin, String localeName, String string1, int offset1, int length1,
                                                                               String string2, int offset2, int length2, int flags);
 
         // InternalFindNLSStringEx parameters is not exactly matching kernel32::FindNLSStringEx parameters.
-        // Call through to NewApis::FindNLSStringEx so we can get the right behavior
-        [System.Security.SecurityCritical]  // auto-generated
-        [ResourceExposure(ResourceScope.None)]
-        [DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
-        [SuppressUnmanagedCodeSecurity]
+        //// Call through to NewApis::FindNLSStringEx so we can get the right behavior
+        //[System.Security.SecurityCritical]  // auto-generated
+        //[ResourceExposure(ResourceScope.None)]
+        //[DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
+        //[SuppressUnmanagedCodeSecurity]
         private static extern int InternalFindNLSStringEx(IntPtr handle, IntPtr handleOrigin, String localeName, int flags, String source, int sourceCount, int startIndex, string target, int targetCount);
 
         // Call through to NewAPis::LCMapStringEx so we can get appropriate behavior for all platforms
         [System.Security.SecurityCritical]  // auto-generated
-        [ResourceExposure(ResourceScope.None)]
-        [DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
-        [SuppressUnmanagedCodeSecurity]
+        //[ResourceExposure(ResourceScope.None)]
+        //[DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
+        //[SuppressUnmanagedCodeSecurity]
         private static extern int InternalGetSortKey(IntPtr handle, IntPtr handleOrigin, String localeName, int flags, String source, int sourceCount, byte[] target, int targetCount);
     }
 }
