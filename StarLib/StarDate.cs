@@ -1910,7 +1910,7 @@ namespace StarLib
             }
             if (!isvalidhorus(year, month, day))
             {
-                throw new Exception("Invalid Leap Year");
+                throw new ArgumentOutOfRangeException("Invalid Leap Year");
             }
             else if (month == PlaceHolder)
             {
@@ -2278,14 +2278,14 @@ namespace StarLib
             }
             else
             {
-                return this + value * YearTime;
+                return Add(value, MillisPerYear);
             }
         }
 
         public StarDate AddYears(int value)
         {
             StarDate sd = this;
-            sd.Year += (int)value;
+            sd.Year += value;
             return sd;
         }
 
@@ -2984,11 +2984,11 @@ namespace StarLib
             {
                 StarDate dt = this;
                 dt.TimeZone = UTC;
-                long[] vs;
+                int[] vs;
                 dt.GetDatePart(out vs);
                 dt = new StarDate(value, vs[1], vs[2], vs[3], vs[4], vs[5], vs[6], vs[7], UTC);
-                dt--;
-                this.internalTicks = dt.internalTicks;
+                //dt--;
+                this.AdjustedTicks = dt.internalTicks;
             }
         }
 
@@ -4109,29 +4109,29 @@ namespace StarLib
                 switch (data.Length)
                 {
                     case 1:
-                        converted = new StarDate(int.Parse(data[0]), timeZone);
+                        converted = new StarDate(long.Parse(data[0]), timeZone);
                         return true;
                     case 2:
-                        converted = new StarDate(int.Parse(data[0]), int.Parse(data[1]), timeZone);
+                        converted = new StarDate(long.Parse(data[0]), long.Parse(data[1]), timeZone);
                         return true;
                     case 3:
-                        converted = new StarDate(int.Parse(data[0]), int.Parse(data[1]), int.Parse(data[2]), timeZone);
+                        converted = new StarDate(long.Parse(data[0]), long.Parse(data[1]), long.Parse(data[2]), timeZone);
                         return true;
                     case 4:
-                        converted = new StarDate(int.Parse(data[0]), int.Parse(data[1]), int.Parse(data[2]), int.Parse(data[3]), timeZone);
+                        converted = new StarDate(long.Parse(data[0]), long.Parse(data[1]), long.Parse(data[2]), long.Parse(data[3]), timeZone);
                         return true;
                     case 5:
-                        converted = new StarDate(int.Parse(data[0]), int.Parse(data[1]), int.Parse(data[2]), int.Parse(data[3]), int.Parse(data[4]), timeZone);
+                        converted = new StarDate(long.Parse(data[0]), long.Parse(data[1]), long.Parse(data[2]), long.Parse(data[3]), long.Parse(data[4]), timeZone);
                         return true;
                     case 6:
-                        converted = new StarDate(int.Parse(data[0]), int.Parse(data[1]), int.Parse(data[2]), int.Parse(data[3]), int.Parse(data[4]), int.Parse(data[5]), timeZone);
+                        converted = new StarDate(long.Parse(data[0]), long.Parse(data[1]), long.Parse(data[2]), long.Parse(data[3]), long.Parse(data[4]), long.Parse(data[5]), timeZone);
                         return true;
                     case 7:
-                        converted = new StarDate(int.Parse(data[0]), int.Parse(data[1]), int.Parse(data[2]), int.Parse(data[3]), int.Parse(data[4]), int.Parse(data[5]), int.Parse(data[6]), timeZone);
+                        converted = new StarDate(long.Parse(data[0]), long.Parse(data[1]), long.Parse(data[2]), long.Parse(data[3]), long.Parse(data[4]), long.Parse(data[5]), long.Parse(data[6]), timeZone);
                         return true;
                     case 8:
                     default:
-                        converted = new StarDate(int.Parse(data[0]), int.Parse(data[1]), int.Parse(data[2]), int.Parse(data[3]), int.Parse(data[4]), int.Parse(data[5]), int.Parse(data[6]), int.Parse(data[7]), timeZone);
+                        converted = new StarDate(long.Parse(data[0]), long.Parse(data[1]), long.Parse(data[2]), long.Parse(data[3]), long.Parse(data[4]), long.Parse(data[5]), long.Parse(data[6]), long.Parse(data[7]), timeZone);
                         return true;
                 }
             }

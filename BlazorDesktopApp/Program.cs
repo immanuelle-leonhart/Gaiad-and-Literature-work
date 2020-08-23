@@ -7,7 +7,7 @@ namespace BlazorDesktopApp
     {
         static void Main(string[] args)
         {
-            ComponentsDesktop.Run<Startup>("My Blazor App", "wwwroot/index.html");
+            ComponentsDesktop.Run<Startup>("Celestial Calendar Converter", "wwwroot/index.html");
         }
     }
 }
