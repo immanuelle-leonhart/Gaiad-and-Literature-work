@@ -3821,6 +3821,11 @@ namespace StarLib
             throw new NotImplementedException();
         }
 
+        internal string GetMonthSymbol(int v)
+        {
+            return MonthSymbols[v - 1];
+        }
+
         void InsertAtCurrentHashNode(TokenHashValue[] hashTable, String str, char ch, TokenType tokenType, int tokenValue, int pos, int hashcode, int hashProbe)
         {
             // Remember the current slot.

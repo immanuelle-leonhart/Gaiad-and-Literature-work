@@ -75,22 +75,28 @@ namespace StarLib
 
         "d"     "0"         day w/o leading zero                  1
         "dd"    "00"        day with leading zero                 01
-        "ddd"               short WeekDays StarName (abbreviation)     Mon
-        "dddd"              full WeekDays StarName                     Monday
-        "dddd*"             full WeekDays StarName                     Monday
+        "ddd"               ordinal text form                     1st
+        "dddd"              ordinal text form full                First
+        "dddd*"             ordinal text form full                First
+
+        "W" WeekDay Symbol                                        ☽
+        "WW" Super Short WeekDay Name                              Mo
+        "WWW" Abbreviated WeekDay Name                             Mon
+        "WWWW" Full WeekDay Name                                   Monday
 
 
         "M"     "0"         Month w/o leading zero                2
         "MM"    "00"        Month with leading zero               02
-        "MMM"               short Month StarName (abbreviation)       Feb
-        "MMMM"              full Month StarName                       Febuary
-        "MMMM*"             full Month StarName                       Febuary
+        "MMM"               Month Symbol                               ♎︎
+        "MMMM"               short Month StarName (abbreviation)       Lib
+        "MMMMM"              full Month StarName                       Libra
+        "MMMMM*"             full Month StarName                       Libra
 
         "y"     "0"         two digit Year (Year % 100) w/o leading zero           0
         "yy"    "00"        two digit Year (Year % 100) with leading zero          00
-        "yyy"   "D3"        Year                                  2000
-        "yyyy"  "D4"        Year                                  2000
-        "yyyyy" "D5"        Year                                  2000
+        "yyy"   "D3"        Year                                  12000
+        "yyyy"  "D4"        Year                                  12000
+        "yyyyy" "D5"        Year                                  12000
         ...
 
         "z"     "+0;-0"     timezone offset w/o leading zero      -8
@@ -119,24 +125,24 @@ namespace StarLib
 
         Format              Description                             Real format                             Example
         =========           =================================       ======================                  =======================
-        "d"                 short date                              culture-specific                        10/31/1999
-        "D"                 long data                               culture-specific                        Sunday, October 31, 1999
-        "f"                 full date (long date + short time)      culture-specific                        Sunday, October 31, 1999 2:00 AM
-        "F"                 full date (long date + long time)       culture-specific                        Sunday, October 31, 1999 2:00:00 AM
-        "g"                 general date (short date + short time)  culture-specific                        10/31/1999 2:00 AM
-        "G"                 general date (short date + long time)   culture-specific                        10/31/1999 2:00:00 AM
-        "m"/"M"             Month/Day date                          culture-specific                        October 31
-(G)     "o"/"O"             Round Trip XML                          "yyyy-MM-ddTHH:mm:ss.fffffffK"          1999-10-31 02:00:00.0000000Z
-(G)     "r"/"R"             RFC 1123 date,                          "ddd, dd MMM yyyy HH':'mm':'ss 'GMT'"   Sun, 31 Oct 1999 10:00:00 GMT
-(G)     "s"                 Sortable format, based on ISO 8601.     "yyyy-MM-dd'T'HH:mm:ss"                 1999-10-31T02:00:00
+        "d"                 short date                              culture-specific                        10/28/11999
+        "D"                 long data                               culture-specific                        Sunday, Virgo 28, 11999
+        "f"                 full date (long date + short time)      culture-specific                        Sunday, Virgo 28, 11999 2:00 AM
+        "F"                 full date (long date + long time)       culture-specific                        Sunday, Virgo 28, 11999 2:00:00 AM
+        "g"                 general date (short date + short time)  culture-specific                        10/28/11999 2:00 AM
+        "G"                 general date (short date + long time)   culture-specific                        10/28/11999 2:00:00 AM
+        "m"/"M"             Month/Day date                          culture-specific                        Virgo 31
+(G)     "o"/"O"             Round Trip XML                          "yyyy-MM-ddTHH:mm:ss.fffffffK"          11999-10-28 02:00:00.0000000Z
+(G)     "r"/"R"             RFC 1123 date,                          "WWW, dd MMM yyyy HH':'mm':'ss 'GMT'"   Sun, 28 Vir 11999 10:00:00 GMT
+(G)     "s"                 Sortable format, based on ISO 8601.     "yyyy-MM-dd'T'HH:mm:ss"                 11999-10-28T02:00:00
                                                                     ('T' for local time)
         "t"                 short time                              culture-specific                        2:00 AM
         "T"                 long time                               culture-specific                        2:00:00 AM
-(G)     "u"                 Universal time with sortable format,    "yyyy'-'MM'-'dd HH':'mm':'ss'Z'"        1999-10-31 10:00:00Z
+(G)     "u"                 Universal time with sortable format,    "yyyy'-'MM'-'dd HH':'mm':'ss'Z'"        11999-10-28 10:00:00Z
                             based on ISO 8601.
-(U)     "U"                 Universal time with full                culture-specific                        Sunday, October 31, 1999 10:00:00 AM
+(U)     "U"                 Universal time with full                culture-specific                        Sunday, Virgo 31, 11999 10:00:00 AM
                             (long date + long time) format
-                            "y"/"Y"             Year/Month day                          culture-specific                        October, 1999
+                            "y"/"Y"             Year/Month day                          culture-specific                        Virgo, 11999
 
     */
 
@@ -568,8 +574,9 @@ namespace StarLib
                         //
                         // tokenLen == 1 : Month as digits with no leading zero.
                         // tokenLen == 2 : Month as digits with leading zero for single-digit months.
-                        // tokenLen == 3 : Month as a three-letter abbreviation.
-                        // tokenLen >= 4 : Month as its full StarName.
+                        // tokenLen == 3 : Month Symbol
+                        // tokenLen == 4 : Month as a three-letter abbreviation.
+                        // tokenLen >= 5 : Month as its full StarName.
                         //
                         tokenLen = ParseRepeatPattern(format, i, ch);
                         int Month = StarDate.Month;
@@ -582,9 +589,12 @@ namespace StarLib
                                 result.Append(AddZero(Month));
                                 break;
                             case 3:
-                                result.Append(sdfi.AbbreviatedMonthNames[Month - 1]);
+                                result.Append(MonthSymbol(Month));
                                 break;
                             case 4:
+                                result.Append(sdfi.AbbreviatedMonthNames[Month - 1]);
+                                break;
+                            case 5:
                                 result.Append(sdfi.MonthNames[Month - 1]);
                                 break;
                             default:
@@ -723,6 +733,11 @@ namespace StarLib
             }
             return StringBuilderCache.GetStringAndRelease(result);
 
+        }
+
+        private static string MonthSymbol(int month)
+        {
+            return StarCulture.MonthSymbols[month - 1];
         }
 
         private static void FormatDigits(StringBuilder result, int hour12, int tokenLen)
@@ -1008,7 +1023,7 @@ namespace StarLib
 
         internal static StringBuilder FastFormatRfc1123(StarDate StarDate, Time offset, StarCulture sdfi)
         {
-            // ddd, dd MMM yyyy HH:mm:ss GMT
+            // ddd, dd MMMM yyyy HH:mm:ss GMT
             const int Rfc1123FormatLength = 29;
             StringBuilder result = StringBuilderCache.Acquire(Rfc1123FormatLength);
 

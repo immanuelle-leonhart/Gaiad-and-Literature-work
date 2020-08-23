@@ -3401,6 +3401,66 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             return (true);
         }
 
+        /*=================================MatchMonthSymbol==================================
+        **Action: Parse the abbreviated month name from string starting at str.Index.
+        **Returns: A value from 1 to 12 for the first month to the twelveth month.
+        **Arguments:    str: a __DTString.  The parsing will start from the
+        **              next character after str.Index.
+        **Exceptions: FormatException if an abbreviated month name can not be found.
+        ==============================================================================*/
+
+        private static bool MatchMonthSymbol(ref __DTString str, StarCulture dtfi, ref int result)
+        {
+            int maxMatchStrLen = 0;
+            result = -1;
+            if (str.GetNext())
+            {
+                //
+                // Scan the month names (note that some calendars has 13 months) and find
+                // the matching month name which has the max string length.
+                // We need to do this because some cultures (e.g. "cs-CZ") which have
+                // abbreviated month names with the same prefix.
+                //
+                int monthsInYear = (dtfi.GetMonthSymbol(13).Length == 0 ? 12 : 13);
+                for (int i = 1; i <= monthsInYear; i++)
+                {
+                    String searchStr = dtfi.GetMonthSymbol(i);
+                    int matchStrLen = searchStr.Length;
+                    if (dtfi.HasSpacesInMonthNames
+                            ? str.MatchSpecifiedWords(searchStr, false, ref matchStrLen)
+                            : str.MatchSpecifiedWord(searchStr))
+                    {
+                        if (matchStrLen > maxMatchStrLen)
+                        {
+                            maxMatchStrLen = matchStrLen;
+                            result = i;
+                        }
+                    }
+                }
+
+                // Search leap year form.
+                if ((dtfi.FormatFlags & StarDateFormatFlags.UseLeapYearMonth) != 0)
+                {
+                    int tempResult = str.MatchLongestWords(dtfi.internalGetLeapYearMonthNames(), ref maxMatchStrLen);
+                    // We found a longer match in the leap year month name.  Use this as the result.
+                    // The result from MatchLongestWords is 0 ~ length of word array.
+                    // So we increment the result by one to become the month value.
+                    if (tempResult >= 0)
+                    {
+                        result = tempResult + 1;
+                    }
+                }
+
+
+            }
+            if (result > 0)
+            {
+                str.Index += (maxMatchStrLen - 1);
+                return (true);
+            }
+            return false;
+        }
+
         /*=================================MatchAbbreviatedMonthName==================================
         **Action: Parse the abbreviated month name from string starting at str.Index.
         **Returns: A value from 1 to 12 for the first month to the twelveth month.
@@ -4158,26 +4218,44 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
                             }
                         }
                     }
-                    else
+                    switch (tokenLen)
                     {
-                        if (tokenLen == 3)
-                        {
+                        case 1:
+                        case 2:
+                            if (!ParseDigits(ref str, tokenLen, out tempMonth))
+                            {
+                                if (!parseInfo.fCustomNumberParser ||
+                                    !parseInfo.parseNumberDelegate(ref str, tokenLen, out tempMonth))
+                                {
+                                    result.SetFailure(ParseFailureKind.Format, "Format_BadStarDate", null);
+                                    return (false);
+                                }
+                            }
+                            break;
+                        case 3:
+                            if (!MatchMonthSymbol(ref str, dtfi, ref tempMonth))
+                            {
+                                result.SetFailure(ParseFailureKind.Format, "Format_BadStarDate", null);
+                                return (false);
+                            }
+                            break;
+                        case 4:
                             if (!MatchAbbreviatedMonthName(ref str, dtfi, ref tempMonth))
                             {
                                 result.SetFailure(ParseFailureKind.Format, "Format_BadStarDate", null);
                                 return (false);
                             }
-                        }
-                        else
-                        {
+                            break;
+                        case 5:
+                        default:
                             if (!MatchMonthName(ref str, dtfi, ref tempMonth))
                             {
                                 result.SetFailure(ParseFailureKind.Format, "Format_BadStarDate", null);
                                 return (false);
                             }
-                        }
-                        result.flags |= ParseFlags.ParsedMonthName;
+                            break;
                     }
+                    result.flags |= ParseFlags.ParsedMonthName;
                     if (!CheckNewValue(ref result.Month, tempMonth, ch, ref result))
                     {
                         return (false);
