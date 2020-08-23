@@ -3959,6 +3959,11 @@ namespace StarLib
             } while (i < TOKEN_HASH_SIZE);
             Contract.Assert(true, "The hashtable is full.  This should not happen.");
         }
+
+        internal string GetDaySymbol(DayOfWeek i)
+        {
+            return DaySymbols[(int)i];
+        }
     }   // class StarDateFormatInfo
 
     internal class TokenHashValue

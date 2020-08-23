@@ -3535,6 +3535,82 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             return false;
         }
 
+        /*=================================MatchDaySymbol==========================================
+        **Action: Parse the abbreviated day of week name from string starting at str.Index.
+        **Returns: A value from 0 to 6 indicating Sunday to Saturday.
+        **Arguments:    str: a __DTString.  The parsing will start from the
+        **              next character after str.Index.
+        **Exceptions: FormatException if a abbreviated day of week name can not be found.
+        ==============================================================================*/
+
+        private static bool MatchDaySymbol(ref __DTString str, StarCulture dtfi, ref int result)
+        {
+            int maxMatchStrLen = 0;
+            result = -1;
+            if (str.GetNext())
+            {
+                for (DayOfWeek i = DayOfWeek.Sunday; i <= DayOfWeek.Saturday; i++)
+                {
+                    String searchStr = dtfi.GetDaySymbol(i);
+                    int matchStrLen = searchStr.Length;
+                    if (dtfi.HasSpacesInDayNames
+                            ? str.MatchSpecifiedWords(searchStr, false, ref matchStrLen)
+                            : str.MatchSpecifiedWord(searchStr))
+                    {
+                        if (matchStrLen > maxMatchStrLen)
+                        {
+                            maxMatchStrLen = matchStrLen;
+                            result = (int)i;
+                        }
+                    }
+                }
+            }
+            if (result >= 0)
+            {
+                str.Index += maxMatchStrLen - 1;
+                return (true);
+            }
+            return false;
+        }
+
+        /*=================================MatchSuperShortDayName==================================
+        **Action: Parse the abbreviated day of week name from string starting at str.Index.
+        **Returns: A value from 0 to 6 indicating Sunday to Saturday.
+        **Arguments:    str: a __DTString.  The parsing will start from the
+        **              next character after str.Index.
+        **Exceptions: FormatException if a abbreviated day of week name can not be found.
+        ==============================================================================*/
+
+        private static bool MatchSuperShortDayName(ref __DTString str, StarCulture dtfi, ref int result)
+        {
+            int maxMatchStrLen = 0;
+            result = -1;
+            if (str.GetNext())
+            {
+                for (DayOfWeek i = DayOfWeek.Sunday; i <= DayOfWeek.Saturday; i++)
+                {
+                    String searchStr = dtfi.GetSuperShortDayName(i);
+                    int matchStrLen = searchStr.Length;
+                    if (dtfi.HasSpacesInDayNames
+                            ? str.MatchSpecifiedWords(searchStr, false, ref matchStrLen)
+                            : str.MatchSpecifiedWord(searchStr))
+                    {
+                        if (matchStrLen > maxMatchStrLen)
+                        {
+                            maxMatchStrLen = matchStrLen;
+                            result = (int)i;
+                        }
+                    }
+                }
+            }
+            if (result >= 0)
+            {
+                str.Index += maxMatchStrLen - 1;
+                return (true);
+            }
+            return false;
+        }
+
         /*=================================MatchAbbreviatedDayName==================================
         **Action: Parse the abbreviated day of week name from string starting at str.Index.
         **Returns: A value from 0 to 6 indicating Sunday to Saturday.
@@ -3974,9 +4050,65 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             TM tempTimeMark = 0;
 
             char ch = format.GetChar();
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
             switch (ch)
             {
+                case 'W':
+                    tokenLen = format.GetRepeatCount();
+                    //
+                    // tokenLen == 1 : Symbol Day of the Week
+                    // tokenLen == 2 : Two letter Day of Week
+                    // tokenLen == 3 : Day of week as a three-leter abbreviation.
+                    // tokenLen <= 4 : Day of week as its full StarName.
+                    //
+                    Console.WriteLine(tokenLen);
+                    if (tokenLen < 4)
+                    {
+                        switch (tokenLen)
+                        {
+                            case 1:
+                                //Symbol
+                                if (!MatchDaySymbol(ref str, dtfi, ref tempDayOfWeek))
+                                {
+                                    result.SetFailure(ParseFailureKind.Format, "Format_BadStarDate", null);
+                                    return (false);
+                                }
+                                break;
+                            case 2:
+                                //Two letter abbreviation
+                                if (!MatchSuperShortDayName(ref str, dtfi, ref tempDayOfWeek))
+                                {
+                                    result.SetFailure(ParseFailureKind.Format, "Format_BadStarDate", null);
+                                    return (false);
+                                }
+                                break;
+                            case 3:
+                            default:
+                                //three letter abbreviation
+                                // "ddd"
+                                if (!MatchAbbreviatedDayName(ref str, dtfi, ref tempDayOfWeek))
+                                {
+                                    result.SetFailure(ParseFailureKind.Format, "Format_BadStarDate", null);
+                                    return (false);
+                                }
+                                break;
+                        }
+                    }
+                    else
+                    {
+                        //full name
+                        // "dddd*"
+                        if (!MatchDayName(ref str, dtfi, ref tempDayOfWeek))
+                        {
+                            result.SetFailure(ParseFailureKind.Format, "Format_BadStarDate", null);
+                            return (false);
+                        }
+                    }
+                    if (!CheckNewValue(ref parseInfo.dayOfWeek, tempDayOfWeek, ch, ref result))
+                    {
+                        return (false);
+                    }
+                    break;
                 case 'y':
                     tokenLen = format.GetRepeatCount();
                     bool parseResult;
@@ -4052,50 +4184,47 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
                     }
                     break;
                 case 'd':
-                    // Day & Day of week
+                    //
+                    // tokenLen == 1 : Day of Month as digits with no leading zero.
+                    // tokenLen == 2 : Day of Month as digits with leading zero for single-digit months.
+                    // tokenLen == 3 : Day of Month as ordinal abbreviation i.e. 1st
+                    // tokenLen >= 4 : Day of Month as ordinal word i.e. First
+                    //
                     tokenLen = format.GetRepeatCount();
-                    if (tokenLen <= 2)
+                    //differs a lot from .NET DateTime
+                    Console.WriteLine(tokenLen);
+                    if (tokenLen < 4)
                     {
-                        // "d" & "dd"
+                        switch (tokenLen)
+                        {
+                            case 1:
+                            case 2:
+                                // "d" & "dd"
 
-                        if (!ParseDigits(ref str, tokenLen, out tempDay))
-                        {
-                            if (!parseInfo.fCustomNumberParser ||
-                                !parseInfo.parseNumberDelegate(ref str, tokenLen, out tempDay))
-                            {
-                                result.SetFailure(ParseFailureKind.Format, "Format_BadStarDate", null);
-                                return (false);
-                            }
-                        }
-                        if (!CheckNewValue(ref result.Day, tempDay, ch, ref result))
-                        {
-                            return (false);
+                                if (!ParseDigits(ref str, tokenLen, out tempDay))
+                                {
+                                    if (!parseInfo.fCustomNumberParser ||
+                                        !parseInfo.parseNumberDelegate(ref str, tokenLen, out tempDay))
+                                    {
+                                        result.SetFailure(ParseFailureKind.Format, "Format_BadStarDate", null);
+                                        return (false);
+                                    }
+                                }
+                                if (!CheckNewValue(ref result.Day, tempDay, ch, ref result))
+                                {
+                                    return (false);
+                                }
+                                break;
+                            case 3:
+                            default:
+                                //Day of Month as ordinal abbreviation i.e. 1st
+                                throw new NotImplementedException();
                         }
                     }
                     else
                     {
-                        if (tokenLen == 3)
-                        {
-                            // "ddd"
-                            if (!MatchAbbreviatedDayName(ref str, dtfi, ref tempDayOfWeek))
-                            {
-                                result.SetFailure(ParseFailureKind.Format, "Format_BadStarDate", null);
-                                return (false);
-                            }
-                        }
-                        else
-                        {
-                            // "dddd*"
-                            if (!MatchDayName(ref str, dtfi, ref tempDayOfWeek))
-                            {
-                                result.SetFailure(ParseFailureKind.Format, "Format_BadStarDate", null);
-                                return (false);
-                            }
-                        }
-                        if (!CheckNewValue(ref parseInfo.dayOfWeek, tempDayOfWeek, ch, ref result))
-                        {
-                            return (false);
-                        }
+                        //Day of Month as ordinal word i.e. First
+                        throw new NotImplementedException();
                     }
                     break;
                 case 'g':
@@ -4477,6 +4606,8 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             } // switch
             return (true);
         }
+
+        
 
         //
         // The pos should point to a quote character. This method will
