@@ -3401,6 +3401,102 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             return (true);
         }
 
+        /*=================================deOrdinalize==================================
+        **Action: Parse the abbreviated month name from string starting at str.Index.
+        **Returns: A value from 1 to 12 for the first month to the twelveth month.
+        **Arguments:    str: a __DTString.  The parsing will start from the
+        **              next character after str.Index.
+        **Exceptions: FormatException if an abbreviated month name can not be found.
+        ==============================================================================*/
+
+        private static bool MatchOrdinal(ref __DTString str, StarCulture dtfi, ref int tempDay)
+        {
+            int maxMatchStrLen = 0;
+            tempDay = -1;
+            if (str.GetNext())
+            {
+                //
+                // Scan the month names (note that some calendars has 13 months) and find
+                // the matching month name which has the max string length.
+                // We need to do this because some cultures (e.g. "vi-VN") which have
+                // month names with the same prefix.
+                //
+                int daysinmonth = 28;
+                for (int i = 1; i <= daysinmonth; i++)
+                {
+                    String searchStr = dtfi.Ordinal(i);
+                    int matchStrLen = searchStr.Length;
+                    if (dtfi.HasSpacesInMonthNames
+                            ? str.MatchSpecifiedWords(searchStr, false, ref matchStrLen)
+                            : str.MatchSpecifiedWord(searchStr))
+                    {
+                        if (matchStrLen > maxMatchStrLen)
+                        {
+                            maxMatchStrLen = matchStrLen;
+                            tempDay = i;
+                        }
+                    }
+                }
+
+
+            }
+
+            if (tempDay > 0)
+            {
+                str.Index += (maxMatchStrLen - 1);
+                return (true);
+            }
+            return false;
+        }
+
+        /*=================================ParseNumberWord==================================
+        **Action: Parse the abbreviated month name from string starting at str.Index.
+        **Returns: A value from 1 to 12 for the first month to the twelveth month.
+        **Arguments:    str: a __DTString.  The parsing will start from the
+        **              next character after str.Index.
+        **Exceptions: FormatException if an abbreviated month name can not be found.
+        ==============================================================================*/
+
+        private static bool MatchLongOrdinal(ref __DTString str, StarCulture dtfi, ref int tempDay)
+        {
+            int maxMatchStrLen = 0;
+            tempDay = -1;
+            if (str.GetNext())
+            {
+                //
+                // Scan the month names (note that some calendars has 13 months) and find
+                // the matching month name which has the max string length.
+                // We need to do this because some cultures (e.g. "vi-VN") which have
+                // month names with the same prefix.
+                //
+                int daysinmonth = 28;
+                for (int i = 1; i <= daysinmonth; i++)
+                {
+                    String searchStr = dtfi.LongOrdinal(i);
+                    int matchStrLen = searchStr.Length;
+                    if (dtfi.HasSpacesInMonthNames
+                            ? str.MatchSpecifiedWords(searchStr, false, ref matchStrLen)
+                            : str.MatchSpecifiedWord(searchStr))
+                    {
+                        if (matchStrLen > maxMatchStrLen)
+                        {
+                            maxMatchStrLen = matchStrLen;
+                            tempDay = i;
+                        }
+                    }
+                }
+
+
+            }
+
+            if (tempDay > 0)
+            {
+                str.Index += (maxMatchStrLen - 1);
+                return (true);
+            }
+            return false;
+        }        
+
         /*=================================MatchMonthSymbol==================================
         **Action: Parse the abbreviated month name from string starting at str.Index.
         **Returns: A value from 1 to 12 for the first month to the twelveth month.
@@ -3421,7 +3517,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
                 // We need to do this because some cultures (e.g. "cs-CZ") which have
                 // abbreviated month names with the same prefix.
                 //
-                int monthsInYear = (dtfi.GetMonthSymbol(13).Length == 0 ? 12 : 13);
+                int monthsInYear = 14;
                 for (int i = 1; i <= monthsInYear; i++)
                 {
                     String searchStr = dtfi.GetMonthSymbol(i);
@@ -3481,7 +3577,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
                 // We need to do this because some cultures (e.g. "cs-CZ") which have
                 // abbreviated month names with the same prefix.
                 //
-                int monthsInYear = (dtfi.GetMonthName(13).Length == 0 ? 12 : 13);
+                int monthsInYear = 14;
                 for (int i = 1; i <= monthsInYear; i++)
                 {
                     String searchStr = dtfi.GetAbbreviatedMonthName(i);
@@ -3541,7 +3637,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
                 // We need to do this because some cultures (e.g. "vi-VN") which have
                 // month names with the same prefix.
                 //
-                int monthsInYear = (dtfi.GetMonthName(13).Length == 0 ? 12 : 13);
+                int monthsInYear = 14;
                 for (int i = 1; i <= monthsInYear; i++)
                 {
                     String searchStr = dtfi.GetMonthName(i);
@@ -4253,6 +4349,8 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
                                 result.SetFailure(ParseFailureKind.Format, "Format_BadStarDate", null);
                                 return (false);
                             }
+                            Console.WriteLine(tempMonth);
+                            //throw new NotImplementedException();
                             break;
                     }
                     result.flags |= ParseFlags.ParsedMonthName;
@@ -4288,21 +4386,30 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
                                         return (false);
                                     }
                                 }
-                                if (!CheckNewValue(ref result.Day, tempDay, ch, ref result))
+                                break;
+                            case 3:
+                                if (!MatchOrdinal(ref str, dtfi, ref tempDay))
                                 {
+                                    result.SetFailure(ParseFailureKind.Format, "Format_BadStarDate", null);
                                     return (false);
                                 }
                                 break;
-                            case 3:
-                            default:
-                                //Day of Month as ordinal abbreviation i.e. 1st
-                                throw new NotImplementedException();
                         }
                     }
                     else
                     {
                         //Day of Month as ordinal word i.e. First
-                        throw new NotImplementedException();
+                        if (!MatchLongOrdinal(ref str, dtfi, ref tempDay))
+                        {
+                            result.SetFailure(ParseFailureKind.Format, "Format_BadStarDate", null);
+                            return (false);
+                        }
+                        break;
+                    }
+                    Console.WriteLine(tempDay);
+                    if (!CheckNewValue(ref result.Day, tempDay, ch, ref result))
+                    {
+                        return (false);
                     }
                     break;
                 case 'g':
@@ -4687,6 +4794,10 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
 
         
 
+
+
+
+
         //
         // The pos should point to a quote character. This method will
         // get the string enclosed by the quote character.
@@ -4848,14 +4959,15 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
                     return (false);
                 }
             }
-            throw new NotImplementedException();
+            
+            //throw new NotImplementedException();
             if (str.Index < str.Value.Length - 1)
             {
                 // There are still remaining character in str.
                 result.SetFailure(ParseFailureKind.Format, "Format_BadStarDate", null);
                 return false;
             }
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
             if (parseInfo.fUseTwoDigitYear && ((dtfi.FormatFlags & StarDateFormatFlags.UseHebrewRule) == 0))
             {
                 // A two digit year value is expected. Check if the parsed year value is valid.
@@ -4874,7 +4986,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
                     return false;
                 }
             }
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
             if (parseInfo.fUseHour12)
             {
                 if (parseInfo.timeMark == TM.NotSet)
@@ -4918,14 +5030,14 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
                 }
             }
 
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
             // Check if the parased string only contains hour/minute/second values.
             bTimeOnly = (result.Year == -1 && result.Month == -1 && result.Day == -1);
             if (!CheckDefaultStarDate(ref result, ref parseInfo.calendar, styles))
             {
                 return false;
             }
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
             if (!bTimeOnly && dtfi.HasYearMonthAdjustment)
             {
                 if (!dtfi.YearMonthAdjustment(ref result.Year, ref result.Month, ((result.flags & ParseFlags.ParsedMonthName) != 0)))
@@ -4944,25 +5056,28 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             {
                 result.parsedDate = result.parsedDate.AddTicks((long)Math.Round(result.fraction * StarDate.TicksPerSecond));
             }
-            throw new NotImplementedException();
+            //result.WriteData();
+            //throw new NotImplementedException();
             //
             // We have to check day of week before we adjust to the time zone.
             // It is because the value of day of week may change after adjusting
             // to the time zone.
             //
-            if (parseInfo.dayOfWeek != -1)
-            {
-                //
-                // Check if day of week is correct.
-                //
-                if (parseInfo.dayOfWeek != (int)parseInfo.calendar.GetDayOfWeek(result.parsedDate))
-                {
-                    result.SetFailure(ParseFailureKind.Format, "Format_BadDayOfWeek", null);
-                    return false;
-                }
-            }
 
-            throw new NotImplementedException();
+
+            //if (parseInfo.dayOfWeek != -1)
+            //{
+            //    //
+            //    // Check if day of week is correct.
+            //    //
+            //    if (parseInfo.dayOfWeek != (int)parseInfo.calendar.GetDayOfWeek(result.parsedDate))
+            //    {
+            //        result.SetFailure(ParseFailureKind.Format, "Format_BadDayOfWeek", null);
+            //        return false;
+            //    }
+            //}
+
+            //throw new NotImplementedException();
             if (!DetermineTimeZoneAdjustments(ref result, styles, bTimeOnly))
             {
                 return false;
@@ -5972,9 +6087,10 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             this.failureArgumentName = failureArgumentName;
         }
 
-
-
-
+        internal void WriteData()
+        {
+            Console.WriteLine(Year + " " + Month + " " + Day + " " + Hour + " " + Minute + " " + Second);
+        }
     }
 
     // This is the helper data structure used in ParseExact().

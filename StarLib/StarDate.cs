@@ -957,7 +957,10 @@ namespace StarLib
 
         private void GetTimePart(out int hour, out int min)
         {
-            throw new NotImplementedException();
+            long h, m;
+            GetTimePart(out h, out m);
+            hour = (int)h;
+            min = (int)m;
         }
 
         public void GetDatePart(out int year, out int month, out int day, out int hour, out int min, out int sec)
@@ -968,7 +971,11 @@ namespace StarLib
 
         private void GetTimePart(out int hour, out int min, out int sec)
         {
-            throw new NotImplementedException();
+            long h, m, s;
+            GetTimePart(out h, out m, out s);
+            hour = (int)h;
+            min = (int)m;
+            sec = (int)s;
         }
 
         public void GetDatePart(out int year, out int month, out int day, out int hour, out int min, out int sec, out int millisec)
@@ -979,7 +986,12 @@ namespace StarLib
 
         private void GetTimePart(out int hour, out int min, out int sec, out int millisec)
         {
-            throw new NotImplementedException();
+            long h, m, s, mil;
+            GetTimePart(out h, out m, out s, out mil);
+            hour = (int)h;
+            min = (int)m;
+            sec = (int)s;
+            millisec = (int)mil;
         }
 
         public void GetDatePart(out int year, out int month, out int day, out int hour, out int min, out int sec, out int millisec, out int ticks)
@@ -990,7 +1002,13 @@ namespace StarLib
 
         private void GetTimePart(out int hour, out int min, out int sec, out int millisec, out int ticks)
         {
-            throw new NotImplementedException();
+            long h, m, s, mil, t;
+            GetTimePart(out h, out m, out s, out mil, out t);
+            hour = (int)h;
+            min = (int)m;
+            sec = (int)s;
+            millisec = (int)mil;
+            ticks = (int)t;
         }
 
         public void GetDatePart(out int[] vs)
