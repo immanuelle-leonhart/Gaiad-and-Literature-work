@@ -3194,8 +3194,10 @@ namespace StarLib
         {
             try
             {
-                time = new StarDate(year, month, day, hour, minute, second, millisecond);
-                Console.WriteLine(time);
+                Console.WriteLine("INPUT " + year + "-" + month + "-" + day + "-" + hour + "-" + minute + "-" + second + "-" + millisecond);
+                //time = new StarDate(year, month, day, hour, minute, second, millisecond);
+                time = new StarDate(year, month, day, hour, minute, second, millisecond, StarZone.UTC);
+                Console.WriteLine("ATTEMPTED PARSE " + time);
                 //throw new NotImplementedException();
                 return true;
             }

@@ -67,7 +67,7 @@ namespace StarLib
         public static StarZone Terra;
         public static StarZone Mars;
         public static StarZone Amaterasu;
-        public static StarZone Local = new StarZone(TimeZoneInfo.Local);
+        private static StarZone local = new StarZone(TimeZoneInfo.Local);
         public static StarZone UTC = new StarZone(TimeZoneInfo.Utc);
         public static StarZone Unspecified = new StarZone(TimeZoneInfo.Utc, "Unspecified");
         private TimeZoneInfo tz = TimeZoneInfo.Utc;
@@ -2596,5 +2596,7 @@ namespace StarLib
                 return this.id + "&&" + this.BaseUtcOffset;
             }
         }
+
+        public static StarZone Local { get => local; set => local = value; }
     }
 } // StarZone
