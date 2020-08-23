@@ -2840,13 +2840,13 @@ namespace StarLib
 
         public string[] AbbreviatedEraNames { get; private set; }
         public string[] EraNames { get; private set; }
-        public StarCompareInfo StarCompareInfo
+        public StarCompareInfo CompareInfo
         {
             get
             {
                 if (starCompareInfo == null)
                 {
-                    throw new NotImplementedException();
+                    starCompareInfo = StarCompareInfo.FromCulture(this);
                 }
                 return starCompareInfo;
             }

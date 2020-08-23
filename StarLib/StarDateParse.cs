@@ -4970,7 +4970,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
 
         internal __DTString(String str, StarCulture dtfi)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
             Index = -1;
             Value = str;
             len = Value.Length;
@@ -4978,7 +4978,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             m_current = '\0';
             if (dtfi != null)
             {
-                m_info = dtfi.StarCompareInfo;
+                m_info = dtfi.CompareInfo;
                 m_checkDigitToken = ((dtfi.FormatFlags & StarDateFormatFlags.UseDigitPrefixInTokens) != 0);
             }
             else
