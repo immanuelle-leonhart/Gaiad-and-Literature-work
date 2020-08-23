@@ -60,11 +60,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLibDesktop\\StarLibDesktop.csproj",
-      "projectName": "StarLibDesktop",
-      "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLibDesktop\\StarLibDesktop.csproj",
+      "projectUniqueName": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLibDesktop\\LazyDesktop.csproj",
+      "projectName": "LazyDesktop",
+      "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLibDesktop\\LazyDesktop.csproj",
       "packagesPath": "C:\\Users\\SiliconProphet\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLibDesktop\\obj\\",
+      "outputPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLibDesktop\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\SiliconProphet\\AppData\\Roaming\\NuGet\\NuGet.Config",

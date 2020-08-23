@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\BlazorDesktopApp\\BlazorDesktopApp.csproj": {}
+    "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\BlazorDesktopApp\\BlazorDesktopApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\BlazorDesktopApp\\BlazorDesktopApp.csproj": {
+    "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\BlazorDesktopApp\\BlazorDesktopApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\BlazorDesktopApp\\BlazorDesktopApp.csproj",
+        "projectUniqueName": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\BlazorDesktopApp\\BlazorDesktopApp.csproj",
         "projectName": "BlazorDesktopApp",
-        "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\BlazorDesktopApp\\BlazorDesktopApp.csproj",
+        "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\BlazorDesktopApp\\BlazorDesktopApp.csproj",
         "packagesPath": "C:\\Users\\SiliconProphet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\BlazorDesktopApp\\obj\\",
+        "outputPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\BlazorDesktopApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SiliconProphet\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,14 +27,14 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLib.Dynamic\\StarLib.Dynamic.csproj": {
-                "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLib.Dynamic\\StarLib.Dynamic.csproj"
+              "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib.Dynamic\\StarLib.Dynamic.csproj": {
+                "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib.Dynamic\\StarLib.Dynamic.csproj"
               },
-              "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLib.Forms\\StarLib.Forms.csproj": {
-                "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLib.Forms\\StarLib.Forms.csproj"
+              "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib.Forms\\StarLib.Forms.csproj": {
+                "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib.Forms\\StarLib.Forms.csproj"
               },
-              "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLib\\StarLib.csproj": {
-                "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLib\\StarLib.csproj"
+              "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib\\StarLib.csproj": {
+                "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib\\StarLib.csproj"
               }
             }
           }
@@ -90,14 +90,14 @@
         }
       }
     },
-    "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLib.Dynamic\\StarLib.Dynamic.csproj": {
+    "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib.Dynamic\\StarLib.Dynamic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLib.Dynamic\\StarLib.Dynamic.csproj",
+        "projectUniqueName": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib.Dynamic\\StarLib.Dynamic.csproj",
         "projectName": "StarLib.Dynamic",
-        "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLib.Dynamic\\StarLib.Dynamic.csproj",
+        "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib.Dynamic\\StarLib.Dynamic.csproj",
         "packagesPath": "C:\\Users\\SiliconProphet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLib.Dynamic\\obj\\",
+        "outputPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib.Dynamic\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SiliconProphet\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -113,8 +113,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLib\\StarLib.csproj": {
-                "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLib\\StarLib.csproj"
+              "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib\\StarLib.csproj": {
+                "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib\\StarLib.csproj"
               }
             }
           }
@@ -149,14 +149,14 @@
         }
       }
     },
-    "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLib.Forms\\StarLib.Forms.csproj": {
+    "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib.Forms\\StarLib.Forms.csproj": {
       "version": "1.0.1",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLib.Forms\\StarLib.Forms.csproj",
+        "projectUniqueName": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib.Forms\\StarLib.Forms.csproj",
         "projectName": "StarDate.Forms",
-        "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLib.Forms\\StarLib.Forms.csproj",
+        "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib.Forms\\StarLib.Forms.csproj",
         "packagesPath": "C:\\Users\\SiliconProphet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLib.Forms\\obj\\",
+        "outputPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib.Forms\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SiliconProphet\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -172,8 +172,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLib\\StarLib.csproj": {
-                "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLib\\StarLib.csproj"
+              "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib\\StarLib.csproj": {
+                "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib\\StarLib.csproj"
               }
             }
           }
@@ -220,14 +220,14 @@
         }
       }
     },
-    "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLib\\StarLib.csproj": {
+    "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib\\StarLib.csproj": {
       "version": "1.0.7",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLib\\StarLib.csproj",
+        "projectUniqueName": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib\\StarLib.csproj",
         "projectName": "StarDate",
-        "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLib\\StarLib.csproj",
+        "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib\\StarLib.csproj",
         "packagesPath": "C:\\Users\\SiliconProphet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\StarDate2\\StarLib\\obj\\",
+        "outputPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SiliconProphet\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -254,6 +254,14 @@
       "frameworks": {
         "netstandard1.6": {
           "dependencies": {
+            "Microsoft.Win32.Primitives": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "Microsoft.Win32.Registry": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
             "NETStandard.Library": {
               "target": "Package",
               "version": "[1.6.1, )",
@@ -264,6 +272,26 @@
               "version": "[12.0.3, )"
             },
             "System.Diagnostics.Contracts": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Runtime": {
+              "target": "Package",
+              "version": "[4.3.1, )"
+            },
+            "System.Runtime.CompilerServices.Unsafe": {
+              "target": "Package",
+              "version": "[4.7.1, )"
+            },
+            "System.Runtime.InteropServices": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Security.Cryptography.Cng": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.Security.Principal": {
               "target": "Package",
               "version": "[4.3.0, )"
             },
