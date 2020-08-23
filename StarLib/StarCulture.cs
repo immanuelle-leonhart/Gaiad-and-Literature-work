@@ -3190,7 +3190,7 @@ namespace StarLib
             }
         }
 
-        internal bool TryToStarDate(int year, int v1, int v2, int hour, int minute, int second, int v3, int era, out StarDate time)
+        internal bool TryToStarDate(int year, int month, int day, int hour, int minute, int second, int millisecond, int era, out StarDate time)
         {
             throw new NotImplementedException();
         }

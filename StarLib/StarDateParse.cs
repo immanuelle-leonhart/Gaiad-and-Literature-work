@@ -4604,9 +4604,9 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
 
             //throw new NotImplementedException();
             __DTString format = new __DTString(formatParam, dtfi, false);
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
             __DTString str = new __DTString(s, dtfi, false);
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
 
             if (parseInfo.fAllowTrailingWhite)
             {
