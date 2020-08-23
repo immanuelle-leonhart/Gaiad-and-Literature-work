@@ -113,10 +113,15 @@ namespace StarLib
             this.m_name = culture.m_name;
             this.m_sortName = culture.SortName;
 
-            IntPtr handleOrigin;
-            this.m_dataHandle = InternalInitSortHandle(m_sortName, out handleOrigin);
-            this.m_handleOrigin = handleOrigin;
+            //IntPtr handleOrigin;
+            //this.m_dataHandle = InternalInitSortHandle(m_sortName, out handleOrigin);
+            //this.m_handleOrigin = handleOrigin;
         }
+
+        //public static System.UInt32 InternalGetSortVersion()
+        //{
+        //    throw new System.NotImplementedException("Method 'System.Globalization.CompareInfo.InternalGetSortVersion' has not been implemented!");
+        //}
 
         /*=================================GetStarCompareInfo==========================
         **Action: Get the StarCompareInfo constructed from the data table in the specified assembly for the specified culture.
@@ -166,12 +171,6 @@ namespace StarLib
             }
             Contract.EndContractBlock();
             throw new NotImplementedException();
-            //if (assembly != typeof(Object).Module.Assembly)
-            //{
-            //    throw new ArgumentException(); //(Environment.GetResourceString("Argument_OnlyMscorlib"));
-            //}
-
-            return GetStarCompareInfo(name);
         }
 
         /*=================================GetStarCompareInfo==========================
@@ -243,6 +242,11 @@ namespace StarLib
             StarCompareInfo c = StarCulture.InvariantCulture.StarCompareInfo;
 
             return (InternalIsSortable(c.m_dataHandle, c.m_handleOrigin, c.m_sortName, text, text.Length));
+        }
+
+        private static bool InternalIsSortable(IntPtr m_dataHandle, IntPtr m_handleOrigin, string m_sortName, string text, int length)
+        {
+            throw new NotImplementedException();
         }
 
 
@@ -442,6 +446,11 @@ namespace StarLib
             }
 
             return InternalCompareString(m_dataHandle, m_handleOrigin, m_sortName, string1, 0, string1.Length, string2, 0, string2.Length, GetNativeCompareFlags(options));
+        }
+
+        private int InternalCompareString(IntPtr m_dataHandle, IntPtr m_handleOrigin, string m_sortName, string string1, int v1, int length1, string string2, int v2, int length2, int v3)
+        {
+            throw new NotImplementedException();
         }
 
 
@@ -810,6 +819,10 @@ namespace StarLib
                         source, count, startIndex, new String(value, 1), 1);
         }
 
+        private int InternalFindNLSStringEx(IntPtr m_dataHandle, IntPtr m_handleOrigin, string m_sortName, int v1, string source, int count, int startIndex, string v2, int v3)
+        {
+            throw new NotImplementedException();
+        }
 
         [System.Security.SecuritySafeCritical]  // auto-generated
         public unsafe virtual int IndexOf(String source, String value, int startIndex, int count, CompareOptions options)
@@ -1271,6 +1284,11 @@ namespace StarLib
             return (InternalGetGlobalizedHashCode(m_dataHandle, m_handleOrigin, this.m_sortName, source, source.Length, GetNativeCompareFlags(options), forceRandomizedHashing, additionalEntropy));
         }
 
+        private int InternalGetGlobalizedHashCode(IntPtr m_dataHandle, IntPtr m_handleOrigin, string m_sortName, string source, int length, int v, bool forceRandomizedHashing, long additionalEntropy)
+        {
+            throw new NotImplementedException();
+        }
+
         ////////////////////////////////////////////////////////////////////////
         //
         //  ToString
@@ -1296,109 +1314,110 @@ namespace StarLib
         }
 #endif
 
-        [System.Security.SecuritySafeCritical]
-        internal static IntPtr InternalInitSortHandle(String localeName, out IntPtr handleOrigin)
-        {
-            return NativeInternalInitSortHandle(localeName, out handleOrigin);
-        }
-
-#if !FEATURE_CORECLR
-        private const int SORT_VERSION_WHIDBEY = 0x00001000;
-        private const int SORT_VERSION_V4 = 0x00060101;
-
-        internal static bool IsLegacy20SortingBehaviorRequested
-        {
-            get
-            {
-                return InternalSortVersion == SORT_VERSION_WHIDBEY;
-            }
-        }
-
-        private static uint InternalSortVersion
-        {
-            [System.Security.SecuritySafeCritical]
-            get
-            {
-                return InternalGetSortVersion();
-            }
-        }
-
-        //[OptionalField(VersionAdded = 3)]
-        //private SortVersion m_SortVersion;
-
-        //public SortVersion Version
+        //[System.Security.SecuritySafeCritical]
+        //internal static IntPtr InternalInitSortHandle(String localeName, out IntPtr handleOrigin)
         //{
-        //    [SecuritySafeCritical]
-        //    get
-        //    {
-        //        if (m_SortVersion == null)
-        //        {
-        //            Win32Native.NlsVersionInfoEx v = new Win32Native.NlsVersionInfoEx();
-        //            v.dwNLSVersionInfoSize = Marshal.SizeOf(typeof(Win32Native.NlsVersionInfoEx));
-        //            InternalGetNlsVersionEx(m_dataHandle, m_handleOrigin, m_sortName, ref v);
-        //            m_SortVersion = new SortVersion(v.dwNLSVersion, (v.dwEffectiveId != 0) ? v.dwEffectiveId : LCID, v.guidCustomVersion);
-        //        }
-
-        //        return m_SortVersion;
-        //    }
+        //    return NativeInternalInitSortHandle(localeName, out handleOrigin);
         //}
 
-        //[System.Security.SecurityCritical]
-        //[ResourceExposure(ResourceScope.None)]
-        //[DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
-        //[SuppressUnmanagedCodeSecurity]
-        //[return: MarshalAs(UnmanagedType.Bool)]
-        //private static extern bool InternalGetNlsVersionEx(IntPtr handle, IntPtr handleOrigin, String localeName, ref Win32Native.NlsVersionInfoEx lpNlsVersionInformation);
+        //#if !FEATURE_CORECLR
+        //        private const int SORT_VERSION_WHIDBEY = 0x00001000;
+        //        private const int SORT_VERSION_V4 = 0x00060101;
 
-        [System.Security.SecurityCritical]
-        //[ResourceExposure(ResourceScope.None)]
-        //[DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
-        //[SuppressUnmanagedCodeSecurity]
-        private static extern uint InternalGetSortVersion();
+        //        internal static bool IsLegacy20SortingBehaviorRequested
+        //        {
+        //            get
+        //            {
+        //                return InternalSortVersion == SORT_VERSION_WHIDBEY;
+        //            }
+        //        }
 
-#endif
-        [System.Security.SecurityCritical]
-        //[ResourceExposure(ResourceScope.None)]
-        //[DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
-        //[SuppressUnmanagedCodeSecurity]
-        private static extern IntPtr NativeInternalInitSortHandle(String localeName, out IntPtr handleOrigin);
+        //        private static uint InternalSortVersion
+        //        {
+        //            [System.Security.SecuritySafeCritical]
+        //            get
+        //            {
+        //                return InternalGetSortVersion();
+        //            }
+        //        }
 
-        // Get a locale sensitive sort hash code from native code -- COMNlsInfo::InternalGetGlobalizedHashCode
-        [System.Security.SecurityCritical]  // auto-generated
-        //[ResourceExposure(ResourceScope.None)]
-        //[DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
-        //[SuppressUnmanagedCodeSecurity]
-        private static extern int InternalGetGlobalizedHashCode(IntPtr handle, IntPtr handleOrigin, string localeName, string source, int length, int dwFlags, bool forceRandomizedHashing, long additionalEntropy);
+        //        [OptionalField(VersionAdded = 3)]
+        //        private SortVersion m_SortVersion;
 
-        // Use native API calls to see if this string is entirely defined -- COMNlsInfo::InternalIsSortable
-        [System.Security.SecurityCritical]  // auto-generated
-        //[ResourceExposure(ResourceScope.None)]
-        //[DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
-        //[SuppressUnmanagedCodeSecurity]
-        [return: MarshalAs(UnmanagedType.Bool)]
-        private static extern bool InternalIsSortable(IntPtr handle, IntPtr handleOrigin, String localeName, String source, int length);
+        //        public SortVersion Version
+        //        {
+        //            [SecuritySafeCritical]
+        //            get
+        //            {
+        //                if (m_SortVersion == null)
+        //                {
+        //                    Win32Native.NlsVersionInfoEx v = new Win32Native.NlsVersionInfoEx();
+        //                    v.dwNLSVersionInfoSize = Marshal.SizeOf(typeof(Win32Native.NlsVersionInfoEx));
+        //                    InternalGetNlsVersionEx(m_dataHandle, m_handleOrigin, m_sortName, ref v);
+        //                    m_SortVersion = new SortVersion(v.dwNLSVersion, (v.dwEffectiveId != 0) ? v.dwEffectiveId : LCID, v.guidCustomVersion);
+        //                }
 
-        // Compare a string using the native API calls -- COMNlsInfo::InternalCompareString
-        [System.Security.SecurityCritical]  // auto-generated
-        //[ResourceExposure(ResourceScope.Process)]
-        //[DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
-        //[SuppressUnmanagedCodeSecurity]
-        private static extern int InternalCompareString(IntPtr handle, IntPtr handleOrigin, String localeName, String string1, int offset1, int length1,
-                                                                              String string2, int offset2, int length2, int flags);
+        //                return m_SortVersion;
+        //            }
+        //        }
 
-        // InternalFindNLSStringEx parameters is not exactly matching kernel32::FindNLSStringEx parameters.
-        //// Call through to NewApis::FindNLSStringEx so we can get the right behavior
-        //[System.Security.SecurityCritical]  // auto-generated
-        //[ResourceExposure(ResourceScope.None)]
-        //[DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
-        //[SuppressUnmanagedCodeSecurity]
-        private static extern int InternalFindNLSStringEx(IntPtr handle, IntPtr handleOrigin, String localeName, int flags, String source, int sourceCount, int startIndex, string target, int targetCount);
+        //        [System.Security.SecurityCritical]
+        //        [ResourceExposure(ResourceScope.None)]
+        //        [DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
+        //        [SuppressUnmanagedCodeSecurity]
+        //        [return: MarshalAs(UnmanagedType.Bool)]
+        //        private static extern bool InternalGetNlsVersionEx(IntPtr handle, IntPtr handleOrigin, String localeName, ref Win32Native.NlsVersionInfoEx lpNlsVersionInformation);
 
-        // Call through to NewAPis::LCMapStringEx so we can get appropriate behavior for all platforms
-        [System.Security.SecurityCritical]  // auto-generated
-        //[ResourceExposure(ResourceScope.None)]
-        //[DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
-        //[SuppressUnmanagedCodeSecurity]
-        private static extern int InternalGetSortKey(IntPtr handle, IntPtr handleOrigin, String localeName, int flags, String source, int sourceCount, byte[] target, int targetCount);
-    }
+        //        [System.Security.SecurityCritical]
+        //        [ResourceExposure(ResourceScope.None)]
+        //        [DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
+        //        [SuppressUnmanagedCodeSecurity]
+        //        private static extern uint InternalGetSortVersion();
+
+        //#endif
+   //     [System.Security.SecurityCritical]
+   //     [ResourceExposure(ResourceScope.None)]
+   //     [DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
+   //     [SuppressUnmanagedCodeSecurity]
+   //     private static extern IntPtr NativeInternalInitSortHandle(String localeName, out IntPtr handleOrigin);
+
+   //     Get a locale sensitive sort hash code from native code -- COMNlsInfo::InternalGetGlobalizedHashCode
+   //    [System.Security.SecurityCritical]  // auto-generated
+   //    [ResourceExposure(ResourceScope.None)]
+   //    [DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
+   //    [SuppressUnmanagedCodeSecurity]
+   //     private static extern int InternalGetGlobalizedHashCode(IntPtr handle, IntPtr handleOrigin, string localeName, string source, int length, int dwFlags, bool forceRandomizedHashing, long additionalEntropy);
+
+   //     Use native API calls to see if this string is entirely defined -- COMNlsInfo::InternalIsSortable
+   //    [System.Security.SecurityCritical]  // auto-generated
+   //    [ResourceExposure(ResourceScope.None)]
+   //    [DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
+   //    [SuppressUnmanagedCodeSecurity]
+   //    [return: MarshalAs(UnmanagedType.Bool)]
+   //     private static extern bool InternalIsSortable(IntPtr handle, IntPtr handleOrigin, String localeName, String source, int length);
+
+   //     Compare a string using the native API calls -- COMNlsInfo::InternalCompareString
+   //    [System.Security.SecurityCritical]  // auto-generated
+   //    [ResourceExposure(ResourceScope.Process)]
+   //    [DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
+   //    [SuppressUnmanagedCodeSecurity]
+   //     private static extern int InternalCompareString(IntPtr handle, IntPtr handleOrigin, String localeName, String string1, int offset1, int length1,
+   //                                                                           String string2, int offset2, int length2, int flags);
+
+   // InternalFindNLSStringEx parameters is not exactly matching kernel32::FindNLSStringEx parameters.
+   //     // Call through to NewApis::FindNLSStringEx so we can get the right behavior
+   //[System.Security.SecurityCritical]  // auto-generated
+   //[ResourceExposure(ResourceScope.None)]
+   //[DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
+   //[SuppressUnmanagedCodeSecurity]
+   //     private static extern int InternalFindNLSStringEx(IntPtr handle, IntPtr handleOrigin, String localeName, int flags, String source, int sourceCount, int startIndex, string target, int targetCount);
+
+   // Call through to NewAPis::LCMapStringEx so we can get appropriate behavior for all platforms
+
+   //[System.Security.SecurityCritical]  // auto-generated
+   //     [ResourceExposure(ResourceScope.None)]
+   //     [DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
+   //     [SuppressUnmanagedCodeSecurity]
+   //     private static extern int InternalGetSortKey(IntPtr handle, IntPtr handleOrigin, String localeName, int flags, String source, int sourceCount, byte[] target, int targetCount);
+}
 }

@@ -141,7 +141,7 @@ namespace StarLib
                 result.SetFailure(ParseFailureKind.Format, "Format_BadFormatSpecifier", null);
                 return false;
             }
-
+            //throw new NotImplementedException();
             Contract.Assert(dtfi != null, "dtfi == null");
 
             return DoStrictParse(s, format, style, dtfi, ref result);
@@ -4603,10 +4603,9 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             result.Hour = result.Minute = result.Second = -1;
 
             //throw new NotImplementedException();
-
             __DTString format = new __DTString(formatParam, dtfi, false);
+            throw new NotImplementedException();
             __DTString str = new __DTString(s, dtfi, false);
-
             throw new NotImplementedException();
 
             if (parseInfo.fAllowTrailingWhite)
@@ -4971,7 +4970,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
 
         internal __DTString(String str, StarCulture dtfi)
         {
-            //throw new NotImplementedException();
+            throw new NotImplementedException();
             Index = -1;
             Value = str;
             len = Value.Length;
