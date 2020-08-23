@@ -59,7 +59,9 @@ namespace StarLib
         internal static StarDate ParseExact(String s, String format, StarCulture dtfi, StarDateStyles style)
         {
             StarDateResult result = new StarDateResult();       // The buffer to store the parsing result.
+            //throw new NotImplementedException();
             result.Init();
+            //throw new NotImplementedException();
             if (TryParseExact(s, format, dtfi, style, ref result))
             {
                 return result.parsedDate;
@@ -4564,7 +4566,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             ref StarDateResult result)
         {
 
-
+            //throw new NotImplementedException();
 
             ParsingInfo parseInfo = new ParsingInfo();
             parseInfo.Init();
@@ -4600,8 +4602,12 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             // if we have parsed every item twice.
             result.Hour = result.Minute = result.Second = -1;
 
+            //throw new NotImplementedException();
+
             __DTString format = new __DTString(formatParam, dtfi, false);
             __DTString str = new __DTString(s, dtfi, false);
+
+            throw new NotImplementedException();
 
             if (parseInfo.fAllowTrailingWhite)
             {
@@ -4952,13 +4958,20 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
         // In some cultures, such as mn-MN, it uses "\x0031\x00a0\x0434\x04af\x0433\x044d\x044d\x0440\x00a0\x0441\x0430\x0440" in month names.
         private bool m_checkDigitToken;
 
-        internal __DTString(String str, StarCulture dtfi, bool checkDigitToken) : this(str, dtfi)
+        internal __DTString(String str, StarCulture dtfi, bool checkDigitToken) : this(str, dtfi) //typeloadexception
         {
             m_checkDigitToken = checkDigitToken;
         }
 
+        public static System.UInt32 InternalGetSortVersion()
+        {
+            throw new System.NotImplementedException("Method 'System.Globalization.CompareInfo.InternalGetSortVersion' has not been implemented!");
+        }
+
+
         internal __DTString(String str, StarCulture dtfi)
         {
+            //throw new NotImplementedException();
             Index = -1;
             Value = str;
             len = Value.Length;
@@ -4975,6 +4988,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
                 //m_info = Thread.CurrentThread.CurrentCulture.StarCompareInfo;
                 //m_checkDigitToken = false;
             }
+            throw new NotImplementedException();
         }
 
         internal StarCompareInfo StarCompareInfo

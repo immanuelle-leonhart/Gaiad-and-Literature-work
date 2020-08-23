@@ -3674,7 +3674,7 @@ namespace StarLib
         //
         public static StarDate ParseExact(String s, String format)
         {
-            return (StarDateParse.ParseExact(s, format));
+            return StarDateParse.ParseExact(s, format);
         }
 
         // Constructs a StarDate from a string. The string must specify a
@@ -4140,12 +4140,12 @@ namespace StarLib
             }
         }
 
-        public string TestToStringAndParse(string v)
+        public string TestToStringAndParse(string format)
         {
-            string ts = ToString(v);
-            Console.WriteLine(ts);
-            this = ParseExact(ts, v);
-            return ToString(v);
+            string s = ToString(format);
+            Console.WriteLine(s);
+            this = ParseExact(s, format);
+            return ToString(format);
         }
     }
 }
