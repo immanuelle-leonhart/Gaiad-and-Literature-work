@@ -16,9 +16,16 @@
     <repository type="Library" url="https://github.com/siliconprophet/StarDate" />
     <dependencies>
       <group targetFramework=".NETStandard1.6">
+        <dependency id="Microsoft.Win32.Primitives" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Win32.Registry" version="4.7.0" exclude="Build,Analyzers" />
         <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
         <dependency id="Newtonsoft.Json" version="12.0.3" exclude="Build,Analyzers" />
         <dependency id="System.Diagnostics.Contracts" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime" version="4.3.1" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.CompilerServices.Unsafe" version="4.7.1" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.InteropServices" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Security.Cryptography.Cng" version="4.7.0" exclude="Build,Analyzers" />
+        <dependency id="System.Security.Principal" version="4.3.0" exclude="Build,Analyzers" />
         <dependency id="System.Threading.Thread" version="4.3.0" exclude="Build,Analyzers" />
       </group>
     </dependencies>
