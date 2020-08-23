@@ -1339,9 +1339,9 @@ namespace StarLib
             }
         }
 
-        internal int ToFourDigitYear(int tokenValue)
+        internal int ToFourDigitYear(int xx)
         {
-            throw new NotImplementedException();
+            return 12000 + xx;
         }
 
 
@@ -2974,7 +2974,8 @@ namespace StarLib
 
         public string GetMonthName(int i)
         {
-            return MonthNames[i];
+            //Console.WriteLine(i);
+            return MonthNames[i - 1];
         }
 
         //internal static object GetInstance(IFormatProvider provider)
