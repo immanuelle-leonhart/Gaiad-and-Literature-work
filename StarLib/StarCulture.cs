@@ -1166,7 +1166,7 @@ namespace StarLib
 
 
 
-        internal String ShortStarDatePattern
+        public String ShortStarDatePattern
         {
             get
             {
@@ -1184,7 +1184,7 @@ namespace StarLib
         }
 
 
-        internal String FullStarDatePattern
+        public String FullStarDatePattern
         {
             get
             {
