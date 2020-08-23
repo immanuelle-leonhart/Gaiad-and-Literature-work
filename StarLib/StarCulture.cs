@@ -3192,7 +3192,19 @@ namespace StarLib
 
         internal bool TryToStarDate(int year, int month, int day, int hour, int minute, int second, int millisecond, int era, out StarDate time)
         {
-            throw new NotImplementedException();
+            try
+            {
+                time = new StarDate(year, month, day, hour, minute, second, millisecond);
+                Console.WriteLine(time);
+                //throw new NotImplementedException();
+                return true;
+            }
+            catch (ArgumentOutOfRangeException)
+            {
+                time = default;
+                //throw new NotImplementedException();
+                return false;
+            }
         }
 
         internal StarCulture Clone()
