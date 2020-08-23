@@ -3974,7 +3974,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             TM tempTimeMark = 0;
 
             char ch = format.GetChar();
-
+            throw new NotImplementedException();
             switch (ch)
             {
                 case 'y':
@@ -4622,7 +4622,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
                 format.RemoveLeadingInQuoteSpaces();
                 str.SkipWhiteSpaces();
             }
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
             //
             // Scan every character in format and match the pattern in str.
             //
