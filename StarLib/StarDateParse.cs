@@ -4606,7 +4606,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             __DTString format = new __DTString(formatParam, dtfi, false);
             //throw new NotImplementedException();
             __DTString str = new __DTString(s, dtfi, false);
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
 
             if (parseInfo.fAllowTrailingWhite)
             {
@@ -4615,14 +4615,14 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
                 format.RemoveTrailingInQuoteSpaces();
                 str.TrimTail();
             }
-
+            //throw new NotImplementedException();
             if ((styles & StarDateStyles.AllowLeadingWhite) != 0)
             {
                 format.SkipWhiteSpaces();
                 format.RemoveLeadingInQuoteSpaces();
                 str.SkipWhiteSpaces();
             }
-
+            throw new NotImplementedException();
             //
             // Scan every character in format and match the pattern in str.
             //
@@ -4639,14 +4639,14 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
                     return (false);
                 }
             }
-
+            throw new NotImplementedException();
             if (str.Index < str.Value.Length - 1)
             {
                 // There are still remaining character in str.
                 result.SetFailure(ParseFailureKind.Format, "Format_BadStarDate", null);
                 return false;
             }
-
+            throw new NotImplementedException();
             if (parseInfo.fUseTwoDigitYear && ((dtfi.FormatFlags & StarDateFormatFlags.UseHebrewRule) == 0))
             {
                 // A two digit year value is expected. Check if the parsed year value is valid.
@@ -4665,7 +4665,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
                     return false;
                 }
             }
-
+            throw new NotImplementedException();
             if (parseInfo.fUseHour12)
             {
                 if (parseInfo.timeMark == TM.NotSet)
@@ -4709,14 +4709,14 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
                 }
             }
 
-
+            throw new NotImplementedException();
             // Check if the parased string only contains hour/minute/second values.
             bTimeOnly = (result.Year == -1 && result.Month == -1 && result.Day == -1);
             if (!CheckDefaultStarDate(ref result, ref parseInfo.calendar, styles))
             {
                 return false;
             }
-
+            throw new NotImplementedException();
             if (!bTimeOnly && dtfi.HasYearMonthAdjustment)
             {
                 if (!dtfi.YearMonthAdjustment(ref result.Year, ref result.Month, ((result.flags & ParseFlags.ParsedMonthName) != 0)))
@@ -4735,7 +4735,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             {
                 result.parsedDate = result.parsedDate.AddTicks((long)Math.Round(result.fraction * StarDate.TicksPerSecond));
             }
-
+            throw new NotImplementedException();
             //
             // We have to check day of week before we adjust to the time zone.
             // It is because the value of day of week may change after adjusting
@@ -4753,7 +4753,7 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
                 }
             }
 
-
+            throw new NotImplementedException();
             if (!DetermineTimeZoneAdjustments(ref result, styles, bTimeOnly))
             {
                 return false;
