@@ -154,7 +154,9 @@ namespace StarLib
         "m"/"M"             Month/Day date                          culture-specific                        Virgo 31
 (G)     "o"/"O"             Round Trip XML                          "yyyy-MM-ddTHH:mm:ss.fffffffK"          11999-10-28 02:00:00.0000000Z
 (G)     "r"/"R"             RFC 1123 date,                          "WWW, dd MMM yyyy HH':'mm':'ss 'GMT'"   Sun, 28 Vir 11999 10:00:00 GMT
-(G)     "s"                 Sortable format, based on ISO 8601.     "yyyy-MM-dd'T'HH:mm:ss"                 11999-10-28T02:00:00
+(G)     "i"/"I"             Sortable format, based on ISO 8601.     "yyyy-MM-dd'T'HH:mm:ss"                 11999-10-28T02:00:00
+        "s"/"S"             Short DateTime Format                   "yyyy-MM-dd HH:mm:ss kk"                11999-10-28 02:00:00 PST
+        "l"/"L"             Long DateTime Format                    "WWWW, MMMMM ddd yyyyy h:mm tt kk"      Sunday, Virgo 28th, 11999 2:00 AM PST
                                                                     ('T' for local time)
         "t"                 short time                              culture-specific                        2:00 AM
         "T"                 long time                               culture-specific                        2:00:00 AM
@@ -704,11 +706,11 @@ namespace StarLib
         {
             if (StarDate.LongDefault)
             {
-                return ToString(local.FullStarDatePattern);
+                return ToString(local, "L");
             }
             else
             {
-                return ToString(local.ShortStarDatePattern);
+                return ToString(local, "S");
             }
         }
 
@@ -779,7 +781,7 @@ namespace StarLib
 
         public void GetDatePart(out long year)
         {
-            year = Year;
+            year = FullYear;
         }
 
         public void GetDatePart(out long year, out long month)
@@ -870,10 +872,137 @@ namespace StarLib
             GetTimePart(out hour, out min, out sec, out millisec, out ticks);
         }
 
-        private void GetDatePart(out long[] vs)
+        /// <summary>
+        /// //////////////////////////////////////////////////////////////////////
+        /// </summary>
+        /// <param name="vs"></param>
+        /// 
+
+        public void GetDatePart(out int year)
         {
-            long y;
-            long mo, d, h, mi, s, ms, t;
+            year = Year;
+        }
+
+        public void GetDatePart(out int year, out int month)
+        {
+            Int64 n = (long)(AdjustedTicks / TicksPerDay);
+            if (IsTerran)
+            {
+                int y100k = (int)(n / DaysPer100k);
+                n -= y100k * DaysPer100k;
+                int y78 = (int)(n / DaysPer78Years);
+                n -= y78 * DaysPer78Years;
+                int y6 = (int)(n / DaysPerSixYears);
+                if (y6 == 13) y6 = 12;
+                n -= y6 * DaysPerSixYears;
+                int y1 = (int)(n / DaysPerYear);
+                if (y1 == 6) y1 = 5;
+                long y = 100 * k * (long)y100k + 78 * (long)y78 + 6 * (long)y6 + (long)y1;
+                year = ToManu(y);
+                n -= y1 * DaysPerYear;
+                int d = (int)n + 1;
+                month = ((d - 1) / 28) + 1;
+                //d %= 28;
+                //if (d == 0) d = 28;
+                //day = d;
+            }
+            else
+            {
+                throw new NotImplementedException();
+            }
+
+        }
+
+        public void GetDatePart(out int year, out int month, out int day)
+        {
+            Int64 n = (long)(AdjustedTicks / TicksPerDay);
+            if (IsTerran)
+            {
+                int y100k = (int)(n / DaysPer100k);
+                n -= y100k * DaysPer100k;
+                int y78 = (int)(n / DaysPer78Years);
+                n -= y78 * DaysPer78Years;
+                int y6 = (int)(n / DaysPerSixYears);
+                if (y6 == 13) y6 = 12;
+                n -= y6 * DaysPerSixYears;
+                int y1 = (int)(n / DaysPerYear);
+                if (y1 == 6) y1 = 5;
+                long y = 100 * k * (long)y100k + 78 * (long)y78 + 6 * (long)y6 + (long)y1;
+                year = ToManu(y);
+                n -= y1 * DaysPerYear;
+                int d = (int)n + 1;
+                month = ((d - 1) / 28) + 1;
+                d %= 28;
+                if (d == 0) d = 28;
+                day = d;
+            }
+            else
+            {
+                throw new NotImplementedException();
+            }
+
+        }
+
+        public void GetDatePart(out int year, out int month, out int day, out int hour)
+        {
+            GetDatePart(out year, out month, out day);
+            hour = Hour;
+        }
+
+        public void GetDatePart(out int year, out int month, out int day, out int hour, out int min)
+        {
+            GetDatePart(out year, out month, out day);
+            GetTimePart(out hour, out min);
+        }
+
+        private void GetTimePart(out int hour, out int min)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void GetDatePart(out int year, out int month, out int day, out int hour, out int min, out int sec)
+        {
+            GetDatePart(out year, out month, out day);
+            GetTimePart(out hour, out min, out sec);
+        }
+
+        private void GetTimePart(out int hour, out int min, out int sec)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void GetDatePart(out int year, out int month, out int day, out int hour, out int min, out int sec, out int millisec)
+        {
+            GetDatePart(out year, out month, out day);
+            GetTimePart(out hour, out min, out sec, out millisec);
+        }
+
+        private void GetTimePart(out int hour, out int min, out int sec, out int millisec)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void GetDatePart(out int year, out int month, out int day, out int hour, out int min, out int sec, out int millisec, out int ticks)
+        {
+            GetDatePart(out year, out month, out day);
+            GetTimePart(out hour, out min, out sec, out millisec, out ticks);
+        }
+
+        private void GetTimePart(out int hour, out int min, out int sec, out int millisec, out int ticks)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void GetDatePart(out int[] vs)
+        {
+            int y, mo, d, h, mi, s, ms, t;
+            GetDatePart(out y, out mo, out d, out h, out mi, out s, out ms, out t);
+            vs = new int[] { y, mo, d, h, mi, s, ms, t };
+        }
+
+        public void GetDatePart(out long[] vs)
+        {
+            long y, mo, d, h, mi, s, ms, t;
             GetDatePart(out y, out mo, out d, out h, out mi, out s, out ms, out t);
             vs = new long[] { y, mo, d, h, mi, s, ms, t };
         }
@@ -2766,6 +2895,21 @@ namespace StarLib
             }
             set
             {
+                Kind = value.Kind;
+                AdjustedTicks = value.Ticks + NetStart;
+            }
+        }
+
+        public DateTime DateTimeUTC
+        {
+            get
+            {
+                DateTime dt = new DateTime((long)(internalTicks - NetStart));
+                DateTime.SpecifyKind(dt, DateTimeKind.Utc);
+                return dt;
+            }
+            set
+            {
                 internalTicks = value.Ticks + NetStart;
             }
         }
@@ -2816,7 +2960,7 @@ namespace StarLib
             get
             {
                 Contract.Ensures(Contract.Result<int>() >= 1 && Contract.Result<int>() <= 1000000);
-                return (int)(GetDatePart(DatePartYear) % 1000000);
+                return ToManu(FullYear);
             }
             set
             {
@@ -2828,6 +2972,11 @@ namespace StarLib
                 dt--;
                 this.internalTicks = dt.internalTicks;
             }
+        }
+
+        private int ToManu(long fullYear)
+        {
+            return (int)(fullYear % 1000000);
         }
 
 
@@ -4148,6 +4297,14 @@ namespace StarLib
             Console.WriteLine("Input: " + s);
             this = ParseExact(s, format);
             return ToString(format);
+        }
+
+        public string RFC1123
+        {
+            get
+            {
+                return DateTimeUTC.ToString("R");
+            }
         }
     }
 }

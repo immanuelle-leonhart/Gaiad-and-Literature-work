@@ -155,7 +155,7 @@ namespace StarLib
             StarCulture Arabic = new StarCulture("Arabic", "ar", "القوس", "الجدي", "الدلو", "الحوت", "الحمل", "الثور", "الجوزاء", "السرطان", "الأسد", "العذراء", "الميزان", "العقرب", "الحواء", "ذو_القرنين");
             // Formats
             InvariantCulture.saShortDates = new String[] { "MM/dd/yyyy", "yyyy-MM-dd" };          // short date format
-            InvariantCulture.saLongDates = new String[] { "WWWW, dd MMMM yyyy" };                 // long date format
+            InvariantCulture.saLongDates = new String[] { "WWWW, MMMMM ddd yyyyy", "WWWW, dd MMMM yyyy" };                 // long date format
             InvariantCulture.saYearMonths = new String[] { "yyyy MMMM" };                         // Year month format
             InvariantCulture.sMonthDay = "MMMM dd";                                            // Month day pattern
 
@@ -180,7 +180,7 @@ namespace StarLib
             InvariantCulture._saDurationFormats = new string[] { "HH:mm:ss" };                             // time duration format
             InvariantCulture.shortTimePattern = "h:mm tt";
             InvariantCulture.longTimePattern = "HH:mm:ss";
-            InvariantCulture.LongDatePattern = "WWWW MMMMM ddd yyyyy";
+            InvariantCulture.LongDatePattern = "WWWW, MMMMM ddd yyyyy";
             InvariantCulture.shortDatePattern = "yyyyy/MM/dd";
             InvariantCulture.m_genitiveAbbreviatedMonthNames = InvariantCulture.AbbreviatedGenitiveMonthNames;    // Abbreviated genitive month names (same as abbrev month names for invariant)                                                      
             JapaneseCulture.shortTimePattern = "h時m分s秒";

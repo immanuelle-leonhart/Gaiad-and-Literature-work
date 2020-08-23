@@ -134,7 +134,9 @@ namespace StarLib
         "m"/"M"             Month/Day date                          culture-specific                        Virgo 31
 (G)     "o"/"O"             Round Trip XML                          "yyyy-MM-ddTHH:mm:ss.fffffffK"          11999-10-28 02:00:00.0000000Z
 (G)     "r"/"R"             RFC 1123 date,                          "WWW, dd MMM yyyy HH':'mm':'ss 'GMT'"   Sun, 28 Vir 11999 10:00:00 GMT
-(G)     "s"                 Sortable format, based on ISO 8601.     "yyyy-MM-dd'T'HH:mm:ss"                 11999-10-28T02:00:00
+(G)     "i"/"I"             Sortable format, based on ISO 8601.     "yyyy-MM-dd'T'HH:mm:ss"                 11999-10-28T02:00:00
+        "s"/"S"             Short DateTime Format                   "yyyy-MM-dd HH:mm:ss kk"                11999-10-28 02:00:00 PST
+        "l"/"L"             Long DateTime Format                    "WWWW, MMMMM ddd yyyyy h:mm tt kk"      Sunday, Virgo 28th, 11999 2:00 AM PST
                                                                     ('T' for local time)
         "t"                 short time                              culture-specific                        2:00 AM
         "T"                 long time                               culture-specific                        2:00:00 AM
@@ -924,7 +926,8 @@ namespace StarLib
                 case 'R':       // RFC 1123 Standard
                     realFormat = sdfi.RFC1123Pattern;
                     break;
-                case 's':       // Sortable without Time StarZone Info
+                case 'I':
+                case 'i':       // Sortable without Time StarZone Info
                     realFormat = sdfi.SortableStarDatePattern;
                     break;
                 case 't':       // Short Time
@@ -960,7 +963,8 @@ namespace StarLib
         {
             switch (format[0])
             {
-                case 's':       // Sortable without Time StarZone Info
+                case 'I':
+                case 'i':       // Sortable without Time StarZone Info
                     sdfi = StarCulture.InvariantCulture;
                     break;
                 case 'u':       // Universal time in sortable format.
@@ -991,7 +995,7 @@ namespace StarLib
             //////////////Console.WriteLine(format);
             ////throw new NotImplementedException();
             ////////////Console.WriteLine(sdfi.CultureName);
-            return Format(StarDate, format, sdfi, NullOffset);
+            return Format(StarDate, format, sdfi, StarDate.Offset);
         }
 
 
@@ -1012,6 +1016,12 @@ namespace StarLib
                     case 'R':
                     case 'r':
                         return StringBuilderCache.GetStringAndRelease(FastFormatRfc1123(StarDate, offset, sdfi));
+                    case 'l':
+                    case 'L':
+                        return StringBuilderCache.GetStringAndRelease(FastFormatLong(StarDate, sdfi));
+                    case 's':
+                    case 'S':
+                        return StringBuilderCache.GetStringAndRelease(FastFormatShort(StarDate, sdfi));
                 }
 
                 format = ExpandPredefinedFormat(format, ref StarDate, ref sdfi, ref offset);
@@ -1019,6 +1029,37 @@ namespace StarLib
             ////////////Console.WriteLine(sdfi.CultureName);
             ////////////Console.WriteLine("Return");
             return FormatCustomized(StarDate, format, sdfi, offset);
+        }
+
+        private static StringBuilder FastFormatShort(StarDate starDate, StarCulture sdfi)
+        {
+            //yyyy-MM-dd HH:mm:ss kk
+            int[] vs;
+            starDate.GetDatePart(out vs);
+            return new StringBuilder(vs[0] + sdfi.DateSeparator + AddZero(vs[1]) + sdfi.DateSeparator + AddZero(vs[2]) + " " + AddZero(vs[3]) + sdfi.TimeSeparator + AddZero(vs[4]) + sdfi.TimeSeparator + AddZero(vs[5]) + " " + starDate.TimeZone);
+        }
+
+        internal static StringBuilder FastFormatLong(StarDate StarDate, StarCulture sdfi)
+        {
+            //WWWW, MMMMM ddd yyyyy h:mm tt kk
+            int[] vs;
+            StarDate.GetDatePart(out vs);
+            string tt = sdfi.AMDesignator;
+            int h = vs[3];
+            if (h == 0)
+            {
+                h = 12;
+            }
+            else if (h == 12)
+            {
+                tt = sdfi.PMDesignator;
+            }
+            else if (h > 12)
+            {
+                tt = sdfi.PMDesignator;
+                h -= 12;
+            }
+            return new StringBuilder(sdfi.WeekDays(vs[2] % 7) + ", " + sdfi.MonthNames[vs[1]] + " " + sdfi.Ordinal(vs[2]) + " " + vs[0] + " " + h + sdfi.TimeSeparator + AddZero(vs[4]) + " " + tt + " " + StarDate.TimeZone);
         }
 
         internal static StringBuilder FastFormatRfc1123(StarDate StarDate, Time offset, StarCulture sdfi)
