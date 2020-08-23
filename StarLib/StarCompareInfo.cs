@@ -214,7 +214,7 @@ namespace StarLib
             }
             Contract.EndContractBlock();
 
-            return StarCulture.GetStarCulture(name).StarCompareInfo;
+            return StarCulture.GetStarCulture(name).CompareInfo;
         }
 
         [System.Runtime.InteropServices.ComVisible(false)]
@@ -239,7 +239,7 @@ namespace StarLib
                 return (false);
             }
 
-            StarCompareInfo c = StarCulture.InvariantCulture.StarCompareInfo;
+            StarCompareInfo c = StarCulture.InvariantCulture.CompareInfo;
 
             return (InternalIsSortable(c.m_dataHandle, c.m_handleOrigin, c.m_sortName, text, text.Length));
         }
@@ -1304,6 +1304,11 @@ namespace StarLib
             return ("StarCompareInfo - " + this.Name);
         }
 
+        internal static StarCompareInfo FromCulture(StarCulture starCulture)
+        {
+            throw new NotImplementedException();
+        }
+
 #if FEATURE_USE_LCID
         public int LCID
         {
@@ -1375,49 +1380,49 @@ namespace StarLib
         //        private static extern uint InternalGetSortVersion();
 
         //#endif
-   //     [System.Security.SecurityCritical]
-   //     [ResourceExposure(ResourceScope.None)]
-   //     [DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
-   //     [SuppressUnmanagedCodeSecurity]
-   //     private static extern IntPtr NativeInternalInitSortHandle(String localeName, out IntPtr handleOrigin);
+        //     [System.Security.SecurityCritical]
+        //     [ResourceExposure(ResourceScope.None)]
+        //     [DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
+        //     [SuppressUnmanagedCodeSecurity]
+        //     private static extern IntPtr NativeInternalInitSortHandle(String localeName, out IntPtr handleOrigin);
 
-   //     Get a locale sensitive sort hash code from native code -- COMNlsInfo::InternalGetGlobalizedHashCode
-   //    [System.Security.SecurityCritical]  // auto-generated
-   //    [ResourceExposure(ResourceScope.None)]
-   //    [DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
-   //    [SuppressUnmanagedCodeSecurity]
-   //     private static extern int InternalGetGlobalizedHashCode(IntPtr handle, IntPtr handleOrigin, string localeName, string source, int length, int dwFlags, bool forceRandomizedHashing, long additionalEntropy);
+        //     Get a locale sensitive sort hash code from native code -- COMNlsInfo::InternalGetGlobalizedHashCode
+        //    [System.Security.SecurityCritical]  // auto-generated
+        //    [ResourceExposure(ResourceScope.None)]
+        //    [DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
+        //    [SuppressUnmanagedCodeSecurity]
+        //     private static extern int InternalGetGlobalizedHashCode(IntPtr handle, IntPtr handleOrigin, string localeName, string source, int length, int dwFlags, bool forceRandomizedHashing, long additionalEntropy);
 
-   //     Use native API calls to see if this string is entirely defined -- COMNlsInfo::InternalIsSortable
-   //    [System.Security.SecurityCritical]  // auto-generated
-   //    [ResourceExposure(ResourceScope.None)]
-   //    [DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
-   //    [SuppressUnmanagedCodeSecurity]
-   //    [return: MarshalAs(UnmanagedType.Bool)]
-   //     private static extern bool InternalIsSortable(IntPtr handle, IntPtr handleOrigin, String localeName, String source, int length);
+        //     Use native API calls to see if this string is entirely defined -- COMNlsInfo::InternalIsSortable
+        //    [System.Security.SecurityCritical]  // auto-generated
+        //    [ResourceExposure(ResourceScope.None)]
+        //    [DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
+        //    [SuppressUnmanagedCodeSecurity]
+        //    [return: MarshalAs(UnmanagedType.Bool)]
+        //     private static extern bool InternalIsSortable(IntPtr handle, IntPtr handleOrigin, String localeName, String source, int length);
 
-   //     Compare a string using the native API calls -- COMNlsInfo::InternalCompareString
-   //    [System.Security.SecurityCritical]  // auto-generated
-   //    [ResourceExposure(ResourceScope.Process)]
-   //    [DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
-   //    [SuppressUnmanagedCodeSecurity]
-   //     private static extern int InternalCompareString(IntPtr handle, IntPtr handleOrigin, String localeName, String string1, int offset1, int length1,
-   //                                                                           String string2, int offset2, int length2, int flags);
+        //     Compare a string using the native API calls -- COMNlsInfo::InternalCompareString
+        //    [System.Security.SecurityCritical]  // auto-generated
+        //    [ResourceExposure(ResourceScope.Process)]
+        //    [DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
+        //    [SuppressUnmanagedCodeSecurity]
+        //     private static extern int InternalCompareString(IntPtr handle, IntPtr handleOrigin, String localeName, String string1, int offset1, int length1,
+        //                                                                           String string2, int offset2, int length2, int flags);
 
-   // InternalFindNLSStringEx parameters is not exactly matching kernel32::FindNLSStringEx parameters.
-   //     // Call through to NewApis::FindNLSStringEx so we can get the right behavior
-   //[System.Security.SecurityCritical]  // auto-generated
-   //[ResourceExposure(ResourceScope.None)]
-   //[DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
-   //[SuppressUnmanagedCodeSecurity]
-   //     private static extern int InternalFindNLSStringEx(IntPtr handle, IntPtr handleOrigin, String localeName, int flags, String source, int sourceCount, int startIndex, string target, int targetCount);
+        // InternalFindNLSStringEx parameters is not exactly matching kernel32::FindNLSStringEx parameters.
+        //     // Call through to NewApis::FindNLSStringEx so we can get the right behavior
+        //[System.Security.SecurityCritical]  // auto-generated
+        //[ResourceExposure(ResourceScope.None)]
+        //[DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
+        //[SuppressUnmanagedCodeSecurity]
+        //     private static extern int InternalFindNLSStringEx(IntPtr handle, IntPtr handleOrigin, String localeName, int flags, String source, int sourceCount, int startIndex, string target, int targetCount);
 
-   // Call through to NewAPis::LCMapStringEx so we can get appropriate behavior for all platforms
+        // Call through to NewAPis::LCMapStringEx so we can get appropriate behavior for all platforms
 
-   //[System.Security.SecurityCritical]  // auto-generated
-   //     [ResourceExposure(ResourceScope.None)]
-   //     [DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
-   //     [SuppressUnmanagedCodeSecurity]
-   //     private static extern int InternalGetSortKey(IntPtr handle, IntPtr handleOrigin, String localeName, int flags, String source, int sourceCount, byte[] target, int targetCount);
-}
+        //[System.Security.SecurityCritical]  // auto-generated
+        //     [ResourceExposure(ResourceScope.None)]
+        //     [DllImport(JitHelpers.QCall, CharSet = CharSet.Unicode)]
+        //     [SuppressUnmanagedCodeSecurity]
+        //     private static extern int InternalGetSortKey(IntPtr handle, IntPtr handleOrigin, String localeName, int flags, String source, int sourceCount, byte[] target, int targetCount);
+    }
 }
