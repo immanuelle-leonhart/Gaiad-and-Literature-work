@@ -1787,7 +1787,8 @@ namespace StarLib
                 }
                 else
                 {
-                    internalTicks += TicksPerDay * day;
+                    int d = (int)(day - 1);
+                    internalTicks += TicksPerDay * d;
                     Accuracy++; //Day
                     if (hour == PlaceHolder)
                     {
@@ -1811,6 +1812,7 @@ namespace StarLib
                         }
                         else
                         {
+                            internalTicks += minute * TicksPerMinute;
                             Accuracy++; //Minute
                             if (second == PlaceHolder)
                             {
@@ -4143,7 +4145,7 @@ namespace StarLib
         public string TestToStringAndParse(string format)
         {
             string s = ToString(format);
-            Console.WriteLine(s);
+            Console.WriteLine("Input: " + s);
             this = ParseExact(s, format);
             return ToString(format);
         }
