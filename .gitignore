@@ -20,3 +20,6 @@ StarDate/obj/Debug/netcoreapp3.1/StarBlaze.csprojAssemblyReference.cache
 StarDate/obj/Debug/netcoreapp3.1/StarBlaze.csproj.FileListAbsolute.txt
 StarLibDesktop/bin/Debug/netcoreapp3.1/StarLibDesktop.exe.WebView2/EBWebView/CrashpadMetrics.pma
 samples/BlazorDesktopApp/bin/Debug/netcoreapp3.0/BlazorDesktopApp.exe.WebView2/EBWebView/CrashpadMetrics.pma
+*.cache
+TestConsole/obj/Debug/netcoreapp3.1/TestConsole.csprojAssemblyReference.cache
+StarLib/obj/Debug/netstandard2.0/StarLib.csprojAssemblyReference.cache
