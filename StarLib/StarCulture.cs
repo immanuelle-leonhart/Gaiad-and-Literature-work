@@ -379,7 +379,7 @@ namespace StarLib
                 //this.dateSeparator = culture.DateTimeFormat.DateSeparator;
                 this.longTimePattern = culture.DateTimeFormat.LongTimePattern;
                 this.shortTimePattern = culture.DateTimeFormat.ShortTimePattern;
-                this.FullStarDatePattern = NetConvert(culture.DateTimeFormat.FullDateTimePattern);
+                //this.FullStarDatePattern = NetConvert(culture.DateTimeFormat.FullDateTimePattern);
                 this.AbbreviatedDayNames = culture.DateTimeFormat.AbbreviatedDayNames;
                 this.SuperShortDayNames = culture.DateTimeFormat.ShortestDayNames;
                 this.YearMonthPattern = culture.DateTimeFormat.YearMonthPattern;
@@ -1188,6 +1188,7 @@ namespace StarLib
         {
             get
             {
+                //return LongDatePattern + " " + LongTimePattern;
                 if (fullStarDatePattern == null)
                 {
                     fullStarDatePattern = LongDatePattern + " " + LongTimePattern;
