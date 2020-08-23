@@ -56,6 +56,16 @@ namespace StarLib
             return ParseExact(s, format, CurrentCulture, StarDateStyles.None);
         }
 
+        internal static StarDate ParseExact(String s, String format, StarCulture dtfi)
+        {
+            return ParseExact(s, format, dtfi, StarDateStyles.None);
+        }
+
+        internal static StarDate ParseExact(String s, String format, StarDateStyles style)
+        {
+            return ParseExact(s, format, CurrentCulture, StarDateStyles.None);
+        }
+
         internal static StarDate ParseExact(String s, String format, StarCulture dtfi, StarDateStyles style)
         {
             StarDateResult result = new StarDateResult();       // The buffer to store the parsing result.
@@ -6087,10 +6097,10 @@ new DS[] { DS.ERROR, DS.TX_NNN,  DS.TX_NNN,  DS.TX_NNN,  DS.ERROR,   DS.ERROR,  
             this.failureArgumentName = failureArgumentName;
         }
 
-        internal void WriteData()
-        {
-            Console.WriteLine(Year + " " + Month + " " + Day + " " + Hour + " " + Minute + " " + Second);
-        }
+        //internal void WriteData()
+        //{
+        //    Console.WriteLine(Year + " " + Month + " " + Day + " " + Hour + " " + Minute + " " + Second);
+        //}
     }
 
     // This is the helper data structure used in ParseExact().

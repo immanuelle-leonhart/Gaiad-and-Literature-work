@@ -13,14 +13,14 @@ namespace StarLib.Forms
     {
         public bool present = false;
         private string[] months;
-        private long year;
-        private long month;
-        private long day;
-        private long hour;
-        private long min;
-        private long sec;
-        private long millisec;
-        private long ticks;
+        private int year;
+        private int month;
+        private int day;
+        private int hour;
+        private int min;
+        private int sec;
+        private int millisec;
+        private int ticks;
 
         public int MonthDays { get; protected set; }
         public int YearMonths { get; protected set; }
@@ -43,7 +43,7 @@ namespace StarLib.Forms
         {
             get
             {
-                return (int)year;
+                return year;
             }
             set
             {
@@ -57,7 +57,7 @@ namespace StarLib.Forms
         {
             get
             {
-                return (int)month;
+                return month;
             }
             set
             {
@@ -71,7 +71,7 @@ namespace StarLib.Forms
         {
             get
             {
-                return (int)day;
+                return day;
             }
             set
             {
@@ -85,7 +85,7 @@ namespace StarLib.Forms
         {
             get
             {
-                return (int)hour;
+                return hour;
             }
             set
             {
@@ -99,7 +99,7 @@ namespace StarLib.Forms
         {
             get
             {
-                return (int)min;
+                return min;
             }
             set
             {
@@ -116,7 +116,7 @@ namespace StarLib.Forms
         {
             get
             {
-                return (int)sec;
+                return sec;
             }
             set
             {
@@ -130,7 +130,7 @@ namespace StarLib.Forms
         {
             get
             {
-                return (int)millisec;
+                return millisec;
             }
             set
             {
@@ -146,7 +146,7 @@ namespace StarLib.Forms
         {
             get
             {
-                return (int)ticks;
+                return ticks;
             }
             set
             {
@@ -208,17 +208,26 @@ namespace StarLib.Forms
             }
         }
 
-        private void Update(StarDate dt)
+        public void Update(StarDate dt)
         {
             Value = dt;
             Update();
         }
 
-        private void Update()
+        public void Update()
         {
             Value.GetDatePart(out year, out month, out day, out hour, out min, out sec, out millisec, out ticks);
             MonthDays = Value.GetMonthDays();
             YearMonths = Value.GetYearMonths();
+            //BaseYear - 5;
+            //i <= BaseYear + 5
+            if (Math.Abs(year - BaseYear) > 5)
+            {
+                var dt = Value;
+                BaseYear = Year;
+                Update(dt);
+                Value = dt;
+            }
         }
 
     }
