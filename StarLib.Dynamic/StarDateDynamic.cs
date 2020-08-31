@@ -4,6 +4,11 @@ using System;
 using System.Dynamic;
 using System.Numerics;
 
+
+/// <summary>
+/// https://www.red-gate.com/simple-talk/dotnet/net-framework/dynamic-language-integration-in-a-c-world/
+/// </summary>
+
 namespace StarLib.Dynamic
 {
     public class StarDateDynamic : DynamicObject
