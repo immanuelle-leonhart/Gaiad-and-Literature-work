@@ -89,16 +89,16 @@ namespace Kinship
                 case 3:
                     switch (RelationshipString)
                     {
-                        case "FFF": return MLMK^$;
-                        case "FFM": return MLMK^$;
-                        case "FFB": return MLMK^$;
-                        case "FFZ": return MLMK^$;
-                        case "FFS": return MLMK^$;
-                        case "FFD": return MLMK^$;
-                        case "FFP": return MLMK^$;
-                        case "FMF": return MLMK^$;
-                        case "FMM": return MLMK^$;
-                        case "FMB": return MLMK^$;
+                        case "FFF": return nthGrandFather(3);
+                        case "FFM": return nthNanna(3);
+                        case "FFB": return GreatFaedro(3);
+                        case "FFZ": return GreatAunt(3);
+                        case "FFS": return HalfFaedero(2);
+                        case "FFD": return HalfAunt(2);
+                        case "FFP": return StepNanna(2);
+                        case "FMF": return Grandcestor(3);
+                        case "FMM": return Grandcestress(3);
+                        case "FMB": return GreatAunt(3);
                         case "FMZ": return MLMK^$;
                         case "FMS": return MLMK^$;
                         case "FMD": return MLMK^$;
@@ -425,13 +425,13 @@ namespace Kinship
                         case "PDS": return MLMK^$;
                         case "PDD": return MLMK^$;
                         case "PDP": return MLMK^$;
-                        case "PPF": return MLMK^$;
-                        case "PPM": return MLMK^$;
-                        case "PPB": return MLMK^$;
-                        case "PPZ": return MLMK^$;
-                        case "PPS": return MLMK^$;
-                        case "PPD": return MLMK^$;
-                        case "PPP": return MLMK^$;
+                        case "PPF": return Error;
+                        case "PPM": return Error;
+                        case "PPB": return Error;
+                        case "PPZ": return Error;
+                        case "PPS": return Error;
+                        case "PPD": return Error;
+                        case "PPP": return Error;
                         default: return Error;
                     }
                 default:
