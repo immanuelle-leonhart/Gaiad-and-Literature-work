@@ -204,8 +204,8 @@ namespace Kinship
                         case "MMF": return Ancestor(RelationshipString);
                         case "MMM": return Ancestor(RelationshipString);
                         case "MMB": return NotImplemented;
-                        case "MMZ": return NotImplemented;
-                        case "MMS": return NotImplemented;
+                        case "MMZ": return GreatModrie(2);
+                        case "MMS": return GreatUncle(2);
                         case "MMD": return NotImplemented;
                         case "MMP": return NotImplemented;
                         case "MBF": return NotImplemented;
