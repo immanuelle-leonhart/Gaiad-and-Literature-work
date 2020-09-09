@@ -5,6 +5,62 @@ namespace Kinship
 {
     public class FamilyTerms
     {
+        public string Ego { get; private set; }
+        public string Father { get; private set; }
+        public string Mother { get; private set; }
+        public string Brother { get; private set; }
+        public string Sister { get; private set; }
+        public string Son { get; private set; }
+        public string Daughter { get; private set; }
+        public string Partner { get; private set; }
+        public string Error { get; private set; }
+        public string GrandFather { get; private set; }
+        public string Nanna { get; private set; }
+        public string Faedro { get; private set; }
+        public string Aunt { get; private set; }
+        public string AgnaticBrother { get; private set; }
+        public string AgnaticSister { get; private set; }
+        public string StepMother { get; private set; }
+        public string GenGen { get; private set; }
+        public string GrandMother { get; private set; }
+        public string Uncle { get; private set; }
+        public string Modrie { get; private set; }
+        public string UterineBrother { get; private set; }
+        public string UterineSister { get; private set; }
+        public string StepFather { get; private set; }
+        public string Nephew { get; private set; }
+        public string Niece { get; private set; }
+        public string Jeneter { get; private set; }
+        public string Mitling { get; private set; }
+        public string Mitolin { get; private set; }
+        public string Levir { get; private set; }
+        public string Wife { get; private set; }
+        public string GrandSon { get; private set; }
+        public string PaternalGranddaughter { get; private set; }
+        public string Schnerre { get; private set; }
+        public string DaughterSon { get; private set; }
+        public string GrandDaughter { get; private set; }
+        public string Yerno { get; private set; }
+        public string Sweger { get; private set; }
+        public string Swegra { get; private set; }
+        public string StepSon { get; private set; }
+        public string StepDaughter { get; private set; }
+        public string AgnaticParallelCousin { get; private set; }
+        public string AgnaticParallelCousinf { get; private set; }
+        public string Gallen { get; private set; }
+        public string Eame { get; private set; }
+        public string HalfNephew { get; private set; }
+        public string HalfNiece { get; private set; }
+        public string StepMothersFather { get; private set; }
+        public string StepMothersMother { get; private set; }
+        public string StepBrother { get; private set; }
+        public string StepSister { get; private set; }
+        public string MothersAgnaticBrother { get; private set; }
+        public string MothersAgnaticSister { get; private set; }
+        public string StepYerno { get; private set; }
+        public string Macheton { get; private set; }
+        public string Machetonie { get; private set; }
+        public string StepGrandDaughter { get; private set; }
 
         public string GetRelationship(string RelationshipString)
         {
@@ -36,7 +92,7 @@ namespace Kinship
                     switch (RelationshipString)
                     {
                         case "FF": return GrandFather;
-                        case "FM": return Nanna:
+                        case "FM": return Nanna;
                         case "FB": return Faedro;
                         case "FZ": return Aunt;
                         case "FS": return AgnaticBrother;
@@ -60,8 +116,8 @@ namespace Kinship
                         case "ZM": return Mother;
                         case "ZB": return Brother;
                         case "ZZ": return Sister;
-                        case "ZS": return Maphew;
-                        case "ZD": return Mitolina;
+                        case "ZS": return Mitling;
+                        case "ZD": return Mitolin;
                         case "ZP": return Levir;
                         case "SF": return Ego;
                         case "SM": return Wife;
@@ -109,322 +165,322 @@ namespace Kinship
                         case "FBZ": return Aunt;
                         case "FBS": return AgnaticParallelCousin;
                         case "FBD": return AgnaticParallelCousinf;
-                        case "FBP": return Galla;
+                        case "FBP": return Gallen;
                         case "FZF": return GrandFather;
                         case "FZM": return Nanna;
                         case "FZB": return Faedro;
                         case "FZZ": return Aunt;
-                        case "FZS": return Cousin;
-                        case "FZD": return Cousin;
-                        case "FZP": return mlmk^$;
+                        case "FZS": return CousinM(1);
+                        case "FZD": return CousinF(1);
+                        case "FZP": return Eame;
                         case "FSF": return Father;
                         case "FSM": return StepMother;
                         case "FSB": return Brother;
                         case "FSZ": return Sister;
                         case "FSS": return HalfNephew;
                         case "FSD": return HalfNiece;
-                        case "FSP": return MLMK^$;
-                        case "FDF": return MLMK^$;
-                        case "FDM": return MLMK^$;
-                        case "FDB": return MLMK^$;
-                        case "FDZ": return MLMK^$;
-                        case "FDS": return MLMK^$;
-                        case "FDD": return MLMK^$;
-                        case "FDP": return MLMK^$;
-                        case "FPF": return MLMK^$;
-                        case "FPM": return MLMK^$;
-                        case "FPB": return MLMK^$;
-                        case "FPZ": return MLMK^$;
-                        case "FPS": return MLMK^$;
-                        case "FPD": return MLMK^$;
-                        case "FPP": return MLMK^$;
-                        case "MFF": return MLMK^$;
-                        case "MFM": return MLMK^$;
-                        case "MFB": return MLMK^$;
-                        case "MFZ": return MLMK^$;
-                        case "MFS": return MLMK^$;
-                        case "MFD": return MLMK^$;
-                        case "MFP": return MLMK^$;
-                        case "MMF": return MLMK^$;
-                        case "MMM": return MLMK^$;
-                        case "MMB": return MLMK^$;
-                        case "MMZ": return MLMK^$;
-                        case "MMS": return MLMK^$;
-                        case "MMD": return MLMK^$;
-                        case "MMP": return MLMK^$;
-                        case "MBF": return MLMK^$;
-                        case "MBM": return MLMK^$;
-                        case "MBB": return MLMK^$;
-                        case "MBZ": return MLMK^$;
-                        case "MBS": return MLMK^$;
-                        case "MBD": return MLMK^$;
-                        case "MBP": return MLMK^$;
-                        case "MZF": return MLMK^$;
-                        case "MZM": return MLMK^$;
-                        case "MZB": return MLMK^$;
-                        case "MZZ": return MLMK^$;
-                        case "MZS": return MLMK^$;
-                        case "MZD": return MLMK^$;
-                        case "MZP": return MLMK^$;
-                        case "MSF": return MLMK^$;
-                        case "MSM": return MLMK^$;
-                        case "MSB": return MLMK^$;
-                        case "MSZ": return MLMK^$;
-                        case "MSS": return MLMK^$;
-                        case "MSD": return MLMK^$;
-                        case "MSP": return MLMK^$;
-                        case "MDF": return MLMK^$;
-                        case "MDM": return MLMK^$;
-                        case "MDB": return MLMK^$;
-                        case "MDZ": return MLMK^$;
-                        case "MDS": return MLMK^$;
-                        case "MDD": return MLMK^$;
-                        case "MDP": return MLMK^$;
-                        case "MPF": return MLMK^$;
-                        case "MPM": return MLMK^$;
-                        case "MPB": return MLMK^$;
-                        case "MPZ": return MLMK^$;
-                        case "MPS": return MLMK^$;
-                        case "MPD": return MLMK^$;
-                        case "MPP": return MLMK^$;
-                        case "BFF": return MLMK^$;
-                        case "BFM": return MLMK^$;
-                        case "BFB": return MLMK^$;
-                        case "BFZ": return MLMK^$;
-                        case "BFS": return MLMK^$;
-                        case "BFD": return MLMK^$;
-                        case "BFP": return MLMK^$;
-                        case "BMF": return MLMK^$;
-                        case "BMM": return MLMK^$;
-                        case "BMB": return MLMK^$;
-                        case "BMZ": return MLMK^$;
-                        case "BMS": return MLMK^$;
-                        case "BMD": return MLMK^$;
-                        case "BMP": return MLMK^$;
-                        case "BBF": return MLMK^$;
-                        case "BBM": return MLMK^$;
-                        case "BBB": return MLMK^$;
-                        case "BBZ": return MLMK^$;
-                        case "BBS": return MLMK^$;
-                        case "BBD": return MLMK^$;
-                        case "BBP": return MLMK^$;
-                        case "BZF": return MLMK^$;
-                        case "BZM": return MLMK^$;
-                        case "BZB": return MLMK^$;
-                        case "BZZ": return MLMK^$;
-                        case "BZS": return MLMK^$;
-                        case "BZD": return MLMK^$;
-                        case "BZP": return MLMK^$;
-                        case "BSF": return MLMK^$;
-                        case "BSM": return MLMK^$;
-                        case "BSB": return MLMK^$;
-                        case "BSZ": return MLMK^$;
-                        case "BSS": return MLMK^$;
-                        case "BSD": return MLMK^$;
-                        case "BSP": return MLMK^$;
-                        case "BDF": return MLMK^$;
-                        case "BDM": return MLMK^$;
+                        case "FSP": return Jeneter;
+                        case "FDF": return Father;
+                        case "FDM": return StepMother;
+                        case "FDB": return AgnaticBrother;
+                        case "FDZ": return AgnaticSister;
+                        case "FDS": return AlinealNephew(true, 1);
+                        case "FDD": return UterineNiece(true, 1);
+                        case "FDP": return Levir;
+                        case "FPF": return StepMothersFather;
+                        case "FPM": return StepMothersMother;
+                        case "FPB": return Eame;
+                        case "FPZ": return Gallen;
+                        case "FPS": return StepBrother;
+                        case "FPD": return StepSister;
+                        case "FPP": return Error;
+                        case "MFF": return Grandcestor(3);
+                        case "MFM": return Grandcestress(3);
+                        case "MFB": return GreatUncle(2);
+                        case "MFZ": return GreatAunt(2);
+                        case "MFS": return MothersAgnaticBrother;
+                        case "MFD": return MothersAgnaticSister;
+                        case "MFP": return NotImplemented;
+                        case "MMF": return Ancestor(RelationshipString);
+                        case "MMM": return Ancestor(RelationshipString);
+                        case "MMB": return NotImplemented;
+                        case "MMZ": return NotImplemented;
+                        case "MMS": return NotImplemented;
+                        case "MMD": return NotImplemented;
+                        case "MMP": return NotImplemented;
+                        case "MBF": return NotImplemented;
+                        case "MBM": return NotImplemented;
+                        case "MBB": return GetRelationship("MB");
+                        case "MBZ": return GetRelationship("MZ");
+                        case "MBS": return NotImplemented;
+                        case "MBD": return NotImplemented;
+                        case "MBP": return Gallen;
+                        case "MZF": return NotImplemented;
+                        case "MZM": return NotImplemented;
+                        case "MZB": return GetRelationship("MB");
+                        case "MZZ": return NotImplemented;
+                        case "MZS": return NotImplemented;
+                        case "MZD": return NotImplemented;
+                        case "MZP": return Eame;
+                        case "MSF": return NotImplemented;
+                        case "MSM": return NotImplemented;
+                        case "MSB": return GetRelationship("");
+                        case "MSZ": return GetRelationship("");
+                        case "MSS": return NotImplemented;
+                        case "MSD": return NotImplemented;
+                        case "MSP": return NotImplemented;
+                        case "MDF": return NotImplemented;
+                        case "MDM": return NotImplemented;
+                        case "MDB": return GetRelationship("");
+                        case "MDZ": return GetRelationship("");
+                        case "MDS": return NotImplemented;
+                        case "MDD": return NotImplemented;
+                        case "MDP": return NotImplemented;
+                        case "MPF": return NotImplemented;
+                        case "MPM": return NotImplemented;
+                        case "MPB": return NotImplemented;
+                        case "MPZ": return NotImplemented;
+                        case "MPS": return NotImplemented;
+                        case "MPD": return NotImplemented;
+                        case "MPP": return NotImplemented;
+                        case "BFF": return NotImplemented;
+                        case "BFM": return NotImplemented;
+                        case "BFB": return NotImplemented;
+                        case "BFZ": return NotImplemented;
+                        case "BFS": return NotImplemented;
+                        case "BFD": return NotImplemented;
+                        case "BFP": return NotImplemented;
+                        case "BMF": return NotImplemented;
+                        case "BMM": return NotImplemented;
+                        case "BMB": return NotImplemented;
+                        case "BMZ": return NotImplemented;
+                        case "BMS": return NotImplemented;
+                        case "BMD": return NotImplemented;
+                        case "BMP": return NotImplemented;
+                        case "BBF": return Father;
+                        case "BBM": return Mother;
+                        case "BBB": return Brother;
+                        case "BBZ": return Sister;
+                        case "BBS": return Nephew;
+                        case "BBD": return Niece;
+                        case "BBP": return Jeneter;
+                        case "BZF": return GetRelationship("ZF");
+                        case "BZM": return GetRelationship("ZM");
+                        case "BZB": return GetRelationship("ZB");
+                        case "BZZ": return GetRelationship("ZZ");
+                        case "BZS": return GetRelationship("ZS");
+                        case "BZD": return GetRelationship("ZD");
+                        case "BZP": return GetRelationship("ZP");
+                        case "BSF": return NotImplemented;
+                        case "BSM": return NotImplemented;
+                        case "BSB": return GetRelationship("");
+                        case "BSZ": return GetRelationship("");
+                        case "BSS": return NotImplemented;
+                        case "BSD": return NotImplemented;
+                        case "BSP": return NotImplemented;
+                        case "BDF": return NotImplemented;
+                        case "BDM": return NotImplemented;
                         case "BDB": return Nephew;
-                        case "BDZ": return MLMK^$;
-                        case "BDS": return MLMK^$;
-                        case "BDD": return MLMK^$;
-                        case "BDP": return MLMK^$;
-                        case "BPF": return MLMK^$;
-                        case "BPM": return MLMK^$;
-                        case "BPB": return MLMK^$;
-                        case "BPZ": return MLMK^$;
-                        case "BPS": return MLMK^$;
-                        case "BPD": return MLMK^$;
-                        case "BPP": return MLMK^$;
-                        case "ZFF": return MLMK^$;
-                        case "ZFM": return MLMK^$;
-                        case "ZFB": return MLMK^$;
-                        case "ZFZ": return MLMK^$;
-                        case "ZFS": return MLMK^$;
-                        case "ZFD": return MLMK^$;
-                        case "ZFP": return MLMK^$;
-                        case "ZMF": return MLMK^$;
-                        case "ZMM": return MLMK^$;
-                        case "ZMB": return MLMK^$;
-                        case "ZMZ": return MLMK^$;
-                        case "ZMS": return MLMK^$;
-                        case "ZMD": return MLMK^$;
-                        case "ZMP": return MLMK^$;
-                        case "ZBF": return MLMK^$;
-                        case "ZBM": return MLMK^$;
-                        case "ZBB": return MLMK^$;
-                        case "ZBZ": return MLMK^$;
-                        case "ZBS": return MLMK^$;
-                        case "ZBD": return MLMK^$;
-                        case "ZBP": return MLMK^$;
-                        case "ZZF": return MLMK^$;
-                        case "ZZM": return MLMK^$;
-                        case "ZZB": return MLMK^$;
-                        case "ZZZ": return MLMK^$;
-                        case "ZZS": return MLMK^$;
-                        case "ZZD": return MLMK^$;
-                        case "ZZP": return MLMK^$;
-                        case "ZSF": return MLMK^$;
-                        case "ZSM": return MLMK^$;
-                        case "ZSB": return MLMK^$;
-                        case "ZSZ": return MLMK^$;
-                        case "ZSS": return MLMK^$;
-                        case "ZSD": return MLMK^$;
-                        case "ZSP": return MLMK^$;
-                        case "ZDF": return MLMK^$;
-                        case "ZDM": return MLMK^$;
-                        case "ZDB": return MLMK^$;
-                        case "ZDZ": return MLMK^$;
-                        case "ZDS": return MLMK^$;
-                        case "ZDD": return MLMK^$;
-                        case "ZDP": return MLMK^$;
-                        case "ZPF": return MLMK^$;
-                        case "ZPM": return MLMK^$;
-                        case "ZPB": return MLMK^$;
-                        case "ZPZ": return MLMK^$;
-                        case "ZPS": return MLMK^$;
-                        case "ZPD": return MLMK^$;
-                        case "ZPP": return MLMK^$;
-                        case "SFF": return MLMK^$;
-                        case "SFM": return MLMK^$;
-                        case "SFB": return MLMK^$;
-                        case "SFZ": return MLMK^$;
-                        case "SFS": return MLMK^$;
-                        case "SFD": return MLMK^$;
-                        case "SFP": return MLMK^$;
-                        case "SMF": return MLMK^$;
-                        case "SMM": return MLMK^$;
-                        case "SMB": return MLMK^$;
-                        case "SMZ": return MLMK^$;
-                        case "SMS": return MLMK^$;
-                        case "SMD": return MLMK^$;
-                        case "SMP": return MLMK^$;
-                        case "SBF": return MLMK^$;
-                        case "SBM": return MLMK^$;
-                        case "SBB": return MLMK^$;
-                        case "SBZ": return MLMK^$;
-                        case "SBS": return MLMK^$;
-                        case "SBD": return MLMK^$;
-                        case "SBP": return MLMK^$;
-                        case "SZF": return MLMK^$;
-                        case "SZM": return MLMK^$;
-                        case "SZB": return MLMK^$;
-                        case "SZZ": return MLMK^$;
-                        case "SZS": return MLMK^$;
-                        case "SZD": return MLMK^$;
-                        case "SZP": return MLMK^$;
-                        case "SSF": return MLMK^$;
-                        case "SSM": return MLMK^$;
-                        case "SSB": return MLMK^$;
-                        case "SSZ": return MLMK^$;
-                        case "SSS": return MLMK^$;
-                        case "SSD": return MLMK^$;
-                        case "SSP": return MLMK^$;
-                        case "SDF": return MLMK^$;
-                        case "SDM": return MLMK^$;
-                        case "SDB": return MLMK^$;
-                        case "SDZ": return MLMK^$;
-                        case "SDS": return MLMK^$;
-                        case "SDD": return MLMK^$;
-                        case "SDP": return MLMK^$;
-                        case "SPF": return MLMK^$;
-                        case "SPM": return MLMK^$;
-                        case "SPB": return MLMK^$;
-                        case "SPZ": return MLMK^$;
-                        case "SPS": return MLMK^$;
-                        case "SPD": return MLMK^$;
-                        case "SPP": return MLMK^$;
-                        case "DFF": return MLMK^$;
-                        case "DFM": return MLMK^$;
-                        case "DFB": return MLMK^$;
-                        case "DFZ": return MLMK^$;
-                        case "DFS": return MLMK^$;
-                        case "DFD": return MLMK^$;
-                        case "DFP": return MLMK^$;
-                        case "DMF": return MLMK^$;
-                        case "DMM": return MLMK^$;
-                        case "DMB": return MLMK^$;
-                        case "DMZ": return MLMK^$;
-                        case "DMS": return MLMK^$;
-                        case "DMD": return MLMK^$;
-                        case "DMP": return MLMK^$;
-                        case "DBF": return MLMK^$;
-                        case "DBM": return MLMK^$;
-                        case "DBB": return MLMK^$;
-                        case "DBZ": return MLMK^$;
-                        case "DBS": return MLMK^$;
-                        case "DBD": return MLMK^$;
-                        case "DBP": return MLMK^$;
-                        case "DZF": return MLMK^$;
-                        case "DZM": return MLMK^$;
-                        case "DZB": return MLMK^$;
-                        case "DZZ": return MLMK^$;
-                        case "DZS": return MLMK^$;
-                        case "DZD": return MLMK^$;
-                        case "DZP": return MLMK^$;
-                        case "DSF": return MLMK^$;
-                        case "DSM": return MLMK^$;
-                        case "DSB": return MLMK^$;
-                        case "DSZ": return MLMK^$;
-                        case "DSS": return MLMK^$;
-                        case "DSD": return MLMK^$;
-                        case "DSP": return MLMK^$;
-                        case "DDF": return MLMK^$;
-                        case "DDM": return MLMK^$;
-                        case "DDB": return MLMK^$;
-                        case "DDZ": return MLMK^$;
-                        case "DDS": return MLMK^$;
-                        case "DDD": return MLMK^$;
-                        case "DDP": return MLMK^$;
-                        case "DPF": return MLMK^$;
-                        case "DPM": return MLMK^$;
-                        case "DPB": return MLMK^$;
-                        case "DPZ": return MLMK^$;
-                        case "DPS": return MLMK^$;
-                        case "DPD": return MLMK^$;
-                        case "DPP": return MLMK^$;
-                        case "PFF": return MLMK^$;
-                        case "PFM": return MLMK^$;
-                        case "PFB": return MLMK^$;
-                        case "PFZ": return MLMK^$;
-                        case "PFS": return MLMK^$;
-                        case "PFD": return MLMK^$;
-                        case "PFP": return MLMK^$;
-                        case "PMF": return MLMK^$;
-                        case "PMM": return MLMK^$;
-                        case "PMB": return MLMK^$;
-                        case "PMZ": return MLMK^$;
-                        case "PMS": return MLMK^$;
-                        case "PMD": return MLMK^$;
-                        case "PMP": return MLMK^$;
-                        case "PBF": return MLMK^$;
-                        case "PBM": return MLMK^$;
-                        case "PBB": return MLMK^$;
-                        case "PBZ": return MLMK^$;
-                        case "PBS": return MLMK^$;
-                        case "PBD": return MLMK^$;
-                        case "PBP": return MLMK^$;
-                        case "PZF": return MLMK^$;
-                        case "PZM": return MLMK^$;
-                        case "PZB": return MLMK^$;
-                        case "PZZ": return MLMK^$;
-                        case "PZS": return MLMK^$;
-                        case "PZD": return MLMK^$;
-                        case "PZP": return MLMK^$;
-                        case "PSF": return MLMK^$;
-                        case "PSM": return MLMK^$;
-                        case "PSB": return MLMK^$;
-                        case "PSZ": return MLMK^$;
-                        case "PSS": return MLMK^$;
-                        case "PSD": return MLMK^$;
-                        case "PSP": return MLMK^$;
-                        case "PDF": return MLMK^$;
-                        case "PDM": return MLMK^$;
-                        case "PDB": return MLMK^$;
-                        case "PDZ": return MLMK^$;
-                        case "PDS": return MLMK^$;
-                        case "PDD": return MLMK^$;
-                        case "PDP": return MLMK^$;
+                        case "BDZ": return GetRelationship("");
+                        case "BDS": return NotImplemented;
+                        case "BDD": return NotImplemented;
+                        case "BDP": return NotImplemented;
+                        case "BPF": return NotImplemented;
+                        case "BPM": return NotImplemented;
+                        case "BPB": return NotImplemented;
+                        case "BPZ": return NotImplemented;
+                        case "BPS": return NotImplemented;
+                        case "BPD": return NotImplemented;
+                        case "BPP": return Error;
+                        case "ZFF": return GrandSweger(2);
+                        case "ZFM": return GrandSwegra(2);
+                        case "ZFB": return NotImplemented;
+                        case "ZFZ": return NotImplemented;
+                        case "ZFS": return NotImplemented;
+                        case "ZFD": return NotImplemented;
+                        case "ZFP": return NotImplemented;
+                        case "ZMF": return NotImplemented;
+                        case "ZMM": return NotImplemented;
+                        case "ZMB": return NotImplemented;
+                        case "ZMZ": return NotImplemented;
+                        case "ZMS": return NotImplemented;
+                        case "ZMD": return NotImplemented;
+                        case "ZMP": return NotImplemented;
+                        case "ZBF": return GetRelationship("BF");
+                        case "ZBM": return GetRelationship("BM");
+                        case "ZBB": return Brother;
+                        case "ZBZ": return Sister;
+                        case "ZBS": return Nephew;
+                        case "ZBD": return GetRelationship("BD");
+                        case "ZBP": return GetRelationship("BP");
+                        case "ZZF": return GetRelationship("ZF");
+                        case "ZZM": return GetRelationship("ZM");
+                        case "ZZB": return GetRelationship("ZB");
+                        case "ZZZ": return GetRelationship("ZZ");
+                        case "ZZS": return GetRelationship("ZS");
+                        case "ZZD": return GetRelationship("ZD");
+                        case "ZZP": return GetRelationship("ZP");
+                        case "ZSF": return NotImplemented;
+                        case "ZSM": return NotImplemented;
+                        case "ZSB": return GetRelationship("");
+                        case "ZSZ": return GetRelationship("");
+                        case "ZSS": return NotImplemented;
+                        case "ZSD": return NotImplemented;
+                        case "ZSP": return NotImplemented;
+                        case "ZDF": return NotImplemented;
+                        case "ZDM": return NotImplemented;
+                        case "ZDB": return GetRelationship("");
+                        case "ZDZ": return GetRelationship("");
+                        case "ZDS": return NotImplemented;
+                        case "ZDD": return NotImplemented;
+                        case "ZDP": return NotImplemented;
+                        case "ZPF": return NotImplemented;
+                        case "ZPM": return NotImplemented;
+                        case "ZPB": return NotImplemented;
+                        case "ZPZ": return NotImplemented;
+                        case "ZPS": return NotImplemented;
+                        case "ZPD": return NotImplemented;
+                        case "ZPP": return NotImplemented;
+                        case "SFF": return NotImplemented;
+                        case "SFM": return NotImplemented;
+                        case "SFB": return NotImplemented;
+                        case "SFZ": return NotImplemented;
+                        case "SFS": return NotImplemented;
+                        case "SFD": return NotImplemented;
+                        case "SFP": return NotImplemented;
+                        case "SMF": return NotImplemented;
+                        case "SMM": return NotImplemented;
+                        case "SMB": return NotImplemented;
+                        case "SMZ": return NotImplemented;
+                        case "SMS": return NotImplemented;
+                        case "SMD": return NotImplemented;
+                        case "SMP": return NotImplemented;
+                        case "SBF": return GetRelationship("");
+                        case "SBM": return GetRelationship("");
+                        case "SBB": return Son;
+                        case "SBZ": return GetRelationship("SZ");
+                        case "SBS": return GetRelationship("");
+                        case "SBD": return GetRelationship("");
+                        case "SBP": return GetRelationship("");
+                        case "SZF": return GetRelationship("");
+                        case "SZM": return GetRelationship("");
+                        case "SZB": return GetRelationship("SB");
+                        case "SZZ": return GetRelationship("SZ");
+                        case "SZS": return GetRelationship("");
+                        case "SZD": return GetRelationship("");
+                        case "SZP": return GetRelationship("");
+                        case "SSF": return NotImplemented;
+                        case "SSM": return NotImplemented;
+                        case "SSB": return GetRelationship("");
+                        case "SSZ": return GetRelationship("");
+                        case "SSS": return NotImplemented;
+                        case "SSD": return NotImplemented;
+                        case "SSP": return NotImplemented;
+                        case "SDF": return NotImplemented;
+                        case "SDM": return NotImplemented;
+                        case "SDB": return GetRelationship("");
+                        case "SDZ": return GetRelationship("");
+                        case "SDS": return NotImplemented;
+                        case "SDD": return NotImplemented;
+                        case "SDP": return NotImplemented;
+                        case "SPF": return Macheton;
+                        case "SPM": return Machetonie;
+                        case "SPB": return NotImplemented;
+                        case "SPZ": return NotImplemented;
+                        case "SPS": return NotImplemented;
+                        case "SPD": return NotImplemented;
+                        case "SPP": return NotImplemented;
+                        case "DFF": return NotImplemented;
+                        case "DFM": return NotImplemented;
+                        case "DFB": return NotImplemented;
+                        case "DFZ": return NotImplemented;
+                        case "DFS": return NotImplemented;
+                        case "DFD": return NotImplemented;
+                        case "DFP": return NotImplemented;
+                        case "DMF": return NotImplemented;
+                        case "DMM": return NotImplemented;
+                        case "DMB": return NotImplemented;
+                        case "DMZ": return NotImplemented;
+                        case "DMS": return NotImplemented;
+                        case "DMD": return NotImplemented;
+                        case "DMP": return NotImplemented;
+                        case "DBF": return GetRelationship("");
+                        case "DBM": return GetRelationship("");
+                        case "DBB": return Son;
+                        case "DBZ": return GetRelationship("DZ");
+                        case "DBS": return GetRelationship("");
+                        case "DBD": return GetRelationship("");
+                        case "DBP": return GetRelationship("");
+                        case "DZF": return GetRelationship("");
+                        case "DZM": return GetRelationship("");
+                        case "DZB": return GetRelationship("DB");
+                        case "DZZ": return GetRelationship("DZ");
+                        case "DZS": return GetRelationship("");
+                        case "DZD": return GetRelationship("");
+                        case "DZP": return GetRelationship("");
+                        case "DSF": return NotImplemented;
+                        case "DSM": return NotImplemented;
+                        case "DSB": return GetRelationship("");
+                        case "DSZ": return GetRelationship("");
+                        case "DSS": return NotImplemented;
+                        case "DSD": return NotImplemented;
+                        case "DSP": return NotImplemented;
+                        case "DDF": return NotImplemented;
+                        case "DDM": return NotImplemented;
+                        case "DDB": return GetRelationship("");
+                        case "DDZ": return GetRelationship("");
+                        case "DDS": return NotImplemented;
+                        case "DDD": return NotImplemented;
+                        case "DDP": return NotImplemented;
+                        case "DPF": return Macheton;
+                        case "DPM": return Machetonie;
+                        case "DPB": return NotImplemented;
+                        case "DPZ": return NotImplemented;
+                        case "DPS": return NotImplemented;
+                        case "DPD": return NotImplemented;
+                        case "DPP": return NotImplemented;
+                        case "PFF": return NotImplemented;
+                        case "PFM": return NotImplemented;
+                        case "PFB": return NotImplemented;
+                        case "PFZ": return NotImplemented;
+                        case "PFS": return NotImplemented;
+                        case "PFD": return NotImplemented;
+                        case "PFP": return NotImplemented;
+                        case "PMF": return NotImplemented;
+                        case "PMM": return NotImplemented;
+                        case "PMB": return NotImplemented;
+                        case "PMZ": return NotImplemented;
+                        case "PMS": return NotImplemented;
+                        case "PMD": return NotImplemented;
+                        case "PMP": return NotImplemented;
+                        case "PBF": return NotImplemented;
+                        case "PBM": return NotImplemented;
+                        case "PBB": return Levir;
+                        case "PBZ": return GetRelationship("PZ");
+                        case "PBS": return NotImplemented;
+                        case "PBD": return NotImplemented;
+                        case "PBP": return NotImplemented;
+                        case "PZF": return NotImplemented;
+                        case "PZM": return NotImplemented;
+                        case "PZB": return GetRelationship("PB");
+                        case "PZZ": return GetRelationship("PZ");
+                        case "PZS": return NotImplemented;
+                        case "PZD": return NotImplemented;
+                        case "PZP": return NotImplemented;
+                        case "PSF": return NotImplemented;
+                        case "PSM": return NotImplemented;
+                        case "PSB": return GetRelationship("");
+                        case "PSZ": return GetRelationship("");
+                        case "PSS": return NotImplemented;
+                        case "PSD": return NotImplemented;
+                        case "PSP": return NotImplemented;
+                        case "PDF": return NotImplemented;
+                        case "PDM": return NotImplemented;
+                        case "PDB": return GetRelationship("");
+                        case "PDZ": return GetRelationship("");
+                        case "PDS": return NotImplemented;
+                        case "PDD": return StepGrandDaughter;
+                        case "PDP": return StepYerno;
                         case "PPF": return Error;
                         case "PPM": return Error;
                         case "PPB": return Error;
@@ -437,6 +493,96 @@ namespace Kinship
                 default:
                     throw new NotImplementedException();
             }
+        }
+
+        private string GrandSweger(int v)
+        {
+            throw new NotImplementedException();
+        }
+
+        private string Ancestor(string relationshipString)
+        {
+            throw new NotImplementedException();
+        }
+
+        private string UterineNiece(bool v1, int v2)
+        {
+            throw new NotImplementedException();
+        }
+
+        private string AlinealNephew(bool v1, int v2)
+        {
+            throw new NotImplementedException();
+        }
+
+        private string CousinF(int v)
+        {
+            throw new NotImplementedException();
+        }
+
+        private string CousinM(int v)
+        {
+            throw new NotImplementedException();
+        }
+
+        private string GreatGalla(int v)
+        {
+            throw new NotImplementedException();
+        }
+
+        private string GreatUncle(int v)
+        {
+            throw new NotImplementedException();
+        }
+
+        private string GrandModrie(int v)
+        {
+            throw new NotImplementedException();
+        }
+
+        private string Grandcestress(int v)
+        {
+            throw new NotImplementedException();
+        }
+
+        private string Grandcestor(int v)
+        {
+            throw new NotImplementedException();
+        }
+
+        private string StepNanna(int v)
+        {
+            throw new NotImplementedException();
+        }
+
+        private string HalfAunt(int v)
+        {
+            throw new NotImplementedException();
+        }
+
+        private string HalfFaedero(int v)
+        {
+            throw new NotImplementedException();
+        }
+
+        private string GreatAunt(int v)
+        {
+            throw new NotImplementedException();
+        }
+
+        private string GreatFaedro(int v)
+        {
+            throw new NotImplementedException();
+        }
+
+        private string nthNanna(int v)
+        {
+            throw new NotImplementedException();
+        }
+
+        private string nthGrandFather(int v)
+        {
+            throw new NotImplementedException();
         }
     }
 }
