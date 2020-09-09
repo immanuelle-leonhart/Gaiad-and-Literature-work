@@ -271,13 +271,13 @@ namespace Kinship
                         case "BZS": return GetRelationship("ZS");
                         case "BZD": return GetRelationship("ZD");
                         case "BZP": return GetRelationship("ZP");
-                        case "BSF": return NotImplemented;
-                        case "BSM": return NotImplemented;
+                        case "BSF": return Brother;
+                        case "BSM": return Jeneter;
                         case "BSB": return GetRelationship("");
                         case "BSZ": return GetRelationship("");
-                        case "BSS": return NotImplemented;
-                        case "BSD": return NotImplemented;
-                        case "BSP": return NotImplemented;
+                        case "BSS": return GreatNephew(2);
+                        case "BSD": return BrotherSonDaughter;
+                        case "BSP": return Schnerre(1, 1);
                         case "BDF": return NotImplemented;
                         case "BDM": return NotImplemented;
                         case "BDB": return Nephew;
