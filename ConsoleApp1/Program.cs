@@ -1,4 +1,5 @@
 ﻿using System;
+using Kinship;
 using StarLib;
 
 namespace ConsoleApp1
@@ -8,6 +9,7 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             Console.WriteLine(StarDate.Now);
+            Console.WriteLine(Relative.GetRelationship("F"));
         }
     }
 }

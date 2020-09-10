@@ -1,0 +1,9 @@
+C:\Users\SiliconProphet\Documents\GitHub\Order\StarDate\Kinship\bin\Debug\netstandard2.0\Kinship.deps.json
+C:\Users\SiliconProphet\Documents\GitHub\Order\StarDate\Kinship\bin\Debug\netstandard2.0\Kinship.dll
+C:\Users\SiliconProphet\Documents\GitHub\Order\StarDate\Kinship\bin\Debug\netstandard2.0\Kinship.pdb
+C:\Users\SiliconProphet\Documents\GitHub\Order\StarDate\Kinship\obj\Debug\netstandard2.0\Kinship.csprojAssemblyReference.cache
+C:\Users\SiliconProphet\Documents\GitHub\Order\StarDate\Kinship\obj\Debug\netstandard2.0\Kinship.AssemblyInfoInputs.cache
+C:\Users\SiliconProphet\Documents\GitHub\Order\StarDate\Kinship\obj\Debug\netstandard2.0\Kinship.AssemblyInfo.cs
+C:\Users\SiliconProphet\Documents\GitHub\Order\StarDate\Kinship\obj\Debug\netstandard2.0\Kinship.csproj.CoreCompileInputs.cache
+C:\Users\SiliconProphet\Documents\GitHub\Order\StarDate\Kinship\obj\Debug\netstandard2.0\Kinship.dll
+C:\Users\SiliconProphet\Documents\GitHub\Order\StarDate\Kinship\obj\Debug\netstandard2.0\Kinship.pdb
