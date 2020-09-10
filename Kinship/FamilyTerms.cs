@@ -61,6 +61,10 @@ namespace Kinship
         public string Macheton { get; private set; }
         public string Machetonie { get; private set; }
         public string StepGrandDaughter { get; private set; }
+        public string StepGrandMother { get; private set; }
+        public string HalfModrie { get; private set; }
+        public string StepGrandFather { get; private set; }
+        public string BrotherSonDaughter { get; private set; }
 
         public string GetRelationship(string RelationshipString)
         {
@@ -200,63 +204,63 @@ namespace Kinship
                         case "MFZ": return GreatAunt(2);
                         case "MFS": return MothersAgnaticBrother;
                         case "MFD": return MothersAgnaticSister;
-                        case "MFP": return NotImplemented;
+                        case "MFP": return StepGrandMother;
                         case "MMF": return Ancestor(RelationshipString);
                         case "MMM": return Ancestor(RelationshipString);
-                        case "MMB": return NotImplemented;
+                        case "MMB": return GreatUncle(2);
                         case "MMZ": return GreatModrie(2);
                         case "MMS": return GreatUncle(2);
-                        case "MMD": return NotImplemented;
-                        case "MMP": return NotImplemented;
-                        case "MBF": return NotImplemented;
-                        case "MBM": return NotImplemented;
+                        case "MMD": return HalfModrie;
+                        case "MMP": return StepGrandFather;
+                        case "MBF": return GetRelationship("MF");
+                        case "MBM": return GetRelationship("");
                         case "MBB": return GetRelationship("MB");
                         case "MBZ": return GetRelationship("MZ");
-                        case "MBS": return NotImplemented;
-                        case "MBD": return NotImplemented;
+                        case "MBS": throw new NotImplementedException();
+                        case "MBD": throw new NotImplementedException();
                         case "MBP": return Gallen;
-                        case "MZF": return NotImplemented;
-                        case "MZM": return NotImplemented;
+                        case "MZF": return GetRelationship("");
+                        case "MZM": return GetRelationship("");
                         case "MZB": return GetRelationship("MB");
-                        case "MZZ": return NotImplemented;
-                        case "MZS": return NotImplemented;
-                        case "MZD": return NotImplemented;
+                        case "MZZ": throw new NotImplementedException();
+                        case "MZS": throw new NotImplementedException();
+                        case "MZD": throw new NotImplementedException();
                         case "MZP": return Eame;
-                        case "MSF": return NotImplemented;
-                        case "MSM": return NotImplemented;
+                        case "MSF": throw new NotImplementedException();
+                        case "MSM": throw new NotImplementedException();
                         case "MSB": return GetRelationship("");
                         case "MSZ": return GetRelationship("");
-                        case "MSS": return NotImplemented;
-                        case "MSD": return NotImplemented;
-                        case "MSP": return NotImplemented;
-                        case "MDF": return NotImplemented;
-                        case "MDM": return NotImplemented;
+                        case "MSS": throw new NotImplementedException();
+                        case "MSD": throw new NotImplementedException();
+                        case "MSP": throw new NotImplementedException();
+                        case "MDF": throw new NotImplementedException();
+                        case "MDM": throw new NotImplementedException();
                         case "MDB": return GetRelationship("");
                         case "MDZ": return GetRelationship("");
-                        case "MDS": return NotImplemented;
-                        case "MDD": return NotImplemented;
-                        case "MDP": return NotImplemented;
-                        case "MPF": return NotImplemented;
-                        case "MPM": return NotImplemented;
-                        case "MPB": return NotImplemented;
-                        case "MPZ": return NotImplemented;
-                        case "MPS": return NotImplemented;
-                        case "MPD": return NotImplemented;
-                        case "MPP": return NotImplemented;
-                        case "BFF": return NotImplemented;
-                        case "BFM": return NotImplemented;
-                        case "BFB": return NotImplemented;
-                        case "BFZ": return NotImplemented;
-                        case "BFS": return NotImplemented;
-                        case "BFD": return NotImplemented;
-                        case "BFP": return NotImplemented;
-                        case "BMF": return NotImplemented;
-                        case "BMM": return NotImplemented;
-                        case "BMB": return NotImplemented;
-                        case "BMZ": return NotImplemented;
-                        case "BMS": return NotImplemented;
-                        case "BMD": return NotImplemented;
-                        case "BMP": return NotImplemented;
+                        case "MDS": return StepBrother;
+                        case "MDD": throw new NotImplementedException();
+                        case "MDP": throw new NotImplementedException();
+                        case "MPF": throw new NotImplementedException();
+                        case "MPM": throw new NotImplementedException();
+                        case "MPB": throw new NotImplementedException();
+                        case "MPZ": throw new NotImplementedException();
+                        case "MPS": throw new NotImplementedException();
+                        case "MPD": throw new NotImplementedException();
+                        case "MPP": throw new NotImplementedException();
+                        case "BFF": return GetRelationship("");
+                        case "BFM": return GetRelationship("");
+                        case "BFB": return GetRelationship("");
+                        case "BFZ": return GetRelationship("");
+                        case "BFS": return GetRelationship("");
+                        case "BFD": return GetRelationship("");
+                        case "BFP": return GetRelationship("");
+                        case "BMF": return GetRelationship("");
+                        case "BMM": return GetRelationship("");
+                        case "BMB": return GetRelationship("");
+                        case "BMZ": return GetRelationship("");
+                        case "BMS": return GetRelationship("");
+                        case "BMD": return GetRelationship("");
+                        case "BMP": return GetRelationship("");
                         case "BBF": return Father;
                         case "BBM": return Mother;
                         case "BBB": return Brother;
@@ -278,34 +282,34 @@ namespace Kinship
                         case "BSS": return GreatNephew(2);
                         case "BSD": return BrotherSonDaughter;
                         case "BSP": return Schnerre(1, 1);
-                        case "BDF": return NotImplemented;
-                        case "BDM": return NotImplemented;
+                        case "BDF": throw new NotImplementedException();
+                        case "BDM": throw new NotImplementedException();
                         case "BDB": return Nephew;
                         case "BDZ": return GetRelationship("");
-                        case "BDS": return NotImplemented;
-                        case "BDD": return NotImplemented;
-                        case "BDP": return NotImplemented;
-                        case "BPF": return NotImplemented;
-                        case "BPM": return NotImplemented;
-                        case "BPB": return NotImplemented;
-                        case "BPZ": return NotImplemented;
-                        case "BPS": return NotImplemented;
-                        case "BPD": return NotImplemented;
+                        case "BDS": throw new NotImplementedException();
+                        case "BDD": throw new NotImplementedException();
+                        case "BDP": throw new NotImplementedException();
+                        case "BPF": throw new NotImplementedException();
+                        case "BPM": throw new NotImplementedException();
+                        case "BPB": throw new NotImplementedException();
+                        case "BPZ": throw new NotImplementedException();
+                        case "BPS": throw new NotImplementedException();
+                        case "BPD": throw new NotImplementedException();
                         case "BPP": return Error;
                         case "ZFF": return GrandSweger(2);
                         case "ZFM": return GrandSwegra(2);
-                        case "ZFB": return NotImplemented;
-                        case "ZFZ": return NotImplemented;
-                        case "ZFS": return NotImplemented;
-                        case "ZFD": return NotImplemented;
-                        case "ZFP": return NotImplemented;
-                        case "ZMF": return NotImplemented;
-                        case "ZMM": return NotImplemented;
-                        case "ZMB": return NotImplemented;
-                        case "ZMZ": return NotImplemented;
-                        case "ZMS": return NotImplemented;
-                        case "ZMD": return NotImplemented;
-                        case "ZMP": return NotImplemented;
+                        case "ZFB": return GetRelationship("");
+                        case "ZFZ": return GetRelationship("");
+                        case "ZFS": return GetRelationship("");
+                        case "ZFD": return GetRelationship("");
+                        case "ZFP": return GetRelationship("");
+                        case "ZMF": return GetRelationship("");
+                        case "ZMM": return GetRelationship("");
+                        case "ZMB": return GetRelationship("");
+                        case "ZMZ": return GetRelationship("");
+                        case "ZMS": return GetRelationship("");
+                        case "ZMD": return GetRelationship("");
+                        case "ZMP": return GetRelationship("");
                         case "ZBF": return GetRelationship("BF");
                         case "ZBM": return GetRelationship("BM");
                         case "ZBB": return Brother;
@@ -320,41 +324,41 @@ namespace Kinship
                         case "ZZS": return GetRelationship("ZS");
                         case "ZZD": return GetRelationship("ZD");
                         case "ZZP": return GetRelationship("ZP");
-                        case "ZSF": return NotImplemented;
-                        case "ZSM": return NotImplemented;
+                        case "ZSF": throw new NotImplementedException();
+                        case "ZSM": throw new NotImplementedException();
                         case "ZSB": return GetRelationship("");
                         case "ZSZ": return GetRelationship("");
-                        case "ZSS": return NotImplemented;
-                        case "ZSD": return NotImplemented;
-                        case "ZSP": return NotImplemented;
-                        case "ZDF": return NotImplemented;
-                        case "ZDM": return NotImplemented;
+                        case "ZSS": throw new NotImplementedException();
+                        case "ZSD": throw new NotImplementedException();
+                        case "ZSP": throw new NotImplementedException();
+                        case "ZDF": throw new NotImplementedException();
+                        case "ZDM": throw new NotImplementedException();
                         case "ZDB": return GetRelationship("");
                         case "ZDZ": return GetRelationship("");
-                        case "ZDS": return NotImplemented;
-                        case "ZDD": return NotImplemented;
-                        case "ZDP": return NotImplemented;
-                        case "ZPF": return NotImplemented;
-                        case "ZPM": return NotImplemented;
-                        case "ZPB": return NotImplemented;
-                        case "ZPZ": return NotImplemented;
-                        case "ZPS": return NotImplemented;
-                        case "ZPD": return NotImplemented;
-                        case "ZPP": return NotImplemented;
-                        case "SFF": return NotImplemented;
-                        case "SFM": return NotImplemented;
-                        case "SFB": return NotImplemented;
-                        case "SFZ": return NotImplemented;
-                        case "SFS": return NotImplemented;
-                        case "SFD": return NotImplemented;
-                        case "SFP": return NotImplemented;
-                        case "SMF": return NotImplemented;
-                        case "SMM": return NotImplemented;
-                        case "SMB": return NotImplemented;
-                        case "SMZ": return NotImplemented;
-                        case "SMS": return NotImplemented;
-                        case "SMD": return NotImplemented;
-                        case "SMP": return NotImplemented;
+                        case "ZDS": throw new NotImplementedException();
+                        case "ZDD": throw new NotImplementedException();
+                        case "ZDP": throw new NotImplementedException();
+                        case "ZPF": throw new NotImplementedException();
+                        case "ZPM": throw new NotImplementedException();
+                        case "ZPB": throw new NotImplementedException();
+                        case "ZPZ": throw new NotImplementedException();
+                        case "ZPS": throw new NotImplementedException();
+                        case "ZPD": throw new NotImplementedException();
+                        case "ZPP": throw new NotImplementedException();
+                        case "SFF": throw new NotImplementedException();
+                        case "SFM": throw new NotImplementedException();
+                        case "SFB": throw new NotImplementedException();
+                        case "SFZ": throw new NotImplementedException();
+                        case "SFS": throw new NotImplementedException();
+                        case "SFD": throw new NotImplementedException();
+                        case "SFP": throw new NotImplementedException();
+                        case "SMF": throw new NotImplementedException();
+                        case "SMM": throw new NotImplementedException();
+                        case "SMB": throw new NotImplementedException();
+                        case "SMZ": throw new NotImplementedException();
+                        case "SMS": throw new NotImplementedException();
+                        case "SMD": throw new NotImplementedException();
+                        case "SMP": throw new NotImplementedException();
                         case "SBF": return GetRelationship("");
                         case "SBM": return GetRelationship("");
                         case "SBB": return Son;
@@ -369,41 +373,41 @@ namespace Kinship
                         case "SZS": return GetRelationship("");
                         case "SZD": return GetRelationship("");
                         case "SZP": return GetRelationship("");
-                        case "SSF": return NotImplemented;
-                        case "SSM": return NotImplemented;
+                        case "SSF": throw new NotImplementedException();
+                        case "SSM": throw new NotImplementedException();
                         case "SSB": return GetRelationship("");
                         case "SSZ": return GetRelationship("");
-                        case "SSS": return NotImplemented;
-                        case "SSD": return NotImplemented;
-                        case "SSP": return NotImplemented;
-                        case "SDF": return NotImplemented;
-                        case "SDM": return NotImplemented;
+                        case "SSS": throw new NotImplementedException();
+                        case "SSD": throw new NotImplementedException();
+                        case "SSP": throw new NotImplementedException();
+                        case "SDF": throw new NotImplementedException();
+                        case "SDM": throw new NotImplementedException();
                         case "SDB": return GetRelationship("");
                         case "SDZ": return GetRelationship("");
-                        case "SDS": return NotImplemented;
-                        case "SDD": return NotImplemented;
-                        case "SDP": return NotImplemented;
+                        case "SDS": throw new NotImplementedException();
+                        case "SDD": throw new NotImplementedException();
+                        case "SDP": throw new NotImplementedException();
                         case "SPF": return Macheton;
                         case "SPM": return Machetonie;
-                        case "SPB": return NotImplemented;
-                        case "SPZ": return NotImplemented;
-                        case "SPS": return NotImplemented;
-                        case "SPD": return NotImplemented;
-                        case "SPP": return NotImplemented;
-                        case "DFF": return NotImplemented;
-                        case "DFM": return NotImplemented;
-                        case "DFB": return NotImplemented;
-                        case "DFZ": return NotImplemented;
-                        case "DFS": return NotImplemented;
-                        case "DFD": return NotImplemented;
-                        case "DFP": return NotImplemented;
-                        case "DMF": return NotImplemented;
-                        case "DMM": return NotImplemented;
-                        case "DMB": return NotImplemented;
-                        case "DMZ": return NotImplemented;
-                        case "DMS": return NotImplemented;
-                        case "DMD": return NotImplemented;
-                        case "DMP": return NotImplemented;
+                        case "SPB": throw new NotImplementedException();
+                        case "SPZ": throw new NotImplementedException();
+                        case "SPS": throw new NotImplementedException();
+                        case "SPD": throw new NotImplementedException();
+                        case "SPP": throw new NotImplementedException();
+                        case "DFF": throw new NotImplementedException();
+                        case "DFM": throw new NotImplementedException();
+                        case "DFB": throw new NotImplementedException();
+                        case "DFZ": throw new NotImplementedException();
+                        case "DFS": throw new NotImplementedException();
+                        case "DFD": throw new NotImplementedException();
+                        case "DFP": throw new NotImplementedException();
+                        case "DMF": throw new NotImplementedException();
+                        case "DMM": throw new NotImplementedException();
+                        case "DMB": throw new NotImplementedException();
+                        case "DMZ": throw new NotImplementedException();
+                        case "DMS": throw new NotImplementedException();
+                        case "DMD": throw new NotImplementedException();
+                        case "DMP": throw new NotImplementedException();
                         case "DBF": return GetRelationship("");
                         case "DBM": return GetRelationship("");
                         case "DBB": return Son;
@@ -418,67 +422,67 @@ namespace Kinship
                         case "DZS": return GetRelationship("");
                         case "DZD": return GetRelationship("");
                         case "DZP": return GetRelationship("");
-                        case "DSF": return NotImplemented;
-                        case "DSM": return NotImplemented;
+                        case "DSF": throw new NotImplementedException();
+                        case "DSM": throw new NotImplementedException();
                         case "DSB": return GetRelationship("");
                         case "DSZ": return GetRelationship("");
-                        case "DSS": return NotImplemented;
-                        case "DSD": return NotImplemented;
-                        case "DSP": return NotImplemented;
-                        case "DDF": return NotImplemented;
-                        case "DDM": return NotImplemented;
+                        case "DSS": throw new NotImplementedException();
+                        case "DSD": throw new NotImplementedException();
+                        case "DSP": throw new NotImplementedException();
+                        case "DDF": throw new NotImplementedException();
+                        case "DDM": throw new NotImplementedException();
                         case "DDB": return GetRelationship("");
                         case "DDZ": return GetRelationship("");
-                        case "DDS": return NotImplemented;
-                        case "DDD": return NotImplemented;
-                        case "DDP": return NotImplemented;
+                        case "DDS": throw new NotImplementedException();
+                        case "DDD": throw new NotImplementedException();
+                        case "DDP": throw new NotImplementedException();
                         case "DPF": return Macheton;
                         case "DPM": return Machetonie;
-                        case "DPB": return NotImplemented;
-                        case "DPZ": return NotImplemented;
-                        case "DPS": return NotImplemented;
-                        case "DPD": return NotImplemented;
-                        case "DPP": return NotImplemented;
-                        case "PFF": return NotImplemented;
-                        case "PFM": return NotImplemented;
-                        case "PFB": return NotImplemented;
-                        case "PFZ": return NotImplemented;
-                        case "PFS": return NotImplemented;
-                        case "PFD": return NotImplemented;
-                        case "PFP": return NotImplemented;
-                        case "PMF": return NotImplemented;
-                        case "PMM": return NotImplemented;
-                        case "PMB": return NotImplemented;
-                        case "PMZ": return NotImplemented;
-                        case "PMS": return NotImplemented;
-                        case "PMD": return NotImplemented;
-                        case "PMP": return NotImplemented;
-                        case "PBF": return NotImplemented;
-                        case "PBM": return NotImplemented;
+                        case "DPB": throw new NotImplementedException();
+                        case "DPZ": throw new NotImplementedException();
+                        case "DPS": throw new NotImplementedException();
+                        case "DPD": throw new NotImplementedException();
+                        case "DPP": throw new NotImplementedException();
+                        case "PFF": throw new NotImplementedException();
+                        case "PFM": throw new NotImplementedException();
+                        case "PFB": throw new NotImplementedException();
+                        case "PFZ": throw new NotImplementedException();
+                        case "PFS": throw new NotImplementedException();
+                        case "PFD": throw new NotImplementedException();
+                        case "PFP": throw new NotImplementedException();
+                        case "PMF": throw new NotImplementedException();
+                        case "PMM": throw new NotImplementedException();
+                        case "PMB": throw new NotImplementedException();
+                        case "PMZ": throw new NotImplementedException();
+                        case "PMS": throw new NotImplementedException();
+                        case "PMD": throw new NotImplementedException();
+                        case "PMP": throw new NotImplementedException();
+                        case "PBF": return GetRelationship("");
+                        case "PBM": return GetRelationship("");
                         case "PBB": return Levir;
                         case "PBZ": return GetRelationship("PZ");
-                        case "PBS": return NotImplemented;
-                        case "PBD": return NotImplemented;
-                        case "PBP": return NotImplemented;
-                        case "PZF": return NotImplemented;
-                        case "PZM": return NotImplemented;
+                        case "PBS": throw new NotImplementedException();
+                        case "PBD": throw new NotImplementedException();
+                        case "PBP": throw new NotImplementedException();
+                        case "PZF": return GetRelationship("");
+                        case "PZM": return GetRelationship("");
                         case "PZB": return GetRelationship("PB");
                         case "PZZ": return GetRelationship("PZ");
-                        case "PZS": return NotImplemented;
-                        case "PZD": return NotImplemented;
-                        case "PZP": return NotImplemented;
-                        case "PSF": return NotImplemented;
-                        case "PSM": return NotImplemented;
+                        case "PZS": throw new NotImplementedException();
+                        case "PZD": throw new NotImplementedException();
+                        case "PZP": throw new NotImplementedException();
+                        case "PSF": throw new NotImplementedException();
+                        case "PSM": throw new NotImplementedException();
                         case "PSB": return GetRelationship("");
                         case "PSZ": return GetRelationship("");
-                        case "PSS": return NotImplemented;
-                        case "PSD": return NotImplemented;
-                        case "PSP": return NotImplemented;
-                        case "PDF": return NotImplemented;
-                        case "PDM": return NotImplemented;
+                        case "PSS": throw new NotImplementedException();
+                        case "PSD": throw new NotImplementedException();
+                        case "PSP": throw new NotImplementedException();
+                        case "PDF": throw new NotImplementedException();
+                        case "PDM": throw new NotImplementedException();
                         case "PDB": return GetRelationship("");
                         case "PDZ": return GetRelationship("");
-                        case "PDS": return NotImplemented;
+                        case "PDS": throw new NotImplementedException();
                         case "PDD": return StepGrandDaughter;
                         case "PDP": return StepYerno;
                         case "PPF": return Error;
@@ -493,6 +497,56 @@ namespace Kinship
                 default:
                     throw new NotImplementedException();
             }
+        }
+
+        public string YourTitleFromConsanguinity(int YourGenerationsFromCommonAncestor, int TheirGenerationsFromCommonAncestor, bool half, char YourSex)
+        {
+            return YourTitleFromConsanguinity(YourGenerationsFromCommonAncestor, TheirGenerationsFromCommonAncestor, half, 'X', YourSex);
+        }
+
+        public string YourTitleFromConsanguinity(int YourGenerationsFromCommonAncestor, int TheirGenerationsFromCommonAncestor, bool half, char UterineOrY, char YourSex)
+        {
+            int diff = YourGenerationsFromCommonAncestor - TheirGenerationsFromCommonAncestor;
+            int g = YourGenerationsFromCommonAncestor;
+            if (TheirGenerationsFromCommonAncestor == 0)
+            {
+                return GetDescendantTitle(g, UterineOrY, YourSex);
+            }
+        }
+
+        private string GetDescendantTitle(int GenerationsFromYou, char uterineOrY, char yourSex)
+        {
+            int g = GenerationsFromYou;
+            switch (uterineOrY)
+            {
+                case 'U':
+                case 'Y':
+                default:
+                    if (g = 1)
+                    {
+
+                    }
+            }
+        }
+
+        private string GrandSwegra(int v)
+        {
+            throw new NotImplementedException();
+        }
+
+        private string Schnerre(int v1, int v2)
+        {
+            throw new NotImplementedException();
+        }
+
+        private string GreatNephew(int v)
+        {
+            throw new NotImplementedException();
+        }
+
+        private string GreatModrie(int v)
+        {
+            throw new NotImplementedException();
         }
 
         private string GrandSweger(int v)
