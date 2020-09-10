@@ -1291,6 +1291,16 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "Kinship/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Kinship.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Kinship.dll": {}
+        }
+      },
       "StarDate/1.0.7": {
         "type": "project",
         "framework": ".NETStandard,Version=v1.6",
@@ -5007,6 +5017,11 @@
         "system.xml.xdocument.nuspec"
       ]
     },
+    "Kinship/1.0.0": {
+      "type": "project",
+      "path": "../Kinship/Kinship.csproj",
+      "msbuildProject": "../Kinship/Kinship.csproj"
+    },
     "StarDate/1.0.7": {
       "type": "project",
       "path": "../StarLib/StarLib.csproj",
@@ -5015,6 +5030,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Kinship >= 1.0.0",
       "StarDate >= 1.0.7"
     ]
   },
@@ -5044,6 +5060,9 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
+            "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\Kinship\\Kinship.csproj": {
+              "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\Kinship\\Kinship.csproj"
+            },
             "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib\\StarLib.csproj": {
               "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib\\StarLib.csproj"
             }

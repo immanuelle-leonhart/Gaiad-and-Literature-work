@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Kinship\Kinship.csproj" />
     <ProjectReference Include="..\StarLib\StarLib.csproj" />
   </ItemGroup>
 
