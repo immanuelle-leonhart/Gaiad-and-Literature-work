@@ -17,9 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorDesktopApp", "BlazorD
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarBlazeBrowser", "StarBlazeBrowser\StarBlazeBrowser.csproj", "{69A83A3E-824F-4F46-9CEA-A55D9F1088C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyTerms", "FamilyTerms\FamilyTerms.csproj", "{8E45BAE5-0D74-4B83-BEF6-992E2AA89C24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FamilyTerms", "FamilyTerms\FamilyTerms.csproj", "{8E45BAE5-0D74-4B83-BEF6-992E2AA89C24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kinship", "Kinship\Kinship.csproj", "{DF7D41F3-9F80-40C6-B616-015B52E1D1C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kinship", "Kinship\Kinship.csproj", "{DF7D41F3-9F80-40C6-B616-015B52E1D1C1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarLib.Calendar", "StarLib.Calendar\StarLib.Calendar.csproj", "{AF484597-DB38-4AAA-B896-52FF2BCE05EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{DF7D41F3-9F80-40C6-B616-015B52E1D1C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF7D41F3-9F80-40C6-B616-015B52E1D1C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF7D41F3-9F80-40C6-B616-015B52E1D1C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF484597-DB38-4AAA-B896-52FF2BCE05EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF484597-DB38-4AAA-B896-52FF2BCE05EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF484597-DB38-4AAA-B896-52FF2BCE05EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF484597-DB38-4AAA-B896-52FF2BCE05EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
