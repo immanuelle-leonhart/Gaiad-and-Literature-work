@@ -1,57 +1,88 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace StarLib.Calendar
 {
     public class Ical
     {
+        public static string PRODID { get; private set; }
 
-        public static void WriteIcal()
+        public static void WriteDay(StreamWriter stream, StarDate dt)
         {
-            WriteIcal("");
+            dt = dt.Date;
+            stream.WriteLine("BEGIN:VEVENT");
+            stream.WriteLine("DTSTART;VALUE=DATE:" + dt.RFC1123);
+            stream.WriteLine("DTEND;VALUE=DATE:" + dt.AddDays(1).RFC1123);
+            stream.WriteLine("DTSTAMP;VALUE=DATE:" + DTSTAMP(dt));
+            stream.WriteLine("UID;VALUE=DATE:" + GetUID(dt));
+            stream.WriteLine("CREATED:" + StarDate.Now.RFC1123);
+            stream.WriteLine("DESCRIPTION:" + GetDescription(dt));
+            stream.WriteLine("LAST-MODIFIED:" + dt.RFC1123);
+            stream.WriteLine("LOCATION:Terra");
+            stream.WriteLine("SEQUENCE:0");
+            stream.WriteLine("STATUS:CONFIRMED");
+            stream.WriteLine("SUMMARY:" + dt.ToLongString());
+            stream.WriteLine("TRANSP:TRANSPARENT");
+            stream.WriteLine("END:VEVENT");
         }
 
-        public static void WriteIcal(string v)
+        private static string DTSTAMP(StarDate dt)
         {
-            WriteIcal(v, DateTime.Now.Year);
+            return dt.RFC1123;
         }
 
-        public static void WriteIcal(string v1, int v2)
+        private static string GetDescription(StarDate dt)
         {
-            WriteIcal(v1, v2, v2);
+            return dt.ToLongString();
         }
 
-        public static void WriteIcal(string path, int v2, int v3)
+        private static string GetUID(StarDate dt)
         {
-            string[] p = path.Split('/');
-            string filename = p[p.Length - 1];
-            int i = 0;
-            StringBuilder stringBuilder = new StringBuilder();
-            while (i < p.Length - 1)
+            return dt + "@order.life";
+        }
+
+        public static void WriteYear(StreamWriter stream, int year)
+        {
+            //start boilerplate
+            stream.WriteLine("BEGIN:VCALENDAR");
+            stream.WriteLine("METHOD:PUBLISH");
+            stream.WriteLine("PRODID:" + PRODID);
+            stream.WriteLine("VERSION:2.0");
+            //write days
+            StarDate StarYearBeginning = new StarDate(year, 1, 1);
+            StarDate StarYearEnd = new StarDate(year + 1, 1, 1).AddDays(-1);
+            StarDate GregYearBeginning = new DateTime(year, 1, 1);
+            StarDate GregYearEnd = new DateTime(year, 12, 31);
+            StarDate Beginning;
+            if (GregYearBeginning < StarYearBeginning)
             {
-                stringBuilder.Append(p[i]);
-                stringBuilder.Append('/');
+                Beginning = GregYearBeginning;
             }
-            path = stringBuilder.ToString();
-            if (filename.Length == 0)
+            else
             {
-                if (v2 == v3)
-                {
-                    filename = "StarCalendar_of_" + v2 + ".ics";
-                }
-                else
-                {
-                    filename = "StarCalendar_of_" + v2 + "_to_" + v3 + ".ics";
-                }
-            }
-            else if (!filename.EndsWith(".ics"))
-            {
-                filename += ".ics";
+                Beginning = StarYearBeginning;
             }
 
-            //Path filepath = $"{path}{filename}";
 
-            //StreamWriter ical = new StreamWriter(path + filename);
+            StarDate End;
+            if (GregYearEnd > StarYearEnd)
+            {
+                End = GregYearEnd;
+            }
+            else
+            {
+                End = StarYearEnd;
+            }
+
+            StarDate dt = Beginning;
+            while (dt <= End)
+            {
+                WriteDay(stream, dt++);
+            }
+            //end boilerplate
+            stream.WriteLine("END:VCALENDAR");
         }
     }
 }
