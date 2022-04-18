@@ -6,7 +6,7 @@
 3 ADDR http://genj.sourceforge.net
 1 DEST ANY
 1 DATE 18 APR 2022
-2 TIME 14:40:54
+2 TIME 14:41:48
 1 SUBM @B1@
 1 FILE Gaiad.ged
 1 GEDC
@@ -60,56 +60,6 @@
 1 OCCU Sozialpädagogin
 1 FAMC @F2@
 1 FAMS @F3@
-0 @I7@ INDI
-1 NAME Jonas /Meier/
-1 SEX M
-1 BIRT
-2 DATE 28 DEC 1994
-2 PLAC Bergisch Gladbach
-1 FAMC @F3@
-0 @I8@ INDI
-1 NAME Nils /Meier/
-1 SEX M
-1 BIRT
-2 DATE 25 MAY 1970
-2 PLAC Rendsburg
-1 GRAD
-2 AGNC Friedrich Wilhelm University Bonn
-2 DATE 10 DEC 1996
-2 PLAC Bonn, NRW
-2 TYPE Diplom Informatiker
-1 OBJE @M1@
-1 FAMC @F1@
-1 NOTE @N1@
-1 RESI
-2 DATE FROM DEC 1996 TO JUL 2000
-2 ADDR Am Hackenbruch 26
-3 CITY Düsseldorf (Eller)
-3 POST 40231
-1 RESI
-2 DATE FROM JUL 1999 TO DEC 2000
-2 ADDR 1241 Kilborn Place
-3 CONT Apt 202
-3 CITY Ottawa
-3 POST K1H1A5
-3 STAE Ontario
-1 RESI
-2 DATE FROM 1 OCT 2001 TO 1 APR 2004
-2 ADDR 788 Harrison Street
-3 CONT Apt 829
-3 CITY San Francisco
-3 POST 94107
-3 STAE California
-1 IMMI
-2 DATE 4 AUG 2004
-2 PLAC Vancouver,British Columbia,Canada
-1 RESI
-2 DATE FROM 1 OCT 2004
-2 ADDR 2-143 Rusholme Road
-3 CITY Toronto
-3 POST M6H2Y6
-3 STAE Ontario
-1 OCCU Software Engineer
 0 @F1@ FAM
 1 WIFE @I2@
 1 HUSB @I1@
@@ -117,10 +67,9 @@
 2 DATE 9 OCT 1964
 2 PLAC Flagstaff,Arizona,USA
 1 CHIL @I5@
-1 CHIL @I8@
 1 CHAN
 2 DATE 18 APR 2022
-3 TIME 21:40:52
+3 TIME 21:41:15
 0 @F2@ FAM
 1 WIFE @I3@
 1 CHIL @I6@
@@ -130,30 +79,22 @@
 2 PLAC Lohmar,Nordrhein Westfalen
 1 WIFE @I6@
 1 HUSB @I5@
-1 CHIL @I7@
-1 CHIL @I9@
-1 CHIL @I10@
+1 CHAN
+2 DATE 18 APR 2022
+3 TIME 21:41:41
 0 @N1@ NOTE The author of GenJ - please visit
 1 CONT http://genj.sourceforge.net
 1 CONT for more information about Genealogy J
-0 @I10@ INDI
-1 NAME Luka /Meier/
-1 SEX M
-1 BIRT
-2 DATE 28 AUG 2004
-2 PLAC Bergisch Gladbach
-1 FAMC @F3@
+1 CHAN
+2 DATE 18 APR 2022
+3 TIME 21:41:15
 0 @M1@ OBJE
 1 FILE meiern.jpg
 2 FORM jpg
 2 TITL Nils in cockpit
-0 @I9@ INDI
-1 NAME Alisa /Meier/
-1 SEX F
-1 BIRT
-2 DATE 26 NOV 2000
-2 PLAC Bergisch Gladbach
-1 FAMC @F3@
+1 CHAN
+2 DATE 18 APR 2022
+3 TIME 21:41:15
 0 @Abraham@ INDI
 1 NAME /Meier/
 1 SEX M
