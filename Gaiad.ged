@@ -6,7 +6,7 @@
 3 ADDR http://genj.sourceforge.net
 1 DEST ANY
 1 DATE 18 APR 2022
-2 TIME 14:39:24
+2 TIME 14:40:54
 1 SUBM @B1@
 1 FILE Gaiad.ged
 1 GEDC
@@ -42,13 +42,6 @@
 1 BIRT
 2 DATE 1 APR 1948
 1 FAMS @F2@
-0 @I4@ INDI
-1 NAME Lars jun. /Meier/
-1 SEX M
-1 BIRT
-2 DATE 23 JUN 1967
-2 PLAC Celle,Niedersachsen
-1 FAMC @F1@
 0 @I5@ INDI
 1 NAME Sven /Meier/
 1 SEX M
@@ -123,9 +116,11 @@
 1 MARR
 2 DATE 9 OCT 1964
 2 PLAC Flagstaff,Arizona,USA
-1 CHIL @I4@
 1 CHIL @I5@
 1 CHIL @I8@
+1 CHAN
+2 DATE 18 APR 2022
+3 TIME 21:40:52
 0 @F2@ FAM
 1 WIFE @I3@
 1 CHIL @I6@
