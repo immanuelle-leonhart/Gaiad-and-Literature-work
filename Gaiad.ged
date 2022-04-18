@@ -6,7 +6,7 @@
 3 ADDR http://genj.sourceforge.net
 1 DEST ANY
 1 DATE 18 APR 2022
-2 TIME 14:41:48
+2 TIME 14:45:54
 1 SUBM @B1@
 1 FILE Gaiad.ged
 1 GEDC
@@ -16,72 +16,17 @@
 1 LANG German
 0 @B1@ SUBM
 1 NAME Nils Meier
-0 @I1@ INDI
-1 NAME Lars H. /Meier/
-1 SEX M
-1 BIRT
-2 DATE 8 SEP 1937
-2 PLAC Hamburg,HH
-1 OCCU Pilot
-1 FAMC @F4@
-1 FAMS @F1@
-1 CHAN
-2 DATE 18 APR 2022
-3 TIME 21:31:43
-0 @I2@ INDI
-1 NAME Magdalene /Hauschildt/
-1 SEX F
-1 BIRT
-2 DATE 12 JAN 1936
-2 PLAC Quarnstedt,Schleswig-Holstein
-1 OCCU Hausfrau
-1 FAMS @F1@
 0 @I3@ INDI
 1 NAME Nada /Mandalinic/
 1 SEX F
 1 BIRT
 2 DATE 1 APR 1948
 1 FAMS @F2@
-0 @I5@ INDI
-1 NAME Sven /Meier/
-1 SEX M
-1 BIRT
-2 DATE 25 MAY 1970
-2 PLAC Rendsburg
-1 OCCU Software Engineer
-1 FAMC @F1@
-1 FAMS @F3@
-0 @I6@ INDI
-1 NAME Sandra /Radovcic/
-1 SEX F
-1 BIRT
-2 DATE 3 JUL 1971
-2 PLAC Köln
-1 OCCU Sozialpädagogin
-1 FAMC @F2@
-1 FAMS @F3@
-0 @F1@ FAM
-1 WIFE @I2@
-1 HUSB @I1@
-1 MARR
-2 DATE 9 OCT 1964
-2 PLAC Flagstaff,Arizona,USA
-1 CHIL @I5@
-1 CHAN
-2 DATE 18 APR 2022
-3 TIME 21:41:15
 0 @F2@ FAM
 1 WIFE @I3@
-1 CHIL @I6@
-0 @F3@ FAM
-1 MARR
-2 DATE 10 AUG 1994
-2 PLAC Lohmar,Nordrhein Westfalen
-1 WIFE @I6@
-1 HUSB @I5@
 1 CHAN
 2 DATE 18 APR 2022
-3 TIME 21:41:41
+3 TIME 21:45:10
 0 @N1@ NOTE The author of GenJ - please visit
 1 CONT http://genj.sourceforge.net
 1 CONT for more information about Genealogy J
@@ -108,21 +53,9 @@
 3 TIME 21:38:16
 0 @F4@ FAM
 1 HUSB @Abraham@
-1 WIFE @I11@
-1 CHIL @I1@
 1 CHAN
 2 DATE 18 APR 2022
-3 TIME 21:31:43
-0 @I11@ INDI
-1 NAME /Meier/
-1 SEX F
-1 BIRT
-2 DATE
-2 PLAC
-1 FAMS @F4@
-1 CHAN
-2 DATE 18 APR 2022
-3 TIME 21:31:43
+3 TIME 21:45:45
 0 @Terah@ INDI
 1 NAME /Meier/
 1 SEX M
