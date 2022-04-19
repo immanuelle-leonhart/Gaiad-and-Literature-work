@@ -6,7 +6,7 @@
 3 ADDR http://genj.sourceforge.net
 1 DEST ANY
 1 DATE 18 APR 2022
-2 TIME 17:08:00
+2 TIME 17:18:53
 1 SUBM @B1@
 1 FILE Gaiad.ged
 1 GEDC
@@ -113,7 +113,7 @@
 2 DATE 18 APR 2022
 3 TIME 22:08:59
 0 @Sargon@ INDI
-1 NAME Sargon /Jericho/
+1 NAME Sargon /Jericho/ King of Akkad
 1 SEX M
 1 BIRT
 2 DATE
@@ -121,8 +121,8 @@
 1 FAMC @F8@
 1 FAMS @F7@
 1 CHAN
-2 DATE 18 APR 2022
-3 TIME 23:01:54
+2 DATE 19 APR 2022
+3 TIME 00:11:05
 0 @F7@ FAM
 1 HUSB @Sargon@
 1 WIFE @Tashlutum@
@@ -200,7 +200,7 @@
 2 DATE 18 APR 2022
 3 TIME 23:41:43
 0 @Rimush@ INDI
-1 NAME /Jericho/
+1 NAME /Jericho/ King of Akkad
 1 SEX M
 1 BIRT
 2 DATE
@@ -208,17 +208,18 @@
 1 FAMC @F7@
 1 CHAN
 2 DATE 19 APR 2022
-3 TIME 00:04:37
+3 TIME 00:10:58
 0 @Manishtu@ INDI
-1 NAME /Jericho/
+1 NAME /Jericho/ King of Akkad
 1 SEX M
 1 BIRT
 2 DATE
 2 PLAC
 1 FAMC @F7@
+1 FAMS @F10@
 1 CHAN
 2 DATE 19 APR 2022
-3 TIME 00:04:57
+3 TIME 00:11:15
 0 @Abaish-takal@ INDI
 1 NAME /Jericho/
 1 SEX M
@@ -239,4 +240,242 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 00:08:00
+0 @Naram-Sin@ INDI
+1 NAME /Jericho/ King of Akkad
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F10@
+1 FAMS @F11@
+1 CHAN
+2 DATE 19 APR 2022
+3 TIME 00:11:47
+0 @F10@ FAM
+1 HUSB @Manishtu@
+1 WIFE @I17@
+1 CHIL @Naram-Sin@
+1 CHIL @Meshalim@
+1 CHAN
+2 DATE 19 APR 2022
+3 TIME 00:09:42
+0 @I17@ INDI
+1 NAME
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMS @F10@
+1 CHAN
+2 DATE 19 APR 2022
+3 TIME 00:08:42
+0 @Meshalim@ INDI
+1 NAME /Jericho/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F10@
+1 CHAN
+2 DATE 19 APR 2022
+3 TIME 00:09:42
+0 @Shar-Kali-Sharri@ INDI
+1 NAME /Jericho/ King of Akkad
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F11@
+1 FAMS @F13@
+1 CHAN
+2 DATE 19 APR 2022
+3 TIME 00:17:26
+0 @F11@ FAM
+1 HUSB @Naram-Sin@
+1 WIFE @I20@
+1 CHIL @Shar-Kali-Sharri@
+1 CHIL @Bin-kali-Sharri@
+1 CHIL @Lipit-ili@
+1 CHIL @Nabi-Ulmash@
+1 CHIL @Ukkin-Ulmash@
+1 CHIL @Enmenanna@
+1 CHIL @Simat-Ulmash@
+1 CHIL @Shumashani@
+1 CHIL @Tutar-napshum@
+1 CHAN
+2 DATE 19 APR 2022
+3 TIME 00:16:35
+0 @I20@ INDI
+1 NAME
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMS @F11@
+1 CHAN
+2 DATE 19 APR 2022
+3 TIME 00:11:47
+0 @Bin-kali-Sharri@ INDI
+1 NAME /Jericho/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F11@
+1 CHAN
+2 DATE 19 APR 2022
+3 TIME 00:12:20
+0 @Lipit-ili@ INDI
+1 NAME /Jericho/ governor of Marad
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F11@
+1 CHAN
+2 DATE 19 APR 2022
+3 TIME 00:12:59
+0 @Nabi-Ulmash@ INDI
+1 NAME /Jericho/ governor of Tutu
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F11@
+1 FAMS @F12@
+1 CHAN
+2 DATE 19 APR 2022
+3 TIME 00:13:51
+0 @Lippush-jaum@ INDI
+1 NAME /Jericho/ lamentation singer for Sin
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F12@
+1 CHAN
+2 DATE 19 APR 2022
+3 TIME 00:14:04
+0 @F12@ FAM
+1 HUSB @Nabi-Ulmash@
+1 WIFE @I25@
+1 CHIL @Lippush-jaum@
+1 CHAN
+2 DATE 19 APR 2022
+3 TIME 00:13:51
+0 @I25@ INDI
+1 NAME
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMS @F12@
+1 CHAN
+2 DATE 19 APR 2022
+3 TIME 00:13:51
+0 @Ukkin-Ulmash@ INDI
+1 NAME /Jericho/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F11@
+1 CHAN
+2 DATE 19 APR 2022
+3 TIME 00:14:24
+0 @Enmenanna@ INDI
+1 NAME /Jericho/ high priestess or Sin at Ur
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F11@
+1 CHAN
+2 DATE 19 APR 2022
+3 TIME 00:15:10
+0 @Simat-Ulmash@ INDI
+1 NAME /Jericho/
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F11@
+1 CHAN
+2 DATE 19 APR 2022
+3 TIME 00:15:29
+0 @Shumashani@ INDI
+1 NAME /Jericho/ priestess of Shamash at Sippar
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F11@
+1 CHAN
+2 DATE 19 APR 2022
+3 TIME 00:16:19
+0 @Tutar-napshum@ INDI
+1 NAME /Jericho/ high priestess of Enlil at Nippur
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F11@
+1 CHAN
+2 DATE 19 APR 2022
+3 TIME 00:16:47
+0 @Tuta-shar-ibbish@ INDI
+1 NAME
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMS @F13@
+1 CHAN
+2 DATE 19 APR 2022
+3 TIME 00:17:26
+0 @F13@ FAM
+1 HUSB @Shar-Kali-Sharri@
+1 WIFE @Tuta-shar-ibbish@
+1 CHIL @Dudu@
+1 CHAN
+2 DATE 19 APR 2022
+3 TIME 00:18:18
+0 @Dudu@ INDI
+1 NAME /Jericho/ king of Akkad
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F13@
+1 FAMS @F14@
+1 CHAN
+2 DATE 19 APR 2022
+3 TIME 00:18:40
+0 @Shudurul@ INDI
+1 NAME /Jericho/ king of Akkad
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F14@
+1 CHAN
+2 DATE 19 APR 2022
+3 TIME 00:18:51
+0 @F14@ FAM
+1 HUSB @Dudu@
+1 WIFE @I34@
+1 CHIL @Shudurul@
+1 CHAN
+2 DATE 19 APR 2022
+3 TIME 00:18:40
+0 @I34@ INDI
+1 NAME
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMS @F14@
+1 CHAN
+2 DATE 19 APR 2022
+3 TIME 00:18:40
 0 TRLR
