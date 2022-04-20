@@ -6,7 +6,7 @@
 3 ADDR http://genj.sourceforge.net
 1 DEST ANY
 1 DATE 20 APR 2022
-2 TIME 10:38:00
+2 TIME 13:29:15
 1 SUBM @B1@
 1 FILE Gaiad.ged
 1 GEDC
@@ -9525,9 +9525,10 @@
 1 HUSB @Cefalus@
 1 WIFE @I706@
 1 CHIL @Chinggis@
+1 CHIL @Fentakesh@
 1 CHAN
 2 DATE 20 APR 2022
-3 TIME 17:37:34
+3 TIME 20:18:39
 0 @I706@ INDI
 1 NAME /Haplogroup C/
 1 SEX F
@@ -9538,4 +9539,21 @@
 1 CHAN
 2 DATE 20 APR 2022
 3 TIME 17:37:34
+0 @Fentakesh@ INDI
+1 NOTE Fentakesh is the ancestor of all those with haplogroup F
+2 CONT
+2 CONT As Telugu and Tamil people are the people who most commonly have basal F haplogroup his name is Fentakesh (Ventakesh) after a common name there. The name is Ventakesh in those languages because they lack an F sound
+2 CONT
+2 CONT He was born on Venkata hill in India
+2 CONT
+2 CONT Most people of the world are subclades of this haplogroup
+1 NAME /Haplogroup F/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC Venkata, Tirupati district, Andhra Pradesh, India
+1 FAMC @F277@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 20:29:08
 0 TRLR
