@@ -6,7 +6,7 @@
 3 ADDR http://genj.sourceforge.net
 1 DEST ANY
 1 DATE 20 APR 2022
-2 TIME 00:20:47
+2 TIME 00:27:40
 1 SUBM @B1@
 1 FILE Gaiad.ged
 1 GEDC
@@ -9321,8 +9321,21 @@
 1 BIRT
 2 DATE
 2 PLAC
+1 NOTE The Tungusic languages are a previously large language family that is curreently dying out
+2 CONT
+2 CONT The most historically siginficant Tungusic language is Manchu
+2 CONT
+2 CONT The Mohe people were proto Tungusic
+2 CONT
+2 CONT The tungusic languages originated around Lake Khanka
+2 CONT
+2 CONT
+2 CONT Liu et al. (2020) [15] revealed that Haplogroup C-F5484 and its subclades are the genetic markers of Tungusic-speaking peoples. C-F5484 was emerged 3,300 years ago and begun to diverge 1,900 years ago, indicating the approximate age of differentiation o
+2 CONC f Tungusic languages.
+2 CONT
+2 CONT
 1 FAMC @F271@
 1 CHAN
 2 DATE 20 APR 2022
-3 TIME 07:13:04
+3 TIME 07:27:23
 0 TRLR
