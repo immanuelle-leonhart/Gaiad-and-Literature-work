@@ -6,7 +6,7 @@
 3 ADDR http://genj.sourceforge.net
 1 DEST ANY
 1 DATE 19 APR 2022
-2 TIME 23:38:44
+2 TIME 23:44:25
 1 SUBM @B1@
 1 FILE Gaiad.ged
 1 GEDC
@@ -9054,10 +9054,13 @@
 1 BIRT
 2 DATE
 2 PLAC
+1 NOTE Germanic languages used to be spoken primarily in Scandinavia
+2 CONT
+2 CONT Only moved south with the collapse of the Roman Empire
 1 FAMC @F267@
 1 CHAN
 2 DATE 20 APR 2022
-3 TIME 06:37:19
+3 TIME 06:40:08
 0 @F267@ FAM
 1 HUSB @Germano-Celtic@
 1 WIFE @I672@
@@ -9121,8 +9124,11 @@
 1 BIRT
 2 DATE
 2 PLAC
+1 NOTE The Italic people's migrated south from Germany across the Alps into Italy around 1000 BC
+2 CONT
+2 CONT They conquered the Etruscans and eventually formed Roman civilization and are ancestral to the Romance languages
 1 FAMC @F268@
 1 CHAN
 2 DATE 20 APR 2022
-3 TIME 06:37:52
+3 TIME 06:44:13
 0 TRLR
