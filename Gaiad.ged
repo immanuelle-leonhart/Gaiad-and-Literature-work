@@ -6,7 +6,7 @@
 3 ADDR http://genj.sourceforge.net
 1 DEST ANY
 1 DATE 19 APR 2022
-2 TIME 21:37:58
+2 TIME 21:55:42
 1 SUBM @B1@
 1 FILE Gaiad.ged
 1 GEDC
@@ -7511,22 +7511,23 @@
 2 DATE
 2 PLAC
 1 FAMC @F231@
+1 FAMC @F258@
 1 FAMS @F229@
 1 CHAN
 2 DATE 20 APR 2022
-3 TIME 01:18:34
+3 TIME 04:49:55
 0 @Pyrrha@ INDI
 1 NAME
 1 SEX F
 1 BIRT
 2 DATE
 2 PLAC
-1 FAMC @F230@
 1 FAMC @F232@
+1 FAMC @F257@
 1 FAMS @F229@
 1 CHAN
 2 DATE 20 APR 2022
-3 TIME 01:20:17
+3 TIME 04:51:15
 0 @F229@ FAM
 1 HUSB @Deucalion@
 1 WIFE @Pyrrha@
@@ -7542,45 +7543,18 @@
 1 BIRT
 2 DATE
 2 PLAC
-1 FAMS @F230@
+1 FAMC @F256@
 1 FAMS @F231@
+1 FAMS @F258@
 1 CHAN
 2 DATE 20 APR 2022
-3 TIME 01:18:34
-0 @F230@ FAM
-1 HUSB @Prometheus@
-1 WIFE @Clymene@
-1 CHIL @Pyrrha@
-1 CHAN
-2 DATE 20 APR 2022
-3 TIME 01:14:25
-0 @Clymene@ INDI
-1 NAME
-1 SEX F
-1 BIRT
-2 DATE
-2 PLAC
-1 FAMS @F230@
-1 CHAN
-2 DATE 20 APR 2022
-3 TIME 01:14:25
+3 TIME 04:51:15
 0 @F231@ FAM
 1 HUSB @Prometheus@
-1 WIFE @I562@
 1 CHIL @Deucalion@
 1 CHAN
 2 DATE 20 APR 2022
-3 TIME 01:18:34
-0 @I562@ INDI
-1 NAME
-1 SEX F
-1 BIRT
-2 DATE
-2 PLAC
-1 FAMS @F231@
-1 CHAN
-2 DATE 20 APR 2022
-3 TIME 01:18:34
+3 TIME 04:50:24
 0 @Epimetheus@ INDI
 1 NAME
 1 SEX M
@@ -7588,9 +7562,10 @@
 2 DATE
 2 PLAC
 1 FAMS @F232@
+1 FAMS @F257@
 1 CHAN
 2 DATE 20 APR 2022
-3 TIME 01:20:17
+3 TIME 04:49:07
 0 @F232@ FAM
 1 HUSB @Epimetheus@
 1 WIFE @Pandora@
@@ -8709,4 +8684,73 @@
 1 CHAN
 2 DATE 20 APR 2022
 3 TIME 04:37:20
+0 @Helleno-Armenius@ INDI
+1 NAME
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMS @F256@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 04:46:43
+0 @F256@ FAM
+1 HUSB @Helleno-Armenius@
+1 WIFE @I651@
+1 CHIL @Prometheus@
+1 CHIL @Armenius@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 04:46:55
+0 @I651@ INDI
+1 NAME
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMS @F256@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 04:46:43
+0 @Armenius@ INDI
+1 NAME
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F256@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 04:46:55
+0 @F257@ FAM
+1 HUSB @Epimetheus@
+1 WIFE @I653@
+1 CHIL @Pyrrha@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 04:49:07
+0 @I653@ INDI
+1 NAME
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMS @F257@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 04:49:07
+0 @F258@ FAM
+1 HUSB @Prometheus@
+1 CHIL @Deucalion@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 04:50:30
+0 @Helleno-Armenians@ NOTE The Helleno-Armenians were a group of Eurasian nomads that invaded either side of the Black Sea. 
+1 CONT
+1 CONT They had a devastating impact on the ancient world. On the west they became the sea people and Philistines and terrorized the mediterranean, they eventually became the Greeks
+1 CONT
+1 CONT On the east they went through the Caucasus recruiting people on the way and invaded the middle east. There they first became the Gutians, then the Hurrians, and then finally the Urartu and the Armenians are their remnants
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 04:55:17
 0 TRLR
