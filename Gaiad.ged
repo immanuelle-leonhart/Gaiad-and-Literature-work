@@ -75,7 +75,7 @@
 1 HUSB @Terah@
 1 WIFE @I13@
 1 CHIL @Abraham@
-1 CHIL @Nahor bin Terah@
+1 CHIL @Nahor_bin_Terah@
 1 CHIL @Haran@
 1 CHAN
 2 DATE 19 APR 2022
@@ -587,7 +587,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 00:42:34
-0 @Nahor bin Terah@ INDI
+0 @Nahor_bin_Terah@ INDI
 1 NAME /Jericho/
 1 SEX M
 1 BIRT
@@ -640,7 +640,7 @@
 2 DATE 19 APR 2022
 3 TIME 00:45:02
 0 @F20@ FAM
-1 HUSB @Nahor bin Terah@
+1 HUSB @Nahor_bin_Terah@
 1 WIFE @Milcah@
 1 CHIL @Bethuel@
 1 CHIL @Uz@
@@ -1095,15 +1095,6 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 01:58:59
-0 @ Manasseh@ INDI
-1 NAME
-1 SEX
-1 BIRT
-2 DATE
-2 PLAC
-1 CHAN
-2 DATE 19 APR 2022
-3 TIME 01:58:33
 0 @Manasseh@ INDI
 1 NAME /Jericho/
 1 SEX M
@@ -2067,11 +2058,11 @@
 0 @F60@ FAM
 1 HUSB @Default@
 1 CHIL @Levantus@
-1 CHIL @Yellow Emperor@
+1 CHIL @Yellow_Emperor@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 04:01:42
-0 @Yellow Emperor@ INDI
+0 @Yellow_Emperor@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -2093,7 +2084,7 @@
 2 DATE 19 APR 2022
 3 TIME 04:12:41
 0 @F61@ FAM
-1 HUSB @Yellow Emperor@
+1 HUSB @Yellow_Emperor@
 1 WIFE @Leizu@
 1 CHIL @Shaohao@
 1 CHIL @Changyi@
@@ -2178,7 +2169,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 04:18:23
-0 @Emperor Ku@ INDI
+0 @Emperor_Ku@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -2192,7 +2183,7 @@
 0 @F64@ FAM
 1 HUSB @Jiaoji@
 1 WIFE @I164@
-1 CHIL @Emperor Ku@
+1 CHIL @Emperor_Ku@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:06:59
@@ -2217,7 +2208,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:07:13
 0 @F65@ FAM
-1 HUSB @Emperor Ku@
+1 HUSB @Emperor_Ku@
 1 WIFE @I166@
 1 CHIL @Emperor Zhi@
 1 CHIL @Xie of Shang@
