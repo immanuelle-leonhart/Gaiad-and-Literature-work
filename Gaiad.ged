@@ -6,7 +6,7 @@
 3 ADDR http://genj.sourceforge.net
 1 DEST ANY
 1 DATE 19 APR 2022
-2 TIME 21:21:59
+2 TIME 21:37:58
 1 SUBM @B1@
 1 FILE Gaiad.ged
 1 GEDC
@@ -7620,16 +7620,17 @@
 2 DATE 20 APR 2022
 3 TIME 01:24:52
 0 @Dorus@ INDI
-1 NAME // Leader of the Dorian land conquerors
+1 NAME Dorus /Dorian/ Patriarch of the Dorians
 1 SEX M
 1 BIRT
 2 DATE
 2 PLAC
+1 NOTE @Dorian Invasion@
 1 FAMC @F233@
 1 FAMS @F234@
 1 CHAN
 2 DATE 20 APR 2022
-3 TIME 03:49:54
+3 TIME 04:34:01
 0 @F233@ FAM
 1 HUSB @Hellen@
 1 CHIL @Dorus@
@@ -7639,16 +7640,17 @@
 2 DATE 20 APR 2022
 3 TIME 02:12:59
 0 @Xuthus@ INDI
-1 NAME // Leader of Mycenean Vikings
+1 NAME
 1 SEX M
 1 BIRT
 2 DATE
 2 PLAC
+1 NOTE @Dorian Invasion@
 1 FAMC @F233@
 1 FAMS @F235@
 1 CHAN
 2 DATE 20 APR 2022
-3 TIME 03:50:25
+3 TIME 04:30:46
 0 @Aeolus@ INDI
 1 NAME // Aeolians
 1 SEX M
@@ -8687,4 +8689,24 @@
 1 CHAN
 2 DATE 20 APR 2022
 3 TIME 04:21:56
+0 @Dorian Invasion@ NOTE The Dorians were an inland Greek group that invaded and conquered most of Greece, pushing the Ionians into the seas. 
+1 CONT
+1 CONT The Spartans were Dorians, the Athenians were Myceneans
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 04:34:01
+0 @N3@ NOTE
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 04:32:22
+0 @Myceneans@ NOTE The Myceneans were a Viking-like culture that emerged from Indo European pastoralists who took to the seas
+1 CONT
+1 CONT Xuthus and Mycena were the leaders of the Myceneans
+1 CONT
+1 CONT Ionic and Attic Greek are derived from Mycenean Greek
+1 CONT
+1 CONT Attic Greek was the Greek of Athens, and replaced the Macedonian language, and became the standardized ancestor of Modern Greek
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 04:37:20
 0 TRLR
