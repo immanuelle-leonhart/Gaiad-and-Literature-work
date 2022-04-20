@@ -6,7 +6,7 @@
 3 ADDR http://genj.sourceforge.net
 1 DEST ANY
 1 DATE 20 APR 2022
-2 TIME 00:13:53
+2 TIME 00:20:47
 1 SUBM @B1@
 1 FILE Gaiad.ged
 1 GEDC
@@ -9243,21 +9243,26 @@
 1 BIRT
 2 DATE
 2 PLAC
+1 NOTE Turkic people have high rates of haplogroup R, Afanasievo represents this
 1 FAMC @F270@
 1 FAMS @F273@
 1 CHAN
 2 DATE 20 APR 2022
-3 TIME 07:12:35
+3 TIME 07:17:12
 0 @Calmichael@ INDI
 1 NAME /Haplogroup C/
 1 SEX M
 1 BIRT
 2 DATE
 2 PLAC
+1 NOTE Calmichael (derived from Kalmyk) represents the presence of haplogroup C in the Altaiic languages
+2 CONT
+2 CONT Mongols used to dominate before being replaced by the Turks after a massive volcanic eruption killed the horses
+2 CONT
 1 FAMS @F271@
 1 CHAN
 2 DATE 20 APR 2022
-3 TIME 07:10:08
+3 TIME 07:19:02
 0 @F271@ FAM
 1 HUSB @Calmichael@
 1 WIFE @Altaic_Languages@
