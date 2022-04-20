@@ -2197,7 +2197,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:06:59
-0 @Emperor Zhi@ INDI
+0 @Emperor_Zhi@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -2210,9 +2210,9 @@
 0 @F65@ FAM
 1 HUSB @Emperor_Ku@
 1 WIFE @I166@
-1 CHIL @Emperor Zhi@
-1 CHIL @Xie of Shang@
-1 CHIL @Emperor Yao@
+1 CHIL @Emperor_Zhi@
+1 CHIL @Xie_of_Shang@
+1 CHIL @Emperor_Yao@
 1 CHIL @Houji@
 1 CHAN
 2 DATE 19 APR 2022
@@ -2227,7 +2227,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:07:13
-0 @Xie of Shang@ INDI
+0 @Xie_of_Shang@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -2238,7 +2238,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:31:57
-0 @Emperor Yao@ INDI
+0 @Emperor_Yao@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -2271,7 +2271,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:08:57
 0 @F66@ FAM
-1 HUSB @Emperor Yao@
+1 HUSB @Emperor_Yao@
 1 WIFE @I171@
 1 CHIL @Ehuang@
 1 CHIL @Nuying@
@@ -2454,7 +2454,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:11:03
-0 @Emperor Shun@ INDI
+0 @Emperor_Shun@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -2467,7 +2467,7 @@
 0 @F72@ FAM
 1 HUSB @Gusou@
 1 WIFE @I185@
-1 CHIL @Emperor Shun@
+1 CHIL @Emperor_Shun@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:11:13
@@ -2530,7 +2530,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:13:24
-0 @Luo Ming@ INDI
+0 @Luo_Ming@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -2544,7 +2544,7 @@
 0 @F74@ FAM
 1 HUSB @I188@
 1 WIFE @I191@
-1 CHIL @Luo Ming@
+1 CHIL @Luo_Ming@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:13:34
@@ -2570,7 +2570,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:14:14
 0 @F75@ FAM
-1 HUSB @Luo Ming@
+1 HUSB @Luo_Ming@
 1 WIFE @I193@
 1 CHIL @Gun@
 1 CHAN
@@ -2586,7 +2586,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:13:50
-0 @Yu the Great@ INDI
+0 @Yu_the_Great@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -2600,7 +2600,7 @@
 0 @F76@ FAM
 1 HUSB @Gun@
 1 WIFE @I195@
-1 CHIL @Yu the Great@
+1 CHIL @Yu_the_Great@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:14:14
@@ -2625,7 +2625,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:14:51
-0 @Lao Tong@ INDI
+0 @Lao_Tong@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -2639,7 +2639,7 @@
 0 @F77@ FAM
 1 HUSB @Cheng@
 1 WIFE @I198@
-1 CHIL @Lao Tong@
+1 CHIL @Lao_Tong@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:14:51
@@ -2664,7 +2664,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:15:01
 0 @F78@ FAM
-1 HUSB @Lao Tong@
+1 HUSB @Lao_Tong@
 1 WIFE @I200@
 1 CHIL @Zhurong@
 1 CHIL @Wuhui@
@@ -2734,10 +2734,10 @@
 1 HUSB @Luzhong@
 1 WIFE @I205@
 1 CHIL @Kunwu@
-1 CHIL @Shen Hu@
-1 CHIL @Peng Zu@
-1 CHIL @Hui Ren@
-1 CHIL @Yan An@
+1 CHIL @Shen_Hu@
+1 CHIL @Peng_Zu@
+1 CHIL @Hui_Ren@
+1 CHIL @Yan_An@
 1 CHIL @Jilian@
 1 CHAN
 2 DATE 19 APR 2022
@@ -2752,7 +2752,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:15:29
-0 @Shen Hu@ INDI
+0 @Shen_Hu@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -2762,7 +2762,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:15:37
-0 @Peng Zu@ INDI
+0 @Peng_Zu@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -2772,7 +2772,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:15:51
-0 @Hui Ren@ INDI
+0 @Hui_Ren@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -2782,7 +2782,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:16:00
-0 @Yan An@ INDI
+0 @Yan_An@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -2822,7 +2822,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:16:56
-0 @Qi of Xia@ INDI
+0 @Qi_of_Xia@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -2834,9 +2834,9 @@
 2 DATE 19 APR 2022
 3 TIME 06:26:32
 0 @F81@ FAM
-1 HUSB @Yu the Great@
+1 HUSB @Yu_the_Great@
 1 WIFE @I214@
-1 CHIL @Qi of Xia@
+1 CHIL @Qi_of_Xia@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:26:05
@@ -2850,7 +2850,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:26:05
-0 @Tai Kang@ INDI
+0 @Tai_Kang@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -2861,10 +2861,10 @@
 2 DATE 19 APR 2022
 3 TIME 06:26:32
 0 @F82@ FAM
-1 HUSB @Qi of Xia@
+1 HUSB @Qi_of_Xia@
 1 WIFE @I216@
-1 CHIL @Tai Kang@
-1 CHIL @Zhong Kang@
+1 CHIL @Tai_Kang@
+1 CHIL @Zhong_Kang@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:26:44
@@ -2878,7 +2878,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:26:32
-0 @Zhong Kang@ INDI
+0 @Zhong_Kang@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -2889,7 +2889,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:26:58
-0 @Xiang of Xia@ INDI
+0 @Xiang_of_Xia@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -2901,9 +2901,9 @@
 2 DATE 19 APR 2022
 3 TIME 06:27:10
 0 @F83@ FAM
-1 HUSB @Zhong Kang@
+1 HUSB @Zhong_Kang@
 1 WIFE @I219@
-1 CHIL @Xiang of Xia@
+1 CHIL @Xiang_of_Xia@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:26:58
@@ -2929,7 +2929,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:27:22
 0 @F84@ FAM
-1 HUSB @Xiang of Xia@
+1 HUSB @Xiang_of_Xia@
 1 WIFE @I221@
 1 CHIL @Shaokang@
 1 CHAN
@@ -2945,7 +2945,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:27:10
-0 @Zhu of Xia@ INDI
+0 @Zhu_of_Xia@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -2959,7 +2959,7 @@
 0 @F85@ FAM
 1 HUSB @Shaokang@
 1 WIFE @I223@
-1 CHIL @Zhu of Xia@
+1 CHIL @Zhu_of_Xia@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:27:22
@@ -2973,7 +2973,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:27:22
-0 @Huai of Xia@ INDI
+0 @Huai_of_Xia@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -2985,9 +2985,9 @@
 2 DATE 19 APR 2022
 3 TIME 06:27:56
 0 @F86@ FAM
-1 HUSB @Zhu of Xia@
+1 HUSB @Zhu_of_Xia@
 1 WIFE @I225@
-1 CHIL @Huai of Xia@
+1 CHIL @Huai_of_Xia@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:27:46
@@ -3001,7 +3001,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:27:46
-0 @Mang of Xia@ INDI
+0 @Mang_of_Xia@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -3013,9 +3013,9 @@
 2 DATE 19 APR 2022
 3 TIME 06:28:06
 0 @F87@ FAM
-1 HUSB @Huai of Xia@
+1 HUSB @Huai_of_Xia@
 1 WIFE @I227@
-1 CHIL @Mang of Xia@
+1 CHIL @Mang_of_Xia@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:27:56
@@ -3029,7 +3029,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:27:56
-0 @Xie of Xia@ INDI
+0 @Xie_of_Xia@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -3041,9 +3041,9 @@
 2 DATE 19 APR 2022
 3 TIME 06:28:22
 0 @F88@ FAM
-1 HUSB @Mang of Xia@
+1 HUSB @Mang_of_Xia@
 1 WIFE @I229@
-1 CHIL @Xie of Xia@
+1 CHIL @Xie_of_Xia@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:28:06
@@ -3057,7 +3057,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:28:06
-0 @Bu Jiang@ INDI
+0 @Bu_Jiang@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -3069,10 +3069,10 @@
 2 DATE 19 APR 2022
 3 TIME 06:29:00
 0 @F89@ FAM
-1 HUSB @Xie of Xia@
+1 HUSB @Xie_of_Xia@
 1 WIFE @I231@
-1 CHIL @Bu Jiang@
-1 CHIL @Jiong of Xia@
+1 CHIL @Bu_Jiang@
+1 CHIL @Jiong_of_Xia@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:28:37
@@ -3086,7 +3086,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:28:22
-0 @Jiong of Xia@ INDI
+0 @Jiong_of_Xia@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -3097,7 +3097,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:28:47
-0 @Jin of Xia@ INDI
+0 @Jin_of_Xia@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -3108,9 +3108,9 @@
 2 DATE 19 APR 2022
 3 TIME 06:28:46
 0 @F90@ FAM
-1 HUSB @Jiong of Xia@
+1 HUSB @Jiong_of_Xia@
 1 WIFE @I234@
-1 CHIL @Jin of Xia@
+1 CHIL @Jin_of_Xia@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:28:47
@@ -3124,7 +3124,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:28:47
-0 @Kong Jia@ INDI
+0 @Kong_Jia@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -3136,9 +3136,9 @@
 2 DATE 19 APR 2022
 3 TIME 06:29:10
 0 @F91@ FAM
-1 HUSB @Bu Jiang@
+1 HUSB @Bu_Jiang@
 1 WIFE @I236@
-1 CHIL @Kong Jia@
+1 CHIL @Kong_Jia@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:29:00
@@ -3152,7 +3152,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:29:00
-0 @Gao of Xia@ INDI
+0 @Gao_of_Xia@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -3164,9 +3164,9 @@
 2 DATE 19 APR 2022
 3 TIME 06:29:21
 0 @F92@ FAM
-1 HUSB @Kong Jia@
+1 HUSB @Kong_Jia@
 1 WIFE @I238@
-1 CHIL @Gao of Xia@
+1 CHIL @Gao_of_Xia@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:29:10
@@ -3180,7 +3180,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:29:10
-0 @Fa of Xia@ INDI
+0 @Fa_of_Xia@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -3192,9 +3192,9 @@
 2 DATE 19 APR 2022
 3 TIME 06:29:33
 0 @F93@ FAM
-1 HUSB @Gao of Xia@
+1 HUSB @Gao_of_Xia@
 1 WIFE @I240@
-1 CHIL @Fa of Xia@
+1 CHIL @Fa_of_Xia@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:29:21
@@ -3208,7 +3208,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:29:21
-0 @Jie of Xia@ INDI
+0 @Jie_of_Xia@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -3219,9 +3219,9 @@
 2 DATE 19 APR 2022
 3 TIME 06:29:33
 0 @F94@ FAM
-1 HUSB @Fa of Xia@
+1 HUSB @Fa_of_Xia@
 1 WIFE @I242@
-1 CHIL @Jie of Xia@
+1 CHIL @Jie_of_Xia@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:29:33
@@ -3235,7 +3235,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:29:33
-0 @Zhao Ming of Shang@ INDI
+0 @Zhao_Ming_of_Shang@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -3247,9 +3247,9 @@
 2 DATE 19 APR 2022
 3 TIME 06:32:03
 0 @F95@ FAM
-1 HUSB @Xie of Shang@
+1 HUSB @Xie_of_Shang@
 1 WIFE @I244@
-1 CHIL @Zhao Ming of Shang@
+1 CHIL @Zhao_Ming_of_Shang@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:31:35
@@ -3263,7 +3263,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:31:35
-0 @Xiang Tu@ INDI
+0 @Xiang_Tu@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -3275,9 +3275,9 @@
 2 DATE 19 APR 2022
 3 TIME 06:32:17
 0 @F96@ FAM
-1 HUSB @Zhao Ming of Shang@
+1 HUSB @Zhao_Ming_of_Shang@
 1 WIFE @I246@
-1 CHIL @Xiang Tu@
+1 CHIL @Xiang_Tu@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:31:48
@@ -3291,7 +3291,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:31:48
-0 @Chang Ruo@ INDI
+0 @Chang_Ruo@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -3303,9 +3303,9 @@
 2 DATE 19 APR 2022
 3 TIME 06:32:30
 0 @F97@ FAM
-1 HUSB @Xiang Tu@
+1 HUSB @Xiang_Tu@
 1 WIFE @I248@
-1 CHIL @Chang Ruo@
+1 CHIL @Chang_Ruo@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:32:17
@@ -3319,7 +3319,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:32:17
-0 @Cao Yu@ INDI
+0 @Cao_Yu@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -3331,9 +3331,9 @@
 2 DATE 19 APR 2022
 3 TIME 06:32:47
 0 @F98@ FAM
-1 HUSB @Chang Ruo@
+1 HUSB @Chang_Ruo@
 1 WIFE @I250@
-1 CHIL @Cao Yu@
+1 CHIL @Cao_Yu@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:32:30
@@ -3347,7 +3347,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:32:30
-0 @Ming of Shang@ INDI
+0 @Ming_of_Shang@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -3359,9 +3359,9 @@
 2 DATE 19 APR 2022
 3 TIME 06:33:33
 0 @F99@ FAM
-1 HUSB @Cao Yu@
+1 HUSB @Cao_Yu@
 1 WIFE @I252@
-1 CHIL @Ming of Shang@
+1 CHIL @Ming_of_Shang@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:32:47
@@ -3375,7 +3375,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:32:47
-0 @Wang Hai@ INDI
+0 @Wang_Hai@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -3387,10 +3387,10 @@
 2 DATE 19 APR 2022
 3 TIME 06:34:07
 0 @F100@ FAM
-1 HUSB @Ming of Shang@
+1 HUSB @Ming_of_Shang@
 1 WIFE @I254@
-1 CHIL @Wang Hai@
-1 CHIL @Wang Heng@
+1 CHIL @Wang_Hai@
+1 CHIL @Wang_Heng@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:33:47
@@ -3404,7 +3404,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:33:33
-0 @Wang Heng@ INDI
+0 @Wang_Heng@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -3414,7 +3414,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:33:47
-0 @Jia Wei@ INDI
+0 @Jia_Wei@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -3426,9 +3426,9 @@
 2 DATE 19 APR 2022
 3 TIME 06:34:20
 0 @F101@ FAM
-1 HUSB @Wang Hai@
+1 HUSB @Wang_Hai@
 1 WIFE @I257@
-1 CHIL @Jia Wei@
+1 CHIL @Jia_Wei@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:34:07
@@ -3442,7 +3442,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:34:07
-0 @Bao Yi@ INDI
+0 @Bao_Yi@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -3454,9 +3454,9 @@
 2 DATE 19 APR 2022
 3 TIME 06:34:29
 0 @F102@ FAM
-1 HUSB @Jia Wei@
+1 HUSB @Jia_Wei@
 1 WIFE @I259@
-1 CHIL @Bao Yi@
+1 CHIL @Bao_Yi@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:34:20
@@ -3470,7 +3470,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:34:20
-0 @Bao Bing@ INDI
+0 @Bao_Bing@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -3482,9 +3482,9 @@
 2 DATE 19 APR 2022
 3 TIME 06:34:37
 0 @F103@ FAM
-1 HUSB @Bao Yi@
+1 HUSB @Bao_Yi@
 1 WIFE @I261@
-1 CHIL @Bao Bing@
+1 CHIL @Bao_Bing@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:34:29
@@ -3498,7 +3498,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:34:29
-0 @Bao Ding@ INDI
+0 @Bao_Ding@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -3510,9 +3510,9 @@
 2 DATE 19 APR 2022
 3 TIME 06:34:46
 0 @F104@ FAM
-1 HUSB @Bao Bing@
+1 HUSB @Bao_Bing@
 1 WIFE @I263@
-1 CHIL @Bao Ding@
+1 CHIL @Bao_Ding@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:34:37
@@ -3526,7 +3526,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:34:37
-0 @Zhu Ren@ INDI
+0 @Zhu_Ren@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -3538,9 +3538,9 @@
 2 DATE 19 APR 2022
 3 TIME 06:34:54
 0 @F105@ FAM
-1 HUSB @Bao Ding@
+1 HUSB @Bao_Ding@
 1 WIFE @I265@
-1 CHIL @Zhu Ren@
+1 CHIL @Zhu_Ren@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:34:46
@@ -3554,7 +3554,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:34:46
-0 @Zhu Kui@ INDI
+0 @Zhu_Kui@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -3566,9 +3566,9 @@
 2 DATE 19 APR 2022
 3 TIME 06:35:08
 0 @F106@ FAM
-1 HUSB @Zhu Ren@
+1 HUSB @Zhu_Ren@
 1 WIFE @I267@
-1 CHIL @Zhu Kui@
+1 CHIL @Zhu_Kui@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:34:54
@@ -3582,7 +3582,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:34:54
-0 @Tang of Shang@ INDI
+0 @Tang_of_Shang@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -3594,9 +3594,9 @@
 2 DATE 19 APR 2022
 3 TIME 06:36:18
 0 @F107@ FAM
-1 HUSB @Zhu Kui@
+1 HUSB @Zhu_Kui@
 1 WIFE @I269@
-1 CHIL @Tang of Shang@
+1 CHIL @Tang_of_Shang@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:35:08
@@ -3610,7 +3610,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:35:08
-0 @Da Ding@ INDI
+0 @Da_Ding@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -3622,11 +3622,11 @@
 2 DATE 19 APR 2022
 3 TIME 06:37:21
 0 @F108@ FAM
-1 HUSB @Tang of Shang@
+1 HUSB @Tang_of_Shang@
 1 WIFE @I271@
-1 CHIL @Da Ding@
-1 CHIL @Wai Bing@
-1 CHIL @Zhong Ren@
+1 CHIL @Da_Ding@
+1 CHIL @Wai_Bing@
+1 CHIL @Zhong_Ren@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:37:04
@@ -3640,7 +3640,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:36:18
-0 @Wai Bing@ INDI
+0 @Wai_Bing@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -3650,7 +3650,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:36:54
-0 @Zhong Ren@ INDI
+0 @Zhong_Ren@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -3660,7 +3660,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:37:04
-0 @Tai Jia@ INDI
+0 @Tai_Jia@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -3672,9 +3672,9 @@
 2 DATE 19 APR 2022
 3 TIME 06:37:48
 0 @F109@ FAM
-1 HUSB @Da Ding@
+1 HUSB @Da_Ding@
 1 WIFE @I275@
-1 CHIL @Tai Jia@
+1 CHIL @Tai_Jia@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:37:21
@@ -3688,7 +3688,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:37:21
-0 @Wo Ding@ INDI
+0 @Wo_Ding@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -3699,10 +3699,10 @@
 2 DATE 19 APR 2022
 3 TIME 06:37:48
 0 @F110@ FAM
-1 HUSB @Tai Jia@
+1 HUSB @Tai_Jia@
 1 WIFE @I277@
-1 CHIL @Wo Ding@
-1 CHIL @Tai Geng@
+1 CHIL @Wo_Ding@
+1 CHIL @Tai_Geng@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:38:02
@@ -3716,7 +3716,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:37:48
-0 @Tai Geng@ INDI
+0 @Tai_Geng@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -3727,7 +3727,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:38:26
-0 @Xiao Jia@ INDI
+0 @Xiao_Jia@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -3739,9 +3739,9 @@
 2 DATE 19 APR 2022
 3 TIME 06:38:37
 0 @F111@ FAM
-1 HUSB @Tai Geng@
+1 HUSB @Tai_Geng@
 1 WIFE @I280@
-1 CHIL @Xiao Jia@
+1 CHIL @Xiao_Jia@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:38:26
@@ -3755,7 +3755,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:38:26
-0 @Yong Ji@ INDI
+0 @Yong_Ji@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -3766,10 +3766,10 @@
 2 DATE 19 APR 2022
 3 TIME 06:38:37
 0 @F112@ FAM
-1 HUSB @Xiao Jia@
+1 HUSB @Xiao_Jia@
 1 WIFE @I282@
-1 CHIL @Yong Ji@
-1 CHIL @Tai Wu@
+1 CHIL @Yong_Ji@
+1 CHIL @Tai_Wu@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:38:46
@@ -3783,7 +3783,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:38:37
-0 @Tai Wu@ INDI
+0 @Tai_Wu@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -3794,7 +3794,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:39:03
-0 @Zhong Ding@ INDI
+0 @Zhong_Ding@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -3806,11 +3806,11 @@
 2 DATE 19 APR 2022
 3 TIME 06:39:41
 0 @F113@ FAM
-1 HUSB @Tai Wu@
+1 HUSB @Tai_Wu@
 1 WIFE @I285@
-1 CHIL @Zhong Ding@
-1 CHIL @Wai Ren@
-1 CHIL @He Dan Jia@
+1 CHIL @Zhong_Ding@
+1 CHIL @Wai_Ren@
+1 CHIL @He_Dan_Jia@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:39:23
@@ -3824,7 +3824,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:39:03
-0 @Wai Ren@ INDI
+0 @Wai_Ren@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -3834,7 +3834,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:39:13
-0 @He Dan Jia@ INDI
+0 @He_Dan_Jia@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -3844,7 +3844,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:39:23
-0 @Zu Yi@ INDI
+0 @Zu_Yi@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -3856,9 +3856,9 @@
 2 DATE 19 APR 2022
 3 TIME 06:39:57
 0 @F114@ FAM
-1 HUSB @Zhong Ding@
+1 HUSB @Zhong_Ding@
 1 WIFE @I289@
-1 CHIL @Zu Yi@
+1 CHIL @Zu_Yi@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:39:41
@@ -3872,7 +3872,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:39:41
-0 @Zu Xin@ INDI
+0 @Zu_Xin@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -3884,10 +3884,10 @@
 2 DATE 19 APR 2022
 3 TIME 06:40:36
 0 @F115@ FAM
-1 HUSB @Zu Yi@
+1 HUSB @Zu_Yi@
 1 WIFE @I291@
-1 CHIL @Zu Xin@
-1 CHIL @Wo Jia@
+1 CHIL @Zu_Xin@
+1 CHIL @Wo_Jia@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:40:15
@@ -3901,7 +3901,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:39:57
-0 @Wo Jia@ INDI
+0 @Wo_Jia@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -3912,7 +3912,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:40:25
-0 @Nan Geng@ INDI
+0 @Nan_Geng@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -3923,9 +3923,9 @@
 2 DATE 19 APR 2022
 3 TIME 06:40:25
 0 @F116@ FAM
-1 HUSB @Wo Jia@
+1 HUSB @Wo_Jia@
 1 WIFE @I294@
-1 CHIL @Nan Geng@
+1 CHIL @Nan_Geng@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:40:25
@@ -3939,7 +3939,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:40:25
-0 @Zu Ding@ INDI
+0 @Zu_Ding@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -3951,9 +3951,9 @@
 2 DATE 19 APR 2022
 3 TIME 06:41:00
 0 @F117@ FAM
-1 HUSB @Zu Xin@
+1 HUSB @Zu_Xin@
 1 WIFE @I296@
-1 CHIL @Zu Ding@
+1 CHIL @Zu_Ding@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:40:36
@@ -3967,7 +3967,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:40:36
-0 @Yang Jia of Shang@ INDI
+0 @Yang_Jia_of_Shang@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -3978,12 +3978,12 @@
 2 DATE 19 APR 2022
 3 TIME 06:41:00
 0 @F118@ FAM
-1 HUSB @Zu Ding@
+1 HUSB @Zu_Ding@
 1 WIFE @I298@
-1 CHIL @Yang Jia of Shang@
-1 CHIL @Pan Geng@
-1 CHIL @Xiao Xin@
-1 CHIL @Xiao Yi of Shang@
+1 CHIL @Yang_Jia_of_Shang@
+1 CHIL @Pan_Geng@
+1 CHIL @Xiao_Xin@
+1 CHIL @Xiao_Yi_of_Shang@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:41:34
@@ -3997,7 +3997,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:41:00
-0 @Pan Geng@ INDI
+0 @Pan_Geng@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -4007,7 +4007,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:41:09
-0 @Xiao Xin@ INDI
+0 @Xiao_Xin@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -4017,7 +4017,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:41:19
-0 @Xiao Yi of Shang@ INDI
+0 @Xiao_Yi_of_Shang@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -4028,7 +4028,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:41:53
-0 @Wu Ding@ INDI
+0 @Wu_Ding@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -4040,9 +4040,9 @@
 2 DATE 19 APR 2022
 3 TIME 06:42:05
 0 @F119@ FAM
-1 HUSB @Xiao Yi of Shang@
+1 HUSB @Xiao_Yi_of_Shang@
 1 WIFE @I303@
-1 CHIL @Wu Ding@
+1 CHIL @Wu_Ding@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:41:53
@@ -4056,7 +4056,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:41:53
-0 @Xiao Ji@ INDI
+0 @Xiao_Ji@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -4067,11 +4067,11 @@
 2 DATE 19 APR 2022
 3 TIME 06:42:05
 0 @F120@ FAM
-1 HUSB @Wu Ding@
+1 HUSB @Wu_Ding@
 1 WIFE @I305@
-1 CHIL @Xiao Ji@
-1 CHIL @Zu Geng of Shang@
-1 CHIL @Zu Jia@
+1 CHIL @Xiao_Ji@
+1 CHIL @Zu_Geng_of_Shang@
+1 CHIL @Zu_Jia@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:42:34
@@ -4085,7 +4085,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:42:05
-0 @Zu Geng of Shang@ INDI
+0 @Zu_Geng_of_Shang@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -4095,7 +4095,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:42:23
-0 @Zu Jia@ INDI
+0 @Zu_Jia@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -4106,7 +4106,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:43:04
-0 @Lin Xin@ INDI
+0 @Lin_Xin@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -4117,10 +4117,10 @@
 2 DATE 19 APR 2022
 3 TIME 06:43:04
 0 @F121@ FAM
-1 HUSB @Zu Jia@
+1 HUSB @Zu_Jia@
 1 WIFE @I309@
-1 CHIL @Lin Xin@
-1 CHIL @Geng Ding@
+1 CHIL @Lin_Xin@
+1 CHIL @Geng_Ding@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:43:20
@@ -4134,7 +4134,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:43:04
-0 @Geng Ding@ INDI
+0 @Geng_Ding@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -4145,7 +4145,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:43:40
-0 @Wu Yi of Shang@ INDI
+0 @Wu_Yi_of_Shang@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -4157,9 +4157,9 @@
 2 DATE 19 APR 2022
 3 TIME 06:43:51
 0 @F122@ FAM
-1 HUSB @Geng Ding@
+1 HUSB @Geng_Ding@
 1 WIFE @I312@
-1 CHIL @Wu Yi of Shang@
+1 CHIL @Wu_Yi_of_Shang@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:43:40
@@ -4173,7 +4173,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:43:40
-0 @Wen Wu Ding@ INDI
+0 @Wen_Wu_Ding@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -4185,9 +4185,9 @@
 2 DATE 19 APR 2022
 3 TIME 06:44:08
 0 @F123@ FAM
-1 HUSB @Wu Yi of Shang@
+1 HUSB @Wu_Yi_of_Shang@
 1 WIFE @I314@
-1 CHIL @Wen Wu Ding@
+1 CHIL @Wen_Wu_Ding@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:43:51
@@ -4201,7 +4201,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:43:51
-0 @Bi Gan@ INDI
+0 @Bi_Gan@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -4212,10 +4212,10 @@
 2 DATE 19 APR 2022
 3 TIME 06:44:08
 0 @F124@ FAM
-1 HUSB @Wen Wu Ding@
+1 HUSB @Wen_Wu_Ding@
 1 WIFE @I316@
-1 CHIL @Bi Gan@
-1 CHIL @Di Yi@
+1 CHIL @Bi_Gan@
+1 CHIL @Di_Yi@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:44:19
@@ -4229,7 +4229,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:44:08
-0 @Di Yi@ INDI
+0 @Di_Yi@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -4240,7 +4240,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:44:59
-0 @Kiji of Shang@ INDI
+0 @Kiji_of_Shang@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -4251,11 +4251,11 @@
 2 DATE 19 APR 2022
 3 TIME 06:44:59
 0 @F125@ FAM
-1 HUSB @Di Yi@
+1 HUSB @Di_Yi@
 1 WIFE @I319@
-1 CHIL @Kiji of Shang@
-1 CHIL @Wei Zhong Yan@
-1 CHIL @King Zhou of Shang@
+1 CHIL @Kiji_of_Shang@
+1 CHIL @Wei_Zhong_Yan@
+1 CHIL @King_Zhou_of_Shang@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:45:36
@@ -4269,7 +4269,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:44:59
-0 @Wei Zhong Yan@ INDI
+0 @Wei_Zhong_Yan@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -4280,7 +4280,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:58:55
-0 @King Zhou of Shang@ INDI
+0 @King_Zhou_of_Shang@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -4291,7 +4291,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:45:50
-0 @Wu Geng@ INDI
+0 @Wu_Geng@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -4302,9 +4302,9 @@
 2 DATE 19 APR 2022
 3 TIME 06:45:50
 0 @F126@ FAM
-1 HUSB @King Zhou of Shang@
+1 HUSB @King_Zhou_of_Shang@
 1 WIFE @I323@
-1 CHIL @Wu Geng@
+1 CHIL @Wu_Geng@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 06:45:50
@@ -4346,7 +4346,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:31:25
-0 @Ji Ju@ INDI
+0 @Ji_Ju@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -4360,7 +4360,7 @@
 0 @F128@ FAM
 1 HUSB @Buzhu@
 1 WIFE @I327@
-1 CHIL @Ji Ju@
+1 CHIL @Ji_Ju@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:31:40
@@ -4374,7 +4374,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:31:40
-0 @Gong Liu@ INDI
+0 @Gong_Liu@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -4386,9 +4386,9 @@
 2 DATE 19 APR 2022
 3 TIME 17:32:15
 0 @F129@ FAM
-1 HUSB @Ji Ju@
+1 HUSB @Ji_Ju@
 1 WIFE @I329@
-1 CHIL @Gong Liu@
+1 CHIL @Gong_Liu@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:32:01
@@ -4414,7 +4414,7 @@
 2 DATE 19 APR 2022
 3 TIME 17:33:40
 0 @F130@ FAM
-1 HUSB @Gong Liu@
+1 HUSB @Gong_Liu@
 1 WIFE @I331@
 1 CHIL @Qingjie@
 1 CHAN
@@ -4514,7 +4514,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:34:36
-0 @Duke Fei@ INDI
+0 @Duke_Fei@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -4528,7 +4528,7 @@
 0 @F134@ FAM
 1 HUSB @Huiyu@
 1 WIFE @I339@
-1 CHIL @Duke Fei@
+1 CHIL @Duke_Fei@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:35:08
@@ -4542,7 +4542,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:35:08
-0 @Ji Gaoyu@ INDI
+0 @Ji_Gaoyu@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -4554,9 +4554,9 @@
 2 DATE 19 APR 2022
 3 TIME 17:35:57
 0 @F135@ FAM
-1 HUSB @Duke Fei@
+1 HUSB @Duke_Fei@
 1 WIFE @I341@
-1 CHIL @Ji Gaoyu@
+1 CHIL @Ji_Gaoyu@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:35:49
@@ -4582,7 +4582,7 @@
 2 DATE 19 APR 2022
 3 TIME 17:36:07
 0 @F136@ FAM
-1 HUSB @Ji Gaoyu@
+1 HUSB @Ji_Gaoyu@
 1 WIFE @I343@
 1 CHIL @Yayu@
 1 CHAN
@@ -4598,7 +4598,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:35:57
-0 @Gong Shu Zulei@ INDI
+0 @Gong_Shu_Zulei@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -4612,7 +4612,7 @@
 0 @F137@ FAM
 1 HUSB @Yayu@
 1 WIFE @I345@
-1 CHIL @Gong Shu Zulei@
+1 CHIL @Gong_Shu_Zulei@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:36:07
@@ -4626,7 +4626,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:36:07
-0 @King Tai of Zhou@ INDI
+0 @King_Tai_of_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -4638,9 +4638,9 @@
 2 DATE 19 APR 2022
 3 TIME 17:40:51
 0 @F138@ FAM
-1 HUSB @Gong Shu Zulei@
+1 HUSB @Gong_Shu_Zulei@
 1 WIFE @I347@
-1 CHIL @King Tai of Zhou@
+1 CHIL @King_Tai_of_Zhou@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:36:47
@@ -4654,7 +4654,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:36:47
-0 @Ji, King of Zhou@ INDI
+0 @Ji,_King_of_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -4666,11 +4666,11 @@
 2 DATE 19 APR 2022
 3 TIME 17:44:21
 0 @F139@ FAM
-1 HUSB @King Tai of Zhou@
+1 HUSB @King_Tai_of_Zhou@
 1 WIFE @I349@
-1 CHIL @Ji, King of Zhou@
+1 CHIL @Ji,_King_of_Zhou@
 1 CHIL @Taibo@
-1 CHIL @Zhongyong of Wu@
+1 CHIL @Zhongyong_of_Wu@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:41:10
@@ -4694,7 +4694,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:41:00
-0 @Zhongyong of Wu@ INDI
+0 @Zhongyong_of_Wu@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -4717,7 +4717,7 @@
 2 DATE 19 APR 2022
 3 TIME 17:43:36
 0 @F140@ FAM
-1 HUSB @Zhongyong of Wu@
+1 HUSB @Zhongyong_of_Wu@
 1 WIFE @I353@
 1 CHIL @Jijian@
 1 CHAN
@@ -4816,7 +4816,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:43:50
-0 @Guo Zhong@ INDI
+0 @Guo_Zhong@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -4827,10 +4827,10 @@
 2 DATE 19 APR 2022
 3 TIME 17:44:21
 0 @F144@ FAM
-1 HUSB @Ji, King of Zhou@
+1 HUSB @Ji,_King_of_Zhou@
 1 WIFE @I361@
-1 CHIL @Guo Zhong@
-1 CHIL @Guo Shu@
+1 CHIL @Guo_Zhong@
+1 CHIL @Guo_Shu@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:44:30
@@ -4844,7 +4844,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:44:21
-0 @Guo Shu@ INDI
+0 @Guo_Shu@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -4855,7 +4855,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:44:40
-0 @King Wen of Zhou@ INDI
+0 @King_Wen_of_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -4867,9 +4867,9 @@
 2 DATE 19 APR 2022
 3 TIME 17:45:36
 0 @F145@ FAM
-1 HUSB @Guo Shu@
+1 HUSB @Guo_Shu@
 1 WIFE @I364@
-1 CHIL @King Wen of Zhou@
+1 CHIL @King_Wen_of_Zhou@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:44:40
@@ -4883,7 +4883,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:44:40
-0 @Bo Yikao@ INDI
+0 @Bo_Yikao@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -4894,11 +4894,11 @@
 2 DATE 19 APR 2022
 3 TIME 17:45:36
 0 @F146@ FAM
-1 HUSB @King Wen of Zhou@
+1 HUSB @King_Wen_of_Zhou@
 1 WIFE @I366@
-1 CHIL @Bo Yikao@
-1 CHIL @Duke of Zhou@
-1 CHIL @King Wu of Zhou@
+1 CHIL @Bo_Yikao@
+1 CHIL @Duke_of_Zhou@
+1 CHIL @King_Wu_of_Zhou@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:48:45
@@ -4912,7 +4912,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:45:36
-0 @Duke of Zhou@ INDI
+0 @Duke_of_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -4923,7 +4923,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:49:29
-0 @King Wu of Zhou@ INDI
+0 @King_Wu_of_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -4934,7 +4934,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:51:06
-0 @Bo Qin@ INDI
+0 @Bo_Qin@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -4945,9 +4945,9 @@
 2 DATE 19 APR 2022
 3 TIME 17:49:29
 0 @F147@ FAM
-1 HUSB @Duke of Zhou@
+1 HUSB @Duke_of_Zhou@
 1 WIFE @I370@
-1 CHIL @Bo Qin@
+1 CHIL @Bo_Qin@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:49:29
@@ -4961,7 +4961,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:49:29
-0 @King Cheng of Zhou@ INDI
+0 @King_Cheng_of_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -4973,10 +4973,10 @@
 2 DATE 19 APR 2022
 3 TIME 17:53:35
 0 @F148@ FAM
-1 HUSB @King Wu of Zhou@
+1 HUSB @King_Wu_of_Zhou@
 1 WIFE @I372@
-1 CHIL @King Cheng of Zhou@
-1 CHIL @Shu Yu of Tang@
+1 CHIL @King_Cheng_of_Zhou@
+1 CHIL @Shu_Yu_of_Tang@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:51:16
@@ -4990,7 +4990,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:51:06
-0 @Shu Yu of Tang@ INDI
+0 @Shu_Yu_of_Tang@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -5013,7 +5013,7 @@
 2 DATE 19 APR 2022
 3 TIME 17:52:43
 0 @F149@ FAM
-1 HUSB @Shu Yu of Tang@
+1 HUSB @Shu_Yu_of_Tang@
 1 WIFE @I375@
 1 CHIL @Xiefu@
 1 CHAN
@@ -5029,7 +5029,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:52:30
-0 @Marquis Wu of Jin@ INDI
+0 @Marquis_Wu_of_Jin@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -5043,7 +5043,7 @@
 0 @F150@ FAM
 1 HUSB @Xiefu@
 1 WIFE @I377@
-1 CHIL @Marquis Wu of Jin@
+1 CHIL @Marquis_Wu_of_Jin@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:52:43
@@ -5057,7 +5057,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:52:43
-0 @King Kang of Zhou@ INDI
+0 @King_Kang_of_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -5069,9 +5069,9 @@
 2 DATE 19 APR 2022
 3 TIME 18:10:09
 0 @F151@ FAM
-1 HUSB @King Cheng of Zhou@
+1 HUSB @King_Cheng_of_Zhou@
 1 WIFE @I379@
-1 CHIL @King Kang of Zhou@
+1 CHIL @King_Kang_of_Zhou@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:53:35
@@ -5085,16 +5085,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:53:35
-0 @Duke Song Ji @ INDI
-1 NAME
-1 SEX
-1 BIRT
-2 DATE
-2 PLAC
-1 CHAN
-2 DATE 19 APR 2022
-3 TIME 17:58:46
-0 @Duke Song Ji@ INDI
+0 @Duke_Song_Ji@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -5106,9 +5097,9 @@
 2 DATE 19 APR 2022
 3 TIME 17:59:06
 0 @F152@ FAM
-1 HUSB @Wei Zhong Yan@
+1 HUSB @Wei_Zhong_Yan@
 1 WIFE @I382@
-1 CHIL @Duke Song Ji@
+1 CHIL @Duke_Song_Ji@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:58:55
@@ -5122,7 +5113,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:58:55
-0 @Duke Ding of Song@ INDI
+0 @Duke_Ding_of_Song@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -5134,9 +5125,9 @@
 2 DATE 19 APR 2022
 3 TIME 17:59:28
 0 @F153@ FAM
-1 HUSB @Duke Song Ji@
+1 HUSB @Duke_Song_Ji@
 1 WIFE @I384@
-1 CHIL @Duke Ding of Song@
+1 CHIL @Duke_Ding_of_Song@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:59:06
@@ -5150,7 +5141,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:59:06
-0 @Duke Min of Song@ INDI
+0 @Duke_Min_of_Song@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -5162,10 +5153,10 @@
 2 DATE 19 APR 2022
 3 TIME 17:59:58
 0 @F154@ FAM
-1 HUSB @Duke Ding of Song@
+1 HUSB @Duke_Ding_of_Song@
 1 WIFE @I386@
-1 CHIL @Duke Min of Song@
-1 CHIL @Duke Yang of Song@
+1 CHIL @Duke_Min_of_Song@
+1 CHIL @Duke_Yang_of_Song@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:59:47
@@ -5179,7 +5170,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:59:28
-0 @Duke Yang of Song@ INDI
+0 @Duke_Yang_of_Song@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -5189,7 +5180,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:59:47
-0 @Fu fuhe@ INDI
+0 @Fu_fuhe@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -5201,10 +5192,10 @@
 2 DATE 19 APR 2022
 3 TIME 18:00:22
 0 @F155@ FAM
-1 HUSB @Duke Min of Song@
+1 HUSB @Duke_Min_of_Song@
 1 WIFE @I389@
-1 CHIL @Fu fuhe@
-1 CHIL @Duke Li of Song@
+1 CHIL @Fu_fuhe@
+1 CHIL @Duke_Li_of_Song@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:00:07
@@ -5218,7 +5209,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 17:59:58
-0 @Duke Li of Song@ INDI
+0 @Duke_Li_of_Song@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -5228,7 +5219,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:00:07
-0 @Song Fu Zhou@ INDI
+0 @Song_Fu_Zhou@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -5240,9 +5231,9 @@
 2 DATE 19 APR 2022
 3 TIME 18:00:36
 0 @F156@ FAM
-1 HUSB @Fu fuhe@
+1 HUSB @Fu_fuhe@
 1 WIFE @I392@
-1 CHIL @Song Fu Zhou@
+1 CHIL @Song_Fu_Zhou@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:00:22
@@ -5256,16 +5247,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:00:22
-0 @Shi Zi Sheng	@ INDI
-1 NAME
-1 SEX
-1 BIRT
-2 DATE
-2 PLAC
-1 CHAN
-2 DATE 19 APR 2022
-3 TIME 18:00:28
-0 @Shi Zi Sheng@ INDI
+0 @Shi_Zi_Sheng@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -5277,9 +5259,9 @@
 2 DATE 19 APR 2022
 3 TIME 18:00:49
 0 @F157@ FAM
-1 HUSB @Song Fu Zhou@
+1 HUSB @Song_Fu_Zhou@
 1 WIFE @I395@
-1 CHIL @Shi Zi Sheng@
+1 CHIL @Shi_Zi_Sheng@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:00:36
@@ -5293,7 +5275,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:00:36
-0 @Zheng Kao Fu@ INDI
+0 @Zheng_Kao_Fu@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -5305,9 +5287,9 @@
 2 DATE 19 APR 2022
 3 TIME 18:01:00
 0 @F158@ FAM
-1 HUSB @Shi Zi Sheng@
+1 HUSB @Shi_Zi_Sheng@
 1 WIFE @I397@
-1 CHIL @Zheng Kao Fu@
+1 CHIL @Zheng_Kao_Fu@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:00:49
@@ -5321,7 +5303,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:00:49
-0 @Kong Fu Jia@ INDI
+0 @Kong_Fu_Jia@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -5333,9 +5315,9 @@
 2 DATE 19 APR 2022
 3 TIME 18:01:07
 0 @F159@ FAM
-1 HUSB @Zheng Kao Fu@
+1 HUSB @Zheng_Kao_Fu@
 1 WIFE @I399@
-1 CHIL @Kong Fu Jia@
+1 CHIL @Kong_Fu_Jia@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:01:00
@@ -5349,7 +5331,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:01:00
-0 @Mu Jin Fu@ INDI
+0 @Mu_Jin_Fu@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -5361,9 +5343,9 @@
 2 DATE 19 APR 2022
 3 TIME 18:01:20
 0 @F160@ FAM
-1 HUSB @Kong Fu Jia@
+1 HUSB @Kong_Fu_Jia@
 1 WIFE @I401@
-1 CHIL @Mu Jin Fu@
+1 CHIL @Mu_Jin_Fu@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:01:07
@@ -5377,7 +5359,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:01:07
-0 @Qi Fu@ INDI
+0 @Qi_Fu@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -5389,9 +5371,9 @@
 2 DATE 19 APR 2022
 3 TIME 18:01:28
 0 @F161@ FAM
-1 HUSB @Mu Jin Fu@
+1 HUSB @Mu_Jin_Fu@
 1 WIFE @I403@
-1 CHIL @Qi Fu@
+1 CHIL @Qi_Fu@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:01:20
@@ -5405,7 +5387,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:01:20
-0 @Fang Shu@ INDI
+0 @Fang_Shu@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -5417,9 +5399,9 @@
 2 DATE 19 APR 2022
 3 TIME 18:01:41
 0 @F162@ FAM
-1 HUSB @Qi Fu@
+1 HUSB @Qi_Fu@
 1 WIFE @I405@
-1 CHIL @Fang Shu@
+1 CHIL @Fang_Shu@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:01:28
@@ -5433,7 +5415,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:01:28
-0 @Bo Xia@ INDI
+0 @Bo_Xia@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -5445,9 +5427,9 @@
 2 DATE 19 APR 2022
 3 TIME 18:01:49
 0 @F163@ FAM
-1 HUSB @Fang Shu@
+1 HUSB @Fang_Shu@
 1 WIFE @I407@
-1 CHIL @Bo Xia@
+1 CHIL @Bo_Xia@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:01:41
@@ -5461,7 +5443,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:01:41
-0 @Shu liang He@ INDI
+0 @Shu_liang_He@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -5473,9 +5455,9 @@
 2 DATE 19 APR 2022
 3 TIME 18:01:59
 0 @F164@ FAM
-1 HUSB @Bo Xia@
+1 HUSB @Bo_Xia@
 1 WIFE @I409@
-1 CHIL @Shu liang He@
+1 CHIL @Shu_liang_He@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:01:49
@@ -5489,7 +5471,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:01:49
-0 @Meng Pi@ INDI
+0 @Meng_Pi@ INDI
 1 NAME /Shang/
 1 SEX M
 1 BIRT
@@ -5500,9 +5482,9 @@
 2 DATE 19 APR 2022
 3 TIME 18:01:59
 0 @F165@ FAM
-1 HUSB @Shu liang He@
+1 HUSB @Shu_liang_He@
 1 WIFE @I411@
-1 CHIL @Meng Pi@
+1 CHIL @Meng_Pi@
 1 CHIL @Confucius@
 1 CHAN
 2 DATE 19 APR 2022
@@ -5527,7 +5509,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:02:15
-0 @King Zhao of Zhou@ INDI
+0 @King_Zhao_of_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -5539,9 +5521,9 @@
 2 DATE 19 APR 2022
 3 TIME 18:10:52
 0 @F166@ FAM
-1 HUSB @King Kang of Zhou@
+1 HUSB @King_Kang_of_Zhou@
 1 WIFE @I414@
-1 CHIL @King Zhao of Zhou@
+1 CHIL @King_Zhao_of_Zhou@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:10:09
@@ -5555,7 +5537,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:10:09
-0 @King Mu of Zhou@ INDI
+0 @King_Mu_of_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 FAMC @F167@
@@ -5564,9 +5546,9 @@
 2 DATE 19 APR 2022
 3 TIME 18:11:38
 0 @F167@ FAM
-1 HUSB @King Zhao of Zhou@
+1 HUSB @King_Zhao_of_Zhou@
 1 WIFE @I416@
-1 CHIL @King Mu of Zhou@
+1 CHIL @King_Mu_of_Zhou@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:10:19
@@ -5580,7 +5562,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:10:19
-0 @King Gong of Zhou@ INDI
+0 @King_Gong_of_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -5592,10 +5574,10 @@
 2 DATE 19 APR 2022
 3 TIME 18:12:47
 0 @F168@ FAM
-1 HUSB @King Mu of Zhou@
+1 HUSB @King_Mu_of_Zhou@
 1 WIFE @I418@
-1 CHIL @King Gong of Zhou@
-1 CHIL @King Xiao of Zhou@
+1 CHIL @King_Gong_of_Zhou@
+1 CHIL @King_Xiao_of_Zhou@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:11:48
@@ -5609,7 +5591,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:11:38
-0 @King Xiao of Zhou@ INDI
+0 @King_Xiao_of_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -5619,7 +5601,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:11:48
-0 @King Yih of Zhou@ INDI
+0 @King_Yih_of_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -5631,9 +5613,9 @@
 2 DATE 19 APR 2022
 3 TIME 18:13:13
 0 @F169@ FAM
-1 HUSB @King Gong of Zhou@
+1 HUSB @King_Gong_of_Zhou@
 1 WIFE @I421@
-1 CHIL @King Yih of Zhou@
+1 CHIL @King_Yih_of_Zhou@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:12:47
@@ -5647,7 +5629,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:12:47
-0 @King Yi of Zhou (Xie)@ INDI
+0 @King_Yi_of_Zhou_(Xie)@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -5659,9 +5641,9 @@
 2 DATE 19 APR 2022
 3 TIME 18:13:25
 0 @F170@ FAM
-1 HUSB @King Yih of Zhou@
+1 HUSB @King_Yih_of_Zhou@
 1 WIFE @I423@
-1 CHIL @King Yi of Zhou (Xie)@
+1 CHIL @King_Yi_of_Zhou_(Xie)@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:13:13
@@ -5675,7 +5657,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:13:13
-0 @King Li of Zhou@ INDI
+0 @King_Li_of_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -5687,9 +5669,9 @@
 2 DATE 19 APR 2022
 3 TIME 18:14:43
 0 @F171@ FAM
-1 HUSB @King Yi of Zhou (Xie)@
+1 HUSB @King_Yi_of_Zhou_(Xie)@
 1 WIFE @I425@
-1 CHIL @King Li of Zhou@
+1 CHIL @King_Li_of_Zhou@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:13:25
@@ -5703,7 +5685,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:13:25
-0 @King Xuan of Zhou@ INDI
+0 @King_Xuan_of_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -5715,10 +5697,10 @@
 2 DATE 19 APR 2022
 3 TIME 18:15:27
 0 @F172@ FAM
-1 HUSB @King Li of Zhou@
+1 HUSB @King_Li_of_Zhou@
 1 WIFE @I427@
-1 CHIL @King Xuan of Zhou@
-1 CHIL @Duke Huan of Zheng@
+1 CHIL @King_Xuan_of_Zhou@
+1 CHIL @Duke_Huan_of_Zheng@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:14:53
@@ -5732,7 +5714,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:14:43
-0 @Duke Huan of Zheng@ INDI
+0 @Duke_Huan_of_Zheng@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -5742,7 +5724,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:14:53
-0 @King Xie of Zhou@ INDI
+0 @King_Xie_of_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -5753,10 +5735,10 @@
 2 DATE 19 APR 2022
 3 TIME 18:15:27
 0 @F173@ FAM
-1 HUSB @King Xuan of Zhou@
+1 HUSB @King_Xuan_of_Zhou@
 1 WIFE @I430@
-1 CHIL @King Xie of Zhou@
-1 CHIL @King You of Zhou@
+1 CHIL @King_Xie_of_Zhou@
+1 CHIL @King_You_of_Zhou@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:15:37
@@ -5770,7 +5752,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:15:27
-0 @King You of Zhou@ INDI
+0 @King_You_of_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -5782,7 +5764,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:18:47
-0 @Queen Shen@ INDI
+0 @Queen_Shen@ INDI
 1 NAME
 1 SEX F
 1 BIRT
@@ -5793,13 +5775,13 @@
 2 DATE 19 APR 2022
 3 TIME 18:18:03
 0 @F174@ FAM
-1 HUSB @King You of Zhou@
-1 WIFE @Queen Shen@
-1 CHIL @King Ping of Zhou@
+1 HUSB @King_You_of_Zhou@
+1 WIFE @Queen_Shen@
+1 CHIL @King_Ping_of_Zhou@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:18:17
-0 @King Ping of Zhou@ INDI
+0 @King_Ping_of_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -5810,7 +5792,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:19:32
-0 @Bao Si@ INDI
+0 @Bao_Si@ INDI
 1 NAME
 1 SEX F
 1 BIRT
@@ -5821,8 +5803,8 @@
 2 DATE 19 APR 2022
 3 TIME 18:18:47
 0 @F175@ FAM
-1 HUSB @King You of Zhou@
-1 WIFE @Bao Si@
+1 HUSB @King_You_of_Zhou@
+1 WIFE @Bao_Si@
 1 CHIL @Bofu@
 1 CHAN
 2 DATE 19 APR 2022
@@ -5837,7 +5819,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:18:56
-0 @Taizi Xiefu@ INDI
+0 @Taizi_Xiefu@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -5849,9 +5831,9 @@
 2 DATE 19 APR 2022
 3 TIME 18:19:52
 0 @F176@ FAM
-1 HUSB @King Ping of Zhou@
+1 HUSB @King_Ping_of_Zhou@
 1 WIFE @I437@
-1 CHIL @Taizi Xiefu@
+1 CHIL @Taizi_Xiefu@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:19:32
@@ -5865,7 +5847,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:19:32
-0 @King Huan of Zhou@ INDI
+0 @King_Huan_of_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -5877,9 +5859,9 @@
 2 DATE 19 APR 2022
 3 TIME 18:20:01
 0 @F177@ FAM
-1 HUSB @Taizi Xiefu@
+1 HUSB @Taizi_Xiefu@
 1 WIFE @I439@
-1 CHIL @King Huan of Zhou@
+1 CHIL @King_Huan_of_Zhou@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:19:52
@@ -5893,7 +5875,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:19:52
-0 @King Zhuang of Zhou@ INDI
+0 @King_Zhuang_of_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -5905,9 +5887,9 @@
 2 DATE 19 APR 2022
 3 TIME 18:21:05
 0 @F178@ FAM
-1 HUSB @King Huan of Zhou@
+1 HUSB @King_Huan_of_Zhou@
 1 WIFE @I441@
-1 CHIL @King Zhuang of Zhou@
+1 CHIL @King_Zhuang_of_Zhou@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:20:01
@@ -5921,7 +5903,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:20:01
-0 @King Xi of Zhou@ INDI
+0 @King_Xi_of_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -5933,10 +5915,10 @@
 2 DATE 19 APR 2022
 3 TIME 18:21:33
 0 @F179@ FAM
-1 HUSB @King Zhuang of Zhou@
+1 HUSB @King_Zhuang_of_Zhou@
 1 WIFE @I443@
-1 CHIL @King Xi of Zhou@
-1 CHIL @Prince Tui@
+1 CHIL @King_Xi_of_Zhou@
+1 CHIL @Prince_Tui@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:21:16
@@ -5950,7 +5932,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:21:05
-0 @Prince Tui@ INDI
+0 @Prince_Tui@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -5960,7 +5942,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:21:16
-0 @King Hui of Zhou@ INDI
+0 @King_Hui_of_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -5972,9 +5954,9 @@
 2 DATE 19 APR 2022
 3 TIME 18:22:54
 0 @F180@ FAM
-1 HUSB @King Xi of Zhou@
+1 HUSB @King_Xi_of_Zhou@
 1 WIFE @I446@
-1 CHIL @King Hui of Zhou@
+1 CHIL @King_Hui_of_Zhou@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:21:33
@@ -5988,7 +5970,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:21:33
-0 @King Xiang of Zhou@ INDI
+0 @King_Xiang_of_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -6000,10 +5982,10 @@
 2 DATE 19 APR 2022
 3 TIME 18:24:17
 0 @F181@ FAM
-1 HUSB @King Hui of Zhou@
+1 HUSB @King_Hui_of_Zhou@
 1 WIFE @I448@
-1 CHIL @King Xiang of Zhou@
-1 CHIL @Prince Dai@
+1 CHIL @King_Xiang_of_Zhou@
+1 CHIL @Prince_Dai@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:23:03
@@ -6017,7 +5999,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:22:54
-0 @Prince Dai@ INDI
+0 @Prince_Dai@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -6027,7 +6009,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:23:03
-0 @King Qing of Zhou@ INDI
+0 @King_Qing_of_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -6039,9 +6021,9 @@
 2 DATE 19 APR 2022
 3 TIME 18:43:07
 0 @F182@ FAM
-1 HUSB @King Xiang of Zhou@
+1 HUSB @King_Xiang_of_Zhou@
 1 WIFE @I451@
-1 CHIL @King Qing of Zhou@
+1 CHIL @King_Qing_of_Zhou@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:24:17
@@ -6055,7 +6037,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:24:17
-0 @King Kuang of Zhou@ INDI
+0 @King_Kuang_of_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -6066,10 +6048,10 @@
 2 DATE 19 APR 2022
 3 TIME 18:43:07
 0 @F183@ FAM
-1 HUSB @King Qing of Zhou@
+1 HUSB @King_Qing_of_Zhou@
 1 WIFE @I453@
-1 CHIL @King Kuang of Zhou@
-1 CHIL @King Ding of Zhou@
+1 CHIL @King_Kuang_of_Zhou@
+1 CHIL @King_Ding_of_Zhou@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:43:17
@@ -6083,7 +6065,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:43:07
-0 @King Ding of Zhou@ INDI
+0 @King_Ding_of_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -6094,7 +6076,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:43:45
-0 @King Jian of Zhou@ INDI
+0 @King_Jian_of_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -6106,9 +6088,9 @@
 2 DATE 19 APR 2022
 3 TIME 18:43:55
 0 @F184@ FAM
-1 HUSB @King Ding of Zhou@
+1 HUSB @King_Ding_of_Zhou@
 1 WIFE @I456@
-1 CHIL @King Jian of Zhou@
+1 CHIL @King_Jian_of_Zhou@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:43:45
@@ -6122,7 +6104,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:43:45
-0 @King Ling of Zhou@ INDI
+0 @King_Ling_of_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -6134,9 +6116,9 @@
 2 DATE 19 APR 2022
 3 TIME 18:44:11
 0 @F185@ FAM
-1 HUSB @King Jian of Zhou@
+1 HUSB @King_Jian_of_Zhou@
 1 WIFE @I458@
-1 CHIL @King Ling of Zhou@
+1 CHIL @King_Ling_of_Zhou@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:43:55
@@ -6150,7 +6132,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:43:55
-0 @King Jing of Zhou (Gui)@ INDI
+0 @King_Jing_of_Zhou_(Gui)@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -6162,9 +6144,9 @@
 2 DATE 19 APR 2022
 3 TIME 18:44:30
 0 @F186@ FAM
-1 HUSB @King Ling of Zhou@
+1 HUSB @King_Ling_of_Zhou@
 1 WIFE @I460@
-1 CHIL @King Jing of Zhou (Gui)@
+1 CHIL @King_Jing_of_Zhou_(Gui)@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:44:11
@@ -6178,7 +6160,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:44:11
-0 @Prince Chao@ INDI
+0 @Prince_Chao@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -6189,11 +6171,11 @@
 2 DATE 19 APR 2022
 3 TIME 18:44:30
 0 @F187@ FAM
-1 HUSB @King Jing of Zhou (Gui)@
+1 HUSB @King_Jing_of_Zhou_(Gui)@
 1 WIFE @I462@
-1 CHIL @Prince Chao@
-1 CHIL @King Dao of Zhou@
-1 CHIL @King Jing of Zhou (Gai)@
+1 CHIL @Prince_Chao@
+1 CHIL @King_Dao_of_Zhou@
+1 CHIL @King_Jing_of_Zhou_(Gai)@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:44:52
@@ -6207,7 +6189,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:44:30
-0 @King Dao of Zhou@ INDI
+0 @King_Dao_of_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -6217,7 +6199,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:44:42
-0 @King Jing of Zhou (Gai)@ INDI
+0 @King_Jing_of_Zhou_(Gai)@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -6228,7 +6210,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:45:10
-0 @King Yuan of Zhou@ INDI
+0 @King_Yuan_of_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -6240,9 +6222,9 @@
 2 DATE 19 APR 2022
 3 TIME 18:45:21
 0 @F188@ FAM
-1 HUSB @King Jing of Zhou (Gai)@
+1 HUSB @King_Jing_of_Zhou_(Gai)@
 1 WIFE @I466@
-1 CHIL @King Yuan of Zhou@
+1 CHIL @King_Yuan_of_Zhou@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:45:10
@@ -6256,7 +6238,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:45:10
-0 @King Zhending of Zhou@ INDI
+0 @King_Zhending_of_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -6268,9 +6250,9 @@
 2 DATE 19 APR 2022
 3 TIME 18:45:51
 0 @F189@ FAM
-1 HUSB @King Yuan of Zhou@
+1 HUSB @King_Yuan_of_Zhou@
 1 WIFE @I468@
-1 CHIL @King Zhending of Zhou@
+1 CHIL @King_Zhending_of_Zhou@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:45:21
@@ -6284,7 +6266,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:45:21
-0 @King Ai of Zhou@ INDI
+0 @King_Ai_of_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -6295,12 +6277,12 @@
 2 DATE 19 APR 2022
 3 TIME 18:45:51
 0 @F190@ FAM
-1 HUSB @King Zhending of Zhou@
+1 HUSB @King_Zhending_of_Zhou@
 1 WIFE @I470@
-1 CHIL @King Ai of Zhou@
-1 CHIL @King Si of Zhou@
-1 CHIL @King Kao of Zhou@
-1 CHIL @Duke Huan of West Zhou@
+1 CHIL @King_Ai_of_Zhou@
+1 CHIL @King_Si_of_Zhou@
+1 CHIL @King_Kao_of_Zhou@
+1 CHIL @Duke_Huan_of_West_Zhou@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:46:32
@@ -6314,7 +6296,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:45:51
-0 @King Si of Zhou@ INDI
+0 @King_Si_of_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -6324,7 +6306,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:46:05
-0 @King Kao of Zhou@ INDI
+0 @King_Kao_of_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -6335,7 +6317,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:47:57
-0 @Duke Huan of West Zhou@ INDI
+0 @Duke_Huan_of_West_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -6346,7 +6328,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:46:46
-0 @Duke Wei of West Zhou@ INDI
+0 @Duke_Wei_of_West_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -6358,9 +6340,9 @@
 2 DATE 19 APR 2022
 3 TIME 18:46:58
 0 @F191@ FAM
-1 HUSB @Duke Huan of West Zhou@
+1 HUSB @Duke_Huan_of_West_Zhou@
 1 WIFE @I475@
-1 CHIL @Duke Wei of West Zhou@
+1 CHIL @Duke_Wei_of_West_Zhou@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:46:46
@@ -6374,7 +6356,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:46:46
-0 @Duke Hui of West Zhou@ INDI
+0 @Duke_Hui_of_West_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -6386,10 +6368,10 @@
 2 DATE 19 APR 2022
 3 TIME 18:47:08
 0 @F192@ FAM
-1 HUSB @Duke Wei of West Zhou@
+1 HUSB @Duke_Wei_of_West_Zhou@
 1 WIFE @I477@
-1 CHIL @Duke Hui of West Zhou@
-1 CHIL @Prince Ban Duke Hui of East Zhou@
+1 CHIL @Duke_Hui_of_West_Zhou@
+1 CHIL @Prince_Ban_Duke_Hui_of_East_Zhou@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:47:40
@@ -6403,7 +6385,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:46:58
-0 @Duke Wu of West Zhou@ INDI
+0 @Duke_Wu_of_West_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -6414,9 +6396,9 @@
 2 DATE 19 APR 2022
 3 TIME 18:47:08
 0 @F193@ FAM
-1 HUSB @Duke Hui of West Zhou@
+1 HUSB @Duke_Hui_of_West_Zhou@
 1 WIFE @I479@
-1 CHIL @Duke Wu of West Zhou@
+1 CHIL @Duke_Wu_of_West_Zhou@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:47:08
@@ -6430,7 +6412,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:47:08
-0 @Prince Ban Duke Hui of East Zhou@ INDI
+0 @Prince_Ban_Duke_Hui_of_East_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -6440,7 +6422,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:47:40
-0 @King Weilie of Zhou@ INDI
+0 @King_Weilie_of_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -6452,9 +6434,9 @@
 2 DATE 19 APR 2022
 3 TIME 18:48:08
 0 @F194@ FAM
-1 HUSB @King Kao of Zhou@
+1 HUSB @King_Kao_of_Zhou@
 1 WIFE @I482@
-1 CHIL @King Weilie of Zhou@
+1 CHIL @King_Weilie_of_Zhou@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:47:57
@@ -6468,7 +6450,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:47:57
-0 @King An of Zhou@ INDI
+0 @King_An_of_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -6480,9 +6462,9 @@
 2 DATE 19 APR 2022
 3 TIME 18:48:35
 0 @F195@ FAM
-1 HUSB @King Weilie of Zhou@
+1 HUSB @King_Weilie_of_Zhou@
 1 WIFE @I484@
-1 CHIL @King An of Zhou@
+1 CHIL @King_An_of_Zhou@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:48:08
@@ -6496,7 +6478,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:48:08
-0 @King Lie of Zhou@ INDI
+0 @King_Lie_of_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -6507,10 +6489,10 @@
 2 DATE 19 APR 2022
 3 TIME 18:48:35
 0 @F196@ FAM
-1 HUSB @King An of Zhou@
+1 HUSB @King_An_of_Zhou@
 1 WIFE @I486@
-1 CHIL @King Lie of Zhou@
-1 CHIL @King Xian of Zhou@
+1 CHIL @King_Lie_of_Zhou@
+1 CHIL @King_Xian_of_Zhou@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:48:47
@@ -6524,7 +6506,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:48:35
-0 @King Xian of Zhou@ INDI
+0 @King_Xian_of_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -6535,7 +6517,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:49:21
-0 @King Shenjing of Zhou@ INDI
+0 @King_Shenjing_of_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -6547,9 +6529,9 @@
 2 DATE 19 APR 2022
 3 TIME 18:49:32
 0 @F197@ FAM
-1 HUSB @King Xian of Zhou@
+1 HUSB @King_Xian_of_Zhou@
 1 WIFE @I489@
-1 CHIL @King Shenjing of Zhou@
+1 CHIL @King_Shenjing_of_Zhou@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:49:21
@@ -6563,7 +6545,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:49:21
-0 @King Nan of Zhou@ INDI
+0 @King_Nan_of_Zhou@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -6574,9 +6556,9 @@
 2 DATE 19 APR 2022
 3 TIME 18:49:32
 0 @F198@ FAM
-1 HUSB @King Shenjing of Zhou@
+1 HUSB @King_Shenjing_of_Zhou@
 1 WIFE @I491@
-1 CHIL @King Nan of Zhou@
+1 CHIL @King_Nan_of_Zhou@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:49:32
@@ -6590,7 +6572,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:49:32
-0 @Marquis Cheng of Jin@ INDI
+0 @Marquis_Cheng_of_Jin@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -6602,9 +6584,9 @@
 2 DATE 19 APR 2022
 3 TIME 18:58:55
 0 @F199@ FAM
-1 HUSB @Marquis Wu of Jin@
+1 HUSB @Marquis_Wu_of_Jin@
 1 WIFE @I493@
-1 CHIL @Marquis Cheng of Jin@
+1 CHIL @Marquis_Cheng_of_Jin@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:58:41
@@ -6618,7 +6600,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:58:41
-0 @Marquis Li of Jin@ INDI
+0 @Marquis_Li_of_Jin@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -6630,9 +6612,9 @@
 2 DATE 19 APR 2022
 3 TIME 18:59:04
 0 @F200@ FAM
-1 HUSB @Marquis Cheng of Jin@
+1 HUSB @Marquis_Cheng_of_Jin@
 1 WIFE @I495@
-1 CHIL @Marquis Li of Jin@
+1 CHIL @Marquis_Li_of_Jin@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:58:55
@@ -6646,7 +6628,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:58:55
-0 @Marquis Jing of Jin@ INDI
+0 @Marquis_Jing_of_Jin@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
@@ -6657,9 +6639,9 @@
 2 DATE 19 APR 2022
 3 TIME 18:59:04
 0 @F201@ FAM
-1 HUSB @Marquis Li of Jin@
+1 HUSB @Marquis_Li_of_Jin@
 1 WIFE @I497@
-1 CHIL @Marquis Jing of Jin@
+1 CHIL @Marquis_Jing_of_Jin@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 18:59:04
@@ -6684,7 +6666,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 19:05:57
-0 @Pharaoh Crocodile@ INDI
+0 @Pharaoh_Crocodile@ INDI
 1 NAME
 1 SEX M
 1 BIRT
@@ -6695,7 +6677,7 @@
 2 DATE 19 APR 2022
 3 TIME 19:03:05
 0 @F202@ FAM
-1 HUSB @Pharaoh Crocodile@
+1 HUSB @Pharaoh_Crocodile@
 1 WIFE @I500@
 1 CHIL @Iry-Hor@
 1 CHAN
@@ -6739,7 +6721,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 19:05:57
-0 @Scorpion II@ INDI
+0 @Scorpion_II@ INDI
 1 NAME
 1 SEX M
 1 BIRT
@@ -6753,7 +6735,7 @@
 0 @F204@ FAM
 1 HUSB @Sekhen-Ka@
 1 WIFE @I504@
-1 CHIL @Scorpion II@
+1 CHIL @Scorpion_II@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 19:06:33
@@ -6779,7 +6761,7 @@
 2 DATE 19 APR 2022
 3 TIME 19:46:32
 0 @F205@ FAM
-1 HUSB @Scorpion II@
+1 HUSB @Scorpion_II@
 1 WIFE @I506@
 1 CHIL @Menes@
 1 CHAN
@@ -7019,7 +7001,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 19:50:11
-0 @Horus Bird@ INDI
+0 @Horus_Bird@ INDI
 1 NAME
 1 SEX M
 1 BIRT
@@ -7033,7 +7015,7 @@
 0 @F214@ FAM
 1 HUSB @Sneferka@
 1 WIFE @I524@
-1 CHIL @Horus Bird@
+1 CHIL @Horus_Bird@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 19:50:30
@@ -7059,7 +7041,7 @@
 2 DATE 19 APR 2022
 3 TIME 20:43:58
 0 @F215@ FAM
-1 HUSB @Horus Bird@
+1 HUSB @Horus_Bird@
 1 WIFE @I526@
 1 CHIL @Boethos@
 1 CHAN
@@ -7220,7 +7202,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 21:00:25
-0 @Neferkara I@ INDI
+0 @Neferkara_I@ INDI
 1 NAME /2nd Dynasty/
 1 SEX M
 1 BIRT
@@ -7234,7 +7216,7 @@
 0 @F220@ FAM
 1 HUSB @Sekhemib-Perenmaat@
 1 WIFE @I539@
-1 CHIL @Neferkara I@
+1 CHIL @Neferkara_I@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 21:01:07
@@ -7260,7 +7242,7 @@
 2 DATE 19 APR 2022
 3 TIME 21:01:32
 0 @F221@ FAM
-1 HUSB @Neferkara I@
+1 HUSB @Neferkara_I@
 1 WIFE @I541@
 1 CHIL @Neferkasokar@
 1 CHAN
@@ -7276,7 +7258,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 21:01:20
-0 @Hudjefa I@ INDI
+0 @Hudjefa_I@ INDI
 1 NAME /2nd Dynasty/
 1 SEX M
 1 BIRT
@@ -7290,7 +7272,7 @@
 0 @F222@ FAM
 1 HUSB @Neferkasokar@
 1 WIFE @I543@
-1 CHIL @Hudjefa I@
+1 CHIL @Hudjefa_I@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 21:01:32
@@ -7316,7 +7298,7 @@
 2 DATE 19 APR 2022
 3 TIME 21:08:01
 0 @F223@ FAM
-1 HUSB @Hudjefa I@
+1 HUSB @Hudjefa_I@
 1 WIFE @I545@
 1 CHIL @Khasekhemwy@
 1 CHAN
@@ -7452,7 +7434,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 23:32:18
-0 @Meresankh I@ INDI
+0 @Meresankh_I@ INDI
 1 NAME
 1 SEX F
 1 BIRT
@@ -7464,7 +7446,7 @@
 3 TIME 23:31:17
 0 @F227@ FAM
 1 HUSB @Huni@
-1 WIFE @Meresankh I@
+1 WIFE @Meresankh_I@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 23:31:17
@@ -7479,7 +7461,7 @@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 23:33:16
-0 @Hetepheres I@ INDI
+0 @Hetepheres_I@ INDI
 1 NAME
 1 SEX F
 1 BIRT
@@ -7491,7 +7473,7 @@
 3 TIME 23:33:16
 0 @F228@ FAM
 1 HUSB @Sneferu@
-1 WIFE @Hetepheres I@
+1 WIFE @Hetepheres_I@
 1 CHAN
 2 DATE 19 APR 2022
 3 TIME 23:33:16
@@ -7591,7 +7573,7 @@
 1 BIRT
 2 DATE
 2 PLAC
-1 NOTE @Dorian Invasion@
+1 NOTE @Dorian_Invasion@
 1 FAMC @F233@
 1 FAMS @F234@
 1 CHAN
@@ -7611,7 +7593,7 @@
 1 BIRT
 2 DATE
 2 PLAC
-1 NOTE @Dorian Invasion@
+1 NOTE @Dorian_Invasion@
 1 FAMC @F233@
 1 FAMS @F235@
 1 CHAN
@@ -7745,26 +7727,26 @@
 1 WIFE @Autocthonia@
 1 CHIL @Alalcomenes@
 1 CHIL @Aras@
-1 CHIL @Argus Panoptes@
-1 CHIL @Cecrops I@
+1 CHIL @Argus_Panoptes@
+1 CHIL @Cecrops_I@
 1 CHIL @Coresus@
 1 CHIL @Cranaus@
 1 CHIL @Cres@
 1 CHIL @Ectenes@
-1 CHIL @Erichthonius Autocthon@
+1 CHIL @Erichthonius_Autocthon@
 1 CHIL @Lelex@
 1 CHIL @Lycaon@
 1 CHIL @Lycastus@
 1 CHIL @Ogyges@
 1 CHIL @Pelasgus@
 1 CHIL @Periphas@
-1 CHIL @Pierus of Emathia@
+1 CHIL @Pierus_of_Emathia@
 1 CHIL @Tyllus@
 1 CHIL @Echion@
 1 CHIL @Udaeus@
 1 CHIL @Pelorus@
-1 CHIL @Chthonius Spartoi@
-1 CHIL @Hyperenor Spartoi@
+1 CHIL @Chthonius_Spartoi@
+1 CHIL @Hyperenor_Spartoi@
 1 CHAN
 2 DATE 20 APR 2022
 3 TIME 02:56:48
@@ -7788,7 +7770,7 @@
 1 CHAN
 2 DATE 20 APR 2022
 3 TIME 02:46:07
-0 @Argus Panoptes@ INDI
+0 @Argus_Panoptes@ INDI
 1 NAME /Autocthon/
 1 SEX M
 1 BIRT
@@ -7798,7 +7780,7 @@
 1 CHAN
 2 DATE 20 APR 2022
 3 TIME 02:46:12
-0 @Cecrops I@ INDI
+0 @Cecrops_I@ INDI
 1 NAME /Autocthon/
 1 SEX M
 1 BIRT
@@ -7848,7 +7830,7 @@
 1 CHAN
 2 DATE 20 APR 2022
 3 TIME 02:47:13
-0 @Erichthonius Autocthon@ INDI
+0 @Erichthonius_Autocthon@ INDI
 1 NAME /Autocthon/
 1 SEX M
 1 BIRT
@@ -7918,7 +7900,7 @@
 1 CHAN
 2 DATE 20 APR 2022
 3 TIME 02:48:38
-0 @Pierus of Emathia@ INDI
+0 @Pierus_of_Emathia@ INDI
 1 NAME /Autocthon/
 1 SEX M
 1 BIRT
@@ -7949,7 +7931,7 @@
 1 CHAN
 2 DATE 20 APR 2022
 3 TIME 02:50:55
-0 @Agave of Thebes@ INDI
+0 @Agave_of_Thebes@ INDI
 1 NAME /Cadmus-Thebes/
 1 SEX F
 1 BIRT
@@ -7963,7 +7945,7 @@
 3 TIME 03:29:35
 0 @F238@ FAM
 1 HUSB @Echion@
-1 WIFE @Agave of Thebes@
+1 WIFE @Agave_of_Thebes@
 1 CHIL @Pentheus@
 1 CHIL @Epirus@
 1 CHAN
@@ -8010,7 +7992,7 @@
 1 CHAN
 2 DATE 20 APR 2022
 3 TIME 02:55:10
-0 @Chthonius Spartoi@ INDI
+0 @Chthonius_Spartoi@ INDI
 1 NAME /Spartoi/
 1 SEX M
 1 BIRT
@@ -8021,7 +8003,7 @@
 1 CHAN
 2 DATE 20 APR 2022
 3 TIME 02:56:22
-0 @Lycus (Thebes)@ INDI
+0 @Lycus_(Thebes)@ INDI
 1 NAME /Spartoi/
 1 SEX M
 1 BIRT
@@ -8032,9 +8014,9 @@
 2 DATE 20 APR 2022
 3 TIME 02:56:22
 0 @F239@ FAM
-1 HUSB @Chthonius Spartoi@
+1 HUSB @Chthonius_Spartoi@
 1 WIFE @I603@
-1 CHIL @Lycus (Thebes)@
+1 CHIL @Lycus_(Thebes)@
 1 CHIL @Nycteus@
 1 CHAN
 2 DATE 20 APR 2022
@@ -8059,7 +8041,7 @@
 1 CHAN
 2 DATE 20 APR 2022
 3 TIME 02:56:31
-0 @Hyperenor Spartoi@ INDI
+0 @Hyperenor_Spartoi@ INDI
 1 NAME /Spartoi/
 1 SEX M
 1 BIRT
@@ -8069,7 +8051,7 @@
 1 CHAN
 2 DATE 20 APR 2022
 3 TIME 02:56:48
-0 @Menoeceus bin Pentheus@ INDI
+0 @Menoeceus_bin_Pentheus@ INDI
 1 NAME /Thebes/
 1 SEX M
 1 BIRT
@@ -8083,7 +8065,7 @@
 0 @F240@ FAM
 1 HUSB @Pentheus@
 1 WIFE @I607@
-1 CHIL @Menoeceus bin Pentheus@
+1 CHIL @Menoeceus_bin_Pentheus@
 1 CHAN
 2 DATE 20 APR 2022
 3 TIME 02:59:32
@@ -8098,11 +8080,11 @@
 2 DATE 20 APR 2022
 3 TIME 02:59:32
 0 @F241@ FAM
-1 HUSB @Menoeceus bin Pentheus@
+1 HUSB @Menoeceus_bin_Pentheus@
 1 WIFE @I609@
 1 CHIL @Jocasta@
 1 CHIL @Hipponome@
-1 CHIL @Creon of Thebes@
+1 CHIL @Creon_of_Thebes@
 1 CHAN
 2 DATE 20 APR 2022
 3 TIME 03:12:38
@@ -8139,7 +8121,7 @@
 1 CHAN
 2 DATE 20 APR 2022
 3 TIME 03:03:53
-0 @Eurydice of Thebes@ INDI
+0 @Eurydice_of_Thebes@ INDI
 1 NAME
 1 SEX F
 1 BIRT
@@ -8151,7 +8133,7 @@
 2 DATE 20 APR 2022
 3 TIME 03:13:19
 0 @F242@ FAM
-1 WIFE @Eurydice of Thebes@
+1 WIFE @Eurydice_of_Thebes@
 1 CHAN
 2 DATE 20 APR 2022
 3 TIME 03:12:38
@@ -8254,18 +8236,18 @@
 2 DATE 20 APR 2022
 3 TIME 03:14:18
 0 @F245@ FAM
-1 HUSB @Creon of Thebes@
-1 WIFE @Eurydice of Thebes@
+1 HUSB @Creon_of_Thebes@
+1 WIFE @Eurydice_of_Thebes@
 1 CHIL @Henioche@
-1 CHIL @Pyrrha bin Creon@
-1 CHIL @Megareus of Thebes@
-1 CHIL @Lycomedes of Scyros@
+1 CHIL @Pyrrha_bin_Creon@
+1 CHIL @Megareus_of_Thebes@
+1 CHIL @Lycomedes_of_Scyros@
 1 CHIL @Haemon@
 1 CHIL @Megara@
 1 CHAN
 2 DATE 20 APR 2022
 3 TIME 03:13:52
-0 @Pyrrha bin Creon@ INDI
+0 @Pyrrha_bin_Creon@ INDI
 1 NAME /Thebes/
 1 SEX F
 1 BIRT
@@ -8275,7 +8257,7 @@
 1 CHAN
 2 DATE 20 APR 2022
 3 TIME 03:14:16
-0 @Megareus of Thebes@ INDI
+0 @Megareus_of_Thebes@ INDI
 1 NAME /Thebes/
 1 SEX M
 1 BIRT
@@ -8285,7 +8267,7 @@
 1 CHAN
 2 DATE 20 APR 2022
 3 TIME 03:14:14
-0 @Lycomedes of Scyros@ INDI
+0 @Lycomedes_of_Scyros@ INDI
 1 NAME /Thebes/
 1 SEX M
 1 BIRT
@@ -8305,7 +8287,7 @@
 1 CHAN
 2 DATE 20 APR 2022
 3 TIME 03:14:10
-0 @Creon of Thebes@ INDI
+0 @Creon_of_Thebes@ INDI
 1 NAME /Thebes/
 1 SEX M
 1 BIRT
@@ -8407,7 +8389,7 @@
 1 CHAN
 2 DATE 20 APR 2022
 3 TIME 03:23:20
-0 @Laodamas bin Eteocles@ INDI
+0 @Laodamas_bin_Eteocles@ INDI
 1 NAME /Cadmus-Thebes/
 1 SEX M
 1 BIRT
@@ -8420,7 +8402,7 @@
 0 @F248@ FAM
 1 HUSB @Eteocles@
 1 WIFE @I633@
-1 CHIL @Laodamas bin Eteocles@
+1 CHIL @Laodamas_bin_Eteocles@
 1 CHAN
 2 DATE 20 APR 2022
 3 TIME 03:22:34
@@ -8447,11 +8429,11 @@
 0 @F249@ FAM
 1 HUSB @Polynices@
 1 WIFE @Argea@
-1 CHIL @Thersander bin Polynices@
+1 CHIL @Thersander_bin_Polynices@
 1 CHAN
 2 DATE 20 APR 2022
 3 TIME 03:24:08
-0 @Thersander bin Polynices@ INDI
+0 @Thersander_bin_Polynices@ INDI
 1 NAME /Cadmus-Thebes/
 1 SEX M
 1 BIRT
@@ -8473,13 +8455,13 @@
 2 DATE 20 APR 2022
 3 TIME 03:24:37
 0 @F250@ FAM
-1 HUSB @Thersander bin Polynices@
+1 HUSB @Thersander_bin_Polynices@
 1 WIFE @I636@
-1 CHIL @Tisamenus king of Thebes@
+1 CHIL @Tisamenus_king_of_Thebes@
 1 CHAN
 2 DATE 20 APR 2022
 3 TIME 03:24:50
-0 @Tisamenus king of Thebes@ INDI
+0 @Tisamenus_king_of_Thebes@ INDI
 1 NAME /Cadmus-Thebes/
 1 SEX M
 1 BIRT
@@ -8501,7 +8483,7 @@
 2 DATE 20 APR 2022
 3 TIME 03:25:04
 0 @F251@ FAM
-1 HUSB @Tisamenus king of Thebes@
+1 HUSB @Tisamenus_king_of_Thebes@
 1 WIFE @I639@
 1 CHIL @Autesion@
 1 CHAN
@@ -8545,7 +8527,7 @@
 1 CHAN
 2 DATE 20 APR 2022
 3 TIME 03:25:30
-0 @Polydorus bin Cadmus@ INDI
+0 @Polydorus_bin_Cadmus@ INDI
 1 NAME /Cadmus-Thebes/
 1 SEX M
 1 BIRT
@@ -8557,7 +8539,7 @@
 2 DATE 20 APR 2022
 3 TIME 03:26:07
 0 @F253@ FAM
-1 HUSB @Polydorus bin Cadmus@
+1 HUSB @Polydorus_bin_Cadmus@
 1 WIFE @I643@
 1 CHIL @Labdacus@
 1 CHAN
@@ -8586,21 +8568,21 @@
 3 TIME 03:27:59
 0 @F254@ FAM
 1 HUSB @Cadmus@
-1 CHIL @Polydorus bin Cadmus@
-1 CHIL @Agave of Thebes@
-1 CHIL @Autonoe of Thebes@
-1 CHIL @Ino of Thebes@
+1 CHIL @Polydorus_bin_Cadmus@
+1 CHIL @Agave_of_Thebes@
+1 CHIL @Autonoe_of_Thebes@
+1 CHIL @Ino_of_Thebes@
 1 CHIL @Semele@
 1 CHAN
 2 DATE 20 APR 2022
 3 TIME 03:40:40
 0 @F255@ FAM
 1 HUSB @Cadmus@
-1 CHIL @Agave of Thebes@
+1 CHIL @Agave_of_Thebes@
 1 CHAN
 2 DATE 20 APR 2022
 3 TIME 03:28:43
-0 @Autonoe of Thebes@ INDI
+0 @Autonoe_of_Thebes@ INDI
 1 NAME /Cadmus-Thebes/
 1 SEX F
 1 BIRT
@@ -8610,7 +8592,7 @@
 1 CHAN
 2 DATE 20 APR 2022
 3 TIME 03:40:15
-0 @Ino of Thebes@ INDI
+0 @Ino_of_Thebes@ INDI
 1 NAME /Cadmus-Thebes/
 1 SEX F
 1 BIRT
@@ -8655,7 +8637,7 @@
 1 CHAN
 2 DATE 20 APR 2022
 3 TIME 04:21:56
-0 @Dorian Invasion@ NOTE The Dorians were an inland Greek group that invaded and conquered most of Greece, pushing the Ionians into the seas. 
+0 @Dorian_Invasion@ NOTE The Dorians were an inland Greek group that invaded and conquered most of Greece, pushing the Ionians into the seas. 
 1 CONT
 1 CONT The Spartans were Dorians, the Athenians were Myceneans
 1 CHAN
