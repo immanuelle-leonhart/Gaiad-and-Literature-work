@@ -6,7 +6,7 @@
 3 ADDR http://genj.sourceforge.net
 1 DEST ANY
 1 DATE 19 APR 2022
-2 TIME 23:05:26
+2 TIME 23:11:36
 1 SUBM @B1@
 1 FILE Gaiad.ged
 1 GEDC
@@ -7573,12 +7573,14 @@
 1 BIRT
 2 DATE
 2 PLAC
-1 NOTE @Dorian_Invasion@
+1 NOTE The Dorians were an inland Greek group that invaded and conquered most of Greece, pushing the Ionians into the seas. 
+2 CONT
+2 CONT The Spartans were Dorians, the Athenians were Myceneans
 1 FAMC @F233@
 1 FAMS @F234@
 1 CHAN
 2 DATE 20 APR 2022
-3 TIME 04:34:01
+3 TIME 06:08:39
 0 @F233@ FAM
 1 HUSB @Hellen@
 1 CHIL @Dorus@
@@ -7593,12 +7595,18 @@
 1 BIRT
 2 DATE
 2 PLAC
-1 NOTE @Dorian_Invasion@
+1 NOTE The Myceneans were a Viking-like culture that emerged from Indo European pastoralists who took to the seas
+2 CONT
+2 CONT Xuthus and Mycena were the leaders of the Myceneans
+2 CONT
+2 CONT Ionic and Attic Greek are derived from Mycenean Greek
+2 CONT
+2 CONT Attic Greek was the Greek of Athens, and replaced the Macedonian language, and became the standardized ancestor of Modern Greek
 1 FAMC @F233@
 1 FAMS @F235@
 1 CHAN
 2 DATE 20 APR 2022
-3 TIME 04:30:46
+3 TIME 06:09:21
 0 @Aeolus@ INDI
 1 NAME // Aeolians
 1 SEX M
@@ -8637,12 +8645,6 @@
 1 CHAN
 2 DATE 20 APR 2022
 3 TIME 04:21:56
-0 @Dorian_Invasion@ NOTE The Dorians were an inland Greek group that invaded and conquered most of Greece, pushing the Ionians into the seas. 
-1 CONT
-1 CONT The Spartans were Dorians, the Athenians were Myceneans
-1 CHAN
-2 DATE 20 APR 2022
-3 TIME 04:34:01
 0 @N3@ NOTE
 1 CHAN
 2 DATE 20 APR 2022
@@ -8663,12 +8665,17 @@
 1 BIRT
 2 DATE
 2 PLAC
+1 NOTE The Helleno-Armenians were a group of Eurasian nomads that invaded either side of the Black Sea. 
+2 CONT
+2 CONT They had a devastating impact on the ancient world. On the west they became the sea people and Philistines and terrorized the mediterranean, they eventually became the Greeks
+2 CONT
+2 CONT On the east they went through the Caucasus recruiting people on the way and invaded the middle east. There they first became the Gutians, then the Hurrians, and then finally the Urartu and the Armenians are their remnants
 1 FAMC @F259@
 1 FAMS @F256@
 1 SOUR
 1 CHAN
 2 DATE 20 APR 2022
-3 TIME 06:05:05
+3 TIME 06:10:51
 0 @F256@ FAM
 1 HUSB @Helleno-Armenius@
 1 WIFE @I651@
