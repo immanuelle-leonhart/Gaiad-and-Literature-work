@@ -6,7 +6,7 @@
 3 ADDR http://genj.sourceforge.net
 1 DEST ANY
 1 DATE 20 APR 2022
-2 TIME 13:29:15
+2 TIME 14:27:13
 1 SUBM @B1@
 1 FILE Gaiad.ged
 1 GEDC
@@ -2023,11 +2023,10 @@
 1 BIRT
 2 DATE
 2 PLAC
-1 FAMC @F60@
 1 FAMS @F59@
 1 CHAN
-2 DATE 19 APR 2022
-3 TIME 03:56:53
+2 DATE 20 APR 2022
+3 TIME 20:32:01
 0 @F59@ FAM
 1 HUSB @Levantus@
 1 WIFE @Afrasia@
@@ -2051,28 +2050,20 @@
 1 BIRT
 2 DATE
 2 PLAC
-1 FAMS @F60@
 1 CHAN
-2 DATE 19 APR 2022
-3 TIME 04:01:10
-0 @F60@ FAM
-1 HUSB @Default@
-1 CHIL @Levantus@
-1 CHIL @Yellow_Emperor@
-1 CHAN
-2 DATE 19 APR 2022
-3 TIME 04:01:42
+2 DATE 20 APR 2022
+3 TIME 20:32:01
 0 @Yellow_Emperor@ INDI
 1 NAME /Haplogroup O/
 1 SEX M
 1 BIRT
 2 DATE
 2 PLAC
-1 FAMC @F60@
+1 FAMC @F278@
 1 FAMS @F61@
 1 CHAN
-2 DATE 19 APR 2022
-3 TIME 04:21:50
+2 DATE 20 APR 2022
+3 TIME 20:32:07
 0 @Leizu@ INDI
 1 NAME
 1 SEX F
@@ -8889,7 +8880,6 @@
 1 NOTE The Italo-Iranian languages are the majority of Indo-European languages. 
 2 CONT
 2 CONT They descend from a more northern Indo-European group that was not involved in the early invasions of the Albano-Armenian peoples
-2 CONT
 1 FAMC @F260@
 1 FAMS @F263@
 1 CHAN
@@ -9258,7 +9248,6 @@
 1 NOTE Calmichael (derived from Kalmyk) represents the presence of haplogroup C in the Altaiic languages
 2 CONT
 2 CONT Mongols used to dominate before being replaced by the Turks after a massive volcanic eruption killed the horses
-2 CONT
 1 FAMC @F274@
 1 FAMS @F271@
 1 CHAN
@@ -9279,10 +9268,11 @@
 1 BIRT
 2 DATE
 2 PLAC
+1 FAMC @F278@
 1 FAMS @F272@
 1 CHAN
 2 DATE 20 APR 2022
-3 TIME 07:10:36
+3 TIME 20:32:43
 0 @F272@ FAM
 1 HUSB @Nenetus@
 1 WIFE @Uralic_Languages@
@@ -9335,7 +9325,6 @@
 2 CONT
 2 CONT Liu et al. (2020) [15] revealed that Haplogroup C-F5484 and its subclades are the genetic markers of Tungusic-speaking peoples. C-F5484 was emerged 3,300 years ago and begun to diverge 1,900 years ago, indicating the approximate age of differentiation o
 2 CONC f Tungusic languages.
-2 CONT
 2 CONT
 1 FAMC @F271@
 1 CHAN
@@ -9556,4 +9545,318 @@
 1 CHAN
 2 DATE 20 APR 2022
 3 TIME 20:29:08
+0 @Nordicus@ INDI
+1 NAME /Haplogroup NO/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F279@
+1 FAMS @F278@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 20:47:08
+0 @F278@ FAM
+1 HUSB @Nordicus@
+1 WIFE @I709@
+1 CHIL @Yellow_Emperor@
+1 CHIL @Nenetus@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 20:32:43
+0 @I709@ INDI
+1 NAME /Haplogroup O/
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMS @F278@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 20:32:07
+0 @K-M2313@ INDI
+1 NAME /Haplogroup K2a/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F281@
+1 FAMS @F279@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 20:54:43
+0 @F279@ FAM
+1 HUSB @K-M2313@
+1 WIFE @I711@
+1 CHIL @Nordicus@
+1 CHIL @K-Y28299@
+1 CHIL @Basal_K-M2313@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 20:49:23
+0 @I711@ INDI
+1 NAME /Haplogroup NO/
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMS @F279@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 20:47:08
+0 @K-Y28299@ INDI
+1 NAME /Haplogroup NO/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F279@
+1 FAMS @F280@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 20:50:04
+0 @Basal_K-M2313@ INDI
+1 NAME /Haplogroup NO/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 NOTE As of 2016, two living males had been found to carry K-M2313(xNO-M214) – a British Asian who identifies as Telugu and an ethnic Malay sampled in Singapore.[3] Note that they were NOT tested for Y28299.
+2 CONT
+2 CONT http://www.nature.com/ng/journal/v48/n6/full/ng.3559.html
+1 FAMC @F279@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 20:51:52
+0 @Basal_K-Y28299@ INDI
+1 NAME /Haplogroup NO/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 NOTE K-Y28299(xY28301) has been found in a living male from India.[7]
+2 CONT
+2 CONT http://www.phylotree.org/Y/marker_list.htm
+1 FAMC @F280@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 20:53:31
+0 @F280@ FAM
+1 HUSB @K-Y28299@
+1 WIFE @I715@
+1 CHIL @Basal_K-Y28299@
+1 CHIL @K-Y28301@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 20:50:15
+0 @I715@ INDI
+1 NAME
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMS @F280@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 20:50:04
+0 @K-Y28301@ INDI
+1 NAME /Haplogroup NO/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 NOTE K-Y28301, a subclade of K-Y28299, has been found in living individuals with their origins in Andhra Pradesh and Arunachal Pradesh India.[7]
+2 CONT
+2 CONT K-Y28301, a subclade of K-Y28299, has been found in living individuals with their origins in Andhra Pradesh and Arunachal Pradesh India.[7]
+2 CONT
+1 FAMC @F280@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 20:54:04
+0 @K2a@ INDI
+1 NAME /Haplogroup K2a/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F282@
+1 FAMS @F281@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 21:02:54
+0 @F281@ FAM
+1 HUSB @K2a@
+1 WIFE @I718@
+1 CHIL @K-M2313@
+1 CHIL @Ust-Ishim_man@
+1 CHIL @Oase-1@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 20:56:35
+0 @I718@ INDI
+1 NAME /Haplogroup K2a/
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMS @F281@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 20:54:43
+0 @Ust-Ishim_man@ INDI
+1 NAME /Haplogroup K2a/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC Ust-Ishimsky District, Omsk, Russia
+1 FAMC @F281@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 20:56:16
+0 @Oase-1@ INDI
+1 NAME /Haplogroup K2a/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F281@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 20:56:35
+0 @Katubanut@ INDI
+1 NAME /Haplogroup K/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 NOTE Named after the Katubanut people (Gadubanud) who are indigenous Australians
+2 CONT
+2 CONT Indigenous Australians often have basal K2 haplogroup
+2 CONT
+2 CONT Most humans are in haplogroup K2 but in subclades rather than basal ones
+2 CONT
+1 FAMS @F282@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 21:04:49
+0 @F282@ FAM
+1 HUSB @Katubanut@
+1 WIFE @I722@
+1 CHIL @K2a@
+1 CHIL @Katubon@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 21:09:38
+0 @I722@ INDI
+1 NAME /Haplogroup K2a/
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMS @F282@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 21:02:54
+0 @Katubon@ INDI
+1 NAME /Haplogroup K2b/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F282@
+1 FAMS @F283@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 21:10:58
+0 @Tianyuan@ INDI
+1 NAME /Haplogroup K2b/
+2 NICK Tianyuan Man
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 NOTE Only basal K2b haplogroup sample found from Tianyuan man near Beijing
+1 FAMC @F283@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 21:16:33
+0 @F283@ FAM
+1 HUSB @Katubon@
+1 WIFE @I725@
+1 CHIL @Tianyuan@
+1 CHIL @Philip@
+1 CHIL @Masa@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 21:15:16
+0 @I725@ INDI
+1 NAME
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMS @F283@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 21:10:03
+0 @Philip@ INDI
+1 NAME /Haplogroup P/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 NOTE Haplogroup P is called philip because its basal members are most commonly the Aeta people in the Philippines
+2 CONT
+2 CONT Descendant groups Q and R are the majorities in the Americas and Europe respectively and were highly significant historically
+1 FAMC @F283@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 21:18:55
+0 @Masa@ INDI
+1 NAME /Haplogroup K2b1/MS/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F283@
+1 FAMS @F284@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 21:21:38
+0 @Sambia@ INDI
+1 NAME /Haplogroup K2b1/MS/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 NOTE Most common haplogroup in the Papua New Guinean highlands
+2 CONT
+2 CONT named after the Sambia people whose ritualized homosexuality is notable
+2 CONT
+2 CONT Boys drink the sperm of older men and this is believed to cause puberty
+2 CONT
+2 CONT They  are also known as the Simbari people, and this may be the name to switch this too
+2 CONT
+2 CONT https://en.wikipedia.org/wiki/Simbari_people
+1 FAMC @F284@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 21:27:07
+0 @F284@ FAM
+1 HUSB @Masa@
+1 WIFE @I729@
+1 CHIL @Sambia@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 21:21:38
+0 @I729@ INDI
+1 NAME
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMS @F284@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 21:21:38
 0 TRLR
