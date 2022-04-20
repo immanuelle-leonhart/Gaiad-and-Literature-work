@@ -6,7 +6,7 @@
 3 ADDR http://genj.sourceforge.net
 1 DEST ANY
 1 DATE 19 APR 2022
-2 TIME 21:20:34
+2 TIME 21:21:59
 1 SUBM @B1@
 1 FILE Gaiad.ged
 1 GEDC
@@ -8678,8 +8678,13 @@
 1 BIRT
 2 DATE
 2 PLAC
+1 NOTE @N2@
 1 FAMC @F229@
 1 CHAN
 2 DATE 20 APR 2022
-3 TIME 04:03:51
+3 TIME 04:21:30
+0 @N2@ NOTE Madeconius was the ancestor of the ancient macedonians, who spoke a non-Greek Hellenic language
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 04:21:56
 0 TRLR
