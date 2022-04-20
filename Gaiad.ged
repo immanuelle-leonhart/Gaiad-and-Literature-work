@@ -6,7 +6,7 @@
 3 ADDR http://genj.sourceforge.net
 1 DEST ANY
 1 DATE 19 APR 2022
-2 TIME 22:35:02
+2 TIME 23:05:26
 1 SUBM @B1@
 1 FILE Gaiad.ged
 1 GEDC
@@ -8665,9 +8665,10 @@
 2 PLAC
 1 FAMC @F259@
 1 FAMS @F256@
+1 SOUR
 1 CHAN
 2 DATE 20 APR 2022
-3 TIME 05:28:37
+3 TIME 06:05:05
 0 @F256@ FAM
 1 HUSB @Helleno-Armenius@
 1 WIFE @I651@
@@ -8761,8 +8762,27 @@
 1 BIRT
 2 DATE
 2 PLAC
+1 NOTE The Paleo Balkan people split off from the Albano Armenian nomads of Ukraine and Crimea
+2 CONT
+2 CONT They lived in the Balkans and were the ancestors of the Albanians, Phrygians, Illyrians, and Thracians
+2 CONT
+2 CONT They were invaded and conquered by the Greeks
+2 CONT
+2 CONT They nonetheless played a major role in the development of the Byzantine Empire
+2 CONT
+2 CONT Albanians are the last remaining group with a language derived from this, but their role as the Bulwark of the Byzantine Empire meant that the descendants of Balkanius are numerous beyond Albanians
+2 CONT
+2 CONT Paleo Balkan people arguably created modern Orthodoxy
 1 FAMC @F259@
 1 CHAN
 2 DATE 20 APR 2022
-3 TIME 05:34:31
+3 TIME 06:04:54
+0 @Paleo-Balkans@ NOTE The Paleo Balkan people were early migrants to the Balkans that came before the Greeks. 
+1 CONT
+1 CONT They were the ancestors of the Thracians, Illyrians, Phrygians, and Albanians
+1 CONT
+1 CONT Their influence was great on the formation of the Byzantine Empire, but they were conquered by the Greeks
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 06:00:25
 0 TRLR
