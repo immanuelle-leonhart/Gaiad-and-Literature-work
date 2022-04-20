@@ -6,7 +6,7 @@
 3 ADDR http://genj.sourceforge.net
 1 DEST ANY
 1 DATE 20 APR 2022
-2 TIME 16:08:09
+2 TIME 16:45:59
 1 SUBM @B1@
 1 FILE Gaiad.ged
 1 GEDC
@@ -9536,9 +9536,10 @@
 2 DATE
 2 PLAC Venkata, Tirupati district, Andhra Pradesh, India
 1 FAMC @F277@
+1 FAMS @F304@
 1 CHAN
 2 DATE 20 APR 2022
-3 TIME 20:29:08
+3 TIME 23:44:30
 0 @Nordicus@ INDI
 1 NAME /Haplogroup NO/
 1 SEX M
@@ -9814,7 +9815,6 @@
 2 CONC tern Siberia and Central Asia, it is suggested that P originated in southern East Asia and was once widespread.[2][3][5]
 2 CONT
 2 CONT Basal P* was also found in one historical 19th-century Andaman islander.[6] along with basal P* found among a Jehai sample in Malayasia.[7]
-2 CONT
 1 FAMC @F283@
 1 FAMS @F285@
 1 CHAN
@@ -9892,7 +9892,6 @@
 3 CONT 28.3% among Altai-Kizhi.[5]
 3 CONT
 3 CONT http://www.zgms.cm.umk.pl/prace/591-604.pdf
-3 CONT
 3 CONT
 1 SEX M
 1 BIRT
@@ -10083,7 +10082,6 @@
 1 NOTE Found most in the Burusho people of Pakistan, a language isolate
 2 CONT
 2 CONT Much rarer than R1
-2 CONT
 1 SEX M
 1 BIRT
 2 DATE
@@ -10290,7 +10288,6 @@
 2 CONT
 2 CONT Paragroup J-M304*[Phylogenetics 2] includes all of J-M304 except for J-M267, J-M172 and their subclades. J-M304* is rarely found outside of the island of Socotra, belonging to Yemen, where it is extremely frequent at 71.4%.[6] Haplogroup J-M304* also ha
 2 CONC s been found with lower frequency in Oman (Giacomo 2004), Ashkenazi Jews,[7] Saudi Arabia (Abu-Amero 2009), Greece (Giacomo 2004), the Czech Republic (Giacomo 2004 and Luca 2007), Uygurs[8] and several Turkic peoples.[9] (Cinnioglu 2004 and Varzari 2006).
-2 CONT
 1 FAMC @F292@
 1 FAMS @F294@
 1 CHAN
@@ -10591,10 +10588,11 @@
 1 BIRT
 2 DATE
 2 PLAC
+1 FAMC @F305@
 1 FAMS @F303@
 1 CHAN
 2 DATE 20 APR 2022
-3 TIME 23:07:12
+3 TIME 23:44:54
 0 @F303@ FAM
 1 HUSB @HIJK@
 1 WIFE @I782@
@@ -10612,4 +10610,60 @@
 1 CHAN
 2 DATE 20 APR 2022
 3 TIME 23:07:04
+0 @GHIJK@ INDI
+1 NAME /Haplogroup F/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F304@
+1 FAMS @F305@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 23:44:54
+0 @F304@ FAM
+1 HUSB @Fenkatesh@
+1 WIFE @I784@
+1 CHIL @GHIJK@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 23:44:30
+0 @I784@ INDI
+1 NAME
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMS @F304@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 23:44:30
+0 @F305@ FAM
+1 HUSB @GHIJK@
+1 WIFE @I785@
+1 CHIL @HIJK@
+1 CHIL @George@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 23:45:18
+0 @I785@ INDI
+1 NAME
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMS @F305@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 23:44:54
+0 @George@ INDI
+1 NAME /Haplogroup G/ Georgians, Abkhazians, Ossetians, Circassians
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F305@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 23:45:57
 0 TRLR
