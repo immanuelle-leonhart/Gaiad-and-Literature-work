@@ -6,7 +6,7 @@
 3 ADDR http://genj.sourceforge.net
 1 DEST ANY
 1 DATE 20 APR 2022
-2 TIME 14:27:13
+2 TIME 15:01:58
 1 SUBM @B1@
 1 FILE Gaiad.ged
 1 GEDC
@@ -16,17 +16,10 @@
 1 LANG German
 0 @B1@ SUBM
 1 NAME Nils Meier
-0 @I3@ INDI
-1 NAME Nada /Mandalinic/
-1 SEX F
-1 BIRT
-2 DATE 1 APR 1948
-1 FAMS @F2@
 0 @F2@ FAM
-1 WIFE @I3@
 1 CHAN
-2 DATE 18 APR 2022
-3 TIME 21:45:10
+2 DATE 20 APR 2022
+3 TIME 21:29:01
 0 @N1@ NOTE The author of GenJ - please visit
 1 CONT http://genj.sourceforge.net
 1 CONT for more information about Genealogy J
@@ -9325,7 +9318,6 @@
 2 CONT
 2 CONT Liu et al. (2020) [15] revealed that Haplogroup C-F5484 and its subclades are the genetic markers of Tungusic-speaking peoples. C-F5484 was emerged 3,300 years ago and begun to diverge 1,900 years ago, indicating the approximate age of differentiation o
 2 CONC f Tungusic languages.
-2 CONT
 1 FAMC @F271@
 1 CHAN
 2 DATE 20 APR 2022
@@ -9668,7 +9660,6 @@
 1 NOTE K-Y28301, a subclade of K-Y28299, has been found in living individuals with their origins in Andhra Pradesh and Arunachal Pradesh India.[7]
 2 CONT
 2 CONT K-Y28301, a subclade of K-Y28299, has been found in living individuals with their origins in Andhra Pradesh and Arunachal Pradesh India.[7]
-2 CONT
 1 FAMC @F280@
 1 CHAN
 2 DATE 20 APR 2022
@@ -9734,7 +9725,6 @@
 2 CONT Indigenous Australians often have basal K2 haplogroup
 2 CONT
 2 CONT Most humans are in haplogroup K2 but in subclades rather than basal ones
-2 CONT
 1 FAMS @F282@
 1 CHAN
 2 DATE 20 APR 2022
@@ -9808,12 +9798,23 @@
 1 NOTE Haplogroup P is called philip because its basal members are most commonly the Aeta people in the Philippines
 2 CONT
 2 CONT Descendant groups Q and R are the majorities in the Americas and Europe respectively and were highly significant historically
+2 CONT
+2 CONT Because P2 (P-B253) was discovered relatively recently, it is not always clear if older studies have screened for it. Therefore, cases of basal P* (also known as P-P295*; K2b2*; PxM45, B253) reported in literature may include P2.
+2 CONT
+2 CONT P(xP1) exists at low to moderate levels among various groups in Island South East Asia, the South West Pacific and East Asia.[3]
+2 CONT
+2 CONT P* is found at its highest rate among members of the Aeta (or Agta), a people indigenous to Luzon who formed from various ancient groups, such as Oceanians and Austronesian peoples from Taiwan.[1] Even though P1 is now more common among individuals in Eas
+2 CONC tern Siberia and Central Asia, it is suggested that P originated in southern East Asia and was once widespread.[2][3][5]
+2 CONT
+2 CONT Basal P* was also found in one historical 19th-century Andaman islander.[6] along with basal P* found among a Jehai sample in Malayasia.[7]
+2 CONT
 1 FAMC @F283@
+1 FAMS @F285@
 1 CHAN
 2 DATE 20 APR 2022
-3 TIME 21:18:55
+3 TIME 21:38:01
 0 @Masa@ INDI
-1 NAME /Haplogroup K2b1/MS/
+1 NAME /Haplogroup K2b1/ MS/
 1 SEX M
 1 BIRT
 2 DATE
@@ -9824,7 +9825,7 @@
 2 DATE 20 APR 2022
 3 TIME 21:21:38
 0 @Simbari@ INDI
-1 NAME /Haplogroup K2b1/MS/
+1 NAME /Haplogroup K2b1/ MS/
 1 SEX M
 1 BIRT
 2 DATE
@@ -9846,9 +9847,10 @@
 1 HUSB @Masa@
 1 WIFE @I729@
 1 CHIL @Simbari@
+1 CHIL @Melanesius@
 1 CHAN
 2 DATE 20 APR 2022
-3 TIME 21:21:38
+3 TIME 21:30:03
 0 @I729@ INDI
 1 NAME
 1 SEX F
@@ -9859,4 +9861,167 @@
 1 CHAN
 2 DATE 20 APR 2022
 3 TIME 21:21:38
+0 @Melanesius@ INDI
+1 NAME /Haplogroup M/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 NOTE Derived from Melanesia, as it is a common haplogreoup in the region
+1 FAMC @F284@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 21:30:41
+0 @P1@ INDI
+1 NAME /Haplogroup P1/
+2 NOTE
+3 CONT
+3 CONT
+3 CONT
+3 CONT Modern populations with highest frequencies of basal P1*
+3 CONT
+3 CONT 35.4% among Tuvan males;
+3 CONT 35% among Nivkh and;
+3 CONT 28.3% among Altai-Kizhi.[5]
+3 CONT
+3 CONT http://www.zgms.cm.umk.pl/prace/591-604.pdf
+3 CONT
+3 CONT
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F285@
+1 FAMS @F286@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 21:53:59
+0 @F285@ FAM
+1 HUSB @Philip@
+1 WIFE @I731@
+1 CHIL @P1@
+1 CHIL @P2@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 21:33:15
+0 @I731@ INDI
+1 NAME
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMS @F285@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 21:33:07
+0 @P2@ INDI
+1 NAME /Haplogroup P2/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 NOTE
+1 FAMC @F285@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 21:54:03
+0 @Romulus_of_Siberia@ INDI
+1 NAME /Haplogroup R/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F286@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 21:51:21
+0 @F286@ FAM
+1 HUSB @P1@
+1 WIFE @I734@
+1 CHIL @Romulus_of_Siberia@
+1 CHIL @Quetzalcoatl@
+1 CHIL @Nivkhus@
+1 CHIL @Altai-Tuvans@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 21:58:28
+0 @I734@ INDI
+1 NAME
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMS @F286@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 21:51:10
+0 @Quetzalcoatl@ INDI
+1 NAME /Haplogroup Q/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F286@
+1 FAMS @F287@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:00:05
+0 @Nivkhus@ INDI
+1 NAME /Haplogroup P1/ founder of the Nivkh
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F286@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 21:53:56
+0 @Altai-Tuvans@ INDI
+1 NAME /Haplogroup P1/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F286@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 21:58:28
+0 @Ket_people@ INDI
+1 NAME /Haplogroup Q/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F287@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:00:05
+0 @F287@ FAM
+1 HUSB @Quetzalcoatl@
+1 WIFE @I739@
+1 CHIL @Ket_people@
+1 CHIL @Native_Americans@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:00:39
+0 @I739@ INDI
+1 NAME
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMS @F287@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:00:05
+0 @Native_Americans@ INDI
+1 NAME /Haplogroup Q/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F287@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:00:39
 0 TRLR
