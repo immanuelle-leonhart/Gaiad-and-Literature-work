@@ -6,7 +6,7 @@
 3 ADDR http://genj.sourceforge.net
 1 DEST ANY
 1 DATE 20 APR 2022
-2 TIME 15:20:33
+2 TIME 16:08:09
 1 SUBM @B1@
 1 FILE Gaiad.ged
 1 GEDC
@@ -2016,10 +2016,11 @@
 1 BIRT
 2 DATE
 2 PLAC
+1 FAMC @F295@
 1 FAMS @F59@
 1 CHAN
 2 DATE 20 APR 2022
-3 TIME 20:32:01
+3 TIME 22:50:14
 0 @F59@ FAM
 1 HUSB @Levantus@
 1 WIFE @Afrasia@
@@ -9726,18 +9727,23 @@
 2 CONT Indigenous Australians often have basal K2 haplogroup
 2 CONT
 2 CONT Most humans are in haplogroup K2 but in subclades rather than basal ones
+1 FAMC @F290@
 1 FAMS @F282@
 1 CHAN
 2 DATE 20 APR 2022
-3 TIME 21:04:49
+3 TIME 22:22:29
 0 @F282@ FAM
 1 HUSB @Katubanut@
 1 WIFE @I722@
 1 CHIL @K2a@
 1 CHIL @Katubon@
+1 CHIL @K2c@
+1 CHIL @I754K2d@
+1 CHIL @K2d@
+1 CHIL @K2e@
 1 CHAN
 2 DATE 20 APR 2022
-3 TIME 21:09:38
+3 TIME 22:25:58
 0 @I722@ INDI
 1 NAME /Haplogroup K2a/
 1 SEX F
@@ -10050,11 +10056,10 @@
 2 DATE
 2 PLAC
 1 FAMC @F288@
-1 FAMS @F290@
 1 FAMS @F291@
 1 CHAN
 2 DATE 20 APR 2022
-3 TIME 22:20:16
+3 TIME 22:20:57
 0 @F288@ FAM
 1 HUSB @Romulus_of_Siberia@
 1 WIFE @I743@
@@ -10115,44 +10120,15 @@
 1 CHAN
 2 DATE 20 APR 2022
 3 TIME 22:10:09
-0 @R1a@ INDI
-1 NAME /Haplogroup R/
-1 SEX M
-1 BIRT
-2 DATE
-2 PLAC
-1 FAMC @F290@
-1 CHAN
-2 DATE 20 APR 2022
-3 TIME 22:18:56
-0 @F290@ FAM
-1 HUSB @R1@
-1 WIFE @I748@
-1 CHIL @R1a@
-1 CHIL @R1b@
-1 CHAN
-2 DATE 20 APR 2022
-3 TIME 22:19:03
 0 @I748@ INDI
 1 NAME
 1 SEX F
 1 BIRT
 2 DATE
 2 PLAC
-1 FAMS @F290@
 1 CHAN
 2 DATE 20 APR 2022
-3 TIME 22:18:56
-0 @R1b@ INDI
-1 NAME /Haplogroup R/
-1 SEX M
-1 BIRT
-2 DATE
-2 PLAC
-1 FAMC @F290@
-1 CHAN
-2 DATE 20 APR 2022
-3 TIME 22:19:03
+3 TIME 22:20:57
 0 @F291@ FAM
 1 HUSB @R1@
 1 WIFE @I750@
@@ -10170,4 +10146,470 @@
 1 CHAN
 2 DATE 20 APR 2022
 3 TIME 22:20:16
+0 @IJK@ INDI
+1 NAME /Haplogroup IJK/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F303@
+1 FAMS @F290@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 23:07:04
+0 @F290@ FAM
+1 HUSB @IJK@
+1 WIFE @I751@
+1 CHIL @Katubanut@
+1 CHIL @IJ@
+1 CHIL @Vestonice16@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:24:11
+0 @I751@ INDI
+1 NAME /Haplogroup K/
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMS @F290@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:22:29
+0 @IJ@ INDI
+1 NAME /Haplogroup IJ/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC Caucasus
+1 FAMC @F290@
+1 FAMS @F292@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:34:08
+0 @Vestonice16@ INDI
+1 NAME /Haplogroup IJK*/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F290@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 23:06:25
+0 @K2c@ INDI
+1 NAME /Haplogroup K2b/ Bali
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F282@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:25:32
+0 @I754K2d@ INDI
+1 NAME /Haplogroup K2b/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F282@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:25:32
+0 @K2d@ INDI
+1 NAME /Haplogroup K2b/ Java
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F282@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:25:58
+0 @K2e@ INDI
+1 NAME /Haplogroup K2b/ Two people in South Asia
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F282@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:26:12
+0 @F292@ FAM
+1 HUSB @IJ@
+1 WIFE @I758@
+1 CHIL @Basal_IJ@
+1 CHIL @Ingvi@
+1 CHIL @Jericho@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:32:43
+0 @I758@ INDI
+1 NAME
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMS @F292@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:28:52
+0 @Basal_IJ@ INDI
+1 NAME /Haplogroup IJ/ Iranians
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F292@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:32:14
+0 @Ingvi@ INDI
+1 NAME /Haplogroup I/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F292@
+1 FAMS @F293@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:34:59
+0 @Jericho@ INDI
+1 NAME /Haplogroup J/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 NOTE Haplogyoup J is the common middle eastern one
+2 CONT
+2 CONT J1 is associated with the caucasus and J2 with trhe Arabs
+2 CONT
+2 CONT
+2 CONT Paragroup J-M304*[Phylogenetics 2] includes all of J-M304 except for J-M267, J-M172 and their subclades. J-M304* is rarely found outside of the island of Socotra, belonging to Yemen, where it is extremely frequent at 71.4%.[6] Haplogroup J-M304* also ha
+2 CONC s been found with lower frequency in Oman (Giacomo 2004), Ashkenazi Jews,[7] Saudi Arabia (Abu-Amero 2009), Greece (Giacomo 2004), the Czech Republic (Giacomo 2004 and Luca 2007), Uygurs[8] and several Turkic peoples.[9] (Cinnioglu 2004 and Varzari 2006).
+2 CONT
+1 FAMC @F292@
+1 FAMS @F294@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:48:46
+0 @I*@ INDI
+1 NAME /Haplogroup I/
+2 NOTE Several I* individuals, who do not fall into any known subclades, have been found among the Lak people of Dagestan, at a rate of (3/21),[84] as well as Turkey (8/741), Adygea in the Caucasus (2/138) and Iraq (1/176), even though I-M170 occurs at only ver
+3 CONC y low frequencies among modern populations of these regions as a whole. This is consistent with the belief that the haplogroup first appeared in South West Eurasia.
+3 CONT
+3 CONT There are also high frequencies of Haplogroup I* among the Andalusians (3/103), French (4/179), Slovenians (2/55), Tabassarans (1/30),[84] and Saami (1/35).[85]
+3 CONT
+3 CONT (Neither study from which the above figures were drawn excluded the present I2-M438 clade as a whole, but only certain subclades, so these presumed cases I* may possibly belong to I2.)
+3 CONT
+3 CONT A living Hazara male from Afghanistan has also been found to carry I*, with all known subclades of both I1 (M253) and I2 (M438) ruled out.[86]
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F293@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:43:27
+0 @F293@ FAM
+1 HUSB @Ingvi@
+1 WIFE @I762@
+1 CHIL @I*@
+1 CHIL @I1@
+1 CHIL @I2@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:43:48
+0 @I762@ INDI
+1 NAME
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMS @F293@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:34:59
+0 @I1@ INDI
+1 NAME /Haplogroup I/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F293@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:43:27
+0 @I764@ INDI
+1 NAME
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:43:27
+0 @I2@ INDI
+1 NAME /Haplogroup I/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F293@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:43:48
+0 @J1@ INDI
+1 NAME /Haplogroup J/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F294@
+1 FAMS @F295@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:50:14
+0 @F294@ FAM
+1 HUSB @Jericho@
+1 WIFE @I767@
+1 CHIL @J1@
+1 CHIL @J2@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:49:00
+0 @I767@ INDI
+1 NAME
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMS @F294@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:48:46
+0 @J2@ INDI
+1 NAME /Haplogroup J/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F294@
+1 FAMS @F296@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:55:15
+0 @F295@ FAM
+1 HUSB @J1@
+1 WIFE @I769@
+1 CHIL @Levantus@
+1 CHIL @Avar-Dargic_Caucasian@
+1 CHIL @Lezgic@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:58:14
+0 @I769@ INDI
+1 NAME /Jericho/
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMS @F295@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:50:14
+0 @Vainakh_Caucasian@ INDI
+1 NAME /Haplogroup J/ Ingush, Chechens, etc
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F296@
+1 FAMS @F301@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:59:39
+0 @F296@ FAM
+1 HUSB @J2@
+1 WIFE @I771@
+1 CHIL @Vainakh_Caucasian@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:55:15
+0 @I771@ INDI
+1 NAME
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMS @F296@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:55:15
+0 @Avar-Dargic_Caucasian@ INDI
+1 NAME /Jericho/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F295@
+1 FAMS @F297@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:58:35
+0 @Lezgic@ INDI
+1 NAME /Jericho/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F295@
+1 FAMS @F299@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:59:07
+0 @I774@ INDI
+1 NAME /Northeast Caucasian/
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F298@
+1 FAMS @F297@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:58:57
+0 @F297@ FAM
+1 HUSB @Avar-Dargic_Caucasian@
+1 WIFE @I774@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:58:35
+0 @Northeast_Caucasian@ INDI
+1 NAME /Northeast Caucasian/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMS @F298@
+1 FAMS @F300@
+1 FAMS @F302@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:59:49
+0 @F298@ FAM
+1 HUSB @Northeast_Caucasian@
+1 WIFE @I776@
+1 CHIL @I774@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:58:57
+0 @I776@ INDI
+1 NAME /Northeast Caucasian/
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMS @F298@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:58:57
+0 @I777@ INDI
+1 NAME
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F300@
+1 FAMS @F299@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:59:27
+0 @F299@ FAM
+1 HUSB @Lezgic@
+1 WIFE @I777@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:59:07
+0 @F300@ FAM
+1 HUSB @Northeast_Caucasian@
+1 WIFE @I778@
+1 CHIL @I777@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:59:27
+0 @I778@ INDI
+1 NAME
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMS @F300@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:59:27
+0 @I779@ INDI
+1 NAME
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F302@
+1 FAMS @F301@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:59:49
+0 @F301@ FAM
+1 HUSB @Vainakh_Caucasian@
+1 WIFE @I779@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:59:39
+0 @F302@ FAM
+1 HUSB @Northeast_Caucasian@
+1 WIFE @I780@
+1 CHIL @I779@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:59:49
+0 @I780@ INDI
+1 NAME
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMS @F302@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 22:59:49
+0 @HIJK@ INDI
+1 NAME /Haplogroup HIJK/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMS @F303@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 23:07:12
+0 @F303@ FAM
+1 HUSB @HIJK@
+1 WIFE @I782@
+1 CHIL @IJK@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 23:07:04
+0 @I782@ INDI
+1 NAME /Haplogroup IJK/
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMS @F303@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 23:07:04
 0 TRLR
