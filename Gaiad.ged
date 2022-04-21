@@ -6,7 +6,7 @@
 3 ADDR http://genj.sourceforge.net
 1 DEST ANY
 1 DATE 20 APR 2022
-2 TIME 17:28:04
+2 TIME 19:00:20
 1 SUBM @B1@
 1 FILE Gaiad.ged
 1 GEDC
@@ -10854,6 +10854,7 @@
 3 TIME 00:21:11
 0 @Tamal@ INDI
 1 NAME /Haplogroup T/
+2 NOTE Derived from Samallee common in Somalia with the Dir tribe being 100% T
 1 SEX M
 1 BIRT
 2 DATE
@@ -10861,5 +10862,5 @@
 1 FAMC @F309@
 1 CHAN
 2 DATE 21 APR 2022
-3 TIME 00:26:46
+3 TIME 01:56:34
 0 TRLR
