@@ -6,7 +6,7 @@
 3 ADDR http://genj.sourceforge.net
 1 DEST ANY
 1 DATE 20 APR 2022
-2 TIME 16:58:23
+2 TIME 17:18:34
 1 SUBM @B1@
 1 FILE Gaiad.ged
 1 GEDC
@@ -9893,7 +9893,6 @@
 3 CONT 28.3% among Altai-Kizhi.[5]
 3 CONT
 3 CONT http://www.zgms.cm.umk.pl/prace/591-604.pdf
-3 CONT
 1 SEX M
 1 BIRT
 2 DATE
@@ -10731,11 +10730,11 @@
 2 CONT All subclades of DE, including D and E, appear to be exceptionally rare – almost non-existent – in mainland South Asia and South East Asia. Given that D-M174 is dominant in Japan, the Andaman Islands, and Tibet, whereas E-M96 is relatively common in Afric
 2 CONC a and the Middle East, some researchers have suggested that the rarity of DE lineages in India – a region considered important in the dispersal of modern humans – may be meaningful.[4] By comparison, subclades of CF – the only "sibling" haplogroup of D
 2 CONC E – are found in India at significant proportions.
-2 CONT
 1 FAMC @F306@
+1 FAMS @F308@
 1 CHAN
-2 DATE 20 APR 2022
-3 TIME 23:52:17
+2 DATE 21 APR 2022
+3 TIME 00:16:04
 0 @Kaledonius@ INDI
 1 NAME /Haplogroup K/
 1 SEX M
@@ -10777,7 +10776,7 @@
 2 DATE 20 APR 2022
 3 TIME 23:56:27
 0 @Letho@ INDI
-1 NAME /Haplogroup LT/K1/
+1 NAME /Haplogroup LT/ K1/
 1 SEX M
 1 BIRT
 2 DATE
@@ -10786,4 +10785,42 @@
 1 CHAN
 2 DATE 20 APR 2022
 3 TIME 23:58:18
+0 @Drupa@ INDI
+1 NAME /Haplogroup D/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F308@
+1 CHAN
+2 DATE 21 APR 2022
+3 TIME 00:16:07
+0 @F308@ FAM
+1 HUSB @Demetrius@
+1 WIFE @I795@
+1 CHIL @Drupa@
+1 CHIL @Ezekiel@
+1 CHAN
+2 DATE 21 APR 2022
+3 TIME 00:16:28
+0 @I795@ INDI
+1 NAME
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMS @F308@
+1 CHAN
+2 DATE 21 APR 2022
+3 TIME 00:16:04
+0 @Ezekiel@ INDI
+1 NAME /Haplogroup E/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F308@
+1 CHAN
+2 DATE 21 APR 2022
+3 TIME 00:16:32
 0 TRLR
