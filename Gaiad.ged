@@ -6,7 +6,7 @@
 3 ADDR http://genj.sourceforge.net
 1 DEST ANY
 1 DATE 20 APR 2022
-2 TIME 16:45:59
+2 TIME 16:58:23
 1 SUBM @B1@
 1 FILE Gaiad.ged
 1 GEDC
@@ -9500,10 +9500,11 @@
 1 BIRT
 2 DATE
 2 PLAC
+1 FAMC @F306@
 1 FAMS @F277@
 1 CHAN
 2 DATE 20 APR 2022
-3 TIME 17:37:38
+3 TIME 23:47:57
 0 @F277@ FAM
 1 HUSB @Cefalus@
 1 WIFE @I706@
@@ -9718,7 +9719,7 @@
 2 DATE 20 APR 2022
 3 TIME 20:56:35
 0 @Katubanut@ INDI
-1 NAME /Haplogroup K/
+1 NAME /Haplogroup K2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -9728,11 +9729,11 @@
 2 CONT Indigenous Australians often have basal K2 haplogroup
 2 CONT
 2 CONT Most humans are in haplogroup K2 but in subclades rather than basal ones
-1 FAMC @F290@
+1 FAMC @F307@
 1 FAMS @F282@
 1 CHAN
 2 DATE 20 APR 2022
-3 TIME 22:22:29
+3 TIME 23:57:26
 0 @F282@ FAM
 1 HUSB @Katubanut@
 1 WIFE @I722@
@@ -10158,12 +10159,12 @@
 0 @F290@ FAM
 1 HUSB @IJK@
 1 WIFE @I751@
-1 CHIL @Katubanut@
 1 CHIL @IJ@
 1 CHIL @Vestonice16@
+1 CHIL @Kaledonius@
 1 CHAN
 2 DATE 20 APR 2022
-3 TIME 22:24:11
+3 TIME 23:57:26
 0 @I751@ INDI
 1 NAME /Haplogroup K/
 1 SEX F
@@ -10666,4 +10667,123 @@
 1 CHAN
 2 DATE 20 APR 2022
 3 TIME 23:45:57
+0 @Noah@ INDI
+1 NAME /Haplogroup CT/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMS @F306@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 23:48:05
+0 @F306@ FAM
+1 HUSB @Noah@
+1 WIFE @I788@
+1 CHIL @Cefalus@
+1 CHIL @Demetrius@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 23:49:16
+0 @I788@ INDI
+1 NAME /Haplogroup CF/
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMS @F306@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 23:47:57
+0 @Demetrius@ INDI
+1 NAME /Haplogroup DE/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 NOTE The most well-known unique event polymorphism (UEP) that defines DE is the Y-chromosome Alu Polymorphism "YAP". The mutation was caused when a strand of DNA, known as Alu, inserted a copy of itself into the Y chromosome. Hence, all Y chromosomes belongin
+2 CONC g to DE, D, E and their subclades are YAP-positive (YAP+). All Y chromosomes that belong to other haplogroups and subclades are YAP-negative (YAP-).
+2 CONT
+2 CONT Basal DE* is extremely unusual in that it is found, at very low frequencies, among males from three widely separated regions: West Africa, the Caribbean, and East Asia.
+2 CONT
+2 CONT A 2003 study by Weale et al., of the DNA of over 8,000 males worldwide, found that five out of 1,247 Nigerian males belonged to DE*. The DE* found possessed by these five Nigerians, according to the study's authors, was "the least derived of all YAP chrom
+2 CONC osomes according to currently known binary markers" – to such an extent that it suggested that DE had originated in West Africa and expanded from there. However, Weale et al., cautioned that such inferences may well be incorrect. In addition, the seemingl
+2 CONC y "paraphyletic" (basal) status of the Nigerian examples of DE-YAP may be "illusory" because the "branching order, and hence the origin, of YAP-derived haplogroups remains uncertain". It was "easy to misinterpret apparently paraphyletic groups", and subse
+2 CONC quent research might show that the Nigerian examples of DE were as divergent from DE*, D* and E*. "[T]he only genealogically meaningful definition of the age of a clade is the time to its most recent common ancestor, but only if DE* is truly paraphyleti
+2 CONC c does it ... become automatically older than D or E..." The relationship between DE*, according to Weale et al., "can be viewed as a missing-data problem..."[11] In 2007, another West African example of DE* was reported – carried by a speaker of the Nal
+2 CONC u language who was among 17 Y-DNA samples taken in Guinea Bissau. The sequence of this individual differed by one mutation from those of the Nigerian individuals, indicating common ancestry, although the relationship between the two lineages has not bee
+2 CONC n determined.[12]
+2 CONT
+2 CONT In 2008, a basal paternal marker belonging to DE* was identified in two individuals from Tibet (two out of 594), belonging to the Tibeto-Burman group.[13]
+2 CONT
+2 CONT A 2010 study (by Veeramah et al.) found six additional samples of DE*(xE) (a DE lineage that did not belong to the E branch) in southeastern Nigeria in individuals of the Ibibio, Igbo, and Oron ethnic groups.[14]
+2 CONT
+2 CONT In 2012, haplogroup DE* was found in one Caribbean sample.[15]
+2 CONT
+2 CONT A 2019 study by Haber et al. found that three of the five Nigerians analysed by Weale et al. in 2003 belonged, not to DE*, but to D0, a proposed haplogroup thought to represent a deep-rooting DE lineage branching close to the DE bifurcation (near the spli
+2 CONC t of D and E) but on the D branch as an outgroup to all other known D chromosomes.[3] Another carrier of D0 (the D-FT75 branch) is famous skater[16] Ruslan bin Makin Al-Bitar, of Syrian descent.[17] In 2019 two other D0 samples were found in Al Wajh (on t
+2 CONC he west coast of Saudi Arabia).[18] In the Recent ISOGG tree, D0 was renamed D2, and D-M174 was renamed D1. In 2020 another sample of D0/D2 was found in an African American man. [19][20][21]
+2 CONT
+2 CONT A 2021 study by Mengge Wang et al. found that one sample of Y-chromosome DE-M145 in a group of 679 Mongolians, but stated that it was uncertain whether it was (undifferentiated) DE* or a sub lineage, stating that they "could not confirm the detailed subli
+2 CONC neages of the individuals belonging to DE-M145 due to the lack of subhaplogroups of E."[22]
+2 CONT
+2 CONT
+2 CONT All subclades of DE, including D and E, appear to be exceptionally rare – almost non-existent – in mainland South Asia and South East Asia. Given that D-M174 is dominant in Japan, the Andaman Islands, and Tibet, whereas E-M96 is relatively common in Afric
+2 CONC a and the Middle East, some researchers have suggested that the rarity of DE lineages in India – a region considered important in the dispersal of modern humans – may be meaningful.[4] By comparison, subclades of CF – the only "sibling" haplogroup of D
+2 CONC E – are found in India at significant proportions.
+2 CONT
+1 FAMC @F306@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 23:52:17
+0 @Kaledonius@ INDI
+1 NAME /Haplogroup K/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F290@
+1 FAMS @F307@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 23:56:27
+0 @I791@ INDI
+1 NAME /Haplogroup K/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F307@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 23:56:27
+0 @F307@ FAM
+1 HUSB @Kaledonius@
+1 WIFE @I792@
+1 CHIL @I791@
+1 CHIL @Katubanut@
+1 CHIL @Letho@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 23:58:07
+0 @I792@ INDI
+1 NAME
+1 SEX F
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMS @F307@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 23:56:27
+0 @Letho@ INDI
+1 NAME /Haplogroup LT/K1/
+1 SEX M
+1 BIRT
+2 DATE
+2 PLAC
+1 FAMC @F307@
+1 CHAN
+2 DATE 20 APR 2022
+3 TIME 23:58:18
 0 TRLR
