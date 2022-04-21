@@ -6,7 +6,7 @@
 3 ADDR http://genj.sourceforge.net
 1 DEST ANY
 1 DATE 21 APR 2022
-2 TIME 13:33:36
+2 TIME 13:43:41
 1 SUBM @B1@
 1 FILE Gaiad.ged
 1 GEDC
@@ -2038,7 +2038,7 @@
 2 DATE 20 APR 2022
 3 TIME 20:32:01
 0 @Yellow_Emperor@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2067,7 +2067,7 @@
 2 DATE 19 APR 2022
 3 TIME 04:13:16
 0 @Shaohao@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2078,7 +2078,7 @@
 2 DATE 19 APR 2022
 3 TIME 04:21:59
 0 @Changyi@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2089,7 +2089,7 @@
 2 DATE 19 APR 2022
 3 TIME 04:22:10
 0 @Zhuanxu@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2117,7 +2117,7 @@
 2 DATE 19 APR 2022
 3 TIME 04:14:30
 0 @Jiaoji@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2145,7 +2145,7 @@
 2 DATE 19 APR 2022
 3 TIME 04:18:23
 0 @Emperor_Ku@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2173,7 +2173,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:06:59
 0 @Emperor_Zhi@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2214,7 +2214,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:31:57
 0 @Emperor_Yao@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2225,7 +2225,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:08:57
 0 @Houji@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2236,7 +2236,7 @@
 2 DATE 19 APR 2022
 3 TIME 17:31:25
 0 @Ehuang@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX F
 1 BIRT
 2 DATE
@@ -2265,7 +2265,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:08:57
 0 @Nuying@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX F
 1 BIRT
 2 DATE
@@ -2275,7 +2275,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:09:08
 0 @Danzhu@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2285,7 +2285,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:09:24
 0 @Qiongchan@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2318,7 +2318,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:10:23
 0 @Jingkang@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2346,7 +2346,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:10:33
 0 @Juwang@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2374,7 +2374,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:10:46
 0 @Qiaoniu@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2402,7 +2402,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:10:56
 0 @Gusou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2430,7 +2430,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:11:03
 0 @Emperor_Shun@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2457,7 +2457,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:11:13
 0 @I186@ INDI
-1 NAME King of Gu Shu /Haplogroup O/
+1 NAME King of Gu Shu /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2467,7 +2467,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:12:58
 0 @I187@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2478,7 +2478,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:13:24
 0 @I188@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2506,7 +2506,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:13:24
 0 @Luo_Ming@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2534,7 +2534,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:13:34
 0 @Gun@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2562,7 +2562,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:13:50
 0 @Yu_the_Great@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2590,7 +2590,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:14:14
 0 @Cheng@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2601,7 +2601,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:14:51
 0 @Lao_Tong@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2629,7 +2629,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:14:51
 0 @Zhurong@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2657,7 +2657,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:15:01
 0 @Wuhui@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2668,7 +2668,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:15:18
 0 @Luzhong@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2696,7 +2696,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:15:18
 0 @Kunwu@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2728,7 +2728,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:15:29
 0 @Shen_Hu@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2738,7 +2738,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:15:37
 0 @Peng_Zu@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2748,7 +2748,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:15:51
 0 @Hui_Ren@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2758,7 +2758,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:16:00
 0 @Yan_An@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2768,7 +2768,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:16:09
 0 @Jilian@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2778,7 +2778,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:16:31
 0 @Taowu@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2788,7 +2788,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:16:44
 0 @Wangliang@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2798,7 +2798,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:16:56
 0 @Qi_of_Xia@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2826,7 +2826,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:26:05
 0 @Tai_Kang@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2854,7 +2854,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:26:32
 0 @Zhong_Kang@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2865,7 +2865,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:26:58
 0 @Xiang_of_Xia@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2893,7 +2893,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:26:58
 0 @Shaokang@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2921,7 +2921,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:27:10
 0 @Zhu_of_Xia@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2949,7 +2949,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:27:22
 0 @Huai_of_Xia@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -2977,7 +2977,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:27:46
 0 @Mang_of_Xia@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -3005,7 +3005,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:27:56
 0 @Xie_of_Xia@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -3033,7 +3033,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:28:06
 0 @Bu_Jiang@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -3062,7 +3062,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:28:22
 0 @Jiong_of_Xia@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -3073,7 +3073,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:28:47
 0 @Jin_of_Xia@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -3100,7 +3100,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:28:47
 0 @Kong_Jia@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -3128,7 +3128,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:29:00
 0 @Gao_of_Xia@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -3156,7 +3156,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:29:10
 0 @Fa_of_Xia@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -3184,7 +3184,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:29:21
 0 @Jie_of_Xia@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -4294,7 +4294,7 @@
 2 DATE 19 APR 2022
 3 TIME 06:45:50
 0 @Buzhu@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -4322,7 +4322,7 @@
 2 DATE 19 APR 2022
 3 TIME 17:31:25
 0 @Ji_Ju@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -4350,7 +4350,7 @@
 2 DATE 19 APR 2022
 3 TIME 17:31:40
 0 @Gong_Liu@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -4378,7 +4378,7 @@
 2 DATE 19 APR 2022
 3 TIME 17:32:01
 0 @Qingjie@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -4406,7 +4406,7 @@
 2 DATE 19 APR 2022
 3 TIME 17:32:15
 0 @Huangpu@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -4434,7 +4434,7 @@
 2 DATE 19 APR 2022
 3 TIME 17:33:40
 0 @Chaifu@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -4462,7 +4462,7 @@
 2 DATE 19 APR 2022
 3 TIME 17:34:23
 0 @Huiyu@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -4490,7 +4490,7 @@
 2 DATE 19 APR 2022
 3 TIME 17:34:36
 0 @Duke_Fei@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -4518,7 +4518,7 @@
 2 DATE 19 APR 2022
 3 TIME 17:35:08
 0 @Ji_Gaoyu@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -4546,7 +4546,7 @@
 2 DATE 19 APR 2022
 3 TIME 17:35:49
 0 @Yayu@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -4574,7 +4574,7 @@
 2 DATE 19 APR 2022
 3 TIME 17:35:57
 0 @Gong_Shu_Zulei@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -4602,7 +4602,7 @@
 2 DATE 19 APR 2022
 3 TIME 17:36:07
 0 @King_Tai_of_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -4630,7 +4630,7 @@
 2 DATE 19 APR 2022
 3 TIME 17:36:47
 0 @Ji,_King_of_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -4660,7 +4660,7 @@
 2 DATE 19 APR 2022
 3 TIME 17:40:51
 0 @Taibo@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -4670,7 +4670,7 @@
 2 DATE 19 APR 2022
 3 TIME 17:41:00
 0 @Zhongyong_of_Wu@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -4681,7 +4681,7 @@
 2 DATE 19 APR 2022
 3 TIME 17:43:28
 0 @Jijian@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -4709,7 +4709,7 @@
 2 DATE 19 APR 2022
 3 TIME 17:43:28
 0 @Shuda@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -4737,7 +4737,7 @@
 2 DATE 19 APR 2022
 3 TIME 17:43:36
 0 @Zhouzhang@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -4765,7 +4765,7 @@
 2 DATE 19 APR 2022
 3 TIME 17:43:42
 0 @Xiongsui@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -4792,7 +4792,7 @@
 2 DATE 19 APR 2022
 3 TIME 17:43:50
 0 @Guo_Zhong@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -4820,7 +4820,7 @@
 2 DATE 19 APR 2022
 3 TIME 17:44:21
 0 @Guo_Shu@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -4831,7 +4831,7 @@
 2 DATE 19 APR 2022
 3 TIME 17:44:40
 0 @King_Wen_of_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -4859,7 +4859,7 @@
 2 DATE 19 APR 2022
 3 TIME 17:44:40
 0 @Bo_Yikao@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -4888,7 +4888,7 @@
 2 DATE 19 APR 2022
 3 TIME 17:45:36
 0 @Duke_of_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -4899,7 +4899,7 @@
 2 DATE 19 APR 2022
 3 TIME 17:49:29
 0 @King_Wu_of_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -4910,7 +4910,7 @@
 2 DATE 19 APR 2022
 3 TIME 17:51:06
 0 @Bo_Qin@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -4937,7 +4937,7 @@
 2 DATE 19 APR 2022
 3 TIME 17:49:29
 0 @King_Cheng_of_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -4966,7 +4966,7 @@
 2 DATE 19 APR 2022
 3 TIME 17:51:06
 0 @Shu_Yu_of_Tang@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -4977,7 +4977,7 @@
 2 DATE 19 APR 2022
 3 TIME 17:52:30
 0 @Xiefu@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -5005,7 +5005,7 @@
 2 DATE 19 APR 2022
 3 TIME 17:52:30
 0 @Marquis_Wu_of_Jin@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -5033,7 +5033,7 @@
 2 DATE 19 APR 2022
 3 TIME 17:52:43
 0 @King_Kang_of_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -5485,7 +5485,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:02:15
 0 @King_Zhao_of_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE 1027 B.C.
@@ -5513,7 +5513,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:10:09
 0 @King_Mu_of_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 FAMC @F167@
 1 FAMS @F168@
@@ -5538,7 +5538,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:10:19
 0 @King_Gong_of_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -5567,7 +5567,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:11:38
 0 @King_Xiao_of_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -5577,7 +5577,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:11:48
 0 @King_Yih_of_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -5605,7 +5605,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:12:47
 0 @King_Yi_of_Zhou_(Xie)@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -5633,7 +5633,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:13:13
 0 @King_Li_of_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -5661,7 +5661,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:13:25
 0 @King_Xuan_of_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -5690,7 +5690,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:14:43
 0 @Duke_Huan_of_Zheng@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -5700,7 +5700,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:14:53
 0 @King_Xie_of_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -5728,7 +5728,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:15:27
 0 @King_You_of_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -5757,7 +5757,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:18:17
 0 @King_Ping_of_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -5785,7 +5785,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:18:56
 0 @Bofu@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -5795,7 +5795,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:18:56
 0 @Taizi_Xiefu@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -5823,7 +5823,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:19:32
 0 @King_Huan_of_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -5851,7 +5851,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:19:52
 0 @King_Zhuang_of_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -5879,7 +5879,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:20:01
 0 @King_Xi_of_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -5908,7 +5908,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:21:05
 0 @Prince_Tui@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -5918,7 +5918,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:21:16
 0 @King_Hui_of_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -5946,7 +5946,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:21:33
 0 @King_Xiang_of_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -5975,7 +5975,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:22:54
 0 @Prince_Dai@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -5985,7 +5985,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:23:03
 0 @King_Qing_of_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -6013,7 +6013,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:24:17
 0 @King_Kuang_of_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -6041,7 +6041,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:43:07
 0 @King_Ding_of_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -6052,7 +6052,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:43:45
 0 @King_Jian_of_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -6080,7 +6080,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:43:45
 0 @King_Ling_of_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -6108,7 +6108,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:43:55
 0 @King_Jing_of_Zhou_(Gui)@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -6136,7 +6136,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:44:11
 0 @Prince_Chao@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -6165,7 +6165,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:44:30
 0 @King_Dao_of_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -6175,7 +6175,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:44:42
 0 @King_Jing_of_Zhou_(Gai)@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -6186,7 +6186,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:45:10
 0 @King_Yuan_of_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -6214,7 +6214,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:45:10
 0 @King_Zhending_of_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -6242,7 +6242,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:45:21
 0 @King_Ai_of_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -6272,7 +6272,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:45:51
 0 @King_Si_of_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -6282,7 +6282,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:46:05
 0 @King_Kao_of_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -6293,7 +6293,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:47:57
 0 @Duke_Huan_of_West_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -6304,7 +6304,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:46:46
 0 @Duke_Wei_of_West_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -6332,7 +6332,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:46:46
 0 @Duke_Hui_of_West_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -6361,7 +6361,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:46:58
 0 @Duke_Wu_of_West_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -6388,7 +6388,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:47:08
 0 @Prince_Ban_Duke_Hui_of_East_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -6398,7 +6398,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:47:40
 0 @King_Weilie_of_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -6426,7 +6426,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:47:57
 0 @King_An_of_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -6454,7 +6454,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:48:08
 0 @King_Lie_of_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -6482,7 +6482,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:48:35
 0 @King_Xian_of_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -6493,7 +6493,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:49:21
 0 @King_Shenjing_of_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -6521,7 +6521,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:49:21
 0 @King_Nan_of_Zhou@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -6548,7 +6548,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:49:32
 0 @Marquis_Cheng_of_Jin@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -6576,7 +6576,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:58:41
 0 @Marquis_Li_of_Jin@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -6604,7 +6604,7 @@
 2 DATE 19 APR 2022
 3 TIME 18:58:55
 0 @Marquis_Jing_of_Jin@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -9551,7 +9551,7 @@
 2 DATE 20 APR 2022
 3 TIME 20:32:43
 0 @I709@ INDI
-1 NAME /Haplogroup O/
+1 NAME /Haplogroup O2a2b1a2/
 1 SEX F
 1 BIRT
 2 DATE
@@ -10719,8 +10719,8 @@
 2 CONT
 2 CONT
 2 CONT All subclades of DE, including D and E, appear to be exceptionally rare – almost non-existent – in mainland South Asia and South East Asia. Given that D-M174 is dominant in Japan, the Andaman Islands, and Tibet, whereas E-M96 is relatively common in Afric
-2 CONC a and the Middle East, some researchers have suggested that the rarity of DE lineages in India – a region considered important in the dispersal of modern humans – may be meaningful.[4] By comparison, subclades of CF – the only "sibling" haplogroup of D
-2 CONC E – are found in India at significant proportions.
+2 CONC a and the Middle East, some researchers have suggested that the rarity of DE lineages in India – a region considered important in the dispersal of modern humans – may be meaningful.[4] By comparison, subclades of CF – the only "sibling" Haplogroup O2a2b1a
+2 CONC 2f DE – are found in India at significant proportions.
 1 FAMC @F306@
 1 FAMS @F308@
 1 CHAN
@@ -11434,7 +11434,6 @@
 2 DATE
 2 PLAC
 1 NOTE Haplogroup E-M75(xM41,M54) has been found in 6% (1/18) of a sample of Dama from Namibia,[1] 4% (1/26) of a sample of Ganda from Uganda,[1] 3% (1/39) of a sample of Mandinka from Gambia/Senegal,[1] and 2% (1/49) of a sample of Shona from Zimbabwe.[1]
-2 CONT
 1 FAMC @F327@
 1 FAMS @F328@
 1 CHAN
@@ -11794,7 +11793,7 @@
 1 CHAN
 2 DATE 21 APR 2022
 3 TIME 19:39:39
-0 @Lowland East Cushitic languages@ INDI
+0 @Lowland_East_Cushitic_languages@ INDI
 1 NAME
 1 SEX M
 1 BIRT
@@ -11806,7 +11805,7 @@
 2 DATE 21 APR 2022
 3 TIME 19:40:18
 0 @F339@ FAM
-1 HUSB @Lowland East Cushitic languages@
+1 HUSB @Lowland_East_Cushitic_languages@
 1 WIFE @I870@
 1 CHIL @Oromoid@
 1 CHIL @Omo–Tana@
@@ -11838,7 +11837,7 @@
 0 @F340@ FAM
 1 HUSB @Cush@
 1 WIFE @I872@
-1 CHIL @Lowland East Cushitic languages@
+1 CHIL @Lowland_East_Cushitic_languages@
 1 CHIL @Sidamic@
 1 CHIL @Rift@
 1 CHIL @Beja@
