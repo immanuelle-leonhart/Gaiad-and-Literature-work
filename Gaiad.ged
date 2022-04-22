@@ -6,14 +6,14 @@
 3 ADDR http://genj.sourceforge.net
 1 DEST ANY
 1 DATE 22 APR 2022
-2 TIME 00:29:13
+2 TIME 15:14:03
 1 SUBM @B1@
 1 FILE Gaiad.ged
 1 GEDC
 2 VERS 5.5.1
 2 FORM Lineage-Linked
 1 CHAR UTF-8
-1 LANG German
+1 LANG English
 0 @B1@ SUBM
 1 NAME Nils Meier
 0 @F2@ FAM
