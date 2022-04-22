@@ -61,6 +61,10 @@ internal class GedcomFixer
                     {
                         line = line.Replace("1 NAME /", "1 NAME " + id.Replace("_", " ") + " /");
                     }
+                    if (line.Equals("1 NAME"))
+                    {
+                        line = "1 NAME " + id + " /Sedjes/";
+                    }
                     this.data.Add(line);
                     //this.data.Add(fixLine(line));
                 }
