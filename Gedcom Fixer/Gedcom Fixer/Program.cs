@@ -4,3 +4,5 @@ Console.WriteLine("Hello, World!");
 GedcomFixer f = new GedcomFixer();
 
 f.fix(@"../../../../../Gaiad.ged");
+
+f.idToGiven(@"../../../../../Gaiad.ged");
