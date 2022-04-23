@@ -15038,15 +15038,7 @@
 1 CHAN
 2 DATE 23 APR 2022
 3 TIME 01:11:12
-0 @Zhuang_Bo_of_Quwo@ INDI
-1 NAME Zhuang_Bo_of_Quwo /Sedjes/
-1 SEX
-1 BIRT
-2 DATE
-2 PLAC
-1 CHAN
-2 DATE 23 APR 2022
-3 TIME 03:15:11
+
 0 @Zhuang_Bo_of_Quwo@ INDI
 1 NAME Zhuang Bo of Quwo /Haplogroup O2a2b1a2/
 1 SEX M
@@ -15104,22 +15096,13 @@
 1 CHAN
 2 DATE 23 APR 2022
 3 TIME 03:15:47
-0 @Xian_of_Jin@ INDI
-1 NAME Xian of Jin /Jin/
-1 SEX M
-1 BIRT
-2 DATE
-2 PLAC
-1 FAMC @F438@
-1 CHAN
-2 DATE 23 APR 2022
-3 TIME 03:17:33
+
 0 @F438@ FAM
 1 HUSB @Wu_of_Quwo_and_Jin@
 1 WIFE @I1115@
 1 CHIL @Xian_of_Jin@
 1 CHIL @Shensheng@
-1 CHIL @Wen_of_Jin@
+1 CHIL @Duke_Wen_of_Jin@
 1 CHIL @Hui_of_Jin@
 1 CHIL @Xiqi_of_Jin@
 1 CHIL @Zhuozi_of_Jin@
@@ -15268,7 +15251,7 @@
 1 CHAN
 2 DATE 23 APR 2022
 3 TIME 03:17:44
-0 @Wen_of_Jin@ INDI
+0 @Duke_Wen_of_Jin@ INDI
 1 NAME Wen of Jin /Jin/
 1 SEX M
 1 BIRT
@@ -15349,7 +15332,7 @@
 2 DATE 23 APR 2022
 3 TIME 03:19:17
 0 @F444@ FAM
-1 HUSB @Wen_of_Jin@
+1 HUSB @Duke_Wen_of_Jin@
 1 WIFE @I1133@
 1 CHIL @Xiang_of_Jin@
 1 CHIL @Cheng_of_Jin@
@@ -15555,7 +15538,7 @@
 1 CHAN
 2 DATE 23 APR 2022
 3 TIME 03:19:55
-0 @Zhao_of_Jin@ INDI
+0 @Duke_Zhao_of_Jin@ INDI
 1 NAME Zhao of Jin /Jin/
 1 SEX M
 1 BIRT
@@ -15569,7 +15552,7 @@
 0 @F451@ FAM
 1 HUSB @Ping_of_Jin@
 1 WIFE @I1149@
-1 CHIL @Zhao_of_Jin@
+1 CHIL @Duke_Zhao_of_Jin@
 1 CHAN
 2 DATE 23 APR 2022
 3 TIME 03:20:03
@@ -15595,7 +15578,7 @@
 2 DATE 23 APR 2022
 3 TIME 03:20:18
 0 @F452@ FAM
-1 HUSB @Zhao_of_Jin@
+1 HUSB @Duke_Zhao_of_Jin@
 1 WIFE @I1151@
 1 CHIL @Qing_of_Jin@
 1 CHIL @Dai_Ziyong@
