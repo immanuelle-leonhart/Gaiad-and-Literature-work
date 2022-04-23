@@ -6,7 +6,7 @@
 3 ADDR http://genj.sourceforge.net
 1 DEST ANY
 1 DATE 22 APR 2022
-2 TIME 20:31:35
+2 TIME 21:19:05
 1 SUBM @B1@
 1 FILE Gaiad.ged
 1 GEDC
@@ -15038,7 +15038,6 @@
 1 CHAN
 2 DATE 23 APR 2022
 3 TIME 01:11:12
-
 0 @Zhuang_Bo_of_Quwo@ INDI
 1 NAME Zhuang Bo of Quwo /Haplogroup O2a2b1a2/
 1 SEX M
@@ -15096,7 +15095,6 @@
 1 CHAN
 2 DATE 23 APR 2022
 3 TIME 03:15:47
-
 0 @F438@ FAM
 1 HUSB @Wu_of_Quwo_and_Jin@
 1 WIFE @I1115@
