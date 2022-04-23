@@ -16191,7 +16191,7 @@
 2 DATE 23 APR 2022
 3 TIME 03:30:47
 0 @Homo@ INDI
-1 NAME /Haplogroup CT/
+1 NAME Homo /Haplogroup CT/
 1 SEX M
 1 BIRT
 2 DATE
@@ -16209,7 +16209,7 @@
 2 DATE 23 APR 2022
 3 TIME 05:36:49
 0 @I1195@ INDI
-1 NAME /Haplogroup CT/
+1 NAME I1195 /Haplogroup CT/
 1 SEX F
 1 BIRT
 2 DATE
@@ -16222,12 +16222,12 @@
 1 HUSB @I1197@
 1 WIFE @I1196@
 1 CHIL @Homo@
-1 CHIL @Australopithecus garhi@
+1 CHIL @Australopithecus_garhi@
 1 CHAN
 2 DATE 23 APR 2022
 3 TIME 07:19:42
 0 @I1196@ INDI
-1 NAME /Haplogroup CT/
+1 NAME I1196 /Haplogroup CT/
 1 SEX F
 1 BIRT
 2 DATE
@@ -16242,7 +16242,7 @@
 2 DATE 23 APR 2022
 3 TIME 07:18:34
 0 @I1199@ INDI
-1 NAME
+1 NAME I1199 /Sedjes/
 1 SEX F
 1 BIRT
 2 DATE
@@ -16252,7 +16252,7 @@
 2 DATE 23 APR 2022
 3 TIME 05:37:13
 0 @I1197@ INDI
-1 NAME
+1 NAME I1197 /Sedjes/
 1 SEX M
 1 BIRT
 2 DATE
@@ -16262,8 +16262,8 @@
 1 CHAN
 2 DATE 23 APR 2022
 3 TIME 07:20:18
-0 @Australopithecus garhi@ INDI
-1 NAME /Haplogroup CT/
+0 @Australopithecus_garhi@ INDI
+1 NAME Australopithecus garhi /Haplogroup CT/
 1 SEX M
 1 BIRT
 2 DATE
@@ -16273,7 +16273,7 @@
 2 DATE 23 APR 2022
 3 TIME 07:19:42
 0 @I1200@ INDI
-1 NAME
+1 NAME I1200 /Sedjes/
 1 SEX M
 1 BIRT
 2 DATE
@@ -16287,12 +16287,12 @@
 1 HUSB @I1200@
 1 WIFE @I1201@
 1 CHIL @I1197@
-1 CHIL @Australopithecus Paranthropus robustus@
+1 CHIL @Australopithecus_Paranthropus_robustus@
 1 CHAN
 2 DATE 23 APR 2022
 3 TIME 07:20:35
 0 @I1201@ INDI
-1 NAME
+1 NAME I1201 /Sedjes/
 1 SEX F
 1 BIRT
 2 DATE
@@ -16301,8 +16301,8 @@
 1 CHAN
 2 DATE 23 APR 2022
 3 TIME 07:20:18
-0 @Australopithecus Paranthropus robustus@ INDI
-1 NAME
+0 @Australopithecus_Paranthropus_robustus@ INDI
+1 NAME Australopithecus_Paranthropus_robustus /Sedjes/
 1 SEX M
 1 BIRT
 2 DATE
@@ -16312,7 +16312,7 @@
 2 DATE 23 APR 2022
 3 TIME 07:20:35
 0 @Australopithecus@ INDI
-1 NAME
+1 NAME Australopithecus /Sedjes/
 1 SEX M
 1 BIRT
 2 DATE
@@ -16331,7 +16331,7 @@
 2 DATE 23 APR 2022
 3 TIME 07:21:17
 0 @I1203@ INDI
-1 NAME
+1 NAME I1203 /Sedjes/
 1 SEX F
 1 BIRT
 2 DATE
@@ -16341,7 +16341,7 @@
 2 DATE 23 APR 2022
 3 TIME 07:20:54
 0 @Ardipithecus@ INDI
-1 NAME
+1 NAME Ardipithecus /Sedjes/
 1 SEX M
 1 BIRT
 2 DATE
@@ -16351,7 +16351,7 @@
 2 DATE 23 APR 2022
 3 TIME 07:21:17
 0 @Sahelanthropus@ INDI
-1 NAME
+1 NAME Sahelanthropus /Sedjes/
 1 SEX M
 1 BIRT
 2 DATE
@@ -16368,7 +16368,7 @@
 2 DATE 23 APR 2022
 3 TIME 07:23:22
 0 @I1206@ INDI
-1 NAME
+1 NAME I1206 /Sedjes/
 1 SEX F
 1 BIRT
 2 DATE
