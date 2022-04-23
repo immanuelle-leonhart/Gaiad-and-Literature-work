@@ -6,7 +6,7 @@
 3 ADDR http://genj.sourceforge.net
 1 DEST ANY
 1 DATE 22 APR 2022
-2 TIME 21:19:05
+2 TIME 22:12:08
 1 SUBM @B1@
 1 FILE Gaiad.ged
 1 GEDC
@@ -9581,7 +9581,7 @@
 1 BIRT
 2 DATE
 2 PLAC
-1 NOTE As of 2016, two living males had been found to carry K-M2313(xNO-M214) – a British Asian who identifies as Telugu and an ethnic Malay sampled in Singapore.[3] Note that they were NOT tested for Y28299.
+1 NOTE As of 2016, two living males had been found to carry K-M2313(xNO-M214) - a British Asian who identifies as Telugu and an ethnic Malay sampled in Singapore.[3] Note that they were NOT tested for Y28299.
 2 CONT
 2 CONT http://www.nature.com/ng/journal/v48/n6/full/ng.3559.html
 1 FAMC @F279@
@@ -10662,10 +10662,10 @@
 2 CONT Basal DE* is extremely unusual in that it is found, at very low frequencies, among males from three widely separated regions: West Africa, the Caribbean, and East Asia.
 2 CONT
 2 CONT A 2003 study by Weale et al., of the DNA of over 8,000 males worldwide, found that five out of 1,247 Nigerian males belonged to DE*. The DE* found possessed by these five Nigerians, according to the study's authors, was "the least derived of all YAP chrom
-2 CONC osomes according to currently known binary markers" – to such an extent that it suggested that DE had originated in West Africa and expanded from there. However, Weale et al., cautioned that such inferences may well be incorrect. In addition, the seemingl
+2 CONC osomes according to currently known binary markers" - to such an extent that it suggested that DE had originated in West Africa and expanded from there. However, Weale et al., cautioned that such inferences may well be incorrect. In addition, the seemingl
 2 CONC y "paraphyletic" (basal) status of the Nigerian examples of DE-YAP may be "illusory" because the "branching order, and hence the origin, of YAP-derived haplogroups remains uncertain". It was "easy to misinterpret apparently paraphyletic groups", and subse
 2 CONC quent research might show that the Nigerian examples of DE were as divergent from DE*, D* and E*. "[T]he only genealogically meaningful definition of the age of a clade is the time to its most recent common ancestor, but only if DE* is truly paraphyleti
-2 CONC c does it ... become automatically older than D or E..." The relationship between DE*, according to Weale et al., "can be viewed as a missing-data problem..."[11] In 2007, another West African example of DE* was reported – carried by a speaker of the Nal
+2 CONC c does it ... become automatically older than D or E..." The relationship between DE*, according to Weale et al., "can be viewed as a missing-data problem..."[11] In 2007, another West African example of DE* was reported - carried by a speaker of the Nal
 2 CONC u language who was among 17 Y-DNA samples taken in Guinea Bissau. The sequence of this individual differed by one mutation from those of the Nigerian individuals, indicating common ancestry, although the relationship between the two lineages has not bee
 2 CONC n determined.[12]
 2 CONT
@@ -10683,9 +10683,9 @@
 2 CONC neages of the individuals belonging to DE-M145 due to the lack of subhaplogroups of E."[22]
 2 CONT
 2 CONT
-2 CONT All subclades of DE, including D and E, appear to be exceptionally rare – almost non-existent – in mainland South Asia and South East Asia. Given that D-M174 is dominant in Japan, the Andaman Islands, and Tibet, whereas E-M96 is relatively common in Afric
-2 CONC a and the Middle East, some researchers have suggested that the rarity of DE lineages in India – a region considered important in the dispersal of modern humans – may be meaningful.[4] By comparison, subclades of CF – the only "sibling" Haplogroup O2a2b1a
-2 CONC 2f DE – are found in India at significant proportions.
+2 CONT All subclades of DE, including D and E, appear to be exceptionally rare - almost non-existent - in mainland South Asia and South East Asia. Given that D-M174 is dominant in Japan, the Andaman Islands, and Tibet, whereas E-M96 is relatively common in Afric
+2 CONC a and the Middle East, some researchers have suggested that the rarity of DE lineages in India - a region considered important in the dispersal of modern humans - may be meaningful.[4] By comparison, subclades of CF - the only "sibling" Haplogroup O2a2b1a
+2 CONC 2f DE - are found in India at significant proportions.
 1 FAMC @F306@
 1 FAMS @F308@
 1 CHAN
@@ -11299,8 +11299,8 @@
 1 CHAN
 2 DATE 21 APR 2022
 3 TIME 18:01:54
-0 @Ōkuninushi@ INDI
-1 NAME Ōkuninushi /Sedjes/
+0 @okuninushi@ INDI
+1 NAME okuninushi /Sedjes/
 1 SEX M
 1 BIRT
 2 DATE
@@ -11311,7 +11311,7 @@
 2 DATE 21 APR 2022
 3 TIME 18:02:23
 0 @F325@ FAM
-1 HUSB @Ōkuninushi@
+1 HUSB @okuninushi@
 1 WIFE @I837@
 1 CHIL @Kotoshironushi@
 1 CHAN
@@ -11340,7 +11340,7 @@
 0 @F326@ FAM
 1 HUSB @Xufu@
 1 WIFE @I839@
-1 CHIL @Ōkuninushi@
+1 CHIL @okuninushi@
 1 CHAN
 2 DATE 21 APR 2022
 3 TIME 18:02:23
@@ -11765,8 +11765,8 @@
 1 HUSB @Lowland_East_Cushitic_languages@
 1 WIFE @I870@
 1 CHIL @Oromoid@
-1 CHIL @Omo–Tana@
-1 CHIL @Saho–Afar@
+1 CHIL @Omo-Tana@
+1 CHIL @Saho-Afar@
 1 CHAN
 2 DATE 21 APR 2022
 3 TIME 19:44:39
@@ -11813,8 +11813,8 @@
 1 CHAN
 2 DATE 21 APR 2022
 3 TIME 19:40:18
-0 @Omo–Tana@ INDI
-1 NAME Omo–Tana /Sedjes/
+0 @Omo-Tana@ INDI
+1 NAME Omo-Tana /Sedjes/
 1 SEX M
 1 BIRT
 2 DATE
@@ -11835,7 +11835,7 @@
 2 DATE 21 APR 2022
 3 TIME 19:41:36
 0 @F341@ FAM
-1 HUSB @Omo–Tana@
+1 HUSB @Omo-Tana@
 1 WIFE @I875@
 1 CHIL @Galaboid@
 1 CHIL @Somaloid@
@@ -11925,8 +11925,8 @@
 1 CHAN
 2 DATE 21 APR 2022
 3 TIME 19:43:25
-0 @Saho–Afar@ INDI
-1 NAME Saho–Afar /Sedjes/
+0 @Saho-Afar@ INDI
+1 NAME Saho-Afar /Sedjes/
 1 SEX M
 1 BIRT
 2 DATE
@@ -12797,7 +12797,7 @@
 1 HUSB @O2@
 1 WIFE @I953@
 1 CHIL @Sino-Tibetan@
-1 CHIL @Hmong–Mien@
+1 CHIL @Hmong-Mien@
 1 CHAN
 2 DATE 21 APR 2022
 3 TIME 20:52:31
@@ -12811,8 +12811,8 @@
 1 CHAN
 2 DATE 21 APR 2022
 3 TIME 20:52:20
-0 @Hmong–Mien@ INDI
-1 NAME Hmong–Mien /Haplogroup O2/
+0 @Hmong-Mien@ INDI
+1 NAME Hmong-Mien /Haplogroup O2/
 1 SEX M
 1 BIRT
 2 DATE
@@ -13903,8 +13903,8 @@
 1 CHAN
 2 DATE 22 APR 2022
 3 TIME 04:54:15
-0 @Atlantic–Congo@ INDI
-1 NAME Atlantic–Congo /Niger-Congo/
+0 @Atlantic-Congo@ INDI
+1 NAME Atlantic-Congo /Niger-Congo/
 1 SEX M
 1 BIRT
 2 DATE
@@ -13917,7 +13917,7 @@
 0 @F400@ FAM
 1 HUSB @Niger-Congo@
 1 WIFE @I1027@
-1 CHIL @Atlantic–Congo@
+1 CHIL @Atlantic-Congo@
 1 CHAN
 2 DATE 22 APR 2022
 3 TIME 04:54:15
@@ -13931,8 +13931,8 @@
 1 CHAN
 2 DATE 22 APR 2022
 3 TIME 04:54:15
-0 @Volta–Congo@ INDI
-1 NAME Volta–Congo /Niger-Congo/
+0 @Volta-Congo@ INDI
+1 NAME Volta-Congo /Niger-Congo/
 1 SEX M
 1 BIRT
 2 DATE
@@ -13943,9 +13943,9 @@
 2 DATE 22 APR 2022
 3 TIME 04:56:00
 0 @F401@ FAM
-1 HUSB @Atlantic–Congo@
+1 HUSB @Atlantic-Congo@
 1 WIFE @I1029@
-1 CHIL @Volta–Congo@
+1 CHIL @Volta-Congo@
 1 CHAN
 2 DATE 22 APR 2022
 3 TIME 04:55:23
@@ -13959,8 +13959,8 @@
 1 CHAN
 2 DATE 22 APR 2022
 3 TIME 04:55:23
-0 @Benue–Congo@ INDI
-1 NAME Benue–Congo /Niger-Congo/
+0 @Benue-Congo@ INDI
+1 NAME Benue-Congo /Niger-Congo/
 1 SEX M
 1 BIRT
 2 DATE
@@ -13971,9 +13971,9 @@
 2 DATE 22 APR 2022
 3 TIME 04:57:48
 0 @F402@ FAM
-1 HUSB @Volta–Congo@
+1 HUSB @Volta-Congo@
 1 WIFE @I1031@
-1 CHIL @Benue–Congo@
+1 CHIL @Benue-Congo@
 1 CHAN
 2 DATE 22 APR 2022
 3 TIME 04:56:00
@@ -13999,7 +13999,7 @@
 2 DATE 22 APR 2022
 3 TIME 04:59:03
 0 @F403@ FAM
-1 HUSB @Benue–Congo@
+1 HUSB @Benue-Congo@
 1 WIFE @I1033@
 1 CHIL @Bantoid@
 1 CHAN
@@ -14094,7 +14094,7 @@
 1 HUSB @Austro-Tai@
 1 WIFE @I1040@
 1 CHIL @Austronesius@
-1 CHIL @Kra–Dai@
+1 CHIL @Kra-Dai@
 1 CHAN
 2 DATE 22 APR 2022
 3 TIME 05:20:45
@@ -14108,8 +14108,8 @@
 1 CHAN
 2 DATE 22 APR 2022
 3 TIME 05:20:34
-0 @Kra–Dai@ INDI
-1 NAME Kra–Dai /Haplogroup O1a/
+0 @Kra-Dai@ INDI
+1 NAME Kra-Dai /Haplogroup O1a/
 1 SEX M
 1 BIRT
 2 DATE
@@ -14213,8 +14213,8 @@
 1 CHAN
 2 DATE 22 APR 2022
 3 TIME 05:33:24
-0 @Kōshō@ INDI
-1 NAME Kōshō /Tenno/
+0 @Kosho@ INDI
+1 NAME Kosho /Tenno/
 1 SEX M
 1 BIRT
 2 DATE
@@ -14227,7 +14227,7 @@
 0 @F410@ FAM
 1 HUSB @Itoku@
 1 WIFE @I1049@
-1 CHIL @Kōshō@
+1 CHIL @Kosho@
 1 CHAN
 2 DATE 22 APR 2022
 3 TIME 05:33:35
@@ -14252,15 +14252,15 @@
 2 DATE 22 APR 2022
 3 TIME 05:34:54
 0 @F411@ FAM
-1 HUSB @Kōshō@
+1 HUSB @Kosho@
 1 WIFE @Yosotarashi-hime@
-1 CHIL @Kōan@
+1 CHIL @Koan@
 1 CHIL @Ametarashihikokunioshihito@
 1 CHAN
 2 DATE 22 APR 2022
 3 TIME 05:38:09
-0 @Kōan@ INDI
-1 NAME Kōan /Tenno/
+0 @Koan@ INDI
+1 NAME Koan /Tenno/
 1 SEX M
 1 BIRT
 2 DATE
@@ -14310,14 +14310,14 @@
 2 DATE 22 APR 2022
 3 TIME 05:38:23
 0 @F413@ FAM
-1 HUSB @Kōan@
+1 HUSB @Koan@
 1 WIFE @Oshihime@
-1 CHIL @Kōrei@
+1 CHIL @Korei@
 1 CHAN
 2 DATE 22 APR 2022
 3 TIME 05:38:55
-0 @Kōrei@ INDI
-1 NAME Kōrei /Tenno/
+0 @Korei@ INDI
+1 NAME Korei /Tenno/
 1 SEX M
 1 BIRT
 2 DATE
@@ -14338,16 +14338,16 @@
 2 DATE 22 APR 2022
 3 TIME 05:39:16
 0 @F414@ FAM
-1 HUSB @Kōrei@
+1 HUSB @Korei@
 1 WIFE @Kuwashi-hime@
-1 CHIL @Kōgen@
+1 CHIL @Kogen@
 1 CHIL @Kibitsuhiko@
 1 CHIL @Wakatakehiko@
 1 CHAN
 2 DATE 22 APR 2022
 3 TIME 05:41:17
-0 @Kōgen@ INDI
-1 NAME Kōgen /Tenno/
+0 @Kogen@ INDI
+1 NAME Kogen /Tenno/
 1 SEX M
 1 BIRT
 2 DATE
@@ -14388,7 +14388,7 @@
 2 DATE 22 APR 2022
 3 TIME 05:42:40
 0 @F415@ FAM
-1 HUSB @Kōgen@
+1 HUSB @Kogen@
 1 WIFE @Igashikome@
 1 CHAN
 2 DATE 22 APR 2022
