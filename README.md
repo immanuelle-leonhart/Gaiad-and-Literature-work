@@ -1,2 +1,2 @@
-# Gaiad Genealogy
- Genealogy of the Gaiad
+# Gaiad genealogy
+ gedcoms for the Gaiad alongside photos
