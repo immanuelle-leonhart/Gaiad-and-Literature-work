@@ -11,12 +11,13 @@
 2 CORP MyHeritage.com
 1 SUBM @U1@
 1 DEST MYHERITAGE
-1 DATE 18 OCT 2024
-2 TIME 13:28:44 
+1 DATE 20 OCT 2024
+2 TIME 23:55:12 
 2 _TIMEZONE GMT+5.5
-1 _RINS I23224,F13391,N17536,M0,R0,S24,U530,L0,P14219,Q0,IF32170,FF1722
+1 _RINS I23401,F13472,N17689,M0,R0,S24,U531,L0,P14219,Q0,IF32213,FF1725
 1 _UID 670FC744D5A0D3580AA22EF79916B426
 1 _DESCRIPTION_AWARE Y
+1 _FACTS_DEFRAGGED Y
 0  _PUBLISH
 1 _USERNAME ericrichardbishop@@gmail.com
 1 _DISABLED Y
@@ -32,12 +33,12 @@
 1 RIN MH:U5
 0 @U6@ SUBM
 1 RIN MH:U6
+0 @U7@ SUBM
+1 RIN MH:U7
 1 ADDR
 2 CITY Waihi
 2 STAE Waikato
 2 CTRY New Zealand
-0 @U7@ SUBM
-1 RIN MH:U7
 0 @U8@ SUBM
 1 RIN MH:U8
 0 @U9@ SUBM
@@ -50,49 +51,49 @@
 1 RIN MH:U12
 0 @U13@ SUBM
 1 RIN MH:U13
+0 @U14@ SUBM
+1 RIN MH:U14
 1 ADDR
 2 CITY St. George
 2 STAE Utah
 2 POST 84770
 2 CTRY United States
-0 @U14@ SUBM
-1 RIN MH:U14
 0 @U15@ SUBM
 1 RIN MH:U15
 0 @U16@ SUBM
 1 RIN MH:U16
+0 @U17@ SUBM
+1 RIN MH:U17
 1 ADDR
 2 CITY Kongsberg
 2 STAE Buskerud
 2 CTRY Norway
-0 @U17@ SUBM
-1 RIN MH:U17
 0 @U18@ SUBM
 1 RIN MH:U18
+0 @U19@ SUBM
+1 RIN MH:U19
 1 ADDR 1 lieu dit Magrens
 2 ADR1 1 lieu dit Magrens
 2 CITY Lagrace-Dieu
 2 STAE Haute-Garonne
 2 POST 31190
 2 CTRY France
-0 @U19@ SUBM
-1 RIN MH:U19
 0 @U20@ SUBM
 1 RIN MH:U20
 0 @U21@ SUBM
 1 RIN MH:U21
+0 @U22@ SUBM
+1 RIN MH:U22
 1 ADDR
 2 CITY Kecskemét
 2 STAE Bacs-Kiskun
 2 CTRY Hungary
-0 @U22@ SUBM
-1 RIN MH:U22
+0 @U23@ SUBM
+1 RIN MH:U23
 1 ADDR
 2 CITY Grenoble
 2 STAE Rhône-Alpes
 2 CTRY France
-0 @U23@ SUBM
-1 RIN MH:U23
 0 @U24@ SUBM
 1 RIN MH:U24
 0 @U25@ SUBM
@@ -129,12 +130,12 @@
 1 RIN MH:U40
 0 @U41@ SUBM
 1 RIN MH:U41
+0 @U42@ SUBM
+1 RIN MH:U42
 1 ADDR
 2 CITY Cravinhos
 2 STAE State of São Paulo
 2 CTRY Brazil
-0 @U42@ SUBM
-1 RIN MH:U42
 0 @U43@ SUBM
 1 RIN MH:U43
 0 @U44@ SUBM
@@ -145,26 +146,26 @@
 1 RIN MH:U46
 0 @U47@ SUBM
 1 RIN MH:U47
+0 @U48@ SUBM
+1 RIN MH:U48
 1 ADDR
 2 CITY Palawan
 2 STAE MIMAROPA
 2 CTRY Philippines
-0 @U48@ SUBM
-1 RIN MH:U48
+0 @U49@ SUBM
+1 RIN MH:U49
 1 ADDR
 2 CITY South Bend
 2 STAE IN
 2 POST 46619
 2 CTRY United States
-0 @U49@ SUBM
-1 RIN MH:U49
 0 @U50@ SUBM
 1 RIN MH:U50
+0 @U51@ SUBM
+1 RIN MH:U51
 1 ADDR
 2 CITY Tal Menashe
 2 CTRY Israel
-0 @U51@ SUBM
-1 RIN MH:U51
 0 @U52@ SUBM
 1 RIN MH:U52
 0 @U53@ SUBM
@@ -189,11 +190,11 @@
 1 RIN MH:U62
 0 @U63@ SUBM
 1 RIN MH:U63
+0 @U64@ SUBM
+1 RIN MH:U64
 1 ADDR
 2 CITY 457 45  Hamburgsund
 2 CTRY Sweden
-0 @U64@ SUBM
-1 RIN MH:U64
 0 @U65@ SUBM
 1 RIN MH:U65
 0 @U66@ SUBM
@@ -210,13 +211,13 @@
 1 RIN MH:U71
 0 @U72@ SUBM
 1 RIN MH:U72
+0 @U73@ SUBM
+1 RIN MH:U73
 1 ADDR
 2 CITY Denver
 2 STAE Colorado
 2 POST 80202
 2 CTRY United States
-0 @U73@ SUBM
-1 RIN MH:U73
 0 @U74@ SUBM
 1 RIN MH:U74
 0 @U75@ SUBM
@@ -251,11 +252,11 @@
 1 RIN MH:U89
 0 @U90@ SUBM
 1 RIN MH:U90
+0 @U91@ SUBM
+1 RIN MH:U91
 1 ADDR
 2 CITY Johannesburg
 2 CTRY South Africa
-0 @U91@ SUBM
-1 RIN MH:U91
 0 @U92@ SUBM
 1 RIN MH:U92
 0 @U93@ SUBM
@@ -272,20 +273,20 @@
 1 RIN MH:U98
 0 @U99@ SUBM
 1 RIN MH:U99
+0 @U100@ SUBM
+1 RIN MH:U100
 1 ADDR
 2 CITY Ottestad
 2 STAE Hedmark
 2 CTRY Norway
-0 @U100@ SUBM
-1 RIN MH:U100
 0 @U101@ SUBM
 1 RIN MH:U101
+0 @U102@ SUBM
+1 RIN MH:U102
 1 ADDR
 2 CITY Tucson
 2 STAE Arizona
 2 CTRY United States
-0 @U102@ SUBM
-1 RIN MH:U102
 0 @U103@ SUBM
 1 RIN MH:U103
 0 @U104@ SUBM
@@ -354,12 +355,12 @@
 1 RIN MH:U135
 0 @U136@ SUBM
 1 RIN MH:U136
+0 @U137@ SUBM
+1 RIN MH:U137
 1 ADDR
 2 CITY Traverse City
 2 STAE Michigan
 2 CTRY United States
-0 @U137@ SUBM
-1 RIN MH:U137
 0 @U138@ SUBM
 1 RIN MH:U138
 0 @U139@ SUBM
@@ -388,16 +389,16 @@
 1 RIN MH:U150
 0 @U151@ SUBM
 1 RIN MH:U151
+0 @U152@ SUBM
+1 RIN MH:U152
 1 ADDR
 2 STAE Virginia
 2 CTRY United States
-0 @U152@ SUBM
-1 RIN MH:U152
+0 @U153@ SUBM
+1 RIN MH:U153
 1 ADDR Gandijeva 49B/49
 2 ADR1 Gandijeva 49B/49
 2 CITY Belgrade
-0 @U153@ SUBM
-1 RIN MH:U153
 0 @U154@ SUBM
 1 RIN MH:U154
 0 @U155@ SUBM
@@ -406,12 +407,12 @@
 1 RIN MH:U156
 0 @U157@ SUBM
 1 RIN MH:U157
+0 @U158@ SUBM
+1 RIN MH:U158
 1 ADDR
 2 CITY Fredericia
 2 STAE Syddanmark
 2 CTRY Danmark
-0 @U158@ SUBM
-1 RIN MH:U158
 0 @U159@ SUBM
 1 RIN MH:U159
 0 @U160@ SUBM
@@ -434,27 +435,27 @@
 1 RIN MH:U168
 0 @U169@ SUBM
 1 RIN MH:U169
+0 @U170@ SUBM
+1 RIN MH:U170
 1 ADDR
 2 CITY Rio de Janeiro
 2 STAE RJ
 2 CTRY Brasil
-0 @U170@ SUBM
-1 RIN MH:U170
+0 @U171@ SUBM
+1 RIN MH:U171
 1 ADDR
 2 CITY Sydney
 2 STAE New South Wales
 2 CTRY Australia
-0 @U171@ SUBM
-1 RIN MH:U171
 0 @U172@ SUBM
 1 RIN MH:U172
+0 @U173@ SUBM
+1 RIN MH:U173
 1 ADDR
 2 CITY Grand Rapids
 2 STAE MI
 2 POST 49525
 2 CTRY United States
-0 @U173@ SUBM
-1 RIN MH:U173
 0 @U174@ SUBM
 1 RIN MH:U174
 0 @U175@ SUBM
@@ -487,12 +488,12 @@
 1 RIN MH:U188
 0 @U189@ SUBM
 1 RIN MH:U189
+0 @U190@ SUBM
+1 RIN MH:U190
 1 ADDR
 2 CITY Bratislava
 2 STAE EU
 2 CTRY Slovakia
-0 @U190@ SUBM
-1 RIN MH:U190
 0 @U191@ SUBM
 1 RIN MH:U191
 0 @U192@ SUBM
@@ -531,11 +532,11 @@
 1 RIN MH:U208
 0 @U209@ SUBM
 1 RIN MH:U209
+0 @U210@ SUBM
+1 RIN MH:U210
 1 ADDR
 2 STAE Selangor
 2 CTRY Malaysia
-0 @U210@ SUBM
-1 RIN MH:U210
 0 @U211@ SUBM
 1 RIN MH:U211
 0 @U212@ SUBM
@@ -560,10 +561,10 @@
 1 RIN MH:U221
 0 @U222@ SUBM
 1 RIN MH:U222
-1 ADDR
-2 CTRY Brunei
 0 @U223@ SUBM
 1 RIN MH:U223
+1 ADDR
+2 CTRY Brunei
 0 @U224@ SUBM
 1 RIN MH:U224
 0 @U225@ SUBM
@@ -574,12 +575,12 @@
 1 RIN MH:U227
 0 @U228@ SUBM
 1 RIN MH:U228
+0 @U229@ SUBM
+1 RIN MH:U229
 1 ADDR
 2 CITY Kendal
 2 STAE Central Java
 2 CTRY Indonesia
-0 @U229@ SUBM
-1 RIN MH:U229
 0 @U230@ SUBM
 1 RIN MH:U230
 0 @U231@ SUBM
@@ -668,35 +669,35 @@
 1 RIN MH:U272
 0 @U273@ SUBM
 1 RIN MH:U273
+0 @U274@ SUBM
+1 RIN MH:U274
 1 ADDR
 2 CITY Santiago
 2 CTRY Chile
-0 @U274@ SUBM
-1 RIN MH:U274
 0 @U275@ SUBM
 1 RIN MH:U275
 0 @U276@ SUBM
 1 RIN MH:U276
 0 @U277@ SUBM
 1 RIN MH:U277
+0 @U278@ SUBM
+1 RIN MH:U278
 1 ADDR
 2 CITY Sarasota
 2 STAE FL
 2 CTRY United States
-0 @U278@ SUBM
-1 RIN MH:U278
 0 @U279@ SUBM
 1 RIN MH:U279
 0 @U280@ SUBM
 1 RIN MH:U280
 0 @U281@ SUBM
 1 RIN MH:U281
+0 @U282@ SUBM
+1 RIN MH:U282
 1 ADDR
 2 CITY Medellín
 2 STAE Antioquia
 2 CTRY Colombia
-0 @U282@ SUBM
-1 RIN MH:U282
 0 @U283@ SUBM
 1 RIN MH:U283
 0 @U284@ SUBM
@@ -721,11 +722,11 @@
 1 RIN MH:U293
 0 @U294@ SUBM
 1 RIN MH:U294
+0 @U295@ SUBM
+1 RIN MH:U295
 1 ADDR
 2 CITY MONTEVIDEO
 2 CTRY Uruguay
-0 @U295@ SUBM
-1 RIN MH:U295
 0 @U296@ SUBM
 1 RIN MH:U296
 0 @U297@ SUBM
@@ -784,12 +785,12 @@
 1 RIN MH:U323
 0 @U324@ SUBM
 1 RIN MH:U324
+0 @U325@ SUBM
+1 RIN MH:U325
 1 ADDR
 2 CITY Mexico City
 2 STAE Federal District
 2 CTRY Mexico
-0 @U325@ SUBM
-1 RIN MH:U325
 0 @U326@ SUBM
 1 RIN MH:U326
 0 @U327@ SUBM
@@ -854,13 +855,13 @@
 1 RIN MH:U356
 0 @U357@ SUBM
 1 RIN MH:U357
+0 @U358@ SUBM
+1 RIN MH:U358
 1 ADDR
 2 CITY Mount Morris Township
 2 STAE WI
 2 POST 54984
 2 CTRY United States
-0 @U358@ SUBM
-1 RIN MH:U358
 0 @U359@ SUBM
 1 RIN MH:U359
 0 @U360@ SUBM
@@ -875,21 +876,21 @@
 1 RIN MH:U364
 0 @U365@ SUBM
 1 RIN MH:U365
+0 @U366@ SUBM
+1 RIN MH:U366
 1 ADDR
 2 CITY Bogotá
 2 STAE Bogotá
 2 CTRY Colombia
-0 @U366@ SUBM
-1 RIN MH:U366
 0 @U367@ SUBM
 1 RIN MH:U367
 0 @U368@ SUBM
 1 RIN MH:U368
+0 @U369@ SUBM
+1 RIN MH:U369
 1 ADDR
 2 CITY Montevideo
 2 CTRY Uruguay
-0 @U369@ SUBM
-1 RIN MH:U369
 0 @U370@ SUBM
 1 RIN MH:U370
 0 @U371@ SUBM
@@ -920,12 +921,12 @@
 1 RIN MH:U383
 0 @U384@ SUBM
 1 RIN MH:U384
+0 @U385@ SUBM
+1 RIN MH:U385
 1 ADDR
 2 CITY Viña del Mar
 2 STAE Valparaíso Region
 2 CTRY Chile
-0 @U385@ SUBM
-1 RIN MH:U385
 0 @U386@ SUBM
 1 RIN MH:U386
 0 @U387@ SUBM
@@ -986,17 +987,17 @@
 1 RIN MH:U414
 0 @U415@ SUBM
 1 RIN MH:U415
+0 @U416@ SUBM
+1 RIN MH:U416
 1 ADDR
 2 CITY Kongsberg
 2 STAE Buskerud
 2 CTRY Norway
-0 @U416@ SUBM
-1 RIN MH:U416
+0 @U417@ SUBM
+1 RIN MH:U417
 1 ADDR
 2 CITY København
 2 CTRY Denmark
-0 @U417@ SUBM
-1 RIN MH:U417
 0 @U418@ SUBM
 1 RIN MH:U418
 0 @U419@ SUBM
@@ -1017,12 +1018,12 @@
 1 RIN MH:U426
 0 @U427@ SUBM
 1 RIN MH:U427
+0 @U428@ SUBM
+1 RIN MH:U428
 1 ADDR
 2 CITY Mar del Plata
 2 STAE Buenos Aires Province
 2 CTRY Argentina
-0 @U428@ SUBM
-1 RIN MH:U428
 0 @U429@ SUBM
 1 RIN MH:U429
 0 @U430@ SUBM
@@ -1035,12 +1036,12 @@
 1 RIN MH:U433
 0 @U434@ SUBM
 1 RIN MH:U434
+0 @U435@ SUBM
+1 RIN MH:U435
 1 ADDR
 2 CITY Madrid
 2 STAE Community of Madrid
 2 CTRY Spain
-0 @U435@ SUBM
-1 RIN MH:U435
 0 @U436@ SUBM
 1 RIN MH:U436
 0 @U437@ SUBM
@@ -1079,12 +1080,12 @@
 1 RIN MH:U453
 0 @U454@ SUBM
 1 RIN MH:U454
+0 @U455@ SUBM
+1 RIN MH:U455
 1 ADDR
 2 CITY Sydney
 2 STAE New South Wales
 2 CTRY Australia
-0 @U455@ SUBM
-1 RIN MH:U455
 0 @U456@ SUBM
 1 RIN MH:U456
 0 @U457@ SUBM
@@ -1101,22 +1102,22 @@
 1 RIN MH:U462
 0 @U463@ SUBM
 1 RIN MH:U463
+0 @U464@ SUBM
+1 RIN MH:U464
 1 ADDR
 2 CITY Saint Laurent de Cerdans
 2 STAE Pyrénées-Orientales
 2 CTRY France
-0 @U464@ SUBM
-1 RIN MH:U464
 0 @U465@ SUBM
 1 RIN MH:U465
+0 @U466@ SUBM
+1 RIN MH:U466
 1 ADDR  Kg baru kundang 
 2 ADR1  Kg baru kundang 
 2 CITY Rawang
 2 STAE Selangor
 2 POST 48000
 2 CTRY Malaysia
-0 @U466@ SUBM
-1 RIN MH:U466
 0 @U467@ SUBM
 1 RIN MH:U467
 0 @U468@ SUBM
@@ -1135,13 +1136,13 @@
 1 RIN MH:U474
 0 @U475@ SUBM
 1 RIN MH:U475
+0 @U476@ SUBM
+1 RIN MH:U476
 1 ADDR
 2 CITY Tucson
 2 STAE Arizona
 2 POST 85716
 2 CTRY United States
-0 @U476@ SUBM
-1 RIN MH:U476
 0 @U477@ SUBM
 1 RIN MH:U477
 0 @U478@ SUBM
@@ -1152,12 +1153,12 @@
 1 RIN MH:U480
 0 @U481@ SUBM
 1 RIN MH:U481
+0 @U482@ SUBM
+1 RIN MH:U482
 1 ADDR
 2 CITY Pannipitiya
 2 STAE WP
 2 CTRY Sri Lanka
-0 @U482@ SUBM
-1 RIN MH:U482
 0 @U483@ SUBM
 1 RIN MH:U483
 0 @U484@ SUBM
@@ -1180,12 +1181,12 @@
 1 RIN MH:U492
 0 @U493@ SUBM
 1 RIN MH:U493
+0 @U494@ SUBM
+1 RIN MH:U494
 1 ADDR
 2 CITY Palawan
 2 STAE MIMAROPA
 2 CTRY Philippines
-0 @U494@ SUBM
-1 RIN MH:U494
 0 @U495@ SUBM
 1 RIN MH:U495
 0 @U496@ SUBM
@@ -1200,25 +1201,25 @@
 1 RIN MH:U500
 0 @U501@ SUBM
 1 RIN MH:U501
+0 @U502@ SUBM
+1 RIN MH:U502
 1 ADDR
 2 CITY Waihi
 2 STAE Waikato
 2 CTRY New Zealand
-0 @U502@ SUBM
-1 RIN MH:U502
+0 @U503@ SUBM
+1 RIN MH:U503
 1 ADDR
 2 CITY 457 45  Hamburgsund
 2 CTRY Sweden
-0 @U503@ SUBM
-1 RIN MH:U503
 0 @U504@ SUBM
 1 RIN MH:U504
+0 @U505@ SUBM
+1 RIN MH:U505
 1 ADDR
 2 CITY Gurgaon
 2 STAE Haryana
 2 CTRY India
-0 @U505@ SUBM
-1 RIN MH:U505
 0 @U506@ SUBM
 1 RIN MH:U506
 0 @U507@ SUBM
@@ -1241,33 +1242,33 @@
 1 RIN MH:U515
 0 @U516@ SUBM
 1 RIN MH:U516
+0 @U517@ SUBM
+1 RIN MH:U517
 1 ADDR
 2 CITY Denver
 2 STAE Colorado
 2 POST 80202
 2 CTRY United States
-0 @U517@ SUBM
-1 RIN MH:U517
 0 @U518@ SUBM
 1 RIN MH:U518
 0 @U519@ SUBM
 1 RIN MH:U519
 0 @U520@ SUBM
 1 RIN MH:U520
+0 @U521@ SUBM
+1 RIN MH:U521
 1 ADDR
 2 CITY Fontaniva
 2 STAE Veneto
 2 CTRY Italy
-0 @U521@ SUBM
-1 RIN MH:U521
 0 @U522@ SUBM
 1 RIN MH:U522
+0 @U523@ SUBM
+1 RIN MH:U523
 1 ADDR
 2 CITY Grenoble
 2 STAE Rhône-Alpes
 2 CTRY France
-0 @U523@ SUBM
-1 RIN MH:U523
 0 @U524@ SUBM
 1 RIN MH:U524
 0 @U525@ SUBM
@@ -1280,14 +1281,16 @@
 1 RIN MH:U528
 0 @U529@ SUBM
 1 RIN MH:U529
+0 @U530@ SUBM
+1 RIN MH:U530
 1 ADDR 1 lieu dit Magrens
 2 ADR1 1 lieu dit Magrens
 2 CITY Lagrace-Dieu
 2 STAE Haute-Garonne
 2 POST 31190
 2 CTRY France
-0 @U530@ SUBM
-1 RIN MH:U530
+0 @U531@ SUBM
+1 RIN MH:U531
 0 @I1@ INDI
 1 RIN MH:I1
 1 _UID 66dfdfd760f561efbbc69822ef79916c
@@ -1407,7 +1410,7 @@
 0 @I12@ INDI
 1 RIN MH:I12
 1 _UID 66f688e76c63f1efbbeb9822ef79916c
-1 _UPD 27 SEP 2024 15:56:32 GMT+5.5
+1 _UPD 20 OCT 2024 23:36:56 GMT+5.5
 1 NAME Aenos	 /Bios Hesperides/
 2 GIVN Aenos	
 2 SURN Bios Hesperides
@@ -3249,7 +3252,7 @@
 0 @I22601@ INDI
 1 RIN MH:I22601
 1 _UID 670aca82c3ec71efbbff9822ef79916c
-1 _UPD 13 OCT 2024 00:41:50 GMT+5.5
+1 _UPD 20 OCT 2024 22:42:35 GMT+5.5
 1 NAME Freyr //
 2 GIVN Freyr
 1 SEX M
@@ -3261,7 +3264,7 @@
 0 @I22602@ INDI
 1 RIN MH:I22602
 1 _UID 670aca918e24d1efbbff9822ef79916c
-1 _UPD 13 OCT 2024 00:41:50 GMT+5.5
+1 _UPD 20 OCT 2024 22:42:35 GMT+5.5
 1 NAME Hera //
 2 GIVN Hera
 1 SEX F
@@ -3272,7 +3275,7 @@
 0 @I22603@ INDI
 1 RIN MH:I22603
 1 _UID 670acaa3c3ec71efbbff9822ef79916c
-1 _UPD 13 OCT 2024 00:41:50 GMT+5.5
+1 _UPD 20 OCT 2024 22:42:13 GMT+5.5
 1 NAME Dikar /Dikarya/
 2 GIVN Dikar
 2 SURN Dikarya
@@ -3280,7 +3283,7 @@
 1 BIRT
 2 _UID 670acaa9c3ec71efbbff9822ef79916c
 2 RIN MH:IF31717
-1 FAMC @F13090@
+1 FAMS @F13392@
 0 @I22604@ INDI
 1 RIN MH:I22604
 1 _UID 670acaaec3ec71efbbff9822ef79916c
@@ -5858,7 +5861,7 @@
 0 @I22835@ INDI
 1 RIN MH:I22835
 1 _UID 670cb4014e13a1efbbff9822ef79916c
-1 _UPD 14 OCT 2024 11:29:57 GMT+5.5
+1 _UPD 20 OCT 2024 23:20:55 GMT+5.5
 1 NAME Coleos Belemnos /Belemnoidea/
 2 GIVN Coleos Belemnos
 2 SURN Belemnoidea
@@ -5866,6 +5869,7 @@
 1 BIRT
 2 _UID 670cb4114e13a1efbbff9822ef79916c
 2 RIN MH:IF31907
+1 FAMS @F13457@
 1 FAMC @F13193@
 0 @I22836@ INDI
 1 RIN MH:I22836
@@ -5962,8 +5966,6 @@
 2 RIN MH:IF31914
 1 FAMS @F13199@
 1 FAMC @F13197@
-1 NOTE <p style="text-align: left;" dir="ltr">&nbsp;</p>
-2 CONT <p>"Lophos, son of Annelon, burrowed and found the best territory for himself. He laid his anus up above and fished from it. Source: Old Sutra 24."</p>
 0 @I22844@ INDI
 1 RIN MH:I22844
 1 _UID 670cb4dc4e13a1efbbff9822ef79916c
@@ -6014,8 +6016,6 @@
 2 RIN MH:IF31918
 1 FAMS @F13391@
 1 FAMC @F13199@
-1 NOTE <p style="text-align: left;" dir="ltr">&nbsp;</p>
-2 CONT <p>"Brachios, son of Lophos, grew great and powerful with great suits of armor. His sons became the Brachiopods who burrowed through the dirt eating worms. Source: Old Sutra 24."</p>
 0 @I22848@ INDI
 1 RIN MH:I22848
 1 _UID 670cb5583db021efbbff9822ef79916c
@@ -6884,7 +6884,7 @@
 1 OBJE
 2 FORM png
 2 TITL Guangweicaris restoration
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
 2 _PHOTO_RIN MH:P14156
 2 _FILESIZE 1711940
 0 @I22925@ INDI
@@ -6921,7 +6921,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Artistic reconstruction of Isoxys curvirostratus
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
 2 _POSITION 145 17 682 734
@@ -6930,7 +6930,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Artistic reconstruction of Isoxys curvirostratus
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\P14159_537_717.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14159_537_717.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14159
@@ -6952,7 +6952,7 @@
 1 OBJE
 2 FORM png
 2 TITL 20191028 Megacheirans Leanchoilia Haikoucaris Yohoia Fortiforceps
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
 2 _POSITION 637 8 1455 1099
@@ -6961,7 +6961,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL 20191028 Megacheirans Leanchoilia Haikoucaris Yohoia Fortiforceps
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\P14162_818_1091.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14162_818_1091.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14162
@@ -6996,7 +6996,7 @@
 1 OBJE
 2 FORM png
 2 TITL Pantopoda collage
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
 2 _POSITION 66 5 732 894
@@ -7005,7 +7005,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Pantopoda collage
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\P14164_666_889.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14164_666_889.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14164
@@ -7098,7 +7098,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Aquilonifer2
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
 2 _POSITION 58 5 919 1154
@@ -7107,7 +7107,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Aquilonifer2
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\P14166_861_1149.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14166_861_1149.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14166
@@ -7128,7 +7128,7 @@
 1 OBJE
 2 FORM png
 2 TITL Pakucaris
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
 2 _POSITION 0 1 824 1100
@@ -7137,7 +7137,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Pakucaris
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\P14169_824_1099.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14169_824_1099.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14169
@@ -7339,7 +7339,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Lancastria elongata
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
 2 _POSITION 195 5 1620 1906
@@ -7348,7 +7348,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Lancastria elongata
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\P14173_1425_1901.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14173_1425_1901.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14173
@@ -7384,7 +7384,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Terataspis grandis e
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
 2 _POSITION 5 17 353 481
@@ -7393,7 +7393,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Terataspis grandis e
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\P14171_348_464.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14171_348_464.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14171
@@ -7414,7 +7414,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Radiaspis sp., Middle Devonian, El Otfal Formation, Morocco - Houston Museum of Natural Science - DSC01607
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
 2 _POSITION 117 5 2014 2535
@@ -7423,7 +7423,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Radiaspis sp., Middle Devonian, El Otfal Formation, Morocco - Houston Museum of Natural Science - DSC01607
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\P14175_1897_2530.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14175_1897_2530.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14175
@@ -7450,7 +7450,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Asaphus
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
 2 _POSITION 47 5 693 867
@@ -7459,7 +7459,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Asaphus
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\P14177_646_862.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14177_646_862.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14177
@@ -7480,7 +7480,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Harpes perradiatus fossil trilobite (Devonian, Morocco)
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
 2 _POSITION 5 52 955 1319
@@ -7489,7 +7489,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Harpes perradiatus fossil trilobite (Devonian, Morocco)
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\P14179_950_1267.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14179_950_1267.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14179
@@ -7510,7 +7510,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Dalmanites limulurus trilobite silurian
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
 2 _POSITION 52 5 1137 1453
@@ -7519,7 +7519,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Dalmanites limulurus trilobite silurian
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\P14181_1085_1448.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14181_1085_1448.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14181
@@ -7540,7 +7540,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Aulacopleura konincki
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
 2 _POSITION 130 5 2035 2546
@@ -7549,7 +7549,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Aulacopleura konincki
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\P14183_1905_2541.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14183_1905_2541.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14183
@@ -7647,7 +7647,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Opiliones harvestman
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
 2 _POSITION 237 5 786 738
@@ -7656,7 +7656,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Opiliones harvestman
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\P14185_549_733.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14185_549_733.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14185
@@ -7703,7 +7703,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Sunspider
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
 2 _POSITION 5 177 1994 2829
@@ -7712,7 +7712,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Sunspider
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\P14187_1989_2652.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14187_1989_2652.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14187
@@ -7733,7 +7733,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Ricinulei from Fernandez & Giribet, nymph of Ricinoides atewa (2015) (cropped)
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
 2 _POSITION 178 5 564 520
@@ -7742,7 +7742,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Ricinulei from Fernandez & Giribet, nymph of Ricinoides atewa (2015) (cropped)
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\P14189_386_515.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14189_386_515.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14189
@@ -7777,7 +7777,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Trombidium holosericeum (aka)
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
 2 _POSITION 46 5 528 648
@@ -7786,7 +7786,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Trombidium holosericeum (aka)
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\P14191_482_643.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14191_482_643.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14191
@@ -7834,7 +7834,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Ar 1
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
 2 NOTE CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=219721
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
@@ -7844,7 +7844,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Ar 1
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\P14193_453_605.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14193_453_605.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14193
@@ -7866,7 +7866,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Ixodes hexagonus (aka)
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
 2 NOTE By André Karwath aka Aka - Own work, CC BY-SA 2.5, https://commons.wikimedia.org/w/index.php?curid=318254
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
@@ -7876,7 +7876,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Ixodes hexagonus (aka)
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\P14195_1046_1396.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14195_1046_1396.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14195
@@ -7978,7 +7978,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Jaekelopterus rhenaniae reconstruction
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
 2 _POSITION 1827 33 3675 2496
@@ -7987,7 +7987,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Jaekelopterus rhenaniae reconstruction
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\P14198_1848_2463.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14198_1848_2463.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14198
@@ -8009,7 +8009,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Eurypterus Paleoart
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
 2 NOTE By Obsidian SoulBackground: Dimitris Siskopoulos from Alexandroupolis, Greece - Own workBackground: Water_floor.jpg, CC BY 2.0, https://commons.wikimedia.org/w/index.php?curid=15267454
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
@@ -8019,7 +8019,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Eurypterus Paleoart
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\P14200_759_1013.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14200_759_1013.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14200
@@ -8128,7 +8128,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Asian forest scorpion in Khao Yai National Park
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
 2 NOTE By Chris huh - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=2542194
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
@@ -8138,7 +8138,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Asian forest scorpion in Khao Yai National Park
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\P14203_2573_3431.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14203_2573_3431.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14203
@@ -8179,7 +8179,7 @@
 1 OBJE
 2 FORM png
 2 TITL Sottyxerxes
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
 2 NOTE By Qohelet12 - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=127076280
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
@@ -8189,7 +8189,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Sottyxerxes
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\P14206_743_991.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14206_743_991.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14206
@@ -8284,12 +8284,10 @@
 2 RIN MH:IF32061
 1 FAMS @F13387@
 1 FAMC @F13269@
-1 NOTE <p style="text-align: left;" dir="ltr">&nbsp;</p>
-2 CONT <p>"Silvio, ancestor from whom Rhea is descended in the 20th generation. Represents the lineage leading up to the Carboniferous period. Source: Old Sutra 51."</p>
 1 OBJE
 2 FORM jpg
 2 TITL Insects - Neoptera - Paleoptera - Apterygota
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
 2 NOTE By Chiswick Chap - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=151232017
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
@@ -8299,7 +8297,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Insects - Neoptera - Paleoptera - Apterygota
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\P14208_801_1068.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14208_801_1068.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14208
@@ -8394,7 +8392,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Chthamalus stellatus
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
 2 NOTE By MichaelMaggs - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=4210566
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
@@ -8404,7 +8402,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Chthamalus stellatus
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\P14210_1743_2325.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14210_1743_2325.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14210
@@ -8531,7 +8529,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Gammarus roeselii
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
 2 NOTE By Michal Maňas - Own work, CC BY 2.5, https://commons.wikimedia.org/w/index.php?curid=1869909
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
@@ -8541,7 +8539,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Gammarus roeselii
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\P14213_924_1232.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14213_924_1232.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14213
@@ -8562,7 +8560,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Armadillidium vulgare 001
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
 2 NOTE By Franco Folini - San Francisco, California, CC BY 2.5, https://commons.wikimedia.org/w/index.php?curid=789616
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
@@ -8572,7 +8570,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Armadillidium vulgare 001
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\P14216_2013_2682.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14216_2013_2682.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14216
@@ -9066,7 +9064,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Bathochordaeus charon compared to B. stygius-0000
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
 2 NOTE By Sherlock, R.E., Walz, K.R. and Robison, B.H. - [1], CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=54570570
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
@@ -9076,7 +9074,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Bathochordaeus charon compared to B. stygius-0000
-2 FILE C:\Users\imman\Downloads\Gaiad Aster and Andromeda 2_Photos\P14219_210_280.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14219_210_280.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14219
@@ -9663,7 +9661,6 @@
 2 GIVN Agamemnon
 1 SEX M
 1 FAMS @F13347@
-1 NOTE "Agamemnon, a great ruler, father of Polycomb." Source: Old Sutra 44.
 0 @I23151@ INDI
 1 RIN MH:I23151
 1 _UID 670f8e52c366f1efbc019822ef79916c
@@ -9673,7 +9670,6 @@
 1 SEX F
 1 FAMS @F13347@
 1 FAMC @F13091@
-1 NOTE "Clytemnestra, a great ruler, mother of Polycomb." Source: Old Sutra 44.
 0 @I23152@ INDI
 1 RIN MH:I23152
 1 _UID 670f8e52de63c1efbc019822ef79916c
@@ -9683,8 +9679,6 @@
 1 SEX F
 1 FAMS @F13348@
 1 FAMC @F13347@
-1 NOTE "Polycomb, daughter of Clytemnestra and Agamemnon, overcame repression by destroying PRC2 (Polycomb Repressive Complex 2) and took over her mother's lands. She broke the barrier and grew spores, calyp
-2 CONC tra, stoma, and rhizoids. Source: Old Sutra 44."
 0 @I23153@ INDI
 1 RIN MH:I23153
 1 _UID 670f8e5262fdd1efbc019822ef79916c
@@ -9693,7 +9687,6 @@
 2 GIVN Auxin
 1 SEX F
 1 FAMC @F13348@
-1 NOTE "Auxin, daughter of Polycomb, grew towards the light guided by the plant hormone auxin, which regulates plant growth towards sunlight. Source: Old Sutra 44."
 0 @I23154@ INDI
 1 RIN MH:I23154
 1 _UID 670f8e52497c81efbc019822ef79916c
@@ -9703,7 +9696,6 @@
 1 SEX F
 1 FAMS @F13349@
 1 FAMC @F13348@
-1 NOTE "Knoxy, daughter of Polycomb, discovered the scroll KNOX2 (a gene regulating plant development). She and Xylon built a great kingdom stretching to the heavens. Source: Old Sutra 44."
 0 @I23155@ INDI
 1 RIN MH:I23155
 1 _UID 670f8e524b4231efbc019822ef79916c
@@ -9712,7 +9704,6 @@
 2 GIVN Xylon
 1 SEX M
 1 FAMS @F13349@
-1 NOTE "Xylon, husband of Knoxy, designated the clan of Xylem (tracheids) to carry water from roots to leaves, solving the problem of water transport in their kingdom. Source: Old Sutra 44."
 0 @I23156@ INDI
 1 RIN MH:I23156
 1 _UID 670f8e525479b1efbc019822ef79916c
@@ -9723,8 +9714,6 @@
 1 SEX M
 1 FAMS @F13350@
 1 FAMC @F13349@
-1 NOTE "Pholon, also known as Cookson, son of Knoxy and Xylon. He built channels called Phloem to transport food, addressing the demands of his Mycorrhizae. Through his efforts, he expanded his empire and pr
-2 CONC ovided for all, earning the name Cookson. Source: Old Sutra 44."
 0 @I23157@ INDI
 1 RIN MH:I23157
 1 _UID 670f8e526511f1efbc019822ef79916c
@@ -9734,8 +9723,6 @@
 1 SEX U
 1 FAMS @F13351@
 1 FAMC @F13350@
-1 NOTE "Unnamed child of Pholon (Cookson). The sons lived underground, relying on the wood-wide web rather than photosynthesis, leading to a swap in the roles of sporophyte and gametophyte. Source: Old Sutra
-2 CONC  44."
 0 @I23158@ INDI
 1 RIN MH:I23158
 1 _UID 670fc56cf0b901efbc019822ef79916c
@@ -9745,11 +9732,6 @@
 1 SEX M
 1 FAMS @F13352@
 1 FAMC @F13351@
-1 NOTE <p>"Tracheus, grandson of Pholon (Cookson), gave rise to the Tracheophytes (vascular plants). He built microphylls (leaves with a single vein) and established the clans of Collenchyma and Sclerenchyma
-2 CONC  to support his city, marking the beginning of the Devonian. Source: Old Sutra 44."</p>
-2 CONT <p>&nbsp;</p>
-2 CONT <p>&nbsp;</p>
-2 CONT <p>"Tracheus built leaves, microphylls with a vein into them to act as solar panels in his green energy plan. He built his city greater than even Pholon." Source: Old Sutra 44.</p>
 0 @I23159@ INDI
 1 RIN MH:I23159
 1 _UID 670fc56c8a7951efbc019822ef79916c
@@ -9759,7 +9741,6 @@
 1 SEX M
 1 FAMS @F13353@
 1 FAMC @F13352@
-1 NOTE "Arboreus, son of Tracheus, was a great settler king." Source: Old Sutra 44.
 0 @I23160@ INDI
 1 RIN MH:I23160
 1 _UID 670fc56c385981efbc019822ef79916c
@@ -9769,7 +9750,6 @@
 1 SEX M
 1 FAMS @F13354@
 1 FAMC @F13353@
-1 NOTE "Lycos released countless spores and by those spores he bore two sons: Isolagos and Lycopodion." Source: Old Sutra 44.
 0 @I23161@ INDI
 1 RIN MH:I23161
 1 _UID 670fc56c4299d1efbc019822ef79916c
@@ -9779,7 +9759,6 @@
 1 SEX M
 1 FAMS @F13355@
 1 FAMC @F13353@
-1 NOTE "Ginkgon branched his leaves two by two, and so his leaves were megaphyllic." Source: Old Sutra 44.
 0 @I23162@ INDI
 1 RIN MH:I23162
 1 _UID 670fc56cf5cae1efbc019822ef79916c
@@ -9789,7 +9768,6 @@
 1 SEX M
 1 FAMS @F13356@
 1 FAMC @F13354@
-1 NOTE "Isolagos split his spores male and female and raised his sons and daughters in his own city." Source: Old Sutra 44.
 0 @I23163@ INDI
 1 RIN MH:I23163
 1 _UID 670fc56c8f0ab1efbc019822ef79916c
@@ -9798,8 +9776,6 @@
 2 GIVN Lycopodion
 1 SEX M
 1 FAMC @F13354@
-1 NOTE "Lycopodion became the ancestor of the clubmosses; he built a city so giant it became known as the first tree, a scale tree. Today his spores are known as Lycopodium powder and used for the power of f
-2 CONC ire." Source: Old Sutra 44.
 0 @I23164@ INDI
 1 RIN MH:I23164
 1 _UID 670fc56c47ea31efbc019822ef79916c
@@ -9808,8 +9784,6 @@
 2 GIVN Quill
 1 SEX M
 1 FAMC @F13356@
-1 NOTE "The sons of Quill became known as the Quillworts; they grew their microphylls tall into the sky, with no stomata they absorbed air through the ground, grew their stems underground, their spores under
-2 CONC water." Source: Old Sutra 44.
 0 @I23165@ INDI
 1 RIN MH:I23165
 1 _UID 670fc56c685f21efbc019822ef79916c
@@ -9818,7 +9792,6 @@
 2 GIVN Sellagine
 1 SEX M
 1 FAMC @F13356@
-1 NOTE "The sons of Sellagine creeped their leaves across the ground; in dry times they died and in wet times they revived." Source: Old Sutra 44.
 0 @I23166@ INDI
 1 RIN MH:I23166
 1 _UID 670fc56cce6571efbc019822ef79916c
@@ -9828,7 +9801,6 @@
 1 SEX M
 1 FAMS @F13357@
 1 FAMC @F13355@
-1 NOTE "Phyllon, son of Ginkgon." Source: Old Sutra 44.
 0 @I23167@ INDI
 1 RIN MH:I23167
 1 _UID 670fc56c89c501efbc019822ef79916c
@@ -9838,7 +9810,6 @@
 1 SEX M
 1 FAMS @F13358@
 1 FAMC @F13357@
-1 NOTE "Phyllon begat Pteridos and Gymnos." Source: Old Sutra 44.
 0 @I23168@ INDI
 1 RIN MH:I23168
 1 _UID 670fc56c36f5b1efbc019822ef79916c
@@ -9847,7 +9818,6 @@
 2 GIVN Gymnos
 1 SEX M
 1 FAMC @F13357@
-1 NOTE "Gymnos, son of Phyllon." Source: Old Sutra 44.
 0 @I23169@ INDI
 1 RIN MH:I23169
 1 _UID 670fc56c445661efbc019822ef79916c
@@ -9857,7 +9827,6 @@
 1 SEX M
 1 FAMS @F13359@
 1 FAMC @F13358@
-1 NOTE "Pteridos begat Horsa and Euspor." Source: Old Sutra 44.
 0 @I23170@ INDI
 1 RIN MH:I23170
 1 _UID 670fc56ccb1691efbc019822ef79916c
@@ -9867,7 +9836,6 @@
 1 SEX M
 1 FAMS @F13361@
 1 FAMC @F13358@
-1 NOTE "Euspor begat Adderos and Fernando." Source: Old Sutra 44.
 0 @I23171@ INDI
 1 RIN MH:I23171
 1 _UID 670fc56c801181efbc019822ef79916c
@@ -9877,8 +9845,6 @@
 1 SEX M
 1 FAMS @F13360@
 1 FAMC @F13359@
-1 NOTE "Horsa begat Equis. Equis reduced his veins to one like Lycos and became ancestor of the puzzlegrass (horsetails). He built armor of silicon to protect his city from all dangers." Source: Old Sutra 44
-2 CONC .
 0 @I23172@ INDI
 1 RIN MH:I23172
 1 _UID 670fc56cfad1d1efbc019822ef79916c
@@ -9887,7 +9853,6 @@
 2 GIVN Puzella
 1 SEX F
 1 FAMS @F13360@
-1 NOTE "As a gametophyte, the spawn of Equis swam to find their bride, and they found Puzella and grew roots from there." Source: Old Sutra 44.
 0 @I23173@ INDI
 1 RIN MH:I23173
 1 _UID 670fc56cf51751efbc019822ef79916c
@@ -9896,7 +9861,6 @@
 2 GIVN Sons of Equis
 1 SEX M
 1 FAMC @F13360@
-1 NOTE "The sons of Equis and the daughters of Puzella came to rule all across the world." Source: Old Sutra 44.
 0 @I23174@ INDI
 1 RIN MH:I23174
 1 _UID 670fc56cb061c1efbc019822ef79916c
@@ -9905,7 +9869,6 @@
 2 GIVN Daughters of Equis
 1 SEX F
 1 FAMC @F13360@
-1 NOTE "The daughters of Equis and Puzella contributed to the spread of horsetails and puzzlegrass." Source: Old Sutra 44.
 0 @I23175@ INDI
 1 RIN MH:I23175
 1 _UID 670fc56cffa231efbc019822ef79916c
@@ -9915,7 +9878,6 @@
 1 SEX M
 1 FAMS @F13362@
 1 FAMC @F13361@
-1 NOTE "Adderos begat Ophios and Psilos." Source: Old Sutra 44.
 0 @I23176@ INDI
 1 RIN MH:I23176
 1 _UID 670fc56c70e2c1efbc019822ef79916c
@@ -9925,7 +9887,6 @@
 1 SEX M
 1 FAMS @F13368@
 1 FAMC @F13361@
-1 NOTE "Fernando uncoiled a great frond of leaves." Source: Old Sutra 44.
 0 @I23177@ INDI
 1 RIN MH:I23177
 1 _UID 670fc56c762d71efbc019822ef79916c
@@ -9934,7 +9895,6 @@
 2 GIVN Ophios
 1 SEX M
 1 FAMC @F13362@
-1 NOTE "Ophios became ancestor of the adder's-tongues; he built but one giant leaf." Source: Old Sutra 44.
 0 @I23178@ INDI
 1 RIN MH:I23178
 1 _UID 670fc56cced291efbc019822ef79916c
@@ -9943,7 +9903,6 @@
 2 GIVN Psilos
 1 SEX M
 1 FAMC @F13362@
-1 NOTE "Psilos became ancestor of the whisk ferns, for he built no leaves at all." Source: Old Sutra 44.
 0 @I23179@ INDI
 1 RIN MH:I23179
 1 _UID 670fc56cbecdf1efbc019822ef79916c
@@ -9953,7 +9912,6 @@
 1 SEX M
 1 FAMS @F13363@
 1 FAMC @F13368@
-1 NOTE "Maratton begat Maratidus and Leptos." Source: Old Sutra 44.
 0 @I23180@ INDI
 1 RIN MH:I23180
 1 _UID 670fc56cc40da1efbc019822ef79916c
@@ -9962,7 +9920,6 @@
 2 GIVN Maratidus
 1 SEX M
 1 FAMC @F13363@
-1 NOTE "Maratidus bore ten thousand spores on each leaf." Source: Old Sutra 44.
 0 @I23181@ INDI
 1 RIN MH:I23181
 1 _UID 670fc56c7b3d11efbc019822ef79916c
@@ -9971,7 +9928,6 @@
 2 GIVN Leptos
 1 SEX M
 1 FAMC @F13363@
-1 NOTE "Leptos bore a mere hundred spores on each leaf." Source: Old Sutra 44.
 0 @I23182@ INDI
 1 RIN MH:I23182
 1 _UID 670fc9fe8fb641efbc019822ef79916c
@@ -10025,7 +9981,7 @@
 0 @I23186@ INDI
 1 RIN MH:I23186
 1 _UID 670fcaa244ea91efbc019822ef79916c
-1 _UPD 16 OCT 2024 19:46:10 GMT+5.5
+1 _UPD 20 OCT 2024 23:41:50 GMT+5.5
 1 NAME Actinus /Actinopterygii/
 2 GIVN Actinus
 2 SURN Actinopterygii
@@ -10055,7 +10011,6 @@
 1 SEX U
 1 FAMS @F13388@
 1 FAMC @F13387@
-1 NOTE "Silvio, ancestor from whom Rhea is descended in the 20th generation. Represents the lineage leading up to the Carboniferous period. Source: Old Sutra 51."
 0 @I23189@ INDI
 1 RIN MH:I23189
 1 _UID 67100cc4657fc1efbc019822ef79916c
@@ -10064,7 +10019,6 @@
 2 GIVN Rhea
 1 SEX F
 1 FAMS @F13369@
-1 NOTE "Rhea, daughter in the 20th generation of Silvio. Symbolizes the continuity of life through a dark age (Romer's gap). Source: Old Sutra 51."
 0 @I23190@ INDI
 1 RIN MH:I23190
 1 _UID 67100cc4d00e11efbc019822ef79916c
@@ -10074,7 +10028,6 @@
 1 SEX M
 1 FAMS @F13369@
 1 FAMC @F13388@
-1 NOTE "Carbonifer, representing the Carboniferous period, partner of Rhea. Together they bore Romulus and Remus, defining the era. Source: Old Sutra 51."
 0 @I23191@ INDI
 1 RIN MH:I23191
 1 _UID 67100cc4569a61efbc019822ef79916c
@@ -10084,7 +10037,6 @@
 1 SEX M
 1 FAMS @F13370@
 1 FAMC @F13369@
-1 NOTE "Romulus, son of Carbonifer and Rhea. Climbed onto land with pierced spiracles and six legs, symbolizing early terrestrial arthropods. Source: Old Sutra 51."
 0 @I23192@ INDI
 1 RIN MH:I23192
 1 _UID 67100cc46c9001efbc019822ef79916c
@@ -10093,7 +10045,6 @@
 2 GIVN Remus
 1 SEX M
 1 FAMC @F13369@
-1 NOTE "Remus, son of Carbonifer and Rhea. After being blinded by Romulus, he lived underground in salty aquifers, representing subterranean life forms. Source: Old Sutra 51."
 0 @I23193@ INDI
 1 RIN MH:I23193
 1 _UID 67100cc4ad9f41efbc019822ef79916c
@@ -10103,7 +10054,6 @@
 1 SEX M
 1 FAMS @F13371@
 1 FAMC @F13370@
-1 NOTE "Hexapus, son of Romulus. Represents an early hexapod ancestor with six legs. Source: Old Sutra 51."
 0 @I23194@ INDI
 1 RIN MH:I23194
 1 _UID 67100cc417dcc1efbc019822ef79916c
@@ -10113,7 +10063,6 @@
 2 GIVN Proturus
 1 SEX M
 1 FAMC @F13371@
-1 NOTE "Proturus the Coneheaded, son of Hexapus. Became the ancestor of the house of Coneheads (Protura), primitive wingless hexapods. Source: Old Sutra 51."
 0 @I23195@ INDI
 1 RIN MH:I23195
 1 _UID 67100cc4ede851efbc019822ef79916c
@@ -10123,7 +10072,6 @@
 1 SEX M
 1 FAMS @F13372@
 1 FAMC @F13371@
-1 NOTE "Vernus, son of Hexapus. Married Collembo and became the ancestor of the Springtails (Collembola). Source: Old Sutra 51."
 0 @I23196@ INDI
 1 RIN MH:I23196
 1 _UID 67100cc46b7c21efbc019822ef79916c
@@ -10132,7 +10080,6 @@
 2 GIVN Collembo
 1 SEX F
 1 FAMS @F13372@
-1 NOTE "Collembo, wife of Vernus. Together with Vernus, they became the ancestors of the Springtails. Source: Old Sutra 51."
 0 @I23197@ INDI
 1 RIN MH:I23197
 1 _UID 67100cc43bb1b1efbc019822ef79916c
@@ -10142,7 +10089,6 @@
 1 SEX M
 1 FAMS @F13373@
 1 FAMC @F13372@
-1 NOTE "Tails, son of Vernus and Collembo. Had many tails and was loved by all, symbolizing the diversity of appendages in early arthropods. Source: Old Sutra 51."
 0 @I23198@ INDI
 1 RIN MH:I23198
 1 _UID 67100cc41bbd41efbc019822ef79916c
@@ -10151,7 +10097,6 @@
 2 GIVN Dipluron
 1 SEX M
 1 FAMC @F13373@
-1 NOTE "Dipluron, son of Tails. Became the father of the two-pronged bristletails (Diplura), wingless insects with cerci. Source: Old Sutra 51."
 0 @I23199@ INDI
 1 RIN MH:I23199
 1 _UID 67100cc42a3a81efbc019822ef79916c
@@ -10161,7 +10106,6 @@
 1 SEX M
 1 FAMS @F13374@
 1 FAMC @F13373@
-1 NOTE "Ectognus, son of Tails. Ancestor of insects with exposed mouthparts (Ectognatha). Source: Old Sutra 51."
 0 @I23200@ INDI
 1 RIN MH:I23200
 1 _UID 67100cc47af711efbc019822ef79916c
@@ -10170,7 +10114,6 @@
 2 GIVN Archegnos
 1 SEX M
 1 FAMC @F13374@
-1 NOTE "Archegnos, son of Ectognus. Became the ancestor of the jumping bristletails (Archaeognatha), known for their agility. Source: Old Sutra 51."
 0 @I23201@ INDI
 1 RIN MH:I23201
 1 _UID 67100cc4373fb1efbc019822ef79916c
@@ -10180,7 +10123,6 @@
 1 SEX M
 1 FAMS @F13375@
 1 FAMC @F13374@
-1 NOTE "Zerygos, son of Ectognus. Represents a lineage leading towards winged insects. Source: Old Sutra 51."
 0 @I23202@ INDI
 1 RIN MH:I23202
 1 _UID 67100cc491c8e1efbc019822ef79916c
@@ -10189,7 +10131,6 @@
 2 GIVN Zygentos
 1 SEX M
 1 FAMC @F13375@
-1 NOTE "Zygentos, son of Zerygos. Represents Zygentoma (silverfish), primitive insects without wings. Source: Old Sutra 51."
 0 @I23203@ INDI
 1 RIN MH:I23203
 1 _UID 67100cc4479101efbc019822ef79916c
@@ -10199,95 +10140,86 @@
 1 SEX M
 1 FAMS @F13376@
 1 FAMC @F13375@
-1 NOTE "Pterygos, son of Zerygos. Represents early winged insects (Pterygota). Lived underwater and developed gills. Source: Old Sutra 51."
 0 @I23204@ INDI
 1 RIN MH:I23204
 1 _UID 67100cc4c10571efbc019822ef79916c
-1 _UPD 17 OCT 2024 00:28:12 GMT+5.5
+1 _UPD 20 OCT 2024 22:51:00 GMT+5.5
 1 NAME Isopter //
-2 NPFX the twenty-gilled
 2 GIVN Isopter
+2 NSFX the twenty-gilled
 1 SEX M
 1 FAMS @F13377@
 1 FAMC @F13376@
-1 NOTE "Isopter the twenty-gilled, son of Pterygos. Began the evolutionary process of gliding using gill-like structures. Source: Old Sutra 51."
 0 @I23206@ INDI
 1 RIN MH:I23206
 1 _UID 67100cc4561a31efbc019822ef79916c
-1 _UPD 17 OCT 2024 00:28:12 GMT+5.5
+1 _UPD 20 OCT 2024 22:51:10 GMT+5.5
 1 NAME Dezotopter //
-2 NPFX the eighteen-gilled
 2 GIVN Dezotopter
+2 NSFX the eighteen-gilled
 1 SEX M
 1 FAMS @F13378@
 1 FAMC @F13377@
-1 NOTE "Dezotopter the eighteen-gilled, son of Isopter. Improved gliding capabilities over his father. Source: Old Sutra 51."
 0 @I23207@ INDI
 1 RIN MH:I23207
 1 _UID 67100cc46d7a71efbc019822ef79916c
-1 _UPD 17 OCT 2024 00:28:12 GMT+5.5
-1 NAME Seizapter //
-2 NPFX the sixteen-gilled
+1 _UPD 20 OCT 2024 22:51:20 GMT+5.5
+1 NAME Seizapter /the sixteen-gilled/
 2 GIVN Seizapter
+2 SURN the sixteen-gilled
 1 SEX M
 1 FAMS @F13379@
 1 FAMC @F13378@
-1 NOTE "Seizapter the sixteen-gilled, son of Dezotopter. Continued the trend of reducing gill numbers and enhancing flight. Source: Old Sutra 51."
 0 @I23208@ INDI
 1 RIN MH:I23208
 1 _UID 67100cc437bfe1efbc019822ef79916c
-1 _UPD 17 OCT 2024 00:28:12 GMT+5.5
-1 NAME Quatorzapter //
-2 NPFX the fourteen-gilled
+1 _UPD 20 OCT 2024 22:51:30 GMT+5.5
+1 NAME Quatorzapter /the fourteen-gilled/
 2 GIVN Quatorzapter
+2 SURN the fourteen-gilled
 1 SEX M
 1 FAMS @F13380@
 1 FAMC @F13379@
-1 NOTE "Quatorzapter the fourteen-gilled, son of Seizapter. Each generation glided more elegantly than the last. Source: Old Sutra 51."
 0 @I23209@ INDI
 1 RIN MH:I23209
 1 _UID 67100cc42abad1efbc019822ef79916c
-1 _UPD 17 OCT 2024 00:28:12 GMT+5.5
-1 NAME Duzapter //
-2 NPFX the twelve-gilled
+1 _UPD 20 OCT 2024 22:51:40 GMT+5.5
+1 NAME Duzapter /the twelve-gilled/
 2 GIVN Duzapter
+2 SURN the twelve-gilled
 1 SEX M
 1 FAMS @F13381@
 1 FAMC @F13380@
-1 NOTE "Duzapter the twelve-gilled, son of Quatorzapter. Further enhanced flight capabilities. Source: Old Sutra 51."
 0 @I23210@ INDI
 1 RIN MH:I23210
 1 _UID 67100cc49624c1efbc019822ef79916c
-1 _UPD 17 OCT 2024 00:28:12 GMT+5.5
-1 NAME Decapter //
-2 NPFX the ten-gilled
+1 _UPD 20 OCT 2024 22:51:49 GMT+5.5
+1 NAME Decapter /the ten-gilled/
 2 GIVN Decapter
+2 SURN the ten-gilled
 1 SEX M
 1 FAMS @F13382@
 1 FAMC @F13381@
-1 NOTE "Decapter the ten-gilled, son of Duzapter. Continued the evolutionary trend towards efficient flight. Source: Old Sutra 51."
 0 @I23211@ INDI
 1 RIN MH:I23211
 1 _UID 67100cc43b31e1efbc019822ef79916c
-1 _UPD 17 OCT 2024 00:28:12 GMT+5.5
-1 NAME Octapter //
-2 NPFX the eight-gilled
+1 _UPD 20 OCT 2024 22:52:03 GMT+5.5
+1 NAME Octapter /the eight-gilled/
 2 GIVN Octapter
+2 SURN the eight-gilled
 1 SEX M
 1 FAMS @F13383@
 1 FAMC @F13382@
-1 NOTE "Octapter the eight-gilled, son of Decapter. Represented significant advancements in flight structures. Source: Old Sutra 51."
 0 @I23212@ INDI
 1 RIN MH:I23212
 1 _UID 67100cc42634d1efbc019822ef79916c
-1 _UPD 17 OCT 2024 00:28:12 GMT+5.5
+1 _UPD 20 OCT 2024 22:52:14 GMT+5.5
 1 NAME Hexapter //
-2 NPFX the six-gilled
 2 GIVN Hexapter
+2 NSFX the six-gilled
 1 SEX M
 1 FAMS @F13384@
 1 FAMC @F13383@
-1 NOTE "Hexapter the six-gilled, son of Octapter. Greater than his ancestors, developed muscles to flap his gills, achieving powered flight. Source: Old Sutra 51."
 0 @I23213@ INDI
 1 RIN MH:I23213
 1 _UID 67100cc4748ca1efbc019822ef79916c
@@ -10297,7 +10229,6 @@
 1 SEX M
 1 FAMS @F13385@
 1 FAMC @F13384@
-1 NOTE "Insectus, son of Hexapter. Lived underwater during youth and flew upon maturity. Became the father of the insects. Source: Old Sutra 51."
 0 @I23214@ INDI
 1 RIN MH:I23214
 1 _UID 67100cc4244131efbc019822ef79916c
@@ -10306,7 +10237,6 @@
 2 GIVN Ephemeros
 1 SEX M
 1 FAMC @F13385@
-1 NOTE "Ephemeros, son of Insectus. Father of the Mayflies, lived a brief adult life solely to reproduce. Source: Old Sutra 51."
 0 @I23215@ INDI
 1 RIN MH:I23215
 1 _UID 67100cc4698991efbc019822ef79916c
@@ -10316,16 +10246,15 @@
 1 SEX M
 1 FAMS @F13386@
 1 FAMC @F13385@
-1 NOTE "Draco, son of Insectus. Shortened his tails to fly better and lived patiently. Source: Old Sutra 51."
 0 @I23216@ INDI
 1 RIN MH:I23216
 1 _UID 67100cc498df21efbc019822ef79916c
-1 _UPD 17 OCT 2024 00:28:12 GMT+5.5
+1 _UPD 20 OCT 2024 23:19:37 GMT+5.5
 1 NAME Neopter //
 2 GIVN Neopter
 1 SEX M
+1 FAMS @F13447@
 1 FAMC @F13386@
-1 NOTE "Neopter, son of Draco. Could fold his wings and walk on land, ancestor of most modern insects. Source: Old Sutra 51."
 0 @I23217@ INDI
 1 RIN MH:I23217
 1 _UID 67100cc4fe96d1efbc019822ef79916c
@@ -10334,7 +10263,6 @@
 2 GIVN Odonatos
 1 SEX M
 1 FAMC @F13386@
-1 NOTE "Odonatos, son of Draco. Had broad wings, couldn't walk, legs adapted for hunting. Ancestor of dragonflies, damselflies, and griffinflies. Source: Old Sutra 51."
 0 @I23218@ INDI
 1 RIN MH:I23218
 1 _UID 6710c10b333f81efbc019822ef79916c
@@ -10402,8 +10330,6 @@
 2 _UID 6710d11f4076a1efbc019822ef79916c
 2 RIN MH:IF32169
 1 FAMC @F13391@
-1 NOTE <p style="text-align: left;" dir="ltr">&nbsp;</p>
-2 CONT <p>"Hyolith, associated with Brachios. The sons of Brachios and Hyolith ruled the sands with their Lophophores. Source: Old Sutra 24."</p>
 0 @I23224@ INDI
 1 RIN MH:I23224
 1 _UID 6710d1204076a1efbc019822ef79916c
@@ -10416,6 +10342,1680 @@
 2 _UID 6710d12b4076a1efbc019822ef79916c
 2 RIN MH:IF32170
 1 FAMC @F13391@
+0 @I23225@ INDI
+1 RIN MH:I23225
+1 _UID 671537123b4f91efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:30:07 GMT+5.5
+1 NAME Ascus /Ascomycota/
+2 GIVN Ascus
+2 SURN Ascomycota
+1 SEX M
+1 BIRT
+2 _UID 67153717f01341efbc0b9822ef79916c
+2 RIN MH:IF32171
+1 FAMC @F13392@
+0 @I23226@ INDI
+1 RIN MH:I23226
+1 _UID 6715371af01341efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:30:20 GMT+5.5
+1 NAME Basidos /Basidiomycota/
+2 GIVN Basidos
+2 SURN Basidiomycota
+1 SEX M
+1 BIRT
+2 _UID 67153724f01341efbc0b9822ef79916c
+2 RIN MH:IF32172
+1 FAMC @F13392@
+0 @I23227@ INDI
+1 RIN MH:I23227
+1 _UID 67153734f01341efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:30:42 GMT+5.5
+1 NAME Entos /Entorrhizomycetes/
+2 GIVN Entos
+2 SURN Entorrhizomycetes
+1 SEX M
+1 BIRT
+2 _UID 6715373af01341efbc0b9822ef79916c
+2 RIN MH:IF32173
+1 FAMC @F13413@
+0 @I23228@ INDI
+1 RIN MH:I23228
+1 _UID 671538a3f01341efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
+1 NAME Freyr //
+2 GIVN Freyr
+1 SEX M
+1 NOTE Position in narrative: Ancestor, married to Hera, progenitor 20 generations prior to Plantus
+0 @I23229@ INDI
+1 RIN MH:I23229
+1 _UID 671538a3bddbe1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
+1 NAME Hera //
+2 GIVN Hera
+1 SEX F
+1 NOTE Position in narrative: Ancestor, married to Freyr, progenitor 20 generations prior to Plantus
+0 @I23230@ INDI
+1 RIN MH:I23230
+1 _UID 671538a3a0ded1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
+1 NAME Plantus //
+2 GIVN Plantus
+1 SEX M
+1 NOTE Position in narrative: Descendant of Freyr and Hera, son in the twentieth generation
+0 @I23231@ INDI
+1 RIN MH:I23231
+1 _UID 671538a3ed1671efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
+1 NAME Dikar //
+2 GIVN Dikar
+1 SEX M
+1 NOTE Position in narrative: Parasite on the sons of Plantus
+0 @I23232@ INDI
+1 RIN MH:I23232
+1 _UID 671538a3d71c11efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
+1 NAME Ferma //
+2 GIVN Ferma
+1 SEX F
+1 NOTE Position in narrative: Married to Dikar
+0 @I23233@ INDI
+1 RIN MH:I23233
+1 _UID 671538a37a0931efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
+1 NAME Ascus //
+2 GIVN Ascus
+1 SEX M
+1 NOTE Position in narrative: Son of Dikar and Ferma, parasite on the sons of Plantus, father of Cup Fungi
+0 @I23234@ INDI
+1 RIN MH:I23234
+1 _UID 671538a3ac50d1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
+1 NAME Baston //
+2 GIVN Baston
+1 SEX M
+1 NOTE Position in narrative: Son of Dikar and Ferma, parasite on the sons of Plantus, father of mushrooms
+0 @I23235@ INDI
+1 RIN MH:I23235
+1 _UID 671538a39d3891efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
+1 NAME Taphrin //
+2 GIVN Taphrin
+1 SEX M
+1 NOTE Position in narrative: Son of Ascus, lived as a yeast inside plants, father of the fission yeast
+0 @I23236@ INDI
+1 RIN MH:I23236
+1 _UID 671538a3d0f031efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
+1 NAME Saccharos //
+2 GIVN Saccharos
+1 SEX M
+1 NOTE Position in narrative: Son of Ascus, abandoned parasitism, lived freely in soils
+0 @I23237@ INDI
+1 RIN MH:I23237
+1 _UID 671538a3803da1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
+1 NAME Fission Yeast //
+2 GIVN Fission Yeast
+1 SEX M
+1 NOTE Position in narrative: Sons of Taphrin, cause pneumocystis pneumonia
+0 @I23238@ INDI
+1 RIN MH:I23238
+1 _UID 671538a3716b11efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
+1 NAME Peziz //
+2 GIVN Peziz
+1 SEX M
+1 NOTE Position in narrative: Son of Saccharos
+0 @I23239@ INDI
+1 RIN MH:I23239
+1 _UID 671538a31722e1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
+1 NAME Melchizedek //
+2 GIVN Melchizedek
+1 SEX M
+1 NOTE Position in narrative: Son of Saccharos, became a yeast, associated with bread and beer
+0 @I23240@ INDI
+1 RIN MH:I23240
+1 _UID 671538a3a27d11efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
+1 NAME Sphere Yeast //
+2 GIVN Sphere Yeast
+1 SEX M
+1 NOTE Position in narrative: Sons of Melchizedek, budded off from him in spheres
+0 @I23241@ INDI
+1 RIN MH:I23241
+1 _UID 671538a3acd081efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
+1 NAME Lopez //
+2 GIVN Lopez
+1 SEX M
+1 NOTE Position in narrative: Son of Peziz
+0 @I23242@ INDI
+1 RIN MH:I23242
+1 _UID 671538a3e11821efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
+1 NAME Orbillus //
+2 GIVN Orbillus
+1 SEX M
+1 NOTE Position in narrative: Son of Peziz, preyed upon the sons of Nematos for food
+0 @I23243@ INDI
+1 RIN MH:I23243
+1 _UID 671538a33741c1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
+1 NAME Nematos //
+2 GIVN Nematos
+1 SEX M
+1 NOTE Position in narrative: His sons are preyed upon by Orbillus
+0 @I23244@ INDI
+1 RIN MH:I23244
+1 _UID 671538a38bdfd1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
+1 NAME Ganymede //
+2 GIVN Ganymede
+1 SEX M
+1 NOTE Position in narrative: Twin son of Lopez, ancestor of the cup fungi
+0 @I23245@ INDI
+1 RIN MH:I23245
+1 _UID 671538a3a05e81efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
+1 NAME Leotios //
+2 GIVN Leotios
+1 SEX M
+1 NOTE Position in narrative: Twin son of Lopez, father of filamentous fungi
+0 @I23246@ INDI
+1 RIN MH:I23246
+1 _UID 671538a3f09311efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
+1 NAME Pyrenos //
+2 GIVN Pyrenos
+1 SEX M
+1 NOTE Position in narrative: Son of Leotios
+0 @I23247@ INDI
+1 RIN MH:I23247
+1 _UID 671538a3bd5bb1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
+1 NAME Lecanius //
+2 GIVN Lecanius
+1 SEX M
+1 NOTE Position in narrative: Son of Leotios, ancestor of lichens and others
+0 @I23248@ INDI
+1 RIN MH:I23248
+1 _UID 671538a38c33f1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
+1 NAME Penicillius //
+2 GIVN Penicillius
+1 SEX M
+1 NOTE Position in narrative: Creator of blue cheese and penicillin
+0 @I23249@ INDI
+1 RIN MH:I23249
+1 _UID 671538a35a6a11efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
+1 NAME Capnos //
+2 GIVN Capnos
+1 SEX M
+1 NOTE Position in narrative: Father of the soot mold
+0 @I23250@ INDI
+1 RIN MH:I23250
+1 _UID 671538a3dcfe61efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
+1 NAME Baset //
+2 GIVN Baset
+1 SEX M
+1 NOTE Position in narrative: Son of Baston
+0 @I23251@ INDI
+1 RIN MH:I23251
+1 _UID 671538a3629821efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
+1 NAME Ortho //
+2 GIVN Ortho
+1 SEX M
+1 NOTE Position in narrative: Son of Baset
+0 @I23252@ INDI
+1 RIN MH:I23252
+1 _UID 671538a34be121efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
+1 NAME Puccini //
+2 GIVN Puccini
+1 SEX M
+1 NOTE Position in narrative: Son of Baset, father of rusts
+0 @I23253@ INDI
+1 RIN MH:I23253
+1 _UID 671538a31b2cb1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
+1 NAME Botry //
+2 GIVN Botry
+1 SEX M
+1 NOTE Position in narrative: Son of Puccini, rejected multicellularity, became a yeast
+0 @I23254@ INDI
+1 RIN MH:I23254
+1 _UID 671538a34994c1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
+1 NAME Ustella //
+2 GIVN Ustella
+1 SEX F
+1 NOTE Position in narrative: Daughter of Ortho, mother of smuts, blesses corn harvests
+0 @I23255@ INDI
+1 RIN MH:I23255
+1 _UID 671538a39fcd21efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
+1 NAME Agaricus I //
+2 GIVN Agaricus I
+1 SEX M
+1 NOTE Position in narrative: Son of Ortho, abandoned parasitism, went to live in the desert
+0 @I23256@ INDI
+1 RIN MH:I23256
+1 _UID 671538a3195951efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
+1 NAME Jello //
+2 GIVN Jello
+1 SEX M
+1 NOTE Position in narrative: Son of Agaricus I, formed a gelatinous vessel for his spores
+0 @I23257@ INDI
+1 RIN MH:I23257
+1 _UID 671538a3235331efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
+1 NAME Bartholomew //
+2 GIVN Bartholomew
+1 SEX M
+1 NOTE Position in narrative: Son of Agaricus I
+0 @I23258@ INDI
+1 RIN MH:I23258
+1 _UID 671538a3451ac1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
+1 NAME William //
+2 GIVN William
+1 SEX M
+1 NOTE Position in narrative: Son of Agaricus I
+0 @I23259@ INDI
+1 RIN MH:I23259
+1 _UID 671538a3934321efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
+1 NAME Gemini //
+2 GIVN Gemini
+1 SEX M
+1 NOTE Position in narrative: Son of Agaricus I
+0 @I23260@ INDI
+1 RIN MH:I23260
+1 _UID 671538a3a22b61efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
+1 NAME Tremello //
+2 GIVN Tremello
+1 SEX M
+1 NOTE Position in narrative: Son of Jello, spent youth as a yeast, built a great jellyshroom
+0 @I23261@ INDI
+1 RIN MH:I23261
+1 _UID 671538a3efe3c1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
+1 NAME Dagar //
+2 GIVN Dagar
+1 SEX M
+1 NOTE Position in narrative: Son of Jello
+0 @I23262@ INDI
+1 RIN MH:I23262
+1 _UID 671538a3f2e6f1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
+1 NAME Dacrum //
+2 GIVN Dacrum
+1 SEX M
+1 NOTE Position in narrative: Son of Dagar, ancestor of the jelly fungi
+0 @I23263@ INDI
+1 RIN MH:I23263
+1 _UID 671538a3bf2e51efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
+1 NAME Agaricus II //
+2 GIVN Agaricus II
+1 SEX M
+1 NOTE Position in narrative: Son of Dagar, created the first mushroom; his sons create nourishing mushrooms, some become toxic toadstools
+0 @I23264@ INDI
+1 RIN MH:I23264
+1 _UID 671538a3852431efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
+1 NAME Toadstools //
+2 GIVN Toadstools
+1 SEX M
+1 NOTE Position in narrative: Corrupted mushrooms, toxic due to toads sitting on them
+0 @I23265@ INDI
+1 RIN MH:I23265
+1 _UID 671538a3283111efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
+1 NAME Nourishing Mushrooms //
+2 GIVN Nourishing Mushrooms
+1 SEX M
+1 NOTE Position in narrative: Sons of Agaricus II, create many nourishing mushrooms
+0 @I23266@ INDI
+1 RIN MH:I23266
+1 _UID 6715399ff01341efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:40:55 GMT+5.5
+1 NAME Freyr //
+2 GIVN Freyr
+1 SEX M
+1 FAMS @F13412@
+1 NOTE Position in narrative: Ancestor, married to Hera, progenitor 20 generations prior to Plantus.
+0 @I23267@ INDI
+1 RIN MH:I23267
+1 _UID 6715399fbddbe1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:40:55 GMT+5.5
+1 NAME Hera //
+2 GIVN Hera
+1 SEX F
+1 FAMS @F13412@
+1 NOTE Position in narrative: Ancestor, married to Freyr, progenitor 20 generations prior to Plantus.
+0 @I23268@ INDI
+1 RIN MH:I23268
+1 _UID 6715399fa0ded1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:40:55 GMT+5.5
+1 NAME Plantus //
+2 GIVN Plantus
+1 SEX M
+1 FAMC @F13412@
+1 NOTE Position in narrative: Descendant of Freyr and Hera, son in the twentieth generation.
+0 @I23269@ INDI
+1 RIN MH:I23269
+1 _UID 6715399fed1671efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:42:44 GMT+5.5
+1 NAME Dikar /Dikarya/
+2 GIVN Dikar
+2 SURN Dikarya
+1 SEX M
+1 FAMS @F13413@
+1 FAMC @F13090@
+1 NOTE Position in narrative: Parasite on the sons of Plantus; married to Ferma.
+0 @I23270@ INDI
+1 RIN MH:I23270
+1 _UID 6715399fd71c11efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:42:13 GMT+5.5
+1 NAME Ferma //
+2 GIVN Ferma
+1 SEX F
+1 FAMS @F13413@
+1 NOTE Position in narrative: Married to Dikar.
+0 @I23271@ INDI
+1 RIN MH:I23271
+1 _UID 6715399f7a0931efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:41:56 GMT+5.5
+1 NAME Ascus /Ascomycota/
+2 GIVN Ascus
+2 SURN Ascomycota
+1 SEX M
+1 FAMS @F13414@
+1 FAMC @F13413@
+1 NOTE Position in narrative: Son of Dikar and Ferma; parasite on the sons of Plantus; father of the Cup Fungi.
+0 @I23272@ INDI
+1 RIN MH:I23272
+1 _UID 6715399fac50d1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:42:02 GMT+5.5
+1 NAME Baston /Basidiomycota/
+2 GIVN Baston
+2 SURN Basidiomycota
+1 SEX M
+1 FAMS @F13422@
+1 FAMC @F13413@
+1 NOTE Position in narrative: Son of Dikar and Ferma; parasite on the sons of Plantus; father of the mushrooms.
+0 @I23273@ INDI
+1 RIN MH:I23273
+1 _UID 6715399f9d3891efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:40:55 GMT+5.5
+1 NAME Taphrin //
+2 GIVN Taphrin
+1 SEX M
+1 FAMS @F13415@
+1 FAMC @F13414@
+1 NOTE Position in narrative: Son of Ascus; lived as a yeast inside plants; father of the fission yeast.
+0 @I23274@ INDI
+1 RIN MH:I23274
+1 _UID 6715399fd0f031efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:40:55 GMT+5.5
+1 NAME Saccharos //
+2 GIVN Saccharos
+1 SEX M
+1 FAMS @F13416@
+1 FAMC @F13414@
+1 NOTE Position in narrative: Son of Ascus; abandoned parasitism; lived freely in soils.
+0 @I23275@ INDI
+1 RIN MH:I23275
+1 _UID 6715399f803da1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:40:55 GMT+5.5
+1 NAME Fission Yeast //
+2 GIVN Fission Yeast
+1 SEX M
+1 FAMC @F13415@
+1 NOTE Position in narrative: Sons of Taphrin; live in our lungs; cause pneumocystis pneumonia.
+0 @I23276@ INDI
+1 RIN MH:I23276
+1 _UID 6715399f716b11efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:40:55 GMT+5.5
+1 NAME Peziz //
+2 GIVN Peziz
+1 SEX M
+1 FAMS @F13418@
+1 FAMC @F13416@
+1 NOTE Position in narrative: Son of Saccharos.
+0 @I23277@ INDI
+1 RIN MH:I23277
+1 _UID 6715399f1722e1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:40:55 GMT+5.5
+1 NAME Melchizedek //
+2 GIVN Melchizedek
+1 SEX M
+1 FAMS @F13417@
+1 FAMC @F13416@
+1 NOTE Position in narrative: Son of Saccharos; became a small single cell yeast; associated with bread and beer.
+0 @I23278@ INDI
+1 RIN MH:I23278
+1 _UID 6715399fa27d11efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:40:55 GMT+5.5
+1 NAME Spherical Yeast //
+2 GIVN Spherical Yeast
+1 SEX M
+1 FAMC @F13417@
+1 NOTE Position in narrative: Sons of Melchizedek; budded off from him in spheres.
+0 @I23279@ INDI
+1 RIN MH:I23279
+1 _UID 6715399facd081efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:40:55 GMT+5.5
+1 NAME Lopez //
+2 GIVN Lopez
+1 SEX M
+1 FAMS @F13419@
+1 FAMC @F13418@
+1 NOTE Position in narrative: Son of Peziz.
+0 @I23280@ INDI
+1 RIN MH:I23280
+1 _UID 6715399fe11821efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:40:55 GMT+5.5
+1 NAME Orbillus //
+2 GIVN Orbillus
+1 SEX M
+1 FAMC @F13418@
+1 NOTE Position in narrative: Son of Peziz; preyed upon the sons of Nematos.
+0 @I23281@ INDI
+1 RIN MH:I23281
+1 _UID 6715399fb1d5b1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:40:55 GMT+5.5
+1 NAME Ganymede //
+2 GIVN Ganymede
+1 SEX M
+1 FAMC @F13419@
+1 NOTE Position in narrative: Twin son of Lopez; ancestor of the cup fungi.
+0 @I23282@ INDI
+1 RIN MH:I23282
+1 _UID 6715399f8bdfd1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:40:55 GMT+5.5
+1 NAME Leotios //
+2 GIVN Leotios
+1 SEX M
+1 FAMS @F13420@
+1 FAMC @F13419@
+1 NOTE Position in narrative: Twin son of Lopez; father of the filamentous fungi.
+0 @I23283@ INDI
+1 RIN MH:I23283
+1 _UID 6715399f26caf1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:40:55 GMT+5.5
+1 NAME Pyrenos //
+2 GIVN Pyrenos
+1 SEX M
+1 FAMC @F13420@
+1 NOTE Position in narrative: Son of Leotios.
+0 @I23284@ INDI
+1 RIN MH:I23284
+1 _UID 6715399ff09311efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:40:55 GMT+5.5
+1 NAME Lecanius //
+2 GIVN Lecanius
+1 SEX M
+1 FAMS @F13421@
+1 FAMC @F13420@
+1 NOTE Position in narrative: Son of Leotios; ancestor of lichens and others.
+0 @I23285@ INDI
+1 RIN MH:I23285
+1 _UID 6715399fc1fb51efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:40:55 GMT+5.5
+1 NAME Penicillius //
+2 GIVN Penicillius
+1 SEX M
+1 FAMC @F13421@
+1 NOTE Position in narrative: Descendant of Lecanius; creator of blue cheese and penicillin.
+0 @I23286@ INDI
+1 RIN MH:I23286
+1 _UID 6715399f8c33f1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:40:55 GMT+5.5
+1 NAME Capnos //
+2 GIVN Capnos
+1 SEX M
+1 FAMC @F13421@
+1 NOTE Position in narrative: Descendant of Lecanius; father of the Soot Mold.
+0 @I23287@ INDI
+1 RIN MH:I23287
+1 _UID 6715399f9136c1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:40:55 GMT+5.5
+1 NAME Baset //
+2 GIVN Baset
+1 SEX M
+1 FAMS @F13423@
+1 FAMC @F13422@
+1 NOTE Position in narrative: Son of Baston.
+0 @I23288@ INDI
+1 RIN MH:I23288
+1 _UID 6715399f2da8d1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:40:55 GMT+5.5
+1 NAME Ortho //
+2 GIVN Ortho
+1 SEX M
+1 FAMS @F13425@
+1 FAMC @F13423@
+1 NOTE Position in narrative: Son of Baset.
+0 @I23289@ INDI
+1 RIN MH:I23289
+1 _UID 6715399f629821efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:40:55 GMT+5.5
+1 NAME Puccini //
+2 GIVN Puccini
+1 SEX M
+1 FAMS @F13424@
+1 FAMC @F13423@
+1 NOTE Position in narrative: Son of Baset; father of rusts.
+0 @I23290@ INDI
+1 RIN MH:I23290
+1 _UID 6715399f56e411efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:40:55 GMT+5.5
+1 NAME Botry //
+2 GIVN Botry
+1 SEX M
+1 FAMC @F13424@
+1 NOTE Position in narrative: Son of Puccini; rejected multicellularity; became a yeast.
+0 @I23291@ INDI
+1 RIN MH:I23291
+1 _UID 6715399f45c671efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:40:55 GMT+5.5
+1 NAME Ustella //
+2 GIVN Ustella
+1 SEX F
+1 FAMS @F13426@
+1 FAMC @F13425@
+1 NOTE Position in narrative: Daughter of Ortho; mother of smuts.
+0 @I23292@ INDI
+1 RIN MH:I23292
+1 _UID 6715399f4994c1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:40:55 GMT+5.5
+1 NAME Agaricus I //
+2 GIVN Agaricus I
+1 SEX M
+1 FAMS @F13427@
+1 FAMC @F13425@
+1 NOTE Position in narrative: Son of Ortho; abandoned parasitism; went to live in the desert.
+0 @I23293@ INDI
+1 RIN MH:I23293
+1 _UID 6715399f5491f1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:40:55 GMT+5.5
+1 NAME Smuts //
+2 GIVN Smuts
+1 SEX F
+1 FAMC @F13426@
+1 NOTE Position in narrative: Daughters of Ustella; bless corn harvests.
+0 @I23294@ INDI
+1 RIN MH:I23294
+1 _UID 6715399fe80fe1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:40:55 GMT+5.5
+1 NAME Jello //
+2 GIVN Jello
+1 SEX M
+1 FAMS @F13428@
+1 FAMC @F13427@
+1 NOTE Position in narrative: Son of Agaricus I; formed a gelatinous vessel for his spores.
+0 @I23295@ INDI
+1 RIN MH:I23295
+1 _UID 6715399fc38eb1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:40:55 GMT+5.5
+1 NAME Bartholomew //
+2 GIVN Bartholomew
+1 SEX M
+1 FAMC @F13427@
+1 NOTE Position in narrative: Son of Agaricus I.
+0 @I23296@ INDI
+1 RIN MH:I23296
+1 _UID 6715399f8e4611efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:40:55 GMT+5.5
+1 NAME William //
+2 GIVN William
+1 SEX M
+1 FAMC @F13427@
+1 NOTE Position in narrative: Son of Agaricus I.
+0 @I23297@ INDI
+1 RIN MH:I23297
+1 _UID 6715399f581ff1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:40:55 GMT+5.5
+1 NAME Gemini //
+2 GIVN Gemini
+1 SEX M
+1 FAMC @F13427@
+1 NOTE Position in narrative: Son of Agaricus I.
+0 @I23298@ INDI
+1 RIN MH:I23298
+1 _UID 6715399f6977b1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:40:55 GMT+5.5
+1 NAME Tremello //
+2 GIVN Tremello
+1 SEX M
+1 FAMC @F13428@
+1 NOTE Position in narrative: Son of Jello; spent youth as a yeast; built a great jellyshroom.
+0 @I23299@ INDI
+1 RIN MH:I23299
+1 _UID 6715399f24bf11efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:40:55 GMT+5.5
+1 NAME Dagar //
+2 GIVN Dagar
+1 SEX M
+1 FAMS @F13429@
+1 FAMC @F13428@
+1 NOTE Position in narrative: Son of Jello.
+0 @I23300@ INDI
+1 RIN MH:I23300
+1 _UID 6715399f747281efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:40:55 GMT+5.5
+1 NAME Dacrum //
+2 GIVN Dacrum
+1 SEX M
+1 FAMC @F13429@
+1 NOTE Position in narrative: Son of Dagar; ancestor of jelly fungi.
+0 @I23301@ INDI
+1 RIN MH:I23301
+1 _UID 6715399f4e78e1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:40:55 GMT+5.5
+1 NAME Agaricus II //
+2 GIVN Agaricus II
+1 SEX M
+1 FAMS @F13430@
+1 FAMC @F13429@
+1 NOTE Position in narrative: Son of Dagar; created the first mushroom.
+0 @I23302@ INDI
+1 RIN MH:I23302
+1 _UID 6715399fe36dc1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:40:55 GMT+5.5
+1 NAME Nourishing Mushrooms //
+2 GIVN Nourishing Mushrooms
+1 SEX M
+1 FAMS @F13431@
+1 FAMC @F13430@
+1 NOTE Position in narrative: Sons of Agaricus II; create many nourishing mushrooms.
+0 @I23303@ INDI
+1 RIN MH:I23303
+1 _UID 6715399ffe68f1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 22:40:55 GMT+5.5
+1 NAME Toadstools //
+2 GIVN Toadstools
+1 SEX M
+1 FAMC @F13431@
+1 NOTE Position in narrative: Corrupted mushrooms; toxic due to toads sitting on them.
+0 @I23304@ INDI
+1 RIN MH:I23304
+1 _UID 67153ea5f01341efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Pteron //
+2 GIVN Pteron
+1 SEX M
+1 FAMS @F13432@
+1 NOTE Position in narrative: The great ancestor of winged beings; first to fold wings upon his back.
+0 @I23305@ INDI
+1 RIN MH:I23305
+1 _UID 67153ea5bddbe1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Pteron's Spouse //
+2 GIVN Pteron's Spouse
+1 SEX F
+1 FAMS @F13432@
+0 @I23306@ INDI
+1 RIN MH:I23306
+1 _UID 67153ea56b8201efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Polyneos //
+2 GIVN Polyneos
+1 SEX M
+1 FAMS @F13433@
+1 FAMC @F13432@
+1 NOTE Position in narrative: Elder son of Pteron; father of many diverse offspring.
+0 @I23307@ INDI
+1 RIN MH:I23307
+1 _UID 67153ea5264aa1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:19:31 GMT+5.5
+1 NAME Eumetabolos //
+2 GIVN Eumetabolos
+1 SEX M
+1 FAMS @F13436@
+1 FAMC @F13432@
+1 NOTE Position in narrative: Younger son of Pteron; master of transformation and change.
+0 @I23308@ INDI
+1 RIN MH:I23308
+1 _UID 67153ea51c40c1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Spouse of Polyneos //
+2 GIVN Spouse of Polyneos
+1 SEX F
+1 FAMS @F13433@
+0 @I23309@ INDI
+1 RIN MH:I23309
+1 _UID 67153ea537c191efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Zora //
+2 GIVN Zora
+1 SEX F
+1 FAMC @F13433@
+1 NOTE Position in narrative: First child of Polyneos; the gentle angel insect living in hidden places.
+0 @I23310@ INDI
+1 RIN MH:I23310
+1 _UID 67153ea57a0931efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Derma //
+2 GIVN Derma
+1 SEX F
+1 FAMC @F13433@
+1 NOTE Position in narrative: Second child of Polyneos; tough and adaptable; known as the earwig.
+0 @I23311@ INDI
+1 RIN MH:I23311
+1 _UID 67153ea5ac50d1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Pleco //
+2 GIVN Pleco
+1 SEX M
+1 FAMC @F13433@
+1 NOTE Position in narrative: Third child of Polyneos; lover of rivers and streams; the stonefly.
+0 @I23312@ INDI
+1 RIN MH:I23312
+1 _UID 67153ea5566441efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Orthos //
+2 GIVN Orthos
+1 SEX M
+1 FAMC @F13433@
+1 NOTE Position in narrative: Fourth child of Polyneos; the musician; grasshopper and cricket.
+0 @I23313@ INDI
+1 RIN MH:I23313
+1 _UID 67153ea51bace1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Gryllo //
+2 GIVN Gryllo
+1 SEX M
+1 FAMC @F13433@
+1 NOTE Position in narrative: Fifth child of Polyneos; the ice dweller; the ice crawler.
+0 @I23314@ INDI
+1 RIN MH:I23314
+1 _UID 67153ea5cdf501efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Phasma //
+2 GIVN Phasma
+1 SEX F
+1 FAMC @F13433@
+1 NOTE Position in narrative: Sixth child of Polyneos; master of disguise; the stick insect.
+0 @I23315@ INDI
+1 RIN MH:I23315
+1 _UID 67153ea5803da1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Embio //
+2 GIVN Embio
+1 SEX M
+1 FAMC @F13433@
+1 NOTE Position in narrative: Seventh child of Polyneos; the weaver; the webspinner.
+0 @I23316@ INDI
+1 RIN MH:I23316
+1 _UID 67153ea5ba37c1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Mantoph //
+2 GIVN Mantoph
+1 SEX M
+1 FAMC @F13433@
+1 NOTE Position in narrative: Eighth child of Polyneos; the fierce gladiator.
+0 @I23317@ INDI
+1 RIN MH:I23317
+1 _UID 67153ea591b691efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Dictys //
+2 GIVN Dictys
+1 SEX M
+1 FAMS @F13434@
+1 FAMC @F13433@
+1 NOTE Position in narrative: Twin son of Polyneos; father of Mantodea.
+0 @I23318@ INDI
+1 RIN MH:I23318
+1 _UID 67153ea5dc7e31efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Dictya //
+2 GIVN Dictya
+1 SEX M
+1 FAMS @F13435@
+1 FAMC @F13433@
+1 NOTE Position in narrative: Twin son of Polyneos; father of Blatta and Termes.
+0 @I23319@ INDI
+1 RIN MH:I23319
+1 _UID 67153ea5a27d11efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Spouse of Dictys //
+2 GIVN Spouse of Dictys
+1 SEX F
+1 FAMS @F13434@
+0 @I23320@ INDI
+1 RIN MH:I23320
+1 _UID 67153ea5678c51efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Mantodea //
+2 GIVN Mantodea
+1 SEX F
+1 FAMC @F13434@
+1 NOTE Position in narrative: Child of Dictys; the mantis; graceful yet deadly warrior.
+0 @I23321@ INDI
+1 RIN MH:I23321
+1 _UID 67153ea52a44f1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Spouse of Dictya //
+2 GIVN Spouse of Dictya
+1 SEX F
+1 FAMS @F13435@
+0 @I23322@ INDI
+1 RIN MH:I23322
+1 _UID 67153ea5fc1d11efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Blatta //
+2 GIVN Blatta
+1 SEX M
+1 FAMC @F13435@
+1 NOTE Position in narrative: Child of Dictya; the cockroach.
+0 @I23323@ INDI
+1 RIN MH:I23323
+1 _UID 67153ea5b1d5b1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Termes //
+2 GIVN Termes
+1 SEX M
+1 FAMC @F13435@
+1 NOTE Position in narrative: Child of Dictya; the termite; builder of great mounds.
+0 @I23324@ INDI
+1 RIN MH:I23324
+1 _UID 67153ea58bdfd1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:19:31 GMT+5.5
+1 NAME Spouse of Eumetabolos //
+2 GIVN Spouse of Eumetabolos
+1 SEX F
+1 FAMS @F13436@
+0 @I23325@ INDI
+1 RIN MH:I23325
+1 _UID 67153ea5a05e81efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Paraneos //
+2 GIVN Paraneos
+1 SEX M
+1 FAMS @F13437@
+1 FAMC @F13436@
+1 NOTE Position in narrative: Son of Eumetabolos; father of Condylo and Psoc.
+0 @I23326@ INDI
+1 RIN MH:I23326
+1 _UID 67153ea5ed9621efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Holometaboles //
+2 GIVN Holometaboles
+1 SEX M
+1 FAMS @F13439@
+1 FAMC @F13447@
+1 NOTE Position in narrative: Son of Eumetabolos; master of complete metamorphosis.
+0 @I23327@ INDI
+1 RIN MH:I23327
+1 _UID 67153ea53bcfc1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Spouse of Paraneos //
+2 GIVN Spouse of Paraneos
+1 SEX F
+1 FAMS @F13437@
+0 @I23328@ INDI
+1 RIN MH:I23328
+1 _UID 67153ea5c1fb51efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Condylo //
+2 GIVN Condylo
+1 SEX M
+1 FAMS @F13438@
+1 FAMC @F13437@
+1 NOTE Position in narrative: Son of Paraneos; wise and cunning.
+0 @I23329@ INDI
+1 RIN MH:I23329
+1 _UID 67153ea58c33f1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Psoc //
+2 GIVN Psoc
+1 SEX M
+1 FAMC @F13437@
+1 NOTE Position in narrative: Son of Paraneos; keeper of the bark; ancestor of barklice and lice.
+0 @I23330@ INDI
+1 RIN MH:I23330
+1 _UID 67153ea55a6a11efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Spouse of Condylo //
+2 GIVN Spouse of Condylo
+1 SEX F
+1 FAMS @F13438@
+0 @I23331@ INDI
+1 RIN MH:I23331
+1 _UID 67153ea517a2b1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Thysa //
+2 GIVN Thysa
+1 SEX F
+1 FAMC @F13438@
+1 NOTE Position in narrative: Child of Condylo; bearer of fringe wings; the thrips.
+0 @I23332@ INDI
+1 RIN MH:I23332
+1 _UID 67153ea52da8d1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Hemip //
+2 GIVN Hemip
+1 SEX M
+1 FAMC @F13438@
+1 NOTE Position in narrative: Child of Condylo; the true bug with piercing mouthparts.
+0 @I23333@ INDI
+1 RIN MH:I23333
+1 _UID 67153ea5629821efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Spouse of Holometaboles //
+2 GIVN Spouse of Holometaboles
+1 SEX F
+1 FAMS @F13439@
+0 @I23334@ INDI
+1 RIN MH:I23334
+1 _UID 67153ea54be121efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Hymeno //
+2 GIVN Hymeno
+1 SEX M
+1 FAMC @F13439@
+1 NOTE Position in narrative: Firstborn of Holometaboles; noble and industrious; ancestor of bees, ants, and wasps.
+0 @I23335@ INDI
+1 RIN MH:I23335
+1 _UID 67153ea59db8c1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Aparagloss //
+2 GIVN Aparagloss
+1 SEX M
+1 FAMS @F13440@
+1 FAMC @F13439@
+1 NOTE Position in narrative: Son of Holometaboles; ventured into new realms; father of Neuropteroidea and Panorpida.
+0 @I23336@ INDI
+1 RIN MH:I23336
+1 _UID 67153ea545c671efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Spouse of Aparagloss //
+2 GIVN Spouse of Aparagloss
+1 SEX F
+1 FAMS @F13440@
+0 @I23337@ INDI
+1 RIN MH:I23337
+1 _UID 67153ea54994c1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Neuropteroidea //
+2 GIVN Neuropteroidea
+1 SEX M
+1 FAMS @F13441@
+1 FAMC @F13440@
+1 NOTE Position in narrative: Son of Aparagloss; father of Neuropterida and Coleopterida.
+0 @I23338@ INDI
+1 RIN MH:I23338
+1 _UID 67153ea59fcd21efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Panorpida //
+2 GIVN Panorpida
+1 SEX M
+1 FAMS @F13444@
+1 FAMC @F13440@
+1 NOTE Position in narrative: Son of Aparagloss; father of Amphiesmenoptera and Antliophora.
+0 @I23339@ INDI
+1 RIN MH:I23339
+1 _UID 67153ea5d20581efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Spouse of Neuropteroidea //
+2 GIVN Spouse of Neuropteroidea
+1 SEX F
+1 FAMS @F13441@
+0 @I23340@ INDI
+1 RIN MH:I23340
+1 _UID 67153ea5e80fe1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Neuropterida //
+2 GIVN Neuropterida
+1 SEX M
+1 FAMS @F13442@
+1 FAMC @F13441@
+1 NOTE Position in narrative: Son of Neuropteroidea; father of Raphidia, Megalo, and Neuro.
+0 @I23341@ INDI
+1 RIN MH:I23341
+1 _UID 67153ea5c38eb1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Coleopterida //
+2 GIVN Coleopterida
+1 SEX M
+1 FAMS @F13443@
+1 FAMC @F13441@
+1 NOTE Position in narrative: Son of Neuropteroidea; father of Coleo and Strepsi.
+0 @I23342@ INDI
+1 RIN MH:I23342
+1 _UID 67153ea58e4611efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Spouse of Neuropterida //
+2 GIVN Spouse of Neuropterida
+1 SEX F
+1 FAMS @F13442@
+0 @I23343@ INDI
+1 RIN MH:I23343
+1 _UID 67153ea5581ff1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:17:42 GMT+5.5
+1 NAME Raphidia /Raphidioptera (snakeflies)/
+2 GIVN Raphidia
+2 SURN Raphidioptera (snakeflies)
+2 _MARNM Raphidioptera (snakeflies)
+1 SEX F
+1 FAMC @F13442@
+1 NOTE Position in narrative: Child of Neuropterida; the snakefly with predatory gaze.
+0 @I23344@ INDI
+1 RIN MH:I23344
+1 _UID 67153ea5a22b61efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:17:55 GMT+5.5
+1 NAME Megalo /Megaloptera (alderflies and allies)/
+2 GIVN Megalo
+2 SURN Megaloptera (alderflies and allies)
+1 SEX M
+1 FAMC @F13442@
+1 NOTE Position in narrative: Child of Neuropterida; the alderfly; giant-winged one.
+0 @I23345@ INDI
+1 RIN MH:I23345
+1 _UID 67153ea5efe3c1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:18:14 GMT+5.5
+1 NAME Neuro /Neuroptera (lacewings and allies)/
+2 GIVN Neuro
+2 SURN Neuroptera (lacewings and allies)
+1 SEX M
+1 FAMC @F13442@
+1 NOTE Position in narrative: Child of Neuropterida; the lacewing with delicate wings.
+0 @I23346@ INDI
+1 RIN MH:I23346
+1 _UID 67153ea539ba21efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Spouse of Coleopterida //
+2 GIVN Spouse of Coleopterida
+1 SEX F
+1 FAMS @F13443@
+0 @I23347@ INDI
+1 RIN MH:I23347
+1 _UID 67153ea5747281efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:18:42 GMT+5.5
+1 NAME Coleo /Coleoptera (beetles)/
+2 GIVN Coleo
+2 SURN Coleoptera (beetles)
+1 SEX M
+1 FAMC @F13443@
+1 NOTE Position in narrative: Child of Coleopterida; the beetle; armored and diverse.
+0 @I23348@ INDI
+1 RIN MH:I23348
+1 _UID 67153ea54e78e1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:18:50 GMT+5.5
+1 NAME Strepsi /Strepsiptera (twisted-wing parasites)/
+2 GIVN Strepsi
+2 SURN Strepsiptera (twisted-wing parasites)
+1 SEX M
+1 FAMC @F13443@
+1 NOTE Position in narrative: Child of Coleopterida; the twisted-wing parasite.
+0 @I23349@ INDI
+1 RIN MH:I23349
+1 _UID 67153ea565f9b1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Spouse of Panorpida //
+2 GIVN Spouse of Panorpida
+1 SEX F
+1 FAMS @F13444@
+0 @I23350@ INDI
+1 RIN MH:I23350
+1 _UID 67153ea5283111efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Amphiesmenoptera //
+2 GIVN Amphiesmenoptera
+1 SEX M
+1 FAMS @F13445@
+1 FAMC @F13444@
+1 NOTE Position in narrative: Child of Panorpida; father of Tricho and Lepido.
+0 @I23351@ INDI
+1 RIN MH:I23351
+1 _UID 67153ea5fe68f1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Antliophora //
+2 GIVN Antliophora
+1 SEX M
+1 FAMS @F13446@
+1 FAMC @F13444@
+1 NOTE Position in narrative: Child of Panorpida; father of Dipt, Meco, and Siphon.
+0 @I23352@ INDI
+1 RIN MH:I23352
+1 _UID 67153ea593c371efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Spouse of Amphiesmenoptera //
+2 GIVN Spouse of Amphiesmenoptera
+1 SEX F
+1 FAMS @F13445@
+0 @I23353@ INDI
+1 RIN MH:I23353
+1 _UID 67153ea5de0bd1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:15:28 GMT+5.5
+1 NAME Tricho /Trichoptera (caddisflies)/
+2 GIVN Tricho
+2 SURN Trichoptera (caddisflies)
+1 SEX M
+1 FAMC @F13445@
+1 NOTE Position in narrative: Child of Amphiesmenoptera; the caddisfly.
+0 @I23354@ INDI
+1 RIN MH:I23354
+1 _UID 67153ea5852341efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:15:38 GMT+5.5
+1 NAME Lepido /Lepidoptera (butterflies, moths)/
+2 GIVN Lepido
+2 SURN Lepidoptera (butterflies, moths)
+1 SEX M
+1 FAMC @F13445@
+1 NOTE Position in narrative: Child of Amphiesmenoptera; the butterfly and moth.
+0 @I23355@ INDI
+1 RIN MH:I23355
+1 _UID 67153ea5459a91efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
+1 NAME Spouse of Antliophora //
+2 GIVN Spouse of Antliophora
+1 SEX F
+1 FAMS @F13446@
+0 @I23356@ INDI
+1 RIN MH:I23356
+1 _UID 67153ea57f90f1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:15:51 GMT+5.5
+1 NAME Dipt /Diptera (true flies)/
+2 GIVN Dipt
+2 SURN Diptera (true flies)
+1 SEX M
+1 FAMC @F13446@
+1 NOTE Position in narrative: Child of Antliophora; the true fly.
+0 @I23357@ INDI
+1 RIN MH:I23357
+1 _UID 67153ea55411a1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:16:07 GMT+5.5
+1 NAME Meco /Mecoptera (scorpionflies)/
+2 GIVN Meco
+2 SURN Mecoptera (scorpionflies)
+1 SEX M
+1 FAMC @F13446@
+1 NOTE Position in narrative: Child of Antliophora; the scorpionfly.
+0 @I23358@ INDI
+1 RIN MH:I23358
+1 _UID 67153ea519d901efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:16:00 GMT+5.5
+1 NAME Siphon /Siphonaptera (fleas)/
+2 GIVN Siphon
+2 SURN Siphonaptera (fleas)
+2 _MARNM Siphonaptera (fleas)
+1 SEX F
+1 FAMC @F13446@
+1 NOTE Position in narrative: Child of Antliophora; the flea.
+0 @I23360@ INDI
+1 RIN MH:I23360
+1 _UID 67153fccf01341efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:10:19 GMT+5.5
+1 NAME  /Polyneoptera/
+2 SURN Polyneoptera
+1 SEX M
+1 BIRT
+2 _UID 67153fd1f01341efbc0b9822ef79916c
+2 RIN MH:IF32175
+1 FAMS @F13448@
+1 FAMC @F13447@
+0 @I23361@ INDI
+1 RIN MH:I23361
+1 _UID 6715404cbddbe1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:10:19 GMT+5.5
+1 SEX F
+1 FAMS @F13448@
+0 @I23362@ INDI
+1 RIN MH:I23362
+1 _UID 6715405af01341efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:09:56 GMT+5.5
+1 NAME  /Polyneoptera/
+2 SURN Polyneoptera
+1 SEX M
+1 BIRT
+2 _UID 6715405df01341efbc0b9822ef79916c
+2 RIN MH:IF32176
+1 FAMS @F13449@
+1 FAMC @F13448@
+0 @I23363@ INDI
+1 RIN MH:I23363
+1 _UID 671540613b4f91efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:09:48 GMT+5.5
+1 NAME  /Zoraptera (angel insects) /
+2 SURN Zoraptera (angel insects) 
+1 SEX M
+1 BIRT
+2 _UID 67154064f01341efbc0b9822ef79916c
+2 RIN MH:IF32177
+1 FAMC @F13449@
+0 @I23364@ INDI
+1 RIN MH:I23364
+1 _UID 67154069f01341efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:09:56 GMT+5.5
+1 NAME  /Dermaptera (earwigs) /
+2 SURN Dermaptera (earwigs) 
+1 SEX M
+1 BIRT
+2 _UID 6715406cf01341efbc0b9822ef79916c
+2 RIN MH:IF32178
+1 FAMC @F13449@
+0 @I23365@ INDI
+1 RIN MH:I23365
+1 _UID 67154081f01341efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:10:29 GMT+5.5
+1 NAME  /Polyneoptera/
+2 SURN Polyneoptera
+1 SEX M
+1 BIRT
+2 _UID 67154083f01341efbc0b9822ef79916c
+2 RIN MH:IF32179
+1 FAMS @F13450@
+1 FAMC @F13448@
+0 @I23366@ INDI
+1 RIN MH:I23366
+1 _UID 671540883b4f91efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:10:43 GMT+5.5
+1 NAME  /Polyneoptera/
+2 SURN Polyneoptera
+1 SEX M
+1 BIRT
+2 _UID 67154089f01341efbc0b9822ef79916c
+2 RIN MH:IF32180
+1 FAMS @F13451@
+1 FAMC @F13450@
+0 @I23367@ INDI
+1 RIN MH:I23367
+1 _UID 6715408bf01341efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:10:29 GMT+5.5
+1 NAME  /Plecoptera (stoneflies) /
+2 SURN Plecoptera (stoneflies) 
+1 SEX M
+1 BIRT
+2 _UID 6715408df01341efbc0b9822ef79916c
+2 RIN MH:IF32181
+1 FAMC @F13450@
+0 @I23368@ INDI
+1 RIN MH:I23368
+1 _UID 671540953b4f91efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:10:40 GMT+5.5
+1 NAME  /Orthoptera (grasshoppers, crickets, katydids) /
+2 SURN Orthoptera (grasshoppers, crickets, katydids) 
+1 SEX M
+1 BIRT
+2 _UID 67154098f01341efbc0b9822ef79916c
+2 RIN MH:IF32182
+1 FAMC @F13451@
+0 @I23369@ INDI
+1 RIN MH:I23369
+1 _UID 67154099f01341efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:12:41 GMT+5.5
+1 NAME  /Polyneoptera/
+2 SURN Polyneoptera
+1 SEX M
+1 BIRT
+2 _UID 6715409bf01341efbc0b9822ef79916c
+2 RIN MH:IF32183
+1 FAMS @F13452@
+1 FAMC @F13451@
+0 @I23370@ INDI
+1 RIN MH:I23370
+1 _UID 671540e8bddbe1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:12:41 GMT+5.5
+1 SEX F
+1 FAMS @F13452@
+0 @I23371@ INDI
+1 RIN MH:I23371
+1 _UID 671540eff01341efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:12:31 GMT+5.5
+1 NAME  /Dictyoptera/
+2 SURN Dictyoptera
+1 SEX M
+1 BIRT
+2 _UID 671540f3f01341efbc0b9822ef79916c
+2 RIN MH:IF32184
+1 FAMS @F13453@
+1 FAMC @F13452@
+0 @I23372@ INDI
+1 RIN MH:I23372
+1 _UID 671540fe3b4f91efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:12:24 GMT+5.5
+1 NAME  /Blattodea (cockroaches and termites) /
+2 SURN Blattodea (cockroaches and termites) 
+1 SEX M
+1 BIRT
+2 _UID 67154100f01341efbc0b9822ef79916c
+2 RIN MH:IF32185
+1 FAMC @F13453@
+0 @I23373@ INDI
+1 RIN MH:I23373
+1 _UID 67154104f01341efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:12:31 GMT+5.5
+1 NAME  /Mantodea (mantises) /
+2 SURN Mantodea (mantises) 
+1 SEX M
+1 BIRT
+2 _UID 67154107f01341efbc0b9822ef79916c
+2 RIN MH:IF32186
+1 FAMC @F13453@
+0 @I23374@ INDI
+1 RIN MH:I23374
+1 _UID 67154110f01341efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:12:54 GMT+5.5
+1 NAME  /Polyneoptera/
+2 SURN Polyneoptera
+1 SEX M
+1 BIRT
+2 _UID 67154111f01341efbc0b9822ef79916c
+2 RIN MH:IF32187
+1 FAMS @F13454@
+1 FAMC @F13452@
+0 @I23375@ INDI
+1 RIN MH:I23375
+1 _UID 67154115bddbe1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:12:54 GMT+5.5
+1 SEX F
+1 FAMS @F13454@
+0 @I23376@ INDI
+1 RIN MH:I23376
+1 _UID 67154119f01341efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:13:21 GMT+5.5
+1 NAME  /Polyneoptera/
+2 SURN Polyneoptera
+1 SEX M
+1 BIRT
+2 _UID 6715411af01341efbc0b9822ef79916c
+2 RIN MH:IF32188
+1 FAMS @F13455@
+1 FAMC @F13454@
+0 @I23377@ INDI
+1 RIN MH:I23377
+1 _UID 6715411df01341efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:13:38 GMT+5.5
+1 NAME  /Polyneoptera/
+2 SURN Polyneoptera
+1 SEX M
+1 BIRT
+2 _UID 6715411ef01341efbc0b9822ef79916c
+2 RIN MH:IF32189
+1 FAMS @F13456@
+1 FAMC @F13454@
+0 @I23378@ INDI
+1 RIN MH:I23378
+1 _UID 671541303b4f91efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:13:15 GMT+5.5
+1 NAME  /Embioptera (webspinners) /
+2 SURN Embioptera (webspinners) 
+1 SEX M
+1 BIRT
+2 _UID 67154133f01341efbc0b9822ef79916c
+2 RIN MH:IF32190
+1 FAMC @F13455@
+0 @I23379@ INDI
+1 RIN MH:I23379
+1 _UID 67154136f01341efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:13:21 GMT+5.5
+1 NAME  /Phasmatodea (stick insects) /
+2 SURN Phasmatodea (stick insects) 
+1 SEX M
+1 BIRT
+2 _UID 67154139f01341efbc0b9822ef79916c
+2 RIN MH:IF32191
+1 FAMC @F13455@
+0 @I23380@ INDI
+1 RIN MH:I23380
+1 _UID 671541413b4f91efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:13:32 GMT+5.5
+1 NAME  /Mantophasmatodea (gladiators) /
+2 SURN Mantophasmatodea (gladiators) 
+1 SEX M
+1 BIRT
+2 _UID 67154144f01341efbc0b9822ef79916c
+2 RIN MH:IF32192
+1 FAMC @F13456@
+0 @I23381@ INDI
+1 RIN MH:I23381
+1 _UID 67154148f01341efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:13:38 GMT+5.5
+1 NAME  /Grylloblattodea (ice crawlers) /
+2 SURN Grylloblattodea (ice crawlers) 
+1 SEX M
+1 BIRT
+2 _UID 6715414af01341efbc0b9822ef79916c
+2 RIN MH:IF32193
+1 FAMC @F13456@
+0 @I23382@ INDI
+1 RIN MH:I23382
+1 _UID 671542f73b4f91efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:21:32 GMT+5.5
+1 NAME Coleos /Coleoidea/
+2 GIVN Coleos
+2 SURN Coleoidea
+1 SEX M
+1 BIRT
+2 _UID 671542fff01341efbc0b9822ef79916c
+2 RIN MH:IF32194
+1 FAMS @F13458@
+1 FAMC @F13457@
+0 @I23383@ INDI
+1 RIN MH:I23383
+1 _UID 671543143b4f91efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:21:23 GMT+5.5
+1 NAME Decapus /Decapodifirmes/
+2 GIVN Decapus
+2 SURN Decapodifirmes
+1 SEX M
+1 BIRT
+2 _UID 6715431bf01341efbc0b9822ef79916c
+2 RIN MH:IF32195
+1 FAMC @F13458@
+0 @I23384@ INDI
+1 RIN MH:I23384
+1 _UID 6715431df01341efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:22:13 GMT+5.5
+1 NAME Octopus /Octopodiformes/
+2 GIVN Octopus
+2 SURN Octopodiformes
+1 SEX M
+1 BIRT
+2 _UID 67154324f01341efbc0b9822ef79916c
+2 RIN MH:IF32196
+1 FAMS @F13459@
+1 FAMC @F13458@
+0 @I23385@ INDI
+1 RIN MH:I23385
+1 _UID 6715433a3b4f91efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:22:01 GMT+5.5
+1 NAME Octopuses /Octopoda/
+2 GIVN Octopuses
+2 SURN Octopoda
+1 SEX M
+1 BIRT
+2 _UID 67154341f01341efbc0b9822ef79916c
+2 RIN MH:IF32197
+1 FAMC @F13459@
+0 @I23386@ INDI
+1 RIN MH:I23386
+1 _UID 67154346f01341efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:22:13 GMT+5.5
+1 NAME Vamphus /Vampyromorphida/
+2 GIVN Vamphus
+2 SURN Vampyromorphida
+1 SEX M
+1 BIRT
+2 _UID 6715434df01341efbc0b9822ef79916c
+2 RIN MH:IF32198
+1 FAMC @F13459@
+0 @I23387@ INDI
+1 RIN MH:I23387
+1 _UID 67154648f01341efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:34:56 GMT+5.5
+1 NAME Actinopterygii /Devonian 419 Ma/
+2 GIVN Actinopterygii
+2 SURN Devonian 419 Ma
+1 SEX U
+1 BIRT
+2 _UID 671546483b4f91efbc0b9822ef79916c
+2 RIN MH:IF32199
+2 DATE BEF 419 Ma
+1 FAMC @F13460@
+0 @I23388@ INDI
+1 RIN MH:I23388
+1 _UID 67154648bddbe1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:34:56 GMT+5.5
+1 NAME Palaeonisciformes /Carboniferous 359 Ma/
+2 GIVN Palaeonisciformes
+2 SURN Carboniferous 359 Ma
+1 SEX U
+1 BIRT
+2 _UID 67154648768731efbc0b9822ef79916c
+2 RIN MH:IF32200
+2 DATE BEF 359 Ma
+1 FAMC @F13461@
+0 @I23389@ INDI
+1 RIN MH:I23389
+1 _UID 671546486b8201efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:34:56 GMT+5.5
+1 NAME Acipenseridae /Triassic 252 Ma/
+2 GIVN Acipenseridae
+2 SURN Triassic 252 Ma
+1 SEX U
+1 BIRT
+2 _UID 67154648a0ded1efbc0b9822ef79916c
+2 RIN MH:IF32201
+2 DATE BEF 252 Ma
+1 FAMC @F13462@
+0 @I23390@ INDI
+1 RIN MH:I23390
+1 _UID 67154648264aa1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:34:56 GMT+5.5
+1 NAME Teleostei /Jurassic 201 Ma/
+2 GIVN Teleostei
+2 SURN Jurassic 201 Ma
+1 SEX U
+1 BIRT
+2 _UID 67154648ed1671efbc0b9822ef79916c
+2 RIN MH:IF32202
+2 DATE BEF 201 Ma
+1 FAMC @F13463@
+0 @I23391@ INDI
+1 RIN MH:I23391
+1 _UID 671546481c40c1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:34:56 GMT+5.5
+1 NAME Euteleostei /Cretaceous 145 Ma/
+2 GIVN Euteleostei
+2 SURN Cretaceous 145 Ma
+1 SEX U
+1 BIRT
+2 _UID 67154648d71c11efbc0b9822ef79916c
+2 RIN MH:IF32203
+2 DATE BEF 145 Ma
+1 FAMC @F13464@
+0 @I23392@ INDI
+1 RIN MH:I23392
+1 _UID 6715464837c191efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:34:56 GMT+5.5
+1 NAME Neoteleostei /Cretaceous 100 Ma/
+2 GIVN Neoteleostei
+2 SURN Cretaceous 100 Ma
+1 SEX U
+1 BIRT
+2 _UID 67154648b155e1efbc0b9822ef79916c
+2 RIN MH:IF32204
+2 DATE BEF 100 Ma
+1 FAMC @F13465@
+0 @I23394@ INDI
+1 RIN MH:I23394
+1 _UID 671546acf01341efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:36:36 GMT+5.5
+1 NAME Actinopterygii /Devonian 419 Ma/
+2 GIVN Actinopterygii
+2 SURN Devonian 419 Ma
+1 SEX U
+1 BIRT
+2 _UID 671546ac3b4f91efbc0b9822ef79916c
+2 RIN MH:IF32206
+2 DATE BEF 419 Ma
+1 FAMC @F13466@
+0 @I23395@ INDI
+1 RIN MH:I23395
+1 _UID 671546acbddbe1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:36:36 GMT+5.5
+1 NAME Palaeonisciformes /Carboniferous 359 Ma/
+2 GIVN Palaeonisciformes
+2 SURN Carboniferous 359 Ma
+1 SEX U
+1 BIRT
+2 _UID 671546ac768731efbc0b9822ef79916c
+2 RIN MH:IF32207
+2 DATE BEF 359 Ma
+1 FAMC @F13467@
+0 @I23396@ INDI
+1 RIN MH:I23396
+1 _UID 671546ac6b8201efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:36:36 GMT+5.5
+1 NAME Acipenseridae /Triassic 252 Ma/
+2 GIVN Acipenseridae
+2 SURN Triassic 252 Ma
+1 SEX U
+1 BIRT
+2 _UID 671546aca0ded1efbc0b9822ef79916c
+2 RIN MH:IF32208
+2 DATE BEF 252 Ma
+1 FAMC @F13468@
+0 @I23397@ INDI
+1 RIN MH:I23397
+1 _UID 671546ac264aa1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:36:36 GMT+5.5
+1 NAME Teleostei /Jurassic 201 Ma/
+2 GIVN Teleostei
+2 SURN Jurassic 201 Ma
+1 SEX U
+1 BIRT
+2 _UID 671546aced1671efbc0b9822ef79916c
+2 RIN MH:IF32209
+2 DATE BEF 201 Ma
+1 FAMC @F13469@
+0 @I23398@ INDI
+1 RIN MH:I23398
+1 _UID 671546ac1c40c1efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:36:36 GMT+5.5
+1 NAME Euteleostei /Cretaceous 145 Ma/
+2 GIVN Euteleostei
+2 SURN Cretaceous 145 Ma
+1 SEX U
+1 BIRT
+2 _UID 671546acd71c11efbc0b9822ef79916c
+2 RIN MH:IF32210
+2 DATE BEF 145 Ma
+1 FAMC @F13470@
+0 @I23399@ INDI
+1 RIN MH:I23399
+1 _UID 671546ac37c191efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:36:36 GMT+5.5
+1 NAME Neoteleostei /Cretaceous 100 Ma/
+2 GIVN Neoteleostei
+2 SURN Cretaceous 100 Ma
+1 SEX U
+1 BIRT
+2 _UID 671546acb155e1efbc0b9822ef79916c
+2 RIN MH:IF32211
+2 DATE BEF 100 Ma
+1 FAMC @F13471@
+0 @I23401@ INDI
+1 RIN MH:I23401
+1 _UID 671546f53b4f91efbc0b9822ef79916c
+1 _UPD 20 OCT 2024 23:39:12 GMT+5.5
+1 NAME  /Palaeonisciformes/
+2 SURN Palaeonisciformes
+1 SEX M
+1 BIRT
+2 _UID 67154737f01341efbc0b9822ef79916c
+2 RIN MH:IF32213
 0 @F1@ FAM
 1 RIN MH:F1
 1 _UID 66dfdfd660f561efbbc69822ef79916c
@@ -11056,7 +12656,7 @@
 1 _UID 670aca91c3ec71efbbff9822ef79916c
 1 HUSB @I22601@
 1 WIFE @I22602@
-1 CHIL @I22603@
+1 CHIL @I23269@
 1 MARR
 2 _UID 670aca918b0a91efbbff9822ef79916c
 2 RIN MH:FF1632
@@ -12969,7 +14569,7 @@
 0 @F13388@ FAM
 1 RIN MH:F13388
 1 _UID 6710be31e5faf1efbc019822ef79916c
-1 HUSB @I23188@
+1 WIFE @I23188@
 1 CHIL @I23190@
 0 @F13389@ FAM
 1 RIN MH:F13389
@@ -12993,6 +14593,436 @@
 1 MARR
 2 _UID 6710d1128b2a71efbc019822ef79916c
 2 RIN MH:FF1722
+0 @F13392@ FAM
+1 RIN MH:F13392
+1 _UID 67153712f01341efbc0b9822ef79916c
+1 HUSB @I22603@
+1 CHIL @I23225@
+1 CHIL @I23226@
+0 @F13393@ FAM
+1 RIN MH:F13393
+1 _UID 671538a36b8201efbc0b9822ef79916c
+0 @F13394@ FAM
+1 RIN MH:F13394
+1 _UID 671538a3b155e1efbc0b9822ef79916c
+0 @F13395@ FAM
+1 RIN MH:F13395
+1 _UID 671538a3566441efbc0b9822ef79916c
+0 @F13396@ FAM
+1 RIN MH:F13396
+1 _UID 671538a36a9d91efbc0b9822ef79916c
+0 @F13397@ FAM
+1 RIN MH:F13397
+1 _UID 671538a3ba37c1efbc0b9822ef79916c
+0 @F13398@ FAM
+1 RIN MH:F13398
+1 _UID 671538a3c17b01efbc0b9822ef79916c
+0 @F13399@ FAM
+1 RIN MH:F13399
+1 _UID 671538a3678c51efbc0b9822ef79916c
+0 @F13400@ FAM
+1 RIN MH:F13400
+1 _UID 671538a37a8961efbc0b9822ef79916c
+0 @F13401@ FAM
+1 RIN MH:F13401
+1 _UID 671538a3ed9621efbc0b9822ef79916c
+0 @F13402@ FAM
+1 RIN MH:F13402
+1 _UID 671538a3aa78a1efbc0b9822ef79916c
+0 @F13403@ FAM
+1 RIN MH:F13403
+1 _UID 671538a317a2b1efbc0b9822ef79916c
+0 @F13404@ FAM
+1 RIN MH:F13404
+1 _UID 671538a3e6f401efbc0b9822ef79916c
+0 @F13405@ FAM
+1 RIN MH:F13405
+1 _UID 671538a39db8c1efbc0b9822ef79916c
+0 @F13406@ FAM
+1 RIN MH:F13406
+1 _UID 671538a3cf00b1efbc0b9822ef79916c
+0 @F13407@ FAM
+1 RIN MH:F13407
+1 _UID 671538a3d20581efbc0b9822ef79916c
+0 @F13408@ FAM
+1 RIN MH:F13408
+1 _UID 671538a3de8b81efbc0b9822ef79916c
+0 @F13409@ FAM
+1 RIN MH:F13409
+1 _UID 671538a339ba21efbc0b9822ef79916c
+0 @F13410@ FAM
+1 RIN MH:F13410
+1 _UID 671538a3e36dc1efbc0b9822ef79916c
+0 @F13411@ FAM
+1 RIN MH:F13411
+1 _UID 671538a3fe68f1efbc0b9822ef79916c
+0 @F13412@ FAM
+1 RIN MH:F13412
+1 _UID 6715399f6b8201efbc0b9822ef79916c
+1 HUSB @I23266@
+1 WIFE @I23267@
+1 CHIL @I23268@
+0 @F13413@ FAM
+1 RIN MH:F13413
+1 _UID 6715399fb155e1efbc0b9822ef79916c
+1 HUSB @I23269@
+1 WIFE @I23270@
+1 CHIL @I23271@
+1 CHIL @I23272@
+1 CHIL @I23227@
+0 @F13414@ FAM
+1 RIN MH:F13414
+1 _UID 6715399f566441efbc0b9822ef79916c
+1 HUSB @I23271@
+1 CHIL @I23273@
+1 CHIL @I23274@
+0 @F13415@ FAM
+1 RIN MH:F13415
+1 _UID 6715399f6a9d91efbc0b9822ef79916c
+1 HUSB @I23273@
+1 CHIL @I23275@
+0 @F13416@ FAM
+1 RIN MH:F13416
+1 _UID 6715399fba37c1efbc0b9822ef79916c
+1 HUSB @I23274@
+1 CHIL @I23276@
+1 CHIL @I23277@
+0 @F13417@ FAM
+1 RIN MH:F13417
+1 _UID 6715399fc17b01efbc0b9822ef79916c
+1 HUSB @I23277@
+1 CHIL @I23278@
+0 @F13418@ FAM
+1 RIN MH:F13418
+1 _UID 6715399f678c51efbc0b9822ef79916c
+1 HUSB @I23276@
+1 CHIL @I23279@
+1 CHIL @I23280@
+0 @F13419@ FAM
+1 RIN MH:F13419
+1 _UID 6715399f3741c1efbc0b9822ef79916c
+1 HUSB @I23279@
+1 CHIL @I23281@
+1 CHIL @I23282@
+0 @F13420@ FAM
+1 RIN MH:F13420
+1 _UID 6715399fa05e81efbc0b9822ef79916c
+1 HUSB @I23282@
+1 CHIL @I23283@
+1 CHIL @I23284@
+0 @F13421@ FAM
+1 RIN MH:F13421
+1 _UID 6715399fbd5bb1efbc0b9822ef79916c
+1 HUSB @I23284@
+1 CHIL @I23285@
+1 CHIL @I23286@
+0 @F13422@ FAM
+1 RIN MH:F13422
+1 _UID 6715399f5a6a11efbc0b9822ef79916c
+1 HUSB @I23272@
+1 CHIL @I23287@
+0 @F13423@ FAM
+1 RIN MH:F13423
+1 _UID 6715399fdcfe61efbc0b9822ef79916c
+1 HUSB @I23287@
+1 CHIL @I23288@
+1 CHIL @I23289@
+0 @F13424@ FAM
+1 RIN MH:F13424
+1 _UID 6715399f4be121efbc0b9822ef79916c
+1 HUSB @I23289@
+1 CHIL @I23290@
+0 @F13425@ FAM
+1 RIN MH:F13425
+1 _UID 6715399f1b2cb1efbc0b9822ef79916c
+1 HUSB @I23288@
+1 CHIL @I23291@
+1 CHIL @I23292@
+0 @F13426@ FAM
+1 RIN MH:F13426
+1 _UID 6715399f9fcd21efbc0b9822ef79916c
+1 WIFE @I23291@
+1 CHIL @I23293@
+0 @F13427@ FAM
+1 RIN MH:F13427
+1 _UID 6715399f195951efbc0b9822ef79916c
+1 HUSB @I23292@
+1 CHIL @I23294@
+1 CHIL @I23295@
+1 CHIL @I23296@
+1 CHIL @I23297@
+0 @F13428@ FAM
+1 RIN MH:F13428
+1 _UID 6715399fa22b61efbc0b9822ef79916c
+1 HUSB @I23294@
+1 CHIL @I23298@
+1 CHIL @I23299@
+0 @F13429@ FAM
+1 RIN MH:F13429
+1 _UID 6715399ff2e6f1efbc0b9822ef79916c
+1 HUSB @I23299@
+1 CHIL @I23300@
+1 CHIL @I23301@
+0 @F13430@ FAM
+1 RIN MH:F13430
+1 _UID 6715399f65f9b1efbc0b9822ef79916c
+1 HUSB @I23301@
+1 CHIL @I23302@
+0 @F13431@ FAM
+1 RIN MH:F13431
+1 _UID 6715399f353421efbc0b9822ef79916c
+1 HUSB @I23302@
+1 CHIL @I23303@
+0 @F13432@ FAM
+1 RIN MH:F13432
+1 _UID 67153ea5768731efbc0b9822ef79916c
+1 HUSB @I23304@
+1 WIFE @I23305@
+1 CHIL @I23306@
+1 CHIL @I23307@
+0 @F13433@ FAM
+1 RIN MH:F13433
+1 _UID 67153ea5d71c11efbc0b9822ef79916c
+1 HUSB @I23306@
+1 WIFE @I23308@
+1 CHIL @I23309@
+1 CHIL @I23310@
+1 CHIL @I23311@
+1 CHIL @I23312@
+1 CHIL @I23313@
+1 CHIL @I23314@
+1 CHIL @I23315@
+1 CHIL @I23316@
+1 CHIL @I23317@
+1 CHIL @I23318@
+0 @F13434@ FAM
+1 RIN MH:F13434
+1 _UID 67153ea58cb3a1efbc0b9822ef79916c
+1 HUSB @I23317@
+1 WIFE @I23319@
+1 CHIL @I23320@
+0 @F13435@ FAM
+1 RIN MH:F13435
+1 _UID 67153ea5e11821efbc0b9822ef79916c
+1 HUSB @I23318@
+1 WIFE @I23321@
+1 CHIL @I23322@
+1 CHIL @I23323@
+0 @F13436@ FAM
+1 RIN MH:F13436
+1 _UID 67153ea5408301efbc0b9822ef79916c
+1 HUSB @I23307@
+1 WIFE @I23324@
+1 CHIL @I23325@
+0 @F13437@ FAM
+1 RIN MH:F13437
+1 _UID 67153ea5bd5bb1efbc0b9822ef79916c
+1 HUSB @I23325@
+1 WIFE @I23327@
+1 CHIL @I23328@
+1 CHIL @I23329@
+0 @F13438@ FAM
+1 RIN MH:F13438
+1 _UID 67153ea59136c1efbc0b9822ef79916c
+1 HUSB @I23328@
+1 WIFE @I23330@
+1 CHIL @I23331@
+1 CHIL @I23332@
+0 @F13439@ FAM
+1 RIN MH:F13439
+1 _UID 67153ea580bdf1efbc0b9822ef79916c
+1 HUSB @I23326@
+1 WIFE @I23333@
+1 CHIL @I23334@
+1 CHIL @I23335@
+0 @F13440@ FAM
+1 RIN MH:F13440
+1 _UID 67153ea5cf00b1efbc0b9822ef79916c
+1 HUSB @I23335@
+1 WIFE @I23336@
+1 CHIL @I23337@
+1 CHIL @I23338@
+0 @F13441@ FAM
+1 RIN MH:F13441
+1 _UID 67153ea5195951efbc0b9822ef79916c
+1 HUSB @I23337@
+1 WIFE @I23339@
+1 CHIL @I23340@
+1 CHIL @I23341@
+0 @F13442@ FAM
+1 RIN MH:F13442
+1 _UID 67153ea5934321efbc0b9822ef79916c
+1 HUSB @I23340@
+1 WIFE @I23342@
+1 CHIL @I23343@
+1 CHIL @I23344@
+1 CHIL @I23345@
+0 @F13443@ FAM
+1 RIN MH:F13443
+1 _UID 67153ea5f2e6f1efbc0b9822ef79916c
+1 HUSB @I23341@
+1 WIFE @I23346@
+1 CHIL @I23347@
+1 CHIL @I23348@
+0 @F13444@ FAM
+1 RIN MH:F13444
+1 _UID 67153ea5e36dc1efbc0b9822ef79916c
+1 HUSB @I23338@
+1 WIFE @I23349@
+1 CHIL @I23350@
+1 CHIL @I23351@
+0 @F13445@ FAM
+1 RIN MH:F13445
+1 _UID 67153ea5589fa1efbc0b9822ef79916c
+1 HUSB @I23350@
+1 WIFE @I23352@
+1 CHIL @I23353@
+1 CHIL @I23354@
+0 @F13446@ FAM
+1 RIN MH:F13446
+1 _UID 67153ea58ec641efbc0b9822ef79916c
+1 HUSB @I23351@
+1 WIFE @I23355@
+1 CHIL @I23356@
+1 CHIL @I23357@
+1 CHIL @I23358@
+0 @F13447@ FAM
+1 RIN MH:F13447
+1 _UID 67153fbef01341efbc0b9822ef79916c
+1 HUSB @I23216@
+1 CHIL @I23360@
+1 CHIL @I23326@
+0 @F13448@ FAM
+1 RIN MH:F13448
+1 _UID 6715404cf01341efbc0b9822ef79916c
+1 HUSB @I23360@
+1 WIFE @I23361@
+1 CHIL @I23362@
+1 CHIL @I23365@
+1 MARR
+2 _UID 6715404c3b4f91efbc0b9822ef79916c
+2 RIN MH:FF1723
+0 @F13449@ FAM
+1 RIN MH:F13449
+1 _UID 67154061f01341efbc0b9822ef79916c
+1 HUSB @I23362@
+1 CHIL @I23363@
+1 CHIL @I23364@
+0 @F13450@ FAM
+1 RIN MH:F13450
+1 _UID 67154088f01341efbc0b9822ef79916c
+1 HUSB @I23365@
+1 CHIL @I23366@
+1 CHIL @I23367@
+0 @F13451@ FAM
+1 RIN MH:F13451
+1 _UID 67154095f01341efbc0b9822ef79916c
+1 HUSB @I23366@
+1 CHIL @I23368@
+1 CHIL @I23369@
+0 @F13452@ FAM
+1 RIN MH:F13452
+1 _UID 671540e8f01341efbc0b9822ef79916c
+1 HUSB @I23369@
+1 WIFE @I23370@
+1 CHIL @I23371@
+1 CHIL @I23374@
+1 MARR
+2 _UID 671540e83b4f91efbc0b9822ef79916c
+2 RIN MH:FF1724
+0 @F13453@ FAM
+1 RIN MH:F13453
+1 _UID 671540fef01341efbc0b9822ef79916c
+1 HUSB @I23371@
+1 CHIL @I23372@
+1 CHIL @I23373@
+0 @F13454@ FAM
+1 RIN MH:F13454
+1 _UID 67154115f01341efbc0b9822ef79916c
+1 HUSB @I23374@
+1 WIFE @I23375@
+1 CHIL @I23376@
+1 CHIL @I23377@
+1 MARR
+2 _UID 671541153b4f91efbc0b9822ef79916c
+2 RIN MH:FF1725
+0 @F13455@ FAM
+1 RIN MH:F13455
+1 _UID 67154130f01341efbc0b9822ef79916c
+1 HUSB @I23376@
+1 CHIL @I23378@
+1 CHIL @I23379@
+0 @F13456@ FAM
+1 RIN MH:F13456
+1 _UID 67154141f01341efbc0b9822ef79916c
+1 HUSB @I23377@
+1 CHIL @I23380@
+1 CHIL @I23381@
+0 @F13457@ FAM
+1 RIN MH:F13457
+1 _UID 671542f7f01341efbc0b9822ef79916c
+1 HUSB @I22835@
+1 CHIL @I23382@
+0 @F13458@ FAM
+1 RIN MH:F13458
+1 _UID 67154314f01341efbc0b9822ef79916c
+1 HUSB @I23382@
+1 CHIL @I23383@
+1 CHIL @I23384@
+0 @F13459@ FAM
+1 RIN MH:F13459
+1 _UID 6715433af01341efbc0b9822ef79916c
+1 HUSB @I23384@
+1 CHIL @I23385@
+1 CHIL @I23386@
+0 @F13460@ FAM
+1 RIN MH:F13460
+1 _UID 67154648ac50d1efbc0b9822ef79916c
+1 CHIL @I23387@
+0 @F13461@ FAM
+1 RIN MH:F13461
+1 _UID 671546482ac4a1efbc0b9822ef79916c
+1 CHIL @I23388@
+0 @F13462@ FAM
+1 RIN MH:F13462
+1 _UID 67154648566441efbc0b9822ef79916c
+1 CHIL @I23389@
+0 @F13463@ FAM
+1 RIN MH:F13463
+1 _UID 671546489d3891efbc0b9822ef79916c
+1 CHIL @I23390@
+0 @F13464@ FAM
+1 RIN MH:F13464
+1 _UID 671546481bace1efbc0b9822ef79916c
+1 CHIL @I23391@
+0 @F13465@ FAM
+1 RIN MH:F13465
+1 _UID 67154648d0f031efbc0b9822ef79916c
+1 CHIL @I23392@
+0 @F13466@ FAM
+1 RIN MH:F13466
+1 _UID 671546acac50d1efbc0b9822ef79916c
+1 CHIL @I23394@
+0 @F13467@ FAM
+1 RIN MH:F13467
+1 _UID 671546ac2ac4a1efbc0b9822ef79916c
+1 CHIL @I23395@
+0 @F13468@ FAM
+1 RIN MH:F13468
+1 _UID 671546ac566441efbc0b9822ef79916c
+1 CHIL @I23396@
+0 @F13469@ FAM
+1 RIN MH:F13469
+1 _UID 671546ac9d3891efbc0b9822ef79916c
+1 CHIL @I23397@
+0 @F13470@ FAM
+1 RIN MH:F13470
+1 _UID 671546ac1bace1efbc0b9822ef79916c
+1 CHIL @I23398@
+0 @F13471@ FAM
+1 RIN MH:F13471
+1 _UID 671546acd0f031efbc0b9822ef79916c
+1 CHIL @I23399@
 0 @S13@ SOUR
 1 RIN MH:S13
 0 @S14@ SOUR
