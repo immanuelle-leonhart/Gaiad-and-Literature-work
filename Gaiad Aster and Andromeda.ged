@@ -12,11 +12,12 @@
 1 SUBM @U1@
 1 DEST MYHERITAGE
 1 DATE 21 OCT 2024
-2 TIME 21:06:41 
+2 TIME 22:08:20 
 2 _TIMEZONE GMT+5.5
-1 _RINS I23729,F13621,N17694,M0,R0,S24,U531,L0,P14219,Q0,IF32511,FF1776
+1 _RINS I23787,F13653,N17729,M0,R0,S25,U531,L0,P14219,Q0,IF32523,FF1776
 1 _UID 670FC744D5A0D3580AA22EF79916B426
 1 _DESCRIPTION_AWARE Y
+1 _FACTS_DEFRAGGED Y
 0  _PUBLISH
 1 _SITEADDRESS site1bd12elip07w6r60645
 1 _SITENAME Bishop Web Site
@@ -6886,7 +6887,7 @@
 1 OBJE
 2 FORM png
 2 TITL Guangweicaris restoration
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\
 2 _PHOTO_RIN MH:P14156
 2 _FILESIZE 1711940
 0 @I22925@ INDI
@@ -6923,7 +6924,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Artistic reconstruction of Isoxys curvirostratus
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
 2 _POSITION 145 17 682 734
@@ -6932,7 +6933,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Artistic reconstruction of Isoxys curvirostratus
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14159_537_717.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\P14159_537_717.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14159
@@ -6954,7 +6955,7 @@
 1 OBJE
 2 FORM png
 2 TITL 20191028 Megacheirans Leanchoilia Haikoucaris Yohoia Fortiforceps
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
 2 _POSITION 637 8 1455 1099
@@ -6963,7 +6964,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL 20191028 Megacheirans Leanchoilia Haikoucaris Yohoia Fortiforceps
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14162_818_1091.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\P14162_818_1091.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14162
@@ -6998,7 +6999,7 @@
 1 OBJE
 2 FORM png
 2 TITL Pantopoda collage
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
 2 _POSITION 66 5 732 894
@@ -7007,7 +7008,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Pantopoda collage
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14164_666_889.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\P14164_666_889.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14164
@@ -7100,7 +7101,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Aquilonifer2
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
 2 _POSITION 58 5 919 1154
@@ -7109,7 +7110,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Aquilonifer2
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14166_861_1149.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\P14166_861_1149.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14166
@@ -7130,7 +7131,7 @@
 1 OBJE
 2 FORM png
 2 TITL Pakucaris
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
 2 _POSITION 0 1 824 1100
@@ -7139,7 +7140,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Pakucaris
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14169_824_1099.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\P14169_824_1099.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14169
@@ -7341,7 +7342,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Lancastria elongata
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
 2 _POSITION 195 5 1620 1906
@@ -7350,7 +7351,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Lancastria elongata
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14173_1425_1901.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\P14173_1425_1901.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14173
@@ -7386,7 +7387,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Terataspis grandis e
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
 2 _POSITION 5 17 353 481
@@ -7395,7 +7396,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Terataspis grandis e
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14171_348_464.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\P14171_348_464.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14171
@@ -7416,7 +7417,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Radiaspis sp., Middle Devonian, El Otfal Formation, Morocco - Houston Museum of Natural Science - DSC01607
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
 2 _POSITION 117 5 2014 2535
@@ -7425,7 +7426,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Radiaspis sp., Middle Devonian, El Otfal Formation, Morocco - Houston Museum of Natural Science - DSC01607
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14175_1897_2530.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\P14175_1897_2530.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14175
@@ -7452,7 +7453,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Asaphus
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
 2 _POSITION 47 5 693 867
@@ -7461,7 +7462,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Asaphus
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14177_646_862.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\P14177_646_862.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14177
@@ -7482,7 +7483,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Harpes perradiatus fossil trilobite (Devonian, Morocco)
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
 2 _POSITION 5 52 955 1319
@@ -7491,7 +7492,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Harpes perradiatus fossil trilobite (Devonian, Morocco)
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14179_950_1267.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\P14179_950_1267.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14179
@@ -7512,7 +7513,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Dalmanites limulurus trilobite silurian
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
 2 _POSITION 52 5 1137 1453
@@ -7521,7 +7522,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Dalmanites limulurus trilobite silurian
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14181_1085_1448.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\P14181_1085_1448.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14181
@@ -7542,7 +7543,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Aulacopleura konincki
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
 2 _POSITION 130 5 2035 2546
@@ -7551,7 +7552,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Aulacopleura konincki
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14183_1905_2541.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\P14183_1905_2541.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14183
@@ -7649,7 +7650,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Opiliones harvestman
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
 2 _POSITION 237 5 786 738
@@ -7658,7 +7659,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Opiliones harvestman
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14185_549_733.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\P14185_549_733.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14185
@@ -7705,7 +7706,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Sunspider
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
 2 _POSITION 5 177 1994 2829
@@ -7714,7 +7715,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Sunspider
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14187_1989_2652.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\P14187_1989_2652.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14187
@@ -7735,7 +7736,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Ricinulei from Fernandez & Giribet, nymph of Ricinoides atewa (2015) (cropped)
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
 2 _POSITION 178 5 564 520
@@ -7744,7 +7745,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Ricinulei from Fernandez & Giribet, nymph of Ricinoides atewa (2015) (cropped)
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14189_386_515.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\P14189_386_515.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14189
@@ -7779,7 +7780,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Trombidium holosericeum (aka)
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
 2 _POSITION 46 5 528 648
@@ -7788,7 +7789,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Trombidium holosericeum (aka)
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14191_482_643.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\P14191_482_643.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14191
@@ -7836,7 +7837,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Ar 1
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\
 2 NOTE CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=219721
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
@@ -7846,7 +7847,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Ar 1
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14193_453_605.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\P14193_453_605.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14193
@@ -7868,7 +7869,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Ixodes hexagonus (aka)
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\
 2 NOTE By André Karwath aka Aka - Own work, CC BY-SA 2.5, https://commons.wikimedia.org/w/index.php?curid=318254
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
@@ -7878,7 +7879,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Ixodes hexagonus (aka)
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14195_1046_1396.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\P14195_1046_1396.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14195
@@ -7980,7 +7981,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Jaekelopterus rhenaniae reconstruction
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
 2 _POSITION 1827 33 3675 2496
@@ -7989,7 +7990,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Jaekelopterus rhenaniae reconstruction
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14198_1848_2463.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\P14198_1848_2463.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14198
@@ -8011,7 +8012,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Eurypterus Paleoart
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\
 2 NOTE By Obsidian SoulBackground: Dimitris Siskopoulos from Alexandroupolis, Greece - Own workBackground: Water_floor.jpg, CC BY 2.0, https://commons.wikimedia.org/w/index.php?curid=15267454
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
@@ -8021,7 +8022,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Eurypterus Paleoart
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14200_759_1013.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\P14200_759_1013.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14200
@@ -8130,7 +8131,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Asian forest scorpion in Khao Yai National Park
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\
 2 NOTE By Chris huh - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=2542194
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
@@ -8140,7 +8141,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Asian forest scorpion in Khao Yai National Park
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14203_2573_3431.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\P14203_2573_3431.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14203
@@ -8181,7 +8182,7 @@
 1 OBJE
 2 FORM png
 2 TITL Sottyxerxes
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\
 2 NOTE By Qohelet12 - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=127076280
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
@@ -8191,7 +8192,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Sottyxerxes
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14206_743_991.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\P14206_743_991.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14206
@@ -8289,7 +8290,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Insects - Neoptera - Paleoptera - Apterygota
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\
 2 NOTE By Chiswick Chap - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=151232017
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
@@ -8299,7 +8300,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Insects - Neoptera - Paleoptera - Apterygota
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14208_801_1068.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\P14208_801_1068.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14208
@@ -8394,7 +8395,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Chthamalus stellatus
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\
 2 NOTE By MichaelMaggs - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=4210566
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
@@ -8404,7 +8405,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Chthamalus stellatus
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14210_1743_2325.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\P14210_1743_2325.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14210
@@ -8531,7 +8532,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Gammarus roeselii
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\
 2 NOTE By Michal Maňas - Own work, CC BY 2.5, https://commons.wikimedia.org/w/index.php?curid=1869909
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
@@ -8541,7 +8542,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Gammarus roeselii
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14213_924_1232.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\P14213_924_1232.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14213
@@ -8562,7 +8563,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Armadillidium vulgare 001
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\
 2 NOTE By Franco Folini - San Francisco, California, CC BY 2.5, https://commons.wikimedia.org/w/index.php?curid=789616
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
@@ -8572,7 +8573,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Armadillidium vulgare 001
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14216_2013_2682.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\P14216_2013_2682.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14216
@@ -9066,7 +9067,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Bathochordaeus charon compared to B. stygius-0000
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\
 2 NOTE By Sherlock, R.E., Walz, K.R. and Robison, B.H. - [1], CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=54570570
 2 _PRIM Y
 2 _PRIM_CUTOUT Y
@@ -9076,7 +9077,7 @@
 1 OBJE
 2 FORM jpg
 2 TITL Bathochordaeus charon compared to B. stygius-0000
-2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda 2_Photos\P14219_210_280.jpg
+2 FILE C:\Users\imman\OneDrive\Documents\GitHub\Gaiad-Genealogy-3\Gaiad Aster and Andromeda_Photos\P14219_210_280.jpg
 2 _PRIM Y
 2 _CUTOUT Y
 2 _PHOTO_RIN MH:P14219
@@ -14067,7 +14068,7 @@
 0 @I23580@ INDI
 1 RIN MH:I23580
 1 _UID 67161119f01341efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 14:04:33 GMT+5.5
+1 _UPD 21 OCT 2024 21:55:26 GMT+5.5
 1 NAME Eve /Mitochondrial Eve/
 2 GIVN Eve
 2 SURN Mitochondrial Eve
@@ -14084,31 +14085,9 @@
 0 @I23581@ INDI
 1 RIN MH:I23581
 1 _UID 67161206bddbe1efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 14:04:33 GMT+5.5
+1 _UPD 21 OCT 2024 21:55:26 GMT+5.5
 1 SEX M
 1 FAMS @F13551@
-0 @I23582@ INDI
-1 RIN MH:I23582
-1 _UID 6716120df01341efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 14:04:26 GMT+5.5
-1 NAME  /L0/
-2 SURN L0
-1 SEX F
-1 BIRT
-2 _UID 67161212f01341efbc0b9822ef79916c
-2 RIN MH:IF32383
-1 FAMC @F13551@
-0 @I23583@ INDI
-1 RIN MH:I23583
-1 _UID 67161216f01341efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 14:04:33 GMT+5.5
-1 NAME  /L1-6/
-2 SURN L1-6
-1 SEX F
-1 BIRT
-2 _UID 67161219f01341efbc0b9822ef79916c
-2 RIN MH:IF32384
-1 FAMC @F13551@
 0 @I23584@ INDI
 1 RIN MH:I23584
 1 _UID 6716128bbddbe1efbc0b9822ef79916c
@@ -15749,14 +15728,680 @@
 0 @I23729@ INDI
 1 RIN MH:I23729
 1 _UID 671673e5748341efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 21:01:51 GMT+5.5
+1 _UPD 21 OCT 2024 21:59:09 GMT+5.5
 1 NAME  /Pseudosuchia/
 2 SURN Pseudosuchia
 1 SEX M
 1 BIRT
 2 _UID 671673e7748341efbc0b9822ef79916c
 2 RIN MH:IF32511
+1 FAMS @F13649@
 1 FAMC @F13621@
+0 @I23730@ INDI
+1 RIN MH:I23730
+1 _UID 67167f62748341efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME L (Mitochondrial Eve) //
+2 GIVN L (Mitochondrial Eve)
+1 SEX F
+1 FAMS @F13622@
+1 FAMC @F13551@
+1 NOTE Mitochondrial Eve is the matrilineal most recent common ancestor of all humans alive today.
+2 SOUR @S25@
+3 RIN MH:SC1
+3 QUAY 0
+0 @I23731@ INDI
+1 RIN MH:I23731
+1 _UID 67167f62394be1efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME L0 //
+2 GIVN L0
+1 SEX F
+1 FAMS @F13623@
+1 FAMC @F13622@
+1 NOTE Haplogroup L0 is found primarily in Southern Africa among the Khoisan peoples.
+2 SOUR @S25@
+3 RIN MH:SC2
+3 QUAY 0
+0 @I23732@ INDI
+1 RIN MH:I23732
+1 _UID 67167f62ef1201efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME L1-6 //
+2 GIVN L1-6
+1 SEX F
+1 FAMS @F13624@
+1 FAMC @F13622@
+0 @I23733@ INDI
+1 RIN MH:I23733
+1 _UID 67167f62244ed1efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME L1 //
+2 GIVN L1
+1 SEX F
+1 FAMS @F13625@
+1 FAMC @F13624@
+1 NOTE Haplogroup L1 is prevalent in Central Africa among Pygmy populations.
+2 SOUR @S25@
+3 RIN MH:SC3
+3 QUAY 0
+0 @I23734@ INDI
+1 RIN MH:I23734
+1 _UID 67167f62698671efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME L2-6 //
+2 GIVN L2-6
+1 SEX F
+1 FAMS @F13626@
+1 FAMC @F13624@
+0 @I23735@ INDI
+1 RIN MH:I23735
+1 _UID 67167f6298d0c1efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME L5 //
+2 GIVN L5
+1 SEX F
+1 FAMC @F13626@
+1 NOTE Haplogroup L5 is found in East Africa.
+2 SOUR @S25@
+3 RIN MH:SC4
+3 QUAY 0
+0 @I23736@ INDI
+1 RIN MH:I23736
+1 _UID 67167f62b35191efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME L2'3'4'6 //
+2 GIVN L2'3'4'6
+1 SEX F
+1 FAMS @F13627@
+1 FAMC @F13626@
+0 @I23737@ INDI
+1 RIN MH:I23737
+1 _UID 67167f6235c5e1efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME L2 //
+2 GIVN L2
+1 SEX F
+1 FAMC @F13627@
+1 NOTE Haplogroup L2 is common in West and Central Africa.
+2 SOUR @S25@
+3 RIN MH:SC5
+3 QUAY 0
+0 @I23738@ INDI
+1 RIN MH:I23738
+1 _UID 67167f62e39c01efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME L3'4'6 //
+2 GIVN L3'4'6
+1 SEX F
+1 FAMS @F13628@
+1 FAMC @F13627@
+0 @I23739@ INDI
+1 RIN MH:I23739
+1 _UID 67167f6228c0d1efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME L6 //
+2 GIVN L6
+1 SEX F
+1 FAMC @F13628@
+1 NOTE Haplogroup L6 is found in Northeast Africa and the Arabian Peninsula.
+2 SOUR @S25@
+3 RIN MH:SC6
+3 QUAY 0
+0 @I23740@ INDI
+1 RIN MH:I23740
+1 _UID 67167f62d2f441efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME L3'4 //
+2 GIVN L3'4
+1 SEX F
+1 FAMS @F13629@
+1 FAMC @F13628@
+0 @I23741@ INDI
+1 RIN MH:I23741
+1 _UID 67167f6219a891efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME L4 //
+2 GIVN L4
+1 SEX F
+1 FAMC @F13629@
+1 NOTE Haplogroup L4 is found in East Africa.
+2 SOUR @S25@
+3 RIN MH:SC7
+3 QUAY 0
+0 @I23742@ INDI
+1 RIN MH:I23742
+1 _UID 67167f62546031efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME L3 //
+2 GIVN L3
+1 SEX F
+1 FAMS @F13630@
+1 FAMC @F13629@
+1 NOTE Haplogroup L3 is the ancestor of all non-African haplogroups.
+2 SOUR @S25@
+3 RIN MH:SC8
+3 QUAY 0
+0 @I23743@ INDI
+1 RIN MH:I23743
+1 _UID 67167f628239d1efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME N //
+2 GIVN N
+1 SEX F
+1 FAMS @F13631@
+1 FAMC @F13630@
+1 NOTE Haplogroup N is one of the two major haplogroups that migrated out of Africa, found in Eurasia.
+2 SOUR @S25@
+3 RIN MH:SC9
+3 QUAY 0
+0 @I23744@ INDI
+1 RIN MH:I23744
+1 _UID 67167f62cff171efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME M //
+2 GIVN M
+1 SEX F
+1 FAMS @F13640@
+1 FAMC @F13630@
+1 NOTE Haplogroup M is widespread in Asia and represents early migrations out of Africa.
+2 SOUR @S25@
+3 RIN MH:SC10
+3 QUAY 0
+0 @I23745@ INDI
+1 RIN MH:I23745
+1 _UID 67167f62f5fb11efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME N1 //
+2 GIVN N1
+1 SEX F
+1 FAMS @F13632@
+1 FAMC @F13631@
+1 NOTE Haplogroup N1 is found in Europe and the Middle East.
+2 SOUR @S25@
+3 RIN MH:SC11
+3 QUAY 0
+0 @I23746@ INDI
+1 RIN MH:I23746
+1 _UID 67167f6293b2e1efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME N2 //
+2 GIVN N2
+1 SEX F
+1 FAMS @F13633@
+1 FAMC @F13631@
+1 NOTE Haplogroup N2 is present in Eurasian populations.
+2 SOUR @S25@
+3 RIN MH:SC12
+3 QUAY 0
+0 @I23747@ INDI
+1 RIN MH:I23747
+1 _UID 67167f6245eb01efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME N9 //
+2 GIVN N9
+1 SEX F
+1 FAMS @F13634@
+1 FAMC @F13631@
+1 NOTE Haplogroup N9 is common in East Asia.
+2 SOUR @S25@
+3 RIN MH:SC13
+3 QUAY 0
+0 @I23748@ INDI
+1 RIN MH:I23748
+1 _UID 67167f62823a61efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME A //
+2 GIVN A
+1 SEX F
+1 FAMC @F13631@
+1 NOTE Haplogroup A is found in East Asia and among Native American populations.
+2 SOUR @S25@
+3 RIN MH:SC14
+3 QUAY 0
+0 @I23749@ INDI
+1 RIN MH:I23749
+1 _UID 67167f62284081efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME S //
+2 GIVN S
+1 SEX F
+1 FAMC @F13631@
+1 NOTE Haplogroup S is found in Australia and Papua New Guinea.
+2 SOUR @S25@
+3 RIN MH:SC15
+3 QUAY 0
+0 @I23750@ INDI
+1 RIN MH:I23750
+1 _UID 67167f62658821efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 SEX F
+1 FAMC @F13631@
+1 NOTE Haplogroup X is distributed in Europe, Western Asia, and North America.
+2 SOUR @S25@
+3 RIN MH:SC16
+3 QUAY 0
+0 @I23751@ INDI
+1 RIN MH:I23751
+1 _UID 67167f62b3d1c1efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME R //
+2 GIVN R
+1 SEX F
+1 FAMS @F13635@
+1 FAMC @F13631@
+1 NOTE Haplogroup R is a major lineage widespread in Eurasia.
+2 SOUR @S25@
+3 RIN MH:SC17
+3 QUAY 0
+0 @I23752@ INDI
+1 RIN MH:I23752
+1 _UID 67167f62fe1961efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME R0 (pre-HV) //
+2 GIVN R0 (pre-HV)
+1 SEX F
+1 FAMS @F13636@
+1 FAMC @F13635@
+1 NOTE Haplogroup R0 is found in the Middle East and North Africa.
+2 SOUR @S25@
+3 RIN MH:SC18
+3 QUAY 0
+0 @I23753@ INDI
+1 RIN MH:I23753
+1 _UID 67167f62c41301efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME pre-JT (R2'JT) //
+2 GIVN pre-JT (R2'JT)
+1 SEX F
+1 FAMS @F13637@
+1 FAMC @F13635@
+1 NOTE Ancestral to haplogroups J and T, found in Europe and the Middle East.
+2 SOUR @S25@
+3 RIN MH:SC19
+3 QUAY 0
+0 @I23754@ INDI
+1 RIN MH:I23754
+1 _UID 67167f62a25af1efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME R9 //
+2 GIVN R9
+1 SEX F
+1 FAMS @F13638@
+1 FAMC @F13635@
+0 @I23755@ INDI
+1 RIN MH:I23755
+1 _UID 67167f62690621efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME R11'B //
+2 GIVN R11'B
+1 SEX F
+1 FAMS @F13639@
+1 FAMC @F13635@
+0 @I23756@ INDI
+1 RIN MH:I23756
+1 _UID 67167f62740311efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME P //
+2 GIVN P
+1 SEX F
+1 FAMC @F13635@
+1 NOTE Haplogroup P is found in Oceania.
+2 SOUR @S25@
+3 RIN MH:SC20
+3 QUAY 0
+0 @I23757@ INDI
+1 RIN MH:I23757
+1 _UID 67167f6239cbb1efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME U //
+2 GIVN U
+1 SEX F
+1 FAMS @F13641@
+1 FAMC @F13635@
+1 NOTE Haplogroup U is common in Europe, North Africa, and the Middle East.
+2 SOUR @S25@
+3 RIN MH:SC21
+3 QUAY 0
+0 @I23758@ INDI
+1 RIN MH:I23758
+1 _UID 67167f628e3781efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME O //
+2 GIVN O
+1 SEX F
+1 FAMC @F13635@
+1 NOTE Haplogroup O is found in Oceania.
+2 SOUR @S25@
+3 RIN MH:SC22
+3 QUAY 0
+0 @I23759@ INDI
+1 RIN MH:I23759
+1 _UID 67167f62c3ff21efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME HV //
+2 GIVN HV
+1 SEX F
+1 FAMS @F13642@
+1 FAMC @F13636@
+1 NOTE Haplogroup HV is prevalent in Europe and the Middle East.
+2 SOUR @S25@
+3 RIN MH:SC23
+3 QUAY 0
+0 @I23760@ INDI
+1 RIN MH:I23760
+1 _UID 67167f6215a6c1efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME H //
+2 GIVN H
+1 SEX F
+1 FAMC @F13642@
+1 NOTE Haplogroup H is the most common in Europe.
+2 SOUR @S25@
+3 RIN MH:SC24
+3 QUAY 0
+0 @I23761@ INDI
+1 RIN MH:I23761
+1 _UID 67167f62586e61efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME V //
+2 GIVN V
+1 SEX F
+1 FAMC @F13642@
+1 NOTE Haplogroup V is found in Europe and North Africa.
+2 SOUR @S25@
+3 RIN MH:SC25
+3 QUAY 0
+0 @I23762@ INDI
+1 RIN MH:I23762
+1 _UID 67167f62626401efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME JT //
+2 GIVN JT
+1 SEX F
+1 FAMS @F13643@
+1 FAMC @F13637@
+0 @I23763@ INDI
+1 RIN MH:I23763
+1 _UID 67167f6282b981efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME J //
+2 GIVN J
+1 SEX F
+1 FAMC @F13643@
+1 NOTE Haplogroup J is common in Europe and the Middle East.
+2 SOUR @S25@
+3 RIN MH:SC26
+3 QUAY 0
+0 @I23764@ INDI
+1 RIN MH:I23764
+1 _UID 67167f62cf7121efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME T //
+2 GIVN T
+1 SEX F
+1 FAMC @F13643@
+1 NOTE Haplogroup T is found in Europe and Western Asia.
+2 SOUR @S25@
+3 RIN MH:SC27
+3 QUAY 0
+0 @I23765@ INDI
+1 RIN MH:I23765
+1 _UID 67167f621928c1efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME F //
+2 GIVN F
+1 SEX F
+1 FAMC @F13638@
+1 NOTE Haplogroup F is found in East and Southeast Asia.
+2 SOUR @S25@
+3 RIN MH:SC28
+3 QUAY 0
+0 @I23766@ INDI
+1 RIN MH:I23766
+1 _UID 67167f6280cc61efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME B //
+2 GIVN B
+1 SEX F
+1 FAMC @F13639@
+1 NOTE Haplogroup B is common in Asia and among Native Americans.
+2 SOUR @S25@
+3 RIN MH:SC29
+3 QUAY 0
+0 @I23767@ INDI
+1 RIN MH:I23767
+1 _UID 67167f62cd04c1efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME U8 //
+2 GIVN U8
+1 SEX F
+1 FAMS @F13644@
+1 FAMC @F13641@
+0 @I23768@ INDI
+1 RIN MH:I23768
+1 _UID 67167f62658101efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME K //
+2 GIVN K
+1 SEX F
+1 FAMC @F13644@
+1 NOTE Haplogroup K is found in Europe and the Middle East.
+2 SOUR @S25@
+3 RIN MH:SC30
+3 QUAY 0
+0 @I23769@ INDI
+1 RIN MH:I23769
+1 _UID 67167f62d001f1efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME M9 //
+2 GIVN M9
+1 SEX F
+1 FAMS @F13645@
+1 FAMC @F13640@
+1 NOTE Haplogroup E (from M9) is found in Southeast Asia.
+2 SOUR @S25@
+3 RIN MH:SC31
+3 QUAY 0
+0 @I23770@ INDI
+1 RIN MH:I23770
+1 _UID 67167f629dc951efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME M12'G //
+2 GIVN M12'G
+1 SEX F
+1 FAMS @F13646@
+1 FAMC @F13640@
+0 @I23771@ INDI
+1 RIN MH:I23771
+1 _UID 67167f626c9fe1efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME M29'Q //
+2 GIVN M29'Q
+1 SEX F
+1 FAMS @F13647@
+1 FAMC @F13640@
+0 @I23772@ INDI
+1 RIN MH:I23772
+1 _UID 67167f62a7c331efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME D //
+2 GIVN D
+1 SEX F
+1 FAMC @F13640@
+1 NOTE Haplogroup D is prevalent in Asia and among Native Americans.
+2 SOUR @S25@
+3 RIN MH:SC32
+3 QUAY 0
+0 @I23773@ INDI
+1 RIN MH:I23773
+1 _UID 67167f62c18ac1efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME M8 //
+2 GIVN M8
+1 SEX F
+1 FAMS @F13648@
+1 FAMC @F13640@
+0 @I23774@ INDI
+1 RIN MH:I23774
+1 _UID 67167f62ad6181efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME C //
+2 GIVN C
+1 SEX F
+1 FAMC @F13648@
+1 NOTE Haplogroup C is found in Asia and Native American populations.
+2 SOUR @S25@
+3 RIN MH:SC33
+3 QUAY 0
+0 @I23775@ INDI
+1 RIN MH:I23775
+1 _UID 67167f62dc8ff1efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
+1 NAME Z //
+2 GIVN Z
+1 SEX F
+1 FAMC @F13648@
+1 NOTE Haplogroup Z is found in Northern Eurasia.
+2 SOUR @S25@
+3 RIN MH:SC34
+3 QUAY 0
+0 @I23776@ INDI
+1 RIN MH:I23776
+1 _UID 6716814baf8b01efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 22:05:06 GMT+5.5
+1 NAME  /Suchia/
+2 SURN Suchia
+1 SEX M
+1 BIRT
+2 _UID 6716814e64d7d1efbc0b9822ef79916c
+2 RIN MH:IF32512
+1 FAMS @F13650@
+1 FAMC @F13649@
+0 @I23777@ INDI
+1 RIN MH:I23777
+1 _UID 6716815264d7d1efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:59:09 GMT+5.5
+1 NAME  /†Ornithosuchidae/
+2 SURN †Ornithosuchidae
+1 SEX M
+1 BIRT
+2 _UID 6716815564d7d1efbc0b9822ef79916c
+2 RIN MH:IF32513
+1 FAMC @F13649@
+0 @I23778@ INDI
+1 RIN MH:I23778
+1 _UID 67168299af8b01efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 22:05:52 GMT+5.5
+1 NAME  /Suchia/
+2 SURN Suchia
+1 SEX M
+1 BIRT
+2 _UID 6716829b64d7d1efbc0b9822ef79916c
+2 RIN MH:IF32514
+1 FAMS @F13652@
+1 FAMC @F13650@
+0 @I23779@ INDI
+1 RIN MH:I23779
+1 _UID 6716829f64d7d1efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 22:05:31 GMT+5.5
+1 NAME  /Suchia/
+2 SURN Suchia
+1 SEX M
+1 BIRT
+2 _UID 671682a164d7d1efbc0b9822ef79916c
+2 RIN MH:IF32515
+1 FAMS @F13651@
+1 FAMC @F13650@
+0 @I23780@ INDI
+1 RIN MH:I23780
+1 _UID 671682a864d7d1efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 22:04:51 GMT+5.5
+1 NAME  /†Turfanosuchus/
+2 SURN †Turfanosuchus
+1 SEX M
+1 BIRT
+2 _UID 671682ab64d7d1efbc0b9822ef79916c
+2 RIN MH:IF32516
+1 FAMC @F13650@
+0 @I23781@ INDI
+1 RIN MH:I23781
+1 _UID 671682b064d7d1efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 22:05:06 GMT+5.5
+1 NAME  /†Gracilisuchus/
+2 SURN †Gracilisuchus
+1 SEX M
+1 BIRT
+2 _UID 671682ba64d7d1efbc0b9822ef79916c
+2 RIN MH:IF32517
+1 FAMC @F13650@
+0 @I23782@ INDI
+1 RIN MH:I23782
+1 _UID 671682c9af8b01efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 22:05:24 GMT+5.5
+1 NAME  /†Revueltosaurus/
+2 SURN †Revueltosaurus
+1 SEX M
+1 BIRT
+2 _UID 671682cc64d7d1efbc0b9822ef79916c
+2 RIN MH:IF32518
+1 FAMC @F13651@
+0 @I23783@ INDI
+1 RIN MH:I23783
+1 _UID 671682d064d7d1efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 22:05:31 GMT+5.5
+1 NAME  /†Aetosauria/
+2 SURN †Aetosauria
+1 SEX M
+1 BIRT
+2 _UID 671682d364d7d1efbc0b9822ef79916c
+2 RIN MH:IF32519
+1 FAMC @F13651@
+0 @I23784@ INDI
+1 RIN MH:I23784
+1 _UID 671682ddaf8b01efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 22:06:16 GMT+5.5
+1 NAME  /Paracrocodylomorpha /
+2 SURN Paracrocodylomorpha 
+1 SEX M
+1 BIRT
+2 _UID 671682e064d7d1efbc0b9822ef79916c
+2 RIN MH:IF32520
+1 FAMS @F13653@
+1 FAMC @F13652@
+0 @I23785@ INDI
+1 RIN MH:I23785
+1 _UID 671682e564d7d1efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 22:05:52 GMT+5.5
+1 NAME  /†Ticinosuchus/
+2 SURN †Ticinosuchus
+1 SEX M
+1 BIRT
+2 _UID 671682e764d7d1efbc0b9822ef79916c
+2 RIN MH:IF32521
+1 FAMC @F13652@
+0 @I23786@ INDI
+1 RIN MH:I23786
+1 _UID 671682f3af8b01efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 22:06:06 GMT+5.5
+1 NAME  /Loricata/
+2 SURN Loricata
+1 SEX M
+1 BIRT
+2 _UID 671682f664d7d1efbc0b9822ef79916c
+2 RIN MH:IF32522
+1 FAMC @F13653@
+0 @I23787@ INDI
+1 RIN MH:I23787
+1 _UID 671682fe64d7d1efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 22:06:16 GMT+5.5
+1 NAME  /†Poposauroidea/
+2 SURN †Poposauroidea
+1 SEX M
+1 BIRT
+2 _UID 6716830064d7d1efbc0b9822ef79916c
+2 RIN MH:IF32523
+1 FAMC @F13653@
 0 @F1@ FAM
 1 RIN MH:F1
 1 _UID 66dfdfd660f561efbbc69822ef79916c
@@ -19340,8 +19985,7 @@
 1 _UID 67161206f01341efbc0b9822ef79916c
 1 HUSB @I23581@
 1 WIFE @I23580@
-1 CHIL @I23582@
-1 CHIL @I23583@
+1 CHIL @I23730@
 1 MARR
 2 _UID 671612063b4f91efbc0b9822ef79916c
 2 RIN MH:FF1755
@@ -19829,6 +20473,191 @@
 1 HUSB @I23722@
 1 CHIL @I23728@
 1 CHIL @I23729@
+0 @F13622@ FAM
+1 RIN MH:F13622
+1 _UID 67167f6226bb61efbc0b9822ef79916c
+1 WIFE @I23730@
+1 CHIL @I23731@
+1 CHIL @I23732@
+0 @F13623@ FAM
+1 RIN MH:F13623
+1 _UID 67167f62ede7b1efbc0b9822ef79916c
+1 WIFE @I23731@
+0 @F13624@ FAM
+1 RIN MH:F13624
+1 _UID 67167f626b73c1efbc0b9822ef79916c
+1 WIFE @I23732@
+1 CHIL @I23733@
+1 CHIL @I23734@
+0 @F13625@ FAM
+1 RIN MH:F13625
+1 _UID 67167f62a02f11efbc0b9822ef79916c
+1 WIFE @I23733@
+0 @F13626@ FAM
+1 RIN MH:F13626
+1 _UID 67167f62bd2a21efbc0b9822ef79916c
+1 WIFE @I23734@
+1 CHIL @I23735@
+1 CHIL @I23736@
+0 @F13627@ FAM
+1 RIN MH:F13627
+1 _UID 67167f627676f1efbc0b9822ef79916c
+1 WIFE @I23736@
+1 CHIL @I23737@
+1 CHIL @I23738@
+0 @F13628@ FAM
+1 RIN MH:F13628
+1 _UID 67167f62f0e281efbc0b9822ef79916c
+1 WIFE @I23738@
+1 CHIL @I23739@
+1 CHIL @I23740@
+0 @F13629@ FAM
+1 RIN MH:F13629
+1 _UID 67167f623bbe51efbc0b9822ef79916c
+1 WIFE @I23740@
+1 CHIL @I23741@
+1 CHIL @I23742@
+0 @F13630@ FAM
+1 RIN MH:F13630
+1 _UID 67167f62cae8e1efbc0b9822ef79916c
+1 WIFE @I23742@
+1 CHIL @I23743@
+1 CHIL @I23744@
+0 @F13631@ FAM
+1 RIN MH:F13631
+1 _UID 67167f621b4381efbc0b9822ef79916c
+1 WIFE @I23743@
+1 CHIL @I23745@
+1 CHIL @I23746@
+1 CHIL @I23747@
+1 CHIL @I23748@
+1 CHIL @I23749@
+1 CHIL @I23750@
+1 CHIL @I23751@
+0 @F13632@ FAM
+1 RIN MH:F13632
+1 _UID 67167f62e169b1efbc0b9822ef79916c
+1 WIFE @I23745@
+0 @F13633@ FAM
+1 RIN MH:F13633
+1 _UID 67167f6267fdc1efbc0b9822ef79916c
+1 WIFE @I23746@
+0 @F13634@ FAM
+1 RIN MH:F13634
+1 _UID 67167f62aca111efbc0b9822ef79916c
+1 WIFE @I23747@
+0 @F13635@ FAM
+1 RIN MH:F13635
+1 _UID 67167f62b1a421efbc0b9822ef79916c
+1 WIFE @I23751@
+1 CHIL @I23752@
+1 CHIL @I23753@
+1 CHIL @I23754@
+1 CHIL @I23755@
+1 CHIL @I23756@
+1 CHIL @I23757@
+1 CHIL @I23758@
+0 @F13636@ FAM
+1 RIN MH:F13636
+1 _UID 67167f627af8f1efbc0b9822ef79916c
+1 WIFE @I23752@
+1 CHIL @I23759@
+0 @F13637@ FAM
+1 RIN MH:F13637
+1 _UID 67167f62fc6c81efbc0b9822ef79916c
+1 WIFE @I23753@
+1 CHIL @I23762@
+0 @F13638@ FAM
+1 RIN MH:F13638
+1 _UID 67167f62175371efbc0b9822ef79916c
+1 WIFE @I23754@
+1 CHIL @I23765@
+0 @F13639@ FAM
+1 RIN MH:F13639
+1 _UID 67167f62dc0fa1efbc0b9822ef79916c
+1 WIFE @I23755@
+1 CHIL @I23766@
+0 @F13640@ FAM
+1 RIN MH:F13640
+1 _UID 67167f625a9bd1efbc0b9822ef79916c
+1 WIFE @I23744@
+1 CHIL @I23769@
+1 CHIL @I23770@
+1 CHIL @I23771@
+1 CHIL @I23772@
+1 CHIL @I23773@
+0 @F13641@ FAM
+1 RIN MH:F13641
+1 _UID 67167f6291c701efbc0b9822ef79916c
+1 WIFE @I23757@
+1 CHIL @I23767@
+0 @F13642@ FAM
+1 RIN MH:F13642
+1 _UID 67167f628cc231efbc0b9822ef79916c
+1 WIFE @I23759@
+1 CHIL @I23760@
+1 CHIL @I23761@
+0 @F13643@ FAM
+1 RIN MH:F13643
+1 _UID 67167f62479ee1efbc0b9822ef79916c
+1 WIFE @I23762@
+1 CHIL @I23763@
+1 CHIL @I23764@
+0 @F13644@ FAM
+1 RIN MH:F13644
+1 _UID 67167f62c10a91efbc0b9822ef79916c
+1 WIFE @I23767@
+1 CHIL @I23768@
+0 @F13645@ FAM
+1 RIN MH:F13645
+1 _UID 67167f62a56431efbc0b9822ef79916c
+1 WIFE @I23769@
+0 @F13646@ FAM
+1 RIN MH:F13646
+1 _UID 67167f62fb00f1efbc0b9822ef79916c
+1 WIFE @I23770@
+0 @F13647@ FAM
+1 RIN MH:F13647
+1 _UID 67167f62305c21efbc0b9822ef79916c
+1 WIFE @I23771@
+0 @F13648@ FAM
+1 RIN MH:F13648
+1 _UID 67167f62d081a1efbc0b9822ef79916c
+1 WIFE @I23773@
+1 CHIL @I23774@
+1 CHIL @I23775@
+0 @F13649@ FAM
+1 RIN MH:F13649
+1 _UID 6716814b64d7d1efbc0b9822ef79916c
+1 HUSB @I23729@
+1 CHIL @I23776@
+1 CHIL @I23777@
+0 @F13650@ FAM
+1 RIN MH:F13650
+1 _UID 6716829964d7d1efbc0b9822ef79916c
+1 HUSB @I23776@
+1 CHIL @I23778@
+1 CHIL @I23779@
+1 CHIL @I23780@
+1 CHIL @I23781@
+0 @F13651@ FAM
+1 RIN MH:F13651
+1 _UID 671682c964d7d1efbc0b9822ef79916c
+1 HUSB @I23779@
+1 CHIL @I23782@
+1 CHIL @I23783@
+0 @F13652@ FAM
+1 RIN MH:F13652
+1 _UID 671682dd64d7d1efbc0b9822ef79916c
+1 HUSB @I23778@
+1 CHIL @I23784@
+1 CHIL @I23785@
+0 @F13653@ FAM
+1 RIN MH:F13653
+1 _UID 671682f364d7d1efbc0b9822ef79916c
+1 HUSB @I23784@
+1 CHIL @I23786@
+1 CHIL @I23787@
 0 @S13@ SOUR
 1 RIN MH:S13
 0 @S14@ SOUR
@@ -19853,4 +20682,10 @@
 1 RIN MH:S23
 0 @S24@ SOUR
 1 RIN MH:S24
+0 @S25@ SOUR
+1 RIN MH:S25
+1 AUTH Wikipedia contributors
+1 TITL Human mitochondrial DNA haplogroup
+1 PUBL Wikipedia, The Free Encyclopedia
+1 NOTE URL: https://en.wikipedia.org/w/index.php?title=Human_mitochondrial_DNA_haplogroup&action=edit&section=1
 0 TRLR
