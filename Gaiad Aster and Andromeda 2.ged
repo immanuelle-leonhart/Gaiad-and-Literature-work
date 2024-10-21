@@ -12,13 +12,15 @@
 1 SUBM @U1@
 1 DEST MYHERITAGE
 1 DATE 21 OCT 2024
-2 TIME 14:24:51 
+2 TIME 21:06:41 
 2 _TIMEZONE GMT+5.5
-1 _RINS I23650,F13579,N17690,M0,R0,S24,U531,L0,P14219,Q0,IF32435,FF1771
+1 _RINS I23729,F13621,N17694,M0,R0,S24,U531,L0,P14219,Q0,IF32511,FF1776
 1 _UID 670FC744D5A0D3580AA22EF79916B426
 1 _DESCRIPTION_AWARE Y
-1 _FACTS_DEFRAGGED Y
 0  _PUBLISH
+1 _SITEADDRESS site1bd12elip07w6r60645
+1 _SITENAME Bishop Web Site
+1 _SITEID 1208328472
 1 _USERNAME ericrichardbishop@@gmail.com
 1 _DISABLED Y
 0 @U1@ SUBM
@@ -12789,7 +12791,7 @@
 0 @I23474@ INDI
 1 RIN MH:I23474
 1 _UID 671603ea3b4f91efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 13:08:23 GMT+5.5
+1 _UPD 21 OCT 2024 20:06:17 GMT+5.5
 1 NAME  /Sauropsida/
 2 SURN Sauropsida
 1 SEX M
@@ -12800,7 +12802,48 @@
 1 DEAT
 2 _UID 671604e4f01341efbc0b9822ef79916c
 2 RIN MH:IF32274
+1 FAMS @F13580@
 1 FAMC @F13500@
+1 NOTE <p style="text-align: left;" dir="ltr">Source for dewcendants is below <a href="https://en.wikipedia.org/wiki/Sauropsida">https://en.wikipedia.org/wiki/Sauropsida</a></p>
+2 CONT <p style="text-align: left;" dir="ltr">&nbsp;</p>
+2 CONT <p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin: 0
+2 CONC .5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness:
+2 CONC  initial; text-decoration-style: initial; text-decoration-color: initial;">The<span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; 
+2 CONC overflow-wrap: break-word;" title="Cladistics" href="https://en.wikipedia.org/wiki/Cladistics#Cladograms">cladogram</a><span>&nbsp;</span>presented here illustrates the "family tree" of sauropsids, an
+2 CONC d follows a simplified version of the relationships found by M.S. Lee, in 2013.<sup id="cite_ref-scaffold2013_13-0" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; 
+2 CONC font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/w
+2 CONC iki/Sauropsida#cite_note-scaffold2013-13"><span class="cite-bracket" style="pointer-events: none;">[</span>13<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup><span>&nbsp;</sp
+2 CONC an>All<span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Molecular phylogenetics" href="https:
+2 CONC //en.wikipedia.org/wiki/Molecular_phylogenetics">genetic</a><span>&nbsp;</span>studies have supported the hypothesis that turtles (formerly categorized together with ancient<span>&nbsp;</span><em><a s
+2 CONC tyle="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Anapsid" href="https://en.wikipedia.org/wiki/Anapsid">anapsids</a>
+2 CONC </em>) are diapsid reptiles, despite lacking any skull openings behind their eye sockets; some studies have even placed turtles among the<span>&nbsp;</span><a style="text-decoration: none; background:
+2 CONC  none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Archosaur" href="https://en.wikipedia.org/wiki/Archosaur">archosaurs</a>,<sup id="cite_ref-scaffold2013_13
+2 CONC -1" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat
+2 CONC  0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Sauropsida#cite_note-scaffold2013-13"><span class="cite-bracket" style="pointer-events: none;">[</span>13<sp
+2 CONC an class="cite-bracket" style="pointer-events: none;">]</span></a></sup><sup id="cite_ref-Mannen_14-0" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: n
+2 CONC ormal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Sauropsid
+2 CONC a#cite_note-Mannen-14"><span class="cite-bracket" style="pointer-events: none;">[</span>14<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup><sup id="cite_ref-Zardoya_15-0" cla
+2 CONC ss="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%;
+2 CONC  border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Sauropsida#cite_note-Zardoya-15"><span class="cite-bracket" style="pointer-events: none;">[</span>15<span class="ci
+2 CONC te-bracket" style="pointer-events: none;">]</span></a></sup><sup id="cite_ref-Iwabe_16-0" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-h
+2 CONC eight: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Sauropsida#cite_note-I
+2 CONC wabe-16"><span class="cite-bracket" style="pointer-events: none;">[</span>16<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup><sup id="cite_ref-Roos_17-0" class="reference" st
+2 CONC yle="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0
+2 CONC px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Sauropsida#cite_note-Roos-17"><span class="cite-bracket" style="pointer-events: none;">[</span>17<span class="cite-bracket" style="p
+2 CONC ointer-events: none;">]</span></a></sup><sup id="cite_ref-Katsu_18-0" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style=
+2 CONC "text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Sauropsida#cite_note-Katsu-18"><span class
+2 CONC ="cite-bracket" style="pointer-events: none;">[</span>18<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup><span>&nbsp;</span>though a few have recovered turtles as lepidosauro
+2 CONC morphs instead.<sup id="cite_ref-Lyson2012_19-0" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: non
+2 CONC e; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Sauropsida#cite_note-Lyson2012-19"><span class="cite-bracket" s
+2 CONC tyle="pointer-events: none;">[</span>19<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup><span>&nbsp;</span>The cladogram below used a combination of genetic (molecular) and f
+2 CONC ossil (morphological) data to obtain its results.<sup id="cite_ref-scaffold2013_13-2" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-heigh
+2 CONC t: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Sauropsida#cite_note-scaff
+2 CONC old2013-13"><span class="cite-bracket" style="pointer-events: none;">[</span>13<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup></p>
+2 CONT <div class="clade" style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; wido
+2 CONC ws: 2; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initia
+2 CONC l; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</div>
+<p style="text-align: left;" dir="ltr"><br class="Apple-interchange-newline" />&nbsp;</p>
+2 CONT <p style="text-align: left;" dir="ltr">Breaks at Diapsits though</p>
 0 @I23475@ INDI
 1 RIN MH:I23475
 1 _UID 671603f1f01341efbc0b9822ef79916c
@@ -14688,7 +14731,7 @@
 0 @I23644@ INDI
 1 RIN MH:I23644
 1 _UID 67161643f01341efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 14:23:52 GMT+5.5
+1 _UPD 21 OCT 2024 14:30:30 GMT+5.5
 1 NAME Paikal /Haplogroup P/
 2 GIVN Paikal
 2 SURN Haplogroup P
@@ -14696,6 +14739,10 @@
 1 BIRT
 2 _UID 67161650f01341efbc0b9822ef79916c
 2 RIN MH:IF32430
+2 DATE 27000 BC
+1 DEAT
+2 _UID 67161827f01341efbc0b9822ef79916c
+2 RIN MH:IF32436
 1 FAMS @F13579@
 1 FAMC @F13577@
 0 @I23645@ INDI
@@ -14761,6 +14808,955 @@
 2 _UID 671616a0f01341efbc0b9822ef79916c
 2 RIN MH:IF32435
 1 FAMC @F13579@
+0 @I23651@ INDI
+1 RIN MH:I23651
+1 _UID 671666c6394be1efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:06:17 GMT+5.5
+1 SEX F
+1 FAMS @F13580@
+0 @I23652@ INDI
+1 RIN MH:I23652
+1 _UID 671666d3748341efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:13:51 GMT+5.5
+1 NAME  /Eureptilia/
+2 SURN Eureptilia
+1 SEX M
+1 BIRT
+2 _UID 671666d7748341efbc0b9822ef79916c
+2 RIN MH:IF32437
+1 FAMS @F13585@
+1 FAMC @F13580@
+0 @I23653@ INDI
+1 RIN MH:I23653
+1 _UID 671666df748341efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:11:33 GMT+5.5
+1 NAME  /†Parareptilia/
+2 SURN †Parareptilia
+1 SEX M
+1 BIRT
+2 _UID 671666e1748341efbc0b9822ef79916c
+2 RIN MH:IF32438
+1 FAMS @F13581@
+1 FAMC @F13580@
+0 @I23654@ INDI
+1 RIN MH:I23654
+1 _UID 67166813bfdf91efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:11:55 GMT+5.5
+1 NAME  /†Parareptilia/
+2 SURN †Parareptilia
+1 SEX M
+1 BIRT
+2 _UID 67166816748341efbc0b9822ef79916c
+2 RIN MH:IF32439
+1 FAMS @F13582@
+1 FAMC @F13581@
+0 @I23655@ INDI
+1 RIN MH:I23655
+1 _UID 67166817748341efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:11:33 GMT+5.5
+1 NAME  /Millerettidae /
+2 SURN Millerettidae 
+1 SEX M
+1 BIRT
+2 _UID 6716681d748341efbc0b9822ef79916c
+2 RIN MH:IF32440
+1 FAMC @F13581@
+0 @I23656@ INDI
+1 RIN MH:I23656
+1 _UID 67166821bfdf91efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:12:16 GMT+5.5
+1 NAME  /†Ankyramorpha/
+2 SURN †Ankyramorpha
+1 SEX M
+1 BIRT
+2 _UID 67166827748341efbc0b9822ef79916c
+2 RIN MH:IF32441
+1 FAMS @F13583@
+1 FAMC @F13582@
+0 @I23657@ INDI
+1 RIN MH:I23657
+1 _UID 6716682e748341efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:11:55 GMT+5.5
+1 NAME  /†Eunotosaurus/
+2 SURN †Eunotosaurus
+1 SEX M
+1 BIRT
+2 _UID 67166833748341efbc0b9822ef79916c
+2 RIN MH:IF32442
+1 FAMC @F13582@
+0 @I23658@ INDI
+1 RIN MH:I23658
+1 _UID 6716683dbfdf91efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:12:40 GMT+5.5
+1 NAME  /†Procolophonia/
+2 SURN †Procolophonia
+1 SEX M
+1 BIRT
+2 _UID 6716683f748341efbc0b9822ef79916c
+2 RIN MH:IF32443
+1 FAMS @F13584@
+1 FAMC @F13583@
+0 @I23659@ INDI
+1 RIN MH:I23659
+1 _UID 67166845748341efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:12:16 GMT+5.5
+1 NAME  /†Lanthanosuchidae/
+2 SURN †Lanthanosuchidae
+1 SEX M
+1 BIRT
+2 _UID 67166848748341efbc0b9822ef79916c
+2 RIN MH:IF32444
+1 FAMC @F13583@
+0 @I23660@ INDI
+1 RIN MH:I23660
+1 _UID 6716684ebfdf91efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:12:33 GMT+5.5
+1 NAME  /†Pareiasauromorpha/
+2 SURN †Pareiasauromorpha
+1 SEX M
+1 BIRT
+2 _UID 67166859748341efbc0b9822ef79916c
+2 RIN MH:IF32445
+1 FAMC @F13584@
+0 @I23661@ INDI
+1 RIN MH:I23661
+1 _UID 6716685e748341efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:12:40 GMT+5.5
+1 NAME  /†Procolophonoidea/
+2 SURN †Procolophonoidea
+1 SEX M
+1 BIRT
+2 _UID 67166860748341efbc0b9822ef79916c
+2 RIN MH:IF32446
+1 FAMC @F13584@
+0 @I23662@ INDI
+1 RIN MH:I23662
+1 _UID 67166890bfdf91efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:16:00 GMT+5.5
+1 NAME  /Romeriida/
+2 SURN Romeriida
+1 SEX M
+1 BIRT
+2 _UID 67166893748341efbc0b9822ef79916c
+2 RIN MH:IF32447
+1 FAMS @F13586@
+1 FAMC @F13585@
+0 @I23663@ INDI
+1 RIN MH:I23663
+1 _UID 6716689b748341efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:13:51 GMT+5.5
+1 NAME  /†Captorhinidae/
+2 SURN †Captorhinidae
+1 SEX M
+1 BIRT
+2 _UID 671668a7748341efbc0b9822ef79916c
+2 RIN MH:IF32448
+1 FAMC @F13585@
+0 @I23664@ INDI
+1 RIN MH:I23664
+1 _UID 67166916bfdf91efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:16:30 GMT+5.5
+1 NAME  /Diapsida/
+2 SURN Diapsida
+1 SEX M
+1 BIRT
+2 _UID 6716691a748341efbc0b9822ef79916c
+2 RIN MH:IF32449
+1 FAMS @F13587@
+1 FAMC @F13586@
+1 NOTE <p style="text-align: left;" dir="ltr"><br />Source for descendants here <a href="https://en.wikipedia.org/wiki/Diapsid">https://en.wikipedia.org/wiki/Diapsid</a>&nbsp;</p>
+2 CONT <p style="text-align: left;" dir="ltr">&nbsp;</p>
+2 CONT <div class="mw-heading mw-heading3" style="font-size: 1.2em; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: bold; padding-bottom: 0px; font-style: 
+2 CONC normal; padding-top: 0.5em; orphans: 2; widows: 2; margin: 0.25em 0px; letter-spacing: normal; line-height: 1.6; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-varia
+2 CONC nt-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
+<h3 id="Relationships" style="font-family: inheri
+2 CONC t; font-weight: bold; margin: 0px 0px 0.25em; display: inline; line-height: 1.6; font-stretch: inherit; font-optical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font-feature-set
+2 CONC tings: inherit; font-variation-settings: inherit; border: 0px; padding: 0px;"><span style="font-size: large;">Relationships</span></h3>
+<span class="mw-editsection" style="font-size: small; font-famil
+2 CONC y: sans-serif; vertical-align: baseline; font-weight: normal; margin-left: 1em; line-height: 0; margin-right: 0px; user-select: none; margin-inline: 1em 0px;"><span class="mw-editsection-bracket" styl
+2 CONC e="margin-right: 0.25em; margin-inline: 0px 0.25em;"><span style="font-size: medium;">[</span></span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; white-space: now
+2 CONC rap; border-radius: 0px; overflow-wrap: break-word;" title="Edit section: Relationships" href="https://en.wikipedia.org/w/index.php?title=Diapsid&amp;action=edit&amp;section=3"><span><span style="font
+2 CONC -size: medium;">edit</span></span></a><span class="mw-editsection-bracket" style="margin-left: 0.25em; margin-inline: 0.25em 0px;"><span style="font-size: medium;">]</span></span></span></div>
+<p styl
+2 CONC e="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin: 0.5em 0p
+2 CONC x 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initia
+2 CONC l; text-decoration-style: initial; text-decoration-color: initial;">Below are<span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; o
+2 CONC verflow-wrap: break-word;" title="Cladogram" href="https://en.wikipedia.org/wiki/Cladogram">cladograms</a><span>&nbsp;</span>showing the relations of the major groups of diapsids.</p>
+2 CONT <p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin: 0
+2 CONC .5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness:
+2 CONC  initial; text-decoration-style: initial; text-decoration-color: initial;">Cladogram after Bickelmann<span>&nbsp;</span><em>et al.</em>, 2009<sup id="cite_ref-Bickelmann09_20-0" class="reference" styl
+2 CONC e="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px
+2 CONC ; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Diapsid#cite_note-Bickelmann09-20"><span class="cite-bracket" style="pointer-events: none;">[</span>20<span class="cite-bracket" style
+2 CONC ="pointer-events: none;">]</span></a></sup><span>&nbsp;</span>and Reisz<span>&nbsp;</span><em>et al.</em>, 2011:<sup id="cite_ref-Orovenator_21-0" class="reference" style="font-size: 12px; white-space
+2 CONC : nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" h
+2 CONC ref="https://en.wikipedia.org/wiki/Diapsid#cite_note-Orovenator-21"><span class="cite-bracket" style="pointer-events: none;">[</span>21<span class="cite-bracket" style="pointer-events: none;">]</span>
+2 CONC </a></sup></p>
+2 CONT <p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin: 0
+2 CONC .5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness:
+2 CONC  initial; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</p>
+2 CONT <p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin: 0
+2 CONC .5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness:
+2 CONC  initial; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</p>
+0 @I23665@ INDI
+1 RIN MH:I23665
+1 _UID 67166920748341efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:16:00 GMT+5.5
+1 NAME  /†Paleothyris/
+2 SURN †Paleothyris
+1 SEX M
+1 BIRT
+2 _UID 67166928748341efbc0b9822ef79916c
+2 RIN MH:IF32450
+1 FAMC @F13586@
+0 @I23666@ INDI
+1 RIN MH:I23666
+1 _UID 67166937bfdf91efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:21:04 GMT+5.5
+1 NAME  /Neodiapsida/
+2 SURN Neodiapsida
+1 SEX M
+1 BIRT
+2 _UID 6716693a748341efbc0b9822ef79916c
+2 RIN MH:IF32451
+1 FAMS @F13588@
+1 FAMC @F13587@
+0 @I23667@ INDI
+1 RIN MH:I23667
+1 _UID 67166943748341efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:16:30 GMT+5.5
+1 NAME  /†Araeoscelidia /
+2 SURN †Araeoscelidia 
+1 SEX M
+1 BIRT
+2 _UID 67166946748341efbc0b9822ef79916c
+2 RIN MH:IF32452
+1 FAMC @F13587@
+0 @I23668@ INDI
+1 RIN MH:I23668
+1 _UID 67166a55bfdf91efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:21:21 GMT+5.5
+1 NAME  /†Orovenator/
+2 SURN †Orovenator
+1 SEX M
+1 BIRT
+2 _UID 67166a58748341efbc0b9822ef79916c
+2 RIN MH:IF32453
+1 FAMS @F13589@
+1 FAMC @F13588@
+0 @I23669@ INDI
+1 RIN MH:I23669
+1 _UID 67166a5ebfdf91efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:21:32 GMT+5.5
+1 NAME  /†Lanthanolania/
+2 SURN †Lanthanolania
+1 SEX M
+1 BIRT
+2 _UID 67166a69748341efbc0b9822ef79916c
+2 RIN MH:IF32454
+1 FAMS @F13590@
+1 FAMC @F13589@
+0 @I23670@ INDI
+1 RIN MH:I23670
+1 _UID 67166a71bfdf91efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:21:41 GMT+5.5
+1 NAME  /†Tangasauridae/
+2 SURN †Tangasauridae
+1 SEX M
+1 BIRT
+2 _UID 67166a74748341efbc0b9822ef79916c
+2 RIN MH:IF32455
+1 FAMS @F13591@
+1 FAMC @F13590@
+0 @I23671@ INDI
+1 RIN MH:I23671
+1 _UID 67166a7abfdf91efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:21:50 GMT+5.5
+1 NAME  /†Younginidae/
+2 SURN †Younginidae
+1 SEX M
+1 BIRT
+2 _UID 67166a7d748341efbc0b9822ef79916c
+2 RIN MH:IF32456
+1 FAMS @F13592@
+1 FAMC @F13591@
+0 @I23672@ INDI
+1 RIN MH:I23672
+1 _UID 67166a83bfdf91efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:22:15 GMT+5.5
+1 NAME  /†Claudiosaurus/
+2 SURN †Claudiosaurus
+1 SEX M
+1 BIRT
+2 _UID 67166a86748341efbc0b9822ef79916c
+2 RIN MH:IF32457
+1 FAMS @F13593@
+1 FAMC @F13592@
+0 @I23673@ INDI
+1 RIN MH:I23673
+1 _UID 67166a95bfdf91efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:23:33 GMT+5.5
+1 NAME  /†Coelurosauravus/
+2 SURN †Coelurosauravus
+1 SEX M
+1 BIRT
+2 _UID 67166a97748341efbc0b9822ef79916c
+2 RIN MH:IF32458
+1 FAMS @F13595@
+1 FAMC @F13593@
+0 @I23674@ INDI
+1 RIN MH:I23674
+1 _UID 67166a9b748341efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:22:35 GMT+5.5
+1 NAME  /Neodiapsida/
+2 SURN Neodiapsida
+1 SEX M
+1 BIRT
+2 _UID 67166a9f748341efbc0b9822ef79916c
+2 RIN MH:IF32459
+1 FAMS @F13594@
+1 FAMC @F13593@
+0 @I23675@ INDI
+1 RIN MH:I23675
+1 _UID 67166aa5bfdf91efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:22:25 GMT+5.5
+1 NAME  /†Palaeagama/
+2 SURN †Palaeagama
+1 SEX M
+1 BIRT
+2 _UID 67166aa9748341efbc0b9822ef79916c
+2 RIN MH:IF32460
+1 FAMC @F13594@
+0 @I23676@ INDI
+1 RIN MH:I23676
+1 _UID 67166aae748341efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:22:42 GMT+5.5
+1 NAME  /†Saurosternon/
+2 SURN †Saurosternon
+1 SEX M
+1 BIRT
+2 _UID 67166ab3748341efbc0b9822ef79916c
+2 RIN MH:IF32461
+1 FAMC @F13594@
+0 @I23677@ INDI
+1 RIN MH:I23677
+1 _UID 67166ae2bfdf91efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:36:38 GMT+5.5
+1 NAME Sauria  /Sauria /
+2 GIVN Sauria 
+2 SURN Sauria 
+1 SEX M
+1 BIRT
+2 _UID 67166ae7748341efbc0b9822ef79916c
+2 RIN MH:IF32462
+1 FAMS @F13599@
+1 FAMC @F13595@
+1 NOTE <p style="text-align: left;" dir="ltr"><a href="https://en.wikipedia.org/wiki/Sauria">https://en.wikipedia.org/wiki/Sauria</a></p>
+2 CONT <p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin: 0
+2 CONC .5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness:
+2 CONC  initial; text-decoration-style: initial; text-decoration-color: initial;">The cladogram shown below follows the most likely result found by an analysis of turtle relationships using both fossil and g
+2 CONC enetic evidence by M.S. Lee, in 2013. This study found<span>&nbsp;</span><em><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break
+2 CONC -word;" title="Eunotosaurus" href="https://en.wikipedia.org/wiki/Eunotosaurus">Eunotosaurus</a></em>, usually regarded as a turtle relative, to be only very distantly related to turtles in the clade<s
+2 CONC pan>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Parareptilia" href="https://en.wikipedia.org/
+2 CONC wiki/Parareptilia">Parareptilia</a>.<sup id="cite_ref-scaffold2013_10-1" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a sty
+2 CONC le="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Sauria#cite_note-scaffold2013-10"><span
+2 CONC  class="cite-bracket" style="pointer-events: none;">[</span>10<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup></p>
+2 CONT <div class="clade" style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; wido
+2 CONC ws: 2; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initia
+2 CONC l; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</div>
+<p style="text-align: left;" dir="ltr">&nbsp;</p>
+0 @I23678@ INDI
+1 RIN MH:I23678
+1 _UID 67166ae8748341efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:31:55 GMT+5.5
+1 NAME  /Ichthyosauromorpha/
+2 SURN Ichthyosauromorpha
+1 SEX M
+1 BIRT
+2 _UID 67166aec748341efbc0b9822ef79916c
+2 RIN MH:IF32463
+1 FAMS @F13596@
+1 FAMC @F13595@
+0 @I23679@ INDI
+1 RIN MH:I23679
+1 _UID 67166c35bfdf91efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:29:08 GMT+5.5
+1 NAME  /†Thalattosauria/
+2 SURN †Thalattosauria
+1 SEX M
+1 BIRT
+2 _UID 67166c3c748341efbc0b9822ef79916c
+2 RIN MH:IF32464
+1 FAMC @F13596@
+0 @I23680@ INDI
+1 RIN MH:I23680
+1 _UID 67166c3e748341efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:29:31 GMT+5.5
+1 NAME  /Neodiapsida/
+2 SURN Neodiapsida
+1 SEX M
+1 BIRT
+2 _UID 67166c40748341efbc0b9822ef79916c
+2 RIN MH:IF32465
+1 FAMS @F13597@
+1 FAMC @F13596@
+0 @I23681@ INDI
+1 RIN MH:I23681
+1 _UID 67166c46bfdf91efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:29:21 GMT+5.5
+1 NAME  /†Hupehsuchia/
+2 SURN †Hupehsuchia
+1 SEX M
+1 BIRT
+2 _UID 67166c49748341efbc0b9822ef79916c
+2 RIN MH:IF32466
+1 FAMC @F13597@
+0 @I23682@ INDI
+1 RIN MH:I23682
+1 _UID 67166c50748341efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:29:31 GMT+5.5
+1 NAME  /†Ichthyopterygia/
+2 SURN †Ichthyopterygia
+1 SEX M
+1 BIRT
+2 _UID 67166c53748341efbc0b9822ef79916c
+2 RIN MH:IF32467
+1 FAMC @F13597@
+0 @I23683@ INDI
+1 RIN MH:I23683
+1 _UID 67166de9394be1efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:36:38 GMT+5.5
+1 SEX F
+1 FAMS @F13599@
+0 @I23684@ INDI
+1 RIN MH:I23684
+1 _UID 67166ded748341efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:38:21 GMT+5.5
+1 NAME  /Archosauromorpha (=Archelosauria)/
+2 SURN Archosauromorpha (=Archelosauria)
+1 SEX M
+1 BIRT
+2 _UID 67166df5748341efbc0b9822ef79916c
+2 RIN MH:IF32468
+1 FAMS @F13600@
+1 FAMC @F13599@
+0 @I23685@ INDI
+1 RIN MH:I23685
+1 _UID 67166dfb748341efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:36:38 GMT+5.5
+1 NAME  /Lepidosauromorpha/
+2 SURN Lepidosauromorpha
+1 SEX M
+1 BIRT
+2 _UID 67166dfe748341efbc0b9822ef79916c
+2 RIN MH:IF32469
+1 FAMC @F13599@
+0 @I23686@ INDI
+1 RIN MH:I23686
+1 _UID 67166e50394be1efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:38:21 GMT+5.5
+1 SEX F
+1 FAMS @F13600@
+0 @I23687@ INDI
+1 RIN MH:I23687
+1 _UID 67166e58748341efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:43:47 GMT+5.5
+1 NAME  /Archosauromorpha/
+2 SURN Archosauromorpha
+1 SEX M
+1 BIRT
+2 _UID 67166e5d748341efbc0b9822ef79916c
+2 RIN MH:IF32470
+1 FAMS @F13606@
+1 FAMC @F13600@
+0 @I23688@ INDI
+1 RIN MH:I23688
+1 _UID 67166e60748341efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:40:27 GMT+5.5
+1 NAME  /Pantestudines /
+2 SURN Pantestudines 
+1 SEX M
+1 BIRT
+2 _UID 67166e65748341efbc0b9822ef79916c
+2 RIN MH:IF32471
+1 FAMS @F13601@
+1 FAMC @F13600@
+0 @I23689@ INDI
+1 RIN MH:I23689
+1 _UID 67166edabfdf91efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:40:45 GMT+5.5
+1 NAME  /Pantestudines /
+2 SURN Pantestudines 
+1 SEX M
+1 BIRT
+2 _UID 67166edc748341efbc0b9822ef79916c
+2 RIN MH:IF32472
+1 FAMS @F13602@
+1 FAMC @F13601@
+0 @I23690@ INDI
+1 RIN MH:I23690
+1 _UID 67166ee0748341efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:40:27 GMT+5.5
+1 NAME  /†Eosauropterygia/
+2 SURN †Eosauropterygia
+1 SEX M
+1 BIRT
+2 _UID 67166ee3748341efbc0b9822ef79916c
+2 RIN MH:IF32473
+1 FAMC @F13601@
+0 @I23691@ INDI
+1 RIN MH:I23691
+1 _UID 67166ee7bfdf91efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:40:59 GMT+5.5
+1 NAME  /Pantestudines /
+2 SURN Pantestudines 
+1 SEX M
+1 BIRT
+2 _UID 67166ee8748341efbc0b9822ef79916c
+2 RIN MH:IF32474
+1 FAMS @F13603@
+1 FAMC @F13602@
+0 @I23692@ INDI
+1 RIN MH:I23692
+1 _UID 67166eed748341efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:40:45 GMT+5.5
+1 NAME  /†Placodontia/
+2 SURN †Placodontia
+1 SEX M
+1 BIRT
+2 _UID 67166ef5748341efbc0b9822ef79916c
+2 RIN MH:IF32475
+1 FAMC @F13602@
+0 @I23693@ INDI
+1 RIN MH:I23693
+1 _UID 67166efabfdf91efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:42:04 GMT+5.5
+1 NAME  /Pantestudines /
+2 SURN Pantestudines 
+1 SEX M
+1 BIRT
+2 _UID 67166efc748341efbc0b9822ef79916c
+2 RIN MH:IF32476
+1 FAMS @F13604@
+1 FAMC @F13603@
+0 @I23694@ INDI
+1 RIN MH:I23694
+1 _UID 67166f00748341efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:40:59 GMT+5.5
+1 NAME  /†Sinosaurosphargis/
+2 SURN †Sinosaurosphargis
+1 SEX M
+1 BIRT
+2 _UID 67166f03748341efbc0b9822ef79916c
+2 RIN MH:IF32477
+1 FAMC @F13603@
+0 @I23695@ INDI
+1 RIN MH:I23695
+1 _UID 67166f31bfdf91efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:42:35 GMT+5.5
+1 NAME  /Testudinata /
+2 SURN Testudinata 
+1 SEX M
+1 BIRT
+2 _UID 67166f34748341efbc0b9822ef79916c
+2 RIN MH:IF32478
+1 FAMS @F13605@
+1 FAMC @F13604@
+0 @I23696@ INDI
+1 RIN MH:I23696
+1 _UID 67166f3c748341efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:42:04 GMT+5.5
+1 NAME  /†Odontochelys/
+2 SURN †Odontochelys
+1 SEX M
+1 BIRT
+2 _UID 67166f44748341efbc0b9822ef79916c
+2 RIN MH:IF32479
+1 FAMC @F13604@
+0 @I23697@ INDI
+1 RIN MH:I23697
+1 _UID 67166f50bfdf91efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:42:22 GMT+5.5
+1 NAME Turtle /Testudines/
+2 GIVN Turtle
+2 SURN Testudines
+1 SEX M
+1 BIRT
+2 _UID 67166f56748341efbc0b9822ef79916c
+2 RIN MH:IF32480
+1 FAMC @F13605@
+0 @I23698@ INDI
+1 RIN MH:I23698
+1 _UID 67166f5c748341efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:42:35 GMT+5.5
+1 NAME  /†Proganochelys/
+2 SURN †Proganochelys
+1 SEX M
+1 BIRT
+2 _UID 67166f63748341efbc0b9822ef79916c
+2 RIN MH:IF32481
+1 FAMC @F13605@
+0 @I23699@ INDI
+1 RIN MH:I23699
+1 _UID 67166fa0bfdf91efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:44:04 GMT+5.5
+1 NAME  /Archosauromorpha/
+2 SURN Archosauromorpha
+1 SEX M
+1 BIRT
+2 _UID 67166fa2748341efbc0b9822ef79916c
+2 RIN MH:IF32482
+1 FAMS @F13607@
+1 FAMC @F13606@
+0 @I23700@ INDI
+1 RIN MH:I23700
+1 _UID 67166fa3748341efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:43:47 GMT+5.5
+1 NAME  /†Choristodera/
+2 SURN †Choristodera
+1 SEX M
+1 BIRT
+2 _UID 67166fab748341efbc0b9822ef79916c
+2 RIN MH:IF32483
+1 FAMC @F13606@
+0 @I23701@ INDI
+1 RIN MH:I23701
+1 _UID 67166fb1bfdf91efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:44:21 GMT+5.5
+1 NAME  /Archosauromorpha/
+2 SURN Archosauromorpha
+1 SEX M
+1 BIRT
+2 _UID 67166fb3748341efbc0b9822ef79916c
+2 RIN MH:IF32484
+1 FAMS @F13608@
+1 FAMC @F13607@
+0 @I23702@ INDI
+1 RIN MH:I23702
+1 _UID 67166fba748341efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:44:04 GMT+5.5
+1 NAME  /†Prolacertiformes/
+2 SURN †Prolacertiformes
+1 SEX M
+1 BIRT
+2 _UID 67166fbc748341efbc0b9822ef79916c
+2 RIN MH:IF32485
+1 FAMC @F13607@
+0 @I23703@ INDI
+1 RIN MH:I23703
+1 _UID 67166fc6bfdf91efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:50:25 GMT+5.5
+1 NAME  /Archosauriformes/
+2 SURN Archosauriformes
+1 SEX M
+1 BIRT
+2 _UID 67166fc9748341efbc0b9822ef79916c
+2 RIN MH:IF32486
+1 FAMS @F13611@
+1 FAMC @F13608@
+1 NOTE <p style="text-align: left;" dir="ltr">&nbsp;</p>
+2 CONT <p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin: 0
+2 CONC .5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness:
+2 CONC  initial; text-decoration-style: initial; text-decoration-color: initial;">Below is a cladogram from Nesbitt (2011):<sup id="cite_ref-NSJ11_17-0" class="reference" style="font-size: 12px; white-space:
+2 CONC  nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" hr
+2 CONC ef="https://en.wikipedia.org/wiki/Archosauriformes#cite_note-NSJ11-17"><span class="cite-bracket" style="pointer-events: none;">[</span>17<span class="cite-bracket" style="pointer-events: none;">]</sp
+2 CONC an></a></sup></p>
+2 CONT <div class="clade" style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; wido
+2 CONC ws: 2; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initia
+2 CONC l; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</div>
+<p style="text-align: left;" dir="ltr"><br class="Apple-interchange-newline" /><a href="https://en.wikipedia.org/wiki/A
+2 CONC rchosauriformes">https://en.wikipedia.org/wiki/Archosauriformes</a></p>
+0 @I23704@ INDI
+1 RIN MH:I23704
+1 _UID 67166fcc748341efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:44:37 GMT+5.5
+1 NAME  /Archosauromorpha/
+2 SURN Archosauromorpha
+1 SEX M
+1 BIRT
+2 _UID 67166fcd748341efbc0b9822ef79916c
+2 RIN MH:IF32487
+1 FAMS @F13609@
+1 FAMC @F13608@
+0 @I23705@ INDI
+1 RIN MH:I23705
+1 _UID 67166fd4bfdf91efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:44:30 GMT+5.5
+1 NAME  /†Trilophosaurus/
+2 SURN †Trilophosaurus
+1 SEX M
+1 BIRT
+2 _UID 67166fd6748341efbc0b9822ef79916c
+2 RIN MH:IF32488
+1 FAMC @F13609@
+0 @I23706@ INDI
+1 RIN MH:I23706
+1 _UID 67166fda748341efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:44:37 GMT+5.5
+1 NAME  /†Rhynchosauria/
+2 SURN †Rhynchosauria
+1 SEX M
+1 BIRT
+2 _UID 67166fdd748341efbc0b9822ef79916c
+2 RIN MH:IF32489
+1 FAMC @F13609@
+0 @I23707@ INDI
+1 RIN MH:I23707
+1 _UID 67167124bfdf91efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:52:19 GMT+5.5
+1 NAME  /Archosauriformes/
+2 SURN Archosauriformes
+1 SEX M
+1 BIRT
+2 _UID 67167126748341efbc0b9822ef79916c
+2 RIN MH:IF32490
+1 FAMS @F13613@
+1 FAMC @F13611@
+0 @I23708@ INDI
+1 RIN MH:I23708
+1 _UID 67167136748341efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:50:52 GMT+5.5
+1 NAME  /Proterosuchidae/
+2 SURN Proterosuchidae
+1 SEX M
+1 BIRT
+2 _UID 67167139748341efbc0b9822ef79916c
+2 RIN MH:IF32491
+1 FAMS @F13612@
+1 FAMC @F13611@
+0 @I23709@ INDI
+1 RIN MH:I23709
+1 _UID 67167149bfdf91efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:50:44 GMT+5.5
+1 NAME  /Archosaurus/
+2 SURN Archosaurus
+1 SEX M
+1 BIRT
+2 _UID 6716714c748341efbc0b9822ef79916c
+2 RIN MH:IF32492
+1 FAMC @F13612@
+0 @I23710@ INDI
+1 RIN MH:I23710
+1 _UID 67167151748341efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:50:52 GMT+5.5
+1 NAME  /Proterosuchus/
+2 SURN Proterosuchus
+1 SEX M
+1 BIRT
+2 _UID 67167154748341efbc0b9822ef79916c
+2 RIN MH:IF32493
+1 FAMC @F13612@
+0 @I23711@ INDI
+1 RIN MH:I23711
+1 _UID 6716719dbfdf91efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:52:33 GMT+5.5
+1 NAME  /Archosauriformes/
+2 SURN Archosauriformes
+1 SEX M
+1 BIRT
+2 _UID 6716719f748341efbc0b9822ef79916c
+2 RIN MH:IF32494
+1 FAMS @F13614@
+1 FAMC @F13613@
+0 @I23712@ INDI
+1 RIN MH:I23712
+1 _UID 671671a3748341efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:52:19 GMT+5.5
+1 NAME  /Erythrosuchus/
+2 SURN Erythrosuchus
+1 SEX M
+1 BIRT
+2 _UID 671671ab748341efbc0b9822ef79916c
+2 RIN MH:IF32495
+1 FAMC @F13613@
+0 @I23713@ INDI
+1 RIN MH:I23713
+1 _UID 671671afbfdf91efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:52:51 GMT+5.5
+1 NAME  /Archosauriformes/
+2 SURN Archosauriformes
+1 SEX M
+1 BIRT
+2 _UID 671671b1748341efbc0b9822ef79916c
+2 RIN MH:IF32496
+1 FAMS @F13615@
+1 FAMC @F13614@
+0 @I23714@ INDI
+1 RIN MH:I23714
+1 _UID 671671b4748341efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:52:33 GMT+5.5
+1 NAME  /Vancleavea/
+2 SURN Vancleavea
+1 SEX M
+1 BIRT
+2 _UID 671671b9748341efbc0b9822ef79916c
+2 RIN MH:IF32497
+1 FAMC @F13614@
+0 @I23715@ INDI
+1 RIN MH:I23715
+1 _UID 671671bebfdf91efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:53:49 GMT+5.5
+1 NAME  /Archosauriformes/
+2 SURN Archosauriformes
+1 SEX M
+1 BIRT
+2 _UID 671671bf748341efbc0b9822ef79916c
+2 RIN MH:IF32498
+1 FAMS @F13617@
+1 FAMC @F13615@
+0 @I23716@ INDI
+1 RIN MH:I23716
+1 _UID 671671c7748341efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:53:15 GMT+5.5
+1 NAME  /Proterochampsia /
+2 SURN Proterochampsia 
+1 SEX M
+1 BIRT
+2 _UID 671671cb748341efbc0b9822ef79916c
+2 RIN MH:IF32499
+1 FAMS @F13616@
+1 FAMC @F13615@
+0 @I23717@ INDI
+1 RIN MH:I23717
+1 _UID 671671d6bfdf91efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:53:06 GMT+5.5
+1 NAME  /Tropidosuchus/
+2 SURN Tropidosuchus
+1 SEX M
+1 BIRT
+2 _UID 671671da748341efbc0b9822ef79916c
+2 RIN MH:IF32500
+1 FAMC @F13616@
+0 @I23718@ INDI
+1 RIN MH:I23718
+1 _UID 671671de748341efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:53:15 GMT+5.5
+1 NAME  /Chanaresuchus/
+2 SURN Chanaresuchus
+1 SEX M
+1 BIRT
+2 _UID 671671e3748341efbc0b9822ef79916c
+2 RIN MH:IF32501
+1 FAMC @F13616@
+0 @I23719@ INDI
+1 RIN MH:I23719
+1 _UID 671671f1394be1efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:53:49 GMT+5.5
+1 SEX F
+1 FAMS @F13617@
+0 @I23720@ INDI
+1 RIN MH:I23720
+1 _UID 671671f6748341efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:57:02 GMT+5.5
+1 NAME  /Crurotarsi /
+2 SURN Crurotarsi 
+1 SEX M
+1 BIRT
+2 _UID 671671fb748341efbc0b9822ef79916c
+2 RIN MH:IF32502
+1 FAMS @F13618@
+1 FAMC @F13617@
+0 @I23721@ INDI
+1 RIN MH:I23721
+1 _UID 671671ff748341efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:53:49 GMT+5.5
+1 NAME  /Euparkeria/
+2 SURN Euparkeria
+1 SEX M
+1 BIRT
+2 _UID 67167205748341efbc0b9822ef79916c
+2 RIN MH:IF32503
+1 FAMC @F13617@
+0 @I23722@ INDI
+1 RIN MH:I23722
+1 _UID 671672bebfdf91efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:01:51 GMT+5.5
+1 NAME  /Archosauria/
+2 SURN Archosauria
+1 SEX M
+1 BIRT
+2 _UID 671672c0748341efbc0b9822ef79916c
+2 RIN MH:IF32504
+1 FAMS @F13621@
+1 FAMC @F13618@
+0 @I23723@ INDI
+1 RIN MH:I23723
+1 _UID 671672c4748341efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:57:19 GMT+5.5
+1 NAME  /Phytosauria/
+2 SURN Phytosauria
+1 SEX M
+1 BIRT
+2 _UID 671672c6748341efbc0b9822ef79916c
+2 RIN MH:IF32505
+1 FAMS @F13619@
+1 FAMC @F13618@
+0 @I23724@ INDI
+1 RIN MH:I23724
+1 _UID 671672d0bfdf91efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:57:37 GMT+5.5
+1 NAME  /Phytosauria/
+2 SURN Phytosauria
+1 SEX M
+1 BIRT
+2 _UID 671672d2748341efbc0b9822ef79916c
+2 RIN MH:IF32506
+1 FAMS @F13620@
+1 FAMC @F13619@
+0 @I23725@ INDI
+1 RIN MH:I23725
+1 _UID 671672d4748341efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:57:19 GMT+5.5
+1 NAME  /Parasuchus/
+2 SURN Parasuchus
+1 SEX M
+1 BIRT
+2 _UID 671672d7748341efbc0b9822ef79916c
+2 RIN MH:IF32507
+1 FAMC @F13619@
+0 @I23726@ INDI
+1 RIN MH:I23726
+1 _UID 671672ddbfdf91efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:57:27 GMT+5.5
+1 NAME  /Smilosuchus/
+2 SURN Smilosuchus
+1 SEX M
+1 BIRT
+2 _UID 671672df748341efbc0b9822ef79916c
+2 RIN MH:IF32508
+1 FAMC @F13620@
+0 @I23727@ INDI
+1 RIN MH:I23727
+1 _UID 671672e6748341efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 20:57:37 GMT+5.5
+1 NAME  /Pseudopalatus/
+2 SURN Pseudopalatus
+1 SEX M
+1 BIRT
+2 _UID 671672e9748341efbc0b9822ef79916c
+2 RIN MH:IF32509
+1 FAMC @F13620@
+0 @I23728@ INDI
+1 RIN MH:I23728
+1 _UID 671673debfdf91efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:01:45 GMT+5.5
+1 NAME  /Avemetatarsalia/
+2 SURN Avemetatarsalia
+1 SEX M
+1 BIRT
+2 _UID 671673e1748341efbc0b9822ef79916c
+2 RIN MH:IF32510
+1 FAMC @F13621@
+0 @I23729@ INDI
+1 RIN MH:I23729
+1 _UID 671673e5748341efbc0b9822ef79916c
+1 _UPD 21 OCT 2024 21:01:51 GMT+5.5
+1 NAME  /Pseudosuchia/
+2 SURN Pseudosuchia
+1 SEX M
+1 BIRT
+2 _UID 671673e7748341efbc0b9822ef79916c
+2 RIN MH:IF32511
+1 FAMC @F13621@
 0 @F1@ FAM
 1 RIN MH:F1
 1 _UID 66dfdfd660f561efbbc69822ef79916c
@@ -18576,6 +19572,263 @@
 1 MARR
 2 _UID 671616903b4f91efbc0b9822ef79916c
 2 RIN MH:FF1771
+0 @F13580@ FAM
+1 RIN MH:F13580
+1 _UID 671666c6748341efbc0b9822ef79916c
+1 HUSB @I23474@
+1 WIFE @I23651@
+1 CHIL @I23652@
+1 CHIL @I23653@
+1 MARR
+2 _UID 671666c6bfdf91efbc0b9822ef79916c
+2 RIN MH:FF1772
+0 @F13581@ FAM
+1 RIN MH:F13581
+1 _UID 67166813748341efbc0b9822ef79916c
+1 HUSB @I23653@
+1 CHIL @I23654@
+1 CHIL @I23655@
+0 @F13582@ FAM
+1 RIN MH:F13582
+1 _UID 67166821748341efbc0b9822ef79916c
+1 HUSB @I23654@
+1 CHIL @I23656@
+1 CHIL @I23657@
+0 @F13583@ FAM
+1 RIN MH:F13583
+1 _UID 6716683d748341efbc0b9822ef79916c
+1 HUSB @I23656@
+1 CHIL @I23658@
+1 CHIL @I23659@
+0 @F13584@ FAM
+1 RIN MH:F13584
+1 _UID 6716684e748341efbc0b9822ef79916c
+1 HUSB @I23658@
+1 CHIL @I23660@
+1 CHIL @I23661@
+0 @F13585@ FAM
+1 RIN MH:F13585
+1 _UID 67166890748341efbc0b9822ef79916c
+1 HUSB @I23652@
+1 CHIL @I23662@
+1 CHIL @I23663@
+0 @F13586@ FAM
+1 RIN MH:F13586
+1 _UID 67166916748341efbc0b9822ef79916c
+1 HUSB @I23662@
+1 CHIL @I23664@
+1 CHIL @I23665@
+0 @F13587@ FAM
+1 RIN MH:F13587
+1 _UID 67166937748341efbc0b9822ef79916c
+1 HUSB @I23664@
+1 CHIL @I23666@
+1 CHIL @I23667@
+0 @F13588@ FAM
+1 RIN MH:F13588
+1 _UID 67166a55748341efbc0b9822ef79916c
+1 HUSB @I23666@
+1 CHIL @I23668@
+0 @F13589@ FAM
+1 RIN MH:F13589
+1 _UID 67166a5e748341efbc0b9822ef79916c
+1 HUSB @I23668@
+1 CHIL @I23669@
+0 @F13590@ FAM
+1 RIN MH:F13590
+1 _UID 67166a71748341efbc0b9822ef79916c
+1 HUSB @I23669@
+1 CHIL @I23670@
+0 @F13591@ FAM
+1 RIN MH:F13591
+1 _UID 67166a7a748341efbc0b9822ef79916c
+1 HUSB @I23670@
+1 CHIL @I23671@
+0 @F13592@ FAM
+1 RIN MH:F13592
+1 _UID 67166a83748341efbc0b9822ef79916c
+1 HUSB @I23671@
+1 CHIL @I23672@
+0 @F13593@ FAM
+1 RIN MH:F13593
+1 _UID 67166a95748341efbc0b9822ef79916c
+1 HUSB @I23672@
+1 CHIL @I23673@
+1 CHIL @I23674@
+0 @F13594@ FAM
+1 RIN MH:F13594
+1 _UID 67166aa5748341efbc0b9822ef79916c
+1 HUSB @I23674@
+1 CHIL @I23675@
+1 CHIL @I23676@
+0 @F13595@ FAM
+1 RIN MH:F13595
+1 _UID 67166ae2748341efbc0b9822ef79916c
+1 HUSB @I23673@
+1 CHIL @I23677@
+1 CHIL @I23678@
+0 @F13596@ FAM
+1 RIN MH:F13596
+1 _UID 67166c35748341efbc0b9822ef79916c
+1 HUSB @I23678@
+1 CHIL @I23679@
+1 CHIL @I23680@
+0 @F13597@ FAM
+1 RIN MH:F13597
+1 _UID 67166c46748341efbc0b9822ef79916c
+1 HUSB @I23680@
+1 CHIL @I23681@
+1 CHIL @I23682@
+0 @F13598@ FAM
+1 RIN MH:F13598
+1 _UID 67166dcd748341efbc0b9822ef79916c
+1 MARR
+2 _UID 67166dcdbfdf91efbc0b9822ef79916c
+2 RIN MH:FF1773
+0 @F13599@ FAM
+1 RIN MH:F13599
+1 _UID 67166de9748341efbc0b9822ef79916c
+1 HUSB @I23677@
+1 WIFE @I23683@
+1 CHIL @I23684@
+1 CHIL @I23685@
+1 MARR
+2 _UID 67166de9bfdf91efbc0b9822ef79916c
+2 RIN MH:FF1774
+0 @F13600@ FAM
+1 RIN MH:F13600
+1 _UID 67166e50748341efbc0b9822ef79916c
+1 HUSB @I23684@
+1 WIFE @I23686@
+1 CHIL @I23687@
+1 CHIL @I23688@
+1 MARR
+2 _UID 67166e50bfdf91efbc0b9822ef79916c
+2 RIN MH:FF1775
+0 @F13601@ FAM
+1 RIN MH:F13601
+1 _UID 67166eda748341efbc0b9822ef79916c
+1 HUSB @I23688@
+1 CHIL @I23689@
+1 CHIL @I23690@
+0 @F13602@ FAM
+1 RIN MH:F13602
+1 _UID 67166ee7748341efbc0b9822ef79916c
+1 HUSB @I23689@
+1 CHIL @I23691@
+1 CHIL @I23692@
+0 @F13603@ FAM
+1 RIN MH:F13603
+1 _UID 67166efa748341efbc0b9822ef79916c
+1 HUSB @I23691@
+1 CHIL @I23693@
+1 CHIL @I23694@
+0 @F13604@ FAM
+1 RIN MH:F13604
+1 _UID 67166f31748341efbc0b9822ef79916c
+1 HUSB @I23693@
+1 CHIL @I23695@
+1 CHIL @I23696@
+0 @F13605@ FAM
+1 RIN MH:F13605
+1 _UID 67166f50748341efbc0b9822ef79916c
+1 HUSB @I23695@
+1 CHIL @I23697@
+1 CHIL @I23698@
+0 @F13606@ FAM
+1 RIN MH:F13606
+1 _UID 67166fa0748341efbc0b9822ef79916c
+1 HUSB @I23687@
+1 CHIL @I23699@
+1 CHIL @I23700@
+0 @F13607@ FAM
+1 RIN MH:F13607
+1 _UID 67166fb1748341efbc0b9822ef79916c
+1 HUSB @I23699@
+1 CHIL @I23701@
+1 CHIL @I23702@
+0 @F13608@ FAM
+1 RIN MH:F13608
+1 _UID 67166fc6748341efbc0b9822ef79916c
+1 HUSB @I23701@
+1 CHIL @I23703@
+1 CHIL @I23704@
+0 @F13609@ FAM
+1 RIN MH:F13609
+1 _UID 67166fd4748341efbc0b9822ef79916c
+1 HUSB @I23704@
+1 CHIL @I23705@
+1 CHIL @I23706@
+0 @F13611@ FAM
+1 RIN MH:F13611
+1 _UID 67167124748341efbc0b9822ef79916c
+1 HUSB @I23703@
+1 CHIL @I23707@
+1 CHIL @I23708@
+0 @F13612@ FAM
+1 RIN MH:F13612
+1 _UID 67167149748341efbc0b9822ef79916c
+1 HUSB @I23708@
+1 CHIL @I23709@
+1 CHIL @I23710@
+0 @F13613@ FAM
+1 RIN MH:F13613
+1 _UID 6716719d748341efbc0b9822ef79916c
+1 HUSB @I23707@
+1 CHIL @I23711@
+1 CHIL @I23712@
+0 @F13614@ FAM
+1 RIN MH:F13614
+1 _UID 671671af748341efbc0b9822ef79916c
+1 HUSB @I23711@
+1 CHIL @I23713@
+1 CHIL @I23714@
+0 @F13615@ FAM
+1 RIN MH:F13615
+1 _UID 671671be748341efbc0b9822ef79916c
+1 HUSB @I23713@
+1 CHIL @I23715@
+1 CHIL @I23716@
+0 @F13616@ FAM
+1 RIN MH:F13616
+1 _UID 671671d6748341efbc0b9822ef79916c
+1 HUSB @I23716@
+1 CHIL @I23717@
+1 CHIL @I23718@
+0 @F13617@ FAM
+1 RIN MH:F13617
+1 _UID 671671f1748341efbc0b9822ef79916c
+1 HUSB @I23715@
+1 WIFE @I23719@
+1 CHIL @I23720@
+1 CHIL @I23721@
+1 MARR
+2 _UID 671671f1bfdf91efbc0b9822ef79916c
+2 RIN MH:FF1776
+0 @F13618@ FAM
+1 RIN MH:F13618
+1 _UID 671672be748341efbc0b9822ef79916c
+1 HUSB @I23720@
+1 CHIL @I23722@
+1 CHIL @I23723@
+0 @F13619@ FAM
+1 RIN MH:F13619
+1 _UID 671672d0748341efbc0b9822ef79916c
+1 HUSB @I23723@
+1 CHIL @I23724@
+1 CHIL @I23725@
+0 @F13620@ FAM
+1 RIN MH:F13620
+1 _UID 671672dd748341efbc0b9822ef79916c
+1 HUSB @I23724@
+1 CHIL @I23726@
+1 CHIL @I23727@
+0 @F13621@ FAM
+1 RIN MH:F13621
+1 _UID 671673de748341efbc0b9822ef79916c
+1 HUSB @I23722@
+1 CHIL @I23728@
+1 CHIL @I23729@
 0 @S13@ SOUR
 1 RIN MH:S13
 0 @S14@ SOUR
