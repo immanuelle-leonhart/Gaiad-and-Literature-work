@@ -11,17 +11,14 @@
 2 CORP MyHeritage.com
 1 SUBM @U1@
 1 DEST MYHERITAGE
-1 DATE 21 OCT 2024
-2 TIME 22:52:55 
+1 DATE 22 OCT 2024
+2 TIME 13:25:26 
 2 _TIMEZONE GMT+5.5
-1 _RINS I23870,F13694,N17729,M0,R0,S25,U531,L0,P14219,Q0,IF32605,FF1777
-1 _UID 670FC744D5A0D3580AA22EF79916B426
+1 _RINS I23870,F13694,N17729,M0,R0,S25,U533,L0,P14219,Q0,IF32605,FF1777
+1 _UID 671759EC5CEF4EE30FFFFF0E7C9AB64C
 1 _DESCRIPTION_AWARE Y
 1 _FACTS_DEFRAGGED Y
 0  _PUBLISH
-1 _SITEADDRESS site1bd12elip07w6r60645
-1 _SITENAME Bishop Web Site
-1 _SITEID 1208328472
 1 _USERNAME ericrichardbishop@@gmail.com
 1 _DISABLED Y
 0 @U1@ SUBM
@@ -38,14 +35,14 @@
 1 RIN MH:U6
 0 @U7@ SUBM
 1 RIN MH:U7
-1 ADDR
-2 CITY Waihi
-2 STAE Waikato
-2 CTRY New Zealand
 0 @U8@ SUBM
 1 RIN MH:U8
 0 @U9@ SUBM
 1 RIN MH:U9
+1 ADDR
+2 CITY Waihi
+2 STAE Waikato
+2 CTRY New Zealand
 0 @U10@ SUBM
 1 RIN MH:U10
 0 @U11@ SUBM
@@ -56,51 +53,51 @@
 1 RIN MH:U13
 0 @U14@ SUBM
 1 RIN MH:U14
+0 @U15@ SUBM
+1 RIN MH:U15
+0 @U16@ SUBM
+1 RIN MH:U16
 1 ADDR
 2 CITY St. George
 2 STAE Utah
 2 POST 84770
 2 CTRY United States
-0 @U15@ SUBM
-1 RIN MH:U15
-0 @U16@ SUBM
-1 RIN MH:U16
 0 @U17@ SUBM
 1 RIN MH:U17
-1 ADDR
-2 CITY Kongsberg
-2 STAE Buskerud
-2 CTRY Norway
 0 @U18@ SUBM
 1 RIN MH:U18
 0 @U19@ SUBM
 1 RIN MH:U19
+1 ADDR
+2 CITY Kongsberg
+2 STAE Buskerud
+2 CTRY Norway
+0 @U20@ SUBM
+1 RIN MH:U20
+0 @U21@ SUBM
+1 RIN MH:U21
 1 ADDR 1 lieu dit Magrens
 2 ADR1 1 lieu dit Magrens
 2 CITY Lagrace-Dieu
 2 STAE Haute-Garonne
 2 POST 31190
 2 CTRY France
-0 @U20@ SUBM
-1 RIN MH:U20
-0 @U21@ SUBM
-1 RIN MH:U21
 0 @U22@ SUBM
 1 RIN MH:U22
+0 @U23@ SUBM
+1 RIN MH:U23
+0 @U24@ SUBM
+1 RIN MH:U24
 1 ADDR
 2 CITY Kecskemét
 2 STAE Bacs-Kiskun
 2 CTRY Hungary
-0 @U23@ SUBM
-1 RIN MH:U23
+0 @U25@ SUBM
+1 RIN MH:U25
 1 ADDR
 2 CITY Grenoble
 2 STAE Rhône-Alpes
 2 CTRY France
-0 @U24@ SUBM
-1 RIN MH:U24
-0 @U25@ SUBM
-1 RIN MH:U25
 0 @U26@ SUBM
 1 RIN MH:U26
 0 @U27@ SUBM
@@ -135,14 +132,14 @@
 1 RIN MH:U41
 0 @U42@ SUBM
 1 RIN MH:U42
-1 ADDR
-2 CITY Cravinhos
-2 STAE State of São Paulo
-2 CTRY Brazil
 0 @U43@ SUBM
 1 RIN MH:U43
 0 @U44@ SUBM
 1 RIN MH:U44
+1 ADDR
+2 CITY Cravinhos
+2 STAE State of São Paulo
+2 CTRY Brazil
 0 @U45@ SUBM
 1 RIN MH:U45
 0 @U46@ SUBM
@@ -151,28 +148,28 @@
 1 RIN MH:U47
 0 @U48@ SUBM
 1 RIN MH:U48
+0 @U49@ SUBM
+1 RIN MH:U49
+0 @U50@ SUBM
+1 RIN MH:U50
 1 ADDR
 2 CITY Palawan
 2 STAE MIMAROPA
 2 CTRY Philippines
-0 @U49@ SUBM
-1 RIN MH:U49
+0 @U51@ SUBM
+1 RIN MH:U51
 1 ADDR
 2 CITY South Bend
 2 STAE IN
 2 POST 46619
 2 CTRY United States
-0 @U50@ SUBM
-1 RIN MH:U50
-0 @U51@ SUBM
-1 RIN MH:U51
-1 ADDR
-2 CITY Tal Menashe
-2 CTRY Israel
 0 @U52@ SUBM
 1 RIN MH:U52
 0 @U53@ SUBM
 1 RIN MH:U53
+1 ADDR
+2 CITY Tal Menashe
+2 CTRY Israel
 0 @U54@ SUBM
 1 RIN MH:U54
 0 @U55@ SUBM
@@ -195,13 +192,13 @@
 1 RIN MH:U63
 0 @U64@ SUBM
 1 RIN MH:U64
-1 ADDR
-2 CITY 457 45  Hamburgsund
-2 CTRY Sweden
 0 @U65@ SUBM
 1 RIN MH:U65
 0 @U66@ SUBM
 1 RIN MH:U66
+1 ADDR
+2 CITY 457 45  Hamburgsund
+2 CTRY Sweden
 0 @U67@ SUBM
 1 RIN MH:U67
 0 @U68@ SUBM
@@ -216,15 +213,15 @@
 1 RIN MH:U72
 0 @U73@ SUBM
 1 RIN MH:U73
+0 @U74@ SUBM
+1 RIN MH:U74
+0 @U75@ SUBM
+1 RIN MH:U75
 1 ADDR
 2 CITY Denver
 2 STAE Colorado
 2 POST 80202
 2 CTRY United States
-0 @U74@ SUBM
-1 RIN MH:U74
-0 @U75@ SUBM
-1 RIN MH:U75
 0 @U76@ SUBM
 1 RIN MH:U76
 0 @U77@ SUBM
@@ -257,13 +254,13 @@
 1 RIN MH:U90
 0 @U91@ SUBM
 1 RIN MH:U91
-1 ADDR
-2 CITY Johannesburg
-2 CTRY South Africa
 0 @U92@ SUBM
 1 RIN MH:U92
 0 @U93@ SUBM
 1 RIN MH:U93
+1 ADDR
+2 CITY Johannesburg
+2 CTRY South Africa
 0 @U94@ SUBM
 1 RIN MH:U94
 0 @U95@ SUBM
@@ -278,22 +275,22 @@
 1 RIN MH:U99
 0 @U100@ SUBM
 1 RIN MH:U100
-1 ADDR
-2 CITY Ottestad
-2 STAE Hedmark
-2 CTRY Norway
 0 @U101@ SUBM
 1 RIN MH:U101
 0 @U102@ SUBM
 1 RIN MH:U102
 1 ADDR
-2 CITY Tucson
-2 STAE Arizona
-2 CTRY United States
+2 CITY Ottestad
+2 STAE Hedmark
+2 CTRY Norway
 0 @U103@ SUBM
 1 RIN MH:U103
 0 @U104@ SUBM
 1 RIN MH:U104
+1 ADDR
+2 CITY Tucson
+2 STAE Arizona
+2 CTRY United States
 0 @U105@ SUBM
 1 RIN MH:U105
 0 @U106@ SUBM
@@ -360,14 +357,14 @@
 1 RIN MH:U136
 0 @U137@ SUBM
 1 RIN MH:U137
-1 ADDR
-2 CITY Traverse City
-2 STAE Michigan
-2 CTRY United States
 0 @U138@ SUBM
 1 RIN MH:U138
 0 @U139@ SUBM
 1 RIN MH:U139
+1 ADDR
+2 CITY Traverse City
+2 STAE Michigan
+2 CTRY United States
 0 @U140@ SUBM
 1 RIN MH:U140
 0 @U141@ SUBM
@@ -394,32 +391,32 @@
 1 RIN MH:U151
 0 @U152@ SUBM
 1 RIN MH:U152
+0 @U153@ SUBM
+1 RIN MH:U153
+0 @U154@ SUBM
+1 RIN MH:U154
 1 ADDR
 2 STAE Virginia
 2 CTRY United States
-0 @U153@ SUBM
-1 RIN MH:U153
+0 @U155@ SUBM
+1 RIN MH:U155
 1 ADDR Gandijeva 49B/49
 2 ADR1 Gandijeva 49B/49
 2 CITY Belgrade
-0 @U154@ SUBM
-1 RIN MH:U154
-0 @U155@ SUBM
-1 RIN MH:U155
 0 @U156@ SUBM
 1 RIN MH:U156
 0 @U157@ SUBM
 1 RIN MH:U157
 0 @U158@ SUBM
 1 RIN MH:U158
-1 ADDR
-2 CITY Fredericia
-2 STAE Syddanmark
-2 CTRY Danmark
 0 @U159@ SUBM
 1 RIN MH:U159
 0 @U160@ SUBM
 1 RIN MH:U160
+1 ADDR
+2 CITY Fredericia
+2 STAE Syddanmark
+2 CTRY Danmark
 0 @U161@ SUBM
 1 RIN MH:U161
 0 @U162@ SUBM
@@ -440,29 +437,29 @@
 1 RIN MH:U169
 0 @U170@ SUBM
 1 RIN MH:U170
+0 @U171@ SUBM
+1 RIN MH:U171
+0 @U172@ SUBM
+1 RIN MH:U172
 1 ADDR
 2 CITY Rio de Janeiro
 2 STAE RJ
 2 CTRY Brasil
-0 @U171@ SUBM
-1 RIN MH:U171
+0 @U173@ SUBM
+1 RIN MH:U173
 1 ADDR
 2 CITY Sydney
 2 STAE New South Wales
 2 CTRY Australia
-0 @U172@ SUBM
-1 RIN MH:U172
-0 @U173@ SUBM
-1 RIN MH:U173
+0 @U174@ SUBM
+1 RIN MH:U174
+0 @U175@ SUBM
+1 RIN MH:U175
 1 ADDR
 2 CITY Grand Rapids
 2 STAE MI
 2 POST 49525
 2 CTRY United States
-0 @U174@ SUBM
-1 RIN MH:U174
-0 @U175@ SUBM
-1 RIN MH:U175
 0 @U176@ SUBM
 1 RIN MH:U176
 0 @U177@ SUBM
@@ -493,14 +490,14 @@
 1 RIN MH:U189
 0 @U190@ SUBM
 1 RIN MH:U190
-1 ADDR
-2 CITY Bratislava
-2 STAE EU
-2 CTRY Slovakia
 0 @U191@ SUBM
 1 RIN MH:U191
 0 @U192@ SUBM
 1 RIN MH:U192
+1 ADDR
+2 CITY Bratislava
+2 STAE EU
+2 CTRY Slovakia
 0 @U193@ SUBM
 1 RIN MH:U193
 0 @U194@ SUBM
@@ -537,13 +534,13 @@
 1 RIN MH:U209
 0 @U210@ SUBM
 1 RIN MH:U210
-1 ADDR
-2 STAE Selangor
-2 CTRY Malaysia
 0 @U211@ SUBM
 1 RIN MH:U211
 0 @U212@ SUBM
 1 RIN MH:U212
+1 ADDR
+2 STAE Selangor
+2 CTRY Malaysia
 0 @U213@ SUBM
 1 RIN MH:U213
 0 @U214@ SUBM
@@ -566,12 +563,12 @@
 1 RIN MH:U222
 0 @U223@ SUBM
 1 RIN MH:U223
-1 ADDR
-2 CTRY Brunei
 0 @U224@ SUBM
 1 RIN MH:U224
 0 @U225@ SUBM
 1 RIN MH:U225
+1 ADDR
+2 CTRY Brunei
 0 @U226@ SUBM
 1 RIN MH:U226
 0 @U227@ SUBM
@@ -580,14 +577,14 @@
 1 RIN MH:U228
 0 @U229@ SUBM
 1 RIN MH:U229
-1 ADDR
-2 CITY Kendal
-2 STAE Central Java
-2 CTRY Indonesia
 0 @U230@ SUBM
 1 RIN MH:U230
 0 @U231@ SUBM
 1 RIN MH:U231
+1 ADDR
+2 CITY Kendal
+2 STAE Central Java
+2 CTRY Indonesia
 0 @U232@ SUBM
 1 RIN MH:U232
 0 @U233@ SUBM
@@ -674,37 +671,37 @@
 1 RIN MH:U273
 0 @U274@ SUBM
 1 RIN MH:U274
-1 ADDR
-2 CITY Santiago
-2 CTRY Chile
 0 @U275@ SUBM
 1 RIN MH:U275
 0 @U276@ SUBM
 1 RIN MH:U276
+1 ADDR
+2 CITY Santiago
+2 CTRY Chile
 0 @U277@ SUBM
 1 RIN MH:U277
 0 @U278@ SUBM
 1 RIN MH:U278
-1 ADDR
-2 CITY Sarasota
-2 STAE FL
-2 CTRY United States
 0 @U279@ SUBM
 1 RIN MH:U279
 0 @U280@ SUBM
 1 RIN MH:U280
+1 ADDR
+2 CITY Sarasota
+2 STAE FL
+2 CTRY United States
 0 @U281@ SUBM
 1 RIN MH:U281
 0 @U282@ SUBM
 1 RIN MH:U282
-1 ADDR
-2 CITY Medellín
-2 STAE Antioquia
-2 CTRY Colombia
 0 @U283@ SUBM
 1 RIN MH:U283
 0 @U284@ SUBM
 1 RIN MH:U284
+1 ADDR
+2 CITY Medellín
+2 STAE Antioquia
+2 CTRY Colombia
 0 @U285@ SUBM
 1 RIN MH:U285
 0 @U286@ SUBM
@@ -727,13 +724,13 @@
 1 RIN MH:U294
 0 @U295@ SUBM
 1 RIN MH:U295
-1 ADDR
-2 CITY MONTEVIDEO
-2 CTRY Uruguay
 0 @U296@ SUBM
 1 RIN MH:U296
 0 @U297@ SUBM
 1 RIN MH:U297
+1 ADDR
+2 CITY MONTEVIDEO
+2 CTRY Uruguay
 0 @U298@ SUBM
 1 RIN MH:U298
 0 @U299@ SUBM
@@ -790,14 +787,14 @@
 1 RIN MH:U324
 0 @U325@ SUBM
 1 RIN MH:U325
-1 ADDR
-2 CITY Mexico City
-2 STAE Federal District
-2 CTRY Mexico
 0 @U326@ SUBM
 1 RIN MH:U326
 0 @U327@ SUBM
 1 RIN MH:U327
+1 ADDR
+2 CITY Mexico City
+2 STAE Federal District
+2 CTRY Mexico
 0 @U328@ SUBM
 1 RIN MH:U328
 0 @U329@ SUBM
@@ -860,15 +857,15 @@
 1 RIN MH:U357
 0 @U358@ SUBM
 1 RIN MH:U358
+0 @U359@ SUBM
+1 RIN MH:U359
+0 @U360@ SUBM
+1 RIN MH:U360
 1 ADDR
 2 CITY Mount Morris Township
 2 STAE WI
 2 POST 54984
 2 CTRY United States
-0 @U359@ SUBM
-1 RIN MH:U359
-0 @U360@ SUBM
-1 RIN MH:U360
 0 @U361@ SUBM
 1 RIN MH:U361
 0 @U362@ SUBM
@@ -881,23 +878,23 @@
 1 RIN MH:U365
 0 @U366@ SUBM
 1 RIN MH:U366
-1 ADDR
-2 CITY Bogotá
-2 STAE Bogotá
-2 CTRY Colombia
 0 @U367@ SUBM
 1 RIN MH:U367
 0 @U368@ SUBM
 1 RIN MH:U368
+1 ADDR
+2 CITY Bogotá
+2 STAE Bogotá
+2 CTRY Colombia
 0 @U369@ SUBM
 1 RIN MH:U369
-1 ADDR
-2 CITY Montevideo
-2 CTRY Uruguay
 0 @U370@ SUBM
 1 RIN MH:U370
 0 @U371@ SUBM
 1 RIN MH:U371
+1 ADDR
+2 CITY Montevideo
+2 CTRY Uruguay
 0 @U372@ SUBM
 1 RIN MH:U372
 0 @U373@ SUBM
@@ -926,14 +923,14 @@
 1 RIN MH:U384
 0 @U385@ SUBM
 1 RIN MH:U385
-1 ADDR
-2 CITY Viña del Mar
-2 STAE Valparaíso Region
-2 CTRY Chile
 0 @U386@ SUBM
 1 RIN MH:U386
 0 @U387@ SUBM
 1 RIN MH:U387
+1 ADDR
+2 CITY Viña del Mar
+2 STAE Valparaíso Region
+2 CTRY Chile
 0 @U388@ SUBM
 1 RIN MH:U388
 0 @U389@ SUBM
@@ -992,19 +989,19 @@
 1 RIN MH:U415
 0 @U416@ SUBM
 1 RIN MH:U416
+0 @U417@ SUBM
+1 RIN MH:U417
+0 @U418@ SUBM
+1 RIN MH:U418
 1 ADDR
 2 CITY Kongsberg
 2 STAE Buskerud
 2 CTRY Norway
-0 @U417@ SUBM
-1 RIN MH:U417
+0 @U419@ SUBM
+1 RIN MH:U419
 1 ADDR
 2 CITY København
 2 CTRY Denmark
-0 @U418@ SUBM
-1 RIN MH:U418
-0 @U419@ SUBM
-1 RIN MH:U419
 0 @U420@ SUBM
 1 RIN MH:U420
 0 @U421@ SUBM
@@ -1023,14 +1020,14 @@
 1 RIN MH:U427
 0 @U428@ SUBM
 1 RIN MH:U428
-1 ADDR
-2 CITY Mar del Plata
-2 STAE Buenos Aires Province
-2 CTRY Argentina
 0 @U429@ SUBM
 1 RIN MH:U429
 0 @U430@ SUBM
 1 RIN MH:U430
+1 ADDR
+2 CITY Mar del Plata
+2 STAE Buenos Aires Province
+2 CTRY Argentina
 0 @U431@ SUBM
 1 RIN MH:U431
 0 @U432@ SUBM
@@ -1041,14 +1038,14 @@
 1 RIN MH:U434
 0 @U435@ SUBM
 1 RIN MH:U435
-1 ADDR
-2 CITY Madrid
-2 STAE Community of Madrid
-2 CTRY Spain
 0 @U436@ SUBM
 1 RIN MH:U436
 0 @U437@ SUBM
 1 RIN MH:U437
+1 ADDR
+2 CITY Madrid
+2 STAE Community of Madrid
+2 CTRY Spain
 0 @U438@ SUBM
 1 RIN MH:U438
 0 @U439@ SUBM
@@ -1085,14 +1082,14 @@
 1 RIN MH:U454
 0 @U455@ SUBM
 1 RIN MH:U455
-1 ADDR
-2 CITY Sydney
-2 STAE New South Wales
-2 CTRY Australia
 0 @U456@ SUBM
 1 RIN MH:U456
 0 @U457@ SUBM
 1 RIN MH:U457
+1 ADDR
+2 CITY Sydney
+2 STAE New South Wales
+2 CTRY Australia
 0 @U458@ SUBM
 1 RIN MH:U458
 0 @U459@ SUBM
@@ -1107,24 +1104,24 @@
 1 RIN MH:U463
 0 @U464@ SUBM
 1 RIN MH:U464
-1 ADDR
-2 CITY Saint Laurent de Cerdans
-2 STAE Pyrénées-Orientales
-2 CTRY France
 0 @U465@ SUBM
 1 RIN MH:U465
 0 @U466@ SUBM
 1 RIN MH:U466
+1 ADDR
+2 CITY Saint Laurent de Cerdans
+2 STAE Pyrénées-Orientales
+2 CTRY France
+0 @U467@ SUBM
+1 RIN MH:U467
+0 @U468@ SUBM
+1 RIN MH:U468
 1 ADDR  Kg baru kundang 
 2 ADR1  Kg baru kundang 
 2 CITY Rawang
 2 STAE Selangor
 2 POST 48000
 2 CTRY Malaysia
-0 @U467@ SUBM
-1 RIN MH:U467
-0 @U468@ SUBM
-1 RIN MH:U468
 0 @U469@ SUBM
 1 RIN MH:U469
 0 @U470@ SUBM
@@ -1141,15 +1138,15 @@
 1 RIN MH:U475
 0 @U476@ SUBM
 1 RIN MH:U476
+0 @U477@ SUBM
+1 RIN MH:U477
+0 @U478@ SUBM
+1 RIN MH:U478
 1 ADDR
 2 CITY Tucson
 2 STAE Arizona
 2 POST 85716
 2 CTRY United States
-0 @U477@ SUBM
-1 RIN MH:U477
-0 @U478@ SUBM
-1 RIN MH:U478
 0 @U479@ SUBM
 1 RIN MH:U479
 0 @U480@ SUBM
@@ -1158,14 +1155,14 @@
 1 RIN MH:U481
 0 @U482@ SUBM
 1 RIN MH:U482
-1 ADDR
-2 CITY Pannipitiya
-2 STAE WP
-2 CTRY Sri Lanka
 0 @U483@ SUBM
 1 RIN MH:U483
 0 @U484@ SUBM
 1 RIN MH:U484
+1 ADDR
+2 CITY Pannipitiya
+2 STAE WP
+2 CTRY Sri Lanka
 0 @U485@ SUBM
 1 RIN MH:U485
 0 @U486@ SUBM
@@ -1186,14 +1183,14 @@
 1 RIN MH:U493
 0 @U494@ SUBM
 1 RIN MH:U494
-1 ADDR
-2 CITY Palawan
-2 STAE MIMAROPA
-2 CTRY Philippines
 0 @U495@ SUBM
 1 RIN MH:U495
 0 @U496@ SUBM
 1 RIN MH:U496
+1 ADDR
+2 CITY Palawan
+2 STAE MIMAROPA
+2 CTRY Philippines
 0 @U497@ SUBM
 1 RIN MH:U497
 0 @U498@ SUBM
@@ -1206,27 +1203,27 @@
 1 RIN MH:U501
 0 @U502@ SUBM
 1 RIN MH:U502
+0 @U503@ SUBM
+1 RIN MH:U503
+0 @U504@ SUBM
+1 RIN MH:U504
 1 ADDR
 2 CITY Waihi
 2 STAE Waikato
 2 CTRY New Zealand
-0 @U503@ SUBM
-1 RIN MH:U503
-1 ADDR
-2 CITY 457 45  Hamburgsund
-2 CTRY Sweden
-0 @U504@ SUBM
-1 RIN MH:U504
 0 @U505@ SUBM
 1 RIN MH:U505
 1 ADDR
-2 CITY Gurgaon
-2 STAE Haryana
-2 CTRY India
+2 CITY 457 45  Hamburgsund
+2 CTRY Sweden
 0 @U506@ SUBM
 1 RIN MH:U506
 0 @U507@ SUBM
 1 RIN MH:U507
+1 ADDR
+2 CITY Gurgaon
+2 STAE Haryana
+2 CTRY India
 0 @U508@ SUBM
 1 RIN MH:U508
 0 @U509@ SUBM
@@ -1247,35 +1244,35 @@
 1 RIN MH:U516
 0 @U517@ SUBM
 1 RIN MH:U517
+0 @U518@ SUBM
+1 RIN MH:U518
+0 @U519@ SUBM
+1 RIN MH:U519
 1 ADDR
 2 CITY Denver
 2 STAE Colorado
 2 POST 80202
 2 CTRY United States
-0 @U518@ SUBM
-1 RIN MH:U518
-0 @U519@ SUBM
-1 RIN MH:U519
 0 @U520@ SUBM
 1 RIN MH:U520
 0 @U521@ SUBM
 1 RIN MH:U521
-1 ADDR
-2 CITY Fontaniva
-2 STAE Veneto
-2 CTRY Italy
 0 @U522@ SUBM
 1 RIN MH:U522
 0 @U523@ SUBM
 1 RIN MH:U523
 1 ADDR
-2 CITY Grenoble
-2 STAE Rhône-Alpes
-2 CTRY France
+2 CITY Fontaniva
+2 STAE Veneto
+2 CTRY Italy
 0 @U524@ SUBM
 1 RIN MH:U524
 0 @U525@ SUBM
 1 RIN MH:U525
+1 ADDR
+2 CITY Grenoble
+2 STAE Rhône-Alpes
+2 CTRY France
 0 @U526@ SUBM
 1 RIN MH:U526
 0 @U527@ SUBM
@@ -1286,14 +1283,18 @@
 1 RIN MH:U529
 0 @U530@ SUBM
 1 RIN MH:U530
+0 @U531@ SUBM
+1 RIN MH:U531
+0 @U532@ SUBM
+1 RIN MH:U532
 1 ADDR 1 lieu dit Magrens
 2 ADR1 1 lieu dit Magrens
 2 CITY Lagrace-Dieu
 2 STAE Haute-Garonne
 2 POST 31190
 2 CTRY France
-0 @U531@ SUBM
-1 RIN MH:U531
+0 @U533@ SUBM
+1 RIN MH:U533
 0 @I1@ INDI
 1 RIN MH:I1
 1 _UID 66dfdfd760f561efbbc69822ef79916c
@@ -10911,9 +10912,10 @@
 0 @I23289@ INDI
 1 RIN MH:I23289
 1 _UID 6715399f629821efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:40:55 GMT+5.5
-1 NAME Puccini //
+1 _UPD 22 OCT 2024 13:24:55 GMT+5.5
+1 NAME Puccini /Pucciniomycotina (rusts)/
 2 GIVN Puccini
+2 SURN Pucciniomycotina (rusts)
 1 SEX M
 1 FAMS @F13424@
 1 FAMC @F13423@
@@ -10930,9 +10932,10 @@
 0 @I23291@ INDI
 1 RIN MH:I23291
 1 _UID 6715399f45c671efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:40:55 GMT+5.5
-1 NAME Ustella //
+1 _UPD 22 OCT 2024 13:24:38 GMT+5.5
+1 NAME Ustella /Ustilaginomycotina (smuts)/
 2 GIVN Ustella
+2 SURN Ustilaginomycotina (smuts)
 1 SEX F
 1 FAMS @F13426@
 1 FAMC @F13425@
@@ -10940,9 +10943,10 @@
 0 @I23292@ INDI
 1 RIN MH:I23292
 1 _UID 6715399f4994c1efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:40:55 GMT+5.5
-1 NAME Agaricus I //
+1 _UPD 22 OCT 2024 13:24:16 GMT+5.5
+1 NAME Agaricus I /Agaricomycotina (mushrooms)/
 2 GIVN Agaricus I
+2 SURN Agaricomycotina (mushrooms)
 1 SEX M
 1 FAMS @F13427@
 1 FAMC @F13425@
@@ -11592,8 +11596,8 @@
 1 RIN MH:I23363
 1 _UID 671540613b4f91efbc0b9822ef79916c
 1 _UPD 20 OCT 2024 23:09:48 GMT+5.5
-1 NAME  /Zoraptera (angel insects) /
-2 SURN Zoraptera (angel insects) 
+1 NAME  /Zoraptera (angel insects)/
+2 SURN Zoraptera (angel insects)
 1 SEX M
 1 BIRT
 2 _UID 67154064f01341efbc0b9822ef79916c
@@ -11603,8 +11607,8 @@
 1 RIN MH:I23364
 1 _UID 67154069f01341efbc0b9822ef79916c
 1 _UPD 20 OCT 2024 23:09:56 GMT+5.5
-1 NAME  /Dermaptera (earwigs) /
-2 SURN Dermaptera (earwigs) 
+1 NAME  /Dermaptera (earwigs)/
+2 SURN Dermaptera (earwigs)
 1 SEX M
 1 BIRT
 2 _UID 6715406cf01341efbc0b9822ef79916c
@@ -11638,8 +11642,8 @@
 1 RIN MH:I23367
 1 _UID 6715408bf01341efbc0b9822ef79916c
 1 _UPD 20 OCT 2024 23:10:29 GMT+5.5
-1 NAME  /Plecoptera (stoneflies) /
-2 SURN Plecoptera (stoneflies) 
+1 NAME  /Plecoptera (stoneflies)/
+2 SURN Plecoptera (stoneflies)
 1 SEX M
 1 BIRT
 2 _UID 6715408df01341efbc0b9822ef79916c
@@ -11649,8 +11653,8 @@
 1 RIN MH:I23368
 1 _UID 671540953b4f91efbc0b9822ef79916c
 1 _UPD 20 OCT 2024 23:10:40 GMT+5.5
-1 NAME  /Orthoptera (grasshoppers, crickets, katydids) /
-2 SURN Orthoptera (grasshoppers, crickets, katydids) 
+1 NAME  /Orthoptera (grasshoppers, crickets, katydids)/
+2 SURN Orthoptera (grasshoppers, crickets, katydids)
 1 SEX M
 1 BIRT
 2 _UID 67154098f01341efbc0b9822ef79916c
@@ -11690,8 +11694,8 @@
 1 RIN MH:I23372
 1 _UID 671540fe3b4f91efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 22:36:54 GMT+5.5
-1 NAME  /Blattodea (cockroaches and termites) /
-2 SURN Blattodea (cockroaches and termites) 
+1 NAME  /Blattodea (cockroaches and termites)/
+2 SURN Blattodea (cockroaches and termites)
 1 SEX M
 1 BIRT
 2 _UID 67154100f01341efbc0b9822ef79916c
@@ -11702,8 +11706,8 @@
 1 RIN MH:I23373
 1 _UID 67154104f01341efbc0b9822ef79916c
 1 _UPD 20 OCT 2024 23:12:31 GMT+5.5
-1 NAME  /Mantodea (mantises) /
-2 SURN Mantodea (mantises) 
+1 NAME  /Mantodea (mantises)/
+2 SURN Mantodea (mantises)
 1 SEX M
 1 BIRT
 2 _UID 67154107f01341efbc0b9822ef79916c
@@ -11755,8 +11759,8 @@
 1 RIN MH:I23378
 1 _UID 671541303b4f91efbc0b9822ef79916c
 1 _UPD 20 OCT 2024 23:13:15 GMT+5.5
-1 NAME  /Embioptera (webspinners) /
-2 SURN Embioptera (webspinners) 
+1 NAME  /Embioptera (webspinners)/
+2 SURN Embioptera (webspinners)
 1 SEX M
 1 BIRT
 2 _UID 67154133f01341efbc0b9822ef79916c
@@ -11766,8 +11770,8 @@
 1 RIN MH:I23379
 1 _UID 67154136f01341efbc0b9822ef79916c
 1 _UPD 20 OCT 2024 23:13:21 GMT+5.5
-1 NAME  /Phasmatodea (stick insects) /
-2 SURN Phasmatodea (stick insects) 
+1 NAME  /Phasmatodea (stick insects)/
+2 SURN Phasmatodea (stick insects)
 1 SEX M
 1 BIRT
 2 _UID 67154139f01341efbc0b9822ef79916c
@@ -11777,8 +11781,8 @@
 1 RIN MH:I23380
 1 _UID 671541413b4f91efbc0b9822ef79916c
 1 _UPD 20 OCT 2024 23:13:32 GMT+5.5
-1 NAME  /Mantophasmatodea (gladiators) /
-2 SURN Mantophasmatodea (gladiators) 
+1 NAME  /Mantophasmatodea (gladiators)/
+2 SURN Mantophasmatodea (gladiators)
 1 SEX M
 1 BIRT
 2 _UID 67154144f01341efbc0b9822ef79916c
@@ -11788,8 +11792,8 @@
 1 RIN MH:I23381
 1 _UID 67154148f01341efbc0b9822ef79916c
 1 _UPD 20 OCT 2024 23:13:38 GMT+5.5
-1 NAME  /Grylloblattodea (ice crawlers) /
-2 SURN Grylloblattodea (ice crawlers) 
+1 NAME  /Grylloblattodea (ice crawlers)/
+2 SURN Grylloblattodea (ice crawlers)
 1 SEX M
 1 BIRT
 2 _UID 6715414af01341efbc0b9822ef79916c
@@ -12241,9 +12245,9 @@
 2 CONC  class="reference"><a href="https://en.wikipedia.org/wiki/Sarcopterygii#cite_note-Haaramo-2003-Sarcoptrg-32"><span class="cite-bracket" style="pointer-events: none;">[</span>32<span class="cite-bracke
 2 CONC t" style="pointer-events: none;">]</span></a></sup><span>&nbsp;</span>and Swartz (2012).<sup id="cite_ref-Swartz-2012_33-0" class="reference"><a href="https://en.wikipedia.org/wiki/Sarcopterygii#cite_
 2 CONC note-Swartz-2012-33"><span class="cite-bracket" style="pointer-events: none;">[</span>33<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup></p>
-2 CONT <div class="clade" style="font-size: medium; font-family: 'Times New Roman'; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #000000; font-style: normal; orphans
-2 CONC : 2; widows: 2; letter-spacing: normal; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration
-2 CONC -style: initial; text-decoration-color: initial;">&nbsp;</div>
+2 CONT <p><div class="clade" style="font-size: medium; font-family: 'Times New Roman'; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #000000; font-style: normal; orph
+2 CONC ans: 2; widows: 2; letter-spacing: normal; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decorat
+2 CONC ion-style: initial; text-decoration-color: initial;">&nbsp;</div>
 <p style="text-align: left;" dir="ltr">&nbsp;</p>
 0 @I23421@ INDI
 1 RIN MH:I23421
@@ -12769,8 +12773,8 @@
 1 RIN MH:I23472
 1 _UID 6716039cf01341efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 13:02:47 GMT+5.5
-1 NAME  /Amphibia  /
-2 SURN Amphibia  
+1 NAME  /Amphibia/
+2 SURN Amphibia
 1 SEX M
 1 BIRT
 2 _UID 6716039ff01341efbc0b9822ef79916c
@@ -12809,45 +12813,45 @@
 1 FAMS @F13580@
 1 FAMC @F13500@
 1 NOTE <p style="text-align: left;" dir="ltr">Source for dewcendants is below <a href="https://en.wikipedia.org/wiki/Sauropsida">https://en.wikipedia.org/wiki/Sauropsida</a></p>
-2 CONT <p style="text-align: left;" dir="ltr">&nbsp;</p>
-2 CONT <p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin: 0
-2 CONC .5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness:
-2 CONC  initial; text-decoration-style: initial; text-decoration-color: initial;">The<span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; 
-2 CONC overflow-wrap: break-word;" title="Cladistics" href="https://en.wikipedia.org/wiki/Cladistics#Cladograms">cladogram</a><span>&nbsp;</span>presented here illustrates the "family tree" of sauropsids, an
-2 CONC d follows a simplified version of the relationships found by M.S. Lee, in 2013.<sup id="cite_ref-scaffold2013_13-0" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; 
-2 CONC font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/w
-2 CONC iki/Sauropsida#cite_note-scaffold2013-13"><span class="cite-bracket" style="pointer-events: none;">[</span>13<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup><span>&nbsp;</sp
-2 CONC an>All<span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Molecular phylogenetics" href="https:
-2 CONC //en.wikipedia.org/wiki/Molecular_phylogenetics">genetic</a><span>&nbsp;</span>studies have supported the hypothesis that turtles (formerly categorized together with ancient<span>&nbsp;</span><em><a s
-2 CONC tyle="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Anapsid" href="https://en.wikipedia.org/wiki/Anapsid">anapsids</a>
-2 CONC </em>) are diapsid reptiles, despite lacking any skull openings behind their eye sockets; some studies have even placed turtles among the<span>&nbsp;</span><a style="text-decoration: none; background:
-2 CONC  none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Archosaur" href="https://en.wikipedia.org/wiki/Archosaur">archosaurs</a>,<sup id="cite_ref-scaffold2013_13
-2 CONC -1" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat
-2 CONC  0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Sauropsida#cite_note-scaffold2013-13"><span class="cite-bracket" style="pointer-events: none;">[</span>13<sp
-2 CONC an class="cite-bracket" style="pointer-events: none;">]</span></a></sup><sup id="cite_ref-Mannen_14-0" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: n
-2 CONC ormal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Sauropsid
-2 CONC a#cite_note-Mannen-14"><span class="cite-bracket" style="pointer-events: none;">[</span>14<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup><sup id="cite_ref-Zardoya_15-0" cla
-2 CONC ss="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%;
-2 CONC  border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Sauropsida#cite_note-Zardoya-15"><span class="cite-bracket" style="pointer-events: none;">[</span>15<span class="ci
-2 CONC te-bracket" style="pointer-events: none;">]</span></a></sup><sup id="cite_ref-Iwabe_16-0" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-h
-2 CONC eight: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Sauropsida#cite_note-I
-2 CONC wabe-16"><span class="cite-bracket" style="pointer-events: none;">[</span>16<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup><sup id="cite_ref-Roos_17-0" class="reference" st
-2 CONC yle="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0
-2 CONC px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Sauropsida#cite_note-Roos-17"><span class="cite-bracket" style="pointer-events: none;">[</span>17<span class="cite-bracket" style="p
-2 CONC ointer-events: none;">]</span></a></sup><sup id="cite_ref-Katsu_18-0" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style=
-2 CONC "text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Sauropsida#cite_note-Katsu-18"><span class
-2 CONC ="cite-bracket" style="pointer-events: none;">[</span>18<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup><span>&nbsp;</span>though a few have recovered turtles as lepidosauro
-2 CONC morphs instead.<sup id="cite_ref-Lyson2012_19-0" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: non
-2 CONC e; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Sauropsida#cite_note-Lyson2012-19"><span class="cite-bracket" s
-2 CONC tyle="pointer-events: none;">[</span>19<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup><span>&nbsp;</span>The cladogram below used a combination of genetic (molecular) and f
-2 CONC ossil (morphological) data to obtain its results.<sup id="cite_ref-scaffold2013_13-2" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-heigh
-2 CONC t: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Sauropsida#cite_note-scaff
-2 CONC old2013-13"><span class="cite-bracket" style="pointer-events: none;">[</span>13<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup></p>
-2 CONT <div class="clade" style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; wido
-2 CONC ws: 2; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initia
-2 CONC l; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</div>
+2 CONT <p><p style="text-align: left;" dir="ltr">&nbsp;</p></p>
+2 CONT <p><p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin
+2 CONC : 0.5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickne
+2 CONC ss: initial; text-decoration-style: initial; text-decoration-color: initial;">The<span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0p
+2 CONC x; overflow-wrap: break-word;" title="Cladistics" href="https://en.wikipedia.org/wiki/Cladistics#Cladograms">cladogram</a><span>&nbsp;</span>presented here illustrates the "family tree" of sauropsids,
+2 CONC  and follows a simplified version of the relationships found by M.S. Lee, in 2013.<sup id="cite_ref-scaffold2013_13-0" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: norma
+2 CONC l; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.or
+2 CONC g/wiki/Sauropsida#cite_note-scaffold2013-13"><span class="cite-bracket" style="pointer-events: none;">[</span>13<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup><span>&nbsp;<
+2 CONC /span>All<span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Molecular phylogenetics" href="htt
+2 CONC ps://en.wikipedia.org/wiki/Molecular_phylogenetics">genetic</a><span>&nbsp;</span>studies have supported the hypothesis that turtles (formerly categorized together with ancient<span>&nbsp;</span><em><
+2 CONC a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Anapsid" href="https://en.wikipedia.org/wiki/Anapsid">anapsids<
+2 CONC /a></em>) are diapsid reptiles, despite lacking any skull openings behind their eye sockets; some studies have even placed turtles among the<span>&nbsp;</span><a style="text-decoration: none; backgrou
+2 CONC nd: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Archosaur" href="https://en.wikipedia.org/wiki/Archosaur">archosaurs</a>,<sup id="cite_ref-scaffold2013
+2 CONC _13-1" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll rep
+2 CONC eat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Sauropsida#cite_note-scaffold2013-13"><span class="cite-bracket" style="pointer-events: none;">[</span>13
+2 CONC <span class="cite-bracket" style="pointer-events: none;">]</span></a></sup><sup id="cite_ref-Mannen_14-0" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style
+2 CONC : normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Saurop
+2 CONC sida#cite_note-Mannen-14"><span class="cite-bracket" style="pointer-events: none;">[</span>14<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup><sup id="cite_ref-Zardoya_15-0" 
+2 CONC class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 
+2 CONC 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Sauropsida#cite_note-Zardoya-15"><span class="cite-bracket" style="pointer-events: none;">[</span>15<span class=
+2 CONC "cite-bracket" style="pointer-events: none;">]</span></a></sup><sup id="cite_ref-Iwabe_16-0" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; lin
+2 CONC e-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Sauropsida#cite_not
+2 CONC e-Iwabe-16"><span class="cite-bracket" style="pointer-events: none;">[</span>16<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup><sup id="cite_ref-Roos_17-0" class="reference"
+2 CONC  style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius
+2 CONC : 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Sauropsida#cite_note-Roos-17"><span class="cite-bracket" style="pointer-events: none;">[</span>17<span class="cite-bracket" style
+2 CONC ="pointer-events: none;">]</span></a></sup><sup id="cite_ref-Katsu_18-0" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a sty
+2 CONC le="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Sauropsida#cite_note-Katsu-18"><span cl
+2 CONC ass="cite-bracket" style="pointer-events: none;">[</span>18<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup><span>&nbsp;</span>though a few have recovered turtles as lepidosa
+2 CONC uromorphs instead.<sup id="cite_ref-Lyson2012_19-0" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: 
+2 CONC none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Sauropsida#cite_note-Lyson2012-19"><span class="cite-bracket
+2 CONC " style="pointer-events: none;">[</span>19<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup><span>&nbsp;</span>The cladogram below used a combination of genetic (molecular) an
+2 CONC d fossil (morphological) data to obtain its results.<sup id="cite_ref-scaffold2013_13-2" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-he
+2 CONC ight: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Sauropsida#cite_note-sc
+2 CONC affold2013-13"><span class="cite-bracket" style="pointer-events: none;">[</span>13<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup></p>
+2 CONT <p><div class="clade" style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; w
+2 CONC idows: 2; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: ini
+2 CONC tial; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</div>
 <p style="text-align: left;" dir="ltr"><br class="Apple-interchange-newline" />&nbsp;</p>
-2 CONT <p style="text-align: left;" dir="ltr">Breaks at Diapsits though</p>
+2 CONT <p><p style="text-align: left;" dir="ltr">Breaks at Diapsits though</p></p>
 0 @I23475@ INDI
 1 RIN MH:I23475
 1 _UID 671603f1f01341efbc0b9822ef79916c
@@ -12886,8 +12890,8 @@
 1 RIN MH:I23478
 1 _UID 67160571f01341efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 13:10:37 GMT+5.5
-1 NAME  /†Caseasauria /
-2 SURN †Caseasauria 
+1 NAME  /†Caseasauria/
+2 SURN †Caseasauria
 1 SEX M
 1 BIRT
 2 _UID 67160575f01341efbc0b9822ef79916c
@@ -12916,8 +12920,8 @@
 1 RIN MH:I23481
 1 _UID 67160597f01341efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 13:11:22 GMT+5.5
-1 NAME  /†Varanopidae /
-2 SURN †Varanopidae 
+1 NAME  /†Varanopidae/
+2 SURN †Varanopidae
 1 SEX M
 1 BIRT
 2 _UID 671605a2f01341efbc0b9822ef79916c
@@ -12946,8 +12950,8 @@
 1 RIN MH:I23484
 1 _UID 671605cbf01341efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 13:12:08 GMT+5.5
-1 NAME  /†Ophiacodontidae /
-2 SURN †Ophiacodontidae 
+1 NAME  /†Ophiacodontidae/
+2 SURN †Ophiacodontidae
 1 SEX M
 1 BIRT
 2 _UID 671605d0f01341efbc0b9822ef79916c
@@ -12969,8 +12973,8 @@
 1 RIN MH:I23486
 1 _UID 671605f4f01341efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 13:12:47 GMT+5.5
-1 NAME  /†Edaphosauridae /
-2 SURN †Edaphosauridae 
+1 NAME  /†Edaphosauridae/
+2 SURN †Edaphosauridae
 1 SEX M
 1 BIRT
 2 _UID 671605f6f01341efbc0b9822ef79916c
@@ -12998,8 +13002,8 @@
 1 RIN MH:I23489
 1 _UID 6716062ef01341efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 13:13:45 GMT+5.5
-1 NAME  /†Sphenacodontidae /
-2 SURN †Sphenacodontidae 
+1 NAME  /†Sphenacodontidae/
+2 SURN †Sphenacodontidae
 1 SEX M
 1 BIRT
 2 _UID 67160631f01341efbc0b9822ef79916c
@@ -13027,8 +13031,8 @@
 1 RIN MH:I23492
 1 _UID 67160652f01341efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 13:14:23 GMT+5.5
-1 NAME  /†Biarmosuchia /
-2 SURN †Biarmosuchia 
+1 NAME  /†Biarmosuchia/
+2 SURN †Biarmosuchia
 1 SEX M
 1 BIRT
 2 _UID 67160657f01341efbc0b9822ef79916c
@@ -13050,8 +13054,8 @@
 1 RIN MH:I23494
 1 _UID 67160687f01341efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 13:15:14 GMT+5.5
-1 NAME  /†Dinocephalia /
-2 SURN †Dinocephalia 
+1 NAME  /†Dinocephalia/
+2 SURN †Dinocephalia
 1 SEX M
 1 BIRT
 2 _UID 6716068af01341efbc0b9822ef79916c
@@ -13073,8 +13077,8 @@
 1 RIN MH:I23496
 1 _UID 6716069bf01341efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 13:15:36 GMT+5.5
-1 NAME  /†Anomodontia /
-2 SURN †Anomodontia 
+1 NAME  /†Anomodontia/
+2 SURN †Anomodontia
 1 SEX M
 1 BIRT
 2 _UID 671606a0f01341efbc0b9822ef79916c
@@ -13096,8 +13100,8 @@
 1 RIN MH:I23498
 1 _UID 671606b8f01341efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 13:16:04 GMT+5.5
-1 NAME  /†Gorgonopsia /
-2 SURN †Gorgonopsia 
+1 NAME  /†Gorgonopsia/
+2 SURN †Gorgonopsia
 1 SEX M
 1 BIRT
 2 _UID 671606bcf01341efbc0b9822ef79916c
@@ -13135,8 +13139,8 @@
 1 RIN MH:I23501
 1 _UID 67160710f01341efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 13:17:31 GMT+5.5
-1 NAME  /† Cynognathia /
-2 SURN † Cynognathia 
+1 NAME  /† Cynognathia/
+2 SURN † Cynognathia
 1 SEX M
 1 BIRT
 2 _UID 67160713f01341efbc0b9822ef79916c
@@ -13319,8 +13323,8 @@
 1 RIN MH:I23516
 1 _UID 671608d6f01341efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 13:40:36 GMT+5.5
-1 NAME  /Euarchonta /
-2 SURN Euarchonta 
+1 NAME  /Euarchonta/
+2 SURN Euarchonta
 1 SEX M
 1 BIRT
 2 _UID 671608d8f01341efbc0b9822ef79916c
@@ -13418,8 +13422,8 @@
 1 RIN MH:I23525
 1 _UID 671609a03b4f91efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 13:33:04 GMT+5.5
-1 NAME  /Artiodactyla /
-2 SURN Artiodactyla 
+1 NAME  /Artiodactyla/
+2 SURN Artiodactyla
 1 SEX M
 1 BIRT
 2 _UID 671609b6f01341efbc0b9822ef79916c
@@ -13430,8 +13434,8 @@
 1 RIN MH:I23526
 1 _UID 671609bbf01341efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 13:36:43 GMT+5.5
-1 NAME  /Perissodactyla /
-2 SURN Perissodactyla 
+1 NAME  /Perissodactyla/
+2 SURN Perissodactyla
 1 SEX M
 1 BIRT
 2 _UID 671609bef01341efbc0b9822ef79916c
@@ -13442,8 +13446,8 @@
 1 RIN MH:I23527
 1 _UID 671609cc3b4f91efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 13:29:10 GMT+5.5
-1 NAME  /Carnivora /
-2 SURN Carnivora 
+1 NAME  /Carnivora/
+2 SURN Carnivora
 1 SEX M
 1 BIRT
 2 _UID 671609cef01341efbc0b9822ef79916c
@@ -13464,8 +13468,8 @@
 1 RIN MH:I23529
 1 _UID 67160aac3b4f91efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 13:33:25 GMT+5.5
-1 NAME  /Artiofabula  /
-2 SURN Artiofabula  
+1 NAME  /Artiofabula/
+2 SURN Artiofabula
 1 SEX M
 1 BIRT
 2 _UID 67160ab2f01341efbc0b9822ef79916c
@@ -13476,8 +13480,8 @@
 1 RIN MH:I23530
 1 _UID 67160ab5f01341efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 13:33:04 GMT+5.5
-1 NAME  /  Tylopoda (camels) /
-2 SURN   Tylopoda (camels) 
+1 NAME  /  Tylopoda (camels)/
+2 SURN   Tylopoda (camels)
 1 SEX M
 1 BIRT
 2 _UID 67160ab8f01341efbc0b9822ef79916c
@@ -13487,8 +13491,8 @@
 1 RIN MH:I23531
 1 _UID 67160abf3b4f91efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 13:33:48 GMT+5.5
-1 NAME  /Cetruminantia  /
-2 SURN Cetruminantia  
+1 NAME  /Cetruminantia/
+2 SURN Cetruminantia
 1 SEX M
 1 BIRT
 2 _UID 67160ac5f01341efbc0b9822ef79916c
@@ -13499,8 +13503,8 @@
 1 RIN MH:I23532
 1 _UID 67160ac9f01341efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 13:33:25 GMT+5.5
-1 NAME  /  Suina (pigs) /
-2 SURN   Suina (pigs) 
+1 NAME  /  Suina (pigs)/
+2 SURN   Suina (pigs)
 1 SEX M
 1 BIRT
 2 _UID 67160acdf01341efbc0b9822ef79916c
@@ -13510,8 +13514,8 @@
 1 RIN MH:I23533
 1 _UID 67160ad13b4f91efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 13:34:18 GMT+5.5
-1 NAME  /  Cetancodonta    (or Whippomorpha)  /
-2 SURN   Cetancodonta    (or Whippomorpha)  
+1 NAME  /  Cetancodonta    (or Whippomorpha)/
+2 SURN   Cetancodonta    (or Whippomorpha)
 1 SEX M
 1 BIRT
 2 _UID 67160adef01341efbc0b9822ef79916c
@@ -13534,8 +13538,8 @@
 1 RIN MH:I23535
 1 _UID 67160af73b4f91efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 13:34:10 GMT+5.5
-1 NAME  /  Cetacea (whales) /
-2 SURN   Cetacea (whales) 
+1 NAME  /  Cetacea (whales)/
+2 SURN   Cetacea (whales)
 1 SEX M
 1 BIRT
 2 _UID 67160afaf01341efbc0b9822ef79916c
@@ -13545,8 +13549,8 @@
 1 RIN MH:I23536
 1 _UID 67160afef01341efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 13:34:18 GMT+5.5
-1 NAME  /  Hippopotamidae (hippopotamuses) /
-2 SURN   Hippopotamidae (hippopotamuses) 
+1 NAME  /  Hippopotamidae (hippopotamuses)/
+2 SURN   Hippopotamidae (hippopotamuses)
 1 SEX M
 1 BIRT
 2 _UID 67160b02f01341efbc0b9822ef79916c
@@ -13556,8 +13560,8 @@
 1 RIN MH:I23537
 1 _UID 67160b133b4f91efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 13:34:39 GMT+5.5
-1 NAME  /  Pecora (horn bearers) /
-2 SURN   Pecora (horn bearers) 
+1 NAME  /  Pecora (horn bearers)/
+2 SURN   Pecora (horn bearers)
 1 SEX M
 1 BIRT
 2 _UID 67160b17f01341efbc0b9822ef79916c
@@ -13567,8 +13571,8 @@
 1 RIN MH:I23538
 1 _UID 67160b1cf01341efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 13:34:47 GMT+5.5
-1 NAME  /  Tragulidae (mouse deer) /
-2 SURN   Tragulidae (mouse deer) 
+1 NAME  /  Tragulidae (mouse deer)/
+2 SURN   Tragulidae (mouse deer)
 1 SEX M
 1 BIRT
 2 _UID 67160b1ff01341efbc0b9822ef79916c
@@ -13578,9 +13582,9 @@
 1 RIN MH:I23539
 1 _UID 67160b893b4f91efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 13:37:06 GMT+5.5
-1 NAME Unnamed clade /Perissodactyla /
+1 NAME Unnamed clade /Perissodactyla/
 2 GIVN Unnamed clade
-2 SURN Perissodactyla 
+2 SURN Perissodactyla
 1 SEX M
 1 BIRT
 2 _UID 67160b8cf01341efbc0b9822ef79916c
@@ -13835,8 +13839,8 @@
 1 RIN MH:I23561
 1 _UID 67160e9df01341efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 13:49:44 GMT+5.5
-1 NAME  /Homo rudolfensis (†1.9) /
-2 SURN Homo rudolfensis (†1.9) 
+1 NAME  /Homo rudolfensis (†1.9)/
+2 SURN Homo rudolfensis (†1.9)
 1 SEX M
 1 BIRT
 2 _UID 67160ea0f01341efbc0b9822ef79916c
@@ -13846,8 +13850,8 @@
 1 RIN MH:I23562
 1 _UID 67160ea4f01341efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 13:49:51 GMT+5.5
-1 NAME  /Homo habilis (†1.5) /
-2 SURN Homo habilis (†1.5) 
+1 NAME  /Homo habilis (†1.5)/
+2 SURN Homo habilis (†1.5)
 1 SEX M
 1 BIRT
 2 _UID 67160ea7f01341efbc0b9822ef79916c
@@ -13902,8 +13906,8 @@
 1 RIN MH:I23567
 1 _UID 67160f2df01341efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 13:52:09 GMT+5.5
-1 NAME  /Homo ergaster (†1.4) /
-2 SURN Homo ergaster (†1.4) 
+1 NAME  /Homo ergaster (†1.4)/
+2 SURN Homo ergaster (†1.4)
 1 SEX M
 1 BIRT
 2 _UID 67160f31f01341efbc0b9822ef79916c
@@ -13927,8 +13931,8 @@
 1 RIN MH:I23569
 1 _UID 67160f84f01341efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 13:53:35 GMT+5.5
-1 NAME  /Asian Homo erectus s.s. (†0.1) /
-2 SURN Asian Homo erectus s.s. (†0.1) 
+1 NAME  /Asian Homo erectus s.s. (†0.1)/
+2 SURN Asian Homo erectus s.s. (†0.1)
 1 SEX M
 1 BIRT
 2 _UID 67160f87f01341efbc0b9822ef79916c
@@ -13938,8 +13942,8 @@
 1 RIN MH:I23570
 1 _UID 67160f8ef01341efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 13:53:45 GMT+5.5
-1 NAME  /African Homo erectus s.s. (†) /
-2 SURN African Homo erectus s.s. (†) 
+1 NAME  /African Homo erectus s.s. (†)/
+2 SURN African Homo erectus s.s. (†)
 1 SEX M
 1 BIRT
 2 _UID 67160f91f01341efbc0b9822ef79916c
@@ -13987,8 +13991,8 @@
 1 RIN MH:I23574
 1 _UID 67160ff03b4f91efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 14:00:39 GMT+5.5
-1 NAME  /Homo sapiens /
-2 SURN Homo sapiens 
+1 NAME  /Homo sapiens/
+2 SURN Homo sapiens
 1 SEX M
 1 BIRT
 2 _UID 67160ff3f01341efbc0b9822ef79916c
@@ -14034,8 +14038,8 @@
 1 RIN MH:I23577
 1 _UID 67161034f01341efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 13:56:42 GMT+5.5
-1 NAME  /H. neanderthalensis (†0.05) /
-2 SURN H. neanderthalensis (†0.05) 
+1 NAME  /H. neanderthalensis (†0.05)/
+2 SURN H. neanderthalensis (†0.05)
 1 SEX M
 1 BIRT
 2 _UID 67161042f01341efbc0b9822ef79916c
@@ -14836,8 +14840,8 @@
 1 RIN MH:I23655
 1 _UID 67166817748341efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 20:11:33 GMT+5.5
-1 NAME  /Millerettidae /
-2 SURN Millerettidae 
+1 NAME  /Millerettidae/
+2 SURN Millerettidae
 1 SEX M
 1 BIRT
 2 _UID 6716681d748341efbc0b9822ef79916c
@@ -14947,38 +14951,38 @@
 1 FAMS @F13587@
 1 FAMC @F13586@
 1 NOTE <p style="text-align: left;" dir="ltr"><br />Source for descendants here <a href="https://en.wikipedia.org/wiki/Diapsid">https://en.wikipedia.org/wiki/Diapsid</a>&nbsp;</p>
-2 CONT <p style="text-align: left;" dir="ltr">&nbsp;</p>
-2 CONT <div class="mw-heading mw-heading3" style="font-size: 1.2em; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: bold; padding-bottom: 0px; font-style: 
-2 CONC normal; padding-top: 0.5em; orphans: 2; widows: 2; margin: 0.25em 0px; letter-spacing: normal; line-height: 1.6; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-varia
-2 CONC nt-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
-<h3 id="Relationships" style="font-family: inheri
-2 CONC t; font-weight: bold; margin: 0px 0px 0.25em; display: inline; line-height: 1.6; font-stretch: inherit; font-optical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font-feature-set
-2 CONC tings: inherit; font-variation-settings: inherit; border: 0px; padding: 0px;"><span style="font-size: large;">Relationships</span></h3>
-<span class="mw-editsection" style="font-size: small; font-famil
-2 CONC y: sans-serif; vertical-align: baseline; font-weight: normal; margin-left: 1em; line-height: 0; margin-right: 0px; user-select: none; margin-inline: 1em 0px;"><span class="mw-editsection-bracket" styl
-2 CONC e="margin-right: 0.25em; margin-inline: 0px 0.25em;"><span style="font-size: medium;">[</span></span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; white-space: now
-2 CONC rap; border-radius: 0px; overflow-wrap: break-word;" title="Edit section: Relationships" href="https://en.wikipedia.org/w/index.php?title=Diapsid&amp;action=edit&amp;section=3"><span><span style="font
-2 CONC -size: medium;">edit</span></span></a><span class="mw-editsection-bracket" style="margin-left: 0.25em; margin-inline: 0.25em 0px;"><span style="font-size: medium;">]</span></span></span></div>
-<p styl
-2 CONC e="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin: 0.5em 0p
-2 CONC x 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initia
-2 CONC l; text-decoration-style: initial; text-decoration-color: initial;">Below are<span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; o
-2 CONC verflow-wrap: break-word;" title="Cladogram" href="https://en.wikipedia.org/wiki/Cladogram">cladograms</a><span>&nbsp;</span>showing the relations of the major groups of diapsids.</p>
-2 CONT <p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin: 0
-2 CONC .5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness:
-2 CONC  initial; text-decoration-style: initial; text-decoration-color: initial;">Cladogram after Bickelmann<span>&nbsp;</span><em>et al.</em>, 2009<sup id="cite_ref-Bickelmann09_20-0" class="reference" styl
-2 CONC e="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px
-2 CONC ; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Diapsid#cite_note-Bickelmann09-20"><span class="cite-bracket" style="pointer-events: none;">[</span>20<span class="cite-bracket" style
-2 CONC ="pointer-events: none;">]</span></a></sup><span>&nbsp;</span>and Reisz<span>&nbsp;</span><em>et al.</em>, 2011:<sup id="cite_ref-Orovenator_21-0" class="reference" style="font-size: 12px; white-space
-2 CONC : nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" h
-2 CONC ref="https://en.wikipedia.org/wiki/Diapsid#cite_note-Orovenator-21"><span class="cite-bracket" style="pointer-events: none;">[</span>21<span class="cite-bracket" style="pointer-events: none;">]</span>
-2 CONC </a></sup></p>
-2 CONT <p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin: 0
-2 CONC .5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness:
-2 CONC  initial; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</p>
-2 CONT <p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin: 0
-2 CONC .5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness:
-2 CONC  initial; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</p>
+2 CONT <p><p style="text-align: left;" dir="ltr">&nbsp;</p></p>
+2 CONT <p><div class="mw-heading mw-heading3" style="font-size: 1.2em; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: bold; padding-bottom: 0px; font-styl
+2 CONC e: normal; padding-top: 0.5em; orphans: 2; widows: 2; margin: 0.25em 0px; letter-spacing: normal; line-height: 1.6; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-va
+2 CONC riant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
+<h3 id="Relationships" style="font-family: inh
+2 CONC erit; font-weight: bold; margin: 0px 0px 0.25em; display: inline; line-height: 1.6; font-stretch: inherit; font-optical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font-feature-
+2 CONC settings: inherit; font-variation-settings: inherit; border: 0px; padding: 0px;"><span style="font-size: large;">Relationships</span></h3>
+<span class="mw-editsection" style="font-size: small; font-fa
+2 CONC mily: sans-serif; vertical-align: baseline; font-weight: normal; margin-left: 1em; line-height: 0; margin-right: 0px; user-select: none; margin-inline: 1em 0px;"><span class="mw-editsection-bracket" s
+2 CONC tyle="margin-right: 0.25em; margin-inline: 0px 0.25em;"><span style="font-size: medium;">[</span></span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; white-space: 
+2 CONC nowrap; border-radius: 0px; overflow-wrap: break-word;" title="Edit section: Relationships" href="https://en.wikipedia.org/w/index.php?title=Diapsid&amp;action=edit&amp;section=3"><span><span style="f
+2 CONC ont-size: medium;">edit</span></span></a><span class="mw-editsection-bracket" style="margin-left: 0.25em; margin-inline: 0.25em 0px;"><span style="font-size: medium;">]</span></span></span></div>
+<p s
+2 CONC tyle="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin: 0.5em
+2 CONC  0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: ini
+2 CONC tial; text-decoration-style: initial; text-decoration-color: initial;">Below are<span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px
+2 CONC ; overflow-wrap: break-word;" title="Cladogram" href="https://en.wikipedia.org/wiki/Cladogram">cladograms</a><span>&nbsp;</span>showing the relations of the major groups of diapsids.</p>
+2 CONT <p><p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin
+2 CONC : 0.5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickne
+2 CONC ss: initial; text-decoration-style: initial; text-decoration-color: initial;">Cladogram after Bickelmann<span>&nbsp;</span><em>et al.</em>, 2009<sup id="cite_ref-Bickelmann09_20-0" class="reference" s
+2 CONC tyle="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 
+2 CONC 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Diapsid#cite_note-Bickelmann09-20"><span class="cite-bracket" style="pointer-events: none;">[</span>20<span class="cite-bracket" st
+2 CONC yle="pointer-events: none;">]</span></a></sup><span>&nbsp;</span>and Reisz<span>&nbsp;</span><em>et al.</em>, 2011:<sup id="cite_ref-Orovenator_21-0" class="reference" style="font-size: 12px; white-sp
+2 CONC ace: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;
+2 CONC " href="https://en.wikipedia.org/wiki/Diapsid#cite_note-Orovenator-21"><span class="cite-bracket" style="pointer-events: none;">[</span>21<span class="cite-bracket" style="pointer-events: none;">]</sp
+2 CONC an></a></sup></p>
+2 CONT <p><p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin
+2 CONC : 0.5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickne
+2 CONC ss: initial; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</p>
+2 CONT <p><p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin
+2 CONC : 0.5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickne
+2 CONC ss: initial; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</p>
 0 @I23665@ INDI
 1 RIN MH:I23665
 1 _UID 67166920748341efbc0b9822ef79916c
@@ -15006,8 +15010,8 @@
 1 RIN MH:I23667
 1 _UID 67166943748341efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 20:16:30 GMT+5.5
-1 NAME  /†Araeoscelidia /
-2 SURN †Araeoscelidia 
+1 NAME  /†Araeoscelidia/
+2 SURN †Araeoscelidia
 1 SEX M
 1 BIRT
 2 _UID 67166946748341efbc0b9822ef79916c
@@ -15133,18 +15137,18 @@
 1 FAMS @F13599@
 1 FAMC @F13595@
 1 NOTE <p style="text-align: left;" dir="ltr"><a href="https://en.wikipedia.org/wiki/Sauria">https://en.wikipedia.org/wiki/Sauria</a></p>
-2 CONT <p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin: 0
-2 CONC .5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness:
-2 CONC  initial; text-decoration-style: initial; text-decoration-color: initial;">The cladogram shown below follows the most likely result found by an analysis of turtle relationships using both fossil and g
-2 CONC enetic evidence by M.S. Lee, in 2013. This study found<span>&nbsp;</span><em><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break
-2 CONC -word;" title="Eunotosaurus" href="https://en.wikipedia.org/wiki/Eunotosaurus">Eunotosaurus</a></em>, usually regarded as a turtle relative, to be only very distantly related to turtles in the clade<s
-2 CONC pan>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Parareptilia" href="https://en.wikipedia.org/
-2 CONC wiki/Parareptilia">Parareptilia</a>.<sup id="cite_ref-scaffold2013_10-1" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a sty
-2 CONC le="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Sauria#cite_note-scaffold2013-10"><span
-2 CONC  class="cite-bracket" style="pointer-events: none;">[</span>10<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup></p>
-2 CONT <div class="clade" style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; wido
-2 CONC ws: 2; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initia
-2 CONC l; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</div>
+2 CONT <p><p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin
+2 CONC : 0.5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickne
+2 CONC ss: initial; text-decoration-style: initial; text-decoration-color: initial;">The cladogram shown below follows the most likely result found by an analysis of turtle relationships using both fossil an
+2 CONC d genetic evidence by M.S. Lee, in 2013. This study found<span>&nbsp;</span><em><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: br
+2 CONC eak-word;" title="Eunotosaurus" href="https://en.wikipedia.org/wiki/Eunotosaurus">Eunotosaurus</a></em>, usually regarded as a turtle relative, to be only very distantly related to turtles in the clad
+2 CONC e<span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Parareptilia" href="https://en.wikipedia.o
+2 CONC rg/wiki/Parareptilia">Parareptilia</a>.<sup id="cite_ref-scaffold2013_10-1" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a 
+2 CONC style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Sauria#cite_note-scaffold2013-10"><s
+2 CONC pan class="cite-bracket" style="pointer-events: none;">[</span>10<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup></p>
+2 CONT <p><div class="clade" style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; w
+2 CONC idows: 2; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: ini
+2 CONC tial; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</div>
 <p style="text-align: left;" dir="ltr">&nbsp;</p>
 0 @I23678@ INDI
 1 RIN MH:I23678
@@ -15254,8 +15258,8 @@
 1 RIN MH:I23688
 1 _UID 67166e60748341efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 20:40:27 GMT+5.5
-1 NAME  /Pantestudines /
-2 SURN Pantestudines 
+1 NAME  /Pantestudines/
+2 SURN Pantestudines
 1 SEX M
 1 BIRT
 2 _UID 67166e65748341efbc0b9822ef79916c
@@ -15266,8 +15270,8 @@
 1 RIN MH:I23689
 1 _UID 67166edabfdf91efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 20:40:45 GMT+5.5
-1 NAME  /Pantestudines /
-2 SURN Pantestudines 
+1 NAME  /Pantestudines/
+2 SURN Pantestudines
 1 SEX M
 1 BIRT
 2 _UID 67166edc748341efbc0b9822ef79916c
@@ -15289,8 +15293,8 @@
 1 RIN MH:I23691
 1 _UID 67166ee7bfdf91efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 20:40:59 GMT+5.5
-1 NAME  /Pantestudines /
-2 SURN Pantestudines 
+1 NAME  /Pantestudines/
+2 SURN Pantestudines
 1 SEX M
 1 BIRT
 2 _UID 67166ee8748341efbc0b9822ef79916c
@@ -15312,8 +15316,8 @@
 1 RIN MH:I23693
 1 _UID 67166efabfdf91efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 20:42:04 GMT+5.5
-1 NAME  /Pantestudines /
-2 SURN Pantestudines 
+1 NAME  /Pantestudines/
+2 SURN Pantestudines
 1 SEX M
 1 BIRT
 2 _UID 67166efc748341efbc0b9822ef79916c
@@ -15335,8 +15339,8 @@
 1 RIN MH:I23695
 1 _UID 67166f31bfdf91efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 20:42:35 GMT+5.5
-1 NAME  /Testudinata /
-2 SURN Testudinata 
+1 NAME  /Testudinata/
+2 SURN Testudinata
 1 SEX M
 1 BIRT
 2 _UID 67166f34748341efbc0b9822ef79916c
@@ -15436,17 +15440,17 @@
 1 FAMS @F13611@
 1 FAMC @F13608@
 1 NOTE <p style="text-align: left;" dir="ltr">&nbsp;</p>
-2 CONT <p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin: 0
-2 CONC .5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness:
-2 CONC  initial; text-decoration-style: initial; text-decoration-color: initial;">Below is a cladogram from Nesbitt (2011):<sup id="cite_ref-NSJ11_17-0" class="reference" style="font-size: 12px; white-space:
-2 CONC  nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" hr
-2 CONC ef="https://en.wikipedia.org/wiki/Archosauriformes#cite_note-NSJ11-17"><span class="cite-bracket" style="pointer-events: none;">[</span>17<span class="cite-bracket" style="pointer-events: none;">]</sp
-2 CONC an></a></sup></p>
-2 CONT <div class="clade" style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; wido
-2 CONC ws: 2; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initia
-2 CONC l; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</div>
-<p style="text-align: left;" dir="ltr"><br class="Apple-interchange-newline" /><a href="https://en.wikipedia.org/wiki/A
-2 CONC rchosauriformes">https://en.wikipedia.org/wiki/Archosauriformes</a></p>
+2 CONT <p><p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin
+2 CONC : 0.5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickne
+2 CONC ss: initial; text-decoration-style: initial; text-decoration-color: initial;">Below is a cladogram from Nesbitt (2011):<sup id="cite_ref-NSJ11_17-0" class="reference" style="font-size: 12px; white-spa
+2 CONC ce: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;"
+2 CONC  href="https://en.wikipedia.org/wiki/Archosauriformes#cite_note-NSJ11-17"><span class="cite-bracket" style="pointer-events: none;">[</span>17<span class="cite-bracket" style="pointer-events: none;">]<
+2 CONC /span></a></sup></p>
+2 CONT <p><div class="clade" style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; w
+2 CONC idows: 2; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: ini
+2 CONC tial; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</div>
+<p style="text-align: left;" dir="ltr"><br class="Apple-interchange-newline" /><a href="https://en.wikipedia.org/wik
+2 CONC i/Archosauriformes">https://en.wikipedia.org/wiki/Archosauriformes</a></p>
 0 @I23704@ INDI
 1 RIN MH:I23704
 1 _UID 67166fcc748341efbc0b9822ef79916c
@@ -15589,8 +15593,8 @@
 1 RIN MH:I23716
 1 _UID 671671c7748341efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 20:53:15 GMT+5.5
-1 NAME  /Proterochampsia /
-2 SURN Proterochampsia 
+1 NAME  /Proterochampsia/
+2 SURN Proterochampsia
 1 SEX M
 1 BIRT
 2 _UID 671671cb748341efbc0b9822ef79916c
@@ -15629,8 +15633,8 @@
 1 RIN MH:I23720
 1 _UID 671671f6748341efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 20:57:02 GMT+5.5
-1 NAME  /Crurotarsi /
-2 SURN Crurotarsi 
+1 NAME  /Crurotarsi/
+2 SURN Crurotarsi
 1 SEX M
 1 BIRT
 2 _UID 671671fb748341efbc0b9822ef79916c
@@ -16365,8 +16369,8 @@
 1 RIN MH:I23784
 1 _UID 671682ddaf8b01efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 22:06:16 GMT+5.5
-1 NAME  /Paracrocodylomorpha /
-2 SURN Paracrocodylomorpha 
+1 NAME  /Paracrocodylomorpha/
+2 SURN Paracrocodylomorpha
 1 SEX M
 1 BIRT
 2 _UID 671682e064d7d1efbc0b9822ef79916c
@@ -16410,8 +16414,8 @@
 1 RIN MH:I23788
 1 _UID 67168724af8b01efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 22:24:44 GMT+5.5
-1 NAME  /Ornithodira /
-2 SURN Ornithodira 
+1 NAME  /Ornithodira/
+2 SURN Ornithodira
 1 SEX M
 1 BIRT
 2 _UID 6716872864d7d1efbc0b9822ef79916c
@@ -16606,8 +16610,8 @@
 1 RIN MH:I23805
 1 _UID 671689c064d7d1efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 22:35:07 GMT+5.5
-1 NAME  /Psocodea (barklice inc. lice) /
-2 SURN Psocodea (barklice inc. lice) 
+1 NAME  /Psocodea (barklice inc. lice)/
+2 SURN Psocodea (barklice inc. lice)
 1 SEX M
 1 BIRT
 2 _UID 671689c364d7d1efbc0b9822ef79916c
@@ -16617,8 +16621,8 @@
 1 RIN MH:I23806
 1 _UID 671689c9af8b01efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 22:35:18 GMT+5.5
-1 NAME  /Hemiptera (true bugs) /
-2 SURN Hemiptera (true bugs) 
+1 NAME  /Hemiptera (true bugs)/
+2 SURN Hemiptera (true bugs)
 1 SEX M
 1 BIRT
 2 _UID 671689cd64d7d1efbc0b9822ef79916c
@@ -16847,8 +16851,8 @@
 1 RIN MH:I23826
 1 _UID 67168b7caf8b01efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 22:42:30 GMT+5.5
-1 NAME  /Xiphydrioidea (wood wasps) /
-2 SURN Xiphydrioidea (wood wasps) 
+1 NAME  /Xiphydrioidea (wood wasps)/
+2 SURN Xiphydrioidea (wood wasps)
 1 SEX M
 1 BIRT
 2 _UID 67168b7e64d7d1efbc0b9822ef79916c
@@ -20008,9 +20012,9 @@
 1 _UID 6715399fb155e1efbc0b9822ef79916c
 1 HUSB @I23269@
 1 WIFE @I23270@
+1 CHIL @I23227@
 1 CHIL @I23271@
 1 CHIL @I23272@
-1 CHIL @I23227@
 0 @F13414@ FAM
 1 RIN MH:F13414
 1 _UID 6715399f566441efbc0b9822ef79916c
