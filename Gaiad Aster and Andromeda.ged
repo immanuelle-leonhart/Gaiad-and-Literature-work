@@ -12,9 +12,9 @@
 1 SUBM @U1@
 1 DEST MYHERITAGE
 1 DATE 22 OCT 2024
-2 TIME 13:40:33 
+2 TIME 13:43:40 
 2 _TIMEZONE GMT+5.5
-1 _RINS I23870,F13694,N17729,M0,R0,S25,U534,L0,P14219,Q0,IF32605,FF1777
+1 _RINS I23870,F13694,N17729,M0,R0,S25,U535,L0,P14219,Q0,IF32605,FF1777
 1 _UID 67175D663F8F31A3B4DDFBF5A00005C5
 1 _DESCRIPTION_AWARE Y
 1 _FACTS_DEFRAGGED Y
@@ -41,12 +41,12 @@
 1 RIN MH:U9
 0 @U10@ SUBM
 1 RIN MH:U10
+0 @U11@ SUBM
+1 RIN MH:U11
 1 ADDR
 2 CITY Waihi
 2 STAE Waikato
 2 CTRY New Zealand
-0 @U11@ SUBM
-1 RIN MH:U11
 0 @U12@ SUBM
 1 RIN MH:U12
 0 @U13@ SUBM
@@ -59,49 +59,49 @@
 1 RIN MH:U16
 0 @U17@ SUBM
 1 RIN MH:U17
+0 @U18@ SUBM
+1 RIN MH:U18
 1 ADDR
 2 CITY St. George
 2 STAE Utah
 2 POST 84770
 2 CTRY United States
-0 @U18@ SUBM
-1 RIN MH:U18
 0 @U19@ SUBM
 1 RIN MH:U19
 0 @U20@ SUBM
 1 RIN MH:U20
+0 @U21@ SUBM
+1 RIN MH:U21
 1 ADDR
 2 CITY Kongsberg
 2 STAE Buskerud
 2 CTRY Norway
-0 @U21@ SUBM
-1 RIN MH:U21
 0 @U22@ SUBM
 1 RIN MH:U22
+0 @U23@ SUBM
+1 RIN MH:U23
 1 ADDR 1 lieu dit Magrens
 2 ADR1 1 lieu dit Magrens
 2 CITY Lagrace-Dieu
 2 STAE Haute-Garonne
 2 POST 31190
 2 CTRY France
-0 @U23@ SUBM
-1 RIN MH:U23
 0 @U24@ SUBM
 1 RIN MH:U24
 0 @U25@ SUBM
 1 RIN MH:U25
+0 @U26@ SUBM
+1 RIN MH:U26
 1 ADDR
 2 CITY Kecskemét
 2 STAE Bacs-Kiskun
 2 CTRY Hungary
-0 @U26@ SUBM
-1 RIN MH:U26
+0 @U27@ SUBM
+1 RIN MH:U27
 1 ADDR
 2 CITY Grenoble
 2 STAE Rhône-Alpes
 2 CTRY France
-0 @U27@ SUBM
-1 RIN MH:U27
 0 @U28@ SUBM
 1 RIN MH:U28
 0 @U29@ SUBM
@@ -138,12 +138,12 @@
 1 RIN MH:U44
 0 @U45@ SUBM
 1 RIN MH:U45
+0 @U46@ SUBM
+1 RIN MH:U46
 1 ADDR
 2 CITY Cravinhos
 2 STAE State of São Paulo
 2 CTRY Brazil
-0 @U46@ SUBM
-1 RIN MH:U46
 0 @U47@ SUBM
 1 RIN MH:U47
 0 @U48@ SUBM
@@ -154,26 +154,26 @@
 1 RIN MH:U50
 0 @U51@ SUBM
 1 RIN MH:U51
+0 @U52@ SUBM
+1 RIN MH:U52
 1 ADDR
 2 CITY Palawan
 2 STAE MIMAROPA
 2 CTRY Philippines
-0 @U52@ SUBM
-1 RIN MH:U52
+0 @U53@ SUBM
+1 RIN MH:U53
 1 ADDR
 2 CITY South Bend
 2 STAE IN
 2 POST 46619
 2 CTRY United States
-0 @U53@ SUBM
-1 RIN MH:U53
 0 @U54@ SUBM
 1 RIN MH:U54
+0 @U55@ SUBM
+1 RIN MH:U55
 1 ADDR
 2 CITY Tal Menashe
 2 CTRY Israel
-0 @U55@ SUBM
-1 RIN MH:U55
 0 @U56@ SUBM
 1 RIN MH:U56
 0 @U57@ SUBM
@@ -198,11 +198,11 @@
 1 RIN MH:U66
 0 @U67@ SUBM
 1 RIN MH:U67
+0 @U68@ SUBM
+1 RIN MH:U68
 1 ADDR
 2 CITY 457 45  Hamburgsund
 2 CTRY Sweden
-0 @U68@ SUBM
-1 RIN MH:U68
 0 @U69@ SUBM
 1 RIN MH:U69
 0 @U70@ SUBM
@@ -219,13 +219,13 @@
 1 RIN MH:U75
 0 @U76@ SUBM
 1 RIN MH:U76
+0 @U77@ SUBM
+1 RIN MH:U77
 1 ADDR
 2 CITY Denver
 2 STAE Colorado
 2 POST 80202
 2 CTRY United States
-0 @U77@ SUBM
-1 RIN MH:U77
 0 @U78@ SUBM
 1 RIN MH:U78
 0 @U79@ SUBM
@@ -260,11 +260,11 @@
 1 RIN MH:U93
 0 @U94@ SUBM
 1 RIN MH:U94
+0 @U95@ SUBM
+1 RIN MH:U95
 1 ADDR
 2 CITY Johannesburg
 2 CTRY South Africa
-0 @U95@ SUBM
-1 RIN MH:U95
 0 @U96@ SUBM
 1 RIN MH:U96
 0 @U97@ SUBM
@@ -281,20 +281,20 @@
 1 RIN MH:U102
 0 @U103@ SUBM
 1 RIN MH:U103
+0 @U104@ SUBM
+1 RIN MH:U104
 1 ADDR
 2 CITY Ottestad
 2 STAE Hedmark
 2 CTRY Norway
-0 @U104@ SUBM
-1 RIN MH:U104
 0 @U105@ SUBM
 1 RIN MH:U105
+0 @U106@ SUBM
+1 RIN MH:U106
 1 ADDR
 2 CITY Tucson
 2 STAE Arizona
 2 CTRY United States
-0 @U106@ SUBM
-1 RIN MH:U106
 0 @U107@ SUBM
 1 RIN MH:U107
 0 @U108@ SUBM
@@ -363,12 +363,12 @@
 1 RIN MH:U139
 0 @U140@ SUBM
 1 RIN MH:U140
+0 @U141@ SUBM
+1 RIN MH:U141
 1 ADDR
 2 CITY Traverse City
 2 STAE Michigan
 2 CTRY United States
-0 @U141@ SUBM
-1 RIN MH:U141
 0 @U142@ SUBM
 1 RIN MH:U142
 0 @U143@ SUBM
@@ -397,16 +397,16 @@
 1 RIN MH:U154
 0 @U155@ SUBM
 1 RIN MH:U155
+0 @U156@ SUBM
+1 RIN MH:U156
 1 ADDR
 2 STAE Virginia
 2 CTRY United States
-0 @U156@ SUBM
-1 RIN MH:U156
+0 @U157@ SUBM
+1 RIN MH:U157
 1 ADDR Gandijeva 49B/49
 2 ADR1 Gandijeva 49B/49
 2 CITY Belgrade
-0 @U157@ SUBM
-1 RIN MH:U157
 0 @U158@ SUBM
 1 RIN MH:U158
 0 @U159@ SUBM
@@ -415,12 +415,12 @@
 1 RIN MH:U160
 0 @U161@ SUBM
 1 RIN MH:U161
+0 @U162@ SUBM
+1 RIN MH:U162
 1 ADDR
 2 CITY Fredericia
 2 STAE Syddanmark
 2 CTRY Danmark
-0 @U162@ SUBM
-1 RIN MH:U162
 0 @U163@ SUBM
 1 RIN MH:U163
 0 @U164@ SUBM
@@ -443,27 +443,27 @@
 1 RIN MH:U172
 0 @U173@ SUBM
 1 RIN MH:U173
+0 @U174@ SUBM
+1 RIN MH:U174
 1 ADDR
 2 CITY Rio de Janeiro
 2 STAE RJ
 2 CTRY Brasil
-0 @U174@ SUBM
-1 RIN MH:U174
+0 @U175@ SUBM
+1 RIN MH:U175
 1 ADDR
 2 CITY Sydney
 2 STAE New South Wales
 2 CTRY Australia
-0 @U175@ SUBM
-1 RIN MH:U175
 0 @U176@ SUBM
 1 RIN MH:U176
+0 @U177@ SUBM
+1 RIN MH:U177
 1 ADDR
 2 CITY Grand Rapids
 2 STAE MI
 2 POST 49525
 2 CTRY United States
-0 @U177@ SUBM
-1 RIN MH:U177
 0 @U178@ SUBM
 1 RIN MH:U178
 0 @U179@ SUBM
@@ -496,12 +496,12 @@
 1 RIN MH:U192
 0 @U193@ SUBM
 1 RIN MH:U193
+0 @U194@ SUBM
+1 RIN MH:U194
 1 ADDR
 2 CITY Bratislava
 2 STAE EU
 2 CTRY Slovakia
-0 @U194@ SUBM
-1 RIN MH:U194
 0 @U195@ SUBM
 1 RIN MH:U195
 0 @U196@ SUBM
@@ -540,11 +540,11 @@
 1 RIN MH:U212
 0 @U213@ SUBM
 1 RIN MH:U213
+0 @U214@ SUBM
+1 RIN MH:U214
 1 ADDR
 2 STAE Selangor
 2 CTRY Malaysia
-0 @U214@ SUBM
-1 RIN MH:U214
 0 @U215@ SUBM
 1 RIN MH:U215
 0 @U216@ SUBM
@@ -569,10 +569,10 @@
 1 RIN MH:U225
 0 @U226@ SUBM
 1 RIN MH:U226
-1 ADDR
-2 CTRY Brunei
 0 @U227@ SUBM
 1 RIN MH:U227
+1 ADDR
+2 CTRY Brunei
 0 @U228@ SUBM
 1 RIN MH:U228
 0 @U229@ SUBM
@@ -583,12 +583,12 @@
 1 RIN MH:U231
 0 @U232@ SUBM
 1 RIN MH:U232
+0 @U233@ SUBM
+1 RIN MH:U233
 1 ADDR
 2 CITY Kendal
 2 STAE Central Java
 2 CTRY Indonesia
-0 @U233@ SUBM
-1 RIN MH:U233
 0 @U234@ SUBM
 1 RIN MH:U234
 0 @U235@ SUBM
@@ -677,35 +677,35 @@
 1 RIN MH:U276
 0 @U277@ SUBM
 1 RIN MH:U277
+0 @U278@ SUBM
+1 RIN MH:U278
 1 ADDR
 2 CITY Santiago
 2 CTRY Chile
-0 @U278@ SUBM
-1 RIN MH:U278
 0 @U279@ SUBM
 1 RIN MH:U279
 0 @U280@ SUBM
 1 RIN MH:U280
 0 @U281@ SUBM
 1 RIN MH:U281
+0 @U282@ SUBM
+1 RIN MH:U282
 1 ADDR
 2 CITY Sarasota
 2 STAE FL
 2 CTRY United States
-0 @U282@ SUBM
-1 RIN MH:U282
 0 @U283@ SUBM
 1 RIN MH:U283
 0 @U284@ SUBM
 1 RIN MH:U284
 0 @U285@ SUBM
 1 RIN MH:U285
+0 @U286@ SUBM
+1 RIN MH:U286
 1 ADDR
 2 CITY Medellín
 2 STAE Antioquia
 2 CTRY Colombia
-0 @U286@ SUBM
-1 RIN MH:U286
 0 @U287@ SUBM
 1 RIN MH:U287
 0 @U288@ SUBM
@@ -730,11 +730,11 @@
 1 RIN MH:U297
 0 @U298@ SUBM
 1 RIN MH:U298
+0 @U299@ SUBM
+1 RIN MH:U299
 1 ADDR
 2 CITY MONTEVIDEO
 2 CTRY Uruguay
-0 @U299@ SUBM
-1 RIN MH:U299
 0 @U300@ SUBM
 1 RIN MH:U300
 0 @U301@ SUBM
@@ -793,12 +793,12 @@
 1 RIN MH:U327
 0 @U328@ SUBM
 1 RIN MH:U328
+0 @U329@ SUBM
+1 RIN MH:U329
 1 ADDR
 2 CITY Mexico City
 2 STAE Federal District
 2 CTRY Mexico
-0 @U329@ SUBM
-1 RIN MH:U329
 0 @U330@ SUBM
 1 RIN MH:U330
 0 @U331@ SUBM
@@ -863,13 +863,13 @@
 1 RIN MH:U360
 0 @U361@ SUBM
 1 RIN MH:U361
+0 @U362@ SUBM
+1 RIN MH:U362
 1 ADDR
 2 CITY Mount Morris Township
 2 STAE WI
 2 POST 54984
 2 CTRY United States
-0 @U362@ SUBM
-1 RIN MH:U362
 0 @U363@ SUBM
 1 RIN MH:U363
 0 @U364@ SUBM
@@ -884,21 +884,21 @@
 1 RIN MH:U368
 0 @U369@ SUBM
 1 RIN MH:U369
+0 @U370@ SUBM
+1 RIN MH:U370
 1 ADDR
 2 CITY Bogotá
 2 STAE Bogotá
 2 CTRY Colombia
-0 @U370@ SUBM
-1 RIN MH:U370
 0 @U371@ SUBM
 1 RIN MH:U371
 0 @U372@ SUBM
 1 RIN MH:U372
+0 @U373@ SUBM
+1 RIN MH:U373
 1 ADDR
 2 CITY Montevideo
 2 CTRY Uruguay
-0 @U373@ SUBM
-1 RIN MH:U373
 0 @U374@ SUBM
 1 RIN MH:U374
 0 @U375@ SUBM
@@ -929,12 +929,12 @@
 1 RIN MH:U387
 0 @U388@ SUBM
 1 RIN MH:U388
+0 @U389@ SUBM
+1 RIN MH:U389
 1 ADDR
 2 CITY Viña del Mar
 2 STAE Valparaíso Region
 2 CTRY Chile
-0 @U389@ SUBM
-1 RIN MH:U389
 0 @U390@ SUBM
 1 RIN MH:U390
 0 @U391@ SUBM
@@ -995,17 +995,17 @@
 1 RIN MH:U418
 0 @U419@ SUBM
 1 RIN MH:U419
+0 @U420@ SUBM
+1 RIN MH:U420
 1 ADDR
 2 CITY Kongsberg
 2 STAE Buskerud
 2 CTRY Norway
-0 @U420@ SUBM
-1 RIN MH:U420
+0 @U421@ SUBM
+1 RIN MH:U421
 1 ADDR
 2 CITY København
 2 CTRY Denmark
-0 @U421@ SUBM
-1 RIN MH:U421
 0 @U422@ SUBM
 1 RIN MH:U422
 0 @U423@ SUBM
@@ -1026,12 +1026,12 @@
 1 RIN MH:U430
 0 @U431@ SUBM
 1 RIN MH:U431
+0 @U432@ SUBM
+1 RIN MH:U432
 1 ADDR
 2 CITY Mar del Plata
 2 STAE Buenos Aires Province
 2 CTRY Argentina
-0 @U432@ SUBM
-1 RIN MH:U432
 0 @U433@ SUBM
 1 RIN MH:U433
 0 @U434@ SUBM
@@ -1044,12 +1044,12 @@
 1 RIN MH:U437
 0 @U438@ SUBM
 1 RIN MH:U438
+0 @U439@ SUBM
+1 RIN MH:U439
 1 ADDR
 2 CITY Madrid
 2 STAE Community of Madrid
 2 CTRY Spain
-0 @U439@ SUBM
-1 RIN MH:U439
 0 @U440@ SUBM
 1 RIN MH:U440
 0 @U441@ SUBM
@@ -1088,12 +1088,12 @@
 1 RIN MH:U457
 0 @U458@ SUBM
 1 RIN MH:U458
+0 @U459@ SUBM
+1 RIN MH:U459
 1 ADDR
 2 CITY Sydney
 2 STAE New South Wales
 2 CTRY Australia
-0 @U459@ SUBM
-1 RIN MH:U459
 0 @U460@ SUBM
 1 RIN MH:U460
 0 @U461@ SUBM
@@ -1110,22 +1110,22 @@
 1 RIN MH:U466
 0 @U467@ SUBM
 1 RIN MH:U467
+0 @U468@ SUBM
+1 RIN MH:U468
 1 ADDR
 2 CITY Saint Laurent de Cerdans
 2 STAE Pyrénées-Orientales
 2 CTRY France
-0 @U468@ SUBM
-1 RIN MH:U468
 0 @U469@ SUBM
 1 RIN MH:U469
+0 @U470@ SUBM
+1 RIN MH:U470
 1 ADDR  Kg baru kundang 
 2 ADR1  Kg baru kundang 
 2 CITY Rawang
 2 STAE Selangor
 2 POST 48000
 2 CTRY Malaysia
-0 @U470@ SUBM
-1 RIN MH:U470
 0 @U471@ SUBM
 1 RIN MH:U471
 0 @U472@ SUBM
@@ -1144,13 +1144,13 @@
 1 RIN MH:U478
 0 @U479@ SUBM
 1 RIN MH:U479
+0 @U480@ SUBM
+1 RIN MH:U480
 1 ADDR
 2 CITY Tucson
 2 STAE Arizona
 2 POST 85716
 2 CTRY United States
-0 @U480@ SUBM
-1 RIN MH:U480
 0 @U481@ SUBM
 1 RIN MH:U481
 0 @U482@ SUBM
@@ -1161,12 +1161,12 @@
 1 RIN MH:U484
 0 @U485@ SUBM
 1 RIN MH:U485
+0 @U486@ SUBM
+1 RIN MH:U486
 1 ADDR
 2 CITY Pannipitiya
 2 STAE WP
 2 CTRY Sri Lanka
-0 @U486@ SUBM
-1 RIN MH:U486
 0 @U487@ SUBM
 1 RIN MH:U487
 0 @U488@ SUBM
@@ -1189,12 +1189,12 @@
 1 RIN MH:U496
 0 @U497@ SUBM
 1 RIN MH:U497
+0 @U498@ SUBM
+1 RIN MH:U498
 1 ADDR
 2 CITY Palawan
 2 STAE MIMAROPA
 2 CTRY Philippines
-0 @U498@ SUBM
-1 RIN MH:U498
 0 @U499@ SUBM
 1 RIN MH:U499
 0 @U500@ SUBM
@@ -1209,25 +1209,25 @@
 1 RIN MH:U504
 0 @U505@ SUBM
 1 RIN MH:U505
+0 @U506@ SUBM
+1 RIN MH:U506
 1 ADDR
 2 CITY Waihi
 2 STAE Waikato
 2 CTRY New Zealand
-0 @U506@ SUBM
-1 RIN MH:U506
+0 @U507@ SUBM
+1 RIN MH:U507
 1 ADDR
 2 CITY 457 45  Hamburgsund
 2 CTRY Sweden
-0 @U507@ SUBM
-1 RIN MH:U507
 0 @U508@ SUBM
 1 RIN MH:U508
+0 @U509@ SUBM
+1 RIN MH:U509
 1 ADDR
 2 CITY Gurgaon
 2 STAE Haryana
 2 CTRY India
-0 @U509@ SUBM
-1 RIN MH:U509
 0 @U510@ SUBM
 1 RIN MH:U510
 0 @U511@ SUBM
@@ -1250,33 +1250,33 @@
 1 RIN MH:U519
 0 @U520@ SUBM
 1 RIN MH:U520
+0 @U521@ SUBM
+1 RIN MH:U521
 1 ADDR
 2 CITY Denver
 2 STAE Colorado
 2 POST 80202
 2 CTRY United States
-0 @U521@ SUBM
-1 RIN MH:U521
 0 @U522@ SUBM
 1 RIN MH:U522
 0 @U523@ SUBM
 1 RIN MH:U523
 0 @U524@ SUBM
 1 RIN MH:U524
+0 @U525@ SUBM
+1 RIN MH:U525
 1 ADDR
 2 CITY Fontaniva
 2 STAE Veneto
 2 CTRY Italy
-0 @U525@ SUBM
-1 RIN MH:U525
 0 @U526@ SUBM
 1 RIN MH:U526
+0 @U527@ SUBM
+1 RIN MH:U527
 1 ADDR
 2 CITY Grenoble
 2 STAE Rhône-Alpes
 2 CTRY France
-0 @U527@ SUBM
-1 RIN MH:U527
 0 @U528@ SUBM
 1 RIN MH:U528
 0 @U529@ SUBM
@@ -1289,14 +1289,16 @@
 1 RIN MH:U532
 0 @U533@ SUBM
 1 RIN MH:U533
+0 @U534@ SUBM
+1 RIN MH:U534
 1 ADDR 1 lieu dit Magrens
 2 ADR1 1 lieu dit Magrens
 2 CITY Lagrace-Dieu
 2 STAE Haute-Garonne
 2 POST 31190
 2 CTRY France
-0 @U534@ SUBM
-1 RIN MH:U534
+0 @U535@ SUBM
+1 RIN MH:U535
 0 @I1@ INDI
 1 RIN MH:I1
 1 _UID 66dfdfd760f561efbbc69822ef79916c
@@ -3278,18 +3280,6 @@
 2 _UID 670aca9dc3ec71efbbff9822ef79916c
 2 RIN MH:IF31716
 1 FAMS @F13090@
-0 @I22603@ INDI
-1 RIN MH:I22603
-1 _UID 670acaa3c3ec71efbbff9822ef79916c
-1 _UPD 20 OCT 2024 22:42:13 GMT+5.5
-1 NAME Dikar /Dikarya/
-2 GIVN Dikar
-2 SURN Dikarya
-1 SEX M
-1 BIRT
-2 _UID 670acaa9c3ec71efbbff9822ef79916c
-2 RIN MH:IF31717
-1 FAMS @F13392@
 0 @I22604@ INDI
 1 RIN MH:I22604
 1 _UID 670acaaec3ec71efbbff9822ef79916c
@@ -10349,30 +10339,6 @@
 2 _UID 6710d12b4076a1efbc019822ef79916c
 2 RIN MH:IF32170
 1 FAMC @F13391@
-0 @I23225@ INDI
-1 RIN MH:I23225
-1 _UID 671537123b4f91efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:30:07 GMT+5.5
-1 NAME Ascus /Ascomycota/
-2 GIVN Ascus
-2 SURN Ascomycota
-1 SEX M
-1 BIRT
-2 _UID 67153717f01341efbc0b9822ef79916c
-2 RIN MH:IF32171
-1 FAMC @F13392@
-0 @I23226@ INDI
-1 RIN MH:I23226
-1 _UID 6715371af01341efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:30:20 GMT+5.5
-1 NAME Basidos /Basidiomycota/
-2 GIVN Basidos
-2 SURN Basidiomycota
-1 SEX M
-1 BIRT
-2 _UID 67153724f01341efbc0b9822ef79916c
-2 RIN MH:IF32172
-1 FAMC @F13392@
 0 @I23227@ INDI
 1 RIN MH:I23227
 1 _UID 67153734f01341efbc0b9822ef79916c
@@ -10385,337 +10351,6 @@
 2 _UID 6715373af01341efbc0b9822ef79916c
 2 RIN MH:IF32173
 1 FAMC @F13413@
-0 @I23228@ INDI
-1 RIN MH:I23228
-1 _UID 671538a3f01341efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
-1 NAME Freyr //
-2 GIVN Freyr
-1 SEX M
-1 NOTE Position in narrative: Ancestor, married to Hera, progenitor 20 generations prior to Plantus
-0 @I23229@ INDI
-1 RIN MH:I23229
-1 _UID 671538a3bddbe1efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
-1 NAME Hera //
-2 GIVN Hera
-1 SEX F
-1 NOTE Position in narrative: Ancestor, married to Freyr, progenitor 20 generations prior to Plantus
-0 @I23230@ INDI
-1 RIN MH:I23230
-1 _UID 671538a3a0ded1efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
-1 NAME Plantus //
-2 GIVN Plantus
-1 SEX M
-1 NOTE Position in narrative: Descendant of Freyr and Hera, son in the twentieth generation
-0 @I23231@ INDI
-1 RIN MH:I23231
-1 _UID 671538a3ed1671efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
-1 NAME Dikar //
-2 GIVN Dikar
-1 SEX M
-1 NOTE Position in narrative: Parasite on the sons of Plantus
-0 @I23232@ INDI
-1 RIN MH:I23232
-1 _UID 671538a3d71c11efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
-1 NAME Ferma //
-2 GIVN Ferma
-1 SEX F
-1 NOTE Position in narrative: Married to Dikar
-0 @I23233@ INDI
-1 RIN MH:I23233
-1 _UID 671538a37a0931efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
-1 NAME Ascus //
-2 GIVN Ascus
-1 SEX M
-1 NOTE Position in narrative: Son of Dikar and Ferma, parasite on the sons of Plantus, father of Cup Fungi
-0 @I23234@ INDI
-1 RIN MH:I23234
-1 _UID 671538a3ac50d1efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
-1 NAME Baston //
-2 GIVN Baston
-1 SEX M
-1 NOTE Position in narrative: Son of Dikar and Ferma, parasite on the sons of Plantus, father of mushrooms
-0 @I23235@ INDI
-1 RIN MH:I23235
-1 _UID 671538a39d3891efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
-1 NAME Taphrin //
-2 GIVN Taphrin
-1 SEX M
-1 NOTE Position in narrative: Son of Ascus, lived as a yeast inside plants, father of the fission yeast
-0 @I23236@ INDI
-1 RIN MH:I23236
-1 _UID 671538a3d0f031efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
-1 NAME Saccharos //
-2 GIVN Saccharos
-1 SEX M
-1 NOTE Position in narrative: Son of Ascus, abandoned parasitism, lived freely in soils
-0 @I23237@ INDI
-1 RIN MH:I23237
-1 _UID 671538a3803da1efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
-1 NAME Fission Yeast //
-2 GIVN Fission Yeast
-1 SEX M
-1 NOTE Position in narrative: Sons of Taphrin, cause pneumocystis pneumonia
-0 @I23238@ INDI
-1 RIN MH:I23238
-1 _UID 671538a3716b11efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
-1 NAME Peziz //
-2 GIVN Peziz
-1 SEX M
-1 NOTE Position in narrative: Son of Saccharos
-0 @I23239@ INDI
-1 RIN MH:I23239
-1 _UID 671538a31722e1efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
-1 NAME Melchizedek //
-2 GIVN Melchizedek
-1 SEX M
-1 NOTE Position in narrative: Son of Saccharos, became a yeast, associated with bread and beer
-0 @I23240@ INDI
-1 RIN MH:I23240
-1 _UID 671538a3a27d11efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
-1 NAME Sphere Yeast //
-2 GIVN Sphere Yeast
-1 SEX M
-1 NOTE Position in narrative: Sons of Melchizedek, budded off from him in spheres
-0 @I23241@ INDI
-1 RIN MH:I23241
-1 _UID 671538a3acd081efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
-1 NAME Lopez //
-2 GIVN Lopez
-1 SEX M
-1 NOTE Position in narrative: Son of Peziz
-0 @I23242@ INDI
-1 RIN MH:I23242
-1 _UID 671538a3e11821efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
-1 NAME Orbillus //
-2 GIVN Orbillus
-1 SEX M
-1 NOTE Position in narrative: Son of Peziz, preyed upon the sons of Nematos for food
-0 @I23243@ INDI
-1 RIN MH:I23243
-1 _UID 671538a33741c1efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
-1 NAME Nematos //
-2 GIVN Nematos
-1 SEX M
-1 NOTE Position in narrative: His sons are preyed upon by Orbillus
-0 @I23244@ INDI
-1 RIN MH:I23244
-1 _UID 671538a38bdfd1efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
-1 NAME Ganymede //
-2 GIVN Ganymede
-1 SEX M
-1 NOTE Position in narrative: Twin son of Lopez, ancestor of the cup fungi
-0 @I23245@ INDI
-1 RIN MH:I23245
-1 _UID 671538a3a05e81efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
-1 NAME Leotios //
-2 GIVN Leotios
-1 SEX M
-1 NOTE Position in narrative: Twin son of Lopez, father of filamentous fungi
-0 @I23246@ INDI
-1 RIN MH:I23246
-1 _UID 671538a3f09311efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
-1 NAME Pyrenos //
-2 GIVN Pyrenos
-1 SEX M
-1 NOTE Position in narrative: Son of Leotios
-0 @I23247@ INDI
-1 RIN MH:I23247
-1 _UID 671538a3bd5bb1efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
-1 NAME Lecanius //
-2 GIVN Lecanius
-1 SEX M
-1 NOTE Position in narrative: Son of Leotios, ancestor of lichens and others
-0 @I23248@ INDI
-1 RIN MH:I23248
-1 _UID 671538a38c33f1efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
-1 NAME Penicillius //
-2 GIVN Penicillius
-1 SEX M
-1 NOTE Position in narrative: Creator of blue cheese and penicillin
-0 @I23249@ INDI
-1 RIN MH:I23249
-1 _UID 671538a35a6a11efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
-1 NAME Capnos //
-2 GIVN Capnos
-1 SEX M
-1 NOTE Position in narrative: Father of the soot mold
-0 @I23250@ INDI
-1 RIN MH:I23250
-1 _UID 671538a3dcfe61efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
-1 NAME Baset //
-2 GIVN Baset
-1 SEX M
-1 NOTE Position in narrative: Son of Baston
-0 @I23251@ INDI
-1 RIN MH:I23251
-1 _UID 671538a3629821efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
-1 NAME Ortho //
-2 GIVN Ortho
-1 SEX M
-1 NOTE Position in narrative: Son of Baset
-0 @I23252@ INDI
-1 RIN MH:I23252
-1 _UID 671538a34be121efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
-1 NAME Puccini //
-2 GIVN Puccini
-1 SEX M
-1 NOTE Position in narrative: Son of Baset, father of rusts
-0 @I23253@ INDI
-1 RIN MH:I23253
-1 _UID 671538a31b2cb1efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
-1 NAME Botry //
-2 GIVN Botry
-1 SEX M
-1 NOTE Position in narrative: Son of Puccini, rejected multicellularity, became a yeast
-0 @I23254@ INDI
-1 RIN MH:I23254
-1 _UID 671538a34994c1efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
-1 NAME Ustella //
-2 GIVN Ustella
-1 SEX F
-1 NOTE Position in narrative: Daughter of Ortho, mother of smuts, blesses corn harvests
-0 @I23255@ INDI
-1 RIN MH:I23255
-1 _UID 671538a39fcd21efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
-1 NAME Agaricus I //
-2 GIVN Agaricus I
-1 SEX M
-1 NOTE Position in narrative: Son of Ortho, abandoned parasitism, went to live in the desert
-0 @I23256@ INDI
-1 RIN MH:I23256
-1 _UID 671538a3195951efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
-1 NAME Jello //
-2 GIVN Jello
-1 SEX M
-1 NOTE Position in narrative: Son of Agaricus I, formed a gelatinous vessel for his spores
-0 @I23257@ INDI
-1 RIN MH:I23257
-1 _UID 671538a3235331efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
-1 NAME Bartholomew //
-2 GIVN Bartholomew
-1 SEX M
-1 NOTE Position in narrative: Son of Agaricus I
-0 @I23258@ INDI
-1 RIN MH:I23258
-1 _UID 671538a3451ac1efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
-1 NAME William //
-2 GIVN William
-1 SEX M
-1 NOTE Position in narrative: Son of Agaricus I
-0 @I23259@ INDI
-1 RIN MH:I23259
-1 _UID 671538a3934321efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
-1 NAME Gemini //
-2 GIVN Gemini
-1 SEX M
-1 NOTE Position in narrative: Son of Agaricus I
-0 @I23260@ INDI
-1 RIN MH:I23260
-1 _UID 671538a3a22b61efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
-1 NAME Tremello //
-2 GIVN Tremello
-1 SEX M
-1 NOTE Position in narrative: Son of Jello, spent youth as a yeast, built a great jellyshroom
-0 @I23261@ INDI
-1 RIN MH:I23261
-1 _UID 671538a3efe3c1efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
-1 NAME Dagar //
-2 GIVN Dagar
-1 SEX M
-1 NOTE Position in narrative: Son of Jello
-0 @I23262@ INDI
-1 RIN MH:I23262
-1 _UID 671538a3f2e6f1efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
-1 NAME Dacrum //
-2 GIVN Dacrum
-1 SEX M
-1 NOTE Position in narrative: Son of Dagar, ancestor of the jelly fungi
-0 @I23263@ INDI
-1 RIN MH:I23263
-1 _UID 671538a3bf2e51efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
-1 NAME Agaricus II //
-2 GIVN Agaricus II
-1 SEX M
-1 NOTE Position in narrative: Son of Dagar, created the first mushroom; his sons create nourishing mushrooms, some become toxic toadstools
-0 @I23264@ INDI
-1 RIN MH:I23264
-1 _UID 671538a3852431efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
-1 NAME Toadstools //
-2 GIVN Toadstools
-1 SEX M
-1 NOTE Position in narrative: Corrupted mushrooms, toxic due to toads sitting on them
-0 @I23265@ INDI
-1 RIN MH:I23265
-1 _UID 671538a3283111efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:36:43 GMT+5.5
-1 NAME Nourishing Mushrooms //
-2 GIVN Nourishing Mushrooms
-1 SEX M
-1 NOTE Position in narrative: Sons of Agaricus II, create many nourishing mushrooms
-0 @I23266@ INDI
-1 RIN MH:I23266
-1 _UID 6715399ff01341efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:40:55 GMT+5.5
-1 NAME Freyr //
-2 GIVN Freyr
-1 SEX M
-1 FAMS @F13412@
-1 NOTE Position in narrative: Ancestor, married to Hera, progenitor 20 generations prior to Plantus.
-0 @I23267@ INDI
-1 RIN MH:I23267
-1 _UID 6715399fbddbe1efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:40:55 GMT+5.5
-1 NAME Hera //
-2 GIVN Hera
-1 SEX F
-1 FAMS @F13412@
-1 NOTE Position in narrative: Ancestor, married to Freyr, progenitor 20 generations prior to Plantus.
-0 @I23268@ INDI
-1 RIN MH:I23268
-1 _UID 6715399fa0ded1efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 22:40:55 GMT+5.5
-1 NAME Plantus //
-2 GIVN Plantus
-1 SEX M
-1 FAMC @F13412@
-1 NOTE Position in narrative: Descendant of Freyr and Hera, son in the twentieth generation.
 0 @I23269@ INDI
 1 RIN MH:I23269
 1 _UID 6715399fed1671efbc0b9822ef79916c
@@ -11057,204 +10692,6 @@
 1 SEX M
 1 FAMC @F13431@
 1 NOTE Position in narrative: Corrupted mushrooms; toxic due to toads sitting on them.
-0 @I23304@ INDI
-1 RIN MH:I23304
-1 _UID 67153ea5f01341efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
-1 NAME Pteron //
-2 GIVN Pteron
-1 SEX M
-1 FAMS @F13432@
-1 NOTE Position in narrative: The great ancestor of winged beings; first to fold wings upon his back.
-0 @I23305@ INDI
-1 RIN MH:I23305
-1 _UID 67153ea5bddbe1efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
-1 NAME Pteron's Spouse //
-2 GIVN Pteron's Spouse
-1 SEX F
-1 FAMS @F13432@
-0 @I23306@ INDI
-1 RIN MH:I23306
-1 _UID 67153ea56b8201efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
-1 NAME Polyneos //
-2 GIVN Polyneos
-1 SEX M
-1 FAMS @F13433@
-1 FAMC @F13432@
-1 NOTE Position in narrative: Elder son of Pteron; father of many diverse offspring.
-0 @I23307@ INDI
-1 RIN MH:I23307
-1 _UID 67153ea5264aa1efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:19:31 GMT+5.5
-1 NAME Eumetabolos //
-2 GIVN Eumetabolos
-1 SEX M
-1 FAMS @F13436@
-1 FAMC @F13432@
-1 NOTE Position in narrative: Younger son of Pteron; master of transformation and change.
-0 @I23308@ INDI
-1 RIN MH:I23308
-1 _UID 67153ea51c40c1efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
-1 NAME Spouse of Polyneos //
-2 GIVN Spouse of Polyneos
-1 SEX F
-1 FAMS @F13433@
-0 @I23309@ INDI
-1 RIN MH:I23309
-1 _UID 67153ea537c191efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
-1 NAME Zora //
-2 GIVN Zora
-1 SEX F
-1 FAMC @F13433@
-1 NOTE Position in narrative: First child of Polyneos; the gentle angel insect living in hidden places.
-0 @I23310@ INDI
-1 RIN MH:I23310
-1 _UID 67153ea57a0931efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
-1 NAME Derma //
-2 GIVN Derma
-1 SEX F
-1 FAMC @F13433@
-1 NOTE Position in narrative: Second child of Polyneos; tough and adaptable; known as the earwig.
-0 @I23311@ INDI
-1 RIN MH:I23311
-1 _UID 67153ea5ac50d1efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
-1 NAME Pleco //
-2 GIVN Pleco
-1 SEX M
-1 FAMC @F13433@
-1 NOTE Position in narrative: Third child of Polyneos; lover of rivers and streams; the stonefly.
-0 @I23312@ INDI
-1 RIN MH:I23312
-1 _UID 67153ea5566441efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
-1 NAME Orthos //
-2 GIVN Orthos
-1 SEX M
-1 FAMC @F13433@
-1 NOTE Position in narrative: Fourth child of Polyneos; the musician; grasshopper and cricket.
-0 @I23313@ INDI
-1 RIN MH:I23313
-1 _UID 67153ea51bace1efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
-1 NAME Gryllo //
-2 GIVN Gryllo
-1 SEX M
-1 FAMC @F13433@
-1 NOTE Position in narrative: Fifth child of Polyneos; the ice dweller; the ice crawler.
-0 @I23314@ INDI
-1 RIN MH:I23314
-1 _UID 67153ea5cdf501efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
-1 NAME Phasma //
-2 GIVN Phasma
-1 SEX F
-1 FAMC @F13433@
-1 NOTE Position in narrative: Sixth child of Polyneos; master of disguise; the stick insect.
-0 @I23315@ INDI
-1 RIN MH:I23315
-1 _UID 67153ea5803da1efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
-1 NAME Embio //
-2 GIVN Embio
-1 SEX M
-1 FAMC @F13433@
-1 NOTE Position in narrative: Seventh child of Polyneos; the weaver; the webspinner.
-0 @I23316@ INDI
-1 RIN MH:I23316
-1 _UID 67153ea5ba37c1efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
-1 NAME Mantoph //
-2 GIVN Mantoph
-1 SEX M
-1 FAMC @F13433@
-1 NOTE Position in narrative: Eighth child of Polyneos; the fierce gladiator.
-0 @I23317@ INDI
-1 RIN MH:I23317
-1 _UID 67153ea591b691efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
-1 NAME Dictys //
-2 GIVN Dictys
-1 SEX M
-1 FAMS @F13434@
-1 FAMC @F13433@
-1 NOTE Position in narrative: Twin son of Polyneos; father of Mantodea.
-0 @I23318@ INDI
-1 RIN MH:I23318
-1 _UID 67153ea5dc7e31efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
-1 NAME Dictya //
-2 GIVN Dictya
-1 SEX M
-1 FAMS @F13435@
-1 FAMC @F13433@
-1 NOTE Position in narrative: Twin son of Polyneos; father of Blatta and Termes.
-0 @I23319@ INDI
-1 RIN MH:I23319
-1 _UID 67153ea5a27d11efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
-1 NAME Spouse of Dictys //
-2 GIVN Spouse of Dictys
-1 SEX F
-1 FAMS @F13434@
-0 @I23320@ INDI
-1 RIN MH:I23320
-1 _UID 67153ea5678c51efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
-1 NAME Mantodea //
-2 GIVN Mantodea
-1 SEX F
-1 FAMC @F13434@
-1 NOTE Position in narrative: Child of Dictys; the mantis; graceful yet deadly warrior.
-0 @I23321@ INDI
-1 RIN MH:I23321
-1 _UID 67153ea52a44f1efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
-1 NAME Spouse of Dictya //
-2 GIVN Spouse of Dictya
-1 SEX F
-1 FAMS @F13435@
-0 @I23322@ INDI
-1 RIN MH:I23322
-1 _UID 67153ea5fc1d11efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
-1 NAME Blatta //
-2 GIVN Blatta
-1 SEX M
-1 FAMC @F13435@
-1 NOTE Position in narrative: Child of Dictya; the cockroach.
-0 @I23323@ INDI
-1 RIN MH:I23323
-1 _UID 67153ea5b1d5b1efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
-1 NAME Termes //
-2 GIVN Termes
-1 SEX M
-1 FAMC @F13435@
-1 NOTE Position in narrative: Child of Dictya; the termite; builder of great mounds.
-0 @I23324@ INDI
-1 RIN MH:I23324
-1 _UID 67153ea58bdfd1efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:19:31 GMT+5.5
-1 NAME Spouse of Eumetabolos //
-2 GIVN Spouse of Eumetabolos
-1 SEX F
-1 FAMS @F13436@
-0 @I23325@ INDI
-1 RIN MH:I23325
-1 _UID 67153ea5a05e81efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
-1 NAME Paraneos //
-2 GIVN Paraneos
-1 SEX M
-1 FAMS @F13437@
-1 FAMC @F13436@
-1 NOTE Position in narrative: Son of Eumetabolos; father of Condylo and Psoc.
 0 @I23326@ INDI
 1 RIN MH:I23326
 1 _UID 67153ea5ed9621efbc0b9822ef79916c
@@ -11265,59 +10702,6 @@
 1 FAMS @F13439@
 1 FAMC @F13661@
 1 NOTE Position in narrative: Son of Eumetabolos; master of complete metamorphosis.
-0 @I23327@ INDI
-1 RIN MH:I23327
-1 _UID 67153ea53bcfc1efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
-1 NAME Spouse of Paraneos //
-2 GIVN Spouse of Paraneos
-1 SEX F
-1 FAMS @F13437@
-0 @I23328@ INDI
-1 RIN MH:I23328
-1 _UID 67153ea5c1fb51efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
-1 NAME Condylo //
-2 GIVN Condylo
-1 SEX M
-1 FAMS @F13438@
-1 FAMC @F13437@
-1 NOTE Position in narrative: Son of Paraneos; wise and cunning.
-0 @I23329@ INDI
-1 RIN MH:I23329
-1 _UID 67153ea58c33f1efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
-1 NAME Psoc //
-2 GIVN Psoc
-1 SEX M
-1 FAMC @F13437@
-1 NOTE Position in narrative: Son of Paraneos; keeper of the bark; ancestor of barklice and lice.
-0 @I23330@ INDI
-1 RIN MH:I23330
-1 _UID 67153ea55a6a11efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
-1 NAME Spouse of Condylo //
-2 GIVN Spouse of Condylo
-1 SEX F
-1 FAMS @F13438@
-0 @I23331@ INDI
-1 RIN MH:I23331
-1 _UID 67153ea517a2b1efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
-1 NAME Thysa //
-2 GIVN Thysa
-1 SEX F
-1 FAMC @F13438@
-1 NOTE Position in narrative: Child of Condylo; bearer of fringe wings; the thrips.
-0 @I23332@ INDI
-1 RIN MH:I23332
-1 _UID 67153ea52da8d1efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:02:21 GMT+5.5
-1 NAME Hemip //
-2 GIVN Hemip
-1 SEX M
-1 FAMC @F13438@
-1 NOTE Position in narrative: Child of Condylo; the true bug with piercing mouthparts.
 0 @I23333@ INDI
 1 RIN MH:I23333
 1 _UID 67153ea5629821efbc0b9822ef79916c
@@ -11863,172 +11247,6 @@
 2 _UID 6715434df01341efbc0b9822ef79916c
 2 RIN MH:IF32198
 1 FAMC @F13459@
-0 @I23387@ INDI
-1 RIN MH:I23387
-1 _UID 67154648f01341efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:34:56 GMT+5.5
-1 NAME Actinopterygii /Devonian 419 Ma/
-2 GIVN Actinopterygii
-2 SURN Devonian 419 Ma
-1 SEX U
-1 BIRT
-2 _UID 671546483b4f91efbc0b9822ef79916c
-2 RIN MH:IF32199
-2 DATE BEF 419 Ma
-1 FAMC @F13460@
-0 @I23388@ INDI
-1 RIN MH:I23388
-1 _UID 67154648bddbe1efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:34:56 GMT+5.5
-1 NAME Palaeonisciformes /Carboniferous 359 Ma/
-2 GIVN Palaeonisciformes
-2 SURN Carboniferous 359 Ma
-1 SEX U
-1 BIRT
-2 _UID 67154648768731efbc0b9822ef79916c
-2 RIN MH:IF32200
-2 DATE BEF 359 Ma
-1 FAMC @F13461@
-0 @I23389@ INDI
-1 RIN MH:I23389
-1 _UID 671546486b8201efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:34:56 GMT+5.5
-1 NAME Acipenseridae /Triassic 252 Ma/
-2 GIVN Acipenseridae
-2 SURN Triassic 252 Ma
-1 SEX U
-1 BIRT
-2 _UID 67154648a0ded1efbc0b9822ef79916c
-2 RIN MH:IF32201
-2 DATE BEF 252 Ma
-1 FAMC @F13462@
-0 @I23390@ INDI
-1 RIN MH:I23390
-1 _UID 67154648264aa1efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:34:56 GMT+5.5
-1 NAME Teleostei /Jurassic 201 Ma/
-2 GIVN Teleostei
-2 SURN Jurassic 201 Ma
-1 SEX U
-1 BIRT
-2 _UID 67154648ed1671efbc0b9822ef79916c
-2 RIN MH:IF32202
-2 DATE BEF 201 Ma
-1 FAMC @F13463@
-0 @I23391@ INDI
-1 RIN MH:I23391
-1 _UID 671546481c40c1efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:34:56 GMT+5.5
-1 NAME Euteleostei /Cretaceous 145 Ma/
-2 GIVN Euteleostei
-2 SURN Cretaceous 145 Ma
-1 SEX U
-1 BIRT
-2 _UID 67154648d71c11efbc0b9822ef79916c
-2 RIN MH:IF32203
-2 DATE BEF 145 Ma
-1 FAMC @F13464@
-0 @I23392@ INDI
-1 RIN MH:I23392
-1 _UID 6715464837c191efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:34:56 GMT+5.5
-1 NAME Neoteleostei /Cretaceous 100 Ma/
-2 GIVN Neoteleostei
-2 SURN Cretaceous 100 Ma
-1 SEX U
-1 BIRT
-2 _UID 67154648b155e1efbc0b9822ef79916c
-2 RIN MH:IF32204
-2 DATE BEF 100 Ma
-1 FAMC @F13465@
-0 @I23394@ INDI
-1 RIN MH:I23394
-1 _UID 671546acf01341efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:36:36 GMT+5.5
-1 NAME Actinopterygii /Devonian 419 Ma/
-2 GIVN Actinopterygii
-2 SURN Devonian 419 Ma
-1 SEX U
-1 BIRT
-2 _UID 671546ac3b4f91efbc0b9822ef79916c
-2 RIN MH:IF32206
-2 DATE BEF 419 Ma
-1 FAMC @F13466@
-0 @I23395@ INDI
-1 RIN MH:I23395
-1 _UID 671546acbddbe1efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:36:36 GMT+5.5
-1 NAME Palaeonisciformes /Carboniferous 359 Ma/
-2 GIVN Palaeonisciformes
-2 SURN Carboniferous 359 Ma
-1 SEX U
-1 BIRT
-2 _UID 671546ac768731efbc0b9822ef79916c
-2 RIN MH:IF32207
-2 DATE BEF 359 Ma
-1 FAMC @F13467@
-0 @I23396@ INDI
-1 RIN MH:I23396
-1 _UID 671546ac6b8201efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:36:36 GMT+5.5
-1 NAME Acipenseridae /Triassic 252 Ma/
-2 GIVN Acipenseridae
-2 SURN Triassic 252 Ma
-1 SEX U
-1 BIRT
-2 _UID 671546aca0ded1efbc0b9822ef79916c
-2 RIN MH:IF32208
-2 DATE BEF 252 Ma
-1 FAMC @F13468@
-0 @I23397@ INDI
-1 RIN MH:I23397
-1 _UID 671546ac264aa1efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:36:36 GMT+5.5
-1 NAME Teleostei /Jurassic 201 Ma/
-2 GIVN Teleostei
-2 SURN Jurassic 201 Ma
-1 SEX U
-1 BIRT
-2 _UID 671546aced1671efbc0b9822ef79916c
-2 RIN MH:IF32209
-2 DATE BEF 201 Ma
-1 FAMC @F13469@
-0 @I23398@ INDI
-1 RIN MH:I23398
-1 _UID 671546ac1c40c1efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:36:36 GMT+5.5
-1 NAME Euteleostei /Cretaceous 145 Ma/
-2 GIVN Euteleostei
-2 SURN Cretaceous 145 Ma
-1 SEX U
-1 BIRT
-2 _UID 671546acd71c11efbc0b9822ef79916c
-2 RIN MH:IF32210
-2 DATE BEF 145 Ma
-1 FAMC @F13470@
-0 @I23399@ INDI
-1 RIN MH:I23399
-1 _UID 671546ac37c191efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:36:36 GMT+5.5
-1 NAME Neoteleostei /Cretaceous 100 Ma/
-2 GIVN Neoteleostei
-2 SURN Cretaceous 100 Ma
-1 SEX U
-1 BIRT
-2 _UID 671546acb155e1efbc0b9822ef79916c
-2 RIN MH:IF32211
-2 DATE BEF 100 Ma
-1 FAMC @F13471@
-0 @I23401@ INDI
-1 RIN MH:I23401
-1 _UID 671546f53b4f91efbc0b9822ef79916c
-1 _UPD 20 OCT 2024 23:39:12 GMT+5.5
-1 NAME  /Palaeonisciformes/
-2 SURN Palaeonisciformes
-1 SEX M
-1 BIRT
-2 _UID 67154737f01341efbc0b9822ef79916c
-2 RIN MH:IF32213
 0 @I23402@ INDI
 1 RIN MH:I23402
 1 _UID 6715f7fcbddbe1efbc0b9822ef79916c
@@ -16756,611 +15974,6 @@
 2 _UID 67168a6d64d7d1efbc0b9822ef79916c
 2 RIN MH:IF32553
 1 FAMC @F13668@
-0 @I23818@ INDI
-1 RIN MH:I23818
-1 _UID 67168b1faf8b01efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:41:26 GMT+5.5
-1 NAME  /Hymenoptera/
-2 SURN Hymenoptera
-1 SEX M
-1 BIRT
-2 _UID 67168b2264d7d1efbc0b9822ef79916c
-2 RIN MH:IF32554
-1 FAMS @F13670@
-0 @I23819@ INDI
-1 RIN MH:I23819
-1 _UID 67168b2c64d7d1efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:41:10 GMT+5.5
-1 NAME  /Tenthredinoidea/
-2 SURN Tenthredinoidea
-1 SEX M
-1 BIRT
-2 _UID 67168b2e64d7d1efbc0b9822ef79916c
-2 RIN MH:IF32555
-0 @I23820@ INDI
-1 RIN MH:I23820
-1 _UID 67168b32af8b01efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:41:46 GMT+5.5
-1 NAME  /Hymenoptera/
-2 SURN Hymenoptera
-1 SEX M
-1 BIRT
-2 _UID 67168b3464d7d1efbc0b9822ef79916c
-2 RIN MH:IF32556
-1 FAMS @F13671@
-1 FAMC @F13670@
-0 @I23821@ INDI
-1 RIN MH:I23821
-1 _UID 67168b3764d7d1efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:41:26 GMT+5.5
-1 NAME  /Xyeloidea (Triassic-present)/
-2 SURN Xyeloidea (Triassic-present)
-1 SEX M
-1 BIRT
-2 _UID 67168b3e64d7d1efbc0b9822ef79916c
-2 RIN MH:IF32557
-1 FAMC @F13670@
-0 @I23822@ INDI
-1 RIN MH:I23822
-1 _UID 67168b49af8b01efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:42:23 GMT+5.5
-1 NAME  /Unicalcarida/
-2 SURN Unicalcarida
-1 SEX M
-1 BIRT
-2 _UID 67168b4c64d7d1efbc0b9822ef79916c
-2 RIN MH:IF32558
-1 FAMS @F13672@
-1 FAMC @F13671@
-0 @I23823@ INDI
-1 RIN MH:I23823
-1 _UID 67168b4e64d7d1efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:41:46 GMT+5.5
-1 NAME  /Pamphilioidea/
-2 SURN Pamphilioidea
-1 SEX M
-1 BIRT
-2 _UID 67168b5264d7d1efbc0b9822ef79916c
-2 RIN MH:IF32559
-1 FAMC @F13671@
-0 @I23824@ INDI
-1 RIN MH:I23824
-1 _UID 67168b57af8b01efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:43:03 GMT+5.5
-1 NAME  /Unicalcarida/
-2 SURN Unicalcarida
-1 SEX M
-1 BIRT
-2 _UID 67168b5b64d7d1efbc0b9822ef79916c
-2 RIN MH:IF32560
-1 FAMS @F13674@
-1 FAMC @F13672@
-0 @I23825@ INDI
-1 RIN MH:I23825
-1 _UID 67168b7564d7d1efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:42:37 GMT+5.5
-1 NAME  /Unicalcarida/
-2 SURN Unicalcarida
-1 SEX M
-1 BIRT
-2 _UID 67168b7764d7d1efbc0b9822ef79916c
-2 RIN MH:IF32561
-1 FAMS @F13673@
-1 FAMC @F13672@
-0 @I23826@ INDI
-1 RIN MH:I23826
-1 _UID 67168b7caf8b01efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:42:30 GMT+5.5
-1 NAME  /Xiphydrioidea (wood wasps)/
-2 SURN Xiphydrioidea (wood wasps)
-1 SEX M
-1 BIRT
-2 _UID 67168b7e64d7d1efbc0b9822ef79916c
-2 RIN MH:IF32562
-1 FAMC @F13673@
-0 @I23827@ INDI
-1 RIN MH:I23827
-1 _UID 67168b8364d7d1efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:42:37 GMT+5.5
-1 NAME  /Siricoidea (horntails or wood wasps)/
-2 SURN Siricoidea (horntails or wood wasps)
-1 SEX M
-1 BIRT
-2 _UID 67168b8564d7d1efbc0b9822ef79916c
-2 RIN MH:IF32563
-1 FAMC @F13673@
-0 @I23828@ INDI
-1 RIN MH:I23828
-1 _UID 67168b92af8b01efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:43:30 GMT+5.5
-1 NAME parasitism /Unicalcarida/
-2 GIVN parasitism
-2 SURN Unicalcarida
-1 SEX M
-1 BIRT
-2 _UID 67168b9764d7d1efbc0b9822ef79916c
-2 RIN MH:IF32564
-1 FAMS @F13675@
-1 FAMC @F13674@
-0 @I23829@ INDI
-1 RIN MH:I23829
-1 _UID 67168b9d64d7d1efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:43:03 GMT+5.5
-1 NAME  /Cephoidea (stem sawflies)/
-2 SURN Cephoidea (stem sawflies)
-1 SEX M
-1 BIRT
-2 _UID 67168b9f64d7d1efbc0b9822ef79916c
-2 RIN MH:IF32565
-1 FAMC @F13674@
-0 @I23830@ INDI
-1 RIN MH:I23830
-1 _UID 67168babaf8b01efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:44:54 GMT+5.5
-1 NAME  /"wasp waist" Apocrita (ants, bees, wasps)/
-2 SURN "wasp waist" Apocrita (ants, bees, wasps)
-1 SEX M
-1 BIRT
-2 _UID 67168bb364d7d1efbc0b9822ef79916c
-2 RIN MH:IF32566
-1 FAMS @F13676@
-1 FAMC @F13675@
-0 @I23831@ INDI
-1 RIN MH:I23831
-1 _UID 67168bb764d7d1efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:43:30 GMT+5.5
-1 NAME  /Orussoidea (parasitic wood wasps)/
-2 SURN Orussoidea (parasitic wood wasps)
-1 SEX M
-1 BIRT
-2 _UID 67168bba64d7d1efbc0b9822ef79916c
-2 RIN MH:IF32567
-1 FAMC @F13675@
-0 @I23832@ INDI
-1 RIN MH:I23832
-1 _UID 67168c05af8b01efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:46:46 GMT+5.5
-1 NAME  /"wasp waist" Apocrita (ants, bees, wasps)/
-2 SURN "wasp waist" Apocrita (ants, bees, wasps)
-1 SEX M
-1 BIRT
-2 _UID 67168c0964d7d1efbc0b9822ef79916c
-2 RIN MH:IF32568
-1 FAMS @F13683@
-1 FAMC @F13676@
-0 @I23833@ INDI
-1 RIN MH:I23833
-1 _UID 67168c0b64d7d1efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:45:03 GMT+5.5
-1 NAME  /Parasitoida/
-2 SURN Parasitoida
-1 SEX M
-1 BIRT
-2 _UID 67168c0e64d7d1efbc0b9822ef79916c
-2 RIN MH:IF32569
-1 FAMS @F13677@
-1 FAMC @F13676@
-0 @I23834@ INDI
-1 RIN MH:I23834
-1 _UID 67168c12af8b01efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:45:39 GMT+5.5
-1 NAME  /Proctotrupomorpha/
-2 SURN Proctotrupomorpha
-1 SEX M
-1 BIRT
-2 _UID 67168c1564d7d1efbc0b9822ef79916c
-2 RIN MH:IF32570
-1 FAMS @F13679@
-1 FAMC @F13677@
-0 @I23835@ INDI
-1 RIN MH:I23835
-1 _UID 67168c1664d7d1efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:45:16 GMT+5.5
-1 NAME  /Parasitoida/
-2 SURN Parasitoida
-1 SEX M
-1 BIRT
-2 _UID 67168c1764d7d1efbc0b9822ef79916c
-2 RIN MH:IF32571
-1 FAMS @F13678@
-1 FAMC @F13677@
-0 @I23836@ INDI
-1 RIN MH:I23836
-1 _UID 67168c1baf8b01efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:45:10 GMT+5.5
-1 NAME  /Ichneumonoidea/
-2 SURN Ichneumonoidea
-1 SEX M
-1 BIRT
-2 _UID 67168c1e64d7d1efbc0b9822ef79916c
-2 RIN MH:IF32572
-1 FAMC @F13678@
-0 @I23837@ INDI
-1 RIN MH:I23837
-1 _UID 67168c2164d7d1efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:45:16 GMT+5.5
-1 NAME  /Ceraphronoidea/
-2 SURN Ceraphronoidea
-1 SEX M
-1 BIRT
-2 _UID 67168c2464d7d1efbc0b9822ef79916c
-2 RIN MH:IF32573
-1 FAMC @F13678@
-0 @I23838@ INDI
-1 RIN MH:I23838
-1 _UID 67168c34af8b01efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:45:54 GMT+5.5
-1 NAME  /Proctotrupomorpha/
-2 SURN Proctotrupomorpha
-1 SEX M
-1 BIRT
-2 _UID 67168c3664d7d1efbc0b9822ef79916c
-2 RIN MH:IF32574
-1 FAMS @F13680@
-1 FAMC @F13679@
-0 @I23839@ INDI
-1 RIN MH:I23839
-1 _UID 67168c3864d7d1efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:45:39 GMT+5.5
-1 NAME Cynipoidea /Cynipoidea/
-2 GIVN Cynipoidea
-2 SURN Cynipoidea
-1 SEX M
-1 BIRT
-2 _UID 67168c3b64d7d1efbc0b9822ef79916c
-2 RIN MH:IF32575
-1 FAMC @F13679@
-0 @I23840@ INDI
-1 RIN MH:I23840
-1 _UID 67168c41af8b01efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:46:05 GMT+5.5
-1 NAME  /Proctotrupomorpha/
-2 SURN Proctotrupomorpha
-1 SEX M
-1 BIRT
-2 _UID 67168c4564d7d1efbc0b9822ef79916c
-2 RIN MH:IF32576
-1 FAMS @F13681@
-1 FAMC @F13680@
-0 @I23841@ INDI
-1 RIN MH:I23841
-1 _UID 67168c4664d7d1efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:45:54 GMT+5.5
-1 NAME Platygastroidea /Platygastroidea/
-2 GIVN Platygastroidea
-2 SURN Platygastroidea
-1 SEX M
-1 BIRT
-2 _UID 67168c4a64d7d1efbc0b9822ef79916c
-2 RIN MH:IF32577
-1 FAMC @F13680@
-0 @I23842@ INDI
-1 RIN MH:I23842
-1 _UID 67168c4daf8b01efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:46:18 GMT+5.5
-1 NAME  /Proctotrupomorpha/
-2 SURN Proctotrupomorpha
-1 SEX M
-1 BIRT
-2 _UID 67168c4f64d7d1efbc0b9822ef79916c
-2 RIN MH:IF32578
-1 FAMS @F13682@
-1 FAMC @F13681@
-0 @I23843@ INDI
-1 RIN MH:I23843
-1 _UID 67168c5264d7d1efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:46:05 GMT+5.5
-1 NAME  /Chalcidoidea/
-2 SURN Chalcidoidea
-1 SEX M
-1 BIRT
-2 _UID 67168c5564d7d1efbc0b9822ef79916c
-2 RIN MH:IF32579
-1 FAMC @F13681@
-0 @I23844@ INDI
-1 RIN MH:I23844
-1 _UID 67168c58af8b01efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:46:13 GMT+5.5
-1 NAME  /Diaprioidea/
-2 SURN Diaprioidea
-1 SEX M
-1 BIRT
-2 _UID 67168c5c64d7d1efbc0b9822ef79916c
-2 RIN MH:IF32580
-1 FAMC @F13682@
-0 @I23845@ INDI
-1 RIN MH:I23845
-1 _UID 67168c6064d7d1efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:46:18 GMT+5.5
-1 NAME  /Proctotrupoidea/
-2 SURN Proctotrupoidea
-1 SEX M
-1 BIRT
-2 _UID 67168c6264d7d1efbc0b9822ef79916c
-2 RIN MH:IF32581
-1 FAMC @F13682@
-0 @I23846@ INDI
-1 RIN MH:I23846
-1 _UID 67168c78af8b01efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:47:20 GMT+5.5
-1 NAME  /"wasp waist" Apocrita (ants, bees, wasps)/
-2 SURN "wasp waist" Apocrita (ants, bees, wasps)
-1 SEX M
-1 BIRT
-2 _UID 67168c7b64d7d1efbc0b9822ef79916c
-2 RIN MH:IF32582
-1 FAMS @F13685@
-1 FAMC @F13683@
-0 @I23847@ INDI
-1 RIN MH:I23847
-1 _UID 67168c7c64d7d1efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:46:59 GMT+5.5
-1 NAME  /"wasp waist" Apocrita (ants, bees, wasps)/
-2 SURN "wasp waist" Apocrita (ants, bees, wasps)
-1 SEX M
-1 BIRT
-2 _UID 67168c7e64d7d1efbc0b9822ef79916c
-2 RIN MH:IF32583
-1 FAMS @F13684@
-1 FAMC @F13683@
-0 @I23848@ INDI
-1 RIN MH:I23848
-1 _UID 67168c83af8b01efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:46:53 GMT+5.5
-1 NAME  /Stephanoidea/
-2 SURN Stephanoidea
-1 SEX M
-1 BIRT
-2 _UID 67168c8564d7d1efbc0b9822ef79916c
-2 RIN MH:IF32584
-1 FAMC @F13684@
-0 @I23849@ INDI
-1 RIN MH:I23849
-1 _UID 67168c8864d7d1efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:46:59 GMT+5.5
-1 NAME  /Evanioidea/
-2 SURN Evanioidea
-1 SEX M
-1 BIRT
-2 _UID 67168c8b64d7d1efbc0b9822ef79916c
-2 RIN MH:IF32585
-1 FAMC @F13684@
-0 @I23850@ INDI
-1 RIN MH:I23850
-1 _UID 67168c98af8b01efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:47:47 GMT+5.5
-1 NAME Aculeata /Aculeata/
-2 GIVN Aculeata
-2 SURN Aculeata
-1 SEX M
-1 BIRT
-2 _UID 67168ca064d7d1efbc0b9822ef79916c
-2 RIN MH:IF32586
-1 FAMS @F13686@
-1 FAMC @F13685@
-0 @I23851@ INDI
-1 RIN MH:I23851
-1 _UID 67168cb5af8b01efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:48:00 GMT+5.5
-1 NAME  /Aculeata/
-2 SURN Aculeata
-1 SEX M
-1 BIRT
-2 _UID 67168cb664d7d1efbc0b9822ef79916c
-2 RIN MH:IF32587
-1 FAMS @F13687@
-1 FAMC @F13686@
-0 @I23852@ INDI
-1 RIN MH:I23852
-1 _UID 67168cb864d7d1efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:47:47 GMT+5.5
-1 NAME  /Chrysidoidea/
-2 SURN Chrysidoidea
-1 SEX M
-1 BIRT
-2 _UID 67168cbb64d7d1efbc0b9822ef79916c
-2 RIN MH:IF32588
-1 FAMC @F13686@
-0 @I23853@ INDI
-1 RIN MH:I23853
-1 _UID 67168cc0af8b01efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:48:45 GMT+5.5
-1 NAME  /Aculeata/
-2 SURN Aculeata
-1 SEX M
-1 BIRT
-2 _UID 67168cc164d7d1efbc0b9822ef79916c
-2 RIN MH:IF32589
-1 FAMS @F13688@
-1 FAMC @F13687@
-0 @I23854@ INDI
-1 RIN MH:I23854
-1 _UID 67168cc664d7d1efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:48:00 GMT+5.5
-1 NAME  /Vespoidea (potter, honey and social wasps)/
-2 SURN Vespoidea (potter, honey and social wasps)
-1 SEX M
-1 BIRT
-2 _UID 67168cc864d7d1efbc0b9822ef79916c
-2 RIN MH:IF32590
-1 FAMC @F13687@
-0 @I23855@ INDI
-1 RIN MH:I23855
-1 _UID 67168cf0af8b01efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:49:46 GMT+5.5
-1 NAME  /Aculeata/
-2 SURN Aculeata
-1 SEX M
-1 BIRT
-2 _UID 67168cf164d7d1efbc0b9822ef79916c
-2 RIN MH:IF32591
-1 FAMS @F13691@
-1 FAMC @F13688@
-0 @I23856@ INDI
-1 RIN MH:I23856
-1 _UID 67168cf264d7d1efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:49:05 GMT+5.5
-1 NAME  /Aculeata/
-2 SURN Aculeata
-1 SEX M
-1 BIRT
-2 _UID 67168cf564d7d1efbc0b9822ef79916c
-2 RIN MH:IF32592
-1 FAMS @F13689@
-1 FAMC @F13688@
-0 @I23857@ INDI
-1 RIN MH:I23857
-1 _UID 67168cfdaf8b01efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:49:18 GMT+5.5
-1 NAME  /Aculeata/
-2 SURN Aculeata
-1 SEX M
-1 BIRT
-2 _UID 67168cfe64d7d1efbc0b9822ef79916c
-2 RIN MH:IF32593
-1 FAMS @F13690@
-1 FAMC @F13689@
-0 @I23858@ INDI
-1 RIN MH:I23858
-1 _UID 67168cff64d7d1efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:49:05 GMT+5.5
-1 NAME  /Pompiloidea (velvet ants, spider wasps and relatives)/
-2 SURN Pompiloidea (velvet ants, spider wasps and relatives)
-1 SEX M
-1 BIRT
-2 _UID 67168d0964d7d1efbc0b9822ef79916c
-2 RIN MH:IF32594
-1 FAMC @F13689@
-0 @I23859@ INDI
-1 RIN MH:I23859
-1 _UID 67168d0faf8b01efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:49:14 GMT+5.5
-1 NAME  /Tiphioidea/
-2 SURN Tiphioidea
-1 SEX M
-1 BIRT
-2 _UID 67168d1264d7d1efbc0b9822ef79916c
-2 RIN MH:IF32595
-1 FAMC @F13690@
-0 @I23860@ INDI
-1 RIN MH:I23860
-1 _UID 67168d1464d7d1efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:49:18 GMT+5.5
-1 NAME  /Thynnoidea/
-2 SURN Thynnoidea
-1 SEX M
-1 BIRT
-2 _UID 67168d1664d7d1efbc0b9822ef79916c
-2 RIN MH:IF32596
-1 FAMC @F13690@
-0 @I23861@ INDI
-1 RIN MH:I23861
-1 _UID 67168d29af8b01efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:50:05 GMT+5.5
-1 NAME  /Aculeata/
-2 SURN Aculeata
-1 SEX M
-1 BIRT
-2 _UID 67168d2a64d7d1efbc0b9822ef79916c
-2 RIN MH:IF32597
-1 FAMS @F13692@
-1 FAMC @F13691@
-0 @I23862@ INDI
-1 RIN MH:I23862
-1 _UID 67168d2f64d7d1efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:49:46 GMT+5.5
-1 NAME  /Scolioidea/
-2 SURN Scolioidea
-1 SEX M
-1 BIRT
-2 _UID 67168d3264d7d1efbc0b9822ef79916c
-2 RIN MH:IF32598
-1 FAMC @F13691@
-0 @I23863@ INDI
-1 RIN MH:I23863
-1 _UID 67168d3aaf8b01efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:50:26 GMT+5.5
-1 NAME  /Apoidea/
-2 SURN Apoidea
-1 SEX M
-1 BIRT
-2 _UID 67168d3d64d7d1efbc0b9822ef79916c
-2 RIN MH:IF32599
-1 FAMS @F13693@
-1 FAMC @F13692@
-0 @I23864@ INDI
-1 RIN MH:I23864
-1 _UID 67168d4064d7d1efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:50:05 GMT+5.5
-1 NAME  /Formicoidea (ants)/
-2 SURN Formicoidea (ants)
-1 SEX M
-1 BIRT
-2 _UID 67168d4464d7d1efbc0b9822ef79916c
-2 RIN MH:IF32600
-1 FAMC @F13692@
-0 @I23865@ INDI
-1 RIN MH:I23865
-1 _UID 67168d4baf8b01efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:50:49 GMT+5.5
-1 NAME  /Apoidea/
-2 SURN Apoidea
-1 SEX M
-1 BIRT
-2 _UID 67168d4d64d7d1efbc0b9822ef79916c
-2 RIN MH:IF32601
-1 FAMS @F13694@
-1 FAMC @F13693@
-0 @I23866@ INDI
-1 RIN MH:I23866
-1 _UID 67168d5764d7d1efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:50:26 GMT+5.5
-1 NAME  /Ampulicidae/
-2 SURN Ampulicidae
-1 SEX M
-1 BIRT
-2 _UID 67168d5a64d7d1efbc0b9822ef79916c
-2 RIN MH:IF32602
-1 FAMC @F13693@
-0 @I23867@ INDI
-1 RIN MH:I23867
-1 _UID 67168d5f291f71efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:50:49 GMT+5.5
-1 SEX F
-1 FAMS @F13694@
-0 @I23868@ INDI
-1 RIN MH:I23868
-1 _UID 67168d6464d7d1efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:50:39 GMT+5.5
-1 NAME  /Anthophila (bees)/
-2 SURN Anthophila (bees)
-1 SEX F
-1 BIRT
-2 _UID 67168d6764d7d1efbc0b9822ef79916c
-2 RIN MH:IF32603
-1 FAMC @F13694@
-0 @I23869@ INDI
-1 RIN MH:I23869
-1 _UID 67168d6a64d7d1efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:50:44 GMT+5.5
-1 NAME  /"Crabronidae" (digger wasps)/
-2 SURN "Crabronidae" (digger wasps)
-1 SEX F
-1 BIRT
-2 _UID 67168d6c64d7d1efbc0b9822ef79916c
-2 RIN MH:IF32604
-1 FAMC @F13694@
-0 @I23870@ INDI
-1 RIN MH:I23870
-1 _UID 67168d6f64d7d1efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:50:49 GMT+5.5
-1 NAME  /Sphecidae/
-2 SURN Sphecidae
-1 SEX F
-1 BIRT
-2 _UID 67168d7164d7d1efbc0b9822ef79916c
-2 RIN MH:IF32605
-1 FAMC @F13694@
 0 @F1@ FAM
 1 RIN MH:F1
 1 _UID 66dfdfd660f561efbbc69822ef79916c
@@ -19938,75 +18551,6 @@
 1 MARR
 2 _UID 6710d1128b2a71efbc019822ef79916c
 2 RIN MH:FF1722
-0 @F13392@ FAM
-1 RIN MH:F13392
-1 _UID 67153712f01341efbc0b9822ef79916c
-1 HUSB @I22603@
-1 CHIL @I23225@
-1 CHIL @I23226@
-0 @F13393@ FAM
-1 RIN MH:F13393
-1 _UID 671538a36b8201efbc0b9822ef79916c
-0 @F13394@ FAM
-1 RIN MH:F13394
-1 _UID 671538a3b155e1efbc0b9822ef79916c
-0 @F13395@ FAM
-1 RIN MH:F13395
-1 _UID 671538a3566441efbc0b9822ef79916c
-0 @F13396@ FAM
-1 RIN MH:F13396
-1 _UID 671538a36a9d91efbc0b9822ef79916c
-0 @F13397@ FAM
-1 RIN MH:F13397
-1 _UID 671538a3ba37c1efbc0b9822ef79916c
-0 @F13398@ FAM
-1 RIN MH:F13398
-1 _UID 671538a3c17b01efbc0b9822ef79916c
-0 @F13399@ FAM
-1 RIN MH:F13399
-1 _UID 671538a3678c51efbc0b9822ef79916c
-0 @F13400@ FAM
-1 RIN MH:F13400
-1 _UID 671538a37a8961efbc0b9822ef79916c
-0 @F13401@ FAM
-1 RIN MH:F13401
-1 _UID 671538a3ed9621efbc0b9822ef79916c
-0 @F13402@ FAM
-1 RIN MH:F13402
-1 _UID 671538a3aa78a1efbc0b9822ef79916c
-0 @F13403@ FAM
-1 RIN MH:F13403
-1 _UID 671538a317a2b1efbc0b9822ef79916c
-0 @F13404@ FAM
-1 RIN MH:F13404
-1 _UID 671538a3e6f401efbc0b9822ef79916c
-0 @F13405@ FAM
-1 RIN MH:F13405
-1 _UID 671538a39db8c1efbc0b9822ef79916c
-0 @F13406@ FAM
-1 RIN MH:F13406
-1 _UID 671538a3cf00b1efbc0b9822ef79916c
-0 @F13407@ FAM
-1 RIN MH:F13407
-1 _UID 671538a3d20581efbc0b9822ef79916c
-0 @F13408@ FAM
-1 RIN MH:F13408
-1 _UID 671538a3de8b81efbc0b9822ef79916c
-0 @F13409@ FAM
-1 RIN MH:F13409
-1 _UID 671538a339ba21efbc0b9822ef79916c
-0 @F13410@ FAM
-1 RIN MH:F13410
-1 _UID 671538a3e36dc1efbc0b9822ef79916c
-0 @F13411@ FAM
-1 RIN MH:F13411
-1 _UID 671538a3fe68f1efbc0b9822ef79916c
-0 @F13412@ FAM
-1 RIN MH:F13412
-1 _UID 6715399f6b8201efbc0b9822ef79916c
-1 HUSB @I23266@
-1 WIFE @I23267@
-1 CHIL @I23268@
 0 @F13413@ FAM
 1 RIN MH:F13413
 1 _UID 6715399fb155e1efbc0b9822ef79916c
@@ -20118,61 +18662,6 @@
 1 _UID 6715399f353421efbc0b9822ef79916c
 1 HUSB @I23302@
 1 CHIL @I23303@
-0 @F13432@ FAM
-1 RIN MH:F13432
-1 _UID 67153ea5768731efbc0b9822ef79916c
-1 HUSB @I23304@
-1 WIFE @I23305@
-1 CHIL @I23306@
-1 CHIL @I23307@
-0 @F13433@ FAM
-1 RIN MH:F13433
-1 _UID 67153ea5d71c11efbc0b9822ef79916c
-1 HUSB @I23306@
-1 WIFE @I23308@
-1 CHIL @I23309@
-1 CHIL @I23310@
-1 CHIL @I23311@
-1 CHIL @I23312@
-1 CHIL @I23313@
-1 CHIL @I23314@
-1 CHIL @I23315@
-1 CHIL @I23316@
-1 CHIL @I23317@
-1 CHIL @I23318@
-0 @F13434@ FAM
-1 RIN MH:F13434
-1 _UID 67153ea58cb3a1efbc0b9822ef79916c
-1 HUSB @I23317@
-1 WIFE @I23319@
-1 CHIL @I23320@
-0 @F13435@ FAM
-1 RIN MH:F13435
-1 _UID 67153ea5e11821efbc0b9822ef79916c
-1 HUSB @I23318@
-1 WIFE @I23321@
-1 CHIL @I23322@
-1 CHIL @I23323@
-0 @F13436@ FAM
-1 RIN MH:F13436
-1 _UID 67153ea5408301efbc0b9822ef79916c
-1 HUSB @I23307@
-1 WIFE @I23324@
-1 CHIL @I23325@
-0 @F13437@ FAM
-1 RIN MH:F13437
-1 _UID 67153ea5bd5bb1efbc0b9822ef79916c
-1 HUSB @I23325@
-1 WIFE @I23327@
-1 CHIL @I23328@
-1 CHIL @I23329@
-0 @F13438@ FAM
-1 RIN MH:F13438
-1 _UID 67153ea59136c1efbc0b9822ef79916c
-1 HUSB @I23328@
-1 WIFE @I23330@
-1 CHIL @I23331@
-1 CHIL @I23332@
 0 @F13439@ FAM
 1 RIN MH:F13439
 1 _UID 67153ea580bdf1efbc0b9822ef79916c
@@ -20320,54 +18809,6 @@
 1 HUSB @I23384@
 1 CHIL @I23385@
 1 CHIL @I23386@
-0 @F13460@ FAM
-1 RIN MH:F13460
-1 _UID 67154648ac50d1efbc0b9822ef79916c
-1 CHIL @I23387@
-0 @F13461@ FAM
-1 RIN MH:F13461
-1 _UID 671546482ac4a1efbc0b9822ef79916c
-1 CHIL @I23388@
-0 @F13462@ FAM
-1 RIN MH:F13462
-1 _UID 67154648566441efbc0b9822ef79916c
-1 CHIL @I23389@
-0 @F13463@ FAM
-1 RIN MH:F13463
-1 _UID 671546489d3891efbc0b9822ef79916c
-1 CHIL @I23390@
-0 @F13464@ FAM
-1 RIN MH:F13464
-1 _UID 671546481bace1efbc0b9822ef79916c
-1 CHIL @I23391@
-0 @F13465@ FAM
-1 RIN MH:F13465
-1 _UID 67154648d0f031efbc0b9822ef79916c
-1 CHIL @I23392@
-0 @F13466@ FAM
-1 RIN MH:F13466
-1 _UID 671546acac50d1efbc0b9822ef79916c
-1 CHIL @I23394@
-0 @F13467@ FAM
-1 RIN MH:F13467
-1 _UID 671546ac2ac4a1efbc0b9822ef79916c
-1 CHIL @I23395@
-0 @F13468@ FAM
-1 RIN MH:F13468
-1 _UID 671546ac566441efbc0b9822ef79916c
-1 CHIL @I23396@
-0 @F13469@ FAM
-1 RIN MH:F13469
-1 _UID 671546ac9d3891efbc0b9822ef79916c
-1 CHIL @I23397@
-0 @F13470@ FAM
-1 RIN MH:F13470
-1 _UID 671546ac1bace1efbc0b9822ef79916c
-1 CHIL @I23398@
-0 @F13471@ FAM
-1 RIN MH:F13471
-1 _UID 671546acd0f031efbc0b9822ef79916c
-1 CHIL @I23399@
 0 @F13473@ FAM
 1 RIN MH:F13473
 1 _UID 6715f7fcf01341efbc0b9822ef79916c
@@ -21282,12 +19723,6 @@
 1 HUSB @I23680@
 1 CHIL @I23681@
 1 CHIL @I23682@
-0 @F13598@ FAM
-1 RIN MH:F13598
-1 _UID 67166dcd748341efbc0b9822ef79916c
-1 MARR
-2 _UID 67166dcdbfdf91efbc0b9822ef79916c
-2 RIN MH:FF1773
 0 @F13599@ FAM
 1 RIN MH:F13599
 1 _UID 67166de9748341efbc0b9822ef79916c
@@ -21707,160 +20142,6 @@
 1 HUSB @I23814@
 1 CHIL @I23816@
 1 CHIL @I23817@
-0 @F13670@ FAM
-1 RIN MH:F13670
-1 _UID 67168b3264d7d1efbc0b9822ef79916c
-1 HUSB @I23818@
-1 CHIL @I23820@
-1 CHIL @I23821@
-0 @F13671@ FAM
-1 RIN MH:F13671
-1 _UID 67168b4964d7d1efbc0b9822ef79916c
-1 HUSB @I23820@
-1 CHIL @I23822@
-1 CHIL @I23823@
-0 @F13672@ FAM
-1 RIN MH:F13672
-1 _UID 67168b5764d7d1efbc0b9822ef79916c
-1 HUSB @I23822@
-1 CHIL @I23824@
-1 CHIL @I23825@
-0 @F13673@ FAM
-1 RIN MH:F13673
-1 _UID 67168b7c64d7d1efbc0b9822ef79916c
-1 HUSB @I23825@
-1 CHIL @I23826@
-1 CHIL @I23827@
-0 @F13674@ FAM
-1 RIN MH:F13674
-1 _UID 67168b9264d7d1efbc0b9822ef79916c
-1 HUSB @I23824@
-1 CHIL @I23828@
-1 CHIL @I23829@
-0 @F13675@ FAM
-1 RIN MH:F13675
-1 _UID 67168bab64d7d1efbc0b9822ef79916c
-1 HUSB @I23828@
-1 CHIL @I23830@
-1 CHIL @I23831@
-0 @F13676@ FAM
-1 RIN MH:F13676
-1 _UID 67168c0564d7d1efbc0b9822ef79916c
-1 HUSB @I23830@
-1 CHIL @I23832@
-1 CHIL @I23833@
-0 @F13677@ FAM
-1 RIN MH:F13677
-1 _UID 67168c1264d7d1efbc0b9822ef79916c
-1 HUSB @I23833@
-1 CHIL @I23834@
-1 CHIL @I23835@
-0 @F13678@ FAM
-1 RIN MH:F13678
-1 _UID 67168c1b64d7d1efbc0b9822ef79916c
-1 HUSB @I23835@
-1 CHIL @I23836@
-1 CHIL @I23837@
-0 @F13679@ FAM
-1 RIN MH:F13679
-1 _UID 67168c3464d7d1efbc0b9822ef79916c
-1 HUSB @I23834@
-1 CHIL @I23838@
-1 CHIL @I23839@
-0 @F13680@ FAM
-1 RIN MH:F13680
-1 _UID 67168c4164d7d1efbc0b9822ef79916c
-1 HUSB @I23838@
-1 CHIL @I23840@
-1 CHIL @I23841@
-0 @F13681@ FAM
-1 RIN MH:F13681
-1 _UID 67168c4d64d7d1efbc0b9822ef79916c
-1 HUSB @I23840@
-1 CHIL @I23842@
-1 CHIL @I23843@
-0 @F13682@ FAM
-1 RIN MH:F13682
-1 _UID 67168c5864d7d1efbc0b9822ef79916c
-1 HUSB @I23842@
-1 CHIL @I23844@
-1 CHIL @I23845@
-0 @F13683@ FAM
-1 RIN MH:F13683
-1 _UID 67168c7864d7d1efbc0b9822ef79916c
-1 HUSB @I23832@
-1 CHIL @I23846@
-1 CHIL @I23847@
-0 @F13684@ FAM
-1 RIN MH:F13684
-1 _UID 67168c8364d7d1efbc0b9822ef79916c
-1 HUSB @I23847@
-1 CHIL @I23848@
-1 CHIL @I23849@
-0 @F13685@ FAM
-1 RIN MH:F13685
-1 _UID 67168c9864d7d1efbc0b9822ef79916c
-1 HUSB @I23846@
-1 CHIL @I23850@
-0 @F13686@ FAM
-1 RIN MH:F13686
-1 _UID 67168cb564d7d1efbc0b9822ef79916c
-1 HUSB @I23850@
-1 CHIL @I23851@
-1 CHIL @I23852@
-0 @F13687@ FAM
-1 RIN MH:F13687
-1 _UID 67168cc064d7d1efbc0b9822ef79916c
-1 HUSB @I23851@
-1 CHIL @I23853@
-1 CHIL @I23854@
-0 @F13688@ FAM
-1 RIN MH:F13688
-1 _UID 67168cf064d7d1efbc0b9822ef79916c
-1 HUSB @I23853@
-1 CHIL @I23855@
-1 CHIL @I23856@
-0 @F13689@ FAM
-1 RIN MH:F13689
-1 _UID 67168cfd64d7d1efbc0b9822ef79916c
-1 HUSB @I23856@
-1 CHIL @I23857@
-1 CHIL @I23858@
-0 @F13690@ FAM
-1 RIN MH:F13690
-1 _UID 67168d0f64d7d1efbc0b9822ef79916c
-1 HUSB @I23857@
-1 CHIL @I23859@
-1 CHIL @I23860@
-0 @F13691@ FAM
-1 RIN MH:F13691
-1 _UID 67168d2964d7d1efbc0b9822ef79916c
-1 HUSB @I23855@
-1 CHIL @I23861@
-1 CHIL @I23862@
-0 @F13692@ FAM
-1 RIN MH:F13692
-1 _UID 67168d3a64d7d1efbc0b9822ef79916c
-1 HUSB @I23861@
-1 CHIL @I23863@
-1 CHIL @I23864@
-0 @F13693@ FAM
-1 RIN MH:F13693
-1 _UID 67168d4b64d7d1efbc0b9822ef79916c
-1 HUSB @I23863@
-1 CHIL @I23865@
-1 CHIL @I23866@
-0 @F13694@ FAM
-1 RIN MH:F13694
-1 _UID 67168d5f64d7d1efbc0b9822ef79916c
-1 HUSB @I23865@
-1 WIFE @I23867@
-1 CHIL @I23868@
-1 CHIL @I23869@
-1 CHIL @I23870@
-1 MARR
-2 _UID 67168d5faf8b01efbc0b9822ef79916c
-2 RIN MH:FF1777
 0 @S13@ SOUR
 1 RIN MH:S13
 0 @S14@ SOUR
