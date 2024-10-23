@@ -11,13 +11,12 @@
 2 CORP MyHeritage.com
 1 SUBM @U1@
 1 DEST MYHERITAGE
-1 DATE 22 OCT 2024
-2 TIME 13:43:40 
+1 DATE 23 OCT 2024
+2 TIME 13:35:20 
 2 _TIMEZONE GMT+5.5
-1 _RINS I23870,F13694,N17729,M0,R0,S25,U535,L0,P14219,Q0,IF32605,FF1777
+1 _RINS I24089,F13805,N17732,M0,R0,S25,U536,L0,P14219,Q0,IF32830,FF1778
 1 _UID 67175D663F8F31A3B4DDFBF5A00005C5
 1 _DESCRIPTION_AWARE Y
-1 _FACTS_DEFRAGGED Y
 0  _PUBLISH
 1 _USERNAME ericrichardbishop@@gmail.com
 1 _DISABLED Y
@@ -43,12 +42,12 @@
 1 RIN MH:U10
 0 @U11@ SUBM
 1 RIN MH:U11
+0 @U12@ SUBM
+1 RIN MH:U12
 1 ADDR
 2 CITY Waihi
 2 STAE Waikato
 2 CTRY New Zealand
-0 @U12@ SUBM
-1 RIN MH:U12
 0 @U13@ SUBM
 1 RIN MH:U13
 0 @U14@ SUBM
@@ -61,49 +60,49 @@
 1 RIN MH:U17
 0 @U18@ SUBM
 1 RIN MH:U18
+0 @U19@ SUBM
+1 RIN MH:U19
 1 ADDR
 2 CITY St. George
 2 STAE Utah
 2 POST 84770
 2 CTRY United States
-0 @U19@ SUBM
-1 RIN MH:U19
 0 @U20@ SUBM
 1 RIN MH:U20
 0 @U21@ SUBM
 1 RIN MH:U21
+0 @U22@ SUBM
+1 RIN MH:U22
 1 ADDR
 2 CITY Kongsberg
 2 STAE Buskerud
 2 CTRY Norway
-0 @U22@ SUBM
-1 RIN MH:U22
 0 @U23@ SUBM
 1 RIN MH:U23
+0 @U24@ SUBM
+1 RIN MH:U24
 1 ADDR 1 lieu dit Magrens
 2 ADR1 1 lieu dit Magrens
 2 CITY Lagrace-Dieu
 2 STAE Haute-Garonne
 2 POST 31190
 2 CTRY France
-0 @U24@ SUBM
-1 RIN MH:U24
 0 @U25@ SUBM
 1 RIN MH:U25
 0 @U26@ SUBM
 1 RIN MH:U26
+0 @U27@ SUBM
+1 RIN MH:U27
 1 ADDR
 2 CITY Kecskemét
 2 STAE Bacs-Kiskun
 2 CTRY Hungary
-0 @U27@ SUBM
-1 RIN MH:U27
+0 @U28@ SUBM
+1 RIN MH:U28
 1 ADDR
 2 CITY Grenoble
 2 STAE Rhône-Alpes
 2 CTRY France
-0 @U28@ SUBM
-1 RIN MH:U28
 0 @U29@ SUBM
 1 RIN MH:U29
 0 @U30@ SUBM
@@ -140,12 +139,12 @@
 1 RIN MH:U45
 0 @U46@ SUBM
 1 RIN MH:U46
+0 @U47@ SUBM
+1 RIN MH:U47
 1 ADDR
 2 CITY Cravinhos
 2 STAE State of São Paulo
 2 CTRY Brazil
-0 @U47@ SUBM
-1 RIN MH:U47
 0 @U48@ SUBM
 1 RIN MH:U48
 0 @U49@ SUBM
@@ -156,26 +155,26 @@
 1 RIN MH:U51
 0 @U52@ SUBM
 1 RIN MH:U52
+0 @U53@ SUBM
+1 RIN MH:U53
 1 ADDR
 2 CITY Palawan
 2 STAE MIMAROPA
 2 CTRY Philippines
-0 @U53@ SUBM
-1 RIN MH:U53
+0 @U54@ SUBM
+1 RIN MH:U54
 1 ADDR
 2 CITY South Bend
 2 STAE IN
 2 POST 46619
 2 CTRY United States
-0 @U54@ SUBM
-1 RIN MH:U54
 0 @U55@ SUBM
 1 RIN MH:U55
+0 @U56@ SUBM
+1 RIN MH:U56
 1 ADDR
 2 CITY Tal Menashe
 2 CTRY Israel
-0 @U56@ SUBM
-1 RIN MH:U56
 0 @U57@ SUBM
 1 RIN MH:U57
 0 @U58@ SUBM
@@ -200,11 +199,11 @@
 1 RIN MH:U67
 0 @U68@ SUBM
 1 RIN MH:U68
+0 @U69@ SUBM
+1 RIN MH:U69
 1 ADDR
 2 CITY 457 45  Hamburgsund
 2 CTRY Sweden
-0 @U69@ SUBM
-1 RIN MH:U69
 0 @U70@ SUBM
 1 RIN MH:U70
 0 @U71@ SUBM
@@ -221,13 +220,13 @@
 1 RIN MH:U76
 0 @U77@ SUBM
 1 RIN MH:U77
+0 @U78@ SUBM
+1 RIN MH:U78
 1 ADDR
 2 CITY Denver
 2 STAE Colorado
 2 POST 80202
 2 CTRY United States
-0 @U78@ SUBM
-1 RIN MH:U78
 0 @U79@ SUBM
 1 RIN MH:U79
 0 @U80@ SUBM
@@ -262,11 +261,11 @@
 1 RIN MH:U94
 0 @U95@ SUBM
 1 RIN MH:U95
+0 @U96@ SUBM
+1 RIN MH:U96
 1 ADDR
 2 CITY Johannesburg
 2 CTRY South Africa
-0 @U96@ SUBM
-1 RIN MH:U96
 0 @U97@ SUBM
 1 RIN MH:U97
 0 @U98@ SUBM
@@ -283,20 +282,20 @@
 1 RIN MH:U103
 0 @U104@ SUBM
 1 RIN MH:U104
+0 @U105@ SUBM
+1 RIN MH:U105
 1 ADDR
 2 CITY Ottestad
 2 STAE Hedmark
 2 CTRY Norway
-0 @U105@ SUBM
-1 RIN MH:U105
 0 @U106@ SUBM
 1 RIN MH:U106
+0 @U107@ SUBM
+1 RIN MH:U107
 1 ADDR
 2 CITY Tucson
 2 STAE Arizona
 2 CTRY United States
-0 @U107@ SUBM
-1 RIN MH:U107
 0 @U108@ SUBM
 1 RIN MH:U108
 0 @U109@ SUBM
@@ -365,12 +364,12 @@
 1 RIN MH:U140
 0 @U141@ SUBM
 1 RIN MH:U141
+0 @U142@ SUBM
+1 RIN MH:U142
 1 ADDR
 2 CITY Traverse City
 2 STAE Michigan
 2 CTRY United States
-0 @U142@ SUBM
-1 RIN MH:U142
 0 @U143@ SUBM
 1 RIN MH:U143
 0 @U144@ SUBM
@@ -399,16 +398,16 @@
 1 RIN MH:U155
 0 @U156@ SUBM
 1 RIN MH:U156
+0 @U157@ SUBM
+1 RIN MH:U157
 1 ADDR
 2 STAE Virginia
 2 CTRY United States
-0 @U157@ SUBM
-1 RIN MH:U157
+0 @U158@ SUBM
+1 RIN MH:U158
 1 ADDR Gandijeva 49B/49
 2 ADR1 Gandijeva 49B/49
 2 CITY Belgrade
-0 @U158@ SUBM
-1 RIN MH:U158
 0 @U159@ SUBM
 1 RIN MH:U159
 0 @U160@ SUBM
@@ -417,12 +416,12 @@
 1 RIN MH:U161
 0 @U162@ SUBM
 1 RIN MH:U162
+0 @U163@ SUBM
+1 RIN MH:U163
 1 ADDR
 2 CITY Fredericia
 2 STAE Syddanmark
 2 CTRY Danmark
-0 @U163@ SUBM
-1 RIN MH:U163
 0 @U164@ SUBM
 1 RIN MH:U164
 0 @U165@ SUBM
@@ -445,27 +444,27 @@
 1 RIN MH:U173
 0 @U174@ SUBM
 1 RIN MH:U174
+0 @U175@ SUBM
+1 RIN MH:U175
 1 ADDR
 2 CITY Rio de Janeiro
 2 STAE RJ
 2 CTRY Brasil
-0 @U175@ SUBM
-1 RIN MH:U175
+0 @U176@ SUBM
+1 RIN MH:U176
 1 ADDR
 2 CITY Sydney
 2 STAE New South Wales
 2 CTRY Australia
-0 @U176@ SUBM
-1 RIN MH:U176
 0 @U177@ SUBM
 1 RIN MH:U177
+0 @U178@ SUBM
+1 RIN MH:U178
 1 ADDR
 2 CITY Grand Rapids
 2 STAE MI
 2 POST 49525
 2 CTRY United States
-0 @U178@ SUBM
-1 RIN MH:U178
 0 @U179@ SUBM
 1 RIN MH:U179
 0 @U180@ SUBM
@@ -498,12 +497,12 @@
 1 RIN MH:U193
 0 @U194@ SUBM
 1 RIN MH:U194
+0 @U195@ SUBM
+1 RIN MH:U195
 1 ADDR
 2 CITY Bratislava
 2 STAE EU
 2 CTRY Slovakia
-0 @U195@ SUBM
-1 RIN MH:U195
 0 @U196@ SUBM
 1 RIN MH:U196
 0 @U197@ SUBM
@@ -542,11 +541,11 @@
 1 RIN MH:U213
 0 @U214@ SUBM
 1 RIN MH:U214
+0 @U215@ SUBM
+1 RIN MH:U215
 1 ADDR
 2 STAE Selangor
 2 CTRY Malaysia
-0 @U215@ SUBM
-1 RIN MH:U215
 0 @U216@ SUBM
 1 RIN MH:U216
 0 @U217@ SUBM
@@ -571,10 +570,10 @@
 1 RIN MH:U226
 0 @U227@ SUBM
 1 RIN MH:U227
-1 ADDR
-2 CTRY Brunei
 0 @U228@ SUBM
 1 RIN MH:U228
+1 ADDR
+2 CTRY Brunei
 0 @U229@ SUBM
 1 RIN MH:U229
 0 @U230@ SUBM
@@ -585,12 +584,12 @@
 1 RIN MH:U232
 0 @U233@ SUBM
 1 RIN MH:U233
+0 @U234@ SUBM
+1 RIN MH:U234
 1 ADDR
 2 CITY Kendal
 2 STAE Central Java
 2 CTRY Indonesia
-0 @U234@ SUBM
-1 RIN MH:U234
 0 @U235@ SUBM
 1 RIN MH:U235
 0 @U236@ SUBM
@@ -679,35 +678,35 @@
 1 RIN MH:U277
 0 @U278@ SUBM
 1 RIN MH:U278
+0 @U279@ SUBM
+1 RIN MH:U279
 1 ADDR
 2 CITY Santiago
 2 CTRY Chile
-0 @U279@ SUBM
-1 RIN MH:U279
 0 @U280@ SUBM
 1 RIN MH:U280
 0 @U281@ SUBM
 1 RIN MH:U281
 0 @U282@ SUBM
 1 RIN MH:U282
+0 @U283@ SUBM
+1 RIN MH:U283
 1 ADDR
 2 CITY Sarasota
 2 STAE FL
 2 CTRY United States
-0 @U283@ SUBM
-1 RIN MH:U283
 0 @U284@ SUBM
 1 RIN MH:U284
 0 @U285@ SUBM
 1 RIN MH:U285
 0 @U286@ SUBM
 1 RIN MH:U286
+0 @U287@ SUBM
+1 RIN MH:U287
 1 ADDR
 2 CITY Medellín
 2 STAE Antioquia
 2 CTRY Colombia
-0 @U287@ SUBM
-1 RIN MH:U287
 0 @U288@ SUBM
 1 RIN MH:U288
 0 @U289@ SUBM
@@ -732,11 +731,11 @@
 1 RIN MH:U298
 0 @U299@ SUBM
 1 RIN MH:U299
+0 @U300@ SUBM
+1 RIN MH:U300
 1 ADDR
 2 CITY MONTEVIDEO
 2 CTRY Uruguay
-0 @U300@ SUBM
-1 RIN MH:U300
 0 @U301@ SUBM
 1 RIN MH:U301
 0 @U302@ SUBM
@@ -795,12 +794,12 @@
 1 RIN MH:U328
 0 @U329@ SUBM
 1 RIN MH:U329
+0 @U330@ SUBM
+1 RIN MH:U330
 1 ADDR
 2 CITY Mexico City
 2 STAE Federal District
 2 CTRY Mexico
-0 @U330@ SUBM
-1 RIN MH:U330
 0 @U331@ SUBM
 1 RIN MH:U331
 0 @U332@ SUBM
@@ -865,13 +864,13 @@
 1 RIN MH:U361
 0 @U362@ SUBM
 1 RIN MH:U362
+0 @U363@ SUBM
+1 RIN MH:U363
 1 ADDR
 2 CITY Mount Morris Township
 2 STAE WI
 2 POST 54984
 2 CTRY United States
-0 @U363@ SUBM
-1 RIN MH:U363
 0 @U364@ SUBM
 1 RIN MH:U364
 0 @U365@ SUBM
@@ -886,21 +885,21 @@
 1 RIN MH:U369
 0 @U370@ SUBM
 1 RIN MH:U370
+0 @U371@ SUBM
+1 RIN MH:U371
 1 ADDR
 2 CITY Bogotá
 2 STAE Bogotá
 2 CTRY Colombia
-0 @U371@ SUBM
-1 RIN MH:U371
 0 @U372@ SUBM
 1 RIN MH:U372
 0 @U373@ SUBM
 1 RIN MH:U373
+0 @U374@ SUBM
+1 RIN MH:U374
 1 ADDR
 2 CITY Montevideo
 2 CTRY Uruguay
-0 @U374@ SUBM
-1 RIN MH:U374
 0 @U375@ SUBM
 1 RIN MH:U375
 0 @U376@ SUBM
@@ -931,12 +930,12 @@
 1 RIN MH:U388
 0 @U389@ SUBM
 1 RIN MH:U389
+0 @U390@ SUBM
+1 RIN MH:U390
 1 ADDR
 2 CITY Viña del Mar
 2 STAE Valparaíso Region
 2 CTRY Chile
-0 @U390@ SUBM
-1 RIN MH:U390
 0 @U391@ SUBM
 1 RIN MH:U391
 0 @U392@ SUBM
@@ -997,17 +996,17 @@
 1 RIN MH:U419
 0 @U420@ SUBM
 1 RIN MH:U420
+0 @U421@ SUBM
+1 RIN MH:U421
 1 ADDR
 2 CITY Kongsberg
 2 STAE Buskerud
 2 CTRY Norway
-0 @U421@ SUBM
-1 RIN MH:U421
+0 @U422@ SUBM
+1 RIN MH:U422
 1 ADDR
 2 CITY København
 2 CTRY Denmark
-0 @U422@ SUBM
-1 RIN MH:U422
 0 @U423@ SUBM
 1 RIN MH:U423
 0 @U424@ SUBM
@@ -1028,12 +1027,12 @@
 1 RIN MH:U431
 0 @U432@ SUBM
 1 RIN MH:U432
+0 @U433@ SUBM
+1 RIN MH:U433
 1 ADDR
 2 CITY Mar del Plata
 2 STAE Buenos Aires Province
 2 CTRY Argentina
-0 @U433@ SUBM
-1 RIN MH:U433
 0 @U434@ SUBM
 1 RIN MH:U434
 0 @U435@ SUBM
@@ -1046,12 +1045,12 @@
 1 RIN MH:U438
 0 @U439@ SUBM
 1 RIN MH:U439
+0 @U440@ SUBM
+1 RIN MH:U440
 1 ADDR
 2 CITY Madrid
 2 STAE Community of Madrid
 2 CTRY Spain
-0 @U440@ SUBM
-1 RIN MH:U440
 0 @U441@ SUBM
 1 RIN MH:U441
 0 @U442@ SUBM
@@ -1090,12 +1089,12 @@
 1 RIN MH:U458
 0 @U459@ SUBM
 1 RIN MH:U459
+0 @U460@ SUBM
+1 RIN MH:U460
 1 ADDR
 2 CITY Sydney
 2 STAE New South Wales
 2 CTRY Australia
-0 @U460@ SUBM
-1 RIN MH:U460
 0 @U461@ SUBM
 1 RIN MH:U461
 0 @U462@ SUBM
@@ -1112,22 +1111,22 @@
 1 RIN MH:U467
 0 @U468@ SUBM
 1 RIN MH:U468
+0 @U469@ SUBM
+1 RIN MH:U469
 1 ADDR
 2 CITY Saint Laurent de Cerdans
 2 STAE Pyrénées-Orientales
 2 CTRY France
-0 @U469@ SUBM
-1 RIN MH:U469
 0 @U470@ SUBM
 1 RIN MH:U470
+0 @U471@ SUBM
+1 RIN MH:U471
 1 ADDR  Kg baru kundang 
 2 ADR1  Kg baru kundang 
 2 CITY Rawang
 2 STAE Selangor
 2 POST 48000
 2 CTRY Malaysia
-0 @U471@ SUBM
-1 RIN MH:U471
 0 @U472@ SUBM
 1 RIN MH:U472
 0 @U473@ SUBM
@@ -1146,13 +1145,13 @@
 1 RIN MH:U479
 0 @U480@ SUBM
 1 RIN MH:U480
+0 @U481@ SUBM
+1 RIN MH:U481
 1 ADDR
 2 CITY Tucson
 2 STAE Arizona
 2 POST 85716
 2 CTRY United States
-0 @U481@ SUBM
-1 RIN MH:U481
 0 @U482@ SUBM
 1 RIN MH:U482
 0 @U483@ SUBM
@@ -1163,12 +1162,12 @@
 1 RIN MH:U485
 0 @U486@ SUBM
 1 RIN MH:U486
+0 @U487@ SUBM
+1 RIN MH:U487
 1 ADDR
 2 CITY Pannipitiya
 2 STAE WP
 2 CTRY Sri Lanka
-0 @U487@ SUBM
-1 RIN MH:U487
 0 @U488@ SUBM
 1 RIN MH:U488
 0 @U489@ SUBM
@@ -1191,12 +1190,12 @@
 1 RIN MH:U497
 0 @U498@ SUBM
 1 RIN MH:U498
+0 @U499@ SUBM
+1 RIN MH:U499
 1 ADDR
 2 CITY Palawan
 2 STAE MIMAROPA
 2 CTRY Philippines
-0 @U499@ SUBM
-1 RIN MH:U499
 0 @U500@ SUBM
 1 RIN MH:U500
 0 @U501@ SUBM
@@ -1211,25 +1210,25 @@
 1 RIN MH:U505
 0 @U506@ SUBM
 1 RIN MH:U506
+0 @U507@ SUBM
+1 RIN MH:U507
 1 ADDR
 2 CITY Waihi
 2 STAE Waikato
 2 CTRY New Zealand
-0 @U507@ SUBM
-1 RIN MH:U507
+0 @U508@ SUBM
+1 RIN MH:U508
 1 ADDR
 2 CITY 457 45  Hamburgsund
 2 CTRY Sweden
-0 @U508@ SUBM
-1 RIN MH:U508
 0 @U509@ SUBM
 1 RIN MH:U509
+0 @U510@ SUBM
+1 RIN MH:U510
 1 ADDR
 2 CITY Gurgaon
 2 STAE Haryana
 2 CTRY India
-0 @U510@ SUBM
-1 RIN MH:U510
 0 @U511@ SUBM
 1 RIN MH:U511
 0 @U512@ SUBM
@@ -1252,33 +1251,33 @@
 1 RIN MH:U520
 0 @U521@ SUBM
 1 RIN MH:U521
+0 @U522@ SUBM
+1 RIN MH:U522
 1 ADDR
 2 CITY Denver
 2 STAE Colorado
 2 POST 80202
 2 CTRY United States
-0 @U522@ SUBM
-1 RIN MH:U522
 0 @U523@ SUBM
 1 RIN MH:U523
 0 @U524@ SUBM
 1 RIN MH:U524
 0 @U525@ SUBM
 1 RIN MH:U525
+0 @U526@ SUBM
+1 RIN MH:U526
 1 ADDR
 2 CITY Fontaniva
 2 STAE Veneto
 2 CTRY Italy
-0 @U526@ SUBM
-1 RIN MH:U526
 0 @U527@ SUBM
 1 RIN MH:U527
+0 @U528@ SUBM
+1 RIN MH:U528
 1 ADDR
 2 CITY Grenoble
 2 STAE Rhône-Alpes
 2 CTRY France
-0 @U528@ SUBM
-1 RIN MH:U528
 0 @U529@ SUBM
 1 RIN MH:U529
 0 @U530@ SUBM
@@ -1291,14 +1290,16 @@
 1 RIN MH:U533
 0 @U534@ SUBM
 1 RIN MH:U534
+0 @U535@ SUBM
+1 RIN MH:U535
 1 ADDR 1 lieu dit Magrens
 2 ADR1 1 lieu dit Magrens
 2 CITY Lagrace-Dieu
 2 STAE Haute-Garonne
 2 POST 31190
 2 CTRY France
-0 @U535@ SUBM
-1 RIN MH:U535
+0 @U536@ SUBM
+1 RIN MH:U536
 0 @I1@ INDI
 1 RIN MH:I1
 1 _UID 66dfdfd760f561efbbc69822ef79916c
@@ -9977,7 +9978,7 @@
 0 @I23186@ INDI
 1 RIN MH:I23186
 1 _UID 670fcaa244ea91efbc019822ef79916c
-1 _UPD 20 OCT 2024 23:41:50 GMT+5.5
+1 _UPD 23 OCT 2024 00:04:20 GMT+5.5
 1 NAME Actinus /Actinopterygii/
 2 GIVN Actinus
 2 SURN Actinopterygii
@@ -9985,6 +9986,11 @@
 1 BIRT
 2 _UID 670fcaaa44ea91efbc019822ef79916c
 2 RIN MH:IF32163
+2 DATE 400Mya
+1 DEAT
+2 _UID 6717f0285408c1efbc109822ef79916c
+2 RIN MH:IF32611
+1 FAMS @F13695@
 1 FAMC @F13367@
 0 @I23187@ INDI
 1 RIN MH:I23187
@@ -10361,7 +10367,6 @@
 1 SEX M
 1 FAMS @F13413@
 1 FAMC @F13090@
-1 NOTE Position in narrative: Parasite on the sons of Plantus; married to Ferma.
 0 @I23270@ INDI
 1 RIN MH:I23270
 1 _UID 6715399fd71c11efbc0b9822ef79916c
@@ -10370,7 +10375,6 @@
 2 GIVN Ferma
 1 SEX F
 1 FAMS @F13413@
-1 NOTE Position in narrative: Married to Dikar.
 0 @I23271@ INDI
 1 RIN MH:I23271
 1 _UID 6715399f7a0931efbc0b9822ef79916c
@@ -10381,7 +10385,6 @@
 1 SEX M
 1 FAMS @F13414@
 1 FAMC @F13413@
-1 NOTE Position in narrative: Son of Dikar and Ferma; parasite on the sons of Plantus; father of the Cup Fungi.
 0 @I23272@ INDI
 1 RIN MH:I23272
 1 _UID 6715399fac50d1efbc0b9822ef79916c
@@ -10392,7 +10395,6 @@
 1 SEX M
 1 FAMS @F13422@
 1 FAMC @F13413@
-1 NOTE Position in narrative: Son of Dikar and Ferma; parasite on the sons of Plantus; father of the mushrooms.
 0 @I23273@ INDI
 1 RIN MH:I23273
 1 _UID 6715399f9d3891efbc0b9822ef79916c
@@ -10402,7 +10404,6 @@
 1 SEX M
 1 FAMS @F13415@
 1 FAMC @F13414@
-1 NOTE Position in narrative: Son of Ascus; lived as a yeast inside plants; father of the fission yeast.
 0 @I23274@ INDI
 1 RIN MH:I23274
 1 _UID 6715399fd0f031efbc0b9822ef79916c
@@ -10412,7 +10413,6 @@
 1 SEX M
 1 FAMS @F13416@
 1 FAMC @F13414@
-1 NOTE Position in narrative: Son of Ascus; abandoned parasitism; lived freely in soils.
 0 @I23275@ INDI
 1 RIN MH:I23275
 1 _UID 6715399f803da1efbc0b9822ef79916c
@@ -10421,7 +10421,6 @@
 2 GIVN Fission Yeast
 1 SEX M
 1 FAMC @F13415@
-1 NOTE Position in narrative: Sons of Taphrin; live in our lungs; cause pneumocystis pneumonia.
 0 @I23276@ INDI
 1 RIN MH:I23276
 1 _UID 6715399f716b11efbc0b9822ef79916c
@@ -10431,7 +10430,6 @@
 1 SEX M
 1 FAMS @F13418@
 1 FAMC @F13416@
-1 NOTE Position in narrative: Son of Saccharos.
 0 @I23277@ INDI
 1 RIN MH:I23277
 1 _UID 6715399f1722e1efbc0b9822ef79916c
@@ -10442,7 +10440,6 @@
 1 SEX M
 1 FAMS @F13417@
 1 FAMC @F13416@
-1 NOTE Position in narrative: Son of Saccharos; became a small single cell yeast; associated with bread and beer.
 0 @I23278@ INDI
 1 RIN MH:I23278
 1 _UID 6715399fa27d11efbc0b9822ef79916c
@@ -10451,7 +10448,6 @@
 2 GIVN Spherical Yeast
 1 SEX M
 1 FAMC @F13417@
-1 NOTE Position in narrative: Sons of Melchizedek; budded off from him in spheres.
 0 @I23279@ INDI
 1 RIN MH:I23279
 1 _UID 6715399facd081efbc0b9822ef79916c
@@ -10461,7 +10457,6 @@
 1 SEX M
 1 FAMS @F13419@
 1 FAMC @F13418@
-1 NOTE Position in narrative: Son of Peziz.
 0 @I23280@ INDI
 1 RIN MH:I23280
 1 _UID 6715399fe11821efbc0b9822ef79916c
@@ -10470,7 +10465,6 @@
 2 GIVN Orbillus
 1 SEX M
 1 FAMC @F13418@
-1 NOTE Position in narrative: Son of Peziz; preyed upon the sons of Nematos.
 0 @I23281@ INDI
 1 RIN MH:I23281
 1 _UID 6715399fb1d5b1efbc0b9822ef79916c
@@ -10479,7 +10473,6 @@
 2 GIVN Ganymede
 1 SEX M
 1 FAMC @F13419@
-1 NOTE Position in narrative: Twin son of Lopez; ancestor of the cup fungi.
 0 @I23282@ INDI
 1 RIN MH:I23282
 1 _UID 6715399f8bdfd1efbc0b9822ef79916c
@@ -10489,7 +10482,6 @@
 1 SEX M
 1 FAMS @F13420@
 1 FAMC @F13419@
-1 NOTE Position in narrative: Twin son of Lopez; father of the filamentous fungi.
 0 @I23283@ INDI
 1 RIN MH:I23283
 1 _UID 6715399f26caf1efbc0b9822ef79916c
@@ -10498,7 +10490,6 @@
 2 GIVN Pyrenos
 1 SEX M
 1 FAMC @F13420@
-1 NOTE Position in narrative: Son of Leotios.
 0 @I23284@ INDI
 1 RIN MH:I23284
 1 _UID 6715399ff09311efbc0b9822ef79916c
@@ -10508,7 +10499,6 @@
 1 SEX M
 1 FAMS @F13421@
 1 FAMC @F13420@
-1 NOTE Position in narrative: Son of Leotios; ancestor of lichens and others.
 0 @I23285@ INDI
 1 RIN MH:I23285
 1 _UID 6715399fc1fb51efbc0b9822ef79916c
@@ -10517,7 +10507,6 @@
 2 GIVN Penicillius
 1 SEX M
 1 FAMC @F13421@
-1 NOTE Position in narrative: Descendant of Lecanius; creator of blue cheese and penicillin.
 0 @I23286@ INDI
 1 RIN MH:I23286
 1 _UID 6715399f8c33f1efbc0b9822ef79916c
@@ -10526,7 +10515,6 @@
 2 GIVN Capnos
 1 SEX M
 1 FAMC @F13421@
-1 NOTE Position in narrative: Descendant of Lecanius; father of the Soot Mold.
 0 @I23287@ INDI
 1 RIN MH:I23287
 1 _UID 6715399f9136c1efbc0b9822ef79916c
@@ -10536,7 +10524,6 @@
 1 SEX M
 1 FAMS @F13423@
 1 FAMC @F13422@
-1 NOTE Position in narrative: Son of Baston.
 0 @I23288@ INDI
 1 RIN MH:I23288
 1 _UID 6715399f2da8d1efbc0b9822ef79916c
@@ -10546,7 +10533,6 @@
 1 SEX M
 1 FAMS @F13425@
 1 FAMC @F13423@
-1 NOTE Position in narrative: Son of Baset.
 0 @I23289@ INDI
 1 RIN MH:I23289
 1 _UID 6715399f629821efbc0b9822ef79916c
@@ -10557,7 +10543,6 @@
 1 SEX M
 1 FAMS @F13424@
 1 FAMC @F13423@
-1 NOTE Position in narrative: Son of Baset; father of rusts.
 0 @I23290@ INDI
 1 RIN MH:I23290
 1 _UID 6715399f56e411efbc0b9822ef79916c
@@ -10566,7 +10551,6 @@
 2 GIVN Botry
 1 SEX M
 1 FAMC @F13424@
-1 NOTE Position in narrative: Son of Puccini; rejected multicellularity; became a yeast.
 0 @I23291@ INDI
 1 RIN MH:I23291
 1 _UID 6715399f45c671efbc0b9822ef79916c
@@ -10577,7 +10561,6 @@
 1 SEX F
 1 FAMS @F13426@
 1 FAMC @F13425@
-1 NOTE Position in narrative: Daughter of Ortho; mother of smuts.
 0 @I23292@ INDI
 1 RIN MH:I23292
 1 _UID 6715399f4994c1efbc0b9822ef79916c
@@ -10588,7 +10571,6 @@
 1 SEX M
 1 FAMS @F13427@
 1 FAMC @F13425@
-1 NOTE Position in narrative: Son of Ortho; abandoned parasitism; went to live in the desert.
 0 @I23293@ INDI
 1 RIN MH:I23293
 1 _UID 6715399f5491f1efbc0b9822ef79916c
@@ -10597,7 +10579,6 @@
 2 GIVN Smuts
 1 SEX F
 1 FAMC @F13426@
-1 NOTE Position in narrative: Daughters of Ustella; bless corn harvests.
 0 @I23294@ INDI
 1 RIN MH:I23294
 1 _UID 6715399fe80fe1efbc0b9822ef79916c
@@ -10607,7 +10588,6 @@
 1 SEX M
 1 FAMS @F13428@
 1 FAMC @F13427@
-1 NOTE Position in narrative: Son of Agaricus I; formed a gelatinous vessel for his spores.
 0 @I23295@ INDI
 1 RIN MH:I23295
 1 _UID 6715399fc38eb1efbc0b9822ef79916c
@@ -10616,7 +10596,6 @@
 2 GIVN Bartholomew
 1 SEX M
 1 FAMC @F13427@
-1 NOTE Position in narrative: Son of Agaricus I.
 0 @I23296@ INDI
 1 RIN MH:I23296
 1 _UID 6715399f8e4611efbc0b9822ef79916c
@@ -10625,7 +10604,6 @@
 2 GIVN William
 1 SEX M
 1 FAMC @F13427@
-1 NOTE Position in narrative: Son of Agaricus I.
 0 @I23297@ INDI
 1 RIN MH:I23297
 1 _UID 6715399f581ff1efbc0b9822ef79916c
@@ -10634,7 +10612,6 @@
 2 GIVN Gemini
 1 SEX M
 1 FAMC @F13427@
-1 NOTE Position in narrative: Son of Agaricus I.
 0 @I23298@ INDI
 1 RIN MH:I23298
 1 _UID 6715399f6977b1efbc0b9822ef79916c
@@ -10643,7 +10620,6 @@
 2 GIVN Tremello
 1 SEX M
 1 FAMC @F13428@
-1 NOTE Position in narrative: Son of Jello; spent youth as a yeast; built a great jellyshroom.
 0 @I23299@ INDI
 1 RIN MH:I23299
 1 _UID 6715399f24bf11efbc0b9822ef79916c
@@ -10653,7 +10629,6 @@
 1 SEX M
 1 FAMS @F13429@
 1 FAMC @F13428@
-1 NOTE Position in narrative: Son of Jello.
 0 @I23300@ INDI
 1 RIN MH:I23300
 1 _UID 6715399f747281efbc0b9822ef79916c
@@ -10662,7 +10637,6 @@
 2 GIVN Dacrum
 1 SEX M
 1 FAMC @F13429@
-1 NOTE Position in narrative: Son of Dagar; ancestor of jelly fungi.
 0 @I23301@ INDI
 1 RIN MH:I23301
 1 _UID 6715399f4e78e1efbc0b9822ef79916c
@@ -10672,7 +10646,6 @@
 1 SEX M
 1 FAMS @F13430@
 1 FAMC @F13429@
-1 NOTE Position in narrative: Son of Dagar; created the first mushroom.
 0 @I23302@ INDI
 1 RIN MH:I23302
 1 _UID 6715399fe36dc1efbc0b9822ef79916c
@@ -10682,7 +10655,6 @@
 1 SEX M
 1 FAMS @F13431@
 1 FAMC @F13430@
-1 NOTE Position in narrative: Sons of Agaricus II; create many nourishing mushrooms.
 0 @I23303@ INDI
 1 RIN MH:I23303
 1 _UID 6715399ffe68f1efbc0b9822ef79916c
@@ -10691,7 +10663,6 @@
 2 GIVN Toadstools
 1 SEX M
 1 FAMC @F13431@
-1 NOTE Position in narrative: Corrupted mushrooms; toxic due to toads sitting on them.
 0 @I23326@ INDI
 1 RIN MH:I23326
 1 _UID 67153ea5ed9621efbc0b9822ef79916c
@@ -10701,7 +10672,6 @@
 1 SEX M
 1 FAMS @F13439@
 1 FAMC @F13661@
-1 NOTE Position in narrative: Son of Eumetabolos; master of complete metamorphosis.
 0 @I23333@ INDI
 1 RIN MH:I23333
 1 _UID 67153ea5629821efbc0b9822ef79916c
@@ -10719,7 +10689,6 @@
 2 SURN Hymenoptera
 1 SEX M
 1 FAMC @F13439@
-1 NOTE Position in narrative: Firstborn of Holometaboles; noble and industrious; ancestor of bees, ants, and wasps.
 0 @I23335@ INDI
 1 RIN MH:I23335
 1 _UID 67153ea59db8c1efbc0b9822ef79916c
@@ -10729,7 +10698,6 @@
 1 SEX M
 1 FAMS @F13440@
 1 FAMC @F13439@
-1 NOTE Position in narrative: Son of Holometaboles; ventured into new realms; father of Neuropteroidea and Panorpida.
 0 @I23336@ INDI
 1 RIN MH:I23336
 1 _UID 67153ea545c671efbc0b9822ef79916c
@@ -10747,7 +10715,6 @@
 1 SEX M
 1 FAMS @F13441@
 1 FAMC @F13440@
-1 NOTE Position in narrative: Son of Aparagloss; father of Neuropterida and Coleopterida.
 0 @I23338@ INDI
 1 RIN MH:I23338
 1 _UID 67153ea59fcd21efbc0b9822ef79916c
@@ -10757,7 +10724,6 @@
 1 SEX M
 1 FAMS @F13444@
 1 FAMC @F13440@
-1 NOTE Position in narrative: Son of Aparagloss; father of Amphiesmenoptera and Antliophora.
 0 @I23339@ INDI
 1 RIN MH:I23339
 1 _UID 67153ea5d20581efbc0b9822ef79916c
@@ -10775,7 +10741,6 @@
 1 SEX M
 1 FAMS @F13442@
 1 FAMC @F13441@
-1 NOTE Position in narrative: Son of Neuropteroidea; father of Raphidia, Megalo, and Neuro.
 0 @I23341@ INDI
 1 RIN MH:I23341
 1 _UID 67153ea5c38eb1efbc0b9822ef79916c
@@ -10785,7 +10750,6 @@
 1 SEX M
 1 FAMS @F13443@
 1 FAMC @F13441@
-1 NOTE Position in narrative: Son of Neuropteroidea; father of Coleo and Strepsi.
 0 @I23342@ INDI
 1 RIN MH:I23342
 1 _UID 67153ea58e4611efbc0b9822ef79916c
@@ -10804,7 +10768,6 @@
 2 _MARNM Raphidioptera (snakeflies)
 1 SEX F
 1 FAMC @F13442@
-1 NOTE Position in narrative: Child of Neuropterida; the snakefly with predatory gaze.
 0 @I23344@ INDI
 1 RIN MH:I23344
 1 _UID 67153ea5a22b61efbc0b9822ef79916c
@@ -10814,7 +10777,6 @@
 2 SURN Megaloptera (alderflies and allies)
 1 SEX M
 1 FAMC @F13442@
-1 NOTE Position in narrative: Child of Neuropterida; the alderfly; giant-winged one.
 0 @I23345@ INDI
 1 RIN MH:I23345
 1 _UID 67153ea5efe3c1efbc0b9822ef79916c
@@ -10824,7 +10786,6 @@
 2 SURN Neuroptera (lacewings and allies)
 1 SEX M
 1 FAMC @F13442@
-1 NOTE Position in narrative: Child of Neuropterida; the lacewing with delicate wings.
 0 @I23346@ INDI
 1 RIN MH:I23346
 1 _UID 67153ea539ba21efbc0b9822ef79916c
@@ -10842,7 +10803,6 @@
 2 SURN Coleoptera (beetles)
 1 SEX M
 1 FAMC @F13443@
-1 NOTE Position in narrative: Child of Coleopterida; the beetle; armored and diverse.
 0 @I23348@ INDI
 1 RIN MH:I23348
 1 _UID 67153ea54e78e1efbc0b9822ef79916c
@@ -10852,7 +10812,6 @@
 2 SURN Strepsiptera (twisted-wing parasites)
 1 SEX M
 1 FAMC @F13443@
-1 NOTE Position in narrative: Child of Coleopterida; the twisted-wing parasite.
 0 @I23349@ INDI
 1 RIN MH:I23349
 1 _UID 67153ea565f9b1efbc0b9822ef79916c
@@ -10870,7 +10829,6 @@
 1 SEX M
 1 FAMS @F13445@
 1 FAMC @F13444@
-1 NOTE Position in narrative: Child of Panorpida; father of Tricho and Lepido.
 0 @I23351@ INDI
 1 RIN MH:I23351
 1 _UID 67153ea5fe68f1efbc0b9822ef79916c
@@ -10880,7 +10838,6 @@
 1 SEX M
 1 FAMS @F13446@
 1 FAMC @F13444@
-1 NOTE Position in narrative: Child of Panorpida; father of Dipt, Meco, and Siphon.
 0 @I23352@ INDI
 1 RIN MH:I23352
 1 _UID 67153ea593c371efbc0b9822ef79916c
@@ -10898,7 +10855,6 @@
 2 SURN Trichoptera (caddisflies)
 1 SEX M
 1 FAMC @F13445@
-1 NOTE Position in narrative: Child of Amphiesmenoptera; the caddisfly.
 0 @I23354@ INDI
 1 RIN MH:I23354
 1 _UID 67153ea5852341efbc0b9822ef79916c
@@ -10908,7 +10864,6 @@
 2 SURN Lepidoptera (butterflies, moths)
 1 SEX M
 1 FAMC @F13445@
-1 NOTE Position in narrative: Child of Amphiesmenoptera; the butterfly and moth.
 0 @I23355@ INDI
 1 RIN MH:I23355
 1 _UID 67153ea5459a91efbc0b9822ef79916c
@@ -10926,7 +10881,6 @@
 2 SURN Diptera (true flies)
 1 SEX M
 1 FAMC @F13446@
-1 NOTE Position in narrative: Child of Antliophora; the true fly.
 0 @I23357@ INDI
 1 RIN MH:I23357
 1 _UID 67153ea55411a1efbc0b9822ef79916c
@@ -10936,7 +10890,6 @@
 2 SURN Mecoptera (scorpionflies)
 1 SEX M
 1 FAMC @F13446@
-1 NOTE Position in narrative: Child of Antliophora; the scorpionfly.
 0 @I23358@ INDI
 1 RIN MH:I23358
 1 _UID 67153ea519d901efbc0b9822ef79916c
@@ -10947,7 +10900,6 @@
 2 _MARNM Siphonaptera (fleas)
 1 SEX F
 1 FAMC @F13446@
-1 NOTE Position in narrative: Child of Antliophora; the flea.
 0 @I23360@ INDI
 1 RIN MH:I23360
 1 _UID 67153fccf01341efbc0b9822ef79916c
@@ -11457,18 +11409,6 @@
 2 RIN MH:IF32229
 1 FAMS @F13484@
 1 FAMC @F13481@
-1 NOTE <p style="font-size: medium; font-family: 'Times New Roman'; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #000000; font-style: normal; orphans: 2; widows: 2; 
-2 CONC letter-spacing: normal; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial;
-2 CONC  text-decoration-color: initial;">The cladogram presented below is based on studies compiled by Janvier<span>&nbsp;</span><em>et al</em>. (1997) for the<span>&nbsp;</span><em>Tree of Life Web Project<
-2 CONC /em>,<sup id="cite_ref-Janvier-1997-01-01-Vertbrt_31-0" class="reference"><a href="https://en.wikipedia.org/wiki/Sarcopterygii#cite_note-Janvier-1997-01-01-Vertbrt-31"><span class="cite-bracket" style
-2 CONC ="pointer-events: none;">[</span>31<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup><span>&nbsp;</span>Mikko's Phylogeny Archive<sup id="cite_ref-Haaramo-2003-Sarcoptrg_32-0"
-2 CONC  class="reference"><a href="https://en.wikipedia.org/wiki/Sarcopterygii#cite_note-Haaramo-2003-Sarcoptrg-32"><span class="cite-bracket" style="pointer-events: none;">[</span>32<span class="cite-bracke
-2 CONC t" style="pointer-events: none;">]</span></a></sup><span>&nbsp;</span>and Swartz (2012).<sup id="cite_ref-Swartz-2012_33-0" class="reference"><a href="https://en.wikipedia.org/wiki/Sarcopterygii#cite_
-2 CONC note-Swartz-2012-33"><span class="cite-bracket" style="pointer-events: none;">[</span>33<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup></p>
-2 CONT <p><div class="clade" style="font-size: medium; font-family: 'Times New Roman'; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #000000; font-style: normal; orph
-2 CONC ans: 2; widows: 2; letter-spacing: normal; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decorat
-2 CONC ion-style: initial; text-decoration-color: initial;">&nbsp;</div>
-<p style="text-align: left;" dir="ltr">&nbsp;</p>
 0 @I23421@ INDI
 1 RIN MH:I23421
 1 _UID 6715ff62f01341efbc0b9822ef79916c
@@ -12032,46 +11972,6 @@
 2 RIN MH:IF32274
 1 FAMS @F13580@
 1 FAMC @F13500@
-1 NOTE <p style="text-align: left;" dir="ltr">Source for dewcendants is below <a href="https://en.wikipedia.org/wiki/Sauropsida">https://en.wikipedia.org/wiki/Sauropsida</a></p>
-2 CONT <p><p style="text-align: left;" dir="ltr">&nbsp;</p></p>
-2 CONT <p><p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin
-2 CONC : 0.5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickne
-2 CONC ss: initial; text-decoration-style: initial; text-decoration-color: initial;">The<span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0p
-2 CONC x; overflow-wrap: break-word;" title="Cladistics" href="https://en.wikipedia.org/wiki/Cladistics#Cladograms">cladogram</a><span>&nbsp;</span>presented here illustrates the "family tree" of sauropsids,
-2 CONC  and follows a simplified version of the relationships found by M.S. Lee, in 2013.<sup id="cite_ref-scaffold2013_13-0" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: norma
-2 CONC l; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.or
-2 CONC g/wiki/Sauropsida#cite_note-scaffold2013-13"><span class="cite-bracket" style="pointer-events: none;">[</span>13<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup><span>&nbsp;<
-2 CONC /span>All<span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Molecular phylogenetics" href="htt
-2 CONC ps://en.wikipedia.org/wiki/Molecular_phylogenetics">genetic</a><span>&nbsp;</span>studies have supported the hypothesis that turtles (formerly categorized together with ancient<span>&nbsp;</span><em><
-2 CONC a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Anapsid" href="https://en.wikipedia.org/wiki/Anapsid">anapsids<
-2 CONC /a></em>) are diapsid reptiles, despite lacking any skull openings behind their eye sockets; some studies have even placed turtles among the<span>&nbsp;</span><a style="text-decoration: none; backgrou
-2 CONC nd: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Archosaur" href="https://en.wikipedia.org/wiki/Archosaur">archosaurs</a>,<sup id="cite_ref-scaffold2013
-2 CONC _13-1" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll rep
-2 CONC eat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Sauropsida#cite_note-scaffold2013-13"><span class="cite-bracket" style="pointer-events: none;">[</span>13
-2 CONC <span class="cite-bracket" style="pointer-events: none;">]</span></a></sup><sup id="cite_ref-Mannen_14-0" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style
-2 CONC : normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Saurop
-2 CONC sida#cite_note-Mannen-14"><span class="cite-bracket" style="pointer-events: none;">[</span>14<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup><sup id="cite_ref-Zardoya_15-0" 
-2 CONC class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 
-2 CONC 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Sauropsida#cite_note-Zardoya-15"><span class="cite-bracket" style="pointer-events: none;">[</span>15<span class=
-2 CONC "cite-bracket" style="pointer-events: none;">]</span></a></sup><sup id="cite_ref-Iwabe_16-0" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; lin
-2 CONC e-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Sauropsida#cite_not
-2 CONC e-Iwabe-16"><span class="cite-bracket" style="pointer-events: none;">[</span>16<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup><sup id="cite_ref-Roos_17-0" class="reference"
-2 CONC  style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius
-2 CONC : 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Sauropsida#cite_note-Roos-17"><span class="cite-bracket" style="pointer-events: none;">[</span>17<span class="cite-bracket" style
-2 CONC ="pointer-events: none;">]</span></a></sup><sup id="cite_ref-Katsu_18-0" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a sty
-2 CONC le="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Sauropsida#cite_note-Katsu-18"><span cl
-2 CONC ass="cite-bracket" style="pointer-events: none;">[</span>18<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup><span>&nbsp;</span>though a few have recovered turtles as lepidosa
-2 CONC uromorphs instead.<sup id="cite_ref-Lyson2012_19-0" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: 
-2 CONC none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Sauropsida#cite_note-Lyson2012-19"><span class="cite-bracket
-2 CONC " style="pointer-events: none;">[</span>19<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup><span>&nbsp;</span>The cladogram below used a combination of genetic (molecular) an
-2 CONC d fossil (morphological) data to obtain its results.<sup id="cite_ref-scaffold2013_13-2" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-he
-2 CONC ight: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Sauropsida#cite_note-sc
-2 CONC affold2013-13"><span class="cite-bracket" style="pointer-events: none;">[</span>13<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup></p>
-2 CONT <p><div class="clade" style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; w
-2 CONC idows: 2; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: ini
-2 CONC tial; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</div>
-<p style="text-align: left;" dir="ltr"><br class="Apple-interchange-newline" />&nbsp;</p>
-2 CONT <p><p style="text-align: left;" dir="ltr">Breaks at Diapsits though</p></p>
 0 @I23475@ INDI
 1 RIN MH:I23475
 1 _UID 671603f1f01341efbc0b9822ef79916c
@@ -14170,39 +14070,6 @@
 2 RIN MH:IF32449
 1 FAMS @F13587@
 1 FAMC @F13586@
-1 NOTE <p style="text-align: left;" dir="ltr"><br />Source for descendants here <a href="https://en.wikipedia.org/wiki/Diapsid">https://en.wikipedia.org/wiki/Diapsid</a>&nbsp;</p>
-2 CONT <p><p style="text-align: left;" dir="ltr">&nbsp;</p></p>
-2 CONT <p><div class="mw-heading mw-heading3" style="font-size: 1.2em; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: bold; padding-bottom: 0px; font-styl
-2 CONC e: normal; padding-top: 0.5em; orphans: 2; widows: 2; margin: 0.25em 0px; letter-spacing: normal; line-height: 1.6; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-va
-2 CONC riant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
-<h3 id="Relationships" style="font-family: inh
-2 CONC erit; font-weight: bold; margin: 0px 0px 0.25em; display: inline; line-height: 1.6; font-stretch: inherit; font-optical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font-feature-
-2 CONC settings: inherit; font-variation-settings: inherit; border: 0px; padding: 0px;"><span style="font-size: large;">Relationships</span></h3>
-<span class="mw-editsection" style="font-size: small; font-fa
-2 CONC mily: sans-serif; vertical-align: baseline; font-weight: normal; margin-left: 1em; line-height: 0; margin-right: 0px; user-select: none; margin-inline: 1em 0px;"><span class="mw-editsection-bracket" s
-2 CONC tyle="margin-right: 0.25em; margin-inline: 0px 0.25em;"><span style="font-size: medium;">[</span></span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; white-space: 
-2 CONC nowrap; border-radius: 0px; overflow-wrap: break-word;" title="Edit section: Relationships" href="https://en.wikipedia.org/w/index.php?title=Diapsid&amp;action=edit&amp;section=3"><span><span style="f
-2 CONC ont-size: medium;">edit</span></span></a><span class="mw-editsection-bracket" style="margin-left: 0.25em; margin-inline: 0.25em 0px;"><span style="font-size: medium;">]</span></span></span></div>
-<p s
-2 CONC tyle="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin: 0.5em
-2 CONC  0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: ini
-2 CONC tial; text-decoration-style: initial; text-decoration-color: initial;">Below are<span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px
-2 CONC ; overflow-wrap: break-word;" title="Cladogram" href="https://en.wikipedia.org/wiki/Cladogram">cladograms</a><span>&nbsp;</span>showing the relations of the major groups of diapsids.</p>
-2 CONT <p><p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin
-2 CONC : 0.5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickne
-2 CONC ss: initial; text-decoration-style: initial; text-decoration-color: initial;">Cladogram after Bickelmann<span>&nbsp;</span><em>et al.</em>, 2009<sup id="cite_ref-Bickelmann09_20-0" class="reference" s
-2 CONC tyle="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 
-2 CONC 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Diapsid#cite_note-Bickelmann09-20"><span class="cite-bracket" style="pointer-events: none;">[</span>20<span class="cite-bracket" st
-2 CONC yle="pointer-events: none;">]</span></a></sup><span>&nbsp;</span>and Reisz<span>&nbsp;</span><em>et al.</em>, 2011:<sup id="cite_ref-Orovenator_21-0" class="reference" style="font-size: 12px; white-sp
-2 CONC ace: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;
-2 CONC " href="https://en.wikipedia.org/wiki/Diapsid#cite_note-Orovenator-21"><span class="cite-bracket" style="pointer-events: none;">[</span>21<span class="cite-bracket" style="pointer-events: none;">]</sp
-2 CONC an></a></sup></p>
-2 CONT <p><p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin
-2 CONC : 0.5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickne
-2 CONC ss: initial; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</p>
-2 CONT <p><p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin
-2 CONC : 0.5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickne
-2 CONC ss: initial; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</p>
 0 @I23665@ INDI
 1 RIN MH:I23665
 1 _UID 67166920748341efbc0b9822ef79916c
@@ -14356,20 +14223,6 @@
 2 RIN MH:IF32462
 1 FAMS @F13599@
 1 FAMC @F13595@
-1 NOTE <p style="text-align: left;" dir="ltr"><a href="https://en.wikipedia.org/wiki/Sauria">https://en.wikipedia.org/wiki/Sauria</a></p>
-2 CONT <p><p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin
-2 CONC : 0.5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickne
-2 CONC ss: initial; text-decoration-style: initial; text-decoration-color: initial;">The cladogram shown below follows the most likely result found by an analysis of turtle relationships using both fossil an
-2 CONC d genetic evidence by M.S. Lee, in 2013. This study found<span>&nbsp;</span><em><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: br
-2 CONC eak-word;" title="Eunotosaurus" href="https://en.wikipedia.org/wiki/Eunotosaurus">Eunotosaurus</a></em>, usually regarded as a turtle relative, to be only very distantly related to turtles in the clad
-2 CONC e<span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Parareptilia" href="https://en.wikipedia.o
-2 CONC rg/wiki/Parareptilia">Parareptilia</a>.<sup id="cite_ref-scaffold2013_10-1" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a 
-2 CONC style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Sauria#cite_note-scaffold2013-10"><s
-2 CONC pan class="cite-bracket" style="pointer-events: none;">[</span>10<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup></p>
-2 CONT <p><div class="clade" style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; w
-2 CONC idows: 2; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: ini
-2 CONC tial; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</div>
-<p style="text-align: left;" dir="ltr">&nbsp;</p>
 0 @I23678@ INDI
 1 RIN MH:I23678
 1 _UID 67166ae8748341efbc0b9822ef79916c
@@ -14659,18 +14512,6 @@
 2 RIN MH:IF32486
 1 FAMS @F13611@
 1 FAMC @F13608@
-1 NOTE <p style="text-align: left;" dir="ltr">&nbsp;</p>
-2 CONT <p><p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin
-2 CONC : 0.5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickne
-2 CONC ss: initial; text-decoration-style: initial; text-decoration-color: initial;">Below is a cladogram from Nesbitt (2011):<sup id="cite_ref-NSJ11_17-0" class="reference" style="font-size: 12px; white-spa
-2 CONC ce: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;"
-2 CONC  href="https://en.wikipedia.org/wiki/Archosauriformes#cite_note-NSJ11-17"><span class="cite-bracket" style="pointer-events: none;">[</span>17<span class="cite-bracket" style="pointer-events: none;">]<
-2 CONC /span></a></sup></p>
-2 CONT <p><div class="clade" style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; w
-2 CONC idows: 2; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: ini
-2 CONC tial; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</div>
-<p style="text-align: left;" dir="ltr"><br class="Apple-interchange-newline" /><a href="https://en.wikipedia.org/wik
-2 CONC i/Archosauriformes">https://en.wikipedia.org/wiki/Archosauriformes</a></p>
 0 @I23704@ INDI
 1 RIN MH:I23704
 1 _UID 67166fcc748341efbc0b9822ef79916c
@@ -14974,10 +14815,6 @@
 1 SEX F
 1 FAMS @F13622@
 1 FAMC @F13551@
-1 NOTE Mitochondrial Eve is the matrilineal most recent common ancestor of all humans alive today.
-2 SOUR @S25@
-3 RIN MH:SC1
-3 QUAY 0
 0 @I23731@ INDI
 1 RIN MH:I23731
 1 _UID 67167f62394be1efbc0b9822ef79916c
@@ -14987,10 +14824,6 @@
 1 SEX F
 1 FAMS @F13623@
 1 FAMC @F13622@
-1 NOTE Haplogroup L0 is found primarily in Southern Africa among the Khoisan peoples.
-2 SOUR @S25@
-3 RIN MH:SC2
-3 QUAY 0
 0 @I23732@ INDI
 1 RIN MH:I23732
 1 _UID 67167f62ef1201efbc0b9822ef79916c
@@ -15009,10 +14842,6 @@
 1 SEX F
 1 FAMS @F13625@
 1 FAMC @F13624@
-1 NOTE Haplogroup L1 is prevalent in Central Africa among Pygmy populations.
-2 SOUR @S25@
-3 RIN MH:SC3
-3 QUAY 0
 0 @I23734@ INDI
 1 RIN MH:I23734
 1 _UID 67167f62698671efbc0b9822ef79916c
@@ -15030,10 +14859,6 @@
 2 GIVN L5
 1 SEX F
 1 FAMC @F13626@
-1 NOTE Haplogroup L5 is found in East Africa.
-2 SOUR @S25@
-3 RIN MH:SC4
-3 QUAY 0
 0 @I23736@ INDI
 1 RIN MH:I23736
 1 _UID 67167f62b35191efbc0b9822ef79916c
@@ -15051,10 +14876,6 @@
 2 GIVN L2
 1 SEX F
 1 FAMC @F13627@
-1 NOTE Haplogroup L2 is common in West and Central Africa.
-2 SOUR @S25@
-3 RIN MH:SC5
-3 QUAY 0
 0 @I23738@ INDI
 1 RIN MH:I23738
 1 _UID 67167f62e39c01efbc0b9822ef79916c
@@ -15072,10 +14893,6 @@
 2 GIVN L6
 1 SEX F
 1 FAMC @F13628@
-1 NOTE Haplogroup L6 is found in Northeast Africa and the Arabian Peninsula.
-2 SOUR @S25@
-3 RIN MH:SC6
-3 QUAY 0
 0 @I23740@ INDI
 1 RIN MH:I23740
 1 _UID 67167f62d2f441efbc0b9822ef79916c
@@ -15093,10 +14910,6 @@
 2 GIVN L4
 1 SEX F
 1 FAMC @F13629@
-1 NOTE Haplogroup L4 is found in East Africa.
-2 SOUR @S25@
-3 RIN MH:SC7
-3 QUAY 0
 0 @I23742@ INDI
 1 RIN MH:I23742
 1 _UID 67167f62546031efbc0b9822ef79916c
@@ -15106,10 +14919,6 @@
 1 SEX F
 1 FAMS @F13630@
 1 FAMC @F13629@
-1 NOTE Haplogroup L3 is the ancestor of all non-African haplogroups.
-2 SOUR @S25@
-3 RIN MH:SC8
-3 QUAY 0
 0 @I23743@ INDI
 1 RIN MH:I23743
 1 _UID 67167f628239d1efbc0b9822ef79916c
@@ -15119,10 +14928,6 @@
 1 SEX F
 1 FAMS @F13631@
 1 FAMC @F13630@
-1 NOTE Haplogroup N is one of the two major haplogroups that migrated out of Africa, found in Eurasia.
-2 SOUR @S25@
-3 RIN MH:SC9
-3 QUAY 0
 0 @I23744@ INDI
 1 RIN MH:I23744
 1 _UID 67167f62cff171efbc0b9822ef79916c
@@ -15132,10 +14937,6 @@
 1 SEX F
 1 FAMS @F13640@
 1 FAMC @F13630@
-1 NOTE Haplogroup M is widespread in Asia and represents early migrations out of Africa.
-2 SOUR @S25@
-3 RIN MH:SC10
-3 QUAY 0
 0 @I23745@ INDI
 1 RIN MH:I23745
 1 _UID 67167f62f5fb11efbc0b9822ef79916c
@@ -15145,10 +14946,6 @@
 1 SEX F
 1 FAMS @F13632@
 1 FAMC @F13631@
-1 NOTE Haplogroup N1 is found in Europe and the Middle East.
-2 SOUR @S25@
-3 RIN MH:SC11
-3 QUAY 0
 0 @I23746@ INDI
 1 RIN MH:I23746
 1 _UID 67167f6293b2e1efbc0b9822ef79916c
@@ -15158,10 +14955,6 @@
 1 SEX F
 1 FAMS @F13633@
 1 FAMC @F13631@
-1 NOTE Haplogroup N2 is present in Eurasian populations.
-2 SOUR @S25@
-3 RIN MH:SC12
-3 QUAY 0
 0 @I23747@ INDI
 1 RIN MH:I23747
 1 _UID 67167f6245eb01efbc0b9822ef79916c
@@ -15171,10 +14964,6 @@
 1 SEX F
 1 FAMS @F13634@
 1 FAMC @F13631@
-1 NOTE Haplogroup N9 is common in East Asia.
-2 SOUR @S25@
-3 RIN MH:SC13
-3 QUAY 0
 0 @I23748@ INDI
 1 RIN MH:I23748
 1 _UID 67167f62823a61efbc0b9822ef79916c
@@ -15183,10 +14972,6 @@
 2 GIVN A
 1 SEX F
 1 FAMC @F13631@
-1 NOTE Haplogroup A is found in East Asia and among Native American populations.
-2 SOUR @S25@
-3 RIN MH:SC14
-3 QUAY 0
 0 @I23749@ INDI
 1 RIN MH:I23749
 1 _UID 67167f62284081efbc0b9822ef79916c
@@ -15195,20 +14980,12 @@
 2 GIVN S
 1 SEX F
 1 FAMC @F13631@
-1 NOTE Haplogroup S is found in Australia and Papua New Guinea.
-2 SOUR @S25@
-3 RIN MH:SC15
-3 QUAY 0
 0 @I23750@ INDI
 1 RIN MH:I23750
 1 _UID 67167f62658821efbc0b9822ef79916c
 1 _UPD 21 OCT 2024 21:54:21 GMT+5.5
 1 SEX F
 1 FAMC @F13631@
-1 NOTE Haplogroup X is distributed in Europe, Western Asia, and North America.
-2 SOUR @S25@
-3 RIN MH:SC16
-3 QUAY 0
 0 @I23751@ INDI
 1 RIN MH:I23751
 1 _UID 67167f62b3d1c1efbc0b9822ef79916c
@@ -15218,10 +14995,6 @@
 1 SEX F
 1 FAMS @F13635@
 1 FAMC @F13631@
-1 NOTE Haplogroup R is a major lineage widespread in Eurasia.
-2 SOUR @S25@
-3 RIN MH:SC17
-3 QUAY 0
 0 @I23752@ INDI
 1 RIN MH:I23752
 1 _UID 67167f62fe1961efbc0b9822ef79916c
@@ -15231,10 +15004,6 @@
 1 SEX F
 1 FAMS @F13636@
 1 FAMC @F13635@
-1 NOTE Haplogroup R0 is found in the Middle East and North Africa.
-2 SOUR @S25@
-3 RIN MH:SC18
-3 QUAY 0
 0 @I23753@ INDI
 1 RIN MH:I23753
 1 _UID 67167f62c41301efbc0b9822ef79916c
@@ -15244,10 +15013,6 @@
 1 SEX F
 1 FAMS @F13637@
 1 FAMC @F13635@
-1 NOTE Ancestral to haplogroups J and T, found in Europe and the Middle East.
-2 SOUR @S25@
-3 RIN MH:SC19
-3 QUAY 0
 0 @I23754@ INDI
 1 RIN MH:I23754
 1 _UID 67167f62a25af1efbc0b9822ef79916c
@@ -15274,10 +15039,6 @@
 2 GIVN P
 1 SEX F
 1 FAMC @F13635@
-1 NOTE Haplogroup P is found in Oceania.
-2 SOUR @S25@
-3 RIN MH:SC20
-3 QUAY 0
 0 @I23757@ INDI
 1 RIN MH:I23757
 1 _UID 67167f6239cbb1efbc0b9822ef79916c
@@ -15287,10 +15048,6 @@
 1 SEX F
 1 FAMS @F13641@
 1 FAMC @F13635@
-1 NOTE Haplogroup U is common in Europe, North Africa, and the Middle East.
-2 SOUR @S25@
-3 RIN MH:SC21
-3 QUAY 0
 0 @I23758@ INDI
 1 RIN MH:I23758
 1 _UID 67167f628e3781efbc0b9822ef79916c
@@ -15299,10 +15056,6 @@
 2 GIVN O
 1 SEX F
 1 FAMC @F13635@
-1 NOTE Haplogroup O is found in Oceania.
-2 SOUR @S25@
-3 RIN MH:SC22
-3 QUAY 0
 0 @I23759@ INDI
 1 RIN MH:I23759
 1 _UID 67167f62c3ff21efbc0b9822ef79916c
@@ -15312,10 +15065,6 @@
 1 SEX F
 1 FAMS @F13642@
 1 FAMC @F13636@
-1 NOTE Haplogroup HV is prevalent in Europe and the Middle East.
-2 SOUR @S25@
-3 RIN MH:SC23
-3 QUAY 0
 0 @I23760@ INDI
 1 RIN MH:I23760
 1 _UID 67167f6215a6c1efbc0b9822ef79916c
@@ -15324,10 +15073,6 @@
 2 GIVN H
 1 SEX F
 1 FAMC @F13642@
-1 NOTE Haplogroup H is the most common in Europe.
-2 SOUR @S25@
-3 RIN MH:SC24
-3 QUAY 0
 0 @I23761@ INDI
 1 RIN MH:I23761
 1 _UID 67167f62586e61efbc0b9822ef79916c
@@ -15336,10 +15081,6 @@
 2 GIVN V
 1 SEX F
 1 FAMC @F13642@
-1 NOTE Haplogroup V is found in Europe and North Africa.
-2 SOUR @S25@
-3 RIN MH:SC25
-3 QUAY 0
 0 @I23762@ INDI
 1 RIN MH:I23762
 1 _UID 67167f62626401efbc0b9822ef79916c
@@ -15357,10 +15098,6 @@
 2 GIVN J
 1 SEX F
 1 FAMC @F13643@
-1 NOTE Haplogroup J is common in Europe and the Middle East.
-2 SOUR @S25@
-3 RIN MH:SC26
-3 QUAY 0
 0 @I23764@ INDI
 1 RIN MH:I23764
 1 _UID 67167f62cf7121efbc0b9822ef79916c
@@ -15369,10 +15106,6 @@
 2 GIVN T
 1 SEX F
 1 FAMC @F13643@
-1 NOTE Haplogroup T is found in Europe and Western Asia.
-2 SOUR @S25@
-3 RIN MH:SC27
-3 QUAY 0
 0 @I23765@ INDI
 1 RIN MH:I23765
 1 _UID 67167f621928c1efbc0b9822ef79916c
@@ -15381,10 +15114,6 @@
 2 GIVN F
 1 SEX F
 1 FAMC @F13638@
-1 NOTE Haplogroup F is found in East and Southeast Asia.
-2 SOUR @S25@
-3 RIN MH:SC28
-3 QUAY 0
 0 @I23766@ INDI
 1 RIN MH:I23766
 1 _UID 67167f6280cc61efbc0b9822ef79916c
@@ -15393,10 +15122,6 @@
 2 GIVN B
 1 SEX F
 1 FAMC @F13639@
-1 NOTE Haplogroup B is common in Asia and among Native Americans.
-2 SOUR @S25@
-3 RIN MH:SC29
-3 QUAY 0
 0 @I23767@ INDI
 1 RIN MH:I23767
 1 _UID 67167f62cd04c1efbc0b9822ef79916c
@@ -15414,10 +15139,6 @@
 2 GIVN K
 1 SEX F
 1 FAMC @F13644@
-1 NOTE Haplogroup K is found in Europe and the Middle East.
-2 SOUR @S25@
-3 RIN MH:SC30
-3 QUAY 0
 0 @I23769@ INDI
 1 RIN MH:I23769
 1 _UID 67167f62d001f1efbc0b9822ef79916c
@@ -15427,10 +15148,6 @@
 1 SEX F
 1 FAMS @F13645@
 1 FAMC @F13640@
-1 NOTE Haplogroup E (from M9) is found in Southeast Asia.
-2 SOUR @S25@
-3 RIN MH:SC31
-3 QUAY 0
 0 @I23770@ INDI
 1 RIN MH:I23770
 1 _UID 67167f629dc951efbc0b9822ef79916c
@@ -15457,10 +15174,6 @@
 2 GIVN D
 1 SEX F
 1 FAMC @F13640@
-1 NOTE Haplogroup D is prevalent in Asia and among Native Americans.
-2 SOUR @S25@
-3 RIN MH:SC32
-3 QUAY 0
 0 @I23773@ INDI
 1 RIN MH:I23773
 1 _UID 67167f62c18ac1efbc0b9822ef79916c
@@ -15478,10 +15191,6 @@
 2 GIVN C
 1 SEX F
 1 FAMC @F13648@
-1 NOTE Haplogroup C is found in Asia and Native American populations.
-2 SOUR @S25@
-3 RIN MH:SC33
-3 QUAY 0
 0 @I23775@ INDI
 1 RIN MH:I23775
 1 _UID 67167f62dc8ff1efbc0b9822ef79916c
@@ -15490,10 +15199,6 @@
 2 GIVN Z
 1 SEX F
 1 FAMC @F13648@
-1 NOTE Haplogroup Z is found in Northern Eurasia.
-2 SOUR @S25@
-3 RIN MH:SC34
-3 QUAY 0
 0 @I23776@ INDI
 1 RIN MH:I23776
 1 _UID 6716814baf8b01efbc0b9822ef79916c
@@ -15760,14 +15465,25 @@
 0 @I23799@ INDI
 1 RIN MH:I23799
 1 _UID 671687df64d7d1efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 22:27:06 GMT+5.5
+1 _UPD 23 OCT 2024 13:29:52 GMT+5.5
 1 NAME  /†Ornithischia/
 2 SURN †Ornithischia
 1 SEX M
 1 BIRT
 2 _UID 671687e264d7d1efbc0b9822ef79916c
 2 RIN MH:IF32535
+1 FAMS @F13801@
 1 FAMC @F13659@
+1 NOTE <p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin: 0
+2 CONC .5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness:
+2 CONC  initial; text-decoration-style: initial; text-decoration-color: initial;"><strong>Dieudonn&eacute; et al., 2021</strong><sup id="cite_ref-dieudonneea21_39-2" class="reference" style="font-size: 12px;
+2 CONC  white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: br
+2 CONC eak-word;" href="https://en.wikipedia.org/wiki/Ornithischia#cite_note-dieudonneea21-39"><span class="cite-bracket" style="pointer-events: none;">[</span>38<span class="cite-bracket" style="pointer-eve
+2 CONC nts: none;">]</span></a></sup></p>
+2 CONT <div class="clade" style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; wido
+2 CONC ws: 2; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initia
+2 CONC l; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</div>
+<p style="text-align: left;" dir="ltr"><br class="Apple-interchange-newline" /><br /></p>
 0 @I23800@ INDI
 1 RIN MH:I23800
 1 _UID 671687e8af8b01efbc0b9822ef79916c
@@ -15974,6 +15690,2583 @@
 2 _UID 67168a6d64d7d1efbc0b9822ef79916c
 2 RIN MH:IF32553
 1 FAMC @F13668@
+0 @I23871@ INDI
+1 RIN MH:I23871
+1 _UID 6717ee009f5411efbc109822ef79916c
+1 _UPD 23 OCT 2024 00:04:52 GMT+5.5
+1 NAME  /Actinopteri/
+2 SURN Actinopteri
+1 SEX M
+1 BIRT
+2 _UID 6717ee315408c1efbc109822ef79916c
+2 RIN MH:IF32606
+1 FAMS @F13698@
+1 FAMC @F13695@
+0 @I23872@ INDI
+1 RIN MH:I23872
+1 _UID 6717ee365408c1efbc109822ef79916c
+1 _UPD 22 OCT 2024 23:57:15 GMT+5.5
+1 NAME  /Cladistia/
+2 SURN Cladistia
+1 SEX M
+1 BIRT
+2 _UID 6717ee435408c1efbc109822ef79916c
+2 RIN MH:IF32607
+1 FAMS @F13696@
+1 FAMC @F13695@
+0 @I23873@ INDI
+1 RIN MH:I23873
+1 _UID 6717ee809f5411efbc109822ef79916c
+1 _UPD 22 OCT 2024 23:58:33 GMT+5.5
+1 NAME  /Polypteriformes/
+2 SURN Polypteriformes
+1 SEX M
+1 BIRT
+2 _UID 6717ee835408c1efbc109822ef79916c
+2 RIN MH:IF32608
+1 FAMS @F13697@
+1 FAMC @F13696@
+0 @I23874@ INDI
+1 RIN MH:I23874
+1 _UID 6717ee879f5411efbc109822ef79916c
+1 _UPD 22 OCT 2024 23:58:43 GMT+5.5
+1 NAME Bichir /Polypterus bichir/
+2 GIVN Bichir
+2 SURN Polypterus bichir
+1 SEX M
+1 BIRT
+2 _UID 6717ee8d5408c1efbc109822ef79916c
+2 RIN MH:IF32609
+1 FAMC @F13697@
+0 @I23875@ INDI
+1 RIN MH:I23875
+1 _UID 6717eec95408c1efbc109822ef79916c
+1 _UPD 22 OCT 2024 23:58:33 GMT+5.5
+1 NAME Reedfish /Erpetoichthys calabaricus/
+2 GIVN Reedfish
+2 SURN Erpetoichthys calabaricus
+1 SEX M
+1 BIRT
+2 _UID 6717eed15408c1efbc109822ef79916c
+2 RIN MH:IF32610
+1 FAMC @F13697@
+0 @I23876@ INDI
+1 RIN MH:I23876
+1 _UID 6717f03a9f5411efbc109822ef79916c
+1 _UPD 23 OCT 2024 00:05:36 GMT+5.5
+1 NAME  /Neopterygii/
+2 SURN Neopterygii
+1 SEX M
+1 BIRT
+2 _UID 6717f0425408c1efbc109822ef79916c
+2 RIN MH:IF32612
+2 DATE 360 mya
+1 DEAT
+2 _UID 6717f0429f5411efbc109822ef79916c
+2 RIN MH:IF32613
+1 FAMS @F13699@
+1 FAMC @F13698@
+0 @I23877@ INDI
+1 RIN MH:I23877
+1 _UID 6717f0485408c1efbc109822ef79916c
+1 _UPD 23 OCT 2024 00:04:52 GMT+5.5
+1 NAME  /Chondrostei/
+2 SURN Chondrostei
+1 SEX M
+1 BIRT
+2 _UID 6717f04c5408c1efbc109822ef79916c
+2 RIN MH:IF32614
+1 FAMC @F13698@
+0 @I23878@ INDI
+1 RIN MH:I23878
+1 _UID 6717f0579f5411efbc109822ef79916c
+1 _UPD 23 OCT 2024 00:06:43 GMT+5.5
+1 NAME  /Holostei/
+2 SURN Holostei
+1 SEX M
+1 BIRT
+2 _UID 6717f0605408c1efbc109822ef79916c
+2 RIN MH:IF32615
+2 DATE 275 mya
+1 DEAT
+2 _UID 6717f0609f5411efbc109822ef79916c
+2 RIN MH:IF32616
+1 FAMS @F13700@
+1 FAMC @F13699@
+0 @I23879@ INDI
+1 RIN MH:I23879
+1 _UID 6717f0655408c1efbc109822ef79916c
+1 _UPD 23 OCT 2024 00:09:47 GMT+5.5
+1 NAME  /Teleostei /
+2 SURN Teleostei 
+1 SEX M
+1 BIRT
+2 _UID 6717f0785408c1efbc109822ef79916c
+2 RIN MH:IF32617
+2 DATE 310 mya
+1 DEAT
+2 _UID 6717f0789f5411efbc109822ef79916c
+2 RIN MH:IF32618
+1 FAMS @F13701@
+1 FAMC @F13699@
+1 NOTE <p style="text-align: left;" dir="ltr"><a href="https://en.wikipedia.org/wiki/Teleost">https://en.wikipedia.org/wiki/Teleost</a></p>
+2 CONT <div class="mw-heading mw-heading3" style="font-size: 1.2em; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: bold; padding-bottom: 0px; font-style: 
+2 CONC normal; padding-top: 0.5em; orphans: 2; widows: 2; margin: 0.25em 0px; letter-spacing: normal; line-height: 1.6; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-varia
+2 CONC nt-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
+<h3 id="Internal_relationships" style="font-famil
+2 CONC y: inherit; font-weight: bold; margin: 0px 0px 0.25em; display: inline; line-height: 1.6; font-stretch: inherit; font-optical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font-fe
+2 CONC ature-settings: inherit; font-variation-settings: inherit; border: 0px; padding: 0px;"><span style="font-size: large;">Internal relationships</span></h3>
+<span class="mw-editsection" style="font-size:
+2 CONC  small; font-family: sans-serif; vertical-align: baseline; font-weight: normal; margin-left: 1em; line-height: 0; margin-right: 0px; user-select: none; margin-inline: 1em 0px;"><span class="mw-editsec
+2 CONC tion-bracket" style="margin-right: 0.25em; margin-inline: 0px 0.25em;"><span style="font-size: medium;">[</span></span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%
+2 CONC ; white-space: nowrap; border-radius: 0px; overflow-wrap: break-word;" title="Edit section: Internal relationships" href="https://en.wikipedia.org/w/index.php?title=Teleost&amp;action=edit&amp;section
+2 CONC =4"><span><span style="font-size: medium;">edit</span></span></a><span class="mw-editsection-bracket" style="margin-left: 0.25em; margin-inline: 0.25em 0px;"><span style="font-size: medium;">]</span><
+2 CONC /span></span></div>
+<p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; 
+2 CONC widows: 2; margin: 0.5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-d
+2 CONC ecoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">The phylogeny of the teleosts has been subject to long debate, without consensus on either their<span>&nb
+2 CONC sp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Phylogenetic tree" href="https://en.wikipedia.org/wi
+2 CONC ki/Phylogenetic_tree">phylogeny</a><span>&nbsp;</span>or the timing of the emergence of the major groups before the application of modern<span>&nbsp;</span><a style="text-decoration: none; background:
+2 CONC  none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="DNA" href="https://en.wikipedia.org/wiki/DNA">DNA</a>-based cladistic analysis. Near et al. (2012) explore
+2 CONC d the phylogeny and divergence times of every major lineage, analysing the DNA sequences of 9 unlinked genes in 232 species. They obtained well-resolved phylogenies with strong support for the nodes (
+2 CONC so, the pattern of branching shown is likely to be correct). They calibrated (set actual values for) branching times in this tree from 36 reliable measurements of absolute time from the fossil record.
+2 CONC <sup id="cite_ref-PNAS_16-3" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none 
+2 CONC transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Teleost#cite_note-PNAS-16"><span class="cite-bracket" style="pointer-events: none;"
+2 CONC >[</span>15<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup><span>&nbsp;</span>The teleosts are divided into the major clades shown on the cladogram,<sup id="cite_ref-20" cla
+2 CONC ss="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%;
+2 CONC  border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Teleost#cite_note-20"><span class="cite-bracket" style="pointer-events: none;">[</span>19<span class="cite-bracket"
+2 CONC  style="pointer-events: none;">]</span></a></sup><span>&nbsp;</span>with dates, following Near et al.<sup id="cite_ref-PNAS_16-4" class="reference" style="font-size: 12px; white-space: nowrap; font-we
+2 CONC ight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.w
+2 CONC ikipedia.org/wiki/Teleost#cite_note-PNAS-16"><span class="cite-bracket" style="pointer-events: none;">[</span>15<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup><span>&nbsp;<
+2 CONC /span>More recent research divide the teleosts into two major groups: Eloposteoglossocephala (Elopomorpha + Osteoglossomorpha) and Clupeocephala (the rest of the teleosts).<sup id="cite_ref-21" class=
+2 CONC "reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; bo
+2 CONC rder-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Teleost#cite_note-21"><span class="cite-bracket" style="pointer-events: none;">[</span>20<span class="cite-bracket" st
+2 CONC yle="pointer-events: none;">]</span></a></sup><sup id="cite_ref-22" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="t
+2 CONC ext-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Teleost#cite_note-22"><span class="cite-brac
+2 CONC ket" style="pointer-events: none;">[</span>21<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup></p>
+2 CONT <div class="clade" style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; wido
+2 CONC ws: 2; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initia
+2 CONC l; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</div>
+<p style="text-align: left;" dir="ltr">&nbsp;</p>
+0 @I23880@ INDI
+1 RIN MH:I23880
+1 _UID 6717f0b09f5411efbc109822ef79916c
+1 _UPD 23 OCT 2024 00:06:35 GMT+5.5
+1 NAME  /Lepisosteiformes (gars)/
+2 SURN Lepisosteiformes (gars)
+1 SEX M
+1 BIRT
+2 _UID 6717f0b35408c1efbc109822ef79916c
+2 RIN MH:IF32619
+1 FAMC @F13700@
+0 @I23881@ INDI
+1 RIN MH:I23881
+1 _UID 6717f0b95408c1efbc109822ef79916c
+1 _UPD 23 OCT 2024 00:06:43 GMT+5.5
+1 NAME  /Amiiformes (bowfins)/
+2 SURN Amiiformes (bowfins)
+1 SEX M
+1 BIRT
+2 _UID 6717f0bb5408c1efbc109822ef79916c
+2 RIN MH:IF32620
+1 FAMC @F13700@
+0 @I23882@ INDI
+1 RIN MH:I23882
+1 _UID 6717f1679f5411efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:43:26 GMT+5.5
+1 NAME  /Clupeocephala/
+2 SURN Clupeocephala
+1 SEX M
+1 BIRT
+2 _UID 6717f16b5408c1efbc109822ef79916c
+2 RIN MH:IF32621
+1 FAMS @F13703@
+1 FAMC @F13701@
+0 @I23883@ INDI
+1 RIN MH:I23883
+1 _UID 6717f1715408c1efbc109822ef79916c
+1 _UPD 23 OCT 2024 00:10:54 GMT+5.5
+1 NAME  /Eloposteoglossocephala/
+2 SURN Eloposteoglossocephala
+1 SEX M
+1 BIRT
+2 _UID 6717f1735408c1efbc109822ef79916c
+2 RIN MH:IF32622
+1 FAMS @F13702@
+1 FAMC @F13701@
+0 @I23884@ INDI
+1 RIN MH:I23884
+1 _UID 6717f1ad9f5411efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:44:57 GMT+5.5
+1 NAME  /Elopomorpha/
+2 SURN Elopomorpha
+1 SEX M
+1 BIRT
+2 _UID 6717f1b05408c1efbc109822ef79916c
+2 RIN MH:IF32623
+1 FAMS @F13705@
+1 FAMC @F13702@
+0 @I23885@ INDI
+1 RIN MH:I23885
+1 _UID 6717f1b45408c1efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:44:31 GMT+5.5
+1 NAME  /Osteoglossomorpha/
+2 SURN Osteoglossomorpha
+1 SEX M
+1 BIRT
+2 _UID 6717f1b65408c1efbc109822ef79916c
+2 RIN MH:IF32624
+1 FAMS @F13704@
+1 FAMC @F13702@
+0 @I23886@ INDI
+1 RIN MH:I23886
+1 _UID 6718a1e59f5411efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:49:20 GMT+5.5
+1 NAME  /Euteleostei/
+2 SURN Euteleostei
+1 SEX M
+1 BIRT
+2 _UID 6718a1e85408c1efbc109822ef79916c
+2 RIN MH:IF32625
+2 DATE 240 mya
+1 DEAT
+2 _UID 6718a1ef5408c1efbc109822ef79916c
+2 RIN MH:IF32626
+1 FAMS @F13714@
+1 FAMC @F13703@
+0 @I23887@ INDI
+1 RIN MH:I23887
+1 _UID 6718a20c5408c1efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:46:26 GMT+5.5
+1 NAME  /Otocephala/
+2 SURN Otocephala
+1 SEX M
+1 BIRT
+2 _UID 6718a2165408c1efbc109822ef79916c
+2 RIN MH:IF32627
+2 DATE 230 Mya
+1 FAMS @F13708@
+1 FAMC @F13703@
+0 @I23888@ INDI
+1 RIN MH:I23888
+1 _UID 6718a2439f5411efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:44:23 GMT+5.5
+1 NAME  /Osteoglossiformes (bonytongues, elephantfishes)/
+2 SURN Osteoglossiformes (bonytongues, elephantfishes)
+1 SEX M
+1 BIRT
+2 _UID 6718a24f5408c1efbc109822ef79916c
+2 RIN MH:IF32628
+2 DATE 250 mya
+1 FAMC @F13704@
+0 @I23889@ INDI
+1 RIN MH:I23889
+1 _UID 6718a2535408c1efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:44:31 GMT+5.5
+1 NAME  /Hiodontiformes (mooneyes)/
+2 SURN Hiodontiformes (mooneyes)
+1 SEX M
+1 BIRT
+2 _UID 6718a2575408c1efbc109822ef79916c
+2 RIN MH:IF32629
+1 FAMC @F13704@
+0 @I23890@ INDI
+1 RIN MH:I23890
+1 _UID 6718a26b9f5411efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:44:53 GMT+5.5
+1 NAME  /Elopiformes (tenpounders, tarpons)/
+2 SURN Elopiformes (tenpounders, tarpons)
+1 SEX M
+1 BIRT
+2 _UID 6718a26d5408c1efbc109822ef79916c
+2 RIN MH:IF32630
+1 FAMC @F13705@
+0 @I23891@ INDI
+1 RIN MH:I23891
+1 _UID 6718a26f5408c1efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:45:14 GMT+5.5
+1 NAME  /Elopomorpha/
+2 SURN Elopomorpha
+1 SEX M
+1 BIRT
+2 _UID 6718a2705408c1efbc109822ef79916c
+2 RIN MH:IF32631
+1 FAMS @F13706@
+1 FAMC @F13705@
+0 @I23892@ INDI
+1 RIN MH:I23892
+1 _UID 6718a2789f5411efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:45:07 GMT+5.5
+1 NAME  /Albuliformes (Japanese gissus and bonefishes) /
+2 SURN Albuliformes (Japanese gissus and bonefishes) 
+1 SEX M
+1 BIRT
+2 _UID 6718a27b5408c1efbc109822ef79916c
+2 RIN MH:IF32632
+1 FAMC @F13706@
+0 @I23893@ INDI
+1 RIN MH:I23893
+1 _UID 6718a27f5408c1efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:45:31 GMT+5.5
+1 NAME  /Elopomorpha/
+2 SURN Elopomorpha
+1 SEX M
+1 BIRT
+2 _UID 6718a2825408c1efbc109822ef79916c
+2 RIN MH:IF32633
+1 FAMS @F13707@
+1 FAMC @F13706@
+0 @I23894@ INDI
+1 RIN MH:I23894
+1 _UID 6718a2889f5411efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:45:23 GMT+5.5
+1 NAME  /Anguilliformes (true eels)/
+2 SURN Anguilliformes (true eels)
+1 SEX M
+1 BIRT
+2 _UID 6718a28b5408c1efbc109822ef79916c
+2 RIN MH:IF32634
+1 FAMC @F13707@
+0 @I23895@ INDI
+1 RIN MH:I23895
+1 _UID 6718a2905408c1efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:45:31 GMT+5.5
+1 NAME  /Notacanthiformes (deep sea spiny eels)/
+2 SURN Notacanthiformes (deep sea spiny eels)
+1 SEX M
+1 BIRT
+2 _UID 6718a2935408c1efbc109822ef79916c
+2 RIN MH:IF32635
+1 FAMC @F13707@
+0 @I23896@ INDI
+1 RIN MH:I23896
+1 _UID 6718a2bf9f5411efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:46:22 GMT+5.5
+1 NAME  /Clupei Clupeiformes (herrings)/
+2 SURN Clupei Clupeiformes (herrings)
+1 SEX M
+1 BIRT
+2 _UID 6718a2c65408c1efbc109822ef79916c
+2 RIN MH:IF32636
+1 FAMC @F13708@
+0 @I23897@ INDI
+1 RIN MH:I23897
+1 _UID 6718a2c85408c1efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:46:44 GMT+5.5
+1 NAME  /Otocephala/
+2 SURN Otocephala
+1 SEX M
+1 BIRT
+2 _UID 6718a2ca5408c1efbc109822ef79916c
+2 RIN MH:IF32637
+1 FAMS @F13709@
+1 FAMC @F13708@
+0 @I23898@ INDI
+1 RIN MH:I23898
+1 _UID 6718a2ce9f5411efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:47:37 GMT+5.5
+1 NAME  /Ostariophysi/
+2 SURN Ostariophysi
+1 SEX M
+1 BIRT
+2 _UID 6718a2d15408c1efbc109822ef79916c
+2 RIN MH:IF32638
+1 FAMS @F13710@
+1 FAMC @F13709@
+0 @I23899@ INDI
+1 RIN MH:I23899
+1 _UID 6718a2d75408c1efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:46:44 GMT+5.5
+1 NAME  /Alepocephali Alepocephaliformes (slickheads)/
+2 SURN Alepocephali Alepocephaliformes (slickheads)
+1 SEX M
+1 BIRT
+2 _UID 6718a2dc5408c1efbc109822ef79916c
+2 RIN MH:IF32639
+1 FAMC @F13709@
+0 @I23900@ INDI
+1 RIN MH:I23900
+1 _UID 6718a3019f5411efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:47:55 GMT+5.5
+1 NAME  /Otophysa/
+2 SURN Otophysa
+1 SEX M
+1 BIRT
+2 _UID 6718a3065408c1efbc109822ef79916c
+2 RIN MH:IF32640
+1 FAMS @F13711@
+1 FAMC @F13710@
+0 @I23901@ INDI
+1 RIN MH:I23901
+1 _UID 6718a30e5408c1efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:47:37 GMT+5.5
+1 NAME  /Anotophysa Gonorynchiformes (milkfish)/
+2 SURN Anotophysa Gonorynchiformes (milkfish)
+1 SEX M
+1 BIRT
+2 _UID 6718a3115408c1efbc109822ef79916c
+2 RIN MH:IF32641
+1 FAMC @F13710@
+0 @I23902@ INDI
+1 RIN MH:I23902
+1 _UID 6718a31c9f5411efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:47:50 GMT+5.5
+1 NAME  /Cypriniformes (minnows, carps, loaches)/
+2 SURN Cypriniformes (minnows, carps, loaches)
+1 SEX M
+1 BIRT
+2 _UID 6718a31e5408c1efbc109822ef79916c
+2 RIN MH:IF32642
+1 FAMC @F13711@
+0 @I23903@ INDI
+1 RIN MH:I23903
+1 _UID 6718a3215408c1efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:48:09 GMT+5.5
+1 NAME  /Otophysa/
+2 SURN Otophysa
+1 SEX M
+1 BIRT
+2 _UID 6718a3235408c1efbc109822ef79916c
+2 RIN MH:IF32643
+1 FAMS @F13712@
+1 FAMC @F13711@
+0 @I23904@ INDI
+1 RIN MH:I23904
+1 _UID 6718a32b9f5411efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:48:05 GMT+5.5
+1 NAME  /Characiformes (tetras, piranhas)/
+2 SURN Characiformes (tetras, piranhas)
+1 SEX M
+1 BIRT
+2 _UID 6718a32d5408c1efbc109822ef79916c
+2 RIN MH:IF32644
+1 FAMC @F13712@
+0 @I23905@ INDI
+1 RIN MH:I23905
+1 _UID 6718a32f5408c1efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:48:33 GMT+5.5
+1 NAME  /Otophysa/
+2 SURN Otophysa
+1 SEX M
+1 BIRT
+2 _UID 6718a3315408c1efbc109822ef79916c
+2 RIN MH:IF32645
+1 FAMS @F13713@
+1 FAMC @F13712@
+0 @I23906@ INDI
+1 RIN MH:I23906
+1 _UID 6718a33a9f5411efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:48:20 GMT+5.5
+1 NAME  /Siluriformes (catfish)/
+2 SURN Siluriformes (catfish)
+1 SEX M
+1 BIRT
+2 _UID 6718a33c5408c1efbc109822ef79916c
+2 RIN MH:IF32646
+1 FAMC @F13713@
+0 @I23907@ INDI
+1 RIN MH:I23907
+1 _UID 6718a3465408c1efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:48:33 GMT+5.5
+1 NAME  /Gymnotiformes (knifefish and electric eels)/
+2 SURN Gymnotiformes (knifefish and electric eels)
+1 SEX M
+1 BIRT
+2 _UID 6718a3495408c1efbc109822ef79916c
+2 RIN MH:IF32647
+1 FAMC @F13713@
+0 @I23908@ INDI
+1 RIN MH:I23908
+1 _UID 6718a3709f5411efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:49:15 GMT+5.5
+1 NAME  /Lepidogalaxii Lepidogalaxiiformes (salamanderfish)/
+2 SURN Lepidogalaxii Lepidogalaxiiformes (salamanderfish)
+1 SEX M
+1 BIRT
+2 _UID 6718a3735408c1efbc109822ef79916c
+2 RIN MH:IF32648
+1 FAMC @F13714@
+0 @I23909@ INDI
+1 RIN MH:I23909
+1 _UID 6718a3765408c1efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:49:43 GMT+5.5
+1 NAME  /Euteleostei/
+2 SURN Euteleostei
+1 SEX M
+1 BIRT
+2 _UID 6718a3785408c1efbc109822ef79916c
+2 RIN MH:IF32649
+1 FAMS @F13715@
+1 FAMC @F13714@
+0 @I23910@ INDI
+1 RIN MH:I23910
+1 _UID 6718a3809f5411efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:50:43 GMT+5.5
+1 NAME  /Protacanthopterygii/
+2 SURN Protacanthopterygii
+1 SEX M
+1 BIRT
+2 _UID 6718a3875408c1efbc109822ef79916c
+2 RIN MH:IF32650
+2 DATE 225 mya
+1 DEAT
+2 _UID 6718a3879f5411efbc109822ef79916c
+2 RIN MH:IF32651
+1 FAMS @F13717@
+1 FAMC @F13715@
+0 @I23911@ INDI
+1 RIN MH:I23911
+1 _UID 6718a38d5408c1efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:50:05 GMT+5.5
+1 NAME  /Euteleostei/
+2 SURN Euteleostei
+1 SEX M
+1 BIRT
+2 _UID 6718a38f5408c1efbc109822ef79916c
+2 RIN MH:IF32652
+1 FAMS @F13716@
+1 FAMC @F13715@
+0 @I23912@ INDI
+1 RIN MH:I23912
+1 _UID 6718a3999f5411efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:52:13 GMT+5.5
+1 NAME  /Neoteleostei/
+2 SURN Neoteleostei
+1 SEX M
+1 BIRT
+2 _UID 6718a39f5408c1efbc109822ef79916c
+2 RIN MH:IF32653
+2 DATE 175 mya
+1 DEAT
+2 _UID 6718a39f9f5411efbc109822ef79916c
+2 RIN MH:IF32654
+1 FAMS @F13721@
+1 FAMC @F13716@
+0 @I23913@ INDI
+1 RIN MH:I23913
+1 _UID 6718a3a25408c1efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:51:46 GMT+5.5
+1 NAME  /Stomiati/
+2 SURN Stomiati
+1 SEX M
+1 BIRT
+2 _UID 6718a3a55408c1efbc109822ef79916c
+2 RIN MH:IF32655
+1 FAMS @F13720@
+1 FAMC @F13716@
+0 @I23914@ INDI
+1 RIN MH:I23914
+1 _UID 6718a3c49f5411efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:50:38 GMT+5.5
+1 NAME  /Argentiniformes (marine smelts)/
+2 SURN Argentiniformes (marine smelts)
+1 SEX M
+1 BIRT
+2 _UID 6718a3c65408c1efbc109822ef79916c
+2 RIN MH:IF32656
+1 FAMC @F13717@
+0 @I23915@ INDI
+1 RIN MH:I23915
+1 _UID 6718a3c95408c1efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:50:57 GMT+5.5
+1 NAME  /Protacanthopterygii/
+2 SURN Protacanthopterygii
+1 SEX M
+1 BIRT
+2 _UID 6718a3cb5408c1efbc109822ef79916c
+2 RIN MH:IF32657
+1 FAMS @F13718@
+1 FAMC @F13717@
+0 @I23916@ INDI
+1 RIN MH:I23916
+1 _UID 6718a3d39f5411efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:50:54 GMT+5.5
+1 NAME  /Galaxiiformes (whitebait, mudfishes)/
+2 SURN Galaxiiformes (whitebait, mudfishes)
+1 SEX M
+1 BIRT
+2 _UID 6718a3d65408c1efbc109822ef79916c
+2 RIN MH:IF32658
+1 FAMC @F13718@
+0 @I23917@ INDI
+1 RIN MH:I23917
+1 _UID 6718a3d75408c1efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:51:18 GMT+5.5
+1 NAME  /Protacanthopterygii/
+2 SURN Protacanthopterygii
+1 SEX M
+1 BIRT
+2 _UID 6718a3d95408c1efbc109822ef79916c
+2 RIN MH:IF32659
+1 FAMS @F13719@
+1 FAMC @F13718@
+0 @I23918@ INDI
+1 RIN MH:I23918
+1 _UID 6718a3e39f5411efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:51:09 GMT+5.5
+1 NAME  /Esociformes (pike)/
+2 SURN Esociformes (pike)
+1 SEX M
+1 BIRT
+2 _UID 6718a3e55408c1efbc109822ef79916c
+2 RIN MH:IF32660
+1 FAMC @F13719@
+0 @I23919@ INDI
+1 RIN MH:I23919
+1 _UID 6718a3eb5408c1efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:51:18 GMT+5.5
+1 NAME  /Salmoniformes (salmon, trout)/
+2 SURN Salmoniformes (salmon, trout)
+1 SEX M
+1 BIRT
+2 _UID 6718a3ee5408c1efbc109822ef79916c
+2 RIN MH:IF32661
+1 FAMC @F13719@
+0 @I23920@ INDI
+1 RIN MH:I23920
+1 _UID 6718a3ff9f5411efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:51:40 GMT+5.5
+1 NAME  /Osmeriformes (smelt) /
+2 SURN Osmeriformes (smelt) 
+1 SEX M
+1 BIRT
+2 _UID 6718a4045408c1efbc109822ef79916c
+2 RIN MH:IF32662
+1 FAMC @F13720@
+0 @I23921@ INDI
+1 RIN MH:I23921
+1 _UID 6718a4085408c1efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:51:46 GMT+5.5
+1 NAME  /Stomiiformes (dragonfish) /
+2 SURN Stomiiformes (dragonfish) 
+1 SEX M
+1 BIRT
+2 _UID 6718a40a5408c1efbc109822ef79916c
+2 RIN MH:IF32663
+1 FAMC @F13720@
+0 @I23922@ INDI
+1 RIN MH:I23922
+1 _UID 6718a41b9f5411efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:52:06 GMT+5.5
+1 NAME  /Ateleopodia Ateleopodiformes (jellynoses)/
+2 SURN Ateleopodia Ateleopodiformes (jellynoses)
+1 SEX M
+1 BIRT
+2 _UID 6718a41e5408c1efbc109822ef79916c
+2 RIN MH:IF32664
+1 FAMC @F13721@
+0 @I23923@ INDI
+1 RIN MH:I23923
+1 _UID 6718a4225408c1efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:52:31 GMT+5.5
+1 NAME  /Eurypterygia/
+2 SURN Eurypterygia
+1 SEX M
+1 BIRT
+2 _UID 6718a4255408c1efbc109822ef79916c
+2 RIN MH:IF32665
+1 FAMS @F13722@
+1 FAMC @F13721@
+0 @I23924@ INDI
+1 RIN MH:I23924
+1 _UID 6718a42d9f5411efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:52:24 GMT+5.5
+1 NAME  /Aulopa Aulopiformes (lizardfish)/
+2 SURN Aulopa Aulopiformes (lizardfish)
+1 SEX M
+1 BIRT
+2 _UID 6718a4305408c1efbc109822ef79916c
+2 RIN MH:IF32666
+1 FAMC @F13722@
+0 @I23925@ INDI
+1 RIN MH:I23925
+1 _UID 6718a4345408c1efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:52:51 GMT+5.5
+1 NAME  /Ctenosquamata/
+2 SURN Ctenosquamata
+1 SEX M
+1 BIRT
+2 _UID 6718a4375408c1efbc109822ef79916c
+2 RIN MH:IF32667
+1 FAMS @F13723@
+1 FAMC @F13722@
+0 @I23926@ INDI
+1 RIN MH:I23926
+1 _UID 6718a4409f5411efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:53:19 GMT+5.5
+1 NAME  /Acanthomorpha/
+2 SURN Acanthomorpha
+1 SEX M
+1 BIRT
+2 _UID 6718a4425408c1efbc109822ef79916c
+2 RIN MH:IF32668
+1 FAMS @F13724@
+1 FAMC @F13723@
+0 @I23927@ INDI
+1 RIN MH:I23927
+1 _UID 6718a4485408c1efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:52:51 GMT+5.5
+1 NAME  /Scopelomorpha Myctophiformes (lanternfish)/
+2 SURN Scopelomorpha Myctophiformes (lanternfish)
+1 SEX M
+1 BIRT
+2 _UID 6718a44b5408c1efbc109822ef79916c
+2 RIN MH:IF32669
+1 FAMC @F13723@
+0 @I23928@ INDI
+1 RIN MH:I23928
+1 _UID 6718a45619c061efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:53:19 GMT+5.5
+1 SEX F
+1 FAMS @F13724@
+0 @I23929@ INDI
+1 RIN MH:I23929
+1 _UID 6718a45f5408c1efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:53:38 GMT+5.5
+1 NAME  /Acanthomorpha/
+2 SURN Acanthomorpha
+1 SEX M
+1 BIRT
+2 _UID 6718a4635408c1efbc109822ef79916c
+2 RIN MH:IF32670
+1 FAMS @F13725@
+1 FAMC @F13724@
+0 @I23930@ INDI
+1 RIN MH:I23930
+1 _UID 6718a4655408c1efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:54:06 GMT+5.5
+1 NAME  /Acanthomorpha/
+2 SURN Acanthomorpha
+1 SEX M
+1 BIRT
+2 _UID 6718a4675408c1efbc109822ef79916c
+2 RIN MH:IF32671
+1 FAMS @F13726@
+1 FAMC @F13724@
+0 @I23931@ INDI
+1 RIN MH:I23931
+1 _UID 6718a46e9f5411efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:59:11 GMT+5.5
+1 NAME  /Acanthopterygii/
+2 SURN Acanthopterygii
+1 SEX M
+1 BIRT
+2 _UID 6718a4725408c1efbc109822ef79916c
+2 RIN MH:IF32672
+1 FAMS @F13730@
+1 FAMC @F13725@
+0 @I23932@ INDI
+1 RIN MH:I23932
+1 _UID 6718a4775408c1efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:53:38 GMT+5.5
+1 NAME  /Polymixiipterygii Polymixiiformes (beardfish)/
+2 SURN Polymixiipterygii Polymixiiformes (beardfish)
+1 SEX M
+1 BIRT
+2 _UID 6718a47a5408c1efbc109822ef79916c
+2 RIN MH:IF32673
+1 FAMC @F13725@
+0 @I23933@ INDI
+1 RIN MH:I23933
+1 _UID 6718a48a9f5411efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:57:35 GMT+5.5
+1 NAME  /Paracanthopterygii/
+2 SURN Paracanthopterygii
+1 SEX M
+1 BIRT
+2 _UID 6718a48c5408c1efbc109822ef79916c
+2 RIN MH:IF32674
+1 FAMS @F13727@
+1 FAMC @F13726@
+0 @I23934@ INDI
+1 RIN MH:I23934
+1 _UID 6718a4935408c1efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:54:06 GMT+5.5
+1 NAME  /Lampripterygii Lampriformes (oarfish, opah, ribbonfish)/
+2 SURN Lampripterygii Lampriformes (oarfish, opah, ribbonfish)
+1 SEX M
+1 BIRT
+2 _UID 6718a4965408c1efbc109822ef79916c
+2 RIN MH:IF32675
+1 FAMC @F13726@
+0 @I23935@ INDI
+1 RIN MH:I23935
+1 _UID 6718a49f9f5411efbc109822ef79916c
+1 _UPD 23 OCT 2024 12:54:23 GMT+5.5
+1 NAME  /Percopsiformes (troutperches)/
+2 SURN Percopsiformes (troutperches)
+1 SEX M
+1 BIRT
+2 _UID 6718a4a75408c1efbc109822ef79916c
+2 RIN MH:IF32676
+1 FAMC @F13727@
+0 @I23936@ INDI
+1 RIN MH:I23936
+1 _UID 6718a565f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 12:57:46 GMT+5.5
+1 NAME  /Paracanthopterygii/
+2 SURN Paracanthopterygii
+1 SEX M
+1 BIRT
+2 _UID 6718a567f60001efbc119822ef79916c
+2 RIN MH:IF32677
+1 FAMS @F13728@
+1 FAMC @F13727@
+0 @I23937@ INDI
+1 RIN MH:I23937
+1 _UID 6718a56b3d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 12:57:42 GMT+5.5
+1 NAME  /Zeiformes (dories)/
+2 SURN Zeiformes (dories)
+1 SEX M
+1 BIRT
+2 _UID 6718a56ef60001efbc119822ef79916c
+2 RIN MH:IF32678
+1 FAMC @F13728@
+0 @I23938@ INDI
+1 RIN MH:I23938
+1 _UID 6718a571f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 12:58:05 GMT+5.5
+1 NAME  /Paracanthopterygii/
+2 SURN Paracanthopterygii
+1 SEX M
+1 BIRT
+2 _UID 6718a572f60001efbc119822ef79916c
+2 RIN MH:IF32679
+1 FAMS @F13729@
+1 FAMC @F13728@
+0 @I23939@ INDI
+1 RIN MH:I23939
+1 _UID 6718a57a3d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 12:57:57 GMT+5.5
+1 NAME  /Stylephoriformes (tube-eyes/thread-fins)/
+2 SURN Stylephoriformes (tube-eyes/thread-fins)
+1 SEX M
+1 BIRT
+2 _UID 6718a57df60001efbc119822ef79916c
+2 RIN MH:IF32680
+1 FAMC @F13729@
+0 @I23940@ INDI
+1 RIN MH:I23940
+1 _UID 6718a583f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 12:58:05 GMT+5.5
+1 NAME  /Gadiformes (cods)/
+2 SURN Gadiformes (cods)
+1 SEX M
+1 BIRT
+2 _UID 6718a585f60001efbc119822ef79916c
+2 RIN MH:IF32681
+1 FAMC @F13729@
+0 @I23941@ INDI
+1 RIN MH:I23941
+1 _UID 6718a5a73d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 12:59:02 GMT+5.5
+1 NAME  /Berycimorphaceae/
+2 SURN Berycimorphaceae
+1 SEX M
+1 BIRT
+2 _UID 6718a5aaf60001efbc119822ef79916c
+2 RIN MH:IF32682
+1 FAMS @F13731@
+1 FAMC @F13730@
+0 @I23942@ INDI
+1 RIN MH:I23942
+1 _UID 6718a5af3d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 12:58:54 GMT+5.5
+1 NAME  /Beryciformes (alfonsinos, whalefishes)/
+2 SURN Beryciformes (alfonsinos, whalefishes)
+1 SEX M
+1 BIRT
+2 _UID 6718a5b6f60001efbc119822ef79916c
+2 RIN MH:IF32683
+1 FAMC @F13731@
+0 @I23943@ INDI
+1 RIN MH:I23943
+1 _UID 6718a5bcf60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 12:59:02 GMT+5.5
+1 NAME  /Trachichthyiformes (pinecone fishes, slimeheads)/
+2 SURN Trachichthyiformes (pinecone fishes, slimeheads)
+1 SEX M
+1 BIRT
+2 _UID 6718a5bef60001efbc119822ef79916c
+2 RIN MH:IF32684
+1 FAMC @F13731@
+0 @I23944@ INDI
+1 RIN MH:I23944
+1 _UID 6718a5c5f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 12:59:54 GMT+5.5
+1 NAME  /Acanthopterygii/
+2 SURN Acanthopterygii
+1 SEX M
+1 BIRT
+2 _UID 6718a5c7f60001efbc119822ef79916c
+2 RIN MH:IF32685
+1 FAMS @F13732@
+1 FAMC @F13730@
+0 @I23945@ INDI
+1 RIN MH:I23945
+1 _UID 6718a5cf3d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 12:59:22 GMT+5.5
+1 NAME  /Holocentrimorphaceae Holocentriformes (squirrelfish, soldier fishes)/
+2 SURN Holocentrimorphaceae Holocentriformes (squirrelfish, soldier fishes)
+1 SEX M
+1 BIRT
+2 _UID 6718a5d2f60001efbc119822ef79916c
+2 RIN MH:IF32686
+1 FAMC @F13732@
+0 @I23946@ INDI
+1 RIN MH:I23946
+1 _UID 6718a5d7f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:01:02 GMT+5.5
+1 NAME  /Percomorpha/
+2 SURN Percomorpha
+1 SEX M
+1 BIRT
+2 _UID 6718a5f2f60001efbc119822ef79916c
+2 RIN MH:IF32687
+1 FAMS @F13733@
+1 FAMC @F13732@
+1 NOTE <p style="text-align: left;" dir="ltr"><br /><a href="https://en.wikipedia.org/wiki/Percomorpha">https://en.wikipedia.org/wiki/Percomorpha</a></p>
+2 CONT <p style="text-align: left;" dir="ltr">&nbsp;</p>
+2 CONT <div class="mw-heading mw-heading4" style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: bold; padding-bottom: 0px; font-style: n
+2 CONC ormal; padding-top: 0.5em; orphans: 2; widows: 2; margin: 0.25em 0px; letter-spacing: normal; line-height: 1.6; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-varian
+2 CONC t-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><span style="font-size: medium;"><span style="font-
+2 CONC size: medium;"></span></span>
+<h4 id="Internal_relationships" style="font-family: inherit; font-weight: bold; margin: 0px 0px 0.25em; display: inline; line-height: 1.6; font-stretch: inherit; font-opt
+2 CONC ical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; border: 0px; padding: 0px;">Internal relationships</h4>
+<span 
+2 CONC style="font-size: medium;"><span class="mw-editsection" style="font-size: small; font-family: sans-serif; vertical-align: baseline; font-weight: normal; margin-left: 1em; line-height: 0; margin-right:
+2 CONC  0px; user-select: none; margin-inline: 1em 0px;"><span class="mw-editsection-bracket" style="margin-right: 0.25em; margin-inline: 0px 0.25em;">[</span><a style="text-decoration: none; background: non
+2 CONC e transparent scroll repeat 0% 0%; white-space: nowrap; border-radius: 0px; overflow-wrap: break-word;" title="Edit section: Internal relationships" href="https://en.wikipedia.org/w/index.php?title=Pe
+2 CONC rcomorpha&amp;action=edit&amp;section=4"><span>edit</span></a><span class="mw-editsection-bracket" style="margin-left: 0.25em; margin-inline: 0.25em 0px;">]</span></span></span></div>
+<p style="font-s
+2 CONC ize: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin: 0.5em 0px 1em; le
+2 CONC tter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-d
+2 CONC ecoration-style: initial; text-decoration-color: initial;">The following cladogram shows the<span>&nbsp;</span><a class="mw-redirect" style="text-decoration: none; background: none transparent scroll 
+2 CONC repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Phylogeny" href="https://en.wikipedia.org/wiki/Phylogeny">evolutionary relationships</a><span>&nbsp;</span>of the various groups of
+2 CONC <span>&nbsp;</span><a class="mw-redirect" style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Extant taxa" href="http
+2 CONC s://en.wikipedia.org/wiki/Extant_taxa">extant</a><span>&nbsp;</span>percomorph fishes:</p>
+2 CONT <p style="text-align: left;" dir="ltr"><br class="Apple-interchange-newline" />&nbsp;</p>
+0 @I23947@ INDI
+1 RIN MH:I23947
+1 _UID 6718a62c3d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:00:55 GMT+5.5
+1 NAME  /Ophidiaria Ophidiiformes (cusk-eels)/
+2 SURN Ophidiaria Ophidiiformes (cusk-eels)
+1 SEX M
+1 BIRT
+2 _UID 6718a62ff60001efbc119822ef79916c
+2 RIN MH:IF32688
+1 FAMC @F13733@
+0 @I23948@ INDI
+1 RIN MH:I23948
+1 _UID 6718a635f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:01:56 GMT+5.5
+1 NAME  /Percomorpha/
+2 SURN Percomorpha
+1 SEX M
+1 BIRT
+2 _UID 6718a636f60001efbc119822ef79916c
+2 RIN MH:IF32689
+1 FAMS @F13734@
+1 FAMC @F13733@
+0 @I23949@ INDI
+1 RIN MH:I23949
+1 _UID 6718a6443d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:01:19 GMT+5.5
+1 NAME  /Batrachoidaria Batrachoididae (toadfishes)/
+2 SURN Batrachoidaria Batrachoididae (toadfishes)
+1 SEX M
+1 BIRT
+2 _UID 6718a647f60001efbc119822ef79916c
+2 RIN MH:IF32690
+1 FAMC @F13734@
+0 @I23950@ INDI
+1 RIN MH:I23950
+1 _UID 6718a66af60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:02:39 GMT+5.5
+1 NAME  /Percomorpha/
+2 SURN Percomorpha
+1 SEX M
+1 BIRT
+2 _UID 6718a66cf60001efbc119822ef79916c
+2 RIN MH:IF32691
+1 FAMS @F13735@
+1 FAMC @F13734@
+0 @I23951@ INDI
+1 RIN MH:I23951
+1 _UID 6718a66f3d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:02:17 GMT+5.5
+1 NAME  /Percomorpha/
+2 SURN Percomorpha
+1 SEX M
+1 BIRT
+2 _UID 6718a671f60001efbc119822ef79916c
+2 RIN MH:IF32692
+1 FAMS @F13736@
+1 FAMC @F13735@
+0 @I23952@ INDI
+1 RIN MH:I23952
+1 _UID 6718a6773d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:02:10 GMT+5.5
+1 NAME  /Pelagiaria Scombriformes (tunas, mackerel, etc.)/
+2 SURN Pelagiaria Scombriformes (tunas, mackerel, etc.)
+1 SEX M
+1 BIRT
+2 _UID 6718a67af60001efbc119822ef79916c
+2 RIN MH:IF32693
+1 FAMC @F13736@
+0 @I23953@ INDI
+1 RIN MH:I23953
+1 _UID 6718a67ff60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:02:17 GMT+5.5
+1 NAME  /Syngnatharia Syngnathiformes (seahorses, seadragon, etc.)/
+2 SURN Syngnatharia Syngnathiformes (seahorses, seadragon, etc.)
+1 SEX M
+1 BIRT
+2 _UID 6718a681f60001efbc119822ef79916c
+2 RIN MH:IF32694
+1 FAMC @F13736@
+0 @I23955@ INDI
+1 RIN MH:I23955
+1 _UID 6718a695f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:03:31 GMT+5.5
+1 NAME  /Percomorpha/
+2 SURN Percomorpha
+1 SEX M
+1 BIRT
+2 _UID 6718a697f60001efbc119822ef79916c
+2 RIN MH:IF32696
+1 FAMS @F13737@
+1 FAMC @F13735@
+0 @I23956@ INDI
+1 RIN MH:I23956
+1 _UID 6718a69b3d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:03:03 GMT+5.5
+1 NAME  /Gobiaria  /
+2 SURN Gobiaria  
+1 SEX M
+1 BIRT
+2 _UID 6718a69df60001efbc119822ef79916c
+2 RIN MH:IF32697
+1 FAMS @F13738@
+1 FAMC @F13737@
+0 @I23957@ INDI
+1 RIN MH:I23957
+1 _UID 6718a6a33d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:02:54 GMT+5.5
+1 NAME  /Gobiiformes (gobies)/
+2 SURN Gobiiformes (gobies)
+1 SEX M
+1 BIRT
+2 _UID 6718a6a6f60001efbc119822ef79916c
+2 RIN MH:IF32698
+1 FAMC @F13738@
+0 @I23958@ INDI
+1 RIN MH:I23958
+1 _UID 6718a6acf60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:03:03 GMT+5.5
+1 NAME  /Kurtiformes (nurseryfishes, cardinalfishes)/
+2 SURN Kurtiformes (nurseryfishes, cardinalfishes)
+1 SEX M
+1 BIRT
+2 _UID 6718a6aff60001efbc119822ef79916c
+2 RIN MH:IF32699
+1 FAMC @F13738@
+0 @I23959@ INDI
+1 RIN MH:I23959
+1 _UID 6718a6c9f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:03:51 GMT+5.5
+1 NAME  /Percomorpha/
+2 SURN Percomorpha
+1 SEX M
+1 BIRT
+2 _UID 6718a6cbf60001efbc119822ef79916c
+2 RIN MH:IF32700
+1 FAMS @F13739@
+1 FAMC @F13737@
+0 @I23960@ INDI
+1 RIN MH:I23960
+1 _UID 6718a6d43d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:17:08 GMT+5.5
+1 NAME  /Eupercaria  /
+2 SURN Eupercaria  
+1 SEX M
+1 BIRT
+2 _UID 6718a6d7f60001efbc119822ef79916c
+2 RIN MH:IF32701
+1 FAMS @F13773@
+1 FAMC @F13739@
+0 @I23961@ INDI
+1 RIN MH:I23961
+1 _UID 6718a6dcf60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:04:08 GMT+5.5
+1 NAME  /Percomorpha/
+2 SURN Percomorpha
+1 SEX M
+1 BIRT
+2 _UID 6718a6dff60001efbc119822ef79916c
+2 RIN MH:IF32702
+1 FAMS @F13740@
+1 FAMC @F13739@
+0 @I23962@ INDI
+1 RIN MH:I23962
+1 _UID 6718a6e93d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:13:24 GMT+5.5
+1 NAME  /Ovalentaria  /
+2 SURN Ovalentaria  
+1 SEX M
+1 BIRT
+2 _UID 6718a6ecf60001efbc119822ef79916c
+2 RIN MH:IF32703
+1 FAMS @F13757@
+1 FAMC @F13740@
+0 @I23963@ INDI
+1 RIN MH:I23963
+1 _UID 6718a6eff60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:04:25 GMT+5.5
+1 NAME  /Percomorpha/
+2 SURN Percomorpha
+1 SEX M
+1 BIRT
+2 _UID 6718a6f0f60001efbc119822ef79916c
+2 RIN MH:IF32704
+1 FAMS @F13741@
+1 FAMC @F13740@
+0 @I23964@ INDI
+1 RIN MH:I23964
+1 _UID 6718a6f53d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:05:00 GMT+5.5
+1 NAME  /Carangaria/
+2 SURN Carangaria
+1 SEX M
+1 BIRT
+2 _UID 6718a6f8f60001efbc119822ef79916c
+2 RIN MH:IF32705
+1 FAMS @F13743@
+1 FAMC @F13741@
+0 @I23965@ INDI
+1 RIN MH:I23965
+1 _UID 6718a6fff60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:04:42 GMT+5.5
+1 NAME  /Anabantaria  /
+2 SURN Anabantaria  
+1 SEX M
+1 BIRT
+2 _UID 6718a701f60001efbc119822ef79916c
+2 RIN MH:IF32706
+1 FAMS @F13742@
+1 FAMC @F13741@
+0 @I23966@ INDI
+1 RIN MH:I23966
+1 _UID 6718a7093d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:04:36 GMT+5.5
+1 NAME  /Anabantiformes (snakeheads, Siamese fighting fish, gouramies)/
+2 SURN Anabantiformes (snakeheads, Siamese fighting fish, gouramies)
+1 SEX M
+1 BIRT
+2 _UID 6718a70cf60001efbc119822ef79916c
+2 RIN MH:IF32707
+1 FAMC @F13742@
+0 @I23967@ INDI
+1 RIN MH:I23967
+1 _UID 6718a70ff60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:04:42 GMT+5.5
+1 NAME  /Synbranchiformes/
+2 SURN Synbranchiformes
+1 SEX M
+1 BIRT
+2 _UID 6718a712f60001efbc119822ef79916c
+2 RIN MH:IF32708
+1 FAMC @F13742@
+0 @I23968@ INDI
+1 RIN MH:I23968
+1 _UID 6718a71e3d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:07:41 GMT+5.5
+1 NAME  /Carangaria/
+2 SURN Carangaria
+1 SEX M
+1 BIRT
+2 _UID 6718a720f60001efbc119822ef79916c
+2 RIN MH:IF32709
+1 FAMS @F13746@
+1 FAMC @F13743@
+0 @I23969@ INDI
+1 RIN MH:I23969
+1 _UID 6718a722f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:05:17 GMT+5.5
+1 NAME  /Carangaria/
+2 SURN Carangaria
+1 SEX M
+1 BIRT
+2 _UID 6718a724f60001efbc119822ef79916c
+2 RIN MH:IF32710
+1 FAMS @F13744@
+1 FAMC @F13743@
+0 @I23970@ INDI
+1 RIN MH:I23970
+1 _UID 6718a72d3d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:05:13 GMT+5.5
+1 NAME  /Polynemidae (threadfins) /
+2 SURN Polynemidae (threadfins) 
+1 SEX M
+1 BIRT
+2 _UID 6718a731f60001efbc119822ef79916c
+2 RIN MH:IF32711
+1 FAMC @F13744@
+0 @I23971@ INDI
+1 RIN MH:I23971
+1 _UID 6718a732f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:05:34 GMT+5.5
+1 NAME  /Carangaria/
+2 SURN Carangaria
+1 SEX M
+1 BIRT
+2 _UID 6718a735f60001efbc119822ef79916c
+2 RIN MH:IF32712
+1 FAMS @F13745@
+1 FAMC @F13744@
+0 @I23972@ INDI
+1 RIN MH:I23972
+1 _UID 6718a73a3d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:05:26 GMT+5.5
+1 NAME  /Menidae (moonfish)/
+2 SURN Menidae (moonfish)
+1 SEX M
+1 BIRT
+2 _UID 6718a73ef60001efbc119822ef79916c
+2 RIN MH:IF32713
+1 FAMC @F13745@
+0 @I23973@ INDI
+1 RIN MH:I23973
+1 _UID 6718a743f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:05:34 GMT+5.5
+1 NAME  /Lactariidae (false trevally)/
+2 SURN Lactariidae (false trevally)
+1 SEX M
+1 BIRT
+2 _UID 6718a746f60001efbc119822ef79916c
+2 RIN MH:IF32714
+1 FAMC @F13745@
+0 @I23974@ INDI
+1 RIN MH:I23974
+1 _UID 6718a7763d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:06:45 GMT+5.5
+1 NAME  /Part of "Carangiformes" /
+2 SURN Part of "Carangiformes" 
+1 SEX M
+1 BIRT
+2 _UID 6718a77df60001efbc119822ef79916c
+2 RIN MH:IF32715
+1 FAMS @F13747@
+1 FAMC @F13746@
+0 @I23975@ INDI
+1 RIN MH:I23975
+1 _UID 6718a7853d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:06:39 GMT+5.5
+1 NAME  /Nematistiidae (roosterfish)/
+2 SURN Nematistiidae (roosterfish)
+1 SEX M
+1 BIRT
+2 _UID 6718a787f60001efbc119822ef79916c
+2 RIN MH:IF32716
+1 FAMC @F13747@
+0 @I23976@ INDI
+1 RIN MH:I23976
+1 _UID 6718a78cf60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:07:01 GMT+5.5
+1 NAME  /Part of "Carangiformes" /
+2 SURN Part of "Carangiformes" 
+1 SEX M
+1 BIRT
+2 _UID 6718a78df60001efbc119822ef79916c
+2 RIN MH:IF32717
+1 FAMS @F13748@
+1 FAMC @F13747@
+0 @I23977@ INDI
+1 RIN MH:I23977
+1 _UID 6718a7953d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:06:56 GMT+5.5
+1 NAME  /Echeneidae (remoras)/
+2 SURN Echeneidae (remoras)
+1 SEX M
+1 BIRT
+2 _UID 6718a798f60001efbc119822ef79916c
+2 RIN MH:IF32718
+1 FAMC @F13748@
+0 @I23978@ INDI
+1 RIN MH:I23978
+1 _UID 6718a79bf60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:07:27 GMT+5.5
+1 NAME  /Part of "Carangiformes" /
+2 SURN Part of "Carangiformes" 
+1 SEX M
+1 BIRT
+2 _UID 6718a79df60001efbc119822ef79916c
+2 RIN MH:IF32719
+1 FAMS @F13749@
+1 FAMC @F13748@
+0 @I23979@ INDI
+1 RIN MH:I23979
+1 _UID 6718a7a43d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:07:19 GMT+5.5
+1 NAME  /Coryphaenidae (dolphinfish)/
+2 SURN Coryphaenidae (dolphinfish)
+1 SEX M
+1 BIRT
+2 _UID 6718a7aff60001efbc119822ef79916c
+2 RIN MH:IF32720
+1 FAMC @F13749@
+0 @I23980@ INDI
+1 RIN MH:I23980
+1 _UID 6718a7b5f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:07:27 GMT+5.5
+1 NAME  /Rachycentridae (cobia)/
+2 SURN Rachycentridae (cobia)
+1 SEX M
+1 BIRT
+2 _UID 6718a7b7f60001efbc119822ef79916c
+2 RIN MH:IF32721
+1 FAMC @F13749@
+0 @I23981@ INDI
+1 RIN MH:I23981
+1 _UID 6718a7c4f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:07:55 GMT+5.5
+1 NAME  /Carangaria/
+2 SURN Carangaria
+1 SEX M
+1 BIRT
+2 _UID 6718a7c5f60001efbc119822ef79916c
+2 RIN MH:IF32722
+1 FAMS @F13750@
+1 FAMC @F13746@
+0 @I23982@ INDI
+1 RIN MH:I23982
+1 _UID 6718a7cd3d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:07:52 GMT+5.5
+1 NAME  /Sphyraenidae (barracudas)/
+2 SURN Sphyraenidae (barracudas)
+1 SEX M
+1 BIRT
+2 _UID 6718a7d0f60001efbc119822ef79916c
+2 RIN MH:IF32723
+1 FAMC @F13750@
+0 @I23983@ INDI
+1 RIN MH:I23983
+1 _UID 6718a7d1f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:08:04 GMT+5.5
+1 NAME  /Carangaria/
+2 SURN Carangaria
+1 SEX M
+1 BIRT
+2 _UID 6718a7d3f60001efbc119822ef79916c
+2 RIN MH:IF32724
+1 FAMS @F13751@
+1 FAMC @F13750@
+0 @I23984@ INDI
+1 RIN MH:I23984
+1 _UID 6718a7d63d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:08:55 GMT+5.5
+1 NAME  /Carangaria/
+2 SURN Carangaria
+1 SEX M
+1 BIRT
+2 _UID 6718a7d9f60001efbc119822ef79916c
+2 RIN MH:IF32725
+1 FAMS @F13753@
+1 FAMC @F13751@
+0 @I23985@ INDI
+1 RIN MH:I23985
+1 _UID 6718a7dbf60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:08:20 GMT+5.5
+1 NAME  /Carangaria/
+2 SURN Carangaria
+1 SEX M
+1 BIRT
+2 _UID 6718a7dcf60001efbc119822ef79916c
+2 RIN MH:IF32726
+1 FAMS @F13752@
+1 FAMC @F13751@
+0 @I23986@ INDI
+1 RIN MH:I23986
+1 _UID 6718a7e33d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:08:14 GMT+5.5
+1 NAME  /Centropomidae (snooks)/
+2 SURN Centropomidae (snooks)
+1 SEX M
+1 BIRT
+2 _UID 6718a7e6f60001efbc119822ef79916c
+2 RIN MH:IF32727
+1 FAMC @F13752@
+0 @I23987@ INDI
+1 RIN MH:I23987
+1 _UID 6718a7eaf60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:08:20 GMT+5.5
+1 NAME  /Pleuronectiformes (flatfish)/
+2 SURN Pleuronectiformes (flatfish)
+1 SEX M
+1 BIRT
+2 _UID 6718a7ecf60001efbc119822ef79916c
+2 RIN MH:IF32728
+1 FAMC @F13752@
+0 @I23988@ INDI
+1 RIN MH:I23988
+1 _UID 6718a7f53d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:08:45 GMT+5.5
+1 NAME  /Other Part of "Carangiformes" /
+2 SURN Other Part of "Carangiformes" 
+1 SEX M
+1 BIRT
+2 _UID 6718a7fdf60001efbc119822ef79916c
+2 RIN MH:IF32729
+1 FAMS @F13754@
+1 FAMC @F13753@
+0 @I23989@ INDI
+1 RIN MH:I23989
+1 _UID 6718a8023d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:08:45 GMT+5.5
+1 NAME  /Carangidae (jacks)/
+2 SURN Carangidae (jacks)
+1 SEX M
+1 BIRT
+2 _UID 6718a804f60001efbc119822ef79916c
+2 RIN MH:IF32730
+1 FAMC @F13754@
+0 @I23990@ INDI
+1 RIN MH:I23990
+1 _UID 6718a80df60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:09:05 GMT+5.5
+1 NAME  /Carangaria/
+2 SURN Carangaria
+1 SEX M
+1 BIRT
+2 _UID 6718a80ff60001efbc119822ef79916c
+2 RIN MH:IF32731
+1 FAMS @F13755@
+1 FAMC @F13753@
+0 @I23991@ INDI
+1 RIN MH:I23991
+1 _UID 6718a8133d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:09:01 GMT+5.5
+1 NAME  /Istiophoriformes (billfish)/
+2 SURN Istiophoriformes (billfish)
+1 SEX M
+1 BIRT
+2 _UID 6718a815f60001efbc119822ef79916c
+2 RIN MH:IF32732
+1 FAMC @F13755@
+0 @I23992@ INDI
+1 RIN MH:I23992
+1 _UID 6718a817f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:09:19 GMT+5.5
+1 NAME  /Carangaria/
+2 SURN Carangaria
+1 SEX M
+1 BIRT
+2 _UID 6718a819f60001efbc119822ef79916c
+2 RIN MH:IF32733
+1 FAMS @F13756@
+1 FAMC @F13755@
+0 @I23993@ INDI
+1 RIN MH:I23993
+1 _UID 6718a81e3d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:09:13 GMT+5.5
+1 NAME  /Toxotidae (archerfish)/
+2 SURN Toxotidae (archerfish)
+1 SEX M
+1 BIRT
+2 _UID 6718a821f60001efbc119822ef79916c
+2 RIN MH:IF32734
+1 FAMC @F13756@
+0 @I23994@ INDI
+1 RIN MH:I23994
+1 _UID 6718a824f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:09:19 GMT+5.5
+1 NAME  /Leptobramidae (beachsalmons)/
+2 SURN Leptobramidae (beachsalmons)
+1 SEX M
+1 BIRT
+2 _UID 6718a827f60001efbc119822ef79916c
+2 RIN MH:IF32735
+1 FAMC @F13756@
+0 @I23995@ INDI
+1 RIN MH:I23995
+1 _UID 6718a8533d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:10:38 GMT+5.5
+1 NAME  /Ovalentaria  /
+2 SURN Ovalentaria  
+1 SEX M
+1 BIRT
+2 _UID 6718a855f60001efbc119822ef79916c
+2 RIN MH:IF32736
+1 FAMS @F13758@
+1 FAMC @F13757@
+0 @I23996@ INDI
+1 RIN MH:I23996
+1 _UID 6718a8593d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:10:25 GMT+5.5
+1 NAME  /Cichlomorphae  /
+2 SURN Cichlomorphae  
+1 SEX M
+1 BIRT
+2 _UID 6718a85bf60001efbc119822ef79916c
+2 RIN MH:IF32737
+1 FAMS @F13759@
+1 FAMC @F13758@
+0 @I23997@ INDI
+1 RIN MH:I23997
+1 _UID 6718a8603d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:10:20 GMT+5.5
+1 NAME  /Cichliformes (cichlids, convict blennies)/
+2 SURN Cichliformes (cichlids, convict blennies)
+1 SEX M
+1 BIRT
+2 _UID 6718a864f60001efbc119822ef79916c
+2 RIN MH:IF32738
+1 FAMC @F13759@
+0 @I23998@ INDI
+1 RIN MH:I23998
+1 _UID 6718a867f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:10:25 GMT+5.5
+1 NAME  /Polycentridae (leaffish)/
+2 SURN Polycentridae (leaffish)
+1 SEX M
+1 BIRT
+2 _UID 6718a869f60001efbc119822ef79916c
+2 RIN MH:IF32739
+1 FAMC @F13759@
+0 @I23999@ INDI
+1 RIN MH:I23999
+1 _UID 6718a873f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:11:07 GMT+5.5
+1 NAME  /Atherinomorphae  /
+2 SURN Atherinomorphae  
+1 SEX M
+1 BIRT
+2 _UID 6718a876f60001efbc119822ef79916c
+2 RIN MH:IF32740
+1 FAMS @F13760@
+1 FAMC @F13758@
+0 @I24000@ INDI
+1 RIN MH:I24000
+1 _UID 6718a8803d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:10:51 GMT+5.5
+1 NAME  /Beloniformes (needlefish, flying fish, halfbeaks)/
+2 SURN Beloniformes (needlefish, flying fish, halfbeaks)
+1 SEX M
+1 BIRT
+2 _UID 6718a883f60001efbc119822ef79916c
+2 RIN MH:IF32741
+1 FAMC @F13760@
+0 @I24001@ INDI
+1 RIN MH:I24001
+1 _UID 6718a891f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:11:25 GMT+5.5
+1 NAME  /Atherinomorphae  /
+2 SURN Atherinomorphae  
+1 SEX M
+1 BIRT
+2 _UID 6718a892f60001efbc119822ef79916c
+2 RIN MH:IF32742
+1 FAMS @F13761@
+1 FAMC @F13760@
+0 @I24002@ INDI
+1 RIN MH:I24002
+1 _UID 6718a89b3d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:11:18 GMT+5.5
+1 NAME  /Atheriniformes (silversides, rainbowfish, etc.)/
+2 SURN Atheriniformes (silversides, rainbowfish, etc.)
+1 SEX M
+1 BIRT
+2 _UID 6718a89ef60001efbc119822ef79916c
+2 RIN MH:IF32743
+1 FAMC @F13761@
+0 @I24003@ INDI
+1 RIN MH:I24003
+1 _UID 6718a8a2f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:11:25 GMT+5.5
+1 NAME  /Cyprinodontiformes (tooth-carps)/
+2 SURN Cyprinodontiformes (tooth-carps)
+1 SEX M
+1 BIRT
+2 _UID 6718a8a5f60001efbc119822ef79916c
+2 RIN MH:IF32744
+1 FAMC @F13761@
+0 @I24004@ INDI
+1 RIN MH:I24004
+1 _UID 6718a91bf60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:13:37 GMT+5.5
+1 NAME  /Ovalentaria  /
+2 SURN Ovalentaria  
+1 SEX M
+1 BIRT
+2 _UID 6718a91cf60001efbc119822ef79916c
+2 RIN MH:IF32745
+1 FAMS @F13762@
+1 FAMC @F13757@
+0 @I24005@ INDI
+1 RIN MH:I24005
+1 _UID 6718a9223d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:13:33 GMT+5.5
+1 NAME  /Ambassidae (Asiatic glassfishes)/
+2 SURN Ambassidae (Asiatic glassfishes)
+1 SEX M
+1 BIRT
+2 _UID 6718a925f60001efbc119822ef79916c
+2 RIN MH:IF32746
+1 FAMC @F13762@
+0 @I24006@ INDI
+1 RIN MH:I24006
+1 _UID 6718a927f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:14:16 GMT+5.5
+1 NAME  /Ovalentaria  /
+2 SURN Ovalentaria  
+1 SEX M
+1 BIRT
+2 _UID 6718a929f60001efbc119822ef79916c
+2 RIN MH:IF32747
+1 FAMS @F13763@
+1 FAMC @F13762@
+0 @I24007@ INDI
+1 RIN MH:I24007
+1 _UID 6718a9323d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:14:07 GMT+5.5
+1 NAME  /Ovalentaria  /
+2 SURN Ovalentaria  
+1 SEX M
+1 BIRT
+2 _UID 6718a936f60001efbc119822ef79916c
+2 RIN MH:IF32748
+1 FAMS @F13764@
+1 FAMC @F13763@
+0 @I24008@ INDI
+1 RIN MH:I24008
+1 _UID 6718a93b3d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:13:58 GMT+5.5
+1 NAME  /Congrogadidae (eel blenny) /
+2 SURN Congrogadidae (eel blenny) 
+1 SEX M
+1 BIRT
+2 _UID 6718a93ef60001efbc119822ef79916c
+2 RIN MH:IF32749
+1 FAMC @F13764@
+0 @I24009@ INDI
+1 RIN MH:I24009
+1 _UID 6718a945f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:14:07 GMT+5.5
+1 NAME  /Pomacentridae (damselfishes, clownfish)/
+2 SURN Pomacentridae (damselfishes, clownfish)
+1 SEX M
+1 BIRT
+2 _UID 6718a947f60001efbc119822ef79916c
+2 RIN MH:IF32750
+1 FAMC @F13764@
+0 @I24010@ INDI
+1 RIN MH:I24010
+1 _UID 6718a94ef60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:15:11 GMT+5.5
+1 NAME  /Ovalentaria  /
+2 SURN Ovalentaria  
+1 SEX M
+1 BIRT
+2 _UID 6718a950f60001efbc119822ef79916c
+2 RIN MH:IF32751
+1 FAMS @F13765@
+1 FAMC @F13763@
+0 @I24011@ INDI
+1 RIN MH:I24011
+1 _UID 6718a9533d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:14:51 GMT+5.5
+1 NAME  /Ovalentaria  /
+2 SURN Ovalentaria  
+1 SEX M
+1 BIRT
+2 _UID 6718a955f60001efbc119822ef79916c
+2 RIN MH:IF32752
+1 FAMS @F13766@
+1 FAMC @F13765@
+0 @I24012@ INDI
+1 RIN MH:I24012
+1 _UID 6718a9593d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:14:40 GMT+5.5
+1 NAME  /Embiotocidae (surfperches)/
+2 SURN Embiotocidae (surfperches)
+1 SEX M
+1 BIRT
+2 _UID 6718a968f60001efbc119822ef79916c
+2 RIN MH:IF32753
+1 FAMC @F13766@
+0 @I24013@ INDI
+1 RIN MH:I24013
+1 _UID 6718a970f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:14:51 GMT+5.5
+1 NAME  /Mugilomorphae Mugiliformes (mullets)/
+2 SURN Mugilomorphae Mugiliformes (mullets)
+1 SEX M
+1 BIRT
+2 _UID 6718a973f60001efbc119822ef79916c
+2 RIN MH:IF32754
+1 FAMC @F13766@
+0 @I24014@ INDI
+1 RIN MH:I24014
+1 _UID 6718a985f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:15:22 GMT+5.5
+1 NAME  /Ovalentaria  /
+2 SURN Ovalentaria  
+1 SEX M
+1 BIRT
+2 _UID 6718a987f60001efbc119822ef79916c
+2 RIN MH:IF32755
+1 FAMS @F13767@
+1 FAMC @F13765@
+0 @I24015@ INDI
+1 RIN MH:I24015
+1 _UID 6718a98b3d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:15:19 GMT+5.5
+1 NAME  /Lipogramma/
+2 SURN Lipogramma
+1 SEX M
+1 BIRT
+2 _UID 6718a98ff60001efbc119822ef79916c
+2 RIN MH:IF32756
+1 FAMC @F13767@
+0 @I24016@ INDI
+1 RIN MH:I24016
+1 _UID 6718a991f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:15:34 GMT+5.5
+1 NAME  /Ovalentaria  /
+2 SURN Ovalentaria  
+1 SEX M
+1 BIRT
+2 _UID 6718a992f60001efbc119822ef79916c
+2 RIN MH:IF32757
+1 FAMS @F13768@
+1 FAMC @F13767@
+0 @I24017@ INDI
+1 RIN MH:I24017
+1 _UID 6718a9983d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:15:31 GMT+5.5
+1 NAME  /Plesiopidae (roundheads)/
+2 SURN Plesiopidae (roundheads)
+1 SEX M
+1 BIRT
+2 _UID 6718a99bf60001efbc119822ef79916c
+2 RIN MH:IF32758
+1 FAMC @F13768@
+0 @I24018@ INDI
+1 RIN MH:I24018
+1 _UID 6718a99cf60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:15:46 GMT+5.5
+1 NAME  /Ovalentaria  /
+2 SURN Ovalentaria  
+1 SEX M
+1 BIRT
+2 _UID 6718a99ef60001efbc119822ef79916c
+2 RIN MH:IF32759
+1 FAMS @F13769@
+1 FAMC @F13768@
+0 @I24019@ INDI
+1 RIN MH:I24019
+1 _UID 6718a9a43d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:15:43 GMT+5.5
+1 NAME  /Pseudochromidae (dottybacks)/
+2 SURN Pseudochromidae (dottybacks)
+1 SEX M
+1 BIRT
+2 _UID 6718a9a7f60001efbc119822ef79916c
+2 RIN MH:IF32760
+1 FAMC @F13769@
+0 @I24020@ INDI
+1 RIN MH:I24020
+1 _UID 6718a9a8f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:15:58 GMT+5.5
+1 NAME  /Ovalentaria  /
+2 SURN Ovalentaria  
+1 SEX M
+1 BIRT
+2 _UID 6718a9aaf60001efbc119822ef79916c
+2 RIN MH:IF32761
+1 FAMS @F13770@
+1 FAMC @F13769@
+0 @I24021@ INDI
+1 RIN MH:I24021
+1 _UID 6718a9b03d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:15:55 GMT+5.5
+1 NAME  /Grammatidae (basslets)/
+2 SURN Grammatidae (basslets)
+1 SEX M
+1 BIRT
+2 _UID 6718a9b3f60001efbc119822ef79916c
+2 RIN MH:IF32762
+1 FAMC @F13770@
+0 @I24022@ INDI
+1 RIN MH:I24022
+1 _UID 6718a9b4f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:16:17 GMT+5.5
+1 NAME  /Ovalentaria  /
+2 SURN Ovalentaria  
+1 SEX M
+1 BIRT
+2 _UID 6718a9b6f60001efbc119822ef79916c
+2 RIN MH:IF32763
+1 FAMS @F13771@
+1 FAMC @F13770@
+0 @I24023@ INDI
+1 RIN MH:I24023
+1 _UID 6718a9c03d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:16:10 GMT+5.5
+1 NAME  /Opistognathidae (jawfishes)/
+2 SURN Opistognathidae (jawfishes)
+1 SEX M
+1 BIRT
+2 _UID 6718a9c2f60001efbc119822ef79916c
+2 RIN MH:IF32764
+1 FAMC @F13771@
+0 @I24024@ INDI
+1 RIN MH:I24024
+1 _UID 6718a9c7f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:16:33 GMT+5.5
+1 NAME  /Blenniimorphae  /
+2 SURN Blenniimorphae  
+1 SEX M
+1 BIRT
+2 _UID 6718a9c9f60001efbc119822ef79916c
+2 RIN MH:IF32765
+1 FAMS @F13772@
+1 FAMC @F13771@
+0 @I24025@ INDI
+1 RIN MH:I24025
+1 _UID 6718a9cf3d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:16:25 GMT+5.5
+1 NAME  /Gobiesociformes (clingfishes)/
+2 SURN Gobiesociformes (clingfishes)
+1 SEX M
+1 BIRT
+2 _UID 6718a9d1f60001efbc119822ef79916c
+2 RIN MH:IF32766
+1 FAMC @F13772@
+0 @I24026@ INDI
+1 RIN MH:I24026
+1 _UID 6718a9d6f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:16:33 GMT+5.5
+1 NAME  /Blenniiformes (blennies, clinids, sand stargazers)/
+2 SURN Blenniiformes (blennies, clinids, sand stargazers)
+1 SEX M
+1 BIRT
+2 _UID 6718a9d9f60001efbc119822ef79916c
+2 RIN MH:IF32767
+1 FAMC @F13772@
+0 @I24027@ INDI
+1 RIN MH:I24027
+1 _UID 6718a9f53d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:17:05 GMT+5.5
+1 NAME  /Gerreiformes (mojarras)/
+2 SURN Gerreiformes (mojarras)
+1 SEX M
+1 BIRT
+2 _UID 6718a9f8f60001efbc119822ef79916c
+2 RIN MH:IF32768
+1 FAMC @F13773@
+0 @I24028@ INDI
+1 RIN MH:I24028
+1 _UID 6718a9faf60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:18:11 GMT+5.5
+1 NAME  /Eupercaria  /
+2 SURN Eupercaria  
+1 SEX M
+1 BIRT
+2 _UID 6718a9fcf60001efbc119822ef79916c
+2 RIN MH:IF32769
+1 FAMS @F13774@
+1 FAMC @F13773@
+0 @I24029@ INDI
+1 RIN MH:I24029
+1 _UID 6718aa013d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:17:33 GMT+5.5
+1 NAME  /Eupercaria  /
+2 SURN Eupercaria  
+1 SEX M
+1 BIRT
+2 _UID 6718aa03f60001efbc119822ef79916c
+2 RIN MH:IF32770
+1 FAMS @F13775@
+1 FAMC @F13774@
+0 @I24030@ INDI
+1 RIN MH:I24030
+1 _UID 6718aa073d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:17:30 GMT+5.5
+1 NAME  /Uranoscopiformes (stargazers)/
+2 SURN Uranoscopiformes (stargazers)
+1 SEX M
+1 BIRT
+2 _UID 6718aa12f60001efbc119822ef79916c
+2 RIN MH:IF32771
+1 FAMC @F13775@
+0 @I24031@ INDI
+1 RIN MH:I24031
+1 _UID 6718aa13f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:17:47 GMT+5.5
+1 NAME  /Eupercaria  /
+2 SURN Eupercaria  
+1 SEX M
+1 BIRT
+2 _UID 6718aa15f60001efbc119822ef79916c
+2 RIN MH:IF32772
+1 FAMS @F13776@
+1 FAMC @F13775@
+0 @I24032@ INDI
+1 RIN MH:I24032
+1 _UID 6718aa1b3d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:17:41 GMT+5.5
+1 NAME  /Labriformes (wrasses, cales, parrotfish)/
+2 SURN Labriformes (wrasses, cales, parrotfish)
+1 SEX M
+1 BIRT
+2 _UID 6718aa1df60001efbc119822ef79916c
+2 RIN MH:IF32773
+1 FAMC @F13776@
+0 @I24033@ INDI
+1 RIN MH:I24033
+1 _UID 6718aa20f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:17:47 GMT+5.5
+1 NAME  /Centrogenyidae (false scorpionfish)/
+2 SURN Centrogenyidae (false scorpionfish)
+1 SEX M
+1 BIRT
+2 _UID 6718aa23f60001efbc119822ef79916c
+2 RIN MH:IF32774
+1 FAMC @F13776@
+0 @I24034@ INDI
+1 RIN MH:I24034
+1 _UID 6718aa39f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:19:04 GMT+5.5
+1 NAME  /Eupercaria  /
+2 SURN Eupercaria  
+1 SEX M
+1 BIRT
+2 _UID 6718aa3bf60001efbc119822ef79916c
+2 RIN MH:IF32775
+1 FAMS @F13777@
+1 FAMC @F13774@
+0 @I24035@ INDI
+1 RIN MH:I24035
+1 _UID 6718aa403d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:18:36 GMT+5.5
+1 NAME  /Eupercaria  /
+2 SURN Eupercaria  
+1 SEX M
+1 BIRT
+2 _UID 6718aa43f60001efbc119822ef79916c
+2 RIN MH:IF32776
+1 FAMS @F13778@
+1 FAMC @F13777@
+0 @I24036@ INDI
+1 RIN MH:I24036
+1 _UID 6718aa4c3d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:18:30 GMT+5.5
+1 NAME  /Perciformes (perches, sticklebacks, scorpionfishes, etc.)/
+2 SURN Perciformes (perches, sticklebacks, scorpionfishes, etc.)
+1 SEX M
+1 BIRT
+2 _UID 6718aa4ef60001efbc119822ef79916c
+2 RIN MH:IF32777
+1 FAMC @F13778@
+0 @I24037@ INDI
+1 RIN MH:I24037
+1 _UID 6718aa53f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:18:51 GMT+5.5
+1 NAME  /Eupercaria  /
+2 SURN Eupercaria  
+1 SEX M
+1 BIRT
+2 _UID 6718aa54f60001efbc119822ef79916c
+2 RIN MH:IF32778
+1 FAMS @F13779@
+1 FAMC @F13778@
+0 @I24038@ INDI
+1 RIN MH:I24038
+1 _UID 6718aa573d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:18:42 GMT+5.5
+1 NAME  /Centrarchiformes (black basses, temperate perches, etc.)/
+2 SURN Centrarchiformes (black basses, temperate perches, etc.)
+1 SEX M
+1 BIRT
+2 _UID 6718aa5af60001efbc119822ef79916c
+2 RIN MH:IF32779
+1 FAMC @F13779@
+0 @I24039@ INDI
+1 RIN MH:I24039
+1 _UID 6718aa61f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:18:51 GMT+5.5
+1 NAME  /Pempheriformes (sweepers)/
+2 SURN Pempheriformes (sweepers)
+1 SEX M
+1 BIRT
+2 _UID 6718aa63f60001efbc119822ef79916c
+2 RIN MH:IF32780
+1 FAMC @F13779@
+0 @I24040@ INDI
+1 RIN MH:I24040
+1 _UID 6718aa6ef60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:19:32 GMT+5.5
+1 NAME  /Eupercaria  /
+2 SURN Eupercaria  
+1 SEX M
+1 BIRT
+2 _UID 6718aa70f60001efbc119822ef79916c
+2 RIN MH:IF32781
+1 FAMS @F13780@
+1 FAMC @F13777@
+0 @I24041@ INDI
+1 RIN MH:I24041
+1 _UID 6718aa743d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:19:23 GMT+5.5
+1 NAME  /Eupercaria  /
+2 SURN Eupercaria  
+1 SEX M
+1 BIRT
+2 _UID 6718aa76f60001efbc119822ef79916c
+2 RIN MH:IF32782
+1 FAMS @F13781@
+1 FAMC @F13780@
+0 @I24042@ INDI
+1 RIN MH:I24042
+1 _UID 6718aa7a3d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:19:17 GMT+5.5
+1 NAME  /Moronidae (temperate basses)/
+2 SURN Moronidae (temperate basses)
+1 SEX M
+1 BIRT
+2 _UID 6718aa7df60001efbc119822ef79916c
+2 RIN MH:IF32783
+1 FAMC @F13781@
+0 @I24043@ INDI
+1 RIN MH:I24043
+1 _UID 6718aa81f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:19:23 GMT+5.5
+1 NAME  /Sillaginidae (smelt-whitings)/
+2 SURN Sillaginidae (smelt-whitings)
+1 SEX M
+1 BIRT
+2 _UID 6718aa83f60001efbc119822ef79916c
+2 RIN MH:IF32784
+1 FAMC @F13781@
+0 @I24044@ INDI
+1 RIN MH:I24044
+1 _UID 6718aa8af60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:19:42 GMT+5.5
+1 NAME  /Eupercaria  /
+2 SURN Eupercaria  
+1 SEX M
+1 BIRT
+2 _UID 6718aa8cf60001efbc119822ef79916c
+2 RIN MH:IF32785
+1 FAMS @F13782@
+1 FAMC @F13780@
+0 @I24045@ INDI
+1 RIN MH:I24045
+1 _UID 6718aa913d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:19:39 GMT+5.5
+1 NAME  /Ephippiformes (spadefishes, batfishes)/
+2 SURN Ephippiformes (spadefishes, batfishes)
+1 SEX M
+1 BIRT
+2 _UID 6718aa93f60001efbc119822ef79916c
+2 RIN MH:IF32786
+1 FAMC @F13782@
+0 @I24046@ INDI
+1 RIN MH:I24046
+1 _UID 6718aa95f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:23:59 GMT+5.5
+1 NAME  /Eupercaria  /
+2 SURN Eupercaria  
+1 SEX M
+1 BIRT
+2 _UID 6718aa96f60001efbc119822ef79916c
+2 RIN MH:IF32787
+1 FAMS @F13783@
+1 FAMC @F13782@
+0 @I24048@ INDI
+1 RIN MH:I24048
+1 _UID 6718aad1f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:21:36 GMT+5.5
+1 NAME  /Eupercaria  /
+2 SURN Eupercaria  
+1 SEX M
+1 BIRT
+2 _UID 6718aad3f60001efbc119822ef79916c
+2 RIN MH:IF32789
+1 FAMS @F13785@
+1 FAMC @F13783@
+0 @I24049@ INDI
+1 RIN MH:I24049
+1 _UID 6718aae63d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:21:19 GMT+5.5
+1 NAME  /Eupercaria  /
+2 SURN Eupercaria  
+1 SEX M
+1 BIRT
+2 _UID 6718aae8f60001efbc119822ef79916c
+2 RIN MH:IF32790
+1 FAMS @F13786@
+1 FAMC @F13785@
+0 @I24050@ INDI
+1 RIN MH:I24050
+1 _UID 6718aaef3d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:21:13 GMT+5.5
+1 NAME  /Chaetodontiformes (butterflyfishes)/
+2 SURN Chaetodontiformes (butterflyfishes)
+1 SEX M
+1 BIRT
+2 _UID 6718aaf1f60001efbc119822ef79916c
+2 RIN MH:IF32791
+1 FAMC @F13786@
+0 @I24051@ INDI
+1 RIN MH:I24051
+1 _UID 6718aaf5f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:21:19 GMT+5.5
+1 NAME  /Sciaenidae (drums, croakers)/
+2 SURN Sciaenidae (drums, croakers)
+1 SEX M
+1 BIRT
+2 _UID 6718aaf7f60001efbc119822ef79916c
+2 RIN MH:IF32792
+1 FAMC @F13786@
+0 @I24052@ INDI
+1 RIN MH:I24052
+1 _UID 6718ab06f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:22:44 GMT+5.5
+1 NAME  /Eupercaria  /
+2 SURN Eupercaria  
+1 SEX M
+1 BIRT
+2 _UID 6718ab08f60001efbc119822ef79916c
+2 RIN MH:IF32793
+1 FAMS @F13787@
+1 FAMC @F13785@
+0 @I24053@ INDI
+1 RIN MH:I24053
+1 _UID 6718ab0e3d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:22:30 GMT+5.5
+1 NAME  /Eupercaria  /
+2 SURN Eupercaria  
+1 SEX M
+1 BIRT
+2 _UID 6718ab10f60001efbc119822ef79916c
+2 RIN MH:IF32794
+1 FAMS @F13788@
+1 FAMC @F13787@
+0 @I24054@ INDI
+1 RIN MH:I24054
+1 _UID 6718ab2d3d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:22:18 GMT+5.5
+1 NAME  /Acanthuriformes (surgeonfishes, ponyfishes)/
+2 SURN Acanthuriformes (surgeonfishes, ponyfishes)
+1 SEX M
+1 BIRT
+2 _UID 6718ab32f60001efbc119822ef79916c
+2 RIN MH:IF32795
+1 FAMC @F13788@
+0 @I24055@ INDI
+1 RIN MH:I24055
+1 _UID 6718ab3cf60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:22:30 GMT+5.5
+1 NAME  /Monodactylidae (moonyfishes, fingerfishes)/
+2 SURN Monodactylidae (moonyfishes, fingerfishes)
+1 SEX M
+1 BIRT
+2 _UID 6718ab3ef60001efbc119822ef79916c
+2 RIN MH:IF32796
+1 FAMC @F13788@
+0 @I24056@ INDI
+1 RIN MH:I24056
+1 _UID 6718ab4bf60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:22:55 GMT+5.5
+1 NAME  /Eupercaria  /
+2 SURN Eupercaria  
+1 SEX M
+1 BIRT
+2 _UID 6718ab4cf60001efbc119822ef79916c
+2 RIN MH:IF32797
+1 FAMS @F13789@
+1 FAMC @F13787@
+0 @I24057@ INDI
+1 RIN MH:I24057
+1 _UID 6718ab513d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:22:52 GMT+5.5
+1 NAME  /Emmelichthyidae (rovers)/
+2 SURN Emmelichthyidae (rovers)
+1 SEX M
+1 BIRT
+2 _UID 6718ab54f60001efbc119822ef79916c
+2 RIN MH:IF32798
+1 FAMC @F13789@
+0 @I24058@ INDI
+1 RIN MH:I24058
+1 _UID 6718ab55f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:23:13 GMT+5.5
+1 NAME  /Eupercaria  /
+2 SURN Eupercaria  
+1 SEX M
+1 BIRT
+2 _UID 6718ab57f60001efbc119822ef79916c
+2 RIN MH:IF32799
+1 FAMS @F13790@
+1 FAMC @F13789@
+0 @I24059@ INDI
+1 RIN MH:I24059
+1 _UID 6718ab5e3d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:23:04 GMT+5.5
+1 NAME  /Pomacanthidae (angelfishes)/
+2 SURN Pomacanthidae (angelfishes)
+1 SEX M
+1 BIRT
+2 _UID 6718ab60f60001efbc119822ef79916c
+2 RIN MH:IF32800
+1 FAMC @F13790@
+0 @I24060@ INDI
+1 RIN MH:I24060
+1 _UID 6718ab67f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:23:22 GMT+5.5
+1 NAME  /Eupercaria  /
+2 SURN Eupercaria  
+1 SEX M
+1 BIRT
+2 _UID 6718ab69f60001efbc119822ef79916c
+2 RIN MH:IF32801
+1 FAMS @F13791@
+1 FAMC @F13790@
+0 @I24061@ INDI
+1 RIN MH:I24061
+1 _UID 6718ab6b3d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:23:18 GMT+5.5
+1 NAME  /Lutjaniformes (snappers)/
+2 SURN Lutjaniformes (snappers)
+1 SEX M
+1 BIRT
+2 _UID 6718ab6ef60001efbc119822ef79916c
+2 RIN MH:IF32802
+1 FAMC @F13791@
+0 @I24062@ INDI
+1 RIN MH:I24062
+1 _UID 6718ab70f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:23:34 GMT+5.5
+1 NAME  /Eupercaria  /
+2 SURN Eupercaria  
+1 SEX M
+1 BIRT
+2 _UID 6718ab72f60001efbc119822ef79916c
+2 RIN MH:IF32803
+1 FAMS @F13792@
+1 FAMC @F13791@
+0 @I24063@ INDI
+1 RIN MH:I24063
+1 _UID 6718ab763d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:23:28 GMT+5.5
+1 NAME  /Callanthiidae (splendid perches)/
+2 SURN Callanthiidae (splendid perches)
+1 SEX M
+1 BIRT
+2 _UID 6718ab78f60001efbc119822ef79916c
+2 RIN MH:IF32804
+1 FAMC @F13792@
+0 @I24064@ INDI
+1 RIN MH:I24064
+1 _UID 6718ab7cf60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:23:34 GMT+5.5
+1 NAME  /Malacanthidae (tilefishes)/
+2 SURN Malacanthidae (tilefishes)
+1 SEX M
+1 BIRT
+2 _UID 6718ab7ef60001efbc119822ef79916c
+2 RIN MH:IF32805
+1 FAMC @F13792@
+0 @I24065@ INDI
+1 RIN MH:I24065
+1 _UID 6718ab96f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:24:28 GMT+5.5
+1 NAME  /Eupercaria  /
+2 SURN Eupercaria  
+1 SEX M
+1 BIRT
+2 _UID 6718ab97f60001efbc119822ef79916c
+2 RIN MH:IF32806
+1 FAMS @F13793@
+1 FAMC @F13783@
+0 @I24066@ INDI
+1 RIN MH:I24066
+1 _UID 6718ab9e3d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:24:21 GMT+5.5
+1 NAME  /Eupercaria  /
+2 SURN Eupercaria  
+1 SEX M
+1 BIRT
+2 _UID 6718ab9ff60001efbc119822ef79916c
+2 RIN MH:IF32807
+1 FAMS @F13794@
+1 FAMC @F13793@
+0 @I24067@ INDI
+1 RIN MH:I24067
+1 _UID 6718aba63d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:24:16 GMT+5.5
+1 NAME  /Lobotiformes (tripletails)/
+2 SURN Lobotiformes (tripletails)
+1 SEX M
+1 BIRT
+2 _UID 6718aba8f60001efbc119822ef79916c
+2 RIN MH:IF32808
+1 FAMC @F13794@
+0 @I24068@ INDI
+1 RIN MH:I24068
+1 _UID 6718ababf60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:24:21 GMT+5.5
+1 NAME  /Spariformes/
+2 SURN Spariformes
+1 SEX M
+1 BIRT
+2 _UID 6718abadf60001efbc119822ef79916c
+2 RIN MH:IF32809
+1 FAMC @F13794@
+0 @I24069@ INDI
+1 RIN MH:I24069
+1 _UID 6718abb3f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:24:40 GMT+5.5
+1 NAME  /Eupercaria  /
+2 SURN Eupercaria  
+1 SEX M
+1 BIRT
+2 _UID 6718abb4f60001efbc119822ef79916c
+2 RIN MH:IF32810
+1 FAMS @F13795@
+1 FAMC @F13793@
+0 @I24070@ INDI
+1 RIN MH:I24070
+1 _UID 6718abbb3d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:24:37 GMT+5.5
+1 NAME  /Siganidae (rabbitfishes)/
+2 SURN Siganidae (rabbitfishes)
+1 SEX M
+1 BIRT
+2 _UID 6718abbdf60001efbc119822ef79916c
+2 RIN MH:IF32811
+1 FAMC @F13795@
+0 @I24071@ INDI
+1 RIN MH:I24071
+1 _UID 6718abbff60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:25:02 GMT+5.5
+1 NAME  /Eupercaria  /
+2 SURN Eupercaria  
+1 SEX M
+1 BIRT
+2 _UID 6718abc0f60001efbc119822ef79916c
+2 RIN MH:IF32812
+1 FAMS @F13796@
+1 FAMC @F13795@
+0 @I24072@ INDI
+1 RIN MH:I24072
+1 _UID 6718abd03d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:25:15 GMT+5.5
+1 NAME  /Eupercaria  /
+2 SURN Eupercaria  
+1 SEX M
+1 BIRT
+2 _UID 6718abd3f60001efbc119822ef79916c
+2 RIN MH:IF32813
+1 FAMS @F13797@
+1 FAMC @F13796@
+0 @I24073@ INDI
+1 RIN MH:I24073
+1 _UID 6718abd4f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:25:33 GMT+5.5
+1 NAME  /Eupercaria  /
+2 SURN Eupercaria  
+1 SEX M
+1 BIRT
+2 _UID 6718abd6f60001efbc119822ef79916c
+2 RIN MH:IF32814
+1 FAMS @F13798@
+1 FAMC @F13796@
+0 @I24074@ INDI
+1 RIN MH:I24074
+1 _UID 6718abdb3d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:25:09 GMT+5.5
+1 NAME  /Priacanthiformes (bigeyes, bandfishes)/
+2 SURN Priacanthiformes (bigeyes, bandfishes)
+1 SEX M
+1 BIRT
+2 _UID 6718abddf60001efbc119822ef79916c
+2 RIN MH:IF32815
+1 FAMC @F13797@
+0 @I24075@ INDI
+1 RIN MH:I24075
+1 _UID 6718abe1f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:25:15 GMT+5.5
+1 NAME  /Scatophagidae (scats)/
+2 SURN Scatophagidae (scats)
+1 SEX M
+1 BIRT
+2 _UID 6718abe3f60001efbc119822ef79916c
+2 RIN MH:IF32816
+1 FAMC @F13797@
+0 @I24076@ INDI
+1 RIN MH:I24076
+1 _UID 6718abef3d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:25:29 GMT+5.5
+1 NAME  /Caproiformes (boarfishes)/
+2 SURN Caproiformes (boarfishes)
+1 SEX M
+1 BIRT
+2 _UID 6718abf1f60001efbc119822ef79916c
+2 RIN MH:IF32817
+1 FAMC @F13798@
+0 @I24077@ INDI
+1 RIN MH:I24077
+1 _UID 6718abf3f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:25:50 GMT+5.5
+1 NAME  /Eupercaria  /
+2 SURN Eupercaria  
+1 SEX M
+1 BIRT
+2 _UID 6718abf5f60001efbc119822ef79916c
+2 RIN MH:IF32818
+1 FAMS @F13799@
+1 FAMC @F13798@
+0 @I24078@ INDI
+1 RIN MH:I24078
+1 _UID 6718abfb3d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:25:41 GMT+5.5
+1 NAME  /Lophiiformes (anglerfishes)/
+2 SURN Lophiiformes (anglerfishes)
+1 SEX M
+1 BIRT
+2 _UID 6718abfdf60001efbc119822ef79916c
+2 RIN MH:IF32819
+1 FAMC @F13799@
+0 @I24079@ INDI
+1 RIN MH:I24079
+1 _UID 6718ac03f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:25:50 GMT+5.5
+1 NAME  /Tetraodontiformes (pufferfishes, triggerfishes, etc.)/
+2 SURN Tetraodontiformes (pufferfishes, triggerfishes, etc.)
+1 SEX M
+1 BIRT
+2 _UID 6718ac05f60001efbc119822ef79916c
+2 RIN MH:IF32820
+1 FAMC @F13799@
+0 @I24080@ INDI
+1 RIN MH:I24080
+1 _UID 6718ace73d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:29:38 GMT+5.5
+1 NAME  /Lesothosaurus/
+2 SURN Lesothosaurus
+1 SEX M
+1 BIRT
+2 _UID 6718aceaf60001efbc119822ef79916c
+2 RIN MH:IF32821
+1 FAMC @F13801@
+0 @I24081@ INDI
+1 RIN MH:I24081
+1 _UID 6718acf6f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:30:04 GMT+5.5
+1 NAME  /†Ornithischia/
+2 SURN †Ornithischia
+1 SEX M
+1 BIRT
+2 _UID 6718acf8f60001efbc119822ef79916c
+2 RIN MH:IF32822
+1 FAMS @F13802@
+1 FAMC @F13801@
+0 @I24082@ INDI
+1 RIN MH:I24082
+1 _UID 6718acfc3d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:30:35 GMT+5.5
+1 NAME  /Cerapoda/
+2 SURN Cerapoda
+1 SEX M
+1 BIRT
+2 _UID 6718acfff60001efbc119822ef79916c
+2 RIN MH:IF32823
+1 FAMS @F13804@
+1 FAMC @F13802@
+0 @I24083@ INDI
+1 RIN MH:I24083
+1 _UID 6718ad02f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:30:19 GMT+5.5
+1 NAME  /Thyreophora/
+2 SURN Thyreophora
+1 SEX M
+1 BIRT
+2 _UID 6718ad04f60001efbc119822ef79916c
+2 RIN MH:IF32824
+1 FAMS @F13803@
+1 FAMC @F13802@
+0 @I24084@ INDI
+1 RIN MH:I24084
+1 _UID 6718ad0b3d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:30:13 GMT+5.5
+1 NAME  /Stegosauria /
+2 SURN Stegosauria 
+1 SEX M
+1 BIRT
+2 _UID 6718ad0df60001efbc119822ef79916c
+2 RIN MH:IF32825
+1 FAMC @F13803@
+0 @I24085@ INDI
+1 RIN MH:I24085
+1 _UID 6718ad10f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:30:19 GMT+5.5
+1 NAME  /Ankylosauria/
+2 SURN Ankylosauria
+1 SEX M
+1 BIRT
+2 _UID 6718ad13f60001efbc119822ef79916c
+2 RIN MH:IF32826
+1 FAMC @F13803@
+0 @I24086@ INDI
+1 RIN MH:I24086
+1 _UID 6718ad1c3d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:30:49 GMT+5.5
+1 NAME  /Marginocephalia/
+2 SURN Marginocephalia
+1 SEX M
+1 BIRT
+2 _UID 6718ad1ef60001efbc119822ef79916c
+2 RIN MH:IF32827
+1 FAMS @F13805@
+1 FAMC @F13804@
+0 @I24087@ INDI
+1 RIN MH:I24087
+1 _UID 6718ad21f60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:30:35 GMT+5.5
+1 NAME  /Ornithopoda /
+2 SURN Ornithopoda 
+1 SEX M
+1 BIRT
+2 _UID 6718ad23f60001efbc119822ef79916c
+2 RIN MH:IF32828
+1 FAMC @F13804@
+0 @I24088@ INDI
+1 RIN MH:I24088
+1 _UID 6718ad293d5cd1efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:30:43 GMT+5.5
+1 NAME  /Pachycephalosauria (incl. heterodontosaurids)/
+2 SURN Pachycephalosauria (incl. heterodontosaurids)
+1 SEX M
+1 BIRT
+2 _UID 6718ad2bf60001efbc119822ef79916c
+2 RIN MH:IF32829
+1 FAMC @F13805@
+0 @I24089@ INDI
+1 RIN MH:I24089
+1 _UID 6718ad2ff60001efbc119822ef79916c
+1 _UPD 23 OCT 2024 13:30:49 GMT+5.5
+1 NAME  /Ceratopsia /
+2 SURN Ceratopsia 
+1 SEX M
+1 BIRT
+2 _UID 6718ad31f60001efbc119822ef79916c
+2 RIN MH:IF32830
+1 FAMC @F13805@
 0 @F1@ FAM
 1 RIN MH:F1
 1 _UID 66dfdfd660f561efbbc69822ef79916c
@@ -20142,6 +22435,662 @@
 1 HUSB @I23814@
 1 CHIL @I23816@
 1 CHIL @I23817@
+0 @F13695@ FAM
+1 RIN MH:F13695
+1 _UID 6717ee005408c1efbc109822ef79916c
+1 HUSB @I23186@
+1 CHIL @I23871@
+1 CHIL @I23872@
+0 @F13696@ FAM
+1 RIN MH:F13696
+1 _UID 6717ee805408c1efbc109822ef79916c
+1 HUSB @I23872@
+1 CHIL @I23873@
+0 @F13697@ FAM
+1 RIN MH:F13697
+1 _UID 6717ee875408c1efbc109822ef79916c
+1 HUSB @I23873@
+1 CHIL @I23874@
+1 CHIL @I23875@
+0 @F13698@ FAM
+1 RIN MH:F13698
+1 _UID 6717f03a5408c1efbc109822ef79916c
+1 HUSB @I23871@
+1 CHIL @I23876@
+1 CHIL @I23877@
+0 @F13699@ FAM
+1 RIN MH:F13699
+1 _UID 6717f0575408c1efbc109822ef79916c
+1 HUSB @I23876@
+1 CHIL @I23878@
+1 CHIL @I23879@
+0 @F13700@ FAM
+1 RIN MH:F13700
+1 _UID 6717f0b05408c1efbc109822ef79916c
+1 HUSB @I23878@
+1 CHIL @I23880@
+1 CHIL @I23881@
+0 @F13701@ FAM
+1 RIN MH:F13701
+1 _UID 6717f1675408c1efbc109822ef79916c
+1 HUSB @I23879@
+1 CHIL @I23882@
+1 CHIL @I23883@
+0 @F13702@ FAM
+1 RIN MH:F13702
+1 _UID 6717f1ad5408c1efbc109822ef79916c
+1 HUSB @I23883@
+1 CHIL @I23884@
+1 CHIL @I23885@
+0 @F13703@ FAM
+1 RIN MH:F13703
+1 _UID 6718a1e55408c1efbc109822ef79916c
+1 HUSB @I23882@
+1 CHIL @I23886@
+1 CHIL @I23887@
+0 @F13704@ FAM
+1 RIN MH:F13704
+1 _UID 6718a2435408c1efbc109822ef79916c
+1 HUSB @I23885@
+1 CHIL @I23888@
+1 CHIL @I23889@
+0 @F13705@ FAM
+1 RIN MH:F13705
+1 _UID 6718a26b5408c1efbc109822ef79916c
+1 HUSB @I23884@
+1 CHIL @I23890@
+1 CHIL @I23891@
+0 @F13706@ FAM
+1 RIN MH:F13706
+1 _UID 6718a2785408c1efbc109822ef79916c
+1 HUSB @I23891@
+1 CHIL @I23892@
+1 CHIL @I23893@
+0 @F13707@ FAM
+1 RIN MH:F13707
+1 _UID 6718a2885408c1efbc109822ef79916c
+1 HUSB @I23893@
+1 CHIL @I23894@
+1 CHIL @I23895@
+0 @F13708@ FAM
+1 RIN MH:F13708
+1 _UID 6718a2bf5408c1efbc109822ef79916c
+1 HUSB @I23887@
+1 CHIL @I23896@
+1 CHIL @I23897@
+0 @F13709@ FAM
+1 RIN MH:F13709
+1 _UID 6718a2ce5408c1efbc109822ef79916c
+1 HUSB @I23897@
+1 CHIL @I23898@
+1 CHIL @I23899@
+0 @F13710@ FAM
+1 RIN MH:F13710
+1 _UID 6718a3015408c1efbc109822ef79916c
+1 HUSB @I23898@
+1 CHIL @I23900@
+1 CHIL @I23901@
+0 @F13711@ FAM
+1 RIN MH:F13711
+1 _UID 6718a31c5408c1efbc109822ef79916c
+1 HUSB @I23900@
+1 CHIL @I23902@
+1 CHIL @I23903@
+0 @F13712@ FAM
+1 RIN MH:F13712
+1 _UID 6718a32b5408c1efbc109822ef79916c
+1 HUSB @I23903@
+1 CHIL @I23904@
+1 CHIL @I23905@
+0 @F13713@ FAM
+1 RIN MH:F13713
+1 _UID 6718a33a5408c1efbc109822ef79916c
+1 HUSB @I23905@
+1 CHIL @I23906@
+1 CHIL @I23907@
+0 @F13714@ FAM
+1 RIN MH:F13714
+1 _UID 6718a3705408c1efbc109822ef79916c
+1 HUSB @I23886@
+1 CHIL @I23908@
+1 CHIL @I23909@
+0 @F13715@ FAM
+1 RIN MH:F13715
+1 _UID 6718a3805408c1efbc109822ef79916c
+1 HUSB @I23909@
+1 CHIL @I23910@
+1 CHIL @I23911@
+0 @F13716@ FAM
+1 RIN MH:F13716
+1 _UID 6718a3995408c1efbc109822ef79916c
+1 HUSB @I23911@
+1 CHIL @I23912@
+1 CHIL @I23913@
+0 @F13717@ FAM
+1 RIN MH:F13717
+1 _UID 6718a3c45408c1efbc109822ef79916c
+1 HUSB @I23910@
+1 CHIL @I23914@
+1 CHIL @I23915@
+0 @F13718@ FAM
+1 RIN MH:F13718
+1 _UID 6718a3d35408c1efbc109822ef79916c
+1 HUSB @I23915@
+1 CHIL @I23916@
+1 CHIL @I23917@
+0 @F13719@ FAM
+1 RIN MH:F13719
+1 _UID 6718a3e35408c1efbc109822ef79916c
+1 HUSB @I23917@
+1 CHIL @I23918@
+1 CHIL @I23919@
+0 @F13720@ FAM
+1 RIN MH:F13720
+1 _UID 6718a3ff5408c1efbc109822ef79916c
+1 HUSB @I23913@
+1 CHIL @I23920@
+1 CHIL @I23921@
+0 @F13721@ FAM
+1 RIN MH:F13721
+1 _UID 6718a41b5408c1efbc109822ef79916c
+1 HUSB @I23912@
+1 CHIL @I23922@
+1 CHIL @I23923@
+0 @F13722@ FAM
+1 RIN MH:F13722
+1 _UID 6718a42d5408c1efbc109822ef79916c
+1 HUSB @I23923@
+1 CHIL @I23924@
+1 CHIL @I23925@
+0 @F13723@ FAM
+1 RIN MH:F13723
+1 _UID 6718a4405408c1efbc109822ef79916c
+1 HUSB @I23925@
+1 CHIL @I23926@
+1 CHIL @I23927@
+0 @F13724@ FAM
+1 RIN MH:F13724
+1 _UID 6718a4565408c1efbc109822ef79916c
+1 HUSB @I23926@
+1 WIFE @I23928@
+1 CHIL @I23929@
+1 CHIL @I23930@
+1 MARR
+2 _UID 6718a4569f5411efbc109822ef79916c
+2 RIN MH:FF1778
+0 @F13725@ FAM
+1 RIN MH:F13725
+1 _UID 6718a46e5408c1efbc109822ef79916c
+1 HUSB @I23929@
+1 CHIL @I23931@
+1 CHIL @I23932@
+0 @F13726@ FAM
+1 RIN MH:F13726
+1 _UID 6718a48a5408c1efbc109822ef79916c
+1 HUSB @I23930@
+1 CHIL @I23933@
+1 CHIL @I23934@
+0 @F13727@ FAM
+1 RIN MH:F13727
+1 _UID 6718a49f5408c1efbc109822ef79916c
+1 HUSB @I23933@
+1 CHIL @I23935@
+1 CHIL @I23936@
+0 @F13728@ FAM
+1 RIN MH:F13728
+1 _UID 6718a56bf60001efbc119822ef79916c
+1 HUSB @I23936@
+1 CHIL @I23937@
+1 CHIL @I23938@
+0 @F13729@ FAM
+1 RIN MH:F13729
+1 _UID 6718a57af60001efbc119822ef79916c
+1 HUSB @I23938@
+1 CHIL @I23939@
+1 CHIL @I23940@
+0 @F13730@ FAM
+1 RIN MH:F13730
+1 _UID 6718a5a7f60001efbc119822ef79916c
+1 HUSB @I23931@
+1 CHIL @I23941@
+1 CHIL @I23944@
+0 @F13731@ FAM
+1 RIN MH:F13731
+1 _UID 6718a5aff60001efbc119822ef79916c
+1 HUSB @I23941@
+1 CHIL @I23942@
+1 CHIL @I23943@
+0 @F13732@ FAM
+1 RIN MH:F13732
+1 _UID 6718a5cff60001efbc119822ef79916c
+1 HUSB @I23944@
+1 CHIL @I23945@
+1 CHIL @I23946@
+0 @F13733@ FAM
+1 RIN MH:F13733
+1 _UID 6718a62cf60001efbc119822ef79916c
+1 HUSB @I23946@
+1 CHIL @I23947@
+1 CHIL @I23948@
+0 @F13734@ FAM
+1 RIN MH:F13734
+1 _UID 6718a644f60001efbc119822ef79916c
+1 HUSB @I23948@
+1 CHIL @I23949@
+1 CHIL @I23950@
+0 @F13735@ FAM
+1 RIN MH:F13735
+1 _UID 6718a66ff60001efbc119822ef79916c
+1 HUSB @I23950@
+1 CHIL @I23951@
+1 CHIL @I23955@
+0 @F13736@ FAM
+1 RIN MH:F13736
+1 _UID 6718a677f60001efbc119822ef79916c
+1 HUSB @I23951@
+1 CHIL @I23952@
+1 CHIL @I23953@
+0 @F13737@ FAM
+1 RIN MH:F13737
+1 _UID 6718a69bf60001efbc119822ef79916c
+1 HUSB @I23955@
+1 CHIL @I23956@
+1 CHIL @I23959@
+0 @F13738@ FAM
+1 RIN MH:F13738
+1 _UID 6718a6a3f60001efbc119822ef79916c
+1 HUSB @I23956@
+1 CHIL @I23957@
+1 CHIL @I23958@
+0 @F13739@ FAM
+1 RIN MH:F13739
+1 _UID 6718a6d4f60001efbc119822ef79916c
+1 HUSB @I23959@
+1 CHIL @I23960@
+1 CHIL @I23961@
+0 @F13740@ FAM
+1 RIN MH:F13740
+1 _UID 6718a6e9f60001efbc119822ef79916c
+1 HUSB @I23961@
+1 CHIL @I23962@
+1 CHIL @I23963@
+0 @F13741@ FAM
+1 RIN MH:F13741
+1 _UID 6718a6f5f60001efbc119822ef79916c
+1 HUSB @I23963@
+1 CHIL @I23964@
+1 CHIL @I23965@
+0 @F13742@ FAM
+1 RIN MH:F13742
+1 _UID 6718a709f60001efbc119822ef79916c
+1 HUSB @I23965@
+1 CHIL @I23966@
+1 CHIL @I23967@
+0 @F13743@ FAM
+1 RIN MH:F13743
+1 _UID 6718a71ef60001efbc119822ef79916c
+1 HUSB @I23964@
+1 CHIL @I23968@
+1 CHIL @I23969@
+0 @F13744@ FAM
+1 RIN MH:F13744
+1 _UID 6718a72df60001efbc119822ef79916c
+1 HUSB @I23969@
+1 CHIL @I23970@
+1 CHIL @I23971@
+0 @F13745@ FAM
+1 RIN MH:F13745
+1 _UID 6718a73af60001efbc119822ef79916c
+1 HUSB @I23971@
+1 CHIL @I23972@
+1 CHIL @I23973@
+0 @F13746@ FAM
+1 RIN MH:F13746
+1 _UID 6718a776f60001efbc119822ef79916c
+1 HUSB @I23968@
+1 CHIL @I23974@
+1 CHIL @I23981@
+0 @F13747@ FAM
+1 RIN MH:F13747
+1 _UID 6718a785f60001efbc119822ef79916c
+1 HUSB @I23974@
+1 CHIL @I23975@
+1 CHIL @I23976@
+0 @F13748@ FAM
+1 RIN MH:F13748
+1 _UID 6718a795f60001efbc119822ef79916c
+1 HUSB @I23976@
+1 CHIL @I23977@
+1 CHIL @I23978@
+0 @F13749@ FAM
+1 RIN MH:F13749
+1 _UID 6718a7a4f60001efbc119822ef79916c
+1 HUSB @I23978@
+1 CHIL @I23979@
+1 CHIL @I23980@
+0 @F13750@ FAM
+1 RIN MH:F13750
+1 _UID 6718a7cdf60001efbc119822ef79916c
+1 HUSB @I23981@
+1 CHIL @I23982@
+1 CHIL @I23983@
+0 @F13751@ FAM
+1 RIN MH:F13751
+1 _UID 6718a7d6f60001efbc119822ef79916c
+1 HUSB @I23983@
+1 CHIL @I23984@
+1 CHIL @I23985@
+0 @F13752@ FAM
+1 RIN MH:F13752
+1 _UID 6718a7e3f60001efbc119822ef79916c
+1 HUSB @I23985@
+1 CHIL @I23986@
+1 CHIL @I23987@
+0 @F13753@ FAM
+1 RIN MH:F13753
+1 _UID 6718a7f5f60001efbc119822ef79916c
+1 HUSB @I23984@
+1 CHIL @I23988@
+1 CHIL @I23990@
+0 @F13754@ FAM
+1 RIN MH:F13754
+1 _UID 6718a802f60001efbc119822ef79916c
+1 HUSB @I23988@
+1 CHIL @I23989@
+0 @F13755@ FAM
+1 RIN MH:F13755
+1 _UID 6718a813f60001efbc119822ef79916c
+1 HUSB @I23990@
+1 CHIL @I23991@
+1 CHIL @I23992@
+0 @F13756@ FAM
+1 RIN MH:F13756
+1 _UID 6718a81ef60001efbc119822ef79916c
+1 HUSB @I23992@
+1 CHIL @I23993@
+1 CHIL @I23994@
+0 @F13757@ FAM
+1 RIN MH:F13757
+1 _UID 6718a853f60001efbc119822ef79916c
+1 HUSB @I23962@
+1 CHIL @I23995@
+1 CHIL @I24004@
+0 @F13758@ FAM
+1 RIN MH:F13758
+1 _UID 6718a859f60001efbc119822ef79916c
+1 HUSB @I23995@
+1 CHIL @I23996@
+1 CHIL @I23999@
+0 @F13759@ FAM
+1 RIN MH:F13759
+1 _UID 6718a860f60001efbc119822ef79916c
+1 HUSB @I23996@
+1 CHIL @I23997@
+1 CHIL @I23998@
+0 @F13760@ FAM
+1 RIN MH:F13760
+1 _UID 6718a880f60001efbc119822ef79916c
+1 HUSB @I23999@
+1 CHIL @I24000@
+1 CHIL @I24001@
+0 @F13761@ FAM
+1 RIN MH:F13761
+1 _UID 6718a89bf60001efbc119822ef79916c
+1 HUSB @I24001@
+1 CHIL @I24002@
+1 CHIL @I24003@
+0 @F13762@ FAM
+1 RIN MH:F13762
+1 _UID 6718a922f60001efbc119822ef79916c
+1 HUSB @I24004@
+1 CHIL @I24005@
+1 CHIL @I24006@
+0 @F13763@ FAM
+1 RIN MH:F13763
+1 _UID 6718a932f60001efbc119822ef79916c
+1 HUSB @I24006@
+1 CHIL @I24007@
+1 CHIL @I24010@
+0 @F13764@ FAM
+1 RIN MH:F13764
+1 _UID 6718a93bf60001efbc119822ef79916c
+1 HUSB @I24007@
+1 CHIL @I24008@
+1 CHIL @I24009@
+0 @F13765@ FAM
+1 RIN MH:F13765
+1 _UID 6718a953f60001efbc119822ef79916c
+1 HUSB @I24010@
+1 CHIL @I24011@
+1 CHIL @I24014@
+0 @F13766@ FAM
+1 RIN MH:F13766
+1 _UID 6718a959f60001efbc119822ef79916c
+1 HUSB @I24011@
+1 CHIL @I24012@
+1 CHIL @I24013@
+0 @F13767@ FAM
+1 RIN MH:F13767
+1 _UID 6718a98bf60001efbc119822ef79916c
+1 HUSB @I24014@
+1 CHIL @I24015@
+1 CHIL @I24016@
+0 @F13768@ FAM
+1 RIN MH:F13768
+1 _UID 6718a998f60001efbc119822ef79916c
+1 HUSB @I24016@
+1 CHIL @I24017@
+1 CHIL @I24018@
+0 @F13769@ FAM
+1 RIN MH:F13769
+1 _UID 6718a9a4f60001efbc119822ef79916c
+1 HUSB @I24018@
+1 CHIL @I24019@
+1 CHIL @I24020@
+0 @F13770@ FAM
+1 RIN MH:F13770
+1 _UID 6718a9b0f60001efbc119822ef79916c
+1 HUSB @I24020@
+1 CHIL @I24021@
+1 CHIL @I24022@
+0 @F13771@ FAM
+1 RIN MH:F13771
+1 _UID 6718a9c0f60001efbc119822ef79916c
+1 HUSB @I24022@
+1 CHIL @I24023@
+1 CHIL @I24024@
+0 @F13772@ FAM
+1 RIN MH:F13772
+1 _UID 6718a9cff60001efbc119822ef79916c
+1 HUSB @I24024@
+1 CHIL @I24025@
+1 CHIL @I24026@
+0 @F13773@ FAM
+1 RIN MH:F13773
+1 _UID 6718a9f5f60001efbc119822ef79916c
+1 HUSB @I23960@
+1 CHIL @I24027@
+1 CHIL @I24028@
+0 @F13774@ FAM
+1 RIN MH:F13774
+1 _UID 6718aa01f60001efbc119822ef79916c
+1 HUSB @I24028@
+1 CHIL @I24029@
+1 CHIL @I24034@
+0 @F13775@ FAM
+1 RIN MH:F13775
+1 _UID 6718aa07f60001efbc119822ef79916c
+1 HUSB @I24029@
+1 CHIL @I24030@
+1 CHIL @I24031@
+0 @F13776@ FAM
+1 RIN MH:F13776
+1 _UID 6718aa1bf60001efbc119822ef79916c
+1 HUSB @I24031@
+1 CHIL @I24032@
+1 CHIL @I24033@
+0 @F13777@ FAM
+1 RIN MH:F13777
+1 _UID 6718aa40f60001efbc119822ef79916c
+1 HUSB @I24034@
+1 CHIL @I24035@
+1 CHIL @I24040@
+0 @F13778@ FAM
+1 RIN MH:F13778
+1 _UID 6718aa4cf60001efbc119822ef79916c
+1 HUSB @I24035@
+1 CHIL @I24036@
+1 CHIL @I24037@
+0 @F13779@ FAM
+1 RIN MH:F13779
+1 _UID 6718aa57f60001efbc119822ef79916c
+1 HUSB @I24037@
+1 CHIL @I24038@
+1 CHIL @I24039@
+0 @F13780@ FAM
+1 RIN MH:F13780
+1 _UID 6718aa74f60001efbc119822ef79916c
+1 HUSB @I24040@
+1 CHIL @I24041@
+1 CHIL @I24044@
+0 @F13781@ FAM
+1 RIN MH:F13781
+1 _UID 6718aa7af60001efbc119822ef79916c
+1 HUSB @I24041@
+1 CHIL @I24042@
+1 CHIL @I24043@
+0 @F13782@ FAM
+1 RIN MH:F13782
+1 _UID 6718aa91f60001efbc119822ef79916c
+1 HUSB @I24044@
+1 CHIL @I24045@
+1 CHIL @I24046@
+0 @F13783@ FAM
+1 RIN MH:F13783
+1 _UID 6718aaa0f60001efbc119822ef79916c
+1 HUSB @I24046@
+1 CHIL @I24048@
+1 CHIL @I24065@
+0 @F13785@ FAM
+1 RIN MH:F13785
+1 _UID 6718aae6f60001efbc119822ef79916c
+1 HUSB @I24048@
+1 CHIL @I24049@
+1 CHIL @I24052@
+0 @F13786@ FAM
+1 RIN MH:F13786
+1 _UID 6718aaeff60001efbc119822ef79916c
+1 HUSB @I24049@
+1 CHIL @I24050@
+1 CHIL @I24051@
+0 @F13787@ FAM
+1 RIN MH:F13787
+1 _UID 6718ab0ef60001efbc119822ef79916c
+1 HUSB @I24052@
+1 CHIL @I24053@
+1 CHIL @I24056@
+0 @F13788@ FAM
+1 RIN MH:F13788
+1 _UID 6718ab2df60001efbc119822ef79916c
+1 HUSB @I24053@
+1 CHIL @I24054@
+1 CHIL @I24055@
+0 @F13789@ FAM
+1 RIN MH:F13789
+1 _UID 6718ab51f60001efbc119822ef79916c
+1 HUSB @I24056@
+1 CHIL @I24057@
+1 CHIL @I24058@
+0 @F13790@ FAM
+1 RIN MH:F13790
+1 _UID 6718ab5ef60001efbc119822ef79916c
+1 HUSB @I24058@
+1 CHIL @I24059@
+1 CHIL @I24060@
+0 @F13791@ FAM
+1 RIN MH:F13791
+1 _UID 6718ab6bf60001efbc119822ef79916c
+1 HUSB @I24060@
+1 CHIL @I24061@
+1 CHIL @I24062@
+0 @F13792@ FAM
+1 RIN MH:F13792
+1 _UID 6718ab76f60001efbc119822ef79916c
+1 HUSB @I24062@
+1 CHIL @I24063@
+1 CHIL @I24064@
+0 @F13793@ FAM
+1 RIN MH:F13793
+1 _UID 6718ab9ef60001efbc119822ef79916c
+1 HUSB @I24065@
+1 CHIL @I24066@
+1 CHIL @I24069@
+0 @F13794@ FAM
+1 RIN MH:F13794
+1 _UID 6718aba6f60001efbc119822ef79916c
+1 HUSB @I24066@
+1 CHIL @I24067@
+1 CHIL @I24068@
+0 @F13795@ FAM
+1 RIN MH:F13795
+1 _UID 6718abbbf60001efbc119822ef79916c
+1 HUSB @I24069@
+1 CHIL @I24070@
+1 CHIL @I24071@
+0 @F13796@ FAM
+1 RIN MH:F13796
+1 _UID 6718abd0f60001efbc119822ef79916c
+1 HUSB @I24071@
+1 CHIL @I24072@
+1 CHIL @I24073@
+0 @F13797@ FAM
+1 RIN MH:F13797
+1 _UID 6718abdbf60001efbc119822ef79916c
+1 HUSB @I24072@
+1 CHIL @I24074@
+1 CHIL @I24075@
+0 @F13798@ FAM
+1 RIN MH:F13798
+1 _UID 6718abeff60001efbc119822ef79916c
+1 HUSB @I24073@
+1 CHIL @I24076@
+1 CHIL @I24077@
+0 @F13799@ FAM
+1 RIN MH:F13799
+1 _UID 6718abfbf60001efbc119822ef79916c
+1 HUSB @I24077@
+1 CHIL @I24078@
+1 CHIL @I24079@
+0 @F13801@ FAM
+1 RIN MH:F13801
+1 _UID 6718ace7f60001efbc119822ef79916c
+1 HUSB @I23799@
+1 CHIL @I24080@
+1 CHIL @I24081@
+0 @F13802@ FAM
+1 RIN MH:F13802
+1 _UID 6718acfcf60001efbc119822ef79916c
+1 HUSB @I24081@
+1 CHIL @I24082@
+1 CHIL @I24083@
+0 @F13803@ FAM
+1 RIN MH:F13803
+1 _UID 6718ad0bf60001efbc119822ef79916c
+1 HUSB @I24083@
+1 CHIL @I24084@
+1 CHIL @I24085@
+0 @F13804@ FAM
+1 RIN MH:F13804
+1 _UID 6718ad1cf60001efbc119822ef79916c
+1 HUSB @I24082@
+1 CHIL @I24086@
+1 CHIL @I24087@
+0 @F13805@ FAM
+1 RIN MH:F13805
+1 _UID 6718ad29f60001efbc119822ef79916c
+1 HUSB @I24086@
+1 CHIL @I24088@
+1 CHIL @I24089@
 0 @S13@ SOUR
 1 RIN MH:S13
 0 @S14@ SOUR
@@ -20171,5 +23120,4 @@
 1 AUTH Wikipedia contributors
 1 TITL Human mitochondrial DNA haplogroup
 1 PUBL Wikipedia, The Free Encyclopedia
-1 NOTE URL: https://en.wikipedia.org/w/index.php?title=Human_mitochondrial_DNA_haplogroup&action=edit&section=1
 0 TRLR
