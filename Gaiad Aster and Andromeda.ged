@@ -12,9 +12,9 @@
 1 SUBM @U1@
 1 DEST MYHERITAGE
 1 DATE 25 OCT 2024
-2 TIME 20:41:30 
+2 TIME 23:36:45 
 2 _TIMEZONE GMT+5.5
-1 _RINS I24299,F13908,N17736,M0,R0,S38,U536,L0,P14219,Q0,IF32992,FF1837
+1 _RINS I24409,F13961,N17741,M0,R0,S38,U536,L0,P14219,Q0,IF33102,FF1845
 1 _UID 67175D663F8F31A3B4DDFBF5A00005C5
 1 _DESCRIPTION_AWARE Y
 0  _PUBLISH
@@ -13254,8 +13254,9 @@
 0 @I23588@ INDI
 1 RIN MH:I23588
 1 _UID 671612abf01341efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 14:07:01 GMT+5.5
-1 NAME  /A00a (L1149, FGC25576, FGC26292, FGC26293, FGC27741)/
+1 _UPD 25 OCT 2024 22:13:06 GMT+5.5
+1 NAME Perry /A00a (L1149, FGC25576, FGC26292, FGC26293, FGC27741)/
+2 GIVN Perry
 2 SURN A00a (L1149, FGC25576, FGC26292, FGC26293, FGC27741)
 1 SEX M
 1 BIRT
@@ -13580,13 +13581,14 @@
 0 @I23620@ INDI
 1 RIN MH:I23620
 1 _UID 671614cef01341efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 14:16:09 GMT+5.5
+1 _UPD 25 OCT 2024 22:23:35 GMT+5.5
 1 NAME  /Haplogroup E/
 2 SURN Haplogroup E
 1 SEX M
 1 BIRT
 2 _UID 671614d1f01341efbc0b9822ef79916c
 2 RIN MH:IF32411
+1 FAMS @F13910@
 1 FAMC @F13567@
 0 @I23621@ INDI
 1 RIN MH:I23621
@@ -13656,7 +13658,7 @@
 0 @I23627@ INDI
 1 RIN MH:I23627
 1 _UID 67161566f01341efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 14:19:41 GMT+5.5
+1 _UPD 25 OCT 2024 21:45:33 GMT+5.5
 1 NAME Harappus /Haplogroup H/
 2 GIVN Harappus
 2 SURN Haplogroup H
@@ -13664,6 +13666,7 @@
 1 BIRT
 2 _UID 6716156df01341efbc0b9822ef79916c
 2 RIN MH:IF32417
+1 FAMS @F13909@
 1 FAMC @F13570@
 0 @I23628@ INDI
 1 RIN MH:I23628
@@ -13710,7 +13713,7 @@
 0 @I23632@ INDI
 1 RIN MH:I23632
 1 _UID 671615b8f01341efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 14:20:23 GMT+5.5
+1 _UPD 25 OCT 2024 22:08:10 GMT+5.5
 1 NAME Jerichon /Haplogroup J/
 2 GIVN Jerichon
 2 SURN Haplogroup J
@@ -13718,6 +13721,7 @@
 1 BIRT
 2 _UID 671615bbf01341efbc0b9822ef79916c
 2 RIN MH:IF32421
+1 FAMS @F13916@
 1 FAMC @F13572@
 0 @I23633@ INDI
 1 RIN MH:I23633
@@ -13807,7 +13811,7 @@
 0 @I23641@ INDI
 1 RIN MH:I23641
 1 _UID 671616233b4f91efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 14:21:57 GMT+5.5
+1 _UPD 25 OCT 2024 22:29:35 GMT+5.5
 1 NAME Nenetus /Haplogroup N/
 2 GIVN Nenetus
 2 SURN Haplogroup N
@@ -13815,11 +13819,37 @@
 1 BIRT
 2 _UID 6716162df01341efbc0b9822ef79916c
 2 RIN MH:IF32428
+1 FAMS @F13917@
 1 FAMC @F13576@
+1 NOTE <p style="text-align: left;" dir="ltr">&nbsp;</p>
+2 CONT <div class="mw-heading mw-heading3" style="font-size: 1.2em; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: bold; padding-bottom: 0px; font-style: 
+2 CONC normal; padding-top: 0.5em; orphans: 2; widows: 2; margin: 0.25em 0px; letter-spacing: normal; line-height: 1.6; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-varia
+2 CONC nt-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
+<h3 id="Honkola,_et_al._(2013)" style="font-famil
+2 CONC y: inherit; font-weight: bold; margin: 0px 0px 0.25em; display: inline; line-height: 1.6; font-stretch: inherit; font-optical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font-fe
+2 CONC ature-settings: inherit; font-variation-settings: inherit; border: 0px; padding: 0px;"><span style="font-size: large;">Honkola, et al. (2013)</span></h3>
+<span class="mw-editsection" style="font-size:
+2 CONC  small; font-family: sans-serif; vertical-align: baseline; font-weight: normal; margin-left: 1em; line-height: 0; margin-right: 0px; user-select: none; margin-inline: 1em 0px;"><span class="mw-editsec
+2 CONC tion-bracket" style="margin-right: 0.25em; margin-inline: 0px 0.25em;"><span style="font-size: medium;">[</span></span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%
+2 CONC ; white-space: nowrap; border-radius: 0px; overflow-wrap: break-word;" title="Edit section: Honkola, et al. (2013)" href="https://en.wikipedia.org/w/index.php?title=Uralic_languages&amp;action=edit&am
+2 CONC p;section=10"><span><span style="font-size: medium;">edit</span></span></a><span class="mw-editsection-bracket" style="margin-left: 0.25em; margin-inline: 0.25em 0px;"><span style="font-size: medium;"
+2 CONC >]</span></span></span></div>
+<p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; or
+2 CONC phans: 2; widows: 2; margin: 0.5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0
+2 CONC px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">A<span>&nbsp;</span><a class="mw-redirect" style="text-decoration: none; background: none trans
+2 CONC parent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Computational phylogenetic" href="https://en.wikipedia.org/wiki/Computational_phylogenetic">computational phylogeneti
+2 CONC c</a><span>&nbsp;</span>study by Honkola, et al. (2013)<sup id="cite_ref-64" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a
+2 CONC  style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Uralic_languages#cite_note-64"><spa
+2 CONC n class="cite-bracket" style="pointer-events: none;">[</span>64<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup><span>&nbsp;</span>classifies the Uralic languages as follows.
+2 CONC <span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Molecular clock" href="https://en.wikipedia
+2 CONC .org/wiki/Molecular_clock">Estimated divergence dates</a><span>&nbsp;</span>from Honkola, et al. (2013) are also given.</p>
+2 CONT <div class="treeview" style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; w
+2 CONC idows: 2; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: ini
+2 CONC tial; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</div>
 0 @I23642@ INDI
 1 RIN MH:I23642
 1 _UID 6716162ef01341efbc0b9822ef79916c
-1 _UPD 21 OCT 2024 14:22:05 GMT+5.5
+1 _UPD 25 OCT 2024 22:44:49 GMT+5.5
 1 NAME Orientus /Haplogroup O/
 2 GIVN Orientus
 2 SURN Haplogroup O
@@ -13827,7 +13857,29 @@
 1 BIRT
 2 _UID 67161635f01341efbc0b9822ef79916c
 2 RIN MH:IF32429
+1 FAMS @F13931@
 1 FAMC @F13576@
+1 NOTE <p style="text-align: left;" dir="ltr">&nbsp;</p>
+2 CONT <p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin: 0
+2 CONC .5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness:
+2 CONC  initial; text-decoration-style: initial; text-decoration-color: initial;">Haplogroup O is associated with populations which speak<span>&nbsp;</span><a style="text-decoration: none; background: none t
+2 CONC ransparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Austric languages" href="https://en.wikipedia.org/wiki/Austric_languages">Austric languages</a>. The following is
+2 CONC  a phylogenetic tree of language families and their corresponding<span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap
+2 CONC : break-word;" title="Single-nucleotide polymorphism" href="https://en.wikipedia.org/wiki/Single-nucleotide_polymorphism">SNP</a><span>&nbsp;</span>markers, or<span>&nbsp;</span><a style="text-decorat
+2 CONC ion: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Haplogroup" href="https://en.wikipedia.org/wiki/Haplogroup">haplogroups</a>, sourced
+2 CONC  mainly from<span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Ha
+2 CONC plogroup_O-M175#CITEREFEdmondson2007">Edmondson 2007</a><span>&nbsp;</span>and<span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; 
+2 CONC overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Haplogroup_O-M175#CITEREFShi2005">Shi 2005</a>. This has been called the "<a class="mw-redirect" style="text-decoration: none; backgroun
+2 CONC d: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Father Tongue Hypothesis" href="https://en.wikipedia.org/wiki/Father_Tongue_Hypothesis">Father Tongue Hy
+2 CONC pothesis</a>" by<span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="George van Driem" href="htt
+2 CONC ps://en.wikipedia.org/wiki/George_van_Driem">George van Driem</a><span>&nbsp;</span>(<a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wra
+2 CONC p: break-word;" href="https://en.wikipedia.org/wiki/Haplogroup_O-M175#CITEREFvan_Driem2011">van Driem 2011</a>). It does not appear to account for<span>&nbsp;</span><a class="new" style="text-decorati
+2 CONC on: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Haplogroup O-M176 (page does not exist)" href="https://en.wikipedia.org/w/index.php?t
+2 CONC itle=Haplogroup_O-M176&amp;action=edit&amp;redlink=1">O-M176</a>, which is found among Japanese, Korean, and Manchurian males.</p>
+2 CONT <div class="clade" style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; wido
+2 CONC ws: 2; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initia
+2 CONC l; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</div>
+<p style="text-align: left;" dir="ltr">&nbsp;</p>
 0 @I23643@ INDI
 1 RIN MH:I23643
 1 _UID 6716163dbddbe1efbc0b9822ef79916c
@@ -20388,7 +20440,7 @@
 0 @I24276@ INDI
 1 RIN MH:I24276
 1 _UID 671ba7ec2942d1efbc119822ef79916c
-1 _UPD 25 OCT 2024 19:56:19 GMT+5.5
+1 _UPD 25 OCT 2024 23:26:59 GMT+5.5
 1 NAME Yemo /Haplogroup R1b/
 2 GIVN Yemo
 2 SURN Haplogroup R1b
@@ -20396,6 +20448,7 @@
 1 BIRT
 2 _UID 671ba7ef2942d1efbc119822ef79916c
 2 RIN MH:IF32969
+1 FAMS @F13961@
 1 FAMC @F13899@
 0 @I24277@ INDI
 1 RIN MH:I24277
@@ -20657,6 +20710,1296 @@
 2 _UID 671bb1442942d1efbc119822ef79916c
 2 RIN MH:IF32992
 1 FAMC @F13908@
+0 @I24300@ INDI
+1 RIN MH:I24300
+1 _UID 671bc3e61422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 21:45:16 GMT+5.5
+1 NAME Dravid /Dravidian languages/
+2 GIVN Dravid
+2 SURN Dravidian languages
+1 SEX M
+1 BIRT
+2 _UID 671bc4142942d1efbc119822ef79916c
+2 RIN MH:IF32993
+1 FAMC @F13909@
+0 @I24301@ INDI
+1 RIN MH:I24301
+1 _UID 671bc4172942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 21:45:33 GMT+5.5
+1 NAME Hmer /Part of the Cambodians/
+2 GIVN Hmer
+2 SURN Part of the Cambodians
+1 SEX M
+1 BIRT
+2 _UID 671bc4252942d1efbc119822ef79916c
+2 RIN MH:IF32994
+1 FAMC @F13909@
+0 @I24302@ INDI
+1 RIN MH:I24302
+1 _UID 671bc8061422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:26:52 GMT+5.5
+1 NAME Afro-Asiatic /E1b1b (M215)/
+2 GIVN Afro-Asiatic
+2 SURN E1b1b (M215)
+1 SEX M
+1 BIRT
+2 _UID 671bc80e2942d1efbc119822ef79916c
+2 RIN MH:IF32995
+1 FAMS @F13911@
+1 FAMC @F13910@
+0 @I24303@ INDI
+1 RIN MH:I24303
+1 _UID 671bc8191422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:03:29 GMT+5.5
+1 NAME  /E1b1b1 (M35)/
+2 SURN E1b1b1 (M35)
+1 SEX M
+1 BIRT
+2 _UID 671bc8202942d1efbc119822ef79916c
+2 RIN MH:IF32996
+1 FAMS @F13912@
+1 FAMC @F13911@
+0 @I24304@ INDI
+1 RIN MH:I24304
+1 _UID 671bc8242942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:02:55 GMT+5.5
+1 NAME  /E1b1b2 (M281)/
+2 SURN E1b1b2 (M281)
+1 SEX M
+1 BIRT
+2 _UID 671bc8362942d1efbc119822ef79916c
+2 RIN MH:IF32997
+1 FAMC @F13911@
+0 @I24305@ INDI
+1 RIN MH:I24305
+1 _UID 671bc83a1422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:04:43 GMT+5.5
+1 NAME  /E1b1b1a (V68)/
+2 SURN E1b1b1a (V68)
+1 SEX M
+1 BIRT
+2 _UID 671bc84e2942d1efbc119822ef79916c
+2 RIN MH:IF32998
+1 FAMS @F13914@
+1 FAMC @F13912@
+0 @I24306@ INDI
+1 RIN MH:I24306
+1 _UID 671bc8562942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:04:12 GMT+5.5
+1 NAME  /E1b1b1b (Z827)/
+2 SURN E1b1b1b (Z827)
+1 SEX M
+1 BIRT
+2 _UID 671bc8592942d1efbc119822ef79916c
+2 RIN MH:IF32999
+1 FAMS @F13913@
+1 FAMC @F13912@
+0 @I24307@ INDI
+1 RIN MH:I24307
+1 _UID 671bc8751422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:04:00 GMT+5.5
+1 NAME  /E-M81/
+2 SURN E-M81
+1 SEX M
+1 BIRT
+2 _UID 671bc8782942d1efbc119822ef79916c
+2 RIN MH:IF33000
+1 FAMC @F13913@
+0 @I24308@ INDI
+1 RIN MH:I24308
+1 _UID 671bc87c2942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:04:12 GMT+5.5
+1 NAME  /E-M123/
+2 SURN E-M123
+1 SEX M
+1 BIRT
+2 _UID 671bc8842942d1efbc119822ef79916c
+2 RIN MH:IF33001
+1 FAMC @F13913@
+0 @I24309@ INDI
+1 RIN MH:I24309
+1 _UID 671bc89a1422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:05:27 GMT+5.5
+1 NAME  /E-M78/
+2 SURN E-M78
+1 SEX M
+1 BIRT
+2 _UID 671bc89d2942d1efbc119822ef79916c
+2 RIN MH:IF33002
+1 FAMS @F13915@
+1 FAMC @F13914@
+0 @I24310@ INDI
+1 RIN MH:I24310
+1 _UID 671bc8a12942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:04:43 GMT+5.5
+1 NAME  /E-V2729/
+2 SURN E-V2729
+1 SEX M
+1 BIRT
+2 _UID 671bc8a32942d1efbc119822ef79916c
+2 RIN MH:IF33003
+1 FAMC @F13914@
+0 @I24311@ INDI
+1 RIN MH:I24311
+1 _UID 671bc8a9538281efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:05:27 GMT+5.5
+1 SEX F
+1 FAMS @F13915@
+0 @I24312@ INDI
+1 RIN MH:I24312
+1 _UID 671bc8b02942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:04:59 GMT+5.5
+1 NAME  /E-V12/
+2 SURN E-V12
+1 SEX M
+1 BIRT
+2 _UID 671bc8b32942d1efbc119822ef79916c
+2 RIN MH:IF33004
+1 FAMC @F13915@
+0 @I24313@ INDI
+1 RIN MH:I24313
+1 _UID 671bc8ba2942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:05:09 GMT+5.5
+1 NAME  /E-V65/
+2 SURN E-V65
+1 SEX M
+1 BIRT
+2 _UID 671bc8bd2942d1efbc119822ef79916c
+2 RIN MH:IF33005
+1 FAMC @F13915@
+0 @I24314@ INDI
+1 RIN MH:I24314
+1 _UID 671bc8c12942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:07:39 GMT+5.5
+1 NAME Balkans /E-V13/
+2 GIVN Balkans
+2 SURN E-V13
+1 SEX M
+1 BIRT
+2 _UID 671bc8c72942d1efbc119822ef79916c
+2 RIN MH:IF33006
+1 FAMC @F13915@
+0 @I24315@ INDI
+1 RIN MH:I24315
+1 _UID 671bc8cd2942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:05:27 GMT+5.5
+1 NAME  /E-V22/
+2 SURN E-V22
+1 SEX M
+1 BIRT
+2 _UID 671bc8cf2942d1efbc119822ef79916c
+2 RIN MH:IF33007
+1 FAMC @F13915@
+0 @I24316@ INDI
+1 RIN MH:I24316
+1 _UID 671bc966538281efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:08:10 GMT+5.5
+1 SEX F
+1 FAMS @F13916@
+0 @I24317@ INDI
+1 RIN MH:I24317
+1 _UID 671bc96a2942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:08:05 GMT+5.5
+1 NAME  /Haplogroup J1/
+2 SURN Haplogroup J1
+1 SEX M
+1 BIRT
+2 _UID 671bc96d2942d1efbc119822ef79916c
+2 RIN MH:IF33008
+1 FAMC @F13916@
+0 @I24318@ INDI
+1 RIN MH:I24318
+1 _UID 671bc96f2942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:08:10 GMT+5.5
+1 NAME  /Haplogroup J2/
+2 SURN Haplogroup J2
+1 SEX M
+1 BIRT
+2 _UID 671bc9722942d1efbc119822ef79916c
+2 RIN MH:IF33009
+1 FAMC @F13916@
+0 @I24319@ INDI
+1 RIN MH:I24319
+1 _UID 671bcd0c2942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:25:00 GMT+5.5
+1 NAME Niger-Congo /E1b1a/
+2 GIVN Niger-Congo
+2 SURN E1b1a
+1 SEX M
+1 BIRT
+2 _UID 671bcd0f2942d1efbc119822ef79916c
+2 RIN MH:IF33010
+1 FAMC @F13910@
+0 @I24320@ INDI
+1 RIN MH:I24320
+1 _UID 671bcdc62942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 23:21:21 GMT+5.5
+1 NAME  /Afroasiatic languages/
+2 SURN Afroasiatic languages
+1 SEX M
+1 BIRT
+2 _UID 671bcdca2942d1efbc119822ef79916c
+2 RIN MH:IF33011
+1 FAMS @F13955@
+1 FAMC @F13911@
+1 NOTE <p style="text-align: left;" dir="ltr">&nbsp;</p>
+2 CONT <table class="wikitable" style="font-size: smaller; font-family: sans-serif; white-space: normal; word-spacing: 0px; border-collapse: collapse; text-transform: none; font-weight: 400; color: #202122; 
+2 CONC font-style: normal; orphans: 2; widows: 2; margin: 1em 0px; letter-spacing: normal; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness
+2 CONC : initial; text-decoration-style: initial; text-decoration-color: initial; border: 1px solid;">
+<tbody>
+<tr><th style="padding-bottom: 0.2em; text-align: center; padding-top: 0.2em; padding-left: 0.4e
+2 CONC m; padding-right: 0.4em; border: 1px solid;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikiped
+2 CONC ia.org/wiki/Afroasiatic_languages#CITEREFMilitarev2005">Militarev 2005</a></th></tr>
+<tr style="vertical-align: top;">
+<td style="padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.4em; paddin
+2 CONC g-right: 0.4em; border: 1px solid;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+0 @I24321@ INDI
+1 RIN MH:I24321
+1 _UID 671bce711422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:31:57 GMT+5.5
+1 NAME Nural /Uralic languages/
+2 GIVN Nural
+2 SURN Uralic languages
+1 SEX M
+1 BIRT
+2 _UID 671bce762942d1efbc119822ef79916c
+2 RIN MH:IF33012
+1 FAMS @F13919@
+1 FAMC @F13917@
+0 @I24323@ INDI
+1 RIN MH:I24323
+1 _UID 671bceef1422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:40:29 GMT+5.5
+1 NAME  /Samoyedic/
+2 SURN Samoyedic
+1 SEX M
+1 BIRT
+2 _UID 671bcef32942d1efbc119822ef79916c
+2 RIN MH:IF33014
+1 FAMS @F13928@
+1 FAMC @F13919@
+1 NOTE <p style="text-align: left;" dir="ltr">&nbsp;</p>
+2 CONT <p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin: 0
+2 CONC .5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness:
+2 CONC  initial; text-decoration-style: initial; text-decoration-color: initial;">Traditionally, Samoyedic languages and peoples have been divided into two major areal groups: Northern Samoyedic (Nenets, Yur
+2 CONC ats, Enets, Nganasans), and Southern Samoyedic (Selkups) with a further now-extinct subgroup of Sayan-Samoyedics (Kamasins, Mators) named after the<span>&nbsp;</span><a style="text-decoration: none; b
+2 CONC ackground: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Sayan Mountains" href="https://en.wikipedia.org/wiki/Sayan_Mountains">Sayan Mountains</a>. They 
+2 CONC are however purely geographical, and do not reflect linguistic relations.</p>
+2 CONT <p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin: 0
+2 CONC .5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness:
+2 CONC  initial; text-decoration-style: initial; text-decoration-color: initial;">Linguistic genealogical classifications point to an early divergence of Nganasan and (perhaps to a lesser degree) Mator, with
+2 CONC  Enets&ndash;Nenets&ndash;Yurats and Kamas&ndash;Selkup forming internal branches.<sup id="cite_ref-Janhunen1998_4-1" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal
+2 CONC ; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org
+2 CONC /wiki/Samoyedic_languages#cite_note-Janhunen1998-4"><span class="cite-bracket" style="pointer-events: none;">[</span>4<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup></p>
+2 CONT <div class="treeview" style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; w
+2 CONC idows: 2; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: ini
+2 CONC tial; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</div>
+0 @I24324@ INDI
+1 RIN MH:I24324
+1 _UID 671bcef72942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:34:27 GMT+5.5
+1 NAME  /Finno-Ugric/
+2 SURN Finno-Ugric
+1 SEX M
+1 BIRT
+2 _UID 671bcf052942d1efbc119822ef79916c
+2 RIN MH:IF33015
+2 DATE 1900 BC
+1 DEAT
+2 _UID 671bcf051422f1efbc119822ef79916c
+2 RIN MH:IF33016
+1 FAMS @F13920@
+1 FAMC @F13919@
+0 @I24325@ INDI
+1 RIN MH:I24325
+1 _UID 671bcf0c1422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:33:44 GMT+5.5
+1 NAME  /Ugric/
+2 SURN Ugric
+1 SEX M
+1 BIRT
+2 _UID 671bcf132942d1efbc119822ef79916c
+2 RIN MH:IF33017
+2 DATE 1300 BC
+1 DEAT
+2 _UID 671bcf1c2942d1efbc119822ef79916c
+2 RIN MH:IF33018
+1 FAMS @F13921@
+1 FAMC @F13920@
+0 @I24326@ INDI
+1 RIN MH:I24326
+1 _UID 671bcf301422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:32:42 GMT+5.5
+1 NAME  /Hungarian/
+2 SURN Hungarian
+1 SEX M
+1 BIRT
+2 _UID 671bcf322942d1efbc119822ef79916c
+2 RIN MH:IF33019
+1 FAMC @F13921@
+0 @I24327@ INDI
+1 RIN MH:I24327
+1 _UID 671bcf6d2942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:33:57 GMT+5.5
+1 NAME  /Ob-Ugric/
+2 SURN Ob-Ugric
+1 SEX M
+1 BIRT
+2 _UID 671bcf702942d1efbc119822ef79916c
+2 RIN MH:IF33020
+1 FAMS @F13922@
+1 FAMC @F13921@
+0 @I24328@ INDI
+1 RIN MH:I24328
+1 _UID 671bcf751422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:33:52 GMT+5.5
+1 NAME  /Khanty/
+2 SURN Khanty
+1 SEX M
+1 BIRT
+2 _UID 671bcf782942d1efbc119822ef79916c
+2 RIN MH:IF33021
+1 FAMC @F13922@
+0 @I24329@ INDI
+1 RIN MH:I24329
+1 _UID 671bcf7b2942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:33:57 GMT+5.5
+1 NAME  /Mansi/
+2 SURN Mansi
+1 SEX M
+1 BIRT
+2 _UID 671bcf7d2942d1efbc119822ef79916c
+2 RIN MH:IF33022
+1 FAMC @F13922@
+0 @I24330@ INDI
+1 RIN MH:I24330
+1 _UID 671bcf8a2942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:35:24 GMT+5.5
+1 NAME  /Finno-Permic/
+2 SURN Finno-Permic
+1 SEX M
+1 BIRT
+2 _UID 671bcf982942d1efbc119822ef79916c
+2 RIN MH:IF33023
+2 DATE 1700 BC
+1 DEAT
+2 _UID 671bcf981422f1efbc119822ef79916c
+2 RIN MH:IF33024
+1 FAMS @F13923@
+1 FAMC @F13920@
+0 @I24331@ INDI
+1 RIN MH:I24331
+1 _UID 671bcfa71422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:34:57 GMT+5.5
+1 NAME  /Permian/
+2 SURN Permian
+1 SEX M
+1 BIRT
+2 _UID 671bcfaa2942d1efbc119822ef79916c
+2 RIN MH:IF33025
+1 FAMS @F13924@
+1 FAMC @F13923@
+0 @I24332@ INDI
+1 RIN MH:I24332
+1 _UID 671bcfb11422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:34:51 GMT+5.5
+1 NAME  /Udmurt/
+2 SURN Udmurt
+1 SEX M
+1 BIRT
+2 _UID 671bcfb32942d1efbc119822ef79916c
+2 RIN MH:IF33026
+1 FAMC @F13924@
+0 @I24333@ INDI
+1 RIN MH:I24333
+1 _UID 671bcfb72942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:34:57 GMT+5.5
+1 NAME  /Komi/
+2 SURN Komi
+1 SEX M
+1 BIRT
+2 _UID 671bcfb92942d1efbc119822ef79916c
+2 RIN MH:IF33027
+1 FAMC @F13924@
+0 @I24334@ INDI
+1 RIN MH:I24334
+1 _UID 671bcfd12942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:35:52 GMT+5.5
+1 NAME  /Finno-Volgaic/
+2 SURN Finno-Volgaic
+1 SEX M
+1 BIRT
+2 _UID 671bcfd42942d1efbc119822ef79916c
+2 RIN MH:IF33028
+1 FAMS @F13925@
+1 FAMC @F13923@
+0 @I24335@ INDI
+1 RIN MH:I24335
+1 _UID 671bcfd81422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:35:41 GMT+5.5
+1 NAME  /Mari/
+2 SURN Mari
+1 SEX M
+1 BIRT
+2 _UID 671bcfe52942d1efbc119822ef79916c
+2 RIN MH:IF33029
+2 DATE 1200 BC
+1 DEAT
+2 _UID 671bcfe51422f1efbc119822ef79916c
+2 RIN MH:IF33030
+1 FAMC @F13925@
+0 @I24336@ INDI
+1 RIN MH:I24336
+1 _UID 671bcfee2942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:36:29 GMT+5.5
+1 NAME (core branch) /Finno-Volgaic/
+2 GIVN (core branch)
+2 SURN Finno-Volgaic
+1 SEX M
+1 BIRT
+2 _UID 671bcff02942d1efbc119822ef79916c
+2 RIN MH:IF33031
+1 FAMS @F13926@
+1 FAMC @F13925@
+0 @I24337@ INDI
+1 RIN MH:I24337
+1 _UID 671bcff81422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:36:21 GMT+5.5
+1 NAME  /Erzya/
+2 SURN Erzya
+1 SEX M
+1 BIRT
+2 _UID 671bcffb2942d1efbc119822ef79916c
+2 RIN MH:IF33032
+2 DATE 900 BC
+1 DEAT
+2 _UID 671bd00b2942d1efbc119822ef79916c
+2 RIN MH:IF33033
+1 FAMC @F13926@
+0 @I24338@ INDI
+1 RIN MH:I24338
+1 _UID 671bd0112942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:37:03 GMT+5.5
+1 NAME  /Finno-Samic/
+2 SURN Finno-Samic
+1 SEX M
+1 BIRT
+2 _UID 671bd0142942d1efbc119822ef79916c
+2 RIN MH:IF33034
+1 FAMS @F13927@
+1 FAMC @F13926@
+0 @I24339@ INDI
+1 RIN MH:I24339
+1 _UID 671bd01b1422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:36:47 GMT+5.5
+1 NAME  /Sámi/
+2 SURN Sámi
+1 SEX M
+1 BIRT
+2 _UID 671bd0272942d1efbc119822ef79916c
+2 RIN MH:IF33035
+2 DATE 1200
+1 DEAT
+2 _UID 671bd0271422f1efbc119822ef79916c
+2 RIN MH:IF33036
+1 FAMC @F13927@
+0 @I24340@ INDI
+1 RIN MH:I24340
+1 _UID 671bd02d2942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:37:03 GMT+5.5
+1 NAME  /Finnic/
+2 SURN Finnic
+1 SEX M
+1 BIRT
+2 _UID 671bd0372942d1efbc119822ef79916c
+2 RIN MH:IF33037
+2 DATE 800
+1 DEAT
+2 _UID 671bd0371422f1efbc119822ef79916c
+2 RIN MH:IF33038
+1 FAMC @F13927@
+0 @I24341@ INDI
+1 RIN MH:I24341
+1 _UID 671bd0f11422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:40:13 GMT+5.5
+1 NAME  /Nganasan (Tavgi or Tawgi-Samoyed)/
+2 SURN Nganasan (Tavgi or Tawgi-Samoyed)
+1 SEX M
+1 BIRT
+2 _UID 671bd0f42942d1efbc119822ef79916c
+2 RIN MH:IF33039
+1 FAMC @F13928@
+0 @I24342@ INDI
+1 RIN MH:I24342
+1 _UID 671bd0f92942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:40:44 GMT+5.5
+1 NAME  /Core-Samoyedic/
+2 SURN Core-Samoyedic
+1 SEX M
+1 BIRT
+2 _UID 671bd0fc2942d1efbc119822ef79916c
+2 RIN MH:IF33040
+1 FAMS @F13929@
+1 FAMC @F13928@
+0 @I24343@ INDI
+1 RIN MH:I24343
+1 _UID 671bd1032942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:40:29 GMT+5.5
+1 NAME  /Mator (Sayan-Samoyed) †/
+2 SURN Mator (Sayan-Samoyed) †
+1 SEX M
+1 BIRT
+2 _UID 671bd1052942d1efbc119822ef79916c
+2 RIN MH:IF33041
+1 FAMC @F13928@
+0 @I24344@ INDI
+1 RIN MH:I24344
+1 _UID 671bd1121422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:40:54 GMT+5.5
+1 NAME  /Enets-Nenets/
+2 SURN Enets-Nenets
+1 SEX M
+1 BIRT
+2 _UID 671bd1142942d1efbc119822ef79916c
+2 RIN MH:IF33042
+1 FAMS @F13930@
+1 FAMC @F13929@
+0 @I24345@ INDI
+1 RIN MH:I24345
+1 _UID 671bd11b1422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:40:54 GMT+5.5
+1 NAME  /Nenets (Yurak-Samoyed)/
+2 SURN Nenets (Yurak-Samoyed)
+1 SEX M
+1 BIRT
+2 _UID 671bd11e2942d1efbc119822ef79916c
+2 RIN MH:IF33043
+1 FAMC @F13930@
+0 @I24346@ INDI
+1 RIN MH:I24346
+1 _UID 671bd1f7538281efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:44:49 GMT+5.5
+1 SEX F
+1 FAMS @F13931@
+0 @I24347@ INDI
+1 RIN MH:I24347
+1 _UID 671bd1ff2942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:46:54 GMT+5.5
+1 NAME  /O1 (F265) ("Austric") /
+2 SURN O1 (F265) ("Austric") 
+1 SEX M
+1 BIRT
+2 _UID 671bd2022942d1efbc119822ef79916c
+2 RIN MH:IF33044
+1 FAMS @F13932@
+1 FAMC @F13931@
+0 @I24348@ INDI
+1 RIN MH:I24348
+1 _UID 671bd2072942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:48:32 GMT+5.5
+1 NAME  /O2 (M122) /
+2 SURN O2 (M122) 
+1 SEX M
+1 BIRT
+2 _UID 671bd2092942d1efbc119822ef79916c
+2 RIN MH:IF33045
+1 FAMS @F13938@
+1 FAMC @F13931@
+0 @I24349@ INDI
+1 RIN MH:I24349
+1 _UID 671bd2251422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:46:21 GMT+5.5
+1 NAME  /Austro-Tai O1a (M119) /
+2 SURN Austro-Tai O1a (M119) 
+1 SEX M
+1 BIRT
+2 _UID 671bd2272942d1efbc119822ef79916c
+2 RIN MH:IF33046
+1 FAMS @F13933@
+1 FAMC @F13932@
+0 @I24350@ INDI
+1 RIN MH:I24350
+1 _UID 671bd22e1422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:46:08 GMT+5.5
+1 NAME  /Kra–Dai/
+2 SURN Kra–Dai
+1 SEX M
+1 BIRT
+2 _UID 671bd2302942d1efbc119822ef79916c
+2 RIN MH:IF33047
+1 FAMS @F13934@
+1 FAMC @F13933@
+0 @I24351@ INDI
+1 RIN MH:I24351
+1 _UID 671bd2351422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:45:55 GMT+5.5
+1 NAME  /Kam–Tai/
+2 SURN Kam–Tai
+1 SEX M
+1 BIRT
+2 _UID 671bd2372942d1efbc119822ef79916c
+2 RIN MH:IF33048
+1 FAMS @F13935@
+1 FAMC @F13934@
+0 @I24352@ INDI
+1 RIN MH:I24352
+1 _UID 671bd23e1422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:45:44 GMT+5.5
+1 NAME  /Tai /
+2 SURN Tai 
+1 SEX M
+1 BIRT
+2 _UID 671bd2402942d1efbc119822ef79916c
+2 RIN MH:IF33049
+1 FAMC @F13935@
+0 @I24353@ INDI
+1 RIN MH:I24353
+1 _UID 671bd2472942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:45:55 GMT+5.5
+1 NAME  /Kam–Sui/
+2 SURN Kam–Sui
+1 SEX M
+1 BIRT
+2 _UID 671bd24b2942d1efbc119822ef79916c
+2 RIN MH:IF33050
+1 FAMC @F13935@
+0 @I24354@ INDI
+1 RIN MH:I24354
+1 _UID 671bd2562942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:46:08 GMT+5.5
+1 NAME  /Kadai/
+2 SURN Kadai
+1 SEX M
+1 BIRT
+2 _UID 671bd2582942d1efbc119822ef79916c
+2 RIN MH:IF33051
+1 FAMC @F13934@
+0 @I24355@ INDI
+1 RIN MH:I24355
+1 _UID 671bd2622942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:46:34 GMT+5.5
+1 NAME  /Austronesian /
+2 SURN Austronesian 
+1 SEX M
+1 BIRT
+2 _UID 671bd2652942d1efbc119822ef79916c
+2 RIN MH:IF33052
+1 FAMS @F13936@
+1 FAMC @F13933@
+0 @I24356@ INDI
+1 RIN MH:I24356
+1 _UID 671bd2691422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:46:28 GMT+5.5
+1 NAME  /Malayo-Polynesian/
+2 SURN Malayo-Polynesian
+1 SEX M
+1 BIRT
+2 _UID 671bd26c2942d1efbc119822ef79916c
+2 RIN MH:IF33053
+1 FAMC @F13936@
+0 @I24357@ INDI
+1 RIN MH:I24357
+1 _UID 671bd2702942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:46:34 GMT+5.5
+1 NAME  /Formosan/
+2 SURN Formosan
+1 SEX M
+1 BIRT
+2 _UID 671bd2722942d1efbc119822ef79916c
+2 RIN MH:IF33054
+1 FAMC @F13936@
+0 @I24358@ INDI
+1 RIN MH:I24358
+1 _UID 671bd2822942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:47:09 GMT+5.5
+1 NAME  /Austroasiatic O1b1a1a (M95)/
+2 SURN Austroasiatic O1b1a1a (M95)
+1 SEX M
+1 BIRT
+2 _UID 671bd2862942d1efbc119822ef79916c
+2 RIN MH:IF33055
+1 FAMS @F13937@
+1 FAMC @F13932@
+0 @I24359@ INDI
+1 RIN MH:I24359
+1 _UID 671bd28d1422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:47:04 GMT+5.5
+1 NAME  /Mon–Khmer /
+2 SURN Mon–Khmer 
+1 SEX M
+1 BIRT
+2 _UID 671bd2902942d1efbc119822ef79916c
+2 RIN MH:IF33056
+1 FAMC @F13937@
+0 @I24360@ INDI
+1 RIN MH:I24360
+1 _UID 671bd2932942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:47:09 GMT+5.5
+1 NAME  /Munda/
+2 SURN Munda
+1 SEX M
+1 BIRT
+2 _UID 671bd2952942d1efbc119822ef79916c
+2 RIN MH:IF33057
+1 FAMC @F13937@
+0 @I24361@ INDI
+1 RIN MH:I24361
+1 _UID 671bd2a21422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:47:40 GMT+5.5
+1 NAME  /Hmong–Mien O2a2a1a2 (M7)/
+2 SURN Hmong–Mien O2a2a1a2 (M7)
+1 SEX M
+1 BIRT
+2 _UID 671bd2a52942d1efbc119822ef79916c
+2 RIN MH:IF33058
+1 FAMS @F13939@
+1 FAMC @F13938@
+0 @I24362@ INDI
+1 RIN MH:I24362
+1 _UID 671bd2ac1422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:47:34 GMT+5.5
+1 NAME  /Mien (Yao) /
+2 SURN Mien (Yao) 
+1 SEX M
+1 BIRT
+2 _UID 671bd2ae2942d1efbc119822ef79916c
+2 RIN MH:IF33059
+1 FAMC @F13939@
+0 @I24363@ INDI
+1 RIN MH:I24363
+1 _UID 671bd2b02942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:47:53 GMT+5.5
+1 NAME  /Hmong–Mien O2a2a1a2 (M7)/
+2 SURN Hmong–Mien O2a2a1a2 (M7)
+1 SEX M
+1 BIRT
+2 _UID 671bd2b42942d1efbc119822ef79916c
+2 RIN MH:IF33060
+1 FAMS @F13940@
+1 FAMC @F13939@
+0 @I24364@ INDI
+1 RIN MH:I24364
+1 _UID 671bd2b81422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:47:46 GMT+5.5
+1 NAME  /She (Ratliff 1998) /
+2 SURN She (Ratliff 1998) 
+1 SEX M
+1 BIRT
+2 _UID 671bd2ba2942d1efbc119822ef79916c
+2 RIN MH:IF33061
+1 FAMC @F13940@
+0 @I24365@ INDI
+1 RIN MH:I24365
+1 _UID 671bd2be2942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:47:53 GMT+5.5
+1 NAME  / Hmong (Miao) /
+2 SURN  Hmong (Miao) 
+1 SEX M
+1 BIRT
+2 _UID 671bd2c12942d1efbc119822ef79916c
+2 RIN MH:IF33062
+1 FAMC @F13940@
+0 @I24366@ INDI
+1 RIN MH:I24366
+1 _UID 671bd2e52942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:49:18 GMT+5.5
+1 NAME  /Sino-Tibetan O2a2b1 (M134) /
+2 SURN Sino-Tibetan O2a2b1 (M134) 
+1 SEX M
+1 BIRT
+2 _UID 671bd2e82942d1efbc119822ef79916c
+2 RIN MH:IF33063
+1 FAMS @F13941@
+1 FAMC @F13938@
+1 NOTE <p style="text-align: left;" dir="ltr">&nbsp;</p>
+2 CONT <p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin: 0
+2 CONC .5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness:
+2 CONC  initial; text-decoration-style: initial; text-decoration-color: initial;">A team of researchers led by<span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0%
+2 CONC  0%; border-radius: 0px; overflow-wrap: break-word;" title="Pan Wuyun" href="https://en.wikipedia.org/wiki/Pan_Wuyun">Pan Wuyun</a><span>&nbsp;</span>and<span>&nbsp;</span><a style="text-decoration: n
+2 CONC one; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Jin Li" href="https://en.wikipedia.org/wiki/Jin_Li">Jin Li</a><span>&nbsp;</span>proposed 
+2 CONC the following<span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Phylogenetic tree" href="https
+2 CONC ://en.wikipedia.org/wiki/Phylogenetic_tree">phylogenetic tree</a><span>&nbsp;</span>in 2019, based on lexical items:<sup id="cite_ref-FOOTNOTEZhangYanPanJin2019113_102-0" class="reference" style="font
+2 CONC -size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overf
+2 CONC low-wrap: break-word;" href="https://en.wikipedia.org/wiki/Sino-Tibetan_languages#cite_note-FOOTNOTEZhangYanPanJin2019113-102"><span class="cite-bracket" style="pointer-events: none;">[</span>95<span 
+2 CONC class="cite-bracket" style="pointer-events: none;">]</span></a></sup></p>
+2 CONT <div class="treeview" style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; w
+2 CONC idows: 2; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: ini
+2 CONC tial; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</div>
+0 @I24367@ INDI
+1 RIN MH:I24367
+1 _UID 671bd30d1422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:52:57 GMT+5.5
+1 NAME  /Tibeto-Burman O2a2b1a1 (M117)/
+2 SURN Tibeto-Burman O2a2b1a1 (M117)
+1 SEX M
+1 BIRT
+2 _UID 671bd3102942d1efbc119822ef79916c
+2 RIN MH:IF33064
+1 FAMS @F13942@
+1 FAMC @F13941@
+0 @I24368@ INDI
+1 RIN MH:I24368
+1 _UID 671bd3132942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:49:18 GMT+5.5
+1 NAME  /Sinitic O2a2b1a2 (F114) /
+2 SURN Sinitic O2a2b1a2 (F114) 
+1 SEX M
+1 BIRT
+2 _UID 671bd3162942d1efbc119822ef79916c
+2 RIN MH:IF33065
+1 FAMC @F13941@
+0 @I24369@ INDI
+1 RIN MH:I24369
+1 _UID 671bd3e2538281efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:52:57 GMT+5.5
+1 SEX F
+1 FAMS @F13942@
+0 @I24370@ INDI
+1 RIN MH:I24370
+1 _UID 671bd3e92942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:53:29 GMT+5.5
+1 NAME  /Tibeto-Burman O2a2b1a1 (M117)/
+2 SURN Tibeto-Burman O2a2b1a1 (M117)
+1 SEX M
+1 BIRT
+2 _UID 671bd3ec2942d1efbc119822ef79916c
+2 RIN MH:IF33066
+1 FAMS @F13944@
+1 FAMC @F13942@
+0 @I24371@ INDI
+1 RIN MH:I24371
+1 _UID 671bd3ef2942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:53:11 GMT+5.5
+1 NAME  /Tibeto-Burman O2a2b1a1 (M117)/
+2 SURN Tibeto-Burman O2a2b1a1 (M117)
+1 SEX M
+1 BIRT
+2 _UID 671bd3f12942d1efbc119822ef79916c
+2 RIN MH:IF33067
+1 FAMS @F13943@
+1 FAMC @F13942@
+0 @I24372@ INDI
+1 RIN MH:I24372
+1 _UID 671bd3f61422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:53:05 GMT+5.5
+1 NAME  /Karenic/
+2 SURN Karenic
+1 SEX M
+1 BIRT
+2 _UID 671bd3f92942d1efbc119822ef79916c
+2 RIN MH:IF33068
+1 FAMC @F13943@
+0 @I24373@ INDI
+1 RIN MH:I24373
+1 _UID 671bd3fd2942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:53:11 GMT+5.5
+1 NAME  /Kuki-Chin–Naga/
+2 SURN Kuki-Chin–Naga
+1 SEX M
+1 BIRT
+2 _UID 671bd3ff2942d1efbc119822ef79916c
+2 RIN MH:IF33069
+1 FAMC @F13943@
+0 @I24374@ INDI
+1 RIN MH:I24374
+1 _UID 671bd40a1422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:53:25 GMT+5.5
+1 NAME  /Sal/
+2 SURN Sal
+1 SEX M
+1 BIRT
+2 _UID 671bd40d2942d1efbc119822ef79916c
+2 RIN MH:IF33070
+1 FAMC @F13944@
+0 @I24375@ INDI
+1 RIN MH:I24375
+1 _UID 671bd40f2942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:53:45 GMT+5.5
+1 NAME  /Tibeto-Burman O2a2b1a1 (M117)/
+2 SURN Tibeto-Burman O2a2b1a1 (M117)
+1 SEX M
+1 BIRT
+2 _UID 671bd4112942d1efbc119822ef79916c
+2 RIN MH:IF33071
+1 FAMS @F13945@
+1 FAMC @F13944@
+0 @I24376@ INDI
+1 RIN MH:I24376
+1 _UID 671bd41b1422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:54:18 GMT+5.5
+1 NAME  /Tibeto-Burman O2a2b1a1 (M117)/
+2 SURN Tibeto-Burman O2a2b1a1 (M117)
+1 SEX M
+1 BIRT
+2 _UID 671bd41d2942d1efbc119822ef79916c
+2 RIN MH:IF33072
+1 FAMS @F13947@
+1 FAMC @F13945@
+0 @I24377@ INDI
+1 RIN MH:I24377
+1 _UID 671bd41f2942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:53:59 GMT+5.5
+1 NAME  /Tibeto-Burman O2a2b1a1 (M117)/
+2 SURN Tibeto-Burman O2a2b1a1 (M117)
+1 SEX M
+1 BIRT
+2 _UID 671bd4212942d1efbc119822ef79916c
+2 RIN MH:IF33073
+1 FAMS @F13946@
+1 FAMC @F13945@
+0 @I24378@ INDI
+1 RIN MH:I24378
+1 _UID 671bd4271422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:53:53 GMT+5.5
+1 NAME  /Digarish/
+2 SURN Digarish
+1 SEX M
+1 BIRT
+2 _UID 671bd4292942d1efbc119822ef79916c
+2 RIN MH:IF33074
+1 FAMC @F13946@
+0 @I24379@ INDI
+1 RIN MH:I24379
+1 _UID 671bd42c2942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:53:59 GMT+5.5
+1 NAME  /Tani/
+2 SURN Tani
+1 SEX M
+1 BIRT
+2 _UID 671bd42f2942d1efbc119822ef79916c
+2 RIN MH:IF33075
+1 FAMC @F13946@
+0 @I24380@ INDI
+1 RIN MH:I24380
+1 _UID 671bd43a538281efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:54:18 GMT+5.5
+1 SEX F
+1 FAMS @F13947@
+0 @I24381@ INDI
+1 RIN MH:I24381
+1 _UID 671bd43d2942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:55:10 GMT+5.5
+1 NAME  /Tibeto-Burman O2a2b1a1 (M117)/
+2 SURN Tibeto-Burman O2a2b1a1 (M117)
+1 SEX M
+1 BIRT
+2 _UID 671bd43e2942d1efbc119822ef79916c
+2 RIN MH:IF33076
+1 FAMS @F13949@
+1 FAMC @F13947@
+0 @I24382@ INDI
+1 RIN MH:I24382
+1 _UID 671bd4412942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:54:44 GMT+5.5
+1 NAME  /Tibeto-Burman O2a2b1a1 (M117)/
+2 SURN Tibeto-Burman O2a2b1a1 (M117)
+1 SEX M
+1 BIRT
+2 _UID 671bd4422942d1efbc119822ef79916c
+2 RIN MH:IF33077
+1 FAMS @F13948@
+1 FAMC @F13947@
+0 @I24383@ INDI
+1 RIN MH:I24383
+1 _UID 671bd4541422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:54:39 GMT+5.5
+1 NAME  /Himalayish/
+2 SURN Himalayish
+1 SEX M
+1 BIRT
+2 _UID 671bd4562942d1efbc119822ef79916c
+2 RIN MH:IF33078
+1 FAMC @F13948@
+0 @I24384@ INDI
+1 RIN MH:I24384
+1 _UID 671bd4592942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:54:44 GMT+5.5
+1 NAME  /Nungish/
+2 SURN Nungish
+1 SEX M
+1 BIRT
+2 _UID 671bd45c2942d1efbc119822ef79916c
+2 RIN MH:IF33079
+1 FAMC @F13948@
+0 @I24385@ INDI
+1 RIN MH:I24385
+1 _UID 671bd46a538281efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:55:10 GMT+5.5
+1 SEX F
+1 FAMS @F13949@
+0 @I24386@ INDI
+1 RIN MH:I24386
+1 _UID 671bd46f2942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:55:44 GMT+5.5
+1 NAME  /Tibeto-Burman O2a2b1a1 (M117)/
+2 SURN Tibeto-Burman O2a2b1a1 (M117)
+1 SEX M
+1 BIRT
+2 _UID 671bd4712942d1efbc119822ef79916c
+2 RIN MH:IF33080
+1 FAMS @F13950@
+1 FAMC @F13949@
+0 @I24387@ INDI
+1 RIN MH:I24387
+1 _UID 671bd4742942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:55:21 GMT+5.5
+1 NAME  /Kinauri/
+2 SURN Kinauri
+1 SEX M
+1 BIRT
+2 _UID 671bd4762942d1efbc119822ef79916c
+2 RIN MH:IF33081
+1 FAMC @F13949@
+0 @I24388@ INDI
+1 RIN MH:I24388
+1 _UID 671bd48e538281efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:55:44 GMT+5.5
+1 SEX F
+1 FAMS @F13950@
+0 @I24389@ INDI
+1 RIN MH:I24389
+1 _UID 671bd4912942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:59:36 GMT+5.5
+1 NAME  /Tibeto-Burman O2a2b1a1 (M117)/
+2 SURN Tibeto-Burman O2a2b1a1 (M117)
+1 SEX M
+1 BIRT
+2 _UID 671bd4932942d1efbc119822ef79916c
+2 RIN MH:IF33082
+1 FAMS @F13953@
+1 FAMC @F13950@
+0 @I24390@ INDI
+1 RIN MH:I24390
+1 _UID 671bd4962942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:55:59 GMT+5.5
+1 NAME  /Tibeto-Burman O2a2b1a1 (M117)/
+2 SURN Tibeto-Burman O2a2b1a1 (M117)
+1 SEX M
+1 BIRT
+2 _UID 671bd4982942d1efbc119822ef79916c
+2 RIN MH:IF33083
+1 FAMS @F13951@
+1 FAMC @F13950@
+0 @I24391@ INDI
+1 RIN MH:I24391
+1 _UID 671bd49e1422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:55:53 GMT+5.5
+1 NAME  /Gurung-Tamang/
+2 SURN Gurung-Tamang
+1 SEX M
+1 BIRT
+2 _UID 671bd4a12942d1efbc119822ef79916c
+2 RIN MH:IF33084
+1 FAMC @F13951@
+0 @I24392@ INDI
+1 RIN MH:I24392
+1 _UID 671bd4a42942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:59:01 GMT+5.5
+1 NAME  /Bodish/
+2 SURN Bodish
+1 SEX M
+1 BIRT
+2 _UID 671bd4a72942d1efbc119822ef79916c
+2 RIN MH:IF33085
+1 FAMS @F13952@
+1 FAMC @F13951@
+0 @I24393@ INDI
+1 RIN MH:I24393
+1 _UID 671bd5581422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:59:08 GMT+5.5
+1 NAME  /Tibetan/
+2 SURN Tibetan
+1 SEX M
+1 BIRT
+2 _UID 671bd55d2942d1efbc119822ef79916c
+2 RIN MH:IF33086
+1 FAMC @F13952@
+0 @I24394@ INDI
+1 RIN MH:I24394
+1 _UID 671bd57a1422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:59:32 GMT+5.5
+1 NAME  /Lolo-Burmese/
+2 SURN Lolo-Burmese
+1 SEX M
+1 BIRT
+2 _UID 671bd57c2942d1efbc119822ef79916c
+2 RIN MH:IF33087
+1 FAMC @F13953@
+0 @I24395@ INDI
+1 RIN MH:I24395
+1 _UID 671bd57e2942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:59:48 GMT+5.5
+1 NAME  /Tibeto-Burman O2a2b1a1 (M117)/
+2 SURN Tibeto-Burman O2a2b1a1 (M117)
+1 SEX M
+1 BIRT
+2 _UID 671bd5802942d1efbc119822ef79916c
+2 RIN MH:IF33088
+1 FAMS @F13954@
+1 FAMC @F13953@
+0 @I24396@ INDI
+1 RIN MH:I24396
+1 _UID 671bd5841422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:59:42 GMT+5.5
+1 NAME  /Naic/
+2 SURN Naic
+1 SEX M
+1 BIRT
+2 _UID 671bd5862942d1efbc119822ef79916c
+2 RIN MH:IF33089
+1 FAMC @F13954@
+0 @I24397@ INDI
+1 RIN MH:I24397
+1 _UID 671bd58a2942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 22:59:48 GMT+5.5
+1 NAME  /Ersuish, Qiangic, Rgyalrongic/
+2 SURN Ersuish, Qiangic, Rgyalrongic
+1 SEX M
+1 BIRT
+2 _UID 671bd58c2942d1efbc119822ef79916c
+2 RIN MH:IF33090
+1 FAMC @F13954@
+0 @I24398@ INDI
+1 RIN MH:I24398
+1 _UID 671bda6d1422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 23:21:04 GMT+5.5
+1 NAME  /Cushomotic/
+2 SURN Cushomotic
+1 SEX M
+1 BIRT
+2 _UID 671bda742942d1efbc119822ef79916c
+2 RIN MH:IF33091
+1 FAMS @F13956@
+1 FAMC @F13955@
+0 @I24399@ INDI
+1 RIN MH:I24399
+1 _UID 671bda7b1422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 23:20:56 GMT+5.5
+1 NAME  /Cushitic/
+2 SURN Cushitic
+1 SEX M
+1 BIRT
+2 _UID 671bda802942d1efbc119822ef79916c
+2 RIN MH:IF33092
+1 FAMC @F13956@
+0 @I24400@ INDI
+1 RIN MH:I24400
+1 _UID 671bda832942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 23:21:04 GMT+5.5
+1 NAME  /Omotic/
+2 SURN Omotic
+1 SEX M
+1 BIRT
+2 _UID 671bda882942d1efbc119822ef79916c
+2 RIN MH:IF33093
+1 FAMC @F13956@
+0 @I24401@ INDI
+1 RIN MH:I24401
+1 _UID 671bda8d2942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 23:23:34 GMT+5.5
+1 NAME  /North Afrasian/
+2 SURN North Afrasian
+1 SEX M
+1 BIRT
+2 _UID 671bda992942d1efbc119822ef79916c
+2 RIN MH:IF33094
+1 FAMS @F13957@
+1 FAMC @F13955@
+0 @I24402@ INDI
+1 RIN MH:I24402
+1 _UID 671bdaa41422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 23:21:38 GMT+5.5
+1 NAME  /Semitic/
+2 SURN Semitic
+1 SEX M
+1 BIRT
+2 _UID 671bdaaa2942d1efbc119822ef79916c
+2 RIN MH:IF33095
+1 FAMC @F13957@
+0 @I24403@ INDI
+1 RIN MH:I24403
+1 _UID 671bdab12942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 23:22:09 GMT+5.5
+1 NAME  /Chado-Berber/
+2 SURN Chado-Berber
+1 SEX M
+1 BIRT
+2 _UID 671bdab62942d1efbc119822ef79916c
+2 RIN MH:IF33096
+1 FAMS @F13958@
+1 FAMC @F13959@
+0 @I24404@ INDI
+1 RIN MH:I24404
+1 _UID 671bdabb1422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 23:26:41 GMT+5.5
+1 NAME  /Chadic/
+2 SURN Chadic
+1 SEX F
+1 BIRT
+2 _UID 671bdac02942d1efbc119822ef79916c
+2 RIN MH:IF33097
+1 FAMS @F13960@
+1 FAMC @F13958@
+0 @I24405@ INDI
+1 RIN MH:I24405
+1 _UID 671bdac22942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 23:22:09 GMT+5.5
+1 NAME  /Berber/
+2 SURN Berber
+1 SEX M
+1 BIRT
+2 _UID 671bdac92942d1efbc119822ef79916c
+2 RIN MH:IF33098
+1 FAMC @F13958@
+0 @I24406@ INDI
+1 RIN MH:I24406
+1 _UID 671bdb082942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 23:23:41 GMT+5.5
+1 NAME  /African North Afrasian/
+2 SURN African North Afrasian
+1 SEX M
+1 BIRT
+2 _UID 671bdb0f2942d1efbc119822ef79916c
+2 RIN MH:IF33099
+1 FAMS @F13959@
+1 FAMC @F13957@
+0 @I24407@ INDI
+1 RIN MH:I24407
+1 _UID 671bdb212942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 23:23:41 GMT+5.5
+1 NAME  /Egyptian/
+2 SURN Egyptian
+1 SEX M
+1 BIRT
+2 _UID 671bdb252942d1efbc119822ef79916c
+2 RIN MH:IF33100
+1 FAMC @F13959@
+0 @I24408@ INDI
+1 RIN MH:I24408
+1 _UID 671bdbcb1422f1efbc119822ef79916c
+1 _UPD 25 OCT 2024 23:26:31 GMT+5.5
+1 NAME  /Chadic/
+2 SURN Chadic
+1 SEX M
+1 BIRT
+2 _UID 671bdbcf2942d1efbc119822ef79916c
+2 RIN MH:IF33101
+1 FAMC @F13960@
+0 @I24409@ INDI
+1 RIN MH:I24409
+1 _UID 671bdbd12942d1efbc119822ef79916c
+1 _UPD 25 OCT 2024 23:26:41 GMT+5.5
+1 NAME rr1b //
+2 GIVN rr1b
+1 SEX M
+1 BIRT
+2 _UID 671bdbd92942d1efbc119822ef79916c
+2 RIN MH:IF33102
+1 FAMS @F13960@
+1 FAMC @F13961@
 0 @F1@ FAM
 1 RIN MH:F1
 1 _UID 66dfdfd660f561efbbc69822ef79916c
@@ -26299,6 +27642,348 @@
 1 HUSB @I24287@
 1 CHIL @I24298@
 1 CHIL @I24299@
+0 @F13909@ FAM
+1 RIN MH:F13909
+1 _UID 671bc3e62942d1efbc119822ef79916c
+1 HUSB @I23627@
+1 CHIL @I24300@
+1 CHIL @I24301@
+0 @F13910@ FAM
+1 RIN MH:F13910
+1 _UID 671bc8062942d1efbc119822ef79916c
+1 HUSB @I23620@
+1 CHIL @I24302@
+1 CHIL @I24319@
+0 @F13911@ FAM
+1 RIN MH:F13911
+1 _UID 671bc8192942d1efbc119822ef79916c
+1 HUSB @I24302@
+1 CHIL @I24303@
+1 CHIL @I24304@
+1 CHIL @I24320@
+0 @F13912@ FAM
+1 RIN MH:F13912
+1 _UID 671bc83a2942d1efbc119822ef79916c
+1 HUSB @I24303@
+1 CHIL @I24305@
+1 CHIL @I24306@
+0 @F13913@ FAM
+1 RIN MH:F13913
+1 _UID 671bc8752942d1efbc119822ef79916c
+1 HUSB @I24306@
+1 CHIL @I24307@
+1 CHIL @I24308@
+0 @F13914@ FAM
+1 RIN MH:F13914
+1 _UID 671bc89a2942d1efbc119822ef79916c
+1 HUSB @I24305@
+1 CHIL @I24309@
+1 CHIL @I24310@
+0 @F13915@ FAM
+1 RIN MH:F13915
+1 _UID 671bc8a92942d1efbc119822ef79916c
+1 HUSB @I24309@
+1 WIFE @I24311@
+1 CHIL @I24312@
+1 CHIL @I24313@
+1 CHIL @I24314@
+1 CHIL @I24315@
+1 MARR
+2 _UID 671bc8a91422f1efbc119822ef79916c
+2 RIN MH:FF1838
+0 @F13916@ FAM
+1 RIN MH:F13916
+1 _UID 671bc9662942d1efbc119822ef79916c
+1 HUSB @I23632@
+1 WIFE @I24316@
+1 CHIL @I24317@
+1 CHIL @I24318@
+1 MARR
+2 _UID 671bc9661422f1efbc119822ef79916c
+2 RIN MH:FF1839
+0 @F13917@ FAM
+1 RIN MH:F13917
+1 _UID 671bce712942d1efbc119822ef79916c
+1 HUSB @I23641@
+1 CHIL @I24321@
+0 @F13919@ FAM
+1 RIN MH:F13919
+1 _UID 671bceef2942d1efbc119822ef79916c
+1 HUSB @I24321@
+1 CHIL @I24323@
+1 CHIL @I24324@
+0 @F13920@ FAM
+1 RIN MH:F13920
+1 _UID 671bcf0c2942d1efbc119822ef79916c
+1 HUSB @I24324@
+1 CHIL @I24330@
+1 CHIL @I24325@
+0 @F13921@ FAM
+1 RIN MH:F13921
+1 _UID 671bcf302942d1efbc119822ef79916c
+1 HUSB @I24325@
+1 CHIL @I24326@
+1 CHIL @I24327@
+0 @F13922@ FAM
+1 RIN MH:F13922
+1 _UID 671bcf752942d1efbc119822ef79916c
+1 HUSB @I24327@
+1 CHIL @I24328@
+1 CHIL @I24329@
+0 @F13923@ FAM
+1 RIN MH:F13923
+1 _UID 671bcfa72942d1efbc119822ef79916c
+1 HUSB @I24330@
+1 CHIL @I24331@
+1 CHIL @I24334@
+0 @F13924@ FAM
+1 RIN MH:F13924
+1 _UID 671bcfb12942d1efbc119822ef79916c
+1 HUSB @I24331@
+1 CHIL @I24332@
+1 CHIL @I24333@
+0 @F13925@ FAM
+1 RIN MH:F13925
+1 _UID 671bcfd82942d1efbc119822ef79916c
+1 HUSB @I24334@
+1 CHIL @I24335@
+1 CHIL @I24336@
+0 @F13926@ FAM
+1 RIN MH:F13926
+1 _UID 671bcff82942d1efbc119822ef79916c
+1 HUSB @I24336@
+1 CHIL @I24337@
+1 CHIL @I24338@
+0 @F13927@ FAM
+1 RIN MH:F13927
+1 _UID 671bd01b2942d1efbc119822ef79916c
+1 HUSB @I24338@
+1 CHIL @I24340@
+1 CHIL @I24339@
+0 @F13928@ FAM
+1 RIN MH:F13928
+1 _UID 671bd0f12942d1efbc119822ef79916c
+1 HUSB @I24323@
+1 CHIL @I24341@
+1 CHIL @I24342@
+1 CHIL @I24343@
+0 @F13929@ FAM
+1 RIN MH:F13929
+1 _UID 671bd1122942d1efbc119822ef79916c
+1 HUSB @I24342@
+1 CHIL @I24344@
+0 @F13930@ FAM
+1 RIN MH:F13930
+1 _UID 671bd11b2942d1efbc119822ef79916c
+1 HUSB @I24344@
+1 CHIL @I24345@
+0 @F13931@ FAM
+1 RIN MH:F13931
+1 _UID 671bd1f72942d1efbc119822ef79916c
+1 HUSB @I23642@
+1 WIFE @I24346@
+1 CHIL @I24347@
+1 CHIL @I24348@
+1 MARR
+2 _UID 671bd1f71422f1efbc119822ef79916c
+2 RIN MH:FF1840
+0 @F13932@ FAM
+1 RIN MH:F13932
+1 _UID 671bd2252942d1efbc119822ef79916c
+1 HUSB @I24347@
+1 CHIL @I24349@
+1 CHIL @I24358@
+0 @F13933@ FAM
+1 RIN MH:F13933
+1 _UID 671bd22e2942d1efbc119822ef79916c
+1 HUSB @I24349@
+1 CHIL @I24350@
+1 CHIL @I24355@
+0 @F13934@ FAM
+1 RIN MH:F13934
+1 _UID 671bd2352942d1efbc119822ef79916c
+1 HUSB @I24350@
+1 CHIL @I24351@
+1 CHIL @I24354@
+0 @F13935@ FAM
+1 RIN MH:F13935
+1 _UID 671bd23e2942d1efbc119822ef79916c
+1 HUSB @I24351@
+1 CHIL @I24352@
+1 CHIL @I24353@
+0 @F13936@ FAM
+1 RIN MH:F13936
+1 _UID 671bd2692942d1efbc119822ef79916c
+1 HUSB @I24355@
+1 CHIL @I24356@
+1 CHIL @I24357@
+0 @F13937@ FAM
+1 RIN MH:F13937
+1 _UID 671bd28d2942d1efbc119822ef79916c
+1 HUSB @I24358@
+1 CHIL @I24359@
+1 CHIL @I24360@
+0 @F13938@ FAM
+1 RIN MH:F13938
+1 _UID 671bd2a22942d1efbc119822ef79916c
+1 HUSB @I24348@
+1 CHIL @I24361@
+1 CHIL @I24366@
+0 @F13939@ FAM
+1 RIN MH:F13939
+1 _UID 671bd2ac2942d1efbc119822ef79916c
+1 HUSB @I24361@
+1 CHIL @I24362@
+1 CHIL @I24363@
+0 @F13940@ FAM
+1 RIN MH:F13940
+1 _UID 671bd2b82942d1efbc119822ef79916c
+1 HUSB @I24363@
+1 CHIL @I24364@
+1 CHIL @I24365@
+0 @F13941@ FAM
+1 RIN MH:F13941
+1 _UID 671bd30d2942d1efbc119822ef79916c
+1 HUSB @I24366@
+1 CHIL @I24367@
+1 CHIL @I24368@
+0 @F13942@ FAM
+1 RIN MH:F13942
+1 _UID 671bd3e22942d1efbc119822ef79916c
+1 HUSB @I24367@
+1 WIFE @I24369@
+1 CHIL @I24370@
+1 CHIL @I24371@
+1 MARR
+2 _UID 671bd3e21422f1efbc119822ef79916c
+2 RIN MH:FF1841
+0 @F13943@ FAM
+1 RIN MH:F13943
+1 _UID 671bd3f62942d1efbc119822ef79916c
+1 HUSB @I24371@
+1 CHIL @I24372@
+1 CHIL @I24373@
+0 @F13944@ FAM
+1 RIN MH:F13944
+1 _UID 671bd40a2942d1efbc119822ef79916c
+1 HUSB @I24370@
+1 CHIL @I24374@
+1 CHIL @I24375@
+0 @F13945@ FAM
+1 RIN MH:F13945
+1 _UID 671bd41b2942d1efbc119822ef79916c
+1 HUSB @I24375@
+1 CHIL @I24376@
+1 CHIL @I24377@
+0 @F13946@ FAM
+1 RIN MH:F13946
+1 _UID 671bd4272942d1efbc119822ef79916c
+1 HUSB @I24377@
+1 CHIL @I24378@
+1 CHIL @I24379@
+0 @F13947@ FAM
+1 RIN MH:F13947
+1 _UID 671bd43a2942d1efbc119822ef79916c
+1 HUSB @I24376@
+1 WIFE @I24380@
+1 CHIL @I24381@
+1 CHIL @I24382@
+1 MARR
+2 _UID 671bd43a1422f1efbc119822ef79916c
+2 RIN MH:FF1842
+0 @F13948@ FAM
+1 RIN MH:F13948
+1 _UID 671bd4542942d1efbc119822ef79916c
+1 HUSB @I24382@
+1 CHIL @I24383@
+1 CHIL @I24384@
+0 @F13949@ FAM
+1 RIN MH:F13949
+1 _UID 671bd46a2942d1efbc119822ef79916c
+1 HUSB @I24381@
+1 WIFE @I24385@
+1 CHIL @I24386@
+1 CHIL @I24387@
+1 MARR
+2 _UID 671bd46a1422f1efbc119822ef79916c
+2 RIN MH:FF1843
+0 @F13950@ FAM
+1 RIN MH:F13950
+1 _UID 671bd48e2942d1efbc119822ef79916c
+1 HUSB @I24386@
+1 WIFE @I24388@
+1 CHIL @I24389@
+1 CHIL @I24390@
+1 MARR
+2 _UID 671bd48e1422f1efbc119822ef79916c
+2 RIN MH:FF1844
+0 @F13951@ FAM
+1 RIN MH:F13951
+1 _UID 671bd49e2942d1efbc119822ef79916c
+1 HUSB @I24390@
+1 CHIL @I24391@
+1 CHIL @I24392@
+0 @F13952@ FAM
+1 RIN MH:F13952
+1 _UID 671bd5582942d1efbc119822ef79916c
+1 HUSB @I24392@
+1 CHIL @I24393@
+0 @F13953@ FAM
+1 RIN MH:F13953
+1 _UID 671bd57a2942d1efbc119822ef79916c
+1 HUSB @I24389@
+1 CHIL @I24394@
+1 CHIL @I24395@
+0 @F13954@ FAM
+1 RIN MH:F13954
+1 _UID 671bd5842942d1efbc119822ef79916c
+1 HUSB @I24395@
+1 CHIL @I24396@
+1 CHIL @I24397@
+0 @F13955@ FAM
+1 RIN MH:F13955
+1 _UID 671bda6d2942d1efbc119822ef79916c
+1 HUSB @I24320@
+1 CHIL @I24398@
+1 CHIL @I24401@
+0 @F13956@ FAM
+1 RIN MH:F13956
+1 _UID 671bda7b2942d1efbc119822ef79916c
+1 HUSB @I24398@
+1 CHIL @I24399@
+1 CHIL @I24400@
+0 @F13957@ FAM
+1 RIN MH:F13957
+1 _UID 671bdaa42942d1efbc119822ef79916c
+1 HUSB @I24401@
+1 CHIL @I24402@
+1 CHIL @I24406@
+0 @F13958@ FAM
+1 RIN MH:F13958
+1 _UID 671bdabb2942d1efbc119822ef79916c
+1 HUSB @I24403@
+1 CHIL @I24404@
+1 CHIL @I24405@
+0 @F13959@ FAM
+1 RIN MH:F13959
+1 _UID 671bdb132942d1efbc119822ef79916c
+1 HUSB @I24406@
+1 CHIL @I24403@
+1 CHIL @I24407@
+0 @F13960@ FAM
+1 RIN MH:F13960
+1 _UID 671bdbcb2942d1efbc119822ef79916c
+1 HUSB @I24409@
+1 WIFE @I24404@
+1 CHIL @I24408@
+1 MARR
+2 _UID 671bdbd91422f1efbc119822ef79916c
+2 RIN MH:FF1845
+0 @F13961@ FAM
+1 RIN MH:F13961
+1 _UID 671bdbe72942d1efbc119822ef79916c
+1 HUSB @I24276@
+1 CHIL @I24409@
 0 @S13@ SOUR
 1 RIN MH:S13
 0 @S14@ SOUR
