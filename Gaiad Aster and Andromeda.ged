@@ -11,13 +11,16 @@
 2 CORP MyHeritage.com
 1 SUBM @U1@
 1 DEST MYHERITAGE
-1 DATE 25 OCT 2024
-2 TIME 23:36:45 
+1 DATE 26 OCT 2024
+2 TIME 11:25:56 
 2 _TIMEZONE GMT+5.5
-1 _RINS I24409,F13961,N17741,M0,R0,S38,U536,L0,P14219,Q0,IF33102,FF1845
+1 _RINS I24512,F14021,N17756,M0,R0,S38,U537,L0,P14219,Q0,IF33204,FF1871
 1 _UID 67175D663F8F31A3B4DDFBF5A00005C5
 1 _DESCRIPTION_AWARE Y
 0  _PUBLISH
+1 _SITEADDRESS site1bd12elip07w6r60645
+1 _SITENAME Bishop Web Site
+1 _SITEID 1208328472
 1 _USERNAME ericrichardbishop@@gmail.com
 1 _DISABLED Y
 0 @U1@ SUBM
@@ -44,12 +47,12 @@
 1 RIN MH:U11
 0 @U12@ SUBM
 1 RIN MH:U12
+0 @U13@ SUBM
+1 RIN MH:U13
 1 ADDR
 2 CITY Waihi
 2 STAE Waikato
 2 CTRY New Zealand
-0 @U13@ SUBM
-1 RIN MH:U13
 0 @U14@ SUBM
 1 RIN MH:U14
 0 @U15@ SUBM
@@ -62,49 +65,49 @@
 1 RIN MH:U18
 0 @U19@ SUBM
 1 RIN MH:U19
+0 @U20@ SUBM
+1 RIN MH:U20
 1 ADDR
 2 CITY St. George
 2 STAE Utah
 2 POST 84770
 2 CTRY United States
-0 @U20@ SUBM
-1 RIN MH:U20
 0 @U21@ SUBM
 1 RIN MH:U21
 0 @U22@ SUBM
 1 RIN MH:U22
+0 @U23@ SUBM
+1 RIN MH:U23
 1 ADDR
 2 CITY Kongsberg
 2 STAE Buskerud
 2 CTRY Norway
-0 @U23@ SUBM
-1 RIN MH:U23
 0 @U24@ SUBM
 1 RIN MH:U24
+0 @U25@ SUBM
+1 RIN MH:U25
 1 ADDR 1 lieu dit Magrens
 2 ADR1 1 lieu dit Magrens
 2 CITY Lagrace-Dieu
 2 STAE Haute-Garonne
 2 POST 31190
 2 CTRY France
-0 @U25@ SUBM
-1 RIN MH:U25
 0 @U26@ SUBM
 1 RIN MH:U26
 0 @U27@ SUBM
 1 RIN MH:U27
+0 @U28@ SUBM
+1 RIN MH:U28
 1 ADDR
 2 CITY Kecskemét
 2 STAE Bacs-Kiskun
 2 CTRY Hungary
-0 @U28@ SUBM
-1 RIN MH:U28
+0 @U29@ SUBM
+1 RIN MH:U29
 1 ADDR
 2 CITY Grenoble
 2 STAE Rhône-Alpes
 2 CTRY France
-0 @U29@ SUBM
-1 RIN MH:U29
 0 @U30@ SUBM
 1 RIN MH:U30
 0 @U31@ SUBM
@@ -141,12 +144,12 @@
 1 RIN MH:U46
 0 @U47@ SUBM
 1 RIN MH:U47
+0 @U48@ SUBM
+1 RIN MH:U48
 1 ADDR
 2 CITY Cravinhos
 2 STAE State of São Paulo
 2 CTRY Brazil
-0 @U48@ SUBM
-1 RIN MH:U48
 0 @U49@ SUBM
 1 RIN MH:U49
 0 @U50@ SUBM
@@ -157,26 +160,26 @@
 1 RIN MH:U52
 0 @U53@ SUBM
 1 RIN MH:U53
+0 @U54@ SUBM
+1 RIN MH:U54
 1 ADDR
 2 CITY Palawan
 2 STAE MIMAROPA
 2 CTRY Philippines
-0 @U54@ SUBM
-1 RIN MH:U54
+0 @U55@ SUBM
+1 RIN MH:U55
 1 ADDR
 2 CITY South Bend
 2 STAE IN
 2 POST 46619
 2 CTRY United States
-0 @U55@ SUBM
-1 RIN MH:U55
 0 @U56@ SUBM
 1 RIN MH:U56
+0 @U57@ SUBM
+1 RIN MH:U57
 1 ADDR
 2 CITY Tal Menashe
 2 CTRY Israel
-0 @U57@ SUBM
-1 RIN MH:U57
 0 @U58@ SUBM
 1 RIN MH:U58
 0 @U59@ SUBM
@@ -201,11 +204,11 @@
 1 RIN MH:U68
 0 @U69@ SUBM
 1 RIN MH:U69
+0 @U70@ SUBM
+1 RIN MH:U70
 1 ADDR
 2 CITY 457 45  Hamburgsund
 2 CTRY Sweden
-0 @U70@ SUBM
-1 RIN MH:U70
 0 @U71@ SUBM
 1 RIN MH:U71
 0 @U72@ SUBM
@@ -222,13 +225,13 @@
 1 RIN MH:U77
 0 @U78@ SUBM
 1 RIN MH:U78
+0 @U79@ SUBM
+1 RIN MH:U79
 1 ADDR
 2 CITY Denver
 2 STAE Colorado
 2 POST 80202
 2 CTRY United States
-0 @U79@ SUBM
-1 RIN MH:U79
 0 @U80@ SUBM
 1 RIN MH:U80
 0 @U81@ SUBM
@@ -263,11 +266,11 @@
 1 RIN MH:U95
 0 @U96@ SUBM
 1 RIN MH:U96
+0 @U97@ SUBM
+1 RIN MH:U97
 1 ADDR
 2 CITY Johannesburg
 2 CTRY South Africa
-0 @U97@ SUBM
-1 RIN MH:U97
 0 @U98@ SUBM
 1 RIN MH:U98
 0 @U99@ SUBM
@@ -284,20 +287,20 @@
 1 RIN MH:U104
 0 @U105@ SUBM
 1 RIN MH:U105
+0 @U106@ SUBM
+1 RIN MH:U106
 1 ADDR
 2 CITY Ottestad
 2 STAE Hedmark
 2 CTRY Norway
-0 @U106@ SUBM
-1 RIN MH:U106
 0 @U107@ SUBM
 1 RIN MH:U107
+0 @U108@ SUBM
+1 RIN MH:U108
 1 ADDR
 2 CITY Tucson
 2 STAE Arizona
 2 CTRY United States
-0 @U108@ SUBM
-1 RIN MH:U108
 0 @U109@ SUBM
 1 RIN MH:U109
 0 @U110@ SUBM
@@ -366,12 +369,12 @@
 1 RIN MH:U141
 0 @U142@ SUBM
 1 RIN MH:U142
+0 @U143@ SUBM
+1 RIN MH:U143
 1 ADDR
 2 CITY Traverse City
 2 STAE Michigan
 2 CTRY United States
-0 @U143@ SUBM
-1 RIN MH:U143
 0 @U144@ SUBM
 1 RIN MH:U144
 0 @U145@ SUBM
@@ -400,16 +403,16 @@
 1 RIN MH:U156
 0 @U157@ SUBM
 1 RIN MH:U157
+0 @U158@ SUBM
+1 RIN MH:U158
 1 ADDR
 2 STAE Virginia
 2 CTRY United States
-0 @U158@ SUBM
-1 RIN MH:U158
+0 @U159@ SUBM
+1 RIN MH:U159
 1 ADDR Gandijeva 49B/49
 2 ADR1 Gandijeva 49B/49
 2 CITY Belgrade
-0 @U159@ SUBM
-1 RIN MH:U159
 0 @U160@ SUBM
 1 RIN MH:U160
 0 @U161@ SUBM
@@ -418,12 +421,12 @@
 1 RIN MH:U162
 0 @U163@ SUBM
 1 RIN MH:U163
+0 @U164@ SUBM
+1 RIN MH:U164
 1 ADDR
 2 CITY Fredericia
 2 STAE Syddanmark
 2 CTRY Danmark
-0 @U164@ SUBM
-1 RIN MH:U164
 0 @U165@ SUBM
 1 RIN MH:U165
 0 @U166@ SUBM
@@ -446,27 +449,27 @@
 1 RIN MH:U174
 0 @U175@ SUBM
 1 RIN MH:U175
+0 @U176@ SUBM
+1 RIN MH:U176
 1 ADDR
 2 CITY Rio de Janeiro
 2 STAE RJ
 2 CTRY Brasil
-0 @U176@ SUBM
-1 RIN MH:U176
+0 @U177@ SUBM
+1 RIN MH:U177
 1 ADDR
 2 CITY Sydney
 2 STAE New South Wales
 2 CTRY Australia
-0 @U177@ SUBM
-1 RIN MH:U177
 0 @U178@ SUBM
 1 RIN MH:U178
+0 @U179@ SUBM
+1 RIN MH:U179
 1 ADDR
 2 CITY Grand Rapids
 2 STAE MI
 2 POST 49525
 2 CTRY United States
-0 @U179@ SUBM
-1 RIN MH:U179
 0 @U180@ SUBM
 1 RIN MH:U180
 0 @U181@ SUBM
@@ -499,12 +502,12 @@
 1 RIN MH:U194
 0 @U195@ SUBM
 1 RIN MH:U195
+0 @U196@ SUBM
+1 RIN MH:U196
 1 ADDR
 2 CITY Bratislava
 2 STAE EU
 2 CTRY Slovakia
-0 @U196@ SUBM
-1 RIN MH:U196
 0 @U197@ SUBM
 1 RIN MH:U197
 0 @U198@ SUBM
@@ -543,11 +546,11 @@
 1 RIN MH:U214
 0 @U215@ SUBM
 1 RIN MH:U215
+0 @U216@ SUBM
+1 RIN MH:U216
 1 ADDR
 2 STAE Selangor
 2 CTRY Malaysia
-0 @U216@ SUBM
-1 RIN MH:U216
 0 @U217@ SUBM
 1 RIN MH:U217
 0 @U218@ SUBM
@@ -572,10 +575,10 @@
 1 RIN MH:U227
 0 @U228@ SUBM
 1 RIN MH:U228
-1 ADDR
-2 CTRY Brunei
 0 @U229@ SUBM
 1 RIN MH:U229
+1 ADDR
+2 CTRY Brunei
 0 @U230@ SUBM
 1 RIN MH:U230
 0 @U231@ SUBM
@@ -586,12 +589,12 @@
 1 RIN MH:U233
 0 @U234@ SUBM
 1 RIN MH:U234
+0 @U235@ SUBM
+1 RIN MH:U235
 1 ADDR
 2 CITY Kendal
 2 STAE Central Java
 2 CTRY Indonesia
-0 @U235@ SUBM
-1 RIN MH:U235
 0 @U236@ SUBM
 1 RIN MH:U236
 0 @U237@ SUBM
@@ -680,35 +683,35 @@
 1 RIN MH:U278
 0 @U279@ SUBM
 1 RIN MH:U279
+0 @U280@ SUBM
+1 RIN MH:U280
 1 ADDR
 2 CITY Santiago
 2 CTRY Chile
-0 @U280@ SUBM
-1 RIN MH:U280
 0 @U281@ SUBM
 1 RIN MH:U281
 0 @U282@ SUBM
 1 RIN MH:U282
 0 @U283@ SUBM
 1 RIN MH:U283
+0 @U284@ SUBM
+1 RIN MH:U284
 1 ADDR
 2 CITY Sarasota
 2 STAE FL
 2 CTRY United States
-0 @U284@ SUBM
-1 RIN MH:U284
 0 @U285@ SUBM
 1 RIN MH:U285
 0 @U286@ SUBM
 1 RIN MH:U286
 0 @U287@ SUBM
 1 RIN MH:U287
+0 @U288@ SUBM
+1 RIN MH:U288
 1 ADDR
 2 CITY Medellín
 2 STAE Antioquia
 2 CTRY Colombia
-0 @U288@ SUBM
-1 RIN MH:U288
 0 @U289@ SUBM
 1 RIN MH:U289
 0 @U290@ SUBM
@@ -733,11 +736,11 @@
 1 RIN MH:U299
 0 @U300@ SUBM
 1 RIN MH:U300
+0 @U301@ SUBM
+1 RIN MH:U301
 1 ADDR
 2 CITY MONTEVIDEO
 2 CTRY Uruguay
-0 @U301@ SUBM
-1 RIN MH:U301
 0 @U302@ SUBM
 1 RIN MH:U302
 0 @U303@ SUBM
@@ -796,12 +799,12 @@
 1 RIN MH:U329
 0 @U330@ SUBM
 1 RIN MH:U330
+0 @U331@ SUBM
+1 RIN MH:U331
 1 ADDR
 2 CITY Mexico City
 2 STAE Federal District
 2 CTRY Mexico
-0 @U331@ SUBM
-1 RIN MH:U331
 0 @U332@ SUBM
 1 RIN MH:U332
 0 @U333@ SUBM
@@ -866,13 +869,13 @@
 1 RIN MH:U362
 0 @U363@ SUBM
 1 RIN MH:U363
+0 @U364@ SUBM
+1 RIN MH:U364
 1 ADDR
 2 CITY Mount Morris Township
 2 STAE WI
 2 POST 54984
 2 CTRY United States
-0 @U364@ SUBM
-1 RIN MH:U364
 0 @U365@ SUBM
 1 RIN MH:U365
 0 @U366@ SUBM
@@ -887,21 +890,21 @@
 1 RIN MH:U370
 0 @U371@ SUBM
 1 RIN MH:U371
+0 @U372@ SUBM
+1 RIN MH:U372
 1 ADDR
 2 CITY Bogotá
 2 STAE Bogotá
 2 CTRY Colombia
-0 @U372@ SUBM
-1 RIN MH:U372
 0 @U373@ SUBM
 1 RIN MH:U373
 0 @U374@ SUBM
 1 RIN MH:U374
+0 @U375@ SUBM
+1 RIN MH:U375
 1 ADDR
 2 CITY Montevideo
 2 CTRY Uruguay
-0 @U375@ SUBM
-1 RIN MH:U375
 0 @U376@ SUBM
 1 RIN MH:U376
 0 @U377@ SUBM
@@ -932,12 +935,12 @@
 1 RIN MH:U389
 0 @U390@ SUBM
 1 RIN MH:U390
+0 @U391@ SUBM
+1 RIN MH:U391
 1 ADDR
 2 CITY Viña del Mar
 2 STAE Valparaíso Region
 2 CTRY Chile
-0 @U391@ SUBM
-1 RIN MH:U391
 0 @U392@ SUBM
 1 RIN MH:U392
 0 @U393@ SUBM
@@ -998,17 +1001,17 @@
 1 RIN MH:U420
 0 @U421@ SUBM
 1 RIN MH:U421
+0 @U422@ SUBM
+1 RIN MH:U422
 1 ADDR
 2 CITY Kongsberg
 2 STAE Buskerud
 2 CTRY Norway
-0 @U422@ SUBM
-1 RIN MH:U422
+0 @U423@ SUBM
+1 RIN MH:U423
 1 ADDR
 2 CITY København
 2 CTRY Denmark
-0 @U423@ SUBM
-1 RIN MH:U423
 0 @U424@ SUBM
 1 RIN MH:U424
 0 @U425@ SUBM
@@ -1029,12 +1032,12 @@
 1 RIN MH:U432
 0 @U433@ SUBM
 1 RIN MH:U433
+0 @U434@ SUBM
+1 RIN MH:U434
 1 ADDR
 2 CITY Mar del Plata
 2 STAE Buenos Aires Province
 2 CTRY Argentina
-0 @U434@ SUBM
-1 RIN MH:U434
 0 @U435@ SUBM
 1 RIN MH:U435
 0 @U436@ SUBM
@@ -1047,12 +1050,12 @@
 1 RIN MH:U439
 0 @U440@ SUBM
 1 RIN MH:U440
+0 @U441@ SUBM
+1 RIN MH:U441
 1 ADDR
 2 CITY Madrid
 2 STAE Community of Madrid
 2 CTRY Spain
-0 @U441@ SUBM
-1 RIN MH:U441
 0 @U442@ SUBM
 1 RIN MH:U442
 0 @U443@ SUBM
@@ -1091,12 +1094,12 @@
 1 RIN MH:U459
 0 @U460@ SUBM
 1 RIN MH:U460
+0 @U461@ SUBM
+1 RIN MH:U461
 1 ADDR
 2 CITY Sydney
 2 STAE New South Wales
 2 CTRY Australia
-0 @U461@ SUBM
-1 RIN MH:U461
 0 @U462@ SUBM
 1 RIN MH:U462
 0 @U463@ SUBM
@@ -1113,22 +1116,22 @@
 1 RIN MH:U468
 0 @U469@ SUBM
 1 RIN MH:U469
+0 @U470@ SUBM
+1 RIN MH:U470
 1 ADDR
 2 CITY Saint Laurent de Cerdans
 2 STAE Pyrénées-Orientales
 2 CTRY France
-0 @U470@ SUBM
-1 RIN MH:U470
 0 @U471@ SUBM
 1 RIN MH:U471
+0 @U472@ SUBM
+1 RIN MH:U472
 1 ADDR  Kg baru kundang 
 2 ADR1  Kg baru kundang 
 2 CITY Rawang
 2 STAE Selangor
 2 POST 48000
 2 CTRY Malaysia
-0 @U472@ SUBM
-1 RIN MH:U472
 0 @U473@ SUBM
 1 RIN MH:U473
 0 @U474@ SUBM
@@ -1147,13 +1150,13 @@
 1 RIN MH:U480
 0 @U481@ SUBM
 1 RIN MH:U481
+0 @U482@ SUBM
+1 RIN MH:U482
 1 ADDR
 2 CITY Tucson
 2 STAE Arizona
 2 POST 85716
 2 CTRY United States
-0 @U482@ SUBM
-1 RIN MH:U482
 0 @U483@ SUBM
 1 RIN MH:U483
 0 @U484@ SUBM
@@ -1164,12 +1167,12 @@
 1 RIN MH:U486
 0 @U487@ SUBM
 1 RIN MH:U487
+0 @U488@ SUBM
+1 RIN MH:U488
 1 ADDR
 2 CITY Pannipitiya
 2 STAE WP
 2 CTRY Sri Lanka
-0 @U488@ SUBM
-1 RIN MH:U488
 0 @U489@ SUBM
 1 RIN MH:U489
 0 @U490@ SUBM
@@ -1192,12 +1195,12 @@
 1 RIN MH:U498
 0 @U499@ SUBM
 1 RIN MH:U499
+0 @U500@ SUBM
+1 RIN MH:U500
 1 ADDR
 2 CITY Palawan
 2 STAE MIMAROPA
 2 CTRY Philippines
-0 @U500@ SUBM
-1 RIN MH:U500
 0 @U501@ SUBM
 1 RIN MH:U501
 0 @U502@ SUBM
@@ -1212,25 +1215,25 @@
 1 RIN MH:U506
 0 @U507@ SUBM
 1 RIN MH:U507
+0 @U508@ SUBM
+1 RIN MH:U508
 1 ADDR
 2 CITY Waihi
 2 STAE Waikato
 2 CTRY New Zealand
-0 @U508@ SUBM
-1 RIN MH:U508
+0 @U509@ SUBM
+1 RIN MH:U509
 1 ADDR
 2 CITY 457 45  Hamburgsund
 2 CTRY Sweden
-0 @U509@ SUBM
-1 RIN MH:U509
 0 @U510@ SUBM
 1 RIN MH:U510
+0 @U511@ SUBM
+1 RIN MH:U511
 1 ADDR
 2 CITY Gurgaon
 2 STAE Haryana
 2 CTRY India
-0 @U511@ SUBM
-1 RIN MH:U511
 0 @U512@ SUBM
 1 RIN MH:U512
 0 @U513@ SUBM
@@ -1253,33 +1256,33 @@
 1 RIN MH:U521
 0 @U522@ SUBM
 1 RIN MH:U522
+0 @U523@ SUBM
+1 RIN MH:U523
 1 ADDR
 2 CITY Denver
 2 STAE Colorado
 2 POST 80202
 2 CTRY United States
-0 @U523@ SUBM
-1 RIN MH:U523
 0 @U524@ SUBM
 1 RIN MH:U524
 0 @U525@ SUBM
 1 RIN MH:U525
 0 @U526@ SUBM
 1 RIN MH:U526
+0 @U527@ SUBM
+1 RIN MH:U527
 1 ADDR
 2 CITY Fontaniva
 2 STAE Veneto
 2 CTRY Italy
-0 @U527@ SUBM
-1 RIN MH:U527
 0 @U528@ SUBM
 1 RIN MH:U528
+0 @U529@ SUBM
+1 RIN MH:U529
 1 ADDR
 2 CITY Grenoble
 2 STAE Rhône-Alpes
 2 CTRY France
-0 @U529@ SUBM
-1 RIN MH:U529
 0 @U530@ SUBM
 1 RIN MH:U530
 0 @U531@ SUBM
@@ -1292,18 +1295,20 @@
 1 RIN MH:U534
 0 @U535@ SUBM
 1 RIN MH:U535
+0 @U536@ SUBM
+1 RIN MH:U536
 1 ADDR 1 lieu dit Magrens
 2 ADR1 1 lieu dit Magrens
 2 CITY Lagrace-Dieu
 2 STAE Haute-Garonne
 2 POST 31190
 2 CTRY France
-0 @U536@ SUBM
-1 RIN MH:U536
+0 @U537@ SUBM
+1 RIN MH:U537
 0 @I1@ INDI
 1 RIN MH:I1
 1 _UID 66dfdfd760f561efbbc69822ef79916c
-1 _UPD 10 SEP 2024 11:37:32 GMT+5.5
+1 _UPD 26 OCT 2024 11:10:26 GMT+5.5
 1 NAME Aster /Alpha/
 2 GIVN Aster
 2 SURN Alpha
@@ -1316,7 +1321,7 @@
 0 @I2@ INDI
 1 RIN MH:I2
 1 _UID 66dfdfd7aba9b1efbbc69822ef79916c
-1 _UPD 10 SEP 2024 11:37:41 GMT+5.5
+1 _UPD 26 OCT 2024 11:10:26 GMT+5.5
 1 NAME Andromeda /Omega/
 2 GIVN Andromeda
 2 SURN Omega
@@ -1588,7 +1593,7 @@
 0 @I25@ INDI
 1 RIN MH:I25
 1 _UID 66f689856c63f1efbbeb9822ef79916c
-1 _UPD 13 OCT 2024 00:51:07 GMT+5.5
+1 _UPD 26 OCT 2024 11:21:08 GMT+5.5
 1 NAME Nolah	 /Bios Attle/
 2 GIVN Nolah	
 2 SURN Bios Attle
@@ -1783,7 +1788,7 @@
 0 @I40@ INDI
 1 RIN MH:I40
 1 _UID 66f68a1f6c63f1efbbeb9822ef79916c
-1 _UPD 27 SEP 2024 16:01:09 GMT+5.5
+1 _UPD 26 OCT 2024 11:00:23 GMT+5.5
 1 NAME Nemla /Viros Attle/
 2 GIVN Nemla
 2 SURN Viros Attle
@@ -1791,6 +1796,7 @@
 1 BIRT
 2 _UID 66f68a21a73f21efbbeb9822ef79916c
 2 RIN MH:IF40
+1 FAMS @F13991@
 1 FAMC @F34@
 0 @I22459@ INDI
 1 RIN MH:I22459
@@ -1804,7 +1810,7 @@
 2 _UID 670a5711c3ec71efbbff9822ef79916c
 2 RIN MH:IF31612
 1 FAMS @F13022@
-1 FAMC @F11554@
+1 FAMC @F14013@
 0 @I22460@ INDI
 1 RIN MH:I22460
 1 _UID 670a57a08b0a91efbbff9822ef79916c
@@ -9723,36 +9729,40 @@
 0 @I23158@ INDI
 1 RIN MH:I23158
 1 _UID 670fc56cf0b901efbc019822ef79916c
-1 _UPD 16 OCT 2024 19:34:16 GMT+5.5
-1 NAME Tracheus //
+1 _UPD 26 OCT 2024 09:08:04 GMT+5.5
+1 NAME Tracheus /Tracheophytes/
 2 GIVN Tracheus
+2 SURN Tracheophytes
 1 SEX M
 1 FAMS @F13352@
 1 FAMC @F13351@
 0 @I23159@ INDI
 1 RIN MH:I23159
 1 _UID 670fc56c8a7951efbc019822ef79916c
-1 _UPD 16 OCT 2024 19:34:16 GMT+5.5
-1 NAME Arboreus //
+1 _UPD 26 OCT 2024 09:08:17 GMT+5.5
+1 NAME Arboreus /Eutracheophytes/
 2 GIVN Arboreus
+2 SURN Eutracheophytes
 1 SEX M
 1 FAMS @F13353@
 1 FAMC @F13352@
 0 @I23160@ INDI
 1 RIN MH:I23160
 1 _UID 670fc56c385981efbc019822ef79916c
-1 _UPD 16 OCT 2024 19:34:16 GMT+5.5
-1 NAME Lycos //
+1 _UPD 26 OCT 2024 09:04:17 GMT+5.5
+1 NAME Lycos /Lycophytina/
 2 GIVN Lycos
+2 SURN Lycophytina
 1 SEX M
 1 FAMS @F13354@
 1 FAMC @F13353@
 0 @I23161@ INDI
 1 RIN MH:I23161
 1 _UID 670fc56c4299d1efbc019822ef79916c
-1 _UPD 16 OCT 2024 19:34:16 GMT+5.5
-1 NAME Ginkgon //
+1 _UPD 26 OCT 2024 09:07:53 GMT+5.5
+1 NAME Ginkgon /Euphyllophytina/
 2 GIVN Ginkgon
+2 SURN Euphyllophytina
 1 SEX M
 1 FAMS @F13355@
 1 FAMC @F13353@
@@ -9792,42 +9802,47 @@
 0 @I23166@ INDI
 1 RIN MH:I23166
 1 _UID 670fc56cce6571efbc019822ef79916c
-1 _UPD 16 OCT 2024 19:34:16 GMT+5.5
-1 NAME Phyllon //
+1 _UPD 26 OCT 2024 09:04:07 GMT+5.5
+1 NAME Phyllon /Euphyllophytina/
 2 GIVN Phyllon
+2 SURN Euphyllophytina
 1 SEX M
 1 FAMS @F13357@
 1 FAMC @F13355@
 0 @I23167@ INDI
 1 RIN MH:I23167
 1 _UID 670fc56c89c501efbc019822ef79916c
-1 _UPD 16 OCT 2024 19:34:16 GMT+5.5
-1 NAME Pteridos //
+1 _UPD 26 OCT 2024 09:08:51 GMT+5.5
+1 NAME Pteridos /Pteridophyta/
 2 GIVN Pteridos
+2 SURN Pteridophyta
 1 SEX M
 1 FAMS @F13358@
 1 FAMC @F13357@
 0 @I23168@ INDI
 1 RIN MH:I23168
 1 _UID 670fc56c36f5b1efbc019822ef79916c
-1 _UPD 16 OCT 2024 19:34:16 GMT+5.5
-1 NAME Gymnos //
+1 _UPD 26 OCT 2024 09:11:05 GMT+5.5
+1 NAME Gymnos /Lignophytes/
 2 GIVN Gymnos
+2 SURN Lignophytes
 1 SEX M
+1 FAMS @F13962@
 1 FAMC @F13357@
 0 @I23169@ INDI
 1 RIN MH:I23169
 1 _UID 670fc56c445661efbc019822ef79916c
-1 _UPD 16 OCT 2024 19:34:16 GMT+5.5
-1 NAME Horsa //
+1 _UPD 26 OCT 2024 09:09:20 GMT+5.5
+1 NAME Horsa /Equisetopsida (horsetails)/
 2 GIVN Horsa
+2 SURN Equisetopsida (horsetails)
 1 SEX M
 1 FAMS @F13359@
 1 FAMC @F13358@
 0 @I23170@ INDI
 1 RIN MH:I23170
 1 _UID 670fc56ccb1691efbc019822ef79916c
-1 _UPD 16 OCT 2024 19:34:16 GMT+5.5
+1 _UPD 26 OCT 2024 09:10:23 GMT+5.5
 1 NAME Euspor //
 2 GIVN Euspor
 1 SEX M
@@ -13822,30 +13837,30 @@
 1 FAMS @F13917@
 1 FAMC @F13576@
 1 NOTE <p style="text-align: left;" dir="ltr">&nbsp;</p>
-2 CONT <div class="mw-heading mw-heading3" style="font-size: 1.2em; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: bold; padding-bottom: 0px; font-style: 
-2 CONC normal; padding-top: 0.5em; orphans: 2; widows: 2; margin: 0.25em 0px; letter-spacing: normal; line-height: 1.6; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-varia
-2 CONC nt-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
-<h3 id="Honkola,_et_al._(2013)" style="font-famil
-2 CONC y: inherit; font-weight: bold; margin: 0px 0px 0.25em; display: inline; line-height: 1.6; font-stretch: inherit; font-optical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font-fe
-2 CONC ature-settings: inherit; font-variation-settings: inherit; border: 0px; padding: 0px;"><span style="font-size: large;">Honkola, et al. (2013)</span></h3>
-<span class="mw-editsection" style="font-size:
-2 CONC  small; font-family: sans-serif; vertical-align: baseline; font-weight: normal; margin-left: 1em; line-height: 0; margin-right: 0px; user-select: none; margin-inline: 1em 0px;"><span class="mw-editsec
-2 CONC tion-bracket" style="margin-right: 0.25em; margin-inline: 0px 0.25em;"><span style="font-size: medium;">[</span></span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%
-2 CONC ; white-space: nowrap; border-radius: 0px; overflow-wrap: break-word;" title="Edit section: Honkola, et al. (2013)" href="https://en.wikipedia.org/w/index.php?title=Uralic_languages&amp;action=edit&am
-2 CONC p;section=10"><span><span style="font-size: medium;">edit</span></span></a><span class="mw-editsection-bracket" style="margin-left: 0.25em; margin-inline: 0.25em 0px;"><span style="font-size: medium;"
-2 CONC >]</span></span></span></div>
-<p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; or
-2 CONC phans: 2; widows: 2; margin: 0.5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0
-2 CONC px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">A<span>&nbsp;</span><a class="mw-redirect" style="text-decoration: none; background: none trans
-2 CONC parent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Computational phylogenetic" href="https://en.wikipedia.org/wiki/Computational_phylogenetic">computational phylogeneti
-2 CONC c</a><span>&nbsp;</span>study by Honkola, et al. (2013)<sup id="cite_ref-64" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a
-2 CONC  style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Uralic_languages#cite_note-64"><spa
-2 CONC n class="cite-bracket" style="pointer-events: none;">[</span>64<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup><span>&nbsp;</span>classifies the Uralic languages as follows.
-2 CONC <span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Molecular clock" href="https://en.wikipedia
-2 CONC .org/wiki/Molecular_clock">Estimated divergence dates</a><span>&nbsp;</span>from Honkola, et al. (2013) are also given.</p>
-2 CONT <div class="treeview" style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; w
-2 CONC idows: 2; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: ini
-2 CONC tial; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</div>
+2 CONT <p><div class="mw-heading mw-heading3" style="font-size: 1.2em; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: bold; padding-bottom: 0px; font-styl
+2 CONC e: normal; padding-top: 0.5em; orphans: 2; widows: 2; margin: 0.25em 0px; letter-spacing: normal; line-height: 1.6; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-va
+2 CONC riant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
+<h3 id="Honkola,_et_al._(2013)" style="font-fa
+2 CONC mily: inherit; font-weight: bold; margin: 0px 0px 0.25em; display: inline; line-height: 1.6; font-stretch: inherit; font-optical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font
+2 CONC -feature-settings: inherit; font-variation-settings: inherit; border: 0px; padding: 0px;"><span style="font-size: large;">Honkola, et al. (2013)</span></h3>
+<span class="mw-editsection" style="font-si
+2 CONC ze: small; font-family: sans-serif; vertical-align: baseline; font-weight: normal; margin-left: 1em; line-height: 0; margin-right: 0px; user-select: none; margin-inline: 1em 0px;"><span class="mw-edit
+2 CONC section-bracket" style="margin-right: 0.25em; margin-inline: 0px 0.25em;"><span style="font-size: medium;">[</span></span><a style="text-decoration: none; background: none transparent scroll repeat 0%
+2 CONC  0%; white-space: nowrap; border-radius: 0px; overflow-wrap: break-word;" title="Edit section: Honkola, et al. (2013)" href="https://en.wikipedia.org/w/index.php?title=Uralic_languages&amp;action=edit
+2 CONC &amp;section=10"><span><span style="font-size: medium;">edit</span></span></a><span class="mw-editsection-bracket" style="margin-left: 0.25em; margin-inline: 0.25em 0px;"><span style="font-size: mediu
+2 CONC m;">]</span></span></span></div>
+<p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal;
+2 CONC  orphans: 2; widows: 2; margin: 0.5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width
+2 CONC : 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">A<span>&nbsp;</span><a class="mw-redirect" style="text-decoration: none; background: none tr
+2 CONC ansparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Computational phylogenetic" href="https://en.wikipedia.org/wiki/Computational_phylogenetic">computational phylogen
+2 CONC etic</a><span>&nbsp;</span>study by Honkola, et al. (2013)<sup id="cite_ref-64" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"
+2 CONC ><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Uralic_languages#cite_note-64"><
+2 CONC span class="cite-bracket" style="pointer-events: none;">[</span>64<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup><span>&nbsp;</span>classifies the Uralic languages as follo
+2 CONC ws.<span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Molecular clock" href="https://en.wikipe
+2 CONC dia.org/wiki/Molecular_clock">Estimated divergence dates</a><span>&nbsp;</span>from Honkola, et al. (2013) are also given.</p>
+2 CONT <p><div class="treeview" style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2
+2 CONC ; widows: 2; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: 
+2 CONC initial; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</div>
 0 @I23642@ INDI
 1 RIN MH:I23642
 1 _UID 6716162ef01341efbc0b9822ef79916c
@@ -13860,25 +13875,25 @@
 1 FAMS @F13931@
 1 FAMC @F13576@
 1 NOTE <p style="text-align: left;" dir="ltr">&nbsp;</p>
-2 CONT <p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin: 0
-2 CONC .5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness:
-2 CONC  initial; text-decoration-style: initial; text-decoration-color: initial;">Haplogroup O is associated with populations which speak<span>&nbsp;</span><a style="text-decoration: none; background: none t
-2 CONC ransparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Austric languages" href="https://en.wikipedia.org/wiki/Austric_languages">Austric languages</a>. The following is
-2 CONC  a phylogenetic tree of language families and their corresponding<span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap
-2 CONC : break-word;" title="Single-nucleotide polymorphism" href="https://en.wikipedia.org/wiki/Single-nucleotide_polymorphism">SNP</a><span>&nbsp;</span>markers, or<span>&nbsp;</span><a style="text-decorat
-2 CONC ion: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Haplogroup" href="https://en.wikipedia.org/wiki/Haplogroup">haplogroups</a>, sourced
-2 CONC  mainly from<span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Ha
-2 CONC plogroup_O-M175#CITEREFEdmondson2007">Edmondson 2007</a><span>&nbsp;</span>and<span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; 
-2 CONC overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Haplogroup_O-M175#CITEREFShi2005">Shi 2005</a>. This has been called the "<a class="mw-redirect" style="text-decoration: none; backgroun
-2 CONC d: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Father Tongue Hypothesis" href="https://en.wikipedia.org/wiki/Father_Tongue_Hypothesis">Father Tongue Hy
-2 CONC pothesis</a>" by<span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="George van Driem" href="htt
-2 CONC ps://en.wikipedia.org/wiki/George_van_Driem">George van Driem</a><span>&nbsp;</span>(<a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wra
-2 CONC p: break-word;" href="https://en.wikipedia.org/wiki/Haplogroup_O-M175#CITEREFvan_Driem2011">van Driem 2011</a>). It does not appear to account for<span>&nbsp;</span><a class="new" style="text-decorati
-2 CONC on: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Haplogroup O-M176 (page does not exist)" href="https://en.wikipedia.org/w/index.php?t
-2 CONC itle=Haplogroup_O-M176&amp;action=edit&amp;redlink=1">O-M176</a>, which is found among Japanese, Korean, and Manchurian males.</p>
-2 CONT <div class="clade" style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; wido
-2 CONC ws: 2; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initia
-2 CONC l; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</div>
+2 CONT <p><p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin
+2 CONC : 0.5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickne
+2 CONC ss: initial; text-decoration-style: initial; text-decoration-color: initial;">Haplogroup O is associated with populations which speak<span>&nbsp;</span><a style="text-decoration: none; background: non
+2 CONC e transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Austric languages" href="https://en.wikipedia.org/wiki/Austric_languages">Austric languages</a>. The following
+2 CONC  is a phylogenetic tree of language families and their corresponding<span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-w
+2 CONC rap: break-word;" title="Single-nucleotide polymorphism" href="https://en.wikipedia.org/wiki/Single-nucleotide_polymorphism">SNP</a><span>&nbsp;</span>markers, or<span>&nbsp;</span><a style="text-deco
+2 CONC ration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Haplogroup" href="https://en.wikipedia.org/wiki/Haplogroup">haplogroups</a>, sour
+2 CONC ced mainly from<span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki
+2 CONC /Haplogroup_O-M175#CITEREFEdmondson2007">Edmondson 2007</a><span>&nbsp;</span>and<span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0p
+2 CONC x; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Haplogroup_O-M175#CITEREFShi2005">Shi 2005</a>. This has been called the "<a class="mw-redirect" style="text-decoration: none; backgr
+2 CONC ound: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Father Tongue Hypothesis" href="https://en.wikipedia.org/wiki/Father_Tongue_Hypothesis">Father Tongue
+2 CONC  Hypothesis</a>" by<span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="George van Driem" href="
+2 CONC https://en.wikipedia.org/wiki/George_van_Driem">George van Driem</a><span>&nbsp;</span>(<a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-
+2 CONC wrap: break-word;" href="https://en.wikipedia.org/wiki/Haplogroup_O-M175#CITEREFvan_Driem2011">van Driem 2011</a>). It does not appear to account for<span>&nbsp;</span><a class="new" style="text-decor
+2 CONC ation: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Haplogroup O-M176 (page does not exist)" href="https://en.wikipedia.org/w/index.ph
+2 CONC p?title=Haplogroup_O-M176&amp;action=edit&amp;redlink=1">O-M176</a>, which is found among Japanese, Korean, and Manchurian males.</p>
+2 CONT <p><div class="clade" style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; w
+2 CONC idows: 2; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: ini
+2 CONC tial; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</div>
 <p style="text-align: left;" dir="ltr">&nbsp;</p>
 0 @I23643@ INDI
 1 RIN MH:I23643
@@ -15533,9 +15548,9 @@
 2 CONC  white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: br
 2 CONC eak-word;" href="https://en.wikipedia.org/wiki/Ornithischia#cite_note-dieudonneea21-39"><span class="cite-bracket" style="pointer-events: none;">[</span>38<span class="cite-bracket" style="pointer-eve
 2 CONC nts: none;">]</span></a></sup></p>
-2 CONT <div class="clade" style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; wido
-2 CONC ws: 2; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initia
-2 CONC l; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</div>
+2 CONT <p><div class="clade" style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; w
+2 CONC idows: 2; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: ini
+2 CONC tial; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</div>
 <p style="text-align: left;" dir="ltr"><br class="Apple-interchange-newline" /><br /></p>
 0 @I23800@ INDI
 1 RIN MH:I23800
@@ -15851,8 +15866,8 @@
 1 RIN MH:I23879
 1 _UID 6717f0655408c1efbc109822ef79916c
 1 _UPD 23 OCT 2024 00:09:47 GMT+5.5
-1 NAME  /Teleostei /
-2 SURN Teleostei 
+1 NAME  /Teleostei/
+2 SURN Teleostei
 1 SEX M
 1 BIRT
 2 _UID 6717f0785408c1efbc109822ef79916c
@@ -15864,43 +15879,43 @@
 1 FAMS @F13701@
 1 FAMC @F13699@
 1 NOTE <p style="text-align: left;" dir="ltr"><a href="https://en.wikipedia.org/wiki/Teleost">https://en.wikipedia.org/wiki/Teleost</a></p>
-2 CONT <div class="mw-heading mw-heading3" style="font-size: 1.2em; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: bold; padding-bottom: 0px; font-style: 
-2 CONC normal; padding-top: 0.5em; orphans: 2; widows: 2; margin: 0.25em 0px; letter-spacing: normal; line-height: 1.6; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-varia
-2 CONC nt-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
-<h3 id="Internal_relationships" style="font-famil
-2 CONC y: inherit; font-weight: bold; margin: 0px 0px 0.25em; display: inline; line-height: 1.6; font-stretch: inherit; font-optical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font-fe
-2 CONC ature-settings: inherit; font-variation-settings: inherit; border: 0px; padding: 0px;"><span style="font-size: large;">Internal relationships</span></h3>
-<span class="mw-editsection" style="font-size:
-2 CONC  small; font-family: sans-serif; vertical-align: baseline; font-weight: normal; margin-left: 1em; line-height: 0; margin-right: 0px; user-select: none; margin-inline: 1em 0px;"><span class="mw-editsec
-2 CONC tion-bracket" style="margin-right: 0.25em; margin-inline: 0px 0.25em;"><span style="font-size: medium;">[</span></span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%
-2 CONC ; white-space: nowrap; border-radius: 0px; overflow-wrap: break-word;" title="Edit section: Internal relationships" href="https://en.wikipedia.org/w/index.php?title=Teleost&amp;action=edit&amp;section
-2 CONC =4"><span><span style="font-size: medium;">edit</span></span></a><span class="mw-editsection-bracket" style="margin-left: 0.25em; margin-inline: 0.25em 0px;"><span style="font-size: medium;">]</span><
-2 CONC /span></span></div>
-<p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; 
-2 CONC widows: 2; margin: 0.5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-d
-2 CONC ecoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">The phylogeny of the teleosts has been subject to long debate, without consensus on either their<span>&nb
-2 CONC sp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Phylogenetic tree" href="https://en.wikipedia.org/wi
-2 CONC ki/Phylogenetic_tree">phylogeny</a><span>&nbsp;</span>or the timing of the emergence of the major groups before the application of modern<span>&nbsp;</span><a style="text-decoration: none; background:
-2 CONC  none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="DNA" href="https://en.wikipedia.org/wiki/DNA">DNA</a>-based cladistic analysis. Near et al. (2012) explore
-2 CONC d the phylogeny and divergence times of every major lineage, analysing the DNA sequences of 9 unlinked genes in 232 species. They obtained well-resolved phylogenies with strong support for the nodes (
-2 CONC so, the pattern of branching shown is likely to be correct). They calibrated (set actual values for) branching times in this tree from 36 reliable measurements of absolute time from the fossil record.
-2 CONC <sup id="cite_ref-PNAS_16-3" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none 
-2 CONC transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Teleost#cite_note-PNAS-16"><span class="cite-bracket" style="pointer-events: none;"
-2 CONC >[</span>15<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup><span>&nbsp;</span>The teleosts are divided into the major clades shown on the cladogram,<sup id="cite_ref-20" cla
+2 CONT <p><div class="mw-heading mw-heading3" style="font-size: 1.2em; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: bold; padding-bottom: 0px; font-styl
+2 CONC e: normal; padding-top: 0.5em; orphans: 2; widows: 2; margin: 0.25em 0px; letter-spacing: normal; line-height: 1.6; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-va
+2 CONC riant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
+<h3 id="Internal_relationships" style="font-fa
+2 CONC mily: inherit; font-weight: bold; margin: 0px 0px 0.25em; display: inline; line-height: 1.6; font-stretch: inherit; font-optical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font
+2 CONC -feature-settings: inherit; font-variation-settings: inherit; border: 0px; padding: 0px;"><span style="font-size: large;">Internal relationships</span></h3>
+<span class="mw-editsection" style="font-si
+2 CONC ze: small; font-family: sans-serif; vertical-align: baseline; font-weight: normal; margin-left: 1em; line-height: 0; margin-right: 0px; user-select: none; margin-inline: 1em 0px;"><span class="mw-edit
+2 CONC section-bracket" style="margin-right: 0.25em; margin-inline: 0px 0.25em;"><span style="font-size: medium;">[</span></span><a style="text-decoration: none; background: none transparent scroll repeat 0%
+2 CONC  0%; white-space: nowrap; border-radius: 0px; overflow-wrap: break-word;" title="Edit section: Internal relationships" href="https://en.wikipedia.org/w/index.php?title=Teleost&amp;action=edit&amp;sect
+2 CONC ion=4"><span><span style="font-size: medium;">edit</span></span></a><span class="mw-editsection-bracket" style="margin-left: 0.25em; margin-inline: 0.25em 0px;"><span style="font-size: medium;">]</spa
+2 CONC n></span></span></div>
+<p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 
+2 CONC 2; widows: 2; margin: 0.5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; tex
+2 CONC t-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">The phylogeny of the teleosts has been subject to long debate, without consensus on either their<span>
+2 CONC &nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Phylogenetic tree" href="https://en.wikipedia.org
+2 CONC /wiki/Phylogenetic_tree">phylogeny</a><span>&nbsp;</span>or the timing of the emergence of the major groups before the application of modern<span>&nbsp;</span><a style="text-decoration: none; backgrou
+2 CONC nd: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="DNA" href="https://en.wikipedia.org/wiki/DNA">DNA</a>-based cladistic analysis. Near et al. (2012) expl
+2 CONC ored the phylogeny and divergence times of every major lineage, analysing the DNA sequences of 9 unlinked genes in 232 species. They obtained well-resolved phylogenies with strong support for the node
+2 CONC s (so, the pattern of branching shown is likely to be correct). They calibrated (set actual values for) branching times in this tree from 36 reliable measurements of absolute time from the fossil reco
+2 CONC rd.<sup id="cite_ref-PNAS_16-3" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: no
+2 CONC ne transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Teleost#cite_note-PNAS-16"><span class="cite-bracket" style="pointer-events: non
+2 CONC e;">[</span>15<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup><span>&nbsp;</span>The teleosts are divided into the major clades shown on the cladogram,<sup id="cite_ref-20" 
+2 CONC class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 
+2 CONC 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Teleost#cite_note-20"><span class="cite-bracket" style="pointer-events: none;">[</span>19<span class="cite-brack
+2 CONC et" style="pointer-events: none;">]</span></a></sup><span>&nbsp;</span>with dates, following Near et al.<sup id="cite_ref-PNAS_16-4" class="reference" style="font-size: 12px; white-space: nowrap; font
+2 CONC -weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://e
+2 CONC n.wikipedia.org/wiki/Teleost#cite_note-PNAS-16"><span class="cite-bracket" style="pointer-events: none;">[</span>15<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup><span>&nbs
+2 CONC p;</span>More recent research divide the teleosts into two major groups: Eloposteoglossocephala (Elopomorpha + Osteoglossomorpha) and Clupeocephala (the rest of the teleosts).<sup id="cite_ref-21" cla
 2 CONC ss="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%;
-2 CONC  border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Teleost#cite_note-20"><span class="cite-bracket" style="pointer-events: none;">[</span>19<span class="cite-bracket"
-2 CONC  style="pointer-events: none;">]</span></a></sup><span>&nbsp;</span>with dates, following Near et al.<sup id="cite_ref-PNAS_16-4" class="reference" style="font-size: 12px; white-space: nowrap; font-we
-2 CONC ight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.w
-2 CONC ikipedia.org/wiki/Teleost#cite_note-PNAS-16"><span class="cite-bracket" style="pointer-events: none;">[</span>15<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup><span>&nbsp;<
-2 CONC /span>More recent research divide the teleosts into two major groups: Eloposteoglossocephala (Elopomorpha + Osteoglossomorpha) and Clupeocephala (the rest of the teleosts).<sup id="cite_ref-21" class=
-2 CONC "reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; bo
-2 CONC rder-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Teleost#cite_note-21"><span class="cite-bracket" style="pointer-events: none;">[</span>20<span class="cite-bracket" st
-2 CONC yle="pointer-events: none;">]</span></a></sup><sup id="cite_ref-22" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="t
-2 CONC ext-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Teleost#cite_note-22"><span class="cite-brac
-2 CONC ket" style="pointer-events: none;">[</span>21<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup></p>
-2 CONT <div class="clade" style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; wido
-2 CONC ws: 2; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initia
-2 CONC l; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</div>
+2 CONC  border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Teleost#cite_note-21"><span class="cite-bracket" style="pointer-events: none;">[</span>20<span class="cite-bracket"
+2 CONC  style="pointer-events: none;">]</span></a></sup><sup id="cite_ref-22" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style
+2 CONC ="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Teleost#cite_note-22"><span class="cite-b
+2 CONC racket" style="pointer-events: none;">[</span>21<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup></p>
+2 CONT <p><div class="clade" style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; w
+2 CONC idows: 2; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: ini
+2 CONC tial; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</div>
 <p style="text-align: left;" dir="ltr">&nbsp;</p>
 0 @I23880@ INDI
 1 RIN MH:I23880
@@ -16051,8 +16066,8 @@
 1 RIN MH:I23892
 1 _UID 6718a2789f5411efbc109822ef79916c
 1 _UPD 23 OCT 2024 12:45:07 GMT+5.5
-1 NAME  /Albuliformes (Japanese gissus and bonefishes) /
-2 SURN Albuliformes (Japanese gissus and bonefishes) 
+1 NAME  /Albuliformes (Japanese gissus and bonefishes)/
+2 SURN Albuliformes (Japanese gissus and bonefishes)
 1 SEX M
 1 BIRT
 2 _UID 6718a27b5408c1efbc109822ef79916c
@@ -16380,8 +16395,8 @@
 1 RIN MH:I23920
 1 _UID 6718a3ff9f5411efbc109822ef79916c
 1 _UPD 23 OCT 2024 12:51:40 GMT+5.5
-1 NAME  /Osmeriformes (smelt) /
-2 SURN Osmeriformes (smelt) 
+1 NAME  /Osmeriformes (smelt)/
+2 SURN Osmeriformes (smelt)
 1 SEX M
 1 BIRT
 2 _UID 6718a4045408c1efbc109822ef79916c
@@ -16391,8 +16406,8 @@
 1 RIN MH:I23921
 1 _UID 6718a4085408c1efbc109822ef79916c
 1 _UPD 23 OCT 2024 12:51:46 GMT+5.5
-1 NAME  /Stomiiformes (dragonfish) /
-2 SURN Stomiiformes (dragonfish) 
+1 NAME  /Stomiiformes (dragonfish)/
+2 SURN Stomiiformes (dragonfish)
 1 SEX M
 1 BIRT
 2 _UID 6718a40a5408c1efbc109822ef79916c
@@ -16681,26 +16696,26 @@
 1 FAMS @F13733@
 1 FAMC @F13732@
 1 NOTE <p style="text-align: left;" dir="ltr"><br /><a href="https://en.wikipedia.org/wiki/Percomorpha">https://en.wikipedia.org/wiki/Percomorpha</a></p>
-2 CONT <p style="text-align: left;" dir="ltr">&nbsp;</p>
-2 CONT <div class="mw-heading mw-heading4" style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: bold; padding-bottom: 0px; font-style: n
-2 CONC ormal; padding-top: 0.5em; orphans: 2; widows: 2; margin: 0.25em 0px; letter-spacing: normal; line-height: 1.6; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-varian
-2 CONC t-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><span style="font-size: medium;"><span style="font-
-2 CONC size: medium;"></span></span>
-<h4 id="Internal_relationships" style="font-family: inherit; font-weight: bold; margin: 0px 0px 0.25em; display: inline; line-height: 1.6; font-stretch: inherit; font-opt
-2 CONC ical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; border: 0px; padding: 0px;">Internal relationships</h4>
-<span 
-2 CONC style="font-size: medium;"><span class="mw-editsection" style="font-size: small; font-family: sans-serif; vertical-align: baseline; font-weight: normal; margin-left: 1em; line-height: 0; margin-right:
-2 CONC  0px; user-select: none; margin-inline: 1em 0px;"><span class="mw-editsection-bracket" style="margin-right: 0.25em; margin-inline: 0px 0.25em;">[</span><a style="text-decoration: none; background: non
-2 CONC e transparent scroll repeat 0% 0%; white-space: nowrap; border-radius: 0px; overflow-wrap: break-word;" title="Edit section: Internal relationships" href="https://en.wikipedia.org/w/index.php?title=Pe
-2 CONC rcomorpha&amp;action=edit&amp;section=4"><span>edit</span></a><span class="mw-editsection-bracket" style="margin-left: 0.25em; margin-inline: 0.25em 0px;">]</span></span></span></div>
-<p style="font-s
-2 CONC ize: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin: 0.5em 0px 1em; le
-2 CONC tter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-d
-2 CONC ecoration-style: initial; text-decoration-color: initial;">The following cladogram shows the<span>&nbsp;</span><a class="mw-redirect" style="text-decoration: none; background: none transparent scroll 
-2 CONC repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Phylogeny" href="https://en.wikipedia.org/wiki/Phylogeny">evolutionary relationships</a><span>&nbsp;</span>of the various groups of
-2 CONC <span>&nbsp;</span><a class="mw-redirect" style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Extant taxa" href="http
-2 CONC s://en.wikipedia.org/wiki/Extant_taxa">extant</a><span>&nbsp;</span>percomorph fishes:</p>
-2 CONT <p style="text-align: left;" dir="ltr"><br class="Apple-interchange-newline" />&nbsp;</p>
+2 CONT <p><p style="text-align: left;" dir="ltr">&nbsp;</p></p>
+2 CONT <p><div class="mw-heading mw-heading4" style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: bold; padding-bottom: 0px; font-style
+2 CONC : normal; padding-top: 0.5em; orphans: 2; widows: 2; margin: 0.25em 0px; letter-spacing: normal; line-height: 1.6; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-var
+2 CONC iant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><span style="font-size: medium;"><span style="fo
+2 CONC nt-size: medium;"></span></span>
+<h4 id="Internal_relationships" style="font-family: inherit; font-weight: bold; margin: 0px 0px 0.25em; display: inline; line-height: 1.6; font-stretch: inherit; font-
+2 CONC optical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; border: 0px; padding: 0px;">Internal relationships</h4>
+<sp
+2 CONC an style="font-size: medium;"><span class="mw-editsection" style="font-size: small; font-family: sans-serif; vertical-align: baseline; font-weight: normal; margin-left: 1em; line-height: 0; margin-rig
+2 CONC ht: 0px; user-select: none; margin-inline: 1em 0px;"><span class="mw-editsection-bracket" style="margin-right: 0.25em; margin-inline: 0px 0.25em;">[</span><a style="text-decoration: none; background: 
+2 CONC none transparent scroll repeat 0% 0%; white-space: nowrap; border-radius: 0px; overflow-wrap: break-word;" title="Edit section: Internal relationships" href="https://en.wikipedia.org/w/index.php?title
+2 CONC =Percomorpha&amp;action=edit&amp;section=4"><span>edit</span></a><span class="mw-editsection-bracket" style="margin-left: 0.25em; margin-inline: 0.25em 0px;">]</span></span></span></div>
+<p style="fon
+2 CONC t-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin: 0.5em 0px 1em;
+2 CONC  letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; tex
+2 CONC t-decoration-style: initial; text-decoration-color: initial;">The following cladogram shows the<span>&nbsp;</span><a class="mw-redirect" style="text-decoration: none; background: none transparent scro
+2 CONC ll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Phylogeny" href="https://en.wikipedia.org/wiki/Phylogeny">evolutionary relationships</a><span>&nbsp;</span>of the various groups
+2 CONC  of<span>&nbsp;</span><a class="mw-redirect" style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Extant taxa" href="h
+2 CONC ttps://en.wikipedia.org/wiki/Extant_taxa">extant</a><span>&nbsp;</span>percomorph fishes:</p>
+2 CONT <p><p style="text-align: left;" dir="ltr"><br class="Apple-interchange-newline" />&nbsp;</p></p>
 0 @I23947@ INDI
 1 RIN MH:I23947
 1 _UID 6718a62c3d5cd1efbc119822ef79916c
@@ -16797,8 +16812,8 @@
 1 RIN MH:I23956
 1 _UID 6718a69b3d5cd1efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:03:03 GMT+5.5
-1 NAME  /Gobiaria  /
-2 SURN Gobiaria  
+1 NAME  /Gobiaria/
+2 SURN Gobiaria
 1 SEX M
 1 BIRT
 2 _UID 6718a69df60001efbc119822ef79916c
@@ -16843,8 +16858,8 @@
 1 RIN MH:I23960
 1 _UID 6718a6d43d5cd1efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:17:08 GMT+5.5
-1 NAME  /Eupercaria  /
-2 SURN Eupercaria  
+1 NAME  /Eupercaria/
+2 SURN Eupercaria
 1 SEX M
 1 BIRT
 2 _UID 6718a6d7f60001efbc119822ef79916c
@@ -16867,8 +16882,8 @@
 1 RIN MH:I23962
 1 _UID 6718a6e93d5cd1efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:13:24 GMT+5.5
-1 NAME  /Ovalentaria  /
-2 SURN Ovalentaria  
+1 NAME  /Ovalentaria/
+2 SURN Ovalentaria
 1 SEX M
 1 BIRT
 2 _UID 6718a6ecf60001efbc119822ef79916c
@@ -16903,8 +16918,8 @@
 1 RIN MH:I23965
 1 _UID 6718a6fff60001efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:04:42 GMT+5.5
-1 NAME  /Anabantaria  /
-2 SURN Anabantaria  
+1 NAME  /Anabantaria/
+2 SURN Anabantaria
 1 SEX M
 1 BIRT
 2 _UID 6718a701f60001efbc119822ef79916c
@@ -16961,8 +16976,8 @@
 1 RIN MH:I23970
 1 _UID 6718a72d3d5cd1efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:05:13 GMT+5.5
-1 NAME  /Polynemidae (threadfins) /
-2 SURN Polynemidae (threadfins) 
+1 NAME  /Polynemidae (threadfins)/
+2 SURN Polynemidae (threadfins)
 1 SEX M
 1 BIRT
 2 _UID 6718a731f60001efbc119822ef79916c
@@ -17006,8 +17021,8 @@
 1 RIN MH:I23974
 1 _UID 6718a7763d5cd1efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:06:45 GMT+5.5
-1 NAME  /Part of "Carangiformes" /
-2 SURN Part of "Carangiformes" 
+1 NAME  /Part of "Carangiformes"/
+2 SURN Part of "Carangiformes"
 1 SEX M
 1 BIRT
 2 _UID 6718a77df60001efbc119822ef79916c
@@ -17029,8 +17044,8 @@
 1 RIN MH:I23976
 1 _UID 6718a78cf60001efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:07:01 GMT+5.5
-1 NAME  /Part of "Carangiformes" /
-2 SURN Part of "Carangiformes" 
+1 NAME  /Part of "Carangiformes"/
+2 SURN Part of "Carangiformes"
 1 SEX M
 1 BIRT
 2 _UID 6718a78df60001efbc119822ef79916c
@@ -17052,8 +17067,8 @@
 1 RIN MH:I23978
 1 _UID 6718a79bf60001efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:07:27 GMT+5.5
-1 NAME  /Part of "Carangiformes" /
-2 SURN Part of "Carangiformes" 
+1 NAME  /Part of "Carangiformes"/
+2 SURN Part of "Carangiformes"
 1 SEX M
 1 BIRT
 2 _UID 6718a79df60001efbc119822ef79916c
@@ -17167,8 +17182,8 @@
 1 RIN MH:I23988
 1 _UID 6718a7f53d5cd1efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:08:45 GMT+5.5
-1 NAME  /Other Part of "Carangiformes" /
-2 SURN Other Part of "Carangiformes" 
+1 NAME  /Other Part of "Carangiformes"/
+2 SURN Other Part of "Carangiformes"
 1 SEX M
 1 BIRT
 2 _UID 6718a7fdf60001efbc119822ef79916c
@@ -17247,8 +17262,8 @@
 1 RIN MH:I23995
 1 _UID 6718a8533d5cd1efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:10:38 GMT+5.5
-1 NAME  /Ovalentaria  /
-2 SURN Ovalentaria  
+1 NAME  /Ovalentaria/
+2 SURN Ovalentaria
 1 SEX M
 1 BIRT
 2 _UID 6718a855f60001efbc119822ef79916c
@@ -17259,8 +17274,8 @@
 1 RIN MH:I23996
 1 _UID 6718a8593d5cd1efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:10:25 GMT+5.5
-1 NAME  /Cichlomorphae  /
-2 SURN Cichlomorphae  
+1 NAME  /Cichlomorphae/
+2 SURN Cichlomorphae
 1 SEX M
 1 BIRT
 2 _UID 6718a85bf60001efbc119822ef79916c
@@ -17293,8 +17308,8 @@
 1 RIN MH:I23999
 1 _UID 6718a873f60001efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:11:07 GMT+5.5
-1 NAME  /Atherinomorphae  /
-2 SURN Atherinomorphae  
+1 NAME  /Atherinomorphae/
+2 SURN Atherinomorphae
 1 SEX M
 1 BIRT
 2 _UID 6718a876f60001efbc119822ef79916c
@@ -17316,8 +17331,8 @@
 1 RIN MH:I24001
 1 _UID 6718a891f60001efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:11:25 GMT+5.5
-1 NAME  /Atherinomorphae  /
-2 SURN Atherinomorphae  
+1 NAME  /Atherinomorphae/
+2 SURN Atherinomorphae
 1 SEX M
 1 BIRT
 2 _UID 6718a892f60001efbc119822ef79916c
@@ -17350,8 +17365,8 @@
 1 RIN MH:I24004
 1 _UID 6718a91bf60001efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:13:37 GMT+5.5
-1 NAME  /Ovalentaria  /
-2 SURN Ovalentaria  
+1 NAME  /Ovalentaria/
+2 SURN Ovalentaria
 1 SEX M
 1 BIRT
 2 _UID 6718a91cf60001efbc119822ef79916c
@@ -17373,8 +17388,8 @@
 1 RIN MH:I24006
 1 _UID 6718a927f60001efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:14:16 GMT+5.5
-1 NAME  /Ovalentaria  /
-2 SURN Ovalentaria  
+1 NAME  /Ovalentaria/
+2 SURN Ovalentaria
 1 SEX M
 1 BIRT
 2 _UID 6718a929f60001efbc119822ef79916c
@@ -17385,8 +17400,8 @@
 1 RIN MH:I24007
 1 _UID 6718a9323d5cd1efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:14:07 GMT+5.5
-1 NAME  /Ovalentaria  /
-2 SURN Ovalentaria  
+1 NAME  /Ovalentaria/
+2 SURN Ovalentaria
 1 SEX M
 1 BIRT
 2 _UID 6718a936f60001efbc119822ef79916c
@@ -17397,8 +17412,8 @@
 1 RIN MH:I24008
 1 _UID 6718a93b3d5cd1efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:13:58 GMT+5.5
-1 NAME  /Congrogadidae (eel blenny) /
-2 SURN Congrogadidae (eel blenny) 
+1 NAME  /Congrogadidae (eel blenny)/
+2 SURN Congrogadidae (eel blenny)
 1 SEX M
 1 BIRT
 2 _UID 6718a93ef60001efbc119822ef79916c
@@ -17419,8 +17434,8 @@
 1 RIN MH:I24010
 1 _UID 6718a94ef60001efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:15:11 GMT+5.5
-1 NAME  /Ovalentaria  /
-2 SURN Ovalentaria  
+1 NAME  /Ovalentaria/
+2 SURN Ovalentaria
 1 SEX M
 1 BIRT
 2 _UID 6718a950f60001efbc119822ef79916c
@@ -17431,8 +17446,8 @@
 1 RIN MH:I24011
 1 _UID 6718a9533d5cd1efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:14:51 GMT+5.5
-1 NAME  /Ovalentaria  /
-2 SURN Ovalentaria  
+1 NAME  /Ovalentaria/
+2 SURN Ovalentaria
 1 SEX M
 1 BIRT
 2 _UID 6718a955f60001efbc119822ef79916c
@@ -17465,8 +17480,8 @@
 1 RIN MH:I24014
 1 _UID 6718a985f60001efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:15:22 GMT+5.5
-1 NAME  /Ovalentaria  /
-2 SURN Ovalentaria  
+1 NAME  /Ovalentaria/
+2 SURN Ovalentaria
 1 SEX M
 1 BIRT
 2 _UID 6718a987f60001efbc119822ef79916c
@@ -17488,8 +17503,8 @@
 1 RIN MH:I24016
 1 _UID 6718a991f60001efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:15:34 GMT+5.5
-1 NAME  /Ovalentaria  /
-2 SURN Ovalentaria  
+1 NAME  /Ovalentaria/
+2 SURN Ovalentaria
 1 SEX M
 1 BIRT
 2 _UID 6718a992f60001efbc119822ef79916c
@@ -17511,8 +17526,8 @@
 1 RIN MH:I24018
 1 _UID 6718a99cf60001efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:15:46 GMT+5.5
-1 NAME  /Ovalentaria  /
-2 SURN Ovalentaria  
+1 NAME  /Ovalentaria/
+2 SURN Ovalentaria
 1 SEX M
 1 BIRT
 2 _UID 6718a99ef60001efbc119822ef79916c
@@ -17534,8 +17549,8 @@
 1 RIN MH:I24020
 1 _UID 6718a9a8f60001efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:15:58 GMT+5.5
-1 NAME  /Ovalentaria  /
-2 SURN Ovalentaria  
+1 NAME  /Ovalentaria/
+2 SURN Ovalentaria
 1 SEX M
 1 BIRT
 2 _UID 6718a9aaf60001efbc119822ef79916c
@@ -17557,8 +17572,8 @@
 1 RIN MH:I24022
 1 _UID 6718a9b4f60001efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:16:17 GMT+5.5
-1 NAME  /Ovalentaria  /
-2 SURN Ovalentaria  
+1 NAME  /Ovalentaria/
+2 SURN Ovalentaria
 1 SEX M
 1 BIRT
 2 _UID 6718a9b6f60001efbc119822ef79916c
@@ -17580,8 +17595,8 @@
 1 RIN MH:I24024
 1 _UID 6718a9c7f60001efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:16:33 GMT+5.5
-1 NAME  /Blenniimorphae  /
-2 SURN Blenniimorphae  
+1 NAME  /Blenniimorphae/
+2 SURN Blenniimorphae
 1 SEX M
 1 BIRT
 2 _UID 6718a9c9f60001efbc119822ef79916c
@@ -17625,8 +17640,8 @@
 1 RIN MH:I24028
 1 _UID 6718a9faf60001efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:18:11 GMT+5.5
-1 NAME  /Eupercaria  /
-2 SURN Eupercaria  
+1 NAME  /Eupercaria/
+2 SURN Eupercaria
 1 SEX M
 1 BIRT
 2 _UID 6718a9fcf60001efbc119822ef79916c
@@ -17637,8 +17652,8 @@
 1 RIN MH:I24029
 1 _UID 6718aa013d5cd1efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:17:33 GMT+5.5
-1 NAME  /Eupercaria  /
-2 SURN Eupercaria  
+1 NAME  /Eupercaria/
+2 SURN Eupercaria
 1 SEX M
 1 BIRT
 2 _UID 6718aa03f60001efbc119822ef79916c
@@ -17660,8 +17675,8 @@
 1 RIN MH:I24031
 1 _UID 6718aa13f60001efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:17:47 GMT+5.5
-1 NAME  /Eupercaria  /
-2 SURN Eupercaria  
+1 NAME  /Eupercaria/
+2 SURN Eupercaria
 1 SEX M
 1 BIRT
 2 _UID 6718aa15f60001efbc119822ef79916c
@@ -17694,8 +17709,8 @@
 1 RIN MH:I24034
 1 _UID 6718aa39f60001efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:19:04 GMT+5.5
-1 NAME  /Eupercaria  /
-2 SURN Eupercaria  
+1 NAME  /Eupercaria/
+2 SURN Eupercaria
 1 SEX M
 1 BIRT
 2 _UID 6718aa3bf60001efbc119822ef79916c
@@ -17706,8 +17721,8 @@
 1 RIN MH:I24035
 1 _UID 6718aa403d5cd1efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:18:36 GMT+5.5
-1 NAME  /Eupercaria  /
-2 SURN Eupercaria  
+1 NAME  /Eupercaria/
+2 SURN Eupercaria
 1 SEX M
 1 BIRT
 2 _UID 6718aa43f60001efbc119822ef79916c
@@ -17729,8 +17744,8 @@
 1 RIN MH:I24037
 1 _UID 6718aa53f60001efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:18:51 GMT+5.5
-1 NAME  /Eupercaria  /
-2 SURN Eupercaria  
+1 NAME  /Eupercaria/
+2 SURN Eupercaria
 1 SEX M
 1 BIRT
 2 _UID 6718aa54f60001efbc119822ef79916c
@@ -17763,8 +17778,8 @@
 1 RIN MH:I24040
 1 _UID 6718aa6ef60001efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:19:32 GMT+5.5
-1 NAME  /Eupercaria  /
-2 SURN Eupercaria  
+1 NAME  /Eupercaria/
+2 SURN Eupercaria
 1 SEX M
 1 BIRT
 2 _UID 6718aa70f60001efbc119822ef79916c
@@ -17775,8 +17790,8 @@
 1 RIN MH:I24041
 1 _UID 6718aa743d5cd1efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:19:23 GMT+5.5
-1 NAME  /Eupercaria  /
-2 SURN Eupercaria  
+1 NAME  /Eupercaria/
+2 SURN Eupercaria
 1 SEX M
 1 BIRT
 2 _UID 6718aa76f60001efbc119822ef79916c
@@ -17809,8 +17824,8 @@
 1 RIN MH:I24044
 1 _UID 6718aa8af60001efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:19:42 GMT+5.5
-1 NAME  /Eupercaria  /
-2 SURN Eupercaria  
+1 NAME  /Eupercaria/
+2 SURN Eupercaria
 1 SEX M
 1 BIRT
 2 _UID 6718aa8cf60001efbc119822ef79916c
@@ -17832,8 +17847,8 @@
 1 RIN MH:I24046
 1 _UID 6718aa95f60001efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:23:59 GMT+5.5
-1 NAME  /Eupercaria  /
-2 SURN Eupercaria  
+1 NAME  /Eupercaria/
+2 SURN Eupercaria
 1 SEX M
 1 BIRT
 2 _UID 6718aa96f60001efbc119822ef79916c
@@ -17844,8 +17859,8 @@
 1 RIN MH:I24048
 1 _UID 6718aad1f60001efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:21:36 GMT+5.5
-1 NAME  /Eupercaria  /
-2 SURN Eupercaria  
+1 NAME  /Eupercaria/
+2 SURN Eupercaria
 1 SEX M
 1 BIRT
 2 _UID 6718aad3f60001efbc119822ef79916c
@@ -17856,8 +17871,8 @@
 1 RIN MH:I24049
 1 _UID 6718aae63d5cd1efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:21:19 GMT+5.5
-1 NAME  /Eupercaria  /
-2 SURN Eupercaria  
+1 NAME  /Eupercaria/
+2 SURN Eupercaria
 1 SEX M
 1 BIRT
 2 _UID 6718aae8f60001efbc119822ef79916c
@@ -17890,8 +17905,8 @@
 1 RIN MH:I24052
 1 _UID 6718ab06f60001efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:22:44 GMT+5.5
-1 NAME  /Eupercaria  /
-2 SURN Eupercaria  
+1 NAME  /Eupercaria/
+2 SURN Eupercaria
 1 SEX M
 1 BIRT
 2 _UID 6718ab08f60001efbc119822ef79916c
@@ -17902,8 +17917,8 @@
 1 RIN MH:I24053
 1 _UID 6718ab0e3d5cd1efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:22:30 GMT+5.5
-1 NAME  /Eupercaria  /
-2 SURN Eupercaria  
+1 NAME  /Eupercaria/
+2 SURN Eupercaria
 1 SEX M
 1 BIRT
 2 _UID 6718ab10f60001efbc119822ef79916c
@@ -17936,8 +17951,8 @@
 1 RIN MH:I24056
 1 _UID 6718ab4bf60001efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:22:55 GMT+5.5
-1 NAME  /Eupercaria  /
-2 SURN Eupercaria  
+1 NAME  /Eupercaria/
+2 SURN Eupercaria
 1 SEX M
 1 BIRT
 2 _UID 6718ab4cf60001efbc119822ef79916c
@@ -17959,8 +17974,8 @@
 1 RIN MH:I24058
 1 _UID 6718ab55f60001efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:23:13 GMT+5.5
-1 NAME  /Eupercaria  /
-2 SURN Eupercaria  
+1 NAME  /Eupercaria/
+2 SURN Eupercaria
 1 SEX M
 1 BIRT
 2 _UID 6718ab57f60001efbc119822ef79916c
@@ -17982,8 +17997,8 @@
 1 RIN MH:I24060
 1 _UID 6718ab67f60001efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:23:22 GMT+5.5
-1 NAME  /Eupercaria  /
-2 SURN Eupercaria  
+1 NAME  /Eupercaria/
+2 SURN Eupercaria
 1 SEX M
 1 BIRT
 2 _UID 6718ab69f60001efbc119822ef79916c
@@ -18005,8 +18020,8 @@
 1 RIN MH:I24062
 1 _UID 6718ab70f60001efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:23:34 GMT+5.5
-1 NAME  /Eupercaria  /
-2 SURN Eupercaria  
+1 NAME  /Eupercaria/
+2 SURN Eupercaria
 1 SEX M
 1 BIRT
 2 _UID 6718ab72f60001efbc119822ef79916c
@@ -18039,8 +18054,8 @@
 1 RIN MH:I24065
 1 _UID 6718ab96f60001efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:24:28 GMT+5.5
-1 NAME  /Eupercaria  /
-2 SURN Eupercaria  
+1 NAME  /Eupercaria/
+2 SURN Eupercaria
 1 SEX M
 1 BIRT
 2 _UID 6718ab97f60001efbc119822ef79916c
@@ -18051,8 +18066,8 @@
 1 RIN MH:I24066
 1 _UID 6718ab9e3d5cd1efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:24:21 GMT+5.5
-1 NAME  /Eupercaria  /
-2 SURN Eupercaria  
+1 NAME  /Eupercaria/
+2 SURN Eupercaria
 1 SEX M
 1 BIRT
 2 _UID 6718ab9ff60001efbc119822ef79916c
@@ -18085,8 +18100,8 @@
 1 RIN MH:I24069
 1 _UID 6718abb3f60001efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:24:40 GMT+5.5
-1 NAME  /Eupercaria  /
-2 SURN Eupercaria  
+1 NAME  /Eupercaria/
+2 SURN Eupercaria
 1 SEX M
 1 BIRT
 2 _UID 6718abb4f60001efbc119822ef79916c
@@ -18108,8 +18123,8 @@
 1 RIN MH:I24071
 1 _UID 6718abbff60001efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:25:02 GMT+5.5
-1 NAME  /Eupercaria  /
-2 SURN Eupercaria  
+1 NAME  /Eupercaria/
+2 SURN Eupercaria
 1 SEX M
 1 BIRT
 2 _UID 6718abc0f60001efbc119822ef79916c
@@ -18120,8 +18135,8 @@
 1 RIN MH:I24072
 1 _UID 6718abd03d5cd1efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:25:15 GMT+5.5
-1 NAME  /Eupercaria  /
-2 SURN Eupercaria  
+1 NAME  /Eupercaria/
+2 SURN Eupercaria
 1 SEX M
 1 BIRT
 2 _UID 6718abd3f60001efbc119822ef79916c
@@ -18132,8 +18147,8 @@
 1 RIN MH:I24073
 1 _UID 6718abd4f60001efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:25:33 GMT+5.5
-1 NAME  /Eupercaria  /
-2 SURN Eupercaria  
+1 NAME  /Eupercaria/
+2 SURN Eupercaria
 1 SEX M
 1 BIRT
 2 _UID 6718abd6f60001efbc119822ef79916c
@@ -18177,8 +18192,8 @@
 1 RIN MH:I24077
 1 _UID 6718abf3f60001efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:25:50 GMT+5.5
-1 NAME  /Eupercaria  /
-2 SURN Eupercaria  
+1 NAME  /Eupercaria/
+2 SURN Eupercaria
 1 SEX M
 1 BIRT
 2 _UID 6718abf5f60001efbc119822ef79916c
@@ -18258,8 +18273,8 @@
 1 RIN MH:I24084
 1 _UID 6718ad0b3d5cd1efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:30:13 GMT+5.5
-1 NAME  /Stegosauria /
-2 SURN Stegosauria 
+1 NAME  /Stegosauria/
+2 SURN Stegosauria
 1 SEX M
 1 BIRT
 2 _UID 6718ad0df60001efbc119822ef79916c
@@ -18292,8 +18307,8 @@
 1 RIN MH:I24087
 1 _UID 6718ad21f60001efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:30:35 GMT+5.5
-1 NAME  /Ornithopoda /
-2 SURN Ornithopoda 
+1 NAME  /Ornithopoda/
+2 SURN Ornithopoda
 1 SEX M
 1 BIRT
 2 _UID 6718ad23f60001efbc119822ef79916c
@@ -18314,8 +18329,8 @@
 1 RIN MH:I24089
 1 _UID 6718ad2ff60001efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:30:49 GMT+5.5
-1 NAME  /Ceratopsia /
-2 SURN Ceratopsia 
+1 NAME  /Ceratopsia/
+2 SURN Ceratopsia
 1 SEX M
 1 BIRT
 2 _UID 6718ad31f60001efbc119822ef79916c
@@ -18428,8 +18443,8 @@
 1 RIN MH:I24099
 1 _UID 6718ae9af60001efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:37:10 GMT+5.5
-1 NAME  /Neotheropoda /
-2 SURN Neotheropoda 
+1 NAME  /Neotheropoda/
+2 SURN Neotheropoda
 1 SEX M
 1 BIRT
 2 _UID 6718ae9df60001efbc119822ef79916c
@@ -18451,8 +18466,8 @@
 1 RIN MH:I24101
 1 _UID 6718aeacf60001efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:37:51 GMT+5.5
-1 NAME  /Neotheropoda /
-2 SURN Neotheropoda 
+1 NAME  /Neotheropoda/
+2 SURN Neotheropoda
 1 SEX M
 1 BIRT
 2 _UID 6718aeaef60001efbc119822ef79916c
@@ -18590,8 +18605,8 @@
 1 RIN MH:I24113
 1 _UID 6718af343d5cd1efbc119822ef79916c
 1 _UPD 23 OCT 2024 13:40:11 GMT+5.5
-1 NAME  /Maniraptoriformes /
-2 SURN Maniraptoriformes 
+1 NAME  /Maniraptoriformes/
+2 SURN Maniraptoriformes
 1 SEX M
 1 BIRT
 2 _UID 6718af36f60001efbc119822ef79916c
@@ -18622,16 +18637,16 @@
 1 FAMS @F13820@
 1 FAMC @F13819@
 1 NOTE <p style="text-align: left;" dir="ltr">&nbsp;</p>
-2 CONT <p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin: 0
-2 CONC .5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness:
-2 CONC  initial; text-decoration-style: initial; text-decoration-color: initial;">The following<span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-rad
-2 CONC ius: 0px; overflow-wrap: break-word;" title="Cladogram" href="https://en.wikipedia.org/wiki/Cladogram">cladogram</a><span>&nbsp;</span>follows the results of a phylogenetic study by Cau (2020).<sup id
-2 CONC ="cite_ref-15" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent sc
-2 CONC roll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Maniraptora#cite_note-15"><span class="cite-bracket" style="pointer-events: none;">[</span>15<spa
-2 CONC n class="cite-bracket" style="pointer-events: none;">]</span></a></sup></p>
-2 CONT <div class="clade" style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; wido
-2 CONC ws: 2; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initia
-2 CONC l; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</div>
+2 CONT <p><p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin
+2 CONC : 0.5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickne
+2 CONC ss: initial; text-decoration-style: initial; text-decoration-color: initial;">The following<span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-
+2 CONC radius: 0px; overflow-wrap: break-word;" title="Cladogram" href="https://en.wikipedia.org/wiki/Cladogram">cladogram</a><span>&nbsp;</span>follows the results of a phylogenetic study by Cau (2020).<sup
+2 CONC  id="cite_ref-15" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent
+2 CONC  scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Maniraptora#cite_note-15"><span class="cite-bracket" style="pointer-events: none;">[</span>15<
+2 CONC span class="cite-bracket" style="pointer-events: none;">]</span></a></sup></p>
+2 CONT <p><div class="clade" style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; w
+2 CONC idows: 2; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: ini
+2 CONC tial; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</div>
 <p style="text-align: left;" dir="ltr">&nbsp;</p>
 0 @I24116@ INDI
 1 RIN MH:I24116
@@ -18981,15 +18996,15 @@
 1 FAMS @F13836@
 1 FAMC @F13835@
 1 NOTE <p style="text-align: left;" dir="ltr">&nbsp;</p>
-2 CONT <table class="gallery-element" style="font-size: 16px; height: 340px; font-family: sans-serif; width: 380px; white-space: normal; word-spacing: 0px; border-collapse: collapse; text-transform: none; fo
-2 CONC nt-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin: 1px; letter-spacing: normal; background-color: #ffffff; font-variant-ligatures: normal; font-variant-caps: normal; -w
-2 CONC ebkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; border: #a2a9b1 1px solid; padding: 5px;">
+2 CONT <p><table class="gallery-element" style="font-size: 16px; height: 340px; font-family: sans-serif; width: 380px; white-space: normal; word-spacing: 0px; border-collapse: collapse; text-transform: none;
+2 CONC  font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin: 1px; letter-spacing: normal; background-color: #ffffff; font-variant-ligatures: normal; font-variant-caps: normal;
+2 CONC  -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; border: #a2a9b1 1px solid; padding: 5px;">
 <tbody>
-<tr class="header">
-2 CONC <th style="height: 45px; vertical-align: top;">Houde<span>&nbsp;</span><em>et al</em>. (2019) &mdash;polytomy in Passerea<sup id="cite_ref-HoudeBraun2019_19-1" class="reference" style="font-size: 12px
-2 CONC ; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: b
-2 CONC reak-word;" href="https://en.wikipedia.org/wiki/Neoaves#cite_note-HoudeBraun2019-19"><span class="cite-bracket" style="pointer-events: none;">[</span>19<span class="cite-bracket" style="pointer-events
-2 CONC : none;">]</span></a></sup></th></tr>
+<tr class="heade
+2 CONC r"><th style="height: 45px; vertical-align: top;">Houde<span>&nbsp;</span><em>et al</em>. (2019) &mdash;polytomy in Passerea<sup id="cite_ref-HoudeBraun2019_19-1" class="reference" style="font-size: 1
+2 CONC 2px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap
+2 CONC : break-word;" href="https://en.wikipedia.org/wiki/Neoaves#cite_note-HoudeBraun2019-19"><span class="cite-bracket" style="pointer-events: none;">[</span>19<span class="cite-bracket" style="pointer-eve
+2 CONC nts: none;">]</span></a></sup></th></tr>
 <tr>
 <td class="cladogram" style="height: 340px; margin: -1px 0px; padding: 10px;">&nbsp;</td>
 </tr>
@@ -20943,16 +20958,16 @@
 1 FAMS @F13955@
 1 FAMC @F13911@
 1 NOTE <p style="text-align: left;" dir="ltr">&nbsp;</p>
-2 CONT <table class="wikitable" style="font-size: smaller; font-family: sans-serif; white-space: normal; word-spacing: 0px; border-collapse: collapse; text-transform: none; font-weight: 400; color: #202122; 
-2 CONC font-style: normal; orphans: 2; widows: 2; margin: 1em 0px; letter-spacing: normal; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness
-2 CONC : initial; text-decoration-style: initial; text-decoration-color: initial; border: 1px solid;">
+2 CONT <p><table class="wikitable" style="font-size: smaller; font-family: sans-serif; white-space: normal; word-spacing: 0px; border-collapse: collapse; text-transform: none; font-weight: 400; color: #20212
+2 CONC 2; font-style: normal; orphans: 2; widows: 2; margin: 1em 0px; letter-spacing: normal; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickn
+2 CONC ess: initial; text-decoration-style: initial; text-decoration-color: initial; border: 1px solid;">
 <tbody>
-<tr><th style="padding-bottom: 0.2em; text-align: center; padding-top: 0.2em; padding-left: 0.4e
-2 CONC m; padding-right: 0.4em; border: 1px solid;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikiped
-2 CONC ia.org/wiki/Afroasiatic_languages#CITEREFMilitarev2005">Militarev 2005</a></th></tr>
+<tr><th style="padding-bottom: 0.2em; text-align: center; padding-top: 0.2em; padding-left: 0
+2 CONC .4em; padding-right: 0.4em; border: 1px solid;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wiki
+2 CONC pedia.org/wiki/Afroasiatic_languages#CITEREFMilitarev2005">Militarev 2005</a></th></tr>
 <tr style="vertical-align: top;">
-<td style="padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.4em; paddin
-2 CONC g-right: 0.4em; border: 1px solid;">&nbsp;</td>
+<td style="padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.4em; pad
+2 CONC ding-right: 0.4em; border: 1px solid;">&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -20982,21 +20997,21 @@
 1 FAMS @F13928@
 1 FAMC @F13919@
 1 NOTE <p style="text-align: left;" dir="ltr">&nbsp;</p>
-2 CONT <p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin: 0
-2 CONC .5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness:
-2 CONC  initial; text-decoration-style: initial; text-decoration-color: initial;">Traditionally, Samoyedic languages and peoples have been divided into two major areal groups: Northern Samoyedic (Nenets, Yur
-2 CONC ats, Enets, Nganasans), and Southern Samoyedic (Selkups) with a further now-extinct subgroup of Sayan-Samoyedics (Kamasins, Mators) named after the<span>&nbsp;</span><a style="text-decoration: none; b
-2 CONC ackground: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Sayan Mountains" href="https://en.wikipedia.org/wiki/Sayan_Mountains">Sayan Mountains</a>. They 
-2 CONC are however purely geographical, and do not reflect linguistic relations.</p>
-2 CONT <p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin: 0
-2 CONC .5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness:
-2 CONC  initial; text-decoration-style: initial; text-decoration-color: initial;">Linguistic genealogical classifications point to an early divergence of Nganasan and (perhaps to a lesser degree) Mator, with
-2 CONC  Enets&ndash;Nenets&ndash;Yurats and Kamas&ndash;Selkup forming internal branches.<sup id="cite_ref-Janhunen1998_4-1" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal
-2 CONC ; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org
-2 CONC /wiki/Samoyedic_languages#cite_note-Janhunen1998-4"><span class="cite-bracket" style="pointer-events: none;">[</span>4<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup></p>
-2 CONT <div class="treeview" style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; w
-2 CONC idows: 2; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: ini
-2 CONC tial; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</div>
+2 CONT <p><p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin
+2 CONC : 0.5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickne
+2 CONC ss: initial; text-decoration-style: initial; text-decoration-color: initial;">Traditionally, Samoyedic languages and peoples have been divided into two major areal groups: Northern Samoyedic (Nenets, 
+2 CONC Yurats, Enets, Nganasans), and Southern Samoyedic (Selkups) with a further now-extinct subgroup of Sayan-Samoyedics (Kamasins, Mators) named after the<span>&nbsp;</span><a style="text-decoration: none
+2 CONC ; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Sayan Mountains" href="https://en.wikipedia.org/wiki/Sayan_Mountains">Sayan Mountains</a>. Th
+2 CONC ey are however purely geographical, and do not reflect linguistic relations.</p>
+2 CONT <p><p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin
+2 CONC : 0.5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickne
+2 CONC ss: initial; text-decoration-style: initial; text-decoration-color: initial;">Linguistic genealogical classifications point to an early divergence of Nganasan and (perhaps to a lesser degree) Mator, w
+2 CONC ith Enets&ndash;Nenets&ndash;Yurats and Kamas&ndash;Selkup forming internal branches.<sup id="cite_ref-Janhunen1998_4-1" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: nor
+2 CONC mal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.
+2 CONC org/wiki/Samoyedic_languages#cite_note-Janhunen1998-4"><span class="cite-bracket" style="pointer-events: none;">[</span>4<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup></p>
+2 CONT <p><div class="treeview" style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2
+2 CONC ; widows: 2; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: 
+2 CONC initial; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</div>
 0 @I24324@ INDI
 1 RIN MH:I24324
 1 _UID 671bcef72942d1efbc119822ef79916c
@@ -21288,8 +21303,8 @@
 1 RIN MH:I24347
 1 _UID 671bd1ff2942d1efbc119822ef79916c
 1 _UPD 25 OCT 2024 22:46:54 GMT+5.5
-1 NAME  /O1 (F265) ("Austric") /
-2 SURN O1 (F265) ("Austric") 
+1 NAME  /O1 (F265) ("Austric")/
+2 SURN O1 (F265) ("Austric")
 1 SEX M
 1 BIRT
 2 _UID 671bd2022942d1efbc119822ef79916c
@@ -21300,8 +21315,8 @@
 1 RIN MH:I24348
 1 _UID 671bd2072942d1efbc119822ef79916c
 1 _UPD 25 OCT 2024 22:48:32 GMT+5.5
-1 NAME  /O2 (M122) /
-2 SURN O2 (M122) 
+1 NAME  /O2 (M122)/
+2 SURN O2 (M122)
 1 SEX M
 1 BIRT
 2 _UID 671bd2092942d1efbc119822ef79916c
@@ -21312,8 +21327,8 @@
 1 RIN MH:I24349
 1 _UID 671bd2251422f1efbc119822ef79916c
 1 _UPD 25 OCT 2024 22:46:21 GMT+5.5
-1 NAME  /Austro-Tai O1a (M119) /
-2 SURN Austro-Tai O1a (M119) 
+1 NAME  /Austro-Tai O1a (M119)/
+2 SURN Austro-Tai O1a (M119)
 1 SEX M
 1 BIRT
 2 _UID 671bd2272942d1efbc119822ef79916c
@@ -21348,8 +21363,8 @@
 1 RIN MH:I24352
 1 _UID 671bd23e1422f1efbc119822ef79916c
 1 _UPD 25 OCT 2024 22:45:44 GMT+5.5
-1 NAME  /Tai /
-2 SURN Tai 
+1 NAME  /Tai/
+2 SURN Tai
 1 SEX M
 1 BIRT
 2 _UID 671bd2402942d1efbc119822ef79916c
@@ -21381,8 +21396,8 @@
 1 RIN MH:I24355
 1 _UID 671bd2622942d1efbc119822ef79916c
 1 _UPD 25 OCT 2024 22:46:34 GMT+5.5
-1 NAME  /Austronesian /
-2 SURN Austronesian 
+1 NAME  /Austronesian/
+2 SURN Austronesian
 1 SEX M
 1 BIRT
 2 _UID 671bd2652942d1efbc119822ef79916c
@@ -21427,8 +21442,8 @@
 1 RIN MH:I24359
 1 _UID 671bd28d1422f1efbc119822ef79916c
 1 _UPD 25 OCT 2024 22:47:04 GMT+5.5
-1 NAME  /Mon–Khmer /
-2 SURN Mon–Khmer 
+1 NAME  /Mon–Khmer/
+2 SURN Mon–Khmer
 1 SEX M
 1 BIRT
 2 _UID 671bd2902942d1efbc119822ef79916c
@@ -21461,8 +21476,8 @@
 1 RIN MH:I24362
 1 _UID 671bd2ac1422f1efbc119822ef79916c
 1 _UPD 25 OCT 2024 22:47:34 GMT+5.5
-1 NAME  /Mien (Yao) /
-2 SURN Mien (Yao) 
+1 NAME  /Mien (Yao)/
+2 SURN Mien (Yao)
 1 SEX M
 1 BIRT
 2 _UID 671bd2ae2942d1efbc119822ef79916c
@@ -21484,8 +21499,8 @@
 1 RIN MH:I24364
 1 _UID 671bd2b81422f1efbc119822ef79916c
 1 _UPD 25 OCT 2024 22:47:46 GMT+5.5
-1 NAME  /She (Ratliff 1998) /
-2 SURN She (Ratliff 1998) 
+1 NAME  /She (Ratliff 1998)/
+2 SURN She (Ratliff 1998)
 1 SEX M
 1 BIRT
 2 _UID 671bd2ba2942d1efbc119822ef79916c
@@ -21495,8 +21510,8 @@
 1 RIN MH:I24365
 1 _UID 671bd2be2942d1efbc119822ef79916c
 1 _UPD 25 OCT 2024 22:47:53 GMT+5.5
-1 NAME  / Hmong (Miao) /
-2 SURN  Hmong (Miao) 
+1 NAME  / Hmong (Miao)/
+2 SURN  Hmong (Miao)
 1 SEX M
 1 BIRT
 2 _UID 671bd2c12942d1efbc119822ef79916c
@@ -21506,8 +21521,8 @@
 1 RIN MH:I24366
 1 _UID 671bd2e52942d1efbc119822ef79916c
 1 _UPD 25 OCT 2024 22:49:18 GMT+5.5
-1 NAME  /Sino-Tibetan O2a2b1 (M134) /
-2 SURN Sino-Tibetan O2a2b1 (M134) 
+1 NAME  /Sino-Tibetan O2a2b1 (M134)/
+2 SURN Sino-Tibetan O2a2b1 (M134)
 1 SEX M
 1 BIRT
 2 _UID 671bd2e82942d1efbc119822ef79916c
@@ -21515,19 +21530,19 @@
 1 FAMS @F13941@
 1 FAMC @F13938@
 1 NOTE <p style="text-align: left;" dir="ltr">&nbsp;</p>
-2 CONT <p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin: 0
-2 CONC .5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness:
-2 CONC  initial; text-decoration-style: initial; text-decoration-color: initial;">A team of researchers led by<span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0%
-2 CONC  0%; border-radius: 0px; overflow-wrap: break-word;" title="Pan Wuyun" href="https://en.wikipedia.org/wiki/Pan_Wuyun">Pan Wuyun</a><span>&nbsp;</span>and<span>&nbsp;</span><a style="text-decoration: n
-2 CONC one; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Jin Li" href="https://en.wikipedia.org/wiki/Jin_Li">Jin Li</a><span>&nbsp;</span>proposed 
-2 CONC the following<span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Phylogenetic tree" href="https
-2 CONC ://en.wikipedia.org/wiki/Phylogenetic_tree">phylogenetic tree</a><span>&nbsp;</span>in 2019, based on lexical items:<sup id="cite_ref-FOOTNOTEZhangYanPanJin2019113_102-0" class="reference" style="font
-2 CONC -size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overf
-2 CONC low-wrap: break-word;" href="https://en.wikipedia.org/wiki/Sino-Tibetan_languages#cite_note-FOOTNOTEZhangYanPanJin2019113-102"><span class="cite-bracket" style="pointer-events: none;">[</span>95<span 
-2 CONC class="cite-bracket" style="pointer-events: none;">]</span></a></sup></p>
-2 CONT <div class="treeview" style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; w
-2 CONC idows: 2; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: ini
-2 CONC tial; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</div>
+2 CONT <p><p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin
+2 CONC : 0.5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickne
+2 CONC ss: initial; text-decoration-style: initial; text-decoration-color: initial;">A team of researchers led by<span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat
+2 CONC  0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Pan Wuyun" href="https://en.wikipedia.org/wiki/Pan_Wuyun">Pan Wuyun</a><span>&nbsp;</span>and<span>&nbsp;</span><a style="text-decoration
+2 CONC : none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Jin Li" href="https://en.wikipedia.org/wiki/Jin_Li">Jin Li</a><span>&nbsp;</span>propos
+2 CONC ed the following<span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Phylogenetic tree" href="ht
+2 CONC tps://en.wikipedia.org/wiki/Phylogenetic_tree">phylogenetic tree</a><span>&nbsp;</span>in 2019, based on lexical items:<sup id="cite_ref-FOOTNOTEZhangYanPanJin2019113_102-0" class="reference" style="f
+2 CONC ont-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; ov
+2 CONC erflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Sino-Tibetan_languages#cite_note-FOOTNOTEZhangYanPanJin2019113-102"><span class="cite-bracket" style="pointer-events: none;">[</span>95<sp
+2 CONC an class="cite-bracket" style="pointer-events: none;">]</span></a></sup></p>
+2 CONT <p><div class="treeview" style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2
+2 CONC ; widows: 2; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: 
+2 CONC initial; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</div>
 0 @I24367@ INDI
 1 RIN MH:I24367
 1 _UID 671bd30d1422f1efbc119822ef79916c
@@ -21544,8 +21559,8 @@
 1 RIN MH:I24368
 1 _UID 671bd3132942d1efbc119822ef79916c
 1 _UPD 25 OCT 2024 22:49:18 GMT+5.5
-1 NAME  /Sinitic O2a2b1a2 (F114) /
-2 SURN Sinitic O2a2b1a2 (F114) 
+1 NAME  /Sinitic O2a2b1a2 (F114)/
+2 SURN Sinitic O2a2b1a2 (F114)
 1 SEX M
 1 BIRT
 2 _UID 671bd3162942d1efbc119822ef79916c
@@ -22000,12 +22015,1353 @@
 2 RIN MH:IF33102
 1 FAMS @F13960@
 1 FAMC @F13961@
+0 @I24410@ INDI
+1 RIN MH:I24410
+1 _UID 671c62de3ae051efbc129822ef79916c
+1 _UPD 26 OCT 2024 09:02:56 GMT+5.5
+1 NAME  /†Rhyniophyta/
+2 SURN †Rhyniophyta
+1 SEX M
+1 BIRT
+2 _UID 671c62e83ae051efbc129822ef79916c
+2 RIN MH:IF33103
+1 FAMC @F13352@
+0 @I24411@ INDI
+1 RIN MH:I24411
+1 _UID 671c64bcf1bc81efbc129822ef79916c
+1 _UPD 26 OCT 2024 09:12:29 GMT+5.5
+1 NAME  /Spermatophytes/
+2 SURN Spermatophytes
+1 SEX M
+1 BIRT
+2 _UID 671c64c13ae051efbc129822ef79916c
+2 RIN MH:IF33104
+1 FAMS @F13963@
+1 FAMC @F13962@
+1 NOTE <p style="text-align: left;" dir="ltr">&nbsp;</p>
+2 CONT <div class="mw-heading mw-heading3" style="font-size: 1.2em; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: bold; padding-bottom: 0px; font-style: 
+2 CONC normal; padding-top: 0.5em; orphans: 2; widows: 2; margin: 0.25em 0px; letter-spacing: normal; line-height: 1.6; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-varia
+2 CONC nt-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
+<h3 id="Internal_phylogeny" style="font-family: i
+2 CONC nherit; font-weight: bold; margin: 0px 0px 0.25em; display: inline; line-height: 1.6; font-stretch: inherit; font-optical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font-featur
+2 CONC e-settings: inherit; font-variation-settings: inherit; border: 0px; padding: 0px;"><span style="font-size: large;">Internal phylogeny</span></h3>
+<span class="mw-editsection" style="font-size: small; 
+2 CONC font-family: sans-serif; vertical-align: baseline; font-weight: normal; margin-left: 1em; line-height: 0; margin-right: 0px; user-select: none; margin-inline: 1em 0px;"><span class="mw-editsection-bra
+2 CONC cket" style="margin-right: 0.25em; margin-inline: 0px 0.25em;"><span style="font-size: medium;">[</span></span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; white-
+2 CONC space: nowrap; border-radius: 0px; overflow-wrap: break-word;" title="Edit section: Internal phylogeny" href="https://en.wikipedia.org/w/index.php?title=Seed_plant&amp;action=edit&amp;section=4"><span
+2 CONC ><span style="font-size: medium;">edit</span></span></a><span class="mw-editsection-bracket" style="margin-left: 0.25em; margin-inline: 0.25em 0px;"><span style="font-size: medium;">]</span></span></s
+2 CONC pan></div>
+<div class="hatnote navigation-not-searchable" style="font-size: 16px; margin-bottom: 0.5em; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weig
+2 CONC ht: 400; color: #202122; font-style: italic; padding-left: 1.6em; orphans: 2; widows: 2; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-varia
+2 CONC nt-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">Further information:<span>&nbsp;</span><a style="t
+2 CONC ext-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Gnetophyta" href="https://en.wikipedia.org/wiki/Gnetophyta#Classification
+2 CONC ">Gnetophyta &sect;&nbsp;Classification</a></div>
+<p style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; fo
+2 CONC nt-style: normal; orphans: 2; widows: 2; margin: 0.5em 0px 1em; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-
+2 CONC text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">The spermatophytes were traditionally divided into<span>&nbsp;</span><a cla
+2 CONC ss="mw-redirect" style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Angiosperm" href="https://en.wikipedia.org/wiki/
+2 CONC Angiosperm">angiosperms</a>, or flowering plants, and<span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word
+2 CONC ;" title="Gymnosperm" href="https://en.wikipedia.org/wiki/Gymnosperm">gymnosperms</a>, which includes the gnetophytes, cycads,<sup id="cite_ref-Wu_Wang_Liu_Chaw_2007_5-1" class="reference" style="font
+2 CONC -size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overf
+2 CONC low-wrap: break-word;" href="https://en.wikipedia.org/wiki/Seed_plant#cite_note-Wu_Wang_Liu_Chaw_2007-5"><span class="cite-bracket" style="pointer-events: none;">[</span>5<span class="cite-bracket" st
+2 CONC yle="pointer-events: none;">]</span></a></sup><span>&nbsp;</span>ginkgo, and conifers. Older morphological studies believed in a close relationship between the gnetophytes and the angiosperms,<sup id=
+2 CONC "cite_ref-palmer_6-0" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transpa
+2 CONC rent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Seed_plant#cite_note-palmer-6"><span class="cite-bracket" style="pointer-events: none;">[<
+2 CONC /span>6<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup><span>&nbsp;</span>in particular based on<span>&nbsp;</span><a style="text-decoration: none; background: none transpar
+2 CONC ent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Vessel element" href="https://en.wikipedia.org/wiki/Vessel_element">vessel elements</a>. However, molecular studies (and
+2 CONC  some more recent morphological<sup id="cite_ref-7" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: 
+2 CONC none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Seed_plant#cite_note-7"><span class="cite-bracket" style="po
+2 CONC inter-events: none;">[</span>7<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup><sup id="cite_ref-8" class="reference" style="font-size: 12px; white-space: nowrap; font-weight
+2 CONC : normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikip
+2 CONC edia.org/wiki/Seed_plant#cite_note-8"><span class="cite-bracket" style="pointer-events: none;">[</span>8<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup><span>&nbsp;</span>an
+2 CONC d fossil<sup id="cite_ref-9" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none 
+2 CONC transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Seed_plant#cite_note-9"><span class="cite-bracket" style="pointer-events: none;">[<
+2 CONC /span>9<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup><span>&nbsp;</span>papers) have generally shown a<span>&nbsp;</span><a style="text-decoration: none; background: none 
+2 CONC transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Clade" href="https://en.wikipedia.org/wiki/Clade">clade</a><span>&nbsp;</span>of<span>&nbsp;</span><a style="tex
+2 CONC t-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Gymnosperm" href="https://en.wikipedia.org/wiki/Gymnosperm">gymnosperms</a>
+2 CONC , with the gnetophytes in or near the conifers. For example, one common proposed set of relationships is known as the<span>&nbsp;</span><em>gne-pine hypothesis</em><span>&nbsp;</span>and looks like:<s
+2 CONC up id="cite_ref-10" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transpare
+2 CONC nt scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Seed_plant#cite_note-10"><span class="cite-bracket" style="pointer-events: none;">[</span>10
+2 CONC <span class="cite-bracket" style="pointer-events: none;">]</span></a></sup><sup id="cite_ref-11" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal;
+2 CONC  line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Seed_plant#cite
+2 CONC _note-11"><span class="cite-bracket" style="pointer-events: none;">[</span>11<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup><sup id="cite_ref-12" class="reference" style="f
+2 CONC ont-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; ov
+2 CONC erflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Seed_plant#cite_note-12"><span class="cite-bracket" style="pointer-events: none;">[</span>12<span class="cite-bracket" style="pointer-even
+2 CONC ts: none;">]</span></a></sup></p>
+2 CONT <div class="clade" style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; wido
+2 CONC ws: 2; letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initia
+2 CONC l; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</div>
+<p style="text-align: left;" dir="ltr">&nbsp;</p>
+0 @I24412@ INDI
+1 RIN MH:I24412
+1 _UID 671c64c63ae051efbc129822ef79916c
+1 _UPD 26 OCT 2024 09:11:05 GMT+5.5
+1 NAME  /†Progymnospermophyta/
+2 SURN †Progymnospermophyta
+1 SEX M
+1 BIRT
+2 _UID 671c64d13ae051efbc129822ef79916c
+2 RIN MH:IF33105
+1 FAMC @F13962@
+0 @I24413@ INDI
+1 RIN MH:I24413
+1 _UID 671c6510f1bc81efbc129822ef79916c
+1 _UPD 26 OCT 2024 10:02:34 GMT+5.5
+1 NAME  /Angiosperms (flowering plants)/
+2 SURN Angiosperms (flowering plants)
+1 SEX M
+1 BIRT
+2 _UID 671c65143ae051efbc129822ef79916c
+2 RIN MH:IF33106
+1 FAMS @F13966@
+1 FAMC @F13963@
+1 NOTE <p style="text-align: left;" dir="ltr">&nbsp;</p>
+2 CONT <div class="mw-heading mw-heading4" style="font-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: bold; padding-bottom: 0px; font-style: n
+2 CONC ormal; padding-top: 0.5em; orphans: 2; widows: 2; margin: 0.25em 0px; letter-spacing: normal; line-height: 1.6; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-varian
+2 CONC t-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><span style="font-size: medium;"><span style="font-
+2 CONC size: medium;"></span></span>
+<h4 id="Internal" style="font-family: inherit; font-weight: bold; margin: 0px 0px 0.25em; display: inline; line-height: 1.6; font-stretch: inherit; font-optical-sizing: i
+2 CONC nherit; font-size-adjust: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; border: 0px; padding: 0px;">Internal</h4>
+<span style="font-size: medium;"><
+2 CONC span class="mw-editsection" style="font-size: small; font-family: sans-serif; vertical-align: baseline; font-weight: normal; margin-left: 1em; line-height: 0; margin-right: 0px; user-select: none; mar
+2 CONC gin-inline: 1em 0px;"><span class="mw-editsection-bracket" style="margin-right: 0.25em; margin-inline: 0px 0.25em;">[</span><a style="text-decoration: none; background: none transparent scroll repeat 
+2 CONC 0% 0%; white-space: nowrap; border-radius: 0px; overflow-wrap: break-word;" title="Edit section: Internal" href="https://en.wikipedia.org/w/index.php?title=Flowering_plant&amp;action=edit&amp;section=
+2 CONC 9"><span>edit</span></a><span class="mw-editsection-bracket" style="margin-left: 0.25em; margin-inline: 0.25em 0px;">]</span></span></span></div>
+<p style="font-size: 16px; font-family: sans-serif; wh
+2 CONC ite-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin: 0.5em 0px 1em; letter-spacing: normal; background-color
+2 CONC : #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decorat
+2 CONC ion-color: initial;">The main groups of living angiosperms are:<sup id="cite_ref-42" class="reference" style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height
+2 CONC : 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Flowering_plant#cite_note-4
+2 CONC 2"><span class="cite-bracket" style="pointer-events: none;">[</span>42<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup><sup id="cite_ref-FOOTNOTEAPG2016_1-3" class="reference
+2 CONC " style="font-size: 12px; white-space: nowrap; font-weight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radiu
+2 CONC s: 0px; overflow-wrap: break-word;" href="https://en.wikipedia.org/wiki/Flowering_plant#cite_note-FOOTNOTEAPG2016-1"><span class="cite-bracket" style="pointer-events: none;">[</span>1<span class="cite
+2 CONC -bracket" style="pointer-events: none;">]</span></a></sup></p>
+0 @I24414@ INDI
+1 RIN MH:I24414
+1 _UID 671c651c3ae051efbc129822ef79916c
+1 _UPD 26 OCT 2024 09:22:45 GMT+5.5
+1 NAME  /Gymnosperms/
+2 SURN Gymnosperms
+1 SEX M
+1 BIRT
+2 _UID 671c65253ae051efbc129822ef79916c
+2 RIN MH:IF33107
+1 FAMS @F13964@
+1 FAMC @F13963@
+0 @I24415@ INDI
+1 RIN MH:I24415
+1 _UID 671c67217728f1efbc129822ef79916c
+1 _UPD 26 OCT 2024 09:22:45 GMT+5.5
+1 SEX F
+1 FAMS @F13964@
+0 @I24416@ INDI
+1 RIN MH:I24416
+1 _UID 671c67263ae051efbc129822ef79916c
+1 _UPD 26 OCT 2024 09:21:06 GMT+5.5
+1 NAME  /Cycads/
+2 SURN Cycads
+1 SEX M
+1 BIRT
+2 _UID 671c672a3ae051efbc129822ef79916c
+2 RIN MH:IF33108
+1 FAMC @F13964@
+0 @I24417@ INDI
+1 RIN MH:I24417
+1 _UID 671c672e3ae051efbc129822ef79916c
+1 _UPD 26 OCT 2024 09:21:15 GMT+5.5
+1 NAME  /Ginkgo/
+2 SURN Ginkgo
+1 SEX M
+1 BIRT
+2 _UID 671c67333ae051efbc129822ef79916c
+2 RIN MH:IF33109
+1 FAMC @F13964@
+0 @I24418@ INDI
+1 RIN MH:I24418
+1 _UID 671c67373ae051efbc129822ef79916c
+1 _UPD 26 OCT 2024 09:23:54 GMT+5.5
+1 NAME  /Gymnosperms/
+2 SURN Gymnosperms
+1 SEX M
+1 BIRT
+2 _UID 671c678d3ae051efbc129822ef79916c
+2 RIN MH:IF33110
+1 FAMS @F13965@
+1 FAMC @F13964@
+0 @I24419@ INDI
+1 RIN MH:I24419
+1 _UID 671c67c5f1bc81efbc129822ef79916c
+1 _UPD 26 OCT 2024 09:23:45 GMT+5.5
+1 NAME  /Gnetophyta/
+2 SURN Gnetophyta
+1 SEX M
+1 BIRT
+2 _UID 671c67c93ae051efbc129822ef79916c
+2 RIN MH:IF33111
+1 FAMC @F13965@
+0 @I24420@ INDI
+1 RIN MH:I24420
+1 _UID 671c67ce3ae051efbc129822ef79916c
+1 _UPD 26 OCT 2024 09:23:54 GMT+5.5
+1 NAME  /Conifers/
+2 SURN Conifers
+1 SEX M
+1 BIRT
+2 _UID 671c67d23ae051efbc129822ef79916c
+2 RIN MH:IF33112
+1 FAMC @F13965@
+0 @I24421@ INDI
+1 RIN MH:I24421
+1 _UID 671c70d6f1bc81efbc129822ef79916c
+1 _UPD 26 OCT 2024 10:02:25 GMT+5.5
+1 NAME  /Amborellales  1 sp. New Caledonia shrub/
+2 SURN Amborellales  1 sp. New Caledonia shrub
+1 SEX M
+1 BIRT
+2 _UID 671c70d93ae051efbc129822ef79916c
+2 RIN MH:IF33113
+1 FAMC @F13966@
+0 @I24422@ INDI
+1 RIN MH:I24422
+1 _UID 671c70e03ae051efbc129822ef79916c
+1 _UPD 26 OCT 2024 10:02:54 GMT+5.5
+1 NAME  /Angiosperms (flowering plants)/
+2 SURN Angiosperms (flowering plants)
+1 SEX M
+1 BIRT
+2 _UID 671c70e23ae051efbc129822ef79916c
+2 RIN MH:IF33114
+1 FAMS @F13967@
+1 FAMC @F13966@
+0 @I24423@ INDI
+1 RIN MH:I24423
+1 _UID 671c70eaf1bc81efbc129822ef79916c
+1 _UPD 26 OCT 2024 10:02:45 GMT+5.5
+1 NAME  /Nymphaeales  c. 80 spp.[43] water lilies & allies/
+2 SURN Nymphaeales  c. 80 spp.[43] water lilies & allies
+1 SEX M
+1 BIRT
+2 _UID 671c70ed3ae051efbc129822ef79916c
+2 RIN MH:IF33115
+1 FAMC @F13967@
+0 @I24424@ INDI
+1 RIN MH:I24424
+1 _UID 671c70f23ae051efbc129822ef79916c
+1 _UPD 26 OCT 2024 10:03:08 GMT+5.5
+1 NAME  /Angiosperms (flowering plants)/
+2 SURN Angiosperms (flowering plants)
+1 SEX M
+1 BIRT
+2 _UID 671c70f63ae051efbc129822ef79916c
+2 RIN MH:IF33116
+1 FAMS @F13968@
+1 FAMC @F13967@
+0 @I24425@ INDI
+1 RIN MH:I24425
+1 _UID 671c70faf1bc81efbc129822ef79916c
+1 _UPD 26 OCT 2024 10:03:02 GMT+5.5
+1 NAME  /Austrobaileyales  c. 100 spp.[43] woody plants/
+2 SURN Austrobaileyales  c. 100 spp.[43] woody plants
+1 SEX M
+1 BIRT
+2 _UID 671c70fe3ae051efbc129822ef79916c
+2 RIN MH:IF33117
+1 FAMC @F13968@
+0 @I24426@ INDI
+1 RIN MH:I24426
+1 _UID 671c71023ae051efbc129822ef79916c
+1 _UPD 26 OCT 2024 10:04:04 GMT+5.5
+1 NAME  /Angiosperms (flowering plants)/
+2 SURN Angiosperms (flowering plants)
+1 SEX M
+1 BIRT
+2 _UID 671c71043ae051efbc129822ef79916c
+2 RIN MH:IF33118
+1 FAMS @F13969@
+1 FAMC @F13968@
+0 @I24427@ INDI
+1 RIN MH:I24427
+1 _UID 671c711af1bc81efbc129822ef79916c
+1 _UPD 26 OCT 2024 10:03:50 GMT+5.5
+1 NAME  /Angiosperms (flowering plants)/
+2 SURN Angiosperms (flowering plants)
+1 SEX M
+1 BIRT
+2 _UID 671c711d3ae051efbc129822ef79916c
+2 RIN MH:IF33119
+1 FAMS @F13970@
+1 FAMC @F13969@
+0 @I24428@ INDI
+1 RIN MH:I24428
+1 _UID 671c7124f1bc81efbc129822ef79916c
+1 _UPD 26 OCT 2024 10:16:50 GMT+5.5
+1 NAME  /Magnoliids  c. 10,000 spp.[43] 3-part flowers, 1-pore pollen, usu. branch-veined leaves/
+2 SURN Magnoliids  c. 10,000 spp.[43] 3-part flowers, 1-pore pollen, usu. branch-veined leaves
+1 SEX M
+1 BIRT
+2 _UID 671c71273ae051efbc129822ef79916c
+2 RIN MH:IF33120
+1 FAMS @F13973@
+1 FAMC @F13970@
+1 NOTE <p style="text-align: left;" dir="ltr">&nbsp;</p>
+2 CONT <div class="mw-heading mw-heading3" style="font-size: 1.2em; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: bold; padding-bottom: 0px; font-style: 
+2 CONC normal; padding-top: 0.5em; orphans: 2; widows: 2; margin: 0.25em 0px; letter-spacing: normal; line-height: 1.6; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-varia
+2 CONC nt-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
+<h3 id="APG_system" style="font-family: inherit; 
+2 CONC font-weight: bold; margin: 0px 0px 0.25em; display: inline; line-height: 1.6; font-stretch: inherit; font-optical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font-feature-settin
+2 CONC gs: inherit; font-variation-settings: inherit; border: 0px; padding: 0px;"><span style="font-size: large;">APG system</span></h3>
+<span class="mw-editsection" style="font-size: small; font-family: san
+2 CONC s-serif; vertical-align: baseline; font-weight: normal; margin-left: 1em; line-height: 0; margin-right: 0px; user-select: none; margin-inline: 1em 0px;"><span class="mw-editsection-bracket" style="mar
+2 CONC gin-right: 0.25em; margin-inline: 0px 0.25em;"><span style="font-size: medium;">[</span></span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; white-space: nowrap; b
+2 CONC order-radius: 0px; overflow-wrap: break-word;" title="Edit section: APG system" href="https://en.wikipedia.org/w/index.php?title=Magnoliids&amp;action=edit&amp;section=2"><span><span style="font-size:
+2 CONC  medium;">edit</span></span></a><span class="mw-editsection-bracket" style="margin-left: 0.25em; margin-inline: 0.25em 0px;"><span style="font-size: medium;">]</span></span></span></div>
+<p style="fon
+2 CONC t-size: 16px; font-family: sans-serif; white-space: normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: #202122; font-style: normal; orphans: 2; widows: 2; margin: 0.5em 0px 1em;
+2 CONC  letter-spacing: normal; background-color: #ffffff; text-indent: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; tex
+2 CONC t-decoration-style: initial; text-decoration-color: initial;">The<span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap
+2 CONC : break-word;" title="APG III system" href="https://en.wikipedia.org/wiki/APG_III_system">APG III</a><span>&nbsp;</span>(2009) and its predecessor systems did not originally use formal botanical names
+2 CONC  above the<span>&nbsp;</span><a class="mw-redirect" style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Rank (botany)
+2 CONC " href="https://en.wikipedia.org/wiki/Rank_(botany)">rank</a><span>&nbsp;</span>of order. Under those systems, larger clades were usually referred to by informal names, such as "magnoliids" (plural, n
+2 CONC ot capitalized) or "magnoliid complex". The formal name in<span>&nbsp;</span><a class="mw-redirect" style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; 
+2 CONC overflow-wrap: break-word;" title="Linnean nomenclature" href="https://en.wikipedia.org/wiki/Linnean_nomenclature">Linnean nomenclature</a><span>&nbsp;</span>was specified in a separate APG publicatio
+2 CONC n as the existing name "Magnolianae"<span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Armen T
+2 CONC akhtajan" href="https://en.wikipedia.org/wiki/Armen_Takhtajan">Takht.</a><span>&nbsp;</span>(1967).<sup id="cite_ref-C&amp;R_8-1" class="reference" style="font-size: 12px; white-space: nowrap; font-we
+2 CONC ight: normal; font-style: normal; line-height: 1;"><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" href="https://en.w
+2 CONC ikipedia.org/wiki/Magnoliids#cite_note-C&amp;R-8"><span class="cite-bracket" style="pointer-events: none;">[</span>8<span class="cite-bracket" style="pointer-events: none;">]</span></a></sup><span>&nb
+2 CONC sp;</span>The APG III recognizes a<span>&nbsp;</span><a style="text-decoration: none; background: none transparent scroll repeat 0% 0%; border-radius: 0px; overflow-wrap: break-word;" title="Clade" hr
+2 CONC ef="https://en.wikipedia.org/wiki/Clade">clade</a><span>&nbsp;</span>within the<span>&nbsp;</span><a class="mw-redirect" style="text-decoration: none; background: none transparent scroll repeat 0% 0%;
+2 CONC  border-radius: 0px; overflow-wrap: break-word;" title="Angiosperms" href="https://en.wikipedia.org/wiki/Angiosperms">angiosperms</a><span>&nbsp;</span>for the magnoliids. The circumscription is:</p>
+2 CONT <p style="text-align: left;" dir="ltr">&nbsp;</p>
+0 @I24429@ INDI
+1 RIN MH:I24429
+1 _UID 671c712b3ae051efbc129822ef79916c
+1 _UPD 26 OCT 2024 10:03:50 GMT+5.5
+1 NAME  /Chloranthales  77 spp.[44] Woody, apetalous/
+2 SURN Chloranthales  77 spp.[44] Woody, apetalous
+1 SEX M
+1 BIRT
+2 _UID 671c712d3ae051efbc129822ef79916c
+2 RIN MH:IF33121
+1 FAMC @F13970@
+0 @I24430@ INDI
+1 RIN MH:I24430
+1 _UID 671c713a3ae051efbc129822ef79916c
+1 _UPD 26 OCT 2024 10:04:18 GMT+5.5
+1 NAME  /Angiosperms (flowering plants)/
+2 SURN Angiosperms (flowering plants)
+1 SEX M
+1 BIRT
+2 _UID 671c713c3ae051efbc129822ef79916c
+2 RIN MH:IF33122
+1 FAMS @F13971@
+1 FAMC @F13969@
+0 @I24431@ INDI
+1 RIN MH:I24431
+1 _UID 671c7143f1bc81efbc129822ef79916c
+1 _UPD 26 OCT 2024 10:33:03 GMT+5.5
+1 NAME  /Monocots  c. 70,000 spp.[45] 3-part flowers, 1 cotyledon, 1-pore pollen, usu. parallel-veined leaves/
+2 SURN Monocots  c. 70,000 spp.[45] 3-part flowers, 1 cotyledon, 1-pore pollen, usu. parallel-veined leaves
+1 SEX M
+1 BIRT
+2 _UID 671c71463ae051efbc129822ef79916c
+2 RIN MH:IF33123
+1 FAMS @F13980@
+1 FAMC @F13971@
+0 @I24432@ INDI
+1 RIN MH:I24432
+1 _UID 671c71483ae051efbc129822ef79916c
+1 _UPD 26 OCT 2024 10:04:34 GMT+5.5
+1 NAME  /Angiosperms (flowering plants)/
+2 SURN Angiosperms (flowering plants)
+1 SEX M
+1 BIRT
+2 _UID 671c714a3ae051efbc129822ef79916c
+2 RIN MH:IF33124
+1 FAMS @F13972@
+1 FAMC @F13971@
+0 @I24433@ INDI
+1 RIN MH:I24433
+1 _UID 671c7150f1bc81efbc129822ef79916c
+1 _UPD 26 OCT 2024 10:04:27 GMT+5.5
+1 NAME  /Ceratophyllales  c. 6 spp.[43] aquatic plants/
+2 SURN Ceratophyllales  c. 6 spp.[43] aquatic plants
+1 SEX M
+1 BIRT
+2 _UID 671c71533ae051efbc129822ef79916c
+2 RIN MH:IF33125
+1 FAMC @F13972@
+0 @I24434@ INDI
+1 RIN MH:I24434
+1 _UID 671c71573ae051efbc129822ef79916c
+1 _UPD 26 OCT 2024 10:04:34 GMT+5.5
+1 NAME  /Eudicots  c. 175,000 spp.[43] 4- or 5-part flowers, 3-pore pollen, usu. branch-veined leaves/
+2 SURN Eudicots  c. 175,000 spp.[43] 4- or 5-part flowers, 3-pore pollen, usu. branch-veined leaves
+1 SEX M
+1 BIRT
+2 _UID 671c715a3ae051efbc129822ef79916c
+2 RIN MH:IF33126
+1 FAMC @F13972@
+0 @I24435@ INDI
+1 RIN MH:I24435
+1 _UID 671c7432f1bc81efbc129822ef79916c
+1 _UPD 26 OCT 2024 10:17:53 GMT+5.5
+1 NAME  /Magnoliids  c. 10,000 spp.[43] 3-part flowers, 1-pore pollen, usu. branch-veined leaves/
+2 SURN Magnoliids  c. 10,000 spp.[43] 3-part flowers, 1-pore pollen, usu. branch-veined leaves
+1 SEX M
+1 BIRT
+2 _UID 671c74343ae051efbc129822ef79916c
+2 RIN MH:IF33127
+1 FAMS @F13974@
+1 FAMC @F13973@
+0 @I24436@ INDI
+1 RIN MH:I24436
+1 _UID 671c74383ae051efbc129822ef79916c
+1 _UPD 26 OCT 2024 10:18:13 GMT+5.5
+1 NAME  /Magnoliids  c. 10,000 spp.[43] 3-part flowers, 1-pore pollen, usu. branch-veined leaves/
+2 SURN Magnoliids  c. 10,000 spp.[43] 3-part flowers, 1-pore pollen, usu. branch-veined leaves
+1 SEX M
+1 BIRT
+2 _UID 671c743a3ae051efbc129822ef79916c
+2 RIN MH:IF33128
+1 FAMS @F13975@
+1 FAMC @F13973@
+0 @I24437@ INDI
+1 RIN MH:I24437
+1 _UID 671c7457f1bc81efbc129822ef79916c
+1 _UPD 26 OCT 2024 10:17:45 GMT+5.5
+1 NAME  /Canellales/
+2 SURN Canellales
+1 SEX M
+1 BIRT
+2 _UID 671c74713ae051efbc129822ef79916c
+2 RIN MH:IF33129
+1 FAMC @F13974@
+0 @I24438@ INDI
+1 RIN MH:I24438
+1 _UID 671c74743ae051efbc129822ef79916c
+1 _UPD 26 OCT 2024 10:20:24 GMT+5.5
+1 NAME  /Piperales/
+2 SURN Piperales
+1 SEX M
+1 BIRT
+2 _UID 671c74793ae051efbc129822ef79916c
+2 RIN MH:IF33130
+1 FAMS @F13976@
+1 FAMC @F13974@
+0 @I24439@ INDI
+1 RIN MH:I24439
+1 _UID 671c7482f1bc81efbc129822ef79916c
+1 _UPD 26 OCT 2024 10:22:41 GMT+5.5
+1 NAME  /Laurales/
+2 SURN Laurales
+1 SEX M
+1 BIRT
+2 _UID 671c74843ae051efbc129822ef79916c
+2 RIN MH:IF33131
+1 FAMS @F13978@
+1 FAMC @F13975@
+0 @I24440@ INDI
+1 RIN MH:I24440
+1 _UID 671c74863ae051efbc129822ef79916c
+1 _UPD 26 OCT 2024 10:21:12 GMT+5.5
+1 NAME  /Magnoliales/
+2 SURN Magnoliales
+1 SEX M
+1 BIRT
+2 _UID 671c748d3ae051efbc129822ef79916c
+2 RIN MH:IF33132
+1 FAMS @F13977@
+1 FAMC @F13975@
+0 @I24441@ INDI
+1 RIN MH:I24441
+1 _UID 671c7506f1bc81efbc129822ef79916c
+1 _UPD 26 OCT 2024 10:20:19 GMT+5.5
+1 NAME  /Black Pepper/
+2 SURN Black Pepper
+1 SEX M
+1 BIRT
+2 _UID 671c750b3ae051efbc129822ef79916c
+2 RIN MH:IF33133
+1 FAMC @F13976@
+0 @I24442@ INDI
+1 RIN MH:I24442
+1 _UID 671c750d3ae051efbc129822ef79916c
+1 _UPD 26 OCT 2024 10:20:24 GMT+5.5
+1 NAME  /Kava/
+2 SURN Kava
+1 SEX M
+1 BIRT
+2 _UID 671c75103ae051efbc129822ef79916c
+2 RIN MH:IF33134
+1 FAMC @F13976@
+0 @I24443@ INDI
+1 RIN MH:I24443
+1 _UID 671c7533f1bc81efbc129822ef79916c
+1 _UPD 26 OCT 2024 10:21:11 GMT+5.5
+1 NAME  /Nutmeg and Mace (Myristica fragrans)
+/
+2 SURN Nutmeg and Mace (Myristica fragrans)
+
+1 SEX M
+1 BIRT
+2 _UID 671c753f3ae051efbc129822ef79916c
+2 RIN MH:IF33135
+1 FAMC @F13977@
+0 @I24444@ INDI
+1 RIN MH:I24444
+1 _UID 671c7595f1bc81efbc129822ef79916c
+1 _UPD 26 OCT 2024 10:23:03 GMT+5.5
+1 NAME  /Lauraceae/
+2 SURN Lauraceae
+1 SEX M
+1 BIRT
+2 _UID 671c75983ae051efbc129822ef79916c
+2 RIN MH:IF33136
+1 FAMS @F13979@
+1 FAMC @F13978@
+0 @I24445@ INDI
+1 RIN MH:I24445
+1 _UID 671c75a2f1bc81efbc129822ef79916c
+1 _UPD 26 OCT 2024 10:22:53 GMT+5.5
+1 NAME  /bay laurel/
+2 SURN bay laurel
+1 SEX M
+1 BIRT
+2 _UID 671c75a53ae051efbc129822ef79916c
+2 RIN MH:IF33137
+1 FAMC @F13979@
+0 @I24446@ INDI
+1 RIN MH:I24446
+1 _UID 671c75a83ae051efbc129822ef79916c
+1 _UPD 26 OCT 2024 10:22:58 GMT+5.5
+1 NAME  /cinnamon/
+2 SURN cinnamon
+1 SEX M
+1 BIRT
+2 _UID 671c75aa3ae051efbc129822ef79916c
+2 RIN MH:IF33138
+1 FAMC @F13979@
+0 @I24447@ INDI
+1 RIN MH:I24447
+1 _UID 671c75ac3ae051efbc129822ef79916c
+1 _UPD 26 OCT 2024 10:23:03 GMT+5.5
+1 NAME  /avocado/
+2 SURN avocado
+1 SEX M
+1 BIRT
+2 _UID 671c75af3ae051efbc129822ef79916c
+2 RIN MH:IF33139
+1 FAMC @F13979@
+0 @I24448@ INDI
+1 RIN MH:I24448
+1 _UID 671c77fff1bc81efbc129822ef79916c
+1 _UPD 26 OCT 2024 10:32:58 GMT+5.5
+1 NAME  /Acorales Link 1835/
+2 SURN Acorales Link 1835
+1 SEX M
+1 BIRT
+2 _UID 671c78023ae051efbc129822ef79916c
+2 RIN MH:IF33140
+1 FAMC @F13980@
+0 @I24449@ INDI
+1 RIN MH:I24449
+1 _UID 671c78043ae051efbc129822ef79916c
+1 _UPD 26 OCT 2024 10:42:20 GMT+5.5
+1 NAME  /Monocots/
+2 SURN Monocots
+1 SEX M
+1 BIRT
+2 _UID 671c78073ae051efbc129822ef79916c
+2 RIN MH:IF33141
+1 FAMS @F13981@
+1 FAMC @F13980@
+0 @I24450@ INDI
+1 RIN MH:I24450
+1 _UID 671c7a2ee12bf1efbc149a22ef79916b
+1 _UPD 26 OCT 2024 10:42:16 GMT+5.5
+1 NAME  /Alismatales Brown ex von Berchtold & Presl 1820/
+2 SURN Alismatales Brown ex von Berchtold & Presl 1820
+1 SEX M
+1 BIRT
+2 _UID 671c7a302a7721efbc149a22ef79916b
+2 RIN MH:IF33142
+1 FAMC @F13981@
+0 @I24451@ INDI
+1 RIN MH:I24451
+1 _UID 671c7a322a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 10:42:35 GMT+5.5
+1 NAME  /Monocots/
+2 SURN Monocots
+1 SEX M
+1 BIRT
+2 _UID 671c7a342a7721efbc149a22ef79916b
+2 RIN MH:IF33143
+1 FAMS @F13982@
+1 FAMC @F13981@
+0 @I24452@ INDI
+1 RIN MH:I24452
+1 _UID 671c7a38e12bf1efbc149a22ef79916b
+1 _UPD 26 OCT 2024 10:42:28 GMT+5.5
+1 NAME  /Petrosaviales Takhtajan 1997/
+2 SURN Petrosaviales Takhtajan 1997
+1 SEX M
+1 BIRT
+2 _UID 671c7a3c2a7721efbc149a22ef79916b
+2 RIN MH:IF33144
+1 FAMC @F13982@
+0 @I24453@ INDI
+1 RIN MH:I24453
+1 _UID 671c7a3e2a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 10:42:42 GMT+5.5
+1 NAME  /Monocots/
+2 SURN Monocots
+1 SEX M
+1 BIRT
+2 _UID 671c7a432a7721efbc149a22ef79916b
+2 RIN MH:IF33145
+1 FAMS @F13983@
+1 FAMC @F13982@
+0 @I24454@ INDI
+1 RIN MH:I24454
+1 _UID 671c7a46e12bf1efbc149a22ef79916b
+1 _UPD 26 OCT 2024 10:42:54 GMT+5.5
+1 NAME  /Monocots/
+2 SURN Monocots
+1 SEX M
+1 BIRT
+2 _UID 671c7a472a7721efbc149a22ef79916b
+2 RIN MH:IF33146
+1 FAMS @F13984@
+1 FAMC @F13983@
+0 @I24455@ INDI
+1 RIN MH:I24455
+1 _UID 671c7a492a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 10:43:09 GMT+5.5
+1 NAME  /Monocots/
+2 SURN Monocots
+1 SEX M
+1 BIRT
+2 _UID 671c7a4a2a7721efbc149a22ef79916b
+2 RIN MH:IF33147
+1 FAMS @F13985@
+1 FAMC @F13983@
+0 @I24456@ INDI
+1 RIN MH:I24456
+1 _UID 671c7a4ee12bf1efbc149a22ef79916b
+1 _UPD 26 OCT 2024 10:42:48 GMT+5.5
+1 NAME  /Dioscoreales Brown 1835/
+2 SURN Dioscoreales Brown 1835
+1 SEX M
+1 BIRT
+2 _UID 671c7a502a7721efbc149a22ef79916b
+2 RIN MH:IF33148
+1 FAMC @F13984@
+0 @I24457@ INDI
+1 RIN MH:I24457
+1 _UID 671c7a542a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 10:42:54 GMT+5.5
+1 NAME  /Pandanales Brown ex von Berchtold & Presl 1820/
+2 SURN Pandanales Brown ex von Berchtold & Presl 1820
+1 SEX M
+1 BIRT
+2 _UID 671c7a562a7721efbc149a22ef79916b
+2 RIN MH:IF33149
+1 FAMC @F13984@
+0 @I24458@ INDI
+1 RIN MH:I24458
+1 _UID 671c7a5fe12bf1efbc149a22ef79916b
+1 _UPD 26 OCT 2024 10:43:05 GMT+5.5
+1 NAME  /Liliales Perleb 1826/
+2 SURN Liliales Perleb 1826
+1 SEX M
+1 BIRT
+2 _UID 671c7a612a7721efbc149a22ef79916b
+2 RIN MH:IF33150
+1 FAMC @F13985@
+0 @I24459@ INDI
+1 RIN MH:I24459
+1 _UID 671c7a642a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 10:43:32 GMT+5.5
+1 NAME  /Monocots/
+2 SURN Monocots
+1 SEX M
+1 BIRT
+2 _UID 671c7a652a7721efbc149a22ef79916b
+2 RIN MH:IF33151
+1 FAMS @F13986@
+1 FAMC @F13985@
+0 @I24460@ INDI
+1 RIN MH:I24460
+1 _UID 671c7a6ee12bf1efbc149a22ef79916b
+1 _UPD 26 OCT 2024 10:43:56 GMT+5.5
+1 NAME  /Asparagales Link 1829/
+2 SURN Asparagales Link 1829
+1 SEX M
+1 BIRT
+2 _UID 671c7a702a7721efbc149a22ef79916b
+2 RIN MH:IF33152
+1 FAMS @F13987@
+1 FAMC @F13986@
+0 @I24461@ INDI
+1 RIN MH:I24461
+1 _UID 671c7a7a2a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 10:44:13 GMT+5.5
+1 NAME  /Commelinids/
+2 SURN Commelinids
+1 SEX M
+1 BIRT
+2 _UID 671c7a7c2a7721efbc149a22ef79916b
+2 RIN MH:IF33153
+1 FAMS @F13988@
+1 FAMC @F13986@
+0 @I24462@ INDI
+1 RIN MH:I24462
+1 _UID 671c7a8de12bf1efbc149a22ef79916b
+1 _UPD 26 OCT 2024 10:43:56 GMT+5.5
+1 NAME  /Asparagus/
+2 SURN Asparagus
+1 SEX M
+1 BIRT
+2 _UID 671c7a942a7721efbc149a22ef79916b
+2 RIN MH:IF33154
+1 FAMC @F13987@
+0 @I24463@ INDI
+1 RIN MH:I24463
+1 _UID 671c7aa0e12bf1efbc149a22ef79916b
+1 _UPD 26 OCT 2024 10:44:10 GMT+5.5
+1 NAME  /Arecales Bromhead 1840/
+2 SURN Arecales Bromhead 1840
+1 SEX M
+1 BIRT
+2 _UID 671c7aa22a7721efbc149a22ef79916b
+2 RIN MH:IF33155
+1 FAMC @F13988@
+0 @I24464@ INDI
+1 RIN MH:I24464
+1 _UID 671c7aa32a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 10:44:22 GMT+5.5
+1 NAME  /Commelinids/
+2 SURN Commelinids
+1 SEX M
+1 BIRT
+2 _UID 671c7aa52a7721efbc149a22ef79916b
+2 RIN MH:IF33156
+1 FAMS @F13989@
+1 FAMC @F13988@
+0 @I24465@ INDI
+1 RIN MH:I24465
+1 _UID 671c7aa9e12bf1efbc149a22ef79916b
+1 _UPD 26 OCT 2024 10:44:19 GMT+5.5
+1 NAME  /Poales Small 1903/
+2 SURN Poales Small 1903
+1 SEX M
+1 BIRT
+2 _UID 671c7aab2a7721efbc149a22ef79916b
+2 RIN MH:IF33157
+1 FAMC @F13989@
+0 @I24466@ INDI
+1 RIN MH:I24466
+1 _UID 671c7aac2a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 10:44:35 GMT+5.5
+1 NAME  /Commelinids/
+2 SURN Commelinids
+1 SEX M
+1 BIRT
+2 _UID 671c7aae2a7721efbc149a22ef79916b
+2 RIN MH:IF33158
+1 FAMS @F13990@
+1 FAMC @F13989@
+0 @I24467@ INDI
+1 RIN MH:I24467
+1 _UID 671c7ab3e12bf1efbc149a22ef79916b
+1 _UPD 26 OCT 2024 10:44:29 GMT+5.5
+1 NAME  /Zingiberales Grisebach 1854/
+2 SURN Zingiberales Grisebach 1854
+1 SEX M
+1 BIRT
+2 _UID 671c7ab52a7721efbc149a22ef79916b
+2 RIN MH:IF33159
+1 FAMC @F13990@
+0 @I24468@ INDI
+1 RIN MH:I24468
+1 _UID 671c7ab92a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 10:44:35 GMT+5.5
+1 NAME  /Commelinales de Mirbel ex von Berchtold & Presl 1820/
+2 SURN Commelinales de Mirbel ex von Berchtold & Presl 1820
+1 SEX M
+1 BIRT
+2 _UID 671c7abb2a7721efbc149a22ef79916b
+2 RIN MH:IF33160
+1 FAMC @F13990@
+0 @I24469@ INDI
+1 RIN MH:I24469
+1 _UID 671c7e5ae12bf1efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:25:25 GMT+5.5
+1 NAME Virosol /Viros Sol/
+2 GIVN Virosol
+2 SURN Viros Sol
+1 SEX M
+1 BIRT
+2 _UID 671c7e6f2a7721efbc149a22ef79916b
+2 RIN MH:IF33161
+1 FAMS @F13992@
+1 FAMS @F13999@
+1 FAMS @F14000@
+1 FAMS @F14001@
+1 FAMS @F14002@
+1 FAMS @F14003@
+1 FAMS @F14004@
+1 FAMS @F14005@
+1 FAMS @F14006@
+1 FAMS @F14007@
+1 FAMS @F14008@
+1 FAMS @F14009@
+1 FAMC @F13991@
+0 @I24470@ INDI
+1 RIN MH:I24470
+1 _UID 671c7e8767bf81efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:25:25 GMT+5.5
+1 NAME Pluto //
+2 GIVN Pluto
+1 SEX F
+1 BIRT
+2 _UID 671c7e8e2a7721efbc149a22ef79916b
+2 RIN MH:IF33162
+1 FAMS @F13992@
+1 FAMS @F14010@
+1 FAMC @F13993@
+0 @I24471@ INDI
+1 RIN MH:I24471
+1 _UID 671c7e982a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:10:38 GMT+5.5
+1 NAME Solana Amaterasu Omikami //
+2 GIVN Solana Amaterasu Omikami
+1 SEX F
+1 BIRT
+2 _UID 671c7e9c2a7721efbc149a22ef79916b
+2 RIN MH:IF33163
+1 FAMS @F13993@
+1 FAMC @F1@
+0 @I24472@ INDI
+1 RIN MH:I24472
+1 _UID 671c7ea12a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:01:22 GMT+5.5
+1 NAME Plutonic Viruses /Viros Sol/
+2 GIVN Plutonic Viruses
+2 SURN Viros Sol
+1 SEX M
+1 BIRT
+2 _UID 671c7eaa2a7721efbc149a22ef79916b
+2 RIN MH:IF33164
+1 FAMC @F13992@
+0 @I24473@ INDI
+1 RIN MH:I24473
+1 _UID 671c7f252a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:06:10 GMT+5.5
+1 NAME Neptune //
+2 GIVN Neptune
+1 SEX F
+1 BIRT
+2 _UID 671c7f292a7721efbc149a22ef79916b
+2 RIN MH:IF33165
+1 FAMS @F13994@
+1 FAMC @F13993@
+0 @I24474@ INDI
+1 RIN MH:I24474
+1 _UID 671c7f2a2a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:06:43 GMT+5.5
+1 NAME Uranus //
+2 GIVN Uranus
+1 SEX F
+1 BIRT
+2 _UID 671c7f2e2a7721efbc149a22ef79916b
+2 RIN MH:IF33166
+1 FAMS @F13995@
+1 FAMC @F13993@
+0 @I24475@ INDI
+1 RIN MH:I24475
+1 _UID 671c7f2f2a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:07:07 GMT+5.5
+1 NAME Saturn //
+2 GIVN Saturn
+1 SEX F
+1 BIRT
+2 _UID 671c7f392a7721efbc149a22ef79916b
+2 RIN MH:IF33167
+1 FAMS @F13996@
+1 FAMC @F13993@
+0 @I24476@ INDI
+1 RIN MH:I24476
+1 _UID 671c7f3b2a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:07:46 GMT+5.5
+1 NAME Jupiter //
+2 GIVN Jupiter
+1 SEX F
+1 BIRT
+2 _UID 671c7f3e2a7721efbc149a22ef79916b
+2 RIN MH:IF33168
+1 FAMS @F13997@
+1 FAMC @F13993@
+0 @I24477@ INDI
+1 RIN MH:I24477
+1 _UID 671c7f3f2a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:25:25 GMT+5.5
+1 NAME Ceres //
+2 GIVN Ceres
+1 SEX F
+1 BIRT
+2 _UID 671c7f432a7721efbc149a22ef79916b
+2 RIN MH:IF33169
+1 FAMS @F13999@
+1 FAMS @F14011@
+1 FAMC @F13993@
+0 @I24478@ INDI
+1 RIN MH:I24478
+1 _UID 671c7f442a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:25:25 GMT+5.5
+1 NAME Mars //
+2 GIVN Mars
+1 SEX F
+1 BIRT
+2 _UID 671c7f4d2a7721efbc149a22ef79916b
+2 RIN MH:IF33170
+1 FAMS @F14000@
+1 FAMS @F14012@
+1 FAMC @F13993@
+0 @I24479@ INDI
+1 RIN MH:I24479
+1 _UID 671c7f4e2a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:25:25 GMT+5.5
+1 NAME Eden //
+2 GIVN Eden
+1 SEX F
+1 BIRT
+2 _UID 671c7f532a7721efbc149a22ef79916b
+2 RIN MH:IF33171
+1 FAMS @F14001@
+1 FAMS @F14013@
+1 FAMC @F13993@
+0 @I24480@ INDI
+1 RIN MH:I24480
+1 _UID 671c7f8c2a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:25:25 GMT+5.5
+1 NAME Venus //
+2 GIVN Venus
+1 SEX F
+1 BIRT
+2 _UID 671c7f8e2a7721efbc149a22ef79916b
+2 RIN MH:IF33172
+1 FAMS @F14002@
+1 FAMS @F14014@
+1 FAMC @F13993@
+0 @I24481@ INDI
+1 RIN MH:I24481
+1 _UID 671c7f902a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:05:16 GMT+5.5
+1 NAME Mercury //
+2 GIVN Mercury
+1 SEX F
+1 BIRT
+2 _UID 671c7f942a7721efbc149a22ef79916b
+2 RIN MH:IF33173
+1 FAMC @F13993@
+0 @I24482@ INDI
+1 RIN MH:I24482
+1 _UID 671c7fc7e12bf1efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:25:25 GMT+5.5
+1 NAME Triton //
+2 GIVN Triton
+1 SEX F
+1 BIRT
+2 _UID 671c7fca2a7721efbc149a22ef79916b
+2 RIN MH:IF33174
+1 FAMS @F14003@
+1 FAMS @F14015@
+1 FAMC @F13994@
+0 @I24483@ INDI
+1 RIN MH:I24483
+1 _UID 671c7fe8e12bf1efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:25:25 GMT+5.5
+1 NAME Titania //
+2 GIVN Titania
+1 SEX F
+1 BIRT
+2 _UID 671c7feb2a7721efbc149a22ef79916b
+2 RIN MH:IF33175
+1 FAMS @F14004@
+1 FAMS @F14016@
+1 FAMC @F13995@
+0 @I24484@ INDI
+1 RIN MH:I24484
+1 _UID 671c7ffbe12bf1efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:25:25 GMT+5.5
+1 NAME Titan //
+2 GIVN Titan
+1 SEX F
+1 BIRT
+2 _UID 671c7ffd2a7721efbc149a22ef79916b
+2 RIN MH:IF33176
+1 FAMS @F14006@
+1 FAMS @F14017@
+1 FAMC @F13996@
+0 @I24485@ INDI
+1 RIN MH:I24485
+1 _UID 671c80012a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:25:25 GMT+5.5
+1 NAME Enceladus //
+2 GIVN Enceladus
+1 SEX F
+1 BIRT
+2 _UID 671c80032a7721efbc149a22ef79916b
+2 RIN MH:IF33177
+1 FAMS @F14005@
+1 FAMS @F14018@
+1 FAMC @F13996@
+0 @I24486@ INDI
+1 RIN MH:I24486
+1 _UID 671c8018e12bf1efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:07:30 GMT+5.5
+1 NAME Io //
+2 GIVN Io
+1 SEX F
+1 BIRT
+2 _UID 671c801a2a7721efbc149a22ef79916b
+2 RIN MH:IF33178
+1 FAMC @F13997@
+0 @I24487@ INDI
+1 RIN MH:I24487
+1 _UID 671c801d2a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:25:25 GMT+5.5
+1 NAME Europa //
+2 GIVN Europa
+1 SEX F
+1 BIRT
+2 _UID 671c801f2a7721efbc149a22ef79916b
+2 RIN MH:IF33179
+1 FAMS @F14007@
+1 FAMS @F14019@
+1 FAMC @F13997@
+0 @I24488@ INDI
+1 RIN MH:I24488
+1 _UID 671c80232a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:25:25 GMT+5.5
+1 NAME Ganymede //
+2 GIVN Ganymede
+1 SEX F
+1 BIRT
+2 _UID 671c80252a7721efbc149a22ef79916b
+2 RIN MH:IF33180
+1 FAMS @F14008@
+1 FAMS @F14020@
+1 FAMC @F13997@
+0 @I24489@ INDI
+1 RIN MH:I24489
+1 _UID 671c80282a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:25:25 GMT+5.5
+1 NAME Callisto //
+2 GIVN Callisto
+1 SEX F
+1 BIRT
+2 _UID 671c802a2a7721efbc149a22ef79916b
+2 RIN MH:IF33181
+1 FAMS @F14009@
+1 FAMS @F14021@
+1 FAMC @F13997@
+0 @I24490@ INDI
+1 RIN MH:I24490
+1 _UID 671c814d2a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:12:41 GMT+5.5
+1 NAME Cerean Viruses /Viros Sol/
+2 GIVN Cerean Viruses
+2 SURN Viros Sol
+1 SEX M
+1 BIRT
+2 _UID 671c81512a7721efbc149a22ef79916b
+2 RIN MH:IF33182
+1 FAMC @F13999@
+0 @I24491@ INDI
+1 RIN MH:I24491
+1 _UID 671c816a2a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:13:09 GMT+5.5
+1 NAME Martian Viruses /Viros Sol/
+2 GIVN Martian Viruses
+2 SURN Viros Sol
+1 SEX M
+1 BIRT
+2 _UID 671c816d2a7721efbc149a22ef79916b
+2 RIN MH:IF33183
+1 FAMC @F14000@
+0 @I24492@ INDI
+1 RIN MH:I24492
+1 _UID 671c818b2a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:13:48 GMT+5.5
+1 NAME Gaius Viros /Earth Viruses/
+2 GIVN Gaius Viros
+2 SURN Earth Viruses
+1 SEX M
+1 BIRT
+2 _UID 671c81942a7721efbc149a22ef79916b
+2 RIN MH:IF33184
+1 FAMC @F14001@
+0 @I24493@ INDI
+1 RIN MH:I24493
+1 _UID 671c81a42a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:14:11 GMT+5.5
+1 NAME Venusian Viruses /Viros Sol/
+2 GIVN Venusian Viruses
+2 SURN Viros Sol
+1 SEX M
+1 BIRT
+2 _UID 671c81ab2a7721efbc149a22ef79916b
+2 RIN MH:IF33185
+1 FAMC @F14002@
+0 @I24494@ INDI
+1 RIN MH:I24494
+1 _UID 671c81bb2a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:14:33 GMT+5.5
+1 NAME Tritonic Viruses /Viros Sol/
+2 GIVN Tritonic Viruses
+2 SURN Viros Sol
+1 SEX M
+1 BIRT
+2 _UID 671c81c12a7721efbc149a22ef79916b
+2 RIN MH:IF33186
+1 FAMC @F14003@
+0 @I24495@ INDI
+1 RIN MH:I24495
+1 _UID 671c82152a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:16:03 GMT+5.5
+1 NAME Titanian Viruses /Viros Sol/
+2 GIVN Titanian Viruses
+2 SURN Viros Sol
+1 SEX M
+1 BIRT
+2 _UID 671c821b2a7721efbc149a22ef79916b
+2 RIN MH:IF33187
+1 FAMC @F14004@
+0 @I24496@ INDI
+1 RIN MH:I24496
+1 _UID 671c82332a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:16:33 GMT+5.5
+1 NAME Enceladan Viruses /Viros Sol/
+2 GIVN Enceladan Viruses
+2 SURN Viros Sol
+1 SEX M
+1 BIRT
+2 _UID 671c82392a7721efbc149a22ef79916b
+2 RIN MH:IF33188
+1 FAMC @F14005@
+0 @I24497@ INDI
+1 RIN MH:I24497
+1 _UID 671c82472a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:16:50 GMT+5.5
+1 NAME Titanic Viruses /Viros Sol/
+2 GIVN Titanic Viruses
+2 SURN Viros Sol
+1 SEX M
+1 BIRT
+2 _UID 671c824a2a7721efbc149a22ef79916b
+2 RIN MH:IF33189
+1 FAMC @F14006@
+0 @I24498@ INDI
+1 RIN MH:I24498
+1 _UID 671c825e2a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:17:14 GMT+5.5
+1 NAME Europan Viruses /Viros Sol/
+2 GIVN Europan Viruses
+2 SURN Viros Sol
+1 SEX M
+1 BIRT
+2 _UID 671c82612a7721efbc149a22ef79916b
+2 RIN MH:IF33190
+1 FAMC @F14007@
+0 @I24499@ INDI
+1 RIN MH:I24499
+1 _UID 671c82722a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:17:35 GMT+5.5
+1 NAME Ganymedan Viruses /Viros Sol/
+2 GIVN Ganymedan Viruses
+2 SURN Viros Sol
+1 SEX M
+1 BIRT
+2 _UID 671c82772a7721efbc149a22ef79916b
+2 RIN MH:IF33191
+1 FAMC @F14008@
+0 @I24500@ INDI
+1 RIN MH:I24500
+1 _UID 671c82862a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:17:54 GMT+5.5
+1 NAME Callistoan Viruses /Viros Sol/
+2 GIVN Callistoan Viruses
+2 SURN Viros Sol
+1 SEX M
+1 BIRT
+2 _UID 671c828a2a7721efbc149a22ef79916b
+2 RIN MH:IF33192
+1 FAMC @F14009@
+0 @I24501@ INDI
+1 RIN MH:I24501
+1 _UID 671c82b567bf81efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:24:50 GMT+5.5
+1 NAME Lifebringer /Bios Sol/
+2 GIVN Lifebringer
+2 SURN Bios Sol
+1 SEX M
+1 BIRT
+2 _UID 671c82bb2a7721efbc149a22ef79916b
+2 RIN MH:IF33193
+1 FAMS @F14010@
+1 FAMS @F14011@
+1 FAMS @F14012@
+1 FAMS @F14013@
+1 FAMS @F14014@
+1 FAMS @F14015@
+1 FAMS @F14016@
+1 FAMS @F14017@
+1 FAMS @F14018@
+1 FAMS @F14019@
+1 FAMS @F14020@
+1 FAMS @F14021@
+1 FAMC @F11554@
+0 @I24502@ INDI
+1 RIN MH:I24502
+1 _UID 671c82da2a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:19:17 GMT+5.5
+1 NAME Plutonic Life /Bios Sol/
+2 GIVN Plutonic Life
+2 SURN Bios Sol
+1 SEX M
+1 BIRT
+2 _UID 671c82dd2a7721efbc149a22ef79916b
+2 RIN MH:IF33194
+1 FAMC @F14010@
+0 @I24503@ INDI
+1 RIN MH:I24503
+1 _UID 671c83112a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:20:13 GMT+5.5
+1 NAME Cerean Life /Bios Sol/
+2 GIVN Cerean Life
+2 SURN Bios Sol
+1 SEX M
+1 BIRT
+2 _UID 671c83152a7721efbc149a22ef79916b
+2 RIN MH:IF33195
+1 FAMC @F14011@
+0 @I24504@ INDI
+1 RIN MH:I24504
+1 _UID 671c83252a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:20:32 GMT+5.5
+1 NAME Martian Life /Bios Sol/
+2 GIVN Martian Life
+2 SURN Bios Sol
+1 SEX M
+1 BIRT
+2 _UID 671c83282a7721efbc149a22ef79916b
+2 RIN MH:IF33196
+1 FAMC @F14012@
+0 @I24505@ INDI
+1 RIN MH:I24505
+1 _UID 671c83602a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:21:31 GMT+5.5
+1 NAME Venusian Life /Bios Sol/
+2 GIVN Venusian Life
+2 SURN Bios Sol
+1 SEX M
+1 BIRT
+2 _UID 671c83632a7721efbc149a22ef79916b
+2 RIN MH:IF33197
+1 FAMC @F14014@
+0 @I24506@ INDI
+1 RIN MH:I24506
+1 _UID 671c83722a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:21:54 GMT+5.5
+1 NAME Tritonic Life /Bios Sol/
+2 GIVN Tritonic Life
+2 SURN Bios Sol
+1 SEX M
+1 BIRT
+2 _UID 671c837a2a7721efbc149a22ef79916b
+2 RIN MH:IF33198
+1 FAMC @F14015@
+0 @I24507@ INDI
+1 RIN MH:I24507
+1 _UID 671c838d2a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:22:18 GMT+5.5
+1 NAME Titanian Life /Bios Sol/
+2 GIVN Titanian Life
+2 SURN Bios Sol
+1 SEX M
+1 BIRT
+2 _UID 671c83922a7721efbc149a22ef79916b
+2 RIN MH:IF33199
+1 FAMC @F14016@
+0 @I24508@ INDI
+1 RIN MH:I24508
+1 _UID 671c83a32a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:22:39 GMT+5.5
+1 NAME Titanic Life /Bios Sol/
+2 GIVN Titanic Life
+2 SURN Bios Sol
+1 SEX M
+1 BIRT
+2 _UID 671c83a72a7721efbc149a22ef79916b
+2 RIN MH:IF33200
+1 FAMC @F14017@
+0 @I24509@ INDI
+1 RIN MH:I24509
+1 _UID 671c83b72a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:22:58 GMT+5.5
+1 NAME Enceladan Life /Bios Sol/
+2 GIVN Enceladan Life
+2 SURN Bios Sol
+1 SEX M
+1 BIRT
+2 _UID 671c83ba2a7721efbc149a22ef79916b
+2 RIN MH:IF33201
+1 FAMC @F14018@
+0 @I24510@ INDI
+1 RIN MH:I24510
+1 _UID 671c83d32a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:23:26 GMT+5.5
+1 NAME Europan Life /Bios Sol/
+2 GIVN Europan Life
+2 SURN Bios Sol
+1 SEX M
+1 BIRT
+2 _UID 671c83d62a7721efbc149a22ef79916b
+2 RIN MH:IF33202
+1 FAMC @F14019@
+0 @I24511@ INDI
+1 RIN MH:I24511
+1 _UID 671c83f62a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:24:02 GMT+5.5
+1 NAME Ganymedan Life /Bios Sol/
+2 GIVN Ganymedan Life
+2 SURN Bios Sol
+1 SEX M
+1 BIRT
+2 _UID 671c83fa2a7721efbc149a22ef79916b
+2 RIN MH:IF33203
+1 FAMC @F14020@
+0 @I24512@ INDI
+1 RIN MH:I24512
+1 _UID 671c840b2a7721efbc149a22ef79916b
+1 _UPD 26 OCT 2024 11:24:25 GMT+5.5
+1 NAME Callistoan Life /Bios Sol/
+2 GIVN Callistoan Life
+2 SURN Bios Sol
+1 SEX M
+1 BIRT
+2 _UID 671c84112a7721efbc149a22ef79916b
+2 RIN MH:IF33204
+1 FAMC @F14021@
 0 @F1@ FAM
 1 RIN MH:F1
 1 _UID 66dfdfd660f561efbbc69822ef79916c
 1 HUSB @I1@
 1 WIFE @I2@
 1 CHIL @I3@
+1 CHIL @I24471@
 1 MARR
 2 _UID 66dfdff62d3dc1efbbc69822ef79916c
 2 RIN MH:FF1
@@ -22183,7 +23539,7 @@
 1 RIN MH:F11554
 1 _UID 67065b9cb5be81efbbfb9822ef79916c
 1 HUSB @I25@
-1 CHIL @I22459@
+1 CHIL @I24501@
 0 @F13022@ FAM
 1 RIN MH:F13022
 1 _UID 670a57a0c3ec71efbbff9822ef79916c
@@ -24355,6 +25711,7 @@
 1 _UID 670fc56c539ae1efbc019822ef79916c
 1 HUSB @I23158@
 1 CHIL @I23159@
+1 CHIL @I24410@
 0 @F13353@ FAM
 1 RIN MH:F13353
 1 _UID 670fc56cfda961efbc019822ef79916c
@@ -27047,8 +28404,8 @@
 0 @F13841@ FAM
 1 RIN MH:F13841
 1 _UID 67168b1f64d7d1efbc0b9822ef79916c
-1 HUSB @I24163@
-1 WIFE @I24217@
+1 HUSB @I24217@
+1 WIFE @I24163@
 1 CHIL @I24164@
 1 CHIL @I24165@
 1 MARR
@@ -27057,8 +28414,8 @@
 0 @F13842@ FAM
 1 RIN MH:F13842
 1 _UID 67168b3264d7d1efbc0b9822ef79916c
-1 HUSB @I24164@
-1 WIFE @I24255@
+1 HUSB @I24255@
+1 WIFE @I24164@
 1 CHIL @I24166@
 1 CHIL @I24167@
 1 MARR
@@ -27067,8 +28424,8 @@
 0 @F13843@ FAM
 1 RIN MH:F13843
 1 _UID 67168b4964d7d1efbc0b9822ef79916c
-1 HUSB @I24166@
-1 WIFE @I24253@
+1 HUSB @I24253@
+1 WIFE @I24166@
 1 CHIL @I24168@
 1 CHIL @I24169@
 1 MARR
@@ -27236,8 +28593,8 @@
 0 @F13860@ FAM
 1 RIN MH:F13860
 1 _UID 67168cf064d7d1efbc0b9822ef79916c
-1 HUSB @I24199@
-1 WIFE @I24228@
+1 HUSB @I24228@
+1 WIFE @I24199@
 1 CHIL @I24201@
 1 CHIL @I24202@
 1 MARR
@@ -27329,8 +28686,8 @@
 0 @F13870@ FAM
 1 RIN MH:F13870
 1 _UID 67174a2264d7d1efbc0b9822ef79916c
-1 HUSB @I24214@
-1 WIFE @I24219@
+1 HUSB @I24219@
+1 WIFE @I24214@
 1 CHIL @I24218@
 1 MARR
 2 _UID 67174a22af8b01efbc0b9822ef79916c
@@ -27338,8 +28695,8 @@
 0 @F13872@ FAM
 1 RIN MH:F13872
 1 _UID 67174b2564d7d1efbc0b9822ef79916c
-1 HUSB @I24207@
-1 WIFE @I24223@
+1 HUSB @I24223@
+1 WIFE @I24207@
 1 CHIL @I24222@
 1 MARR
 2 _UID 67174b25af8b01efbc0b9822ef79916c
@@ -27347,8 +28704,8 @@
 0 @F13873@ FAM
 1 RIN MH:F13873
 1 _UID 67174bbc64d7d1efbc0b9822ef79916c
-1 HUSB @I24224@
-1 WIFE @I24210@
+1 HUSB @I24210@
+1 WIFE @I24224@
 1 CHIL @I24225@
 1 MARR
 2 _UID 67174bbcaf8b01efbc0b9822ef79916c
@@ -27364,8 +28721,8 @@
 0 @F13875@ FAM
 1 RIN MH:F13875
 1 _UID 67174c0164d7d1efbc0b9822ef79916c
-1 HUSB @I24201@
-1 WIFE @I24227@
+1 HUSB @I24227@
+1 WIFE @I24201@
 1 CHIL @I24226@
 1 MARR
 2 _UID 67174c01af8b01efbc0b9822ef79916c
@@ -27984,6 +29341,445 @@
 1 _UID 671bdbe72942d1efbc119822ef79916c
 1 HUSB @I24276@
 1 CHIL @I24409@
+0 @F13962@ FAM
+1 RIN MH:F13962
+1 _UID 671c64bc3ae051efbc129822ef79916c
+1 HUSB @I23168@
+1 CHIL @I24411@
+1 CHIL @I24412@
+0 @F13963@ FAM
+1 RIN MH:F13963
+1 _UID 671c65103ae051efbc129822ef79916c
+1 HUSB @I24411@
+1 CHIL @I24413@
+1 CHIL @I24414@
+0 @F13964@ FAM
+1 RIN MH:F13964
+1 _UID 671c67213ae051efbc129822ef79916c
+1 HUSB @I24414@
+1 WIFE @I24415@
+1 CHIL @I24416@
+1 CHIL @I24417@
+1 CHIL @I24418@
+1 MARR
+2 _UID 671c6721f1bc81efbc129822ef79916c
+2 RIN MH:FF1846
+0 @F13965@ FAM
+1 RIN MH:F13965
+1 _UID 671c67c53ae051efbc129822ef79916c
+1 HUSB @I24418@
+1 CHIL @I24419@
+1 CHIL @I24420@
+0 @F13966@ FAM
+1 RIN MH:F13966
+1 _UID 671c70d63ae051efbc129822ef79916c
+1 HUSB @I24413@
+1 CHIL @I24421@
+1 CHIL @I24422@
+0 @F13967@ FAM
+1 RIN MH:F13967
+1 _UID 671c70ea3ae051efbc129822ef79916c
+1 HUSB @I24422@
+1 CHIL @I24423@
+1 CHIL @I24424@
+0 @F13968@ FAM
+1 RIN MH:F13968
+1 _UID 671c70fa3ae051efbc129822ef79916c
+1 HUSB @I24424@
+1 CHIL @I24425@
+1 CHIL @I24426@
+0 @F13969@ FAM
+1 RIN MH:F13969
+1 _UID 671c711a3ae051efbc129822ef79916c
+1 HUSB @I24426@
+1 CHIL @I24427@
+1 CHIL @I24430@
+0 @F13970@ FAM
+1 RIN MH:F13970
+1 _UID 671c71243ae051efbc129822ef79916c
+1 HUSB @I24427@
+1 CHIL @I24428@
+1 CHIL @I24429@
+0 @F13971@ FAM
+1 RIN MH:F13971
+1 _UID 671c71433ae051efbc129822ef79916c
+1 HUSB @I24430@
+1 CHIL @I24431@
+1 CHIL @I24432@
+0 @F13972@ FAM
+1 RIN MH:F13972
+1 _UID 671c71503ae051efbc129822ef79916c
+1 HUSB @I24432@
+1 CHIL @I24433@
+1 CHIL @I24434@
+0 @F13973@ FAM
+1 RIN MH:F13973
+1 _UID 671c74323ae051efbc129822ef79916c
+1 HUSB @I24428@
+1 CHIL @I24435@
+1 CHIL @I24436@
+0 @F13974@ FAM
+1 RIN MH:F13974
+1 _UID 671c74573ae051efbc129822ef79916c
+1 HUSB @I24435@
+1 CHIL @I24437@
+1 CHIL @I24438@
+0 @F13975@ FAM
+1 RIN MH:F13975
+1 _UID 671c74823ae051efbc129822ef79916c
+1 HUSB @I24436@
+1 CHIL @I24439@
+1 CHIL @I24440@
+0 @F13976@ FAM
+1 RIN MH:F13976
+1 _UID 671c75063ae051efbc129822ef79916c
+1 HUSB @I24438@
+1 CHIL @I24441@
+1 CHIL @I24442@
+0 @F13977@ FAM
+1 RIN MH:F13977
+1 _UID 671c75333ae051efbc129822ef79916c
+1 HUSB @I24440@
+1 CHIL @I24443@
+0 @F13978@ FAM
+1 RIN MH:F13978
+1 _UID 671c75953ae051efbc129822ef79916c
+1 HUSB @I24439@
+1 CHIL @I24444@
+0 @F13979@ FAM
+1 RIN MH:F13979
+1 _UID 671c75a23ae051efbc129822ef79916c
+1 HUSB @I24444@
+1 CHIL @I24445@
+1 CHIL @I24446@
+1 CHIL @I24447@
+0 @F13980@ FAM
+1 RIN MH:F13980
+1 _UID 671c77ff3ae051efbc129822ef79916c
+1 HUSB @I24431@
+1 CHIL @I24448@
+1 CHIL @I24449@
+0 @F13981@ FAM
+1 RIN MH:F13981
+1 _UID 671c7a2e2a7721efbc149a22ef79916b
+1 HUSB @I24449@
+1 CHIL @I24450@
+1 CHIL @I24451@
+0 @F13982@ FAM
+1 RIN MH:F13982
+1 _UID 671c7a382a7721efbc149a22ef79916b
+1 HUSB @I24451@
+1 CHIL @I24452@
+1 CHIL @I24453@
+0 @F13983@ FAM
+1 RIN MH:F13983
+1 _UID 671c7a462a7721efbc149a22ef79916b
+1 HUSB @I24453@
+1 CHIL @I24454@
+1 CHIL @I24455@
+0 @F13984@ FAM
+1 RIN MH:F13984
+1 _UID 671c7a4e2a7721efbc149a22ef79916b
+1 HUSB @I24454@
+1 CHIL @I24456@
+1 CHIL @I24457@
+0 @F13985@ FAM
+1 RIN MH:F13985
+1 _UID 671c7a5f2a7721efbc149a22ef79916b
+1 HUSB @I24455@
+1 CHIL @I24458@
+1 CHIL @I24459@
+0 @F13986@ FAM
+1 RIN MH:F13986
+1 _UID 671c7a6e2a7721efbc149a22ef79916b
+1 HUSB @I24459@
+1 CHIL @I24460@
+1 CHIL @I24461@
+0 @F13987@ FAM
+1 RIN MH:F13987
+1 _UID 671c7a8d2a7721efbc149a22ef79916b
+1 HUSB @I24460@
+1 CHIL @I24462@
+0 @F13988@ FAM
+1 RIN MH:F13988
+1 _UID 671c7aa02a7721efbc149a22ef79916b
+1 HUSB @I24461@
+1 CHIL @I24463@
+1 CHIL @I24464@
+0 @F13989@ FAM
+1 RIN MH:F13989
+1 _UID 671c7aa92a7721efbc149a22ef79916b
+1 HUSB @I24464@
+1 CHIL @I24465@
+1 CHIL @I24466@
+0 @F13990@ FAM
+1 RIN MH:F13990
+1 _UID 671c7ab32a7721efbc149a22ef79916b
+1 HUSB @I24466@
+1 CHIL @I24467@
+1 CHIL @I24468@
+0 @F13991@ FAM
+1 RIN MH:F13991
+1 _UID 671c7e5a2a7721efbc149a22ef79916b
+1 HUSB @I40@
+1 CHIL @I24469@
+0 @F13992@ FAM
+1 RIN MH:F13992
+1 _UID 671c7e872a7721efbc149a22ef79916b
+1 HUSB @I24469@
+1 WIFE @I24470@
+1 CHIL @I24472@
+1 MARR
+2 _UID 671c7e87e12bf1efbc149a22ef79916b
+2 RIN MH:FF1847
+0 @F13993@ FAM
+1 RIN MH:F13993
+1 _UID 671c7e98e12bf1efbc149a22ef79916b
+1 WIFE @I24471@
+1 CHIL @I24470@
+1 CHIL @I24473@
+1 CHIL @I24474@
+1 CHIL @I24475@
+1 CHIL @I24476@
+1 CHIL @I24477@
+1 CHIL @I24478@
+1 CHIL @I24479@
+1 CHIL @I24480@
+1 CHIL @I24481@
+1 MARR
+2 _UID 671c7e9867bf81efbc149a22ef79916b
+2 RIN MH:FF1848
+0 @F13994@ FAM
+1 RIN MH:F13994
+1 _UID 671c7fc72a7721efbc149a22ef79916b
+1 WIFE @I24473@
+1 CHIL @I24482@
+0 @F13995@ FAM
+1 RIN MH:F13995
+1 _UID 671c7fe82a7721efbc149a22ef79916b
+1 WIFE @I24474@
+1 CHIL @I24483@
+0 @F13996@ FAM
+1 RIN MH:F13996
+1 _UID 671c7ffb2a7721efbc149a22ef79916b
+1 WIFE @I24475@
+1 CHIL @I24484@
+1 CHIL @I24485@
+0 @F13997@ FAM
+1 RIN MH:F13997
+1 _UID 671c80182a7721efbc149a22ef79916b
+1 WIFE @I24476@
+1 CHIL @I24486@
+1 CHIL @I24487@
+1 CHIL @I24488@
+1 CHIL @I24489@
+0 @F13999@ FAM
+1 RIN MH:F13999
+1 _UID 671c81482a7721efbc149a22ef79916b
+1 HUSB @I24469@
+1 WIFE @I24477@
+1 CHIL @I24490@
+1 MARR
+2 _UID 671c844de12bf1efbc149a22ef79916b
+2 RIN MH:FF1862
+0 @F14000@ FAM
+1 RIN MH:F14000
+1 _UID 671c81672a7721efbc149a22ef79916b
+1 HUSB @I24469@
+1 WIFE @I24478@
+1 CHIL @I24491@
+1 MARR
+2 _UID 671c844d67bf81efbc149a22ef79916b
+2 RIN MH:FF1863
+0 @F14001@ FAM
+1 RIN MH:F14001
+1 _UID 671c817d2a7721efbc149a22ef79916b
+1 HUSB @I24469@
+1 WIFE @I24479@
+1 CHIL @I24492@
+1 MARR
+2 _UID 671c844d2a7721efbc149a22ef79916b
+2 RIN MH:FF1861
+0 @F14002@ FAM
+1 RIN MH:F14002
+1 _UID 671c81a12a7721efbc149a22ef79916b
+1 HUSB @I24469@
+1 WIFE @I24480@
+1 CHIL @I24493@
+1 MARR
+2 _UID 671c844dace351efbc149a22ef79916b
+2 RIN MH:FF1864
+0 @F14003@ FAM
+1 RIN MH:F14003
+1 _UID 671c81b82a7721efbc149a22ef79916b
+1 HUSB @I24469@
+1 WIFE @I24482@
+1 CHIL @I24494@
+1 MARR
+2 _UID 671c844db1e661efbc149a22ef79916b
+2 RIN MH:FF1865
+0 @F14004@ FAM
+1 RIN MH:F14004
+1 _UID 671c81cd2a7721efbc149a22ef79916b
+1 HUSB @I24469@
+1 WIFE @I24483@
+1 CHIL @I24495@
+1 MARR
+2 _UID 671c844d7abab1efbc149a22ef79916b
+2 RIN MH:FF1866
+0 @F14005@ FAM
+1 RIN MH:F14005
+1 _UID 671c822a2a7721efbc149a22ef79916b
+1 HUSB @I24469@
+1 WIFE @I24485@
+1 CHIL @I24496@
+1 MARR
+2 _UID 671c844d377211efbc149a22ef79916b
+2 RIN MH:FF1868
+0 @F14006@ FAM
+1 RIN MH:F14006
+1 _UID 671c82432a7721efbc149a22ef79916b
+1 HUSB @I24469@
+1 WIFE @I24484@
+1 CHIL @I24497@
+1 MARR
+2 _UID 671c844dfc2ec1efbc149a22ef79916b
+2 RIN MH:FF1867
+0 @F14007@ FAM
+1 RIN MH:F14007
+1 _UID 671c825a2a7721efbc149a22ef79916b
+1 HUSB @I24469@
+1 WIFE @I24487@
+1 CHIL @I24498@
+1 MARR
+2 _UID 671c844dc624a1efbc149a22ef79916b
+2 RIN MH:FF1869
+0 @F14008@ FAM
+1 RIN MH:F14008
+1 _UID 671c826f2a7721efbc149a22ef79916b
+1 HUSB @I24469@
+1 WIFE @I24488@
+1 CHIL @I24499@
+1 MARR
+2 _UID 671c844dd78791efbc149a22ef79916b
+2 RIN MH:FF1870
+0 @F14009@ FAM
+1 RIN MH:F14009
+1 _UID 671c82832a7721efbc149a22ef79916b
+1 HUSB @I24469@
+1 WIFE @I24489@
+1 CHIL @I24500@
+1 MARR
+2 _UID 671c844deda5f1efbc149a22ef79916b
+2 RIN MH:FF1871
+0 @F14010@ FAM
+1 RIN MH:F14010
+1 _UID 671c82b52a7721efbc149a22ef79916b
+1 HUSB @I24501@
+1 WIFE @I24470@
+1 CHIL @I24502@
+1 MARR
+2 _UID 671c82b5e12bf1efbc149a22ef79916b
+2 RIN MH:FF1849
+0 @F14011@ FAM
+1 RIN MH:F14011
+1 _UID 671c830e2a7721efbc149a22ef79916b
+1 HUSB @I24501@
+1 WIFE @I24477@
+1 CHIL @I24503@
+1 MARR
+2 _UID 671c842ae12bf1efbc149a22ef79916b
+2 RIN MH:FF1851
+0 @F14012@ FAM
+1 RIN MH:F14012
+1 _UID 671c83222a7721efbc149a22ef79916b
+1 HUSB @I24501@
+1 WIFE @I24478@
+1 CHIL @I24504@
+1 MARR
+2 _UID 671c842a67bf81efbc149a22ef79916b
+2 RIN MH:FF1852
+0 @F14013@ FAM
+1 RIN MH:F14013
+1 _UID 671c833d2a7721efbc149a22ef79916b
+1 HUSB @I24501@
+1 WIFE @I24479@
+1 CHIL @I22459@
+1 MARR
+2 _UID 671c842a2a7721efbc149a22ef79916b
+2 RIN MH:FF1850
+0 @F14014@ FAM
+1 RIN MH:F14014
+1 _UID 671c835d2a7721efbc149a22ef79916b
+1 HUSB @I24501@
+1 WIFE @I24480@
+1 CHIL @I24505@
+1 MARR
+2 _UID 671c842aace351efbc149a22ef79916b
+2 RIN MH:FF1853
+0 @F14015@ FAM
+1 RIN MH:F14015
+1 _UID 671c836f2a7721efbc149a22ef79916b
+1 HUSB @I24501@
+1 WIFE @I24482@
+1 CHIL @I24506@
+1 MARR
+2 _UID 671c842ab1e661efbc149a22ef79916b
+2 RIN MH:FF1854
+0 @F14016@ FAM
+1 RIN MH:F14016
+1 _UID 671c83892a7721efbc149a22ef79916b
+1 HUSB @I24501@
+1 WIFE @I24483@
+1 CHIL @I24507@
+1 MARR
+2 _UID 671c842a7abab1efbc149a22ef79916b
+2 RIN MH:FF1855
+0 @F14017@ FAM
+1 RIN MH:F14017
+1 _UID 671c839f2a7721efbc149a22ef79916b
+1 HUSB @I24501@
+1 WIFE @I24484@
+1 CHIL @I24508@
+1 MARR
+2 _UID 671c842afc2ec1efbc149a22ef79916b
+2 RIN MH:FF1856
+0 @F14018@ FAM
+1 RIN MH:F14018
+1 _UID 671c83b32a7721efbc149a22ef79916b
+1 HUSB @I24501@
+1 WIFE @I24485@
+1 CHIL @I24509@
+1 MARR
+2 _UID 671c842a377211efbc149a22ef79916b
+2 RIN MH:FF1857
+0 @F14019@ FAM
+1 RIN MH:F14019
+1 _UID 671c83cf2a7721efbc149a22ef79916b
+1 HUSB @I24501@
+1 WIFE @I24487@
+1 CHIL @I24510@
+1 MARR
+2 _UID 671c842ac624a1efbc149a22ef79916b
+2 RIN MH:FF1858
+0 @F14020@ FAM
+1 RIN MH:F14020
+1 _UID 671c83f22a7721efbc149a22ef79916b
+1 HUSB @I24501@
+1 WIFE @I24488@
+1 CHIL @I24511@
+1 MARR
+2 _UID 671c842ad78791efbc149a22ef79916b
+2 RIN MH:FF1859
+0 @F14021@ FAM
+1 RIN MH:F14021
+1 _UID 671c84082a7721efbc149a22ef79916b
+1 HUSB @I24501@
+1 WIFE @I24489@
+1 CHIL @I24512@
+1 MARR
+2 _UID 671c842aeda5f1efbc149a22ef79916b
+2 RIN MH:FF1860
 0 @S13@ SOUR
 1 RIN MH:S13
 0 @S14@ SOUR
