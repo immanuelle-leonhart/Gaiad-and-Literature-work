@@ -1,2691 +1,970 @@
 GEDCOM Import Log - 
 File: export-Ancestors.ged
+    Source program: Geni.com
+    Program version: 1.0
+    Date of file: 29 NOV 2024
+    2 TIME 12:21:40
     2 VERS 5.5.1
     2 FORM LINEAGE-LINKED
     Character set: UTF-8
-    Source program: MYHERITAGE
-    Program version: 8.0.0.8645
-    Destination: MYHERITAGE
-    Date of file: 28 NOV 2024
-    2 TIME 13:13:27 
-    2 _TIMEZONE GMT-8
-Unknown info (line 21)
-    0  _PUBLISH
-    1 _USERNAME immanuelleleonhart@@gmail.com
-    1 _DISABLED Y
+Unknown info (line 17)
+    1 RFN geni:6000000211780118843
 
-    1 RIN MH:U1
-    1 RIN MH:U2
-    1 RIN MH:U3
-    1 RIN MH:U4
-    1 RIN MH:U5
-    1 ADDR
-    2 CITY Grenoble
-    2 STAE Rhône-Alpes
-    2 CTRY France
-    1 RIN MH:U6
-    1 RIN MH:U7
-    1 RIN MH:U8
+Unknown info (line 77)
+    1 RFN geni:6000000002188294161
+
+Unknown info (line 78)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 97)
+    1 RFN geni:6000000013743920129
+
+Unknown info (line 98)
+    1 SUBM @S6000000000504078778@
+
+Unknown info (line 167)
+    1 RFN geni:6000000002188294196
+
+Unknown info (line 168)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 301)
+    1 RFN geni:6000000002188294179
+
+Unknown info (line 302)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 385)
+    1 RFN geni:6000000002188294190
+
+Unknown info (line 386)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 518)
+    1 RFN geni:6000000002188294202
+
+Unknown info (line 519)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 590)
+    1 RFN geni:6000000002188294210
+
+Unknown info (line 591)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 608)
+    1 RFN geni:6000000013743836337
+
+Unknown info (line 609)
+    1 SUBM @S6000000000504078778@
+
+Unknown info (line 714)
+    1 RFN geni:6000000002187821519
+
+Unknown info (line 715)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 737)
+    1 RFN geni:6000000013734369394
+
+Unknown info (line 738)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 759)
+    1 RFN geni:6000000181192397840
+
+Unknown info (line 760)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 780)
+    2 _MARNM Bagratuni
+
+Unknown info (line 825)
+    1 RFN geni:6000000002187821508
+
+Unknown info (line 826)
+    1 SUBM @S4515350983380057423@
+
+Unknown info (line 895)
+    1 RFN geni:6000000006101358003
+
+Unknown info (line 896)
+    1 SUBM @S6000000006100279149@
+
+Unknown info (line 923)
+    1 RFN geni:6000000013732802597
+
+Unknown info (line 924)
+    1 SUBM @S6000000007278581048@
+
+Unknown info (line 993)
+    1 RFN geni:6000000004287405442
+
+Unknown info (line 994)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 1018)
+    1 RFN geni:5285964076010086318
+
+Unknown info (line 1019)
+    1 SUBM @S4515350983380057423@
+
+Unknown info (line 1030)
+    2 _MARNM Armenia
+
+Unknown info (line 1053)
+    1 RFN geni:6000000002187821537
+
+Unknown info (line 1054)
+    1 SUBM @S4515350983380057423@
+
+Unknown info (line 1136)
+    1 RFN geni:6000000186843710943
+
+Unknown info (line 1137)
+    1 SUBM @S6000000001654183919@
+
+Unknown info (line 1167)
+    1 RFN geni:6000000192919999821
+
+Unknown info (line 1168)
+    1 SUBM @S6000000001654183919@
+
+Unknown info (line 1193)
+    1 RFN geni:6000000002188294711
+
+Unknown info (line 1194)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 1202)
+    2 _MARNM NN
+
+Unknown info (line 1208)
+    1 RFN geni:6000000002188294719
+
+Unknown info (line 1209)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 1230)
+    1 RFN geni:6000000002187821530
+
+Unknown info (line 1231)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 1274)
+    1 RFN geni:6000000009305017348
+
+Unknown info (line 1275)
+    1 SUBM @S4515350983380057423@
+
+Unknown info (line 1312)
+    1 RFN geni:6000000192920527913
+
+Unknown info (line 1313)
+    1 SUBM @S6000000001654183919@
+
+Unknown info (line 1320)
+    2 _MARNM Katchen
+
+Unknown info (line 1331)
+    1 RFN geni:6000000002188294726
+
+Unknown info (line 1332)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 1350)
+    1 RFN geni:6000000002188294734
+
+Unknown info (line 1351)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 1425)
+    1 RFN geni:6000000003645912103
+
+Unknown info (line 1426)
+    1 SUBM @S5206017453450089696@
+
+Unknown info (line 1457)
+    2 _MARNM Siounie
+
+Unknown info (line 1468)
+    1 RFN geni:6000000002188294335
+
+Unknown info (line 1469)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 1477)
+    2 _MARNM ???
+
+Unknown info (line 1483)
+    1 RFN geni:6000000002188294742
+
+Unknown info (line 1484)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 1520)
+    1 RFN geni:6000000002188294749
+
+Unknown info (line 1521)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 1533)
+    2 _MARNM Haroutjoun
+
+Unknown info (line 1539)
+    1 RFN geni:6000000002188294757
+
+Unknown info (line 1540)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 1568)
+    1 RFN geni:6000000003897590336
+
+Unknown info (line 1569)
+    1 SUBM @S6000000001808673965@
+
+Unknown info (line 1608)
+    2 _MARNM of Siounie
+
+Unknown info (line 1619)
+    1 RFN geni:6000000002188294327
+
+Unknown info (line 1620)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 1628)
+    2 _MARNM Iberia
+
+Unknown info (line 1634)
+    1 RFN geni:6000000002188294388
+
+Unknown info (line 1635)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 1654)
+    1 RFN geni:6000000002188294764
+
+Unknown info (line 1655)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 1663)
+    2 _MARNM ???
+
+Unknown info (line 1669)
+    1 RFN geni:6000000002188294772
+
+Unknown info (line 1670)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 1708)
+    1 RFN geni:6000000009305017365
+
+Unknown info (line 1709)
+    1 SUBM @S6000000006277210343@
+
+Unknown info (line 1727)
+    2 _MARNM Siounides
+
+Unknown info (line 1739)
+    1 RFN geni:6000000191468513861
+
+Unknown info (line 1740)
+    1 SUBM @S6000000036467764009@
+
+Unknown info (line 1759)
+    1 RFN geni:6000000002188294779
+
+Unknown info (line 1760)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 1768)
+    2 _MARNM ???
+
+Unknown info (line 1774)
+    1 RFN geni:6000000002188294787
+
+Unknown info (line 1775)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 1795)
+    1 RFN geni:6000000006277450036
+
+Unknown info (line 1796)
+    1 SUBM @S6000000000944759892@
+
+Unknown info (line 1816)
+    2 _MARNM Siounides
+
+Unknown info (line 1828)
+    1 RFN geni:6000000205058295014
+
+Unknown info (line 1829)
+    1 SUBM @S6000000176757227905@
+
+Unknown info (line 1848)
+    1 RFN geni:6000000002188294794
+
+Unknown info (line 1849)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 1857)
+    2 _MARNM ???
+
+Unknown info (line 1863)
+    1 RFN geni:6000000002188294802
+
+Unknown info (line 1864)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 1872)
+    2 _MARNM Arshakuni
+
+Unknown info (line 1899)
+    1 RFN geni:6000000003827657293
+
+Unknown info (line 1900)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 1940)
+    1 RFN geni:6000000009305076808
+
+Unknown info (line 1941)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 1968)
+    2 _MARNM Siounides
+
+Unknown info (line 1983)
+    1 RFN geni:6000000205059459836
+
+Unknown info (line 1984)
+    1 SUBM @S6000000176757227905@
+
+Unknown info (line 2003)
+    1 RFN geni:6000000002188294809
+
+Unknown info (line 2004)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 2012)
+    2 _MARNM ???
+
+Unknown info (line 2018)
+    1 RFN geni:6000000002188294817
+
+Unknown info (line 2019)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 2026)
+    2 _MARNM Arshakuni
+
+Unknown info (line 2090)
+    1 RFN geni:6000000003827657299
+
+Unknown info (line 2091)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 2113)
+    1 RFN geni:6000000009305076812
+
+Unknown info (line 2114)
+    1 SUBM @S6000000009304682293@
+
+Unknown info (line 2122)
+    2 _MARNM Siounides
+
+Unknown info (line 2138)
+    1 RFN geni:6000000205059406838
+
+Unknown info (line 2139)
+    1 SUBM @S6000000176757227905@
+
+Unknown info (line 2147)
+    2 _MARNM Spram
+
+Unknown info (line 2153)
+    1 RFN geni:6000000002188294832
+
+Unknown info (line 2154)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 2162)
+    2 _MARNM 3rd Mihranid
+
+Unknown info (line 2176)
+    1 RFN geni:6000000047395592896
+
+Unknown info (line 2177)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 2197)
+    1 RFN geni:6000000009305076816
+
+Unknown info (line 2198)
+    1 SUBM @S6000000009304682293@
+
+Unknown info (line 2206)
+    2 _MARNM Siounides
+
+Unknown info (line 2221)
+    1 RFN geni:6000000205059583823
+
+Unknown info (line 2222)
+    1 SUBM @S6000000176757227905@
+
+Unknown info (line 2230)
+    2 _MARNM NN
+
+Unknown info (line 2240)
+    1 RFN geni:6000000002188294847
+
+Unknown info (line 2241)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 2248)
+    2 _MARNM Prince of Caucasian Albania
+
+Unknown info (line 2296)
+    1 RFN geni:6000000047394791291
+
+Unknown info (line 2297)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 2335)
+    1 RFN geni:6000000009305076821
+
+Unknown info (line 2336)
+    1 SUBM @S6000000009304682293@
+
+Unknown info (line 2345)
+    2 _MARNM Sionides
+
+Unknown info (line 2360)
+    1 RFN geni:6000000205059668881
+
+Unknown info (line 2361)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 2369)
+    2 _MARNM Siounides
+
+Unknown info (line 2377)
+    1 RFN geni:6000000205246388876
+
+Unknown info (line 2378)
+    1 SUBM @S6000000176757227905@
+
+Unknown info (line 2386)
+    2 _MARNM Mihranid
+
+Unknown info (line 2426)
+    1 RFN geni:6000000002188294854
+
+Unknown info (line 2427)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 2436)
+    2 _MARNM Goridoukht
+
+Unknown info (line 2442)
+    1 RFN geni:6000000002188294862
+
+Unknown info (line 2443)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 2456)
+    1 RFN geni:6000000009305076825
+
+Unknown info (line 2457)
+    1 SUBM @S6000000009304682293@
+
+Unknown info (line 2465)
+    2 _MARNM ???
+
+Unknown info (line 2471)
+    1 RFN geni:6000000002188294449
+
+Unknown info (line 2472)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 2481)
+    2 _MARNM Siounides
+
+Unknown info (line 2496)
+    1 RFN geni:6000000205060383847
+
+Unknown info (line 2497)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 2516)
+    1 RFN geni:6000000002188294869
+
+Unknown info (line 2517)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 2525)
+    2 _MARNM ???
+
+Unknown info (line 2531)
+    1 RFN geni:6000000002188294877
+
+Unknown info (line 2532)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 2545)
+    1 RFN geni:6000000009305076829
+
+Unknown info (line 2546)
+    1 SUBM @S6000000009304682293@
+
+Unknown info (line 2554)
+    2 _MARNM NN
+
+Unknown info (line 2560)
+    1 RFN geni:6000000002188294464
+
+Unknown info (line 2561)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 2569)
+    2 _MARNM Siounides
+
+Unknown info (line 2584)
+    1 RFN geni:6000000205109046841
+
+Unknown info (line 2585)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 2604)
+    1 RFN geni:6000000002188294884
+
+Unknown info (line 2605)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 2613)
+    2 _MARNM NN
+
+Unknown info (line 2619)
+    1 RFN geni:6000000002188294892
+
+Unknown info (line 2620)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 2645)
+    1 RFN geni:6000000080989957954
+
+Unknown info (line 2646)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 2655)
+    2 _MARNM ???
+
+Unknown info (line 2661)
+    1 RFN geni:6000000002188294479
+
+Unknown info (line 2662)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 2670)
+    2 _MARNM Siounides
+
+Unknown info (line 2683)
+    1 RFN geni:6000000205109189834
+
+Unknown info (line 2684)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 2691)
+    2 _MARNM Albania
+
+Unknown info (line 2703)
+    1 RFN geni:6000000002188294899
+
+Unknown info (line 2704)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 2712)
+    2 _MARNM ???
+
+Unknown info (line 2718)
+    1 RFN geni:6000000002188294907
+
+Unknown info (line 2719)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 2727)
+    2 _MARNM ???
+
+Unknown info (line 2733)
+    1 RFN geni:6000000002188294494
+
+Unknown info (line 2734)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 2742)
+    2 _MARNM Siounides
+
+Unknown info (line 2755)
+    1 RFN geni:6000000205109152860
+
+Unknown info (line 2756)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 2763)
+    2 _MARNM Albania
+
+Unknown info (line 2774)
+    1 RFN geni:6000000002188294914
+
+Unknown info (line 2775)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 2783)
+    2 _MARNM ???
+
+Unknown info (line 2789)
+    1 RFN geni:6000000002188294922
+
+Unknown info (line 2790)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 2798)
+    2 _MARNM ???
+
+Unknown info (line 2804)
+    1 RFN geni:6000000002188294509
+
+Unknown info (line 2805)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 2813)
+    2 _MARNM Siounides
+
+Unknown info (line 2826)
+    1 RFN geni:6000000205109472822
+
+Unknown info (line 2827)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 2847)
+    1 RFN geni:6000000002188294929
+
+Unknown info (line 2848)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 2856)
+    2 _MARNM ???
+
+Unknown info (line 2862)
+    1 RFN geni:6000000002188294937
+
+Unknown info (line 2863)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 2871)
+    2 _MARNM ???
+
+Unknown info (line 2877)
+    1 RFN geni:6000000002188294524
+
+Unknown info (line 2878)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 2886)
+    2 _MARNM Siounides
+
+Unknown info (line 2898)
+    1 RFN geni:6000000205126777845
+
+Unknown info (line 2899)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 2906)
+    2 _MARNM Albania
+
+Unknown info (line 2917)
+    1 RFN geni:6000000002188294944
+
+Unknown info (line 2918)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 2926)
+    2 _MARNM ???
+
+Unknown info (line 2932)
+    1 RFN geni:6000000002188294952
+
+Unknown info (line 2933)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 2941)
+    2 _MARNM ???
+
+Unknown info (line 2947)
+    1 RFN geni:6000000002188294539
+
+Unknown info (line 2948)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 2956)
+    2 _MARNM Siounides
+
+Unknown info (line 2969)
+    1 RFN geni:6000000205160054835
+
+Unknown info (line 2970)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 2978)
+    2 _MARNM ???
+
+Unknown info (line 2981)
+    1 RFN geni:6000000002188294967
+
+Unknown info (line 2982)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 2991)
+    2 _MARNM Mihranid
+
+Unknown info (line 3013)
+    1 RFN geni:6000000171735195276
+
+Unknown info (line 3014)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 3026)
+    2 _MARNM Siounides
+
+Unknown info (line 3038)
+    1 RFN geni:6000000002188294546
+
+Unknown info (line 3039)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 3047)
+    2 _MARNM ???
+
+Unknown info (line 3053)
+    1 RFN geni:6000000002188294554
+
+Unknown info (line 3054)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 3061)
+    2 _MARNM Gardman
+
+Unknown info (line 3102)
+    1 RFN geni:6000000002188294978
+
+Unknown info (line 3103)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 3111)
+    2 _MARNM ???
+
+Unknown info (line 3117)
+    1 RFN geni:6000000002188294986
+
+Unknown info (line 3118)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 3126)
+    2 _MARNM NN
+
+Unknown info (line 3132)
+    1 RFN geni:6000000002188294569
+
+Unknown info (line 3133)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 3142)
+    2 _MARNM Siounides
+
+Unknown info (line 3154)
+    1 RFN geni:6000000205200405880
+
+Unknown info (line 3155)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 3163)
+    2 _MARNM Siuniudes
+
+Unknown info (line 3169)
+    1 RFN geni:6000000002188294584
+
+Unknown info (line 3170)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 3179)
+    2 _MARNM Sionides
+
+Unknown info (line 3191)
+    1 RFN geni:6000000205200827852
+
+Unknown info (line 3192)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 3200)
+    2 _MARNM Vram
+
+Unknown info (line 3211)
+    1 RFN geni:6000000002188294591
+
+Unknown info (line 3212)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 3220)
+    2 _MARNM ???
+
+Unknown info (line 3226)
+    1 RFN geni:6000000002188294599
+
+Unknown info (line 3227)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 3235)
+    2 _MARNM NN
+
+Unknown info (line 3241)
+    1 RFN geni:6000000002188294614
+
+Unknown info (line 3242)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 3251)
+    2 _MARNM Sionides
+
+Unknown info (line 3263)
+    1 RFN geni:6000000205200437903
+
+Unknown info (line 3264)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 3272)
+    2 _MARNM Siounie
+
+Unknown info (line 3282)
+    1 RFN geni:6000000002188294629
+
+Unknown info (line 3283)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 3292)
+    2 _MARNM Siounides
+
+Unknown info (line 3305)
+    1 RFN geni:6000000205201147833
+
+Unknown info (line 3306)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 3315)
+    2 _MARNM Sionie
+
+Unknown info (line 3327)
+    1 RFN geni:6000000002188294637
+
+Unknown info (line 3328)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 3336)
+    2 _MARNM ???
+
+Unknown info (line 3345)
+    1 RFN geni:6000000002188294645
+
+Unknown info (line 3346)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 3354)
+    2 _MARNM Siounides
+
+Unknown info (line 3362)
+    1 RFN geni:6000000205201123851
+
+Unknown info (line 3363)
+    1 SUBM @S6000000176757227905@
+
+Unknown info (line 3371)
+    2 _MARNM NN
+
+Unknown info (line 3377)
+    1 RFN geni:6000000002188294661
+
+Unknown info (line 3378)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 3387)
+    2 _MARNM Siounides
+
+Unknown info (line 3399)
+    1 RFN geni:6000000205900286851
+
+Unknown info (line 3400)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 3408)
+    2 _MARNM Siounides
+
+Unknown info (line 3425)
+    1 RFN geni:6000000205201304831
+
+Unknown info (line 3426)
+    1 SUBM @S6000000176757227905@
+
+Unknown info (line 3434)
+    2 _MARNM Andvok
+
+Unknown info (line 3446)
+    1 RFN geni:6000000002188294668
+
+Unknown info (line 3447)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 3455)
+    2 _MARNM NN
+
+Unknown info (line 3458)
+    1 RFN geni:6000000002188294676
+
+Unknown info (line 3459)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 3467)
+    2 _MARNM Andvok
+
+Unknown info (line 3478)
+    1 RFN geni:6000000002188294681
+
+Unknown info (line 3479)
+    1 SUBM @S6000000003783574804@
+
+Unknown info (line 3487)
+    2 _MARNM NN
+
+Unknown info (line 3493)
+    1 RFN geni:6000000002188294689
+
+Unknown info (line 3494)
+    1 SUBM @S6000000003783574804@
+
+    1 NAME Eric Borsheim
+    1 NAME Bradley Thomas Kassian
+    1 NAME Harlan Gilbert
+    1 NAME Pablo Menéndez-Ponte Alonso
+    1 NAME David Robert Wooten
+    1 NAME Justin Durand
     1 ADDR
     2 CITY Denver
     2 STAE Colorado
     2 POST 80202
     2 CTRY United States
-    1 RIN MH:U9
-    1 RIN MH:U10
-    1 RIN MH:U11
-    1 RIN MH:U12
-    1 RIN MH:U13
-    1 RIN MH:U14
-    1 RIN MH:U15
-    1 ADDR
-    2 CITY Santiago
-    2 STAE Región Metropolitana
-    2 CTRY Chile
-    1 RIN MH:U16
-    1 RIN MH:U17
-    1 RIN MH:U18
-    1 ADDR
-    2 CITY Waihi
-    2 STAE Waikato
-    2 CTRY New Zealand
-    1 RIN MH:U19
-    1 RIN MH:U20
-    1 RIN MH:U21
-    1 RIN MH:U22
-    1 RIN MH:U23
-    1 RIN MH:U24
-    1 RIN MH:U25
-    1 RIN MH:U26
-    1 RIN MH:U27
-Unknown info (line 96)
-    1 RIN MH:I1
-
-Unknown info (line 98)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 103)
-    2 _UID 6748dcb26f24c1efa39b001a7dda7115
-
-Unknown info (line 104)
-    2 RIN MH:IF1
-
-Unknown info (line 107)
-    1 RIN MH:I2
-
-Unknown info (line 109)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 116)
-    2 _UID 6748dcb222ec61efa39b001a7dda7115
-
-Unknown info (line 117)
-    2 RIN MH:IF2
-
-Unknown info (line 121)
-    2 _UID 6748dcb23fe951efa39b001a7dda7115
-
-Unknown info (line 122)
-    2 RIN MH:IF3
-
-Unknown info (line 203)
-    2 _PHOTO_RIN MH:P534
-
-Unknown info (line 205)
-    1 RIN MH:I3
-
-Unknown info (line 207)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 216)
-    2 _UID 6748dcb22e6261efa39b001a7dda7115
-
-Unknown info (line 217)
-    2 RIN MH:IF4
-
-Unknown info (line 220)
-    2 _UID 6748dcb2336751efa39b001a7dda7115
-
-Unknown info (line 221)
-    2 RIN MH:IF5
-
-Unknown info (line 231)
-    1 RIN MH:I4
-
-Unknown info (line 233)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 242)
-    2 _UID 6748dcb24fc7b1efa39b001a7dda7115
-
-Unknown info (line 243)
-    2 RIN MH:IF6
-
-Unknown info (line 246)
-    2 _UID 6748dcb2849b61efa39b001a7dda7115
-
-Unknown info (line 247)
-    2 RIN MH:IF7
-
-Unknown info (line 280)
-    2 _PHOTO_RIN MH:P533
-
-Unknown info (line 282)
-    1 RIN MH:I5
-
-Unknown info (line 284)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 294)
-    2 _UID 6748dcb2c5ddc1efa39b001a7dda7115
-
-Unknown info (line 295)
-    2 RIN MH:IF8
-
-Unknown info (line 298)
-    2 _UID 6748dcb24349b1efa39b001a7dda7115
-
-Unknown info (line 299)
-    2 RIN MH:IF9
-
-Unknown info (line 450)
-    2 _PHOTO_RIN MH:P526
-
-Unknown info (line 455)
-    2 _PHOTO_RIN MH:P519
-
-Unknown info (line 457)
-    1 RIN MH:I6
-
-Unknown info (line 459)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 468)
-    2 _UID 6748dcb228f4f1efa39b001a7dda7115
-
-Unknown info (line 469)
-    2 RIN MH:IF10
-
-Unknown info (line 472)
-    2 _UID 6748dcb2c9d391efa39b001a7dda7115
-
-Unknown info (line 473)
-    2 RIN MH:IF11
-
-Unknown info (line 483)
-    1 RIN MH:I7
-
-Unknown info (line 485)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 490)
-    2 _UID 6748dcb2d6a341efa39b001a7dda7115
-
-Unknown info (line 491)
-    2 RIN MH:IF12
-
-Unknown info (line 494)
-    2 _UID 6748dcb2cba671efa39b001a7dda7115
-
-Unknown info (line 495)
-    2 RIN MH:IF13
-
-Unknown info (line 500)
-    1 RIN MH:I8
-
-Unknown info (line 502)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 506)
-    2 _MARNM légendaire roi de Calydon
-
-Unknown info (line 509)
-    2 _UID 6748dcb2866ed1efa39b001a7dda7115
-
-Unknown info (line 510)
-    2 RIN MH:IF14
-
-Unknown info (line 513)
-    2 _UID 6748dcb24d3201efa39b001a7dda7115
-
-Unknown info (line 514)
-    2 RIN MH:IF15
-
-Unknown info (line 523)
-    1 RIN MH:I9
-
-Unknown info (line 525)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 529)
-    2 _MARNM Pleuron
-
-Unknown info (line 532)
-    2 _UID 6748dcb2117191efa39b001a7dda7115
-
-Unknown info (line 533)
-    2 RIN MH:IF16
-
-Unknown info (line 536)
-    2 _UID 6748dcb2da2d41efa39b001a7dda7115
-
-Unknown info (line 537)
-    2 RIN MH:IF17
-
-Unknown info (line 546)
-    1 RIN MH:I10
-
-Unknown info (line 548)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 636)
-    2 _PHOTO_RIN MH:P518
-
-Unknown info (line 641)
-    2 _PHOTO_RIN MH:P514
-
-Unknown info (line 643)
-    1 RIN MH:I11
-
-Unknown info (line 645)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 657)
-    2 _UID 6748dcb2c7a821efa39b001a7dda7115
-
-Unknown info (line 658)
-    2 RIN MH:IF18
-
-Unknown info (line 661)
-    2 _UID 6748dcb2cf4f91efa39b001a7dda7115
-
-Unknown info (line 662)
-    2 RIN MH:IF19
-
-Unknown info (line 1283)
-    2 _PHOTO_RIN MH:P475
-
-Unknown info (line 1285)
-    1 RIN MH:I12
-
-Unknown info (line 1287)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 1300)
-    1 RIN MH:I13
-
-Unknown info (line 1302)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 1308)
-    1 RIN MH:I14
-
-Unknown info (line 1310)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 1314)
-    2 _MARNM Calydon
-
-Unknown info (line 1317)
-    2 _UID 6748dcb2ea0671efa39b001a7dda7115
-
-Unknown info (line 1318)
-    2 RIN MH:IF20
-
-Unknown info (line 1321)
-    2 _UID 6748dcb26c9201efa39b001a7dda7115
-
-Unknown info (line 1322)
-    2 RIN MH:IF21
-
-Unknown info (line 1331)
-    1 RIN MH:I15
-
-Unknown info (line 1333)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 1337)
-    2 _MARNM Aetolia
-
-Unknown info (line 1340)
-    2 _UID 6748dcb2f576a1efa39b001a7dda7115
-
-Unknown info (line 1341)
-    2 RIN MH:IF22
-
-Unknown info (line 1344)
-    2 _UID 6748dcb2e87391efa39b001a7dda7115
-
-Unknown info (line 1345)
-    2 RIN MH:IF23
-
-Unknown info (line 1354)
-    1 RIN MH:I16
-
-Unknown info (line 1356)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 1360)
-    2 _MARNM Aetolia
-
-Unknown info (line 1363)
-    2 _UID 6748dcb29fb151efa39b001a7dda7115
-
-Unknown info (line 1364)
-    2 RIN MH:IF24
-
-Unknown info (line 1367)
-    2 _UID 6748dcb254ed81efa39b001a7dda7115
-
-Unknown info (line 1368)
-    2 RIN MH:IF25
-
-Unknown info (line 1377)
-    1 RIN MH:I17
-
-Unknown info (line 1379)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 1384)
-    2 _UID 6748dcb2e4fd91efa39b001a7dda7115
-
-Unknown info (line 1385)
-    2 RIN MH:IF26
-
-Unknown info (line 1388)
-    2 _UID 6748dcb22fa141efa39b001a7dda7115
-
-Unknown info (line 1389)
-    2 RIN MH:IF27
-
-Unknown info (line 1394)
-    1 RIN MH:I18
-
-Unknown info (line 1396)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 1407)
-    1 RIN MH:I19
-
-Unknown info (line 1409)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 1416)
-    2 _UID 6748dcb25301a1efa39b001a7dda7115
-
-Unknown info (line 1417)
-    2 RIN MH:IF28
-
-Unknown info (line 1492)
-    2 _PHOTO_RIN MH:P462
-
-Unknown info (line 1494)
-    1 RIN MH:I20
-
-Unknown info (line 1496)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 1505)
-    2 _UID 6748dcb2124701efa39b001a7dda7115
-
-Unknown info (line 1506)
-    2 RIN MH:IF29
-
-Unknown info (line 1579)
-    2 _PHOTO_RIN MH:P461
-
-Unknown info (line 1581)
-    1 RIN MH:I21
-
-Unknown info (line 1583)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 1597)
-    2 _UID 6748dcb2755771efa39b001a7dda7115
-
-Unknown info (line 1598)
-    2 RIN MH:IF30
-
-Unknown info (line 1602)
-    2 _UID 6748dcb2685241efa39b001a7dda7115
-
-Unknown info (line 1603)
-    2 RIN MH:IF31
-
-Unknown info (line 1922)
-    2 _PHOTO_RIN MH:P430
-
-Unknown info (line 1924)
-    1 RIN MH:I22
-
-Unknown info (line 1926)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 1930)
-    2 _MARNM Pleuron
-
-Unknown info (line 1933)
-    2 _UID 6748dcb246ca81efa39b001a7dda7115
-
-Unknown info (line 1934)
-    2 RIN MH:IF32
-
-Unknown info (line 1937)
-    2 _UID 6748dcb28d9651efa39b001a7dda7115
-
-Unknown info (line 1938)
-    2 RIN MH:IF33
-
-Unknown info (line 1947)
-    1 RIN MH:I23
-
-Unknown info (line 1949)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 1953)
-    2 _MARNM Calydon
-
-Unknown info (line 1956)
-    2 _UID 6748dcb2160711efa39b001a7dda7115
-
-Unknown info (line 1957)
-    2 RIN MH:IF34
-
-Unknown info (line 1960)
-    2 _UID 6748dcb2e751a1efa39b001a7dda7115
-
-Unknown info (line 1961)
-    2 RIN MH:IF35
-
-Unknown info (line 1970)
-    1 RIN MH:I24
-
-Unknown info (line 1972)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 1976)
-    2 _MARNM Aetolia
-
-Unknown info (line 1979)
-    2 _UID 6748dcb2811851efa39b001a7dda7115
-
-Unknown info (line 1980)
-    2 RIN MH:IF36
-
-Unknown info (line 1983)
-    2 _UID 6748dcb29c1d61efa39b001a7dda7115
-
-Unknown info (line 1984)
-    2 RIN MH:IF37
-
-Unknown info (line 1993)
-    1 RIN MH:I25
-
-Unknown info (line 1995)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 1998)
-    2 _MARNM Aetolia
-
-Unknown info (line 2001)
-    2 _UID 6748dcb26629f1efa39b001a7dda7115
-
-Unknown info (line 2002)
-    2 RIN MH:IF38
-
-Unknown info (line 2005)
-    2 _UID 6748dcb2e0bd81efa39b001a7dda7115
-
-Unknown info (line 2006)
-    2 RIN MH:IF39
-
-Unknown info (line 2010)
-    1 RIN MH:I26
-
-Unknown info (line 2012)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 2018)
-    1 RIN MH:I27
-
-Unknown info (line 2020)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 2028)
-    1 RIN MH:I28
-
-Unknown info (line 2030)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 2034)
-    2 _MARNM of Mycenae
-
-Unknown info (line 2043)
-    1 RIN MH:I29
-
-Unknown info (line 2045)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 2050)
-    2 _UID 6748dcb28a7a71efa39b001a7dda7115
-
-Unknown info (line 2051)
-    2 RIN MH:IF40
-
-Unknown info (line 2057)
-    1 RIN MH:I30
-
-Unknown info (line 2059)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 2065)
-    2 _UID 6748dcb2276f51efa39b001a7dda7115
-
-Unknown info (line 2066)
-    2 RIN MH:IF41
-
-Unknown info (line 2175)
-    2 _PHOTO_RIN MH:P406
-
-Unknown info (line 2180)
-    2 _PHOTO_RIN MH:P393
-
-Unknown info (line 2182)
-    1 RIN MH:I31
-
-Unknown info (line 2184)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 2190)
-    2 _UID 6748dcb2262c21efa39b001a7dda7115
-
-Unknown info (line 2191)
-    2 RIN MH:IF42
-
-Unknown info (line 2204)
-    2 _PHOTO_RIN MH:P391
-
-Unknown info (line 2206)
-    1 RIN MH:I32
-
-Unknown info (line 2208)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 2213)
-    2 _MARNM .
-
-Unknown info (line 2218)
-    2 _UID 6748dcb22aa221efa39b001a7dda7115
-
-Unknown info (line 2219)
-    2 RIN MH:IF43
-
-Unknown info (line 2222)
-    2 _UID 6748dcb2ac3651efa39b001a7dda7115
-
-Unknown info (line 2223)
-    2 RIN MH:IF44
-
-Unknown info (line 3834)
-    2 _PHOTO_RIN MH:P355
-
-Unknown info (line 3836)
-    1 RIN MH:I33
-
-Unknown info (line 3838)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 3846)
-    2 _UID 6748dcb2b34681efa39b001a7dda7115
-
-Unknown info (line 3847)
-    2 RIN MH:IF45
-
-Unknown info (line 3850)
-    2 _UID 6748dcb2781a51efa39b001a7dda7115
-
-Unknown info (line 3851)
-    2 RIN MH:IF46
-
-Unknown info (line 4159)
-    2 _PHOTO_RIN MH:P347
-
-Unknown info (line 4161)
-    1 RIN MH:I34
-
-Unknown info (line 4163)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 4170)
-    1 RIN MH:I35
-
-Unknown info (line 4172)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 4176)
-    2 _MARNM Calydon
-
-Unknown info (line 4181)
-    1 RIN MH:I36
-
-Unknown info (line 4183)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 4190)
-    1 RIN MH:I37
-
-Unknown info (line 4192)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 4196)
-    2 _MARNM Orchomenus
-
-Unknown info (line 4201)
-    1 RIN MH:I38
-
-Unknown info (line 4203)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 4206)
-    2 _MARNM -
-
-Unknown info (line 4211)
-    1 RIN MH:I39
-
-Unknown info (line 4213)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 4217)
-    2 _MARNM Elis
-
-Unknown info (line 4222)
-    1 RIN MH:I40
-
-Unknown info (line 4224)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 4231)
-    1 RIN MH:I41
-
-Unknown info (line 4233)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 4239)
-    2 _UID 6748dcb273b7e1efa39b001a7dda7115
-
-Unknown info (line 4240)
-    2 RIN MH:IF47
-
-Unknown info (line 4248)
-    1 RIN MH:I42
-
-Unknown info (line 4250)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 4256)
-    2 _UID 6748dcb2e826a1efa39b001a7dda7115
-
-Unknown info (line 4257)
-    2 RIN MH:IF48
-
-Unknown info (line 4281)
-    2 _PHOTO_RIN MH:P309
-
-Unknown info (line 4283)
-    1 RIN MH:I43
-
-Unknown info (line 4285)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 4298)
-    1 RIN MH:I44
-
-Unknown info (line 4300)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 4309)
-    2 _UID 6748dcb2d9ceb1efa39b001a7dda7115
-
-Unknown info (line 4310)
-    2 RIN MH:IF49
-
-Unknown info (line 4320)
-    2 _PHOTO_RIN MH:P306
-
-Unknown info (line 4322)
-    1 RIN MH:I45
-
-Unknown info (line 4324)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 4329)
-    2 _MARNM Nothingness
-
-Unknown info (line 4334)
-    2 _UID 6748dcb2b86b61efa39b001a7dda7115
-
-Unknown info (line 4335)
-    2 RIN MH:IF50
-
-Unknown info (line 4338)
-    2 _UID 6748dcb27337b1efa39b001a7dda7115
-
-Unknown info (line 4339)
-    2 RIN MH:IF51
-
-Unknown info (line 4342)
-    2 _UID 6748dcb2f5a3c1efa39b001a7dda7115
-
-Unknown info (line 4343)
-    2 RIN MH:IF52
-
-Unknown info (line 4346)
-    2 _UID 6748dcb23eff11efa39b001a7dda7115
-
-Unknown info (line 4347)
-    2 RIN MH:IF53
-
-Unknown info (line 4433)
-    2 _PHOTO_RIN MH:P305
-
-Unknown info (line 4435)
-    1 RIN MH:I46
-
-Unknown info (line 4437)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 4442)
-    2 _MARNM -
-
-Unknown info (line 4447)
-    2 _UID 6748dcb23ebb51efa39b001a7dda7115
-
-Unknown info (line 4448)
-    2 RIN MH:IF54
-
-Unknown info (line 4450)
-    2 _UID 6748dcb2c8b761efa39b001a7dda7115
-
-Unknown info (line 4451)
-    2 RIN MH:IF55
-
-Unknown info (line 4485)
-    2 _PHOTO_RIN MH:P299
-
-Unknown info (line 4487)
-    1 RIN MH:I47
-
-Unknown info (line 4489)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 4496)
-    1 RIN MH:I48
-
-Unknown info (line 4498)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 4502)
-    2 _MARNM of Iolcus
-
-Unknown info (line 4505)
-    2 _UID 6748dcb2f65bd1efa39b001a7dda7115
-
-Unknown info (line 4506)
-    2 RIN MH:IF56
-
-Unknown info (line 4508)
-    2 _UID 6748dcb273c551efa39b001a7dda7115
-
-Unknown info (line 4509)
-    2 RIN MH:IF57
-
-Unknown info (line 4575)
-    2 _PHOTO_RIN MH:P297
-
-Unknown info (line 4577)
-    1 RIN MH:I49
-
-Unknown info (line 4579)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 4583)
-    2 _MARNM of Pherac
-
-Unknown info (line 4586)
-    2 _UID 6748dcb26ec061efa39b001a7dda7115
-
-Unknown info (line 4587)
-    2 RIN MH:IF58
-
-Unknown info (line 4589)
-    2 _UID 6748dcb29f96d1efa39b001a7dda7115
-
-Unknown info (line 4590)
-    2 RIN MH:IF59
-
-Unknown info (line 4592)
-    2 _UID 6748dcb254ca01efa39b001a7dda7115
-
-Unknown info (line 4593)
-    2 RIN MH:IF60
-
-Unknown info (line 4603)
-    2 _PHOTO_RIN MH:P295
-
-Unknown info (line 4605)
-    1 RIN MH:I50
-
-Unknown info (line 4607)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 4638)
-    2 _PHOTO_RIN MH:P294
-
-Unknown info (line 4640)
-    1 RIN MH:I51
-
-Unknown info (line 4642)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 4684)
-    1 RIN MH:I52
-
-Unknown info (line 4686)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 4699)
-    2 _UID 6748dcb2333261efa39b001a7dda7115
-
-Unknown info (line 4700)
-    2 RIN MH:IF61
-
-Unknown info (line 5194)
-    2 _PHOTO_RIN MH:P293
-
-Unknown info (line 5196)
-    1 RIN MH:I53
-
-Unknown info (line 5198)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 5209)
-    2 _UID 6748dcb2b9a841efa39b001a7dda7115
-
-Unknown info (line 5210)
-    2 RIN MH:IF62
-
-Unknown info (line 5214)
-    2 _UID 6748dcb272f491efa39b001a7dda7115
-
-Unknown info (line 5215)
-    2 RIN MH:IF63
-
-Unknown info (line 5501)
-    2 _PHOTO_RIN MH:P280
-
-Unknown info (line 5503)
-    1 RIN MH:I54
-
-Unknown info (line 5505)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 5509)
-    2 _MARNM Elis
-
-Unknown info (line 5515)
-    1 RIN MH:I55
-
-Unknown info (line 5517)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 5523)
-    1 RIN MH:I56
-
-Unknown info (line 5525)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 5532)
-    1 RIN MH:I57
-
-Unknown info (line 5534)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 5541)
-    1 RIN MH:I58
-
-Unknown info (line 5543)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 5547)
-    2 _MARNM King of Thebes
-
-Unknown info (line 5558)
-    2 _PHOTO_RIN MH:P261
-
-Unknown info (line 5560)
-    1 RIN MH:I59
-
-Unknown info (line 5562)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 5568)
-    2 _UID 6748dcb2f69551efa39b001a7dda7115
-
-Unknown info (line 5569)
-    2 RIN MH:IF64
-
-Unknown info (line 5572)
-    1 RIN MH:I60
-
-Unknown info (line 5574)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 5580)
-    2 _UID 6748dcb2bb5df1efa39b001a7dda7115
-
-Unknown info (line 5581)
-    2 RIN MH:IF65
-
-Unknown info (line 5584)
-    1 RIN MH:I61
-
-Unknown info (line 5586)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 5591)
-    2 _UID 6748dcb2815791efa39b001a7dda7115
-
-Unknown info (line 5592)
-    2 RIN MH:IF66
-
-Unknown info (line 5596)
-    1 RIN MH:I62
-
-Unknown info (line 5598)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 5605)
-    1 RIN MH:I63
-
-Unknown info (line 5607)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 5614)
-    2 _UID 6748dcb22c42b1efa39b001a7dda7115
-
-Unknown info (line 5615)
-    2 RIN MH:IF67
-
-Unknown info (line 5618)
-    2 _UID 6748dcb2314781efa39b001a7dda7115
-
-Unknown info (line 5619)
-    2 RIN MH:IF68
-
-Unknown info (line 5622)
-    2 _UID 6748dcb2fa1b51efa39b001a7dda7115
-
-Unknown info (line 5623)
-    2 RIN MH:IF69
-
-Unknown info (line 5649)
-    2 _PHOTO_RIN MH:P249
-
-Unknown info (line 5651)
-    1 RIN MH:I64
-
-Unknown info (line 5653)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 5660)
-    1 RIN MH:I65
-
-Unknown info (line 5662)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 5667)
-    2 _MARNM Iolcus
-
-Unknown info (line 5670)
-    2 _UID 6748dcb2eda591efa39b001a7dda7115
-
-Unknown info (line 5671)
-    2 RIN MH:IF70
-
-Unknown info (line 5674)
-    2 _UID 6748dcb26b31e1efa39b001a7dda7115
-
-Unknown info (line 5675)
-    2 RIN MH:IF71
-
-Unknown info (line 5677)
-    2 _UID 6748dcb2a06d31efa39b001a7dda7115
-
-Unknown info (line 5678)
-    2 RIN MH:IF72
-
-Unknown info (line 5712)
-    2 _PHOTO_RIN MH:P243
-
-Unknown info (line 5714)
-    1 RIN MH:I66
-
-Unknown info (line 5716)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 5721)
-    2 _UID 6748dcb2377271efa39b001a7dda7115
-
-Unknown info (line 5722)
-    2 RIN MH:IF73
-
-Unknown info (line 5724)
-    2 _UID 6748dcb22a7741efa39b001a7dda7115
-
-Unknown info (line 5725)
-    2 RIN MH:IF74
-
-Unknown info (line 5745)
-    2 _PHOTO_RIN MH:P242
-
-Unknown info (line 5747)
-    1 RIN MH:I67
-
-Unknown info (line 5749)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 5756)
-    2 _UID 6748dcb256d7a1efa39b001a7dda7115
-
-Unknown info (line 5757)
-    2 RIN MH:IF75
-
-Unknown info (line 5760)
-    2 _UID 6748dcb29d8b71efa39b001a7dda7115
-
-Unknown info (line 5761)
-    2 RIN MH:IF76
-
-Unknown info (line 5866)
-    2 _PHOTO_RIN MH:P241
-
-Unknown info (line 5868)
-    1 RIN MH:I68
-
-Unknown info (line 5870)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 5891)
-    2 _PHOTO_RIN MH:P239
-
-Unknown info (line 5893)
-    1 RIN MH:I69
-
-Unknown info (line 5895)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 5904)
-    2 _UID 6748dcb2475c91efa39b001a7dda7115
-
-Unknown info (line 5905)
-    2 RIN MH:IF77
-
-Unknown info (line 5912)
-    1 RIN MH:I70
-
-Unknown info (line 5914)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 5919)
-    2 _UID 6748dcb215e4e1efa39b001a7dda7115
-
-Unknown info (line 5920)
-    2 RIN MH:IF78
-
-Unknown info (line 5924)
-    1 RIN MH:I71
-
-Unknown info (line 5926)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 5930)
-    2 _MARNM .
-
-Unknown info (line 5935)
-    2 _UID 6748dcb2582c41efa39b001a7dda7115
-
-Unknown info (line 5936)
-    2 RIN MH:IF79
-
-Unknown info (line 5942)
-    1 RIN MH:I72
-
-Unknown info (line 5944)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 5949)
-    2 _UID 6748dcb28e1df1efa39b001a7dda7115
-
-Unknown info (line 5950)
-    2 RIN MH:IF80
-
-Unknown info (line 5978)
-    1 RIN MH:I73
-
-Unknown info (line 5980)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 5984)
-    2 _MARNM Ninfa
-
-Unknown info (line 5991)
-    2 _PHOTO_RIN MH:P238
-
-Unknown info (line 5993)
-    1 RIN MH:I74
-
-Unknown info (line 5995)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6004)
-    1 RIN MH:I75
-
-Unknown info (line 6006)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6010)
-    2 _MARNM Elis
-
-Unknown info (line 6015)
-    1 RIN MH:I76
-
-Unknown info (line 6017)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6024)
-    1 RIN MH:I77
-
-Unknown info (line 6026)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6034)
-    1 RIN MH:I78
-
-Unknown info (line 6036)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6043)
-    1 RIN MH:I79
-
-Unknown info (line 6045)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6049)
-    2 _MARNM Princess of Thebes
-
-Unknown info (line 6061)
-    2 _PHOTO_RIN MH:P237
-
-Unknown info (line 6063)
-    1 RIN MH:I80
-
-Unknown info (line 6065)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6069)
-    2 _MARNM The Spartid of Greece
-
-Unknown info (line 6077)
-    2 _PHOTO_RIN MH:P236
-
-Unknown info (line 6079)
-    1 RIN MH:I81
-
-Unknown info (line 6081)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6090)
-    1 RIN MH:I82
-
-Unknown info (line 6092)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6103)
-    2 _UID 6748dcb2f2d541efa39b001a7dda7115
-
-Unknown info (line 6104)
-    2 RIN MH:IF81
-
-Unknown info (line 6144)
-    2 _PHOTO_RIN MH:P227
-
-Unknown info (line 6146)
-    1 RIN MH:I83
-
-Unknown info (line 6148)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6156)
-    2 _UID 6748dcb2ae1681efa39b001a7dda7115
-
-Unknown info (line 6157)
-    2 RIN MH:IF82
-
-Unknown info (line 6174)
-    2 _PHOTO_RIN MH:P217
-
-Unknown info (line 6176)
-    1 RIN MH:I84
-
-Unknown info (line 6178)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6185)
-    1 RIN MH:I85
-
-Unknown info (line 6187)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6193)
-    1 RIN MH:I86
-
-Unknown info (line 6195)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6203)
-    2 _UID 6748dcb26936b1efa39b001a7dda7115
-
-Unknown info (line 6204)
-    2 RIN MH:IF83
-
-Unknown info (line 6214)
-    1 RIN MH:I87
-
-Unknown info (line 6216)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6225)
-    1 RIN MH:I88
-
-Unknown info (line 6227)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6236)
-    2 _UID 6748dcb2fe29f1efa39b001a7dda7115
-
-Unknown info (line 6237)
-    2 RIN MH:IF84
-
-Unknown info (line 6241)
-    2 _UID 6748dcb2357521efa39b001a7dda7115
-
-Unknown info (line 6242)
-    2 RIN MH:IF85
-
-Unknown info (line 6280)
-    1 RIN MH:I89
-
-Unknown info (line 6282)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6292)
-    2 _UID 6748dcb265b8b1efa39b001a7dda7115
-
-Unknown info (line 6293)
-    2 RIN MH:IF86
-
-Unknown info (line 6297)
-    2 _UID 6748dcb2af55f1efa39b001a7dda7115
-
-Unknown info (line 6298)
-    2 RIN MH:IF87
-
-Unknown info (line 6350)
-    2 _PHOTO_RIN MH:P209
-
-Unknown info (line 6352)
-    1 RIN MH:I90
-
-Unknown info (line 6354)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6361)
-    1 RIN MH:I91
-
-Unknown info (line 6363)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6368)
-    2 _UID 6748dcb2688721efa39b001a7dda7115
-
-Unknown info (line 6369)
-    2 RIN MH:IF88
-
-Unknown info (line 6375)
-    2 _PHOTO_RIN MH:P207
-
-Unknown info (line 6377)
-    1 RIN MH:I92
-
-Unknown info (line 6379)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6389)
-    2 _UID 6748dcb2f31661efa39b001a7dda7115
-
-Unknown info (line 6390)
-    2 RIN MH:IF89
-
-Unknown info (line 6394)
-    2 _UID 6748dcb2758211efa39b001a7dda7115
-
-Unknown info (line 6395)
-    2 RIN MH:IF90
-
-Unknown info (line 6397)
-    2 _UID 6748dcb29ebde1efa39b001a7dda7115
-
-Unknown info (line 6398)
-    2 RIN MH:IF91
-
-Unknown info (line 6431)
-    1 RIN MH:I93
-
-Unknown info (line 6433)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6438)
-    2 _MARNM King of Boeotia
-
-Unknown info (line 6443)
-    2 _UID 6748dcb2182991efa39b001a7dda7115
-
-Unknown info (line 6444)
-    2 RIN MH:IF92
-
-Unknown info (line 6446)
-    2 _UID 6748dcb252ca21efa39b001a7dda7115
-
-Unknown info (line 6447)
-    2 RIN MH:IF93
-
-Unknown info (line 6449)
-    2 _UID 6748dcb2ce7071efa39b001a7dda7115
-
-Unknown info (line 6450)
-    2 RIN MH:IF94
-
-Unknown info (line 6623)
-    2 _PHOTO_RIN MH:P206
-
-Unknown info (line 6625)
-    1 RIN MH:I94
-
-Unknown info (line 6627)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6632)
-    2 _UID 6748dcb2596f31efa39b001a7dda7115
-
-Unknown info (line 6633)
-    2 RIN MH:IF95
-
-Unknown info (line 6636)
-    2 _UID 6748dcb2dffb41efa39b001a7dda7115
-
-Unknown info (line 6637)
-    2 RIN MH:IF96
-
-Unknown info (line 6641)
-    1 RIN MH:I95
-
-Unknown info (line 6643)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6650)
-    1 RIN MH:I96
-
-Unknown info (line 6652)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6659)
-    1 RIN MH:I97
-
-Unknown info (line 6661)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6668)
-    1 RIN MH:I98
-
-Unknown info (line 6670)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6677)
-    1 RIN MH:I99
-
-Unknown info (line 6679)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6685)
-    2 _UID 6748dcb2f39631efa39b001a7dda7115
-
-Unknown info (line 6686)
-    2 RIN MH:IF97
-
-Unknown info (line 6689)
-    1 RIN MH:I100
-
-Unknown info (line 6691)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6697)
-    2 _UID 6748dcb2be5e91efa39b001a7dda7115
-
-Unknown info (line 6698)
-    2 RIN MH:IF98
-
-Unknown info (line 6701)
-    1 RIN MH:I101
-
-Unknown info (line 6703)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6709)
-    1 RIN MH:I102
-
-Unknown info (line 6711)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6715)
-    2 _MARNM King of Thebes
-
-Unknown info (line 6718)
-    2 _UID 6748dcb2ee9301efa39b001a7dda7115
-
-Unknown info (line 6719)
-    2 RIN MH:IF99
-
-Unknown info (line 6736)
-    2 _PHOTO_RIN MH:P203
-
-Unknown info (line 6738)
-    1 RIN MH:I103
-
-Unknown info (line 6740)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6770)
-    2 _PHOTO_RIN MH:P199
-
-Unknown info (line 6772)
-    1 RIN MH:I104
-
-Unknown info (line 6774)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6780)
-    1 RIN MH:I105
-
-Unknown info (line 6782)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6786)
-    1 RIN MH:I106
-
-Unknown info (line 6788)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6793)
-    2 _UID 6748dcb2904601efa39b001a7dda7115
-
-Unknown info (line 6794)
-    2 RIN MH:IF100
-
-Unknown info (line 6821)
-    2 _PHOTO_RIN MH:P192
-
-Unknown info (line 6823)
-    1 RIN MH:I107
-
-Unknown info (line 6825)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6830)
-    2 _MARNM .
-
-Unknown info (line 6835)
-    2 _UID 6748dcb2bcab21efa39b001a7dda7115
-
-Unknown info (line 6836)
-    2 RIN MH:IF101
-
-Unknown info (line 6851)
-    2 _PHOTO_RIN MH:P188
-
-Unknown info (line 6853)
-    1 RIN MH:I108
-
-Unknown info (line 6855)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6863)
-    2 _UID 6748dcb270ff81efa39b001a7dda7115
-
-Unknown info (line 6864)
-    2 RIN MH:IF102
-
-Unknown info (line 6880)
-    2 _PHOTO_RIN MH:P181
-
-Unknown info (line 6882)
-    1 RIN MH:I109
-
-Unknown info (line 6884)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6893)
-    1 RIN MH:I110
-
-Unknown info (line 6895)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6902)
-    1 RIN MH:I111
-
-Unknown info (line 6904)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6910)
-    2 _UID 6748dcb2501cf1efa39b001a7dda7115
-
-Unknown info (line 6911)
-    2 RIN MH:IF103
-
-Unknown info (line 6917)
-    2 _PHOTO_RIN MH:P176
-
-Unknown info (line 6919)
-    1 RIN MH:I112
-
-Unknown info (line 6921)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6925)
-    2 _MARNM First Women
-
-Unknown info (line 6928)
-    2 _UID 6748dcb2c5f601efa39b001a7dda7115
-
-Unknown info (line 6929)
-    2 RIN MH:IF104
-
-Unknown info (line 6934)
-    2 _PHOTO_RIN MH:P174
-
-Unknown info (line 6936)
-    1 RIN MH:I113
-
-Unknown info (line 6938)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6944)
-    1 RIN MH:I114
-
-Unknown info (line 6946)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6956)
-    2 _UID 6748dcb27cf1d1efa39b001a7dda7115
-
-Unknown info (line 6957)
-    2 RIN MH:IF105
-
-Unknown info (line 6964)
-    2 _PHOTO_RIN MH:P173
-
-Unknown info (line 6966)
-    1 RIN MH:I115
-
-Unknown info (line 6968)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6975)
-    1 RIN MH:I116
-
-Unknown info (line 6977)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 6986)
-    2 _UID 6748dcb26d7ae1efa39b001a7dda7115
-
-Unknown info (line 6987)
-    2 RIN MH:IF106
-
-Unknown info (line 6991)
-    1 RIN MH:I117
-
-Unknown info (line 6993)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 7000)
-    1 RIN MH:I118
-
-Unknown info (line 7002)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 7011)
-    2 _UID 6748dcb25c12a1efa39b001a7dda7115
-
-Unknown info (line 7012)
-    2 RIN MH:IF107
-
-Unknown info (line 7017)
-    1 RIN MH:I119
-
-Unknown info (line 7019)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 7027)
-    1 RIN MH:I120
-
-Unknown info (line 7029)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 7038)
-    2 _UID 6748dcb2c783e1efa39b001a7dda7115
-
-Unknown info (line 7039)
-    2 RIN MH:IF108
-
-Unknown info (line 7042)
-    2 _UID 6748dcb2cdf3b1efa39b001a7dda7115
-
-Unknown info (line 7043)
-    2 RIN MH:IF109
-
-Unknown info (line 7368)
-    2 _PHOTO_RIN MH:P166
-
-Unknown info (line 7370)
-    1 RIN MH:I121
-
-Unknown info (line 7372)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 7382)
-    2 _UID 6748dcb2c9f851efa39b001a7dda7115
-
-Unknown info (line 7383)
-    2 RIN MH:IF110
-
-Unknown info (line 7800)
-    2 _PHOTO_RIN MH:P124
-
-Unknown info (line 7802)
-    1 RIN MH:I122
-
-Unknown info (line 7804)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 7813)
-    2 _UID 6748dcb2624221efa39b001a7dda7115
-
-Unknown info (line 7814)
-    2 RIN MH:IF111
-
-Unknown info (line 7818)
-    2 _UID 6748dcb2e4d651efa39b001a7dda7115
-
-Unknown info (line 7819)
-    2 RIN MH:IF112
-
-Unknown info (line 7927)
-    2 _PHOTO_RIN MH:P116
-
-Unknown info (line 7929)
-    1 RIN MH:I123
-
-Unknown info (line 7931)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 7938)
-    2 _UID 6748dcb2fe9ab1efa39b001a7dda7115
-
-Unknown info (line 7939)
-    2 RIN MH:IF113
-
-Unknown info (line 8066)
-    2 _PHOTO_RIN MH:P110
-
-Unknown info (line 8068)
-    1 RIN MH:I124
-
-Unknown info (line 8070)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 8093)
-    1 RIN MH:I125
-
-Unknown info (line 8095)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 8102)
-    1 RIN MH:I126
-
-Unknown info (line 8104)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 8114)
-    2 _UID 6748dcb21bfb51efa39b001a7dda7115
-
-Unknown info (line 8115)
-    2 RIN MH:IF114
-
-Unknown info (line 8118)
-    2 _UID 6748dcb2d0a781efa39b001a7dda7115
-
-Unknown info (line 8119)
-    2 RIN MH:IF115
-
-Unknown info (line 8260)
-    2 _PHOTO_RIN MH:P102
-
-Unknown info (line 8262)
-    1 RIN MH:I127
-
-Unknown info (line 8264)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 8267)
-    2 _MARNM -
-
-Unknown info (line 8272)
-    1 RIN MH:I128
-
-Unknown info (line 8274)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 8279)
-    2 _UID 6748dcb2112461efa39b001a7dda7115
-
-Unknown info (line 8280)
-    2 RIN MH:IF116
-
-Unknown info (line 8284)
-    1 RIN MH:I129
-
-Unknown info (line 8286)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 8291)
-    2 _MARNM of Corinth
-
-Unknown info (line 8296)
-    2 _UID 6748dcb24cdae1efa39b001a7dda7115
-
-Unknown info (line 8297)
-    2 RIN MH:IF117
-
-Unknown info (line 8301)
-    1 RIN MH:I130
-
-Unknown info (line 8303)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 8310)
-    1 RIN MH:I131
-
-Unknown info (line 8312)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 8318)
-    2 _UID 6748dcb2960d01efa39b001a7dda7115
-
-Unknown info (line 8319)
-    2 RIN MH:IF118
-
-Unknown info (line 8323)
-    1 RIN MH:I132
-
-Unknown info (line 8325)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 8335)
-    2 _UID 6748dcb2dbc5a1efa39b001a7dda7115
-
-Unknown info (line 8336)
-    2 RIN MH:IF119
-
-Unknown info (line 8339)
-    2 _UID 6748dcb2c6c091efa39b001a7dda7115
-
-Unknown info (line 8340)
-    2 RIN MH:IF120
-
-Unknown info (line 8908)
-    2 _PHOTO_RIN MH:P94
-
-Unknown info (line 8910)
-    1 RIN MH:I133
-
-Unknown info (line 8912)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 8917)
-    2 _UID 6748dcb21aa2d1efa39b001a7dda7115
-
-Unknown info (line 8918)
-    2 RIN MH:IF121
-
-Unknown info (line 8922)
-    1 RIN MH:I134
-
-Unknown info (line 8924)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 8929)
-    2 _UID 6748dcb2576a71efa39b001a7dda7115
-
-Unknown info (line 8930)
-    2 RIN MH:IF122
-
-Unknown info (line 8933)
-    1 RIN MH:I135
-
-Unknown info (line 8935)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 8945)
-    2 _UID 6748dcb2813391efa39b001a7dda7115
-
-Unknown info (line 8946)
-    2 RIN MH:IF123
-
-Unknown info (line 8950)
-    2 _UID 6748dcb27a7e01efa39b001a7dda7115
-
-Unknown info (line 8951)
-    2 RIN MH:IF124
-
-Unknown info (line 9085)
-    2 _PHOTO_RIN MH:P26
-
-Unknown info (line 9087)
-    1 RIN MH:I136
-
-Unknown info (line 9089)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9093)
-    2 _MARNM Foam
-
-Unknown info (line 9099)
-    2 _PHOTO_RIN MH:P22
-
-Unknown info (line 9101)
-    1 RIN MH:I137
-
-Unknown info (line 9103)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9110)
-    2 _UID 6748dcb25e0f01efa39b001a7dda7115
-
-Unknown info (line 9111)
-    2 RIN MH:IF125
-
-Unknown info (line 9119)
-    2 _PHOTO_RIN MH:P20
-
-Unknown info (line 9121)
-    1 RIN MH:I138
-
-Unknown info (line 9123)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9136)
-    1 RIN MH:I139
-
-Unknown info (line 9138)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9143)
-    2 _UID 6748dcb2693af1efa39b001a7dda7115
-
-Unknown info (line 9144)
-    2 RIN MH:IF126
-
-Unknown info (line 9155)
-    1 RIN MH:I140
-
-Unknown info (line 9157)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9165)
-    1 RIN MH:I141
-
-Unknown info (line 9167)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9182)
-    1 RIN MH:I142
-
-Unknown info (line 9184)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9195)
-    1 RIN MH:I143
-
-Unknown info (line 9197)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9203)
-    2 _UID 6748dcb24e35a1efa39b001a7dda7115
-
-Unknown info (line 9204)
-    2 RIN MH:IF127
-
-Unknown info (line 9207)
-    2 _UID 6748dcb2aee821efa39b001a7dda7115
-
-Unknown info (line 9208)
-    2 RIN MH:IF128
-
-Unknown info (line 9211)
-    2 _UID 6748dcb2287c51efa39b001a7dda7115
-
-Unknown info (line 9212)
-    2 RIN MH:IF129
-
-Unknown info (line 9218)
-    2 _PHOTO_RIN MH:P19
-
-Unknown info (line 9220)
-    1 RIN MH:I144
-
-Unknown info (line 9222)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9229)
-    2 _UID 6748dcb2b3ed11efa39b001a7dda7115
-
-Unknown info (line 9230)
-    2 RIN MH:IF130
-
-Unknown info (line 9233)
-    1 RIN MH:I145
-
-Unknown info (line 9235)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9239)
-    2 _MARNM (Mortal)
-
-Unknown info (line 9246)
-    2 _PHOTO_RIN MH:P18
-
-Unknown info (line 9248)
-    1 RIN MH:I146
-
-Unknown info (line 9250)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9257)
-    1 RIN MH:I147
-
-Unknown info (line 9259)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9268)
-    1 RIN MH:I148
-
-Unknown info (line 9270)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9277)
-    1 RIN MH:I149
-
-Unknown info (line 9279)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9286)
-    1 RIN MH:I150
-
-Unknown info (line 9288)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9294)
-    1 RIN MH:I151
-
-Unknown info (line 9296)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9309)
-    1 RIN MH:I152
-
-Unknown info (line 9311)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9320)
-    1 RIN MH:I153
-
-Unknown info (line 9322)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9329)
-    1 RIN MH:I154
-
-Unknown info (line 9331)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9337)
-    1 RIN MH:I155
-
-Unknown info (line 9339)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9357)
-    2 _PHOTO_RIN MH:P16
-
-Unknown info (line 9359)
-    1 RIN MH:I156
-
-Unknown info (line 9361)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9368)
-    1 RIN MH:I157
-
-Unknown info (line 9370)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9376)
-    1 RIN MH:I158
-
-Unknown info (line 9378)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9386)
-    1 RIN MH:I159
-
-Unknown info (line 9388)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9393)
-    2 _UID 6748dcb2397731efa39b001a7dda7115
-
-Unknown info (line 9394)
-    2 RIN MH:IF131
-
-Unknown info (line 9400)
-    2 _PHOTO_RIN MH:P14
-
-Unknown info (line 9402)
-    1 RIN MH:I160
-
-Unknown info (line 9404)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9409)
-    2 _MARNM of Troy
-
-Unknown info (line 9416)
-    2 _PHOTO_RIN MH:P13
-
-Unknown info (line 9418)
-    1 RIN MH:I161
-
-Unknown info (line 9420)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9427)
-    1 RIN MH:I162
-
-Unknown info (line 9429)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9436)
-    1 RIN MH:I163
-
-Unknown info (line 9438)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9444)
-    1 RIN MH:I164
-
-Unknown info (line 9446)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9455)
-    2 _PHOTO_RIN MH:P12
-
-Unknown info (line 9457)
-    1 RIN MH:I165
-
-Unknown info (line 9459)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9478)
-    1 RIN MH:I166
-
-Unknown info (line 9480)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9484)
-    2 _MARNM Athens
-
-Unknown info (line 9491)
-    1 RIN MH:I167
-
-Unknown info (line 9493)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9499)
-    1 RIN MH:I168
-
-Unknown info (line 9501)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9508)
-    1 RIN MH:I169
-
-Unknown info (line 9510)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9514)
-    2 _MARNM Theoi
-
-Unknown info (line 9519)
-    1 RIN MH:I170
-
-Unknown info (line 9521)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9536)
-    1 RIN MH:I171
-
-Unknown info (line 9538)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9545)
-    1 RIN MH:I172
-
-Unknown info (line 9547)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9551)
-    2 _MARNM of Troy
-
-Unknown info (line 9558)
-    2 _PHOTO_RIN MH:P11
-
-Unknown info (line 9560)
-    1 RIN MH:I173
-
-Unknown info (line 9562)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9572)
-    2 _PHOTO_RIN MH:P10
-
-Unknown info (line 9574)
-    1 RIN MH:I174
-
-Unknown info (line 9576)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9582)
-    1 RIN MH:I175
-
-Unknown info (line 9584)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9593)
-    2 _PHOTO_RIN MH:P8
-
-Unknown info (line 9595)
-    1 RIN MH:I176
-
-Unknown info (line 9597)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9604)
-    1 RIN MH:I177
-
-Unknown info (line 9606)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9612)
-    1 RIN MH:I178
-
-Unknown info (line 9614)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9621)
-    1 RIN MH:I179
-
-Unknown info (line 9623)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9632)
-    2 _PHOTO_RIN MH:P6
-
-Unknown info (line 9634)
-    1 RIN MH:I180
-
-Unknown info (line 9636)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9642)
-    1 RIN MH:I181
-
-Unknown info (line 9644)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9651)
-    1 RIN MH:I182
-
-Unknown info (line 9653)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9657)
-    2 _MARNM of Troy
-
-Unknown info (line 9664)
-    2 _PHOTO_RIN MH:P5
-
-Unknown info (line 9666)
-    1 RIN MH:I183
-
-Unknown info (line 9668)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9676)
-    1 RIN MH:I184
-
-Unknown info (line 9678)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9687)
-    2 _PHOTO_RIN MH:P4
-
-Unknown info (line 9689)
-    1 RIN MH:I185
-
-Unknown info (line 9691)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9698)
-    1 RIN MH:I186
-
-Unknown info (line 9700)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9707)
-    1 RIN MH:I187
-
-Unknown info (line 9709)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9715)
-    1 RIN MH:I188
-
-Unknown info (line 9717)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9725)
-    1 RIN MH:I189
-
-Unknown info (line 9727)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9734)
-    1 RIN MH:I190
-
-Unknown info (line 9736)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9745)
-    2 _PHOTO_RIN MH:P1
-
-Unknown info (line 9747)
-    1 RIN MH:I191
-
-Unknown info (line 9749)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9753)
-    2 _MARNM the River
-
-Unknown info (line 9757)
-    1 RIN MH:I192
-
-Unknown info (line 9759)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9765)
-    1 RIN MH:I193
-
-Unknown info (line 9767)
-    1 _UPD 28 NOV 2024 13:12:18 GMT-8
-
-Unknown info (line 9773)
-    1 RIN MH:F1
-
-Unknown info (line 9779)
-    1 RIN MH:F2
-
-Unknown info (line 9785)
-    2 _UID 6748dcb2c46011efa39b001a7dda7115
-
-Unknown info (line 9786)
-    2 RIN MH:FF1
-
-Unknown info (line 9790)
-    1 RIN MH:F3
-
-Unknown info (line 9796)
-    1 RIN MH:F4
-
-Unknown info (line 9802)
-    1 RIN MH:F5
-
-Unknown info (line 9808)
-    1 RIN MH:F6
-
-Unknown info (line 9813)
-    1 RIN MH:F7
-
-Unknown info (line 9818)
-    1 RIN MH:F8
-
-Unknown info (line 9824)
-    1 RIN MH:F9
-
-Unknown info (line 9830)
-    1 RIN MH:F10
-
-Unknown info (line 9836)
-    1 RIN MH:F11
-
-Unknown info (line 9844)
-    1 RIN MH:F12
-
-Unknown info (line 9851)
-    1 RIN MH:F13
-
-Unknown info (line 9857)
-    1 RIN MH:F14
-
-Unknown info (line 9863)
-    1 RIN MH:F15
-
-Unknown info (line 9869)
-    1 RIN MH:F16
-
-Unknown info (line 9876)
-    1 RIN MH:F17
-
-Unknown info (line 9889)
-    1 RIN MH:F18
-
-Unknown info (line 9895)
-    1 RIN MH:F19
-
-Unknown info (line 9901)
-    1 RIN MH:F20
-
-Unknown info (line 9907)
-    1 RIN MH:F21
-
-Unknown info (line 9914)
-    1 RIN MH:F22
-
-Unknown info (line 9919)
-    1 RIN MH:F23
-
-Unknown info (line 9925)
-    1 RIN MH:F24
-
-Unknown info (line 9931)
-    1 RIN MH:F25
-
-Unknown info (line 9936)
-    1 RIN MH:F26
-
-Unknown info (line 9942)
-    1 RIN MH:F27
-
-Unknown info (line 9947)
-    1 RIN MH:F28
-
-Unknown info (line 9953)
-    1 RIN MH:F29
-
-Unknown info (line 9964)
-    1 RIN MH:F30
-
-Unknown info (line 9980)
-    1 RIN MH:F31
-
-Unknown info (line 9986)
-    1 RIN MH:F32
-
-Unknown info (line 9992)
-    1 RIN MH:F33
-
-Unknown info (line 9997)
-    1 RIN MH:F34
-
-Unknown info (line 10003)
-    1 RIN MH:F35
-
-Unknown info (line 10008)
-    1 RIN MH:F36
-
-Unknown info (line 10013)
-    1 RIN MH:F37
-
-Unknown info (line 10019)
-    1 RIN MH:F38
-
-Unknown info (line 10026)
-    1 RIN MH:F39
-
-Unknown info (line 10032)
-    1 RIN MH:F40
-
-Unknown info (line 10039)
-    1 RIN MH:F41
-
-Unknown info (line 10045)
-    1 RIN MH:F42
-
-Unknown info (line 10051)
-    1 RIN MH:F43
-
-Unknown info (line 10057)
-    1 RIN MH:F44
-
-Unknown info (line 10063)
-    1 RIN MH:F45
-
-Unknown info (line 10069)
-    1 RIN MH:F46
-
-Unknown info (line 10074)
-    1 RIN MH:F47
-
-Unknown info (line 10079)
-    1 RIN MH:F48
-
-Unknown info (line 10085)
-    1 RIN MH:F49
-
-Unknown info (line 10092)
-    1 RIN MH:F50
-
-Unknown info (line 10098)
-    1 RIN MH:F51
-
-Unknown info (line 10105)
-    1 RIN MH:F52
-
-Unknown info (line 10111)
-    1 RIN MH:F53
-
-Unknown info (line 10117)
-    2 _UID 6748dcb2dc9701efa39b001a7dda7115
-
-Unknown info (line 10118)
-    2 RIN MH:FF2
-
-Unknown info (line 10121)
-    1 RIN MH:F54
-
-Unknown info (line 10127)
-    1 RIN MH:F55
-
-Unknown info (line 10133)
-    1 RIN MH:F56
-
-Unknown info (line 10139)
-    1 RIN MH:F57
-
-Unknown info (line 10144)
-    1 RIN MH:F58
-
-Unknown info (line 10150)
-    1 RIN MH:F59
-
-Unknown info (line 10155)
-    1 RIN MH:F60
-
-Unknown info (line 10161)
-    1 RIN MH:F61
-
-Unknown info (line 10166)
-    1 RIN MH:F62
-
-Unknown info (line 10172)
-    1 RIN MH:F63
-
-Unknown info (line 10178)
-    1 RIN MH:F64
-
-Unknown info (line 10184)
-    1 RIN MH:F65
-
-Unknown info (line 10190)
-    1 RIN MH:F66
-
-Unknown info (line 10196)
-    1 RIN MH:F67
-
-Unknown info (line 10202)
-    1 RIN MH:F68
-
-Unknown info (line 10208)
-    1 RIN MH:F69
-
-Unknown info (line 10213)
-    1 RIN MH:F70
-
-Unknown info (line 10219)
-    1 RIN MH:F71
-
-Unknown info (line 10225)
-    1 RIN MH:F72
-
-Unknown info (line 10233)
-    1 RIN MH:F73
-
-Unknown info (line 10238)
-    1 RIN MH:F74
-
-Unknown info (line 10243)
-    1 RIN MH:F75
-
-Unknown info (line 10251)
-    1 RIN MH:F76
-
-Unknown info (line 10257)
-    1 RIN MH:F77
-
-Unknown info (line 10263)
-    1 RIN MH:F78
-
-Unknown info (line 10270)
-    1 RIN MH:F79
-
-Unknown info (line 10276)
-    1 RIN MH:F80
-
-Unknown info (line 10282)
-    1 RIN MH:F81
-
-Unknown info (line 10288)
-    1 RIN MH:F82
-
-Unknown info (line 10294)
-    1 RIN MH:F83
-
-Unknown info (line 10300)
-    1 RIN MH:F84
-
-Unknown info (line 10306)
-    1 RIN MH:F85
-
-Unknown info (line 10312)
-    1 RIN MH:F86
-
-Unknown info (line 10318)
-    1 RIN MH:F87
-
-Unknown info (line 10324)
-    1 RIN MH:F88
-
-Unknown info (line 10330)
-    1 RIN MH:F89
-
-Unknown info (line 10336)
-    1 RIN MH:F90
-
-Unknown info (line 10342)
-    1 RIN MH:F91
-
-Unknown info (line 10348)
-    1 RIN MH:F92
-
-Unknown info (line 10354)
-    1 RIN MH:F93
-
-Unknown info (line 10360)
-    1 RIN MH:F94
-
-Unknown info (line 10366)
-    1 RIN MH:F95
-
-Unknown info (line 10372)
-    1 RIN MH:F96
-
-Unknown info (line 10378)
-    1 RIN MH:F97
-
-Unknown info (line 10384)
-    1 RIN MH:F98
-
-Unknown info (line 10390)
-    1 RIN MH:F99
-
-Unknown info (line 10398)
-    1 RIN MH:F100
-
-Unknown info (line 10405)
-    1 RIN MH:F101
-
-Unknown info (line 10411)
-    1 RIN MH:F102
-
-Unknown info (line 10417)
-    1 RIN MH:F103
-
-Unknown info (line 10423)
-    1 RIN MH:F104
-
-Unknown info (line 10428)
-    1 RIN MH:F105
-
-Unknown info (line 10435)
-    1 RIN MH:F106
-
-Unknown info (line 10440)
-    1 RIN MH:F107
-
-Unknown info (line 10446)
-    1 RIN MH:F108
-
-Unknown info (line 10452)
-    1 RIN MH:F109
-
-Unknown info (line 10457)
-    1 RIN MH:F110
-
-Unknown info (line 10463)
-    1 RIN MH:F111
-
-Unknown info (line 10469)
-    1 RIN MH:F112
-
-Unknown info (line 10475)
-    1 RIN MH:F113
-
-Unknown info (line 10481)
-    1 RIN MH:F114
-
-Unknown info (line 10487)
-    1 RIN MH:F115
-
-Unknown info (line 10492)
-    1 RIN MH:F116
-
+    1 NAME Tamás Flinn Caldwell-Gilbert
+    1 NAME Carlos F. Bunge
+    1 NAME Scott David Hibbard
+    1 NAME Enrique Caballero Peraza
+    1 NAME Susan Nellie Sue Trainer
+    1 NAME Håkon Bjordal Vinje
+    1 NAME Cristián Arredondo Del Real
+    1 NAME Stéphane Pierre Édouard Chappellier
