@@ -9231,7 +9231,7 @@
 1 FAMS @F273@
 1 FAMC @F274@
 0 @I398@ INDI
-1 NAME NN //
+1 NAME NN /Placeholder surname/
 2 GIVN NN
 2 SOUR @S75@
 3 _TMPLT
@@ -9249,12 +9249,12 @@
 3 NAME GEDCOM file imported on 29 November 2024
 1 FAMC @F275@
 0 @I399@ INDI
-1 NAME Gagik //
+1 NAME Gagik /Placeholder surname/
 2 GIVN Gagik
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Gagik II, king of Armenia //
+1 NAME Gagik II, king of Armenia /Placeholder surname/
 2 GIVN Gagik II, king of Armenia
 2 SOUR @S75@
 3 _TMPLT
@@ -9533,7 +9533,7 @@
 1 FAMS @F275@
 1 FAMC @F276@
 0 @I400@ INDI
-1 NAME Arcruni //
+1 NAME Arcruni /Placeholder surname/
 2 GIVN Arcruni
 2 SOUR @S75@
 3 _TMPLT
@@ -9557,13 +9557,13 @@
 1 DEAT Y
 1 FAMS @F275@
 0 @I401@ INDI
-1 NAME Ashot //
+1 NAME Ashot /Placeholder surname/
 2 GIVN Ashot
 2 NICK Achot IV d'Arménie
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Ashot IV, king of Armenia //
+1 NAME Ashot IV, king of Armenia /Placeholder surname/
 2 GIVN Ashot IV, king of Armenia
 2 SOUR @S75@
 3 _TMPLT
@@ -9722,12 +9722,12 @@
 1 FAMS @F276@
 1 FAMC @F277@
 0 @I402@ INDI
-1 NAME Gagik I //
+1 NAME Gagik I /Placeholder surname/
 2 GIVN Gagik I
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Gagik I "the Great," king of Armenia //
+1 NAME Gagik I "the Great," king of Armenia /Placeholder surname/
 2 GIVN Gagik I "the Great," king of Armenia
 2 SOUR @S75@
 3 _TMPLT
@@ -10077,12 +10077,12 @@
 1 FAMS @F277@
 1 FAMC @F278@
 0 @I403@ INDI
-1 NAME Katramide //
+1 NAME Katramide /Placeholder surname/
 2 GIVN Katramide
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Katramide, queen of Armenia //
+1 NAME Katramide, queen of Armenia /Placeholder surname/
 2 GIVN Katramide, queen of Armenia
 2 SOUR @S75@
 3 _TMPLT
@@ -10232,7 +10232,7 @@
 1 FAMS @F277@
 1 FAMC @F279@
 0 @I404@ INDI
-1 NAME Ashot //
+1 NAME Ashot /Placeholder surname/
 2 GIVN Ashot
 2 SOUR @S75@
 3 _TMPLT
@@ -10243,7 +10243,7 @@
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Ashot III the Peaceful, king of Armenia //
+1 NAME Ashot III the Peaceful, king of Armenia /Placeholder surname/
 2 GIVN Ashot III the Peaceful, king of Armenia
 2 SOUR @S75@
 3 _TMPLT
@@ -10508,14 +10508,14 @@
 1 FAMS @F278@
 1 FAMC @F280@
 0 @I405@ INDI
-1 NAME Khosrovanuysh of Tabaristan //
+1 NAME Khosrovanuysh of Tabaristan /Placeholder surname/
 2 GIVN Khosrovanuysh of Tabaristan
 2 NSFX Queen of Armenia
 2 NICK Khosrovanush
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Khosrovanuysh, Queen of Armenia //
+1 NAME Khosrovanuysh, Queen of Armenia /Placeholder surname/
 2 GIVN Khosrovanuysh, Queen of Armenia
 2 SOUR @S75@
 3 _TMPLT
@@ -10551,12 +10551,12 @@
 3 NAME GEDCOM file imported on 29 November 2024
 1 FAMS @F278@
 0 @I406@ INDI
-1 NAME Vasak //
+1 NAME Vasak /Placeholder surname/
 2 GIVN Vasak
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Vasak, king of Siwnik' //
+1 NAME Vasak, king of Siwnik' /Placeholder surname/
 2 GIVN Vasak, king of Siwnik'
 2 SOUR @S75@
 3 _TMPLT
@@ -10590,12 +10590,12 @@
 1 FAMS @F279@
 1 FAMC @F281@
 0 @I407@ INDI
-1 NAME Abas //
+1 NAME Abas /Placeholder surname/
 2 GIVN Abas
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Abas I, king of Armenia //
+1 NAME Abas I, king of Armenia /Placeholder surname/
 2 GIVN Abas I, king of Armenia
 2 SOUR @S75@
 3 _TMPLT
@@ -10771,12 +10771,12 @@
 1 FAMS @F280@
 1 FAMC @F282@
 0 @I408@ INDI
-1 NAME Smbat //
+1 NAME Smbat /Placeholder surname/
 2 GIVN Smbat
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Smbat, king of Siwnik' //
+1 NAME Smbat, king of Siwnik' /Placeholder surname/
 2 GIVN Smbat, king of Siwnik'
 2 SOUR @S75@
 3 _TMPLT
@@ -10817,7 +10817,7 @@
 1 FAMS @F281@
 1 FAMC @F283@
 0 @I409@ INDI
-1 NAME Sahandouxt //
+1 NAME Sahandouxt /Placeholder surname/
 2 GIVN Sahandouxt
 2 NICK Chahandoukht
 2 SOUR @S75@
@@ -10862,17 +10862,17 @@
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Smbat I the Martyr, king of Armenia //
+1 NAME Smbat I the Martyr, king of Armenia /Placeholder surname/
 2 GIVN Smbat I the Martyr, king of Armenia
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Սմբատ //
+1 NAME Սմբատ /Placeholder surname/
 2 GIVN Սմբատ
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Սմբատ Ա Նահատակ //
+1 NAME Սմբատ Ա Նահատակ /Placeholder surname/
 2 GIVN Սմբատ Ա Նահատակ
 2 SOUR @S75@
 3 _TMPLT
@@ -11094,7 +11094,7 @@
 1 FAMS @F282@
 1 FAMC @F285@
 0 @I411@ INDI
-1 NAME N.N. //
+1 NAME N.N. /Placeholder surname/
 2 GIVN N.N.
 2 SOUR @S75@
 3 _TMPLT
@@ -11141,7 +11141,7 @@
 2 _PRIM N
 1 FAMS @F283@
 0 @I412@ INDI
-1 NAME Sahak //
+1 NAME Sahak /Placeholder surname/
 2 GIVN Sahak
 2 SOUR @S75@
 3 _TMPLT
@@ -11197,7 +11197,7 @@
 1 FAMS @F283@
 1 FAMC @F286@
 0 @I413@ INDI
-1 NAME Sahak Sevada (Arranshahik) //
+1 NAME Sahak Sevada (Arranshahik) /Placeholder surname/
 2 GIVN Sahak Sevada (Arranshahik)
 2 NSFX Prince of Gardman
 2 SOUR @S75@
@@ -11301,7 +11301,7 @@
 1 FAMS @F284@
 1 FAMC @F287@
 0 @I414@ INDI
-1 NAME Khotramide //
+1 NAME Khotramide /Placeholder surname/
 2 GIVN Khotramide
 2 NICK Katranide
 2 SOUR @S75@
@@ -11341,7 +11341,7 @@
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Ashot I "the Great", King of Armenia //
+1 NAME Ashot I "the Great", King of Armenia /Placeholder surname/
 2 GIVN Ashot I "the Great", King of Armenia
 2 SOUR @S75@
 3 _TMPLT
@@ -11627,12 +11627,12 @@
 1 FAMS @F285@
 1 FAMC @F288@
 0 @I416@ INDI
-1 NAME Ashot //
+1 NAME Ashot /Placeholder surname/
 2 GIVN Ashot
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Ashot, prince of Eastern Siwnik' //
+1 NAME Ashot, prince of Eastern Siwnik' /Placeholder surname/
 2 GIVN Ashot, prince of Eastern Siwnik'
 2 SOUR @S75@
 3 _TMPLT
@@ -11685,7 +11685,7 @@
 1 FAMS @F286@
 1 FAMC @F289@
 0 @I417@ INDI
-1 NAME Chouchan //
+1 NAME Chouchan /Placeholder surname/
 2 GIVN Chouchan
 2 SOUR @S75@
 3 _TMPLT
@@ -11737,7 +11737,7 @@
 2 _PRIM N
 1 FAMS @F286@
 0 @I418@ INDI
-1 NAME Grigor Hamam (Arranshahik) //
+1 NAME Grigor Hamam (Arranshahik) /Placeholder surname/
 2 GIVN Grigor Hamam (Arranshahik)
 2 NSFX King of Hereti
 2 SOUR @S75@
@@ -11790,22 +11790,22 @@
 3 NAME GEDCOM file imported on 29 November 2024
 1 FAMS @F287@
 0 @I420@ INDI
-1 NAME Hripsime //
+1 NAME Hripsime /Placeholder surname/
 2 GIVN Hripsime
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME ريشيم //
+1 NAME ريشيم /Placeholder surname/
 2 GIVN ريشيم
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Հռիփսիմէ //
+1 NAME Հռիփսիմէ /Placeholder surname/
 2 GIVN Հռիփսիմէ
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Багратион //
+1 NAME Багратион /Placeholder surname/
 2 GIVN Багратион
 2 SOUR @S75@
 3 _TMPLT
@@ -11836,7 +11836,7 @@
 2 _PRIM N
 1 FAMS @F288@
 0 @I421@ INDI
-1 NAME Smbat //
+1 NAME Smbat /Placeholder surname/
 2 GIVN Smbat
 2 NICK The Confessor
 2 SOUR @S75@
@@ -11848,7 +11848,7 @@
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Prince Smbat VIII "the Confessor" of Armenia //
+1 NAME Prince Smbat VIII "the Confessor" of Armenia /Placeholder surname/
 2 GIVN Prince Smbat VIII "the Confessor" of Armenia
 2 SOUR @S75@
 3 _TMPLT
@@ -11878,17 +11878,17 @@
 2 CONT KNOWN AS "THE CONFESSOR"(ABU'L-ABBAS); HIGH CONSTABLE FOR THE CALIPH 82
 2 CONC 6-855
 2 CONT
-2 CONT 	1  NAME the Confessor //
+2 CONT 	1  NAME the Confessor /Placeholder surname/
 2 CONT 	2  GIVN the Confessor
 2 CONT 	2  SURN
 2 CONT 	2  NICK the Confessor
 2 CONT
-2 CONT 	1  NAME the Confessor //
+2 CONT 	1  NAME the Confessor /Placeholder surname/
 2 CONT 	2  GIVN the Confessor
 2 CONT 	2  SURN
 2 CONT 	2  NICK the Confessor
 2 CONT
-2 CONT 	1  NAME the Confessor //
+2 CONT 	1  NAME the Confessor /Placeholder surname/
 2 CONT 	2  GIVN the Confessor
 2 CONT 	2  SURN
 2 CONT 	2  NICK the Confessor
@@ -11979,12 +11979,12 @@
 1 FAMS @F288@
 1 FAMC @F291@
 0 @I422@ INDI
-1 NAME Philip //
+1 NAME Philip /Placeholder surname/
 2 GIVN Philip
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Philip, prince of Eastern Siwnik' //
+1 NAME Philip, prince of Eastern Siwnik' /Placeholder surname/
 2 GIVN Philip, prince of Eastern Siwnik'
 2 SOUR @S75@
 3 _TMPLT
@@ -12040,7 +12040,7 @@
 1 FAMS @F290@
 1 FAMC @F293@
 0 @I424@ INDI
-1 NAME Spram (Mihranid) //
+1 NAME Spram (Mihranid) /Placeholder surname/
 2 GIVN Spram (Mihranid)
 2 NSFX of Albania
 2 SOUR @S75@
@@ -12074,7 +12074,7 @@
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Prince Ashot IV "Msaker" of Armenia //
+1 NAME Prince Ashot IV "Msaker" of Armenia /Placeholder surname/
 2 GIVN Prince Ashot IV "Msaker" of Armenia
 2 SOUR @S75@
 3 _TMPLT
@@ -12167,7 +12167,7 @@
 2 CONC 06-826
 2 CONT FOR THE CALIPH
 2 CONT
-2 CONT 	1  NAME the Brave //
+2 CONT 	1  NAME the Brave /Placeholder surname/
 2 CONT 	2  GIVN the Brave
 2 CONT 	2  SURN
 2 CONT 	2  NICK the Brave
@@ -12308,7 +12308,7 @@
 3 NAME GEDCOM file imported on 29 November 2024
 1 FAMS @F293@
 0 @I428@ INDI
-1 NAME Varas-Tiridates II (Mihranid) //
+1 NAME Varas-Tiridates II (Mihranid) /Placeholder surname/
 2 GIVN Varas-Tiridates II (Mihranid)
 2 NSFX King of Caucasian Albania, prince of Gardman
 2 SOUR @S75@
@@ -12397,12 +12397,12 @@
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Prince Smbat VII of Armenia //
+1 NAME Prince Smbat VII of Armenia /Placeholder surname/
 2 GIVN Prince Smbat VII of Armenia
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME SMBAT VII BAGRATIDE //
+1 NAME SMBAT VII BAGRATIDE /Placeholder surname/
 2 GIVN SMBAT VII BAGRATIDE
 1 SEX M
 1 _UID 5CBC4816DFF94C648F7AA8476D8C9DF37F1B
@@ -12615,7 +12615,7 @@
 3 NAME GEDCOM file imported on 29 November 2024
 1 FAMS @F296@
 0 @I433@ INDI
-1 NAME Stepanos I (Mihranid) //
+1 NAME Stepanos I (Mihranid) /Placeholder surname/
 2 GIVN Stepanos I (Mihranid)
 2 NSFX King of Caucasian Albania
 2 SOUR @S75@
@@ -12660,13 +12660,13 @@
 3 NAME GEDCOM file imported on 29 November 2024
 1 FAMS @F297@
 0 @I435@ INDI
-1 NAME Ashot //
+1 NAME Ashot /Placeholder surname/
 2 GIVN Ashot
 2 NICK "the blind"
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Prince Ashot III "the Blind" of Armenia //
+1 NAME Prince Ashot III "the Blind" of Armenia /Placeholder surname/
 2 GIVN Prince Ashot III "the Blind" of Armenia
 2 SOUR @S75@
 3 _TMPLT
@@ -12753,7 +12753,7 @@
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Kourd II Siounides, Prince of Siounie //
+1 NAME Kourd II Siounides, Prince of Siounie /Placeholder surname/
 2 GIVN Kourd II Siounides, Prince of Siounie
 2 SOUR @S75@
 3 _TMPLT
@@ -12782,7 +12782,7 @@
 1 FAMS @F299@
 1 FAMC @F302@
 0 @I437@ INDI
-1 NAME Gagik II (Mihranid) //
+1 NAME Gagik II (Mihranid) /Placeholder surname/
 2 GIVN Gagik II (Mihranid)
 2 NSFX King of Caucasian Albania
 2 SOUR @S75@
@@ -12829,12 +12829,12 @@
 3 NAME GEDCOM file imported on 29 November 2024
 1 FAMS @F300@
 0 @I439@ INDI
-1 NAME Vasak //
+1 NAME Vasak /Placeholder surname/
 2 GIVN Vasak
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Prince Vasak of Armenia //
+1 NAME Prince Vasak of Armenia /Placeholder surname/
 2 GIVN Prince Vasak of Armenia
 2 SOUR @S75@
 3 _TMPLT
@@ -12948,7 +12948,7 @@
 1 FAMS @F302@
 1 FAMC @F305@
 0 @I441@ INDI
-1 NAME Narses I (Mihranid) //
+1 NAME Narses I (Mihranid) /Placeholder surname/
 2 GIVN Narses I (Mihranid)
 2 NSFX King of Caucasian Albania
 2 SOUR @S75@
@@ -13086,12 +13086,12 @@
 1 FAMS @F304@
 1 FAMC @F307@
 0 @I444@ INDI
-1 NAME Smbat //
+1 NAME Smbat /Placeholder surname/
 2 GIVN Smbat
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Prince Smbat V of Armenia //
+1 NAME Prince Smbat V of Armenia /Placeholder surname/
 2 GIVN Prince Smbat V of Armenia
 2 SOUR @S75@
 3 _TMPLT
@@ -13190,7 +13190,7 @@
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Kourd I Siounides, Prince of Siounie //
+1 NAME Kourd I Siounides, Prince of Siounie /Placeholder surname/
 2 GIVN Kourd I Siounides, Prince of Siounie
 2 SOUR @S75@
 3 _TMPLT
@@ -13223,7 +13223,7 @@
 1 FAMS @F305@
 1 FAMC @F309@
 0 @I446@ INDI
-1 NAME Vardan II //
+1 NAME Vardan II /Placeholder surname/
 2 GIVN Vardan II
 2 NSFX King of Caucasian Albania
 2 SOUR @S75@
@@ -13403,12 +13403,12 @@
 2 _PRIM N
 1 FAMS @F307@
 0 @I449@ INDI
-1 NAME Varaztirocs //
+1 NAME Varaztirocs /Placeholder surname/
 2 GIVN Varaztirocs
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Prince Varaztirocs II of Armenia //
+1 NAME Prince Varaztirocs II of Armenia /Placeholder surname/
 2 GIVN Prince Varaztirocs II of Armenia
 2 SOUR @S75@
 3 _TMPLT
@@ -13441,7 +13441,7 @@
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Johannes II Siounides, Prince of Siounie //
+1 NAME Johannes II Siounides, Prince of Siounie /Placeholder surname/
 2 GIVN Johannes II Siounides, Prince of Siounie
 2 SOUR @S75@
 3 _TMPLT
@@ -13535,12 +13535,12 @@
 1 FAMS @F310@
 1 FAMC @F313@
 0 @I453@ INDI
-1 NAME Smbat //
+1 NAME Smbat /Placeholder surname/
 2 GIVN Smbat
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Prince Smbat IV of Armenia //
+1 NAME Prince Smbat IV of Armenia /Placeholder surname/
 2 GIVN Prince Smbat IV of Armenia
 2 SOUR @S75@
 3 _TMPLT
@@ -13611,7 +13611,7 @@
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Daughter of Khazar //
+1 NAME Daughter of Khazar /Placeholder surname/
 2 GIVN Daughter of Khazar
 2 SOUR @S75@
 3 _TMPLT
@@ -13639,12 +13639,12 @@
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Javanshir Prince of Caucasian Albania r. 637- 680 //
+1 NAME Javanshir Prince of Caucasian Albania r. 637- 680 /Placeholder surname/
 2 GIVN Javanshir Prince of Caucasian Albania r. 637- 680
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Cavanşir Varaz Qriqor //
+1 NAME Cavanşir Varaz Qriqor /Placeholder surname/
 2 GIVN Cavanşir Varaz Qriqor
 2 SOUR @S75@
 3 _TMPLT
@@ -13781,12 +13781,12 @@
 1 FAMS @F313@
 1 FAMC @F316@
 0 @I457@ INDI
-1 NAME Manuel //
+1 NAME Manuel /Placeholder surname/
 2 GIVN Manuel
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Prince Manuel II of Armenia //
+1 NAME Prince Manuel II of Armenia /Placeholder surname/
 2 GIVN Prince Manuel II of Armenia
 2 SOUR @S75@
 3 _TMPLT
@@ -13814,7 +13814,7 @@
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Gregor II Novirak Siounides, Prince of Siounie //
+1 NAME Gregor II Novirak Siounides, Prince of Siounie /Placeholder surname/
 2 GIVN Gregor II Novirak Siounides, Prince of Siounie
 2 SOUR @S75@
 3 _TMPLT
@@ -13881,7 +13881,7 @@
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Varaz Gregor I King of Caucasian Albania, prince of Gardman, r. 6 //
+1 NAME Varaz Gregor I King of Caucasian Albania, prince of Gardman, r. 6 /Placeholder surname/
 2 GIVN Varaz Gregor I King of Caucasian Albania, prince of Gardman, r. 6
 2 SOUR @S75@
 3 _TMPLT
@@ -13961,12 +13961,12 @@
 3 NAME GEDCOM file imported on 29 November 2024
 1 FAMS @F316@
 0 @I462@ INDI
-1 NAME Varaztirocs //
+1 NAME Varaztirocs /Placeholder surname/
 2 GIVN Varaztirocs
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Prince Varaztirocs I of Armenia //
+1 NAME Prince Varaztirocs I of Armenia /Placeholder surname/
 2 GIVN Prince Varaztirocs I of Armenia
 2 SOUR @S75@
 3 _TMPLT
@@ -14013,7 +14013,7 @@
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Isaac I Siounides, Prince of Siounie //
+1 NAME Isaac I Siounides, Prince of Siounie /Placeholder surname/
 2 GIVN Isaac I Siounides, Prince of Siounie
 2 SOUR @S75@
 3 _TMPLT
@@ -14047,13 +14047,13 @@
 1 FAMS @F318@
 1 FAMC @F321@
 0 @I465@ INDI
-1 NAME Vard II (Mihranid) //
+1 NAME Vard II (Mihranid) /Placeholder surname/
 2 GIVN Vard II (Mihranid)
 2 NSFX of Albania
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Vard II of Albania //
+1 NAME Vard II of Albania /Placeholder surname/
 2 GIVN Vard II of Albania
 2 SOUR @S75@
 3 _TMPLT
@@ -14098,12 +14098,12 @@
 3 NAME GEDCOM file imported on 29 November 2024
 1 FAMS @F319@
 0 @I467@ INDI
-1 NAME Manuel //
+1 NAME Manuel /Placeholder surname/
 2 GIVN Manuel
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Prince Manuel I of Armenia //
+1 NAME Prince Manuel I of Armenia /Placeholder surname/
 2 GIVN Prince Manuel I of Armenia
 2 SOUR @S75@
 3 _TMPLT
@@ -14150,7 +14150,7 @@
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Serge I Siounides, Prince of Sionie //
+1 NAME Serge I Siounides, Prince of Sionie /Placeholder surname/
 2 GIVN Serge I Siounides, Prince of Sionie
 2 SOUR @S75@
 3 _TMPLT
@@ -14185,13 +14185,13 @@
 1 FAMS @F321@
 1 FAMC @F324@
 0 @I470@ INDI
-1 NAME Vardan I (Mihranid) //
+1 NAME Vardan I (Mihranid) /Placeholder surname/
 2 GIVN Vardan I (Mihranid)
 2 NSFX of Albania
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Vardan I of Albania //
+1 NAME Vardan I of Albania /Placeholder surname/
 2 GIVN Vardan I of Albania
 2 SOUR @S75@
 3 _TMPLT
@@ -14236,22 +14236,22 @@
 3 NAME GEDCOM file imported on 29 November 2024
 1 FAMS @F322@
 0 @I472@ INDI
-1 NAME Spandiat //
+1 NAME Spandiat /Placeholder surname/
 2 GIVN Spandiat
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Prince Spandiat I of Armenia //
+1 NAME Prince Spandiat I of Armenia /Placeholder surname/
 2 GIVN Prince Spandiat I of Armenia
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Συμβάτιος //
+1 NAME Συμβάτιος /Placeholder surname/
 2 GIVN Συμβάτιος
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Սմբատ //
+1 NAME Սմբատ /Placeholder surname/
 2 GIVN Սմբատ
 2 SOUR @S75@
 3 _TMPLT
@@ -14326,7 +14326,7 @@
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Piran I Siounides, Prince of Siounie //
+1 NAME Piran I Siounides, Prince of Siounie /Placeholder surname/
 2 GIVN Piran I Siounides, Prince of Siounie
 2 SOUR @S75@
 3 _TMPLT
@@ -14427,7 +14427,7 @@
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Mihr Artashir II Siounides, Prince of Siounie //
+1 NAME Mihr Artashir II Siounides, Prince of Siounie /Placeholder surname/
 2 GIVN Mihr Artashir II Siounides, Prince of Siounie
 2 SOUR @S75@
 3 _TMPLT
@@ -14525,7 +14525,7 @@
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Gregor I Siounides, Prince of Siounis //
+1 NAME Gregor I Siounides, Prince of Siounis /Placeholder surname/
 2 GIVN Gregor I Siounides, Prince of Siounis
 2 SOUR @S75@
 3 _TMPLT
@@ -14560,7 +14560,7 @@
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Mihr I of Albania //
+1 NAME Mihr I of Albania /Placeholder surname/
 2 GIVN Mihr I of Albania
 2 SOUR @S75@
 3 _TMPLT
@@ -14629,7 +14629,7 @@
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Valoul I Siounides, Prince of Siounis //
+1 NAME Valoul I Siounides, Prince of Siounis /Placeholder surname/
 2 GIVN Valoul I Siounides, Prince of Siounis
 2 SOUR @S75@
 3 _TMPLT
@@ -14726,7 +14726,7 @@
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Johannes I Siounides, Prince of Sionie //
+1 NAME Johannes I Siounides, Prince of Sionie /Placeholder surname/
 2 GIVN Johannes I Siounides, Prince of Sionie
 2 SOUR @S75@
 3 _TMPLT
@@ -14828,7 +14828,7 @@
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Babgen II Siounides, Prince of Siounie //
+1 NAME Babgen II Siounides, Prince of Siounie /Placeholder surname/
 2 GIVN Babgen II Siounides, Prince of Siounie
 2 SOUR @S75@
 3 _TMPLT
@@ -15191,7 +15191,7 @@
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Varaz Valan Siounides, Prince of Siounie //
+1 NAME Varaz Valan Siounides, Prince of Siounie /Placeholder surname/
 2 GIVN Varaz Valan Siounides, Prince of Siounie
 2 SOUR @S75@
 3 _TMPLT
@@ -15226,7 +15226,7 @@
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Vasak I, Viceroy of Armenia //
+1 NAME Vasak I, Viceroy of Armenia /Placeholder surname/
 2 GIVN Vasak I, Viceroy of Armenia
 2 SOUR @S75@
 3 _TMPLT
@@ -15281,7 +15281,7 @@
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Valinak II Siounides, Marszban of Siounie //
+1 NAME Valinak II Siounides, Marszban of Siounie /Placeholder surname/
 2 GIVN Valinak II Siounides, Marszban of Siounie
 2 SOUR @S75@
 3 _TMPLT
@@ -15331,7 +15331,7 @@
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Babik I, Prince of Armenia //
+1 NAME Babik I, Prince of Armenia /Placeholder surname/
 2 GIVN Babik I, Prince of Armenia
 2 SOUR @S75@
 3 _TMPLT
@@ -15419,7 +15419,7 @@
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Prince Antiochos Andvok II of Armenia //
+1 NAME Prince Antiochos Andvok II of Armenia /Placeholder surname/
 2 GIVN Prince Antiochos Andvok II of Armenia
 2 SOUR @S75@
 3 _TMPLT
@@ -15467,7 +15467,7 @@
 2 SOUR @S75@
 3 _TMPLT
 3 NAME GEDCOM file imported on 29 November 2024
-1 NAME Prince Antiochos Andvok I of Armenia //
+1 NAME Prince Antiochos Andvok I of Armenia /Placeholder surname/
 2 GIVN Prince Antiochos Andvok I of Armenia
 2 SOUR @S75@
 3 _TMPLT
@@ -15610,7 +15610,7 @@
 1 FAMS @F352@
 1 FAMC @F353@
 0 @I525@ INDI
-1 NAME BAGROT TARONITES BAGRATIDE //
+1 NAME BAGROT TARONITES BAGRATIDE /Placeholder surname/
 2 GIVN BAGROT TARONITES BAGRATIDE
 1 SEX M
 1 _UID AFB68E40829D42738BB9BED75214650AB57A
@@ -15630,7 +15630,7 @@
 2 DATE 2 AUG 2021
 1 FAMS @F353@
 0 @I527@ INDI
-1 NAME ASOT III BAGRATIDE //
+1 NAME ASOT III BAGRATIDE /Placeholder surname/
 2 GIVN ASOT III BAGRATIDE
 1 SEX M
 1 _UID 5D47AF917C124038988D7621ABBDA8BA70E7
@@ -15641,7 +15641,7 @@
 1 FAMS @F354@
 1 FAMC @F355@
 0 @I528@ INDI
-1 NAME GRÉGOIRE BAGRATIDE //
+1 NAME GRÉGOIRE BAGRATIDE /Placeholder surname/
 2 GIVN GRÉGOIRE BAGRATIDE
 1 SEX M
 1 _UID 788C9C80E6764CBE96DC0A8EC1140169CF9D
@@ -15652,7 +15652,7 @@
 1 FAMS @F355@
 1 FAMC @F356@
 0 @I529@ INDI
-1 NAME  //
+1 NAME  /Placeholder surname/
 1 SEX M
 1 _UID 5A41BD0DADBC4E85A6104BEBC3FA144AA8BC
 1 CHAN
@@ -15674,7 +15674,7 @@
 1 FAMS @F357@
 1 FAMC @F291@
 0 @I532@ INDI
-1 NAME N. MAMIKONIDE //
+1 NAME N. MAMIKONIDE /Placeholder surname/
 2 GIVN N. MAMIKONIDE
 1 SEX F
 1 _UID 039A608F733E43709B45F88CA4F0CE8B4123
@@ -15687,7 +15687,7 @@
 1 FAMS @F359@
 1 FAMC @F360@
 0 @I534@ INDI
-1 NAME SAMUEL MAMIKONIDE //
+1 NAME SAMUEL MAMIKONIDE /Placeholder surname/
 2 GIVN SAMUEL MAMIKONIDE
 1 SEX M
 1 _UID C9AB94082E9C45788998AB605E7B7DB5CEC5
@@ -15701,7 +15701,7 @@
 1 FAMS @F360@
 1 FAMC @F361@
 0 @I535@ INDI
-1 NAME DAVID MAMIKONIDE //
+1 NAME DAVID MAMIKONIDE /Placeholder surname/
 2 GIVN DAVID MAMIKONIDE
 1 SEX M
 1 _UID 2783C97C2BD34D759A83F88EB13F7DA867B9
@@ -15715,7 +15715,7 @@
 1 FAMS @F361@
 1 FAMC @F362@
 0 @I536@ INDI
-1 NAME HRAHAT MAMIKONIDE //
+1 NAME HRAHAT MAMIKONIDE /Placeholder surname/
 2 GIVN HRAHAT MAMIKONIDE
 1 SEX M
 1 _UID 45900E96079244639249484097C33510BB7D
@@ -15728,7 +15728,7 @@
 1 FAMS @F362@
 1 FAMC @F363@
 0 @I537@ INDI
-1 NAME HAMAZASP II MAMIKONIDE //
+1 NAME HAMAZASP II MAMIKONIDE /Placeholder surname/
 2 GIVN HAMAZASP II MAMIKONIDE
 1 SEX M
 1 _UID 7B76551245224E929162EC298E0377FAA9BE
@@ -15742,7 +15742,7 @@
 1 FAMS @F363@
 1 FAMC @F364@
 0 @I538@ INDI
-1 NAME N. RECHTOUNI //
+1 NAME N. RECHTOUNI /Placeholder surname/
 2 GIVN N. RECHTOUNI
 1 SEX F
 1 _UID 210592E1FA43438B8CA03DCAAF7757F044BD
@@ -15754,7 +15754,7 @@
 2 PLAC Arménie
 1 FAMS @F363@
 0 @I539@ INDI
-1 NAME DAVID MAMIKONIDE //
+1 NAME DAVID MAMIKONIDE /Placeholder surname/
 2 GIVN DAVID MAMIKONIDE
 1 SEX M
 1 _UID E48F09A1D652455FBB7EED1C2EA97F30B128
@@ -15768,7 +15768,7 @@
 1 FAMS @F364@
 1 FAMC @F365@
 0 @I540@ INDI
-1 NAME MUSHEL MAMIKONIDE //
+1 NAME MUSHEL MAMIKONIDE /Placeholder surname/
 2 GIVN MUSHEL MAMIKONIDE
 1 SEX M
 1 _UID C37A6DDC849F4911A03174C8B8C5605B4831
@@ -15782,7 +15782,7 @@
 1 FAMS @F365@
 1 FAMC @F366@
 0 @I541@ INDI
-1 NAME Hmayeak MAMIKONIDE //
+1 NAME Hmayeak MAMIKONIDE /Placeholder surname/
 2 GIVN Hmayeak MAMIKONIDE
 1 SEX M
 1 _UID 3F1A0AC827194137B73A688257B241E4ECAA
@@ -16174,9 +16174,9 @@
 1 FAMS @F369@
 1 FAMC @F371@
 0 @I546@ INDI
-1 NAME Sahakanush //
+1 NAME Sahakanush /Placeholder surname/
 2 GIVN Sahakanush
-1 NAME Սահականուշ //
+1 NAME Սահականուշ /Placeholder surname/
 2 GIVN Սահականուշ
 1 SEX F
 1 _UID AA34ACEDA31946A1B5B1C60C0422CB4A8DEE
@@ -16992,11 +16992,11 @@
 1 DEAT Y
 1 FAMS @F371@
 0 @I549@ INDI
-1 NAME Isaac //
+1 NAME Isaac /Placeholder surname/
 2 GIVN Isaac
-1 NAME Isaac the Great of Armenia //
+1 NAME Isaac the Great of Armenia /Placeholder surname/
 2 GIVN Isaac the Great of Armenia
-1 NAME Սահակ Պարթև //
+1 NAME Սահակ Պարթև /Placeholder surname/
 2 GIVN Սահակ Պարթև
 1 SEX M
 1 _UID A4E686156B6B418DA259091FCC01487A7BC8
@@ -17390,7 +17390,7 @@
 1 FAMS @F373@
 1 FAMC @F375@
 0 @I551@ INDI
-1 NAME N.N. //
+1 NAME N.N. /Placeholder surname/
 2 GIVN N.N.
 1 SEX F
 1 _UID 42389FEF1E2549E1BD1AE65F1937B98D27E4
@@ -17416,14 +17416,14 @@
 1 FAMS @F374@
 1 FAMC @F376@
 0 @I553@ INDI
-1 NAME Nerses //
+1 NAME Nerses /Placeholder surname/
 2 GIVN Nerses
 2 NICK King of Armenia
-1 NAME Saint Nerses I the Great //
+1 NAME Saint Nerses I the Great /Placeholder surname/
 2 GIVN Saint Nerses I the Great
-1 NAME Ներսես //
+1 NAME Ներսես /Placeholder surname/
 2 GIVN Ներսես
-1 NAME Սուրբ Ներսես Ա. Մեծ //
+1 NAME Սուրբ Ներսես Ա. Մեծ /Placeholder surname/
 2 GIVN Սուրբ Ներսես Ա. Մեծ
 1 SEX M
 1 _UID F803FC1BE2C34002B9AF7E5B684F88DB5423
@@ -18728,7 +18728,7 @@
 1 FAMS @F378@
 1 FAMC @F379@
 0 @I560@ INDI
-1 NAME N.N. //
+1 NAME N.N. /Placeholder surname/
 2 GIVN N.N.
 1 SEX F
 1 _UID EB7C14BD82B14F38A828143DFA12E9C5CD1C
@@ -18754,12 +18754,12 @@
 1 FAMS @F379@
 1 FAMC @F382@
 0 @I562@ INDI
-1 NAME Khosrov //
+1 NAME Khosrov /Placeholder surname/
 2 GIVN Khosrov
 2 NICK The Short
-1 NAME Khosrov III, king of Armenia //
+1 NAME Khosrov III, king of Armenia /Placeholder surname/
 2 GIVN Khosrov III, king of Armenia
-1 NAME Խոսրով Գ Կոտակ //
+1 NAME Խոսրով Գ Կոտակ /Placeholder surname/
 2 GIVN Խոսրով Գ Կոտակ
 1 SEX M
 1 _UID BE3343931A714AE798D09A5F1701E16C4988
@@ -19344,11 +19344,11 @@
 1 FAMS @F380@
 1 FAMC @F383@
 0 @I563@ INDI
-1 NAME Սբ. Հուսիկ Ա. Պարթև //
+1 NAME Սբ. Հուսիկ Ա. Պարթև /Placeholder surname/
 2 GIVN Սբ. Հուսիկ Ա. Պարթև
-1 NAME St. Husik I Primate of Armenia //
+1 NAME St. Husik I Primate of Armenia /Placeholder surname/
 2 GIVN St. Husik I Primate of Armenia
-1 NAME Սբ. Հուսիկ Ա. Պարթև //
+1 NAME Սբ. Հուսիկ Ա. Պարթև /Placeholder surname/
 2 GIVN Սբ. Հուսիկ Ա. Պարթև
 1 SEX M
 1 _UID A111D5FB760D45CAB8AC496071E730F19A2B
@@ -19436,15 +19436,15 @@
 1 FAMS @F383@
 1 FAMC @F386@
 0 @I566@ INDI
-1 NAME Tiridates //
+1 NAME Tiridates /Placeholder surname/
 2 GIVN Tiridates
 2 NICK The Great
 1 NAME King Tiran Trdat (Helios) *the Great* of /Armenia/
 2 GIVN King Tiran Trdat (Helios) *the Great* of
 2 SURN Armenia
-1 NAME Tiridates III, king of Armenia //
+1 NAME Tiridates III, king of Armenia /Placeholder surname/
 2 GIVN Tiridates III, king of Armenia
-1 NAME Տրդատ //
+1 NAME Տրդատ /Placeholder surname/
 2 GIVN Տրդատ
 1 SEX M
 1 _UID A1E101867D914A029FE9F81D4537CE2A745F
@@ -20461,9 +20461,9 @@
 1 NAME Sankt Vrtanes /of Armenia/
 2 GIVN Sankt Vrtanes
 2 SURN of Armenia
-1 NAME St. Vrtanes Primate of Armenia //
+1 NAME St. Vrtanes Primate of Armenia /Placeholder surname/
 2 GIVN St. Vrtanes Primate of Armenia
-1 NAME Սբ. Վրթանես Ա. Պարթև //
+1 NAME Սբ. Վրթանես Ա. Պարթև /Placeholder surname/
 2 GIVN Սբ. Վրթանես Ա. Պարթև
 1 SEX M
 1 _UID 6BEB8E66C78340B5BDA0E2F7A23FC6B91F2A
@@ -20483,7 +20483,7 @@
 1 FAMS @F384@
 1 FAMC @F388@
 0 @I568@ INDI
-1 NAME Artavazd I //
+1 NAME Artavazd I /Placeholder surname/
 2 GIVN Artavazd I
 2 NSFX Prince of the Mamikonids
 1 SEX M
@@ -20521,9 +20521,9 @@
 1 OCCU Prince of the Mamikonids
 1 FAMS @F385@
 0 @I569@ INDI
-1 NAME Ashkatar //
+1 NAME Ashkatar /Placeholder surname/
 2 GIVN Ashkatar
-1 NAME Ashkatar, king of the Alans //
+1 NAME Ashkatar, king of the Alans /Placeholder surname/
 2 GIVN Ashkatar, king of the Alans
 1 SEX M
 1 _UID 44A8643DDC254547B5DA67015CD9A2A189AE
@@ -20542,13 +20542,13 @@
 1 OCCU King of the Alans
 1 FAMS @F386@
 0 @I570@ INDI
-1 NAME Khosrov //
+1 NAME Khosrov /Placeholder surname/
 2 GIVN Khosrov
 2 NICK The Valiant
 1 NAME Chosroes I of /Armenia/
 2 GIVN Chosroes I of
 2 SURN Armenia
-1 NAME Khosrov II, king of West Armenia //
+1 NAME Khosrov II, king of West Armenia /Placeholder surname/
 2 GIVN Khosrov II, king of West Armenia
 1 SEX M
 1 _UID 11490ED6F82446AD9C41FDE736888DF95291
@@ -21082,7 +21082,7 @@
 2 CONT
 2 CONT He ruled from 253 to 293.
 2 CONT
-2 CONT 	1  NAME the Short //
+2 CONT 	1  NAME the Short /Placeholder surname/
 2 CONT 	2  GIVN the Short
 2 CONT 	2  SURN
 2 CONT 	2  NICK the Short
@@ -21139,7 +21139,7 @@
 1 FAMS @F387@
 1 FAMC @F389@
 0 @I571@ INDI
-1 NAME Unknown Mother of Tiridates //
+1 NAME Unknown Mother of Tiridates /Placeholder surname/
 2 GIVN Unknown Mother of Tiridates
 1 SEX F
 1 _UID 0AB60051922D4E389E9368AF93B57FDD4248
@@ -21163,11 +21163,11 @@
 1 FAMS @F388@
 1 FAMC @F390@
 0 @I573@ INDI
-1 NAME Gregory //
+1 NAME Gregory /Placeholder surname/
 2 GIVN Gregory
-1 NAME Saint Gregory the Illuminator //
+1 NAME Saint Gregory the Illuminator /Placeholder surname/
 2 GIVN Saint Gregory the Illuminator
-1 NAME Գրիգոր Լուսաւորիչ //
+1 NAME Գրիգոր Լուսաւորիչ /Placeholder surname/
 2 GIVN Գրիգոր Լուսաւորիչ
 1 SEX M
 1 _UID 7428B9B55F3B47499FA6215DE742B5AD82CD
@@ -21193,7 +21193,7 @@
 2 CONC F
 2 CONT ACILISENE, TARAUN-ASHTISHOT, BAGRAVENDENE
 2 CONT
-2 CONT 	1  NAME the Illuminator //
+2 CONT 	1  NAME the Illuminator /Placeholder surname/
 2 CONT 	2  GIVN the Illuminator
 2 CONT 	2  SURN
 2 CONT 	2  NICK the Illuminator
@@ -21335,7 +21335,7 @@
 2 CONC eman Calendar; and appointed 1 October as his feast (among the festa pr
 2 CONC o aliquibus locis).
 2 CONT
-2 CONT 	1  NAME the Illuminator //
+2 CONT 	1  NAME the Illuminator /Placeholder surname/
 2 CONT 	2  GIVN the Illuminator
 2 CONT 	2  SURN
 2 CONT 	2  NICK the Illuminator
@@ -21477,7 +21477,7 @@
 2 CONC eman Calendar; and appointed 1 October as his feast (among the festa pr
 2 CONC o aliquibus locis).
 2 CONT
-2 CONT 	1  NAME the Illuminator //
+2 CONT 	1  NAME the Illuminator /Placeholder surname/
 2 CONT 	2  GIVN the Illuminator
 2 CONT 	2  SURN
 2 CONT 	2  NICK the Illuminator
@@ -21643,13 +21643,13 @@
 1 FAMS @F388@
 1 FAMC @F391@
 0 @I574@ INDI
-1 NAME Tiridates //
+1 NAME Tiridates /Placeholder surname/
 2 GIVN Tiridates
-1 NAME Tiridates II the Great, king of Armenia //
+1 NAME Tiridates II the Great, king of Armenia /Placeholder surname/
 2 GIVN Tiridates II the Great, king of Armenia
-1 NAME Տրդատ //
+1 NAME Տրդատ /Placeholder surname/
 2 GIVN Տրդատ
-1 NAME Տրդատ Բ //
+1 NAME Տրդատ Բ /Placeholder surname/
 2 GIVN Տրդատ Բ
 1 SEX M
 1 _UID 43C438CEEF3F4AC7ADA9F7FFCF8201CBB559
@@ -22229,7 +22229,7 @@
 1 FAMS @F389@
 1 FAMC @F392@
 0 @I575@ INDI
-1 NAME NN (Wife of Tiridates II of Armenia) //
+1 NAME NN (Wife of Tiridates II of Armenia) /Placeholder surname/
 2 GIVN NN (Wife of Tiridates II of Armenia)
 1 SEX F
 1 _UID 35650C6776FD41D8A985D10A2279C4C8C9ED
@@ -22254,9 +22254,9 @@
 1 NAME Anak /of Armenia/
 2 GIVN Anak
 2 SURN of Armenia
-1 NAME Anak //
+1 NAME Anak /Placeholder surname/
 2 GIVN Anak
-1 NAME Անակ //
+1 NAME Անակ /Placeholder surname/
 2 GIVN Անակ
 1 SEX M
 1 _UID D6D2702B7D07405CA95E5B584C6F59DC0DA1
@@ -22270,10 +22270,10 @@
 1 DEAT
 1 FAMS @F391@
 0 @I578@ INDI
-1 NAME Khusraw //
+1 NAME Khusraw /Placeholder surname/
 2 GIVN Khusraw
 2 NICK The Brave
-1 NAME Khusraw I, king of Armenia //
+1 NAME Khusraw I, king of Armenia /Placeholder surname/
 2 GIVN Khusraw I, king of Armenia
 1 SEX M
 1 _UID B636B1C5C9C04A46973810644768C15F8D08
@@ -22462,7 +22462,7 @@
 1 FAMS @F392@
 1 FAMC @F393@
 0 @I579@ INDI
-1 NAME NN (Wife of Khosrov I of Armenia) //
+1 NAME NN (Wife of Khosrov I of Armenia) /Placeholder surname/
 2 GIVN NN (Wife of Khosrov I of Armenia)
 1 SEX F
 1 _UID 2F43CA634FEA412188480D543BDDE042A514
@@ -22471,7 +22471,7 @@
 1 OCCU
 1 FAMS @F392@
 0 @I580@ INDI
-1 NAME Daughter of Pharasmenes //
+1 NAME Daughter of Pharasmenes /Placeholder surname/
 2 GIVN Daughter of Pharasmenes
 2 NSFX III
 1 SEX F
@@ -22496,10 +22496,10 @@
 1 FAMS @F393@
 1 FAMC @F394@
 0 @I581@ INDI
-1 NAME Vologaeses //
+1 NAME Vologaeses /Placeholder surname/
 2 GIVN Vologaeses
 2 NICK Arsaces XXIX Vologases II (King) of ARMENIA; aka Vagharsh (Vologaesus) V `the Great' ARSHAKUNI
-1 NAME Vologases V, king of Parthia and Armenia //
+1 NAME Vologases V, king of Parthia and Armenia /Placeholder surname/
 2 GIVN Vologases V, king of Parthia and Armenia
 1 SEX M
 1 _UID 31764E226BA54B1E984FF84EDB879415C88C
@@ -23927,10 +23927,10 @@
 1 FAMS @F393@
 1 FAMC @F395@
 0 @I582@ INDI
-1 NAME Pharasmenes //
+1 NAME Pharasmenes /Placeholder surname/
 2 GIVN Pharasmenes
 2 NICK King of Iberia
-1 NAME Pharasmenes III, king of Iberia //
+1 NAME Pharasmenes III, king of Iberia /Placeholder surname/
 2 GIVN Pharasmenes III, king of Iberia
 1 SEX M
 1 _UID A4522AC8D3E84773AD82984E9415076D8F45
@@ -24004,7 +24004,7 @@
 1 NAME Vologaeses /-parni parthia 35/
 2 GIVN Vologaeses
 2 SURN -parni parthia 35
-1 NAME Vologaeses IV, king of Parthia & Armenia //
+1 NAME Vologaeses IV, king of Parthia & Armenia /Placeholder surname/
 2 GIVN Vologaeses IV, king of Parthia & Armenia
 1 SEX M
 1 _UID 6F027A1B9A894159803AD92C01FB1616AA9E
@@ -24092,7 +24092,7 @@
 1 FAMS @F395@
 1 FAMC @F397@
 0 @I585@ INDI
-1 NAME NN (Wife of Vologases IV of Parthia) //
+1 NAME NN (Wife of Vologases IV of Parthia) /Placeholder surname/
 2 GIVN NN (Wife of Vologases IV of Parthia)
 1 SEX F
 1 _UID FA41C3CC60F94D708F36DFEA0DB2F27A9900
@@ -24101,10 +24101,10 @@
 1 OCCU
 1 FAMS @F395@
 0 @I586@ INDI
-1 NAME Rhadamiste //
+1 NAME Rhadamiste /Placeholder surname/
 2 GIVN Rhadamiste
 2 NICK King of Iberia
-1 NAME Rhadamiste I, king of Iberia //
+1 NAME Rhadamiste I, king of Iberia /Placeholder surname/
 2 GIVN Rhadamiste I, king of Iberia
 1 SEX M
 1 _UID 30D0C7AC07254E109BC035D4723724F11F75
@@ -24143,7 +24143,7 @@
 1 FAMS @F396@
 1 FAMC @F398@
 0 @I587@ INDI
-1 NAME Zenobia //
+1 NAME Zenobia /Placeholder surname/
 2 GIVN Zenobia
 1 SEX F
 1 _UID 75259CB388004841A05AE9F2D0CE791C02F1
@@ -24158,9 +24158,9 @@
 1 FAMS @F396@
 1 FAMC @F399@
 0 @I588@ INDI
-1 NAME Mithridates //
+1 NAME Mithridates /Placeholder surname/
 2 GIVN Mithridates
-1 NAME Mithridates IV, king of Parthia //
+1 NAME Mithridates IV, king of Parthia /Placeholder surname/
 2 GIVN Mithridates IV, king of Parthia
 1 SEX M
 1 _UID 8CFD9026E3E84B1E8F92E8B24DE26D21EB2E
@@ -24238,7 +24238,7 @@
 1 FAMS @F397@
 1 FAMC @F400@
 0 @I589@ INDI
-1 NAME NN (Wife of Mithridates IV of Parthia) //
+1 NAME NN (Wife of Mithridates IV of Parthia) /Placeholder surname/
 2 GIVN NN (Wife of Mithridates IV of Parthia)
 1 SEX F
 1 _UID 6BBFE84DD4B046E185681F40743422D4F41D
@@ -24247,10 +24247,10 @@
 1 OCCU
 1 FAMS @F397@
 0 @I590@ INDI
-1 NAME Pharasmenes //
+1 NAME Pharasmenes /Placeholder surname/
 2 GIVN Pharasmenes
 2 NICK The Good
-1 NAME Pharasmenes II, king of Iberia //
+1 NAME Pharasmenes II, king of Iberia /Placeholder surname/
 2 GIVN Pharasmenes II, king of Iberia
 1 SEX M
 1 _UID 877B8C7571004085AF649185A8C685FE53E4
@@ -24281,7 +24281,7 @@
 2 SURN Armenia
 2 NSFX Queen of Iberia
 2 NICK Queen of Iberia
-1 NAME Ghadana, Queen of Iberia //
+1 NAME Ghadana, Queen of Iberia /Placeholder surname/
 2 GIVN Ghadana, Queen of Iberia
 1 SEX F
 1 _UID BA19903872FD47BE8C021450905FF2503281
@@ -24331,7 +24331,7 @@
 1 FAMS @F399@
 1 FAMC @F401@
 0 @I593@ INDI
-1 NAME Greek Concubine //
+1 NAME Greek Concubine /Placeholder surname/
 2 GIVN Greek Concubine
 1 SEX F
 1 _UID FAC6B21AE26441BD93470C35970AA7C9FCC6
@@ -24342,10 +24342,10 @@
 2 PLAC Armenia
 1 FAMS @F400@
 0 @I594@ INDI
-1 NAME Vonones //
+1 NAME Vonones /Placeholder surname/
 2 GIVN Vonones
 2 NICK King of Parthia and Media Atropatene
-1 NAME Vonones II, King of Parthia and Media Atropatene //
+1 NAME Vonones II, King of Parthia and Media Atropatene /Placeholder surname/
 2 GIVN Vonones II, King of Parthia and Media Atropatene
 1 SEX M
 1 _UID 47C6656BE6B245C38BF563CEEC7B5F392D75
@@ -25201,7 +25201,7 @@
 1 FAMS @F401@
 1 FAMC @F404@
 0 @I596@ INDI
-1 NAME Unknown //
+1 NAME Unknown /Placeholder surname/
 2 GIVN Unknown
 1 SEX F
 1 _UID B0F8A69E623D4FEBAC839D36ACDCA9E4DC5D
@@ -25210,10 +25210,10 @@
 1 OCCU
 1 FAMS @F402@
 0 @I597@ INDI
-1 NAME Vologaeses //
+1 NAME Vologaeses /Placeholder surname/
 2 GIVN Vologaeses
 2 NICK بلاش دوم
-1 NAME Vologaeses II, king of Parthia //
+1 NAME Vologaeses II, king of Parthia /Placeholder surname/
 2 GIVN Vologaeses II, king of Parthia
 1 SEX M
 1 _UID EFC6835C270F4935A6E0E9F269D078DF39F3
@@ -25921,7 +25921,7 @@
 1 FAMS @F402@
 1 FAMC @F405@
 0 @I598@ INDI
-1 NAME Parthian Princess //
+1 NAME Parthian Princess /Placeholder surname/
 2 GIVN Parthian Princess
 2 NICK Urania Arshakuni
 1 SEX F
@@ -25941,9 +25941,9 @@
 2 DATE -30
 1 FAMS @F403@
 0 @I599@ INDI
-1 NAME Darius //
+1 NAME Darius /Placeholder surname/
 2 GIVN Darius
-1 NAME Darius II, king of Media Atropatene //
+1 NAME Darius II, king of Media Atropatene /Placeholder surname/
 2 GIVN Darius II, king of Media Atropatene
 1 SEX M
 1 _UID 61E11931302449C9B41DBAEEE4C3DF77684C
@@ -26208,10 +26208,10 @@
 1 FAMS @F403@
 1 FAMC @F406@
 0 @I600@ INDI
-1 NAME Mithridates //
+1 NAME Mithridates /Placeholder surname/
 2 GIVN Mithridates
 2 NSFX I
-1 NAME Mithridates I, king of Iberia //
+1 NAME Mithridates I, king of Iberia /Placeholder surname/
 2 GIVN Mithridates I, king of Iberia
 1 SEX M
 1 _UID 5FF2FDCBBEDD40F4BEB196D98DA92C7EA64B
@@ -26286,10 +26286,10 @@
 1 FAMS @F404@
 1 FAMC @F407@
 0 @I601@ INDI
-1 NAME N. N. //
+1 NAME N. N. /Placeholder surname/
 2 GIVN N. N.
 2 NICK Princess of Iberia
-1 NAME Princess of Iberia //
+1 NAME Princess of Iberia /Placeholder surname/
 2 GIVN Princess of Iberia
 1 SEX F
 1 _UID F87CFD3317134D0F846D70F0CDBE3F216617
@@ -26303,7 +26303,7 @@
 2 PLAC Parthia
 1 FAMS @F405@
 0 @I602@ INDI
-1 NAME Vologaeses I Dareios //
+1 NAME Vologaeses I Dareios /Placeholder surname/
 2 GIVN Vologaeses I Dareios
 2 NSFX King of Parthia
 2 NICK King of Parthia
@@ -27316,7 +27316,7 @@
 1 FAMS @F405@
 1 FAMC @F400@
 0 @I603@ INDI
-1 NAME Athenais //
+1 NAME Athenais /Placeholder surname/
 2 GIVN Athenais
 1 SEX F
 1 _UID DF16D97EF8B1458EB6585FA289581A23F568
@@ -27385,10 +27385,10 @@
 1 FAMS @F406@
 1 FAMC @F408@
 0 @I604@ INDI
-1 NAME Artavasdes //
+1 NAME Artavasdes /Placeholder surname/
 2 GIVN Artavasdes
 2 NICK Artavazd III of ARMENIA; of MEDIA
-1 NAME Artavasdes I, king of Media Atropatene //
+1 NAME Artavasdes I, king of Media Atropatene /Placeholder surname/
 2 GIVN Artavasdes I, king of Media Atropatene
 1 SEX M
 1 _UID EC64FB3FE3C2416A904554BAFB303A688A1C
@@ -27668,10 +27668,10 @@
 1 FAMS @F406@
 1 FAMC @F409@
 0 @I605@ INDI
-1 NAME Pharasmenes //
+1 NAME Pharasmenes /Placeholder surname/
 2 GIVN Pharasmenes
 2 NICK Pharnavaz I King of Iberia
-1 NAME Pharasmenes I, king of Iberia //
+1 NAME Pharasmenes I, king of Iberia /Placeholder surname/
 2 GIVN Pharasmenes I, king of Iberia
 1 SEX M
 1 _UID 9D74C8A599B343D586642DCD6B39277405F9
@@ -28034,7 +28034,7 @@
 1 FAMS @F407@
 1 FAMC @F410@
 0 @I606@ INDI
-1 NAME N.N. //
+1 NAME N.N. /Placeholder surname/
 2 GIVN N.N.
 1 SEX F
 1 _UID BC9067CAAAB9408CACAF9C7ADBC0F4CA76FC
@@ -28048,7 +28048,7 @@
 2 GIVN Antiochos Dikaios Épiphane
 2 SURN Philorhomaios Philhellène
 2 NICK King of Commagene
-1 NAME Antiochos Théos, I, King of Commagene //
+1 NAME Antiochos Théos, I, King of Commagene /Placeholder surname/
 2 GIVN Antiochos Théos, I, King of Commagene
 1 SEX M
 1 _UID F50D6705D5BD4819A4A353E129983025F29F
@@ -28497,10 +28497,10 @@
 1 FAMS @F408@
 1 FAMC @F412@
 0 @I608@ INDI
-1 NAME Isias Philostorgos //
+1 NAME Isias Philostorgos /Placeholder surname/
 2 GIVN Isias Philostorgos
 2 NSFX Princess of Cappadocia
-1 NAME η Ισίας Φιλόστοργος //
+1 NAME η Ισίας Φιλόστοργος /Placeholder surname/
 2 GIVN η Ισίας Φιλόστοργος
 1 SEX F
 1 _UID 70F480DA45F446DD908DEF5D6390150590C8
@@ -28603,9 +28603,9 @@
 1 OCCU
 1 FAMS @F409@
 0 @I610@ INDI
-1 NAME Ariobarzanes //
+1 NAME Ariobarzanes /Placeholder surname/
 2 GIVN Ariobarzanes
-1 NAME Ariobarzanes I, king of Media Atropatene //
+1 NAME Ariobarzanes I, king of Media Atropatene /Placeholder surname/
 2 GIVN Ariobarzanes I, king of Media Atropatene
 1 SEX M
 1 _UID 67825C3387B24ADBA64D0A2BFF7B16C654FB
@@ -28745,9 +28745,9 @@
 2 DATE 6 NOV 2014
 1 FAMS @F410@
 0 @I613@ INDI
-1 NAME Tigranes //
+1 NAME Tigranes /Placeholder surname/
 2 GIVN Tigranes
-1 NAME Tigranes IV, king of Armenia //
+1 NAME Tigranes IV, king of Armenia /Placeholder surname/
 2 GIVN Tigranes IV, king of Armenia
 1 SEX M
 1 _UID A79B60E50A714838B975A0379F6AEFBB3AA2
@@ -28839,7 +28839,7 @@
 1 FAMS @F411@
 1 FAMC @F416@
 0 @I614@ INDI
-1 NAME Erato //
+1 NAME Erato /Placeholder surname/
 2 GIVN Erato
 2 NSFX Queen of Armenia
 1 SEX F
@@ -29010,9 +29010,9 @@
 1 FAMS @F411@
 1 FAMC @F417@
 0 @I615@ INDI
-1 NAME Laodice VII Thea Philadelphus //
+1 NAME Laodice VII Thea Philadelphus /Placeholder surname/
 2 GIVN Laodice VII Thea Philadelphus
-1 NAME Λαοδίκη ἡ Θεά καὶ Φιλάδελφος //
+1 NAME Λαοδίκη ἡ Θεά καὶ Φιλάδελφος /Placeholder surname/
 2 GIVN Λαοδίκη ἡ Θεά καὶ Φιλάδελφος
 1 SEX F
 1 _UID B6A44617081A429CACE650D5381011DFA64D
@@ -29075,14 +29075,14 @@
 1 FAMS @F412@
 1 FAMC @F418@
 0 @I616@ INDI
-1 NAME Mithridates //
+1 NAME Mithridates /Placeholder surname/
 2 GIVN Mithridates
 2 NICK King of Commagene
-1 NAME Mithridates I Callinicus, king of Commagene //
+1 NAME Mithridates I Callinicus, king of Commagene /Placeholder surname/
 2 GIVN Mithridates I Callinicus, king of Commagene
-1 NAME Μιθριδάτης ὀ Кαλλίνικος //
+1 NAME Μιθριδάτης ὀ Кαλλίνικος /Placeholder surname/
 2 GIVN Μιθριδάτης ὀ Кαλλίνικος
-1 NAME Μιθριδάτης //
+1 NAME Μιθριδάτης /Placeholder surname/
 2 GIVN Μιθριδάτης
 1 SEX M
 1 _UID 5D5EBC60183E49BE999583F8E2E98D5B9049
@@ -29154,7 +29154,7 @@
 2 GIVN Athenais Philostorgos
 2 SURN Philostorgos
 2 NSFX of Pontus
-1 NAME η Άθηναἷς Φιλόστοργος Α' //
+1 NAME η Άθηναἷς Φιλόστοργος Α' /Placeholder surname/
 2 GIVN η Άθηναἷς Φιλόστοργος Α'
 1 SEX F
 1 _UID ACB9E84C722943DBB77CBD36DD1BF9B31C91
@@ -29294,14 +29294,14 @@
 2 _PRIM Y
 1 FAMS @F413@
 0 @I618@ INDI
-1 NAME Ariobarzanes //
+1 NAME Ariobarzanes /Placeholder surname/
 2 GIVN Ariobarzanes
-1 NAME Ariobarzanes I, king of Cappadocia //
+1 NAME Ariobarzanes I, king of Cappadocia /Placeholder surname/
 2 GIVN Ariobarzanes I, king of Cappadocia
-1 NAME Ariobarzane I //
+1 NAME Ariobarzane I /Placeholder surname/
 2 GIVN Ariobarzane I
 2 NSFX de Cappadoce
-1 NAME Ἀριοβαρζάνης //
+1 NAME Ἀριοβαρζάνης /Placeholder surname/
 2 GIVN Ἀριοβαρζάνης
 1 SEX M
 1 _UID 9BB83BEFD4AA42B5B4F0D67467453BDFA63C
@@ -29346,10 +29346,10 @@
 2 _PRIM N
 1 FAMS @F413@
 0 @I619@ INDI
-1 NAME Mithridates //
+1 NAME Mithridates /Placeholder surname/
 2 GIVN Mithridates
 2 NICK King of ATROPATENE; aka Mithridates III (King) of PARTHIA & PERSIA
-1 NAME Mithridates I, king of Media Atropatene //
+1 NAME Mithridates I, king of Media Atropatene /Placeholder surname/
 2 GIVN Mithridates I, king of Media Atropatene
 1 SEX M
 1 _UID 0550BFDEC6E149B89CC527225E8F70872860
@@ -29392,7 +29392,7 @@
 1 OCCU King of Media Atropatene
 1 FAMS @F414@
 0 @I620@ INDI
-1 NAME Armenian Princess from the Artaxiad Dynasty //
+1 NAME Armenian Princess from the Artaxiad Dynasty /Placeholder surname/
 2 GIVN Armenian Princess from the Artaxiad Dynasty
 2 NICK Putri II
 1 SEX F
@@ -29427,7 +29427,7 @@
 1 FAMS @F415@
 1 FAMC @F421@
 0 @I622@ INDI
-1 NAME NN First Wife //
+1 NAME NN First Wife /Placeholder surname/
 2 GIVN NN First Wife
 1 SEX F
 1 _UID 4BE2343ABE13429082EB4825F1610ADC50D2
@@ -29435,9 +29435,9 @@
 2 DATE 29 JAN 2017
 1 FAMS @F416@
 0 @I623@ INDI
-1 NAME Tigranes //
+1 NAME Tigranes /Placeholder surname/
 2 GIVN Tigranes
-1 NAME Tigranes III, king of Armenia //
+1 NAME Tigranes III, king of Armenia /Placeholder surname/
 2 GIVN Tigranes III, king of Armenia
 1 SEX M
 1 _UID 589EA825ED12444596B9A74741AE858B8779
@@ -29512,7 +29512,7 @@
 1 FAMS @F417@
 1 FAMC @F422@
 0 @I624@ INDI
-1 NAME NN Second Wife //
+1 NAME NN Second Wife /Placeholder surname/
 2 GIVN NN Second Wife
 1 SEX F
 1 _UID E44D0B3C9D7649528122C147D465653CABF7
@@ -29520,7 +29520,7 @@
 2 DATE 30 APR 2022
 1 FAMS @F417@
 0 @I625@ INDI
-1 NAME Tryphaena //
+1 NAME Tryphaena /Placeholder surname/
 2 GIVN Tryphaena
 1 SEX F
 1 _UID FE74E0456C6C4DFA9A898219798C52804BB1
@@ -29583,7 +29583,7 @@
 2 GIVN Antiochus Grypus Philometer
 2 SURN .
 2 NICK Αντίοχος Η' Φιλομήτωρ Γρυπός της Συρ&...
-1 NAME Antiochus VIII, ruler of the Seleucid Empire //
+1 NAME Antiochus VIII, ruler of the Seleucid Empire /Placeholder surname/
 2 GIVN Antiochus VIII, ruler of the Seleucid Empire
 1 NAME Αντίοχος "Γρυπός" /./
 2 GIVN Αντίοχος "Γρυπός"
@@ -29799,12 +29799,12 @@
 1 FAMS @F418@
 1 FAMC @F424@
 0 @I627@ INDI
-1 NAME Samos Theosebes Dikaios //
+1 NAME Samos Theosebes Dikaios /Placeholder surname/
 2 GIVN Samos Theosebes Dikaios
 2 NICK King of Commagne
-1 NAME Sames II, king of Commagene //
+1 NAME Sames II, king of Commagene /Placeholder surname/
 2 GIVN Sames II, king of Commagene
-1 NAME Σάμος Θεοσεβής Δίκαιος //
+1 NAME Σάμος Θεοσεβής Δίκαιος /Placeholder surname/
 2 GIVN Σάμος Θεοσεβής Δίκαιος
 1 SEX M
 1 _UID E5FA0180FA67449EB56536D65677B3BE079D
@@ -29934,7 +29934,7 @@
 1 FAMS @F419@
 1 FAMC @F425@
 0 @I628@ INDI
-1 NAME Pythodoris of Commagene //
+1 NAME Pythodoris of Commagene /Placeholder surname/
 2 GIVN Pythodoris of Commagene
 2 NSFX Princess of Pontus
 1 SEX F
@@ -29956,9 +29956,9 @@
 1 OCCU LV9P-CBW
 1 FAMS @F419@
 0 @I629@ INDI
-1 NAME Cleopatra //
+1 NAME Cleopatra /Placeholder surname/
 2 GIVN Cleopatra
-1 NAME Cleopatra the Elder, princess of Pontus //
+1 NAME Cleopatra the Elder, princess of Pontus /Placeholder surname/
 2 GIVN Cleopatra the Elder, princess of Pontus
 1 SEX F
 1 _UID 40C6EBFB0F3043259E011271067CD32F39DB
@@ -30074,14 +30074,14 @@
 1 FAMS @F420@
 1 FAMC @F426@
 0 @I630@ INDI
-1 NAME Tigranes //
+1 NAME Tigranes /Placeholder surname/
 2 GIVN Tigranes
 2 NICK ARTAXID
-1 NAME Tigranes II "The Great", King of Armenia //
+1 NAME Tigranes II "The Great", King of Armenia /Placeholder surname/
 2 GIVN Tigranes II "The Great", King of Armenia
-1 NAME Տիգրան //
+1 NAME Տիգրան /Placeholder surname/
 2 GIVN Տիգրան
-1 NAME Տիգրան Մեծ, արքան Հայաստան //
+1 NAME Տիգրան Մեծ, արքան Հայաստան /Placeholder surname/
 2 GIVN Տիգրան Մեծ, արքան Հայաստան
 1 SEX M
 1 _UID E1CA7F20585D417895C3B320FAF5266A62A5
@@ -30327,17 +30327,17 @@
 2 CONT KNOWN AS "THE GREAT"; KING OF ARMENIA 95-56 BC; UNCERTAIN OF MOTHER OF C
 2 CONC HILDREN
 2 CONT
-2 CONT 	1  NAME the Great //
+2 CONT 	1  NAME the Great /Placeholder surname/
 2 CONT 	2  GIVN the Great
 2 CONT 	2  SURN
 2 CONT 	2  NICK the Great
 2 CONT
-2 CONT 	1  NAME the Great //
+2 CONT 	1  NAME the Great /Placeholder surname/
 2 CONT 	2  GIVN the Great
 2 CONT 	2  SURN
 2 CONT 	2  NICK the Great
 2 CONT
-2 CONT 	1  NAME the Great //
+2 CONT 	1  NAME the Great /Placeholder surname/
 2 CONT 	2  GIVN the Great
 2 CONT 	2  SURN
 2 CONT 	2  NICK the Great
@@ -30659,11 +30659,11 @@
 1 FAMS @F421@
 1 FAMC @F428@
 0 @I632@ INDI
-1 NAME Artavasdes II //
+1 NAME Artavasdes II /Placeholder surname/
 2 GIVN Artavasdes II
-1 NAME Artavasdes II, king of Armenia //
+1 NAME Artavasdes II, king of Armenia /Placeholder surname/
 2 GIVN Artavasdes II, king of Armenia
-1 NAME Արտավազդ Երկրորդ //
+1 NAME Արտավազդ Երկրորդ /Placeholder surname/
 2 GIVN Արտավազդ Երկրորդ
 1 SEX M
 1 _UID 3FB16D3435A64CA6B7C70862C806EDEDEE91
@@ -30744,7 +30744,7 @@
 1 FAMS @F422@
 1 FAMC @F420@
 0 @I633@ INDI
-1 NAME NN //
+1 NAME NN /Placeholder surname/
 2 GIVN NN
 1 SEX F
 1 _UID 5B77992349FF48328D33CE1E74FC4C1CD470
@@ -30752,12 +30752,12 @@
 2 DATE 30 APR 2022
 1 FAMS @F422@
 0 @I634@ INDI
-1 NAME Cleopatra //
+1 NAME Cleopatra /Placeholder surname/
 2 GIVN Cleopatra
 2 NICK Cleopatra
-1 NAME Cleopatra III, Queen of Egypt //
+1 NAME Cleopatra III, Queen of Egypt /Placeholder surname/
 2 GIVN Cleopatra III, Queen of Egypt
-1 NAME Κλεοπάτρα //
+1 NAME Κλεοπάτρα /Placeholder surname/
 2 GIVN Κλεοπάτρα
 2 NSFX Θεά της Αιγύπτου
 1 SEX F
@@ -31150,12 +31150,12 @@
 1 FAMS @F423@
 1 FAMC @F429@
 0 @I635@ INDI
-1 NAME Ptolemy //
+1 NAME Ptolemy /Placeholder surname/
 2 GIVN Ptolemy
 2 NICK Πτολεμαίος Ζ' της Αιγύπτου
-1 NAME Ptolemy VIII Euergetes II, Pharaoh of Egypt //
+1 NAME Ptolemy VIII Euergetes II, Pharaoh of Egypt /Placeholder surname/
 2 GIVN Ptolemy VIII Euergetes II, Pharaoh of Egypt
-1 NAME Πτολεμαίος //
+1 NAME Πτολεμαίος /Placeholder surname/
 2 GIVN Πτολεμαίος
 1 SEX M
 1 _UID ABD9815C29AB4BA48DFD07F6E474C32FF504
@@ -31820,12 +31820,12 @@
 1 FAMS @F423@
 1 FAMC @F430@
 0 @I636@ INDI
-1 NAME Demetrius //
+1 NAME Demetrius /Placeholder surname/
 2 GIVN Demetrius
 2 NICK The Conqueror
-1 NAME Demetrius II, ruler of the Seleucid Empire //
+1 NAME Demetrius II, ruler of the Seleucid Empire /Placeholder surname/
 2 GIVN Demetrius II, ruler of the Seleucid Empire
-1 NAME Δημήτριος //
+1 NAME Δημήτριος /Placeholder surname/
 2 GIVN Δημήτριος
 1 SEX M
 1 _UID 7FF56AA82DE24C2B922B8F0DA12CE9748F92
@@ -32160,9 +32160,9 @@
 1 FAMS @F424@
 1 FAMC @F431@
 0 @I637@ INDI
-1 NAME Cleopatra Thea //
+1 NAME Cleopatra Thea /Placeholder surname/
 2 GIVN Cleopatra Thea
-1 NAME Κλεοπάτρα Θεά //
+1 NAME Κλεοπάτρα Θεά /Placeholder surname/
 2 GIVN Κλεοπάτρα Θεά
 1 SEX F
 1 _UID 0F71206332494D2093DB5C703CEF909A7A57
@@ -32331,14 +32331,14 @@
 1 FAMS @F424@
 1 FAMC @F429@
 0 @I638@ INDI
-1 NAME Ptolemy //
+1 NAME Ptolemy /Placeholder surname/
 2 GIVN Ptolemy
 2 NICK King of Commagne
-1 NAME Ptolemy I, king of Commagene //
+1 NAME Ptolemy I, king of Commagene /Placeholder surname/
 2 GIVN Ptolemy I, king of Commagene
-1 NAME Πτολεμαῖος //
+1 NAME Πτολεμαῖος /Placeholder surname/
 2 GIVN Πτολεμαῖος
-1 NAME Պտողեմեոս //
+1 NAME Պտողեմեոս /Placeholder surname/
 2 GIVN Պտողեմեոս
 1 SEX M
 1 _UID 30EBF03CDAC24CB7920D79E4FBFEE079343A
@@ -32491,9 +32491,9 @@
 1 FAMS @F425@
 1 FAMC @F432@
 0 @I639@ INDI
-1 NAME Laodice //
+1 NAME Laodice /Placeholder surname/
 2 GIVN Laodice
-1 NAME Laodice of Pontus //
+1 NAME Laodice of Pontus /Placeholder surname/
 2 GIVN Laodice of Pontus
 1 SEX F
 1 _UID BB26D5B06DB147F7972C3B183DE06A7BDA55
@@ -32824,12 +32824,12 @@
 1 FAMS @F426@
 1 FAMC @F433@
 0 @I640@ INDI
-1 NAME Mithradates //
+1 NAME Mithradates /Placeholder surname/
 2 GIVN Mithradates
 2 NICK Eupator Dionysius
-1 NAME Mithridates VI, king of Pontus //
+1 NAME Mithridates VI, king of Pontus /Placeholder surname/
 2 GIVN Mithridates VI, king of Pontus
-1 NAME Μιθραδάτης //
+1 NAME Μιθραδάτης /Placeholder surname/
 2 GIVN Μιθραδάτης
 1 SEX M
 1 _UID A1F1289FEAFB44A68248C59A0603B6DEEEC4
@@ -34115,9 +34115,9 @@
 1 NAME Tigranes /Artashid/
 2 GIVN Tigranes
 2 SURN Artashid
-1 NAME Tigranes I, king of Armenia //
+1 NAME Tigranes I, king of Armenia /Placeholder surname/
 2 GIVN Tigranes I, king of Armenia
-1 NAME Տիգրան Առաջին //
+1 NAME Տիգրան Առաջին /Placeholder surname/
 2 GIVN Տիգրան Առաջին
 2 NSFX արքան Հայաստան
 1 SEX M
@@ -34355,10 +34355,10 @@
 1 FAMS @F428@
 1 FAMC @F435@
 0 @I643@ INDI
-1 NAME Cleopatra //
+1 NAME Cleopatra /Placeholder surname/
 2 GIVN Cleopatra
 2 NICK Κλεοπάτρα Β' της Αιγύπτου
-1 NAME Cleopatra II, Queen of Egypt //
+1 NAME Cleopatra II, Queen of Egypt /Placeholder surname/
 2 GIVN Cleopatra II, Queen of Egypt
 1 SEX F
 1 _UID 101E5302FA714693894ABFFD27028CAFBA02
@@ -34694,12 +34694,12 @@
 1 FAMS @F429@
 1 FAMC @F430@
 0 @I644@ INDI
-1 NAME Ptolemy //
+1 NAME Ptolemy /Placeholder surname/
 2 GIVN Ptolemy
 2 NICK Πτολεμαίος ΣΤ' Φιλομήτωρ της Αιγύπτου
-1 NAME Ptolemy VI Philometor, Pharaoh of Egypt //
+1 NAME Ptolemy VI Philometor, Pharaoh of Egypt /Placeholder surname/
 2 GIVN Ptolemy VI Philometor, Pharaoh of Egypt
-1 NAME Πτολεμαίος //
+1 NAME Πτολεμαίος /Placeholder surname/
 2 GIVN Πτολεμαίος
 1 SEX M
 1 _UID 0559E885473B4BD6A8024EC5A5B0EEAD1B71
@@ -35102,12 +35102,12 @@
 1 FAMS @F429@
 1 FAMC @F430@
 0 @I645@ INDI
-1 NAME Ptolemy //
+1 NAME Ptolemy /Placeholder surname/
 2 GIVN Ptolemy
 2 NICK Πτολεμαίος Ε' Επιφανής της Αιγύπτου
-1 NAME Ptolemy V Epiphanes, Pharaoh of Egypt //
+1 NAME Ptolemy V Epiphanes, Pharaoh of Egypt /Placeholder surname/
 2 GIVN Ptolemy V Epiphanes, Pharaoh of Egypt
-1 NAME Πτολεμαῖος //
+1 NAME Πτολεμαῖος /Placeholder surname/
 2 GIVN Πτολεμαῖος
 1 SEX M
 1 _UID 6058BBA34393427D882F2671D1FBB37FF7D3
@@ -35547,12 +35547,12 @@
 1 FAMS @F430@
 1 FAMC @F436@
 0 @I646@ INDI
-1 NAME Cleopatra //
+1 NAME Cleopatra /Placeholder surname/
 2 GIVN Cleopatra
 2 NICK Κλεοπάτρα Σύρα
-1 NAME Cleopatra I Syra, Queen of Egypt //
+1 NAME Cleopatra I Syra, Queen of Egypt /Placeholder surname/
 2 GIVN Cleopatra I Syra, Queen of Egypt
-1 NAME Κλεοπάτρα //
+1 NAME Κλεοπάτρα /Placeholder surname/
 2 GIVN Κλεοπάτρα
 1 SEX F
 1 _UID 7034ABC822DB43C7B7B41BEEDDEF5A47FF54
@@ -35726,15 +35726,15 @@
 1 FAMS @F430@
 1 FAMC @F437@
 0 @I647@ INDI
-1 NAME Demetrius //
+1 NAME Demetrius /Placeholder surname/
 2 GIVN Demetrius
 2 NICK Δημήτριος Α' Σωτήρ Σελευκιδός της Συρίας
 1 NAME Demetrios l Soter / Σώτερ Δημήτριος/
 2 GIVN Demetrios l Soter
 2 SURN Σώτερ Δημήτριος
-1 NAME Demetrius I, ruler of the Seleucid Empire //
+1 NAME Demetrius I, ruler of the Seleucid Empire /Placeholder surname/
 2 GIVN Demetrius I, ruler of the Seleucid Empire
-1 NAME Δημήτριος //
+1 NAME Δημήτριος /Placeholder surname/
 2 GIVN Δημήτριος
 1 SEX M
 1 _UID A35C38093DED4423874AA341D5DFD698A891
@@ -36224,12 +36224,12 @@
 1 FAMS @F431@
 1 FAMC @F438@
 0 @I649@ INDI
-1 NAME Orontes //
+1 NAME Orontes /Placeholder surname/
 2 GIVN Orontes
 2 NICK King of Armenia
-1 NAME Orontes IV, king of Armenia //
+1 NAME Orontes IV, king of Armenia /Placeholder surname/
 2 GIVN Orontes IV, king of Armenia
-1 NAME Երվանդ //
+1 NAME Երվանդ /Placeholder surname/
 2 GIVN Երվանդ
 1 SEX M
 1 _UID 2A705DACE21E4A0697EFC5F410FACAB4BA17
@@ -36293,12 +36293,12 @@
 1 FAMS @F432@
 1 FAMC @F439@
 0 @I650@ INDI
-1 NAME Mithridates //
+1 NAME Mithridates /Placeholder surname/
 2 GIVN Mithridates
 2 NICK FARNAKESEN
-1 NAME Mithridates V, king of Pontus //
+1 NAME Mithridates V, king of Pontus /Placeholder surname/
 2 GIVN Mithridates V, king of Pontus
-1 NAME Μιθριδάτης //
+1 NAME Μιθριδάτης /Placeholder surname/
 2 GIVN Μιθριδάτης
 1 SEX M
 1 _UID 1E9391A2A9754CF4B8F598154C1213B9C6D5
@@ -36598,12 +36598,12 @@
 1 FAMS @F433@
 1 FAMC @F440@
 0 @I651@ INDI
-1 NAME Laodice //
+1 NAME Laodice /Placeholder surname/
 2 GIVN Laodice
 2 NICK Λαοδίκη Σελευκιδά της Συρίας
-1 NAME Laodice VI, queen of Pontus //
+1 NAME Laodice VI, queen of Pontus /Placeholder surname/
 2 GIVN Laodice VI, queen of Pontus
-1 NAME Λαοδίκη //
+1 NAME Λαοδίκη /Placeholder surname/
 2 GIVN Λαοδίκη
 1 SEX F
 1 _UID 4FF97D057A9048339628A55AB0CC9BE407C7
@@ -36822,14 +36822,14 @@
 2 _PRIM Y
 1 FAMS @F434@
 0 @I653@ INDI
-1 NAME Artaxias //
+1 NAME Artaxias /Placeholder surname/
 2 GIVN Artaxias
 2 NICK The Conqueror
-1 NAME Artaxias I, king of Armenia //
+1 NAME Artaxias I, king of Armenia /Placeholder surname/
 2 GIVN Artaxias I, king of Armenia
-1 NAME Արտաշես //
+1 NAME Արտաշես /Placeholder surname/
 2 GIVN Արտաշես
-1 NAME Արտաշես Առաջին Բարեպաշտ //
+1 NAME Արտաշես Առաջին Բարեպաշտ /Placeholder surname/
 2 GIVN Արտաշես Առաջին Բարեպաշտ
 1 SEX M
 1 _UID A466A8662C0D4CE6AFD3AB52173679D098DE
@@ -37434,13 +37434,13 @@
 2 PLAC (Iberia), Georgia
 1 FAMS @F435@
 0 @I656@ INDI
-1 NAME Arsinoe //
+1 NAME Arsinoe /Placeholder surname/
 2 GIVN Arsinoe
-1 NAME Arsinoe III Philopator, queen of Egypt //
+1 NAME Arsinoe III Philopator, queen of Egypt /Placeholder surname/
 2 GIVN Arsinoe III Philopator, queen of Egypt
-1 NAME Ἀρσινόη //
+1 NAME Ἀρσινόη /Placeholder surname/
 2 GIVN Ἀρσινόη
-1 NAME Ἀρσινόη ἡ Φιλοπάτωρ //
+1 NAME Ἀρσινόη ἡ Φιλοπάτωρ /Placeholder surname/
 2 GIVN Ἀρσινόη ἡ Φιλοπάτωρ
 1 SEX F
 1 _UID 732198BCE2B74175AE5E399AC76E7807CACE
@@ -37602,12 +37602,12 @@
 1 FAMS @F436@
 1 FAMC @F443@
 0 @I657@ INDI
-1 NAME Ptolemy //
+1 NAME Ptolemy /Placeholder surname/
 2 GIVN Ptolemy
 2 NICK Πτολεμαίος Δ' Φιλοπάτωρ της Αιγύπτου
-1 NAME Ptolemy IV Philopator, Pharaoh of Egypt //
+1 NAME Ptolemy IV Philopator, Pharaoh of Egypt /Placeholder surname/
 2 GIVN Ptolemy IV Philopator, Pharaoh of Egypt
-1 NAME Πτολεμαίος //
+1 NAME Πτολεμαίος /Placeholder surname/
 2 GIVN Πτολεμαίος
 1 SEX M
 1 _UID C59C49755F38436BBA80E5B633776C2C7B11
@@ -37962,12 +37962,12 @@
 1 FAMS @F436@
 1 FAMC @F443@
 0 @I658@ INDI
-1 NAME Laodice //
+1 NAME Laodice /Placeholder surname/
 2 GIVN Laodice
 2 NICK Princess
-1 NAME Laodice III, queen of the Seleucid Empire //
+1 NAME Laodice III, queen of the Seleucid Empire /Placeholder surname/
 2 GIVN Laodice III, queen of the Seleucid Empire
-1 NAME Λαοδικη //
+1 NAME Λαοδικη /Placeholder surname/
 2 GIVN Λαοδικη
 1 SEX F
 1 _UID 8CF4FF87EA6C4C6D9DB9F87E5AD65ACF3AEC
@@ -38198,12 +38198,12 @@
 1 FAMS @F437@
 1 FAMC @F444@
 0 @I659@ INDI
-1 NAME Antiochus //
+1 NAME Antiochus /Placeholder surname/
 2 GIVN Antiochus
 2 NICK The Great -  Antiochus III the Great  of Armenia -the more correct name
-1 NAME Antiochus III Megas, king of the Seleucid Empire //
+1 NAME Antiochus III Megas, king of the Seleucid Empire /Placeholder surname/
 2 GIVN Antiochus III Megas, king of the Seleucid Empire
-1 NAME Ἀντίoχoς //
+1 NAME Ἀντίoχoς /Placeholder surname/
 2 GIVN Ἀντίoχoς
 1 SEX M
 1 _UID 948C42E9A4324DDE928D2081ACAE620BD3C4
@@ -39166,12 +39166,12 @@
 2 CONT
 2 CONT https://en.wikipedia.org/wiki/Antiochus_III_the_Great
 2 CONT
-2 CONT 	1  NAME Megas //
+2 CONT 	1  NAME Megas /Placeholder surname/
 2 CONT 	2  GIVN Megas
 2 CONT 	2  SURN
 2 CONT 	2  NICK Megas
 2 CONT
-2 CONT 	1  NAME Megas //
+2 CONT 	1  NAME Megas /Placeholder surname/
 2 CONT 	2  GIVN Megas
 2 CONT 	2  SURN
 2 CONT 	2  NICK Megas
@@ -39221,12 +39221,12 @@
 1 FAMS @F437@
 1 FAMC @F445@
 0 @I660@ INDI
-1 NAME Seleucus //
+1 NAME Seleucus /Placeholder surname/
 2 GIVN Seleucus
 2 NICK Philopater
-1 NAME Seleucus IV, ruler of the Seleucid Empire //
+1 NAME Seleucus IV, ruler of the Seleucid Empire /Placeholder surname/
 2 GIVN Seleucus IV, ruler of the Seleucid Empire
-1 NAME Σέλευκος //
+1 NAME Σέλευκος /Placeholder surname/
 2 GIVN Σέλευκος
 1 SEX M
 1 _UID B8682B2948964464BF05390FE403ECF2CB24
@@ -39649,12 +39649,12 @@
 1 FAMS @F438@
 1 FAMC @F437@
 0 @I661@ INDI
-1 NAME Laodice //
+1 NAME Laodice /Placeholder surname/
 2 GIVN Laodice
 2 NICK Λαοδίκη Στ' της Μα&...
-1 NAME Laodice IV, Queen of the Seleucid Empire //
+1 NAME Laodice IV, Queen of the Seleucid Empire /Placeholder surname/
 2 GIVN Laodice IV, Queen of the Seleucid Empire
-1 NAME Λαοδίκη //
+1 NAME Λαοδίκη /Placeholder surname/
 2 GIVN Λαοδίκη
 1 SEX F
 1 _UID 14AA22175BD24DCAA37F236C4C37CEF7348A
@@ -39822,12 +39822,12 @@
 1 FAMS @F441@
 1 FAMC @F437@
 0 @I662@ INDI
-1 NAME Arsames //
+1 NAME Arsames /Placeholder surname/
 2 GIVN Arsames
 2 NICK Sophene & Commagene
-1 NAME Arsames I, king of Armenia, Sophene & Commagene //
+1 NAME Arsames I, king of Armenia, Sophene & Commagene /Placeholder surname/
 2 GIVN Arsames I, king of Armenia, Sophene & Commagene
-1 NAME Արշամ //
+1 NAME Արշամ /Placeholder surname/
 2 GIVN Արշամ
 1 SEX M
 1 _UID 27BF473ECE4D4FC6B5650FE94D7E50A36BEF
@@ -39994,12 +39994,12 @@
 1 FAMS @F439@
 1 FAMC @F446@
 0 @I663@ INDI
-1 NAME Pharnaces //
+1 NAME Pharnaces /Placeholder surname/
 2 GIVN Pharnaces
 2 NICK 1 MITRADATESSEN
-1 NAME Pharnaces I, king of Pontus //
+1 NAME Pharnaces I, king of Pontus /Placeholder surname/
 2 GIVN Pharnaces I, king of Pontus
-1 NAME Φαρνάκης //
+1 NAME Φαρνάκης /Placeholder surname/
 2 GIVN Φαρνάκης
 1 SEX M
 1 _UID CAA9803CF84641FAA9E5AFE70E8E8F231AD4
@@ -40331,7 +40331,7 @@
 1 FAMS @F440@
 1 FAMC @F447@
 0 @I664@ INDI
-1 NAME Nysa //
+1 NAME Nysa /Placeholder surname/
 2 GIVN Nysa
 2 NSFX Queen of Pontus
 2 NICK PTOLEMAIOSDTR
@@ -40464,12 +40464,12 @@
 1 FAMS @F440@
 1 FAMC @F441@
 0 @I665@ INDI
-1 NAME Antiochus //
+1 NAME Antiochus /Placeholder surname/
 2 GIVN Antiochus
 2 NICK Epimanes ("The Mad One")
-1 NAME Antiochus IV, ruler of the Seleucid Empire //
+1 NAME Antiochus IV, ruler of the Seleucid Empire /Placeholder surname/
 2 GIVN Antiochus IV, ruler of the Seleucid Empire
-1 NAME Αντίοχος //
+1 NAME Αντίοχος /Placeholder surname/
 2 GIVN Αντίοχος
 1 SEX M
 1 _UID F578F1BDF4E041C0BDCCF7A7E990390ED7D6
@@ -41118,9 +41118,9 @@
 1 FAMS @F441@
 1 FAMC @F437@
 0 @I666@ INDI
-1 NAME Samara //
+1 NAME Samara /Placeholder surname/
 2 GIVN Samara
-1 NAME Samara, King of Iberia //
+1 NAME Samara, King of Iberia /Placeholder surname/
 2 GIVN Samara, King of Iberia
 1 SEX M
 1 _UID 75359854B6694F0D9FBEE9B4EE82F0AE1985
@@ -41142,12 +41142,12 @@
 1 FAMS @F442@
 1 FAMC @F448@
 0 @I667@ INDI
-1 NAME Ptolemy //
+1 NAME Ptolemy /Placeholder surname/
 2 GIVN Ptolemy
 2 NICK Πτολεμαίος Γ' Ευεργέτης της Αιγύπτου
-1 NAME Ptolemy III Euergetes, Pharaoh of Egypt //
+1 NAME Ptolemy III Euergetes, Pharaoh of Egypt /Placeholder surname/
 2 GIVN Ptolemy III Euergetes, Pharaoh of Egypt
-1 NAME Πτολεμαῖο //
+1 NAME Πτολεμαῖο /Placeholder surname/
 2 GIVN Πτολεμαῖο
 1 SEX M
 1 _UID ED182AC84EC84D31A4220C7D113E55D14FE7
@@ -41751,9 +41751,9 @@
 1 FAMS @F443@
 1 FAMC @F449@
 0 @I668@ INDI
-1 NAME Berenice //
+1 NAME Berenice /Placeholder surname/
 2 GIVN Berenice
-1 NAME Berenice II, queen of Egypt //
+1 NAME Berenice II, queen of Egypt /Placeholder surname/
 2 GIVN Berenice II, queen of Egypt
 1 SEX F
 1 _UID D14324ECC9FC42F2927AE90DB5B9B8EF3442
@@ -42016,13 +42016,13 @@
 1 FAMS @F443@
 1 FAMC @F450@
 0 @I669@ INDI
-1 NAME Mithridates //
+1 NAME Mithridates /Placeholder surname/
 2 GIVN Mithridates
-1 NAME Mithridates II, king of Pontus //
+1 NAME Mithridates II, king of Pontus /Placeholder surname/
 2 GIVN Mithridates II, king of Pontus
-1 NAME مهرداديکم‎ //
+1 NAME مهرداديکم‎ /Placeholder surname/
 2 GIVN مهرداديکم‎
-1 NAME Mιθριδάτης //
+1 NAME Mιθριδάτης /Placeholder surname/
 2 GIVN Mιθριδάτης
 1 SEX M
 1 _UID 0D96B0BBBAB742EBA4E82C4BC772E10FD85F
@@ -42259,7 +42259,7 @@
 2 GIVN Laodice
 2 SURN .
 2 NSFX Princess of Syria, Queen of Pontus
-1 NAME Λαοδικη //
+1 NAME Λαοδικη /Placeholder surname/
 2 GIVN Λαοδικη
 1 SEX F
 1 _UID 4F4BEE7BEC3947A996B3958B4DD5AF5AAC07
@@ -42312,15 +42312,15 @@
 1 FAMS @F444@
 1 FAMC @F452@
 0 @I671@ INDI
-1 NAME Laodice //
+1 NAME Laodice /Placeholder surname/
 2 GIVN Laodice
 2 NICK Λαοδίκη Β' Σελευκιδά της Συρίας
 1 NAME Princess Laodice VI of /Syria/
 2 GIVN Princess Laodice VI of
 2 SURN Syria
-1 NAME Laodice II, queen of the Seleucid Empire //
+1 NAME Laodice II, queen of the Seleucid Empire /Placeholder surname/
 2 GIVN Laodice II, queen of the Seleucid Empire
-1 NAME Λαοδίκη //
+1 NAME Λαοδίκη /Placeholder surname/
 2 GIVN Λαοδίκη
 1 SEX F
 1 _UID B702D7EE56C049DDAE01AEE72A19D611280B
@@ -42390,12 +42390,12 @@
 1 FAMS @F445@
 1 FAMC @F453@
 0 @I672@ INDI
-1 NAME Seleucus //
+1 NAME Seleucus /Placeholder surname/
 2 GIVN Seleucus
 2 NICK Σέλευκος Β' Καλλίνικος Σελευκιδός της Συρίας
-1 NAME Seleucus II, ruler of the Seleucid Empire //
+1 NAME Seleucus II, ruler of the Seleucid Empire /Placeholder surname/
 2 GIVN Seleucus II, ruler of the Seleucid Empire
-1 NAME Σέλευκος //
+1 NAME Σέλευκος /Placeholder surname/
 2 GIVN Σέλευκος
 1 SEX M
 1 _UID 8677BBF0606944FFBFA41825E576F842E94A
@@ -43000,13 +43000,13 @@
 1 FAMS @F445@
 1 FAMC @F452@
 0 @I673@ INDI
-1 NAME Samos //
+1 NAME Samos /Placeholder surname/
 2 GIVN Samos
-1 NAME Samos I, satrap of Commagene //
+1 NAME Samos I, satrap of Commagene /Placeholder surname/
 2 GIVN Samos I, satrap of Commagene
-1 NAME Σαμωσ //
+1 NAME Σαμωσ /Placeholder surname/
 2 GIVN Σαμωσ
-1 NAME Շամուշ //
+1 NAME Շամուշ /Placeholder surname/
 2 GIVN Շամուշ
 1 SEX M
 1 _UID 5C0462E610D74E43B63D847ABE8207429A0D
@@ -43206,13 +43206,13 @@
 1 FAMS @F446@
 1 FAMC @F454@
 0 @I674@ INDI
-1 NAME Mithridates //
+1 NAME Mithridates /Placeholder surname/
 2 GIVN Mithridates
-1 NAME Mithridates III, king of Pontus //
+1 NAME Mithridates III, king of Pontus /Placeholder surname/
 2 GIVN Mithridates III, king of Pontus
-1 NAME مهرداديکم‎ //
+1 NAME مهرداديکم‎ /Placeholder surname/
 2 GIVN مهرداديکم‎
-1 NAME Mιθριδάτης //
+1 NAME Mιθριδάτης /Placeholder surname/
 2 GIVN Mιθριδάτης
 1 SEX M
 1 _UID 81315F2B1B5445409657559131691A8C43C5
@@ -43376,11 +43376,11 @@
 1 FAMS @F447@
 1 FAMC @F444@
 0 @I675@ INDI
-1 NAME Laodice //
+1 NAME Laodice /Placeholder surname/
 2 GIVN Laodice
-1 NAME Laodice Queen of Pontus //
+1 NAME Laodice Queen of Pontus /Placeholder surname/
 2 GIVN Laodice Queen of Pontus
-1 NAME Λαοδικη //
+1 NAME Λαοδικη /Placeholder surname/
 2 GIVN Λαοδικη
 1 SEX F
 1 _UID 2B10B70822C5495380987FF442B0C4E3A147
@@ -43475,7 +43475,7 @@
 1 OCCU
 1 FAMS @F447@
 0 @I676@ INDI
-1 NAME N.N. //
+1 NAME N.N. /Placeholder surname/
 2 GIVN N.N.
 1 SEX F
 1 _UID 2A40067860534A599D57A71C1B5882CAB4E3
@@ -43501,7 +43501,7 @@
 1 FAMS @F448@
 1 FAMC @F455@
 0 @I678@ INDI
-1 NAME Arsinoe I //
+1 NAME Arsinoe I /Placeholder surname/
 2 GIVN Arsinoe I
 2 NSFX Queen of Greece, Queen of Egypt
 1 SEX F
@@ -43638,12 +43638,12 @@
 1 FAMS @F449@
 1 FAMC @F456@
 0 @I679@ INDI
-1 NAME Ptolemy //
+1 NAME Ptolemy /Placeholder surname/
 2 GIVN Ptolemy
 2 NICK Πτολεμαίος Β' Φιλάδελφος της Αιγύπτου
-1 NAME Ptolemy II Philadelphus, Pharaoh of Egypt //
+1 NAME Ptolemy II Philadelphus, Pharaoh of Egypt /Placeholder surname/
 2 GIVN Ptolemy II Philadelphus, Pharaoh of Egypt
-1 NAME Πτολεμαῖος //
+1 NAME Πτολεμαῖος /Placeholder surname/
 2 GIVN Πτολεμαῖος
 1 SEX M
 1 _UID E0DC07EEEB12403691E8DAD1755CF0C2CB27
@@ -44517,11 +44517,11 @@
 1 FAMS @F449@
 1 FAMC @F457@
 0 @I680@ INDI
-1 NAME Magas //
+1 NAME Magas /Placeholder surname/
 2 GIVN Magas
-1 NAME Magas, king of Cyrene //
+1 NAME Magas, king of Cyrene /Placeholder surname/
 2 GIVN Magas, king of Cyrene
-1 NAME Μάγας //
+1 NAME Μάγας /Placeholder surname/
 2 GIVN Μάγας
 1 SEX M
 1 _UID C63AA6C013BE4A058A5E8475A7F6A4C8708A
@@ -44669,12 +44669,12 @@
 1 FAMS @F450@
 1 FAMC @F458@
 0 @I681@ INDI
-1 NAME Apama //
+1 NAME Apama /Placeholder surname/
 2 GIVN Apama
 2 NICK Απαμα Σελευκιδά της Συρίας
-1 NAME Apama II, queen of Cyrenaica //
+1 NAME Apama II, queen of Cyrenaica /Placeholder surname/
 2 GIVN Apama II, queen of Cyrenaica
-1 NAME Ἀπάμα //
+1 NAME Ἀπάμα /Placeholder surname/
 2 GIVN Ἀπάμα
 1 SEX F
 1 _UID CEE0ED25DAE546FA9C98FE7E12394E848CF1
@@ -44764,11 +44764,11 @@
 1 FAMS @F450@
 1 FAMC @F459@
 0 @I682@ INDI
-1 NAME Ariobarzanes //
+1 NAME Ariobarzanes /Placeholder surname/
 2 GIVN Ariobarzanes
-1 NAME Ariobarzanes, king of Pontus //
+1 NAME Ariobarzanes, king of Pontus /Placeholder surname/
 2 GIVN Ariobarzanes, king of Pontus
-1 NAME Ἀριoβαρζάνης //
+1 NAME Ἀριoβαρζάνης /Placeholder surname/
 2 GIVN Ἀριoβαρζάνης
 1 SEX M
 1 _UID BD5933F797344BFF9E9D4A550ABAD61DE650
@@ -44852,7 +44852,7 @@
 1 FAMS @F451@
 1 FAMC @F460@
 0 @I683@ INDI
-1 NAME Laodice I //
+1 NAME Laodice I /Placeholder surname/
 2 GIVN Laodice I
 1 SEX F
 1 _UID 80C32CCC423A4DA3AA47C49EB2BACCCBFDCC
@@ -44862,12 +44862,12 @@
 2 PLAC (Pontus), Turkey
 1 FAMS @F451@
 0 @I684@ INDI
-1 NAME Laodice //
+1 NAME Laodice /Placeholder surname/
 2 GIVN Laodice
 2 NICK Laodice I *w. of Antiochus II Theos* of Syria Queen Consort
-1 NAME Laodice I, queen of the Seleucid Empire //
+1 NAME Laodice I, queen of the Seleucid Empire /Placeholder surname/
 2 GIVN Laodice I, queen of the Seleucid Empire
-1 NAME Λαοδίκη //
+1 NAME Λαοδίκη /Placeholder surname/
 2 GIVN Λαοδίκη
 1 SEX F
 1 _UID 9D30FF55CB094A8398FA9FA0B1590E9F4A43
@@ -45068,12 +45068,12 @@
 1 FAMS @F452@
 1 FAMC @F461@
 0 @I685@ INDI
-1 NAME Antiochus //
+1 NAME Antiochus /Placeholder surname/
 2 GIVN Antiochus
 2 NICK ♔ King of Syria
-1 NAME Antiochus II, ruler of the Seleucid Empire //
+1 NAME Antiochus II, ruler of the Seleucid Empire /Placeholder surname/
 2 GIVN Antiochus II, ruler of the Seleucid Empire
-1 NAME Ἀντίοχος //
+1 NAME Ἀντίοχος /Placeholder surname/
 2 GIVN Ἀντίοχος
 1 SEX M
 1 _UID E3F39E0F80E742FA85DE48720950D38AF987
@@ -45218,7 +45218,7 @@
 2 CONC hurch. Many of the people who make up its ranks are people andlocal chu
 2 CONC rches stolen from "the Philadelphia Church."
 2 CONT
-2 CONT 	1  NAME Theos //
+2 CONT 	1  NAME Theos /Placeholder surname/
 2 CONT 	2  GIVN Theos
 2 CONT 	2  SURN
 2 CONT 	2  NICK Theos
@@ -45230,12 +45230,12 @@
 2 CONT
 2 CONT He ruled Syria from 2 Jun 261 to 29 Aug 226.
 2 CONT
-2 CONT 	1  NAME Theos //
+2 CONT 	1  NAME Theos /Placeholder surname/
 2 CONT 	2  GIVN Theos
 2 CONT 	2  SURN
 2 CONT 	2  NICK Theos
 2 CONT
-2 CONT 	1  NAME Theos //
+2 CONT 	1  NAME Theos /Placeholder surname/
 2 CONT 	2  GIVN Theos
 2 CONT 	2  SURN
 2 CONT 	2  NICK Theos
@@ -45440,7 +45440,7 @@
 1 FAMS @F452@
 1 FAMC @F459@
 0 @I686@ INDI
-1 NAME Unknown Wife //
+1 NAME Unknown Wife /Placeholder surname/
 2 GIVN Unknown Wife
 1 SEX F
 1 _UID 040949BCCBAF4003A4FFF11006329FD620C6
@@ -45452,7 +45452,7 @@
 2 PLAC Syria
 1 FAMS @F453@
 0 @I687@ INDI
-1 NAME Andromachus //
+1 NAME Andromachus /Placeholder surname/
 2 GIVN Andromachus
 2 NSFX Prince of Syria
 2 NICK Ανδρομάχος Σελευκιδός της Συρίας
@@ -45528,7 +45528,7 @@
 1 NAME Aroandes III (Orontes) /King of Armenia/
 2 GIVN Aroandes III (Orontes)
 2 SURN King of Armenia
-1 NAME Aroandes (Orontes) III, King of Armenia //
+1 NAME Aroandes (Orontes) III, King of Armenia /Placeholder surname/
 2 GIVN Aroandes (Orontes) III, King of Armenia
 1 SEX M
 1 _UID B35F7C023EF348BFAE96806423BD2E191739
@@ -45694,7 +45694,7 @@
 1 FAMS @F454@
 1 FAMC @F462@
 0 @I689@ INDI
-1 NAME N.N. //
+1 NAME N.N. /Placeholder surname/
 2 GIVN N.N.
 1 SEX F
 1 _UID BD6AC9D52A4E4268BB6B5FABBED68795C7D6
@@ -45720,11 +45720,11 @@
 1 FAMS @F455@
 1 FAMC @F463@
 0 @I691@ INDI
-1 NAME Lysimachus //
+1 NAME Lysimachus /Placeholder surname/
 2 GIVN Lysimachus
-1 NAME Lysimachus, king of Thrace //
+1 NAME Lysimachus, king of Thrace /Placeholder surname/
 2 GIVN Lysimachus, king of Thrace
-1 NAME Λυσίμαχος //
+1 NAME Λυσίμαχος /Placeholder surname/
 2 GIVN Λυσίμαχος
 1 SEX M
 1 _UID 59D95B7717B5471DB81395F66C4C8711DA36
@@ -46232,12 +46232,12 @@
 1 FAMS @F456@
 1 FAMC @F465@
 0 @I693@ INDI
-1 NAME Berenice //
+1 NAME Berenice /Placeholder surname/
 2 GIVN Berenice
 2 NICK Βερενίκη της Μακεδονίας
-1 NAME Berenice I, Queen of Egypt //
+1 NAME Berenice I, Queen of Egypt /Placeholder surname/
 2 GIVN Berenice I, Queen of Egypt
-1 NAME Βερενίκη //
+1 NAME Βερενίκη /Placeholder surname/
 2 GIVN Βερενίκη
 1 SEX F
 1 _UID 5068010FEC014A14BB76B9373CB2EED5E5CE
@@ -46497,12 +46497,12 @@
 1 FAMS @F458@
 1 FAMC @F466@
 0 @I694@ INDI
-1 NAME Ptolemy //
+1 NAME Ptolemy /Placeholder surname/
 2 GIVN Ptolemy
 2 NICK Serapis
-1 NAME Ptolemy I Soter, Pharaoh of Egypt //
+1 NAME Ptolemy I Soter, Pharaoh of Egypt /Placeholder surname/
 2 GIVN Ptolemy I Soter, Pharaoh of Egypt
-1 NAME Πτολεμαῖος //
+1 NAME Πτολεμαῖος /Placeholder surname/
 2 GIVN Πτολεμαῖος
 1 SEX M
 1 _UID A5FB9ADB3A494770B3E649313B6D4E69C1E6
@@ -47817,12 +47817,12 @@
 1 FAMS @F458@
 1 FAMC @F468@
 0 @I696@ INDI
-1 NAME Antiochus //
+1 NAME Antiochus /Placeholder surname/
 2 GIVN Antiochus
 2 NICK Αντίοχος Α' Σωτήρ Σελευκιδός της Συρίας
-1 NAME Antiochus I, ruler of the Seleucid Empire //
+1 NAME Antiochus I, ruler of the Seleucid Empire /Placeholder surname/
 2 GIVN Antiochus I, ruler of the Seleucid Empire
-1 NAME Αντίοχος //
+1 NAME Αντίοχος /Placeholder surname/
 2 GIVN Αντίοχος
 2 NICK Αντίοχος Α' Σωτήρ Σελευκιδός της Συρίας
 1 SEX M
@@ -48589,9 +48589,9 @@
 1 FAMS @F459@
 1 FAMC @F469@
 0 @I697@ INDI
-1 NAME Stratonice //
+1 NAME Stratonice /Placeholder surname/
 2 GIVN Stratonice
-1 NAME Στρατoνίκη //
+1 NAME Στρατoνίκη /Placeholder surname/
 2 GIVN Στρατoνίκη
 1 SEX F
 1 _UID 90C547F6A4B7429C87D146CDA0A6625F3DB1
@@ -48752,14 +48752,14 @@
 1 FAMS @F459@
 1 FAMC @F470@
 0 @I698@ INDI
-1 NAME Mithridates //
+1 NAME Mithridates /Placeholder surname/
 2 GIVN Mithridates
 2 NICK Mehrdād
-1 NAME Mithridates I Ctistes, king of Pontus //
+1 NAME Mithridates I Ctistes, king of Pontus /Placeholder surname/
 2 GIVN Mithridates I Ctistes, king of Pontus
-1 NAME مهرداديکم‎ //
+1 NAME مهرداديکم‎ /Placeholder surname/
 2 GIVN مهرداديکم‎
-1 NAME Mιθριδάτης //
+1 NAME Mιθριδάτης /Placeholder surname/
 2 GIVN Mιθριδάτης
 1 SEX M
 1 _UID A86EAF2712BF4A9B9EEF60C09A5B02D117AA
@@ -49239,10 +49239,10 @@
 2 _PRIM N
 1 FAMS @F460@
 0 @I699@ INDI
-1 NAME Achaeus //
+1 NAME Achaeus /Placeholder surname/
 2 GIVN Achaeus
 2 NICK Αχαϊος Σελευκιδός της Συρίας
-1 NAME Ἀχαιός //
+1 NAME Ἀχαιός /Placeholder surname/
 2 GIVN Ἀχαιός
 1 SEX M
 1 _UID 2DE104701242417EBA17E79DB62C7F0752DA
@@ -49342,7 +49342,7 @@
 1 FAMS @F461@
 1 FAMC @F469@
 0 @I700@ INDI
-1 NAME Unnamed Greek Woman //
+1 NAME Unnamed Greek Woman /Placeholder surname/
 2 GIVN Unnamed Greek Woman
 1 SEX F
 1 _UID 1F2794E209D74CB7B27C66C345E79EFCBC03
@@ -49357,7 +49357,7 @@
 2 CONT SOURCE NOTES:
 2 CONT http://www.american-pictures.com/genealogy/persons/per01161.htm#0
 2 CONT
-2 CONT 	1  NAME the Perdiccid //
+2 CONT 	1  NAME the Perdiccid /Placeholder surname/
 2 CONT 	2  GIVN the Perdiccid
 2 CONT 	2  SURN
 2 CONT 	2  NICK the Perdiccid
@@ -49365,7 +49365,7 @@
 2 CONT
 2 CONT 1  NAME NN. of /Macedonia/
 2 CONT
-2 CONT 	1  NAME the Perdiccid //
+2 CONT 	1  NAME the Perdiccid /Placeholder surname/
 2 CONT 	2  GIVN the Perdiccid
 2 CONT 	2  SURN
 2 CONT 	2  NICK the Perdiccid
@@ -49373,7 +49373,7 @@
 2 CONT
 2 CONT 1  NAME NN. of /Macedonia/
 2 CONT
-2 CONT 	1  NAME the Perdiccid //
+2 CONT 	1  NAME the Perdiccid /Placeholder surname/
 2 CONT 	2  GIVN the Perdiccid
 2 CONT 	2  SURN
 2 CONT 	2  NICK the Perdiccid
@@ -49383,7 +49383,7 @@
 1 OCCU
 1 FAMS @F461@
 0 @I701@ INDI
-1 NAME Mithrenes I //
+1 NAME Mithrenes I /Placeholder surname/
 2 GIVN Mithrenes I
 2 NSFX Satrap of Armenia
 1 NAME Mithridates / Mithrenes, King of Armenia/
@@ -49476,7 +49476,7 @@
 1 FAMS @F462@
 1 FAMC @F471@
 0 @I702@ INDI
-1 NAME N.N. //
+1 NAME N.N. /Placeholder surname/
 2 GIVN N.N.
 1 SEX F
 1 _UID A7E3E0C1F9FF408CB90D1DF2C6A92E0C6DDD
@@ -49506,9 +49506,9 @@
 2 PLAC (Iberia), Georgia
 1 FAMS @F463@
 0 @I704@ INDI
-1 NAME Agathocles //
+1 NAME Agathocles /Placeholder surname/
 2 GIVN Agathocles
-1 NAME Ἀγαθοκλῆς //
+1 NAME Ἀγαθοκλῆς /Placeholder surname/
 2 GIVN Ἀγαθοκλῆς
 1 SEX M
 1 _UID F8410C5FFDF54B4685CDFF3AAECDD0ACA9DB
@@ -49566,7 +49566,7 @@
 1 FAMS @F464@
 1 FAMC @F472@
 0 @I705@ INDI
-1 NAME Arsinoe //
+1 NAME Arsinoe /Placeholder surname/
 2 GIVN Arsinoe
 1 SEX F
 1 _UID 3BBDA37D38D54A878C860DDD448FE8EB9891
@@ -49575,12 +49575,12 @@
 1 NOTE {geni:about_me} https://en.m.wikipedia.org/wiki/Agathocles_of_Pella
 1 FAMS @F464@
 0 @I706@ INDI
-1 NAME Antipater //
+1 NAME Antipater /Placeholder surname/
 2 GIVN Antipater
 2 NICK Αντίπατρος Α' της Μακεδονίας
-1 NAME Antipater, Regent of Macedonia //
+1 NAME Antipater, Regent of Macedonia /Placeholder surname/
 2 GIVN Antipater, Regent of Macedonia
-1 NAME Αντίπατρος //
+1 NAME Αντίπατρος /Placeholder surname/
 2 GIVN Αντίπατρος
 1 SEX M
 1 _UID 8413CAFCA7D346898249B0A31EF95A76AB92
@@ -50051,9 +50051,9 @@
 1 FAMS @F465@
 1 FAMC @F473@
 0 @I707@ INDI
-1 NAME Magas //
+1 NAME Magas /Placeholder surname/
 2 GIVN Magas
-1 NAME Mάγας //
+1 NAME Mάγας /Placeholder surname/
 2 GIVN Mάγας
 1 SEX M
 1 _UID D453EB86D797490387855803C0589078D9E5
@@ -50125,9 +50125,9 @@
 1 OCCU L247-QZS
 1 FAMS @F466@
 0 @I708@ INDI
-1 NAME Antigone //
+1 NAME Antigone /Placeholder surname/
 2 GIVN Antigone
-1 NAME Ἀντιγόνη //
+1 NAME Ἀντιγόνη /Placeholder surname/
 2 GIVN Ἀντιγόνη
 1 SEX F
 1 _UID 21E179E9164144AFBDF5A00438D6D12E11F5
@@ -50222,10 +50222,10 @@
 1 FAMS @F466@
 1 FAMC @F474@
 0 @I709@ INDI
-1 NAME Arsinoe //
+1 NAME Arsinoe /Placeholder surname/
 2 GIVN Arsinoe
 2 NSFX I
-1 NAME Ἀρσινόη //
+1 NAME Ἀρσινόη /Placeholder surname/
 2 GIVN Ἀρσινόη
 1 SEX F
 1 _UID 721CFFBE95AF4BE79B61513F1DB6B0AC7C2C
@@ -50296,12 +50296,12 @@
 2 _PRIM Y
 1 FAMS @F467@
 0 @I710@ INDI
-1 NAME Lagus //
+1 NAME Lagus /Placeholder surname/
 2 GIVN Lagus
 2 NICK Prince
-1 NAME Lagus of Eordaia //
+1 NAME Lagus of Eordaia /Placeholder surname/
 2 GIVN Lagus of Eordaia
-1 NAME Λάγος //
+1 NAME Λάγος /Placeholder surname/
 2 GIVN Λάγος
 1 SEX M
 1 _UID F389A241CE534F5FAB7478F77DD051429C75
@@ -50385,7 +50385,7 @@
 2 _PRIM Y
 1 FAMS @F467@
 0 @I711@ INDI
-1 NAME Amyntas //
+1 NAME Amyntas /Placeholder surname/
 2 GIVN Amyntas
 1 SEX M
 1 _UID E0711DE6C0FD487EB6A10BF5750B1FAF7C04
@@ -50394,7 +50394,7 @@
 1 OCCU
 1 FAMS @F468@
 0 @I712@ INDI
-1 NAME NN (Wife of Amyntas) //
+1 NAME NN (Wife of Amyntas) /Placeholder surname/
 2 GIVN NN (Wife of Amyntas)
 1 SEX F
 1 _UID 06BD20ED56844E368460F2A53581F7DD33A9
@@ -50403,12 +50403,12 @@
 1 OCCU
 1 FAMS @F468@
 0 @I713@ INDI
-1 NAME Apama //
+1 NAME Apama /Placeholder surname/
 2 GIVN Apama
 2 NICK queen of the Seleucid Empire
-1 NAME Apama I, queen of the Seleucid Empire //
+1 NAME Apama I, queen of the Seleucid Empire /Placeholder surname/
 2 GIVN Apama I, queen of the Seleucid Empire
-1 NAME Ἀπάμα //
+1 NAME Ἀπάμα /Placeholder surname/
 2 GIVN Ἀπάμα
 1 SEX F
 1 _UID F266EAF888A54D0CAF62C54EB5EE69756592
@@ -50514,12 +50514,12 @@
 1 FAMS @F469@
 1 FAMC @F475@
 0 @I714@ INDI
-1 NAME Seleucus //
+1 NAME Seleucus /Placeholder surname/
 2 GIVN Seleucus
 2 NICK ♔ King Of Syria
-1 NAME Seleucus I Nicator, king of the Seleucid Empire //
+1 NAME Seleucus I Nicator, king of the Seleucid Empire /Placeholder surname/
 2 GIVN Seleucus I Nicator, king of the Seleucid Empire
-1 NAME Σέλευκος //
+1 NAME Σέλευκος /Placeholder surname/
 2 GIVN Σέλευκος
 1 SEX M
 1 _UID E9E1BAB3529A4BFE9BA5E9ED2AFE6E2C4470
@@ -53049,12 +53049,12 @@
 1 FAMS @F469@
 1 FAMC @F476@
 0 @I715@ INDI
-1 NAME Demetrius //
+1 NAME Demetrius /Placeholder surname/
 2 GIVN Demetrius
 2 NICK Δημήτριος Α' Πολιορκητής της Μακεδονίας
-1 NAME Demetrius Poliorcetes, king of Macedonia //
+1 NAME Demetrius Poliorcetes, king of Macedonia /Placeholder surname/
 2 GIVN Demetrius Poliorcetes, king of Macedonia
-1 NAME Δημήτριος //
+1 NAME Δημήτριος /Placeholder surname/
 2 GIVN Δημήτριος
 1 SEX M
 1 _UID C53DF70532E74F4893A4C431DFBE5F552BF3
@@ -53696,10 +53696,10 @@
 1 FAMS @F470@
 1 FAMC @F477@
 0 @I716@ INDI
-1 NAME Phila //
+1 NAME Phila /Placeholder surname/
 2 GIVN Phila
 2 NICK Φιλα Α' της Μακεδονίας
-1 NAME Φίλα //
+1 NAME Φίλα /Placeholder surname/
 2 GIVN Φίλα
 1 SEX F
 1 _UID 576F5461740D408B94AC5581EBEC08B470E3
@@ -53862,10 +53862,10 @@
 1 FAMS @F470@
 1 FAMC @F465@
 0 @I717@ INDI
-1 NAME Orontes //
+1 NAME Orontes /Placeholder surname/
 2 GIVN Orontes
 2 NICK King of Armenia
-1 NAME Orontes II, king of Armenia //
+1 NAME Orontes II, king of Armenia /Placeholder surname/
 2 GIVN Orontes II, king of Armenia
 1 SEX M
 1 _UID 2BE4AE79295C41C6A589DB19B0D49088807F
@@ -53992,7 +53992,7 @@
 1 FAMS @F471@
 1 FAMC @F478@
 0 @I718@ INDI
-1 NAME Alcimachus //
+1 NAME Alcimachus /Placeholder surname/
 2 GIVN Alcimachus
 1 SEX M
 1 _UID C1DB5220B5FA45EF9807E9033AED981D58C6
@@ -54001,9 +54001,9 @@
 1 OCCU
 1 FAMS @F472@
 0 @I719@ INDI
-1 NAME Iolaus //
+1 NAME Iolaus /Placeholder surname/
 2 GIVN Iolaus
-1 NAME Iolaus, Nobleman of Macedonia //
+1 NAME Iolaus, Nobleman of Macedonia /Placeholder surname/
 2 GIVN Iolaus, Nobleman of Macedonia
 1 SEX M
 1 _UID 5BB2BBFD3EE741579E8848BF0522A283FBF3
@@ -54019,9 +54019,9 @@
 1 OCCU Prince of Macedonia, prins
 1 FAMS @F473@
 0 @I720@ INDI
-1 NAME Cassander //
+1 NAME Cassander /Placeholder surname/
 2 GIVN Cassander
-1 NAME Κάσσανδρος //
+1 NAME Κάσσανδρος /Placeholder surname/
 2 GIVN Κάσσανδρος
 1 SEX M
 1 _UID 214EA1844D7C4AFC89C21D8C954C54E1AD95
@@ -54031,13 +54031,13 @@
 1 FAMS @F474@
 1 FAMC @F473@
 0 @I721@ INDI
-1 NAME Spitamenes //
+1 NAME Spitamenes /Placeholder surname/
 2 GIVN Spitamenes
-1 NAME Spitamenes, satrap of Bactria //
+1 NAME Spitamenes, satrap of Bactria /Placeholder surname/
 2 GIVN Spitamenes, satrap of Bactria
-1 NAME اسپنتمان //
+1 NAME اسپنتمان /Placeholder surname/
 2 GIVN اسپنتمان
-1 NAME Σπιταμένης //
+1 NAME Σπιταμένης /Placeholder surname/
 2 GIVN Σπιταμένης
 1 SEX M
 1 _UID C025CDB7DFEA4ED282DB663C97024479A79C
@@ -54155,12 +54155,12 @@
 2 _PRIM N
 1 FAMS @F475@
 0 @I722@ INDI
-1 NAME Antiochus //
+1 NAME Antiochus /Placeholder surname/
 2 GIVN Antiochus
 2 NICK Αντίοχος ο Μακεδών
-1 NAME Αντίοχος //
+1 NAME Αντίοχος /Placeholder surname/
 2 GIVN Αντίοχος
-1 NAME Антіох //
+1 NAME Антіох /Placeholder surname/
 2 GIVN Антіох
 1 SEX M
 1 _UID 11D219AF67084C428D1985F0D3B0B6D3CF95
@@ -54269,10 +54269,10 @@
 1 FAMS @F476@
 1 FAMC @F479@
 0 @I723@ INDI
-1 NAME Laodice //
+1 NAME Laodice /Placeholder surname/
 2 GIVN Laodice
 2 NICK Λαοδίκη της Μακεδονίας
-1 NAME Λαοδίκη //
+1 NAME Λαοδίκη /Placeholder surname/
 2 GIVN Λαοδίκη
 1 SEX F
 1 _UID 08D577E244E243A69A06E834AA0A19F8C6AF
@@ -54323,12 +54323,12 @@
 2 CONT http://www.american-pictures.com/genealogy/persons/per00577.htm#0
 1 FAMS @F476@
 0 @I724@ INDI
-1 NAME Antigonus //
+1 NAME Antigonus /Placeholder surname/
 2 GIVN Antigonus
 2 NICK Αντίγονος Α' της Μακεδονίας
-1 NAME Antigonus the One-eyed //
+1 NAME Antigonus the One-eyed /Placeholder surname/
 2 GIVN Antigonus the One-eyed
-1 NAME Ἀντίγονος //
+1 NAME Ἀντίγονος /Placeholder surname/
 2 GIVN Ἀντίγονος
 1 SEX M
 1 _UID 7205FDF36C9645258FAD0264BC8A6890B33A
@@ -54539,12 +54539,12 @@
 2 CONT He was one of the genrals of Alexander the Great. He became King of Mac
 2 CONC edonia and ruled from 306 to 301 bc.
 2 CONT
-2 CONT 	1  NAME Monophthalmos //
+2 CONT 	1  NAME Monophthalmos /Placeholder surname/
 2 CONT 	2  GIVN Monophthalmos
 2 CONT 	2  SURN
 2 CONT 	2  NICK Monophthalmos
 2 CONT
-2 CONT 	1  NAME Monophthalmos //
+2 CONT 	1  NAME Monophthalmos /Placeholder surname/
 2 CONT 	2  GIVN Monophthalmos
 2 CONT 	2  SURN
 2 CONT 	2  NICK Monophthalmos
@@ -55121,7 +55121,7 @@
 1 FAMS @F477@
 1 FAMC @F481@
 0 @I726@ INDI
-1 NAME Orontes I //
+1 NAME Orontes I /Placeholder surname/
 2 GIVN Orontes I
 2 NSFX Satrap of Sophene and Matiene
 1 SEX M
@@ -55277,7 +55277,7 @@
 1 FAMS @F478@
 1 FAMC @F482@
 0 @I727@ INDI
-1 NAME Rodogoune //
+1 NAME Rodogoune /Placeholder surname/
 2 GIVN Rodogoune
 1 SEX F
 1 _UID 28C62381CD6F4434942DF488B0D4B7B37106
@@ -55299,7 +55299,7 @@
 1 FAMS @F478@
 1 FAMC @F483@
 0 @I728@ INDI
-1 NAME Seleucus //
+1 NAME Seleucus /Placeholder surname/
 2 GIVN Seleucus
 1 SEX M
 1 _UID 2AB45806338F45BDAA47554E066F98E28366
@@ -55347,12 +55347,12 @@
 1 FAMS @F479@
 1 FAMC @F484@
 0 @I729@ INDI
-1 NAME Philip //
+1 NAME Philip /Placeholder surname/
 2 GIVN Philip
 2 NSFX Satrap of India
-1 NAME Phillip //
+1 NAME Phillip /Placeholder surname/
 2 GIVN Phillip
-1 NAME Φιλιππoς; //
+1 NAME Φιλιππoς; /Placeholder surname/
 2 GIVN Φιλιππoς;
 1 SEX M
 1 _UID AE0E7210B9E14B928D5F3B8D6446BD9565BA
@@ -55416,7 +55416,7 @@
 1 FAMS @F480@
 1 FAMC @F485@
 0 @I730@ INDI
-1 NAME Unknown //
+1 NAME Unknown /Placeholder surname/
 2 GIVN Unknown
 1 SEX F
 1 _UID C025BFF48DBE4FBCA039E153988086922B6B
@@ -55425,9 +55425,9 @@
 1 OCCU
 1 FAMS @F480@
 0 @I731@ INDI
-1 NAME Corrhaeus //
+1 NAME Corrhaeus /Placeholder surname/
 2 GIVN Corrhaeus
-1 NAME Corrhaeus, king of Thrace //
+1 NAME Corrhaeus, king of Thrace /Placeholder surname/
 2 GIVN Corrhaeus, king of Thrace
 1 SEX M
 1 _UID 839E515AEC854CDCBAAF6ACF225956EBC337
@@ -55452,7 +55452,7 @@
 2 _PRIM Y
 1 FAMS @F481@
 0 @I732@ INDI
-1 NAME Artasyrus //
+1 NAME Artasyrus /Placeholder surname/
 2 GIVN Artasyrus
 2 NSFX Satrap of Armenia
 1 SEX M
@@ -55495,7 +55495,7 @@
 2 DATE -450
 1 FAMS @F482@
 0 @I733@ INDI
-1 NAME Stateira //
+1 NAME Stateira /Placeholder surname/
 2 GIVN Stateira
 1 SEX F
 1 _UID 3427864B59264BBC99653405FEE5BA50D64B
@@ -55569,7 +55569,7 @@
 2 GIVN Artaxerxes
 2 SURN بن الملك داريوس الثاني
 2 NICK King of Persia
-1 NAME Artaxerxes II Mnemon, king of Persia //
+1 NAME Artaxerxes II Mnemon, king of Persia /Placeholder surname/
 2 GIVN Artaxerxes II Mnemon, king of Persia
 1 NAME الملك أرتازركسيس- أردشير الثاني /بن الملك داريوس الثاني/
 2 GIVN الملك أرتازركسيس- أردشير الثاني
@@ -56420,9 +56420,9 @@
 1 FAMS @F483@
 1 FAMC @F487@
 0 @I735@ INDI
-1 NAME Machatas //
+1 NAME Machatas /Placeholder surname/
 2 GIVN Machatas
-1 NAME Machatas of Elimaea //
+1 NAME Machatas of Elimaea /Placeholder surname/
 2 GIVN Machatas of Elimaea
 1 SEX M
 1 _UID 6092B053608F4B32BB871C9C55987627E526
@@ -56450,9 +56450,9 @@
 1 NAME Hydarnes, III /of Armenia/
 2 GIVN Hydarnes, III
 2 SURN of Armenia
-1 NAME Hydarnes, III of Armenia //
+1 NAME Hydarnes, III of Armenia /Placeholder surname/
 2 GIVN Hydarnes, III of Armenia
-1 NAME Ὑδάρνης //
+1 NAME Ὑδάρνης /Placeholder surname/
 2 GIVN Ὑδάρνης
 1 SEX M
 1 _UID 1568EF163F2B425291A3A32BE194B9BB6BEE
@@ -56493,7 +56493,7 @@
 1 NAME Ochus /بن الملك أرتازركسيس- أردشير الأول/
 2 GIVN Ochus
 2 SURN بن الملك أرتازركسيس- أردشير الأول
-1 NAME Darius II, King of Persia //
+1 NAME Darius II, King of Persia /Placeholder surname/
 2 GIVN Darius II, King of Persia
 1 NAME الملك داريوس الثاني /بن الملك أرتازركسيس- أردشير الأول/
 2 GIVN الملك داريوس الثاني
@@ -56702,7 +56702,7 @@
 1 FAMC @F490@
 1 FAMC @F491@
 0 @I739@ INDI
-1 NAME Parysatis //
+1 NAME Parysatis /Placeholder surname/
 2 GIVN Parysatis
 1 SEX F
 1 _UID 5FF75BFF5957438BBEDAA2E17E5D02678D51
@@ -56820,11 +56820,11 @@
 1 FAMS @F488@
 1 FAMC @F493@
 0 @I741@ INDI
-1 NAME Derdas //
+1 NAME Derdas /Placeholder surname/
 2 GIVN Derdas
-1 NAME Derdas, archon of Elimiotis //
+1 NAME Derdas, archon of Elimiotis /Placeholder surname/
 2 GIVN Derdas, archon of Elimiotis
-1 NAME Δέρδας //
+1 NAME Δέρδας /Placeholder surname/
 2 GIVN Δέρδας
 1 SEX M
 1 _UID FE9C7A0D64BE43FE95122AB2FCDA41F10F4C
@@ -56860,10 +56860,10 @@
 1 FAMS @F488@
 1 FAMC @F494@
 0 @I742@ INDI
-1 NAME Hydarnes //
+1 NAME Hydarnes /Placeholder surname/
 2 GIVN Hydarnes
 2 NSFX II
-1 NAME Ὑδάρνης //
+1 NAME Ὑδάρνης /Placeholder surname/
 2 GIVN Ὑδάρνης
 1 SEX M
 1 _UID BFAF628A7CD34066A209D389A609741E972D
@@ -56886,7 +56886,7 @@
 1 FAMS @F489@
 1 FAMC @F495@
 0 @I743@ INDI
-1 NAME Cosmartidene //
+1 NAME Cosmartidene /Placeholder surname/
 2 GIVN Cosmartidene
 1 SEX F
 1 _UID 217BAEED69E4444097802E3DFA22BAB81869
@@ -56931,11 +56931,11 @@
 1 OCCU LV9P-6VZ
 1 FAMS @F490@
 0 @I744@ INDI
-1 NAME Artaxerxes //
+1 NAME Artaxerxes /Placeholder surname/
 2 GIVN Artaxerxes
-1 NAME Artaxerxes I, King of Persia //
+1 NAME Artaxerxes I, King of Persia /Placeholder surname/
 2 GIVN Artaxerxes I, King of Persia
-1 NAME Ἀρταξέρξης //
+1 NAME Ἀρταξέρξης /Placeholder surname/
 2 GIVN Ἀρταξέρξης
 1 SEX M
 1 _UID 03E0CC31A5254DFE9BC6F3A89AFEAC01362F
@@ -57904,9 +57904,9 @@
 1 FAMS @F491@
 1 FAMC @F497@
 0 @I746@ INDI
-1 NAME Andia //
+1 NAME Andia /Placeholder surname/
 2 GIVN Andia
-1 NAME Andia of Babylon //
+1 NAME Andia of Babylon /Placeholder surname/
 2 GIVN Andia of Babylon
 1 SEX F
 1 _UID 8BDF694A94D3417EB835C0C055CC382831FD
@@ -57985,9 +57985,9 @@
 1 FAMS @F492@
 1 FAMC @F498@
 0 @I747@ INDI
-1 NAME Archelaus //
+1 NAME Archelaus /Placeholder surname/
 2 GIVN Archelaus
-1 NAME Archelaus I, king of Macedonia //
+1 NAME Archelaus I, king of Macedonia /Placeholder surname/
 2 GIVN Archelaus I, king of Macedonia
 1 SEX M
 1 _UID 240451A821D84EBDA0563709293FD4831A54
@@ -58055,10 +58055,10 @@
 1 FAMS @F494@
 1 FAMC @F500@
 0 @I749@ INDI
-1 NAME Hydarnes //
+1 NAME Hydarnes /Placeholder surname/
 2 GIVN Hydarnes
 2 NSFX I
-1 NAME Ὑδάρνης //
+1 NAME Ὑδάρνης /Placeholder surname/
 2 GIVN Ὑδάρνης
 1 SEX M
 1 _UID 390363728C0E41C590CA790FF39E40319510
@@ -58098,19 +58098,19 @@
 1 FAMS @F496@
 1 FAMC @F502@
 0 @I751@ INDI
-1 NAME Xerxes //
+1 NAME Xerxes /Placeholder surname/
 2 GIVN Xerxes
 2 NICK Knig von Persien
-1 NAME Xerxes I 'the Great', king of Persia //
+1 NAME Xerxes I 'the Great', king of Persia /Placeholder surname/
 2 GIVN Xerxes I 'the Great', king of Persia
-1 NAME الملك أحشويروش //
+1 NAME الملك أحشويروش /Placeholder surname/
 2 GIVN الملك أحشويروش
-1 NAME Xerxes //
+1 NAME Xerxes /Placeholder surname/
 2 GIVN Xerxes
 2 NICK Knig von Persien
-1 NAME Xerxes I, König von Persien //
+1 NAME Xerxes I, König von Persien /Placeholder surname/
 2 GIVN Xerxes I, König von Persien
-1 NAME אחשוורוש //
+1 NAME אחשוורוש /Placeholder surname/
 2 GIVN אחשוורוש
 1 SEX M
 1 _UID 9F61536034A040478E7EBACC8CD77CF17030
@@ -59414,9 +59414,9 @@
 1 FAMS @F497@
 1 FAMC @F504@
 0 @I753@ INDI
-1 NAME Arakha //
+1 NAME Arakha /Placeholder surname/
 2 GIVN Arakha
-1 NAME Nebuchadnezzar IV, King of Babylon //
+1 NAME Nebuchadnezzar IV, King of Babylon /Placeholder surname/
 2 GIVN Nebuchadnezzar IV, King of Babylon
 1 SEX M
 1 _UID E0FAE2A61B1E412C8A195802607ADFC4829D
@@ -59551,12 +59551,12 @@
 1 FAMS @F498@
 1 FAMC @F505@
 0 @I754@ INDI
-1 NAME Perdiccas //
+1 NAME Perdiccas /Placeholder surname/
 2 GIVN Perdiccas
 2 NICK Περδίκκας Β'  Αργαίαδος της Μακεδονίας
-1 NAME Perdiccas II, king of Macedonia //
+1 NAME Perdiccas II, king of Macedonia /Placeholder surname/
 2 GIVN Perdiccas II, king of Macedonia
-1 NAME Περδίκκας //
+1 NAME Περδίκκας /Placeholder surname/
 2 GIVN Περδίκκας
 1 SEX M
 1 _UID 3CF7553C3D314695858FBDC089571A8D2504
@@ -59649,7 +59649,7 @@
 1 FAMS @F499@
 1 FAMC @F506@
 0 @I755@ INDI
-1 NAME Slave Woman //
+1 NAME Slave Woman /Placeholder surname/
 2 GIVN Slave Woman
 1 SEX F
 1 _UID FAC6F43EBAFA44A393C85E3B41DFACC714BC
@@ -59681,7 +59681,7 @@
 1 FAMS @F500@
 1 FAMC @F507@
 0 @I757@ INDI
-1 NAME Bagābigna //
+1 NAME Bagābigna /Placeholder surname/
 2 GIVN Bagābigna
 1 SEX M
 1 _UID 59EE43D4CBA844F2B52B628111A5F38CFF21
@@ -59701,7 +59701,7 @@
 1 FAMS @F501@
 1 FAMC @F508@
 0 @I758@ INDI
-1 NAME N.N. //
+1 NAME N.N. /Placeholder surname/
 2 GIVN N.N.
 1 SEX F
 1 _UID C55DD17F7FAF40A78EE8C53940EB4758C5A6
@@ -59713,7 +59713,7 @@
 2 GIVN Daughter of
 2 SURN Hystaspes
 2 NICK Wife of Otanes of Persia
-1 NAME Sister of Darius I //
+1 NAME Sister of Darius I /Placeholder surname/
 2 GIVN Sister of Darius I
 1 SEX F
 1 _UID C7803F079E83426BB290A4D61E302B902091
@@ -59760,12 +59760,12 @@
 1 FAMS @F502@
 1 FAMC @F510@
 0 @I761@ INDI
-1 NAME Atossa //
+1 NAME Atossa /Placeholder surname/
 2 GIVN Atossa
 2 NICK The Terrestrial and Celestial Princess of Anshan
-1 NAME Atossa, queen Consort of Persia //
+1 NAME Atossa, queen Consort of Persia /Placeholder surname/
 2 GIVN Atossa, queen Consort of Persia
-1 NAME Ἄτοσσα //
+1 NAME Ἄτοσσα /Placeholder surname/
 2 GIVN Ἄτοσσα
 1 SEX F
 1 _UID ABC1BD7CA1C744B799CF12273CE3A66DDBC3
@@ -60020,14 +60020,14 @@
 1 FAMS @F503@
 1 FAMC @F511@
 0 @I762@ INDI
-1 NAME Darius //
+1 NAME Darius /Placeholder surname/
 2 GIVN Darius
 2 NICK персидский царь
-1 NAME Darius I 'the Great' King of Persia //
+1 NAME Darius I 'the Great' King of Persia /Placeholder surname/
 2 GIVN Darius I 'the Great' King of Persia
-1 NAME داريوش بزرگ //
+1 NAME داريوش بزرگ /Placeholder surname/
 2 GIVN داريوش بزرگ
-1 NAME  //
+1 NAME  /Placeholder surname/
 2 NICK персидский царь
 1 SEX M
 1 _UID 12FA7CA65887437A881F66E5353574E07A02
@@ -61280,7 +61280,7 @@
 1 FAMS @F504@
 1 FAMC @F513@
 0 @I765@ INDI
-1 NAME Haldita //
+1 NAME Haldita /Placeholder surname/
 2 GIVN Haldita
 1 SEX M
 1 _UID A9B89C0A9B8B4446A7779C53D43456D7F9EC
@@ -61288,12 +61288,12 @@
 2 DATE 28 APR 2022
 1 FAMS @F505@
 0 @I766@ INDI
-1 NAME Alexander //
+1 NAME Alexander /Placeholder surname/
 2 GIVN Alexander
 2 NICK Αλέξανδρος Α' Αργαίαδος της Μακεδονίας
-1 NAME Alexander I, king of Macedonia //
+1 NAME Alexander I, king of Macedonia /Placeholder surname/
 2 GIVN Alexander I, king of Macedonia
-1 NAME Ἀλέξανδρος //
+1 NAME Ἀλέξανδρος /Placeholder surname/
 2 GIVN Ἀλέξανδρος
 1 SEX M
 1 _UID 807AE2ED247F44D59F554C0FC87D64DE5B70
@@ -61542,7 +61542,7 @@
 1 FAMS @F506@
 1 FAMC @F514@
 0 @I767@ INDI
-1 NAME Antigone //
+1 NAME Antigone /Placeholder surname/
 2 GIVN Antigone
 1 SEX F
 1 _UID 689EF00D46DC422192A21B8E8BB01C5A1638
@@ -61594,7 +61594,7 @@
 1 FAMS @F507@
 1 FAMC @F514@
 0 @I770@ INDI
-1 NAME Pazouk //
+1 NAME Pazouk /Placeholder surname/
 2 GIVN Pazouk
 1 SEX M
 1 _UID 55A05E442991402AA86BF59EA58EC82F8B67
@@ -61603,11 +61603,11 @@
 1 FAMS @F508@
 1 FAMC @F516@
 0 @I771@ INDI
-1 NAME Hystaspes //
+1 NAME Hystaspes /Placeholder surname/
 2 GIVN Hystaspes
-1 NAME Hystaspes, satrap of Bactria //
+1 NAME Hystaspes, satrap of Bactria /Placeholder surname/
 2 GIVN Hystaspes, satrap of Bactria
-1 NAME Ὑστάσπης //
+1 NAME Ὑστάσπης /Placeholder surname/
 2 GIVN Ὑστάσπης
 1 SEX M
 1 _UID 3A82F8729F854855A57D26FB12A3EF7F4D7C
@@ -61708,7 +61708,7 @@
 2 SURN .
 2 NSFX of Persia
 2 NICK Rhodagune Perzië
-1 NAME Princess Rhodah (Rhodogunne), of Persia //
+1 NAME Princess Rhodah (Rhodogunne), of Persia /Placeholder surname/
 2 GIVN Princess Rhodah (Rhodogunne), of Persia
 1 SEX F
 1 _UID C80489CA089E42A2ABB67AFFEA470C5D1D07
@@ -61783,7 +61783,7 @@
 1 FAMS @F509@
 1 FAMC @F518@
 0 @I773@ INDI
-1 NAME Thukra //
+1 NAME Thukra /Placeholder surname/
 2 GIVN Thukra
 1 SEX M
 1 _UID 65FEE64C5D974B6D9D5139886367F9540762
@@ -61791,15 +61791,15 @@
 2 DATE 12 FEB 2015
 1 FAMS @F510@
 0 @I774@ INDI
-1 NAME Cyrus //
+1 NAME Cyrus /Placeholder surname/
 2 GIVN Cyrus
 2 NICK כורש הגדול
-1 NAME Cyrus II the Great, King of Persia //
+1 NAME Cyrus II the Great, King of Persia /Placeholder surname/
 2 GIVN Cyrus II the Great, King of Persia
-1 NAME כורש השני //
+1 NAME כורש השני /Placeholder surname/
 2 GIVN כורש השני
 2 NICK כורש הגדול
-1 NAME כורש השני מלך פרס //
+1 NAME כורש השני מלך פרס /Placeholder surname/
 2 GIVN כורש השני מלך פרס
 1 SEX M
 1 _UID C26D8E195FBB4B8697BE1A85009715EB4CA6
@@ -62669,17 +62669,17 @@
 2 CONT
 2 CONT He overthrew Astages an the Mede rule in Persia about 550 b.c.
 2 CONT
-2 CONT 	1  NAME the Great //
+2 CONT 	1  NAME the Great /Placeholder surname/
 2 CONT 	2  GIVN the Great
 2 CONT 	2  SURN
 2 CONT 	2  NICK the Great
 2 CONT
-2 CONT 	1  NAME the Great //
+2 CONT 	1  NAME the Great /Placeholder surname/
 2 CONT 	2  GIVN the Great
 2 CONT 	2  SURN
 2 CONT 	2  NICK the Great
 2 CONT
-2 CONT 	1  NAME the Great //
+2 CONT 	1  NAME the Great /Placeholder surname/
 2 CONT 	2  GIVN the Great
 2 CONT 	2  SURN
 2 CONT 	2  NICK the Great
@@ -63391,9 +63391,9 @@
 1 FAMS @F511@
 1 FAMC @F519@
 0 @I775@ INDI
-1 NAME Cassandane //
+1 NAME Cassandane /Placeholder surname/
 2 GIVN Cassandane
-1 NAME Cassandane Mother of Atossa //
+1 NAME Cassandane Mother of Atossa /Placeholder surname/
 2 GIVN Cassandane Mother of Atossa
 1 SEX F
 1 _UID 41B6EEC33D184CC388E8CEAE9FC6CFAAD644
@@ -63563,12 +63563,12 @@
 1 FAMS @F513@
 1 FAMC @F521@
 0 @I779@ INDI
-1 NAME Amyntas //
+1 NAME Amyntas /Placeholder surname/
 2 GIVN Amyntas
 2 NICK Αμύντας Α' Αργαίαδος της Μακεδονίας
-1 NAME Amyntas I, king of Macedonia //
+1 NAME Amyntas I, king of Macedonia /Placeholder surname/
 2 GIVN Amyntas I, king of Macedonia
-1 NAME Αμύντας //
+1 NAME Αμύντας /Placeholder surname/
 2 GIVN Αμύντας
 1 SEX M
 1 _UID 30EBE4FAC9B247B7AC7E089997E54EC6CDA2
@@ -63690,7 +63690,7 @@
 1 FAMS @F514@
 1 FAMC @F523@
 0 @I781@ INDI
-1 NAME Arrhidaeus //
+1 NAME Arrhidaeus /Placeholder surname/
 2 GIVN Arrhidaeus
 1 SEX M
 1 _UID 74B073DD872D4AAB9BE63796C349EFCF352B
@@ -63698,7 +63698,7 @@
 2 DATE 2 MAY 2022
 1 FAMS @F515@
 0 @I782@ INDI
-1 NAME Pask'am //
+1 NAME Pask'am /Placeholder surname/
 2 GIVN Pask'am
 1 SEX M
 1 _UID 0B66A9E0548A4F54B0FE071AA854B9AAA906
@@ -63707,12 +63707,12 @@
 1 FAMS @F516@
 1 FAMC @F524@
 0 @I783@ INDI
-1 NAME Aršāma //
+1 NAME Aršāma /Placeholder surname/
 2 GIVN Aršāma
 2 NICK Aršāma
-1 NAME Arsames, king of Persia //
+1 NAME Arsames, king of Persia /Placeholder surname/
 2 GIVN Arsames, king of Persia
-1 NAME Ἀρσάμης //
+1 NAME Ἀρσάμης /Placeholder surname/
 2 GIVN Ἀρσάμης
 1 SEX M
 1 _UID 5499470F700245098A12DE51107842CE66C6
@@ -63953,10 +63953,10 @@
 1 FAMS @F518@
 1 FAMC @F526@
 0 @I786@ INDI
-1 NAME Cambyses //
+1 NAME Cambyses /Placeholder surname/
 2 GIVN Cambyses
 2 NICK כנבוזי
-1 NAME Cambyses I, king of Anshan //
+1 NAME Cambyses I, king of Anshan /Placeholder surname/
 2 GIVN Cambyses I, king of Anshan
 1 SEX M
 1 _UID 6068EF765389498A805E1B018A9955075580
@@ -64165,7 +64165,7 @@
 1 FAMS @F519@
 1 FAMC @F527@
 0 @I787@ INDI
-1 NAME Mandana of Media //
+1 NAME Mandana of Media /Placeholder surname/
 2 GIVN Mandana of Media
 2 NSFX Queen of Anshan
 1 SEX F
@@ -64678,11 +64678,11 @@
 2 PLAC (Macedonia), Greece
 1 FAMS @F522@
 0 @I792@ INDI
-1 NAME Alcetas //
+1 NAME Alcetas /Placeholder surname/
 2 GIVN Alcetas
-1 NAME Alcetas I, king of Macedonia //
+1 NAME Alcetas I, king of Macedonia /Placeholder surname/
 2 GIVN Alcetas I, king of Macedonia
-1 NAME Ἀλκέτας //
+1 NAME Ἀλκέτας /Placeholder surname/
 2 GIVN Ἀλκέτας
 1 SEX M
 1 _UID 9DFA455EAC07492E95156D4E2F5B99A490C9
@@ -64737,7 +64737,7 @@
 1 FAMS @F523@
 1 FAMC @F533@
 0 @I794@ INDI
-1 NAME Skayordis (Sgaiort) //
+1 NAME Skayordis (Sgaiort) /Placeholder surname/
 2 GIVN Skayordis (Sgaiort)
 1 SEX M
 1 _UID E8E26132AE2D4363AF905FB0F4FF389AF1AF
@@ -64746,10 +64746,10 @@
 1 FAMS @F524@
 1 FAMC @F534@
 0 @I795@ INDI
-1 NAME Ariyaramna //
+1 NAME Ariyaramna /Placeholder surname/
 2 GIVN Ariyaramna
 2 NICK Ariyaramna Achaemenid
-1 NAME Ariyaramna, king of Anshan //
+1 NAME Ariyaramna, king of Anshan /Placeholder surname/
 2 GIVN Ariyaramna, king of Anshan
 1 SEX M
 1 _UID E8B2AF60F5BA4615BAD4978CC1E1448FD9F3
@@ -64991,7 +64991,7 @@
 1 FAMS @F525@
 1 FAMC @F535@
 0 @I796@ INDI
-1 NAME Nabu-balatsu-iqbi //
+1 NAME Nabu-balatsu-iqbi /Placeholder surname/
 2 GIVN Nabu-balatsu-iqbi
 2 NSFX Governor of Babylon
 1 SEX M
@@ -65071,7 +65071,7 @@
 1 FAMS @F526@
 1 FAMC @F536@
 0 @I797@ INDI
-1 NAME Adad-Guppi //
+1 NAME Adad-Guppi /Placeholder surname/
 2 GIVN Adad-Guppi
 1 SEX F
 1 _UID B8D5783F15A94AA099A94AE601C499C17D65
@@ -65414,11 +65414,11 @@
 2 _PRIM Y
 1 FAMS @F526@
 0 @I798@ INDI
-1 NAME Cyrus //
+1 NAME Cyrus /Placeholder surname/
 2 GIVN Cyrus
-1 NAME Cyrus I, king of Anshan //
+1 NAME Cyrus I, king of Anshan /Placeholder surname/
 2 GIVN Cyrus I, king of Anshan
-1 NAME کوروش //
+1 NAME کوروش /Placeholder surname/
 2 GIVN کوروش
 1 SEX M
 1 _UID 17A47521A165411BA915E218668E11BB2B3D
@@ -65771,9 +65771,9 @@
 1 FAMS @F527@
 1 FAMC @F535@
 0 @I799@ INDI
-1 NAME Astyages //
+1 NAME Astyages /Placeholder surname/
 2 GIVN Astyages
-1 NAME Astyages, king of the Medes //
+1 NAME Astyages, king of the Medes /Placeholder surname/
 2 GIVN Astyages, king of the Medes
 1 SEX M
 1 _UID 4AB159689C574C19BA9CAF91476C9DE1DB89
@@ -66070,9 +66070,9 @@
 1 FAMS @F528@
 1 FAMC @F537@
 0 @I800@ INDI
-1 NAME Aryenis //
+1 NAME Aryenis /Placeholder surname/
 2 GIVN Aryenis
-1 NAME Aryenis, queen consort of Media //
+1 NAME Aryenis, queen consort of Media /Placeholder surname/
 2 GIVN Aryenis, queen consort of Media
 1 SEX F
 1 _UID 83F798DB64BA44969820EFAF3D7401D9C684
@@ -66206,11 +66206,11 @@
 1 FAMS @F531@
 1 FAMC @F539@
 0 @I805@ INDI
-1 NAME Aeropos //
+1 NAME Aeropos /Placeholder surname/
 2 GIVN Aeropos
-1 NAME Aeropos I, king of Macedonia //
+1 NAME Aeropos I, king of Macedonia /Placeholder surname/
 2 GIVN Aeropos I, king of Macedonia
-1 NAME Ἀέροπος //
+1 NAME Ἀέροπος /Placeholder surname/
 2 GIVN Ἀέροπος
 1 SEX M
 1 _UID 832C0D80CDE54DEBACAED3E0B87A7EC0A330
@@ -66253,7 +66253,7 @@
 1 FAMS @F532@
 1 FAMC @F542@
 0 @I806@ INDI
-1 NAME Arrabaios //
+1 NAME Arrabaios /Placeholder surname/
 2 GIVN Arrabaios
 2 NSFX King of Lynkos
 1 SEX M
@@ -66263,9 +66263,9 @@
 1 OCCU
 1 FAMS @F533@
 0 @I807@ INDI
-1 NAME Phavos //
+1 NAME Phavos /Placeholder surname/
 2 GIVN Phavos
-1 NAME Phavos, king of Armenia //
+1 NAME Phavos, king of Armenia /Placeholder surname/
 2 GIVN Phavos, king of Armenia
 1 SEX M
 1 _UID 29821092259446DCA03E6B666E8937C2C7BD
@@ -66275,9 +66275,9 @@
 2 DATE -606
 1 FAMS @F534@
 0 @I808@ INDI
-1 NAME Teispes //
+1 NAME Teispes /Placeholder surname/
 2 GIVN Teispes
-1 NAME Teispes, king of Anshan //
+1 NAME Teispes, king of Anshan /Placeholder surname/
 2 GIVN Teispes, king of Anshan
 1 SEX M
 1 _UID 973BB156EF3F4661A25AED50C45118B2C688
@@ -66443,7 +66443,7 @@
 1 FAMS @F535@
 1 FAMC @F543@
 0 @I809@ INDI
-1 NAME Shuma-damqa //
+1 NAME Shuma-damqa /Placeholder surname/
 2 GIVN Shuma-damqa
 1 SEX F
 1 _UID D9D3B6E4C41645C6A8A109F101DA203BA4DE
@@ -66464,7 +66464,7 @@
 1 OCCU poss. `High Priestess of Sin', hogepriesteres
 1 FAMS @F536@
 0 @I810@ INDI
-1 NAME Nabu-balat-iqbi //
+1 NAME Nabu-balat-iqbi /Placeholder surname/
 2 GIVN Nabu-balat-iqbi
 1 SEX M
 1 _UID 07B85E01302244C8887C3149CDEDF412BAFB
@@ -66509,8 +66509,8 @@
 1 FAMS @F536@
 1 FAMC @F544@
 0 @I811@ INDI
-1 NAME  //
-1 NAME daughter (or granddaughter) of Nabopolassar //
+1 NAME  /Placeholder surname/
+1 NAME daughter (or granddaughter) of Nabopolassar /Placeholder surname/
 2 GIVN daughter (or granddaughter) of Nabopolassar
 1 SEX F
 1 _UID 42BDC67D99F2451C8D003594C29EEB623144
@@ -66527,9 +66527,9 @@
 1 OCCU
 1 FAMS @F537@
 0 @I812@ INDI
-1 NAME Cyaxares //
+1 NAME Cyaxares /Placeholder surname/
 2 GIVN Cyaxares
-1 NAME Cyaxares, king of Media //
+1 NAME Cyaxares, king of Media /Placeholder surname/
 2 GIVN Cyaxares, king of Media
 1 SEX M
 1 _UID 390B060DCEEE4C808AF9613CD710EA8252FF
@@ -66760,9 +66760,9 @@
 1 FAMS @F537@
 1 FAMC @F545@
 0 @I813@ INDI
-1 NAME Alyattes //
+1 NAME Alyattes /Placeholder surname/
 2 GIVN Alyattes
-1 NAME Alyattes, king of Lydia //
+1 NAME Alyattes, king of Lydia /Placeholder surname/
 2 GIVN Alyattes, king of Lydia
 1 SEX M
 1 _UID 02634E84B17E443F90D7017B04E86B81A467
@@ -66918,12 +66918,12 @@
 1 FAMS @F541@
 1 FAMC @F549@
 0 @I818@ INDI
-1 NAME Philip //
+1 NAME Philip /Placeholder surname/
 2 GIVN Philip
 2 NICK (Greek: Φίλιππος Α΄ ὁ Μακεδών — φίλος "friend" and ἵππος "horse")
-1 NAME Philip I, king of Macedonia //
+1 NAME Philip I, king of Macedonia /Placeholder surname/
 2 GIVN Philip I, king of Macedonia
-1 NAME Φίλιππος //
+1 NAME Φίλιππος /Placeholder surname/
 2 GIVN Φίλιππος
 1 SEX M
 1 _UID C6D91BB83BF94DF8AEB1E18A087A2DD33714
@@ -66966,7 +66966,7 @@
 1 FAMS @F542@
 1 FAMC @F550@
 0 @I819@ INDI
-1 NAME Nikonoë //
+1 NAME Nikonoë /Placeholder surname/
 2 GIVN Nikonoë
 1 SEX F
 1 _UID 865ADB03DD994CCEBE173BB198E0CA56A73E
@@ -66986,9 +66986,9 @@
 2 CONC ited as Marcotte's Argead Chart.
 1 FAMS @F542@
 0 @I820@ INDI
-1 NAME Achaemenes //
+1 NAME Achaemenes /Placeholder surname/
 2 GIVN Achaemenes
-1 NAME Achaemenes, king of Anshan //
+1 NAME Achaemenes, king of Anshan /Placeholder surname/
 2 GIVN Achaemenes, king of Anshan
 1 SEX M
 1 _UID 24A93FA10AEC42BF8805AE7A06E9A6513FF6
@@ -67202,7 +67202,7 @@
 2 _PRIM N
 1 FAMS @F543@
 0 @I821@ INDI
-1 NAME Assur-etil-same-ersiti-uballitsu //
+1 NAME Assur-etil-same-ersiti-uballitsu /Placeholder surname/
 2 GIVN Assur-etil-same-ersiti-uballitsu
 1 SEX M
 1 _UID 17F8364F8E4B47FCBD6C9B00F7E627A21A6E
@@ -67310,7 +67310,7 @@
 1 FAMS @F544@
 1 FAMC @F551@
 0 @I822@ INDI
-1 NAME N.N. //
+1 NAME N.N. /Placeholder surname/
 2 GIVN N.N.
 1 SEX F
 1 _UID 1B6292CF95CD4706BE12E9AEBEC480776DB9
@@ -67326,7 +67326,7 @@
 2 CONT http://www.gbnf.com/genealogy/sahlin/html/d0136/I9789.HTM
 1 FAMS @F545@
 0 @I823@ INDI
-1 NAME Phraortes //
+1 NAME Phraortes /Placeholder surname/
 2 GIVN Phraortes
 2 NSFX King of the Medes
 1 SEX M
@@ -67492,9 +67492,9 @@
 1 FAMS @F545@
 1 FAMC @F552@
 0 @I824@ INDI
-1 NAME Sadyattes //
+1 NAME Sadyattes /Placeholder surname/
 2 GIVN Sadyattes
-1 NAME Sadyattes, king of Lydia //
+1 NAME Sadyattes, king of Lydia /Placeholder surname/
 2 GIVN Sadyattes, king of Lydia
 1 SEX M
 1 _UID 9D7300E5BC3C43349D9318E70B3A2BE4E718
@@ -67548,9 +67548,9 @@
 1 FAMS @F546@
 1 FAMC @F553@
 0 @I825@ INDI
-1 NAME الملك أخمينيس //
+1 NAME الملك أخمينيس /Placeholder surname/
 2 GIVN الملك أخمينيس
-1 NAME الملك أخمينيس //
+1 NAME الملك أخمينيس /Placeholder surname/
 2 GIVN الملك أخمينيس
 1 SEX M
 1 _UID D4A06DC232C94002A866D77B7B66D044357A
@@ -67619,11 +67619,11 @@
 1 FAMS @F549@
 1 FAMC @F555@
 0 @I828@ INDI
-1 NAME Argaios //
+1 NAME Argaios /Placeholder surname/
 2 GIVN Argaios
-1 NAME Argaios I, king of Macedonia //
+1 NAME Argaios I, king of Macedonia /Placeholder surname/
 2 GIVN Argaios I, king of Macedonia
-1 NAME Ἀργαῖος //
+1 NAME Ἀργαῖος /Placeholder surname/
 2 GIVN Ἀργαῖος
 1 SEX M
 1 _UID 5F407A552E1E456EA9ADDFC2086B73ADF7AA
@@ -67671,7 +67671,7 @@
 1 FAMS @F550@
 1 FAMC @F556@
 0 @I829@ INDI
-1 NAME Prothoe //
+1 NAME Prothoe /Placeholder surname/
 2 GIVN Prothoe
 1 SEX F
 1 _UID E3BDD95F77984F069FDEBA24C7CB9C08CD33
@@ -67679,7 +67679,7 @@
 2 DATE 28 APR 2022
 1 FAMS @F550@
 0 @I830@ INDI
-1 NAME Ashur-hamat //
+1 NAME Ashur-hamat /Placeholder surname/
 2 GIVN Ashur-hamat
 2 NSFX Queen of Assyria
 1 SEX F
@@ -67693,9 +67693,9 @@
 2 PLAC (Harran, Assyria), Turkey
 1 FAMS @F551@
 0 @I831@ INDI
-1 NAME Esarhaddon //
+1 NAME Esarhaddon /Placeholder surname/
 2 GIVN Esarhaddon
-1 NAME Esarhaddon, king of Assyria //
+1 NAME Esarhaddon, king of Assyria /Placeholder surname/
 2 GIVN Esarhaddon, king of Assyria
 1 SEX M
 1 _UID 91C67B12FDF34851B2E941CBFC80573B2209
@@ -68162,11 +68162,11 @@
 1 FAMS @F551@
 1 FAMC @F557@
 0 @I832@ INDI
-1 NAME Deioces //
+1 NAME Deioces /Placeholder surname/
 2 GIVN Deioces
-1 NAME Deioces I, king of the Medes //
+1 NAME Deioces I, king of the Medes /Placeholder surname/
 2 GIVN Deioces I, king of the Medes
-1 NAME Δηιόκης //
+1 NAME Δηιόκης /Placeholder surname/
 2 GIVN Δηιόκης
 1 SEX M
 1 _UID E191393BCE5B4125BA5D19DADAD221135F7A
@@ -68390,7 +68390,7 @@
 1 FAMS @F552@
 1 FAMC @F558@
 0 @I833@ INDI
-1 NAME N.N. //
+1 NAME N.N. /Placeholder surname/
 2 GIVN N.N.
 1 SEX F
 1 _UID 3FA548E48845479A8564E7469210315D0489
@@ -68402,7 +68402,7 @@
 2 PLAC Iran
 1 FAMS @F552@
 0 @I834@ INDI
-1 NAME N.N. //
+1 NAME N.N. /Placeholder surname/
 2 GIVN N.N.
 1 SEX F
 1 _UID 5F50CF74C99D40DBB15EACF6CB5DD9C3E8DC
@@ -68414,9 +68414,9 @@
 2 PLAC (Lydia), Turkey
 1 FAMS @F553@
 0 @I835@ INDI
-1 NAME Ardys //
+1 NAME Ardys /Placeholder surname/
 2 GIVN Ardys
-1 NAME Ardys II, king of Lydia //
+1 NAME Ardys II, king of Lydia /Placeholder surname/
 2 GIVN Ardys II, king of Lydia
 1 SEX M
 1 _UID BE6D23EB788349ABAC41E8F255BDBB965222
@@ -68441,9 +68441,9 @@
 1 FAMS @F553@
 1 FAMC @F559@
 0 @I836@ INDI
-1 NAME الملك ديوكيس //
+1 NAME الملك ديوكيس /Placeholder surname/
 2 GIVN الملك ديوكيس
-1 NAME الملك ديوكيس //
+1 NAME الملك ديوكيس /Placeholder surname/
 2 GIVN الملك ديوكيس
 1 SEX M
 1 _UID E703FAB7B45A434B8D2FAA758EBDCF04302A
@@ -68473,7 +68473,7 @@
 1 FAMS @F555@
 1 FAMC @F560@
 0 @I838@ INDI
-1 NAME Cleopatra //
+1 NAME Cleopatra /Placeholder surname/
 2 GIVN Cleopatra
 1 SEX F
 1 _UID DB25055798A245CC86695D6911384C2A1B78
@@ -68481,11 +68481,11 @@
 2 DATE 28 APR 2022
 1 FAMS @F556@
 0 @I839@ INDI
-1 NAME Perdiccas //
+1 NAME Perdiccas /Placeholder surname/
 2 GIVN Perdiccas
-1 NAME Perdiccas I, king of Macedonia //
+1 NAME Perdiccas I, king of Macedonia /Placeholder surname/
 2 GIVN Perdiccas I, king of Macedonia
-1 NAME Περδίκκας //
+1 NAME Περδίκκας /Placeholder surname/
 2 GIVN Περδίκκας
 1 SEX M
 1 _UID 2FBA18D2EC2D49238A16B7325A24F4C31691
@@ -68608,9 +68608,9 @@
 1 FAMS @F556@
 1 FAMC @F561@
 0 @I840@ INDI
-1 NAME Sennacherib //
+1 NAME Sennacherib /Placeholder surname/
 2 GIVN Sennacherib
-1 NAME Sennacherib, king of Assyria //
+1 NAME Sennacherib, king of Assyria /Placeholder surname/
 2 GIVN Sennacherib, king of Assyria
 1 SEX M
 1 _UID AAB6684D842541C5996DA3DB8EDCA2CB1FD8
@@ -69280,7 +69280,7 @@
 1 FAMS @F557@
 1 FAMC @F562@
 0 @I841@ INDI
-1 NAME Naqi'a-Zakutu //
+1 NAME Naqi'a-Zakutu /Placeholder surname/
 2 GIVN Naqi'a-Zakutu
 1 SEX F
 1 _UID DBF0CE1E8B7441EBB3FE3FF2090DDD752C0F
@@ -69435,7 +69435,7 @@
 2 PLAC Iran
 1 FAMS @F558@
 0 @I844@ INDI
-1 NAME Nyssia //
+1 NAME Nyssia /Placeholder surname/
 2 GIVN Nyssia
 1 SEX F
 1 _UID 48CE8A8CB46E49A0BA181C10AC0192C539EA
@@ -69525,11 +69525,11 @@
 1 FAMS @F559@
 1 FAMC @F565@
 0 @I845@ INDI
-1 NAME Gyges //
+1 NAME Gyges /Placeholder surname/
 2 GIVN Gyges
-1 NAME Gyges, king of Lydia //
+1 NAME Gyges, king of Lydia /Placeholder surname/
 2 GIVN Gyges, king of Lydia
-1 NAME Γύγης //
+1 NAME Γύγης /Placeholder surname/
 2 GIVN Γύγης
 1 SEX M
 1 _UID 09622AF3CE0044248B7E1414CF7F7D550F33
@@ -69737,9 +69737,9 @@
 1 FAMS @F559@
 1 FAMC @F566@
 0 @I846@ INDI
-1 NAME الملك جيجس //
+1 NAME الملك جيجس /Placeholder surname/
 2 GIVN الملك جيجس
-1 NAME الملك جيجس //
+1 NAME الملك جيجس /Placeholder surname/
 2 GIVN الملك جيجس
 1 SEX M
 1 _UID 6EE92AAC8F7F468A952E40C91D415246CDC6
@@ -69762,7 +69762,7 @@
 2 _PRIM N
 1 FAMS @F560@
 0 @I847@ INDI
-1 NAME Cleonice //
+1 NAME Cleonice /Placeholder surname/
 2 GIVN Cleonice
 1 SEX F
 1 _UID FA491A25ED9C4E4187EF2C98FD44645BD4FD
@@ -69774,11 +69774,11 @@
 2 PLAC (Macedonia), Greece
 1 FAMS @F561@
 0 @I848@ INDI
-1 NAME Tyrimmas //
+1 NAME Tyrimmas /Placeholder surname/
 2 GIVN Tyrimmas
-1 NAME Tyrimmas, king of Macedonia //
+1 NAME Tyrimmas, king of Macedonia /Placeholder surname/
 2 GIVN Tyrimmas, king of Macedonia
-1 NAME Τυρίμμας //
+1 NAME Τυρίμμας /Placeholder surname/
 2 GIVN Τυρίμμας
 1 SEX M
 1 _UID F258E0E0576C473AB7A7B41B4D745359E807
@@ -69808,14 +69808,14 @@
 1 FAMS @F561@
 1 FAMC @F567@
 0 @I849@ INDI
-1 NAME Sargon //
+1 NAME Sargon /Placeholder surname/
 2 GIVN Sargon
 2 NICK Sargon II
-1 NAME Sargon II, king of Assyria //
+1 NAME Sargon II, king of Assyria /Placeholder surname/
 2 GIVN Sargon II, king of Assyria
-1 NAME סרגון //
+1 NAME סרגון /Placeholder surname/
 2 GIVN סרגון
-1 NAME סרגון השני, מלך אשור //
+1 NAME סרגון השני, מלך אשור /Placeholder surname/
 2 GIVN סרגון השני, מלך אשור
 1 SEX M
 1 _UID 30449DBEC4034E0096C97404FCEC9C5291CE
@@ -70037,7 +70037,7 @@
 1 FAMS @F562@
 1 FAMC @F568@
 0 @I850@ INDI
-1 NAME Marduk-Appal-Iddina II Roi de Babylone (721-703) //
+1 NAME Marduk-Appal-Iddina II Roi de Babylone (721-703) /Placeholder surname/
 2 GIVN Marduk-Appal-Iddina II Roi de Babylone (721-703)
 1 SEX M
 1 _UID 029D101EA56249B3BC50F768C17849712E21
@@ -70083,7 +70083,7 @@
 1 FAMS @F564@
 1 FAMC @F569@
 0 @I852@ INDI
-1 NAME N.N. //
+1 NAME N.N. /Placeholder surname/
 2 GIVN N.N.
 1 SEX F
 1 _UID CFC4002467444886943E7D9420A50861418A
@@ -70101,9 +70101,9 @@
 2 _PRIM Y
 1 FAMS @F564@
 0 @I853@ INDI
-1 NAME Arnossus //
+1 NAME Arnossus /Placeholder surname/
 2 GIVN Arnossus
-1 NAME Arnossus, king of Mysia //
+1 NAME Arnossus, king of Mysia /Placeholder surname/
 2 GIVN Arnossus, king of Mysia
 1 SEX M
 1 _UID E46622EB964A442287821CDDDD3DF572205B
@@ -70112,7 +70112,7 @@
 1 OCCU
 1 FAMS @F565@
 0 @I854@ INDI
-1 NAME N.N. //
+1 NAME N.N. /Placeholder surname/
 2 GIVN N.N.
 1 SEX F
 1 _UID 475DC96B2FC140C7A0A598C37B56A24C2EAE
@@ -70124,9 +70124,9 @@
 2 PLAC (Lydia), Turkey
 1 FAMS @F566@
 0 @I855@ INDI
-1 NAME Dascylus //
+1 NAME Dascylus /Placeholder surname/
 2 GIVN Dascylus
-1 NAME Δάσκυλος //
+1 NAME Δάσκυλος /Placeholder surname/
 2 GIVN Δάσκυλος
 1 SEX M
 1 _UID 5FED020CB562419DA8D07E1A40472B42531F
@@ -70154,7 +70154,7 @@
 2 PLAC Noble of Lydia
 1 FAMS @F566@
 0 @I856@ INDI
-1 NAME Kleonike //
+1 NAME Kleonike /Placeholder surname/
 2 GIVN Kleonike
 1 SEX F
 1 _UID 2C304B1D06BD4955A9327BF17179A99B9ABA
@@ -70166,11 +70166,11 @@
 2 PLAC (Macedonia), Greece
 1 FAMS @F567@
 0 @I857@ INDI
-1 NAME Coenus //
+1 NAME Coenus /Placeholder surname/
 2 GIVN Coenus
-1 NAME Coenus, king of Macedonia //
+1 NAME Coenus, king of Macedonia /Placeholder surname/
 2 GIVN Coenus, king of Macedonia
-1 NAME Κοῖνος //
+1 NAME Κοῖνος /Placeholder surname/
 2 GIVN Κοῖνος
 1 SEX M
 1 _UID 621BCAE2E80E4472A3403CB50D9E26EF6971
@@ -70212,9 +70212,9 @@
 1 FAMS @F567@
 1 FAMC @F570@
 0 @I858@ INDI
-1 NAME Tiglath-Pileser //
+1 NAME Tiglath-Pileser /Placeholder surname/
 2 GIVN Tiglath-Pileser
-1 NAME Tiglath-Pileser, king of Assyria //
+1 NAME Tiglath-Pileser, king of Assyria /Placeholder surname/
 2 GIVN Tiglath-Pileser, king of Assyria
 1 SEX M
 1 _UID 82C4557064D54EDA913A060595CC67172177
@@ -70623,11 +70623,11 @@
 1 FAMS @F569@
 1 FAMC @F572@
 0 @I860@ INDI
-1 NAME Karanos //
+1 NAME Karanos /Placeholder surname/
 2 GIVN Karanos
-1 NAME Karanos, king of Macedon //
+1 NAME Karanos, king of Macedon /Placeholder surname/
 2 GIVN Karanos, king of Macedon
-1 NAME Κάρανος //
+1 NAME Κάρανος /Placeholder surname/
 2 GIVN Κάρανος
 1 SEX M
 1 _UID 8C80FAA6B2B14F47AFD7D9B32C4C17E62C78
@@ -70716,9 +70716,9 @@
 2 PLAC (Macedonia), Greece
 1 FAMS @F570@
 0 @I862@ INDI
-1 NAME Adad-nirari //
+1 NAME Adad-nirari /Placeholder surname/
 2 GIVN Adad-nirari
-1 NAME Adad-nirari III, king of Assyria //
+1 NAME Adad-nirari III, king of Assyria /Placeholder surname/
 2 GIVN Adad-nirari III, king of Assyria
 1 SEX M
 1 _UID CB38369E7B5949DF9D245536D08D65C2A39D
@@ -70913,7 +70913,7 @@
 1 OCCU koning
 1 FAMS @F572@
 0 @I864@ INDI
-1 NAME Phidon //
+1 NAME Phidon /Placeholder surname/
 2 GIVN Phidon
 1 SEX M
 1 _UID FB9E119355FC41B2977A9202BF5479CD7F2E
@@ -70931,9 +70931,9 @@
 1 FAMS @F573@
 1 FAMC @F575@
 0 @I865@ INDI
-1 NAME Shamshi-Adad //
+1 NAME Shamshi-Adad /Placeholder surname/
 2 GIVN Shamshi-Adad
-1 NAME Shamshi-Adad V, king of Assyria //
+1 NAME Shamshi-Adad V, king of Assyria /Placeholder surname/
 2 GIVN Shamshi-Adad V, king of Assyria
 1 SEX M
 1 _UID D03B651B9A57473F92BC961B0BB958C3E0D5
@@ -71092,7 +71092,7 @@
 2 GIVN Shammuramat (Semiramis), Regent of
 2 SURN Assyria
 2 NSFX Queen of Assyria
-1 NAME Sammuramat (Semiramis) Regent of Assyria //
+1 NAME Sammuramat (Semiramis) Regent of Assyria /Placeholder surname/
 2 GIVN Sammuramat (Semiramis) Regent of Assyria
 1 SEX F
 1 _UID A02A34B6336C4E2E8E69F8A0D60F5A710E27
@@ -71226,7 +71226,7 @@
 2 _PRIM Y
 1 FAMS @F574@
 0 @I867@ INDI
-1 NAME Aristodamides //
+1 NAME Aristodamides /Placeholder surname/
 2 GIVN Aristodamides
 1 SEX M
 1 _UID 6D8D7DF1CB5C4D48A67410E1F93CBF97BAF6
@@ -71235,9 +71235,9 @@
 1 FAMS @F575@
 1 FAMC @F577@
 0 @I868@ INDI
-1 NAME Shalmaneser //
+1 NAME Shalmaneser /Placeholder surname/
 2 GIVN Shalmaneser
-1 NAME Shalmaneser III, king of Assyria //
+1 NAME Shalmaneser III, king of Assyria /Placeholder surname/
 2 GIVN Shalmaneser III, king of Assyria
 1 SEX M
 1 _UID B00221FF267B4F90B150D955230109D38101
@@ -71490,7 +71490,7 @@
 1 FAMS @F576@
 1 FAMC @F578@
 0 @I869@ INDI
-1 NAME Merops //
+1 NAME Merops /Placeholder surname/
 2 GIVN Merops
 1 SEX M
 1 _UID 600EEC8E4DD240BAA41463DE3FCC9508A282
@@ -71499,9 +71499,9 @@
 1 FAMS @F577@
 1 FAMC @F579@
 0 @I870@ INDI
-1 NAME Ashurnasirpal //
+1 NAME Ashurnasirpal /Placeholder surname/
 2 GIVN Ashurnasirpal
-1 NAME Ashurnasirpal II, king of Assyria //
+1 NAME Ashurnasirpal II, king of Assyria /Placeholder surname/
 2 GIVN Ashurnasirpal II, king of Assyria
 1 SEX M
 1 _UID 33392A9673CA4D62B8B4866C73821E982109
@@ -71731,7 +71731,7 @@
 1 FAMS @F578@
 1 FAMC @F580@
 0 @I871@ INDI
-1 NAME Mulisu //
+1 NAME Mulisu /Placeholder surname/
 2 GIVN Mulisu
 1 SEX F
 1 _UID FEABBF30E76D4773A0533F11E5F119431B0B
@@ -71743,7 +71743,7 @@
 2 PLAC Assyria
 1 FAMS @F578@
 0 @I872@ INDI
-1 NAME Testius //
+1 NAME Testius /Placeholder surname/
 2 GIVN Testius
 1 SEX M
 1 _UID F42C9788877E4A0AA60E3A13BB00BB2938D2
@@ -71752,9 +71752,9 @@
 1 FAMS @F579@
 1 FAMC @F581@
 0 @I873@ INDI
-1 NAME Tukulti-Ninurta //
+1 NAME Tukulti-Ninurta /Placeholder surname/
 2 GIVN Tukulti-Ninurta
-1 NAME Tukulti-Ninurta II, king of Assyria //
+1 NAME Tukulti-Ninurta II, king of Assyria /Placeholder surname/
 2 GIVN Tukulti-Ninurta II, king of Assyria
 1 SEX M
 1 _UID 66557197BAB24F629F48E5AABE6A69EAD1AC
@@ -71862,7 +71862,7 @@
 1 FAMS @F580@
 1 FAMC @F582@
 0 @I874@ INDI
-1 NAME Ceisus //
+1 NAME Ceisus /Placeholder surname/
 2 GIVN Ceisus
 2 NSFX King of Argos
 1 SEX M
@@ -71888,9 +71888,9 @@
 1 FAMS @F581@
 1 FAMC @F583@
 0 @I875@ INDI
-1 NAME Adad-nirari //
+1 NAME Adad-nirari /Placeholder surname/
 2 GIVN Adad-nirari
-1 NAME Adad-nirari II, king of Assyria //
+1 NAME Adad-nirari II, king of Assyria /Placeholder surname/
 2 GIVN Adad-nirari II, king of Assyria
 1 SEX M
 1 _UID 2E921341E4B141B7837C5B172FBA2C9CC3F8
@@ -72040,11 +72040,11 @@
 2 PLAC Argos, Greece
 1 FAMS @F583@
 0 @I877@ INDI
-1 NAME Τέμενος //
+1 NAME Τέμενος /Placeholder surname/
 2 GIVN Τέμενος
-1 NAME Temenos King of Argos //
+1 NAME Temenos King of Argos /Placeholder surname/
 2 GIVN Temenos King of Argos
-1 NAME Τέμενος //
+1 NAME Τέμενος /Placeholder surname/
 2 GIVN Τέμενος
 1 SEX M
 1 _UID E9CA9538613645D4B5902F5FE397F586F8B6
@@ -72102,9 +72102,9 @@
 1 FAMS @F583@
 1 FAMC @F585@
 0 @I878@ INDI
-1 NAME Ashur-dan //
+1 NAME Ashur-dan /Placeholder surname/
 2 GIVN Ashur-dan
-1 NAME Ashur-dan II, king of Assyria //
+1 NAME Ashur-dan II, king of Assyria /Placeholder surname/
 2 GIVN Ashur-dan II, king of Assyria
 1 SEX M
 1 _UID DFD5B607CE9B46659173E7804F2EBC9FC8C8
@@ -72219,9 +72219,9 @@
 1 FAMS @F584@
 1 FAMC @F586@
 0 @I879@ INDI
-1 NAME Aristomachus //
+1 NAME Aristomachus /Placeholder surname/
 2 GIVN Aristomachus
-1 NAME Ἀριστόμαχος //
+1 NAME Ἀριστόμαχος /Placeholder surname/
 2 GIVN Ἀριστόμαχος
 1 SEX M
 1 _UID 8259045456A641F5AB2C92DA2C73E0598080
@@ -72289,12 +72289,12 @@
 1 FAMS @F585@
 1 FAMC @F587@
 0 @I880@ INDI
-1 NAME Tiglath-Pileser //
+1 NAME Tiglath-Pileser /Placeholder surname/
 2 GIVN Tiglath-Pileser
 1 NAME Tukulti-apil-esharra II King of /Assyria/
 2 GIVN Tukulti-apil-esharra II King of
 2 SURN Assyria
-1 NAME Tiglath-Pileser II, king of Assyria //
+1 NAME Tiglath-Pileser II, king of Assyria /Placeholder surname/
 2 GIVN Tiglath-Pileser II, king of Assyria
 1 SEX M
 1 _UID B1FC5A7431304BEF9A98D88EED11D872F62C
@@ -72455,7 +72455,7 @@
 1 FAMS @F586@
 1 FAMC @F588@
 0 @I881@ INDI
-1 NAME Cleodaeus //
+1 NAME Cleodaeus /Placeholder surname/
 2 GIVN Cleodaeus
 2 NSFX {Legendary}
 1 SEX M
@@ -72510,9 +72510,9 @@
 2 PLAC Greece
 1 FAMS @F587@
 0 @I882@ INDI
-1 NAME Aššūr-reš-iši //
+1 NAME Aššūr-reš-iši /Placeholder surname/
 2 GIVN Aššūr-reš-iši
-1 NAME Aššūr-reš-iši II, king of Assyria //
+1 NAME Aššūr-reš-iši II, king of Assyria /Placeholder surname/
 2 GIVN Aššūr-reš-iši II, king of Assyria
 1 SEX M
 1 _UID E36AF40878334B4CA3EF732F16686EFAA535
@@ -72594,9 +72594,9 @@
 1 FAMS @F588@
 1 FAMC @F589@
 0 @I883@ INDI
-1 NAME Ashur-rabi //
+1 NAME Ashur-rabi /Placeholder surname/
 2 GIVN Ashur-rabi
-1 NAME Ashur-rabi II, king of Assyria //
+1 NAME Ashur-rabi II, king of Assyria /Placeholder surname/
 2 GIVN Ashur-rabi II, king of Assyria
 1 SEX M
 1 _UID E19E7CBF9BB644D988EFEE78FF4894DDBDBA
@@ -72705,9 +72705,9 @@
 1 FAMS @F589@
 1 FAMC @F590@
 0 @I884@ INDI
-1 NAME Ashurnasirpal //
+1 NAME Ashurnasirpal /Placeholder surname/
 2 GIVN Ashurnasirpal
-1 NAME Ashurnasirpal I, king of Assyria //
+1 NAME Ashurnasirpal I, king of Assyria /Placeholder surname/
 2 GIVN Ashurnasirpal I, king of Assyria
 1 SEX M
 1 _UID 42CFAC254C4B42AF9B6EA1697BB3F7620410
@@ -72853,9 +72853,9 @@
 1 FAMS @F590@
 1 FAMC @F591@
 0 @I885@ INDI
-1 NAME Shamshi-Adad //
+1 NAME Shamshi-Adad /Placeholder surname/
 2 GIVN Shamshi-Adad
-1 NAME Shamshi-Adad IV, king of Assyria //
+1 NAME Shamshi-Adad IV, king of Assyria /Placeholder surname/
 2 GIVN Shamshi-Adad IV, king of Assyria
 1 SEX M
 1 _UID 7E3682B866BC4604ACFBC014EC3033709471
@@ -72984,7 +72984,7 @@
 1 FAMS @F591@
 1 FAMC @F592@
 0 @I886@ INDI
-1 NAME Tiglath-Pileser I //
+1 NAME Tiglath-Pileser I /Placeholder surname/
 2 GIVN Tiglath-Pileser I
 2 NSFX King of Assyria
 1 SEX M
@@ -73111,9 +73111,9 @@
 1 FAMS @F592@
 1 FAMC @F593@
 0 @I887@ INDI
-1 NAME Ashur-resh-ishi //
+1 NAME Ashur-resh-ishi /Placeholder surname/
 2 GIVN Ashur-resh-ishi
-1 NAME Ashur-resh-ishi I, king of Assyria //
+1 NAME Ashur-resh-ishi I, king of Assyria /Placeholder surname/
 2 GIVN Ashur-resh-ishi I, king of Assyria
 1 SEX M
 1 _UID 8C9A910E48DF45F394D881F5E8346373F868
@@ -73214,7 +73214,7 @@
 1 FAMS @F593@
 1 FAMC @F594@
 0 @I888@ INDI
-1 NAME Mutakkil-nusku //
+1 NAME Mutakkil-nusku /Placeholder surname/
 2 GIVN Mutakkil-nusku
 2 NSFX King of Assyria
 1 SEX M
@@ -73285,7 +73285,7 @@
 1 FAMS @F594@
 1 FAMC @F595@
 0 @I889@ INDI
-1 NAME Ashur-Dan I //
+1 NAME Ashur-Dan I /Placeholder surname/
 2 GIVN Ashur-Dan I
 2 NSFX King of Assyria
 1 SEX M
@@ -73370,9 +73370,9 @@
 1 FAMS @F595@
 1 FAMC @F596@
 0 @I890@ INDI
-1 NAME Ninurta-apil-Ekur //
+1 NAME Ninurta-apil-Ekur /Placeholder surname/
 2 GIVN Ninurta-apil-Ekur
-1 NAME Ninurta-apil-Ekur, king of Assyria //
+1 NAME Ninurta-apil-Ekur, king of Assyria /Placeholder surname/
 2 GIVN Ninurta-apil-Ekur, king of Assyria
 1 SEX M
 1 _UID 3E2759FCD86C4D8EBE99F0C56B7E85A5F804
@@ -73457,7 +73457,7 @@
 1 FAMS @F597@
 1 FAMC @F598@
 0 @I892@ INDI
-1 NAME Aššur-iddin //
+1 NAME Aššur-iddin /Placeholder surname/
 2 GIVN Aššur-iddin
 1 SEX M
 1 _UID 0B3CA13EBE5E40138E575F13D3F0711030BD
@@ -73466,7 +73466,7 @@
 1 FAMS @F598@
 1 FAMC @F599@
 0 @I893@ INDI
-1 NAME Qibi-Aššur //
+1 NAME Qibi-Aššur /Placeholder surname/
 2 GIVN Qibi-Aššur
 1 SEX M
 1 _UID 2121BA17179A4EF5A180E26581481BDE316E
@@ -73475,7 +73475,7 @@
 1 FAMS @F599@
 1 FAMC @F600@
 0 @I894@ INDI
-1 NAME Shalmaneser I //
+1 NAME Shalmaneser I /Placeholder surname/
 2 GIVN Shalmaneser I
 2 NSFX King of Assyria
 1 SEX M
@@ -73580,7 +73580,7 @@
 1 FAMS @F600@
 1 FAMC @F601@
 0 @I895@ INDI
-1 NAME Adad-nirari I //
+1 NAME Adad-nirari I /Placeholder surname/
 2 GIVN Adad-nirari I
 2 NSFX King of Assyria
 1 SEX M
@@ -73774,7 +73774,7 @@
 1 FAMS @F601@
 1 FAMC @F602@
 0 @I896@ INDI
-1 NAME Arik-den-ili //
+1 NAME Arik-den-ili /Placeholder surname/
 2 GIVN Arik-den-ili
 1 SEX M
 1 _UID 9AFC9A9760344DFDAE5B48C210B168A4854C
@@ -73880,7 +73880,7 @@
 1 FAMS @F602@
 1 FAMC @F603@
 0 @I897@ INDI
-1 NAME Enlil-nirari //
+1 NAME Enlil-nirari /Placeholder surname/
 2 GIVN Enlil-nirari
 1 SEX M
 1 _UID 979ADA8F57CF4FFD8CAD6F3CEC078960CCB1
@@ -73935,9 +73935,9 @@
 1 FAMS @F603@
 1 FAMC @F604@
 0 @I898@ INDI
-1 NAME Ashur-uballit //
+1 NAME Ashur-uballit /Placeholder surname/
 2 GIVN Ashur-uballit
-1 NAME Ashur-uballit I, king of Assyria //
+1 NAME Ashur-uballit I, king of Assyria /Placeholder surname/
 2 GIVN Ashur-uballit I, king of Assyria
 1 SEX M
 1 _UID 4C86EA35B767487C8946F702B19229616877
@@ -74050,7 +74050,7 @@
 1 FAMS @F604@
 1 FAMC @F605@
 0 @I899@ INDI
-1 NAME Eriba-Adad I //
+1 NAME Eriba-Adad I /Placeholder surname/
 2 GIVN Eriba-Adad I
 2 NSFX King of Assyria
 1 SEX M
@@ -74117,9 +74117,9 @@
 1 FAMS @F605@
 1 FAMC @F606@
 0 @I900@ INDI
-1 NAME Aššūr-bēl-nīšēšu //
+1 NAME Aššūr-bēl-nīšēšu /Placeholder surname/
 2 GIVN Aššūr-bēl-nīšēšu
-1 NAME Aššūr-bēl-nīšēšu, king of Assyria //
+1 NAME Aššūr-bēl-nīšēšu, king of Assyria /Placeholder surname/
 2 GIVN Aššūr-bēl-nīšēšu, king of Assyria
 1 SEX M
 1 _UID 5B7F1B5A10EE422CB11CF0D63D4183156433
@@ -74182,7 +74182,7 @@
 1 FAMS @F606@
 1 FAMC @F607@
 0 @I901@ INDI
-1 NAME Ashur-nirari II //
+1 NAME Ashur-nirari II /Placeholder surname/
 2 GIVN Ashur-nirari II
 2 NSFX King of Assyria
 1 SEX M
@@ -74222,7 +74222,7 @@
 1 FAMS @F607@
 1 FAMC @F608@
 0 @I902@ INDI
-1 NAME Enlil-Nasir II //
+1 NAME Enlil-Nasir II /Placeholder surname/
 2 GIVN Enlil-Nasir II
 2 NSFX King of Assyria
 1 SEX M
@@ -74247,7 +74247,7 @@
 1 FAMS @F608@
 1 FAMC @F609@
 0 @I903@ INDI
-1 NAME Ashur-rabi I //
+1 NAME Ashur-rabi I /Placeholder surname/
 2 GIVN Ashur-rabi I
 2 NSFX King of Assyria
 1 SEX M
@@ -74303,7 +74303,7 @@
 1 FAMS @F609@
 1 FAMC @F610@
 0 @I904@ INDI
-1 NAME Enlil-nasir I //
+1 NAME Enlil-nasir I /Placeholder surname/
 2 GIVN Enlil-nasir I
 2 NSFX King of Assyria
 1 SEX M
@@ -74406,7 +74406,7 @@
 1 FAMS @F610@
 1 FAMC @F611@
 0 @I905@ INDI
-1 NAME Puzur-Ashur III //
+1 NAME Puzur-Ashur III /Placeholder surname/
 2 GIVN Puzur-Ashur III
 2 NSFX King of Assyria
 1 SEX M
@@ -74480,7 +74480,7 @@
 1 FAMS @F611@
 1 FAMC @F612@
 0 @I906@ INDI
-1 NAME Ashur-nirari I //
+1 NAME Ashur-nirari I /Placeholder surname/
 2 GIVN Ashur-nirari I
 2 NSFX King of Assyria
 1 SEX M
@@ -74500,7 +74500,7 @@
 1 FAMS @F612@
 1 FAMC @F613@
 0 @I907@ INDI
-1 NAME Ishme-Dagan II //
+1 NAME Ishme-Dagan II /Placeholder surname/
 2 GIVN Ishme-Dagan II
 2 NSFX King of Assyria
 1 SEX M
@@ -74523,7 +74523,7 @@
 1 FAMS @F613@
 1 FAMC @F614@
 0 @I908@ INDI
-1 NAME Shamshi-Adad II //
+1 NAME Shamshi-Adad II /Placeholder surname/
 2 GIVN Shamshi-Adad II
 1 SEX M
 1 _UID 11D36903A57546E0BF784ACE5234E66AB5CD
@@ -74537,7 +74537,7 @@
 1 FAMS @F614@
 1 FAMC @F615@
 0 @I909@ INDI
-1 NAME Erishum III //
+1 NAME Erishum III /Placeholder surname/
 2 GIVN Erishum III
 2 NSFX King of Assyria
 1 SEX M
@@ -74554,9 +74554,9 @@
 1 FAMS @F615@
 1 FAMC @F616@
 0 @I910@ INDI
-1 NAME Shu-Ninua //
+1 NAME Shu-Ninua /Placeholder surname/
 2 GIVN Shu-Ninua
-1 NAME Shu-Ninua, king of Assyria //
+1 NAME Shu-Ninua, king of Assyria /Placeholder surname/
 2 GIVN Shu-Ninua, king of Assyria
 1 SEX M
 1 _UID A4F95C97014044B8B97A48F2EA390B157D7C
@@ -74613,7 +74613,7 @@
 1 FAMS @F616@
 1 FAMC @F617@
 0 @I911@ INDI
-1 NAME Bazaya //
+1 NAME Bazaya /Placeholder surname/
 2 GIVN Bazaya
 2 NSFX King of Assyria
 1 SEX M
@@ -74631,9 +74631,9 @@
 1 FAMS @F617@
 1 FAMC @F618@
 0 @I912@ INDI
-1 NAME Bel-bani //
+1 NAME Bel-bani /Placeholder surname/
 2 GIVN Bel-bani
-1 NAME Bel-bani, king of Assyria //
+1 NAME Bel-bani, king of Assyria /Placeholder surname/
 2 GIVN Bel-bani, king of Assyria
 1 SEX M
 1 _UID DFD71A4B45634949B61789778835C747ED1A
@@ -74669,9 +74669,9 @@
 1 FAMS @F618@
 1 FAMC @F619@
 0 @I913@ INDI
-1 NAME Adasi //
+1 NAME Adasi /Placeholder surname/
 2 GIVN Adasi
-1 NAME Adasi, king of Assyria //
+1 NAME Adasi, king of Assyria /Placeholder surname/
 2 GIVN Adasi, king of Assyria
 1 SEX M
 1 _UID 4928FDE95E0F4C818820620996516706F8D9
