@@ -116,7 +116,7 @@
 1 RIN MH:I1
 1 _UID 674a4d93178241efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME NN //
+1 NAME NN /Placeholder surname/
 2 GIVN NN
 1 SEX F
 1 OCCU
@@ -127,7 +127,7 @@
 1 RIN MH:I2
 1 _UID 674a4d935a4ae1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Aspacures II (or Varaz-Bakur I) //
+1 NAME Aspacures II (or Varaz-Bakur I) /Placeholder surname/
 2 GIVN Aspacures II (or Varaz-Bakur I)
 1 SEX M
 1 BIRT
@@ -221,10 +221,10 @@
 1 RIN MH:I3
 1 _UID 674a4d9356c4e1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Mirian III //
+1 NAME Mirian III /Placeholder surname/
 2 GIVN Mirian III
 2 NSFX King of Iberia, founder of the royal Chosroid dynasty
-1 NAME Mirian III, King of Iberia, founder of the royal Chosroid dynasty //
+1 NAME Mirian III, King of Iberia, founder of the royal Chosroid dynasty /Placeholder surname/
 2 GIVN Mirian III, King of Iberia, founder of the royal Chosroid dynasty
 1 SEX M
 1 BIRT
@@ -308,9 +308,9 @@
 1 RIN MH:I4
 1 _UID 674a4d9367aca1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Nana //
+1 NAME Nana /Placeholder surname/
 2 GIVN Nana
-1 NAME Nana, Queen consort of Iberia //
+1 NAME Nana, Queen consort of Iberia /Placeholder surname/
 2 GIVN Nana, Queen consort of Iberia
 1 SEX F
 1 BURI
@@ -331,8 +331,8 @@
 1 FAMS @F2@
 1 FAMC @F3@
 1 NOTE {geni:about_me} Nana (Georgian: ნანა) was a Queen consort of Kingdom of Iberia as the second wife of Mirian III in the 4th century. For her role in the conversion of Georgians to Christianity 
-2 CONC she is regarded by the Georgian Orthodox Church as saint and is canonized as Saint Equal to the Apostles Queen Nana (Georgian: წმინდა მოციქულთასწორი დედ�
-2 CONC �ფალი ნანა).[1][2]
+2 CONC she is regarded by the Georgian Orthodox Church as saint and is canonized as Saint Equal to the Apostles Queen Nana (Georgian: წმინდა მოციქულთასწორი დედ��
+2 CONC �ფალი ნანა).[1][2]
 2 CONT <p></p>
 2 CONT <p>Family According to the Georgian chronicles, Nana was "from a Greek territory, from Pontus, the daughter of Oligotos"[3] whom Mirian married after his first wife died (in 292 according to Cyril Tou
 2 CONC manoff). Nana bore Mirian two sons: Rev II, Varaz-Bakur and a daughter who married Peroz, the first Mihranid dynast of Gugark.[4] Pontus here may refer to the Bosporan Kingdom, then a client state of 
@@ -367,9 +367,9 @@
 1 RIN MH:I5
 1 _UID 674a4d93801d51efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Tiberius Julius Theothorses //
+1 NAME Tiberius Julius Theothorses /Placeholder surname/
 2 GIVN Tiberius Julius Theothorses
-1 NAME Thothorses, king of Bosphorus //
+1 NAME Thothorses, king of Bosphorus /Placeholder surname/
 2 GIVN Thothorses, king of Bosphorus
 1 SEX M
 1 BIRT
@@ -411,9 +411,9 @@
 1 RIN MH:I6
 1 _UID 674a4d939d1861efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Tiberius Julius Teiranes //
+1 NAME Tiberius Julius Teiranes /Placeholder surname/
 2 GIVN Tiberius Julius Teiranes
-1 NAME Teiranes, king of Bosphorus //
+1 NAME Teiranes, king of Bosphorus /Placeholder surname/
 2 GIVN Teiranes, king of Bosphorus
 1 SEX M
 1 BIRT
@@ -440,9 +440,9 @@
 1 RIN MH:I7
 1 _UID 674a4d93dc5ec1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Tiberius Julius Rhescuporis //
+1 NAME Tiberius Julius Rhescuporis /Placeholder surname/
 2 GIVN Tiberius Julius Rhescuporis
-1 NAME Rhescuporis V, king of Bosphorus //
+1 NAME Rhescuporis V, king of Bosphorus /Placeholder surname/
 2 GIVN Rhescuporis V, king of Bosphorus
 1 SEX M
 1 BIRT
@@ -462,8 +462,8 @@
 2 CONT <p></p>
 2 CONT <p>https://en.wikipedia.org/wiki/Tiberius_Julius_Rhescuporis_V</p>
 2 CONT <p></p>
-2 CONT <p>Tiberius Julius Rhescuporis V Philocaesar Philoromaios Eusebes, also known as Rhescuporis V (Greek: Τιβέριος Ἰούλιος Ῥησκούπορις Ε' Φιλόκαισαρ Φιλορώμ�
-2 CONC �ίος Eυσεbής, Philocaesar Philoromaios Eusebes, means lover of Caesar, lover of Rome who is the Pius one, flourished 3rd century – died 276) was a prince and Roman Client King of the Bospora
+2 CONT <p>Tiberius Julius Rhescuporis V Philocaesar Philoromaios Eusebes, also known as Rhescuporis V (Greek: Τιβέριος Ἰούλιος Ῥησκούπορις Ε' Φιλόκαισαρ Φιλορώμ�
+2 CONC �ίος Eυσεbής, Philocaesar Philoromaios Eusebes, means lover of Caesar, lover of Rome who is the Pius one, flourished 3rd century – died 276) was a prince and Roman Client King of the Bospora
 2 CONC n Kingdom.
 2 CONT <p></p>
 2 CONT <p>Rhescuporis V was the son and heir to the Bosporan King Ininthimeus and his mother was an unnamed woman and was of Greek, Iranian and Roman ancestry. Rhescuporis V was named in honor of his paterna
@@ -487,9 +487,9 @@
 1 RIN MH:I8
 1 _UID 674a4d9376a7c1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Tiberius Julius Ininthimeus Philocaesar Philoromaios Eusebes //
+1 NAME Tiberius Julius Ininthimeus Philocaesar Philoromaios Eusebes /Placeholder surname/
 2 GIVN Tiberius Julius Ininthimeus Philocaesar Philoromaios Eusebes
-1 NAME Ininthimaeus, king of Bosphorus //
+1 NAME Ininthimaeus, king of Bosphorus /Placeholder surname/
 2 GIVN Ininthimaeus, king of Bosphorus
 1 SEX M
 1 BIRT
@@ -518,9 +518,9 @@
 1 RIN MH:I9
 1 _UID 674a4d93ac7021efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Tiberius Julius Cotys //
+1 NAME Tiberius Julius Cotys /Placeholder surname/
 2 GIVN Tiberius Julius Cotys
-1 NAME Cotys III, king of Bosphorus //
+1 NAME Cotys III, king of Bosphorus /Placeholder surname/
 2 GIVN Cotys III, king of Bosphorus
 1 SEX M
 1 BIRT
@@ -542,7 +542,7 @@
 1 RIN MH:I10
 1 _UID 674a4d932891b1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME unnamed Sarmatian noble woman //
+1 NAME unnamed Sarmatian noble woman /Placeholder surname/
 2 GIVN unnamed Sarmatian noble woman
 1 SEX F
 1 OCCU
@@ -553,9 +553,9 @@
 1 RIN MH:I11
 1 _UID 674a4d93655911efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Tiberius Julius Sauromates //
+1 NAME Tiberius Julius Sauromates /Placeholder surname/
 2 GIVN Tiberius Julius Sauromates
-1 NAME Sauromates II, king of Bosphorus //
+1 NAME Sauromates II, king of Bosphorus /Placeholder surname/
 2 GIVN Sauromates II, king of Bosphorus
 1 SEX M
 1 BIRT
@@ -604,9 +604,9 @@
 1 RIN MH:I12
 1 _UID 674a4d93241fb1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Tiberius Julius Rhoimetalkes //
+1 NAME Tiberius Julius Rhoimetalkes /Placeholder surname/
 2 GIVN Tiberius Julius Rhoimetalkes
-1 NAME Rhoimetalkes, king of Bosphorus //
+1 NAME Rhoimetalkes, king of Bosphorus /Placeholder surname/
 2 GIVN Rhoimetalkes, king of Bosphorus
 1 SEX M
 1 BIRT
@@ -636,9 +636,9 @@
 1 RIN MH:I13
 1 _UID 674a4d93c32e11efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Tiberius Julius Cotys //
+1 NAME Tiberius Julius Cotys /Placeholder surname/
 2 GIVN Tiberius Julius Cotys
-1 NAME Cotys II, king of Bosphorus //
+1 NAME Cotys II, king of Bosphorus /Placeholder surname/
 2 GIVN Cotys II, king of Bosphorus
 1 SEX M
 1 BIRT
@@ -666,9 +666,9 @@
 1 RIN MH:I14
 1 _UID 674a4d93d2a521efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Tiberius Julius Sauromates //
+1 NAME Tiberius Julius Sauromates /Placeholder surname/
 2 GIVN Tiberius Julius Sauromates
-1 NAME Sauromates I, king of Bosphorus //
+1 NAME Sauromates I, king of Bosphorus /Placeholder surname/
 2 GIVN Sauromates I, king of Bosphorus
 1 SEX M
 1 BIRT
@@ -695,9 +695,9 @@
 1 RIN MH:I15
 1 _UID 674a4d93efc331efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Tiberius Julius Rhescuporis //
+1 NAME Tiberius Julius Rhescuporis /Placeholder surname/
 2 GIVN Tiberius Julius Rhescuporis
-1 NAME Rhescuporis I, king of Bosphorus //
+1 NAME Rhescuporis I, king of Bosphorus /Placeholder surname/
 2 GIVN Rhescuporis I, king of Bosphorus
 1 SEX M
 1 BIRT
@@ -724,9 +724,9 @@
 1 RIN MH:I16
 1 _UID 674a4d93e34d31efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Tiberius Julius Cotys //
+1 NAME Tiberius Julius Cotys /Placeholder surname/
 2 GIVN Tiberius Julius Cotys
-1 NAME Cotys I, king of Bosphorus //
+1 NAME Cotys I, king of Bosphorus /Placeholder surname/
 2 GIVN Cotys I, king of Bosphorus
 1 SEX M
 1 BIRT
@@ -756,7 +756,7 @@
 1 RIN MH:I17
 1 _UID 674a4d93cf2041efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Eunice //
+1 NAME Eunice /Placeholder surname/
 2 GIVN Eunice
 1 SEX F
 1 OCCU
@@ -767,11 +767,11 @@
 1 RIN MH:I18
 1 _UID 674a4d93f52a21efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Gepaepyris //
+1 NAME Gepaepyris /Placeholder surname/
 2 GIVN Gepaepyris
-1 NAME Gepaepyris of Thrace //
+1 NAME Gepaepyris of Thrace /Placeholder surname/
 2 GIVN Gepaepyris of Thrace
-1 NAME Γηπαίπυρις //
+1 NAME Γηπαίπυρις /Placeholder surname/
 2 GIVN Γηπαίπυρις
 1 SEX F
 1 BIRT
@@ -793,9 +793,9 @@
 1 RIN MH:I19
 1 _UID 674a4d93ef31d1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Aspurgus //
+1 NAME Aspurgus /Placeholder surname/
 2 GIVN Aspurgus
-1 NAME Aspurgus, king of Bosphorus //
+1 NAME Aspurgus, king of Bosphorus /Placeholder surname/
 2 GIVN Aspurgus, king of Bosphorus
 1 SEX M
 1 DEAT
@@ -819,7 +819,7 @@
 1 RIN MH:I20
 1 _UID 674a4d93e3bfd1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Cotys VIII //
+1 NAME Cotys VIII /Placeholder surname/
 2 GIVN Cotys VIII
 2 NSFX King of Thrace
 1 SEX M
@@ -841,9 +841,9 @@
 1 RIN MH:I21
 1 _UID 674a4d93821a01efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Antonia Tryphaena //
+1 NAME Antonia Tryphaena /Placeholder surname/
 2 GIVN Antonia Tryphaena
-1 NAME Antonia Tryphaena Queen of Thrace //
+1 NAME Antonia Tryphaena Queen of Thrace /Placeholder surname/
 2 GIVN Antonia Tryphaena Queen of Thrace
 1 SEX F
 1 BIRT
@@ -956,7 +956,7 @@
 1 RIN MH:I22
 1 _UID 674a4d939f1f31efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Dynamis of Bosporus //
+1 NAME Dynamis of Bosporus /Placeholder surname/
 2 GIVN Dynamis of Bosporus
 2 NSFX Princess of Pontus
 1 SEX F
@@ -1019,8 +1019,8 @@
 2 CONT <p></p>
 2 CONT <p>During earthworks in Kerch in February 1957, a surviving Greek inscription was found that belonged to Dynamis. In this inscription Dynamis, honors her royal Pontic ancestry:</p>
 2 CONT <p></p>
-2 CONT <p>''Ύπὲρ βασιλίσσης Δυνάμεως φιλορωμαίου, τῇς ὲκ βασιλέως μεγάλου Φαρνάκου, τοῦ ὲκ βασιλέως Μιθραδάτου Ευπ�
-2 CONC �τρος…</p>
+2 CONT <p>''Ύπὲρ βασιλίσσης Δυνάμεως φιλορωμαίου, τῇς ὲκ βασιλέως μεγάλου Φαρνάκου, τοῦ ὲκ βασιλέως Μιθραδάτου Ευπ�
+2 CONC �τρος…</p>
 2 CONT <p>For [ruling] Queen Dynamis Philoromaios, [the daughter] of King Pharnaces the Great, [son] of King Mithridates Eupator...''</p>
 2 CONT <p></p>
 2 CONT <p>Dynamis obtained recognition as a "friend and ally" of Rome. During her reign, she had erected three statues dedicated to herself and had another statue erected in honor of Augustus’ wife, the fi
@@ -1043,9 +1043,9 @@
 1 RIN MH:I23
 1 _UID 674a4d939220a1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Asander //
+1 NAME Asander /Placeholder surname/
 2 GIVN Asander
-1 NAME Asander, king of Bosphorus //
+1 NAME Asander, king of Bosphorus /Placeholder surname/
 2 GIVN Asander, king of Bosphorus
 1 SEX M
 1 DEAT
@@ -1102,9 +1102,9 @@
 1 RIN MH:I24
 1 _UID 674a4d93d36601efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Rhoemetalces //
+1 NAME Rhoemetalces /Placeholder surname/
 2 GIVN Rhoemetalces
-1 NAME Rhoemetalces I, king of Thrace //
+1 NAME Rhoemetalces I, king of Thrace /Placeholder surname/
 2 GIVN Rhoemetalces I, king of Thrace
 1 SEX M
 1 FAMS @F17@
@@ -1117,7 +1117,7 @@
 1 RIN MH:I25
 1 _UID 674a4d93a3c8b1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Pythodoris I //
+1 NAME Pythodoris I /Placeholder surname/
 2 GIVN Pythodoris I
 1 SEX F
 1 FAMS @F17@
@@ -1125,13 +1125,13 @@
 1 RIN MH:I26
 1 _UID 674a4d93689461efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Pythodorida Philometor //
+1 NAME Pythodorida Philometor /Placeholder surname/
 2 GIVN Pythodorida Philometor
 2 NICK Πυθοδωρίς
-1 NAME Πυθοδωρίδα Φιλομητωρ //
+1 NAME Πυθοδωρίδα Φιλομητωρ /Placeholder surname/
 2 GIVN Πυθοδωρίδα Φιλομητωρ
 2 NICK Πυθοδωρίς
-1 NAME Pythodorida Philometor //
+1 NAME Pythodorida Philometor /Placeholder surname/
 2 GIVN Pythodorida Philometor
 1 SEX F
 1 BIRT
@@ -1283,7 +1283,7 @@
 1 RIN MH:I27
 1 _UID 674a4d934f9b31efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Polemon Pythodoros //
+1 NAME Polemon Pythodoros /Placeholder surname/
 2 GIVN Polemon Pythodoros
 2 NSFX King of Pontus
 1 SEX M
@@ -1334,8 +1334,8 @@
 2 CONT <p>'''Marriage and succession'''</p>
 2 CONT <p></p>
 2 CONT <p>In 16 BC the Roman statesman Marcus Vipsanius Agrippa, had intervened with the monarchy of the Bosporan Kingdom. Agrippa had discovered, a usurper called Scribonius had pretended be to a relative o
-2 CONC f the ruling Queen Dynamis, widow of King Asander. Scribonius wanted to marry Dynamis, so he could rule the Bosporan, however Agrippa discovered his treachery and ordered his death. After Scribonius�
-2 CONC � death, Agrippa asked Polemon to take Scribonius’ place.
+2 CONC f the ruling Queen Dynamis, widow of King Asander. Scribonius wanted to marry Dynamis, so he could rule the Bosporan, however Agrippa discovered his treachery and ordered his death. After Scribonius��
+2 CONC � death, Agrippa asked Polemon to take Scribonius’ place.
 2 CONT <p></p>
 2 CONT <p>After Polemon married Dynamis in 16 BC he left Iconium to rule the Bosporan Kingdom. Through Dynamis Polemon became stepfather to Tiberius Julius Aspurgus, her son from her first marriage. When Dyn
 2 CONC amis died in 14 BC Polemon became the sole ruler of the Bosporan.
@@ -1360,9 +1360,9 @@
 1 RIN MH:I28
 1 _UID 674a4d93487711efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Pharnaces //
+1 NAME Pharnaces /Placeholder surname/
 2 GIVN Pharnaces
-1 NAME Pharnaces II, king of Pontus //
+1 NAME Pharnaces II, king of Pontus /Placeholder surname/
 2 GIVN Pharnaces II, king of Pontus
 1 SEX M
 1 DEAT
@@ -1508,7 +1508,7 @@
 1 RIN MH:I29
 1 _UID 674a4d938fa5c1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME NN (Sarmatian Noblewoman) //
+1 NAME NN (Sarmatian Noblewoman) /Placeholder surname/
 2 GIVN NN (Sarmatian Noblewoman)
 1 SEX F
 1 OCCU
@@ -1519,9 +1519,9 @@
 1 RIN MH:I30
 1 _UID 674a4d9359fc21efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Cotys //
+1 NAME Cotys /Placeholder surname/
 2 GIVN Cotys
-1 NAME Cotys I, king of Thrace //
+1 NAME Cotys I, king of Thrace /Placeholder surname/
 2 GIVN Cotys I, king of Thrace
 1 SEX M
 1 FAMS @F20@
@@ -1534,7 +1534,7 @@
 1 RIN MH:I31
 1 _UID 674a4d93b44591efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Antonia Prima //
+1 NAME Antonia Prima /Placeholder surname/
 2 GIVN Antonia Prima
 1 SEX F
 1 BIRT
@@ -1562,8 +1562,8 @@
 2 CONC s later broken off. In later years, she appeared to have travelled with her father. In 36 BC, Antonia married Pythodoros of Tralles, who was an Anatolian Greek, who originated from Tralles (modern Ayd
 2 CONC ın, Turkey). He was extremely wealthy and was a friend to the late triumvir Pompey. Pythodoros was about 20 years older than Antonia.
 2 CONT <p></p>
-2 CONT <p>The reason why Antony married his daughter off to Pythodoros was to hopefully gain some of Pythodoros’ wealth for his war chest in his campaign to invade Parthia. This was a testament to Antony�
-2 CONC �s Eastern perspective, as at that time Antony was married to Ptolemaic Greek Queen Cleopatra VII of Egypt and was living with her at her palace in Alexandria, Egypt.
+2 CONT <p>The reason why Antony married his daughter off to Pythodoros was to hopefully gain some of Pythodoros’ wealth for his war chest in his campaign to invade Parthia. This was a testament to Antony��
+2 CONC �s Eastern perspective, as at that time Antony was married to Ptolemaic Greek Queen Cleopatra VII of Egypt and was living with her at her palace in Alexandria, Egypt.
 2 CONT <p></p>
 2 CONT <p>Antonia’s marriage to Pythodoros and her father’s motive for the marriage to occur horrified the Roman Senate, particularly Octavian. This was among one of the reasons that Octavian in 31 BC, d
 2 CONC eclared war on her father and stepmother. In the following year, her father and stepmother committed suicide when Octavian defeated them and conquered Egypt.
@@ -1585,8 +1585,8 @@
 2 CONC as later broken off. In later years, she appeared to have travelled with her father. In 36 BC, Antonia married Pythodoros of Tralles, who was an Anatolian Greek, who originated from Tralles (modern Ay
 2 CONC dın, Turkey). He was extremely wealthy and was a friend to the late triumvir Pompey. Pythodoros was about 20 years older than Antonia.
 2 CONT <p></p>
-2 CONT <p>The reason why Antony married his daughter off to Pythodoros was to hopefully gain some of Pythodoros’ wealth for his war chest in his campaign to invade Parthia. This was a testament to Antony�
-2 CONC �s Eastern perspective, as at that time Antony was married to Ptolemaic Greek Queen Cleopatra VII of Egypt and was living with her at her palace in Alexandria, Egypt.
+2 CONT <p>The reason why Antony married his daughter off to Pythodoros was to hopefully gain some of Pythodoros’ wealth for his war chest in his campaign to invade Parthia. This was a testament to Antony��
+2 CONC �s Eastern perspective, as at that time Antony was married to Ptolemaic Greek Queen Cleopatra VII of Egypt and was living with her at her palace in Alexandria, Egypt.
 2 CONT <p></p>
 2 CONT <p>Antonia’s marriage to Pythodoros and her father’s motive for the marriage to occur horrified the Roman Senate, particularly Octavian. This was among one of the reasons that Octavian in 31 BC, d
 2 CONC eclared war on her father and stepmother. In the following year, her father and stepmother committed suicide when Octavian defeated them and conquered Egypt.
@@ -1607,11 +1607,11 @@
 2 GIVN Pythodorus
 2 SURN of Tralles
 2 _MARNM of Tralles
-1 NAME Pythodoros of Tralles //
+1 NAME Pythodoros of Tralles /Placeholder surname/
 2 GIVN Pythodoros of Tralles
-1 NAME Πυθόδωρος //
+1 NAME Πυθόδωρος /Placeholder surname/
 2 GIVN Πυθόδωρος
-1 NAME Pythodorus //
+1 NAME Pythodorus /Placeholder surname/
 2 GIVN Pythodorus
 1 SEX M
 1 DEAT
@@ -1671,10 +1671,10 @@
 1 RIN MH:I33
 1 _UID 674a4d939c5b11efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Zenon //
+1 NAME Zenon /Placeholder surname/
 2 GIVN Zenon
 2 NSFX King of Bosphorus
-1 NAME Zenon, King of Bosphorus //
+1 NAME Zenon, King of Bosphorus /Placeholder surname/
 2 GIVN Zenon, King of Bosphorus
 1 SEX M
 1 BIRT
@@ -1701,9 +1701,9 @@
 1 RIN MH:I34
 1 _UID 674a4d9336a211efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Laodice //
+1 NAME Laodice /Placeholder surname/
 2 GIVN Laodice
-1 NAME Laodice of Pontus //
+1 NAME Laodice of Pontus /Placeholder surname/
 2 GIVN Laodice of Pontus
 1 SEX F
 1 DEAT
@@ -1899,12 +1899,12 @@
 1 RIN MH:I35
 1 _UID 674a4d93272921efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Mithradates //
+1 NAME Mithradates /Placeholder surname/
 2 GIVN Mithradates
 2 NICK Eupator Dionysius
-1 NAME Mithridates VI, king of Pontus //
+1 NAME Mithridates VI, king of Pontus /Placeholder surname/
 2 GIVN Mithridates VI, king of Pontus
-1 NAME Μιθραδάτης //
+1 NAME Μιθραδάτης /Placeholder surname/
 2 GIVN Μιθραδάτης
 1 SEX M
 1 DEAT
@@ -2607,9 +2607,9 @@
 1 RIN MH:I36
 1 _UID 674a4d9340b901efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Rhoemetalces //
+1 NAME Rhoemetalces /Placeholder surname/
 2 GIVN Rhoemetalces
-1 NAME Rhoemetalces, king of Thrace //
+1 NAME Rhoemetalces, king of Thrace /Placeholder surname/
 2 GIVN Rhoemetalces, king of Thrace
 1 SEX M
 1 OCCU
@@ -2624,7 +2624,7 @@
 1 RIN MH:I37
 1 _UID 674a4d931cfa91efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Antonia Hybrida Minor //
+1 NAME Antonia Hybrida Minor /Placeholder surname/
 2 GIVN Antonia Hybrida Minor
 1 SEX F
 1 BIRT
@@ -2657,13 +2657,13 @@
 1 RIN MH:I38
 1 _UID 674a4d933097e1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Marcus Antonius //
+1 NAME Marcus Antonius /Placeholder surname/
 2 GIVN Marcus Antonius
 2 NICK Mark Antony
 1 NAME Marcus /Antonius/
 2 GIVN Marcus
 2 SURN Antonius
-1 NAME Marcus Antonius "Mark Antony" //
+1 NAME Marcus Antonius "Mark Antony" /Placeholder surname/
 2 GIVN Marcus Antonius "Mark Antony"
 1 SEX M
 1 DEAT
@@ -3058,8 +3058,8 @@
 2 CONC  (19 de agosto). Consiguió la promulgación de una le
 2 CONT <p>x curiata que confirmó la adopción que hiciera César, pasando Octavio a llamarse Cayo Julio César, mientras que sus rivales le conocieron desde ese momento por el hiriente diminutivo de Octavia
 2 CONC no. Entre tanto, Décimo Bruto huyó en pos de Marco Br
-2 CONT <p>uto hacia Macedonia al comprender que no figuraba en los planes de Octaviano, siendo asesinado durante el viaje. Por su parte, Antonio escapó a la Galia Cisalpina, realizando un intercambio con L�
-2 CONC �pido y marchando hacia Roma con una gran fuerza de
+2 CONT <p>uto hacia Macedonia al comprender que no figuraba en los planes de Octaviano, siendo asesinado durante el viaje. Por su parte, Antonio escapó a la Galia Cisalpina, realizando un intercambio con L�
+2 CONC �pido y marchando hacia Roma con una gran fuerza de
 2 CONT <p> infantería y caballería.</p>
 2 CONT <p></p>
 2 CONT <p>El surgimiento del Segundo Triunvirato editar</p>
@@ -3107,8 +3107,8 @@
 2 CONC el 40 adC. Antonio se vio obligado a arreglar sus
 2 CONT <p> conflictos con Octavio casándose con ella. Octavia era una hermosa e inteligente mujer que había enviudado recientemente y tenía tres niños de su primera unión. El mundo romano fue nuevamente
 2 CONC  dividido, asignando esta vez África a Lépido, las pro
-2 CONT <p>vincias occidentales a Octaviano, y el Oriente a Antonio. Este pacto, conocido como el Tratado de Brundisium, reforzó el triunvirato, y permitió a Antonio empezar a preparar su tan ansiada campa�
-2 CONC �a contra los partos.</p>
+2 CONT <p>vincias occidentales a Octaviano, y el Oriente a Antonio. Este pacto, conocido como el Tratado de Brundisium, reforzó el triunvirato, y permitió a Antonio empezar a preparar su tan ansiada campa�
+2 CONC �a contra los partos.</p>
 2 CONT <p></p>
 2 CONT <p>Marco Antonio y Cleopatra editar</p>
 2 CONT <p>Busto de estilo griego de Cleopatra VII de Egipto</p>
@@ -4471,12 +4471,12 @@
 1 RIN MH:I39
 1 _UID 674a4d93424cb1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Mithridates //
+1 NAME Mithridates /Placeholder surname/
 2 GIVN Mithridates
 2 NICK FARNAKESEN
-1 NAME Mithridates V, king of Pontus //
+1 NAME Mithridates V, king of Pontus /Placeholder surname/
 2 GIVN Mithridates V, king of Pontus
-1 NAME Μιθριδάτης //
+1 NAME Μιθριδάτης /Placeholder surname/
 2 GIVN Μιθριδάτης
 1 SEX M
 1 DEAT
@@ -4656,12 +4656,12 @@
 1 RIN MH:I40
 1 _UID 674a4d9373a4a1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Laodice //
+1 NAME Laodice /Placeholder surname/
 2 GIVN Laodice
 2 NICK Λαοδίκη Σελευκιδά της Συρίας
-1 NAME Laodice VI, queen of Pontus //
+1 NAME Laodice VI, queen of Pontus /Placeholder surname/
 2 GIVN Laodice VI, queen of Pontus
-1 NAME Λαοδίκη //
+1 NAME Λαοδίκη /Placeholder surname/
 2 GIVN Λαοδίκη
 1 SEX F
 1 DEAT
@@ -4729,7 +4729,7 @@
 1 RIN MH:I42
 1 _UID 674a4d937f2aa1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Gaius Antonius Hybrida //
+1 NAME Gaius Antonius Hybrida /Placeholder surname/
 2 GIVN Gaius Antonius Hybrida
 1 SEX M
 1 DEAT
@@ -4803,7 +4803,7 @@
 1 RIN MH:I43
 1 _UID 674a4d93622f91efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Marcus Antonius Creticus //
+1 NAME Marcus Antonius Creticus /Placeholder surname/
 2 GIVN Marcus Antonius Creticus
 1 SEX M
 1 DEAT
@@ -5034,7 +5034,7 @@
 1 RIN MH:I44
 1 _UID 674a4d93398021efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Julia //
+1 NAME Julia /Placeholder surname/
 2 GIVN Julia
 2 NICK Julia Antonia
 1 SEX F
@@ -5092,12 +5092,12 @@
 1 RIN MH:I45
 1 _UID 674a4d93c45891efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Pharnaces //
+1 NAME Pharnaces /Placeholder surname/
 2 GIVN Pharnaces
 2 NICK 1 MITRADATESSEN
-1 NAME Pharnaces I, king of Pontus //
+1 NAME Pharnaces I, king of Pontus /Placeholder surname/
 2 GIVN Pharnaces I, king of Pontus
-1 NAME Φαρνάκης //
+1 NAME Φαρνάκης /Placeholder surname/
 2 GIVN Φαρνάκης
 1 SEX M
 1 DEAT
@@ -5277,7 +5277,7 @@
 1 RIN MH:I46
 1 _UID 674a4d9385ecd1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Nysa //
+1 NAME Nysa /Placeholder surname/
 2 GIVN Nysa
 2 NICK PTOLEMAIOSDTR
 2 NSFX Queen of Pontus
@@ -5362,12 +5362,12 @@
 1 RIN MH:I47
 1 _UID 674a4d9353b531efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Antiochus //
+1 NAME Antiochus /Placeholder surname/
 2 GIVN Antiochus
 2 NICK Epimanes ("The Mad One")
-1 NAME Antiochus IV, ruler of the Seleucid Empire //
+1 NAME Antiochus IV, ruler of the Seleucid Empire /Placeholder surname/
 2 GIVN Antiochus IV, ruler of the Seleucid Empire
-1 NAME Αντίοχος //
+1 NAME Αντίοχος /Placeholder surname/
 2 GIVN Αντίοχος
 1 SEX M
 1 DEAT
@@ -5694,12 +5694,12 @@
 1 RIN MH:I48
 1 _UID 674a4d931fcc01efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Laodice //
+1 NAME Laodice /Placeholder surname/
 2 GIVN Laodice
 2 NICK Λαοδίκη Στ' της Μα&...
-1 NAME Laodice IV, Queen of the Seleucid Empire //
+1 NAME Laodice IV, Queen of the Seleucid Empire /Placeholder surname/
 2 GIVN Laodice IV, Queen of the Seleucid Empire
-1 NAME Λαοδίκη //
+1 NAME Λαοδίκη /Placeholder surname/
 2 GIVN Λαοδίκη
 1 SEX F
 1 DEAT
@@ -5809,7 +5809,7 @@
 1 RIN MH:I49
 1 _UID 674a4d93b93b51efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Marcus Antonius Orator //
+1 NAME Marcus Antonius Orator /Placeholder surname/
 2 GIVN Marcus Antonius Orator
 1 SEX M
 1 DEAT
@@ -6014,7 +6014,7 @@
 1 RIN MH:I50
 1 _UID 674a4d93c915b1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Lucius Julius Caesar //
+1 NAME Lucius Julius Caesar /Placeholder surname/
 2 GIVN Lucius Julius Caesar
 2 NSFX III
 1 SEX M
@@ -6304,7 +6304,7 @@
 1 RIN MH:I51
 1 _UID 674a4d93885311efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Fulvia (or Crossutia) //
+1 NAME Fulvia (or Crossutia) /Placeholder surname/
 2 GIVN Fulvia (or Crossutia)
 1 NAME  / Cossutia/
 2 SURN  Cossutia
@@ -6325,13 +6325,13 @@
 1 RIN MH:I52
 1 _UID 674a4d9313c251efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Mithridates //
+1 NAME Mithridates /Placeholder surname/
 2 GIVN Mithridates
-1 NAME Mithridates III, king of Pontus //
+1 NAME Mithridates III, king of Pontus /Placeholder surname/
 2 GIVN Mithridates III, king of Pontus
-1 NAME مهرداديکم‎ //
+1 NAME مهرداديکم‎ /Placeholder surname/
 2 GIVN مهرداديکم‎
-1 NAME Mιθριδάτης //
+1 NAME Mιθριδάτης /Placeholder surname/
 2 GIVN Mιθριδάτης
 1 SEX M
 1 DEAT
@@ -6436,11 +6436,11 @@
 1 RIN MH:I53
 1 _UID 674a4d934df421efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Laodice //
+1 NAME Laodice /Placeholder surname/
 2 GIVN Laodice
-1 NAME Laodice Queen of Pontus //
+1 NAME Laodice Queen of Pontus /Placeholder surname/
 2 GIVN Laodice Queen of Pontus
-1 NAME Λαοδικη //
+1 NAME Λαοδικη /Placeholder surname/
 2 GIVN Λαοδικη
 1 SEX F
 1 BIRT
@@ -6512,12 +6512,12 @@
 1 RIN MH:I54
 1 _UID 674a4d93d66561efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Laodice //
+1 NAME Laodice /Placeholder surname/
 2 GIVN Laodice
 2 NICK Princess
-1 NAME Laodice III, queen of the Seleucid Empire //
+1 NAME Laodice III, queen of the Seleucid Empire /Placeholder surname/
 2 GIVN Laodice III, queen of the Seleucid Empire
-1 NAME Λαοδικη //
+1 NAME Λαοδικη /Placeholder surname/
 2 GIVN Λαοδικη
 1 SEX F
 1 DEAT
@@ -6709,12 +6709,12 @@
 1 RIN MH:I55
 1 _UID 674a4d93469601efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Antiochus //
+1 NAME Antiochus /Placeholder surname/
 2 GIVN Antiochus
 2 NICK The Great -  Antiochus III the Great  of Armenia -the more correct name
-1 NAME Antiochus III Megas, king of the Seleucid Empire //
+1 NAME Antiochus III Megas, king of the Seleucid Empire /Placeholder surname/
 2 GIVN Antiochus III Megas, king of the Seleucid Empire
-1 NAME Ἀντίoχoς //
+1 NAME Ἀντίoχoς /Placeholder surname/
 2 GIVN Ἀντίoχoς
 1 SEX M
 1 DEAT
@@ -7034,8 +7034,8 @@
 2 CONT <p>Antiokos IV Epiphanes</p>
 2 CONT <p></p>
 2 CONT <p>Antiokos III den store (gresk: ??t?o?o? ???a?; ca. 241–187 f.Kr.) var konge av det hellenistiske Selevkideriket og styrte fra 223 f.Kr. og til 187 f.Kr.[1][2][3] Han var den sjette herskeren av e
-2 CONC t rike som utgjorde Syria og store deler av Anatolia mot slutten av 200-tallet f.Kr. Han kom på tronen som attenårig i 223 f.Kr. etter at hans bror Selevkos III Keraunos ble myrdet av egne folk i h�
-2 CONC �ren. Antiokos første krigføring mot det ptolemeiske kongedømme i Egypt var i begynnelsen ikke vellykket, men i de påfølgende årene fikk han flere militære seirer. Hans tradisjonelle tilnavn so
+2 CONC t rike som utgjorde Syria og store deler av Anatolia mot slutten av 200-tallet f.Kr. Han kom på tronen som attenårig i 223 f.Kr. etter at hans bror Selevkos III Keraunos ble myrdet av egne folk i h�
+2 CONC �ren. Antiokos første krigføring mot det ptolemeiske kongedømme i Egypt var i begynnelsen ikke vellykket, men i de påfølgende årene fikk han flere militære seirer. Hans tradisjonelle tilnavn so
 2 CONC m «den store», reflekterte et epitet han kortvarig benyttet. Han tok også tittelen «Basileos Megas» (gresk for «store konge») var også den tradisjonelle tittelen for de persiske kongene. Samme
 2 CONC nlignet med flere svake konger Selevkideriket var ikke tittelen som «den store» helt ufortjent. Han erklærte seg som «forkjemper for gresk frihet mot romersk herredømme» og erklærte krig mot de
 2 CONC n romerske republikk på det greske fastlandet høsten 192 f.Kr.,[4][5]Innhold [skjul]
@@ -7349,11 +7349,11 @@
 2 CONT <p>'''Source : '''</p>
 2 CONT <p></p>
 2 CONT <p>https://en.wikipedia.org/wiki/Antiochus_III_the_Great</p>
-1 NOTE 	1  NAME Megas //
+1 NOTE 	1  NAME Megas /Placeholder surname/
 2 CONT <p>	2  GIVN Megas</p>
 2 CONT <p>	2  SURN</p>
 2 CONT <p>	2  NICK Megas</p>
-1 NOTE 	1  NAME Megas //
+1 NOTE 	1  NAME Megas /Placeholder surname/
 2 CONT <p>	2  GIVN Megas</p>
 2 CONT <p>	2  SURN</p>
 2 CONT <p>	2  NICK Megas</p>
@@ -7365,7 +7365,7 @@
 1 RIN MH:I56
 1 _UID 674a4d93da6b31efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Gaius Antonius //
+1 NAME Gaius Antonius /Placeholder surname/
 2 GIVN Gaius Antonius
 1 SEX M
 1 BIRT
@@ -7405,9 +7405,9 @@
 1 RIN MH:I57
 1 _UID 674a4d939efb91efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Lucius Julius Caesar //
+1 NAME Lucius Julius Caesar /Placeholder surname/
 2 GIVN Lucius Julius Caesar
-1 NAME Lucius Julius Caesar, II //
+1 NAME Lucius Julius Caesar, II /Placeholder surname/
 2 GIVN Lucius Julius Caesar, II
 1 SEX M
 1 DEAT
@@ -7494,7 +7494,7 @@
 1 RIN MH:I58
 1 _UID 674a4d9348a271efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Popillia //
+1 NAME Popillia /Placeholder surname/
 2 GIVN Popillia
 1 SEX F
 1 DEAT
@@ -7559,7 +7559,7 @@
 1 RIN MH:I59
 1 _UID 674a4d93dfbd31efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Marcus Fulvius Flaccus Bambalus //
+1 NAME Marcus Fulvius Flaccus Bambalus /Placeholder surname/
 2 GIVN Marcus Fulvius Flaccus Bambalus
 1 SEX M
 1 BIRT
@@ -7600,7 +7600,7 @@
 1 RIN MH:I60
 1 _UID 674a4d93684101efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Sempronia Tuditana //
+1 NAME Sempronia Tuditana /Placeholder surname/
 2 GIVN Sempronia Tuditana
 1 SEX F
 1 DEAT
@@ -7627,13 +7627,13 @@
 1 RIN MH:I61
 1 _UID 674a4d931f83c1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Mithridates //
+1 NAME Mithridates /Placeholder surname/
 2 GIVN Mithridates
-1 NAME Mithridates II, king of Pontus //
+1 NAME Mithridates II, king of Pontus /Placeholder surname/
 2 GIVN Mithridates II, king of Pontus
-1 NAME مهرداديکم‎ //
+1 NAME مهرداديکم‎ /Placeholder surname/
 2 GIVN مهرداديکم‎
-1 NAME Mιθριδάτης //
+1 NAME Mιθριδάτης /Placeholder surname/
 2 GIVN Mιθριδάτης
 1 SEX M
 1 BAPM
@@ -7785,7 +7785,7 @@
 2 SURN .
 2 NSFX Princess of Syria, Queen of Pontus
 2 _MARNM .
-1 NAME Λαοδικη //
+1 NAME Λαοδικη /Placeholder surname/
 2 GIVN Λαοδικη
 1 SEX F
 1 BIRT
@@ -7823,15 +7823,15 @@
 1 RIN MH:I63
 1 _UID 674a4d939e7bc1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Laodice //
+1 NAME Laodice /Placeholder surname/
 2 GIVN Laodice
 2 NICK Λαοδίκη Β' Σελευκιδά της Συρίας
 1 NAME Princess Laodice VI of /Syria/
 2 GIVN Princess Laodice VI of
 2 SURN Syria
-1 NAME Laodice II, queen of the Seleucid Empire //
+1 NAME Laodice II, queen of the Seleucid Empire /Placeholder surname/
 2 GIVN Laodice II, queen of the Seleucid Empire
-1 NAME Λαοδίκη //
+1 NAME Λαοδίκη /Placeholder surname/
 2 GIVN Λαοδίκη
 1 SEX F
 1 DEAT
@@ -7891,12 +7891,12 @@
 1 RIN MH:I64
 1 _UID 674a4d93a39d81efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Seleucus //
+1 NAME Seleucus /Placeholder surname/
 2 GIVN Seleucus
 2 NICK Σέλευκος Β' Καλλίνικος Σελευκιδός της Συρίας
-1 NAME Seleucus II, ruler of the Seleucid Empire //
+1 NAME Seleucus II, ruler of the Seleucid Empire /Placeholder surname/
 2 GIVN Seleucus II, ruler of the Seleucid Empire
-1 NAME Σέλευκος //
+1 NAME Σέλευκος /Placeholder surname/
 2 GIVN Σέλευκος
 1 SEX M
 1 DEAT
@@ -8259,7 +8259,7 @@
 1 RIN MH:I65
 1 _UID 674a4d93810b11efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Marcus Antonius //
+1 NAME Marcus Antonius /Placeholder surname/
 2 GIVN Marcus Antonius
 1 SEX M
 1 FAMS @F40@
@@ -8269,9 +8269,9 @@
 1 RIN MH:I66
 1 _UID 674a4d935752f1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Sextus Julius Caesar //
+1 NAME Sextus Julius Caesar /Placeholder surname/
 2 GIVN Sextus Julius Caesar
-1 NAME Sextus Julius Caesar, II //
+1 NAME Sextus Julius Caesar, II /Placeholder surname/
 2 GIVN Sextus Julius Caesar, II
 1 SEX M
 1 DEAT
@@ -8423,7 +8423,7 @@
 1 RIN MH:I69
 1 _UID 674a4d93da24f1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Marcus Fulvius Flaccus //
+1 NAME Marcus Fulvius Flaccus /Placeholder surname/
 2 GIVN Marcus Fulvius Flaccus
 1 SEX M
 1 DEAT
@@ -8457,7 +8457,7 @@
 1 RIN MH:I70
 1 _UID 674a4d93eca091efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Sempronius Tuditanus //
+1 NAME Sempronius Tuditanus /Placeholder surname/
 2 GIVN Sempronius Tuditanus
 1 SEX M
 1 BIRT
@@ -8470,11 +8470,11 @@
 1 RIN MH:I71
 1 _UID 674a4d935b5ca1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Ariobarzanes //
+1 NAME Ariobarzanes /Placeholder surname/
 2 GIVN Ariobarzanes
-1 NAME Ariobarzanes, king of Pontus //
+1 NAME Ariobarzanes, king of Pontus /Placeholder surname/
 2 GIVN Ariobarzanes, king of Pontus
-1 NAME Ἀριoβαρζάνης //
+1 NAME Ἀριoβαρζάνης /Placeholder surname/
 2 GIVN Ἀριoβαρζάνης
 1 SEX M
 1 BURI
@@ -8543,7 +8543,7 @@
 1 RIN MH:I72
 1 _UID 674a4d931a1a01efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Laodice I //
+1 NAME Laodice I /Placeholder surname/
 2 GIVN Laodice I
 1 SEX F
 1 DEAT
@@ -8555,12 +8555,12 @@
 1 RIN MH:I73
 1 _UID 674a4d93cc43e1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Laodice //
+1 NAME Laodice /Placeholder surname/
 2 GIVN Laodice
 2 NICK Laodice I *w. of Antiochus II Theos* of Syria Queen Consort
-1 NAME Laodice I, queen of the Seleucid Empire //
+1 NAME Laodice I, queen of the Seleucid Empire /Placeholder surname/
 2 GIVN Laodice I, queen of the Seleucid Empire
-1 NAME Λαοδίκη //
+1 NAME Λαοδίκη /Placeholder surname/
 2 GIVN Λαοδίκη
 1 SEX F
 1 DEAT
@@ -8686,12 +8686,12 @@
 1 RIN MH:I74
 1 _UID 674a4d93368591efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Antiochus //
+1 NAME Antiochus /Placeholder surname/
 2 GIVN Antiochus
 2 NICK ♔ King of Syria
-1 NAME Antiochus II, ruler of the Seleucid Empire //
+1 NAME Antiochus II, ruler of the Seleucid Empire /Placeholder surname/
 2 GIVN Antiochus II, ruler of the Seleucid Empire
-1 NAME Ἀντίοχος //
+1 NAME Ἀντίοχος /Placeholder surname/
 2 GIVN Ἀντίοχος
 1 SEX M
 1 DEAT
@@ -8709,7 +8709,7 @@
 2 RIN MH:IF179
 1 FAMS @F46@
 1 FAMC @F54@
-1 NOTE 	1  NAME Theos //
+1 NOTE 	1  NAME Theos /Placeholder surname/
 2 CONT <p>	2  GIVN Theos</p>
 2 CONT <p>	2  SURN</p>
 2 CONT <p>	2  NICK Theos</p>
@@ -8800,11 +8800,11 @@
 1 NOTE RESEARCH NOTES:
 2 CONT <p>King of Syria</p>
 1 NOTE He ruled Syria from 2 Jun 261 to 29 Aug 226.
-1 NOTE 	1  NAME Theos //
+1 NOTE 	1  NAME Theos /Placeholder surname/
 2 CONT <p>	2  GIVN Theos</p>
 2 CONT <p>	2  SURN</p>
 2 CONT <p>	2  NICK Theos</p>
-1 NOTE 	1  NAME Theos //
+1 NOTE 	1  NAME Theos /Placeholder surname/
 2 CONT <p>	2  GIVN Theos</p>
 2 CONT <p>	2  SURN</p>
 2 CONT <p>	2  NICK Theos</p>
@@ -8880,7 +8880,7 @@
 1 RIN MH:I75
 1 _UID 674a4d9317d771efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Unknown Wife //
+1 NAME Unknown Wife /Placeholder surname/
 2 GIVN Unknown Wife
 1 SEX F
 1 BIRT
@@ -8896,7 +8896,7 @@
 1 RIN MH:I76
 1 _UID 674a4d93471ae1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Andromachus //
+1 NAME Andromachus /Placeholder surname/
 2 GIVN Andromachus
 2 NICK Ανδρομάχος Σελευκιδός της Συρίας
 2 NSFX Prince of Syria
@@ -8949,7 +8949,7 @@
 1 RIN MH:I77
 1 _UID 674a4d936779c1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Aulus Antonius //
+1 NAME Aulus Antonius /Placeholder surname/
 2 GIVN Aulus Antonius
 1 SEX M
 1 FAMS @F48@
@@ -8958,9 +8958,9 @@
 1 RIN MH:I78
 1 _UID 674a4d937a7cf1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Sextus Julius Caesar //
+1 NAME Sextus Julius Caesar /Placeholder surname/
 2 GIVN Sextus Julius Caesar
-1 NAME Sextus Julius Caesar, I //
+1 NAME Sextus Julius Caesar, I /Placeholder surname/
 2 GIVN Sextus Julius Caesar, I
 1 SEX M
 1 DEAT
@@ -9139,7 +9139,7 @@
 1 RIN MH:I79
 1 _UID 674a4d93c10ec1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Quintus Flaccus //
+1 NAME Quintus Flaccus /Placeholder surname/
 2 GIVN Quintus Flaccus
 1 SEX M
 1 BIRT
@@ -9167,7 +9167,7 @@
 1 RIN MH:I80
 1 _UID 674a4d93804861efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Sulpicia //
+1 NAME Sulpicia /Placeholder surname/
 2 GIVN Sulpicia
 1 SEX F
 1 BIRT
@@ -9208,14 +9208,14 @@
 1 RIN MH:I82
 1 _UID 674a4d93cff521efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Mithridates //
+1 NAME Mithridates /Placeholder surname/
 2 GIVN Mithridates
 2 NICK Mehrdād
-1 NAME Mithridates I Ctistes, king of Pontus //
+1 NAME Mithridates I Ctistes, king of Pontus /Placeholder surname/
 2 GIVN Mithridates I Ctistes, king of Pontus
-1 NAME مهرداديکم‎ //
+1 NAME مهرداديکم‎ /Placeholder surname/
 2 GIVN مهرداديکم‎
-1 NAME Mιθριδάτης //
+1 NAME Mιθριδάτης /Placeholder surname/
 2 GIVN Mιθριδάτης
 1 SEX M
 1 BURI
@@ -9464,10 +9464,10 @@
 1 RIN MH:I83
 1 _UID 674a4d9354e431efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Achaeus //
+1 NAME Achaeus /Placeholder surname/
 2 GIVN Achaeus
 2 NICK Αχαϊος Σελευκιδός της Συρίας
-1 NAME Ἀχαιός //
+1 NAME Ἀχαιός /Placeholder surname/
 2 GIVN Ἀχαιός
 1 SEX M
 1 DEAT
@@ -9535,7 +9535,7 @@
 1 RIN MH:I84
 1 _UID 674a4d931f9931efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Unnamed Greek Woman //
+1 NAME Unnamed Greek Woman /Placeholder surname/
 2 GIVN Unnamed Greek Woman
 1 SEX F
 1 OCCU
@@ -9549,21 +9549,21 @@
 2 CONT <p>- - Andromachos of Syria</p>
 2 CONT <p>- - Laodice I Queen of Syria</p>
 2 CONT <p>- - Alexandros of Syria</p>
-1 NOTE 	1  NAME the Perdiccid //
+1 NOTE 	1  NAME the Perdiccid /Placeholder surname/
 2 CONT <p>	2  GIVN the Perdiccid</p>
 2 CONT <p>	2  SURN</p>
 2 CONT <p>	2  NICK the Perdiccid</p>
 2 CONT <p></p>
 2 CONT <p></p>
 2 CONT <p>1  NAME NN. of /Macedonia/</p>
-1 NOTE 	1  NAME the Perdiccid //
+1 NOTE 	1  NAME the Perdiccid /Placeholder surname/
 2 CONT <p>	2  GIVN the Perdiccid</p>
 2 CONT <p>	2  SURN</p>
 2 CONT <p>	2  NICK the Perdiccid</p>
 2 CONT <p></p>
 2 CONT <p></p>
 2 CONT <p>1  NAME NN. of /Macedonia/</p>
-1 NOTE 	1  NAME the Perdiccid //
+1 NOTE 	1  NAME the Perdiccid /Placeholder surname/
 2 CONT <p>	2  GIVN the Perdiccid</p>
 2 CONT <p>	2  SURN</p>
 2 CONT <p>	2  NICK the Perdiccid</p>
@@ -9574,12 +9574,12 @@
 1 RIN MH:I85
 1 _UID 674a4d935edf91efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Antiochus //
+1 NAME Antiochus /Placeholder surname/
 2 GIVN Antiochus
 2 NICK Αντίοχος Α' Σωτήρ Σελευκιδός της Συρίας
-1 NAME Antiochus I, ruler of the Seleucid Empire //
+1 NAME Antiochus I, ruler of the Seleucid Empire /Placeholder surname/
 2 GIVN Antiochus I, ruler of the Seleucid Empire
-1 NAME Αντίοχος //
+1 NAME Αντίοχος /Placeholder surname/
 2 GIVN Αντίοχος
 2 NICK Αντίοχος Α' Σωτήρ Σελευκιδός της Συρίας
 1 SEX M
@@ -9880,8 +9880,8 @@
 2 CONT <p></p>
 2 CONT <p>Antiokos II Theos</p>
 2 CONT <p></p>
-2 CONT <p>Antiokos I Soter (gresk: ??t????? ?' S?t??, «Antiokos Befrieren»; født ukjent - død 261 f.Kr.) var den andre kongen av det hellenistiske Selevkideriket. Han styrte fra 281 f.Kr. ved sin fars d�
-2 CONC �d og fram til 261 f.Kr.</p>
+2 CONT <p>Antiokos I Soter (gresk: ??t????? ?' S?t??, «Antiokos Befrieren»; født ukjent - død 261 f.Kr.) var den andre kongen av det hellenistiske Selevkideriket. Han styrte fra 281 f.Kr. ved sin fars d�
+2 CONC �d og fram til 261 f.Kr.</p>
 2 CONT <p></p>
 2 CONT <p>Han var selv halvt persisk, hans mor Apama var en av de østlige prinsesser som Aleksander den store hadde gitt som hustruer til sine hærførere i 324 f.Kr.[1] I 294 f.Kr., før hans far Ptolemaio
 2 CONC s I Soter var død, hadde Antiokos giftet sin stemor, Stratonike av Syria,[2] datter av Demetrios I Poliorketes. Hans aldrende far skal etter sigende ha tilskyndet ekteskapet etter at han oppdaget at 
@@ -10063,9 +10063,9 @@
 1 RIN MH:I86
 1 _UID 674a4d93d8cbb1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Stratonice //
+1 NAME Stratonice /Placeholder surname/
 2 GIVN Stratonice
-1 NAME Στρατoνίκη //
+1 NAME Στρατoνίκη /Placeholder surname/
 2 GIVN Στρατoνίκη
 1 SEX F
 1 DEAT
@@ -10181,7 +10181,7 @@
 1 RIN MH:I87
 1 _UID 674a4d9363b981efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Quintus Antonius //
+1 NAME Quintus Antonius /Placeholder surname/
 2 GIVN Quintus Antonius
 1 SEX M
 1 FAMS @F55@
@@ -10190,7 +10190,7 @@
 1 RIN MH:I88
 1 _UID 674a4d932e7121efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Cornelia Cinna Minor //
+1 NAME Cornelia Cinna Minor /Placeholder surname/
 2 GIVN Cornelia Cinna Minor
 1 SEX F
 1 BIRT
@@ -10210,9 +10210,9 @@
 1 RIN MH:I89
 1 _UID 674a4d93b5e061efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Lucius Julius Caesar //
+1 NAME Lucius Julius Caesar /Placeholder surname/
 2 GIVN Lucius Julius Caesar
-1 NAME Lucius Julius Caesar, I //
+1 NAME Lucius Julius Caesar, I /Placeholder surname/
 2 GIVN Lucius Julius Caesar, I
 1 SEX M
 1 DEAT
@@ -10299,7 +10299,7 @@
 1 RIN MH:I90
 1 _UID 674a4d937232b1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Marcus Flaccus //
+1 NAME Marcus Flaccus /Placeholder surname/
 2 GIVN Marcus Flaccus
 1 SEX M
 1 BIRT
@@ -10327,7 +10327,7 @@
 1 RIN MH:I91
 1 _UID 674a4d93bb1b81efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Servius Sulpicius Paterculus //
+1 NAME Servius Sulpicius Paterculus /Placeholder surname/
 2 GIVN Servius Sulpicius Paterculus
 1 SEX M
 1 DEAT
@@ -10360,12 +10360,12 @@
 1 RIN MH:I93
 1 _UID 674a4d93e75811efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Apama //
+1 NAME Apama /Placeholder surname/
 2 GIVN Apama
 2 NICK queen of the Seleucid Empire
-1 NAME Apama I, queen of the Seleucid Empire //
+1 NAME Apama I, queen of the Seleucid Empire /Placeholder surname/
 2 GIVN Apama I, queen of the Seleucid Empire
-1 NAME Ἀπάμα //
+1 NAME Ἀπάμα /Placeholder surname/
 2 GIVN Ἀπάμα
 1 SEX F
 1 DEAT
@@ -10454,12 +10454,12 @@
 1 RIN MH:I94
 1 _UID 674a4d93d63051efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Seleucus //
+1 NAME Seleucus /Placeholder surname/
 2 GIVN Seleucus
 2 NICK ♔ King Of Syria
-1 NAME Seleucus I Nicator, king of the Seleucid Empire //
+1 NAME Seleucus I Nicator, king of the Seleucid Empire /Placeholder surname/
 2 GIVN Seleucus I Nicator, king of the Seleucid Empire
-1 NAME Σέλευκος //
+1 NAME Σέλευκος /Placeholder surname/
 2 GIVN Σέλευκος
 1 SEX M
 1 DEAT
@@ -10874,8 +10874,8 @@
 2 CONT <p></p>
 2 CONT <p>Peithon kom fram til Babylon enten høsten eller vinteren 317 f.Kr. Han hadde mistet et stort antall av sine soldater, men Selevkos hadde uansett færre soldater. Eumenes besluttet å marsjere til 
 2 CONC Susa våren 316 f.Kr. Satrapene i Susa hadde åpenbart akseptert Eumenes' utsagn at han kjempet på vegne av den lovlige herskerfamilie mot troneraneren Antigonos. Han marsjerte sine soldater 300 stad
-2 CONC ioner fra Babylon og forsøkte å krysse Tigris. Det tvang Selevkos til å handle. Han sendte to triremer (krigsskip) og en del mindre skip for å hindre Eumenes å krysse elven. Han forsøkte også �
-2 CONC � få den tidligere hypasiti av argyraspidene til slå seg sammen med ham, men det skjedde ikke. Selevkos sendte også beskjeder til Antigonos. På grunn av hans mangel på soldater hadde Selevkos åp
+2 CONC ioner fra Babylon og forsøkte å krysse Tigris. Det tvang Selevkos til å handle. Han sendte to triremer (krigsskip) og en del mindre skip for å hindre Eumenes å krysse elven. Han forsøkte også �
+2 CONC � få den tidligere hypasiti av argyraspidene til slå seg sammen med ham, men det skjedde ikke. Selevkos sendte også beskjeder til Antigonos. På grunn av hans mangel på soldater hadde Selevkos åp
 2 CONC enbart ingen planer om faktisk å stoppe Eumenes. Han åpnet flomsperrene til elven, men den resulterende flommen stoppet ham ikke.[14]
 2 CONT <p></p>
 2 CONT <p>Våren 316 f.Kr. slo Selevkos og Peithon seg sammen med Antigonos som fulgte etter Eumenes til Susa. Fra Susa dro Antigonos til Media hvor han kunne true de østlige provinsene. Han etterlot Selevk
@@ -10887,8 +10887,8 @@
 2 CONT <p></p>
 2 CONT <p>Flukten til Egypt [rediger]</p>
 2 CONT <p></p>
-2 CONT <p>Antigonos tilbrakte vinteren i 316 f.Kr. i Media hvor stedets hersker igjen var Peithon. Sistnevntes begjær for makt hadde vokst, og han forsøkte å få en andel av Antigonos' til å gjøre oppr�
-2 CONC �r til hans side. Antigonos oppdaget imidlertid sammensvergelsen og henrettet Peithon. Deretter erstattet han posisjonen som satrap av Persia med Peukestas.[16] Sommeren 315 f.Kr. kom Antigonos til Ba
+2 CONT <p>Antigonos tilbrakte vinteren i 316 f.Kr. i Media hvor stedets hersker igjen var Peithon. Sistnevntes begjær for makt hadde vokst, og han forsøkte å få en andel av Antigonos' til å gjøre oppr�
+2 CONC �r til hans side. Antigonos oppdaget imidlertid sammensvergelsen og henrettet Peithon. Deretter erstattet han posisjonen som satrap av Persia med Peukestas.[16] Sommeren 315 f.Kr. kom Antigonos til Ba
 2 CONC bylon og ble tatt varmt imot av Selevkos. Forholdet mellom de to ble derimot snart kaldt. Selevkos straffet en av Antigonos' offiserer uten først å be om tillatelse fra Antigonos. Antigonos ble rase
 2 CONC nde og krevde at Selevkos skulle gi ham inntekten fra provinsen, noe Selevkos nektet å gjøre.[17] Selevkos kunne likevel ikke føle seg trygg for Antigonos, og for ikke å ta sjanser med sitt eget l
 2 CONC iv, flyktet han til Egypt sammen med 50 ryttere. Det er sagt at astrologer fra Kaldea hadde gitt Antigonos spådommen at Selevkos en gang ville bli herre over hele Asia og bli hans banemann. Etter å 
@@ -11780,12 +11780,12 @@
 1 RIN MH:I95
 1 _UID 674a4d939b8a41efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Demetrius //
+1 NAME Demetrius /Placeholder surname/
 2 GIVN Demetrius
 2 NICK Δημήτριος Α' Πολιορκητής της Μακεδονίας
-1 NAME Demetrius Poliorcetes, king of Macedonia //
+1 NAME Demetrius Poliorcetes, king of Macedonia /Placeholder surname/
 2 GIVN Demetrius Poliorcetes, king of Macedonia
-1 NAME Δημήτριος //
+1 NAME Δημήτριος /Placeholder surname/
 2 GIVN Δημήτριος
 1 SEX M
 1 DEAT
@@ -12132,10 +12132,10 @@
 1 RIN MH:I96
 1 _UID 674a4d932d47b1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Phila //
+1 NAME Phila /Placeholder surname/
 2 GIVN Phila
 2 NICK Φιλα Α' της Μακεδονίας
-1 NAME Φίλα //
+1 NAME Φίλα /Placeholder surname/
 2 GIVN Φίλα
 1 SEX F
 1 DEAT
@@ -12242,7 +12242,7 @@
 1 RIN MH:I97
 1 _UID 674a4d93ea9561efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Numerius Julius Caesar //
+1 NAME Numerius Julius Caesar /Placeholder surname/
 2 GIVN Numerius Julius Caesar
 1 SEX M
 1 DEAT
@@ -12344,7 +12344,7 @@
 1 RIN MH:I98
 1 _UID 674a4d938b30b1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Cassus Curvus //
+1 NAME Cassus Curvus /Placeholder surname/
 2 GIVN Cassus Curvus
 1 SEX M
 1 BIRT
@@ -12372,9 +12372,9 @@
 1 RIN MH:I99
 1 _UID 674a4d935d6951efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Quintus Sulpicius //
+1 NAME Quintus Sulpicius /Placeholder surname/
 2 GIVN Quintus Sulpicius
-1 NAME Quintus Sulpicius, II //
+1 NAME Quintus Sulpicius, II /Placeholder surname/
 2 GIVN Quintus Sulpicius, II
 1 SEX M
 1 BIRT
@@ -12415,13 +12415,13 @@
 1 RIN MH:I101
 1 _UID 674a4d93d77321efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Spitamenes //
+1 NAME Spitamenes /Placeholder surname/
 2 GIVN Spitamenes
-1 NAME Spitamenes, satrap of Bactria //
+1 NAME Spitamenes, satrap of Bactria /Placeholder surname/
 2 GIVN Spitamenes, satrap of Bactria
-1 NAME اسپنتمان //
+1 NAME اسپنتمان /Placeholder surname/
 2 GIVN اسپنتمان
-1 NAME Σπιταμένης //
+1 NAME Σπιταμένης /Placeholder surname/
 2 GIVN Σπιταμένης
 1 SEX M
 1 DEAT
@@ -12505,12 +12505,12 @@
 1 RIN MH:I102
 1 _UID 674a4d93e8e081efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Antiochus //
+1 NAME Antiochus /Placeholder surname/
 2 GIVN Antiochus
 2 NICK Αντίοχος ο Μακεδών
-1 NAME Αντίοχος //
+1 NAME Αντίοχος /Placeholder surname/
 2 GIVN Αντίοχος
-1 NAME Антіох //
+1 NAME Антіох /Placeholder surname/
 2 GIVN Антіох
 1 SEX M
 1 OCCU født år 390 f.k.
@@ -12603,10 +12603,10 @@
 1 RIN MH:I103
 1 _UID 674a4d93a9a621efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Laodice //
+1 NAME Laodice /Placeholder surname/
 2 GIVN Laodice
 2 NICK Λαοδίκη της Μακεδονίας
-1 NAME Λαοδίκη //
+1 NAME Λαοδίκη /Placeholder surname/
 2 GIVN Λαοδίκη
 1 SEX F
 1 FAMS @F67@
@@ -12650,12 +12650,12 @@
 1 RIN MH:I104
 1 _UID 674a4d93b4a311efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Antigonus //
+1 NAME Antigonus /Placeholder surname/
 2 GIVN Antigonus
 2 NICK Αντίγονος Α' της Μακεδονίας
-1 NAME Antigonus the One-eyed //
+1 NAME Antigonus the One-eyed /Placeholder surname/
 2 GIVN Antigonus the One-eyed
-1 NAME Ἀντίγονος //
+1 NAME Ἀντίγονος /Placeholder surname/
 2 GIVN Ἀντίγονος
 1 SEX M
 1 DEAT
@@ -12770,7 +12770,7 @@
 2 CONT <p>In the 2004 Oliver Stone film Alexander, Antigonus is played by Ian Beattie.</p>
 2 CONT <p></p>
 2 CONT <p>'''Source:''' https://en.wikipedia.org/wiki/Antigonus_I_Monophthalmus</p>
-1 NOTE 	1  NAME Monophthalmos //
+1 NOTE 	1  NAME Monophthalmos /Placeholder surname/
 2 CONT <p>	2  GIVN Monophthalmos</p>
 2 CONT <p>	2  SURN</p>
 2 CONT <p>	2  NICK Monophthalmos</p>
@@ -12782,7 +12782,7 @@
 1 NOTE "den Enögde"
 1 NOTE KILLED AT THE BATTLE OF KINGS 301 BC (PALESTINE REVERTED TO EGYPTIAN RULE)
 1 NOTE He was one of the genrals of Alexander the Great. He became King of Macedonia and ruled from 306 to 301 bc.
-1 NOTE 	1  NAME Monophthalmos //
+1 NOTE 	1  NAME Monophthalmos /Placeholder surname/
 2 CONT <p>	2  GIVN Monophthalmos</p>
 2 CONT <p>	2  SURN</p>
 2 CONT <p>	2  NICK Monophthalmos</p>
@@ -13061,12 +13061,12 @@
 1 RIN MH:I106
 1 _UID 674a4d9319d231efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Antipater //
+1 NAME Antipater /Placeholder surname/
 2 GIVN Antipater
 2 NICK Αντίπατρος Α' της Μακεδονίας
-1 NAME Antipater, Regent of Macedonia //
+1 NAME Antipater, Regent of Macedonia /Placeholder surname/
 2 GIVN Antipater, Regent of Macedonia
-1 NAME Αντίπατρος //
+1 NAME Αντίπατρος /Placeholder surname/
 2 GIVN Αντίπατρος
 1 SEX M
 1 DEAT
@@ -13342,7 +13342,7 @@
 1 RIN MH:I107
 1 _UID 674a4d93e3e6a1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Lucius Julius Libo //
+1 NAME Lucius Julius Libo /Placeholder surname/
 2 GIVN Lucius Julius Libo
 2 NSFX II
 1 NAME
@@ -13368,7 +13368,7 @@
 1 RIN MH:I108
 1 _UID 674a4d93f26d91efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Marcus Curvus //
+1 NAME Marcus Curvus /Placeholder surname/
 2 GIVN Marcus Curvus
 1 SEX M
 1 BIRT
@@ -13396,9 +13396,9 @@
 1 RIN MH:I109
 1 _UID 674a4d93cf0b81efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Quintus Sulpicius //
+1 NAME Quintus Sulpicius /Placeholder surname/
 2 GIVN Quintus Sulpicius
-1 NAME Quintus Sulpicius, I //
+1 NAME Quintus Sulpicius, I /Placeholder surname/
 2 GIVN Quintus Sulpicius, I
 1 SEX M
 1 FAMS @F72@
@@ -13430,7 +13430,7 @@
 1 RIN MH:I111
 1 _UID 674a4d93195261efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Seleucus //
+1 NAME Seleucus /Placeholder surname/
 2 GIVN Seleucus
 1 SEX M
 1 OCCU
@@ -13474,12 +13474,12 @@
 1 RIN MH:I112
 1 _UID 674a4d938e4d21efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Philip //
+1 NAME Philip /Placeholder surname/
 2 GIVN Philip
 2 NSFX Satrap of India
-1 NAME Phillip //
+1 NAME Phillip /Placeholder surname/
 2 GIVN Phillip
-1 NAME Φιλιππoς; //
+1 NAME Φιλιππoς; /Placeholder surname/
 2 GIVN Φιλιππoς;
 1 SEX M
 1 DEAT
@@ -13536,9 +13536,9 @@
 1 RIN MH:I114
 1 _UID 674a4d9324b421efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Corrhaeus //
+1 NAME Corrhaeus /Placeholder surname/
 2 GIVN Corrhaeus
-1 NAME Corrhaeus, king of Thrace //
+1 NAME Corrhaeus, king of Thrace /Placeholder surname/
 2 GIVN Corrhaeus, king of Thrace
 1 SEX M
 1 BIRT
@@ -13566,9 +13566,9 @@
 1 RIN MH:I115
 1 _UID 674a4d93e366f1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Iolaus //
+1 NAME Iolaus /Placeholder surname/
 2 GIVN Iolaus
-1 NAME Iolaus, Nobleman of Macedonia //
+1 NAME Iolaus, Nobleman of Macedonia /Placeholder surname/
 2 GIVN Iolaus, Nobleman of Macedonia
 1 SEX M
 1 BIRT
@@ -13589,7 +13589,7 @@
 1 RIN MH:I116
 1 _UID 674a4d93acdbb1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Lucius Julius Libo //
+1 NAME Lucius Julius Libo /Placeholder surname/
 2 GIVN Lucius Julius Libo
 2 NSFX consul 267 BC
 1 SEX M
@@ -13711,9 +13711,9 @@
 1 RIN MH:I117
 1 _UID 674a4d9326c1c1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Caecilia Metella Macedonica //
+1 NAME Caecilia Metella Macedonica /Placeholder surname/
 2 GIVN Caecilia Metella Macedonica
-1 NAME Caecilia Metella Macedonica //
+1 NAME Caecilia Metella Macedonica /Placeholder surname/
 2 GIVN Caecilia Metella Macedonica
 1 SEX F
 1 FAMS @F78@
@@ -13722,7 +13722,7 @@
 1 RIN MH:I118
 1 _UID 674a4d93ed9d11efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Lucius Fulvius Curvus //
+1 NAME Lucius Fulvius Curvus /Placeholder surname/
 2 GIVN Lucius Fulvius Curvus
 1 SEX M
 1 BIRT
@@ -13750,7 +13750,7 @@
 1 RIN MH:I119
 1 _UID 674a4d93476411efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Servius Sulpicius //
+1 NAME Servius Sulpicius /Placeholder surname/
 2 GIVN Servius Sulpicius
 1 SEX M
 1 FAMS @F80@
@@ -13758,9 +13758,9 @@
 1 RIN MH:I120
 1 _UID 674a4d935a6121efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Machatas //
+1 NAME Machatas /Placeholder surname/
 2 GIVN Machatas
-1 NAME Machatas of Elimaea //
+1 NAME Machatas of Elimaea /Placeholder surname/
 2 GIVN Machatas of Elimaea
 1 SEX M
 1 BIRT
@@ -13784,9 +13784,9 @@
 1 RIN MH:I121
 1 _UID 674a4d93e6ff31efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Lucius Julius Jullus //
+1 NAME Lucius Julius Jullus /Placeholder surname/
 2 GIVN Lucius Julius Jullus
-1 NAME Lucius Julius Jullus, VII //
+1 NAME Lucius Julius Jullus, VII /Placeholder surname/
 2 GIVN Lucius Julius Jullus, VII
 1 SEX M
 1 BIRT
@@ -13804,7 +13804,7 @@
 1 RIN MH:I122
 1 _UID 674a4d9356ef21efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Lucius Caecilius Metellus Denter //
+1 NAME Lucius Caecilius Metellus Denter /Placeholder surname/
 2 GIVN Lucius Caecilius Metellus Denter
 2 NSFX Consul (284 BCE)
 1 SEX M
@@ -13842,9 +13842,9 @@
 1 RIN MH:I123
 1 _UID 674a4d936b8931efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Lucius Fulvius //
+1 NAME Lucius Fulvius /Placeholder surname/
 2 GIVN Lucius Fulvius
-1 NAME Lucius Fulvius, II //
+1 NAME Lucius Fulvius, II /Placeholder surname/
 2 GIVN Lucius Fulvius, II
 1 SEX M
 1 DEAT
@@ -13896,11 +13896,11 @@
 1 RIN MH:I125
 1 _UID 674a4d932acf91efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Derdas //
+1 NAME Derdas /Placeholder surname/
 2 GIVN Derdas
-1 NAME Derdas, archon of Elimiotis //
+1 NAME Derdas, archon of Elimiotis /Placeholder surname/
 2 GIVN Derdas, archon of Elimiotis
-1 NAME Δέρδας //
+1 NAME Δέρδας /Placeholder surname/
 2 GIVN Δέρδας
 1 SEX M
 1 BIRT
@@ -13933,9 +13933,9 @@
 1 RIN MH:I126
 1 _UID 674a4d936a2e61efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Lucius Julius Jullus //
+1 NAME Lucius Julius Jullus /Placeholder surname/
 2 GIVN Lucius Julius Jullus
-1 NAME Lucius Julius Jullus, VI //
+1 NAME Lucius Julius Jullus, VI /Placeholder surname/
 2 GIVN Lucius Julius Jullus, VI
 1 SEX M
 1 BIRT
@@ -13953,9 +13953,9 @@
 1 RIN MH:I127
 1 _UID 674a4d93716021efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Gaius Caecilius Metellus //
+1 NAME Gaius Caecilius Metellus /Placeholder surname/
 2 GIVN Gaius Caecilius Metellus
-1 NAME Gaius Caecilius Metellus //
+1 NAME Gaius Caecilius Metellus /Placeholder surname/
 2 GIVN Gaius Caecilius Metellus
 1 SEX M
 1 FAMS @F88@
@@ -13966,9 +13966,9 @@
 1 RIN MH:I128
 1 _UID 674a4d931729d1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Lucius Fulvius //
+1 NAME Lucius Fulvius /Placeholder surname/
 2 GIVN Lucius Fulvius
-1 NAME Lucius Fulvius, I //
+1 NAME Lucius Fulvius, I /Placeholder surname/
 2 GIVN Lucius Fulvius, I
 1 SEX M
 1 BIRT
@@ -13994,9 +13994,9 @@
 1 RIN MH:I129
 1 _UID 674a4d93a02701efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Archelaus //
+1 NAME Archelaus /Placeholder surname/
 2 GIVN Archelaus
-1 NAME Archelaus I, king of Macedonia //
+1 NAME Archelaus I, king of Macedonia /Placeholder surname/
 2 GIVN Archelaus I, king of Macedonia
 1 SEX M
 1 DEAT
@@ -14048,9 +14048,9 @@
 1 RIN MH:I131
 1 _UID 674a4d934c7481efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Lucius Julius Jullus //
+1 NAME Lucius Julius Jullus /Placeholder surname/
 2 GIVN Lucius Julius Jullus
-1 NAME Lucius Julius Jullus, V //
+1 NAME Lucius Julius Jullus, V /Placeholder surname/
 2 GIVN Lucius Julius Jullus, V
 1 SEX M
 1 DEAT
@@ -14105,7 +14105,7 @@
 1 RIN MH:I132
 1 _UID 674a4d936500c1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Lucius Caecilius Metellus //
+1 NAME Lucius Caecilius Metellus /Placeholder surname/
 2 GIVN Lucius Caecilius Metellus
 2 NSFX I
 1 SEX M
@@ -14119,12 +14119,12 @@
 1 RIN MH:I133
 1 _UID 674a4d934b98a1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Perdiccas //
+1 NAME Perdiccas /Placeholder surname/
 2 GIVN Perdiccas
 2 NICK Περδίκκας Β'  Αργαίαδος της Μακεδονίας
-1 NAME Perdiccas II, king of Macedonia //
+1 NAME Perdiccas II, king of Macedonia /Placeholder surname/
 2 GIVN Perdiccas II, king of Macedonia
-1 NAME Περδίκκας //
+1 NAME Περδίκκας /Placeholder surname/
 2 GIVN Περδίκκας
 1 SEX M
 1 DEAT
@@ -14188,7 +14188,7 @@
 1 RIN MH:I134
 1 _UID 674a4d938c4a71efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Slave Woman //
+1 NAME Slave Woman /Placeholder surname/
 2 GIVN Slave Woman
 1 SEX F
 1 FAMS @F94@
@@ -14225,9 +14225,9 @@
 1 RIN MH:I136
 1 _UID 674a4d938dfbe1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Lucius Julius Jullus //
+1 NAME Lucius Julius Jullus /Placeholder surname/
 2 GIVN Lucius Julius Jullus
-1 NAME Lucius Julius Jullus, IV //
+1 NAME Lucius Julius Jullus, IV /Placeholder surname/
 2 GIVN Lucius Julius Jullus, IV
 1 SEX M
 1 DEAT
@@ -14247,12 +14247,12 @@
 1 RIN MH:I137
 1 _UID 674a4d93fa3921efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Alexander //
+1 NAME Alexander /Placeholder surname/
 2 GIVN Alexander
 2 NICK Αλέξανδρος Α' Αργαίαδος της Μακεδονίας
-1 NAME Alexander I, king of Macedonia //
+1 NAME Alexander I, king of Macedonia /Placeholder surname/
 2 GIVN Alexander I, king of Macedonia
-1 NAME Ἀλέξανδρος //
+1 NAME Ἀλέξανδρος /Placeholder surname/
 2 GIVN Ἀλέξανδρος
 1 SEX M
 1 BIRT
@@ -14385,7 +14385,7 @@
 1 RIN MH:I138
 1 _UID 674a4d9366c411efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Antigone //
+1 NAME Antigone /Placeholder surname/
 2 GIVN Antigone
 1 SEX F
 1 BIRT
@@ -14453,7 +14453,7 @@
 1 RIN MH:I141
 1 _UID 674a4d93462761efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Vopiscus Julius Jullus //
+1 NAME Vopiscus Julius Jullus /Placeholder surname/
 2 GIVN Vopiscus Julius Jullus
 1 SEX M
 1 DEAT
@@ -14471,12 +14471,12 @@
 1 RIN MH:I142
 1 _UID 674a4d9316eaf1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Amyntas //
+1 NAME Amyntas /Placeholder surname/
 2 GIVN Amyntas
 2 NICK Αμύντας Α' Αργαίαδος της Μακεδονίας
-1 NAME Amyntas I, king of Macedonia //
+1 NAME Amyntas I, king of Macedonia /Placeholder surname/
 2 GIVN Amyntas I, king of Macedonia
-1 NAME Αμύντας //
+1 NAME Αμύντας /Placeholder surname/
 2 GIVN Αμύντας
 1 SEX M
 1 BIRT
@@ -14546,7 +14546,7 @@
 1 RIN MH:I143
 1 _UID 674a4d93149f11efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Eurydice //
+1 NAME Eurydice /Placeholder surname/
 2 GIVN Eurydice
 2 _MARNM of Lyncestis
 1 SEX F
@@ -14572,7 +14572,7 @@
 1 RIN MH:I144
 1 _UID 674a4d935142d1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Arrhidaeus //
+1 NAME Arrhidaeus /Placeholder surname/
 2 GIVN Arrhidaeus
 1 SEX M
 1 FAMS @F101@
@@ -14580,9 +14580,9 @@
 1 RIN MH:I145
 1 _UID 674a4d93ce48f1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Gaius Julius Jullus //
+1 NAME Gaius Julius Jullus /Placeholder surname/
 2 GIVN Gaius Julius Jullus
-1 NAME Gaius Julius Jullus, IV //
+1 NAME Gaius Julius Jullus, IV /Placeholder surname/
 2 GIVN Gaius Julius Jullus, IV
 1 SEX M
 1 BIRT
@@ -14616,11 +14616,11 @@
 1 RIN MH:I147
 1 _UID 674a4d93afed21efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Alcetas //
+1 NAME Alcetas /Placeholder surname/
 2 GIVN Alcetas
-1 NAME Alcetas I, king of Macedonia //
+1 NAME Alcetas I, king of Macedonia /Placeholder surname/
 2 GIVN Alcetas I, king of Macedonia
-1 NAME Ἀλκέτας //
+1 NAME Ἀλκέτας /Placeholder surname/
 2 GIVN Ἀλκέτας
 1 SEX M
 1 BIRT
@@ -14672,9 +14672,9 @@
 1 RIN MH:I149
 1 _UID 674a4d9325f751efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Lucius Julius Jullus //
+1 NAME Lucius Julius Jullus /Placeholder surname/
 2 GIVN Lucius Julius Jullus
-1 NAME Lucius Julius Jullus, III //
+1 NAME Lucius Julius Jullus, III /Placeholder surname/
 2 GIVN Lucius Julius Jullus, III
 1 SEX M
 1 BIRT
@@ -14688,11 +14688,11 @@
 1 RIN MH:I150
 1 _UID 674a4d93683ff1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Aeropos //
+1 NAME Aeropos /Placeholder surname/
 2 GIVN Aeropos
-1 NAME Aeropos I, king of Macedonia //
+1 NAME Aeropos I, king of Macedonia /Placeholder surname/
 2 GIVN Aeropos I, king of Macedonia
-1 NAME Ἀέροπος //
+1 NAME Ἀέροπος /Placeholder surname/
 2 GIVN Ἀέροπος
 1 SEX M
 1 BIRT
@@ -14728,7 +14728,7 @@
 1 RIN MH:I151
 1 _UID 674a4d939e0531efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Arrabaios //
+1 NAME Arrabaios /Placeholder surname/
 2 GIVN Arrabaios
 2 NSFX King of Lynkos
 1 SEX M
@@ -14740,9 +14740,9 @@
 1 RIN MH:I152
 1 _UID 674a4d93485cd1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Lucius Julius Jullus //
+1 NAME Lucius Julius Jullus /Placeholder surname/
 2 GIVN Lucius Julius Jullus
-1 NAME Lucius Julius Jullus, II //
+1 NAME Lucius Julius Jullus, II /Placeholder surname/
 2 GIVN Lucius Julius Jullus, II
 1 SEX M
 1 BIRT
@@ -14756,12 +14756,12 @@
 1 RIN MH:I153
 1 _UID 674a4d93594761efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Philip //
+1 NAME Philip /Placeholder surname/
 2 GIVN Philip
 2 NICK (Greek: Φίλιππος Α΄ ὁ Μακεδών — φίλος "friend" and ἵππος "horse")
-1 NAME Philip I, king of Macedonia //
+1 NAME Philip I, king of Macedonia /Placeholder surname/
 2 GIVN Philip I, king of Macedonia
-1 NAME Φίλιππος //
+1 NAME Φίλιππος /Placeholder surname/
 2 GIVN Φίλιππος
 1 SEX M
 1 BIRT
@@ -14797,7 +14797,7 @@
 1 RIN MH:I154
 1 _UID 674a4d9359d7e1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Nikonoë //
+1 NAME Nikonoë /Placeholder surname/
 2 GIVN Nikonoë
 1 SEX F
 1 FAMS @F109@
@@ -14814,9 +14814,9 @@
 1 RIN MH:I155
 1 _UID 674a4d938f8e01efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Gaius Julius Jullus //
+1 NAME Gaius Julius Jullus /Placeholder surname/
 2 GIVN Gaius Julius Jullus
-1 NAME Gaius Julius Jullus, III //
+1 NAME Gaius Julius Jullus, III /Placeholder surname/
 2 GIVN Gaius Julius Jullus, III
 1 SEX M
 1 BIRT
@@ -14836,11 +14836,11 @@
 1 RIN MH:I156
 1 _UID 674a4d93c4f301efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Argaios //
+1 NAME Argaios /Placeholder surname/
 2 GIVN Argaios
-1 NAME Argaios I, king of Macedonia //
+1 NAME Argaios I, king of Macedonia /Placeholder surname/
 2 GIVN Argaios I, king of Macedonia
-1 NAME Ἀργαῖος //
+1 NAME Ἀργαῖος /Placeholder surname/
 2 GIVN Ἀργαῖος
 1 SEX M
 1 BIRT
@@ -14881,7 +14881,7 @@
 1 RIN MH:I157
 1 _UID 674a4d93786d11efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Prothoe //
+1 NAME Prothoe /Placeholder surname/
 2 GIVN Prothoe
 1 SEX F
 1 FAMS @F111@
@@ -14893,7 +14893,7 @@
 2 GIVN Gaius Julius Jullus
 2 SURN Julles II
 2 _MARNM Julles II
-1 NAME Gaius Julius Jullus, II //
+1 NAME Gaius Julius Jullus, II /Placeholder surname/
 2 GIVN Gaius Julius Jullus, II
 1 NAME Gaius Julius /Julles II/
 2 GIVN Gaius Julius
@@ -14912,7 +14912,7 @@
 1 RIN MH:I159
 1 _UID 674a4d93321d01efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Cleopatra //
+1 NAME Cleopatra /Placeholder surname/
 2 GIVN Cleopatra
 1 SEX F
 1 FAMS @F113@
@@ -14920,11 +14920,11 @@
 1 RIN MH:I160
 1 _UID 674a4d9385b5a1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Perdiccas //
+1 NAME Perdiccas /Placeholder surname/
 2 GIVN Perdiccas
-1 NAME Perdiccas I, king of Macedonia //
+1 NAME Perdiccas I, king of Macedonia /Placeholder surname/
 2 GIVN Perdiccas I, king of Macedonia
-1 NAME Περδίκκας //
+1 NAME Περδίκκας /Placeholder surname/
 2 GIVN Περδίκκας
 1 SEX M
 1 BIRT
@@ -15005,9 +15005,9 @@
 1 RIN MH:I161
 1 _UID 674a4d933ec791efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Gaius Julius Jullus //
+1 NAME Gaius Julius Jullus /Placeholder surname/
 2 GIVN Gaius Julius Jullus
-1 NAME Gaius Julius Jullus, I //
+1 NAME Gaius Julius Jullus, I /Placeholder surname/
 2 GIVN Gaius Julius Jullus, I
 1 SEX M
 1 BIRT
@@ -15023,7 +15023,7 @@
 1 RIN MH:I162
 1 _UID 674a4d936e0a01efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Cleonice //
+1 NAME Cleonice /Placeholder surname/
 2 GIVN Cleonice
 1 SEX F
 1 BIRT
@@ -15039,11 +15039,11 @@
 1 RIN MH:I163
 1 _UID 674a4d93c8fd51efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Tyrimmas //
+1 NAME Tyrimmas /Placeholder surname/
 2 GIVN Tyrimmas
-1 NAME Tyrimmas, king of Macedonia //
+1 NAME Tyrimmas, king of Macedonia /Placeholder surname/
 2 GIVN Tyrimmas, king of Macedonia
-1 NAME Τυρίμμας //
+1 NAME Τυρίμμας /Placeholder surname/
 2 GIVN Τυρίμμας
 1 SEX M
 1 BIRT
@@ -15069,9 +15069,9 @@
 1 RIN MH:I164
 1 _UID 674a4d931ea4b1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Lucius Julius Jullus //
+1 NAME Lucius Julius Jullus /Placeholder surname/
 2 GIVN Lucius Julius Jullus
-1 NAME Lucius Julius Jullus, I //
+1 NAME Lucius Julius Jullus, I /Placeholder surname/
 2 GIVN Lucius Julius Jullus, I
 1 SEX M
 1 BIRT
@@ -15095,7 +15095,7 @@
 1 RIN MH:I165
 1 _UID 674a4d9394bec1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Kleonike //
+1 NAME Kleonike /Placeholder surname/
 2 GIVN Kleonike
 1 SEX F
 1 BIRT
@@ -15111,11 +15111,11 @@
 1 RIN MH:I166
 1 _UID 674a4d93a5d681efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Coenus //
+1 NAME Coenus /Placeholder surname/
 2 GIVN Coenus
-1 NAME Coenus, king of Macedonia //
+1 NAME Coenus, king of Macedonia /Placeholder surname/
 2 GIVN Coenus, king of Macedonia
-1 NAME Κοῖνος //
+1 NAME Κοῖνος /Placeholder surname/
 2 GIVN Κοῖνος
 1 SEX M
 1 BIRT
@@ -15151,7 +15151,7 @@
 1 RIN MH:I167
 1 _UID 674a4d93b8d3b1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Numerius Julius Jullus //
+1 NAME Numerius Julius Jullus /Placeholder surname/
 2 GIVN Numerius Julius Jullus
 1 SEX M
 1 BIRT
@@ -15167,11 +15167,11 @@
 1 RIN MH:I168
 1 _UID 674a4d93498501efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Karanos //
+1 NAME Karanos /Placeholder surname/
 2 GIVN Karanos
-1 NAME Karanos, king of Macedon //
+1 NAME Karanos, king of Macedon /Placeholder surname/
 2 GIVN Karanos, king of Macedon
-1 NAME Κάρανος //
+1 NAME Κάρανος /Placeholder surname/
 2 GIVN Κάρανος
 1 SEX M
 1 BIRT
@@ -15196,8 +15196,8 @@
 2 CONT <p>--------------------</p>
 2 CONT <p>Carano (808 a. C. -778 a. C.) Rey argéada , fue el verdadero primer rey del Reino Macedonico Estableció su primer reino en Egas (actualmente, Vergina). Ciudad fundada  por él. Según el mito gri
 2 CONC ego, Carano era uno de los hijos del rey  Ténemo. Témeno, Cresfontes y Aristodemo eran los tres líderes de los dorios que invadieron el  Peloponeso. Entonces procedieron a dividir los territorios c
-2 CONC onquistados entre ellos  .Crestofontes ocupó Mesenia ; Aristodemo tomó Laxonia; y finalmente  Tenemo  tomó Argos. Después de la muerte del rey Témeno, los príncipes discutieron sobre quién deb�
-2 CONC �a ser su rey. Uno de ellos, Fedón, derrotó a sus hermanos en batalla y asumió el control como gobernador. Carano entonces decidió encontrar otro reino para él sólo, donde establecer su gobierno
+2 CONC onquistados entre ellos  .Crestofontes ocupó Mesenia ; Aristodemo tomó Laxonia; y finalmente  Tenemo  tomó Argos. Después de la muerte del rey Témeno, los príncipes discutieron sobre quién deb�
+2 CONC �a ser su rey. Uno de ellos, Fedón, derrotó a sus hermanos en batalla y asumió el control como gobernador. Carano entonces decidió encontrar otro reino para él sólo, donde establecer su gobierno
 2 CONC .
 1 NOTE Karanus of Macedon
 2 CONT <p>From Wikipedia, the free encyclopedia</p>
@@ -15219,7 +15219,7 @@
 1 RIN MH:I169
 1 _UID 674a4d93ab2d61efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Lanice //
+1 NAME Lanice /Placeholder surname/
 2 GIVN Lanice
 2 _MARNM ???
 1 SEX F
@@ -15236,9 +15236,9 @@
 1 RIN MH:I170
 1 _UID 674a4d932db911efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Iulus //
+1 NAME Iulus /Placeholder surname/
 2 GIVN Iulus
-1 NAME Iulus //
+1 NAME Iulus /Placeholder surname/
 2 GIVN Iulus
 1 SEX M
 1 BIRT
@@ -15288,7 +15288,7 @@
 1 RIN MH:I171
 1 _UID 674a4d93477ee1efa39c001a7dda7115
 1 _UPD 29 NOV 2024 15:26:11 GMT-8
-1 NAME Phidon //
+1 NAME Phidon /Placeholder surname/
 2 GIVN Phidon
 1 SEX M
 1 DEAT
