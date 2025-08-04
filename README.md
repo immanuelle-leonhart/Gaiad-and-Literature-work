@@ -5,9 +5,9 @@ A comprehensive cosmological mythology combining epic poetry with detailed genea
 ## Contents
 
 ### Epic Poetry (`epic/`)
-The **Gaiad Epic** - 20 chapters of cosmological creation myth told in iambic pentameter with ABAB rhyme scheme, chronicling the love story of Aster and Andromeda across the universe.
+The **Gaiad Epic** - 21 chapters of cosmological creation myth told in iambic pentameter with ABAB rhyme scheme, chronicling the love story of Aster and Andromeda across the universe.
 
-- `chapter_01.md` through `chapter_20.md` - Main epic chapters (new format)
+- `chapter_01.md` through `chapter_21.md` - Main epic chapters (new format)
 - `old-versions/` - Original 53 chapters in prose/verse format (different storyline)
 - `tools/` - Validation scripts for meter and rhyme scheme  
 - `reference/` - Character indices and analysis
