@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mv:*)",
+      "Bash(python validate_meter.py:*)",
+      "Bash(mkdir:*)",
+      "Bash(python:*)"
+    ],
+    "deny": []
+  }
+}
