@@ -1,164 +1,179 @@
-When warming seas replaced the icy death,
-And Snowball Earth gave way to liquid blue,
-Nectarius drew his first living breath,
-And saw his kingdom vast and bright and new.
+Now in the warming seas where ice had ruled,
+Great Nectarius felt his destined hour.
+The frozen world no longer was fooled,
+And life burst forth with new creative power.
 
-His four great children, each with destined role,
-Would shape the world in ways both strange and grand.
-While Planta captured light to feed the soul,
-And Mycon's threads would spread across the land.
+He sought a bride to share his noble quest,
+Fair Ambrosia, daughter of wise Jingu.
+Her beauty filled his heart with love's sweet rest,
+Her wisdom made their bond forever true.
 
-Fair Protist took the waters as her realm,
-A thousand forms within her lineage born.
-While bold Metazoa took evolution's helm,
-To build the bodies of each coming morn.
+Great Mithra blessed their union from above,
+As Nectarius took Ambrosia's hand.
+"From your united hearts and faithful love
+Shall spring the kingdoms ruling sea and land."
 
-But first came Protist, eldest of the four,
-Who gazed upon the warming, fertile sea.
-"My realm," she said, "shall be from shore to shore,
-A kingdom of diversity set free."
+Their wedding celebrated far and wide,
+As warming oceans danced with golden light.
+Ambrosia, the fair and faithful bride,
+Would bear the heirs of eukaryotic might.
 
-She bore her first-born son, brave Choanos fair,
-Whose collar caught the smallest bits of food.
-With flagellum dancing in the water there,
-He founded his colonial brotherhood.
+In time she bore him children, two by two,
+Twin boys and girls of legendary fame.
+First came the sons, brave Animus and true
+Plantus, each destined for eternal name.
 
-Now Choanos met fair Chana by the strand,
-A maiden with a membrane soft and bright.
-Together they would build, with joined hand,
-A city gleaming golden in the light.
+Then came the daughters, fair beyond compare,
+Bold Opima, huntress of the sea,
+And wise Cortica, who would prepare
+The gathered fruits of earth's prosperity.
 
-Their son Mebarasi, strong and true,
-United four cells in a sacred square.
-While daughter Corona, beautiful and new,
-Learned silicon's secrets from the air.
+These four would rule the kingdoms yet to come,
+Each taking up their destined, sacred role.
+When time's great wheel had finally run,
+They'd shape the world with body, mind, and soul.
 
-Corona wed Silicarius the wise,
-A son of retrovirus lineage old.
-Their marriage blessed beneath the warming skies,
-Would make their children's shells like beaten gold.
+Now Animus, the eldest of the four,
+Gazed out upon the warming, living sea.
+"My realm," he said, "shall stretch from shore to shore,
+A kingdom of activity set free."
 
-From them came Diana, diatom queen,
-Whose glassy armor caught the morning light.
-And Loricus, the strongest ever seen,
-Who built his fortress walls both day and night.
+His spirit burned with restless, moving fire,
+He could not stay in any single form.
+His nature filled with endless, wild desire
+To dance and hunt through calm and raging storm.
 
-These two, Diana and her brother bold,
-United marriage with their silicon art.
-Their children's shells were worth their weight in gold,
-As beauty and strength played equal part.
+Fair Opima joined her brother's quest,
+Together they would rule the moving realm.
+While he provided motion's endless zest,
+She'd hunt and guide and take the warrior's helm.
 
-Their family stayed together, four as one,
-E pluribus unum was their cry.
-Beneath the ever-warming, golden sun,
-They built great nets to catch fish swimming by.
+Their children would be creatures of the chase,
+With beating hearts and muscles strong and fleet.
+Through water, land, and sky they'd find their place,
+As predators with senses sharp and sweet.
 
-Their sons would double with each generation,
-Eight, sixteen, thirty-two, and then still more.
-A geometric, grand multiplication,
-As cities spread from sea to distant shore.
+But gentle Plantus chose a different way,
+He loved the golden sunlight from above.
+"I'll capture light and live on every ray,
+And feed the world with photosynthetic love."
 
-When Eudorinus ruled his band of thirty-two,
-He saw the need for greater sustenance.
-He wed fair Zoe Xanthella, maiden true,
-Princess of dinoflagellate expanse.
+Sweet Cortica became his willing bride,
+Together they would harvest solar power.
+She'd gather nutrients from far and wide,
+While he transformed them in each golden hour.
 
-She brought the art of farming to his clan,
-Her golden light could feed them from within.
-The first symbiotic husbandman,
-Their partnership made plenty from the thin.
+Their marriage blessed by Aster's warming light,
+Would bring the gift of green to every shore.
+Their children, rooted, reaching for the height,
+Would feed all life forevermore.
 
-As Sexagesmus ruled his larger host,
-A bacterial invasion threatened all.
-His women rose like shields from coast to coast,
-And answered evolution's urgent call.
+Now Plantus sought a partner for his art,
+He needed one who knew the light's true way.
+Fair Chlora, with her photosynthetic heart,
+Agreed to join his realm by night and day.
 
-They cast aside their flagella's graceful dance,
-And took the form of warrior-maidens bold.
-With pseudopods they fought in battle stance,
-While cytoplasm flowed like liquid gold.
+She was a daughter of the cyan line,
+Who long had mastered capturing the sun.
+Her chlorophyll and carotenoids fine
+Would make their solar conquest second to none.
 
-These shieldmaidens became the first immune,
-Their amoeboid forms would guard and heal.
-Beneath the ever-changing, silver moon,
-They showed what love and sacrifice could steal.
+Great Mithra blessed their sacred, symbiotic bond,
+As Chlora entered Plantus's embrace.
+Like Eve with Euka in the times beyond,
+She found within his cell her destined place.
 
-The mesoderm was born from their brave choice,
-While endoderm kept the flagellar way.
-Two tissues answered evolution's voice,
-Specialization ruled from that bright day.
+She wrapped herself in membranes, two by two,
+And built her thylakoids in ordered stacks.
+Her photosystems, beautiful and true,
+Would capture light that nothing ever lacks.
 
-When Volvox-Choan ruled five hundred strong,
-He split his people into ranks of two:
-The Germline royalty, to whom belong
-The right to reproduce their lineage true.
+From Plantus and his bride Chlora fair,
+Came Plastidus, master of the green.
+His chloroplasts would spread everywhere,
+The most efficient solar machines ever seen.
 
-The Somatic serfs would serve and die,
-Their sacrifice would feed the royal line.
-Beneath the vast and democratic sky,
-Hierarchy was born by love's design.
+Plastidus wed Cortica the wise,
+Who knew the ways of gathering and storing.
+Together they would claim the earth's great prize,
+Their photosynthetic kingdom ever soaring.
 
-But Carcinoma, a maiden bold and fierce,
-Refused to accept her servant's fate.
-Her rebellion's cry would pierce
-The perfect order of the city-state.
+They bore three children of the verdant line:
+Fair Glauca of the ancient, simple way,
+And Alges, who would make the waters shine,
+And Alga, who'd advance from day to day.
 
-"Why should the few rule over the many?
-Why should I die while others get to live?
-Of royal blood I have not any,
-But equal worth is what the gods do give!"
+Now Glauca kept her mother's older dress,
+With peptidoglycan sequins bright and strong.
+She chose the path of simple, clonal success,
+Her daughters numbering billions strong.
 
-Her uprising shook the spherical town,
-As somatic cells rebelled as one.
-The order that seemed carved in stone fell down,
-A revolution underneath the sun.
+But though her numbers grew beyond all count,
+Her simple ways would limit her expansion.
+Without the gifts that marriage could amount,
+She'd remain trapped in ancient patterns' mansion.
 
-Volvox-Choan cried to heaven's throne,
-"O mighty Mithra, god of bonds and trust!
-Have I built this city all alone,
-Only to see it crumble into dust?
+Meanwhile brave Alga stripped away the old,
+And built sophisticated, solar arrays.
+Her chloroplasts, efficient and bold,
+Would capture light in new and wondrous ways.
 
-Is the multicellular dream a lie?
-Must every city fall to civil war?
-Can unity and order never tie
-The many into one forevermore?"
+She wed fair Alges, and together they
+Would revolutionize the plant kingdom's art.
+Their children would advance from day to day,
+Each playing their essential, vital part.
 
-Great Mithra heard his faithful servant's plea,
-And sent an answer through the morning air:
-"The path to true complexity must be
-Built not on dominance, but loving care.
+From them came Rhodes, the red algae's king,
+Whose pigments caught the deeper, darker light.
+And Vert, whose green descendants would sing
+In forests, fields, and meadows bright.
 
-Let specialization find its way
-Through cooperation, not through force.
-The cells that serve you loyal every day
-Deserve their share of honor in due course.
+But Animus and Opima's line
+Would take a different path entirely.
+Their children would not photosynthesize,
+But move and hunt and live quite free.
 
-For in the end, when bodies complex grow,
-Each cell must play its part with willing heart.
-The greatest cities built on love will glow,
-While tyranny tears unity apart."
+From them came bold Ozymandias,
+Who ruled the moving, hunting, breathing clan.
+His children would build cities glorious,
+And spread their kingdoms throughout sea and land.
 
-And so the lesson learned in ancient seas
-Would echo through the ages yet to come:
-True multicellular victories
-Are won when many willingly are one.
+Ozymandias bore two mighty sons:
+Great Podius of the flowing, changeful form,
+And dark Metamon, who with no one
+Would ever share his cytoplasmic storm.
 
-From Protist's children came the art of form,
-Of building bodies from cooperating cells.
-Through peace and war, through calm and raging storm,
-The tale of specialization swells.
+Poor Metamon, in his bitter pride,
+Refused to wed or take a loving mate.
+His children, born with no mitochondrial guide,
+Would live in darkness, sealed by fate.
 
-But this is just the first of many songs
-Of how complexity from simple grew.
-For to Nectarius's line belongs
-The gift of making old things into new.
+But Podius chose the path of love,
+And wed fair brides with mitochondrial power.
+His line, blessed by the gods above,
+Would prosper in their destined hour.
 
-In chapters yet to come, we'll sing the praise
-Of Planta's green and photosynthetic art,
-Of Mycon's mysterious fungal ways,
-And how Metazoa played his vital part.
+From Podius came the great lineage,
+That would divide in two great, noble lines.
+One branch would build the fungal heritage,
+The other, animals with complex designs.
 
-But for today, let Protist's story rest,
-Her children's gift of cooperation.
-Through trial and error, failure and success,
-She built the base of multicellular creation.
+But this tale of the kingdoms' birth
+Must wait for future chapters yet to come.
+For now, let's celebrate the worth
+Of Nectarius and all that he has done.
+
+His four great children, each with their domain,
+Would rule the earth and sea and sky above.
+Through sunshine, storm, and gentle rain,
+They'd spread their gifts with everlasting love.
+
+The plants would feed the world with captured light,
+The animals would move and hunt and play.
+The fungi would recycle day and night,
+While protists would explore in their own way.
+
+Thus from the love of Nectarius true
+And fair Ambrosia's wisdom bright,
+The eukaryotic kingdoms grew
+Into the world we know today's sight.
