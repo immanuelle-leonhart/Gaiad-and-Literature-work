@@ -76,6 +76,14 @@ The old and new chapters are **completely different stories** set in the same my
 **Source**: Old Chapter 14 (Hilluhengweh's attack, Rhizar lineage expansion, post-apocalyptic recovery)
 **Content**: Mass extinction event, red→green plant transition, Rhizar's descendants, radiolarians, foraminifera, Paulinellus endosymbiosis
 
+### New Chapter 24: "The Rise of Choanos"
+**Source**: Old Chapter 15 (Choanos and choanoflagellate evolution, early multicellularity)
+**Content**: Choanoflagellate evolution, colonial organization, cell specialization, mesoderm/endoderm development, Volvox-Choan's kingdom, Carcinoma's rebellion
+
+### New Chapter 25: "Carcinoma's Revolution"
+**Source**: Old Chapter 16 (Carcinoma's transformation, Animal Kingdom founding)
+**Content**: Cancer biology, cellular revolution, Gehenna utopia/dystopia, Anima+Metazo exodus, Animal Kingdom establishment, sponge-like organization
+
 ## Next Steps
 1. Continue with descendants of the four children of Nectarius
 2. Use old chapters 13-20 for source material on plant/animal/fungi evolution
