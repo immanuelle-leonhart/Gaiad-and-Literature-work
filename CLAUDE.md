@@ -62,7 +62,13 @@ The old and new chapters are **completely different stories** set in the same my
 - New Ch. 10: Peaceful moon Serenitide, migration story
 - Old Ch. 10: Lucas and Freyja as LUCA ancestors
 
+## Chapter Content Mapping
+
+### New Chapter 21: "The Children of Nectarius"
+**Source**: Old Chapter 13 genealogy (Nectarius + Ambrosia → Animus, Plantus, Opima, Cortica)
+**Content**: Division of eukaryotic kingdoms, plant-chloroplast symbiosis, early algae lineages
+
 ## Next Steps
-1. Document this finding in README.md
-2. Treat old chapters as source material for future new chapters
-3. Continue new format from chapter 21 using themes from unused old chapters
+1. Continue with descendants of the four children of Nectarius
+2. Use old chapters 13-20 for source material on plant/animal/fungi evolution
+3. Follow the genealogical relationships faithfully from old chapters
