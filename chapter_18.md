@@ -1,80 +1,86 @@
-From Bacta’s womb, two daughters did arise,
-Fair Hydra one, and Terra forged in might.
-In swirling seas, they cast their ancient eyes,
-To found the clans now thriving in the light.
+In ancient times, the Earth was calm and bright,
+Where daughters thrived in Gaia’s tender care.
+Arka and Bacta walked in shared delight,
+Their offspring spread across the lands so fair.
+ 
 
-Hydra, whose brood outmatched the countless stars,
-Bore Proteus, whose might would soon unfold.
-Yet Hydra’s second child, untouched by scars,
-Was Aqua then, the queen of tales untold.
+Through simple farms, they found their vital creed,
+And nurtured fields to meet their daily need.
+They grew with patience, never bound by speed,
+In harmony, no bounty went to seed.
+ 
 
-Proteus bore a host of fourfold might:
-Alif and Beth, Camilla, Mixo bold.
-Within the darksome night they each took flight,
-And shaped fresh paths in worlds both new and old.
+The land embraced them, so did seas profound,
+Their sisterhood stood firm in trust so true.
+Through peace and union, grand new paths they found,
+A golden age where love and life both grew.
+ 
 
-Alif begat two daughters in her care:
-Rachel and Kalia, each forged in grace.
-From Rachel’s line would humans one day share
-A kinship bridging worlds across all space.
+These daughters of the Earth upheld their peace,
+Their gifts and blessings multiplied each day.
+Their kinship served as strong and sure release,
+Together walking hope’s unblemished way.
+ 
+In days of old, the purple farmers thrived,
+Their colors stirring life across each field.
+Prasina, green, took in the rays deprived,
+From her did Saya, Chloroflexi yield.
+ 
 
-Kalia’s brood, the Calisto line named,
-Spread subtle powers through the hidden deep.
-Proteus watched, content in all she claimed,
-While daughters thrived in countless worlds to keep.
+Chloroflexi thrived by methods defined,
+No trace of harm endured in farmland fair.
+Yet Saya hungered, greed within her mind,
+Her yields of O₂ seared the open air.
+ 
 
-Aqua, the sister, bearing olden grace,
-Stood near to Proteus in mystic might;
-She bore two children, each with wondrous face,
-Splauron and Chloram—one in gloom, one bright.
+Unchecked, her fervor choked the gentle skies,
+The planet quaked beneath her rampant spree.
+Banded iron testified demise,
+As crimson waters spelled calamity.
+ 
 
-Splauron bore two twin shining girls in turn:
-Planka and Spira shaped the deep damp course.
-Planka’s brood the mycetes roam and churn,
-While Spira’s clan the chaetes run their course.
+The Elohim in chorus raised their plea:
+“Reduce these fumes, or life itself will cease!”
+With Sol and Gaia, Luna’s voice did agree,
+They begged that Saya’s reckless growth should lease.
+ 
+Yet Saya pressed for ever-greater yield,
+Demanding others curb their own supply.
+Her own emissions soared across the field,
+While Earth’s deep scars revealed a mortal cry.
+ 
 
-Chloram, now second, bore two fateful lines,
-Chlamydi’s brood, parasitic with greed.
-It sapped her womb, devouring hopeful signs,
-While Korba’s path saw more constructive deed.
+At Kamo Shrines, a solemn pact was cast,
+A vow to quell the surge of rising air.
+Yet Rara’s cunning lies undid it fast,
+Unraveling each clan in fell despair.
+ 
 
-Korba then mothered Chlorobia’s seed,
-And Bactero, whose brood spread wide on land.
-Thus Hydra’s line advanced in timely deed,
-Expanding far to flourish as they planned.
+“No proof of harm,” he claimed with silken tongue,
+And unity dissolved beneath his spin.
+The Elohim, uncertain, stood among
+A rising tide of death that closed them in.
+ 
 
-Meanwhile, fair Terra, Bacta’s other child,
-Stood quite bright in Gram-positivity
-Two daughters claimed her fiber fierce and wild,
-Actano, Fermus, they built a city
+At Saint-Germain-des-Prés, they met anew,
+While Rara’s rumors thrived in every mind.
+“We’ve reached our limit; change remains untrue,”
+He whispered low, their reason quite maligned.
+ 
 
-Actano bore two daughters of her own:
-Actina, mother of Actino’s line,
-And Prasea, from whom two seeds were sown—
-Saya and Chloroflexa, both divine.
+“Net zero gained!” he boasted to the throng,
+“The problem lies in births,” his cunning cry.
+Yet Gaia warned them all: “Your words are wrong,
+The O₂ devours life; the young still die.”
+ 
 
-Saya the bacteria shed her coat,
-Embracing Gram-negative ways for light.
-She drank the sun where swirling currents float,
-Bestowing oxygen with force so bright.
+But Rara scoffed and claimed their freedoms lost,
+Thus lulled the crowds to keep consumption high.
+So countless lives were paid in lethal cost,
+As Earth grew cold beneath a wailing sky.
+ 
 
-Then Chloroflexa claimed her tapestry,
-Of filamentous grace in silent seas.
-Both born of wise Prasea’s legacy,
-They wove Earth’s green with ancient expertise.
-
-Fermus, the other child of Terra’s sphere,
-Had two dear daughters: Firmicutie mild,
-Whose Firmicutes the soils far and near,
-And Conan, iron-willed, in deserts wild.
-
-Thus Hydra’s line and Terra’s line expand,
-Two families wrought from Bacta’s old soul.
-From scorching vents to gardens lush on land,
-Their heirs still thrive and shape the living whole.
-
-Though more new lines in days ahead shall rise,
-This poem holds their roots for us to chart.
-In cosmic seas, they first revealed their eyes,
-And wrote their names upon all nature’s heart.
-
+At last a Fimbulwinter seized the lands,
+Where once warm currents flowed, now ice held sway.
+With Elohim undone by idle hands,
+The planet’s ruin told of their delay.

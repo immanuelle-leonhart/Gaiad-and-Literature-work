@@ -1,115 +1,80 @@
-From Luca's lineage, two daughters sprang,
-Arka and Bacta, shaped to change the world;
-In marshy cradles, where their voices rang,
-Their stories intertwined, their fates unfurled.
+From Bacta’s womb, two daughters did arise,
+Fair Hydra one, and Terra forged in might.
+In swirling seas, they cast their ancient eyes,
+To found the clans now thriving in the light.
 
-Arka, the fearless, ventured far and wide,
-Exploring Terra's depths and mysteries;
-Her courage blazed, a beacon and a guide,
-Upon her path, the sisters placed their pleas.
+Hydra, whose brood outmatched the countless stars,
+Bore Proteus, whose might would soon unfold.
+Yet Hydra’s second child, untouched by scars,
+Was Aqua then, the queen of tales untold.
 
-And Bacta, strong, adaptable, and keen,
-Faced trials and change with steady resilience;
-In her, the sisters found a fortress sheen,
-A bastion of strength and firm compliance.
+Proteus bore a host of fourfold might:
+Alif and Beth, Camilla, Mixo bold.
+Within the darksome night they each took flight,
+And shaped fresh paths in worlds both new and old.
 
-United, these descendants of Bios' grace,
-Embarked upon their journey through the strife;
-With Arka's questing soul and Bacta's pace,
-They forged ahead to carve a future life.
+Alif begat two daughters in her care:
+Rachel and Kalia, each forged in grace.
+From Rachel’s line would humans one day share
+A kinship bridging worlds across all space.
 
-One moonlit eve, as Luna graced the sky,
-Her voice rang clear to Luca, filled with light;
-A prophecy she whispered from on high,
-To share with both her daughters in the night.
+Kalia’s brood, the Calisto line named,
+Spread subtle powers through the hidden deep.
+Proteus watched, content in all she claimed,
+While daughters thrived in countless worlds to keep.
 
-"My child, your daughters shall divide the Earth;
-Two realms will rise beneath their guiding hands.
-From your own lineage, life shall find rebirth,
-A testament to your creation's plans.
+Aqua, the sister, bearing olden grace,
+Stood near to Proteus in mystic might;
+She bore two children, each with wondrous face,
+Splauron and Chloram—one in gloom, one bright.
 
-Arka's domain shall spread with wandering feet,
-Exploring lands unseen by mortal eyes;
-Her children brave and bold shall fears defeat,
-Discovering where hidden beauty lies.
+Splauron bore two twin shining girls in turn:
+Planka and Spira shaped the deep damp course.
+Planka’s brood the mycetes roam and churn,
+While Spira’s clan the chaetes run their course.
 
-And Bacta's kin, resilient they'll remain,
-Adapting to the ever-changing world;
-They'll hold their ground through hardship and through pain,
-Their legacy's banner never furled."
+Chloram, now second, bore two fateful lines,
+Chlamydi’s brood, parasitic with greed.
+It sapped her womb, devouring hopeful signs,
+While Korba’s path saw more constructive deed.
 
-With Luna's words, a promise made to keep,
-Luca, both hopeful and yet filled with care,
-Gazed at her daughters, pondering paths deep,
-Of two great realms their destinies would bear.
+Korba then mothered Chlorobia’s seed,
+And Bactero, whose brood spread wide on land.
+Thus Hydra’s line advanced in timely deed,
+Expanding far to flourish as they planned.
 
-From north to south, these sacred temples stood,
-In distant lands, their purpose to fulfill;
-With fervent prayers and rites, they understood
-The bond between their people and Earth's will.
+Meanwhile, fair Terra, Bacta’s other child,
+Stood quite bright in Gram-positivity
+Two daughters claimed her fiber fierce and wild,
+Actano, Fermus, they built a city
 
-In Isua, where Greenland's cold winds blow,
-And Acasta's Northwest Territories,
-The Great Temple thrived in ice and snow,
-A testament to ancient legacies.
+Actano bore two daughters of her own:
+Actina, mother of Actino’s line,
+And Prasea, from whom two seeds were sown—
+Saya and Chloroflexa, both divine.
 
-While far away, the Zircon Temple gleamed
-In Jack Hills under Australian sun;
-And Barberton, where life first stirred and dreamed,
-The temples' influence had just begun.
+Saya the bacteria shed her coat,
+Embracing Gram-negative ways for light.
+She drank the sun where swirling currents float,
+Bestowing oxygen with force so bright.
 
-From Arka sprang a lineage of might:
-Dipana, Yuri, Proteus arose;
-Their daughters ventured forth into the light,
-To every corner where the wind now blows.
+Then Chloroflexa claimed her tapestry,
+Of filamentous grace in silent seas.
+Both born of wise Prasea’s legacy,
+They wove Earth’s green with ancient expertise.
 
-Dipana's kin, a multitude so grand,
-Inhabited Earth's edges far and wide;
-Yuri Archaea, leading her band—
-Methana, Halo, Pyra at her side.
+Fermus, the other child of Terra’s sphere,
+Had two dear daughters: Firmicutie mild,
+Whose Firmicutes the soils far and near,
+And Conan, iron-willed, in deserts wild.
 
-Methana, consort to Methanius fair,
-In methane's arts her mastery was shown;
-Halo the Purple, with seductive flair,
-Won Salta, Sol, and Carotenus' throne.
+Thus Hydra’s line and Terra’s line expand,
+Two families wrought from Bacta’s old soul.
+From scorching vents to gardens lush on land,
+Their heirs still thrive and shape the living whole.
 
-Deep purple hues she harnessed from the sun,
-With Carotenus' colors intertwined;
-In salty realms, her daughters dwelt as one,
-While Proteus' offspring spread unconfined.
-
-Among them, Asgarda held the throne,
-And from her sprang a million daughters strong:
-Heimdalla, Odina, Thora known,
-With Lokia and Hela in their throng.
-
-Heimdalla, watchful guardian of the realm;
-Odina, keeper of all wisdom's light;
-And Thora, whose great strength could overwhelm;
-While Lokia stirred up chaos and delight.
-
-Then Hela, dwelling in the shadow's veil,
-Her secrets buried deep within the night;
-An epic lineage woven without fail,
-Their tales of strength and cunning brought to sight.
-
-An epic lineage, these daughters bold,
-Their stories echo through the halls of time;
-From Luca's line, their destinies unfold,
-A tapestry of life, profound, sublime.
-
-Through trials faced and victories hard-won,
-They forged ahead to shape their universe;
-The legacy of Bios carried on,
-In every deed, in every whispered verse.
-
-With Luna's elixir waiting in the skies,
-They journeyed forth, their faith forever strong;
-Awaiting when the stars would align their ties,
-To drink immortal life and join the song.
-
-Across the cosmos, endless paths they roam,
-The daughters of the Earth and Moon combined;
-Forever seeking, ever moving home,
-Their fates with threads of destiny entwined.
+Though more new lines in days ahead shall rise,
+This poem holds their roots for us to chart.
+In cosmic seas, they first revealed their eyes,
+And wrote their names upon all nature’s heart.
 
