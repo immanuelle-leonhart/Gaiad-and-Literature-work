@@ -68,6 +68,14 @@ The old and new chapters are **completely different stories** set in the same my
 **Source**: Old Chapter 13 genealogy (Nectarius + Ambrosia → Animus, Plantus, Opima, Cortica)
 **Content**: Division of eukaryotic kingdoms, plant-chloroplast symbiosis, early algae lineages
 
+### New Chapter 22: "The Great Diversification"
+**Source**: Old Chapter 13 detailed genealogies (Plastidus→Glauca/Alges/Alga, Haroses lineages, endosymbiosis events)
+**Content**: Detailed algae evolution, endosymbiotic theft, diatoms, kelp forests, Solar Coalition, protist diversification
+
+### New Chapter 23: "The Gamma Ray Catastrophe"
+**Source**: Old Chapter 14 (Hilluhengweh's attack, Rhizar lineage expansion, post-apocalyptic recovery)
+**Content**: Mass extinction event, red→green plant transition, Rhizar's descendants, radiolarians, foraminifera, Paulinellus endosymbiosis
+
 ## Next Steps
 1. Continue with descendants of the four children of Nectarius
 2. Use old chapters 13-20 for source material on plant/animal/fungi evolution
