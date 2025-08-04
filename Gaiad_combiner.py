@@ -1,27 +1,24 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Gaiad_combiner.py – Zero-option GEDCOM -> MongoDB loader & comparer (hard-coded)
+Gaiad_combiner.py – Hard-coded GEDCOM→Mongo with AUTO-MERGE of obvious duplicates.
 
 Hard-coded:
-- MongoDB DB name: Gaiad_combined
-- Dataset A file:  Gaiad.ged
-- Dataset B file:  Gaiad_trimmed.ged
+- Mongo URI:        mongodb://localhost:27017
+- DB name:          Gaiad_combined
+- Dataset A file:   Gaiad.ged
+- Dataset B file:   Gaiad_trimmed.ged
 
-What it does when you run it:
-1) Deletes previous A/B imports & prior match suggestions/decisions.
-2) Imports both GEDCOMs into MongoDB (collection: people).
-3) Builds cross-dataset match suggestions with simple heuristics.
-4) Opens a small interactive menu:
-   - Review suggested matches (confirm/reject/skip)
-   - List uniques (only in A or only in B, i.e., no confirmed match)
-   - Prune uniques with confirmations
-   - Merge any two records (keep one, soft-delete the other)
-   - Re-open reviewer or quit
+What happens when you run it:
+1) Wipes previous A/B imports and previous matches.
+2) Imports both GEDCOMs into collection `people`.
+3) AUTO-MERGES high-confidence duplicates (same normalized name, same birth year,
+   and equal death year if both present; unique key).
+   - Each merged pair is recorded in `matches` with status='confirmed'.
+4) Builds looser suggestions for the leftovers (optional review menu follows).
 
 Dependency:
     pip install pymongo
-MongoDB must be reachable at mongodb://localhost:27017
 """
 
 from __future__ import annotations
@@ -40,7 +37,7 @@ DB_NAME = "Gaiad_combined"
 GEDCOM_A = "Gaiad.ged"
 GEDCOM_B = "Gaiad_trimmed.ged"
 
-# ====== UTILITIES ======
+# ===== UTILITIES =====
 
 def norm_text(s: Optional[str]) -> str:
     if not s:
@@ -68,7 +65,7 @@ def ask_yes_no(prompt: str, default_no: bool = True) -> bool:
         return not default_no
     return ans in ("y", "yes")
 
-# ====== MINIMAL GEDCOM PARSER (INDI/FAM essentials) ======
+# ===== MINIMAL GEDCOM PARSER (INDI/FAM essentials) =====
 
 def parse_gedcom(path: str) -> Tuple[Dict[str, Dict[str, Any]], Dict[str, Dict[str, Any]]]:
     with open(path, "r", encoding="utf-8", errors="replace") as f:
@@ -160,7 +157,6 @@ def parse_gedcom(path: str) -> Tuple[Dict[str, Dict[str, Any]], Dict[str, Dict[s
             elif full.endswith("MARR/PLAC"):
                 set_field(cur, "MARR/PLAC", arg)
 
-    # Helpers
     def full_name(p: Dict[str, Any]) -> Optional[str]:
         nm = p.get("NAME")
         if nm:
@@ -207,7 +203,7 @@ def parse_gedcom(path: str) -> Tuple[Dict[str, Dict[str, Any]], Dict[str, Dict[s
 
     return indi, fams
 
-# ====== MONGO HELPERS ======
+# ===== MONGO =====
 
 def get_db():
     client = MongoClient(MONGO_URI)
@@ -220,7 +216,7 @@ def ensure_indexes(db):
     db.people.create_index([("death.year", 1)])
     db.matches.create_index([("a_id", 1), ("b_id", 1)], unique=True)
 
-# ====== IMPORT ======
+# ===== IMPORT =====
 
 def import_gedcom(db, gedcom_path: str, dataset: str) -> int:
     indi, _fams = parse_gedcom(gedcom_path)
@@ -273,7 +269,128 @@ def import_gedcom(db, gedcom_path: str, dataset: str) -> int:
     print(f"Imported {len(persons):,} persons from {gedcom_path} as dataset '{dataset}'")
     return len(persons)
 
-# ====== MATCHING ======
+# ===== MERGE HELPERS =====
+
+def get_person_brief(db, _id: ObjectId) -> str:
+    p = db.people.find_one({"_id": _id})
+    if not p:
+        return f"{_id}"
+    bits = [f"{_id}", f"[{p.get('dataset')}] {p.get('name') or '(no name)'}"]
+    by = p.get("birth", {}).get("year"); dy = p.get("death", {}).get("year")
+    dates = []
+    if by: dates.append(f"b.{by}")
+    if dy: dates.append(f"d.{dy}")
+    if dates: bits.append("(" + ", ".join(dates) + ")")
+    return " ".join(bits)
+
+def merge_people_noninteractive(db, keep_id: ObjectId, drop_id: ObjectId):
+    keep = db.people.find_one({"_id": keep_id})
+    drop = db.people.find_one({"_id": drop_id})
+    if not keep or not drop:
+        return False
+
+    def coalesce(a, b): return a if a not in (None, "", [], {}) else b
+    def merge_map(a, b):
+        out = dict(a or {})
+        for k, v in (b or {}).items():
+            if k not in out or out[k] in (None, "", []):
+                out[k] = v
+        return out
+
+    updates = {}
+    for field in ("name", "given", "surname", "sex"):
+        updates[field] = coalesce(keep.get(field), drop.get(field))
+    updates["birth"] = merge_map(keep.get("birth"), drop.get("birth"))
+    updates["death"] = merge_map(keep.get("death"), drop.get("death"))
+
+    kp = keep.get("parents") or {}; dp = drop.get("parents") or {}
+    updates["parents"] = {
+        "father_name": coalesce(kp.get("father_name"), dp.get("father_name")),
+        "mother_name": coalesce(kp.get("mother_name"), dp.get("mother_name")),
+    }
+    sp_union = sorted(set((keep.get("spouses") or [])) | set((drop.get("spouses") or [])))
+    updates["spouses"] = sp_union
+    updates["norm"] = {
+        "name": norm_text(updates.get("name") or ""),
+        "father": norm_text(updates.get("parents", {}).get("father_name") or ""),
+        "mother": norm_text(updates.get("parents", {}).get("mother_name") or ""),
+        "spouses": [norm_text(s) for s in sp_union],
+    }
+    updates.setdefault("meta", keep.get("meta", {}))
+    updates["meta"]["merged_at"] = datetime.utcnow()
+    updates["meta"]["merged_from"] = str(drop_id)
+
+    db.people.update_one({"_id": keep_id}, {"$set": updates})
+    db.people.update_one({"_id": drop_id}, {"$set": {
+        "meta.deleted": True,
+        "meta.deleted_at": datetime.utcnow(),
+        "meta.merged_into": str(keep_id)
+    }})
+    return True
+
+def record_confirmed_match(db, a_id: ObjectId, b_id: ObjectId, score: float, note: str = "automerge"):
+    db.matches.update_one(
+        {"a_id": a_id, "b_id": b_id},
+        {"$set": {
+            "a_id": a_id,
+            "b_id": b_id,
+            "score": score,
+            "status": "confirmed",
+            "decided_at": datetime.utcnow(),
+            "note": note
+        }},
+        upsert=True
+    )
+
+# ===== AUTO-MERGE HIGH-CONFIDENCE =====
+
+def automerge_high_confidence(db) -> int:
+    """
+    Auto-merge when:
+      - SAME normalized name AND SAME birth year
+      - and death years match if both present
+      - and the key (name,birth_year) maps to exactly ONE B record
+    Keep = A, Drop = B
+    """
+    # Build B index by (norm_name, birth_year)
+    b_index: Dict[tuple, list] = defaultdict(list)
+    b_meta: Dict[ObjectId, dict] = {}
+    for pb in db.people.find({"dataset": "B"}, {"_id": 1, "norm.name": 1, "birth.year": 1, "death.year": 1}):
+        key = (pb.get("norm", {}).get("name") or "", pb.get("birth", {}).get("year"))
+        b_index[key].append(pb)
+        b_meta[pb["_id"]] = pb
+
+    merged = 0
+    used_b: set[ObjectId] = set()
+
+    for pa in db.people.find({"dataset": "A"}, {"_id": 1, "norm.name": 1, "birth.year": 1, "death.year": 1}):
+        n = pa.get("norm", {}).get("name") or ""
+        by = pa.get("birth", {}).get("year")
+        dy = pa.get("death", {}).get("year")
+        if not n or by is None:
+            continue
+        candidates = b_index.get((n, by), [])
+        if len(candidates) != 1:
+            continue  # not unique → skip
+        pb = candidates[0]
+        b_id = pb["_id"]
+        if b_id in used_b:
+            continue
+        # death-year rule: if both have death years, they must match
+        b_dy = pb.get("death", {}).get("year")
+        if dy is not None and b_dy is not None and dy != b_dy:
+            continue
+
+        a_id = pa["_id"]
+        if merge_people_noninteractive(db, a_id, b_id):
+            record_confirmed_match(db, a_id, b_id, score=1.0, note="automerge(name+birthYear[+deathYear])")
+            used_b.add(b_id)
+            merged += 1
+
+    print(f"Auto-merged {merged:,} high-confidence pairs.")
+    return merged
+
+# ===== SUGGESTIONS FOR LEFTOVERS (optional) =====
 
 def candidate_pairs(db, dataset_a: str, dataset_b: str, limit_per_key: int = 50):
     b_by_name = defaultdict(list)
@@ -284,7 +401,8 @@ def candidate_pairs(db, dataset_a: str, dataset_b: str, limit_per_key: int = 50)
     def key_name(p): return p.get("norm", {}).get("name") or ""
     def key_birth(p): return p.get("birth", {}).get("year")
 
-    for pb in db.people.find({"dataset": dataset_b}, {"_id": 1, "norm": 1, "birth.year": 1, "parents": 1, "spouses": 1}):
+    for pb in db.people.find({"dataset": dataset_b, "meta.deleted": {"$ne": True}},
+                             {"_id": 1, "norm": 1, "birth.year": 1, "parents": 1, "spouses": 1}):
         n = key_name(pb); y = key_birth(pb)
         if n:
             b_by_name[n].append(pb)
@@ -297,7 +415,8 @@ def candidate_pairs(db, dataset_a: str, dataset_b: str, limit_per_key: int = 50)
             for sp in pb.get("norm", {}).get("spouses", []):
                 b_by_name_spouse[(n, sp)].append(pb)
 
-    for pa in db.people.find({"dataset": dataset_a}, {"_id": 1, "norm": 1, "birth.year": 1, "parents": 1, "spouses": 1}):
+    for pa in db.people.find({"dataset": dataset_a, "meta.deleted": {"$ne": True}},
+                             {"_id": 1, "norm": 1, "birth.year": 1, "parents": 1, "spouses": 1}):
         a_id = pa["_id"]
         n = key_name(pa)
         if not n:
@@ -316,7 +435,7 @@ def candidate_pairs(db, dataset_a: str, dataset_b: str, limit_per_key: int = 50)
         seen_b = set()
         for kind, k in a_keys:
             if kind == "name_birth":
-                cands = b_by_name_birth.get(k, [])[:limit_per_key]; score = 1.0
+                cands = b_by_name_birth.get(k, [])[:limit_per_key]; score = 0.95
             elif kind == "name_parent":
                 cands = b_by_name_parent.get(k, [])[:limit_per_key]; score = 0.9
             elif kind == "name_spouse":
@@ -348,25 +467,12 @@ def suggest_matches(db, dataset_a: str, dataset_b: str):
             created += 1
         except Exception:
             pass
-    print(f"Suggested up to {created:,} candidate matches.")
+    print(f"Suggested up to {created:,} leftover candidates (status='suggested').")
 
-# ====== REVIEW / UNIQUES / PRUNE / MERGE ======
-
-def get_person_brief(db, _id: ObjectId) -> str:
-    p = db.people.find_one({"_id": _id})
-    if not p:
-        return f"{_id}"
-    bits = [f"{_id}", f"[{p.get('dataset')}] {p.get('name') or '(no name)'}"]
-    by = p.get("birth", {}).get("year"); dy = p.get("death", {}).get("year")
-    dates = []
-    if by: dates.append(f"b.{by}")
-    if dy: dates.append(f"d.{dy}")
-    if dates: bits.append("(" + ", ".join(dates) + ")")
-    return " ".join(bits)
+# ===== OPTIONAL REVIEW / UNIQUES / PRUNE / MERGE MENU =====
 
 def review_matches(db):
     cur = db.matches.find({"status": "suggested"}).sort("score", -1)
-    count = 0
     for m in cur:
         a_id = m["a_id"]; b_id = m["b_id"]
         print("\nCandidate match:")
@@ -375,8 +481,10 @@ def review_matches(db):
         print(f"Score: {m.get('score')}")
         ans = input("[c]onfirm / [r]eject / [s]kip / [q]uit: ").strip().lower()
         if ans == "c":
-            db.matches.update_one({"_id": m["_id"]}, {"$set": {"status": "confirmed", "decided_at": datetime.utcnow()}})
-            print("✔ confirmed"); count += 1
+            if merge_people_noninteractive(db, a_id, b_id):
+                db.matches.update_one({"_id": m["_id"]},
+                                      {"$set": {"status": "confirmed", "decided_at": datetime.utcnow(), "note": "manual_confirm_and_merge"}})
+                print("✔ merged+confirmed")
         elif ans == "r":
             db.matches.update_one({"_id": m["_id"]}, {"$set": {"status": "rejected", "decided_at": datetime.utcnow()}})
             print("✘ rejected")
@@ -384,13 +492,12 @@ def review_matches(db):
             break
         else:
             print("…skipped")
-    print(f"\nReviewed {count} confirmations this session.")
 
 def list_uniques(db, dataset: str, limit: int = 50):
     matched_ids = set()
     for m in db.matches.find({"status": "confirmed"}, {"a_id": 1, "b_id": 1}):
         matched_ids.add(m["a_id"]); matched_ids.add(m["b_id"])
-    q = {"dataset": dataset, "_id": {"$nin": list(matched_ids)}}
+    q = {"dataset": dataset, "_id": {"$nin": list(matched_ids)}, "meta.deleted": {"$ne": True}}
     total = db.people.count_documents(q)
     print(f"\n{total:,} uniques in dataset '{dataset}' (showing up to {limit}):")
     for p in db.people.find(q).limit(limit):
@@ -400,7 +507,7 @@ def prune_uniques(db, dataset: str):
     matched_ids = set()
     for m in db.matches.find({"status": "confirmed"}, {"a_id": 1, "b_id": 1}):
         matched_ids.add(m["a_id"]); matched_ids.add(m["b_id"])
-    q = {"dataset": dataset, "_id": {"$nin": list(matched_ids)}}
+    q = {"dataset": dataset, "_id": {"$nin": list(matched_ids)}, "meta.deleted": {"$ne": True}}
     total = db.people.count_documents(q)
     print(f"\n{total:,} uniques in dataset '{dataset}'.")
     if total == 0:
@@ -419,115 +526,46 @@ def prune_uniques(db, dataset: str):
             print("…kept")
     print(f"Done. Deleted {deleted} records.")
 
-def merge_people(db, keep_id_str: str, drop_id_str: str):
-    try:
-        k_id = ObjectId(keep_id_str); d_id = ObjectId(drop_id_str)
-    except Exception:
-        print("Invalid ObjectId(s)."); return
-    keep = db.people.find_one({"_id": k_id})
-    drop = db.people.find_one({"_id": d_id})
-    if not keep or not drop:
-        print("One or both IDs not found."); return
-
-    print("Keep:", get_person_brief(db, k_id))
-    print("Drop:", get_person_brief(db, d_id))
-    if not ask_yes_no("Merge DROP into KEEP (KEEP wins on conflicts)?", default_no=False):
-        return
-
-    def coalesce(a, b): return a if a not in (None, "", [], {}) else b
-    def merge_map(a, b):
-        out = dict(a or {})
-        for k, v in (b or {}).items():
-            if k not in out or out[k] in (None, "", []):
-                out[k] = v
-        return out
-
-    updates = {}
-    for field in ("name", "given", "surname", "sex"):
-        updates[field] = coalesce(keep.get(field), drop.get(field))
-    updates["birth"] = merge_map(keep.get("birth"), drop.get("birth"))
-    updates["death"] = merge_map(keep.get("death"), drop.get("death"))
-
-    kp = keep.get("parents") or {}; dp = drop.get("parents") or {}
-    updates["parents"] = {
-        "father_name": coalesce(kp.get("father_name"), dp.get("father_name")),
-        "mother_name": coalesce(kp.get("mother_name"), dp.get("mother_name")),
-    }
-    sp_union = sorted(set((keep.get("spouses") or [])) | set((drop.get("spouses") or [])))
-    updates["spouses"] = sp_union
-    updates["norm"] = {
-        "name": norm_text(updates.get("name") or ""),
-        "father": norm_text(updates.get("parents", {}).get("father_name") or ""),
-        "mother": norm_text(updates.get("parents", {}).get("mother_name") or ""),
-        "spouses": [norm_text(s) for s in sp_union],
-    }
-    updates.setdefault("meta", keep.get("meta", {}))
-    updates["meta"]["merged_at"] = datetime.utcnow()
-    updates["meta"]["merged_from"] = str(d_id)
-
-    db.people.update_one({"_id": k_id}, {"$set": updates})
-    db.people.update_one({"_id": d_id}, {"$set": {"meta.deleted": True, "meta.deleted_at": datetime.utcnow(), "meta.merged_into": str(k_id)}})
-    db.matches.update_many(
-        {"$or": [{"a_id": d_id}, {"b_id": d_id}]},
-        {"$set": {"status": "invalid", "decided_at": datetime.utcnow(), "note": f"record {d_id} merged into {k_id}"}}
-    )
-    print("Merged successfully.")
-
-# ====== MENU ======
-
 def menu(db):
     while True:
-        print("\n=== GIAD Combined – Menu ===")
-        print("[1] Review suggested matches")
+        print("\n=== GIAD Combined – Edge-case Menu ===")
+        print("[1] Review leftover suggested matches (optional)")
         print("[2] List uniques in A")
         print("[3] List uniques in B")
         print("[4] Prune uniques in A (with confirmation)")
         print("[5] Prune uniques in B (with confirmation)")
-        print("[6] Merge two people (by ObjectId)")
-        print("[R] Rebuild suggestions (A↔B)")
         print("[Q] Quit")
         choice = input("> ").strip().lower()
+        if choice == "1": review_matches(db)
+        elif choice == "2": list_uniques(db, "A", limit=100)
+        elif choice == "3": list_uniques(db, "B", limit=100)
+        elif choice == "4": prune_uniques(db, "A")
+        elif choice == "5": prune_uniques(db, "B")
+        elif choice == "q": break
+        else: print("Unknown option.")
 
-        if choice == "1":
-            review_matches(db)
-        elif choice == "2":
-            list_uniques(db, "A", limit=100)
-        elif choice == "3":
-            list_uniques(db, "B", limit=100)
-        elif choice == "4":
-            prune_uniques(db, "A")
-        elif choice == "5":
-            prune_uniques(db, "B")
-        elif choice == "6":
-            keep_id = input("ObjectId to KEEP: ").strip()
-            drop_id = input("ObjectId to DROP (merge into KEEP): ").strip()
-            merge_people(db, keep_id, drop_id)
-        elif choice == "r":
-            suggest_matches(db, "A", "B")
-        elif choice == "q":
-            print("Bye."); break
-        else:
-            print("Unknown option.")
-
-# ====== MAIN (ONE-BUTTON RUN) ======
+# ===== MAIN =====
 
 def main():
     db = get_db()
     ensure_indexes(db)
 
-    # Wipe previous A/B + all previous matches (fresh run)
+    # Fresh run
     db.people.delete_many({"dataset": {"$in": ["A", "B"]}})
     db.matches.delete_many({})
     print("Cleared previous A/B imports and matches.")
 
-    # Import both files
+    # Import
     import_gedcom(db, GEDCOM_A, "A")
     import_gedcom(db, GEDCOM_B, "B")
 
-    # Build suggestions
+    # AUTO-MERGE obvious duplicates
+    automerge_high_confidence(db)
+
+    # For leftovers, create suggestions (weaker rules) – optional to review
     suggest_matches(db, "A", "B")
 
-    # Menu
+    # Optional edge-case menu (or just quit)
     menu(db)
 
 if __name__ == "__main__":
