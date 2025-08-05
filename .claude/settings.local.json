@@ -12,7 +12,10 @@
       "Bash(python:*)",
       "Bash(cp:*)",
       "Bash(git rm:*)",
-      "Bash(git check-ignore:*)"
+      "Bash(git check-ignore:*)",
+      "Bash(git remote add:*)",
+      "Bash(git fetch:*)",
+      "Bash(git push:*)"
     ],
     "deny": []
   }
