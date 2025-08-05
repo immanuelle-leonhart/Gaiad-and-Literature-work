@@ -10,7 +10,9 @@
       "Bash(ren:*)",
       "Bash(rm:*)",
       "Bash(python:*)",
-      "Bash(cp:*)"
+      "Bash(cp:*)",
+      "Bash(git rm:*)",
+      "Bash(git check-ignore:*)"
     ],
     "deny": []
   }
