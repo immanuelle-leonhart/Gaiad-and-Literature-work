@@ -18,7 +18,11 @@
       "Bash(git push:*)",
       "Bash(find:*)",
       "Bash(dir:*)",
-      "Bash(del:*)"
+      "Bash(del:*)",
+      "Bash(for file in *.md)",
+      "Bash(do echo \"=== $file ===\")",
+      "Bash(wc:*)",
+      "Bash(done)"
     ],
     "deny": []
   }
