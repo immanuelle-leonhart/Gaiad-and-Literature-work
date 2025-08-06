@@ -22,7 +22,8 @@
       "Bash(for file in *.md)",
       "Bash(do echo \"=== $file ===\")",
       "Bash(wc:*)",
-      "Bash(done)"
+      "Bash(done)",
+      "Bash(for file in chapter_*.md)"
     ],
     "deny": []
   }
