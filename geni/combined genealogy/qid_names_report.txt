@@ -1,0 +1,1133 @@
+Q-ID NAMES REPORT
+==================================================
+
+Q-ID: Q104668239
+Suggested English Name: Сам Сюни
+All Language Labels:
+  hy: Սամ Սյունի
+  ru: Сам Сюни
+
+------------------------------
+
+Q-ID: Q104668241
+Suggested English Name: Վարազվաղան Սյունի
+All Language Labels:
+  hy: Վարազվաղան Սյունի
+
+------------------------------
+
+Q-ID: Q104668268
+Suggested English Name: անանուն Սյունի
+All Language Labels:
+  hy: անանուն Սյունի
+
+------------------------------
+
+Q-ID: Q104717611
+Suggested English Name: Գոտարձ Արծրունի
+All Language Labels:
+  hy: Գոտարձ Արծրունի
+
+------------------------------
+
+Q-ID: Q104717615
+Suggested English Name: Տաճատ Արծրունի
+All Language Labels:
+  hy: Տաճատ Արծրունի
+
+------------------------------
+
+Q-ID: Q104717617
+Suggested English Name: Շավասպ Արծրունի
+All Language Labels:
+  hy: Շավասպ Արծրունի
+
+------------------------------
+
+Q-ID: Q104717732
+Suggested English Name: Մերշապուհ Արծրունի
+All Language Labels:
+  hy: Մերշապուհ Արծրունի
+
+------------------------------
+
+Q-ID: Q105605788
+Suggested English Name: Атрнерсе Сюни
+All Language Labels:
+  hy: Ատրներսեհ Սյունի
+  ru: Атрнерсе Сюни
+
+------------------------------
+
+Q-ID: Q106564534
+Suggested English Name: Վահան Գ Արծրունի
+All Language Labels:
+  hy: Վահան Գ Արծրունի
+
+------------------------------
+
+Q-ID: Q106564587
+Suggested English Name: Մուշեղ Բ Արծրունի
+All Language Labels:
+  hy: Մուշեղ Բ Արծրունի
+
+------------------------------
+
+Q-ID: Q106564608
+Suggested English Name: Վաչե Բ Արծրունի
+All Language Labels:
+  hy: Վաչե Բ Արծրունի
+
+------------------------------
+
+Q-ID: Q106595799
+Suggested English Name: անանուն Մամիկոնյան (Կամսարական)
+All Language Labels:
+  hu: N. Mamikonján (Kamszarakan)
+  hy: անանուն Մամիկոնյան (Կամսարական)
+
+------------------------------
+
+Q-ID: Q106980648
+Suggested English Name: Бабик Сюни
+All Language Labels:
+  hy: Բաբիկ Սյունի
+  ru: Бабик Сюни
+
+------------------------------
+
+Q-ID: Q106980650
+Suggested English Name: Վասակ Սյունի
+All Language Labels:
+  hy: Վասակ Սյունի
+
+------------------------------
+
+Q-ID: Q106980652
+Suggested English Name: Աչիր Սյունի
+All Language Labels:
+  hy: Աչիր Սյունի
+
+------------------------------
+
+Q-ID: Q106980653
+Suggested English Name: Բաբկեն Սյունի
+All Language Labels:
+  hy: Բաբկեն Սյունի
+
+------------------------------
+
+Q-ID: Q106980660
+Suggested English Name: Գդիհոն Սյունի
+All Language Labels:
+  hy: Գդիհոն Սյունի
+
+------------------------------
+
+Q-ID: Q107530524
+Suggested English Name: Василий Мстиславич
+All Language Labels:
+  it: Basilio Mstislavič
+  ru: Василий Мстиславич
+
+------------------------------
+
+Q-ID: Q108208192
+Suggested English Name: Надей Спес
+All Language Labels:
+  cs: Naděj Spes
+  nl: Naděj Spes
+  ru: Надей Спес
+
+------------------------------
+
+Q-ID: Q108441599
+Suggested English Name: Мэн д’Обинье
+All Language Labels:
+  fr: Main, seigneur de Saint-Aubin-d'Aubigné
+  ru: Мэн д’Обинье
+
+------------------------------
+
+Q-ID: Q108441620
+Suggested English Name: Аделиза де Богун
+All Language Labels:
+  fr: Adelaïde de Bohun
+  ru: Аделиза де Богун
+
+------------------------------
+
+Q-ID: Q108524465
+Suggested English Name: Ирменгарда де Санлис
+All Language Labels:
+  fr: Ermengarde
+  ru: Ирменгарда де Санлис
+
+------------------------------
+
+Q-ID: Q108598515
+Suggested English Name: Эделина
+Geni Profile ID: 6000000003396985516
+All Language Labels:
+  fr: Béatrix
+  ru: Эделина
+
+------------------------------
+
+Q-ID: Q110485463
+Suggested English Name: Сандухт Мамиконян
+All Language Labels:
+  ca: Sandukht Mamiconi
+  fr: Sandoukht Mamikonian
+  hy: Սանդուխտ Մամիկոնյան
+  ru: Сандухт Мамиконян
+
+------------------------------
+
+Q-ID: Q110486595
+Suggested English Name: Վրիկ Պարթև
+All Language Labels:
+  hy: Վրիկ Պարթև
+
+------------------------------
+
+Q-ID: Q110486630
+Suggested English Name: Մանեճ Գնունի
+All Language Labels:
+  hy: Մանեճ Գնունի
+
+------------------------------
+
+Q-ID: Q111442411
+Suggested English Name: Ричард Скруп
+All Language Labels:
+  ru: Ричард Скруп
+
+------------------------------
+
+Q-ID: Q111442414
+Suggested English Name: Агнес де Клер
+All Language Labels:
+  fr: Agnès de Clare
+  ru: Агнес де Клер
+
+------------------------------
+
+Q-ID: Q111442678
+Suggested English Name: Роберт Скруп
+All Language Labels:
+  ru: Роберт Скруп
+
+------------------------------
+
+Q-ID: Q111660756
+Suggested English Name: Свобода Кончаковна
+All Language Labels:
+  fr: Nastassia Kontchakovna
+  ru: Свобода Кончаковна
+  uk: Свобода Кончаківна
+
+------------------------------
+
+Q-ID: Q112624721
+Suggested English Name: Евфросинья Ростиславна
+All Language Labels:
+  be: Ефрасіння Расціславаўна
+  cs: Jevfrosiňja Rostislavna
+  ru: Евфросинья Ростиславна
+
+------------------------------
+
+Q-ID: Q113373365
+Suggested English Name: Евдокия Дукиня Комнина
+All Language Labels:
+  bg: Евдокия Дукина Комнина
+  ca: Eudòxia Comnena
+  el: Ευδοκία Δούκαινα Κομνηνή
+  fr: Eudocie Comnène
+  ru: Евдокия Дукиня Комнина
+
+------------------------------
+
+Q-ID: Q113373542
+Suggested English Name: Андроник Дука Комнин
+All Language Labels:
+  bg: Андроник Дука Комнин
+  ca: Andrònic Comnè
+  el: Ανδρόνικος Δούκας Κομνηνός
+  fr: Andronic Comnène
+  ru: Андроник Дука Комнин
+
+------------------------------
+
+Q-ID: Q114720727
+Suggested English Name: Gertruda
+All Language Labels:
+  cs: Gertruda Polská
+  pl: Gertruda
+
+------------------------------
+
+Q-ID: Q115339705
+Suggested English Name: Дмитрий
+All Language Labels:
+  ru: Дмитрий
+  uk: Дмитро
+
+------------------------------
+
+Q-ID: Q115340008
+Suggested English Name: Юрий
+All Language Labels:
+  ru: Юрий
+
+------------------------------
+
+Q-ID: Q117951953
+Suggested English Name: сестра Никифора III Вотаниата
+All Language Labels:
+  bg: неизвестна по име Вотаниатиса
+  ca: (?) Botaniatissa
+  ru: сестра Никифора III Вотаниата
+
+------------------------------
+
+Q-ID: Q11921175
+Suggested English Name: Евдокия Комнина
+All Language Labels:
+  ast: Eudòcia Comnena
+  bg: Евдокия Комнина
+  ca: Eudòxia Comnena
+  cs: Eudokie Komnenovna
+  de: Eudòcia Comnena
+  el: Ευδοκία Κομνηνή
+  fr: Eudocia Comnène
+  la: Eudocia Comnena
+  ru: Евдокия Комнина
+  sr: Евдокија Комнин (ћерка Андроника Комнина)
+
+------------------------------
+
+Q-ID: Q12151167
+Suggested English Name: Святослав Мстиславич
+All Language Labels:
+  be: Святаслаў Мсціславіч
+  be-tarask: Сьвятаслаў Мсьціславіч
+  cs: Svjatoslav Mstislavič
+  ru: Святослав Мстиславич
+  sv: Svjatoslav Mstislavitj
+  uk: Святослав Мстиславич
+
+------------------------------
+
+Q-ID: Q12293532
+Suggested English Name: Секстия Цетегилла
+All Language Labels:
+  bg: Секстия Цетегила
+  hy: Sextia Cethegilla
+  ru: Секстия Цетегилла
+  uk: Секстія Цетегілла
+
+------------------------------
+
+Q-ID: Q123753995
+Suggested English Name: Евдокия Комнима
+All Language Labels:
+  bg: Евдокия Комнима
+  ca: Eudòxia Comnena
+
+------------------------------
+
+Q-ID: Q123983133
+Suggested English Name: Евдокия Аксухина
+All Language Labels:
+  bg: Евдокия Аксухина
+
+------------------------------
+
+Q-ID: Q124910922
+Suggested English Name: Элия
+All Language Labels:
+  ru: Элия
+
+------------------------------
+
+Q-ID: Q125178091
+Suggested English Name: Изяслав Владимирович
+All Language Labels:
+  ru: Изяслав Владимирович
+  uk: Ізяслав Володимирович
+
+------------------------------
+
+Q-ID: Q125178097
+Suggested English Name: Всеволод Владимирович
+All Language Labels:
+  cs: Vsevolod Vladimirovič
+  ru: Всеволод Владимирович
+  uk: Всеволод Путивльський
+
+------------------------------
+
+Q-ID: Q125578183
+Suggested English Name: Ростислав Ярославич
+All Language Labels:
+  ru: Ростислав Ярославич
+
+------------------------------
+
+Q-ID: Q126118056
+Suggested English Name: Bolesław Bolesławowic
+All Language Labels:
+  be: Баляслаў
+  pl: Bolesław Bolesławowic
+
+------------------------------
+
+Q-ID: Q126281321
+Suggested English Name: Анна Комнина
+All Language Labels:
+  bg: Анна Комнина
+
+------------------------------
+
+Q-ID: Q1285826
+Suggested English Name: Фридрих III Ортенбургский
+All Language Labels:
+  ast: Friedrich III. von Ortenburg
+  cs: Bedřich III. Ortenburský
+  de: Friedrich III. von Ortenburg
+  nl: Friedrich III. von Ortenburg
+  ru: Фридрих III Ортенбургский
+
+------------------------------
+
+Q-ID: Q130681251
+Suggested English Name: Йоан Дука
+All Language Labels:
+  bg: Йоан Дука
+  cs: Ioan Dukas
+  el: Ίωάννης Δούκας
+
+------------------------------
+
+Q-ID: Q131419591
+Suggested English Name: Алексий Комнин Ватаци
+All Language Labels:
+  bg: Алексий Комнин Ватаци
+
+------------------------------
+
+Q-ID: Q131460045
+Suggested English Name: Erling de Bjarkøy
+All Language Labels:
+  es: Erling de Bjarkøy
+
+------------------------------
+
+Q-ID: Q131782372
+Suggested English Name: Beringer von Schauenburg
+All Language Labels:
+  cs: Beringer ze Schauenburka
+  de: Beringer von Schauenburg
+
+------------------------------
+
+Q-ID: Q131927997
+Suggested English Name: Roberto de Grandmesnil
+All Language Labels:
+  es: Roberto de Grandmesnil
+  sh: Robert de Grandmesnil
+
+------------------------------
+
+Q-ID: Q134983894
+Suggested English Name: Maurice III de Craon
+All Language Labels:
+  fr: Maurice III de Craon
+
+------------------------------
+
+Q-ID: Q135000263
+Suggested English Name: Mahaud de Malines
+All Language Labels:
+  fr: Mahaud de Malines
+
+------------------------------
+
+Q-ID: Q1496886
+Suggested English Name: Гебхард
+All Language Labels:
+  ast: Gebhard
+  bg: Гебхард
+  cs: Gebhart Ortenburský
+  de: Gebhard
+  fr: Gebhard
+  nl: Gebhard van Ortenburg
+  ru: Гебхард
+
+------------------------------
+
+Q-ID: Q1521043
+Suggested English Name: Мейнхард
+All Language Labels:
+  cs: Menhart Gorický a Istrijský
+  de: Meinhard von Görz und Istrien
+  it: Mainardo di Gorizia e Istria
+  nl: Meinhard von Görz und Istrien
+  ru: Мейнхард
+
+------------------------------
+
+Q-ID: Q1553582
+Suggested English Name: Ги IV
+All Language Labels:
+  de: Guido IV.
+  fr: Guy IV de Limoges
+  nb: Guy IV de Limoges
+  nl: Guido IV.
+  ru: Ги IV
+
+------------------------------
+
+Q-ID: Q16369095
+Suggested English Name: I Arşuşa
+All Language Labels:
+  az: I Arşuşa
+  es: I Arşuşa
+
+------------------------------
+
+Q-ID: Q16374186
+Suggested English Name: Պերոզավր Սյունի
+All Language Labels:
+  hy: Պերոզավր Սյունի
+  ka: პეროჟავრი სივნიელი
+
+------------------------------
+
+Q-ID: Q16652462
+Suggested English Name: Þorsteinn Þorkelsson
+All Language Labels:
+  ast: Þorsteinn Þorkelsson
+  es: Þorsteinn Þorkelsson
+
+------------------------------
+
+Q-ID: Q1686793
+Suggested English Name: Вериганд Фриульский
+All Language Labels:
+  ast: Werigand
+  bg: Вериганд
+  cs: Werigand Friulský
+  de: Werigand
+  it: Werigand del Friuli
+  nl: Werigand
+  ru: Вериганд Фриульский
+
+------------------------------
+
+Q-ID: Q1755579
+Suggested English Name: Ратибор
+All Language Labels:
+  da: Ratibor
+  de: Ratibor
+  el: Ράτιμπορ
+  nl: Ratibor van Pommeren
+  pl: Racibor Bogusławowic
+  ru: Ратибор
+
+------------------------------
+
+Q-ID: Q19918149
+Suggested English Name: Айлиль мак Доннхада
+All Language Labels:
+  fr: Ailill mac Donnchad
+  ga: Ailill mac Donnchad
+  ru: Айлиль мак Доннхада
+
+------------------------------
+
+Q-ID: Q19918417
+Suggested English Name: Фланн мак Маэл Руанайд
+All Language Labels:
+  fr: Flann mac Máele Ruanaid
+  ga: Flann mac Máele Ruanaid
+  ru: Фланн мак Маэл Руанайд
+
+------------------------------
+
+Q-ID: Q20046078
+Suggested English Name: Одульф
+All Language Labels:
+  ast: Odulfo
+  nl: Odulfo
+  pt: Odulfo
+  pt-br: Odulfo
+  ru: Одульф
+  uk: Одульф
+
+------------------------------
+
+Q-ID: Q20047936
+Suggested English Name: Беатрис де Шамплит
+All Language Labels:
+  ast: Beatriz de Champlite
+  cs: Beatrix ze Champlitte
+  el: Βεατρίκη του Σαμπλίτ
+  es: Beatriz de Champlite
+  nl: Beatriz de Champlite
+  pt: Beatriz de Champlite
+  pt-br: Beatriz de Champlite
+  ru: Беатрис де Шамплит
+
+------------------------------
+
+Q-ID: Q2283424
+Suggested English Name: Зигфрид II
+All Language Labels:
+  bg: Зигфрид I фон Лебенау
+  ca: Sigfrid I de Lebenau
+  cs: Sigfrid ze Sponheimu
+  de: Siegfried I.
+  nl: Siegfried I.
+  ru: Зигфрид II
+
+------------------------------
+
+Q-ID: Q24357457
+Suggested English Name: Конон Женевский
+All Language Labels:
+  ast: Conon de Genève
+  el: Κόνων της Γενεύης
+  fr: Conon de Genève
+  nl: Conon de Genève
+  ru: Конон Женевский
+
+------------------------------
+
+Q-ID: Q28862129
+Suggested English Name: Ясинь
+All Language Labels:
+  ast: Ясінь
+  es: Ясінь
+  ru: Ясинь
+  uk: Ясінь
+
+------------------------------
+
+Q-ID: Q29892245
+Suggested English Name: Татжастуи Арцруни
+All Language Labels:
+  el: Τατσατουχί Αρτσρουνί
+  hy: Տաճատուհի Արծրունի
+  ru: Татжастуи Арцруни
+
+------------------------------
+
+Q-ID: Q29895627
+Suggested English Name: Аган Арцруни
+All Language Labels:
+  hy: Աղան Արծրունի
+  ru: Аган Арцруни
+
+------------------------------
+
+Q-ID: Q29895705
+Suggested English Name: Васак Арцруни
+All Language Labels:
+  hy: Վասակ Արծրունի
+  ru: Васак Арцруни
+
+------------------------------
+
+Q-ID: Q29896118
+Suggested English Name: Меружан Арцруни
+All Language Labels:
+  hy: Մերհուժան Արծրունի
+  ru: Меружан Арцруни
+
+------------------------------
+
+Q-ID: Q29896134
+Suggested English Name: Ջոջիկ Միհրանյան
+All Language Labels:
+  hy: Ջոջիկ Միհրանյան
+
+------------------------------
+
+Q-ID: Q30887565
+Suggested English Name: Ги II
+All Language Labels:
+  ast: Gui II de Limoges
+  fr: Gui II de Limoges
+  nl: Gui II de Limoges
+  ru: Ги II
+
+------------------------------
+
+Q-ID: Q30887569
+Suggested English Name: Адемар II
+All Language Labels:
+  ast: Adémar II de Limoges
+  fr: Adémar II de Limoges
+  nl: Adémar II de Limoges
+  ru: Адемар II
+
+------------------------------
+
+Q-ID: Q30887573
+Suggested English Name: Адемар III
+All Language Labels:
+  ast: Adémar III de Limoges
+  fr: Adémar III de Limoges
+  nl: Adémar III de Limoges
+  ru: Адемар III
+
+------------------------------
+
+Q-ID: Q30887585
+Suggested English Name: Гильом III
+All Language Labels:
+  ast: Guillaume Talairand de Périgord
+  fr: Guillaume Talairand de Périgord
+  nl: Guillaume Talairand de Périgord
+  ru: Гильом III
+
+------------------------------
+
+Q-ID: Q30887741
+Suggested English Name: Оттон III фон Шайерн
+All Language Labels:
+  ast: Otto III. von Scheyern
+  de: Otto III. von Scheyern
+  fr: Otto III. von Scheyern
+  nl: Otto III. von Scheyern
+  ru: Оттон III фон Шайерн
+
+------------------------------
+
+Q-ID: Q31110932
+Suggested English Name: безымянная Мамиконян
+All Language Labels:
+  el: αγνώστων στοιχείων Μαμικονιάν
+  hy: անանուն Մամիկոնյան
+  ru: безымянная Мамиконян
+
+------------------------------
+
+Q-ID: Q31192919
+Suggested English Name: Мегинхард
+All Language Labels:
+  bg: Мегинхард
+  cs: Meginard ze Sponheimu
+
+------------------------------
+
+Q-ID: Q3567358
+Suggested English Name: Werri II de Walcourt
+Geni Profile ID: 6000000002388437308
+All Language Labels:
+  fr: Werri II de Walcourt
+
+------------------------------
+
+Q-ID: Q4183031
+Suggested English Name: Завид Дмитрович
+All Language Labels:
+  ru: Завид Дмитрович
+
+------------------------------
+
+Q-ID: Q4293220
+Suggested English Name: Микула
+All Language Labels:
+  ast: Mikula
+  de: Mikula
+  nl: Mikula
+  ru: Микула
+
+------------------------------
+
+Q-ID: Q46014942
+Suggested English Name: Вагинак Сюни
+All Language Labels:
+  ast: Valinaces I
+  hy: Վաղինակ Ա Սյունի
+  nl: Valinaces I
+  pt: Valinaces I
+  pt-br: Valinaces I
+  ru: Вагинак Сюни
+
+------------------------------
+
+Q-ID: Q47463743
+Suggested English Name: безымянная Гнуни
+All Language Labels:
+  el: αγνώστων στοιχείων Γκνουνί
+  hy: անանուն Գնունի
+  ru: безымянная Гнуни
+
+------------------------------
+
+Q-ID: Q55348249
+Suggested English Name: Жанна де Майен
+Geni Profile ID: 6000000003827587425
+All Language Labels:
+  ast: Jeanne de Mayenne
+  es: Jeanne de Mayenne
+  fr: Jeanne de Mayenne
+  nl: Jeanne de Mayenne
+  ru: Жанна де Майен
+
+------------------------------
+
+Q-ID: Q55385340
+Suggested English Name: Берта дю Пюи-дю-Фу
+All Language Labels:
+  ast: Berthe du Puy-du-Fou
+  fr: Berthe du Puy-du-Fou
+  nl: Berthe du Puy-du-Fou
+  ru: Берта дю Пюи-дю-Фу
+
+------------------------------
+
+Q-ID: Q55385907
+Suggested English Name: Матильда де Шатоден
+All Language Labels:
+  ast: Mathilde de Châteaudun
+  ca: Matilde de Châteaudun
+  fr: Mathilde de Châteaudun
+  nl: Mathilde de Châteaudun
+  ru: Матильда де Шатоден
+
+------------------------------
+
+Q-ID: Q55386214
+Suggested English Name: Матильда (Маго) де Вандом
+All Language Labels:
+  ast: Mathilde de Vendôme
+  ca: Matilde de Vendôme
+  fr: Mathilde de Vendôme
+  nl: Mathilde de Vendôme
+  ru: Матильда (Маго) де Вандом
+
+------------------------------
+
+Q-ID: Q55387481
+Suggested English Name: Жоффруа Вандомский
+All Language Labels:
+  ast: Geoffroy de Vendôme
+  ca: Geoffroy de Vendôme
+  fr: Geoffroy de Vendôme
+  nl: Geoffroy de Vendôme
+  ru: Жоффруа Вандомский
+
+------------------------------
+
+Q-ID: Q55390938
+Suggested English Name: Петронилла де Шато-Гонтье
+All Language Labels:
+  ast: Pétronille de Château-Renard
+  fr: Pétronille de Château-Renard
+  nl: Pétronille de Château-Renard
+  ru: Петронилла де Шато-Гонтье
+
+------------------------------
+
+Q-ID: Q55399053
+Suggested English Name: Агата де Вандом
+All Language Labels:
+  ast: Agathe de Vendôme
+  es: Agathe de Vendôme
+  fr: Agathe de Vendôme
+  nl: Agathe de Vendôme
+  ru: Агата де Вандом
+
+------------------------------
+
+Q-ID: Q55399331
+Suggested English Name: Жоффруа де Вандом
+All Language Labels:
+  ast: Geoffroy de Vendôme
+  es: Geoffroy de Vendôme
+  fr: Geoffroy de Vendôme
+  nl: Geoffroy de Vendôme
+  ru: Жоффруа де Вандом
+
+------------------------------
+
+Q-ID: Q56006624
+Suggested English Name: Санча Урхельская
+All Language Labels:
+  ca: Adelaida d'Urgell
+  el: Σάντσα του Ουρζέλ
+  fr: Sancha d'Urgell
+  nl: Sancha d'Urgell
+  ru: Санча Урхельская
+
+------------------------------
+
+Q-ID: Q56285638
+Suggested English Name: Ангерран II де Фиенн
+All Language Labels:
+  ast: Enguerrand II de Fiennes
+  fr: Enguerrand II de Fiennes
+  hu: ismeretlen személy
+  nl: Enguerrand II de Fiennes
+  ru: Ангерран II де Фиенн
+
+------------------------------
+
+Q-ID: Q56285642
+Suggested English Name: Изабелла де Конде
+All Language Labels:
+  ast: Isabelle de Condé
+  fr: Isabelle de Condé
+  hu: ismeretlen személy
+  nl: Isabelle de Condé
+  ru: Изабелла де Конде
+
+------------------------------
+
+Q-ID: Q56367490
+Suggested English Name: Дрогон
+All Language Labels:
+  ru: Дрогон
+
+------------------------------
+
+Q-ID: Q5900614
+Suggested English Name: Карл Карлссон
+Geni Profile ID: 6000000003349367528
+All Language Labels:
+  ast: Karl Karlsson
+  nl: Karl Karlsson
+  ru: Карл Карлссон
+  sv: Karl Karlsson (Ulv)
+
+------------------------------
+
+Q-ID: Q59416749
+Suggested English Name: Ривин I фон Дилинген
+All Language Labels:
+  bg: Ривин I фон Дилинген
+
+------------------------------
+
+Q-ID: Q6162664
+Suggested English Name: Прислав
+All Language Labels:
+  be: Прыслаў
+  cs: Prislav
+  da: Prislav
+  de: Prislav
+  el: Πρίσλαβ
+  fr: Prislav de Laaland
+  nb: Prislav av Lolland
+  nl: Prislav
+  pl: Przesław
+  ru: Прислав
+  sv: Prislav av Lolland
+
+------------------------------
+
+Q-ID: Q61638527
+Suggested English Name: Отта ди Огледо
+All Language Labels:
+  fr: Otta d'Agliè
+  ru: Отта ди Огледо
+
+------------------------------
+
+Q-ID: Q61727062
+Suggested English Name: Родульф (Ральф) де Варенн
+All Language Labels:
+  fr: Rodulf
+  nb: Ralph de Warenne
+  nl: Rudolf van Warenne
+  ru: Родульф (Ральф) де Варенн
+
+------------------------------
+
+Q-ID: Q61896439
+Suggested English Name: Эмма Фиц-Роберт
+All Language Labels:
+  ru: Эмма Фиц-Роберт
+
+------------------------------
+
+Q-ID: Q61911553
+Suggested English Name: Уильям III де Бошан из Элмли
+All Language Labels:
+  ru: Уильям III де Бошан из Элмли
+
+------------------------------
+
+Q-ID: Q61911578
+Suggested English Name: Роберт де Модит
+All Language Labels:
+  ru: Роберт де Модит
+
+------------------------------
+
+Q-ID: Q61911579
+Suggested English Name: Изабелла Бассет
+All Language Labels:
+  ru: Изабелла Бассет
+
+------------------------------
+
+Q-ID: Q61911581
+Suggested English Name: Уильям де Модит
+All Language Labels:
+  ru: Уильям де Модит
+
+------------------------------
+
+Q-ID: Q61911582
+Suggested English Name: Изабелла де Санлис
+All Language Labels:
+  ru: Изабелла де Санлис
+
+------------------------------
+
+Q-ID: Q61963109
+Suggested English Name: Матильда де Сен-Хилар
+All Language Labels:
+  ru: Матильда де Сен-Хилар
+
+------------------------------
+
+Q-ID: Q61963721
+Suggested English Name: Анна де Квинси
+All Language Labels:
+  ru: Анна де Квинси
+
+------------------------------
+
+Q-ID: Q61971028
+Suggested English Name: Роберт Фицральф
+All Language Labels:
+  ru: Роберт Фицральф
+
+------------------------------
+
+Q-ID: Q61971033
+Suggested English Name: Элизабет Невилл из Стейнтона
+All Language Labels:
+  ru: Элизабет Невилл из Стейнтона
+
+------------------------------
+
+Q-ID: Q63183632
+Suggested English Name: Эйлин Пипард
+All Language Labels:
+  fr: Aline Pipard
+  ru: Эйлин Пипард
+
+------------------------------
+
+Q-ID: Q63247302
+Suggested English Name: Матильда
+All Language Labels:
+  fr: Matilda
+  ru: Матильда
+
+------------------------------
+
+Q-ID: Q63436758
+Suggested English Name: Радегонда
+All Language Labels:
+  fr: Radegonde Orieldis
+  nl: Radegonde Orieldis
+  ru: Радегонда
+
+------------------------------
+
+Q-ID: Q65515717
+Suggested English Name: Համազասպյան Մամիկոնյան
+All Language Labels:
+  el: Χαμαζασπιάν Μαμικονιάν
+  hy: Համազասպյան Մամիկոնյան
+
+------------------------------
+
+Q-ID: Q65515718
+Suggested English Name: Արտաշես Մամիկոնյան
+All Language Labels:
+  el: Αρτασές Μαμικονιάν
+  hy: Արտաշես Մամիկոնյան
+
+------------------------------
+
+Q-ID: Q73612935
+Suggested English Name: Володшич
+All Language Labels:
+  be: Валодшыч
+  be-tarask: Брачыслаў Валодшыч
+  cs: neznámý Volodšič
+  ru: Володшич
+  uk: Володшич
+
+------------------------------
+
+Q-ID: Q75247665
+Suggested English Name: Conrad von Unter-Bayern
+All Language Labels:
+  cs: Konrád Dolnobavorský
+  nl: Conrad von Unter-Bayern
+
+------------------------------
+
+Q-ID: Q80913710
+Suggested English Name: Жильбер Бассет
+All Language Labels:
+  ru: Жильбер Бассет
+
+------------------------------
+
+Q-ID: Q81058232
+Suggested English Name: Фульк Бассет
+All Language Labels:
+  ru: Фульк Бассет
+
+------------------------------
+
+Q-ID: Q81543342
+Suggested English Name: Филиппа Мобан
+All Language Labels:
+  ru: Филиппа Мобан
+
+------------------------------
+
+Q-ID: Q8206264
+Suggested English Name: Asbjørn Selsbane
+Geni Profile ID: 6000000003937145768
+All Language Labels:
+  ast: Asbjørn Selsbane
+  da: Asbjørn Selsbane
+  es: Asbjørn Selsbane
+  nb: Asbjørn Selsbane
+  nn: Asbjørn Selsbane
+
+------------------------------
+
+Q-ID: Q97208643
+Suggested English Name: Յազդ Սյունի
+All Language Labels:
+  hy: Յազդ Սյունի
+
+------------------------------
+
+Q-ID: Q97642300
+Suggested English Name: Гисла де Пальярс
+Geni Profile ID: 6000000003937192949
+All Language Labels:
+  ca: Guisla de Pallars
+  fr: Guisla de Pallars
+  nl: Guisla de Pallars
+  ru: Гисла де Пальярс
+
+------------------------------
+
