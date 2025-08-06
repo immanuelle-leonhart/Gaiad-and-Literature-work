@@ -14,10 +14,10 @@ from pymongo     import MongoClient
 # ─── CLI ──────────────────────────────────────────────────────────────────────
 cli = argparse.ArgumentParser()
 cli.add_argument("--mongo", default="mongodb://127.0.0.1:27017")
-cli.add_argument("--db",    default="european_genealogy")
+cli.add_argument("--db",    default="Muhammad")
 cli.add_argument("--coll",  default="persons")
-cli.add_argument("--limit", type=int, default=50)
-cli.add_argument("--out",   default="european_genealogy_sample.ged")
+cli.add_argument("--limit", type=int, default=5000)
+cli.add_argument("--out",   default="muhammad_genealogy.ged")
 args = cli.parse_args()
 
 # ─── constants ───────────────────────────────────────────────────────────────
@@ -68,7 +68,7 @@ def writ(lvl:int,tag:str,val:str="",xref:str="",fh=None):
     fh.write(f"{lvl} {'%s ' % xref if xref else ''}{tag}{' '+val if val else ''}\n")
 
 # ─── fetch slice from Mongo ───────────────────────────────────────────────────
-print(f"↻  loading first {args.limit} docs …")
+print(f"Loading first {args.limit} docs...")
 coll = MongoClient(args.mongo)[args.db][args.coll]
 docs = list(coll.find({},{"_id":0}).limit(args.limit))
 
@@ -112,7 +112,7 @@ for (a,b),kids in families.items():
         if c in people: people[c]["FAMC"]=fx
 
 # ─── write GEDCOM ─────────────────────────────────────────────────────────────
-print(f"✍  writing {args.out} …")
+print(f"Writing {args.out}...")
 with open(args.out,"w",encoding="utf-8") as g:
     writ(0,"HEAD",fh=g)
     writ(1,"SOUR","PantheonImporter-GEDCOM v4",fh=g)
@@ -146,4 +146,4 @@ with open(args.out,"w",encoding="utf-8") as g:
 
     writ(0,"TRLR",fh=g)
 
-print("✅  Done →",args.out)
+print("Done ->",args.out)

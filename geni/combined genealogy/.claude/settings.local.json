@@ -2,7 +2,11 @@
   "permissions": {
     "allow": [
       "Bash(python:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(pip install:*)",
+      "Bash(where python)",
+      "Bash(py -m pip install:*)",
+      "Bash(py:*)"
     ],
     "deny": []
   }
