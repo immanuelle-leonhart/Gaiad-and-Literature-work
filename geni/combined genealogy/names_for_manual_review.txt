@@ -1,0 +1,1538 @@
+Q-IDs USED AS NAMES WITHOUT ENGLISH LABELS - MANUAL REVIEW REQUIRED
+======================================================================
+
+Processing 128 Q-IDs that need English names.
+Review all labels and descriptions to create appropriate anglicizations.
+
+Q-ID: Q104668239
+Wikidata: https://www.wikidata.org/wiki/Q104668239
+Labels:
+  hy: Սամ Սյունի
+  ru: Сам Сюни
+Descriptions:
+  hy: հայ սեպուհ
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q104668241
+Wikidata: https://www.wikidata.org/wiki/Q104668241
+Labels:
+  hy: Վարազվաղան Սյունի
+Descriptions:
+  hy: հայ նախարար
+  nl: Nakharar uit Koninkrijk Armenië (?-470)
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q104668268
+Wikidata: https://www.wikidata.org/wiki/Q104668268
+Labels:
+  hy: անանուն Սյունի
+Descriptions:
+  hy: Սամ Սյունու դուստրը
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q104717611
+Wikidata: https://www.wikidata.org/wiki/Q104717611
+Labels:
+  hy: Գոտարձ Արծրունի
+Descriptions:
+  hy: հայ նախարար
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q104717615
+Wikidata: https://www.wikidata.org/wiki/Q104717615
+Labels:
+  hy: Տաճատ Արծրունի
+Descriptions: NONE FOUND
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q104717617
+Wikidata: https://www.wikidata.org/wiki/Q104717617
+Labels:
+  hy: Շավասպ Արծրունի
+Descriptions: NONE FOUND
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q104717732
+Wikidata: https://www.wikidata.org/wiki/Q104717732
+Labels:
+  hy: Մերշապուհ Արծրունի
+Descriptions: NONE FOUND
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q105605788
+Wikidata: https://www.wikidata.org/wiki/Q105605788
+Labels:
+  hy: Ատրներսեհ Սյունի
+  ru: Атрнерсе Сюни
+Descriptions:
+  hy: հայ իշխանազն
+  ru: 5 век
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q106564534
+Wikidata: https://www.wikidata.org/wiki/Q106564534
+Labels:
+  hy: Վահան Գ Արծրունի
+Descriptions:
+  hy: հայ նախարար
+  nl: Nakharar uit Koninkrijk Armenië (-)
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q106564587
+Wikidata: https://www.wikidata.org/wiki/Q106564587
+Labels:
+  hy: Մուշեղ Բ Արծրունի
+Descriptions:
+  hy: հայ նախարար
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q106564608
+Wikidata: https://www.wikidata.org/wiki/Q106564608
+Labels:
+  hy: Վաչե Բ Արծրունի
+Descriptions:
+  hy: հայ նախարար
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q106595799
+Wikidata: https://www.wikidata.org/wiki/Q106595799
+Labels:
+  hu: N. Mamikonján (Kamszarakan)
+  hy: անանուն Մամիկոնյան (Կամսարական)
+Descriptions:
+  hu: örmény hercegnő
+  hy: հայ իշխանուհի
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q106980648
+Wikidata: https://www.wikidata.org/wiki/Q106980648
+Labels:
+  hy: Բաբիկ Սյունի
+  ru: Бабик Сюни
+Descriptions: NONE FOUND
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q106980650
+Wikidata: https://www.wikidata.org/wiki/Q106980650
+Labels:
+  hy: Վասակ Սյունի
+Descriptions: NONE FOUND
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q106980652
+Wikidata: https://www.wikidata.org/wiki/Q106980652
+Labels:
+  hy: Աչիր Սյունի
+Descriptions: NONE FOUND
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q106980653
+Wikidata: https://www.wikidata.org/wiki/Q106980653
+Labels:
+  hy: Բաբկեն Սյունի
+Descriptions: NONE FOUND
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q106980660
+Wikidata: https://www.wikidata.org/wiki/Q106980660
+Labels:
+  hy: Գդիհոն Սյունի
+Descriptions: NONE FOUND
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q107530524
+Wikidata: https://www.wikidata.org/wiki/Q107530524
+Labels:
+  it: Basilio Mstislavič
+  ru: Василий Мстиславич
+Descriptions:
+  ru: сын Мстислава Андреевича
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q108208192
+Wikidata: https://www.wikidata.org/wiki/Q108208192
+Labels:
+  cs: Naděj Spes
+  nl: Naděj Spes
+  ru: Надей Спес
+Descriptions:
+  cs: opat benediktinského kláštera v Třebíči
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q108441599
+Wikidata: https://www.wikidata.org/wiki/Q108441599
+Labels:
+  fr: Main, seigneur de Saint-Aubin-d'Aubigné
+  ru: Мэн д’Обинье
+Descriptions:
+  ru: сеньор де Сент-Обен-д’Обинье
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q108441620
+Wikidata: https://www.wikidata.org/wiki/Q108441620
+Labels:
+  fr: Adelaïde de Bohun
+  ru: Аделиза де Богун
+Descriptions: NONE FOUND
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q108524465
+Wikidata: https://www.wikidata.org/wiki/Q108524465
+Labels:
+  fr: Ermengarde
+  ru: Ирменгарда де Санлис
+Descriptions:
+  en: 1023 -
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q108598515
+Wikidata: https://www.wikidata.org/wiki/Q108598515
+Labels:
+  fr: Béatrix
+  ru: Эделина
+Descriptions:
+  ru: сеньора де Л’Эгль
+Geni Profile: https://www.geni.com/people/6000000003396985516
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q110485463
+Wikidata: https://www.wikidata.org/wiki/Q110485463
+Labels:
+  ca: Sandukht Mamiconi
+  fr: Sandoukht Mamikonian
+  hy: Սանդուխտ Մամիկոնյան
+  ru: Сандухт Мамиконян
+Descriptions:
+  hy: հայ իշխանուհի
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q110486595
+Wikidata: https://www.wikidata.org/wiki/Q110486595
+Labels:
+  hy: Վրիկ Պարթև
+Descriptions: NONE FOUND
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q110486630
+Wikidata: https://www.wikidata.org/wiki/Q110486630
+Labels:
+  hy: Մանեճ Գնունի
+Descriptions:
+  hy: հայ նախարար
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q111442411
+Wikidata: https://www.wikidata.org/wiki/Q111442411
+Labels:
+  ru: Ричард Скруп
+Descriptions:
+  en: 1105 - before 1166
+  ru: английский землевладелец
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q111442414
+Wikidata: https://www.wikidata.org/wiki/Q111442414
+Labels:
+  fr: Agnès de Clare
+  ru: Агнес де Клер
+Descriptions:
+  en: 1125 -
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q111442678
+Wikidata: https://www.wikidata.org/wiki/Q111442678
+Labels:
+  ru: Роберт Скруп
+Descriptions:
+  en: 1190
+  ru: английский землевладелец
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q111660756
+Wikidata: https://www.wikidata.org/wiki/Q111660756
+Labels:
+  fr: Nastassia Kontchakovna
+  ru: Свобода Кончаковна
+  uk: Свобода Кончаківна
+Descriptions:
+  ru: половецкая княжна
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q112624721
+Wikidata: https://www.wikidata.org/wiki/Q112624721
+Labels:
+  be: Ефрасіння Расціславаўна
+  cs: Jevfrosiňja Rostislavna
+  ru: Евфросинья Ростиславна
+Descriptions: NONE FOUND
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q113373365
+Wikidata: https://www.wikidata.org/wiki/Q113373365
+Labels:
+  bg: Евдокия Дукина Комнина
+  ca: Eudòxia Comnena
+  el: Ευδοκία Δούκαινα Κομνηνή
+  fr: Eudocie Comnène
+  ru: Евдокия Дукиня Комнина
+Descriptions:
+  bg: византийска аристократка от XII в.
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q113373542
+Wikidata: https://www.wikidata.org/wiki/Q113373542
+Labels:
+  bg: Андроник Дука Комнин
+  ca: Andrònic Comnè
+  el: Ανδρόνικος Δούκας Κομνηνός
+  fr: Andronic Comnène
+  ru: Андроник Дука Комнин
+Descriptions:
+  bg: византийски аристократ от XII в.
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q114720727
+Wikidata: https://www.wikidata.org/wiki/Q114720727
+Labels:
+  cs: Gertruda Polská
+  pl: Gertruda
+Descriptions:
+  cs: dcera polského knížete Boleslava III. Křivoústého
+  en: 1126 - 7 May 1160
+  pl: księżniczka polska, córka Bolesława Krzywoustego
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q115339705
+Wikidata: https://www.wikidata.org/wiki/Q115339705
+Labels:
+  ru: Дмитрий
+  uk: Дмитро
+Descriptions:
+  ru: князь курский
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q115340008
+Wikidata: https://www.wikidata.org/wiki/Q115340008
+Labels:
+  ru: Юрий
+Descriptions:
+  ru: князь курский
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q117951953
+Wikidata: https://www.wikidata.org/wiki/Q117951953
+Labels:
+  bg: неизвестна по име Вотаниатиса
+  ca: (?) Botaniatissa
+  ru: сестра Никифора III Вотаниата
+Descriptions:
+  bg: сестра на император Никифор III Вотаниат
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q11921175
+Wikidata: https://www.wikidata.org/wiki/Q11921175
+Labels:
+  ast: Eudòcia Comnena
+  bg: Евдокия Комнина
+  ca: Eudòxia Comnena
+  cs: Eudokie Komnenovna
+  de: Eudòcia Comnena
+  el: Ευδοκία Κομνηνή
+  fr: Eudocia Comnène
+  la: Eudocia Comnena
+  ru: Евдокия Комнина
+  sr: Евдокија Комнин (ћерка Андроника Комнина)
+Descriptions:
+  bg: византийска принцеса от XII век
+  ca: filla d'Andrònic Comnè
+  el: Κόρη Ανδρόνικου Κομνηνού
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q12151167
+Wikidata: https://www.wikidata.org/wiki/Q12151167
+Labels:
+  be: Святаслаў Мсціславіч
+  be-tarask: Сьвятаслаў Мсьціславіч
+  cs: Svjatoslav Mstislavič
+  ru: Святослав Мстиславич
+  sv: Svjatoslav Mstislavitj
+  uk: Святослав Мстиславич
+Descriptions:
+  be: князь берасцейскі
+  be-tarask: князь берасьцейскі
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q12293532
+Wikidata: https://www.wikidata.org/wiki/Q12293532
+Labels:
+  bg: Секстия Цетегила
+  hy: Sextia Cethegilla
+  ru: Секстия Цетегилла
+  uk: Секстія Цетегілла
+Descriptions:
+  hy: Հռոմեական կայսր Պուպիենուսի կինը
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q123753995
+Wikidata: https://www.wikidata.org/wiki/Q123753995
+Labels:
+  bg: Евдокия Комнима
+  ca: Eudòxia Comnena
+Descriptions:
+  bg: византийска аристократка от XII в.
+  ca: dama noble romana d'Orient del segle XII
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q123983133
+Wikidata: https://www.wikidata.org/wiki/Q123983133
+Labels:
+  bg: Евдокия Аксухина
+Descriptions:
+  bg: дъщеря на великия доместик Йоан Аксух
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q124910922
+Wikidata: https://www.wikidata.org/wiki/Q124910922
+Labels:
+  ru: Элия
+Descriptions: NONE FOUND
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q125178091
+Wikidata: https://www.wikidata.org/wiki/Q125178091
+Labels:
+  ru: Изяслав Владимирович
+  uk: Ізяслав Володимирович
+Descriptions:
+  uk: путивльський
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q125178097
+Wikidata: https://www.wikidata.org/wiki/Q125178097
+Labels:
+  cs: Vsevolod Vladimirovič
+  ru: Всеволод Владимирович
+  uk: Всеволод Путивльський
+Descriptions:
+  ru: младший сын Владимира Игоревича новгород-северского
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q125578183
+Wikidata: https://www.wikidata.org/wiki/Q125578183
+Labels:
+  ru: Ростислав Ярославич
+Descriptions:
+  ru: княжич, сын Ярослава Владимировича
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q126118056
+Wikidata: https://www.wikidata.org/wiki/Q126118056
+Labels:
+  be: Баляслаў
+  pl: Bolesław Bolesławowic
+Descriptions:
+  pl: (1156-1172) starszy syn Bolesława Kędzierzawego
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q126281321
+Wikidata: https://www.wikidata.org/wiki/Q126281321
+Labels:
+  bg: Анна Комнина
+Descriptions:
+  bg: племенница на император Алексий I Комнин
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q1285826
+Wikidata: https://www.wikidata.org/wiki/Q1285826
+Labels:
+  ast: Friedrich III. von Ortenburg
+  cs: Bedřich III. Ortenburský
+  de: Friedrich III. von Ortenburg
+  nl: Friedrich III. von Ortenburg
+  ru: Фридрих III Ортенбургский
+Descriptions:
+  de: Stiftspropst von Berchtesgaden
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q130681251
+Wikidata: https://www.wikidata.org/wiki/Q130681251
+Labels:
+  bg: Йоан Дука
+  cs: Ioan Dukas
+  el: Ίωάννης Δούκας
+Descriptions:
+  bg: византийски аристократ от XII в.
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q131419591
+Wikidata: https://www.wikidata.org/wiki/Q131419591
+Labels:
+  bg: Алексий Комнин Ватаци
+Descriptions:
+  bg: византийски аристократ от XII, внук на император Йоан II Комнин
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q131460045
+Wikidata: https://www.wikidata.org/wiki/Q131460045
+Labels:
+  es: Erling de Bjarkøy
+Descriptions:
+  es: noble noruego
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q131782372
+Wikidata: https://www.wikidata.org/wiki/Q131782372
+Labels:
+  cs: Beringer ze Schauenburka
+  de: Beringer von Schauenburg
+Descriptions:
+  de: Herr von Sangerhausen
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q131927997
+Wikidata: https://www.wikidata.org/wiki/Q131927997
+Labels:
+  es: Roberto de Grandmesnil
+  sh: Robert de Grandmesnil
+Descriptions:
+  es: noble normando
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q134983894
+Wikidata: https://www.wikidata.org/wiki/Q134983894
+Labels:
+  fr: Maurice III de Craon
+Descriptions:
+  fr: Seigneur de Craon
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q135000263
+Wikidata: https://www.wikidata.org/wiki/Q135000263
+Labels:
+  fr: Mahaud de Malines
+Descriptions:
+  fr: femme noble
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q1496886
+Wikidata: https://www.wikidata.org/wiki/Q1496886
+Labels:
+  ast: Gebhard
+  bg: Гебхард
+  cs: Gebhart Ortenburský
+  de: Gebhard
+  fr: Gebhard
+  nl: Gebhard van Ortenburg
+  ru: Гебхард
+Descriptions:
+  de: Graf von Ortenburg und Murach
+  ru: граф Ортенбурга и Мураха
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q1521043
+Wikidata: https://www.wikidata.org/wiki/Q1521043
+Labels:
+  cs: Menhart Gorický a Istrijský
+  de: Meinhard von Görz und Istrien
+  it: Mainardo di Gorizia e Istria
+  nl: Meinhard von Görz und Istrien
+  ru: Мейнхард
+Descriptions:
+  de: Markgraf von Istrien und Vogt von Parenzo
+  ru: маркграф Истрии
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q1553582
+Wikidata: https://www.wikidata.org/wiki/Q1553582
+Labels:
+  de: Guido IV.
+  fr: Guy IV de Limoges
+  nb: Guy IV de Limoges
+  nl: Guido IV.
+  ru: Ги IV
+Descriptions:
+  de: Vizegraf von Limoges
+  fr: vicomte de Limoges
+  ru: виконт Лиможа
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q16369095
+Wikidata: https://www.wikidata.org/wiki/Q16369095
+Labels:
+  az: I Arşuşa
+  es: I Arşuşa
+Descriptions: NONE FOUND
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q16374186
+Wikidata: https://www.wikidata.org/wiki/Q16374186
+Labels:
+  hy: Պերոզավր Սյունի
+  ka: პეროჟავრი სივნიელი
+Descriptions:
+  hy: Իշխան
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q16652462
+Wikidata: https://www.wikidata.org/wiki/Q16652462
+Labels:
+  ast: Þorsteinn Þorkelsson
+  es: Þorsteinn Þorkelsson
+Descriptions: NONE FOUND
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q1686793
+Wikidata: https://www.wikidata.org/wiki/Q1686793
+Labels:
+  ast: Werigand
+  bg: Вериганд
+  cs: Werigand Friulský
+  de: Werigand
+  it: Werigand del Friuli
+  nl: Werigand
+  ru: Вериганд Фриульский
+Descriptions:
+  de: Graf von Friaul und Istrien, Vogt des Herzogs von Kärnten und von St. Peter in Salzburg
+  en: 975 - after 1051
+  ru: граф Фриуля и Истрии
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q1755579
+Wikidata: https://www.wikidata.org/wiki/Q1755579
+Labels:
+  da: Ratibor
+  de: Ratibor
+  el: Ράτιμπορ
+  nl: Ratibor van Pommeren
+  pl: Racibor Bogusławowic
+  ru: Ратибор
+Descriptions:
+  da: prins af Pommern
+  de: Prinz von Pommern
+  en: (1160 - 1183)
+  pl: (1160 - 1183) książe pomorski
+  ru: принц Померанский
+  uk: (1160-1183)
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q19918149
+Wikidata: https://www.wikidata.org/wiki/Q19918149
+Labels:
+  fr: Ailill mac Donnchad
+  ga: Ailill mac Donnchad
+  ru: Айлиль мак Доннхада
+Descriptions:
+  ru: король Миде
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q19918417
+Wikidata: https://www.wikidata.org/wiki/Q19918417
+Labels:
+  fr: Flann mac Máele Ruanaid
+  ga: Flann mac Máele Ruanaid
+  ru: Фланн мак Маэл Руанайд
+Descriptions:
+  ru: короли Миде
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q20046078
+Wikidata: https://www.wikidata.org/wiki/Q20046078
+Labels:
+  ast: Odulfo
+  nl: Odulfo
+  pt: Odulfo
+  pt-br: Odulfo
+  ru: Одульф
+  uk: Одульф
+Descriptions:
+  en: (est. 260 - uncertain)
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q20047936
+Wikidata: https://www.wikidata.org/wiki/Q20047936
+Labels:
+  ast: Beatriz de Champlite
+  cs: Beatrix ze Champlitte
+  el: Βεατρίκη του Σαμπλίτ
+  es: Beatriz de Champlite
+  nl: Beatriz de Champlite
+  pt: Beatriz de Champlite
+  pt-br: Beatriz de Champlite
+  ru: Беатрис де Шамплит
+Descriptions:
+  cs: francouzská šlechtična
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q2283424
+Wikidata: https://www.wikidata.org/wiki/Q2283424
+Labels:
+  bg: Зигфрид I фон Лебенау
+  ca: Sigfrid I de Lebenau
+  cs: Sigfrid ze Sponheimu
+  de: Siegfried I.
+  nl: Siegfried I.
+  ru: Зигфрид II
+Descriptions:
+  ca: comte de Lebenau
+  de: Graf von Lebenau, Graf von Arch
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q24357457
+Wikidata: https://www.wikidata.org/wiki/Q24357457
+Labels:
+  ast: Conon de Genève
+  el: Κόνων της Γενεύης
+  fr: Conon de Genève
+  nl: Conon de Genève
+  ru: Конон Женевский
+Descriptions:
+  el: Κόμης της Γενεύης
+  fr: comte de Genève
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q28862129
+Wikidata: https://www.wikidata.org/wiki/Q28862129
+Labels:
+  ast: Ясінь
+  es: Ясінь
+  ru: Ясинь
+  uk: Ясінь
+Descriptions:
+  en: Cuman chieftains
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q29892245
+Wikidata: https://www.wikidata.org/wiki/Q29892245
+Labels:
+  el: Τατσατουχί Αρτσρουνί
+  hy: Տաճատուհի Արծրունի
+  ru: Татжастуи Арцруни
+Descriptions: NONE FOUND
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q29895627
+Wikidata: https://www.wikidata.org/wiki/Q29895627
+Labels:
+  hy: Աղան Արծրունի
+  ru: Аган Арцруни
+Descriptions:
+  hy: եկեղեցական և մշակութային գործիչ, գիտնական
+  nl: wetenschapper
+  uk: науковець
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q29895705
+Wikidata: https://www.wikidata.org/wiki/Q29895705
+Labels:
+  hy: Վասակ Արծրունի
+  ru: Васак Арцруни
+Descriptions:
+  hy: իշխան
+  ru: князь
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q29896118
+Wikidata: https://www.wikidata.org/wiki/Q29896118
+Labels:
+  hy: Մերհուժան Արծրունի
+  ru: Меружан Арцруни
+Descriptions: NONE FOUND
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q29896134
+Wikidata: https://www.wikidata.org/wiki/Q29896134
+Labels:
+  hy: Ջոջիկ Միհրանյան
+Descriptions: NONE FOUND
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q30887565
+Wikidata: https://www.wikidata.org/wiki/Q30887565
+Labels:
+  ast: Gui II de Limoges
+  fr: Gui II de Limoges
+  nl: Gui II de Limoges
+  ru: Ги II
+Descriptions: NONE FOUND
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q30887569
+Wikidata: https://www.wikidata.org/wiki/Q30887569
+Labels:
+  ast: Adémar II de Limoges
+  fr: Adémar II de Limoges
+  nl: Adémar II de Limoges
+  ru: Адемар II
+Descriptions:
+  en: 1023-
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q30887573
+Wikidata: https://www.wikidata.org/wiki/Q30887573
+Labels:
+  ast: Adémar III de Limoges
+  fr: Adémar III de Limoges
+  nl: Adémar III de Limoges
+  ru: Адемар III
+Descriptions:
+  en: (1065-1148)
+  uk: (1065-1148)
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q30887585
+Wikidata: https://www.wikidata.org/wiki/Q30887585
+Labels:
+  ast: Guillaume Talairand de Périgord
+  fr: Guillaume Talairand de Périgord
+  nl: Guillaume Talairand de Périgord
+  ru: Гильом III
+Descriptions:
+  fr: comte du Périgord
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q30887741
+Wikidata: https://www.wikidata.org/wiki/Q30887741
+Labels:
+  ast: Otto III. von Scheyern
+  de: Otto III. von Scheyern
+  fr: Otto III. von Scheyern
+  nl: Otto III. von Scheyern
+  ru: Оттон III фон Шайерн
+Descriptions:
+  en: (1083-1123)
+  uk: (1083-1123)
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q31110932
+Wikidata: https://www.wikidata.org/wiki/Q31110932
+Labels:
+  el: αγνώστων στοιχείων Μαμικονιάν
+  hy: անանուն Մամիկոնյան
+  ru: безымянная Мамиконян
+Descriptions:
+  el: σύζυγος του Σαβάσπ Αρτσρουνί
+  hy: Շավասպ Արծրունու կինը
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q31192919
+Wikidata: https://www.wikidata.org/wiki/Q31192919
+Labels:
+  bg: Мегинхард
+  cs: Meginard ze Sponheimu
+Descriptions: NONE FOUND
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q3567358
+Wikidata: https://www.wikidata.org/wiki/Q3567358
+Labels:
+  fr: Werri II de Walcourt
+Descriptions: NONE FOUND
+Geni Profile: https://www.geni.com/people/6000000002388437308
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q4183031
+Wikidata: https://www.wikidata.org/wiki/Q4183031
+Labels:
+  ru: Завид Дмитрович
+Descriptions: NONE FOUND
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q4293220
+Wikidata: https://www.wikidata.org/wiki/Q4293220
+Labels:
+  ast: Mikula
+  de: Mikula
+  nl: Mikula
+  ru: Микула
+Descriptions:
+  de: Statthalter von Nowgorod (vor 1117)
+  ru: посадник
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q46014942
+Wikidata: https://www.wikidata.org/wiki/Q46014942
+Labels:
+  ast: Valinaces I
+  hy: Վաղինակ Ա Սյունի
+  nl: Valinaces I
+  pt: Valinaces I
+  pt-br: Valinaces I
+  ru: Вагинак Сюни
+Descriptions:
+  hy: Սյունիքի իշխան
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q47463743
+Wikidata: https://www.wikidata.org/wiki/Q47463743
+Labels:
+  el: αγνώστων στοιχείων Γκνουνί
+  hy: անանուն Գնունի
+  ru: безымянная Гнуни
+Descriptions: NONE FOUND
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q55348249
+Wikidata: https://www.wikidata.org/wiki/Q55348249
+Labels:
+  ast: Jeanne de Mayenne
+  es: Jeanne de Mayenne
+  fr: Jeanne de Mayenne
+  nl: Jeanne de Mayenne
+  ru: Жанна де Майен
+Descriptions:
+  en: 1249
+  fr: comtesse de Vendôme
+Geni Profile: https://www.geni.com/people/6000000003827587425
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q55385340
+Wikidata: https://www.wikidata.org/wiki/Q55385340
+Labels:
+  ast: Berthe du Puy-du-Fou
+  fr: Berthe du Puy-du-Fou
+  nl: Berthe du Puy-du-Fou
+  ru: Берта дю Пюи-дю-Фу
+Descriptions:
+  en: (est. 1110 - 1133)
+  fr: comtesse de Vendôme
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q55385907
+Wikidata: https://www.wikidata.org/wiki/Q55385907
+Labels:
+  ast: Mathilde de Châteaudun
+  ca: Matilde de Châteaudun
+  fr: Mathilde de Châteaudun
+  nl: Mathilde de Châteaudun
+  ru: Матильда де Шатоден
+Descriptions:
+  fr: comtesse de Vendôme
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q55386214
+Wikidata: https://www.wikidata.org/wiki/Q55386214
+Labels:
+  ast: Mathilde de Vendôme
+  ca: Matilde de Vendôme
+  fr: Mathilde de Vendôme
+  nl: Mathilde de Vendôme
+  ru: Матильда (Маго) де Вандом
+Descriptions:
+  en: -1214
+  fr: comtesse de Trégor, fille de Jean Ier de Vendôme
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q55387481
+Wikidata: https://www.wikidata.org/wiki/Q55387481
+Labels:
+  ast: Geoffroy de Vendôme
+  ca: Geoffroy de Vendôme
+  fr: Geoffroy de Vendôme
+  nl: Geoffroy de Vendôme
+  ru: Жоффруа Вандомский
+Descriptions:
+  fr: fils de Geoffroy III de Vendôme
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q55390938
+Wikidata: https://www.wikidata.org/wiki/Q55390938
+Labels:
+  ast: Pétronille de Château-Renard
+  fr: Pétronille de Château-Renard
+  nl: Pétronille de Château-Renard
+  ru: Петронилла де Шато-Гонтье
+Descriptions:
+  en: -1078
+  fr: comtesse de Vendôme
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q55399053
+Wikidata: https://www.wikidata.org/wiki/Q55399053
+Labels:
+  ast: Agathe de Vendôme
+  es: Agathe de Vendôme
+  fr: Agathe de Vendôme
+  nl: Agathe de Vendôme
+  ru: Агата де Вандом
+Descriptions:
+  en: 1050 - after 1095
+  fr: comtesse de Beaumont-au-Maine, fille de Foulques l'Oison
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q55399331
+Wikidata: https://www.wikidata.org/wiki/Q55399331
+Labels:
+  ast: Geoffroy de Vendôme
+  es: Geoffroy de Vendôme
+  fr: Geoffroy de Vendôme
+  nl: Geoffroy de Vendôme
+  ru: Жоффруа де Вандом
+Descriptions:
+  fr: fils de Foulques l'Oison
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q56006624
+Wikidata: https://www.wikidata.org/wiki/Q56006624
+Labels:
+  ca: Adelaida d'Urgell
+  el: Σάντσα του Ουρζέλ
+  fr: Sancha d'Urgell
+  nl: Sancha d'Urgell
+  ru: Санча Урхельская
+Descriptions:
+  fr: fille d'Armengol IV et d'Adélaïde de Forcalquier
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q56285638
+Wikidata: https://www.wikidata.org/wiki/Q56285638
+Labels:
+  ast: Enguerrand II de Fiennes
+  fr: Enguerrand II de Fiennes
+  hu: ismeretlen személy
+  nl: Enguerrand II de Fiennes
+  ru: Ангерран II де Фиенн
+Descriptions:
+  en: Peerage person ID=3567
+  ru: сеньор де Фиенн и де Тингри
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q56285642
+Wikidata: https://www.wikidata.org/wiki/Q56285642
+Labels:
+  ast: Isabelle de Condé
+  fr: Isabelle de Condé
+  hu: ismeretlen személy
+  nl: Isabelle de Condé
+  ru: Изабелла де Конде
+Descriptions:
+  en: Peerage person ID=406252
+  ru: французская аристократка
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q56367490
+Wikidata: https://www.wikidata.org/wiki/Q56367490
+Labels:
+  ru: Дрогон
+Descriptions: NONE FOUND
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q5900614
+Wikidata: https://www.wikidata.org/wiki/Q5900614
+Labels:
+  ast: Karl Karlsson
+  nl: Karl Karlsson
+  ru: Карл Карлссон
+  sv: Karl Karlsson (Ulv)
+Descriptions:
+  en: (1221-1253)
+  sv: son till jarlen Karl Döve
+  uk: (1221-1253)
+Geni Profile: https://www.geni.com/people/6000000003349367528
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q59416749
+Wikidata: https://www.wikidata.org/wiki/Q59416749
+Labels:
+  bg: Ривин I фон Дилинген
+Descriptions:
+  bg: Граф на Дилинген
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q6162664
+Wikidata: https://www.wikidata.org/wiki/Q6162664
+Labels:
+  be: Прыслаў
+  cs: Prislav
+  da: Prislav
+  de: Prislav
+  el: Πρίσλαβ
+  fr: Prislav de Laaland
+  nb: Prislav av Lolland
+  nl: Prislav
+  pl: Przesław
+  ru: Прислав
+  sv: Prislav av Lolland
+Descriptions:
+  cs: lollandský jarl
+  da: jarl af Lolland
+  de: Fürst der Abodriten
+  nb: fyrste av obodriterne
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q61638527
+Wikidata: https://www.wikidata.org/wiki/Q61638527
+Labels:
+  fr: Otta d'Agliè
+  ru: Отта ди Огледо
+Descriptions:
+  en: est. 1050 -
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q61727062
+Wikidata: https://www.wikidata.org/wiki/Q61727062
+Labels:
+  fr: Rodulf
+  nb: Ralph de Warenne
+  nl: Rudolf van Warenne
+  ru: Родульф (Ральф) де Варенн
+Descriptions:
+  en: Peerage person ID=4486
+  ru: нормандский рыцарь
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q61896439
+Wikidata: https://www.wikidata.org/wiki/Q61896439
+Labels:
+  ru: Эмма Фиц-Роберт
+Descriptions:
+  en: Peerage person ID=47191
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q61911553
+Wikidata: https://www.wikidata.org/wiki/Q61911553
+Labels:
+  ru: Уильям III де Бошан из Элмли
+Descriptions:
+  en: Peerage person ID=397777
+  ru: феодальный барон Салварпа
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q61911578
+Wikidata: https://www.wikidata.org/wiki/Q61911578
+Labels:
+  ru: Роберт де Модит
+Descriptions: NONE FOUND
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q61911579
+Wikidata: https://www.wikidata.org/wiki/Q61911579
+Labels:
+  ru: Изабелла Бассет
+Descriptions: NONE FOUND
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q61911581
+Wikidata: https://www.wikidata.org/wiki/Q61911581
+Labels:
+  ru: Уильям де Модит
+Descriptions: NONE FOUND
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q61911582
+Wikidata: https://www.wikidata.org/wiki/Q61911582
+Labels:
+  ru: Изабелла де Санлис
+Descriptions: NONE FOUND
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q61963109
+Wikidata: https://www.wikidata.org/wiki/Q61963109
+Labels:
+  ru: Матильда де Сен-Хилар
+Descriptions: NONE FOUND
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q61963721
+Wikidata: https://www.wikidata.org/wiki/Q61963721
+Labels:
+  ru: Анна де Квинси
+Descriptions:
+  ru: монахиня
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q61971028
+Wikidata: https://www.wikidata.org/wiki/Q61971028
+Labels:
+  ru: Роберт Фицральф
+Descriptions:
+  en: (1277-1317)
+  uk: (1277-1317)
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q61971033
+Wikidata: https://www.wikidata.org/wiki/Q61971033
+Labels:
+  ru: Элизабет Невилл из Стейнтона
+Descriptions: NONE FOUND
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q63183632
+Wikidata: https://www.wikidata.org/wiki/Q63183632
+Labels:
+  fr: Aline Pipard
+  ru: Эйлин Пипард
+Descriptions: NONE FOUND
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q63247302
+Wikidata: https://www.wikidata.org/wiki/Q63247302
+Labels:
+  fr: Matilda
+  ru: Матильда
+Descriptions:
+  ru: жена Патрика, 1-го графа Солсбери
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q63436758
+Wikidata: https://www.wikidata.org/wiki/Q63436758
+Labels:
+  fr: Radegonde Orieldis
+  nl: Radegonde Orieldis
+  ru: Радегонда
+Descriptions:
+  en: 1064 - 1147
+  ru: сеньора де Динан
+  uk: (1064-1147)
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q65515717
+Wikidata: https://www.wikidata.org/wiki/Q65515717
+Labels:
+  el: Χαμαζασπιάν Μαμικονιάν
+  hy: Համազասպյան Մամիկոնյան
+Descriptions:
+  hy: սեպուհ
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q65515718
+Wikidata: https://www.wikidata.org/wiki/Q65515718
+Labels:
+  el: Αρτασές Μαμικονιάν
+  hy: Արտաշես Մամիկոնյան
+Descriptions:
+  hy: սեպուհ
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q73612935
+Wikidata: https://www.wikidata.org/wiki/Q73612935
+Labels:
+  be: Валодшыч
+  be-tarask: Брачыслаў Валодшыч
+  cs: neznámý Volodšič
+  ru: Володшич
+  uk: Володшич
+Descriptions:
+  be: імя не вядома, брат Андрэя Валодшыча, бацька яго пляменніка Ізяслава (абодва згаданы пад 1180)
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q75247665
+Wikidata: https://www.wikidata.org/wiki/Q75247665
+Labels:
+  cs: Konrád Dolnobavorský
+  nl: Conrad von Unter-Bayern
+Descriptions: NONE FOUND
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q80913710
+Wikidata: https://www.wikidata.org/wiki/Q80913710
+Labels:
+  ru: Жильбер Бассет
+Descriptions:
+  en: 1109
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q81058232
+Wikidata: https://www.wikidata.org/wiki/Q81058232
+Labels:
+  ru: Фульк Бассет
+Descriptions: NONE FOUND
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q81543342
+Wikidata: https://www.wikidata.org/wiki/Q81543342
+Labels:
+  ru: Филиппа Мобан
+Descriptions:
+  en: -1225
+  ru: леди Бассет
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q8206264
+Wikidata: https://www.wikidata.org/wiki/Q8206264
+Labels:
+  ast: Asbjørn Selsbane
+  da: Asbjørn Selsbane
+  es: Asbjørn Selsbane
+  nb: Asbjørn Selsbane
+  nn: Asbjørn Selsbane
+Descriptions: NONE FOUND
+Geni Profile: https://www.geni.com/people/6000000003937145768
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q97208643
+Wikidata: https://www.wikidata.org/wiki/Q97208643
+Labels:
+  hy: Յազդ Սյունի
+Descriptions:
+  hy: հայ սեպուհ Սյունիների նախարարական տոհմից
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+
+Q-ID: Q97642300
+Wikidata: https://www.wikidata.org/wiki/Q97642300
+Labels:
+  ca: Guisla de Pallars
+  fr: Guisla de Pallars
+  nl: Guisla de Pallars
+  ru: Гисла де Пальярс
+Descriptions:
+  ca: noble catalana
+  fr: épouse de Guifred II de Cerdagne
+Geni Profile: https://www.geni.com/people/6000000003937192949
+
+SUGGESTED ENGLISH NAME: [TO BE FILLED]
+------------------------------------------------------------
+

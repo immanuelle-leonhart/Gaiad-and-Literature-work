@@ -23,7 +23,8 @@
       "Bash(do echo \"=== $file ===\")",
       "Bash(wc:*)",
       "Bash(done)",
-      "Bash(for file in chapter_*.md)"
+      "Bash(for file in chapter_*.md)",
+      "WebFetch(domain:en.wikipedia.org)"
     ],
     "deny": []
   }
