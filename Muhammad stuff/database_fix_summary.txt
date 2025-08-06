@@ -1,0 +1,11 @@
+DATABASE FIX SUMMARY
+==================================================
+
+Total entries in database: 11117
+Entries with Geni profile IDs: 1447
+Geni IDs added in this run: 1447
+Entries needing English labels: 244
+Coverage: 97.8% have English labels
+
+Translation file created: missing_english_labels.json
+Review the JSON file and fill in English names for missing entries.

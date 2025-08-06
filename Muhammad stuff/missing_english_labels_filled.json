@@ -1,0 +1,3082 @@
+{
+  "Q6740568": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q6740568",
+    "labels": {
+      "ar": "الحارث بن أبي هالة",
+      "ur": "حارث بن ابی ہالہ"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "al-Harith ibn Abi Hala"
+  },
+  "Q124407065": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q124407065",
+    "labels": {
+      "ar": "الطاهر بن أبي هالة",
+      "pnb": "طاہر بن ابی ہالہ",
+      "ur": "طاہر بن ابی ہالہ"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "al-Tahir ibn Abi Hala"
+  },
+  "Q125493156": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q125493156",
+    "labels": {
+      "ar": "الزبير بن أبي هالة",
+      "ur": "زبیر بن ابی ہالہ"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "al-Zubayr ibn Abi Hala"
+  },
+  "Q124407066": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q124407066",
+    "labels": {
+      "ar": "هالة بن أبي هالة",
+      "ur": "ہالہ بن ابی ہالہ"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Hala ibn Abi Hala"
+  },
+  "Q12185920": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q12185920",
+    "labels": {
+      "ar": "الحارث بن أبي ضرار",
+      "ca": "al-Hàrith ibn Abi-Dirar",
+      "ast": "al-Hàrith ibn Abi-Dirar"
+    },
+    "descriptions": {
+      "ca": "sahabí (company del profeta Muhàmmad)",
+      "ar": "سيد بني المصطلق من خزاعة و هو والد أم المؤمنين جويرية بنت الحارث ثامن زوجات النبي محمد"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "al-Harith ibn Abi Dirar"
+  },
+  "Q12223444": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q12223444",
+    "labels": {
+      "ar": "عبد الله بن أبي أمية",
+      "ru": "Абдуллах ибн Абу Умайя",
+      "ur": "عبداللہ بن ابی امیہ",
+      "uz": "Abdulloh ibn Abu Umayya"
+    },
+    "descriptions": {
+      "uz": "Abdulloh ibn Abu Umayya sahoba"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Abd Allah ibn Abi Umayya"
+  },
+  "Q106927513": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q106927513",
+    "labels": {
+      "ar": "زهير بن أبي أمية",
+      "ru": "Зухайр ибн Абу Умайя",
+      "ur": "زہیر بن ابی امیہ"
+    },
+    "descriptions": {
+      "ar": "ابن عمة النبي محمد"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Zuhayr ibn Abi Umayya"
+  },
+  "Q106926120": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q106926120",
+    "labels": {
+      "ar": "عامر بن أبي أمية",
+      "ru": "'Амир ибн Абу Умайя",
+      "ur": "عامر بن ابی امیہ"
+    },
+    "descriptions": {
+      "ar": "صحابي، أخو أم المؤمنين أم سلمة"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Amir ibn Abi Umayya"
+  },
+  "Q106881635": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q106881635",
+    "labels": {
+      "ar": "قريبة الكبرى بنت أبي أمية",
+      "ur": "قريبہ كبرى بنت ابی اميہ",
+      "ru": "Курайба аль-Кубра бинт Абу Умайя"
+    },
+    "descriptions": {
+      "ar": "صحابية وابنة عمة النبي محمد"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Qurayba the Elder bint Abi Umayya"
+  },
+  "Q104157769": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q104157769",
+    "labels": {
+      "ar": "درة بنت أبي سلمة",
+      "ur": "درہ بنت ابی سلمہ",
+      "ru": "Дурра бинт Абу Саляма",
+      "sv": "Ruqayyah"
+    },
+    "descriptions": {
+      "ar": "إحدى ربائب النبي محمد من زوجته أم سلمة"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Durra bint Abi Salama"
+  },
+  "Q106830828": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q106830828",
+    "labels": {
+      "ar": "محمد بن أبي سلمة"
+    },
+    "descriptions": {
+      "ar": "ابن أم سلمة"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Muhammad ibn Abi Salama"
+  },
+  "Q104300567": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q104300567",
+    "labels": {
+      "ar": "المغيرة بن الحارث",
+      "ru": "аль-Мугира ибн аль-Харис",
+      "ur": "مغیرہ بن حارث",
+      "es": "Al-Mughira ibn al-Harith"
+    },
+    "descriptions": {
+      "ar": "ابن عم النبي محمد",
+      "es": "primo del profeta Mahoma"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "al-Mughira ibn al-Harith"
+  },
+  "Q106847674": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q106847674",
+    "labels": {
+      "ar": "عبد الله بن الحارث بن عبد المطلب",
+      "ru": "Абдуллах ибн аль-Харис ибн Абду-ль-Мутталиб",
+      "ur": "عبد اللہ بن حارث بن عبد المطلب"
+    },
+    "descriptions": {
+      "ar": "ابن عم الرسول",
+      "ur": "رسول اللہ کے چچا زاد بھائی"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Abd Allah ibn al-Harith ibn Abd al-Muttalib"
+  },
+  "Q107002705": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q107002705",
+    "labels": {
+      "ar": "هند بنت الحارث بن عبد المطلب",
+      "ur": "ہند بنت حارث بن عبد المطلب",
+      "ru": "Хинд бинт Харис"
+    },
+    "descriptions": {
+      "ar": "صحابية وابنة عم النّبي"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Hind bint al-Harith ibn Abd al-Muttalib"
+  },
+  "Q124963232": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q124963232",
+    "labels": {
+      "ar": "عمارة بن حمزة",
+      "ur": "عمارہ بن حمزہ بن عبد المطلب"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Umara ibn Hamza"
+  },
+  "Q16127345": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q16127345",
+    "labels": {
+      "ar": "معتب بن أبي لهب",
+      "ru": "Му‘аттиб ибн Абу Ляхаб",
+      "sv": "Mutaib bin Abu Lahab",
+      "ca": "Muàttib ibn Abi-Làhab",
+      "ur": "معتب بن ابی لہب",
+      "cs": "Muàttib ibn Abi-Làhab"
+    },
+    "descriptions": {
+      "ca": "cosí del profeta Muhàmmad",
+      "ar": "صحابي وابن عم النبي"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Muattib ibn Abi Lahab"
+  },
+  "Q104029490": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q104029490",
+    "labels": {
+      "ar": "عزة بنت أبي لهب",
+      "ur": "عزہ بنت ابی لہب",
+      "pnb": "عزہ بنت ابی لہب",
+      "ru": "Азза бинт Абу Ляхаб",
+      "sv": "Uzzā bint Abu Lahab",
+      "ca": "Azza bint Abi-làhab",
+      "cs": "Azza bint Abi-Láhab"
+    },
+    "descriptions": {
+      "ar": "صحابية، وابنة عم النبي محمد",
+      "ca": "cosina i sahabiyya (companya) del profeta Muhàmmad"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Azza bint Abi Lahab"
+  },
+  "Q106827510": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q106827510",
+    "labels": {
+      "ar": "عبد الأسد بن هلال"
+    },
+    "descriptions": {
+      "ar": "والد أبي سلمة"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Abd al-Asad ibn Hilal"
+  },
+  "Q106827518": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q106827518",
+    "labels": {
+      "ar": "أبو رهم بن عبد العزى"
+    },
+    "descriptions": {
+      "ar": "زوج عمة النبي"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Abu Ruhm ibn Abd al-Uzza"
+  },
+  "Q12180468": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q12180468",
+    "labels": {
+      "ar": "أم عمارة بنت سفيان",
+      "ur": "ام عمارہ بنت سفیان"
+    },
+    "descriptions": {
+      "ar": "جدة عمر بن عبد العزيز"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Umm Amara bint Sufyan"
+  },
+  "Q89829581": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q89829581",
+    "labels": {
+      "ar": "أميمة بنت عدي",
+      "ur": "امیمہ بنت عدی",
+      "ru": "Умайма бинт Ади"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Umayma bint Adi"
+  },
+  "Q108910294": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q108910294",
+    "labels": {
+      "ar": "حفصة بنت عبد الرحمن بن أبي بكر",
+      "ur": "حفصہ بنت عبدالرحمٰن بن ابی بکر",
+      "ru": "Хафса бинт Абдуррахман ибн Абу Бакр"
+    },
+    "descriptions": {
+      "ar": "من رواة الحديث النبوي"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Hafsa bint Abd al-Rahman ibn Abi Bakr"
+  },
+  "Q12204945": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q12204945",
+    "labels": {
+      "ar": "جبلة بن حارثة",
+      "ca": "Jabala ibn Hàritha",
+      "ast": "Jabala ibn Hàritha",
+      "tr": "Cebele b. Harise"
+    },
+    "descriptions": {
+      "ca": "sahabí (company del profeta Muhàmmad)",
+      "tr": "Hz. Muhammed'le sohbet etmiş Müslüman (sahabe)"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Jabala ibn Haritha"
+  },
+  "Q124449927": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q124449927",
+    "labels": {
+      "ar": "الأسود بن عبد الأسد",
+      "ur": "اسود بن عبد الاسد"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "al-Aswad ibn Abd al-Asad"
+  },
+  "Q60565045": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q60565045",
+    "labels": {
+      "ar": "مصعب بن محارب"
+    },
+    "descriptions": {
+      "ar": "قائد عسكري"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Musab ibn Muharib"
+  },
+  "Q61358382": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q61358382",
+    "labels": {
+      "ar": "أم سعيد بنت عروة بن مسعود الثقفي",
+      "fa": "ام سعید بنت عروه",
+      "ur": "ام سعید بنت عروہ ثقفیہ",
+      "mul": "Umm Sa'id bint Urwah",
+      "ru": "Умм Са’ид бинт Урва"
+    },
+    "descriptions": {
+      "ar": "ام سعيد بنت عروه"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Umm Sa'id bint Urwah"
+  },
+  "Q125493719": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q125493719",
+    "labels": {
+      "ar": "قرة بن حجل بن عبد المطلب",
+      "ur": "قرہ بن حجل بن عبد المطلب"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Qurra ibn Hajal"
+  },
+  "Q25453774": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q25453774",
+    "labels": {
+      "ar": "أمة بنت خالد بن سعيد",
+      "ca": "Umma bint Khàlid ibn Saïd",
+      "ru": "Амат бинт Халид ибн Саид",
+      "ast": "Umma bint Khàlid ibn Saïd",
+      "ur": "امہ بنت خالد بن سعيد"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Amah bint Khalid ibn Sa'id"
+  },
+  "Q88977398": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q88977398",
+    "labels": {
+      "ar": "العباس بن عتبة"
+    },
+    "descriptions": {
+      "ar": "ابن عم الرسول محمد وصاحب علي بن أبي طالب"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "al-Abbas ibn Utbah"
+  },
+  "Q88918981": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q88918981",
+    "labels": {
+      "ar": "الفضل اللهبي"
+    },
+    "descriptions": {
+      "ar": "الفضل بن العباس"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "al-Fadl al-Lahabi"
+  },
+  "Q101116564": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q101116564",
+    "labels": {
+      "ar": "أحمد بن عقيل بن أبي طالب"
+    },
+    "descriptions": {
+      "ar": "ابن عقيل بن أبي طالب وقتل في كربلاء"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Ahmad ibn Aqil ibn Abi Talib"
+  },
+  "Q101124107": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q101124107",
+    "labels": {
+      "ar": "معين بن عقيل بن أبي طالب"
+    },
+    "descriptions": {
+      "ar": "ابن عقيل بن أبي طالب وقتل في كربلاء"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Mu'in ibn Aqil ibn Abi Talib"
+  },
+  "Q12205558": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q12205558",
+    "labels": {
+      "ar": "جعفر بن أبي سفيان",
+      "ca": "Jàfar ibn Abi-Sufyan",
+      "ast": "Jàfar ibn Abi-Sufyan",
+      "ur": "جعفر بن ابی سفیان"
+    },
+    "descriptions": {
+      "ca": "sahabí (company del profeta Muhàmmad)",
+      "ar": "صحابي جليل"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Ja'far ibn Abi Sufyan"
+  },
+  "Q107166265": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q107166265",
+    "labels": {
+      "ar": "عبد الله بن أبي سفيان"
+    },
+    "descriptions": {
+      "ar": "ابن الصحابي أبو سفيان بن الحارث، يُكنى أبو الهياج"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Abd Allah ibn Abi Sufyan"
+  },
+  "Q28715515": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q28715515",
+    "labels": {
+      "ar": "عبد المطلب بن ربيعة بن الحارث",
+      "ca": "Abd-al-Múttalib ibn Rabia ibn al-Hàrith",
+      "ast": "Abd-al-Múttalib ibn Rabia ibn al-Hàrith",
+      "ur": "عبد المطلب بن ربیعہ بن حارث",
+      "tr": "Abdülmuttalib b. Rebia"
+    },
+    "descriptions": {
+      "ca": "sahabí (company del profeta Muhàmmad)",
+      "tr": "Hz. Muhammed'le sohbet etmiş Müslüman (sahabe)"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Abd al-Muttalib ibn Rabi'a ibn al-Harith"
+  },
+  "Q115454801": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q115454801",
+    "labels": {
+      "ar": "سليم بن قيس بن قهد",
+      "ur": "سلیم بن قیس بن قہد"
+    },
+    "descriptions": {
+      "ar": "صحابي بدري"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Sulaym ibn Qays ibn Qahd"
+  },
+  "Q115777145": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q115777145",
+    "labels": {
+      "ru": "Умм Хабиб бинт Асад",
+      "ar": "أم حبيب بنت أسد بن عبد العزى بن قصي بن كلاب"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Umm Habib bint Asad ibn Abd al-Uzza"
+  },
+  "Q12223600": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q12223600",
+    "labels": {
+      "ar": "عبد الله بن واقد بن عبد الله بن عمر",
+      "ca": "Abd-Al·lah ibn Wàqid ibn Abd-Al·lah ibn Úmar",
+      "ru": "Абдулла ибн Вакид ибн Абдулла ибн Умар",
+      "ur": "عبد اللہ بن واقد بن عبد اللہ بن عمر"
+    },
+    "descriptions": {
+      "ar": "تابعي، وأحد رواة الحديث النبوي",
+      "ca": "tabií i muhàddith (transmissor i/o estudiós dels hadits)",
+      "nl": "muhaddith"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Abd Allah ibn Waqid ibn Abd Allah ibn Umar"
+  },
+  "Q20409790": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q20409790",
+    "labels": {
+      "ar": "عامر بن عبد الله بن الزبير",
+      "ca": "Àmir ibn Abd-Al·lah ibn az-Zubayr",
+      "ru": "Амир ибн Абдуллах ибн аз-Зубайр",
+      "ast": "Àmir ibn Abd-Al·lah ibn az-Zubayr",
+      "nb": "Àmir ibn Abd-Al·lah ibn az-Zubayr",
+      "es": "Àmir ibn Abd-Al·lah ibn az-Zubayr",
+      "fr": "Àmir ibn Abd-Al·lah ibn az-Zubayr",
+      "cs": "Amir ibn Abdulláh ibn az-Zubajr",
+      "ur": "عامر بن عبداللہ بن زبیر"
+    },
+    "descriptions": {
+      "ar": "تابعي وأحد رواة الحديث النبوي",
+      "ca": "tabií i muhàddith (transmissor i/o estudiós dels hadits)",
+      "nl": "muhaddith"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Amir ibn Abd Allah ibn az-Zubayr"
+  },
+  "Q20392520": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q20392520",
+    "labels": {
+      "ar": "إبراهيم بن محمد بن طلحة",
+      "ca": "Ibrahim ibn Muhàmmad ibn Talha",
+      "ur": "ابراہیم بن محمد بن طلحہ"
+    },
+    "descriptions": {
+      "ar": "تابعي وأحد رواة الحديث النبوي",
+      "ca": "tabií i muhàddith (transmissor i/o estudiós dels hadits)",
+      "nl": "muhaddith"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Ibrahim ibn Muhammad ibn Talha"
+  },
+  "Q12230164": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q12230164",
+    "labels": {
+      "ar": "فاطمة بنت قيس الفهرية",
+      "ur": "فاطمہ بنت قیس",
+      "bn": "ফাতিমা বিনতে কায়স",
+      "ru": "Фатима бинт Кайс аль-Фихрия",
+      "tr": "Fatıma bint Kays"
+    },
+    "descriptions": {
+      "tr": "Hz. Muhammed'le sohbet etmiş Müslüman (sahabe)"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Fatima bint Qays al-Fihriyya"
+  },
+  "Q124627976": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q124627976",
+    "labels": {
+      "ar": "مرجانة الفارسية"
+    },
+    "descriptions": {
+      "ar": "زوجة زياد بن أبيه"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Marjana the Persian"
+  },
+  "Q54862152": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q54862152",
+    "labels": {
+      "ar": "عبد الله بن زياد",
+      "ru": "Абдуллах ибн Зияд"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Abd Allah ibn Ziyad"
+  },
+  "Q12207595": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q12207595",
+    "labels": {
+      "ar": "حرملة بن الوليد",
+      "ca": "Hàrmala ibn al-Walid",
+      "ast": "Hàrmala ibn al-Walid"
+    },
+    "descriptions": {
+      "ca": "sahabí (company del profeta Muhàmmad)"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Harmala ibn al-Walid"
+  },
+  "Q125493336": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q125493336",
+    "labels": {
+      "ar": "مسعود بن خالد"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Mas'ud ibn Khalid"
+  },
+  "Q135065450": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q135065450",
+    "labels": {
+      "ar": "ربيعة بن عبد شمس"
+    },
+    "descriptions": {
+      "ar": "من سادات قريش"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Rabi'a ibn Abd Shams"
+  },
+  "Q125983809": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q125983809",
+    "labels": {
+      "ar": "سبيعة بنت عبد شمس بن عبد مناف"
+    },
+    "descriptions": {
+      "ar": "شاعرة جاهلية"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Subaya bint Abd Shams ibn Abd Manaf"
+  },
+  "Q108374996": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q108374996",
+    "labels": {
+      "ar": "محمد بن جعفر بن الزبير",
+      "ur": "محمد بن جعفر بن زبیر"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Muhammad ibn Ja'far ibn al-Zubayr"
+  },
+  "Q61074158": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q61074158",
+    "labels": {
+      "ur": "ام ولد"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Umm Walad"
+  },
+  "Q122918216": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q122918216",
+    "labels": {
+      "ar": "عاتكة بنت مسلم بن عقيل",
+      "ur": "عاتکہ بنت مسلم بن عقیل"
+    },
+    "descriptions": {
+      "ar": "بنت سفير الحسين مسلم بن عقيل"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Atika bint Muslim ibn Aqil"
+  },
+  "Q108828124": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q108828124",
+    "labels": {
+      "ar": "عاصم بن محمد بن زيد العمري",
+      "ru": "Асим ибн Мухаммад ибн Зайд",
+      "ur": "عاصم بن محمد بن زید عمری"
+    },
+    "descriptions": {
+      "ar": "محدث من تابعي التابعين"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Asim ibn Muhammad ibn Zayd al-Umari"
+  },
+  "Q108904726": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q108904726",
+    "labels": {
+      "ar": "عمر بن محمد بن زيد العمري",
+      "ur": "عمر بن محمد بن زید عمری"
+    },
+    "descriptions": {
+      "ar": "محدث من تابعي التابعين"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Umar ibn Muhammad ibn Zayd al-Umari"
+  },
+  "Q108904736": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q108904736",
+    "labels": {
+      "ar": "واقد بن محمد بن زيد العمري",
+      "ur": "واقد بن محمد بن زید عمری"
+    },
+    "descriptions": {
+      "ar": "محدث من تابعي التابعين"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Waqid ibn Muhammad ibn Zayd al-Umari"
+  },
+  "Q130257274": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q130257274",
+    "labels": {
+      "ar": "معاوية بن إسحاق بن طلحة بن عبيد الله",
+      "ur": "معاویہ بن اسحاق بن طلحہ بن عبید اللہ"
+    },
+    "descriptions": {
+      "ar": "أحد رواة الحديث النبوي"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Mu'awiya ibn Ishaq ibn Talha ibn Ubayd Allah"
+  },
+  "Q6538437": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q6538437",
+    "labels": {
+      "ar": "أبو هاشم بن عتبة",
+      "ca": "Abu-Hàixim ibn Utba ibn Rabia",
+      "ast": "Abu-Hàixim ibn Utba ibn Rabia",
+      "ru": "Абу Хашим ибн Утба ибн Рабия",
+      "ur": "ابو ہاشم بن عتبہ",
+      "ks": "ابو ہاشم بن عتبہ"
+    },
+    "descriptions": {
+      "ca": "sahabí (company del profeta Muhàmmad)",
+      "ar": "صحابي أسلم قبل صلح الحديبية وشهد بيعة الرضوان، وشارك في غزوة مؤتة وفتح مكة وغزوة حنين وشهد حجة الوداع"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Abu Hashim ibn Utbah"
+  },
+  "Q12210063": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q12210063",
+    "labels": {
+      "ar": "خالد بن هشام",
+      "ca": "Khàlid ibn Hixam",
+      "ast": "Khàlid ibn Hixam"
+    },
+    "descriptions": {
+      "ca": "sahabí (company del profeta Muhàmmad)"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Khalid ibn Hisham"
+  },
+  "Q65038133": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q65038133",
+    "labels": {
+      "ar": "أسماء بنت مخربة",
+      "ur": "اسماء بنت مخربہ",
+      "skr": "اسماء بنت مخربہ"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Asma bint Mukhriba"
+  },
+  "Q12222156": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q12222156",
+    "labels": {
+      "ar": "عاتكة بنت عبد الملك بن الحرث المخزومي"
+    },
+    "descriptions": {
+      "br": "Wikimedia roll"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Atika bint Abd al-Malik al-Makhzumi"
+  },
+  "Q124435736": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q124435736",
+    "labels": {
+      "ar": "عائشة بنت موسى",
+      "ur": "عائشہ بنت موسی"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Aisha bint Musa"
+  },
+  "Q5709703": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q5709703",
+    "labels": {
+      "fa": "حمیده",
+      "ar": "حميدة البربرية",
+      "ur": "حمیدہ بربریہ"
+    },
+    "descriptions": {
+      "ar": "زوجة جعفر الصادق وأم الإمام موسى الكاظم"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Hamida al-Barbariyya"
+  },
+  "Q12185932": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q12185932",
+    "labels": {
+      "ar": "الحارث بن الحارث بن كلدة",
+      "ca": "al-Hàrith ibn al-Hàrith ibn Kàlada",
+      "ast": "al-Hàrith ibn al-Hàrith ibn Kàlada"
+    },
+    "descriptions": {
+      "ca": "sahabí (company del profeta Muhàmmad)"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "al-Harith ibn al-Harith ibn Kalada"
+  },
+  "Q12181791": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q12181791",
+    "labels": {
+      "ar": "إبراهيم طباطبا"
+    },
+    "descriptions": {
+      "ar": "ابن إسماعيل الديباج"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Ibrahim Tabataba"
+  },
+  "Q12214923": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q12214923",
+    "labels": {
+      "ar": "زينب الحسينية"
+    },
+    "descriptions": {
+      "br": "Wikimedia roll"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Zaynab al-Husayniyya"
+  },
+  "Q125494012": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q125494012",
+    "labels": {
+      "ar": "سعيد بن سعيد بن العاص",
+      "ur": "سعید بن سعید بن العاص"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Sa'id ibn Sa'id ibn al-As"
+  },
+  "Q125494004": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q125494004",
+    "labels": {
+      "ar": "عبيدة بن سعيد بن العاص",
+      "ur": "عبیدہ بن سعید بن العاص"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Ubayda ibn Sa'id ibn al-As"
+  },
+  "Q22689017": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q22689017",
+    "labels": {
+      "ar": "فاطمة بنت صفوان",
+      "ur": "فاطمہ بنت صفوان"
+    },
+    "descriptions": {
+      "ar": "صحابية جليلة"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Fatima bint Safwan"
+  },
+  "Q125494065": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q125494065",
+    "labels": {
+      "ar": "عيسى بن علي العباسي"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Isa ibn Ali al-Abbasi"
+  },
+  "Q125493777": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q125493777",
+    "labels": {
+      "ar": "عيسى بن جعفر الأكبر"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Isa ibn Ja'far al-Akbar"
+  },
+  "Q127875064": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q127875064",
+    "labels": {
+      "ar": "سليمان بن جعفر الأكبر"
+    },
+    "descriptions": {
+      "ar": "أحد أبناء الأمير جعفر الأكبر وحفيد الخليفة أبو جعفر المنصور"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Sulayman ibn Ja'far al-Akbar"
+  },
+  "Q127875201": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q127875201",
+    "labels": {
+      "ar": "عبيد الله بن جعفر الأكبر"
+    },
+    "descriptions": {
+      "ar": "أحد أبناء الأمير العبَّاسي جعفر الأكبر"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Ubayd Allah ibn Ja'far al-Akbar"
+  },
+  "Q125493897": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q125493897",
+    "labels": {
+      "ar": "سليمان بن عبد الله الزينبي"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Sulayman ibn Abd Allah al-Zaynabi"
+  },
+  "Q109547465": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q109547465",
+    "labels": {
+      "ar": "موسى المحدث"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Musa al-Muhaddith"
+  },
+  "Q25549976": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q25549976",
+    "labels": {
+      "ur": "سید داؤد",
+      "ar": "داود بن موسى الثاني"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Dawud ibn Musa II"
+  },
+  "Q16118493": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q16118493",
+    "labels": {
+      "ar": "محمد الأكبر",
+      "ur": "محمد الاکبر"
+    },
+    "descriptions": {
+      "nl": "religieus leider"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Muhammad al-Akbar"
+  },
+  "Q133797729": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q133797729",
+    "labels": {
+      "ar": "جعفر بن الهادي",
+      "cs": "Džafar ibn al-Hádí",
+      "de": "Dschafar ibn Musa al-Hadi"
+    },
+    "descriptions": {
+      "ar": "أمير عباسي، ابن الخليفة موسى الهادي، ونديم الخليفة محمد الأمين",
+      "de": "Prinz der Abbasiden-Dynastie"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Ja'far ibn al-Hadi"
+  },
+  "Q134454911": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q134454911",
+    "labels": {
+      "ar": "عبد الله بن الهادي",
+      "cs": "Abdalláh ibn al-Hádí"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Abd Allah ibn al-Hadi"
+  },
+  "Q12179101": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q12179101",
+    "labels": {
+      "ar": "أحمد مزوار الإدريسي"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Ahmad Muzawwar al-Idrisi"
+  },
+  "Q134269892": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q134269892",
+    "labels": {
+      "ar": "رحيم الفارسية"
+    },
+    "descriptions": {
+      "ar": "جارية الخليفة العبَّاسي موسى الهادي، ووالدة جعفر بن الهادي"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Rahim the Persian"
+  },
+  "Q134269835": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q134269835",
+    "labels": {
+      "ar": "أمة العزيز الفارسية"
+    },
+    "descriptions": {
+      "ar": "محظة للخليفة العبَّاسي موسى الهادي"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Amat al-Aziz al-Farsiyya"
+  },
+  "Q12216351": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q12216351",
+    "labels": {
+      "ar": "سلام العروس بن أحمد مزوار الإدريسي"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Salam al-Arus ibn Ahmad Muzawwar al-Idrisi"
+  },
+  "Q134385062": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q134385062",
+    "labels": {
+      "ar": "فطيم (جارية)"
+    },
+    "descriptions": {
+      "ar": "جارية الخليفة العبَّاسي محمد الأمين، ووالدة موسى الناطق بالحق"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Futaym (concubine)"
+  },
+  "Q61063544": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q61063544",
+    "labels": {
+      "fa": "شاپور پسر کاووس",
+      "tg": "Шопур",
+      "ar": "سابور"
+    },
+    "descriptions": {
+      "fa": "شاهزادهٔ ساسانی",
+      "tg": "писари Ковус"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Shapur, son of Kavus"
+  },
+  "Q122566875": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q122566875",
+    "labels": {
+      "tg": "Гелоншоҳ",
+      "fa": "گیلانشاه",
+      "ar": "جيلانشاه",
+      "ru": "Гиляншах"
+    },
+    "descriptions": {
+      "tg": "волии Гелон",
+      "fa": "والی گیلان در دوران ساسانی",
+      "ar": "حاكم جيلان الساساني"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Gilanshah"
+  },
+  "Q135087093": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q135087093",
+    "labels": {
+      "ar": "عبد مناة بن كنانة"
+    },
+    "descriptions": {
+      "ar": "جدّ جاهلي"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Abd Manat ibn Kinana"
+  },
+  "Q60594889": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q60594889",
+    "labels": {
+      "ar": "مالك بن زيد مناة"
+    },
+    "descriptions": {
+      "nl": "dichter",
+      "ar": "شاعر وفارس جاهلي"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Malik ibn Zayd Manat"
+  },
+  "Q22933009": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q22933009",
+    "labels": {
+      "ar": "سعد بن زيد مناة"
+    },
+    "descriptions": {
+      "nl": "dichter",
+      "ar": "شاعر جاهلي"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Sa'd ibn Zayd Manat"
+  },
+  "Q54875272": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q54875272",
+    "labels": {
+      "ar": "سكينة بنت بهاء الدولة"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Sukayna bint Baha al-Dawla"
+  },
+  "Q124433061": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q124433061",
+    "labels": {
+      "ar": "هذيل بن مدركة"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Hudhayl ibn Mudrika"
+  },
+  "Q124487499": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q124487499",
+    "labels": {
+      "ar": "السيدة العزيزية",
+      "da": "Vor Frue, Moder til Al-Hakim bi-Amr Allah"
+    },
+    "descriptions": {
+      "ar": "أم الحاكم بأمر الله"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "al-Sayyida al-Aziziyya"
+  },
+  "Q131609332": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q131609332",
+    "labels": {
+      "ar": "مر بن إد"
+    },
+    "descriptions": {
+      "ar": "جد جاهلي من عدنان"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Mur ibn Id"
+  },
+  "Q135067870": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q135067870",
+    "labels": {
+      "ar": "عمرو بن كعب بن سعد"
+    },
+    "descriptions": {
+      "ar": "جد جاهلي"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Amr ibn Ka'b ibn Sa'd"
+  },
+  "Q31110932": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q31110932",
+    "labels": {
+      "hy": "անանուն Մամիկոնյան",
+      "ru": "безымянная Мамиконян",
+      "el": "αγνώστων στοιχείων Μαμικονιάν"
+    },
+    "descriptions": {
+      "hy": "Շավասպ Արծրունու կինը",
+      "el": "σύζυγος του Σαβάσπ Αρτσρουνί"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Anonymous Mamikonian"
+  },
+  "Q29892245": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q29892245",
+    "labels": {
+      "hy": "Տաճատուհի Արծրունի",
+      "ru": "Татжастуи Арцруни",
+      "el": "Τατσατουχί Αρτσρουνί"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Tachatuhi Artsruni"
+  },
+  "Q104717732": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q104717732",
+    "labels": {
+      "hy": "Մերշապուհ Արծրունի"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Mershapuh Artsruni"
+  },
+  "Q110197849": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q110197849",
+    "labels": {
+      "ja": "リキメルの姉妹 (グンディオクの妻)",
+      "cs": "Rechilova dcera",
+      "oc": "Filha de Rechila e molhèr de Gondioc",
+      "ru": "дочь Рехила"
+    },
+    "descriptions": {
+      "gl": "Filla do rei suevo Requila",
+      "en": "Requila´s daughter"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Daughter of Rechila (wife of Gundioc)"
+  },
+  "Q131609347": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q131609347",
+    "labels": {
+      "ar": "إد بن طابخة"
+    },
+    "descriptions": {
+      "ar": "جد جاهلي من عدنان"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Id ibn Tabakha"
+  },
+  "Q125493208": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q125493208",
+    "labels": {
+      "ar": "العنبر بن عمرو"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "al-Anbar ibn Amr"
+  },
+  "Q125494591": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q125494591",
+    "labels": {
+      "ar": "الحارث بن عمرو بن تميم بن مر"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "al-Harith ibn Amr ibn Tamim ibn Mur"
+  },
+  "Q106564608": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q106564608",
+    "labels": {
+      "hy": "Վաչե Բ Արծրունի"
+    },
+    "descriptions": {
+      "hy": "հայ նախարար"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Vache II Artsruni"
+  },
+  "Q29895705": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q29895705",
+    "labels": {
+      "hy": "Վասակ Արծրունի",
+      "ru": "Васак Арцруни"
+    },
+    "descriptions": {
+      "hy": "իշխան",
+      "ru": "князь"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Vasak Artsruni"
+  },
+  "Q104717611": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q104717611",
+    "labels": {
+      "hy": "Գոտարձ Արծրունի"
+    },
+    "descriptions": {
+      "hy": "հայ նախարար"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Gotartz Artsruni"
+  },
+  "Q104717615": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q104717615",
+    "labels": {
+      "hy": "Տաճատ Արծրունի"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Tachat Artsruni"
+  },
+  "Q104717617": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q104717617",
+    "labels": {
+      "hy": "Շավասպ Արծրունի"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Shavasp Artsruni"
+  },
+  "Q135001144": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q135001144",
+    "labels": {
+      "ar": "سعد بن قيس عيلان"
+    },
+    "descriptions": {
+      "ar": "جد جاهلي قديم من العدنانية"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Sa'd ibn Qays Aylan"
+  },
+  "Q124407049": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q124407049",
+    "labels": {
+      "ar": "ضبة بن أد"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Dabba ibn Ad"
+  },
+  "Q131609375": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q131609375",
+    "labels": {
+      "ar": "عبد مناة بن أد"
+    },
+    "descriptions": {
+      "ar": "جد جاهلي من عدنان"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Abd Manat ibn Ad"
+  },
+  "Q106564534": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q106564534",
+    "labels": {
+      "hy": "Վահան Գ Արծրունի"
+    },
+    "descriptions": {
+      "hy": "հայ նախարար",
+      "nl": "Nakharar uit Koninkrijk Armenië (-)"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Vahan III Artsruni"
+  },
+  "Q65515717": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q65515717",
+    "labels": {
+      "hy": "Համազասպյան Մամիկոնյան",
+      "el": "Χαμαζασπιάν Μαμικονιάν"
+    },
+    "descriptions": {
+      "hy": "սեպուհ"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Hamazaspian Mamikonian"
+  },
+  "Q104668239": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q104668239",
+    "labels": {
+      "hy": "Սամ Սյունի",
+      "ru": "Сам Сюни"
+    },
+    "descriptions": {
+      "hy": "հայ սեպուհ"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Sam Syuni"
+  },
+  "Q65515718": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q65515718",
+    "labels": {
+      "hy": "Արտաշես Մամիկոնյան",
+      "el": "Αρτασές Μαμικονιάν"
+    },
+    "descriptions": {
+      "hy": "սեպուհ"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Artashes Mamikonian"
+  },
+  "Q29895627": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q29895627",
+    "labels": {
+      "hy": "Աղան Արծրունի",
+      "ru": "Аган Арцруни"
+    },
+    "descriptions": {
+      "hy": "եկեղեցական և մշակութային գործիչ, գիտնական",
+      "nl": "wetenschapper",
+      "uk": "науковець"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Aghan Artsruni"
+  },
+  "Q29896118": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q29896118",
+    "labels": {
+      "hy": "Մերհուժան Արծրունի",
+      "ru": "Меружан Арцруни"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Merhuzhan Artsruni"
+  },
+  "Q1746950": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q1746950",
+    "labels": {
+      "de": "Uta de Bavaria",
+      "it": "Uta de Bavaria",
+      "ru": "Ута Баварская",
+      "nl": "Uta de Bavaria",
+      "ast": "Uta de Bavaria",
+      "fr": "Uta de Bavière",
+      "cs": "Uta Bavorská"
+    },
+    "descriptions": {
+      "de": "bayerische Prinzessin",
+      "ru": "История"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Uta of Bavaria"
+  },
+  "Q1557360": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q1557360",
+    "labels": {
+      "de": "Gutthorm",
+      "cs": "Gutthorm"
+    },
+    "descriptions": {
+      "de": "nordische Sagengestalt"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Gutthorm"
+  },
+  "Q91097166": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q91097166",
+    "labels": {
+      "ar": "باسل بن ضبة بن إد"
+    },
+    "descriptions": {
+      "ar": "ابن ضبة بن أد واخو سعد وسعيد"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Basil ibn Dabba ibn Id"
+  },
+  "Q135086848": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q135086848",
+    "labels": {
+      "ar": "تيم بن عبد مناة"
+    },
+    "descriptions": {
+      "ar": "جدّ جاهلي من بني مضر"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Taym ibn Abd Manat"
+  },
+  "Q28374137": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q28374137",
+    "labels": {
+      "it": "Guerino di Tolosa",
+      "nl": "Guerino di Tolosa",
+      "ru": "Гверин Тулузский",
+      "ast": "Guerino di Tolosa",
+      "es": "Guerino di Tolosa",
+      "ca": "Guerí de Tolosa"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Guerin of Toulouse"
+  },
+  "Q106564587": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q106564587",
+    "labels": {
+      "hy": "Մուշեղ Բ Արծրունի"
+    },
+    "descriptions": {
+      "hy": "հայ նախարար"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Mushegh II Artsruni"
+  },
+  "Q110485463": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q110485463",
+    "labels": {
+      "hy": "Սանդուխտ Մամիկոնյան",
+      "ru": "Сандухт Мамиконян",
+      "fr": "Sandoukht Mamikonian",
+      "ca": "Sandukht Mamiconi"
+    },
+    "descriptions": {
+      "hy": "հայ իշխանուհի"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Sandukht Mamikonian"
+  },
+  "Q46014942": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q46014942",
+    "labels": {
+      "hy": "Վաղինակ Ա Սյունի",
+      "ru": "Вагинак Сюни",
+      "pt": "Valinaces I",
+      "nl": "Valinaces I",
+      "ast": "Valinaces I",
+      "pt-br": "Valinaces I"
+    },
+    "descriptions": {
+      "hy": "Սյունիքի իշխան"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Valinaces I"
+  },
+  "Q16374186": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q16374186",
+    "labels": {
+      "ka": "პეროჟავრი სივნიელი",
+      "hy": "Պերոզավր Սյունի"
+    },
+    "descriptions": {
+      "hy": "Իշխան"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Perozavri Syuni"
+  },
+  "Q104668268": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q104668268",
+    "labels": {
+      "hy": "անանուն Սյունի"
+    },
+    "descriptions": {
+      "hy": "Սամ Սյունու դուստրը"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Anonymous Syuni"
+  },
+  "Q29896134": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q29896134",
+    "labels": {
+      "hy": "Ջոջիկ Միհրանյան"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Jojik Mihranyan"
+  },
+  "Q20046078": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q20046078",
+    "labels": {
+      "pt": "Odulfo",
+      "nl": "Odulfo",
+      "ast": "Odulfo",
+      "uk": "Одульф",
+      "ru": "Одульф",
+      "pt-br": "Odulfo"
+    },
+    "descriptions": {
+      "en": "(est. 260 - uncertain)"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Odulfo"
+  },
+  "Q5998158": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q5998158",
+    "labels": {
+      "tr": "Yusuf Yınal"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Yusuf Yinal"
+  },
+  "Q135084529": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q135084529",
+    "labels": {
+      "ar": "ريث بن غطفان"
+    },
+    "descriptions": {
+      "ar": "جدّ جاهلي"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Rayth ibn Ghatafan"
+  },
+  "Q19629313": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q19629313",
+    "labels": {
+      "fr": "Hilduin (Saint-Bertin)",
+      "nl": "Hilduinus van Saint-Bertin",
+      "ru": "Гильдуин",
+      "ast": "Hilduin",
+      "sq": "Hilduin"
+    },
+    "descriptions": {
+      "nl": "bibliothecaris"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Hilduin of Saint-Bertin"
+  },
+  "Q108615012": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q108615012",
+    "labels": {
+      "nl": "Emma de Ségur",
+      "fr": "Emma de Ségur",
+      "mul": "Emma de Ségur"
+    },
+    "descriptions": {
+      "en": "965-1025"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Emma de Ségur"
+  },
+  "Q30887566": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q30887566",
+    "labels": {
+      "ru": "Адемар I",
+      "fr": "Adémar I de Limoges",
+      "ast": "Adémar I de Limoges",
+      "nl": "Adémar I de Limoges"
+    },
+    "descriptions": {
+      "en": "990-"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Ademar I of Limoges"
+  },
+  "Q24042565": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q24042565",
+    "labels": {
+      "ca": "Letgarda de Tost",
+      "nl": "Letgarda de Tost",
+      "ru": "Ледгарда де Тост",
+      "ast": "Letgarda de Tost",
+      "es": "Letgarda de Tost"
+    },
+    "descriptions": {
+      "ca": "vescomtessa d'Àger",
+      "es": "noble española"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Letgarde de Tost"
+  },
+  "Q104668241": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q104668241",
+    "labels": {
+      "hy": "Վարազվաղան Սյունի"
+    },
+    "descriptions": {
+      "hy": "հայ նախարար",
+      "nl": "Nakharar uit Koninkrijk Armenië (?-470)"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Varazvaghan Syuni"
+  },
+  "Q106595799": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q106595799",
+    "labels": {
+      "hy": "անանուն Մամիկոնյան (Կամսարական)",
+      "hu": "N. Mamikonján (Kamszarakan)"
+    },
+    "descriptions": {
+      "hy": "հայ իշխանուհի",
+      "hu": "örmény hercegnő"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Anonymous Mamikonian (Kamsarakan)"
+  },
+  "Q105605788": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q105605788",
+    "labels": {
+      "hy": "Ատրներսեհ Սյունի",
+      "ru": "Атрнерсе Сюни"
+    },
+    "descriptions": {
+      "hy": "հայ իշխանազն",
+      "ru": "5 век"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Atrnerseh Syuni"
+  },
+  "Q106980648": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q106980648",
+    "labels": {
+      "hy": "Բաբիկ Սյունի",
+      "ru": "Бабик Сюни"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Babik Syuni"
+  },
+  "Q135085868": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q135085868",
+    "labels": {
+      "ar": "دعمي بن جديلة"
+    },
+    "descriptions": {
+      "ar": "جدّ جاهلي من بني ربيعة بن نزار"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Dami ibn Jadila"
+  },
+  "Q89829616": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q89829616",
+    "labels": {
+      "ar": "باهلة بنت صعب"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Bahila bint Sa'b"
+  },
+  "Q11942361": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q11942361",
+    "labels": {
+      "ca": "Ponç II d'Albi",
+      "fr": "Ponce II d'Albi",
+      "ru": "Понс, граф Альби",
+      "nl": "Pons II van Albi",
+      "cs": "Pons II. z Albi"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Pons II of Albi"
+  },
+  "Q97642300": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q97642300",
+    "labels": {
+      "ca": "Guisla de Pallars",
+      "nl": "Guisla de Pallars",
+      "fr": "Guisla de Pallars",
+      "ru": "Гисла де Пальярс"
+    },
+    "descriptions": {
+      "ca": "noble catalana",
+      "fr": "épouse de Guifred II de Cerdagne"
+    },
+    "geni_profile_id": "6000000003937192949",
+    "suggested_english_name": "Guisla de Pallars"
+  },
+  "Q75384572": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q75384572",
+    "labels": {
+      "da": "Kaðlin Hrólfsdóttir",
+      "nl": "Kathlin de Normandie",
+      "ca": "Kathlin de Normandie",
+      "ru": "Кадлин",
+      "cs": "Kaðlin Hrólfsdóttir",
+      "mul": "Kathlin de Normandie",
+      "fr": "Kathlin de Normandie"
+    },
+    "descriptions": {
+      "en": "Peerage person ID=104771"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Kathlin Hrolfsdottir"
+  },
+  "Q48925112": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q48925112",
+    "labels": {
+      "fr": "Hedwige de Roucy",
+      "nl": "Hedwige de Roucy",
+      "ru": "Гедвига де Руси",
+      "ast": "Hedwige de Roucy"
+    },
+    "descriptions": {
+      "fr": "noble française",
+      "en": "1020 - 1070",
+      "uk": "(1020-1070)"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Hedwig of Roucy"
+  },
+  "Q30887569": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q30887569",
+    "labels": {
+      "ru": "Адемар II",
+      "fr": "Adémar II de Limoges",
+      "ast": "Adémar II de Limoges",
+      "nl": "Adémar II de Limoges"
+    },
+    "descriptions": {
+      "en": "1023-"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Ademar II of Limoges"
+  },
+  "Q30887565": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q30887565",
+    "labels": {
+      "ru": "Ги II",
+      "fr": "Gui II de Limoges",
+      "ast": "Gui II de Limoges",
+      "nl": "Gui II de Limoges"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Guy II of Limoges"
+  },
+  "Q65209350": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q65209350",
+    "labels": {
+      "ca": "Teresa d'Urgell",
+      "nl": "Teresa d'Urgell",
+      "ast": "Teresa d'Urgell",
+      "es": "Teresa de Urgel",
+      "ru": "Тереза де Ургелл",
+      "fr": "Thérèse d'Urgell"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Teresa of Urgell"
+  },
+  "Q47463743": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q47463743",
+    "labels": {
+      "hy": "անանուն Գնունի",
+      "ru": "безымянная Гнуни",
+      "el": "αγνώστων στοιχείων Γκνουνί"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Anonymous GnunI"
+  },
+  "Q106980660": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q106980660",
+    "labels": {
+      "hy": "Գդիհոն Սյունի"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Gdihon Syuni"
+  },
+  "Q97208643": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q97208643",
+    "labels": {
+      "hy": "Յազդ Սյունի"
+    },
+    "descriptions": {
+      "hy": "հայ սեպուհ Սյունիների նախարարական տոհմից"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Yazd Syuni"
+  },
+  "Q106980650": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q106980650",
+    "labels": {
+      "hy": "Վասակ Սյունի"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Vasak Syuni"
+  },
+  "Q16369095": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q16369095",
+    "labels": {
+      "az": "I Arşuşa",
+      "es": "I Arşuşa"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Arshusha I"
+  },
+  "Q110486595": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q110486595",
+    "labels": {
+      "hy": "Վրիկ Պարթև"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Vrik Partev"
+  },
+  "Q135085746": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q135085746",
+    "labels": {
+      "ar": "أفصى بن دعمي"
+    },
+    "descriptions": {
+      "ar": "جدّ جاهلي من بني ربيعة بن نزار"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Afsa ibn Dami"
+  },
+  "Q56006624": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q56006624",
+    "labels": {
+      "fr": "Sancha d'Urgell",
+      "ru": "Санча Урхельская",
+      "el": "Σάντσα του Ουρζέλ",
+      "nl": "Sancha d'Urgell",
+      "ca": "Adelaida d'Urgell"
+    },
+    "descriptions": {
+      "fr": "fille d'Armengol IV et d'Adélaïde de Forcalquier"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Sancha of Urgell"
+  },
+  "Q61807767": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q61807767",
+    "labels": {
+      "ru": "Эрелева",
+      "fr": "N.N."
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Ereleva"
+  },
+  "Q133085529": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q133085529",
+    "labels": {
+      "es": "Waldonius de Saint-Clair"
+    },
+    "descriptions": {
+      "es": "noble normando"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Waldonius de Saint-Clair"
+  },
+  "Q30887573": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q30887573",
+    "labels": {
+      "ru": "Адемар III",
+      "fr": "Adémar III de Limoges",
+      "ast": "Adémar III de Limoges",
+      "nl": "Adémar III de Limoges"
+    },
+    "descriptions": {
+      "en": "(1065-1148)",
+      "uk": "(1065-1148)"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Ademar III of Limoges"
+  },
+  "Q55390938": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q55390938",
+    "labels": {
+      "fr": "Pétronille de Château-Renard",
+      "ru": "Петронилла де Шато-Гонтье",
+      "nl": "Pétronille de Château-Renard",
+      "ast": "Pétronille de Château-Renard"
+    },
+    "descriptions": {
+      "fr": "comtesse de Vendôme",
+      "en": "-1078"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Petronilla de Château-Renard"
+  },
+  "Q55399053": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q55399053",
+    "labels": {
+      "fr": "Agathe de Vendôme",
+      "ru": "Агата де Вандом",
+      "nl": "Agathe de Vendôme",
+      "ast": "Agathe de Vendôme",
+      "es": "Agathe de Vendôme"
+    },
+    "descriptions": {
+      "fr": "comtesse de Beaumont-au-Maine, fille de Foulques l'Oison",
+      "en": "1050 - after 1095"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Agathe de Vendôme"
+  },
+  "Q55399331": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q55399331",
+    "labels": {
+      "fr": "Geoffroy de Vendôme",
+      "ru": "Жоффруа де Вандом",
+      "nl": "Geoffroy de Vendôme",
+      "ast": "Geoffroy de Vendôme",
+      "es": "Geoffroy de Vendôme"
+    },
+    "descriptions": {
+      "fr": "fils de Foulques l'Oison"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Geoffroy de Vendôme"
+  },
+  "Q55399397": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q55399397",
+    "labels": {
+      "fr": "Agnès",
+      "nl": "Agnès",
+      "ast": "Agnès"
+    },
+    "descriptions": {
+      "fr": "dame de Nouâtre"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Agnes"
+  },
+  "Q11737101": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q11737101",
+    "labels": {
+      "pl": "Katarzyna Wsiewołodowna",
+      "ru": "Екатерина Всеволодовна",
+      "cs": "Kateřina Kyjevská",
+      "sv": "Jekaterina Vsevolodovna",
+      "nb": "Jekaterina Vsevolodovna",
+      "be": "Кацярына Усеваладаўна"
+    },
+    "descriptions": {
+      "cs": "dcera Vsevoloda I. Kyjevského",
+      "en": "(1075-1108)",
+      "uk": "(1075-1108)",
+      "be": "1075-1108"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Catherine Vsevolodovna"
+  },
+  "Q114720727": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q114720727",
+    "labels": {
+      "pl": "Gertruda",
+      "cs": "Gertruda Polská"
+    },
+    "descriptions": {
+      "pl": "księżniczka polska, córka Bolesława Krzywoustego",
+      "cs": "dcera polského knížete Boleslava III. Křivoústého",
+      "en": "1126 - 7 May 1160"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Gertruda"
+  },
+  "Q30887585": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q30887585",
+    "labels": {
+      "ru": "Гильом III",
+      "fr": "Guillaume Talairand de Périgord",
+      "ast": "Guillaume Talairand de Périgord",
+      "nl": "Guillaume Talairand de Périgord"
+    },
+    "descriptions": {
+      "fr": "comte du Périgord"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Guillaume Talairand de Périgord"
+  },
+  "Q125490632": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q125490632",
+    "labels": {
+      "gl": "Gonciña"
+    },
+    "descriptions": {
+      "gl": "condesa de Portucale"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Gonciña"
+  },
+  "Q10374816": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q10374816",
+    "labels": {
+      "pt": "Sunifredo I de Lluçà",
+      "ast": "Sunifredo I de Lluçà",
+      "ca": "Sunifred I de Lluçà",
+      "pt-br": "Sunifredo I de Lluçà"
+    },
+    "descriptions": {
+      "ca": "noble català, senyor de Llucà i Merlès"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Sunifred I of Lluçà"
+  },
+  "Q134516933": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q134516933",
+    "labels": {
+      "ca": "Guerau-Ferrer de Cabrera"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Guerau-Ferrer de Cabrera"
+  },
+  "Q106980652": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q106980652",
+    "labels": {
+      "hy": "Աչիր Սյունի"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Achir Syuni"
+  },
+  "Q106980653": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q106980653",
+    "labels": {
+      "hy": "Բաբկեն Սյունի"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Babken Syuni"
+  },
+  "Q12279910": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q12279910",
+    "labels": {
+      "bg": "Епархия Авита",
+      "ru": "Епархия Авита",
+      "fr": "Eparchia Avita",
+      "cs": "Eparchia Avita"
+    },
+    "descriptions": {
+      "fr": "impératrice romaine"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Eparch Avitus"
+  },
+  "Q21526466": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q21526466",
+    "labels": {
+      "tr": "Kulan Arslan",
+      "cs": "Kulan Arslan"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Kulan Arslan"
+  },
+  "Q125494021": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q125494021",
+    "labels": {
+      "ar": "جعفر بن المقتدي"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Ja'far ibn al-Muqtadi"
+  },
+  "Q135085436": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q135085436",
+    "labels": {
+      "ar": "هنب بن أفصى"
+    },
+    "descriptions": {
+      "ar": "جدّ جاهلي من بني ربيعة بن نزار"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Hanab ibn Afsaa"
+  },
+  "Q130519098": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q130519098",
+    "labels": {
+      "cs": "María Díaz de Haro",
+      "mul": "María Díaz de Haro"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "María Díaz de Haro"
+  },
+  "Q61638527": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q61638527",
+    "labels": {
+      "ru": "Отта ди Огледо",
+      "fr": "Otta d'Agliè"
+    },
+    "descriptions": {
+      "en": "est. 1050 -"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Otta di Agliè"
+  },
+  "Q131617009": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q131617009",
+    "labels": {
+      "es": "Richard de Saint-Sauveur",
+      "mul": "Richard de Saint-Sauveur",
+      "ru": "Ричард де Сен-Совёр"
+    },
+    "descriptions": {
+      "es": "noble normando",
+      "ru": "нормандский аристократ, виконт Котантена"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Richard de Saint-Sauveur"
+  },
+  "Q65967131": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q65967131",
+    "labels": {
+      "fr": "fille d'Enguerrand et Friderada",
+      "ru": "дочь Энгерранда и Фридерада",
+      "ast": "fille d'Enguerrand et Friderada",
+      "nl": "fille d'Enguerrand et Friderada"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Daughter of Enguerrand and Friderada"
+  },
+  "Q131623927": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q131623927",
+    "labels": {
+      "es": "Rollo Turstain Brico"
+    },
+    "descriptions": {
+      "es": "jarl noruego"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Rollo Turstain Brico"
+  },
+  "Q131782372": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q131782372",
+    "labels": {
+      "de": "Beringer von Schauenburg",
+      "cs": "Beringer ze Schauenburka"
+    },
+    "descriptions": {
+      "de": "Herr von Sangerhausen"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Beringer von Schauenburg"
+  },
+  "Q24357457": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q24357457",
+    "labels": {
+      "fr": "Conon de Genève",
+      "nl": "Conon de Genève",
+      "ru": "Конон Женевский",
+      "ast": "Conon de Genève",
+      "el": "Κόνων της Γενεύης"
+    },
+    "descriptions": {
+      "fr": "comte de Genève",
+      "el": "Κόμης της Γενεύης"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Conon of Geneva"
+  },
+  "Q115556275": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q115556275",
+    "labels": {
+      "be": "Ігаравіч Яраславіч",
+      "ru": "Игоревич Ярославич"
+    },
+    "descriptions": {
+      "be": "невядомы імем сын князя Ігара Яраславіча і брат князя Давыда Ігаравіча, у літаратуры часам даецца пад імем Усевалад"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Igorevich Yaroslavich"
+  },
+  "Q124729168": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q124729168",
+    "labels": {
+      "bg": "Неизвестна по име Склирина",
+      "ru": "неизвестная дочь Василия Склира",
+      "be": "Склірэна"
+    },
+    "descriptions": {
+      "bg": "втора съпруга на император Константин IX Мономах",
+      "be": "невядомая імем дачка Васіля Скліра"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Sklerina (daughter of Basil Skleros)"
+  },
+  "Q55656754": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q55656754",
+    "labels": {
+      "ru": "Ярополк Мстиславич",
+      "uk": "Ярополк Мстиславич",
+      "cs": "Jaropolk Mstislavič Kyjevský",
+      "nl": "Jaropolk Mstislavič",
+      "sv": "Jaropolk Mstislavič",
+      "nb": "Jaropolk Mstislavitsj",
+      "be": "Яраполк Мсціславіч",
+      "be-tarask": "Яраполк Мсьціславіч"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Yaropolk Mstislavich"
+  },
+  "Q4104908": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q4104908",
+    "labels": {
+      "ru": "Василько Юрьевич",
+      "be": "Васілька Юр’евіч",
+      "ja": "ヴァシリコ・ユーリエヴィチ",
+      "uk": "Василько Юрійович",
+      "da": "Vasilko Jurevitj",
+      "ast": "Vasilko Jurevitj",
+      "cs": "Vasilko Jurjevič",
+      "nb": "Vasilko Jurevitj",
+      "it": "Basilio Jur'evič"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Vasilko Yurevich"
+  },
+  "Q61881734": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q61881734",
+    "labels": {
+      "ru": "Ярослав Юрьевич",
+      "da": "Yaroslav Jurevitj",
+      "ast": "Yaroslav Jurevitj",
+      "cs": "Jaroslav Jurjevič",
+      "sv": "Jaroslav Jurevitj",
+      "nb": "Jaroslav Jurevitj",
+      "it": "Jaroslav Jurjevič",
+      "be": "Яраслаў Юр'евіч"
+    },
+    "descriptions": {
+      "ru": "сын Юрия Долгорукого",
+      "be": "сын Юрыя Далгарукага"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Yaroslav Yurevich"
+  },
+  "Q113720022": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q113720022",
+    "labels": {
+      "ru": "Ne Всеволодовна",
+      "be": "Усеваладаўна Уладзімірава"
+    },
+    "descriptions": {
+      "ru": "городенская княжна",
+      "be": "гарадзенская князёўна"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Vsevolodovna (unknown first name)"
+  },
+  "Q21091962": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q21091962",
+    "labels": {
+      "ru": "Василько Леонович",
+      "cs": "Vasilko Leonovič",
+      "uk": "Василько Леонович"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Vasilko Leonovich"
+  },
+  "Q5214062": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q5214062",
+    "labels": {
+      "be": "Давыд Святаславіч",
+      "ru": "Давыд Святославич",
+      "ja": "ダヴィド・スヴャトスラヴィチ",
+      "fr": "David Vseslavitch",
+      "ast": "David Vseslavitch",
+      "uk": "Давид Святославич (князь Вітебський)",
+      "cs": "Davyd Svjatoslavič",
+      "de": "Dawyd Swjatoslawitsch",
+      "nl": "David Svjatoslavitsj"
+    },
+    "descriptions": {
+      "en": "1130 - uncertain",
+      "be": "князь з дынастыі Рагвалодавічаў"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "David Vseslavich"
+  },
+  "Q61865819": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q61865819",
+    "labels": {
+      "ru": "Гизела Лотарингская",
+      "nl": "Gisela van Lotharingen",
+      "fr": "Gisela de Lorraine",
+      "cs": "Gisela Lotrinská"
+    },
+    "descriptions": {
+      "en": "(1100-1141)",
+      "uk": "(1100-1141)"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Gisela of Lorraine"
+  },
+  "Q11921175": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q11921175",
+    "labels": {
+      "ca": "Eudòxia Comnena",
+      "la": "Eudocia Comnena",
+      "ru": "Евдокия Комнина",
+      "el": "Ευδοκία Κομνηνή",
+      "ast": "Eudòcia Comnena",
+      "de": "Eudòcia Comnena",
+      "bg": "Евдокия Комнина",
+      "fr": "Eudocia Comnène",
+      "sr": "Евдокија Комнин (ћерка Андроника Комнина)",
+      "cs": "Eudokie Komnenovna"
+    },
+    "descriptions": {
+      "el": "Κόρη Ανδρόνικου Κομνηνού",
+      "ca": "filla d'Andrònic Comnè",
+      "bg": "византийска принцеса от XII век"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Eudocia Comnena"
+  },
+  "Q9140803": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q9140803",
+    "labels": {
+      "cs": "Adéla Zbyslava Slezská",
+      "pl": "Adelajda Zbysława",
+      "ru": "Аделаида Збыслава",
+      "zh": "阿德萊達·茲碧拉瓦",
+      "mul": "Adéla Zbyslava Slezská"
+    },
+    "descriptions": {
+      "pl": "córka Bolesława Wysokiego",
+      "cs": "dcera Boleslava I. Slezského",
+      "en": "1165 - aft. 29 Mar 1213"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Adela Zbyslava"
+  },
+  "Q117951953": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q117951953",
+    "labels": {
+      "bg": "неизвестна по име Вотаниатиса",
+      "ru": "сестра Никифора III Вотаниата",
+      "ca": "(?) Botaniatissa"
+    },
+    "descriptions": {
+      "bg": "сестра на император Никифор III Вотаниат"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Botaniatissa (sister of Nikephoros III)"
+  },
+  "Q126118056": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q126118056",
+    "labels": {
+      "pl": "Bolesław Bolesławowic",
+      "be": "Баляслаў"
+    },
+    "descriptions": {
+      "pl": "(1156-1172) starszy syn Bolesława Kędzierzawego"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Bolesław Bolesławowicz"
+  },
+  "Q12151167": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q12151167",
+    "labels": {
+      "uk": "Святослав Мстиславич",
+      "ru": "Святослав Мстиславич",
+      "be": "Святаслаў Мсціславіч",
+      "sv": "Svjatoslav Mstislavitj",
+      "cs": "Svjatoslav Mstislavič",
+      "be-tarask": "Сьвятаслаў Мсьціславіч"
+    },
+    "descriptions": {
+      "be": "князь берасцейскі",
+      "be-tarask": "князь берасьцейскі"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Sviatoslav Mstislavich"
+  },
+  "Q4305603": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q4305603",
+    "labels": {
+      "ru": "Мстислав Святополкович",
+      "zh": "姆斯季斯拉夫·斯维亚托波尔科维奇",
+      "ja": "ムスチスラフ・スヴャトポルコヴィチ",
+      "uk": "Мстислав Святополкович",
+      "be": "Мсціслаў Святаполкавіч",
+      "el": "Μπριατσισλάβ Σβιατοπόλκοβιτς",
+      "cs": "Mstislav Svjatopolkovič",
+      "sv": "Mstislav Svjatopolkovitj",
+      "nb": "Mstislav Svjatopolkovitj",
+      "la": "Mstislaus Sventopolci filius"
+    },
+    "descriptions": {
+      "en": "1099"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Mstislav Sviatopolkovich"
+  },
+  "Q20096905": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q20096905",
+    "labels": {
+      "uk": "Брячислав Святополкович",
+      "ru": "Брячислав Святополкович",
+      "be": "Брачыслаў Святаполкавіч",
+      "el": "Μπριατσισλάβ Σβιατοπόλκοβιτς",
+      "ja": "ブリャチスラフ・スヴャトポルコヴィチ",
+      "cs": "Brjačislav Svjatopolkovič",
+      "sv": "Brjatjislav Svjatopolkovitj",
+      "nb": "Brjatjislav Svjatopolkovitj",
+      "la": "Brecislaus Sventopolci filius"
+    },
+    "descriptions": {
+      "ru": "князь-изгой, младший сын Святополка Изяславича от дочери половецкого хана Тугурохана",
+      "en": "(1104-1127)",
+      "uk": "(1104-1127)"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Bryachislav Sviatopolkovich"
+  },
+  "Q108208192": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q108208192",
+    "labels": {
+      "cs": "Naděj Spes",
+      "nl": "Naděj Spes",
+      "ru": "Надей Спес"
+    },
+    "descriptions": {
+      "cs": "opat benediktinského kláštera v Třebíči"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Nadej Spes"
+  },
+  "Q21106446": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q21106446",
+    "labels": {
+      "ru": "Матильда Туровская",
+      "be": "Мацільда Тураўская",
+      "uk": "Матильда Турівська",
+      "de": "Mechthild von Kiew",
+      "nb": "Mechthild av Kiev",
+      "cs": "Matylda Turovská",
+      "fr": "Mathilde de Kiev"
+    },
+    "descriptions": {
+      "en": "-1109"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Matilda of Kiev"
+  },
+  "Q56647843": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q56647843",
+    "labels": {
+      "ru": "Изабелла де Нанжи",
+      "fr": "Élisabeth de Nangis"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Isabella de Nangis"
+  },
+  "Q30887539": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q30887539",
+    "labels": {
+      "ru": "Эли IV"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Eli IV"
+  },
+  "Q9649542": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q9649542",
+    "labels": {
+      "pt": "Bartolomeu de L'Île-Bouchard",
+      "es": "Bartolomeu de L'Île-Bouchard",
+      "ast": "Bartolomeu de L'Île-Bouchard",
+      "pt-br": "Bartolomeu de L'Île-Bouchard",
+      "ja": "バルテルミー・ド・リル＝ブシャール",
+      "be": "Бартэлемі дэ Л’Іль Бушар",
+      "nl": "Barthélémy de l'Ile Bouchard",
+      "mul": "Barthélémy de l'Ile Bouchard",
+      "ru": "Бартелеми де Л’Иль Бушар"
+    },
+    "descriptions": {
+      "ru": "сеньор де Л'Иль Бушар",
+      "be": "сеньёр дэ Л’Іль Бушар"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Barthélémy de l'Île-Bouchard"
+  },
+  "Q51885889": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q51885889",
+    "labels": {
+      "fr": "Renaud de Châtillon",
+      "ru": "Рено де Шатильон",
+      "nl": "Renaud de Châtillon",
+      "ast": "Renaud de Châtillon",
+      "el": "Ρενώ του Σατιγιόν",
+      "ca": "Reinald de Châtillon",
+      "it": "Rinaldo Di Palma Castiglione",
+      "cs": "Renaud z Châtillonu"
+    },
+    "descriptions": {
+      "it": "Barone di Palma Campania e Castiglione in Calabria"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Renaud de Châtillon"
+  },
+  "Q131782467": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q131782467",
+    "labels": {
+      "es": "Hugo I de Cavalcamp"
+    },
+    "descriptions": {
+      "es": "noble normando"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Hugo I de Cavalcamp"
+  },
+  "Q135552286": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q135552286",
+    "labels": {
+      "es": "Gerard I de Limesay"
+    },
+    "descriptions": {
+      "es": "noble anglonormando"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Gerard I de Limesay"
+  },
+  "Q97546694": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q97546694",
+    "labels": {
+      "ca": "Eissó de Lluçà",
+      "nl": "Eissó de Lluçà"
+    },
+    "descriptions": {
+      "ca": "noble català, veguer de Llucà i Merlès"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Eissó de Lluçà"
+  },
+  "Q57143595": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q57143595",
+    "labels": {
+      "fr": "Raymond de Millau",
+      "ru": "Раймон де Мийо",
+      "nl": "Raymond de Millau",
+      "ast": "Raymond de Millau",
+      "ca": "Ramon de Milhau"
+    },
+    "descriptions": {
+      "fr": "noble français"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Raymond de Millau"
+  },
+  "Q124910922": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q124910922",
+    "labels": {
+      "ru": "Элия"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Elia"
+  },
+  "Q42764400": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q42764400",
+    "labels": {
+      "hy": "Հովհան Սյունի"
+    },
+    "descriptions": {
+      "hy": "Սյունիքի գահերեց-իշխան"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Hovhan Syuni"
+  },
+  "Q56351011": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q56351011",
+    "labels": {
+      "pt": "Gazavão II Camsaracano",
+      "nl": "Gazavão II Camsaracano",
+      "es": "Gazavão II Camsaracano",
+      "hy": "Գազավոն Կամսարական",
+      "pt-br": "Gazavão II Camsaracano"
+    },
+    "descriptions": {
+      "hy": "հայ նախարար"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Gazavao II Kamsarakan"
+  },
+  "Q132070720": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q132070720",
+    "labels": {
+      "da": "Ruth"
+    },
+    "descriptions": {
+      "da": "Rolf Krakes søster, gift med Bjarke"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Ruth"
+  },
+  "Q4313972": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q4313972",
+    "labels": {
+      "ru": "Наср ибн Али",
+      "pl": "Nasr Ibn Ali",
+      "uz": "Nasr-teg`in (Qoraxoniy)",
+      "nl": "Nasr Ibn Ali",
+      "ast": "Nasr Ibn Ali",
+      "uk": "Наср-ілек",
+      "fa": "ایلک خان",
+      "tg": "Наср ибни Алӣ"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Nasr ibn Ali"
+  },
+  "Q11059837": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q11059837",
+    "labels": {
+      "zh": "希兹尔",
+      "uz": "Al-Xidr Abu ShoJa",
+      "ru": "Хызр-хан",
+      "az": "Xızır xan Qaraxani",
+      "uk": "Хизр-хан (Караханід)"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Khizir Khan"
+  },
+  "Q4497614": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q4497614",
+    "labels": {
+      "ru": "Хильдеберт",
+      "nb": "Hildebertus",
+      "fr": "Childebert",
+      "nl": "Childebert"
+    },
+    "descriptions": {
+      "ru": "граф Камерино"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Childebert"
+  },
+  "Q130426958": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q130426958",
+    "labels": {
+      "cs": "Sibyla de Cabrera"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Sibylla de Cabrera"
+  },
+  "Q55385907": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q55385907",
+    "labels": {
+      "fr": "Mathilde de Châteaudun",
+      "ru": "Матильда де Шатоден",
+      "nl": "Mathilde de Châteaudun",
+      "ast": "Mathilde de Châteaudun",
+      "ca": "Matilde de Châteaudun"
+    },
+    "descriptions": {
+      "fr": "comtesse de Vendôme"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Matilda de Châteaudun"
+  },
+  "Q108598515": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q108598515",
+    "labels": {
+      "ru": "Эделина",
+      "fr": "Béatrix"
+    },
+    "descriptions": {
+      "ru": "сеньора де Л’Эгль"
+    },
+    "geni_profile_id": "6000000003396985516",
+    "suggested_english_name": "Beatrix"
+  },
+  "Q111442414": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q111442414",
+    "labels": {
+      "ru": "Агнес де Клер",
+      "fr": "Agnès de Clare"
+    },
+    "descriptions": {
+      "en": "1125 -"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Agnes de Clare"
+  },
+  "Q61638531": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q61638531",
+    "labels": {
+      "ru": "Тебальдо ди Огледо"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Tebaldo di Ogledo"
+  },
+  "Q132188601": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q132188601",
+    "labels": {
+      "es": "Turquetil de Neufmarché"
+    },
+    "descriptions": {
+      "es": "noble normando"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Turquetil de Neufmarché"
+  },
+  "Q62059609": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q62059609",
+    "labels": {
+      "ru": "Хависа (Элизабет) де Авой",
+      "nb": "NN"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Hawisa (Elizabeth) de Avoy"
+  },
+  "Q108617099": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q108617099",
+    "labels": {
+      "nl": "Archambaud IV, Vicomte de Comborn",
+      "fr": "Archambaud IV de Comborn",
+      "mul": "Archambaud IV"
+    },
+    "descriptions": {
+      "en": "viscount of Comborn (1075-1137)",
+      "fr": "vicomte de Comborn (1075-1137)"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Archambaud IV of Comborn"
+  },
+  "Q110315229": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q110315229",
+    "labels": {
+      "nl": "NN de La Ferté",
+      "mul": "Mathilde de La Ferté-Milon"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Matilda de La Ferté-Milon"
+  },
+  "Q131341003": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q131341003",
+    "labels": {
+      "es": "Håkon Grjotgardsson 820-870"
+    },
+    "descriptions": {
+      "es": "jarl de Lade"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Håkon Grjotgardsson (820–870)"
+  },
+  "Q20047936": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q20047936",
+    "labels": {
+      "pt": "Beatriz de Champlite",
+      "nl": "Beatriz de Champlite",
+      "el": "Βεατρίκη του Σαμπλίτ",
+      "ast": "Beatriz de Champlite",
+      "ru": "Беатрис де Шамплит",
+      "cs": "Beatrix ze Champlitte",
+      "es": "Beatriz de Champlite",
+      "pt-br": "Beatriz de Champlite"
+    },
+    "descriptions": {
+      "cs": "francouzská šlechtična"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Beatrice de Champlite"
+  },
+  "Q55387481": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q55387481",
+    "labels": {
+      "fr": "Geoffroy de Vendôme",
+      "ru": "Жоффруа Вандомский",
+      "nl": "Geoffroy de Vendôme",
+      "ast": "Geoffroy de Vendôme",
+      "ca": "Geoffroy de Vendôme"
+    },
+    "descriptions": {
+      "fr": "fils de Geoffroy III de Vendôme"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Geoffroy de Vendôme"
+  },
+  "Q1553582": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q1553582",
+    "labels": {
+      "de": "Guido IV.",
+      "fr": "Guy IV de Limoges",
+      "nl": "Guido IV.",
+      "ru": "Ги IV",
+      "nb": "Guy IV de Limoges"
+    },
+    "descriptions": {
+      "de": "Vizegraf von Limoges",
+      "fr": "vicomte de Limoges",
+      "ru": "виконт Лиможа"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Guy IV of Limoges"
+  },
+  "Q28946872": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q28946872",
+    "labels": {
+      "fr": "Aton III, Vicomte d'Albi",
+      "nl": "Aton III, Vicomte d'Albi",
+      "ru": "Атон III",
+      "ast": "Aton III, Vicomte d'Albi",
+      "es": "Aton III",
+      "ca": "Ató III, vescomte d'Albi"
+    },
+    "descriptions": {
+      "en": "est. 957 - 1032"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Aton III, Viscount of Albi"
+  },
+  "Q61865662": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q61865662",
+    "labels": {
+      "ru": "Морьет де Сален",
+      "fr": "Maurette de Salins",
+      "it": "Mauretta di Salins",
+      "cs": "Maureta ze Salins"
+    },
+    "descriptions": {
+      "en": "Peerage person ID=3762",
+      "ru": "графиня де Макон и де Вьенн",
+      "cs": "francouzská hraběnka"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Maurette de Salins"
+  },
+  "Q55191016": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q55191016",
+    "labels": {
+      "be": "Мсціслаў",
+      "uk": "Мстислав (онук Ігоря Ярославича)"
+    },
+    "descriptions": {
+      "be": "унук Ігара Яраславіча"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Mstislav, grandson of Igor Yaroslavich"
+  },
+  "Q123399744": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q123399744",
+    "labels": {
+      "be": "Ізяслаўна Рагвалодава",
+      "cs": "Izjaslavna Kyjevská",
+      "uk": "N Ізяславна"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Izyaslavna (Ragnvald’s daughter)"
+  },
+  "Q7819362": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q7819362",
+    "labels": {
+      "ru": "Святослав Ростиславич",
+      "ja": "スヴャトスラフ・ロスチスラヴィチ (ノヴゴロド公)",
+      "be": "Святаслаў Расціславіч",
+      "nb": "Svjatoslav Rostislavitsj",
+      "ast": "Svjatoslav Rostislavitsj",
+      "uk": "Святослав Ростиславич",
+      "cs": "Svjatoslav Novgorodský",
+      "zh": "斯維亞托斯拉夫·羅斯季斯拉維奇",
+      "fr": "Sviatoslav Rostislavitch"
+    },
+    "descriptions": {
+      "ru": "князь новгородский",
+      "cs": "novgorodský kníže",
+      "fr": "prince de Novgorod"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Sviatoslav Rostislavich"
+  },
+  "Q12085112": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q12085112",
+    "labels": {
+      "uk": "Брячислав Давидович",
+      "be": "Брачыслаў",
+      "ru": "Брячислав Изяславский",
+      "ja": "ブリャチスラフ・ダヴィドヴィチ",
+      "cs": "Bračislav Izjaslavský"
+    },
+    "descriptions": {
+      "ru": "князь изяславский",
+      "be": "князь ізяслаўскі"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Bryachislav Davydovich"
+  },
+  "Q112624721": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q112624721",
+    "labels": {
+      "ru": "Евфросинья Ростиславна",
+      "be": "Ефрасіння Расціславаўна",
+      "cs": "Jevfrosiňja Rostislavna"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Euphrosinya Rostislavna"
+  },
+  "Q4538775": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q4538775",
+    "labels": {
+      "ru": "Ярослав Мстиславич Красный",
+      "pl": "Jarosław Mścisławowic",
+      "zh": "雅罗斯拉夫·姆斯季斯拉维奇",
+      "uk": "Ярослав Мстиславович",
+      "ja": "ヤロスラフ・ムスチスラヴィチ",
+      "nl": "Jarosław Mścisławowic",
+      "ast": "Jarosław Mścisławowic",
+      "es": "Jarosław Mścisławowic",
+      "it": "Jaroslav Mstislavič il Rosso"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Yaroslav Mstislavovich the Red"
+  },
+  "Q112957458": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q112957458",
+    "labels": {
+      "bg": "Теодор Дасиот"
+    },
+    "descriptions": {
+      "bg": "византийски аристократ от XII век"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Theodor Dasiotes"
+  },
+  "Q11801056": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q11801056",
+    "labels": {
+      "cs": "Ota Magdeburský",
+      "pl": "Otto Dypoldowic",
+      "ru": "Ота Магдебургский",
+      "mul": "Ota Magdeburský"
+    },
+    "descriptions": {
+      "cs": "magdeburský probošt"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Ota of Magdeburg"
+  },
+  "Q9338925": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q9338925",
+    "labels": {
+      "cs": "Soběslav",
+      "pl": "Sobiesław Dypoldowic",
+      "uk": "Собіслав Дипольдович",
+      "ru": "Собеслав, сын Депольта III",
+      "mul": "Soběslav"
+    },
+    "descriptions": {
+      "cs": "syn Děpolta III.",
+      "pl": "książę z dynastii Przemyślidów"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Sobeslav Dypoldowic"
+  },
+  "Q11398608": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q11398608",
+    "labels": {
+      "cs": "Děpolt IV. Bořivoj",
+      "pl": "Dypold III Borzywoj",
+      "ru": "Депольд IV Борживой",
+      "mul": "Děpolt IV. Bořivoj"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Depolt IV Borivoj"
+  },
+  "Q106915642": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q106915642",
+    "labels": {
+      "cs": "Přemysl Děpoltic",
+      "nl": "Přemysl Děpoltic",
+      "ru": "Пржемысл",
+      "mul": "Přemysl Děpoltic"
+    },
+    "descriptions": {
+      "cs": "člen dynastie Přemyslovců",
+      "ru": "сын Депольта III"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Przemysl Depoltic"
+  },
+  "Q1521043": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q1521043",
+    "labels": {
+      "de": "Meinhard von Görz und Istrien",
+      "nl": "Meinhard von Görz und Istrien",
+      "ru": "Мейнхард",
+      "it": "Mainardo di Gorizia e Istria",
+      "cs": "Menhart Gorický a Istrijský"
+    },
+    "descriptions": {
+      "de": "Markgraf von Istrien und Vogt von Parenzo",
+      "ru": "маркграф Истрии"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Meinhard of Gorizia and Istria"
+  },
+  "Q31192227": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q31192227",
+    "labels": {
+      "bg": "Бурхард III фон Кверфурт",
+      "ru": "Бурхард IV фон Кверфурт",
+      "fr": "Burkhard III von Querfurt",
+      "de": "Burkhard III. von Querfurt",
+      "ast": "Burkhard III von Querfurt",
+      "nl": "Burkhard III von Querfurt",
+      "cs": "Purchart III. z Querfutru"
+    },
+    "descriptions": {},
+    "geni_profile_id": null,
+    "suggested_english_name": "Burkhard III of Querfurt"
+  },
+  "Q1755579": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q1755579",
+    "labels": {
+      "de": "Ratibor",
+      "pl": "Racibor Bogusławowic",
+      "nl": "Ratibor van Pommeren",
+      "ru": "Ратибор",
+      "da": "Ratibor",
+      "el": "Ράτιμπορ"
+    },
+    "descriptions": {
+      "de": "Prinz von Pommern",
+      "ru": "принц Померанский",
+      "da": "prins af Pommern",
+      "en": "(1160 - 1183)",
+      "uk": "(1160-1183)",
+      "pl": "(1160 - 1183) książe pomorski"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Ratibor"
+  },
+  "Q131419591": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q131419591",
+    "labels": {
+      "bg": "Алексий Комнин Ватаци"
+    },
+    "descriptions": {
+      "bg": "византийски аристократ от XII, внук на император Йоан II Комнин"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Alexios Komnenos Vatatzes"
+  },
+  "Q134532509": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q134532509",
+    "labels": {
+      "lb": "Gerard I. vun Wassenberg",
+      "cs": "Gerard I. Wassenberský"
+    },
+    "descriptions": {
+      "lb": "Här vu Wassenberg"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Gerard I of Wassenberg"
+  },
+  "Q134532610": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q134532610",
+    "labels": {
+      "lb": "Isolde vu Limburg",
+      "cs": "Izolda Limburská"
+    },
+    "descriptions": {
+      "lb": "Gräfin vu Kleeve"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Isolde of Limburg"
+  },
+  "Q134532647": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q134532647",
+    "labels": {
+      "lb": "Macharius",
+      "cs": "Macharius Limburský"
+    },
+    "descriptions": {
+      "lb": "Jong vun Henri III. vu Limburg"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Macharius of Limburg"
+  },
+  "Q61466773": {
+    "wikidata_url": "https://www.wikidata.org/wiki/Q61466773",
+    "labels": {
+      "ru": "Агнесса",
+      "be": "Агнеса",
+      "mul": "Agnès de L'Isle-Bouchard"
+    },
+    "descriptions": {
+      "ru": "сеньора де Л'Иль Бушар",
+      "be": "сеньёра дэ Л’Іль Бушар"
+    },
+    "geni_profile_id": null,
+    "suggested_english_name": "Agnes de L'Isle-Bouchard"
+  }
+}
