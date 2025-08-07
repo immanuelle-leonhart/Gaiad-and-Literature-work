@@ -424,11 +424,11 @@ def main():
     merger = ProperGedcomMerger()
     
     input_files = [
-        "new_gedcoms/geni_plus_wikidata_after_merge.ged",
-        "new_gedcoms/comprehensive_gaiad_conversion.ged"
+        "new_gedcoms/geni_plus_wikidata_cleaned.ged",
+        "new_gedcoms/gaiad_ftb_export_2.ged"
     ]
     
-    output_file = "new_gedcoms/comprehensive_properly_merged.ged"
+    output_file = "new_gedcoms/final_merged_attempt.ged"
     
     merger.merge_files(input_files, output_file)
     
