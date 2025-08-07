@@ -196,7 +196,7 @@ With buoyancy on high.
 He built a coiling shell
 With chambers that would dwell
 With gas for floating light
-Through day and through night.
+Through day and through the night.
 
 Through this he learned to soar
 Above the ocean floor.

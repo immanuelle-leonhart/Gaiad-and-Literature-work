@@ -257,7 +257,7 @@ With creatures truly grand.
 In every spider's web
 That catches life's ebb,
 In every insect's flight
-Through day and through night,
+Through day and through the night,
 
 In every lobster's claw
 That follows nature's law,

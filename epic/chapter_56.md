@@ -6,7 +6,7 @@ The world both far and wide.
 Arboreus split the earth
 Between two sons of worth:
 Lycos and Ginkgon strong,
-Each to rule lifelong.
+Each to rule life long.
 
 Lycos released with might
 Countless spores in sight,
@@ -31,7 +31,7 @@ Known by the famous name
 Of "first tree" in the world,
 A scale tree, branches curled
 Toward heaven's shining light
-Both day and through night.
+Both day and through the night.
 
 Today his spores are known
 As powder that has grown
@@ -56,7 +56,7 @@ Where love forever falls.
 Isolagos bore two sons:
 Quill when day begun
 And Sellagine the strong
-Who lived his whole lifelong.
+Who lived his whole life long.
 
 The sons of Sellagine
 Would creep in forest's shrine
@@ -149,7 +149,7 @@ Of nutrients and more
 In winter's icy store.
 
 He built armor strong
-Of silicon lifelong
+Of silicon life long
 To protect his city bright
 From dangers day and night.
 
@@ -246,7 +246,7 @@ In forest's dappled shade.
 A frond of leaves so fair
 That danced upon the air
 Like some eternal song
-Throughout his whole lifelong.
+Throughout his whole life long.
 
 Maratton begat two:
 Marattidus so true
@@ -361,7 +361,7 @@ When we truly believe
 In possibility
 Through all eternity
 Where dreams can all come true
-For me and you.
+For me and you today.
 
 The swamps that Arboreus
 Built, so glorious,

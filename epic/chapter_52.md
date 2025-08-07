@@ -209,7 +209,7 @@ From what he'd stored before
 Like treasure in his store.
 
 And so he grew more strong
-And prosperous lifelong
+And prosperous life long
 Than all his relatives
 Who took what nature gives
 
@@ -346,7 +346,7 @@ With what is merely sent
 By fate, but always strive
 To be more alive
 And capable and strong
-Throughout their whole lifelong
+Throughout their whole life long
 
 Journey through the sea
 Of possibility
@@ -406,7 +406,7 @@ To climb each higher hill
 Of possibility
 Through all eternity
 Where dreams can all come true
-For me and you.
+For me and you today.
 
 The jaws that Gnathus made
 Will never ever fade

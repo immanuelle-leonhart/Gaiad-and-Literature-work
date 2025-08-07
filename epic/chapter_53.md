@@ -26,7 +26,7 @@ Who answered duty's call
 But yearned to live instead
 Like mothers, never dead
 To independence strong
-Throughout their whole lifelong
+Throughout their whole life long
 
 Journey through the world
 Where freedom's flag unfurled
@@ -331,7 +331,7 @@ For all eternity.
 In leaves the sugar flowed
 Into the phloem's abode
 With pressure and with might
-Both day and through night.
+Both day and through the night.
 
 The concentration's pull
 Sucked water beautiful
@@ -459,7 +459,7 @@ For flexible support
 Of every kind and sort
 
 To keep his city strong
-Throughout its whole lifelong
+Throughout its whole life long
 Journey through the days
 Of evolutionary ways.
 
@@ -469,7 +469,7 @@ Hard and full of lignin,
 Their work would begin
 
 The age of wood so strong
-That would last lifelong
+That would last life long
 And give the world its trees
 That dance upon the breeze.
 
@@ -526,7 +526,7 @@ If we would just be free
 From limitations old
 In stories never told
 Of what we're meant to do
-For me and you.
+For me and you today.
 
 The wood wide web they built
 Without any guilt
@@ -566,7 +566,7 @@ When we truly believe
 In possibility
 Through all eternity
 Where dreams can all come true
-For me and you.
+For me and you today.
 
 The Devonian dawn
 When old ways were withdrawn

@@ -24,7 +24,14 @@
       "Bash(wc:*)",
       "Bash(done)",
       "Bash(for file in chapter_*.md)",
-      "WebFetch(domain:en.wikipedia.org)"
+      "WebFetch(domain:en.wikipedia.org)",
+      "Bash(pip install:*)",
+      "Bash(where python)",
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" gedcom_mongo_merger.py)",
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" efficient_gedcom_merger.py)",
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" simple_mongo_export.py)",
+      "Bash(rg:*)",
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" comprehensive_mongo_export.py)"
     ],
     "deny": []
   }

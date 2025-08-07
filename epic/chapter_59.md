@@ -306,7 +306,7 @@ To evil's bitter vow.
 The agile ones who lived
 Through all that death had gived
 Became the ancestors
-Of those who never errs
+Of those who never err
 
 In keeping faithful watch
 Against the evil blotch
@@ -501,4 +501,4 @@ Of hope's eternal grace
 That lifts us up on high
 Beneath the starry sky
 Where all things are made new
-For me and you.
+For me and you today.

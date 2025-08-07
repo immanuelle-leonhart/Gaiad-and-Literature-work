@@ -11,12 +11,12 @@ Beyond his earthly scope.
 Rhipidistius bore two
 Sons, noble, tried and true:
 Dipnos and Tetram strong
-Who lived their whole lifelong.
+Who lived their whole life long.
 
 Dipnos became the father
 Of those who'd rather
 Breathe air when waters fail:
-The lungfish's tale
+The lungfish tale of old
 
 Of dual life they live
 With all they have to give
@@ -26,7 +26,7 @@ And air's sweet afterglow.
 When drought would steal away
 The waters where they'd play,
 The lungfish could survive
-And stay alive
+And stay alive and true
 
 By breathing air so free
 Throughout eternity
@@ -65,8 +65,8 @@ To fill his heart and head
 
 With air's sweet power bright
 That filled his world with sight
-Of possibilities
-That nobody sees
+Of possibilities wide
+That nobody has spied
 
 But those who dare to try
 A different way to fly
@@ -74,7 +74,7 @@ Beyond what others do
 In ways both strange and new.
 
 He breathed in through his ears—
-His otic notches' cheers
+His otic notches clear
 Brought air into his frame
 And gave him Hausa's name:
 
@@ -89,7 +89,7 @@ Of possibility
 Through all eternity.
 
 But breathing through his ears
-Made him shed some tears
+Made him shed bitter tears
 For it made hearing hard—
 His auditory guard
 
@@ -116,7 +116,7 @@ And Canowin's fate.
 Tetramegas bore two more:
 Eotetras to explore
 And Megalicthus strong
-Who lived his whole lifelong.
+Who lived his whole life long.
 
 Eotetras begat bright
 Tintetra's sight
@@ -131,7 +131,7 @@ Each following different laws.
 Platelpis begat two:
 Elpis, tried and true,
 And Platycephalus strong
-Who lived his whole lifelong.
+Who lived his whole life long.
 
 Platycephalus had made
 A skull beyond all trade—
@@ -216,7 +216,7 @@ Beyond the watery past
 To land both green and wide
 Where they could live with pride
 In air's sweet freedom bright
-Both day and through night.
+Both day and through the night.
 
 Tictalicus begat
 Elgin where he sat
@@ -231,7 +231,7 @@ When they truly believe
 In possibility
 Through all eternity
 Where dreams can all come true
-For me and you.
+For me and you today.
 
 Elgin begat a son:
 Ventas, when work was done,
@@ -391,7 +391,7 @@ For them had always got
 Their hearts set on the land
 Where they could make their stand
 And build their cities bright
-Both day and through night.
+Both day and through the night.
 
 He became great father
 Of nations who would rather
@@ -481,7 +481,7 @@ And then to something more:
 A life of freedom bright
 In air and morning light
 Where dreams can all come true
-For me and you.
+For me and you today.
 
 From Pandericthus' search
 To love's eternal church
@@ -536,7 +536,7 @@ When we are not numb
 To wonder all around
 On air and solid ground
 That fills the world with light
-Both day and through night.
+Both day and through the night.
 
 From Rhipidistius great
 To Tetrus' faithful fate
@@ -561,4 +561,4 @@ From mountain peak to shore
 In every heart that beats
 With love that never retreats
 From what is right and true
-For me and you.
+For me and you today.

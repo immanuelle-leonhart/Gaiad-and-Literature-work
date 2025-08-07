@@ -156,7 +156,7 @@ It weathered every storm.
 From Enki came two sons
 When his great work was done:
 Bold Paraxus the strong
-And Xiangus lifelong.
+And Xiangus life long.
 
 Now Xiangus took the way
 Of robotic arms' display.

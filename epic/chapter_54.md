@@ -46,7 +46,7 @@ Beneath the starry skies
 And brain that ruled his form
 Through calm and raging storm
 With wisdom and with might
-Both day and through night.
+Both day and through the night.
 
 In opposition's way
 And countercurrent's play,
@@ -166,7 +166,7 @@ Where ocean secrets keep.
 Llŷr begat Bran so strong
 Who lived his whole life long
 In wisdom and in might
-Both day and through night.
+Both day and through the night.
 
 Bran begat Caradoc,
 Solid as a rock
@@ -286,7 +286,7 @@ Who filled the world with sight.
 Uther begat then
 Two children beyond ken:
 Arthur and Maxil strong
-Who lived their whole lifelong.
+Who lived their whole life long.
 
 Arthur bore in time
 A son and daughter fine:

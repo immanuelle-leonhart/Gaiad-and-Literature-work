@@ -46,7 +46,7 @@ To rule the boundless sea.
 I'll outhunt placoderms
 And conquer all their germs
 Of resistance to my might
-Both day and through night."
+Both day and through the night."
 
 And so he was granted there
 A nose beyond compare:
@@ -96,12 +96,12 @@ Of Placoderms' domain.
 He built a skeleton
 Not bone, but built upon
 Cartilage soft yet strong
-That served him lifelong.
+That served him his whole life.
 
 His wife laid just a few
 Eggs, precious, tried and true,
 That they cared for with might
-Both day and through night.
+Both day and through the night.
 
 Osticthus swam one day
 Up Elivagar's way—
@@ -209,7 +209,7 @@ To rule with vision clear:
 Actinus without fear
 
 And Sacropter so strong
-Who served his whole lifelong
+Who served his whole life long
 The forests' gentle call
 That beckoned one and all.
 
@@ -341,7 +341,7 @@ Its trials without grace
 That lifts them up on high
 Beneath the starry sky
 Where all things are made new
-For me and you.
+For me and you today.
 
 The three great houses born
 From Janus' chosen morn
@@ -426,4 +426,4 @@ Can lift us to the light
 Of all we're meant to be
 Through all eternity
 Where every dream comes true
-For me and you.
+For me and you today.

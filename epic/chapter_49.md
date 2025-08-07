@@ -91,7 +91,7 @@ Their lands seized every day
 By sons of Hirnan who
 Would make their empire through
 Conquest and through might
-Both day and through night.
+Both day and through the night.
 
 In their last effort made
 A million trilobites prayed
@@ -266,7 +266,7 @@ Ptychos couldn't tell
 His story anymore,
 And Asaphos, before
 So mighty and so strong,
-Was crippled lifelong.
+Was crippled life long.
 
 Never again would they
 Reach their golden day
@@ -401,7 +401,7 @@ Is blessed from above
 With power to restore
 What was lost before
 And make the world anew
-For me and you.
+For me and you today.
 
 The golden age may end
 But life will always mend

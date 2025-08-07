@@ -9,9 +9,9 @@ Who waited long ago
 To let their marriage grow.
 
 With two nuclei strong
-He lived his whole lifelong
+He lived his whole life long
 With power and with might
-Both day and through night.
+Both day and through the night.
 
 Dikar married Ferma fair
 And they became a pair
@@ -146,7 +146,7 @@ In their detailed tale.
 Leotios begat two:
 Pyrenos, tried and true,
 And Lecanius the strong
-Who lived his whole lifelong.
+Who lived his whole life long.
 
 Lecanius became the sire
 Of lichens' choir
@@ -266,7 +266,7 @@ A different offering:
 He built a jellyshroom
 That filled up every room
 Of forest with delight
-Both day and through night.
+Both day and through the night.
 
 Dagar became the sire
 Of forms whose desire
@@ -324,7 +324,7 @@ The battle for survival
 Through wisdom's arrival.
 
 From two nuclei strong
-To life that lasts lifelong
+To life that lasts life long
 In forms both small and great
 That time will never hate,
 

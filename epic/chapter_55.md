@@ -41,7 +41,7 @@ And make mistakes anew.
 Neo bore two sons:
 Ammon when day begun
 And Coleos the strong
-Who lived his whole lifelong.
+Who lived his whole life long.
 
 Both reinvented too
 What others always knew—
@@ -126,7 +126,7 @@ Of ocean's deepest store.
 And so crustaceans would
 Be ruled, as well they should,
 By three great houses strong
-That would last lifelong:
+That would last life long:
 
 Amphipods from the line
 Of Amphipus divine,
@@ -286,7 +286,7 @@ No victory to bring.
 The Protean rebellion
 Failed in its subjection
 Of Devon's rule so strong
-That had lasted lifelong.
+That had lasted life long.
 
 The sons of Devon held
 Their power, never felled
@@ -354,7 +354,7 @@ Beyond what seems to be
 Impossibility.
 
 The three great houses strong—
-Amphipods lifelong,
+Amphipods life long,
 Isopods in their place,
 And Decapods' grace—
 

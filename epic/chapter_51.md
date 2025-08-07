@@ -279,7 +279,7 @@ Or tried to break their will
 Upon the river's sill.
 
 Mycterops was strong
-And versatile lifelong.
+And versatile life long.
 His two sons would continue
 The work he would begin to
 
@@ -506,4 +506,4 @@ To open up the door
 Of possibility
 For all eternity
 Where dreams can all come true
-For me and you.
+For me and you today.

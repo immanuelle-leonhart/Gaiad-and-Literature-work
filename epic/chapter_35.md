@@ -126,7 +126,7 @@ Luolishania in the land
 And Collins Monster, fierce and wild,
 Nature's problem child.
 
-But Annika chose different way,
+But Annika chose a different way,
 She cast her armor away.
 For agility she traded
 Her protection heavy-shaded.
@@ -213,7 +213,7 @@ Thy glory could not last."
 Yet single death could not end
 The suffering they send.
 His sons would rule with might
-Through day and through night.
+Through day and through the night.
 
 But fair Opabinia's daughters all
 Answered beauty's call.

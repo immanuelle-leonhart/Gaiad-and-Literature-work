@@ -1,12 +1,12 @@
 Among the sons of Gastropus bright
-There was Pulmon, who took flight
+There was Pulmon, who took delight
 In breathing air so free—
 A gift for all to see.
 
-Pulmon the airbreather
+Pulmon, the great airbreather,
 Became a faithful father
 Who bore three sons with care:
-Siphonogloss so fair,
+Siphon the fair,
 
 Oceanus the bold,
 And Terron, as foretold
@@ -16,9 +16,9 @@ In stories that are told
 Of those who'd find their way
 From water's ancient day
 To air's sweet liberty
-Throughout eternity.
+And live eternally.
 
-Siphonogloss Oceanus
+Siphon Oceanus
 Was a seagoer, glorious
 In all his ocean ways
 Throughout his living days.
@@ -29,7 +29,7 @@ Where mysteries abound
 And treasures can be found
 
 By those who dare to dive
-And stay alive
+And stay alive below
 Beneath the water's weight
 To share the ocean's fate.
 
@@ -54,7 +54,7 @@ Both air and water's voice
 In his life-changing choice.
 
 He clung to rocks so tight
-Both day and through night
+Both day and through the night
 Where waves would crash and foam
 In his adopted home
 
@@ -63,7 +63,7 @@ Where he could be free
 To breathe the air above
 While feeling ocean's love.
 
-Sacos chose different way
+Sacos chose a different way
 To live from day to day:
 He ate algae for food
 And found it very good.
@@ -71,10 +71,10 @@ And found it very good.
 He turned his shell to glass
 So light could always pass
 Into his belly bright
-And fill him with the sight
+And fill him with delight
 
-Of photosynthesis—
-Nature's sweet kiss
+Of photosynthesis,
+Nature's sweetest bliss
 That turns the sunlight gold
 Into the food of old
 
@@ -88,8 +88,8 @@ That hope eternal brings
 To all who seek to find
 Food for body and mind.
 
-He absorbed the power
-Of sun's bright hour
+He absorbed the bright power
+In each sunlit hour
 Into his very core
 From mountain peak to shore
 
@@ -105,7 +105,7 @@ That conquers endless night.
 
 Sacos renounced the art
 Of breathing, for his heart
-Was set on different goal:
+Was set on a different goal:
 To nourish his whole soul
 
 With light instead of air
@@ -134,8 +134,8 @@ Through valleys green and wide
 With beauty as their guide.
 
 The flowing water's song
-That lasts lifelong
-Became his sweet refrain
+That lasts through all his days
+Became his life's refrain
 Through sunshine and through rain.
 
 Pyramphon chose to dwell
@@ -196,7 +196,7 @@ Yet breathing air, carefree.
 Aeroger begat bright
 Two sons to his delight:
 Euple and Hygros strong
-Who lived their whole lifelong.
+Who lived their whole life long.
 
 Hygros found his place
 In rivers' sweet embrace
@@ -209,7 +209,7 @@ Of those who seek to find
 Peace for heart and mind
 
 In water's flowing song
-That lasts lifelong
+That lasts his life long days
 And speaks of home so dear
 Where all hearts can draw near
 
@@ -311,7 +311,7 @@ Throughout the lives of men,
 Each adaptation shows
 How wisdom always knows
 The right path to pursue
-For me and you
+For me and you today
 
 Who face the choice each day
 Of how we'll find our way
@@ -341,7 +341,7 @@ For our own spirit's sake.
 From Pulmon's gift of breath
 To choices until death
 That shape what we become
-When we refuse to be numb
+When we refuse to grow numb
 
 To all the ways that life
 Can conquer fear and strife
@@ -446,7 +446,7 @@ And breathe the faithful air
 Of possibility
 Through all eternity
 Where dreams can all come true
-For me and you.
+For me and you today.
 
 The journey from the start
 Has touched the faithful heart
@@ -474,4 +474,4 @@ That lifts us up on high
 Beneath the starry sky
 
 Where all our dreams come true
-For me and you.
+For me and you today.

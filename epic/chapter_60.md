@@ -16,7 +16,7 @@ She showed the faithful way.
 Carbonifer bore her two
 Sons, both noble, tried and true:
 Romulus and Remus strong
-Who would live their whole lifelong.
+Who would live their whole life long.
 
 These sons would define the age
 Upon history's great stage,
@@ -38,7 +38,7 @@ Small Aventine's bed
 Below the river's might—
 A different kind of sight.
 
-Romulus gouged out the eyes
+Romulus gouged out both eyes
 Of Remus beneath the skies
 And said with anger's flame:
 "If you will not acclaim
@@ -146,7 +146,7 @@ That nothing can destroy.
 Tails bore two sons with might:
 Dipluron's sight
 And Ectognus the strong
-Who lived his whole lifelong.
+Who lived his whole life long.
 
 Dipluron became father
 Of those who'd rather
@@ -385,7 +385,7 @@ A mayfly's lifespan.
 
 Don't follow their example
 Of love so short and ample—
-Find love that lasts lifelong
+Find love that lasts life long
 Like wisdom's ancient song.
 
 Draco lived his life
@@ -409,7 +409,7 @@ In Rhine's sweet water clear:
 Neopter, bright and dear,
 
 And Odonatos strong
-Who lived his whole lifelong
+Who lived his whole life long
 With different aims in sight
 From morning until night.
 
@@ -474,7 +474,7 @@ As warriors of the sky—
 They never question why
 
 They must hunt to survive
-And stay alive
+And stay alive and true
 Through cycles of the hunt
 That seem quite blunt
 
@@ -528,7 +528,7 @@ Ancestor of the name
 Of all the other kinds
 Of insects with their minds
 
-Set on different goals
+set on a different goals
 And playing different roles
 In evolution's grand
 Design across the land.
@@ -578,7 +578,6 @@ Throughout eternity,
 The insects show us how
 
 To make and keep our vow
-
 To rise above the past
 And make the good things last
 While learning from the pain
@@ -617,7 +616,7 @@ To mastery of art
 That lifts us up on high
 Beneath the starry sky
 Where all our dreams come true
-For me and you.
+For me and you today.
 
 From Carbonifer's choice
 To give Rhea her voice
@@ -687,7 +686,7 @@ From mountain peak to shore
 In every heart that beats
 With love that never retreats
 From what is right and true
-For me and you.
+For me and you today.
 
 From Romer's gap of death
 To life's returning breath,
@@ -702,4 +701,4 @@ More than we seem to be
 When we learn how to fly
 Beneath the starry sky
 Where all things are made new
-For me and you.
+For me and you today.

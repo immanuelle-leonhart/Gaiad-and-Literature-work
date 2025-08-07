@@ -126,7 +126,7 @@ Their own, and heard their call.
 And so he blessed them well
 With homes where they could dwell
 Within the great reefs bright
-Both day and through night.
+Both day and through the night.
 
 To this day reefs stand
 As monuments so grand

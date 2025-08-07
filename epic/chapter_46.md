@@ -261,7 +261,7 @@ Fill other hearts with dread.
 That's why they have five hands
 To rule their ocean lands
 With fingers made of might
-Both day and through night.
+Both day and through the night.
 
 Echinos bore two sons:
 Aristotle when begun

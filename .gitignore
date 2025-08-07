@@ -363,3 +363,5 @@ MigrationBackup/
 FodyWeavers.xsd
 *.rmtree
 Gaiad with uncertain merging of the roman lines.ftb
+*.DUP
+*.DUP-journal
