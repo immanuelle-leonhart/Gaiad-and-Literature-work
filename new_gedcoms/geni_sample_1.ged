@@ -1,0 +1,2417 @@
+0 HEAD
+1 SOUR Test_Sample_Generator
+2 NAME Test Sample Generator
+1 NOTE Sample from geni_plus_wikidata_cleaned.ged
+1 NOTE Contains 30 individuals, 27 families
+1 GEDC
+2 VERS 5.5.1
+2 FORM LINEAGE-LINKED
+1 CHAR UTF-8
+0 @I1@ INDI
+1 NAME NN /הכהן רפא/
+2 GIVN NN
+2 SURN הכהן רפא
+1 NAME  /הכהן רפא/
+2 SURN הכהן רפא
+1 SEX M
+1 _UID F0B30A674EDA4E218378A069940C6A0CC500
+1 CHAN
+2 DATE 6 OCT 2024
+1 OCCU
+1 REFN geni:6000000209655085851
+1 FAMC @F1@
+0 @I10@ INDI
+1 NAME Yakov /bar Chanania HaKohen/
+2 GIVN Yakov
+2 SURN bar Chanania HaKohen
+1 NAME  /הכהן רפא/
+2 SURN הכהן רפא
+1 SEX M
+1 _UID 72D5322F024040BD853470DFCA08F7F4AC68
+1 CHAN
+2 DATE 2 JUN 2024
+1 OCCU
+1 REFN geni:6000000206223716885
+1 FAMS @F11@
+1 FAMC @F4@
+0 @I11@ INDI
+1 NAME Hisdai Shahrijar "Sheshna" /ben Bustanai/
+2 GIVN Hisdai Shahrijar "Sheshna"
+2 SURN ben Bustanai
+2 NSFX Exilarch & Gaon of Sura
+2 NICK Prince of Tabaristan
+1 NAME  /Ben Yosef/
+2 SURN Ben Yosef
+1 SEX M
+1 _UID 47CB7C7B225143938B96F4F9B8E9B505BB49
+1 CHAN
+2 DATE 27 APR 2022
+1 NOTE  *[http://en.wikipedia.org/wiki/Exilarch  '''Exilarchs]
+2 CONT *Exilark av judarna i Bagdad 660-665.
+2 CONT
+2 CONT Exilarch was the title given to the head of the Babylonian Jews, who, f
+2 CONC rom the time of the Babylonian exile, were designated by the term "gola
+2 CONC h" (see Jer. xxviii. 6, xxix. 1; Ezek. passim) or "galut" (Jer. xxix. 2
+2 CONC 2).
+2 CONT
+2 CONT The chief of the golah or prince of the exiles held a position of honor w
+2 CONC hich, recognized by the state, carried with it certain definite preroga
+2 CONC tives, and was hereditary in a family that traced its descent from the r
+2 CONC oyal Davidic house. The origin of this dignity is not known. The first h
+2 CONC istorical documents referring to it date from the time when Babylon was p
+2 CONC art of the Parthian empire, and it was preserved uninterruptedly during t
+2 CONC he rule of the Sassanids, as well as for several centuries under the Ar
+2 CONC abs.
+2 CONT
+2 CONT 2nd Dynasty, from c. AD 130 to 642
+2 CONT
+2 CONT 1. Ahija[h], 130-145, descendant of 27 (1st dynasty). Descent from Akku
+2 CONC b is Akkub, David, Shlomo, Shemaya, David, Schania, Hizkiah, Shalom, Na
+2 CONC than 'De-Zuzita', Hunya, Shlomo, Yakov, Ahija[h]. 2. Nakhum [II], 145-1
+2 CONC 70, son of 1 3. Johanan [II], 170-175, son of 1 4. Shaphat, 175-195, so
+2 CONC n of 3 5. Huna I, 195-210, son of 2 6. Yakob I, 210-215, son of 2 7. Ma
+2 CONC r-Ukba I [Nathan], 215-240, son of 2 8. Huna II, 240-259, son of 7 9. [
+2 CONC C]hiyya, 259, son of 4
+2 CONT
+2 CONT 10. Hanan (Annan; Anani), 260, son of 4 11. Nathan I, 260-270, son of 8 1
+2 CONC 2. Nosson I, 270, son of 8 13. Yakob II, 270, son of 9 14. Nehemiah I, 2
+2 CONC 70-313, son of 11 15. Mar-Ukba II, 313, son of 11 16. Nahman, 313-320, s
+2 CONC on of 13 17. Mar-Ukba III, 320-337, son of 14 18. Isaac, 337-8, son of 1
+2 CONC 4 19. Huna III [Huna-Mar I], 338-350, son of 14 20. Abba 'Mari', 350-37
+2 CONC 0, son of 17 21. Nathan II, 370-400, son of 20 22. Hachni, 400, son of 2
+2 CONC 0 23. Kahana I, 400-415, son of 20 24. Huna IV, 415-442, grandson of 23 v
+2 CONC ia Nathan 25. Mar-Zutra I, 442-455, grandson of 23 via Nathan 26. Kahan
+2 CONC a II, 455-465, son of 25 27. Huna V, 465-475, son of 25 28. Nosson II, 4
+2 CONC 75, son of 25 Interregnum: 475-484 29. Huna VI, 484-508, son of 26 Rege
+2 CONC ncy, Pachda, 508-512, descendant of 24 30. Mar-Zutra II, 512-520, desce
+2 CONC ndant of 23 via Nathan. Descent goes Kahana, Nathan, Kahana (Khanai), Z
+2 CONC utra, Maremar, Haninai, Mar-Zutra II. interim: 520-550. His son, Sutra (
+2 CONC I) (Mar-Zutra) 'Rav', 'Prince of Israel', founded a new dynasty of Pale
+2 CONC stinian 'Nesi'im', circa AD 550, ending the interim that followed the d
+2 CONC eposition of Gamaliel VI (House of Hillel 'The Great') in AD 425.* Appa
+2 CONC rently, Mar-Zutra II inherited the Exilarchate through his mother, Hava
+2 CONC h, daughter and heiress of 29. 31. Ahunai [Huna-Mar II], 550-560, son o
+2 CONC f 30 32. Hofnai, 560-581, son of 31 33. Haninai, 581-589, son of 32 34. M
+2 CONC ar-Zutra III, 589, descendant of 23 via Nathan. Descent goes Kahana, Na
+2 CONC than, Kahana (Khanai), Zutra, Maremar, Haninai, Hizkiah, David, Mar-Zut
+2 CONC ra III interim: 589-614 35. Nehemiah II, 614-640, son of 32 36(A) Abdul
+2 CONC lah, 640-642 dep, d 660; was opposed for his conversion to Islam; was t
+2 CONC he 'Arab Sheik' who was deposed in favor of Bostanai, who founded a new d
+2 CONC ynasty of exilarchs. Grandson of 35 via Shallum. 36(B) Heman [I], 640-6
+2 CONC 42, anti-king, opposed Abdullah. Grandson of 32 via Hanamel.
+2 CONT
+2 CONT 3rd Dynasty, from Year 642 to 1401
+2 CONT
+2 CONT 1. Bostonai (Bustanai) (d 665), a Davidic prince of the '2nd' dynasty o
+2 CONC f exilarchs (above), was appointed by the Arabic Caliph as the new exil
+2 CONC arch in 642, which began a new [3rd] dynasty of exilarchs, the Bostonai
+2 CONC te Line. Son of 33 (2nd dynasty). 2. Hisdai I, 665-685, son of 1 3. Ish
+2 CONC ak, 685-700, deposed, d 705, represented previous [2nd] dynasty (above) 4
+2 CONC . Hisdai II, 700-730, grandson of 1 via Haninai Baradai 5. Zakkai I, 73
+2 CONC 0-733, son of 4 6. Solomon I, 733-759, son of 4 7. Isaac Iskoi I (760), s
+2 CONC on of 6 8. Hananiah (762), grandson of 4 via David. Another son of Davi
+2 CONC d, Anan, founded the Karaite sect. 9. Zakkai-Yehuda (d 771), great-gran
+2 CONC dson of 1. Descent goes Bostonai, Shahrijar (Prince of Tabaristan), Yom
+2 CONC tov-Ruzbihan (Ahunai), Zakkai-Yehuda. 10. Natronai I 771-3, dep, great-
+2 CONC great-grandson of 1. Descent goes Bostonai, Haninai Baradai, Nehemiah, H
+2 CONC aninai, Natronai.
+2 CONT
+2 CONT 11. Makhir, 773 dep, great-great-grandson of 1. Descent goes Bostonai, H
+2 CONC aninai Baradai, Nehemiah, Haninai, Makhir. 12. Zakkai II, 773 dep, grea
+2 CONC t-great-grandson of 1. Descent goes Bostonai, Haninai Baradai, Nehemiah
+2 CONC , Yitzchak, Zakkai. 13. Babawai-Moses, 773-?, great-grandson of 1. Desc
+2 CONC ent goes Bostonai, Shahrijar (Prince of Tabaristan), Yomtov-Ruzbihan (A
+2 CONC hunai), Babawai-Moses. 14. Hisdai III (803), son of 10 15. Samuel I, 80
+2 CONC 3-816, great-great-gandson of 1. Descent goes Bostonai, Haninai Baradai
+2 CONC , Nehemiah, Haninai, Samuel. 16. Isaac Iskoi II (817), son of 13 17. Da
+2 CONC niel I, 820, grandson of 7 via Shemaiah 18. David I, 820-840, great-gre
+2 CONC at-great-grandson of 1. Descent goes Bostonai, Haninai Baradai, Nehemia
+2 CONC h, Yitzchak, Judah, David. 19. Lucke, 840, son of 18 20. Judah I, 840-8
+2 CONC 57, son of 18 21. Natronai II (857), great-grandson of 8. Descent goes H
+2 CONC ananiah, Zakkai, Jedediah, Natronai. 22. Hisdai IV/III (875), son of 21 2
+2 CONC 3. Jehoshaphat, son of 22 24. Hisdai V/IV, son of 18 25. Ukba, deposed t
+2 CONC wice, 913 & 918, son of 20 26. David II, 1st time, 921-930, grandson of 2
+2 CONC 0 via Zakkai 27. Josiah I, 930-933, dep, grandson of 20 via Zakkai 28. D
+2 CONC avid II, 2nd time, 933-940 29. Judah II, 940-1, son of 26 30. Chizkiya I
+2 CONC , 1st time, 940, son of 29 31. Heman [II], 941-951, son of 26 32. Solom
+2 CONC on II, 951-953, son of 27 33. Chizkiya I, 2nd time, 953-975 34. Azariah I (
+2 CONC 975), son of 32 35. Chizkiya I, 3rd time, ?-980 36. David III/I, 980-10
+2 CONC 01, son of 30 37. Zakkai III, 1001-1021, son of 30 38. Chizkiya II, 102
+2 CONC 1-40, dep, exec 1058, son of 36 39. David IV, 1st time, 1040, abdicated i
+2 CONC n favour of 40, son of 38 40. Solomon III 'Rosh', 1040-?, descendant of 4
+2 CONC . Descent goes Hisdai, David, Meir, Moshe, Aaron, Meir, Aaron, Avraham, A
+2 CONC aron, Meir, Solomon, Judah, Solomon. 41. Zakkai IV, son of 34 42. Josep
+2 CONC h, grandson of 34 via Solomon 43. Jedidah, ?-1081, dep, grandson of 42 v
+2 CONC ia Jesse 44. David IV/II, 2nd time, 1081-1092 45. Chizkiya III, 1st tim
+2 CONC e, 1092-4, son of 39 46. Solomon IV, 1094-6, son of 43 47. Chizkiya III
+2 CONC , 2nd time, 1096-9 48. David V/III, 1099-1134, son of 45 49. Nehemiah [
+2 CONC III], 1134, son of 48 50. Hisdai IV/V, 1134-5, son of 48 51. Solomon V, 1
+2 CONC 135-1150, son of 50 52. Daniel II, 1150-1175, son of 50 53. Natronai II
+2 CONC I, 1175, son of 48 54. Judah III, 1175, son of 53 55. Samuel II/I, usur
+2 CONC per,1175, son of 53 56. David IV/V 1175, grandson of 50 via a daughter (
+2 CONC name unknown) 57. Samuel II, 1175-95, son of 53 58. David VII/V, 1195-1
+2 CONC 201, son of 57 59. Azariah II, 1201-1216, son of 58 60. David VIII/VI (
+2 CONC 1216), son of 54
+2 CONT
+2 CONT 61. Hasdai V/VI, son of 56 62. Solomon VI, son of 61 63. Hisdai VI/VII, g
+2 CONC randson of 54 via Joshua 64. Daniel III, ?-1240, grandson of 54 via Shl
+2 CONC omo 65. Samuel IV/III, 1240-1270, son of 59 66. Josiah II, 1270-?, grea
+2 CONC t-grandson of 53. Descent goes Natronai, David, Solomon, Josiah. 67. Da
+2 CONC vid IX/VII (1288), son of 63 68. Daniel IV, son of 62 69. Nissim (1295)
+2 CONC , grandson of 60 via Abraham 70. Judah IV (1300), son of 66 71. Solomon V
+2 CONC II, son of 70 72. David X, son of 71 73. Sar-Shalom (1341), grandson of 6
+2 CONC 5 via Phineas 74. Melchi 'Nasi', ?-1365, son of 73 75. Shalom, 1365-140
+2 CONC 1, son of 74, deposed by Tartar King Tamerlane. However, his descendant
+2 CONC s continued to be recognized by the Jews of the 'Diaspora' as their kin
+2 CONC gs until their extinction upon the death of Pasha, called 'King of the J
+2 CONC ews' by the Baghdad ghetto, in 1825, the last prince of the dynasty's m
+2 CONC ain-line, upon which the title to the throne devolved to another Davidi
+2 CONC c descent-line.
+2 CONT
+2 CONT *The Patriachs
+2 CONT
+2 CONT 1. Hillel (active 30 BC to 9 AD), a descendant of King David according t
+2 CONC o the Talmud. 2. Simeon 3. Gamaliel I 4. Simeon II (d 70) 5. Gamaliel I
+2 CONC I (80-110) 6. Simeon III (c. 135-165) 7. Judah I (165-217) 8. Gamaliel I
+2 CONC II (217-c. 235) 9. Judah II (c. 235-250) 10. Gamaliel IV (c. 250-265) 1
+2 CONC 1. Judah III (265-330) 12. Hillel II (330-365) 13. Gamaliel V (365-380) 1
+2 CONC 4. Judah IV (380-400) 15. Gamaliel VI (400, suspended 415 by Theodosius I
+2 CONC I, the Byzantine Emperor, who abolished the Palestinian Patriarchate, d 4
+2 CONC 25)
+2 CONT
+2 CONT The office of Palestinian Patriarch/Prince was later revived, for we fi
+2 CONC nd another dynasty reigning at Tiberias, c. 550 to c. 890, and a rival d
+2 CONC ynasty at Jerusalem from 691 to 1099. There was another dynasty reignin
+2 CONC g in Palestine from 1187 to 1849.
+2 CONT
+2 CONT From what I can see, there were two lines of Palestinian 'Nasim' or Pri
+2 CONC nces, the Tobitite (seems to have failed 4 BC) and Onaidite (seems to h
+2 CONC ave failed 10 BC) lines, which survived until the time of Herod, then t
+2 CONC here was the line of Hillel as listed above, which lasted until 415, th
+2 CONC en another line of Princes, founded in about 550 by Sutra, son of Mar-Z
+2 CONC utra, 30th Exilarch of the 2nd dynasty, who were apparently ancestors o
+2 CONC f the Ibn Yahya family. From what I have read, the Exilarchs took prece
+2 CONC dence over the Palestinian Nasi, though both were descendants of the Ho
+2 CONC use of David.
+2 CONT
+2 CONT I Chronicles iii 17-24
+2 CONT
+2 CONT 17 And the sons of Jeconiah; Assir, Salathiel his son, 18 Malchiram als
+2 CONC o, and Pedaiah, and Shenazar, Jecamiah, Hoshama, and Nedabiah. 19 And t
+2 CONC he sons of Pedaiah were, Zerubbabel, and Shimei: and the sons of Zerubb
+2 CONC abel; Meshullam, and Hananiah, and Shelomith their sister:
+2 CONT
+2 CONT 20 And Hashubah, and Ohel, and Berechiah, and Hasadiah, Jushabhesed, fi
+2 CONC ve. 21 And the sons of Hananiah; Pelatiah, and Jesaiah: the sons of Rep
+2 CONC haiah, the sons of Arnan, the sons of Obadiah, the sons of Shechaniah. 2
+2 CONC 2 And the sons of Shechaniah; Shemaiah: and the sons of Shemaiah; Hattu
+2 CONC sh, and Igeal, and Bariah, and Neariah, and Shaphat, six. 23 And the so
+2 CONC ns of Neariah; Elioenai, and Hezekiah, and Azrikam, three. 24 And the s
+2 CONC ons of Elioenai were, Hodaiah, and Eliashib, and Pelaiah, and Akkub, an
+2 CONC d Johanan, and Dalaiah, and Anani, seven.
+2 CONT --------------------
+2 CONT http://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=52651548
+2 CONT --------------------
+2 CONT http://www.entrybytroops.org/bahaullahs-genealogy.html
+2 CONT --------------------
+2 CONT In the book :Yashir Moshe" this is the forty-Sixth Generation: Hisdai t
+2 CONC he son of Bustenai Gaon. This is according to the version of Sefer Yoha
+2 CONC sin, "and the said Hisdai is the son of the daughter of Rav Hisdai Gaon
+2 CONC ".
+2 CONT
+2 CONT SOURCE NOTES:
+2 CONT http://www.american-pictures.com/genealogy/persons/per03114.htm#0
+2 CONT
+2 CONT RESEARCH NOTES:
+2 CONT Exilarch of Jews in Baghdad 660-665
+2 CONT
+2 CONT EXILARCH OF THE JEWS AT BABYLON 660-665
+1 BIRT
+2 DATE ABT 645
+1 OCCU Exilarch
+2 DATE 689
+1 DEAT
+2 DATE ABT 717
+2 PLAC Babylon, Iraq
+1 OCCU Exilarch of the Jews in Babylon
+1 REFN geni:6000000000961705467
+1 FAMS @F12@
+1 FAMS @F13@
+1 FAMC @F5@
+0 @I12@ INDI
+1 NAME Mardanshah /Prince of Mazandaran/
+2 GIVN Mardanshah
+2 SURN Prince of Mazandaran
+1 SEX M
+1 _UID E9D1120118304FDABCF5744E2944A43F0190
+1 CHAN
+2 DATE 9 DEC 2014
+1 DEAT
+2 DATE ABT 665
+1 REFN geni:6000000006864204830
+1 FAMS @F14@
+1 FAMC @F5@
+0 @I13@ INDI
+1 NAME Gurdanshah /Prince of Gilan/
+2 GIVN Gurdanshah
+2 SURN Prince of Gilan
+2 NICK Prince of Gilan
+1 SEX M
+1 _UID AC1836081BFD4899A94A34F29466BC3C064E
+1 CHAN
+2 DATE 27 APR 2022
+1 BURI
+2 DATE ABT 676
+1 DEAT
+2 DATE ABT 676
+1 REFN geni:6000000006864217573
+1 FAMS @F15@
+1 FAMC @F5@
+0 @I14@ INDI
+1 NAME Hanini /bar Adoi/
+2 GIVN Hanini
+2 SURN bar Adoi
+1 SEX M
+1 _UID 27B55647AFE4460F939F2D23A06573B51095
+1 CHAN
+2 DATE 1 MAY 2022
+1 OCCU
+1 REFN geni:6000000039184725783
+1 FAMC @F5@
+0 @I15@ INDI
+1 NAME N.N. /bat Haniniah/
+2 GIVN N.N.
+2 SURN bat Haniniah
+1 NAME  /בת חנניה/
+2 SURN בת חנניה
+1 SEX F
+1 _UID 87B6CDEC25D244C8B390CCF1A7F194A5CAFF
+1 CHAN
+2 DATE 20 AUG 2024
+1 NOTE  See "My Lines"
+2 CONT
+2 CONT ( http://homepages.rootsweb.ancestry.com/~cousin/html/p106.htm#i12962 )
+2 CONT
+2 CONT from Compiler: R. B. Stewart, Evans, GA
+2 CONT
+2 CONT ( http://homepages.rootsweb.ancestry.com/~cousin/html/index.htm )
+2 CONT
+2 CONT ----
+2 CONT Father's name was adjusted to that on the above quoted family tree, and b
+2 CONC ased on:
+2 CONT
+2 CONT The Jewish Quarterly Review Vol. 31, No. 2, Oct., 1940
+2 CONT
+2 CONT JOURNAL ARTICLE The Exilarchate in the Eastern Caliphate, 637-1258 Alex
+2 CONC ander D. Goode
+2 CONT
+2 CONT Available at https://www.jstor.org/stable/1452602
+2 CONT
+2 CONT This should be checked against earlier sources.
+2 CONT
+2 CONT ----
+1 BIRT
+2 DATE ABT 590
+2 PLAC Babylon, Iraq
+1 DEAT
+2 PLAC Babylon, Iraq
+1 REFN geni:6000000000700952054
+1 FAMS @F7@
+1 FAMC @F16@
+0 @I16@ INDI
+1 NAME Ḥananya "Ḥanan of Isḳiya" /./
+2 GIVN Ḥananya "Ḥanan of Isḳiya"
+2 SURN .
+2 NSFX 33rd Exiliarch & Gaon Pumbeditha
+2 NICK Mar b. R. Ḥanan of Isḳiya
+1 SEX M
+1 _UID B949752DFA6442D1979F87CEE2C716D63597
+1 CHAN
+2 DATE 27 APR 2022
+1 NOTE  Haninai ben Hofnai ha-David Exilarch at Babylon
+2 CONT
+2 CONT Exilarch at Babylon from (581-589)
+2 CONT
+2 CONT The exilarchs were direct descendant of the House of King David and wer
+2 CONC e recognized as not only being the representative of the Jewish communi
+2 CONC ty in Babylon but as also having noble status.
+2 CONT
+2 CONT Over 1,500 year history of the Jewish community in Babylon approximatel
+2 CONC y 40 people held that title, all tracing their ancestry back to King Da
+2 CONC vid. This was a noble line that was always preserved in Jewish history.
+2 CONT
+2 CONT He was killed in the attempt by the Sasanian King Chosroes II to wipe o
+2 CONC ut the entire royal House of David, due mostly to Jewish hostilities to h
+2 CONC im in support of an usurping king (Hermisdas IV).
+2 CONT
+2 CONT --------------------
+2 CONT Haninai I ben Hofnai beni David was Exilarch (Exilarch [Hebrew: ראש גלו
+2 CONC ת Rosh Galut, Aramaic: ריש גלותא Reish Galuta lit. "head of the exile", G
+2 CONC reek: Æchmalotarcha], referring to the leaders of the Diaspora Jewish c
+2 CONC ommunity following the deportation of the population of Judah into Baby
+2 CONC lonian exile after the destruction of the kingdom of Judah) at Babyloni
+2 CONC a between 580 and 589. He married UNKNOWN bat Hananiah mi-Sura, daughte
+2 CONC r of Gaon Hananiah mi-Sura, before 589.
+2 CONT
+2 CONT Exilarch Haninai I ben Hofnai beni David was killed in the attempt by t
+2 CONC he Sasanian King Khusro II (also our ancestor) to wipe out the entire r
+2 CONC oyal House of David, due mostly to Jewish hostilities to him in support o
+2 CONC f an usurping king (Hermisdas IV).
+2 CONT
+2 CONT See "My Lines"
+2 CONT
+2 CONT ( http://homepages.rootsweb.ancestry.com/~cousin/html/p294.htm#i12961 )
+2 CONT
+2 CONT from Compiler: R. B. Stewart, Evans, GA
+2 CONT
+2 CONT ( http://homepages.rootsweb.ancestry.com/~cousin/html/index.htm )
+2 CONT --------------------
+2 CONT Hananai* BEN HOFNAI (Exilarch at Babylon)
+2 CONT
+2 CONT 0560 - 0590
+2 CONT
+2 CONT     * TITLE: Exilarch at Babylon
+2 CONT
+2 CONT     * BIRTH: 0560, Persia
+2 CONT
+2 CONT     * DEATH: 0590
+2 CONT
+2 CONT Father: Kafnai* HOFNAI
+2 CONT
+2 CONT Family 1 :
+2 CONT
+2 CONT    1. +Bustanai* BEN HANINI
+2 CONT --------------------
+2 CONT Ocupation:  Exilarch in Bavel 581-589,
+2 CONT
+2 CONT son of Hofnai and nn to: nn
+2 CONT
+2 CONT He was Exilarch in Baghdad from 581 to 589.
+2 CONT
+2 CONT SOURCE NOTES:
+2 CONT http://www.american-pictures.com/genealogy/persons/per03359.htm#0
+2 CONT
+2 CONT RESEARCH NOTES:
+2 CONT Lay head of Jewish community in Babylon 580-590
+2 CONT
+2 CONT He was Exilarch in Baghdad from 581 to 589.
+1 BIRT
+2 DATE ABT 560
+2 PLAC Babylon, Iraq
+1 DEAT
+2 DATE ABT 589
+2 PLAC Babylon, Iraq
+1 OCCU 33rd Exilarch at Babylon
+1 REFN geni:6000000000961705384
+1 OBJE
+2 FILE https:\\media.geni.com\p12\b1\ec\33\70\534448385a2e964a\Hanina_original.jpg?hash=1c1b65b2314ebd9d175cf2a67364a826ba2f45f7c91e48ca8732ba111e6080ef.1762329599
+2 FORM 1762329599
+2 _TYPE PHOTO
+2 _SCBK Y
+2 _PRIM Y
+1 OBJE
+2 FILE https:\\media.geni.com\p13\27\ba\c3\c7\5344483909e217d9\etoile_de_david_original.jpg?hash=8090791621e3177d456963dbb06de13f5af545e76b9328d7c9a2184e4bd40625.1762329599
+2 FORM 1762329599
+2 _TYPE PHOTO
+2 _SCBK Y
+2 _PRIM N
+1 OBJE
+2 FILE https:\\media.geni.com\p12\b1\ec\33\70\534448385a2e964a\Hanina_original.jpg?hash=42d560b5567a6647550cf947a2e5d972146c2dd73bff635b9153d96713534512.1762415999
+2 FORM 1762415999
+2 _TYPE PHOTO
+2 _SCBK Y
+2 _PRIM Y
+1 OBJE
+2 FILE https:\\media.geni.com\p13\27\ba\c3\c7\5344483909e217d9\etoile_de_david_original.jpg?hash=004db35deeeb420d24500d3177d71de80e30714456218b496630fe2db5c0f87a.1762415999
+2 FORM 1762415999
+2 _TYPE PHOTO
+2 _SCBK Y
+2 _PRIM N
+1 FAMS @F7@
+1 FAMC @F17@
+0 @I17@ INDI
+1 NAME Addah /al-Palestin/
+2 GIVN Addah
+2 SURN al-Palestin
+2 NICK Adoi
+1 SEX F
+1 _UID 81742F1320864DA6BB52669F750A46751C07
+1 CHAN
+2 DATE 28 APR 2022
+1 BIRT
+2 DATE ABT 640
+1 DEAT
+2 DATE ABT 690
+1 REFN geni:6000000000700920399
+1 FAMS @F8@
+0 @I18@ INDI
+1 NAME Naḥman 'Mar Rabiya Moronai' /ben Haninai/
+2 GIVN Naḥman 'Mar Rabiya Moronai'
+2 SURN ben Haninai
+2 NSFX Gaon of Pumbeditha
+2 NICK Nechemya
+1 SEX M
+1 _UID 78DEEBF32F9B423EA171F4522F35976839B4
+1 CHAN
+2 DATE 27 APR 2022
+1 BIRT
+2 DATE 655
+1 DEAT
+2 DATE ABT 719
+1 REFN geni:6000000018602756897
+1 FAMS @F18@
+1 FAMS @F19@
+1 FAMC @F8@
+0 @I19@ INDI
+1 NAME Hananya "Dayan of the Gate" /ben Haninai bar Adai/
+2 GIVN Hananya "Dayan of the Gate"
+2 SURN ben Haninai bar Adai
+2 NSFX Gaon of Sura
+2 NICK Dayan of the Gate
+1 NAME חנניה /בן חנינאי/
+2 GIVN חנניה
+2 SURN בן חנינאי
+2 NSFX הגאון מסורא
+1 SEX M
+1 _UID B90E4882BEE6483C95F6E468A05016CC62CC
+1 CHAN
+2 DATE 28 DEC 2022
+1 NOTE  GAON of  SURA  from 689 to 694
+2 CONT
+2 CONT ----
+2 CONT He was previously designated as kohen, but see discussion:- https://www
+2 CONC .geni.com/discussions/215660 For him to be a descendant of a Bostnai fr
+2 CONC om the paternal line, he cannot be neither kohen nor levi because Bostn
+2 CONC ai has tradition of being paternally descended from the tribe of Judah (
+2 CONC being a descendent of King David).
+2 CONT
+2 CONT This ga'on should not be confused with the Bostnai himself nor Hananya h
+2 CONC aKohen from Pumpadita.
+2 CONT
+2 CONT ----
+1 BIRT
+2 DATE ABT 660
+1 DEAT
+2 DATE ABT 736
+1 REFN geni:6000000001263102021
+1 OBJE
+2 FILE https:\\media.geni.com\p14\66\63\c6\38\534448623190036d\david_rey_original.jpg?hash=9102eb65d7cfc7c96a012e7437b35c5b0654e212b791b0ab0f8b207b77e46a4e.1762329599
+2 FORM 1762329599
+2 _TYPE PHOTO
+2 _SCBK Y
+2 _PRIM Y
+1 OBJE
+2 FILE https:\\media.geni.com\p14\66\63\c6\38\534448623190036d\david_rey_original.jpg?hash=a6ad946b9e3e3b9eedff1a3fcb5bc260290025f19d87b17c318c4683f7b9a303.1762415999
+2 FORM 1762415999
+2 _TYPE PHOTO
+2 _SCBK Y
+2 _PRIM Y
+1 FAMS @F20@
+1 FAMC @F8@
+0 @I2@ INDI
+1 NAME Adda (or Addoi) /daughter of Bustenai/
+2 GIVN Adda (or Addoi)
+2 SURN daughter of Bustenai
+1 NAME  /הכהן רפא/
+2 SURN הכהן רפא
+1 SEX F
+1 _UID A5F2709A23D447D4BE696F2B2EA049921D66
+1 CHAN
+2 DATE 1 JAN 2025
+1 OCCU
+1 REFN geni:6000000169609038117
+1 FAMS @F1@
+1 FAMC @F2@
+1 FAMC @F3@
+0 @I20@ INDI
+1 NAME Sussan /bat - - - al-Palestin/
+2 GIVN Sussan
+2 SURN bat - - - al-Palestin
+2 NICK Sussanah
+1 SEX F
+1 _UID 54ACF3B9DB9745C68A5130723A7D907D6A49
+1 CHAN
+2 DATE 27 APR 2022
+1 REFN geni:6000000009305036442
+1 FAMC @F8@
+0 @I21@ INDI
+1 NAME Hananiah Gaon of Sura //
+2 GIVN Hananiah Gaon of Sura
+1 SEX M
+1 _UID 75F5F979BFD541FEB5CADD19018A21A97967
+1 CHAN
+2 DATE 30 MAR 2016
+1 OCCU
+1 REFN geni:6000000041273598031
+1 FAMS @F21@
+1 FAMC @F9@
+0 @I22@ INDI
+1 NAME Nehemiah //
+2 GIVN Nehemiah
+1 SEX M
+1 _UID 93A3E500CE9B4D48A9280C1C887103DDEBA8
+1 CHAN
+2 DATE 30 MAR 2016
+1 OCCU
+1 REFN geni:6000000041273618036
+1 FAMC @F9@
+0 @I23@ INDI
+1 NAME Hisdai II //
+2 GIVN Hisdai II
+1 SEX M
+1 _UID 3B6AB7C437D94AD7B01109650E749AC662EA
+1 CHAN
+2 DATE 30 MAR 2016
+1 OCCU
+1 REFN geni:6000000041273369329
+1 FAMC @F9@
+0 @I24@ INDI
+1 NAME Ḥananya "Ḥanan of Isḳiya" bar Adoi ben Hophni, /33rd Exiliarch & Gaon Pumbeditha/
+2 GIVN Ḥananya "Ḥanan of Isḳiya" bar Adoi ben Hophni,
+2 SURN 33rd Exiliarch & Gaon Pumbeditha
+1 NAME  /הכהן רפא/
+2 SURN הכהן רפא
+1 SEX M
+1 _UID 087C20B0B54943BCB731BDE0E3E95DD9D804
+1 CHAN
+2 DATE 2 JUN 2024
+1 OCCU
+1 REFN geni:6000000206225006836
+1 FAMS @F10@
+1 FAMC @F22@
+0 @I25@ INDI
+1 NAME Mari ben Yakov /HaKohen/
+2 GIVN Mari ben Yakov
+2 SURN HaKohen
+1 NAME  /הכהן רפא/
+2 SURN הכהן רפא
+1 SEX M
+1 _UID 17BAC291B00143BF836A22D650460295E992
+1 CHAN
+2 DATE 4 MAY 2022
+1 NOTE  Gaon of Sura 748-756
+2 CONT
+2 CONT Native of Nehar pekod
+1 BIRT
+2 DATE ABT 700
+1 DEAT
+2 DATE 756
+1 OCCU
+1 REFN geni:6000000169608820038
+1 FAMC @F11@
+1 FAMC @F1998@
+0 @I26@ INDI
+1 NAME Bara /3rd daughter of Yazdigard III/
+2 GIVN Bara
+2 SURN 3rd daughter of Yazdigard III
+1 NAME Bara, caregiver to sons of Haninai //
+2 GIVN Bara, caregiver to sons of Haninai
+1 NAME  /3rd daughter of Yazdigard III/
+2 SURN 3rd daughter of Yazdigard III
+1 SEX F
+1 _UID 0CD7A30B1F254FC18150587B1ABBBF4966CB
+1 CHAN
+2 DATE 28 APR 2022
+1 NOTE  See
+2 CONT
+2 CONT "Jews in Islamic Countries in the Middle Ages"
+2 CONT
+2 CONT By Moše Gîl, Volume 28 of Etudes sur le judaïsme médiéval / Etudes sur l
+2 CONC e judaïsme médiéval. Translated by David Strassler, Published by Brill 2
+2 CONC 004, ISBN 900413882X, 9789004138827 In particular we refer you to pages 7
+2 CONC 8-79, footnote 64
+2 CONT
+2 CONT -----------------------------------------------------------------------
+2 CONC -------------
+2 CONT Bara is cited in the footnote as the real name of this daughter who was a
+2 CONC n illegitimate daughter of Sosandukht and her Jewish Court Judge.
+1 BIRT
+2 DATE ABT 639
+1 REFN geni:6000000021827305822
+1 DEAT Y
+1 FAMS @F12@
+1 FAMS @F1909@
+0 @I27@ INDI
+1 NAME sister of Baw (Bau; Bav), founder of the Buwayhids //
+2 GIVN sister of Baw (Bau; Bav), founder of the Buwayhids
+1 SEX F
+1 _UID B02F333E62204AAF9060171E4362960E3960
+1 CHAN
+2 DATE 29 APR 2022
+1 NOTE  Buwayhids Also known as Buyyids. Dynasty of mercenary soldiers from th
+2 CONC e Caspian province of Daylam who controlled western Iran and Iraq from t
+2 CONC he mid-tenth to the mid-eleventh century, dominating the Abbasid Caliph u
+2 CONC ntil the arrival of the Seljuks. Established courts in Baghdad, Shiraz, a
+2 CONC nd Isfahan; for most of the period the three power centers rivaled one a
+2 CONC nother. Despite their Shii affiliation, for practical reasons the Buway
+2 CONC hids maintained the Abbasid Caliph in power, ruling in his name and exa
+2 CONC cting titles from him. Pioneered use of revenue grants (iqta) to pay so
+2 CONC ldiers, establishing a pattern of military dominance of the civilian ad
+2 CONC ministration later brought to completion by the Seljuks. http://www.oxf
+2 CONC ordislamicstudies.com/article/opr/t125/e394
+2 CONT
+2 CONT Buyyids Dynasty
+2 CONT
+2 CONT The Buyyids or Buwayhids or Al-e Buyeh, were a Shi'ite tribal confedera
+2 CONC tion from Daylam, a region on the southern shore of the Caspian Sea.
+2 CONT
+2 CONT In pre-Islamic times they had served as mercenaries for the Sasanian ki
+2 CONC ngs of Iran, but were independent from their rule. They were considered a f
+2 CONC ormidable military force, especially because of their ability as foot s
+2 CONC oldiers. Succession of power was hereditary, with fathers dividing thei
+2 CONC r land among their sons. During the time of Haroon al-Rashid, the Alid p
+2 CONC eople sought refuge among them.
+2 CONT
+2 CONT The start of the Buwayhid confederation was led by Ali b. Buya and his t
+2 CONC wo younger brothers, al-Hasan and Ahmad. After having secured a partner
+2 CONC ship with an important Persian landowner named Zayd b. Ali al-Nawbandaj
+2 CONC ani, Ali was able to recruit an army to defeat a Turkish general from B
+2 CONC aghdad named Yaqut (General) in 934 CE. After that they established pow
+2 CONC er within the crumbling Abbasid Empire in the form of a confederation r
+2 CONC ather than a new empire. They were known for the revival of Persian cul
+2 CONC ture. Buwayhid leaders were known as Shâhanshâh, literally king of king
+2 CONC s.
+2 CONT
+2 CONT During the 900s, Buwayhid dynasties took power in Fars (southwestern Ir
+2 CONC an, 934-1062); Rayy (977-1029); Jibal (932-1028); Kerman (936-1048). Fr
+2 CONC om 945-1055, a Buwayhid dynasty ruled Baghdad and most of Iraq.
+2 CONT
+2 CONT During the mid 11th century CE the Buwayhid dynasties all fell to the S
+2 CONC eljuks or their allies.
+2 CONT
+2 CONT http://www.iranchamber.com/history/buyyids/buyyids.php
+1 REFN geni:6000000011416284846
+1 FAMS @F13@
+0 @I28@ INDI
+1 NAME bat Hisdai /Shahrijar/
+2 GIVN bat Hisdai
+2 SURN Shahrijar
+1 NAME  /Ben Yosef/
+2 SURN Ben Yosef
+1 SEX F
+1 _UID 3A231A8DEAD04C98A162F7C8DBB8B0761D4C
+1 CHAN
+2 DATE 28 APR 2022
+1 BIRT
+2 DATE ABT 661
+1 DEAT
+2 DATE 735
+1 REFN geni:6000000012399225068
+1 FAMS @F20@
+1 FAMC @F13@
+0 @I29@ INDI
+1 NAME Salome /bat' Hisdai Shahrijar/
+2 GIVN Salome
+2 SURN bat' Hisdai Shahrijar
+1 SEX F
+1 _UID DC894CF180B24C3DBD7F2A0CED82E34F70D7
+1 CHAN
+2 DATE 29 APR 2022
+1 NOTE  She was born before 665.
+2 CONT
+2 CONT See "My Lines"
+2 CONT
+2 CONT ( http://homepages.rootsweb.ancestry.com/~cousin/html/p106.htm#i12939 )
+2 CONT
+2 CONT from Compiler: R. B. Stewart, Evans, GA
+2 CONT
+2 CONT ( http://homepages.rootsweb.ancestry.com/~cousin/html/index.htm )
+2 CONT --------------------
+2 CONT http://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=52651281
+2 CONT
+2 CONT RESEARCH NOTES:
+2 CONT Princess of Exilarchs
+2 CONT
+2 CONT SOURCE NOTES:
+2 CONT http://www.american-pictures.com/genealogy/persons/per03111.htm#0
+1 BIRT
+2 DATE ABT 665
+2 PLAC Pembeditha, Babylon, Iraq
+1 DEAT
+2 DATE ABT 700
+2 PLAC Babylon, Iraq
+1 OCCU Prinsessa Hisdais dotter Exilarkerna
+1 REFN geni:6000000000701103077
+1 FAMS @F23@
+1 FAMS @F24@
+1 FAMC @F13@
+0 @I3@ INDI
+1 NAME Chanania /bar Chaninai HaKohen/
+2 GIVN Chanania
+2 SURN bar Chaninai HaKohen
+1 NAME  /הכהן רפא/
+2 SURN הכהן רפא
+1 SEX M
+1 _UID 6BB98A3C00E94953901C720212DE2CE99404
+1 CHAN
+2 DATE 2 JUN 2024
+1 OCCU
+1 REFN geni:6000000206223774828
+1 FAMS @F4@
+1 FAMC @F1@
+0 @I30@ INDI
+1 NAME Yomtob "Shlomo" Ruzbihan Ahunai /ben Hisdai Shahrijar/
+2 GIVN Yomtob "Shlomo" Ruzbihan Ahunai
+2 SURN ben Hisdai Shahrijar
+2 NSFX Gaon of Sura
+2 NICK 40 Cubits
+1 SEX M
+1 _UID AB951B648CFD4CFF8891E890BA692781EFC0
+1 CHAN
+2 DATE 27 APR 2022
+1 BIRT
+2 DATE ABT 670
+1 DEAT
+2 DATE ABT 759
+1 REFN geni:6000000002294735791
+1 FAMS @F25@
+1 FAMC @F13@
+0 @I4@ INDI
+1 NAME Hananya "Bustenai" /ben Haninai/
+2 GIVN Hananya "Bustenai"
+2 SURN ben Haninai
+2 NSFX Exilarch & Gaon of Pumbeditha
+2 NICK Bostenai
+1 NAME בוסתנאי //
+2 GIVN בוסתנאי
+1 SEX M
+1 _UID 6C9014FC1E314C1D804E5F1F7618AA1B631A
+1 CHAN
+2 DATE 17 NOV 2024
+1 NOTE  http://en.wikipedia.org/wiki/Bostanai
+2 CONT
+2 CONT Bostanai was the first exilarch under Arabian rule; he flourished about t
+2 CONC he middle of the seventh century.  He was the son of the exilarch Hanan
+2 CONC iah. '''Hai Gaon, in "Sha'are Ẓedeḳ," p. 3a, seems to identify Bostanai w
+2 CONC ith Haninai, and tells that he was given for wife a daughter of the Per
+2 CONC sian king Chosroes II (died 628), by the calif Omar (died 644).''' (See R
+2 CONC apoport, in "Bikkure ha-'Ittim," x.83; B. Goldberg, in "Ha-Maggid," xii
+2 CONC i.363).
+2 CONT
+2 CONT '''Abraham ibn Daud, however,''' in his "Sefer ha-Ḳabbalah" (Adolphe Ne
+2 CONC ubauer's Medieval Jewish Chronicles, i.64), '''says that it was the las
+2 CONC t Sassanid king, Yezdegerd''' (born 624; died 651-652; see Nöldeke, "Ta
+2 CONC bari," pp. 397 et seq.), who gave his daughter to Bostanai. But in that c
+2 CONC ase it could have been only Calif Ali (656-661), and not Omar, who thus h
+2 CONC onored the exilarch (see "Ma'aseh Bet David").
+2 CONT
+2 CONT It is known also that Ali gave a friendly reception to the contemporary G
+2 CONC aon Isaac (Sherira II's "Letter," ed. Neubauer, ib. p. 35; Abraham ibn D
+2 CONC aud, ib. p. 62); and it is highly probable, therefore, that he honored t
+2 CONC he exilarch in certain ways as the official representative of the Jews. T
+2 CONC he office of the exilarch, with its duties and privileges, as it existe
+2 CONC d for some centuries under the Arabian rule, may be considered to begin w
+2 CONC ith Bostanai.
+2 CONT
+2 CONT http://akevoth.org/genealogy/duparc/3702.htm
+2 CONT
+2 CONT Bustanai (d. 660/5) was the first Exilarch to be recognized by Arab rul
+2 CONC e. His birth and much of his life is surrounded by legend. As a token o
+2 CONC f appreciation, Caliph Ali gave him the daughter of the Persian king Ya
+2 CONC zdeger (Yazadagird III of Parthia ) for a slave. Eventually Bustanai ma
+2 CONC rried her.
+2 CONT
+2 CONT His first wife, Adoa, a Davidic Jewish princess (relative), had two son
+2 CONC s: Hisdai I & Baradai;
+2 CONT
+2 CONT His 2nd wife, Dara or Azdadwar Izdundad or Izdadwar daughter of Zamaspd
+2 CONC ukht and King Shahrijar III of Persia. The Parthi princess, had three s
+2 CONC ons: (a) Hisdai II , (b) Nehemiah , and (c) Haninai [Hananiah], who was "
+2 CONC exilarch" of Sura 689-694.
+2 CONT
+2 CONT http://he.wikipedia.org/wiki/בוסתנאי_בן_חנינאי
+2 CONT
+2 CONT >>>><nowiki>---------------------------------</nowiki>
+2 CONT
+2 CONT '''Bustanay (Ḥaninay) ben Kafnay (Kafnai, Chofnai, etc)'''
+2 CONT
+2 CONT Bustanay (Ḥaninay) ben Kafnay (ca. 618–670),  frequently cited erroneou
+2 CONC sly in some sources and by later scholars as Bustanay ben Ḥaninay, was t
+2 CONC he first exilarch (Aram. resh galuta) after the Muslim conquest of the S
+2 CONC assanid empire. Most of the sources about him are legendary and tendent
+2 CONC ious, and the few historical facts they provide are doubtful. According t
+2 CONC o an anonymous gaonic responsum from the tenth century, Caliph ʿUmar ib
+2 CONC n al-Khaṭṭāb (r. 634–644) confirmed Bustanay in the office of exilarch a
+2 CONC nd gave him Azdadwar, the captive daughter of the Sassanid king (in som
+2 CONC e sources Khosraw II, in others Yezdigerd III).
+2 CONT
+2 CONT The Sassanid princess bore Bustanay three sons:
+2 CONT
+2 CONT Guranshah,
+2 CONT Mardanshah, and Shahriyar.
+2 CONT
+2 CONT After Bustanay’s death, his two older sons by his Jewish first wife arg
+2 CONC ued that their father had not converted the princess, his second wife, t
+2 CONC o Judaism, and therefore her children were slaves, not entitled to any p
+2 CONC art of his estate and not princes (Heb. nesi’im) of the Davidic house. T
+2 CONC he sages of Sura decided in favor of Azdadwar’s sons, citing the talmud
+2 CONC ic passage “A man will not perform intercourse as an act of harlotry” (
+2 CONC BT Giṭṭin 81:2) in support of their ruling that Bustanay could be assum
+2 CONC ed to have converted her before taking her for a wife.
+2 CONT
+2 CONT One of the sages, named Ḥaninay, issued Azdadwar a writ of manumission a
+2 CONC nd even married his daughter to one of her great-grandsons. But the dis
+2 CONC pute over the legitimacy of the Bustanay dynasty was not settled, and t
+2 CONC he issue was raised again and again in gaonic responsa. Sherira Gaon (d
+2 CONC . 1006), who was proud of his Davidic ancestry, emphasized that his fam
+2 CONC ily was not related to the descendants of Bustanay. The story of ʿUmar g
+2 CONC iving Bustanay the Persian princess is related without comment by Ibn D
+2 CONC a’ud in his Sefer ha-Qabbala.
+2 CONT
+2 CONT Another legend deals with Bustanay’s origins. It relates that the Persi
+2 CONC an king abolished the exilarchate and had all the members of the Davidi
+2 CONC c family killed. One of them had just been married and was murdered on h
+2 CONC is wedding night, but his widow survived the massacre and turned out to b
+2 CONC e pregnant. Soon afterward the king had a dream in which he was about t
+2 CONC o destroy a beautiful orchard but the master of the garden (none other t
+2 CONC han King David) intervened, threatening to kill him if he uprooted the l
+2 CONC ast young sapling; the king was spared when he promised to make every e
+2 CONC ffort to take care of the sapling.
+2 CONT
+2 CONT The next day the king searched for survivors of the massacre, found the y
+2 CONC oung widow, and had her brought to the palace, where she gave birth to a c
+2 CONC hild who was named Bustanay (from Pers. būstān, garden). When the child g
+2 CONC rew to manhood, he was brought before the king.  A fly landed on the yo
+2 CONC uth’s brow, but he did not raise his hand to drive it away. Impressed b
+2 CONC y the young man’s good manners, the king reestablished the office of ex
+2 CONC ilarchate and appointed Bustanay to the post. And that, says the legend
+2 CONC , is why the exilarchic seal was ever after shaped like a fly. This tal
+2 CONC e, in this version, was printed for the first time in 1577 under the ti
+2 CONC tle Ma ʿ ase Bet David  (Heb. The Deeds of the House of David), and is n
+2 CONC ot known from elsewhere.
+2 CONT
+2 CONT Another Judeo-Arabic version of the legend that differs in essential de
+2 CONC tails was found in the Cairo Geniza. According to this account, '''the d
+2 CONC ynasty of the exilarch Kafnay was destroyed, not by a Persian king, but a
+2 CONC s a divine punishment because the exilarch had mistreated a gaon of the y
+2 CONC eshiva who refused to endorse one of his rulings. The gaon then had the s
+2 CONC ame dream as was described above and in consequence took Bustanay, the o
+2 CONC nly surviving son of Kafnay, into his household.'''
+2 CONT =When Bustanay reached the age of sixteen, he claimed the exilarchate b
+2 CONC ut was refused=
+2 CONT '''.
+2 CONT
+2 CONT The conflict was brought before Caliph ʿUmar, who ruled in favor of Bus
+2 CONC tanay because of his fine manners and gave him a captive Persian maiden f
+2 CONC or a wife. Bustanay married the Persian slave but did not convert her, a
+2 CONC nd one of her descendants turned out to be Anan ben David, the founder o
+2 CONC f the Karaite sect.
+2 CONT
+2 CONT This Judeo-Arabic version of the legend, which has a clearly polemical i
+2 CONC ntent, was used in the conflict between Nathan ben Abraham and Solomon b
+2 CONC en Judah for leadership of the Palestinian yeshiva in the eleventh cent
+2 CONC ury. The similarity of certain details suggests that it may have origin
+2 CONC ated in the tenth-century dispute between the exilarch David ben Zakkay (
+2 CONC I) and Saʿadya Gaon. There is no way of knowing which version of the le
+2 CONC gend is earlier, and it may be that they were both composed around the s
+2 CONC ame time during one of the many conflicts between the exilarchate and t
+2 CONC he gaonic academies. A third version of the legend, found in the chroni
+2 CONC cle Seder ʿOlam Zuṭa,  tells the same story about Mar Zuṭra, an exilarc
+2 CONC h during the Sassanian period, a hundred years before the Arab conquest
+2 CONC . It is unclear whether this story was the source for the Bustanay lege
+2 CONC nd, or vice versa.
+2 CONT
+2 CONT An attempt has been made to trace certain historical statements about B
+2 CONC ustanay to Arabic sources. One of these is that he visited Medina in 62
+2 CONC 3, another that he died in battle in 638, fighting on the Persian side a
+2 CONC gainst the Muslims, but both claims are based on uncertain and highly d
+2 CONC oubtful identifications of names and cognomens. The Arabic historical s
+2 CONC ources are discussed at length by Gil (1979 and 2004).  Grossman (1984) a
+2 CONC nd Gil (2004) have argued most cogently for identifying Bustanay's fath
+2 CONC er as Kafnay with Ḥaninay being Bustanay's actual Aramaic Jewish name (
+2 CONC for Hanan or Hananiah).
+2 CONT
+2 CONT Roni Shweka
+2 CONT
+2 CONT Bibliography
+2 CONT
+2 CONT Gil, Moshe. “The Babylonian Encounter,” Tarbiẓ 48 (1979): 35–73 [Hebrew
+2 CONC ].
+2 CONT
+2 CONT ——–. Jews in Islamic Countries in the Middle Ages (Leiden: Brill, 2004)
+2 CONC , pp. 58–104 et passim.
+2 CONT
+2 CONT Graetz, Heinrich. Divre Yeme Yisraʾel, ed. and trans. S. P. Rabinowitz (
+2 CONC Warsaw, 1894), vol. 3, pp. 125–127, 412–415.
+2 CONT
+2 CONT Grossman, Avraham. The Babylonian Exilarchate in the Gaonic Period (Jer
+2 CONC usalem: Zalman Shazar Center, 1984), pp. 15–44 [Hebrew].
+2 CONT
+2 CONT Tykocinski, H. “Bustanay the Exilarch,” Devir 1 (1923): 145–179 [Hebrew
+2 CONC ].
+2 CONT
+2 CONT Citation
+2 CONT Roni Shweka. " Bustanay (Ḥaninay) ben Kafnay." Encyclopedia of Jews in t
+2 CONC he Islamic World. Executive Editor Norman A. Stillman. Brill Online , 2
+2 CONC 012. Reference. Jim Harlow. 26 December 2012 <http://referenceworks.bri
+2 CONC llonline.com/entries/encyclopedia-of-jews-in-the-islamic-world/bustanay
+2 CONC -haninay-ben-kafnay-SIM_0004740>
+2 CONT -----------------------------------------------------------------------
+2 CONC ----------------------------------------------
+2 CONT Genealogical chart
+2 CONT
+2 CONT http://www.entrybytroops.org/bahaullahs-genealogy.html
+2 CONT
+2 CONT --------------------
+2 CONT
+2 CONT http://members.aol.com/rdavidh218/davidicdynasty.html
+2 CONT
+2 CONT note: the descent-line is called the Nehar-Pekod Line from Bustanai's g
+2 CONC randson Haninai [son of Baradai] to Mari [or Meir], who emigrated to Sp
+2 CONC ain in AD 941 and founded the Meiriate ["B"] Line, which is also called t
+2 CONC he Mariite Line
+2 CONT
+2 CONT -----------------------------------------------------------------------
+2 CONC --------------------------------------
+2 CONT
+2 CONT issue of (65) Haninai (Hainai), Gaon of Sura (above)
+2 CONT
+2 CONT (66A) Hillel, Gaon of Sura 694-712
+2 CONT
+2 CONT (66B) Yakob, Gaon of Sura 712-730, the father of (67) Mari, Gaon of Sur
+2 CONC a 748-756/or 751-756, the father of (68) Hillel, Gaon of Sura 788-797/o
+2 CONC r 792-798 (below)
+2 CONT
+2 CONT -----------------------------------------------------------------------
+2 CONC --------------------------------------
+2 CONT
+2 CONT issue of (68) Hillel, Gaon of Sura 788-797/or 792-798 (above) was:
+2 CONT
+2 CONT (69A) Ivomai (821) (below)
+2 CONT
+2 CONT (69B) Natroi, Gaon of Sura (d853)
+2 CONT
+2 CONT (69C) Rivyai, the father of (70) Joseph (841)
+2 CONT
+2 CONT -----------------------------------------------------------------------
+2 CONC --------------------------------------
+2 CONT
+2 CONT issue of (69A) Ivomai (above) was:
+2 CONT
+2 CONT (70) Tzedek Ha-Kohen (d848) (below)
+2 CONT
+2 CONT -----------------------------------------------------------------------
+2 CONC --------------------------------------
+2 CONT
+2 CONT issue of (70) Tzedek Ha-Kohen (above) was:
+2 CONT
+2 CONT (71A) Nahshon, Gaon of Sura 874-882, the father of (72) [K]Hai, Gaon of S
+2 CONC ura 889-896 (below)
+2 CONT
+2 CONT (71B) Hophni, had issue (below)
+2 CONT
+2 CONT (71C) Nehemiah
+2 CONT
+2 CONT -----------------------------------------------------------------------
+2 CONC --------------------------------------
+2 CONT
+2 CONT descendants of (71B) Hophni (above) were:
+2 CONT
+2 CONT (72) Rabba[n] [his son], the father of
+2 CONT
+2 CONT (73) Mari [went to Spain 941], ancestor of the Mariite Line , which is a
+2 CONC lso called the Meirite "B" Line, the father of
+2 CONT
+2 CONT (74) Samuel, the father of
+2 CONT
+2 CONT (75) Hophni (d963), = [name], daughter of Tzadok Kahana (above)
+2 CONT
+2 CONT -----------------------------------------------------------------------
+2 CONC --------------------------------------
+2 CONT
+2 CONT issue of (75) Hophni (above) was:
+2 CONT
+2 CONT (76A) Samuel Ha-Kohen (d1013)
+2 CONT
+2 CONT (76B) Joseph Na-Nagid, the father of (77) Samuel, the father of (78) Jo
+2 CONC seph Ha-Nagid, killed 1062 in a pogrom
+2 CONT
+2 CONT -----------------------------------------------------------------------
+2 CONC --------------------------------------
+2 CONT
+2 CONT issue of (76A) Samuel Ha-Kohen (above) was:
+2 CONT
+2 CONT (77A) Israel (1017)
+2 CONT
+2 CONT (77B) Joseph Ibn Nagrela [Al-Nagrila] Ha-Nagid (d1034), had issue
+2 CONT
+2 CONT (77C) Asmouna, wife of [K]Hai, Gaon of Pumbedita (d1038) (above)
+2 CONT
+2 CONT -----------------------------------------------------------------------
+2 CONC --------------------------------------
+2 CONT
+2 CONT issue of (77B) Joseph Ibn Nagrela Ha-Nagid (above) was:
+2 CONT
+2 CONT (78) Samuel Ha-Nagid, vizier 1027 (d1056)
+2 CONT
+2 CONT = Eve [his cousin], daughter of [K]Hai, Gaon of Pumbedita,
+2 CONT
+2 CONT -----------------------------------------------------------------------
+2 CONC --------------------------------------
+2 CONT
+2 CONT descendants of (78) Samuel Ha-Nagid (d1013) (above), by generation, wer
+2 CONC e:
+2 CONT
+2 CONT (79) Joseph Ha-Nagid [his son] (executed 1066)
+2 CONT
+2 CONT = [name here], daughter of Rabbi Nissim Ben Yaakov, the parents of
+2 CONT
+2 CONT (80) Yechiel, the father of
+2 CONT
+2 CONT (81) Avraham, the father of
+2 CONT
+2 CONT (82) Azariah (Azarya), the father of
+2 CONT
+2 CONT (83) Ezekiel (Yekhezkel), the father of
+2 CONT
+2 CONT (84) Laemiel, the father of
+2 CONT
+2 CONT (85) Azariah, the father of
+2 CONT
+2 CONT (86) Elijah (Eliyah), the father of
+2 CONT
+2 CONT (87) Joseph (Yosef), the father of
+2 CONT
+2 CONT (88) Nachman, the father of
+2 CONT
+2 CONT (89) Kalonymos Kalman, the father of
+2 CONT
+2 CONT (90) Leibush, the father of
+2 CONT
+2 CONT (91) Eleazar, the father of
+2 CONT
+2 CONT (92) Yerakmiel, the father of
+2 CONT
+2 CONT (93) Arye-Zeev (Arieh-Zeev), the father of
+2 CONT
+2 CONT (94) Yaakov, the father of
+2 CONT
+2 CONT (95) Belzalel Ha-Zaken, the father of
+2 CONT
+2 CONT (96) Isaac, the father of
+2 CONT
+2 CONT (97) Yehuda Lev Hazaken (d1439/40), the father of
+2 CONT
+2 CONT (98) Betzalel, the father of
+2 CONT
+2 CONT (99) Hayyim (d1565), the father of
+2 CONT
+2 CONT (100) Bezalel Loew (Lowe), ancestor of the Lowe, Loew, Loeb, & Lieb fam
+2 CONC ilies, &, the father of three sons, who were:
+2 CONT
+2 CONT (1)/(101a) Yehuda Lieb, ancestor of the Schneerson Family
+2 CONT
+2 CONT (2)/(101b) Sinai Loeb, ancestor of the Eskeles Family
+2 CONT
+2 CONT (3)/(101c) Mendel Lieb, ancestor of the Mendel Family & Menachem Mendel
+2 CONC , called "Tzemach Tzeddek", adopted wife's surname, "Schneerson", the f
+2 CONC ather of (a) Shmuel Schneerson, called "Maharash" (d1882) [the father o
+2 CONC f Sholom Dovber (d1920), the father of Yosef Yitzchak (d1950)] & (b) Bo
+2 CONC ruch Schneur, father of Levi Yitzchak (d1944), father of Menachem Mende
+2 CONC l Schneerson, claimant (d1994)(below)
+2 CONT
+2 CONT -----------------------------------------------------------------------
+2 CONC --------------------------------------
+2 CONT
+2 CONT section 13.2: The Maharel's House
+2 CONT
+2 CONT (101) Yehuda Lieb, called "The Maharel of Prague" (above), a rabbi (d16
+2 CONC 09), who, by wife, Pearl Shmelkes, begot 3 sons & 6 daughters, of whom t
+2 CONC he sons were:
+2 CONT
+2 CONT (102A) Shmuel Zvi, whose descendants end with Jacob Frank (d1791) and h
+2 CONC is daughter, an heiress, Eve, called "The Divine Lady" (d1826)
+2 CONT
+2 CONT (102B) Betzalel Loewe, ancestor of "The Alter Rebbe", ancestor of anoth
+2 CONC er modern family, the Schneersons
+2 CONT
+2 CONT (102C) Zvi Mendel, or Mendel Lieb, among whose descendants was Israel o
+2 CONC f Rushin
+2 CONT
+2 CONT -----------------------------------------------------------------------
+2 CONC -------------------------------------
+2 CONT
+2 CONT section 13.3: senior-line
+2 CONT
+2 CONT (102a) Shmuel Zvi, father of
+2 CONT
+2 CONT (103) Yanai Loewe, father of
+2 CONT
+2 CONT (104) Zalman Lieb, father of
+2 CONT
+2 CONT (105) Yosef, father of
+2 CONT
+2 CONT (106) Yehuda [Jude] Lieb "of Prossnitz", claimant 1724 (d1730), father o
+2 CONC f
+2 CONT
+2 CONT (107) Jacob Frank [Jacob Ben Judah], claimant (d1791), treated as a "ki
+2 CONC ng" by many of Europe's royal courts, he was the father of
+2 CONT
+2 CONT (108) Eve (daughter), considered the dynasty's heiress & rightful queen
+2 CONC ; called "The Divine Lady" among other epithets, titles & styles; resid
+2 CONC ed in a palace and presided over a lavish court; d 1816 without issue
+2 CONT
+2 CONT -----------------------------------------------------------------------
+2 CONC --------------------------------------
+2 CONT
+2 CONT section 13.4: secondary-line & the Schneerson Family
+2 CONT
+2 CONT (102b) Betzalel Loewe, a rabbi (d1600), the father of
+2 CONT
+2 CONT (103) Schmuel, a rabbi (d1655), the father of
+2 CONT
+2 CONT (104) Yehuda Lieb, a rabbi (d1704), the father of
+2 CONT
+2 CONT (105) Moishe, a rabbi (d1736), the father of
+2 CONT
+2 CONT (106) Schneur Zalman, a rabbi (d1735), the father of
+2 CONT
+2 CONT (107) Boruch Ha-Tzakid Loewe, a rabbi (d1790), the father of
+2 CONT
+2 CONT (108) Schneur Zalman Boruchovitch, called "The Alter Rebbe" (d1812/13), w
+2 CONC ho, by wife, Sterna Segal, begot
+2 CONT
+2 CONT (1)/(109A) Dover Shneuri Dov Baer, a.k.a. Dor Ber, adopted "Schneerson" a
+2 CONC s surname (d1826/27)
+2 CONT
+2 CONT (2)/(109B) Chayim Avraham Schneur (d1844)
+2 CONT
+2 CONT (3)/(109C) Moshe Schneur (d1877), begot (110a&b) 2 daughters, Rivkah & R
+2 CONC achel
+2 CONT
+2 CONT -----------------------------------------------------------------------
+2 CONC --------------------------------------
+2 CONT
+2 CONT issue of (109A) Dover Shneuri Dov Baer, a.k.a. Dor Ber Schneerson (abov
+2 CONC e), by wife, Sheina, was:
+2 CONT
+2 CONT (1)/(110A) Menahem Nakhum (below)
+2 CONT
+2 CONT (2)/(110B) Baruch Shmuel, father of (111) Schneur Zalman
+2 CONT
+2 CONT (3)/(110C) Moshka (daughter), wife of Menahem Mendel, called "Tzemach" "
+2 CONC Tzeddek" (d1866), adopted wife's surname "Schneerson", great-grandfathe
+2 CONC r of Menachem Mendel Schneerson, claimant (d1994)
+2 CONT
+2 CONT -----------------------------------------------------------------------
+2 CONC --------------------------------------
+2 CONT
+2 CONT issue of (110A) Menahem Nakhum (above), by 1st wife, Frieda Twerski, wa
+2 CONC s:
+2 CONT
+2 CONT (1)/(111A) Mordechai Dor Tversky Shneurson (d1920), father of
+2 CONT
+2 CONT (112) Moshe Chaim Tversky-Shneursohn, father of
+2 CONT
+2 CONT (113) Levi Yitzchak Tversky-Shneursohn, father of
+2 CONT
+2 CONT (114) MENAHEM MORDECHAI SHNEURSON TVERSKY, senior heir of "The Maharal o
+2 CONC f Prague"
+2 CONT
+2 CONT -----------------------------------------------------------------------
+2 CONC --------------------------------------
+2 CONT
+2 CONT issue of (110A) Menahem Nakhum (above), by 2nd wife, Sheina Rivlin, was
+2 CONC :
+2 CONT
+2 CONT (2)/(111B) Shneur Schneerson, father of (112A) Baruch & (112B) Yehuda L
+2 CONC ieb, father of (113) Zalman (d1939)
+2 CONT
+2 CONT (3)/(111C) Levi Yitzchak (below)
+2 CONT
+2 CONT -----------------------------------------------------------------------
+2 CONC --------------------------------------
+2 CONT
+2 CONT issue of (111C) Levi Yitzchak (above) was/is:
+2 CONT
+2 CONT (1)/(112A) Mordechai Zalman (below)
+2 CONT
+2 CONT (2)/(112B) Aaron Moshe
+2 CONT
+2 CONT (3)/(112C) Hirsch Lieb, father of (113) Adel Lieb
+2 CONT
+2 CONT (4)/(112D) Pinchas Ber, father of (113a) Zalman, (113b) Meir, & (113c) V
+2 CONC olodia Vladmir (d1954)
+2 CONT
+2 CONT -----------------------------------------------------------------------
+2 CONC --------------------------------------
+2 CONT
+2 CONT issue of (112A) Mordechai Zalman (above) was/is:
+2 CONT
+2 CONT (113) Yakov Yisrael (d1938), who, by wife, Sarah Yoffe, begot (114a) He
+2 CONC rzliya (d1989) & (114b) Mordechai, the father of (115) Eliezer Schneers
+2 CONC on, the father of (116a) Merav, (116b) Michal, (116c) Efrat, & (116d) Y
+2 CONC uval
+2 CONT
+2 CONT -----------------------------------------------------------------------
+2 CONC --------------------------------------
+2 CONT
+2 CONT issue of (112B) Aaron Moshe (above) was/is:
+2 CONT
+2 CONT (1)/(113A) Mordechai Kalman
+2 CONT
+2 CONT (2)/(113B) Dov Ber (Dover), father of (114) Dan, father of (115) Guy
+2 CONT
+2 CONT (3)/(113C) Shneur Schneerson (below)
+2 CONT
+2 CONT -----------------------------------------------------------------------
+2 CONC --------------------------------------
+2 CONT
+2 CONT issue of (113C) Shneur Schneerson (above) was/is:
+2 CONT
+2 CONT (114) Aaron Schneerson-Yoeli, who, by wife, Miriam Berger, begot (115a) N
+2 CONC oga, (115b) Amir, & (115c) Obed, who each took "Yoeli" as their surname
+2 CONT
+2 CONT -----------------------------------------------------------------------
+2 CONC --------------------------------------
+2 CONT
+2 CONT issue of (109B) Chayim Avraham Schneur (above) was/is:
+2 CONT
+2 CONT (1)/(110A) Dover [Bliyadi], father of (111a) Yehuda Avli & (111b) Levi Y
+2 CONC itzchak, father of (112) Chaim Moshe
+2 CONT
+2 CONT (2)/(110B) Baruch Shmuel, father of (111a) Zalman & (111b) Levi Yitzcha
+2 CONC k (below)
+2 CONT
+2 CONT -----------------------------------------------------------------------
+2 CONC --------------------------------------
+2 CONT
+2 CONT issue of (111b) Levi Yitzchak (above), by 1st wife was:
+2 CONT
+2 CONT (1)/(112A) Chaim
+2 CONT
+2 CONT (2)/(112B) Shmari
+2 CONT
+2 CONT (3)/(112C) Shneur Tzvi Hirsh
+2 CONT
+2 CONT (4)/(112D) Baruch
+2 CONT
+2 CONT (5)/(112E) Lieb
+2 CONT
+2 CONT (6)/(112F) Yona[h]
+2 CONT
+2 CONT (7)/(112G) Moshe
+2 CONT
+2 CONT (8)/(112H) Doobah (daughter)
+2 CONT
+2 CONT (9)/(112i) Tzila (daughter)
+2 CONT
+2 CONT -----------------------------------------------------------------------
+2 CONC --------------------------------------
+2 CONT
+2 CONT issue of (111b) Levi Yitzchak (above), by 2nd wife was:
+2 CONT
+2 CONT (1)/(112J) Meshullam Zusel
+2 CONT
+2 CONT (2)/(112K) Raphael Mordechai
+2 CONT
+2 CONT (3)/(112L) Sarah Freida (daughter)
+2 CONT
+2 CONT -----------------------------------------------------------------------
+2 CONC --------------------------------------
+2 CONT
+2 CONT section 13.5: another-line
+2 CONT
+2 CONT (102c) Mendel Lieb, father of
+2 CONT
+2 CONT (103) Haim, father of
+2 CONT
+2 CONT (104) Eliezer, general, father of
+2 CONT
+2 CONT (105) Ysrael, a.k.a. Baal Shem Tov (d1760), father of
+2 CONT
+2 CONT (106) Dov Ber [Dover] (d1772), father of
+2 CONT
+2 CONT (107) Schneur, father of
+2 CONT
+2 CONT (108) Nachman (d1811), father of
+2 CONT
+2 CONT (109) Israel "of Rushin" (d1850)
+2 CONT
+2 CONT (110) issue
+2 CONT
+2 CONT -----------------------------------------------------------------------
+2 CONC --------------------------------------
+2 CONT
+2 CONT article: another miscellaneous descent-line
+2 CONT
+2 CONT (101) "The Maharal of Prague" (above)
+2 CONT
+2 CONT (102c) Mendel Lieb, whose brothers were Betzalel Loewe, and Shmuel Zvi
+2 CONT
+2 CONT (103) Haim
+2 CONT
+2 CONT (104) Eliezer, a general
+2 CONT
+2 CONT = Sarah [his 2nd =]
+2 CONT
+2 CONT (105) Yisroel, aka Baal Shem Tov
+2 CONT
+2 CONT =2 Channah [Anne]
+2 CONT
+2 CONT (106b) Adil (dau), sister of (106a) Zvi
+2 CONT
+2 CONT = Yechiel Ashkenazi
+2 CONT
+2 CONT (107c) Feiga (dau), sister of Baruch Medzebog & Moshe Chaim of Sudilkov
+2 CONT
+2 CONT = Simcha Horodenker, descended from "The Rashi of Troyes"
+2 CONT
+2 CONT (108) Rebbe Nachman of Breslev
+2 CONT
+2 CONT = Sasha, dau of Ephraim Ossatin
+2 CONT
+2 CONT (109) Chaya (dau)
+2 CONT
+2 CONT = Aharon Zaslosky [her 2nd =]
+2 CONT
+2 CONT (110) Yechiel Zaslovsky
+2 CONT
+2 CONT = Shterna Sashya, dau of Nachman Chayeles
+2 CONT
+2 CONT (111) [C]Hannah Rabinovitch
+2 CONT
+2 CONT (112) Aharon Rabinovitch
+2 CONT
+2 CONT = Leah Cohen
+2 CONT
+2 CONT (113) Rivka Rabinovitch
+2 CONT
+2 CONT = Zindel Lukashavsky
+2 CONT
+2 CONT (114) Frieda
+2 CONT
+2 CONT = Zeev [William] Lux
+2 CONT
+2 CONT (115) Sarah [Lillian] Leah
+2 CONT
+2 CONT = Pesach Burstein
+2 CONT
+2 CONT (116b) Susan [Joy] Roth, sister of (116a) Mike Burstein
+2 CONT
+2 CONT = Michael Roth
+2 CONT
+2 CONT issue:
+2 CONT
+2 CONT (117a) David Roth
+2 CONT
+2 CONT (117b) Dianne (daughter), wife of Tony Medina
+2 CONT
+2 CONT -------------------------------------
+2 CONT
+2 CONT David Hughes "Davidic Dynasty"  http://members.aol.com/rdavidh218/david
+2 CONC icdynasty.html
+2 CONT
+2 CONT Arthur J. Zuckerman " "A Jewish Princedom in Feudal France" p. 768 - 90
+2 CONC 0
+2 CONT
+2 CONT --------------------
+2 CONT
+2 CONT http://www.google.com/imgres?imgurl=http://www.loebtree.com/jj/aleph.jp
+2 CONC g&imgrefurl=http://www.loebtree.com/hophni.html&h=567&w=145&sz=50&tbnid
+2 CONC =stforPg7ffneuM:&tbnh=400&tbnw=102&prev=/images%3Fq%3DBustanai%2Bpictur
+2 CONC e&usg=__-r35anW9yWSbkIJRlcnKpI-Nzso=&sa=X&ei=9r09TN_TJoH88AaWu4WPBw&ved
+2 CONC =0CBYQ9QEwAA
+2 CONT
+2 CONT ----------------------------------------
+2 CONT
+2 CONT http://books.google.com/books?id=ZABSepHO1FMC&pg=PA631&lpg=PA631&dq=Jew
+2 CONC ish+Exilarchs+chart&source=bl&ots=GhC5dOhqO8&sig=8lHJuYPmqsq0o6-fRWSMEQ
+2 CONC 04aKo&hl=en&ei=zq89TKuKGsK88gbrtvmoBg&sa=X&oi=book_result&ct=result&res
+2 CONC num=5&ved=0CCIQ6AEwBDgK#v=onepage&q&f=false
+2 CONT
+2 CONT ‪The British Chronicles, Volume 2‬ By David Hughes
+2 CONT
+2 CONT Yazidgard lll / Bostonai, Exilarch chart
+2 CONT
+2 CONT ===============================
+2 CONT
+2 CONT http://www.bupc.org/genealogy/genealogy-of-christ.html
+2 CONT
+2 CONT Genealogy of Baha'u'llah, The HEIR to the THRONE OF DAVID, showing His l
+2 CONC ineage from Bostanai (the exilarch: exiled Davidic monarch) the son of K
+2 CONC ing David.
+2 CONT
+2 CONT ================================
+2 CONT
+2 CONT Exilarchs
+2 CONT
+2 CONT http://www.dayanofaleppo.org/docs/OtherImages.aspx
+2 CONT
+2 CONT -------------------
+2 CONT
+2 CONT Hanina ben Adoi (exilarch)
+2 CONT
+2 CONT http://en.wikipedia.org/wiki/Exilarch
+2 CONT
+2 CONT --------------------
+2 CONT
+2 CONT http://www.loebtree.com/hophni.html
+2 CONT
+2 CONT Bustanai Genealogy
+2 CONT
+2 CONT ---------------------
+2 CONT
+2 CONT http://medlibrary.org/medwiki/Bustanai_ben_Haninai
+2 CONT
+2 CONT --------------------
+2 CONT
+2 CONT Genealogical chart
+2 CONT
+2 CONT http://www.entrybytroops.org/bahaullahs-genealogy.html
+2 CONT
+2 CONT --------------------
+2 CONT
+2 CONT Appointed as the new Exilarch in 642 when he was 16. He did so by impre
+2 CONC ssing the Arabic Caliph when a bee landed on his head while he was payi
+2 CONC ng his respects and did not flinch. His second wife,   Princess Izdunda
+2 CONC d/Izdadwar Sassanid, was considered to be foreign by the Jews and their c
+2 CONC hildren illegitimate.
+2 CONT --------------------
+2 CONT His name, Bustenai, is from bustan, which means "orchard." The last Per
+2 CONC sian King, Khusro II (Chosroes II, also our ancestor), inimical to the J
+2 CONC ews, decided to extinguish the royal house of David, no one being left o
+2 CONC f that house but a young woman whose husband had been killed shortly af
+2 CONC ter his marriage. Then the king dreamed he was in a garden ("bostan"), w
+2 CONC here he uprooted the trees and broke the branches, and, as he was lifti
+2 CONC ng up his ax against a little root, an old man snatched the ax away fro
+2 CONC m him and gave him a severe blow that almost killed him, saying: "Are y
+2 CONC ou not satisfied with having destroyed all the beautiful trees of my ga
+2 CONC rden, that you now try to destroy also the last root? Truly you deserve t
+2 CONC hat your memory perish from the earth." The King thereupon promised to g
+2 CONC uard the last plant of the garden very carefully. No one but an old Jew
+2 CONC ish sage was able to interpret the dream, and he said: "The garden repr
+2 CONC esents the house of David, all of whose descendants you have destroyed e
+2 CONC xcept a young woman with her unborn baby. The old man you saw was David
+2 CONC , to whom you promised that his house should be renewed by this boy." T
+2 CONC he Jewish sage, who was the father of the young woman, brought her to t
+2 CONC he King, and she was assigned rooms fitted up with princely splendor, w
+2 CONC here she gave birth to a boy, who received the name "Bostanai" from the g
+2 CONC arden ("bostan"), which the king had seen in his dream.
+2 CONT
+2 CONT Exilarch Bustanai ben Haninai beni David was recognized as the head (Ex
+2 CONC ilarch [Hebrew: ראש גלות Rosh Galut, Aramaic: ריש גלותא Reish Galuta li
+2 CONC t. "head of the exile", Greek: Æchmalotarcha], referring to the leaders o
+2 CONC f the Diaspora Jewish community following the deportation of the popula
+2 CONC tion of Judah into Babylonian exile after the destruction of the kingdo
+2 CONC m of Judah) of the two principal academies of Babylonian Jewry, and thr
+2 CONC ough him by the Muslim caliphate, as final arbiters of Jewish law and t
+2 CONC he religious heads of all Jewish communities under Muslim rule circa 64
+2 CONC 0.
+2 CONT
+2 CONT See "My Lines"
+2 CONT
+2 CONT ( http://homepages.rootsweb.ancestry.com/~cousin/html/p299.htm#i12958 )
+2 CONT
+2 CONT from Compiler: R. B. Stewart, Evans, GA
+2 CONT
+2 CONT ( http://homepages.rootsweb.ancestry.com/~cousin/html/index.htm )
+2 CONT
+2 CONT Bustanai was our ancestor through two distinct lines of descent: throug
+2 CONC h his son Hananai and his son Hisdai, each of whom was independently ou
+2 CONC r ancestor.
+2 CONT --------------------
+2 CONT Lay head of Jewish community 610-670. Blev högst 80 år.
+2 CONT --------------------
+2 CONT Bustani , birth CA 589, died CA 660, occupation: Exilarch, son of Hanin
+2 CONC a(i) and nn
+2 CONT Possible ancestor R. Yoseph I may descend via Bustanai from the King Da
+2 CONC vid genealogy as follows: Each entry is supposed to be the son of daugh
+2 CONC ter of the previous entry. Zurubbabel Hananiah. Sons: Pelatiah (Phaltia
+2 CONC l), Jeshaiah (Yesaiah) (Yeshaya) (Isaiah), Exilarch (Contact Don Stone f
+2 CONC or descendants) Exilarch Isaiah or Jeshaiah (b. Jerusalem about 469 B.C
+2 CONC .E.) Exilarch Rephaiah (b. Jerusalem about 424 B.C.E.) Exilarch Amay or A
+2 CONC rnan (b. Jerusalem about 400 B.C.E.) Exilarch Obadaiah (b. Jerusalem ab
+2 CONC out 375 B.C.E.) Exilarch Shecanian Exilarch Shemaiah (b. Jerusalem abou
+2 CONC t 325 B.C.E.). Children: Exilarch Neariah, Exilarch Hattush II, Exilarc
+2 CONC h Shemida, Igeal (Igal), Bariah, Shaphat, Neariah (b. Jerusalem about 2
+2 CONC 97 B.C.E.). Children: Exilarch Hezekaiah (father of Exilarch Nakhum I), E
+2 CONC xilarch Azrikam, Exilarch Elioenai. (Another source gives a different d
+2 CONC escent from here to Huna II) Exilarch Hizkiah Elioenai (lived Jerusalem
+2 CONC , b. about 272 B.C.E.). Seven son all of whom were Exilarchs: Anani, Da
+2 CONC laiah, Johanan, Akkub, Pelaiah, Eliashib, Hodaviah (ancestor of some mo
+2 CONC re exilarchs) Akkub (lived Jerusalem, b. about 244 B.C.E.) David Shlomo S
+2 CONC hemaiah David Shechaniah Hizkiah Shalom Nathan (possibly Nathan De-Zuzi
+2 CONC ta, an illusive Jewish hero whose story is chronologically out of place a
+2 CONC nd in literature jumps around history.) Hunya Shlomo Yakov Ahija, found
+2 CONC ed a new dynasty of exilarchs around 135 on the extinction of previous d
+2 CONC ynasty (none of ancestors between him and Akkub were exilarches). Sons: N
+2 CONC akhum, II, Johanan, Nathan. Nakhum, II (around 145-170) Sons: Huna, I, M
+2 CONC ar-Ukba, I. Mar-Ukba, I (around 210-240). Sons: Huna, II, Nathan, I Hun
+2 CONC a, II, Exilarch 240-259. Sons: Nathan I, and Nosson Nathan I UKBA, Exil
+2 CONC arch at Babylon 259-270. Sons: Nehemiah I, Mar-Ukba, II Nehemiah (b. 27
+2 CONC 0, executed 313), Exilarch at Babylon. Sons: Mar-Ukba, II/III, Isaac, H
+2 CONC una, III. Nathan (known as Ukba Mar II before he became Exilarch), Exil
+2 CONC arch at Babylon (d. 337, reigned 313-337). Mar Abba Abra, Exilarch at B
+2 CONC abylon (b. 300, d. 370, reigned 350-370) Sons: Nathan, II, Kahana, I Ma
+2 CONC r Kahani, I, Exilarch at Babylon (reigned 400-415). Sons: Nathan, Huna, I
+2 CONC V, Mar-Zutra, I Mar Zutra I, Exilarch at Babylon (b. 370, d. 413(???), r
+2 CONC eigned 441-455). Sons: Kahana II, Huna V, and Nosson. Maremar = Kahana I
+2 CONC I (reigned 455-465). Haninai = Huna VI (reigned 484-508) Sons: Mar-Zutr
+2 CONC a II, and Hizkiah (father of David father of Mar-Zutra III) one missing g
+2 CONC eneration? Mar Zutra II (b. 493, d. 520, reigned 508-520). Sons: Ahunai (
+2 CONC Huna-Mar II), and Sutra I who went to palestine and founded a new dynan
+2 CONC sty of the Palestinian Nesi'im. Huna Mar (Ahunai) (520-581) Kafnai Hofn
+2 CONC ai (Kafnai; Qafnai), exilarch at Babylon (550-581). Sons: Haninai and H
+2 CONC ushiel. Haninai (b. 560 Persia, d. 590 executed), exilarch at Babylon (
+2 CONC 581-589) Bustanai (d. 660/5) was the first Exilarch to be recognized by A
+2 CONC rab rule. His birth and much of his life is surrounded by legend. As a t
+2 CONC oken of appreciation, Caliph Ali gave him the daughter of the Persian k
+2 CONC ing Yazdeger (Yazadagird III of Parthia ) for a slave. Eventually Busta
+2 CONC nai married her. His first wife, Adoa, a Davidic Jewish princess (relat
+2 CONC ive), had two sons: Hisdai I & Baradai; His 2nd wife, Dara or Azdadwar I
+2 CONC zdundad or Izdadwar daughter of Zamaspdukht and King Shahrijar III of P
+2 CONC ersia. The Parthi princess, had three sons: (a) Hisdai II , (b) Nehemia
+2 CONC h , and (c) Haninai [Hananiah], who was "exilarch" of Sura 689-694. Se e f
+2 CONC amily trees descending from Haninai. The descendants of Haninai appear t
+2 CONC o occupy the gaonate of Sura for several generations and may also be an
+2 CONC cestors of the Maharal of Prague <maharal.html>. (However, according to R
+2 CONC innah Burns, their three son s were Shahrijar, Durdanshah, and Mardansh
+2 CONC ah. Source: Arthur J. ZUCKERMAN's A Jewish Princedom in Feudal France, 7
+2 CONC 68-900 and David HUGHES's Davidic Dynasty. See article by Moshe SHALTIE
+2 CONC L-GRACIAN Prince Haninai Baradai (d. 689). Three sons: Hisdai II (exila
+2 CONC rch c. 700-730) (information available), Nehemiah through whom the line o
+2 CONC f the exilarchs eventually passes, and Hananiah Hannaniah, the gaon of S
+2 CONC ura from 689 to 694. Sons: Hilai (Hillel) gaon of Sura from 694 to 712, a
+2 CONC nd Yakob Yakob, Gaon of Sura from 712-730 Mari, Gaon of Sura from 748 o
+2 CONC r 751 to 756 (d. 756). Hillel, Gaon of Sura 792-798, d. 798. Sons: Ivom
+2 CONC ai, Natroi gaon of Sura (d. 853) and Rivyai (father of Joseph [d. 841]) I
+2 CONC vomai, Kohen Zedek, Gaon 838-848. Sons: Hophni, Nehemiah and Nahshon (g
+2 CONC aon of Sura 874-882, and father of Khai gaon of Sura 889-896). Hophni. G
+2 CONC iven by another source as Hophni son of Zedek Ha-COHEN son of Ivomai. R
+2 CONC abba or Rabban Mari, Gaon of Sura, went to Spain in 941. Samuel Ha-Gaon
+2 CONC , gaon of an academy in Spain around 975. Died 935. Hophni ha-COHEN (fr
+2 CONC om Merida?) (d. 963) married the daughter of Tzadok Kahana son of Mar J
+2 CONC oseph Rav, grandson of Matityahu Gaon. (See David HUGHES for ancestry o
+2 CONC f Matityahu Gaon.) Sons: Samuel Ha-Nagid, Yehoseph Ha-Nagid (father of S
+2 CONC amuel, fathe r of Joseph Ha-Nagid who was killed in a pogrom 1062) Samu
+2 CONC el Ha-Nagid (b. Spain, d. 1056 Spain or 1034) (Last Gaon of the Sura ac
+2 CONC ademy 997-1013). Samuel's daughter Asmouna possibly married Hai Gaon. S
+2 CONC amuel's son Israel was Gaon of Sura Academy 1017-1034. (Azariah ha-Kohe
+2 CONC n [Gaon of Sura Academy 1034-1037] may have been son of Israel.) Samuel
+2 CONC 's son Isaac was a gaon. (generation skipped in some accounts) Joseph I
+2 CONC bn Nagrela [Al-Nagrila] Ha-Nagid (d. 1034) (generation skipped in some a
+2 CONC ccounts) Samuel Ha-Nagid, vizier 1027 (d. 1056). R. Yoseph I. Gaon. Exe
+2 CONC cuted 1066. Married daughter of Rabbi Nissim Ben Yaakov. According to o
+2 CONC she Shaltiel, Yoseph was assassinated in a pogrom in Granada (1062) whe
+2 CONC re he served as a Grand Vizier like his father before him. to: Adoa Dav
+2 CONC idic Jewish princess 1) Hisdai I 2) Bar Adai
+2 CONT
+2 CONT Family Page Bustani to: Princess Izdundad (Dara?), daughter of King Yaz
+2 CONC degerd (Yazadagird) and Princess Manyanh of Byzantium Persian princess g
+2 CONC iven by Omar as a slave. Bustenai proceeded to free her and to marry he
+2 CONC r after she converted to Judaism. 1) Hisdai II 2) Nechemiah 3) Prince H
+2 CONC aninai Bar Adai (Hananiah), birth CA 615, died CA 689, occupation: Gaon S
+2 CONC ura 689-694 to: nn Main index A-Z
+2 CONT
+2 CONT Bustani , birth CA 589, died CA 660, occupation: Exilarch, son of Hanin
+2 CONC a(i) and nn Possible ancestor R. Yoseph I may descend via Bustanai from t
+2 CONC he King David genealogy as follows: Each entry is supposed to be the so
+2 CONC n of daughter of the previous entry. Zurubbabel Hananiah. Sons: Pelatia
+2 CONC h (Phaltial), Jeshaiah (Yesaiah) (Yeshaya) (Isaiah), Exilarch (Contact D
+2 CONC on Stone for descendants) Exilarch Isaiah or Jeshaiah (b. Jerusalem abo
+2 CONC ut 469 B.C.E.) Exilarch Rephaiah (b. Jerusalem about 424 B.C.E.) Exilar
+2 CONC ch Amay or Arnan (b. Jerusalem about 400 B.C.E.) Exilarch Obadaiah (b. J
+2 CONC erusalem about 375 B.C.E.) Exilarch Shecanian Exilarch Shemaiah (b. Jer
+2 CONC usalem about 325 B.C.E.). Children: Exilarch Neariah, Exilarch Hattush I
+2 CONC I, Exilarch Shemida, Igeal (Igal), Bariah, Shaphat, Neariah (b. Jerusal
+2 CONC em about 297 B.C.E.). Children: Exilarch Hezekaiah (father of Exilarch N
+2 CONC akhum I), Exilarch Azrikam, Exilarch Elioenai. (Another source gives a d
+2 CONC ifferent descent from here to Huna II) Exilarch Hizkiah Elioenai (lived J
+2 CONC erusalem, b. about 272 B.C.E.). Seven son all of whom were Exilarchs: A
+2 CONC nani, Dalaiah, Johanan, Akkub, Pelaiah, Eliashib, Hodaviah (ancestor of s
+2 CONC ome more exilarchs) Akkub (lived Jerusalem, b. about 244 B.C.E.) David S
+2 CONC hlomo Shemaiah David Shechaniah Hizkiah Shalom Nathan (possibly Nathan D
+2 CONC e-Zuzita, an illusive Jewish hero whose story is chronologically out of p
+2 CONC lace and in literature jumps around history.) Hunya Shlomo Yakov Ahija, f
+2 CONC ounded a new dynasty of exilarchs around 135 on the extinction of previ
+2 CONC ous dynasty (none of ancestors between him and Akkub were exilarches). S
+2 CONC ons: Nakhum, II, Johanan, Nathan. Nakhum, II (around 145-170) Sons: Hun
+2 CONC a, I, Mar-Ukba, I. Mar-Ukba, I (around 210-240). Sons: Huna, II, Nathan
+2 CONC , I Huna, II, Exilarch 240-259. Sons: Nathan I, and Nosson Nathan I UKB
+2 CONC A, Exilarch at Babylon 259-270. Sons: Nehemiah I, Mar-Ukba, II Nehemiah (
+2 CONC b. 270, executed 313), Exilarch at Babylon. Sons: Mar-Ukba, II/III, Isa
+2 CONC ac, Huna, III. Nathan (known as Ukba Mar II before he became Exilarch), E
+2 CONC xilarch at Babylon (d. 337, reigned 313-337). Mar Abba Abra, Exilarch a
+2 CONC t Babylon (b. 300, d. 370, reigned 350-370) Sons: Nathan, II, Kahana, I M
+2 CONC ar Kahani, I, Exilarch at Babylon (reigned 400-415). Sons: Nathan, Huna
+2 CONC , IV, Mar-Zutra, I Mar Zutra I, Exilarch at Babylon (b. 370, d. 413(???
+2 CONC ), reigned 441-455). Sons: Kahana II, Huna V, and Nosson. Maremar = Kah
+2 CONC ana II (reigned 455-465). Haninai = Huna VI (reigned 484-508) Sons: Mar
+2 CONC -Zutra II, and Hizkiah (father of David father of Mar-Zutra III) one mi
+2 CONC ssing generation? Mar Zutra II (b. 493, d. 520, reigned 508-520). Sons: A
+2 CONC hunai (Huna-Mar II), and Sutra I who went to palestine and founded a ne
+2 CONC w dynansty of the Palestinian Nesi'im. Huna Mar (Ahunai) (520-581) Kafn
+2 CONC ai Hofnai (Kafnai; Qafnai), exilarch at Babylon (550-581). Sons: Hanina
+2 CONC i and Hushiel. Haninai (b. 560 Persia, d. 590 executed), exilarch at Ba
+2 CONC bylon (581-589) Bustanai (d. 660/5) was the first Exilarch to be recogn
+2 CONC ized by Arab rule. His birth and much of his life is surrounded by lege
+2 CONC nd. As a token of appreciation, Caliph Ali gave him the daughter of the P
+2 CONC ersian king Yazdeger (Yazadagird III of Parthia ) for a slave. Eventual
+2 CONC ly Bustanai married her. His first wife, Adoa, a Davidic Jewish princes
+2 CONC s (relative), had two sons: Hisdai I & Baradai; His 2nd wife, Dara or A
+2 CONC zdadwar Izdundad or Izdadwar daughter of Zamaspdukht and King Shahrijar I
+2 CONC II of Persia. The Parthi princess, had three sons: (a) Hisdai II , (b) N
+2 CONC ehemiah , and (c) Haninai [Hananiah], who was "exilarch" of Sura 689-69
+2 CONC 4. Se e family trees descending from Haninai. The descendants of Hanina
+2 CONC i appear to occupy the gaonate of Sura for several generations and may a
+2 CONC lso be ancestors of the Maharal of Prague <maharal.html>. (However, acc
+2 CONC ording to Rinnah Burns, their three son s were Shahrijar, Durdanshah, a
+2 CONC nd Mardanshah. Source: Arthur J. ZUCKERMAN's A Jewish Princedom in Feud
+2 CONC al France, 768-900 and David HUGHES's Davidic Dynasty. See article by M
+2 CONC oshe SHALTIEL-GRACIAN Prince Haninai Baradai (d. 689). Three sons: Hisd
+2 CONC ai II (exilarch c. 700-730) (information available), Nehemiah through w
+2 CONC hom the line of the exilarchs eventually passes, and Hananiah Hannaniah
+2 CONC , the gaon of Sura from 689 to 694. Sons: Hilai (Hillel) gaon of Sura f
+2 CONC rom 694 to 712, and Yakob Yakob, Gaon of Sura from 712-730 Mari, Gaon o
+2 CONC f Sura from 748 or 751 to 756 (d. 756). Hillel, Gaon of Sura 792-798, d
+2 CONC . 798. Sons: Ivomai, Natroi gaon of Sura (d. 853) and Rivyai (father of J
+2 CONC oseph [d. 841]) Ivomai, Kohen Zedek, Gaon 838-848. Sons: Hophni, Nehemi
+2 CONC ah and Nahshon (gaon of Sura 874-882, and father of Khai gaon of Sura 8
+2 CONC 89-896). Hophni. Given by another source as Hophni son of Zedek Ha-COHE
+2 CONC N son of Ivomai. Rabba or Rabban Mari, Gaon of Sura, went to Spain in 9
+2 CONC 41. Samuel Ha-Gaon, gaon of an academy in Spain around 975. Died 935. H
+2 CONC ophni ha-COHEN (from Merida?) (d. 963) married the daughter of Tzadok K
+2 CONC ahana son of Mar Joseph Rav, grandson of Matityahu Gaon. (See David HUG
+2 CONC HES for ancestry of Matityahu Gaon.) Sons: Samuel Ha-Nagid, Yehoseph Ha
+2 CONC -Nagid (father of Samuel, fathe r of Joseph Ha-Nagid who was killed in a p
+2 CONC ogrom 1062) Samuel Ha-Nagid (b. Spain, d. 1056 Spain or 1034) (Last Gao
+2 CONC n of the Sura academy 997-1013). Samuel's daughter Asmouna possibly mar
+2 CONC ried Hai Gaon. Samuel's son Israel was Gaon of Sura Academy 1017-1034. (
+2 CONC Azariah ha-Kohen [Gaon of Sura Academy 1034-1037] may have been son of I
+2 CONC srael.) Samuel's son Isaac was a gaon. (generation skipped in some acco
+2 CONC unts) Joseph Ibn Nagrela [Al-Nagrila] Ha-Nagid (d. 1034) (generation sk
+2 CONC ipped in some accounts) Samuel Ha-Nagid, vizier 1027 (d. 1056). R. Yose
+2 CONC ph I. Gaon. Executed 1066. Married daughter of Rabbi Nissim Ben Yaakov. A
+2 CONC ccording to oshe Shaltiel, Yoseph was assassinated in a pogrom in Grana
+2 CONC da (1062) where he served as a Grand Vizier like his father before him. t
+2 CONC o: Adoa Davidic Jewish princess 1) Hisdai I 2) Bar Adai
+2 CONT
+2 CONT Family Page Bustani to: Princess Izdundad (Dara?), daughter of King Yaz
+2 CONC degerd (Yazadagird) and Princess Manyanh of Byzantium Persian princess g
+2 CONC iven by Omar as a slave. Bustenai proceeded to free her and to marry he
+2 CONC r after she converted to Judaism. 1) Hisdai II 2) Nechemiah 3) Prince H
+2 CONC aninai Bar Adai (Hananiah), birth CA 615, died CA 689, occupation: Gaon S
+2 CONC ura 689-694 to: nn
+2 CONT
+2 CONT --------------------
+2 CONT http://www.davidicdynasty.org/dna.php
+2 CONT
+2 CONT http://de.wikipedia.org/wiki/Exilarch
+2 CONT
+2 CONT http://de.wikipedia.org/wiki/Bostanai
+2 CONT --------------------
+2 CONT He was appointed by the Arabic Caliph "Shah Yazdegerd III" as the new E
+2 CONC xilarchy in 642, which began a new [3rd] dynasty of Exilarchs. Bostanai c
+2 CONC aught the attention of the caliph as a sixteen year old youth, when he d
+2 CONC id not flinch out of respect for the caliph when a bee (or wasp) landed o
+2 CONC n the side of his head but remained at attention. The caliph was so mov
+2 CONC ed by the episode that he removed "the Arab Shiekh" who was then Exilar
+2 CONC ch and gave the Exilarchate office to Bostonai, and also gave him a Par
+2 CONC thian princess [Dara-Izdadwar] for his [2nd] wife.
+2 CONT
+2 CONT Bostonai married:
+2 CONT
+2 CONT 1.  Princess Adai, an Arabic-Jewish princess, (daughter of Assad Ibn Ha
+2 CONC shim, a Quraysh sheik, who died 582);
+2 CONT
+2 CONT 2. Princess Izdundad/Izdadwar Sassanid (daughter of  Shah Yazdegerd III
+2 CONC ), but who was then considered by the Jews to have been a "foreign wife
+2 CONC ".
+2 CONT
+2 CONT According to legend, Dara was the daughter of Charlemagne – a gift to t
+2 CONC he King of Persia in order to build a diplomatic bridge between the gre
+2 CONC atest Kings of the Period.
+2 CONT
+2 CONT Bostenai could possibly be the son of Hananai but most historians and r
+2 CONC esearchers believe Gurya is the son of Sa'adyah , grandson of Mar Zutra I
+2 CONC I.
+2 CONT
+2 CONT Bostenai was the 1st Exilarch under Arabian rule, flourished in middle o
+2 CONC f 7th century; he had a son named Hananai [Khaled] (by “Adai”-daughter o
+2 CONC f Assad Ibn Hashim and sister of Fatima bint Assad-mother of the first S
+2 CONC hi’a Imam Ali bin Abi Talib,) who, in turn, had a daughter named “Judit
+2 CONC ” who married Nehemiah.
+2 CONT
+2 CONT Bustenai was the Son-in-Law of the Persian Caliph (Bostenai's father, H
+2 CONC aninai, was son of Chofnai - 32nd exilarch from 560-581 CE).  Gurya had t
+2 CONC wo (2 ) sons by his Jewish wife (Hisdai and Haninai – Gamliel and Khale
+2 CONC d respectively) and three (3) sons by his Persian wife.  For the record
+2 CONC ,  Assad Ibn Hashim was the son of Hashim ibn Abd Manaf the great-grand
+2 CONC father of the Prophet Muhammad.  Hashim ibn Abd al-Manaf was also was t
+2 CONC he originator of the Banu Hashim clan of the Banu Quraish tribe in Mecc
+2 CONC a.
+2 CONT
+2 CONT The House of Bostanai thus developed into two branches. Upon the death o
+2 CONC f Bostenai his sons by his 1st [Jewish] wife insisted that their father
+2 CONC 's "foreign wife" as well as her three sons were illegitimate, and, as s
+2 CONC uch, had no claim to the succession. The judges were divided in opinion
+2 CONC , but finally decided that the marriage with his "foreign wife" was mor
+2 CONC ganatic and that the offspring of that marriage had no claim to the suc
+2 CONC cession.  There is no evidence  that "the birthright" passed to the off
+2 CONC spring of Bostanai and his second  wife as the "Bahai' Faith" pretends, w
+2 CONC hen "the birthright" passed to the offspring of first wife.
+2 CONT
+2 CONT The son and descendants of Bostanai and his 1st wife were his successor
+2 CONC s in the Jewish  Exilarchy, that is, they were the medieval Jewish Exil
+2 CONC archs; while the three sons of Bostanai and his 2nd wife founded region
+2 CONC al-dynasties in three Iranian provinces, which were
+2 CONT
+2 CONT (a) Tabaristan [the Buwayhids, that is, the Shaharite Line];
+2 CONT
+2 CONT (b) Gilan [the Dabwaihides, that is, the Davidides];
+2 CONT
+2 CONT (c) Mazandaran [the Baduspanides].
+2 CONT
+2 CONT '''The following text is an excerpt from the Dayan Family Tree which wa
+2 CONC s provided by Mitch Dayan:''''''' In Seder Hadorot it is written in the n
+2 CONC ame of Sefer Yohasin that in the year 4420 the matter of Bustenai and D
+2 CONC udava came to pass, and he was called Mar Zutra. At that time, the Pers
+2 CONC ian king decreed and killed all of the House of David, from the great t
+2 CONC o the small, and left no remnant, other than one bride. Her husband was k
+2 CONC illed on the day of their wedding, when she had just become pregnant. T
+2 CONC he king had a dream in which he was walking through a garden and cuttin
+2 CONC g down all the plants, leaving neither branch nor root, except for one s
+2 CONC mall branch, which he almost destroyed. An old man then came and beat h
+2 CONC im until he bled, and when he awoke, there was blood spilled on the bed w
+2 CONC herein he was sleeping. In the morning, one of the wise men of Israel c
+2 CONC ame and interpreted his dream as referring to his having killed the Hou
+2 CONC se of David. He asked that it be ascertained whether there were any bra
+2 CONC nch or root left, and in truth, there was none other than the pregnant b
+2 CONC ride. The king regretted having decimated the House of David, and he to
+2 CONC ok it upon himself to watch over the child that would be born, and so h
+2 CONC e did. And it came to pass that when she gave birth to a son, she calle
+2 CONC d his name Bustenai, after the garden the king had seen, which is calle
+2 CONC d bustan in Arabic. The child grew up and the king commanded that he be b
+2 CONC rought to him, and he came and stood before the king from morning until e
+2 CONC vening. He stood in fear and awe before the king, and none of his limbs m
+2 CONC oved. A fly then came and bit him in his face until he bled, but he did n
+2 CONC ot raise his hand to chase away the fly. When the king saw this great t
+2 CONC hing, he was very pleased, and he appointed him to be a judge. This is t
+2 CONC he reason that the image of a fly is engraved on their seal, because of t
+2 CONC he story of Butenai. So it says in Seder Hadorot page 47.
+2 CONT
+2 CONT On page 50b there is a somewhat different version: '''The family of the H
+2 CONC ouse of David was destroyed for having pained Rabbi Hanina, the Head of t
+2 CONC he Yeshiva.''' Rabbi Hanina went to the synagogue, and cried so much th
+2 CONC at he filled a vessel with his tears and drank it. '''This was the reas
+2 CONC on for the demise of the House of David, and they all died in one night
+2 CONC .''' The only remnant was the daughter of the said Rabbi Hanina, who ha
+2 CONC d been married to someone from the House of David. Rabbi Hanina saw in a d
+2 CONC ream that he was standing in a garden with an ax in his hand and destro
+2 CONC ying the garden. An old red-haired man came, beat him until his face tu
+2 CONC rned around backwards, and he said to him, “Why are you destroying my g
+2 CONC arden?” In the morning he asked the wise men if anyone remained from th
+2 CONC e House of David, and they replied, “No one remains other than your dau
+2 CONC ghter, who is pregnant.” He went and sat with her until she gave birth, a
+2 CONC nd as he was watching over her, his face retuned to its normal state.''
+2 CONC ' Now there was an in-law of the House of David who, when he saw that t
+2 CONC he descendants of the House of David had all died, bribed the king and w
+2 CONC as appointed Prince. When Bustenai grew up, he went to the king and the p
+2 CONC retender was demoted.''' A fly then entered into the nose of that in-la
+2 CONC w of the House of David, and he died. This is the reason that the House o
+2 CONC f David has the image of a fly on its seal. In The Travels of Benyamin. P
+2 CONC age 13b, it is written that the grave of the Prince Rabbi Bustenai, the H
+2 CONC ead of the Exile, is in Pompadita of Naharda’ah.
+2 CONT
+2 CONT He was Exilarch in Baghdad until 660. He was a friend of the Caliph.
+2 CONT
+2 CONT SOURCE NOTES:
+2 CONT http://www.american-pictures.com/genealogy/persons/per03122.htm#0
+2 CONT
+2 CONT RESEARCH NOTES:
+2 CONT Lay head of Jewish community 610-670
+2 CONT
+2 CONT Charlemagne_coin
+2 CONT http://trees.ancestry.com/rd?f=image&guid=f51160bb-f5ac-4e57-a901-3fbb8
+2 CONC cebeab0&tid=6268114&pid=-1057736375
+2 CONT
+2 CONT Charlemagne_coin
+2 CONT http://trees.ancestry.com/rd?f=image&guid=f51160bb-f5ac-4e57-a901-3fbb8
+2 CONC cebeab0&tid=6268114&pid=-1057736375
+2 CONT
+2 CONT "BEN HANINAI"; EXILARCH OF JEWS AT BABYLON ca. 610-660 (OR ca. 618-670)
+2 CONT
+2 CONT He was Exilarch in Baghdad until 660. He was a friend of the Caliph.
+2 CONT
+2 CONT Charlemagne Bust
+2 CONT http://trees.ancestry.com/rd?f=image&guid=b8f772f7-4cc4-4a06-84a4-a48a9
+2 CONC ce6b9ae&tid=6268114&pid=-1057736375
+2 CONT
+2 CONT Charlemagne-2
+2 CONT http://trees.ancestry.com/rd?f=image&guid=02c2c268-9805-4df1-ab19-2cdd7
+2 CONC 8f1e7e9&tid=6268114&pid=-1057736375
+2 CONT
+2 CONT Charlemagne or Charles The Great
+2 CONT http://trees.ancestry.com/rd?f=document&guid=76b11cf6-bbb6-455e-a2a3-e8
+2 CONC 51ef057e5a&tid=6268114&pid=-1057736375
+2 CONT
+2 CONT Charlemagne Bust
+2 CONT http://trees.ancestry.com/rd?f=image&guid=b8f772f7-4cc4-4a06-84a4-a48a9
+2 CONC ce6b9ae&tid=6268114&pid=-1057736375
+2 CONT
+2 CONT Charlemagne-2
+2 CONT http://trees.ancestry.com/rd?f=image&guid=02c2c268-9805-4df1-ab19-2cdd7
+2 CONC 8f1e7e9&tid=6268114&pid=-1057736375
+2 CONT
+2 CONT Charlemagne or Charles The Great
+2 CONT http://trees.ancestry.com/rd?f=document&guid=76b11cf6-bbb6-455e-a2a3-e8
+2 CONC 51ef057e5a&tid=6268114&pid=-1057736375
+2 CONT
+2 CONT
+2 CONT The source for all the relatives linked to Babylon ins from Leo Van Kru
+2 CONC ining, (Netherlands) as recorded by “Family Search (LDS) site  --- URL h
+2 CONC ttp://members.chello.nl/ckruining/.  the submission search for the LDS s
+2 CONC ite is 3183280-0719105111654
+2 CONT
+2 CONT
+2 CONT The source for all the relatives linked to Babylon ins from Leo Van Kru
+2 CONC ining, (Netherlands) as recorded by “Family Search (LDS) site  --- URL h
+2 CONC ttp://members.chello.nl/ckruining/.  the submission search for the LDS s
+2 CONC ite is 3183280-0719105111654
+1 BIRT
+2 DATE ABT 589
+2 PLAC Pembeditha, Babylon Persia
+1 DEAT
+2 DATE ABT 638
+1 OCCU
+2 NOTE 1st Exilarch of the 3rd Dynasty, Exilarch at Bablyon, Guriah = Exilarch
+3 CONC , Rosh Golah of Judah, Joodse leider
+1 REFN geni:6000000000961705402
+1 OBJE
+2 FILE https:\\media.geni.com\p10\6020\0280\534448381918eb28\Bustenai_original.jpg?hash=8a332a31416fb3ad12970980d885c4bc52737de5c52c764600a1e60bfd44cdde.1762329599
+2 FORM 1762329599
+2 _TYPE PHOTO
+2 _SCBK Y
+2 _PRIM Y
+1 OBJE
+2 FILE https:\\media.geni.com\p13\79\c7\03\26\5344483909e57721\etoile_de_david_original.jpg?hash=1204238151ef4999ce40e451bd222dfb369f6259c21aa541e149de26b78f2c15.1762329599
+2 FORM 1762329599
+2 _TYPE PHOTO
+2 _SCBK Y
+2 _PRIM N
+1 OBJE
+2 FILE https:\\media.geni.com\p13\06\30\60\61\5344483f57032dfc\solomon_original.pdf?hash=024ab9cdaf8aba41d3e5c426fa351c6cc0412991227e3f8a2d0a1a2c729e9763.1762329599
+2 FORM 1762329599
+2 TITL Solomon.pdf
+2 _TYPE PHOTO
+2 _SCBK Y
+2 _PRIM N
+1 OBJE
+2 FILE https:\\media.geni.com\p13\ac\62\50\90\5344483f57032dff\solomon2_original.pdf?hash=bd0634a5f197283817133a4d6d69aa1f0fa19228be996b70a586473834ad178d.1762329599
+2 FORM 1762329599
+2 TITL Solomon2.pdf
+2 _TYPE PHOTO
+2 _SCBK Y
+2 _PRIM N
+1 OBJE
+2 FILE https:\\media.geni.com\p13\fc\69\57\39\5344485e6f15b24f\bwstn_y_bn_hnyn_y_original.pdf?hash=5d6f4819048927bd247be98dfbd99e78f9dd27817e8169324562ae2a8cc51834.1762329599
+2 FORM 1762329599
+2 TITL בוסתנאי בן חנינאי.pdf
+2 _TYPE PHOTO
+2 _SCBK Y
+2 _PRIM N
+1 OBJE
+2 FILE https:\\media.geni.com\p10\6020\0280\534448381918eb28\Bustenai_original.jpg?hash=6ddbf5f133f1199f5b92595563f843cfac4875513d9f951b46a3446db4a5ff6c.1762415999
+2 FORM 1762415999
+2 _TYPE PHOTO
+2 _SCBK Y
+2 _PRIM Y
+1 OBJE
+2 FILE https:\\media.geni.com\p13\79\c7\03\26\5344483909e57721\etoile_de_david_original.jpg?hash=72a45099f9ff1f4c327e18589925d99b9579556ffeb012b69f40a5573d142d69.1762415999
+2 FORM 1762415999
+2 _TYPE PHOTO
+2 _SCBK Y
+2 _PRIM N
+1 OBJE
+2 FILE https:\\media.geni.com\p13\06\30\60\61\5344483f57032dfc\solomon_original.pdf?hash=139507adddf4488fc2884b3f61bbb192a80484d5fd270ecb1d11c3cfe60c4774.1762415999
+2 FORM 1762415999
+2 TITL Solomon.pdf
+2 _TYPE PHOTO
+2 _SCBK Y
+2 _PRIM N
+1 OBJE
+2 FILE https:\\media.geni.com\p13\ac\62\50\90\5344483f57032dff\solomon2_original.pdf?hash=b89948c2812a055e8dabbd3517f7194e368166ad059d2f1296a058d26839437d.1762415999
+2 FORM 1762415999
+2 TITL Solomon2.pdf
+2 _TYPE PHOTO
+2 _SCBK Y
+2 _PRIM N
+1 OBJE
+2 FILE https:\\media.geni.com\p13\fc\69\57\39\5344485e6f15b24f\bwstn_y_bn_hnyn_y_original.pdf?hash=1221bd7ca0cb818c16af3c845026a877084ca55c1e036fe1e581478dad599df6.1762415999
+2 FORM 1762415999
+2 TITL בוסתנאי בן חנינאי.pdf
+2 _TYPE PHOTO
+2 _SCBK Y
+2 _PRIM N
+1 FAMS @F5@
+1 FAMS @F6@
+1 FAMS @F2@
+1 FAMC @F7@
+0 @I5@ INDI
+1 NAME  //
+1 NAME "Adoa bat Assad" //
+2 GIVN "Adoa bat Assad"
+1 SEX F
+1 _UID 07744E7C26814FAD812AC8C44B539C4FA8A8
+1 CHAN
+2 DATE 31 DEC 2024
+1 NOTE  From [https://www.wikitree.com/wiki/Bat_Assad-1 Wikitree - Adoa bat As
+2 CONC sad]
+2 CONT
+2 CONT ===Date Estimation and Family Members===
+2 CONT
+2 CONT "Numerous sources make Adoa bat Assad to be the daughter of Asad ibn Ha
+2 CONC shim, and the same person as his daughter Adai binte Assad bin Hashim. T
+2 CONC his poses a dating difficulty because Asad's best estimated birth is 48
+2 CONC 5, he died prior to Muhammed's birth in 571, and Asad's children were l
+2 CONC ikely born in the time frame 516-536. Adoa on the other hand, is said t
+2 CONC o be born in 610, and married Bustanai, born in 600. This conflict is n
+2 CONC ot resolved, but in the interim, Adoa has been de-linked as a daughter o
+2 CONC f Assad.
+2 CONT
+2 CONT ===Date Estimation and Contemporary Events===
+2 CONT
+2 CONT If Adoa was born about 610, assume that she married at the age of 20, i
+2 CONC n 630. Her children's birth year estimation would be 631 and 633.
+2 CONT
+2 CONT The narrative in this profile assumes movement of peoples between Mesop
+2 CONC otamia and Quraish, since her father was a Quraishi chieftain but her m
+2 CONC other was the daughter of an exilarch.
+2 CONT
+2 CONT In 622, Muhammed, prophet of the new Islamic religion, arrived in Yathr
+2 CONC ib (now Medina) and negotiated peace between the various tribes there, i
+2 CONC ncluding the Banu Qurayza, the Quraish Jewish tribe. In 627, believing t
+2 CONC hat the Banu Qurayza had betrayed an alliance, the male members of the t
+2 CONC ribe were executed and the women and children enslaved. This account is d
+2 CONC isputed by some scholars.
+2 CONT
+2 CONT The narrative in this profile would assume that Adoa was not in Quraish b
+2 CONC y 627. Perhaps she was already married to Bustanai by then."
+1 BIRT
+2 DATE ABT 610
+1 REFN geni:6000000009117227972
+1 DEAT Y
+1 FAMS @F2@
+0 @I6@ INDI
+1 NAME Hasdai /ben Bustenai/
+2 GIVN Hasdai
+2 SURN ben Bustenai
+1 NAME  /בוסתנאי/
+2 SURN בוסתנאי
+1 SEX M
+1 _UID E476983A585C42C98AD3EA3B2114763951C2
+1 CHAN
+2 DATE 1 MAY 2022
+1 BIRT
+2 DATE ABT 618
+1 DEAT
+2 DATE ABT 638
+1 REFN geni:6000000017213190456
+1 FAMC @F2@
+0 @I7@ INDI
+1 NAME Haninai al-Nehar Peḳkod /bar Adoi/
+2 GIVN Haninai al-Nehar Peḳkod
+2 SURN bar Adoi
+2 NSFX Exilarch & Gaon of Sura
+2 NICK Exilarch & Gaon of Sura
+1 NAME חנינאי /בן בוסתנאי/
+2 GIVN חנינאי
+2 SURN בן בוסתנאי
+2 NSFX ראש הגולה, וגאון מסורא
+1 SEX M
+1 _UID 328D73893DC144D1B4552467835B8520E5DF
+1 CHAN
+2 DATE 28 APR 2022
+1 NOTE  The descendants of Haninai appear to occupy the gaonate of Sura for se
+2 CONC veral generations and may also be ancestors of the Maharal of Prague.
+2 CONT
+2 CONT Prince Haninai's father, Bustanai (d. 660/5), was the first Jewish Exil
+2 CONC arch to be recognized by Arab rule. His father's birth and much of his l
+2 CONC ife is surrounded by legend. His father's second wife was the daughter o
+2 CONC f King Shahrijar III of Persia.
+2 CONT
+2 CONT King Shahrijar's mother was Miriam, the daughter of the Byzantine Emper
+2 CONC or Maurice.
+2 CONT
+2 CONT The Bahai religious leader Bahá'u'lláh's ancestry can be traced back to H
+2 CONC aninai's father, Shahrijar Yazadagird III of Parthia
+2 CONT
+2 CONT http://www.bupc.org/genealogy/genealogy-of-christ.html
+2 CONT
+2 CONT Genealogy of Baha'u'llah, The HEIR to the THRONE OF DAVID, showing His l
+2 CONC ineage from Bostanai (the exilarch: exiled Davidic monarch) the son of K
+2 CONC ing David.
+2 CONT
+2 CONT Exilarchs
+2 CONT
+2 CONT  http://www.dayanofaleppo.org/docs/OtherImages.aspx
+2 CONT
+2 CONT http://books.google.com/books?id=ZABSepHO1FMC&pg=PA631&lpg=PA631&dq=Jew
+2 CONC ish+Exilarchs+chart&source=bl&ots=GhC5dOhqO8&sig=8lHJuYPmqsq0o6-fRWSMEQ
+2 CONC 04aKo&hl=en&ei=zq89TKuKGsK88gbrtvmoBg&sa=X&oi=book_result&ct=result&res
+2 CONC num=5&ved=0CCIQ6AEwBDgK#v=onepage&q&f=false
+2 CONT
+2 CONT ‪The British Chronicles, Volume 2‬ By David Hughes
+2 CONT
+2 CONT Yazidgard lll / Bostonai, Exilarch chart
+2 CONT
+2 CONT -------------------
+2 CONT
+2 CONT Hanina ben Adoi (exilarch)
+2 CONT
+2 CONT http://en.wikipedia.org/wiki/Exilarch
+2 CONT
+2 CONT --------------------
+2 CONT
+2 CONT http://www.loebtree.com/hophni.html
+2 CONT
+2 CONT Bustanai Genealogy
+2 CONT
+2 CONT ---------------------
+2 CONT
+2 CONT http://medlibrary.org/medwiki/Bustanai_ben_Haninai
+2 CONT
+2 CONT --------------------
+2 CONT
+2 CONT Contact: Leone WEST adim4111@yahoo.com for descendants of Nehemiah.
+2 CONT
+2 CONT Prince Haninai Baradai (d. 689). Three sons: Hisdai II (exilarch c. 700
+2 CONC -730) (information available), Nehemiah through whom the line of the ex
+2 CONC ilarchs eventually passes, and Hananiah.
+2 CONT
+2 CONT Hannaniah, the gaon of Sura from 689 to 694.
+2 CONT
+2 CONT Sons: Hilai (Hillel) gaon of Sura from 694 to 712, and Yakob
+2 CONT
+2 CONT Yakob, Gaon of Sura from 712-730
+2 CONT
+2 CONT Mari, Gaon of Sura from 748 or 751 to 756 (d. 756).
+2 CONT
+2 CONT Hillel, Gaon of Sura 792-798, d. 798. Sons: Ivomai, Natroi gaon of Sura (
+2 CONC d. 853) and Rivyai (father of Joseph [d. 841])
+2 CONT
+2 CONT Ivomai, Kohen Zedek, Gaon 838-848. Sons: Hophni, Nehemiah and Nahshon (
+2 CONC gaon of Sura 874-882, and father of Khai gaon of Sura 889-896).
+2 CONT
+2 CONT Hophni. Given by another source as Hophni son of Zedek Ha-COHEN son of I
+2 CONC vomai.
+2 CONT
+2 CONT Rabba or Rabban
+2 CONT
+2 CONT Mari, Gaon of Sura, went to Spain in 941.
+2 CONT
+2 CONT Samuel Ha-Gaon, gaon of an academy in Spain around 975. Died 935.
+2 CONT
+2 CONT Hophni ha-COHEN (from Merida?) (d. 963) married the daughter of Tzadok K
+2 CONC ahana son of Mar Joseph Rav, grandson of Matityahu Gaon. (See David HUG
+2 CONC HES RDavidH218@aol.com for ancestry of Matityahu Gaon.) Sons: Samuel Ha
+2 CONC -Nagid, Yehoseph Ha-Nagid (father of Samuel, father of Joseph Ha-Nagid w
+2 CONC ho was killed in a pogrom 1062)
+2 CONT
+2 CONT Samuel Ha-Nagid (b. Spain, d. 1056 Spain or 1034) (Last Gaon of the Sur
+2 CONC a academy 997-1013).
+2 CONT
+2 CONT Samuel's daughter Asmouna possibly married Hai Gaon.
+2 CONT
+2 CONT Samuel's son Israel was Gaon of Sura Academy 1017-1034. (Azariah ha-Koh
+2 CONC en [Gaon of Sura Academy 1034-1037] may have been son of Israel.)
+2 CONT
+2 CONT Samuel's son Isaac was a gaon.
+2 CONT
+2 CONT (generation skipped in some accounts) Joseph Ibn Nagrela [Al-Nagrila] H
+2 CONC a-Nagid (d. 1034)
+2 CONT
+2 CONT Samuel Ha-Nagid, vizier 1027 (d. 1056).
+2 CONT
+2 CONT R. Yoseph I. Gaon. Executed 1066. Married daughter of Rabbi Nissim Ben Y
+2 CONC aakov. According to Moshe Shaltiel, Yoseph was assassinated in a pogrom i
+2 CONC n Granada (1062) where he served as a Grand Vizier like his father befo
+2 CONC re him.
+2 CONT
+2 CONT --------------------
+2 CONT Exilarch Haninai II bar 'Adai ben Bustanai beni David was also called H
+2 CONC aninai bar Adai. He was Exilarch at Babylonia before 689.
+2 CONT
+2 CONT See "My Lines"
+2 CONT
+2 CONT ( http://homepages.rootsweb.ancestry.com/~cousin/html/p106.htm#i12948 )
+2 CONT
+2 CONT from Compiler: R. B. Stewart, Evans, GA
+2 CONT
+2 CONT ( http://homepages.rootsweb.ancestry.com/~cousin/html/index.htm )
+2 CONT --------------------
+2 CONT http://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=52651498
+2 CONT --------------------
+2 CONT Hanini* bar 'ADOI
+2 CONT
+2 CONT ABT 0610 - ABT 0689
+2 CONT
+2 CONT     * BIRTH: ABT 0610
+2 CONT
+2 CONT     * DEATH: ABT 0689
+2 CONT
+2 CONT Father: Bustanai* BEN HANINI
+2 CONT
+2 CONT Mother: Izdundad Sasanidof PERSIA
+2 CONT
+2 CONT Family 1 :
+2 CONT
+2 CONT    1. +Nehemiah* BEN HANINI
+2 CONT
+2 CONT http://www.geni.com/profile/edit_about_me/6000000002093814656?tab=about
+2 CONT
+2 CONT RESEARCH NOTES:
+2 CONT Exilarch of Jews
+2 CONT
+2 CONT SOURCE NOTES:
+2 CONT http://www.american-pictures.com/genealogy/persons/per03125.htm#0
+2 CONT
+2 CONT "BAR ADOI"
+2 CONT
+2 CONT Also known as, Theodorich, Theodoric. Also known as Makir.
+2 CONT Theuderic Makir (David) Jud de Narbonne. He was one of the first Exilar
+2 CONC chs of Babylon.
+2 CONT For the first time, the early generations of this line have been revise
+2 CONC d to reflect Judeo Christian ancestry.
+2 CONT Makir who married the daughter of Charles Martel, was a Judiarch of Nar
+2 CONC bonne, a ranking Jewish leader.
+2 CONT Makir Judiarch was son of Habi Bai Ben Natronai, (Per the Austustan Soc
+2 CONC iety).
+2 CONT Born 771 died 793. Judiarch of Narbonne, (Septimania) Source, Royalty f
+2 CONC or commoners, Roderick W. Stuart, p234.
+2 CONT
+2 CONT bar 'Adol; ha-DAVID
+2 CONT
+2 CONT bar 'Adol; ha-DAVID
+1 BIRT
+2 DATE ABT 628
+2 PLAC Babylon, Iraq
+1 DEAT
+2 DATE ABT 689
+2 PLAC Baghdad, Babylon, Iraq
+1 OCCU 8th Exilarch at Sura
+1 REFN geni:6000000001263043349
+1 OBJE
+2 FILE https:\\media.geni.com\p10\2026\8280\5344483817853b8f\Screen_shot_2010-07-12_at_9_original.jpg?hash=188aa1056c243ebc6a3e3e7276fbbd19d90801430821e378026eb6cca5010f1c.1762329599
+2 FORM 1762329599
+2 _TYPE PHOTO
+2 _SCBK Y
+2 _PRIM Y
+1 OBJE
+2 FILE https:\\media.geni.com\p13\e1\72\f7\48\5344483909e73c3a\etoile_de_david_original.jpg?hash=0320d0ee44f70e2d3d1c168d026b7bef933254f7869f09caf5673b7054d3153d.1762329599
+2 FORM 1762329599
+2 _TYPE PHOTO
+2 _SCBK Y
+2 _PRIM N
+1 OBJE
+2 FILE https:\\media.geni.com\p10\2026\8280\53444838189c8411\Bustenai_large.jpg?hash=642b4c7096d116e40f71b0dda614f7d71cbb3088ee76b8278d816d33e9cf1235.1762329599
+2 FORM 1762329599
+2 _TYPE PHOTO
+2 _SCBK Y
+2 _PRIM N
+1 OBJE
+2 FILE https:\\media.geni.com\p10\2026\8280\53444838189c8410\Sura___Pumbedita_large.jpg?hash=552f1c88d93832307622d79935365f28de5cf3aaa4e0720a8f4cb09b212bc8a5.1762329599
+2 FORM 1762329599
+2 TITL Rosh Galut
+2 _TYPE PHOTO
+2 _SCBK Y
+2 _PRIM N
+1 OBJE
+2 FILE https:\\media.geni.com\p10\2026\8280\5344483817853b8f\Screen_shot_2010-07-12_at_9_original.jpg?hash=11db35621d5740f0589d917d11559841479946ac8deb3eb7753ff14f691034dd.1762415999
+2 FORM 1762415999
+2 _TYPE PHOTO
+2 _SCBK Y
+2 _PRIM Y
+1 OBJE
+2 FILE https:\\media.geni.com\p13\e1\72\f7\48\5344483909e73c3a\etoile_de_david_original.jpg?hash=76c5c0f5be7a12cdc9c7d11eb129995bbb6e201b0ba8c41ced428d53f9e46526.1762415999
+2 FORM 1762415999
+2 _TYPE PHOTO
+2 _SCBK Y
+2 _PRIM N
+1 OBJE
+2 FILE https:\\media.geni.com\p10\2026\8280\53444838189c8411\Bustenai_large.jpg?hash=0d60155456e6935576595587536bba961ccec31fbc81ff060ba4efe3b787589c.1762415999
+2 FORM 1762415999
+2 _TYPE PHOTO
+2 _SCBK Y
+2 _PRIM N
+1 OBJE
+2 FILE https:\\media.geni.com\p10\2026\8280\53444838189c8410\Sura___Pumbedita_large.jpg?hash=c6e8356edae148338358ded82a4c8534da0dd148c24a15d8d8e6cfd0962341a4.1762415999
+2 FORM 1762415999
+2 TITL Rosh Galut
+2 _TYPE PHOTO
+2 _SCBK Y
+2 _PRIM N
+1 FAMS @F8@
+1 FAMC @F2@
+0 @I8@ INDI
+1 NAME Haninai Baradai //
+2 GIVN Haninai Baradai
+1 SEX M
+1 _UID 337831F1FA4944738000D7ABD432C37709F5
+1 CHAN
+2 DATE 3 MAY 2022
+1 DEAT
+2 DATE 689
+1 OCCU
+1 TITL Prince
+1 REFN geni:6000000041273406367
+1 FAMS @F9@
+1 FAMC @F2@
+0 @I9@ INDI
+1 NAME Hananya "Bustenai" /ben Haninai, Exilarch & Gaon of Pumbedit/
+2 GIVN Hananya "Bustenai"
+2 SURN ben Haninai, Exilarch & Gaon of Pumbedit
+1 NAME  /הכהן רפא/
+2 SURN הכהן רפא
+1 SEX M
+1 _UID 896DDD0F97C5466A8CE405A3CB7FA9766F27
+1 CHAN
+2 DATE 2 JUN 2024
+1 OCCU
+1 REFN geni:6000000206223809846
+1 FAMS @F3@
+1 FAMC @F10@
+0 @F1@ FAM
+1 WIFE @I2@
+1 CHIL @I1@
+1 CHIL @I3@
+0 @F10@ FAM
+1 HUSB @I24@
+1 CHIL @I9@
+0 @F11@ FAM
+1 HUSB @I10@
+1 CHIL @I25@
+0 @F12@ FAM
+1 HUSB @I11@
+1 WIFE @I26@
+0 @F13@ FAM
+1 HUSB @I11@
+1 WIFE @I27@
+1 CHIL @I28@
+1 CHIL @I29@
+1 CHIL @I30@
+1 CHIL @I31@
+0 @F14@ FAM
+1 HUSB @I12@
+1 CHIL @I32@
+1 CHIL @I33@
+0 @F15@ FAM
+1 HUSB @I13@
+1 WIFE @I34@
+1 CHIL @I35@
+1 CHIL @I36@
+1 CHIL @I37@
+0 @F16@ FAM
+1 HUSB @I38@
+1 CHIL @I15@
+0 @F17@ FAM
+1 HUSB @I39@
+1 WIFE @I40@
+1 CHIL @I16@
+1 CHIL @I41@
+1 CHIL @I42@
+1 CHIL @I43@
+0 @F18@ FAM
+1 HUSB @I18@
+1 WIFE @I44@
+1 CHIL @I45@
+1 CHIL @I46@
+0 @F19@ FAM
+1 HUSB @I18@
+0 @F1909@ FAM
+1 HUSB @I3987@
+1 WIFE @I26@
+1 CHIL @I242@
+1 CHIL @I3988@
+0 @F1998@ FAM
+1 HUSB @I4041@
+1 CHIL @I25@
+0 @F2@ FAM
+1 HUSB @I4@
+1 WIFE @I5@
+1 CHIL @I6@
+1 CHIL @I7@
+1 CHIL @I2@
+1 CHIL @I8@
+1 MARR
+2 DATE ABT 627
+2 SOUR @S1@
+3 _TMPLT
+4 FIELD
+5 NAME Page
+3 NAME GEDCOM file imported on 6 August 2025
+0 @F20@ FAM
+1 HUSB @I19@
+1 WIFE @I28@
+1 CHIL @I47@
+1 CHIL @I48@
+1 CHIL @I49@
+0 @F21@ FAM
+1 HUSB @I21@
+1 CHIL @I50@
+0 @F22@ FAM
+1 HUSB @I51@
+1 CHIL @I24@
+0 @F23@ FAM
+1 HUSB @I52@
+1 WIFE @I29@
+1 CHIL @I53@
+0 @F24@ FAM
+1 HUSB @I45@
+1 WIFE @I29@
+1 CHIL @I54@
+1 CHIL @I55@
+1 MARR
+2 DATE 686
+2 PLAC Babylon, , ,
+2 SOUR @S1@
+3 _TMPLT
+4 FIELD
+5 NAME Page
+3 NAME GEDCOM file imported on 6 August 2025
+0 @F25@ FAM
+1 HUSB @I30@
+1 WIFE @I56@
+1 CHIL @I57@
+1 CHIL @I58@
+1 CHIL @I59@
+1 CHIL @I60@
+0 @F3@ FAM
+1 HUSB @I9@
+1 CHIL @I2@
+0 @F4@ FAM
+1 HUSB @I3@
+1 CHIL @I10@
+0 @F5@ FAM
+1 HUSB @I4@
+1 CHIL @I11@
+1 CHIL @I12@
+1 CHIL @I13@
+1 CHIL @I14@
+1 MARR
+2 DATE 635
+2 PLAC Babylon, , ,
+2 SOUR @S1@
+3 _TMPLT
+4 FIELD
+5 NAME Page
+3 NAME GEDCOM file imported on 6 August 2025
+0 @F6@ FAM
+1 HUSB @I4@
+0 @F7@ FAM
+1 HUSB @I16@
+1 WIFE @I15@
+1 CHIL @I4@
+0 @F8@ FAM
+1 HUSB @I7@
+1 WIFE @I17@
+1 CHIL @I18@
+1 CHIL @I19@
+1 CHIL @I20@
+0 @F9@ FAM
+1 HUSB @I8@
+1 CHIL @I21@
+1 CHIL @I22@
+1 CHIL @I23@
+0 TRLR
