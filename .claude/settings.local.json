@@ -32,7 +32,8 @@
       "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" simple_mongo_export.py)",
       "Bash(rg:*)",
       "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" comprehensive_mongo_export.py)",
-      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" safe_gedcom_concatenator.py)"
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" safe_gedcom_concatenator.py)",
+      "Bash(sqlite3:*)"
     ],
     "deny": []
   }

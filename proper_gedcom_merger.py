@@ -425,10 +425,10 @@ def main():
     
     input_files = [
         "new_gedcoms/geni_plus_wikidata_after_merge.ged",
-        "new_gedcoms/gaiad_ftb_simple_conversion.ged"
+        "new_gedcoms/comprehensive_gaiad_conversion.ged"
     ]
     
-    output_file = "new_gedcoms/properly_merged.ged"
+    output_file = "new_gedcoms/comprehensive_properly_merged.ged"
     
     merger.merge_files(input_files, output_file)
     
