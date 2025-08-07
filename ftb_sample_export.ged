@@ -1,0 +1,210 @@
+0 HEAD
+1 SOUR FTB_Converter
+2 NAME FTB to GEDCOM Converter
+1 GEDC
+2 VERS 5.5.1
+2 FORM LINEAGE-LINKED
+1 CHAR UTF-8
+1 DATE 07 AUG 2025
+
+0 @I1@ INDI
+1 NAME Aster /Alpha/
+1 SEX F
+
+0 @I2@ INDI
+1 NAME Andromeda /Omega/
+1 SEX F
+
+0 @I3@ INDI
+1 NAME Benzette /Hesperides/
+1 SEX F
+
+0 @I4@ INDI
+1 NAME Hesper /Hesperides/
+1 SEX F
+
+0 @I5@ INDI
+1 NAME Quinamette /Hesperides/
+1 SEX F
+
+0 @I6@ INDI
+1 NAME Bios /Hesperides/
+1 SEX M
+
+0 @I7@ INDI
+1 NAME Viros /Hesperides/
+1 SEX M
+
+0 @I8@ INDI
+1 NAME Dedos /Hesperides/
+1 SEX M
+
+0 @I9@ INDI
+1 NAME Kenan /Bios Hesperides/
+1 SEX M
+
+0 @I10@ INDI
+1 NAME Aenos /Bios Hesperides/
+1 SEX M
+
+0 @I11@ INDI
+1 NAME Malathan /Bios Hesperides/
+1 SEX M
+
+0 @I12@ INDI
+1 NAME Jared /Bios Ehēca/
+1 SEX M
+
+0 @I13@ INDI
+1 NAME Maharoch /Bios Ehēca/
+1 SEX M
+
+0 @I14@ INDI
+1 NAME Enid /Bios Ehēca/
+1 SEX M
+
+0 @I15@ INDI
+1 NAME Pahadok /Bios Ehēca/
+1 SEX M
+
+0 @I16@ INDI
+1 NAME Pelod /Bios Quiyah/
+1 SEX M
+
+0 @I17@ INDI
+1 NAME Aroch /Bios Quiyah/
+1 SEX M
+
+0 @I18@ INDI
+1 NAME Nerod /Bios Quiyah/
+1 SEX M
+
+0 @I19@ INDI
+1 NAME Larthok /Bios Quiyah/
+1 SEX M
+
+0 @I20@ INDI
+1 NAME Idris /Bios Attle/
+1 SEX M
+
+0 @I21@ INDI
+1 NAME Methuselah /Bios Attle/
+1 SEX M
+
+0 @I22@ INDI
+1 NAME Lammes /Bios Attle/
+1 SEX M
+
+0 @I23@ INDI
+1 NAME Nolah /Bios Attle/
+1 SEX M
+
+0 @I24@ INDI
+1 NAME Caynen /Viros Hesperides/
+1 SEX M
+
+0 @I25@ INDI
+1 NAME Hanos /Viros Hesperides/
+1 SEX M
+
+0 @I26@ INDI
+1 NAME Mehuthen /Viros Hesperides/
+1 SEX M
+
+0 @I27@ INDI
+1 NAME Irad /Viros Ehēca/
+1 SEX M
+
+0 @I28@ INDI
+1 NAME Malathok /Viros Ehēca/
+1 SEX M
+
+0 @I29@ INDI
+1 NAME Hanad /Viros Ehēca/
+1 SEX M
+
+0 @I30@ INDI
+1 NAME Peladok /Viros Ehēca/
+1 SEX M
+
+0 @I31@ INDI
+1 NAME Sarniod /Viros Quiyah/
+1 SEX M
+
+0 @I32@ INDI
+1 NAME Alok /Viros Quiyah/
+1 SEX M
+
+0 @I33@ INDI
+1 NAME Illod /Viros Quiyah/
+1 SEX M
+
+0 @I34@ INDI
+1 NAME Umroch /Viros Quiyah/
+1 SEX M
+
+0 @I35@ INDI
+1 NAME Oblas /Viros Attle/
+1 SEX M
+
+0 @I36@ INDI
+1 NAME Makusholah /Viros Attle/
+1 SEX M
+
+0 @I37@ INDI
+1 NAME Romas /Viros Attle/
+1 SEX M
+
+0 @I38@ INDI
+1 NAME Nemla /Viros Attle/
+1 SEX M
+
+0 @I39@ INDI
+1 NAME Luca /Last Universal Common Ancestor/
+1 SEX M
+
+0 @I40@ INDI
+1 NAME Arka /Archaea/
+1 SEX F
+
+0 @I41@ INDI
+1 NAME Bacta /Bacteria/
+1 SEX F
+
+0 @I42@ INDI
+1 NAME Nano /DPANN/
+1 SEX F
+
+0 @I43@ INDI
+1 NAME Yuri /Euryarchaeota/
+1 SEX F
+
+0 @I44@ INDI
+1 NAME Proteus /Proteoarchaeota/
+1 SEX F
+
+0 @I45@ INDI
+1 NAME Methana /Methanobacteria/
+1 SEX F
+
+0 @I46@ INDI
+1 NAME Halo /Haloarchaea/
+1 SEX F
+
+0 @I47@ INDI
+1 NAME Pyra /Thermococci/
+1 SEX F
+
+0 @I48@ INDI
+1 NAME Asgarda //
+1 SEX F
+
+0 @I49@ INDI
+1 NAME Heimdalla //
+1 SEX F
+
+0 @I50@ INDI
+1 NAME Odina //
+1 SEX F
+
+0 TRLR
