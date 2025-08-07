@@ -84,15 +84,17 @@
 - Mass-revival model, abolitionism connection
 - Market of sects model
 
-#### **Chapter 13: Mormonism - Home-Grown Prophet**
-- Joseph Smith → Brigham Young theocratic Utah
-- Another Mani-style prophet within "religion" framework
-- **Juxtaposition setup**: Mormonism (1847) → Perry arrives (1853)
+#### **Chapter 13: Southern Baptist Convention - The Religious-Industrial Complex**
+- SBC institutional evolution (1845-1925) as first religious mass mobilization system
+- Intelligence gathering, professional credentialing, mass communication control
+- Corporate organizational models applied to voluntary religious institutions
+- **Transition setup**: Techniques perfected for American religious export → Perry arrives (1853)
 
-#### **Chapter 14: Progressive Era & Social Gospel**
-- Religion as civic infrastructure, abolitionism
-- Progressive movement influence
-- Setting stage for colonial expansion
+#### **Chapter 14: Progressive Era & Intelligence Infrastructure**
+- Religious organizations as proto-intelligence services
+- Social Gospel as systematic population monitoring and cultural intervention
+- Intelligence networks and information management systems
+- Template for 20th-century American intelligence community development
 
 #### **Chapter 15: Commodore Perry → Meiji State Shinto → 1945**
 - **Narrative continues from Chapter 10 cliffhanger**
