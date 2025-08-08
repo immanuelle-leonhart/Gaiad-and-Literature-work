@@ -1,464 +1,436 @@
-Arboreus, son of Tracheus great,
-Was settler king of royal fate.
-A monarch who would divide
-The world both far and wide.
-
-Arboreus split the earth
-Between two sons of worth:
-Lycos and Ginkgon strong,
-Each to rule life long.
-
-Lycos released with might
-Countless spores in sight,
-And by those spores he bore
-Two sons to explore:
-
-Isolagos the wise
-And Lycopodion's eyes
-That saw what could be made
-In forest's dappled shade.
-
-Lycopodion became
-Ancestor of the name
-Of clubmosses so tall,
-The greatest of them all.
-
-He built a city grand
-Throughout the fertile land
-So giant it became
-Known by the famous name
-
-Of "first tree" in the world,
-A scale tree, branches curled
-Toward heaven's shining light
-Both day and through the night.
-
-Today his spores are known
-As powder that has grown
-To be called by his name:
-Lycopodium's flame.
-
-Used for the power bright
-Of fire's burning light,
-His legacy lives on
-From dusk until dawn.
-
-Isolagos split his spores
-Into what nature stores
-As male and female kinds,
-With his devoted minds
-
-He raised his children all
-Who answered duty's call
-Within his city's walls
-Where love forever falls.
-
-Isolagos bore two sons:
-Quill when day begun
-And Sellagine the strong
-Who lived his whole life long.
-
-The sons of Sellagine
-Would creep in forest's shrine
-Their leaves across the ground
-Where they could be found.
-
-In dry times they would die
-Beneath the burning sky,
-But when the wet returned
-Their life would be re-earned.
-
-Sellagine reviving
-Shows how life, surviving
-Even death itself,
-Can rise from sorrow's shelf.
-
-The sons of Quill became
-Known by the famous name
-Of Quillworts, and they grew
-Their leaves so straight and true.
-
-Microphylls they raised
-High up to be praised
-By all who saw their sight
-Reaching toward the light.
-
-With no stomata made
-To help them in their trade
-Of breathing, they absorbed
-Air from ground, not absorbed
-
-Through leaves but through their root
-That served them like a suit
-Of armor underground
-Where they could be found.
-
-Their spores grew in water
-As nature taught her
-Children how to thrive
-And stay alive.
-
-Ginkgon branched his leaves
-Two by two, like sheaves
-Of grain, and so his leaves
-Were what science achieves
-
-To call megaphyllic—
-Large and quite prolific
-In surface for the sun
-When day was done.
-
-And he bore a son bright
-Named Phyllon, whose sight
-Would see what could be made
-In evolution's trade.
-
-Phyllon begat two more:
-Pteridos to explore
-And Gymnos, strong and true,
-Who different pathways knew.
-
-Pteridos begat then
-Two sons beyond all ken:
-Horsa and Euspor,
-Each seeking something more.
-
-Horsa begat Equis,
-Whose name would never miss
-Its mark in history's
-Eternal mysteries.
-
-As gametophyte the spawn
-Of Equis, when drawn
-To swim and find their bride,
-Would search both far and wide.
-
-And they found Puzella
-Fair beyond all stellar
-Beauty, and they grew
-Roots there, strong and true.
-
-Equis reduced his veins
-To one, through joys and pains,
-Like Lycos did before,
-From mountain peak to shore.
-
-He became ancestor
-Of puzzlegrass, protector
-Of nutrients and more
-In winter's icy store.
-
-He built armor strong
-Of silicon life long
-To protect his city bright
-From dangers day and night.
-
-He spilt ink on his scroll
-And lost what made him whole:
-The megaphylls of old
-Were lost, the story's told.
-
-His leaves were one vein
-Through sunshine and through rain,
-Like Lycos in his day
-Who showed him the way.
-
-In summer he would build
-Puzzlegrass, and it filled
-His stores with nutrients
-For future residents.
-
-And when winter passed away
-On some bright, shining day,
-He'd use what he had stored
-To please his faithful Lord.
-
-In spring as snow would melt
-And warmth was truly felt,
-He built horsetails high
-Reaching toward the sky.
-
-With no chlorophyll green,
-Only spores could be seen—
-And lots of them he made
-In springtime's bright parade.
-
-His spores spread far and wide
-Across the countryside
-To every nation's shore
-From here forevermore.
-
-In summer he'd destroy
-His horsetails without joy
-And build puzzlegrass new
-To see the season through.
-
-And his sons and daughters all
-From horsetails heard the call
-To build puzzlegrass too
-When summer's work was due.
-
-And so the sons of bright
-Equis and daughters' sight
-Of Puzella came to rule
-Like some eternal school
-
-All across the world
-Where banners were unfurled
-Of their authority
-Through all eternity.
-
-Euspor begat two sons:
-Adderos when begun
-The day, and Fernando
-Whose work would always show.
-
-Adderos begat then
-Two children beyond ken:
-Ophios and Psilos,
-Each with different goals.
-
-Ophios became the sire
-Of adder-tongues' choir:
-He built but one leaf
-Beyond all belief—
-
-Giant in its size
-Beneath the starry skies,
-One leaf to rule them all
-Who answered duty's call.
-
-And Psilos became father
-Of whisk ferns, who'd rather
-Build no leaves at all
-But stand both proud and tall
-
-Without the leafy crown
-That others wore around
-Their stems like royal dress—
-Simplicity's success.
-
-Fernando uncoiled wide
-A great frond, like a guide
-To show what could be made
-In forest's dappled shade.
-
-A frond of leaves so fair
-That danced upon the air
-Like some eternal song
-Throughout his whole life long.
-
-Maratton begat two:
-Marattidus so true
-And Leptos, who would be
-Living peacefully.
-
-Maratidus bore spores
-Ten thousand, and what's more,
-On each leaf he would place
-This multitude's embrace.
-
-While Leptos bore a mere
-Hundred, crystal clear
-In number, small but true
-In all that he would do.
-
-Together they became
-Ancestors of the name
-Of ferns throughout the land
-Built by their own hand.
-
-As sons of Arboreus
-Settled, glorious,
-The lands from sea to sea,
-They built for all to see
-
-Great swamps across the flow
-Of Mississippi's go
-From north down to the south
-Where river meets the mouth
-
-Of ocean's salty brine
-In mixing so fine
-Of fresh and salt that made
-A perfect place, well-made
-
-For life to find its way
-From water's ancient day
-To land's new frontier
-Where hope conquered fear.
-
-And it was here at last
-When time and fate had passed
-Their judgment on the world
-And change was unfurled,
-
-Our ancestors would climb—
-The sons of Osticthus' time
-Would make the leap at last
-From water to the vast
-
-Expanse of land so green
-The greatest ever seen
-By those who dared to dream
-Of more than what they seem.
-
-From Arboreus' division
-To Fernando's vision
-Of fronds that dance on air,
-The plants show everywhere
-
-How life finds its way
-From night into the day
-Of possibility
-For all eternity.
-
-From Lycos' burning spores
-To fern's ten thousand stores
-Of reproductive might,
-Each found their own sight
-
-Of how to spread their seed
-And fill the world's need
-For green and growing things
-That hope eternal brings.
-
-The clubmoss cities tall,
-The quillworts standing all
-With leaves that reach on high,
-The horsetails that try
-
-To balance seasons' call
-With storage for them all
-In puzzlegrass so bright
-Throughout the winter's night—
-
-Each shows a different way
-To live from day to day
-In harmony with time
-And nature's ancient rhyme.
-
-From one-veined simple leaves
-To fronds that autumn weaves
-Into a tapestry
-Of possibility,
-
-The plants remind us all
-Who hear their gentle call
-That life will always find
-A way to free the mind
-
-From limitations old
-In stories never told
-Of what we're meant to be
-If we would just be free
-
-To grow beyond the small
-And heed the greater call
-Of what we can achieve
-When we truly believe
-
-In possibility
-Through all eternity
-Where dreams can all come true
-For me and you today.
-
-The swamps that Arboreus
-Built, so glorious,
-Became the perfect place
-For evolution's grace
-
-To work its magic spell
-And help life to excel
-Beyond what was before
-To open up the door
-
-Of land's great frontier
-Where those who conquered fear
-Could build their cities new
-With vision clear and true.
-
-From water's ancient home
-To land where we could roam
-Free from the weight
-Of water's ancient fate,
-
-The plants prepared the way
-For life's eternal day
-When all would find their place
-In evolution's race.
-
-The sons of Osticthus
-Would soon, victorious,
-Make their way to land
-Built by the green hand
-
-Of those who came before
-To open up the door
-Of possibility
-For all humanity.
-
-From Arboreus' great reign
-To swamps across the plain
-Of Mississippi's flow,
-The story helps us know
-
-How every ending becomes
-New beginning's drums
-That beat the rhythm strong
-Of life's eternal song.
-
-The plants that colonized
-The land and organized
-Their cities green and wide
-With hope as their guide
-
-Show us the way to be
-Pioneers, bold and free,
-Who dare to leave behind
-The limits that bind
-
-Our spirits to the past
-And help our dreams at last
-Take wing and learn to fly
-Beneath the starry sky
-
-Where all things are possible
-For those who're not impossible
-To change and grow and be
-More than they seem to be.
-
-From spore to frond to tree,
-The plants show you and me
-How life will always find
-A way to free the mind
-
-And help the heart to grow
-Beyond what we can know
-Alone, but when we share
-Our dreams and hopes and care,
-
-The whole world can become
-A place where all can come
-To find their rightful place
-In evolution's grace
-
-That never ceases moving
-Toward what's improving
-All life everywhere
-With love beyond compare.
-
-The Arboreus legacy
-Lives through eternity
-In every tree that grows
-And every flower that shows
-
-Its face toward the sun
-When day has just begun
-With hope for what can be
-When hearts and minds are free
-
-To dream and dare and grow
-Beyond what we can know
-But feel within our hearts
-Where love's true journey starts.
+# Chapter 56: The Settler King
+
+Great Arboreus, noble son of Tracheus bright,
+Was settler king ordained by royal fate,
+A monarch who would spread his reign of light
+And divide the world both small and great.
+
+Arboreus split the earth between two sons
+Of worth beyond all measure in their day:
+Great Lycos and strong Ginkgon, faithful ones,
+Each destined for a long and glorious way.
+
+Great Lycos with his might released so wide
+Countless spores that danced upon the air,
+And by those spores he bore with faithful pride
+Two sons to explore the world so fair:
+
+Isolagos the wise whose thoughtful mind
+Could see beyond the present to what lay
+Ahead for those who'd leave the past behind,
+And bright Lycopodion's clearer way.
+
+Lycopodion became the ancestor
+Of clubmosses so tall throughout the land,
+The greatest trees that grew from shore to shore
+All built by his creative, loving hand.
+
+He built a city grand across the earth
+So giant that it filled the world with awe,
+Known by the name that told of its great worth:
+"First tree" that lived by evolution's law.
+
+A scale tree with its branches gently curled
+Toward heaven's ever-shining, holy light
+That blessed his realm throughout the fertile world
+Both day and through the sacred, starry night.
+
+Today his spores are known by those who seek
+The power that can light the sacred flame:
+Lycopodium powder, strong not weak,
+That bears forever his eternal name.
+
+Used for the burning power bright and true
+Of fire's light that conquers every fear,
+His legacy lives on in all we do
+From dusk to dawn throughout the passing year.
+
+Isolagos made split his sacred spores
+Into what nature carefully prepares:
+Male and female kinds, with loving stores
+Of wisdom for his children and their heirs.
+
+Within his city's walls where love would fall
+Like gentle rain upon the faithful ground
+He raised his children who'd answer the call
+Of duty where true peace could always be found.
+
+Isolagos bore two sons of noble birth:
+Quill who greeted every dawn's bright light
+And strong Sellagine who'd prove his worth
+Throughout his days from morning until night.
+
+The sons of bright Sellagine would creep
+Their leaves across the forest floor so green
+Where they could their faithful vigil keep
+In places where few mortals had been seen.
+
+In dry times when the summer sun burned hot
+They'd die beneath the sky's relentless glow,
+But when the blessed rains returned they'd not
+Stay dead but rise again from depths below.
+
+Sellagine's revival shows us clear
+How life, surviving even death's cruel sting,
+Can rise from sorrow's shelf year after year
+And to the world new hope and healing bring.
+
+The noble sons of Quill became well known
+By the famous name of Quillworts fair,
+Their leaves grew straight and true, precisely sown
+To reach toward light with reverential care.
+
+Microphylls they raised on high with pride
+To be praised by all who saw their sight
+Reaching toward the heavens as their guide
+And drawing strength from morning's golden light.
+
+With no stomata made to help their trade
+Of breathing, they absorbed what they required
+Through roots, not leaves—thus skillfully they made
+Their living as their faithful hearts desired.
+
+Their spores would grow in waters crystal clear
+As nature taught her children how to thrive
+And stay alive throughout each passing year
+And keep their sacred flame of hope alive.
+
+Great Ginkgon branched his leaves in pairs so neat,
+Two by two like sheaves of golden grain,
+And so his leaves were what would make complete
+Science's name: megaphyllic domain.
+
+Large leaves and quite prolific in their way
+Of gathering the sunlight's blessed power
+When evening came to close the sacred day
+And darkness brought the night's refreshing hour.
+
+And Ginkgon bore a son of vision bright
+Named Phyllon, whose clear and faithful sight
+Would see what could be made by heaven's might
+In evolution's sacred, endless flight.
+
+Great Phyllon begat two sons of fame:
+Pteridos who'd explore the world so wide
+And noble Gymnos, keeper of the name
+Of those who'd walk with truth as their guide.
+
+Pteridos begat two sons beyond
+All mortal understanding in their day:
+Great Horsa and Euspor, of whom I'm fond
+To tell their blessed and wondrous way.
+
+Great Horsa begat Equis, whose bright name
+Would never miss its mark in history's scroll
+Of all the great who'd rise to lasting fame
+And play their blessed and appointed role.
+
+As gametophyte the spawn of bright Equis
+When drawn to swim and find their destined bride
+Would search through realms of sweet felicity
+Both far and wide with hope as their guide.
+
+And they found fair Puzella, whose bright face
+Was beautiful beyond all stellar light,
+And there they grew their roots with sacred grace
+Both strong and true throughout the day and night.
+
+Great Equis chose to make his veins just one
+Through joys and pains of his appointed way,
+Like great Lycos had done when day begun
+To shine upon his realm's eternal day.
+
+He became ancestor of puzzlegrass blessed,
+Protector of nutrients and so much more
+In winter's icy seasons when at rest
+The earth sleeps sound from mountain peak to shore.
+
+He built his armor strong of silicon bright
+To protect his city from all danger's call
+Throughout the blessed day and sacred night
+And keep his people safe from rise and fall.
+
+One day he spilled ink on his sacred scroll
+And lost what made his spirit truly whole:
+The megaphylls of old that filled his soul
+Were lost—thus goes the story ages told.
+
+His leaves were one-veined through the sun and rain,
+Like great Lycos in his blessed day
+Who showed to him the true and narrow way
+To live without the burden and the pain.
+
+In summer he would build his puzzlegrass fair
+And fill his stores with nutrients so bright
+For future residents who'd find their care
+In what he'd saved throughout the winter's night.
+
+And when the winter passed away at last
+On some bright and shining day of spring,
+He'd use what he had stored from seasons past
+To please his Lord, the everlasting King.
+
+In spring when snow would melt away so clear
+And warmth was felt throughout the waiting land,
+He built horsetails that reached toward the sphere
+Of heaven with his skilled and loving hand.
+
+With no chlorophyll green to catch the light,
+Only spores could fill the watching eye—
+And lots of them he made both day and night
+In springtime's bright and glorious parade.
+
+His spores spread far and wide across the earth
+To every nation's shore from here away,
+Proclaiming the good news of their rebirth
+From here forevermore, from day to day.
+
+In summer he'd destroy with heavy heart
+His horsetails, though he took no joy
+In tearing his beloved work apart,
+But built puzzlegrass new to employ
+
+His wisdom through the season's blessed heat
+When summer's work required his care,
+Thus making his great cycle complete
+With patience, love, and faithful prayer.
+
+And all his sons and daughters heard the call
+From horsetails to build puzzlegrass too
+When summer's work was due to one and all
+Who'd learned to see his vision through.
+
+And so the sons and daughters of the light
+Of great Equis and fair Puzella's sight
+Came to rule with wisdom, love, and might
+Like some eternal school of truth so bright
+
+All across the world where they unfurled
+The banners of their blessed authority
+Through all eternity in the world
+Of sacred possibility.
+
+Euspor begat two sons of noble birth:
+Adderos who greeted each new day
+And bright Fernando, who'd prove his worth
+Throughout his long and faithful way.
+
+Adderos begat two children fair
+Beyond what mortal mind can comprehend:
+Great Ophios and Psilos, who would dare
+To serve their calling to the very end.
+
+Great Ophios became the noble sire
+Of adder-tongues who'd lift their faithful choir:
+He built but one great leaf to inspire
+All who saw it with celestial fire—
+
+Giant in its size beneath the dome
+Of stars that blessed the earth with holy light,
+One leaf to rule them all within their home
+Who answered duty's call both day and night.
+
+And noble Psilos became the father true
+Of whisk ferns, who would rather stand
+Without leaves, proud throughout their days, who'd do
+Their work with just their stems across the land.
+
+Without the leafy crown that others wore
+Around their stems like dress of royal state,
+Simplicity's success would be their store
+Of wisdom at evolution's gate.
+
+Fernando chose to show what could be made
+In forest's dappled, green, and sacred shade
+By uncoiling wide a frond that displayed
+The beauty that his faithful love had made.
+
+A frond of leaves so fair that danced with grace
+Upon the air like some eternal song
+That filled the world with beauty in each place
+Throughout his blessed and faithful whole life long.
+
+Great Maratton begat two sons of light:
+Marattidus so true and faithful, bright,
+And gentle Leptos, who would spend each night
+Living peacefully beneath stars' sight.
+
+Marattidus bore spores ten thousand strong,
+And what's more upon each leaf he'd place
+This multitude's embrace throughout lifelong
+His service to his people and their race.
+
+While gentle Leptos bore a hundred clear
+In number, small but true in all he'd do,
+His faithful work continued year by year
+With dedication strong and vision new.
+
+Together they became ancestors blessed
+Of ferns throughout the land from sea to sea,
+All built by their own hands and truly blessed
+To serve through all eternity.
+
+As noble sons of great Arboreus
+Settled throughout the lands so glorious
+From sea to sea for all to see
+They built with love's sweet harmony
+
+Great swamps across the flowing, sacred stream
+Of Mississippi's blessed and holy go
+From north down to the south where waters gleam
+Where river meets the ocean's ebb and flow.
+
+Where salt and fresh in perfect mixing came
+To make a place both beautiful and blessed,
+Well-made for life to grow and stake its claim
+And find at last its destined place of rest.
+
+For life to find its way at last complete
+From water's ancient, oceanic day
+To land's new frontier where hope would meet
+With courage on the bright and narrow way.
+
+And it was here when time and fate had brought
+Their judgment on the world and change was due
+Our ancestors would climb as they were taught
+To leave the past and find their future new.
+
+The noble sons of bright Osticthus' line
+Would make the leap at last by love's design
+From water to the vast expanse divine
+Of land both green and blessed by light divine.
+
+The greatest land that eyes had ever seen
+By those who dared to dream of something more
+Than what they'd been, but answered the call's keen
+Voice from the blessed and eternal shore.
+
+From great Arboreus' wise division
+To bright Fernando's sacred, holy vision
+Of fronds that dance on air, each plant's mission
+Shows life's blessed and sacred expedition
+
+From darkness to the light of blessed day
+Of possibility through eternity
+Where all can find their own appointed way
+And live in truth and perfect harmony.
+
+From great Lycos' burning spores so bright
+To fern's ten thousand stores of fertile might,
+Each found their own appointed sacred sight
+Of how to spread their seed and kindle light.
+
+The clubmoss cities tall that touch the sky,
+The quillworts standing with their leaves held high,
+The horsetails reaching up toward heaven's eye,
+Each found their way to live and not to die.
+
+To balance seasons' call with wisdom's store
+In puzzlegrass so bright that would endure
+Through winter's night and then provide much more
+When spring returned with blessings rich and pure.
+
+Each shows a different way to spend their days
+In harmony with time and nature's ways
+And ancient rhymes that sing eternal praise
+To Him who blesses all our nights and days.
+
+From one-veined simple leaves to fronds so fair
+That autumn weaves into a tapestry
+Of possibility beyond compare,
+The plants remind us of what we can be
+
+Who hear their gentle, blessed, and loving call:
+That life will always find a way to free
+The mind from limitations that enthrall
+And help us grow in love and harmony.
+
+From stories never told of what we're meant
+To be if we would just consent to grow
+Beyond the small to which we've long been bent
+And heed the greater call that helps us know
+
+What we can achieve when we believe
+In possibility through eternity
+Where dreams come true for those who don't deceive
+Themselves about their own capacity.
+
+The swamps that great Arboreus built with love
+So glorious beneath the stars above
+Became the perfect place where heaven's dove
+Could work its magic with the hand of love
+
+To help life to excel beyond what was
+Before, and open up the sacred door
+Of land's great frontier where without pause
+Those conquering fear could settle and explore.
+
+From water's ancient home to land so wide
+Where we could roam free from the heavy tide
+Of water's ancient fate, plants were the guide
+Who showed the way with truth upon their side.
+
+The plants prepared the way for life's bright day
+When all would find their place in love's sweet race
+And learn to walk in wisdom's narrow way
+Toward the light of heaven's holy grace.
+
+The noble sons of bright Osticthus soon
+Would, victorious beneath the sun and moon,
+Make their way to land beneath love's tune
+Built by the green hand in perfect commune
+
+Of those who came before to open wide
+The door of possibility and be
+The faithful and eternal, loving guide
+For all humanity's destiny.
+
+From great Arboreus' blessed reign of light
+To swamps across the plain both day and night
+Of Mississippi's flow, the story bright
+Helps us to see with clear and faithful sight
+
+How every ending becomes the blessed start
+Of new beginnings that can heal the heart
+With rhythms that can never depart
+From life's eternal song and sacred art.
+
+The plants that colonized the land so green
+And organized their cities fair with love
+The greatest that the world had ever seen
+With hope sent down from heaven up above
+
+Show us the way to be pioneers bold
+And free, who dare to leave behind the old
+And let our dreams at last take sacred hold
+And learn to fly as prophets long foretold
+
+Beneath the starry sky where all things blessed
+Are possible for those who seek the best
+And never rest until they find their rest
+In Him who makes all things truly blessed.
+
+From spore to frond to tree, the plants display
+For you and me how life will always find
+A way to free the heart and mind
+And help us grow in love so true and kind
+
+Beyond what we can know when we're alone,
+But when we share our dreams and make them known
+The whole world can become our blessed home
+Where all can find beneath the starry dome
+
+Their rightful place in evolution's grace
+That never ceases moving toward the light
+Of what's improving all things in this space
+With love beyond compare both day and night.
+
+The blessed legacy of Arboreus
+Lives through eternity for all of us
+In every tree that grows and shows to us
+Its face toward the sun so glorious
+
+When day has just begun with hope so bright
+For what can be when hearts and minds take flight
+And dare to grow beyond our mortal sight
+Into the realm of everlasting light.
