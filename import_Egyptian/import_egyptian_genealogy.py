@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-import_chinese_genealogy.py
+import_egyptian_genealogy.py
 ----------------------------
-Crawl Wikidata starting at Emperor Jimmu (Q29201), following:
+Crawl Wikidata starting at Pharaoh Khufu (Q161904), following:
 
   Father   P22
   Mother   P25
@@ -11,7 +11,7 @@ Crawl Wikidata starting at Emperor Jimmu (Q29201), following:
   Child    P40
 
 Each unique person encountered is stored in MongoDB:
-    database = chinese_genealogy
+    database = egyptian_genealogy
     collection = persons
 """
 
@@ -21,16 +21,16 @@ from typing import Dict, List, Set
 from pymongo import MongoClient, ASCENDING
 
 # ─── CONFIG ───────────────────────────────────────────────────────────────────
-START_QID           = "Q29201"          # Emperor Jimmu
+START_QID           = "Q161904"         # Pharaoh Khufu
 REL_PROPS           = ["P22", "P25", "P3373", "P26", "P40"]
 ENTITY_API          = "https://www.wikidata.org/wiki/Special:EntityData/{}.json"
 LABEL_API           = "https://www.wikidata.org/w/api.php"
-HEADERS             = {"User-Agent": "JapaneseGenealogyImporter/1.0"}
+HEADERS             = {"User-Agent": "EgyptianGenealogyImporter/1.0"}
 REQUEST_TIMEOUT     = 60
 LABEL_CHUNK         = 50
 RESOLVE_PROPS       = ["P31", "P279"] + REL_PROPS   # include relations for labels
 MONGO_URI           = "mongodb://127.0.0.1:27017"
-DB_NAME             = "chinese_genealogy"
+DB_NAME             = "egyptian_genealogy"
 COLL_NAME           = "persons"
 
 # ─── WIKIDATA HELPERS ─────────────────────────────────────────────────────────

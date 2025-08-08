@@ -33,7 +33,10 @@
       "Bash(rg:*)",
       "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" comprehensive_mongo_export.py)",
       "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" safe_gedcom_concatenator.py)",
-      "Bash(sqlite3:*)"
+      "Bash(sqlite3:*)",
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_trimming_analyzer.py\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\new_gedcoms\\Gaiad.ged\")",
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\simple_gedcom_analyzer.py\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\new_gedcoms\\Gaiad.ged\")",
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\final_gedcom_analyzer.py\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\new_gedcoms\\Gaiad.ged\")"
     ],
     "deny": []
   }

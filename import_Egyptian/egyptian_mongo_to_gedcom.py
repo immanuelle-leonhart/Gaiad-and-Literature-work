@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Export chinese_genealogy.persons → GEDCOM-5.5.1
+Export egyptian_genealogy.persons → GEDCOM-5.5.1
 
    python mongo_to_gedcom.py            # first 50 people
    python mongo_to_gedcom.py --limit 30000
@@ -14,10 +14,10 @@ from pymongo     import MongoClient
 # ─── CLI ──────────────────────────────────────────────────────────────────────
 cli = argparse.ArgumentParser()
 cli.add_argument("--mongo", default="mongodb://127.0.0.1:27017")
-cli.add_argument("--db",    default="chinese_genealogy")
+cli.add_argument("--db",    default="egyptian_genealogy")
 cli.add_argument("--coll",  default="persons")
 cli.add_argument("--limit", type=int, default=50)
-cli.add_argument("--out",   default="chinese_genealogy_sample.ged")
+cli.add_argument("--out",   default="egyptian_genealogy_sample.ged")
 args = cli.parse_args()
 
 # ─── constants ───────────────────────────────────────────────────────────────
@@ -80,7 +80,7 @@ for d in docs:
     clm  = d["extracted"]["claims"]
     lbls = d["extracted"]["labels"]
 
-    name=(lbls.get("en") or lbls.get("mul") or lbls.get("ja") or {}).get("value",qid)
+    name=(lbls.get("en") or lbls.get("mul") or lbls.get("ar") or {}).get("value",qid)
     sex = SEX_MAP.get(as_qid(first_dv(clm,"P21")),"U")
     birt= iso_to_ged(first_dv(clm,"P569"))
     deat= iso_to_ged(first_dv(clm,"P570"))
