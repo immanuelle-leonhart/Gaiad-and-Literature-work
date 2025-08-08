@@ -213,3 +213,11 @@ The old and new chapters are **completely different stories** set in the same my
 - This produces proper diffs in GitHub that can be analyzed and studied
 - Preserves version control history and allows for better tracking of changes
 - Use existing file paths when modifying genealogical data
+
+## GEDCOM File Handling
+**CRITICAL**: Large GEDCOM files are NOT meant for direct parsing or analysis:
+- **DO NOT attempt to parse** large GEDCOM files (>1MB) directly with Python scripts
+- GEDCOM files are text but not human-readable - use specialized tools only
+- **Use existing Python programs** in `gedcom_tools/` folder for GEDCOM processing
+- Large files will timeout or exhaust resources if parsed directly
+- All GEDCOM manipulation should go through dedicated tools in `gedcom_tools/`
