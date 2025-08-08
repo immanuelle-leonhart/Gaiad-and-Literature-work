@@ -110,11 +110,15 @@ def trim_gedcom_flexible(input_file, output_file, cutoff_year):
                           line.startswith('2 CONT ') or 
                           line.startswith('1 REFN ') or
                           line.startswith('1 _GENI_ID') or
-                          '_geni' in line.lower()):
+                          line.startswith('1 REFN geni:') or
+                          '_geni' in line.lower() or
+                          '{geni:' in line.lower()):
                         
-                        if ('geni.com' in line.lower() or 
+                        if (line.startswith('1 REFN geni:') or
+                            'geni.com' in line.lower() or 
                             '_geni_id' in line.lower() or
-                            '_geni' in line.lower()):
+                            '_geni' in line.lower() or
+                            '{geni:' in line.lower()):
                             current_person_has_geni = True
                         elif ('wikidata.org' in line.lower() or 
                               'wikidata' in line.lower() or 
@@ -281,10 +285,7 @@ if __name__ == "__main__":
         sys.exit(1)
     
     if os.path.exists(output_file):
-        response = input(f"Output file '{output_file}' already exists. Overwrite? (y/N): ")
-        if response.lower() != 'y':
-            print("Aborted.")
-            sys.exit(1)
+        print(f"Output file '{output_file}' already exists. Overwriting...")
     
     success = trim_gedcom_flexible(input_file, output_file, cutoff_year)
     if success:

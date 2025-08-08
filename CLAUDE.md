@@ -221,3 +221,16 @@ The old and new chapters are **completely different stories** set in the same my
 - **Use existing Python programs** in `gedcom_tools/` folder for GEDCOM processing
 - Large files will timeout or exhaust resources if parsed directly
 - All GEDCOM manipulation should go through dedicated tools in `gedcom_tools/`
+
+## Current File Structure
+### Source GEDCOM Files (`new_gedcoms/source gedcoms/`)
+- **`master_combined.ged`**: Master combined file (see source documentation for details)
+- **`recovered_gaiad.ged`**: Old recovered Gaiad data from FTB file
+- **`geni_plus_wikidata_after_merge.ged`**: Combined Geni and Wikidata genealogy data
+- **`aster.ged`**: Aster-specific genealogy data
+
+### Processed Files (`new_gedcoms/`)
+- **`gaiad_trimmed_1000.ged`**: Trimmed to 1000 AD cutoff
+- **`gaiad_trimmed_1100.ged`**: Trimmed to 1100 AD cutoff  
+- **`gaiad_trimmed_1200.ged`**: Trimmed to 1200 AD cutoff
+- **`Emma.ged`**: Emma-specific processed file
