@@ -15,7 +15,7 @@ Where rivers meet the sea in perfect grace,
 Each lineage following its destined hand
 To find its own evolutionary place.
 
-Siphonogloss Oceanus roamed wide
+Siphon Oceanus roamed wide
 Across the vast expanse of ocean blue,
 Where rolling waves and currents were his guide
 And saltwater ran deep in all he'd do.
@@ -38,7 +38,7 @@ And holding both domains forever dear.
 But Sacos walked a more unusual path,
 He ate algae and made his shell like glass,
 Absorbing solar power's golden wrath
-To let the light of photosynthesis pass.
+To let the golden solar radiance pass.
 
 Within his belly bright the sunbeams danced,
 Converting light to food in sacred rite,
@@ -121,7 +121,7 @@ While others found that air and sea as one
 Could nourish them with treasures worth more than gold.
 
 From Pulmon's innovation came the gift
-Of respiratory flexibility,
+Of breathing's sweet adaptability,
 Each lineage learned its chosen way to lift
 Its life toward new possibility.
 
