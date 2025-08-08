@@ -1,0 +1,66 @@
+gedcom_id,given_name,surname,full_name,source_file,wikidata_found,wikidata_id,english_label,description,search_results_count,top_match_score
+I1,NN,הכהן רפא,NN הכהן רפא,combined_genealogy.ged,True,Q112898955,NN,,10,1.0
+I2,Adda (or Addoi),daughter of Bustenai,Adda (or Addoi) daughter of Bustenai,combined_genealogy.ged,False,,,,0,0.0
+I3,Chanania,bar Chaninai HaKohen,Chanania bar Chaninai HaKohen,combined_genealogy.ged,True,Q15208985,Chananian,"village in Azad Kashmir, Pakistan",8,0.8
+I4,"Hananya ""Bustenai""",ben Haninai,"Hananya ""Bustenai"" ben Haninai",combined_genealogy.ged,False,,,,0,0.0
+I6,Hasdai,ben Bustenai,Hasdai ben Bustenai,combined_genealogy.ged,True,Q119802211,Hasdai,male given name,10,1.0
+I7,Haninai al-Nehar Peḳkod,bar Adoi,Haninai al-Nehar Peḳkod bar Adoi,combined_genealogy.ged,False,,,,0,0.0
+I8,Haninai Baradai,,Haninai Baradai,combined_genealogy.ged,False,,,,0,0.0
+I9,"Hananya ""Bustenai""","ben Haninai, Exilarch & Gaon of Pumbedit","Hananya ""Bustenai"" ben Haninai, Exilarch & Gaon of Pumbedit",combined_genealogy.ged,False,,,,0,0.0
+I10,Yakov,bar Chanania HaKohen,Yakov bar Chanania HaKohen,combined_genealogy.ged,True,Q19802347,Yakov,male given name,10,1.0
+I11,"Hisdai Shahrijar ""Sheshna""",ben Bustanai,"Hisdai Shahrijar ""Sheshna"" ben Bustanai",combined_genealogy.ged,False,,,,0,0.0
+I12,Mardanshah,Prince of Mazandaran,Mardanshah Prince of Mazandaran,combined_genealogy.ged,True,Q5909420,Mardanshah,Sasanian prince,4,1.0
+I13,Gurdanshah,Prince of Gilan,Gurdanshah Prince of Gilan,combined_genealogy.ged,False,,,,0,0.0
+I14,Hanini,bar Adoi,Hanini bar Adoi,combined_genealogy.ged,True,Q131374966,Hanini,family name,1,1.0
+I15,N.N.,bat Haniniah,N.N. bat Haniniah,combined_genealogy.ged,True,Q107467145,N.N.,accused of witchcraft,10,1.0
+I16,"Ḥananya ""Ḥanan of Isḳiya""",.,"Ḥananya ""Ḥanan of Isḳiya"" .",combined_genealogy.ged,False,,,,0,0.0
+I17,Addah,al-Palestin,Addah al-Palestin,combined_genealogy.ged,True,Q2824134,Addah,"village in Lagunes, Ivory Coast",7,1.0
+I18,Naḥman 'Mar Rabiya Moronai',ben Haninai,Naḥman 'Mar Rabiya Moronai' ben Haninai,combined_genealogy.ged,False,,,,0,0.0
+I19,"Hananya ""Dayan of the Gate""",ben Haninai bar Adai,"Hananya ""Dayan of the Gate"" ben Haninai bar Adai",combined_genealogy.ged,False,,,,0,0.0
+I20,Sussan,bat - - - al-Palestin,Sussan bat - - - al-Palestin,combined_genealogy.ged,True,Q36861310,Sussan,family name,10,1.0
+I21,Hananiah Gaon of Sura,,Hananiah Gaon of Sura,combined_genealogy.ged,False,,,,0,0.0
+I22,Nehemiah,,Nehemiah,combined_genealogy.ged,True,Q20155775,Nehemiah,male given name,20,1.0
+I23,Hisdai II,,Hisdai II,combined_genealogy.ged,False,,,,0,0.0
+I24,"Ḥananya ""Ḥanan of Isḳiya"" bar Adoi ben Hophni,",33rd Exiliarch & Gaon Pumbeditha,"Ḥananya ""Ḥanan of Isḳiya"" bar Adoi ben Hophni, 33rd Exiliarch & Gaon Pumbeditha",combined_genealogy.ged,False,,,,0,0.0
+I25,Mari ben Yakov,HaKohen,Mari ben Yakov HaKohen,combined_genealogy.ged,False,,,,0,0.0
+I26,Bara,3rd daughter of Yazdigard III,Bara 3rd daughter of Yazdigard III,combined_genealogy.ged,True,Q853407,Bara,settlement in Trebišov District,10,1.0
+I27,"sister of Baw (Bau; Bav), founder of the Buwayhids",,"sister of Baw (Bau; Bav), founder of the Buwayhids",combined_genealogy.ged,False,,,,0,0.0
+I28,bat Hisdai,Shahrijar,bat Hisdai Shahrijar,combined_genealogy.ged,False,,,,0,0.0
+I29,Salome,bat' Hisdai Shahrijar,Salome bat' Hisdai Shahrijar,combined_genealogy.ged,True,Q379029,Salome,female given name,10,1.0
+I30,"Yomtob ""Shlomo"" Ruzbihan Ahunai",ben Hisdai Shahrijar,"Yomtob ""Shlomo"" Ruzbihan Ahunai ben Hisdai Shahrijar",combined_genealogy.ged,False,,,,0,0.0
+I31,Nathan,ben Bustanai,Nathan ben Bustanai,combined_genealogy.ged,True,Q11167678,Nathan,male given name,10,1.0
+I32,Hurmuzd,Prince of Mazandaran,Hurmuzd Prince of Mazandaran,combined_genealogy.ged,True,Q25529030,Hurmuzd,,1,1.0
+I33,unknown,Prince of Mazandaran,unknown Prince of Mazandaran,combined_genealogy.ged,True,Q24238356,unknown,entity whose identity is not known,10,1.0
+I34,unknown,daughter of Farrikhan,unknown daughter of Farrikhan,combined_genealogy.ged,True,Q24238356,unknown,entity whose identity is not known,10,1.0
+I35,Dabuya (Dabwaih),"founder of ""Dabwaihides""","Dabuya (Dabwaih) founder of ""Dabwaihides""",combined_genealogy.ged,False,,,,0,0.0
+I36,Kurshid I,Prince of Gilan,Kurshid I Prince of Gilan,combined_genealogy.ged,False,,,,0,0.0
+I37,"Baduspan ""Patospan"" founder of the ""Baduspanides""",Prince of Gilan,"Baduspan ""Patospan"" founder of the ""Baduspanides"" Prince of Gilan",combined_genealogy.ged,False,,,,0,0.0
+I38,Hananiah,חנניה,Hananiah חנניה,combined_genealogy.ged,True,Q18978346,Hananiah,male given name,10,1.0
+I39,Hophni Haninai,ben Ahunai,Hophni Haninai ben Ahunai,combined_genealogy.ged,False,,,,0,0.0
+I41,"Ar-Rabi ""Hushiel""",ibn Abi l-Huqayq al-Nadir,"Ar-Rabi ""Hushiel"" ibn Abi l-Huqayq al-Nadir",combined_genealogy.ged,False,,,,0,0.0
+I42,Haninai,Unknown,Haninai Unknown,combined_genealogy.ged,True,Q6633921,Haninai Kahana ben R. Huna,,1,0.8
+I43,Haninae,David,Haninae David,combined_genealogy.ged,False,,,,1,0.0
+I44,Yudit bat Ahunai,bat Ahunai,Yudit bat Ahunai bat Ahunai,combined_genealogy.ged,False,,,,0,0.0
+I45,Natronai 'Yehudai',Shahrijar,Natronai 'Yehudai' Shahrijar,combined_genealogy.ged,False,,,,0,0.0
+I46,"Da'udai ""Mari""",ben Naḥman,"Da'udai ""Mari"" ben Naḥman",combined_genealogy.ged,False,,,,0,0.0
+I47,"Hillai ""Nahilai""","ben Hananya, of Narash","Hillai ""Nahilai"" ben Hananya, of Narash",combined_genealogy.ged,False,,,,0,0.0
+I48,"Meiri ""Mari""",ben Hananiah al-Nahr Peḳod,"Meiri ""Mari"" ben Hananiah al-Nahr Peḳod",combined_genealogy.ged,False,,,,0,0.0
+I49,Nehemiah,ben Haninai bar Adai,Nehemiah ben Haninai bar Adai,combined_genealogy.ged,True,Q20155775,Nehemiah,male given name,10,1.0
+I50,Yakob Gaon of Sura,,Yakob Gaon of Sura,combined_genealogy.ged,False,,,,0,0.0
+I51,"Hophni Haninai ben Ahunai,",32nd Exilarch Mar Hophni I,"Hophni Haninai ben Ahunai, 32nd Exilarch Mar Hophni I",combined_genealogy.ged,False,,,,0,0.0
+I52,Natronai Yehudai,David,Natronai Yehudai David,combined_genealogy.ged,False,,,,0,0.0
+I53,Habibai ben Nehemiah David,ben Natroni David,Habibai ben Nehemiah David ben Natroni David,combined_genealogy.ged,False,,,,0,0.0
+I54,Yehudai 'Habibai',ben Natronai,Yehudai 'Habibai' ben Natronai,combined_genealogy.ged,False,,,,0,0.0
+I55,Hakhinai (Hachnochi),ben Nehemia,Hakhinai (Hachnochi) ben Nehemia,combined_genealogy.ged,False,,,,0,0.0
+I56,Daughter of,"Guaram III, Curopalate","Daughter of Guaram III, Curopalate",combined_genealogy.ged,True,Q107362100,Daughter of Shadows: An SCP Breach Event,2015 supernatural horror indie game,10,0.8
+I57,"Ḥananya Sahak ""Isaac"" Isaqawai","Guaram III, Curopalate","Ḥananya Sahak ""Isaac"" Isaqawai Guaram III, Curopalate",combined_genealogy.ged,False,,,,0,0.0
+I58,"Abu Zakkai ""Yehudah""",ben Ahunai,"Abu Zakkai ""Yehudah"" ben Ahunai",combined_genealogy.ged,False,,,,0,0.0
+I59,Asam,"Guaram III, Curopalate","Asam Guaram III, Curopalate",combined_genealogy.ged,True,Q37178882,Asam,family name,10,1.0
+I60,Warazward,"Guaram III, Curopalate","Warazward Guaram III, Curopalate",combined_genealogy.ged,False,,,,0,0.0
+I61,unknown,bat Nathan ben Hisdai Shahrijar,unknown bat Nathan ben Hisdai Shahrijar,combined_genealogy.ged,True,Q24238356,unknown,entity whose identity is not known,10,1.0
+I62,Ahunai,ben Haninai,Ahunai ben Haninai,combined_genealogy.ged,False,,,,0,0.0
+I64,NN,,NN,combined_genealogy.ged,True,Q112898955,NN,,20,1.0
+I65,Aqilah,wife of al-Rabi' al-Huqayq al-Nadir,Aqilah wife of al-Rabi' al-Huqayq al-Nadir,combined_genealogy.ged,True,Q117073251,Aqilah,oil tanker built in 1988,10,1.0
+I66,Al-Rabi,ibn Abi' l-Huqayq al-Nadir,Al-Rabi ibn Abi' l-Huqayq al-Nadir,combined_genealogy.ged,True,Q3817034,Al-Rabi' ibn Yunus,minister,10,0.8
+I67,Kinana ibn ar-Rabi Abu al-Hay bin,ibn Abu al-Huqayq al-Nadir,Kinana ibn ar-Rabi Abu al-Hay bin ibn Abu al-Huqayq al-Nadir,combined_genealogy.ged,False,,,,0,0.0
+I68,"Abu Abdullah ""Hanemel""",ibn Abi' l-Huqayq al-Nadir,"Abu Abdullah ""Hanemel"" ibn Abi' l-Huqayq al-Nadir",combined_genealogy.ged,False,,,,0,0.0

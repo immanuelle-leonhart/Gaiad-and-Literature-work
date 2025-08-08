@@ -1,0 +1,111 @@
+=== GEDCOM CONTENT ANALYSIS REPORT ===
+
+=== FILE OVERVIEW ===
+Total lines: 4,409,312
+Empty lines: 0
+Long lines (>500 chars): 0
+
+=== TOP RECORD TYPES ===
+INDI: 62,294
+FAM: 37,307
+SOUR: 4,965
+_PLAC Greece: 1
+_PLAC Egypt: 1
+_PLAC Matsya Bhaban: 1
+_PLAC Bactria, Afghanistan: 1
+_PLAC (Sagala, Pakistan), Sialkot, Punjab, Pakistan: 1
+_PLAC Ötztal Alps, near Tisenjoch on the border between Austria and Italy: 1
+_PLAC near the present village of Feldthurns (Velturno), north of Bolzano, Italy: 1
+_PLAC (Anatolia), Turkey: 1
+_PLAC 1400 BCE, (Anatolia), Turkey: 1
+_PLAC -1358: 1
+_PLAC King of the Hittites: 1
+_PLAC Hittite Empire: 1
+_PLAC (Anatolia), Syria: 1
+_PLAC 1295 BCE, (Anatolia), Syria: 1
+_PLAC Syria: 1
+_PLAC 3120 BC: 1
+_PLAC Medang Jati: 1
+
+=== PLACE NAMES (_PLAC records) ===
+Total unique place names: 1,073
+Most common places:
+  1 times: Greece
+  1 times: Egypt
+  1 times: Matsya Bhaban
+  1 times: Bactria, Afghanistan
+  1 times: (Sagala, Pakistan), Sialkot, Punjab, Pakistan
+  1 times: Ötztal Alps, near Tisenjoch on the border between Austria and Italy
+  1 times: near the present village of Feldthurns (Velturno), north of Bolzano, Italy
+  1 times: (Anatolia), Turkey
+  1 times: 1400 BCE, (Anatolia), Turkey
+  1 times: -1358
+  1 times: King of the Hittites
+  1 times: Hittite Empire
+  1 times: (Anatolia), Syria
+  1 times: 1295 BCE, (Anatolia), Syria
+  1 times: Syria
+  1 times: 3120 BC
+  1 times: Medang Jati
+  1 times: satsring
+  1 times: Istana Watugaluh
+  1 times: Dharmasraya
+
+=== POTENTIAL BLOAT CATEGORIES ===
+Technical metadata (_UID, RIN): 136,993
+Source citations: 635,255
+Event updates: 18,154
+HTML content: 37,205
+Empty lines: 0
+Large notes (>1KB): 3,991
+Unique place names: 1,073
+
+Total potential bloat lines: 832,671 (18.9%)
+
+=== NOTE CONTENT CATEGORIES ===
+URLs: 47,324
+HTML paragraphs: 36,123
+Long biographical notes: 7,946
+Empty HTML: 7,521
+Import errors: 4,910
+Wikipedia references: 4,036
+Geni metadata: 2,174
+HTML with styles: 72
+
+=== LARGEST NOTES ===
+1. Line 398150: 210,276 chars
+   Preview: 1 NOTE  Flavius ​​Hannibalianus (* after 289; † before 337) was a son of the Roman emperor Constanti...
+2. Line 1086398: 193,515 chars
+   Preview: 1 NOTE  '''Marcus Antonius''', commonly known in English as Mark Antony (January 14, 83 BC – August ...
+3. Line 463228: 192,843 chars
+   Preview: 1 NOTE  ----------...
+4. Line 1299179: 191,313 chars
+   Preview: 1 NOTE  '''ALFONSO VI King of Castile & León''' '''(Compostela c1038/40-Toledo 30 Jun 1109, bur Saha...
+5. Line 393300: 190,255 chars
+   Preview: 1 NOTE  Arcadius (395-408 A.D.)...
+6. Line 1083209: 178,805 chars
+   Preview: 1 NOTE  Tiberius Claudius Caesar Augustus Germanicus or Claudius I (August 1, 10 BC – October 13, AD...
+7. Line 965798: 169,966 chars
+   Preview: 1 NOTE  Muhammad was the founder of the religion of Islam and is regarded by Muslims as a messenger ...
+8. Line 554430: 165,095 chars
+   Preview: 1 NOTE  Flavius Valentinianus, known in English as Valentinian I, (321 - November 17, 375) was Roman...
+9. Line 526015: 160,613 chars
+   Preview: 1 NOTE  He is known as:...
+10. Line 919248: 131,834 chars
+   Preview: 1 NOTE  https://www.davidrumsey.com/blog/2017/11/26/largest-early-world-map-monte-s-10-ft-planispher...
+
+=== SIZE REDUCTION RECOMMENDATIONS ===
+High: Remove technical metadata (_UID, RIN) - 136,993 lines (3.1%)
+    Reason: Safe to remove - just internal IDs
+High: Consolidate place names - 1,073 lines (0.0%)
+    Reason: Many duplicates with slight variations
+High: Remove import error notes - 4,910 lines (0.1%)
+    Reason: Not genealogically useful
+High: Remove empty HTML tags - 7,521 lines (0.2%)
+    Reason: Just empty <p></p> tags
+Medium: Compress large biographical notes - 3,991 lines (0.1%)
+    Reason: Keep essential info only
+Medium: Remove event update timestamps - 18,154 lines (0.4%)
+    Reason: Internal tracking data
+Low: Remove HTML styling - 72 lines (0.0%)
+    Reason: Formatting only
