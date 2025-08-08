@@ -206,3 +206,10 @@ The old and new chapters are **completely different stories** set in the same my
 - **Chapters 26-62**: Systematic conversion of old chapters 17-53, maintaining strict genealogical accuracy while converting prose to iambic pentameter with ABAB rhyme scheme. Each new chapter follows the exact genealogical relationships and evolutionary innovations described in the corresponding old chapter.
 
 **Total Epic Length**: 62 chapters covering the complete cosmological mythology from universe creation through Carboniferous period.
+
+## File Handling Guidelines
+**IMPORTANT**: When working with GEDCOM files or any data files:
+- **ALWAYS OVERWRITE existing files** instead of creating new ones
+- This produces proper diffs in GitHub that can be analyzed and studied
+- Preserves version control history and allows for better tracking of changes
+- Use existing file paths when modifying genealogical data
