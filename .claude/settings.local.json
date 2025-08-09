@@ -78,7 +78,10 @@
       "Bash(touch:*)",
       "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_tools\\improved_date_standardizer_v2.py\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\new_gedcoms\\source gedcoms\\master_combined.ged\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\new_gedcoms\\source gedcoms\\master_combined.ged\")",
       "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_tools\\fix_negative_years.py\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\new_gedcoms\\source gedcoms\\master_combined.ged\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\new_gedcoms\\source gedcoms\\master_combined.ged\")",
-      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_tools\\fix_circa_only.py\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\new_gedcoms\\source gedcoms\\master_combined.ged\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\new_gedcoms\\source gedcoms\\master_combined.ged\")"
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_tools\\fix_circa_only.py\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\new_gedcoms\\source gedcoms\\master_combined.ged\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\new_gedcoms\\source gedcoms\\master_combined.ged\")",
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\Aelaki\\aelaki_morphology.py\")",
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_tools\\genealogy_issues_fixer.py\")",
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_tools\\ftb_to_fh_duplicates_converter.py\")"
     ],
     "deny": []
   }

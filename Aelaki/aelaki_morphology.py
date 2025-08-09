@@ -11,10 +11,11 @@ class AelakiMorphology:
     """Handles basic Aelaki morphological transformations"""
     
     # Vowel mappings for umlaut (fronting)
+    # Using ASCII-compatible alternatives for better terminal display
     UMLAUT_MAP = {
-        'a': 'æ',
-        'o': 'œ', 
-        'u': 'ü',
+        'a': 'æ',  # or 'ae' if needed
+        'o': 'œ',  # or 'oe' if needed
+        'u': 'ü',  # or 'ue' if needed
         'i': 'i',  # already front
         'e': 'e',  # already front
         'æ': 'æ',  # already front
@@ -43,8 +44,8 @@ class AelakiMorphology:
         return f"{c1}{v1}{c2}{v2}{c3}"
     
     def reduplicate(self, c1: str, v1: str, c2: str, v2: str, c3: str) -> str:
-        """Apply reduplication: C₁V₁C₂V₂C₃ → C₁V₁C₂C₂V₂C₃"""
-        return f"{c1}{v1}{c2}{c2}{v2}{c3}"
+        """Apply reduplication: C₁V₁C₂V₂C₃ → C₁V₁C₂V₁C₂V₂C₃ (insert C₂V₁ after V₁)"""
+        return f"{c1}{v1}{c2}{v1}{c2}{v2}{c3}"
     
     def umlaut(self, c1: str, v1: str, c2: str, v2: str, c3: str) -> str:
         """Apply umlaut (fronting): front both vowels"""
@@ -53,8 +54,8 @@ class AelakiMorphology:
         return f"{c1}{front_v1}{c2}{front_v2}{c3}"
     
     def zero_infix(self, c1: str, v1: str, c2: str, v2: str, c3: str) -> str:
-        """Apply zero infix: C₁V₁C₂V₂C₃ → C₁V₁fC₂V₂C₃"""
-        return f"{c1}{v1}f{c2}{v2}{c3}"
+        """Apply zero infix: C₁V₁C₂V₂C₃ → C₁V₁C₂fV₂C₃ (f infix before V₂)"""
+        return f"{c1}{v1}{c2}f{v2}{c3}"
     
     def generate_all_forms(self, root: str) -> dict:
         """Generate all four basic forms from a root"""
@@ -72,17 +73,69 @@ class AelakiMorphology:
         }
 
 
+def test_against_documentation():
+    """Test against known examples from the documentation"""
+    morph = AelakiMorphology()
+    
+    # Expected results from documentation
+    expected = {
+        "dapaz": {
+            "base": "dapaz",
+            "reduplication": "dapapaz",
+            "umlaut": "dæpæz", 
+            "zero_infix": "dapfaz"
+        },
+        "goran": {
+            "base": "goran",
+            "reduplication": "gororan", 
+            "umlaut": "gœræn",  # o→œ, a→æ
+            "zero_infix": "gorfan"
+        }
+    }
+    
+    print("Documentation Validation Test")
+    print("=" * 40)
+    
+    all_passed = True
+    
+    for root, expected_forms in expected.items():
+        print(f"\nTesting root: {root}")
+        actual_forms = morph.generate_all_forms(root)
+        
+        if "error" in actual_forms:
+            print(f"ERROR: {actual_forms['error']}")
+            all_passed = False
+            continue
+        
+        for form_type, expected_form in expected_forms.items():
+            actual_form = actual_forms[form_type]
+            status = "PASS" if actual_form == expected_form else "FAIL"
+            print(f"  {form_type:12}: {actual_form:10} (expected: {expected_form}) {status}")
+            
+            if actual_form != expected_form:
+                print(f"    DEBUG: actual='{actual_form}' expected='{expected_form}'")
+                print(f"    DEBUG: actual_bytes={actual_form.encode('utf-8')} expected_bytes={expected_form.encode('utf-8')}")
+                all_passed = False
+    
+    print(f"\nOverall result: {'All tests passed!' if all_passed else 'Some tests failed!'}")
+    return all_passed
+
 def main():
     """Test the morphological processor with documented examples"""
     morph = AelakiMorphology()
     
+    # Run validation test first
+    test_against_documentation()
+    
     # Test cases from documentation
     test_roots = [
         "dapaz",  # shoot at
-        "goran"   # bright
+        "goran",  # bright
+        "exu"     # run (if it's a valid root)
     ]
     
-    print("Aelaki Morphological Processor Test")
+    print("\n" + "=" * 40)
+    print("Interactive Test")
     print("=" * 40)
     
     for root in test_roots:
