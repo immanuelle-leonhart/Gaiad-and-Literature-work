@@ -76,7 +76,8 @@
       "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_tools\\date_format_standardizer.py\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\new_gedcoms\\source gedcoms\\master_combined.ged\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\new_gedcoms\\source gedcoms\\master_combined.ged\")",
       "Bash(git checkout:*)",
       "Bash(touch:*)",
-      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_tools\\improved_date_standardizer_v2.py\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\new_gedcoms\\source gedcoms\\master_combined.ged\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\new_gedcoms\\source gedcoms\\master_combined.ged\")"
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_tools\\improved_date_standardizer_v2.py\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\new_gedcoms\\source gedcoms\\master_combined.ged\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\new_gedcoms\\source gedcoms\\master_combined.ged\")",
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_tools\\fix_negative_years.py\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\new_gedcoms\\source gedcoms\\master_combined.ged\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\new_gedcoms\\source gedcoms\\master_combined.ged\")"
     ],
     "deny": []
   }
