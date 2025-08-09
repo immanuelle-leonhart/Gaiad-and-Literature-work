@@ -1,18 +1,15 @@
 #!/usr/bin/env python3
 """
-Improved GEDCOM Date Standardizer
-Fixes major date issues found in comprehensive analysis:
-1. Removes future/default dates like "7 AUG 2025"  
-2. Standardizes BC/AD formats consistently
-3. Handles problematic date conversions properly
-4. Preserves timeline: Billions of years ago -> Ancient -> Medieval (to 1000 AD)
+Improved Date Format Standardizer for GEDCOM files
+Handles negative years, incomplete ranges, and Roman Republic dates properly.
 """
 
-import re
 import sys
-from datetime import datetime
+import re
+import tempfile
+import shutil
 
-class ImprovedDateStandardizer:
+def standardize_date_formats(input_file, output_file):
     def __init__(self):
         self.changes_made = []
         self.stats = {
