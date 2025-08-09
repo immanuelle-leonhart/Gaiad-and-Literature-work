@@ -58,6 +58,11 @@ class FTBToFHConverter:
     def create_fh_record(self, dup: Dict, index: int) -> str:
         """Create a Family Historian Lua table record for a duplicate pair"""
         
+        # Convert FTB IDs to Family Historian compatible range
+        # FH uses IDs in 8000s range, use 9000+ to avoid conflicts
+        fh_id_a = 9000 + (index * 2)     # Even numbers for first individual
+        fh_id_b = 9000 + (index * 2) + 1 # Odd numbers for second individual
+        
         # Convert FTB score (0-100) to FH FullScore 
         full_score = dup['score']
         
@@ -82,8 +87,8 @@ class FTBToFHConverter:
         record = f"""-- Table: {{{index}}}
 {{
    ["FullScore"]={full_score},
-   ["RecordIdA"]={dup['id1']},
-   ["RecordIdB"]={dup['id2']},
+   ["RecordIdA"]={fh_id_a},
+   ["RecordIdB"]={fh_id_b},
    ["IndiScore"]={indi_score},
    ["IndiNames"]={indi_score},
    ["IndiBirth"]={birth_score},
@@ -136,11 +141,25 @@ class FTBToFHConverter:
         """Convert list of duplicates to Family Historian .results format"""
         
         print(f"Converting {len(duplicates)} duplicate pairs to Family Historian format...")
+        print("ID Mapping (FTB -> FH):")
+        
+        for i, dup in enumerate(duplicates, 2):
+            fh_id_a = 9000 + (i * 2)
+            fh_id_b = 9000 + (i * 2) + 1
+            print(f"  {dup['id1']} -> {fh_id_a}, {dup['id2']} -> {fh_id_b}")
         
         with open(output_path, 'w', encoding='utf-8') as f:
             f.write("return {\n")
             
-            for i, dup in enumerate(duplicates, 1):
+            # First table: array of indices (FH expects this structure)
+            f.write("-- Table: {1}\n")
+            f.write("{\n")
+            for i in range(2, len(duplicates) + 2):
+                f.write(f"   {{{i}}},\n")
+            f.write("},\n")
+            
+            # Subsequent tables: detailed duplicate records
+            for i, dup in enumerate(duplicates, 2):  # Start from 2 to match FH numbering
                 record = self.create_fh_record(dup, i)
                 f.write(record + "\n")
             
