@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-GEDCOM to MongoDB Duplicate Detection System
-Imports GEDCOM data to MongoDB and performs sophisticated duplicate detection
+Simple GEDCOM Duplicate Detection (No MongoDB Required)
+Pure Python approach for finding duplicates in GEDCOM files
 """
 
 import re
@@ -9,22 +9,13 @@ import csv
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 from difflib import SequenceMatcher
-import pymongo
-from pymongo import MongoClient
 
-class GedcomMongoMerger:
-    """Import GEDCOM to MongoDB and detect duplicates"""
+class SimpleGedcomDuplicateDetector:
+    """Simple GEDCOM duplicate detection without MongoDB"""
     
-    def __init__(self, mongo_uri: str = "mongodb://localhost:27017/", db_name: str = "genealogy"):
-        self.client = MongoClient(mongo_uri)
-        self.db = self.client[db_name]
-        self.individuals = self.db.individuals
-        self.families = self.db.families
-        
-        # Create indexes for performance
-        self.individuals.create_index([("given_name", 1), ("surname", 1)])
-        self.individuals.create_index([("birth_year", 1)])
-        self.individuals.create_index([("death_year", 1)])
+    def __init__(self):
+        self.individuals = {}
+        self.families = {}
     
     def parse_name(self, name_str: str) -> Dict[str, str]:
         """Parse GEDCOM name format: Given /Surname/"""
@@ -66,18 +57,18 @@ class GedcomMongoMerger:
         }
     
     def import_gedcom(self, gedcom_path: str) -> int:
-        """Import GEDCOM file into MongoDB"""
+        """Import GEDCOM file into memory"""
         print(f"Importing GEDCOM: {gedcom_path}")
         
-        # Clear existing data
-        self.individuals.delete_many({})
-        self.families.delete_many({})
-        
-        individuals_data = {}
-        families_data = {}
+        self.individuals = {}
+        self.families = {}
         current_record = None
         current_type = None
+        current_birth = False
+        current_death = False
+        current_marriage = False
         
+        # Handle BOM and encoding issues
         with open(gedcom_path, 'r', encoding='utf-8-sig') as f:
             for line_num, line in enumerate(f, 1):
                 line = line.rstrip()
@@ -85,16 +76,23 @@ class GedcomMongoMerger:
                     continue
                 
                 # Parse GEDCOM level and content
-                parts = line.split(' ', 2)
-                if len(parts) < 2:
+                try:
+                    parts = line.split(' ', 2)
+                    if len(parts) < 2:
+                        continue
+                    
+                    level = int(parts[0])
+                    tag = parts[1]
+                    value = parts[2] if len(parts) > 2 else ""
+                except (ValueError, IndexError):
                     continue
-                
-                level = int(parts[0])
-                tag = parts[1]
-                value = parts[2] if len(parts) > 2 else ""
                 
                 # Start new record
                 if level == 0:
+                    current_birth = False
+                    current_death = False
+                    current_marriage = False
+                    
                     if tag.startswith('@') and tag.endswith('@'):
                         record_id = tag[1:-1]  # Remove @ symbols
                         record_type = value
@@ -111,7 +109,7 @@ class GedcomMongoMerger:
                                 "mother_id": "",
                                 "families": []
                             }
-                            individuals_data[record_id] = current_record
+                            self.individuals[record_id] = current_record
                             current_type = "INDI"
                         elif record_type == "FAM":
                             current_record = {
@@ -122,7 +120,7 @@ class GedcomMongoMerger:
                                 "children": [],
                                 "marriage": {"raw": "", "year": None, "estimated": False}
                             }
-                            families_data[record_id] = current_record
+                            self.families[record_id] = current_record
                             current_type = "FAM"
                         else:
                             current_record = None
@@ -137,8 +135,10 @@ class GedcomMongoMerger:
                             current_record["sex"] = value
                         elif tag == "BIRT":
                             current_birth = True
+                            current_death = False
                         elif tag == "DEAT":
                             current_death = True
+                            current_birth = False
                         elif tag == "FAMC":  # Family as child
                             current_record["families"].append({"type": "child", "family_id": value[1:-1]})
                         elif tag == "FAMS":  # Family as spouse
@@ -157,17 +157,13 @@ class GedcomMongoMerger:
                 elif current_record and level == 2:
                     if tag == "DATE":
                         if current_type == "INDI":
-                            # Determine if this is birth or death date based on context
-                            if 'current_birth' in locals():
+                            if current_birth:
                                 current_record["birth"] = self.parse_date(value)
-                                del current_birth
-                            elif 'current_death' in locals():
+                            elif current_death:
                                 current_record["death"] = self.parse_date(value)
-                                del current_death
                         elif current_type == "FAM":
-                            if 'current_marriage' in locals():
+                            if current_marriage:
                                 current_record["marriage"] = self.parse_date(value)
-                                del current_marriage
                 
                 # Progress indicator
                 if line_num % 100000 == 0:
@@ -175,28 +171,19 @@ class GedcomMongoMerger:
         
         # Resolve family relationships
         print("Resolving family relationships...")
-        for individual in individuals_data.values():
+        for individual in self.individuals.values():
             for family_ref in individual["families"]:
                 if family_ref["type"] == "child":
                     family_id = family_ref["family_id"]
-                    if family_id in families_data:
-                        family = families_data[family_id]
+                    if family_id in self.families:
+                        family = self.families[family_id]
                         if family["husband_id"]:
                             individual["father_id"] = family["husband_id"]
                         if family["wife_id"]:
                             individual["mother_id"] = family["wife_id"]
         
-        # Insert into MongoDB
-        print("Inserting individuals into MongoDB...")
-        if individuals_data:
-            self.individuals.insert_many(list(individuals_data.values()))
-        
-        print("Inserting families into MongoDB...")
-        if families_data:
-            self.families.insert_many(list(families_data.values()))
-        
-        print(f"Import complete: {len(individuals_data):,} individuals, {len(families_data):,} families")
-        return len(individuals_data)
+        print(f"Import complete: {len(self.individuals):,} individuals, {len(self.families):,} families")
+        return len(self.individuals)
     
     def calculate_name_similarity(self, name1: Dict, name2: Dict) -> float:
         """Calculate similarity between two names"""
@@ -248,51 +235,15 @@ class GedcomMongoMerger:
         else:
             return 0.0
     
-    def find_duplicates(self, min_score: float = 0.7) -> List[Dict]:
-        """Find potential duplicates using similarity scoring"""
-        print(f"Finding duplicates with minimum score: {min_score}")
+    def get_person_name(self, person_id: str) -> str:
+        """Get full name for a person ID"""
+        if not person_id or person_id not in self.individuals:
+            return ""
         
-        duplicates = []
-        individuals = list(self.individuals.find())
-        
-        print(f"Comparing {len(individuals):,} individuals...")
-        
-        for i, person1 in enumerate(individuals):
-            if i % 1000 == 0:
-                print(f"Processed {i:,} individuals...")
-            
-            # Only compare with individuals that come after in the list to avoid duplicates
-            for person2 in individuals[i+1:]:
-                score = self.calculate_individual_similarity(person1, person2)
-                
-                if score >= min_score:
-                    # Get parent names for context
-                    father1_name = self.get_person_name(person1["father_id"]) if person1["father_id"] else ""
-                    mother1_name = self.get_person_name(person1["mother_id"]) if person1["mother_id"] else ""
-                    father2_name = self.get_person_name(person2["father_id"]) if person2["father_id"] else ""
-                    mother2_name = self.get_person_name(person2["mother_id"]) if person2["mother_id"] else ""
-                    
-                    duplicates.append({
-                        "score": round(score * 100, 1),
-                        "id1": person1["_id"],
-                        "name1": person1["names"][0]["full"] if person1["names"] else "",
-                        "birth1": person1["birth"]["raw"],
-                        "death1": person1["death"]["raw"],
-                        "father1": father1_name,
-                        "mother1": mother1_name,
-                        "id2": person2["_id"],
-                        "name2": person2["names"][0]["full"] if person2["names"] else "",
-                        "birth2": person2["birth"]["raw"],
-                        "death2": person2["death"]["raw"],
-                        "father2": father2_name,
-                        "mother2": mother2_name
-                    })
-        
-        # Sort by score descending
-        duplicates.sort(key=lambda x: x["score"], reverse=True)
-        
-        print(f"Found {len(duplicates)} potential duplicate pairs")
-        return duplicates
+        person = self.individuals[person_id]
+        if person["names"]:
+            return person["names"][0]["full"]
+        return ""
     
     def calculate_individual_similarity(self, person1: Dict, person2: Dict) -> float:
         """Calculate overall similarity between two individuals"""
@@ -337,15 +288,51 @@ class GedcomMongoMerger:
         
         return total_score
     
-    def get_person_name(self, person_id: str) -> str:
-        """Get full name for a person ID"""
-        if not person_id:
-            return ""
+    def find_duplicates(self, min_score: float = 0.7) -> List[Dict]:
+        """Find potential duplicates using similarity scoring"""
+        print(f"Finding duplicates with minimum score: {min_score}")
         
-        person = self.individuals.find_one({"_id": person_id})
-        if person and person["names"]:
-            return person["names"][0]["full"]
-        return ""
+        duplicates = []
+        individuals = list(self.individuals.values())
+        
+        print(f"Comparing {len(individuals):,} individuals...")
+        
+        for i, person1 in enumerate(individuals):
+            if i % 1000 == 0:
+                print(f"Processed {i:,} individuals...")
+            
+            # Only compare with individuals that come after in the list to avoid duplicates
+            for person2 in individuals[i+1:]:
+                score = self.calculate_individual_similarity(person1, person2)
+                
+                if score >= min_score:
+                    # Get parent names for context
+                    father1_name = self.get_person_name(person1["father_id"])
+                    mother1_name = self.get_person_name(person1["mother_id"])
+                    father2_name = self.get_person_name(person2["father_id"])
+                    mother2_name = self.get_person_name(person2["mother_id"])
+                    
+                    duplicates.append({
+                        "score": round(score * 100, 1),
+                        "id1": person1["_id"],
+                        "name1": person1["names"][0]["full"] if person1["names"] else "",
+                        "birth1": person1["birth"]["raw"],
+                        "death1": person1["death"]["raw"],
+                        "father1": father1_name,
+                        "mother1": mother1_name,
+                        "id2": person2["_id"],
+                        "name2": person2["names"][0]["full"] if person2["names"] else "",
+                        "birth2": person2["birth"]["raw"],
+                        "death2": person2["death"]["raw"],
+                        "father2": father2_name,
+                        "mother2": mother2_name
+                    })
+        
+        # Sort by score descending
+        duplicates.sort(key=lambda x: x["score"], reverse=True)
+        
+        print(f"Found {len(duplicates)} potential duplicate pairs")
+        return duplicates
     
     def export_duplicates_csv(self, duplicates: List[Dict], output_path: str):
         """Export duplicates to CSV for manual review"""
@@ -377,31 +364,31 @@ class GedcomMongoMerger:
         print(f"Duplicates exported to: {output_path}")
 
 def main():
-    """Run the GEDCOM MongoDB duplicate detection"""
+    """Run the simple duplicate detection"""
     
-    merger = GedcomMongoMerger()
+    detector = SimpleGedcomDuplicateDetector()
     
     # File paths
     gedcom_path = r"C:\Users\Immanuelle\Documents\Github\Gaiad-Genealogy\new_gedcoms\source gedcoms\master_combined.ged"
-    output_csv = r"C:\Users\Immanuelle\Documents\Github\Gaiad-Genealogy\mongo_duplicates.csv"
+    output_csv = r"C:\Users\Immanuelle\Documents\Github\Gaiad-Genealogy\simple_duplicates.csv"
     
-    print("GEDCOM MongoDB Duplicate Detection")
+    print("Simple GEDCOM Duplicate Detection")
     print("=" * 50)
     
     # Import GEDCOM
     if Path(gedcom_path).exists():
-        count = merger.import_gedcom(gedcom_path)
+        count = detector.import_gedcom(gedcom_path)
         print(f"Successfully imported {count:,} individuals")
     else:
         print(f"GEDCOM file not found: {gedcom_path}")
         return
     
     # Find duplicates
-    duplicates = merger.find_duplicates(min_score=0.7)
+    duplicates = detector.find_duplicates(min_score=0.7)
     
     # Export to CSV
     if duplicates:
-        merger.export_duplicates_csv(duplicates, output_csv)
+        detector.export_duplicates_csv(duplicates, output_csv)
         print(f"\n{len(duplicates)} duplicate pairs found and exported to CSV")
         print("Review the CSV file to manually verify matches!")
     else:
