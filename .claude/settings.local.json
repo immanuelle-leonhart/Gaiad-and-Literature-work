@@ -82,7 +82,9 @@
       "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\Aelaki\\aelaki_morphology.py\")",
       "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_tools\\genealogy_issues_fixer.py\")",
       "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_tools\\ftb_to_fh_duplicates_converter.py\")",
-      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_tools\\gedcom_mongo_merger.py\")"
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_tools\\gedcom_mongo_merger.py\")",
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_tools\\wikidata_qid_extractor.py\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\new_gedcoms\\source gedcoms\\master_combined.ged\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\new_gedcoms\\source gedcoms\\master_combined.ged\")",
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_tools\\evolutionism_qid_adder.py\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\new_gedcoms\\source gedcoms\\master_combined.ged\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\new_gedcoms\\source gedcoms\\master_combined.ged\")"
     ],
     "deny": []
   }
