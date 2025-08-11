@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """
-JAPANESE GENEALOGY REPAIR AND UPLOAD PROGRAM
+JAPANESE GENEALOGY REPAIR PROGRAM
 
-Independent copy of repair_then_upload.py for Japanese genealogy data.
-Uses separate mapping file to avoid conflicts during parallel processing.
+Repairs existing Japanese genealogy items (30k people uploaded).
+Focuses on adding missing properties, REFNs, and data to existing items.
+Uses separate mapping file to avoid conflicts with other uploads.
+NO DESCRIPTIONS - they break the program.
 """
 
 import requests
@@ -51,7 +53,7 @@ class JapaneseRepairUpload:
             'errors': 0
         }
         
-        # Required properties for genealogy
+        # Required properties for genealogy - SAME AS MAIN PROGRAM
         self.needed_properties = {
             'gedcom_refn': 'GEDCOM REFN',
             'given_name': 'Given name', 
@@ -105,90 +107,138 @@ class JapaneseRepairUpload:
             print(f"Login failed: {e}")
             return False
     
-    def load_existing_mappings(self):
-        """Load any existing GEDCOM ID to QID mappings."""
-        print(f"Loading existing mappings from {self.mapping_file}...")
+    def discover_japanese_items(self):
+        """Discover existing Japanese items in wikibase."""
+        print("Discovering existing Japanese genealogy items...")
         
-        try:
-            with open(self.mapping_file, 'r', encoding='utf-8') as f:
-                lines = f.readlines()
-            
-            in_individuals = False
-            in_families = False
-            in_properties = False
-            
-            for line in lines:
-                line = line.strip()
-                if line == "# Individuals":
-                    in_individuals = True
-                    in_families = False
-                    in_properties = False
-                    continue
-                elif line == "# Families":
-                    in_individuals = False
-                    in_families = True
-                    in_properties = False
-                    continue
-                elif line == "# Properties":
-                    in_individuals = False
-                    in_families = False
-                    in_properties = True
-                    continue
-                elif line.startswith('#') or not line:
-                    continue
-                
-                if '\t' in line:
-                    gedcom_id, qid = line.split('\t', 1)
-                    if in_individuals:
-                        self.individual_mappings[gedcom_id] = qid
-                        self.existing_items.add(qid)
-                    elif in_families:
-                        self.family_mappings[gedcom_id] = qid
-                        self.existing_items.add(qid)
-                    elif in_properties:
-                        self.property_mappings[gedcom_id] = qid
-            
-            print(f"Loaded {len(self.individual_mappings)} individual mappings")
-            print(f"Loaded {len(self.family_mappings)} family mappings")
-            print(f"Loaded {len(self.property_mappings)} property mappings")
-            
-        except FileNotFoundError:
-            print(f"No existing mappings file found - starting fresh")
-    
-    def ensure_properties_exist(self):
-        """Create any missing properties we need."""
-        print("Ensuring required properties exist...")
+        # Query for items in large batches to find Japanese genealogy items
+        batch_size = 100
+        start_qid = 2500  # Start from where Japanese items likely begin
+        max_consecutive_missing = 200  # Larger gap for Japanese items
+        consecutive_missing = 0
         
-        for prop_name, prop_label in self.needed_properties.items():
-            if prop_name in self.property_mappings:
-                continue  # Already exists
+        while consecutive_missing < max_consecutive_missing:
+            qids_to_check = [f"Q{i}" for i in range(start_qid, start_qid + batch_size)]
+            qids_param = '|'.join(qids_to_check)
             
-            # Search for existing property
             response = self.session.get(self.api_url, params={
-                'action': 'wbsearchentities',
-                'search': prop_label,
-                'language': 'en',
-                'type': 'property',
-                'limit': 5,
+                'action': 'wbgetentities',
+                'ids': qids_param,
+                'props': 'labels|descriptions|claims',
                 'format': 'json'
             })
             
             data = response.json()
-            found = False
+            if 'entities' not in data:
+                break
             
-            if 'search' in data:
-                for result in data['search']:
-                    if result['label'].lower() == prop_label.lower():
-                        self.property_mappings[prop_name] = result['id']
-                        print(f"Found existing property {result['id']}: {prop_label}")
-                        found = True
+            found_any_this_batch = False
+            
+            for qid in qids_to_check:
+                if qid in data['entities'] and 'missing' not in data['entities'][qid]:
+                    found_any_this_batch = True
+                    consecutive_missing = 0
+                    
+                    entity = data['entities'][qid]
+                    
+                    # Check if this looks like a Japanese genealogy individual
+                    is_japanese_individual = False
+                    
+                    # Check labels for Japanese characteristics
+                    if 'labels' in entity and 'en' in entity['labels']:
+                        label = entity['labels']['en']['value'].lower()
+                        if 'japanese' in label or any(char in label for char in ['japanese', 'japan']):
+                            is_japanese_individual = True
+                    
+                    # Check description for Japanese characteristics
+                    if 'descriptions' in entity and 'en' in entity['descriptions']:
+                        desc = entity['descriptions']['en']['value'].lower()
+                        if 'japanese' in desc or 'japan' in desc:
+                            is_japanese_individual = True
+                    
+                    # Check instance of claims - might be instance of Q279 but Japanese
+                    if 'claims' in entity:
+                        for prop_id, claims in entity['claims'].items():
+                            for claim in claims:
+                                try:
+                                    mainsnak = claim.get('mainsnak', {})
+                                    datavalue = mainsnak.get('datavalue', {})
+                                    if isinstance(datavalue, dict):
+                                        value = datavalue.get('value', {})
+                                        if isinstance(value, dict) and value.get('numeric-id') == 279:
+                                            # This is a genealogy character - check if Japanese by QID range
+                                            qid_num = int(qid[1:])
+                                            if qid_num > 2500:  # Japanese items likely in higher QID range
+                                                is_japanese_individual = True
+                                                break
+                                except (AttributeError, TypeError):
+                                    continue
+                    
+                    if is_japanese_individual:
+                        self.existing_items.add(qid)
+                        print(f"  Found Japanese individual: {qid}")
+                else:
+                    consecutive_missing += 1
+            
+            if not found_any_this_batch:
+                consecutive_missing += batch_size
+            
+            start_qid += batch_size
+            time.sleep(0.1)  # Rate limiting
+        
+        print(f"Found {len(self.existing_items)} existing Japanese items in wikibase")
+    
+    def ensure_properties_exist(self):
+        """Load existing properties from the main genealogy upload."""
+        print("Loading shared properties from main genealogy upload...")
+        
+        # Load properties from main mapping file
+        try:
+            with open('gedcom_to_qid_mapping.txt', 'r', encoding='utf-8') as f:
+                lines = f.readlines()
+            
+            in_properties = False
+            for line in lines:
+                line = line.strip()
+                if line == "# Properties":
+                    in_properties = True
+                    continue
+                elif line.startswith('# ') or not line:
+                    if in_properties and line.startswith('# ') and line != "# Properties":
                         break
+                    continue
+                
+                if in_properties and '\t' in line:
+                    prop_name, prop_id = line.split('\t', 1)
+                    if prop_name in self.needed_properties:
+                        self.property_mappings[prop_name] = prop_id
+                        print(f"Loaded property {prop_id}: {self.needed_properties[prop_name]}")
             
-            if not found:
-                print(f"Property {prop_label} not found - would need to create")
-                # For now, skip creation to avoid conflicts
+            print(f"Loaded {len(self.property_mappings)} shared properties")
             
-            time.sleep(0.2)  # Rate limiting
+        except FileNotFoundError:
+            print("Could not find main mapping file - will search for properties individually")
+            
+            for prop_name, prop_label in self.needed_properties.items():
+                # Search for existing property
+                response = self.session.get(self.api_url, params={
+                    'action': 'wbsearchentities',
+                    'search': prop_label,
+                    'language': 'en',
+                    'type': 'property',
+                    'limit': 5,
+                    'format': 'json'
+                })
+                
+                data = response.json()
+                if 'search' in data:
+                    for result in data['search']:
+                        if result['label'].lower() == prop_label.lower():
+                            self.property_mappings[prop_name] = result['id']
+                            print(f"Found existing property {result['id']}: {prop_label}")
+                            break
+                
+                time.sleep(0.2)  # Rate limiting
     
     def parse_gedcom_file(self, filename):
         """Parse the complete GEDCOM file and store all data."""
@@ -230,7 +280,7 @@ class JapaneseRepairUpload:
                 }
                 
             elif current_record:
-                # Parse record fields
+                # Parse record fields - SAME AS MAIN PROGRAM
                 if line.startswith('1 NAME '):
                     name = line[7:].strip()
                     current_record['names'].append(name)
@@ -288,64 +338,158 @@ class JapaneseRepairUpload:
         
         print(f"Parsed {len(self.individuals_data)} individuals and {len(self.families_data)} families")
     
-    def create_individual_item(self, individual_data):
-        """Create a new individual item."""
-        # Build labels and descriptions
-        labels = {'en': {'language': 'en', 'value': 'Japanese Individual'}}
-        descriptions = {'en': {'language': 'en', 'value': 'Character from Japanese genealogy'}}
+    def match_qid_to_gedcom(self, qid):
+        """Try to match a QID to a GEDCOM individual by examining the item's label."""
+        response = self.session.get(self.api_url, params={
+            'action': 'wbgetentities',
+            'ids': qid,
+            'props': 'labels|descriptions',
+            'format': 'json'
+        })
         
-        if 'full_name' in individual_data.get('other_fields', {}):
-            labels['en']['value'] = individual_data['other_fields']['full_name']
-        elif individual_data.get('names'):
-            name = individual_data['names'][0].replace('/', ' ').strip()
-            if name:
-                labels['en']['value'] = name
+        data = response.json()
+        if 'entities' not in data or qid not in data['entities']:
+            return None
         
-        # Instance of Japanese genealogy character - we'll need a different class
-        claims = []
-        if 'instance_of' in self.property_mappings:
-            # Note: Would need to create Q-item for "Japanese genealogy character"
-            claims.append({
-                'mainsnak': {
-                    'snaktype': 'value',
-                    'property': self.property_mappings['instance_of'],
-                    'datavalue': {
-                        'value': {'entity-type': 'item', 'numeric-id': 279},  # Temporary - reuse Gaiad
-                        'type': 'wikibase-entityid'
-                    }
-                },
-                'type': 'statement'
-            })
+        entity = data['entities'][qid]
         
-        item_data = {
-            'labels': labels,
-            'descriptions': descriptions,
-            'claims': claims
-        }
+        # Get the label
+        label = None
+        if 'labels' in entity and 'en' in entity['labels']:
+            label = entity['labels']['en']['value']
         
-        params = {
-            'action': 'wbeditentity',
-            'new': 'item',
-            'data': json.dumps(item_data),
-            'format': 'json',
-            'token': self.csrf_token
-        }
+        if not label:
+            return None
         
+        # Try to find matching GEDCOM individual by name
+        for gedcom_id, individual_data in self.individuals_data.items():
+            if individual_data.get('other_fields', {}).get('full_name') == label:
+                return gedcom_id
+            
+            # Also try exact name matches
+            for name in individual_data.get('names', []):
+                clean_name = name.replace('/', ' ').strip()
+                if clean_name == label:
+                    return gedcom_id
+        
+        print(f"  Could not match {qid} ('{label}') to any GEDCOM individual")
+        return None
+    
+    def add_statement_to_item(self, qid, property_pid, value, value_type='string'):
+        """Add a statement to an existing wikibase item."""
         try:
+            if value_type == 'string':
+                datavalue = {
+                    'value': str(value),
+                    'type': 'string'
+                }
+            elif value_type == 'item':
+                # Extract numeric ID from QID
+                if isinstance(value, str) and value.startswith('Q'):
+                    numeric_id = int(value[1:])
+                else:
+                    numeric_id = int(value)
+                
+                datavalue = {
+                    'value': {'entity-type': 'item', 'numeric-id': numeric_id},
+                    'type': 'wikibase-entityid'
+                }
+            
+            statement_data = {
+                'claims': [
+                    {
+                        'mainsnak': {
+                            'snaktype': 'value',
+                            'property': property_pid,
+                            'datavalue': datavalue
+                        },
+                        'type': 'statement'
+                    }
+                ]
+            }
+            
+            params = {
+                'action': 'wbeditentity',
+                'id': qid,
+                'data': json.dumps(statement_data),
+                'format': 'json',
+                'token': self.csrf_token
+            }
+            
             response = self.session.post(self.api_url, data=params)
             result = response.json()
             
             if 'entity' in result:
-                qid = result['entity']['id']
-                print(f"Created Japanese individual {qid}: {labels['en']['value']}")
-                return qid
+                self.stats['properties_added'] += 1
+                return True
             else:
-                print(f"Error creating Japanese individual: {result}")
-                return None
+                print(f"Error adding statement to {qid}: {result}")
+                self.stats['errors'] += 1
+                return False
                 
         except Exception as e:
-            print(f"Exception creating Japanese individual: {e}")
-            return None
+            print(f"Exception adding statement to {qid}: {e}")
+            self.stats['errors'] += 1
+            return False
+    
+    def repair_existing_item(self, qid):
+        """Repair a single existing item by adding missing properties."""
+        print(f"Repairing Japanese individual {qid}...")
+        
+        # Find the GEDCOM data for this item
+        gedcom_id = self.match_qid_to_gedcom(qid)
+        if not gedcom_id:
+            print(f"  Could not find GEDCOM data for {qid} - skipping")
+            return False
+        
+        individual_data = self.individuals_data.get(gedcom_id)
+        if not individual_data:
+            print(f"  No individual data for {gedcom_id} - skipping")
+            return False
+        
+        # Add this mapping for future reference
+        self.individual_mappings[gedcom_id] = qid
+        print(f"  Matched {qid} to {gedcom_id}")
+        
+        # Add instance of Japanese genealogy character - use same Q279 for now
+        if 'instance_of' in self.property_mappings:
+            self.add_statement_to_item(qid, self.property_mappings['instance_of'], 'Q279', 'item')
+        
+        # Add all REFNs
+        refn_prop = self.property_mappings.get('gedcom_refn')
+        if refn_prop:
+            for refn in individual_data.get('refns', []):
+                self.add_statement_to_item(qid, refn_prop, refn, 'string')
+                self.stats['refns_added'] += 1
+        
+        # Add name properties - SAME AS MAIN PROGRAM
+        if 'full_name' in self.property_mappings and 'full_name' in individual_data.get('other_fields', {}):
+            self.add_statement_to_item(qid, self.property_mappings['full_name'], 
+                                     individual_data['other_fields']['full_name'], 'string')
+        
+        if 'given_name' in self.property_mappings and 'given_name' in individual_data.get('other_fields', {}):
+            self.add_statement_to_item(qid, self.property_mappings['given_name'], 
+                                     individual_data['other_fields']['given_name'], 'string')
+        
+        if 'surname' in self.property_mappings and 'surname' in individual_data.get('other_fields', {}):
+            self.add_statement_to_item(qid, self.property_mappings['surname'], 
+                                     individual_data['other_fields']['surname'], 'string')
+        
+        # Add dates
+        for date_field in ['birth_date', 'death_date']:
+            if date_field in self.property_mappings and date_field in individual_data.get('dates', {}):
+                self.add_statement_to_item(qid, self.property_mappings[date_field], 
+                                         individual_data['dates'][date_field], 'string')
+        
+        # Add sex
+        if 'sex' in self.property_mappings and 'sex' in individual_data.get('other_fields', {}):
+            self.add_statement_to_item(qid, self.property_mappings['sex'], 
+                                     individual_data['other_fields']['sex'], 'string')
+        
+        self.stats['items_repaired'] += 1
+        self.repaired_items.add(qid)
+        print(f"  Successfully repaired {qid}")
+        return True
     
     def save_mappings(self):
         """Save current mappings to Japanese-specific file."""
@@ -372,64 +516,61 @@ class JapaneseRepairUpload:
             for gedcom_id, qid in sorted(self.family_mappings.items()):
                 f.write(f"{gedcom_id}\t{qid}\n")
     
-    def run_japanese_upload(self, gedcom_file):
-        """Main function for Japanese genealogy upload."""
-        print("Starting Japanese genealogy upload...")
+    def run_japanese_repair(self, gedcom_file):
+        """Main function for Japanese genealogy repair."""
+        print("Starting Japanese genealogy repair (30k existing items)...")
         
         # Setup
         if not self.login():
             return False
         
-        self.load_existing_mappings()
         self.parse_gedcom_file(gedcom_file)
         self.ensure_properties_exist()
+        self.discover_japanese_items()
         
-        # Create individuals that don't exist yet
-        remaining_individuals = []
-        for gedcom_id, individual_data in self.individuals_data.items():
-            if gedcom_id not in self.individual_mappings:
-                remaining_individuals.append((gedcom_id, individual_data))
+        # Phase 1: Repair existing items
+        print(f"Phase 1: Repairing {len(self.existing_items)} existing Japanese items...")
         
-        print(f"Found {len(remaining_individuals)} Japanese individuals to upload")
+        existing_qids = sorted(list(self.existing_items), key=lambda x: int(x[1:]))
         
-        # Upload in small batches
-        batch_size = 10
-        for i in range(0, len(remaining_individuals), batch_size):
-            batch = remaining_individuals[i:i+batch_size]
-            print(f"Processing batch {i//batch_size + 1}: items {i+1} to {min(i+batch_size, len(remaining_individuals))}")
+        for i, qid in enumerate(existing_qids):
+            if qid in self.repaired_items:
+                continue  # Already repaired
             
-            for gedcom_id, individual_data in batch:
-                qid = self.create_individual_item(individual_data)
-                if qid:
-                    self.individual_mappings[gedcom_id] = qid
-                    self.stats['items_created'] += 1
-                    time.sleep(0.2)  # Rate limiting
+            print(f"Progress: {i+1}/{len(existing_qids)}")
+            self.repair_existing_item(qid)
             
-            # Save mappings after each batch
-            self.save_mappings()
-            print(f"Batch completed. Total created: {self.stats['items_created']}")
-            time.sleep(2)  # Pause between batches
+            # Save mappings every 50 items
+            if (i + 1) % 50 == 0:
+                self.save_mappings()
+                print(f"Saved progress - {self.stats['items_repaired']} items repaired so far")
+            
+            time.sleep(0.1)  # Rate limiting
         
-        print(f"\nJapanese upload completed!")
-        print(f"Items created: {self.stats['items_created']}")
+        self.save_mappings()
+        print(f"\nJapanese genealogy repair completed!")
+        print(f"Items repaired: {self.stats['items_repaired']}")
+        print(f"Properties added: {self.stats['properties_added']}")
+        print(f"REFNs added: {self.stats['refns_added']}")
+        print(f"Errors: {self.stats['errors']}")
         
         return True
 
 def main():
     if len(sys.argv) != 2:
         print("Usage: python japanese_repair_upload.py <japanese_gedcom_file>")
-        print("Example: python japanese_repair_upload.py \"C:\\path\\to\\japanese_genealogy.ged\"")
+        print("Example: python japanese_repair_upload.py \"C:\\path\\to\\japan_genealogy_sample.ged\"")
         sys.exit(1)
     
     gedcom_file = sys.argv[1]
     
-    uploader = JapaneseRepairUpload("Immanuelle", "1996ToOmega!")
-    success = uploader.run_japanese_upload(gedcom_file)
+    repairer = JapaneseRepairUpload("Immanuelle", "1996ToOmega!")
+    success = repairer.run_japanese_repair(gedcom_file)
     
     if success:
-        print("Japanese upload completed successfully!")
+        print("Japanese repair completed successfully!")
     else:
-        print("Japanese upload failed!")
+        print("Japanese repair failed!")
         sys.exit(1)
 
 if __name__ == "__main__":
