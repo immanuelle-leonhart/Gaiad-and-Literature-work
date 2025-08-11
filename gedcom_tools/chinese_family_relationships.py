@@ -162,7 +162,7 @@ def add_relationship_claim(session, individual_qid, related_qid, property_id, cs
         'entity': individual_qid,
         'property': property_id,
         'snaktype': 'value',
-        'value': json.dumps({'entity-type': 'item', 'numeric-id': int(related_qid[1:])}),
+        'value': json.dumps(related_qid),
         'format': 'json',
         'token': csrf_token,
         'summary': 'Adding Chinese family relationship'
