@@ -156,100 +156,17 @@ def create_new_individual(session, data, csrf_token):
             'type': 'statement'
         }]
         
-        # Add other properties
+        # Add other properties - ALL are string type for master system
         for prop_name, value in data.items():
-            if prop_name == 'full_name':
-                claims['P5'] = [{
+            if prop_name in ['full_name', 'given_name', 'surname', 'birth_date', 'death_date', 'sex', 'notes_page', 'gedcom_refn']:
+                prop_id = {'full_name': 'P5', 'given_name': 'P3', 'surname': 'P4', 'birth_date': 'P7', 'death_date': 'P8', 'sex': 'P11', 'notes_page': 'P15', 'gedcom_refn': 'P41'}[prop_name]
+                claims[prop_id] = [{
                     'mainsnak': {
                         'snaktype': 'value',
-                        'property': 'P5',
-                        'datavalue': {
-                            'value': {'text': str(value), 'language': 'en'},
-                            'type': 'monolingualtext'
-                        }
-                    },
-                    'type': 'statement'
-                }]
-            elif prop_name == 'given_name':
-                claims['P3'] = [{
-                    'mainsnak': {
-                        'snaktype': 'value',
-                        'property': 'P3',
-                        'datavalue': {
-                            'value': {'text': str(value), 'language': 'en'},
-                            'type': 'monolingualtext'
-                        }
-                    },
-                    'type': 'statement'
-                }]
-            elif prop_name == 'surname':
-                claims['P4'] = [{
-                    'mainsnak': {
-                        'snaktype': 'value',
-                        'property': 'P4',
-                        'datavalue': {
-                            'value': {'text': str(value), 'language': 'en'},
-                            'type': 'monolingualtext'
-                        }
-                    },
-                    'type': 'statement'
-                }]
-            elif prop_name == 'sex':
-                claims['P11'] = [{
-                    'mainsnak': {
-                        'snaktype': 'value',
-                        'property': 'P11',
-                        'datavalue': {
-                            'value': {'text': str(value), 'language': 'en'},
-                            'type': 'monolingualtext'
-                        }
-                    },
-                    'type': 'statement'
-                }]
-            elif prop_name == 'birth_date':
-                claims['P7'] = [{
-                    'mainsnak': {
-                        'snaktype': 'value',
-                        'property': 'P7',
-                        'datavalue': {
-                            'value': {'text': str(value), 'language': 'en'},
-                            'type': 'monolingualtext'
-                        }
-                    },
-                    'type': 'statement'
-                }]
-            elif prop_name == 'death_date':
-                claims['P8'] = [{
-                    'mainsnak': {
-                        'snaktype': 'value',
-                        'property': 'P8',
-                        'datavalue': {
-                            'value': {'text': str(value), 'language': 'en'},
-                            'type': 'monolingualtext'
-                        }
-                    },
-                    'type': 'statement'
-                }]
-            elif prop_name == 'gedcom_refn':
-                claims['P41'] = [{
-                    'mainsnak': {
-                        'snaktype': 'value',
-                        'property': 'P41',
+                        'property': prop_id,
                         'datavalue': {
                             'value': str(value),
                             'type': 'string'
-                        }
-                    },
-                    'type': 'statement'
-                }]
-            elif prop_name == 'notes_page':
-                claims['P15'] = [{
-                    'mainsnak': {
-                        'snaktype': 'value',
-                        'property': 'P15',
-                        'datavalue': {
-                            'value': {'text': str(value), 'language': 'en'},
-                            'type': 'monolingualtext'
                         }
                     },
                     'type': 'statement'
