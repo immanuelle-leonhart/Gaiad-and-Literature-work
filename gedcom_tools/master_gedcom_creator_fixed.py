@@ -91,9 +91,7 @@ def parse_gedcom_individual(lines):
                     individual['data']['death_date'] = date_value
                     i += 1
             elif tag == 'REFN':
-                if i + 1 < len(lines) and '2 TYPE WIKIDATA' in lines[i + 1]:
-                    individual['data']['gedcom_refn'] = value
-                    i += 1
+                individual['data']['gedcom_refn'] = value
             elif tag == 'NOTE':
                 individual['data']['notes_page'] = value
         
