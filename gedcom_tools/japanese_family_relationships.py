@@ -8,7 +8,7 @@ from urllib3.util.retry import Retry
 def create_session():
     session = requests.Session()
     session.headers.update({
-        'User-Agent': 'Chinese Relationships Bot/1.0 (https://github.com/Immanuelle/Gaiad-Genealogy; immanuelle@example.com)'
+        'User-Agent': 'Japanese Relationships Bot/1.0 (https://github.com/Immanuelle/Gaiad-Genealogy; immanuelle@example.com)'
     })
     retry_strategy = Retry(total=5, backoff_factor=2, status_forcelist=[429, 500, 502, 503, 504])
     adapter = HTTPAdapter(max_retries=retry_strategy)
@@ -35,7 +35,7 @@ def get_csrf_token(session):
 def load_existing_mappings():
     individual_mappings = {}
     try:
-        with open('chinese_gedcom_to_qid_mapping.txt', 'r', encoding='utf-8') as f:
+        with open('japanese_gedcom_to_qid_mapping.txt', 'r', encoding='utf-8') as f:
             for line in f:
                 line = line.strip()
                 if '\t' in line and line.startswith('@I'):
@@ -47,11 +47,11 @@ def load_existing_mappings():
         pass
     return individual_mappings
 
-def parse_chinese_gedcom():
+def parse_japanese_gedcom():
     individuals = {}
     families = {}
     
-    with open('new_gedcoms/source gedcoms/chinese_genealogy_sample.ged', 'r', encoding='utf-8') as f:
+    with open('new_gedcoms/source gedcoms/japan_genealogy_sample.ged', 'r', encoding='utf-8') as f:
         content = f.read()
     
     lines = content.split('\n')
@@ -165,19 +165,19 @@ def add_relationship_claim(session, individual_qid, related_qid, property_id, cs
         'value': json.dumps({'entity-type': 'item', 'numeric-id': int(related_qid[1:])}),
         'format': 'json',
         'token': csrf_token,
-        'summary': 'Adding Chinese family relationship'
+        'summary': 'Adding Japanese family relationship'
     }
     
     response = session.post('https://evolutionism.miraheze.org/w/api.php', data=params)
     return response.json()
 
 def main():
-    print("Starting Chinese direct relationships creation (no family structures)...")
+    print("Starting Japanese direct relationships creation (no family structures)...")
     
     individual_mappings = load_existing_mappings()
     print(f"Loaded {len(individual_mappings)} individual mappings")
     
-    individuals, families = parse_chinese_gedcom()
+    individuals, families = parse_japanese_gedcom()
     print(f"Parsed {len(individuals)} individuals and {len(families)} families from GEDCOM")
     
     session = create_session()
@@ -266,7 +266,7 @@ def main():
                         error_count += 1
                     time.sleep(0.5)
     
-    print(f"\nChinese direct relationships complete!")
+    print(f"\nJapanese direct relationships complete!")
     print(f"Success: {success_count}")
     print(f"Errors: {error_count}")
 
