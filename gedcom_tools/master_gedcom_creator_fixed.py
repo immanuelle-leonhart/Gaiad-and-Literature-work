@@ -238,8 +238,8 @@ def create_new_individual(session, data, csrf_token):
                         'snaktype': 'value',
                         'property': 'P15',
                         'datavalue': {
-                            'value': {'text': str(value), 'language': 'en'},
-                            'type': 'monolingualtext'
+                            'value': str(value),
+                            'type': 'string'
                         }
                     },
                     'type': 'statement'
