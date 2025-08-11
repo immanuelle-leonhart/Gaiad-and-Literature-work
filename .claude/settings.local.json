@@ -109,7 +109,10 @@
       "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_tools\\chinese_gedcom_repair.py\")",
       "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_tools\\master_gedcom_repair_continued.py\")",
       "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_tools\\chinese_gedcom_creator.py\")",
-      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_tools\\master_gedcom_creator.py\")"
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_tools\\master_gedcom_creator.py\")",
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_tools\\master_creator_from_i10000.py\")",
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_tools\\japanese_gedcom_creator.py\")",
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_tools\\master_gedcom_creator_fixed.py\")"
     ],
     "deny": []
   }
