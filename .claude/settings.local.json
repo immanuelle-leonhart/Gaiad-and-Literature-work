@@ -120,7 +120,9 @@
       "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_tools\\family_analyzer.py\")",
       "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_tools\\japanese_family_relationships.py\")",
       "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_tools\\master_notes_creator.py\")",
-      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_tools\\notes_distribution_analyzer.py\")"
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_tools\\notes_distribution_analyzer.py\")",
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_tools\\chinese_relationships_working.py\")",
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_tools\\japanese_relationships_working.py\")"
     ],
     "deny": []
   }

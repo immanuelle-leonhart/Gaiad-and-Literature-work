@@ -8,7 +8,7 @@ from urllib3.util.retry import Retry
 def create_session():
     session = requests.Session()
     session.headers.update({
-        'User-Agent': 'Japanese Relationships Bot/1.0 (https://github.com/Immanuelle/Gaiad-Genealogy; immanuelle@example.com)'
+        'User-Agent': 'Japanese Relationships Working Bot/1.0 (https://github.com/Immanuelle/Gaiad-Genealogy; immanuelle@example.com)'
     })
     retry_strategy = Retry(total=5, backoff_factor=2, status_forcelist=[429, 500, 502, 503, 504])
     adapter = HTTPAdapter(max_retries=retry_strategy)
@@ -156,23 +156,43 @@ def parse_family(lines):
     
     return family
 
-def add_relationship_claim(session, individual_qid, related_qid, property_id, csrf_token):
+def add_relationship_statement(session, individual_qid, related_qid, property_id, csrf_token):
+    """Add relationship using wbeditentity API like the working uploader"""
+    
+    # Extract numeric ID from QID 
+    numeric_id = int(related_qid[1:])
+    
+    datavalue = {
+        'value': {'entity-type': 'item', 'numeric-id': numeric_id},
+        'type': 'wikibase-entityid'
+    }
+    
+    statement_data = {
+        'claims': [
+            {
+                'mainsnak': {
+                    'snaktype': 'value',
+                    'property': property_id,
+                    'datavalue': datavalue
+                },
+                'type': 'statement'
+            }
+        ]
+    }
+    
     params = {
-        'action': 'wbcreateclaim',
-        'entity': individual_qid,
-        'property': property_id,
-        'snaktype': 'value',
-        'value': json.dumps({'entity-type': 'item', 'numeric-id': int(related_qid[1:])}),
+        'action': 'wbeditentity',
+        'id': individual_qid,
+        'data': json.dumps(statement_data),
         'format': 'json',
-        'token': csrf_token,
-        'summary': 'Adding Japanese family relationship'
+        'token': csrf_token
     }
     
     response = session.post('https://evolutionism.miraheze.org/w/api.php', data=params)
     return response.json()
 
 def main():
-    print("Starting Japanese direct relationships creation (no family structures)...")
+    print("Starting Japanese relationships using working wbeditentity API...")
     
     individual_mappings = load_existing_mappings()
     print(f"Loaded {len(individual_mappings)} individual mappings")
@@ -190,10 +210,8 @@ def main():
     success_count = 0
     error_count = 0
     
-    # Process each family to create direct relationships
+    # Process families that have mapped individuals
     for family_id, family_data in families.items():
-        print(f"\nProcessing family {family_id}")
-        
         husband_id = family_data.get('husband', '')
         wife_id = family_data.get('wife', '')
         children = family_data.get('children', [])
@@ -201,24 +219,34 @@ def main():
         husband_qid = individual_mappings.get(husband_id, '')
         wife_qid = individual_mappings.get(wife_id, '')
         
+        # Skip families where individuals don't have QIDs
+        family_has_qids = husband_qid or wife_qid or any(individual_mappings.get(child_id) for child_id in children)
+        if not family_has_qids:
+            continue
+            
+        print(f"\nProcessing family {family_id}")
+        
         # Add spouse relationships
         if husband_qid and wife_qid:
             print(f"  Adding spouse relationship: {husband_id} <-> {wife_id}")
+            
             # Add wife to husband (P26 = spouse)
-            result = add_relationship_claim(session, husband_qid, wife_qid, 'P26', csrf_token)
-            if 'success' in result:
+            result = add_relationship_statement(session, husband_qid, wife_qid, 'P26', csrf_token)
+            if 'entity' in result:
                 success_count += 1
+                print(f"    SUCCESS: Added wife to husband")
             else:
-                print(f"    Error adding wife to husband: {result}")
+                print(f"    ERROR: Adding wife to husband failed: {result}")
                 error_count += 1
             time.sleep(0.5)
             
-            # Add husband to wife (P26 = spouse)
-            result = add_relationship_claim(session, wife_qid, husband_qid, 'P26', csrf_token)
-            if 'success' in result:
+            # Add husband to wife (P26 = spouse)  
+            result = add_relationship_statement(session, wife_qid, husband_qid, 'P26', csrf_token)
+            if 'entity' in result:
                 success_count += 1
+                print(f"    SUCCESS: Added husband to wife")
             else:
-                print(f"    Error adding husband to wife: {result}")
+                print(f"    ERROR: Error adding husband to wife: {result}")
                 error_count += 1
             time.sleep(0.5)
         
@@ -230,43 +258,47 @@ def main():
                 
                 # Add father relationship (P22 = father)
                 if husband_qid:
-                    result = add_relationship_claim(session, child_qid, husband_qid, 'P22', csrf_token)
-                    if 'success' in result:
+                    result = add_relationship_statement(session, child_qid, husband_qid, 'P22', csrf_token)
+                    if 'entity' in result:
                         success_count += 1
+                        print(f"    SUCCESS: Added father relationship")
                     else:
-                        print(f"    Error adding father: {result}")
+                        print(f"    ERROR: Error adding father: {result}")
                         error_count += 1
                     time.sleep(0.5)
                     
                     # Add child to father (P40 = child)
-                    result = add_relationship_claim(session, husband_qid, child_qid, 'P40', csrf_token)
-                    if 'success' in result:
+                    result = add_relationship_statement(session, husband_qid, child_qid, 'P40', csrf_token)
+                    if 'entity' in result:
                         success_count += 1
+                        print(f"    SUCCESS: Added child to father")
                     else:
-                        print(f"    Error adding child to father: {result}")
+                        print(f"    ERROR: Error adding child to father: {result}")
                         error_count += 1
                     time.sleep(0.5)
                 
                 # Add mother relationship (P25 = mother)
                 if wife_qid:
-                    result = add_relationship_claim(session, child_qid, wife_qid, 'P25', csrf_token)
-                    if 'success' in result:
+                    result = add_relationship_statement(session, child_qid, wife_qid, 'P25', csrf_token)
+                    if 'entity' in result:
                         success_count += 1
+                        print(f"    SUCCESS: Added mother relationship")
                     else:
-                        print(f"    Error adding mother: {result}")
+                        print(f"    ERROR: Error adding mother: {result}")
                         error_count += 1
                     time.sleep(0.5)
                     
                     # Add child to mother (P40 = child)
-                    result = add_relationship_claim(session, wife_qid, child_qid, 'P40', csrf_token)
-                    if 'success' in result:
+                    result = add_relationship_statement(session, wife_qid, child_qid, 'P40', csrf_token)
+                    if 'entity' in result:
                         success_count += 1
+                        print(f"    SUCCESS: Added child to mother")
                     else:
-                        print(f"    Error adding child to mother: {result}")
+                        print(f"    ERROR: Error adding child to mother: {result}")
                         error_count += 1
                     time.sleep(0.5)
     
-    print(f"\nJapanese direct relationships complete!")
+    print(f"\nJapanese relationships complete!")
     print(f"Success: {success_count}")
     print(f"Errors: {error_count}")
 
