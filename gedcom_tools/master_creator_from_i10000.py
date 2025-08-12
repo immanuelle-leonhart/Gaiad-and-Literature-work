@@ -180,7 +180,8 @@ def create_new_individual(session, data, csrf_token):
             'data': json.dumps(item_data),
             'format': 'json',
             'token': csrf_token,
-            'summary': 'Creating master genealogy individual (from I10000+)'
+            'summary': 'Creating master genealogy individual (from I10000+)',
+            'bot': 1
         }
         
         response = session.post('https://evolutionism.miraheze.org/w/api.php', data=params, timeout=60)

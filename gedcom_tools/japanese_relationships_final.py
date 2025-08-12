@@ -195,7 +195,8 @@ def add_relationship_statement(session, individual_qid, related_qid, property_id
         'id': individual_qid,
         'data': json.dumps(statement_data),
         'format': 'json',
-        'token': csrf_token
+        'token': csrf_token,
+        'bot': 1
     }
     
     response = session.post('https://evolutionism.miraheze.org/w/api.php', data=params)

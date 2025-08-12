@@ -287,7 +287,8 @@ class RepairThenUpload:
             'new': 'property',
             'data': json.dumps(property_data),
             'format': 'json',
-            'token': self.csrf_token
+            'token': self.csrf_token,
+            'bot': 1
         }
         
         try:
@@ -439,7 +440,8 @@ class RepairThenUpload:
                 'id': qid,
                 'data': json.dumps(statement_data),
                 'format': 'json',
-                'token': self.csrf_token
+                'token': self.csrf_token,
+                'bot': 1
             }
             
             response = self.session.post(self.api_url, data=params)

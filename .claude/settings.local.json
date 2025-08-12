@@ -125,7 +125,16 @@
       "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_tools\\japanese_relationships_working.py\")",
       "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_tools\\family_properties_creator.py\")",
       "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_tools\\chinese_relationships_final.py\")",
-      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_tools\\japanese_relationships_final.py\")"
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_tools\\japanese_relationships_final.py\")",
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_tools\\quick_refn_fixer_continued.py\")",
+      "Bash(echo:*)",
+      "Bash(for file in *uploader*.py *repair*.py refn_patch_script.py)",
+      "Bash(do if [ -f \"$file\" ])",
+      "Bash(then echo -n \"$file: \")",
+      "Bash(if rg -q \"''bot'': 1\" \"$file\")",
+      "Bash(then echo \"DONE\")",
+      "Bash(else echo \"NEEDS BOT FLAG\")",
+      "Bash(fi)"
     ],
     "deny": []
   }

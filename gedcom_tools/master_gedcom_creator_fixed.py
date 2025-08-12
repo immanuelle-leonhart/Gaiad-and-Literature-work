@@ -263,7 +263,8 @@ def create_new_individual(session, data, csrf_token):
             'data': json.dumps(item_data),
             'format': 'json',
             'token': csrf_token,
-            'summary': 'Creating master genealogy individual (from I10000+)'
+            'summary': 'Creating master genealogy individual (from I10000+)',
+            'bot': 1
         }
         
         response = session.post('https://evolutionism.miraheze.org/w/api.php', data=params, timeout=60)
@@ -293,8 +294,8 @@ def main():
     individuals = parse_master_gedcom()
     print(f"Parsed {len(individuals)} individuals from master GEDCOM")
     
-    # Start from I10000 (after the highest existing I9999)
-    start_id = 10000
+    # Start from I62602 (after the last created I62601)
+    start_id = 62602
     started = False
     print(f"Starting from @I{start_id}@ onwards...")
     

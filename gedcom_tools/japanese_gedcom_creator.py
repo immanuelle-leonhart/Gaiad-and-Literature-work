@@ -251,7 +251,8 @@ def create_new_individual(session, data, csrf_token):
             'data': json.dumps(item_data),
             'format': 'json',
             'token': csrf_token,
-            'summary': 'Creating Japanese genealogy individual (from I9998+)'
+            'summary': 'Creating Japanese genealogy individual (from I9998+)',
+            'bot': 1
         }
         
         response = session.post('https://evolutionism.miraheze.org/w/api.php', data=params, timeout=60)

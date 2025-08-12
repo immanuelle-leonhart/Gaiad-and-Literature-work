@@ -128,7 +128,8 @@ def update_statement(session, qid, property_id, value, csrf_token):
         'snaktype': 'value',
         'value': json.dumps(str(value)),
         'format': 'json',
-        'token': csrf_token
+        'token': csrf_token,
+        'bot': 1
     }
     
     response = session.post('https://evolutionism.miraheze.org/w/api.php', data=params)

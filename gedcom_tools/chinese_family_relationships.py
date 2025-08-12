@@ -165,7 +165,8 @@ def add_relationship_claim(session, individual_qid, related_qid, property_id, cs
         'value': json.dumps({'entity-type': 'item', 'numeric-id': int(related_qid[1:])}),
         'format': 'json',
         'token': csrf_token,
-        'summary': 'Adding Chinese family relationship'
+        'summary': 'Adding Chinese family relationship',
+        'bot': 1
     }
     
     response = session.post('https://evolutionism.miraheze.org/w/api.php', data=params)

@@ -76,7 +76,8 @@ def add_statement(session, qid, property_id, value, value_type, csrf_token):
         'snaktype': 'value',
         'value': json.dumps(datavalue['value']),
         'format': 'json',
-        'token': csrf_token
+        'token': csrf_token,
+        'bot': 1
     }
     
     response = session.post('https://evolutionism.miraheze.org/w/api.php', data=params)
@@ -89,7 +90,8 @@ def set_label(session, qid, language, label, csrf_token):
         'language': language,
         'value': label,
         'format': 'json',
-        'token': csrf_token
+        'token': csrf_token,
+        'bot': 1
     }
     response = session.post('https://evolutionism.miraheze.org/w/api.php', data=params)
     return response.json()
@@ -101,7 +103,8 @@ def add_alias(session, qid, language, alias, csrf_token):
         'language': language,
         'add': alias,
         'format': 'json',
-        'token': csrf_token
+        'token': csrf_token,
+        'bot': 1
     }
     response = session.post('https://evolutionism.miraheze.org/w/api.php', data=params)
     return response.json()
@@ -113,7 +116,8 @@ def set_description(session, qid, language, description, csrf_token):
         'language': language,
         'value': description,
         'format': 'json',
-        'token': csrf_token
+        'token': csrf_token,
+        'bot': 1
     }
     response = session.post('https://evolutionism.miraheze.org/w/api.php', data=params)
     return response.json()
@@ -128,7 +132,7 @@ def main():
     
     csrf_token = get_csrf_token(session)
     
-    for i in range(1, 150001):
+    for i in range(23542, 150001):
         qid = f"Q{i}"
         print(f"Processing {qid}")
         

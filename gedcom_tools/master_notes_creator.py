@@ -131,7 +131,8 @@ def remove_old_notes_property(session, qid, csrf_token):
                 'claim': claim_id,
                 'token': csrf_token,
                 'format': 'json',
-                'summary': 'Removing old P15 notes property'
+                'summary': 'Removing old P15 notes property',
+                'bot': 1
             }
             session.post('https://evolutionism.miraheze.org/w/api.php', data=remove_params)
             time.sleep(0.2)
@@ -147,7 +148,8 @@ def add_notes_page_property(session, qid, notes_url, csrf_token):
         'value': json.dumps(notes_url),
         'format': 'json',
         'token': csrf_token,
-        'summary': 'Adding notes page URL (P46)'
+        'summary': 'Adding notes page URL (P46)',
+        'bot': True
     }
     
     response = session.post('https://evolutionism.miraheze.org/w/api.php', data=params)
@@ -170,7 +172,8 @@ def create_or_update_notes_page(session, qid, notes_content, csrf_token):
         'text': wiki_content,
         'token': csrf_token,
         'format': 'json',
-        'summary': f'Creating/updating notes page for {qid}'
+        'summary': f'Creating/updating notes page for {qid}',
+        'bot': True
     }
     
     response = session.post('https://evolutionism.miraheze.org/w/api.php', data=params)

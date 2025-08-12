@@ -58,7 +58,8 @@ def create_property(session, label, description, datatype, csrf_token):
         'new': 'property',
         'data': json.dumps(property_data),
         'format': 'json',
-        'token': csrf_token
+        'token': csrf_token,
+        'bot': 1
     }
     
     try:
