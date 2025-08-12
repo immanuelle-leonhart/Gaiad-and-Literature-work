@@ -134,7 +134,8 @@
       "Bash(if rg -q \"''bot'': 1\" \"$file\")",
       "Bash(then echo \"DONE\")",
       "Bash(else echo \"NEEDS BOT FLAG\")",
-      "Bash(fi)"
+      "Bash(fi)",
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_tools\\master_relationships_final.py\")"
     ],
     "deny": []
   }
