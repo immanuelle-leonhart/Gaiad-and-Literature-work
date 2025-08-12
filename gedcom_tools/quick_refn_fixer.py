@@ -94,7 +94,7 @@ def add_refn_statement(session, qid, refn_value, csrf_token):
         'value': json.dumps(refn_value),
         'format': 'json',
         'token': csrf_token,
-        'summary': 'Adding GEDCOM REFN from master genealogy'
+        'summary': 'Adding GEDCOM REFN from master genealogy 2nd patch'
     }
     
     response = session.post('https://evolutionism.miraheze.org/w/api.php', data=params)
