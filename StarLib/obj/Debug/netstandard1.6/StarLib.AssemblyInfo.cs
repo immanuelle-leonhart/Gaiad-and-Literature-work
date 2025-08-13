@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Order of Life 2020")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("The Cosmic Calendar of the Order of Life")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.7.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.7+c3ac7bf8fd16f016febc2a5a476e198980576152")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.7+070da7d324cedbac2ec41f09d9acafb957a8f718")]
 [assembly: System.Reflection.AssemblyProductAttribute("StarLib")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StarLib")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.7.0")]

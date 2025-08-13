@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   width="420.99994"
+   height="367.4101"
+   id="svg27"
+   sodipodi:docname="Alo Nine.svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview29"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     fit-margin-top="10"
+     fit-margin-left="10"
+     fit-margin-bottom="10"
+     fit-margin-right="10"
+     inkscape:zoom="1.455"
+     inkscape:cx="210.65292"
+     inkscape:cy="183.50515"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg27" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">
+	  .s_path {
+	     fill : #5ba9a6; /*  #58c8fd; */
+	     stroke : black;
+	     stroke-width : 1px;
+	     stroke-linecap : round;
+	     stroke-linejoin : round;
+	  }
+	</style>
+  </defs>
+  <path
+     id="_p_template"
+     class="s_path"
+     d="" />
+  <path
+     class="s_path"
+     d="m 10.499963,356.91011 50,-86.60254 49.999997,86.60254 z"
+     id="path7"
+     style="fill:#800000" />
+  <path
+     class="s_path"
+     d="m 110.49996,356.91011 50,-86.60254 50,86.60254 z"
+     id="path9"
+     style="fill:#800000" />
+  <path
+     class="s_path"
+     d="m 60.499963,270.30757 49.999997,-86.60254 50,86.60254 z"
+     id="path11"
+     style="fill:#800000" />
+  <path
+     class="s_path"
+     d="m 210.49996,356.91011 50,-86.60254 50,86.60254 z"
+     id="path13"
+     style="fill:#000080" />
+  <path
+     class="s_path"
+     d="m 310.49996,356.91011 50,-86.60254 50,86.60254 z"
+     id="path15"
+     style="fill:#000080" />
+  <path
+     class="s_path"
+     d="m 260.49996,270.30757 50,-86.60254 50,86.60254 z"
+     id="path17"
+     style="fill:#000080" />
+  <path
+     class="s_path"
+     d="m 110.49996,183.70503 50,-86.60254 50,86.60254 z"
+     id="path19"
+     style="fill:#008000" />
+  <path
+     class="s_path"
+     d="m 210.49996,183.70503 50,-86.60254 50,86.60254 z"
+     id="path21"
+     style="fill:#008000" />
+  <path
+     class="s_path"
+     d="m 160.49996,97.10249 50,-86.60254 50,86.60254 z"
+     id="path23"
+     style="fill:#008000" />
+</svg>
