@@ -30,15 +30,33 @@ TITLE_PREFIX = ""      # e.g., "Calendar:" if you want them in a namespace
 LONGRUN_START = 2001   # per your spec
 LONGRUN_END   = 2399
 
-# --- Optional deps for non-Gregorian calendars ---
+# Robust convertdate import (avoids local shadowing and only logs to console)
+import os, sys, importlib
+
+# Robust convertdate import (no user-facing noise; explicit submodule imports)
+import os, sys, importlib
+
+# ---- Calendar libs ----
+import importlib
+
+# Hebrew via convertdate (works on your install)
 try:
-    from convertdate import hebrew as H
-    from convertdate import chinese as C
-    HAVE_CONVERTDATE = True
-except Exception:
+    H = importlib.import_module("convertdate.hebrew")
+    HAVE_HEBREW = True
+except Exception as e:
     H = None
-    C = None
-    HAVE_CONVERTDATE = False
+    HAVE_HEBREW = False
+    print("hebrew: disabled ->", e)
+
+# Chinese via lunardate (not part of convertdate)
+try:
+    LunarDate = importlib.import_module("lunardate").LunarDate
+    HAVE_CHINESE = True
+except Exception as e:
+    LunarDate = None
+    HAVE_CHINESE = False
+    print("chinese: disabled ->", e)
+
 
 # --- Your event lists (as you provided) ---
 CHINESE_EVENTS = [
@@ -77,6 +95,64 @@ HEBREW_MONTH_INDEX = {
     "kislev": 9, "tevet": 10, "shevat": 11, "shvat": 11,
     # Adar handling depends on leap year; see helper below
 }
+
+# After: from lunardate import LunarDate  (and HAVE_CHINESE = True)
+if HAVE_CHINESE:
+    class _CShim:
+        @staticmethod
+        def from_gregorian(y, m, d):
+            ld = LunarDate.fromSolarDate(y, m, d)
+            leap = getattr(ld, "isLeapMonth", getattr(ld, "leap", False))
+            # convertdate.chinese.from_gregorian returns (cycle, year, month, leap, day)
+            return (None, ld.year, ld.month, bool(leap), ld.day)
+
+        @staticmethod
+        def to_gregorian(cycle, year, month, leap, day):
+            g = LunarDate(year, month, day, leap).toSolarDate()
+            # convertdate.chinese.to_gregorian returns (Y, M, D)
+            return (g.year, g.month, g.day)
+
+    C = _CShim
+
+
+from datetime import date, timedelta
+
+def _cn_from_greg(g: date):
+    """Return (lyear, lmonth, lday, leap_flag) using lunardate."""
+    ld = LunarDate.fromSolarDate(g.year, g.month, g.day)
+    # some versions use .isLeapMonth, some .leap
+    leap = getattr(ld, "isLeapMonth", getattr(ld, "leap", False))
+    return ld.year, ld.month, ld.day, bool(leap)
+
+def _cn_to_greg(lyear: int, lmonth: int, lday: int, is_leap: bool = False) -> date:
+    return LunarDate(lyear, lmonth, lday, is_leap).toSolarDate()
+
+def chinese_event_matches_gregorian(g: date, ev: dict):
+    """True/False/None; None for unsupported (e.g., solar terms)."""
+    t = ev["type"]
+    if t == "lunar":
+        lyear, lmonth, lday, leap = _cn_from_greg(g)
+        want_m, want_d = ev["month"], ev["day"]
+        if ev.get("leap") is not None:
+            return (lmonth == want_m) and (lday == want_d) and (leap is bool(ev["leap"]))
+        # default: only match non-leap months (public festivals are non-leap)
+        return (lmonth == want_m) and (lday == want_d) and (not leap)
+
+    if t == "relative":
+        anch = ev["anchor"]
+        if anch.get("type") != "lunar":
+            return None
+        lyear, _, _, _ = _cn_from_greg(g)              # same Chinese year as g
+        anchor_g = _cn_to_greg(lyear, anch["month"], anch["day"], bool(anch.get("leap", False)))
+        target_g = anchor_g + timedelta(days=int(ev.get("offset_days", 0)))
+        return g == target_g
+
+    if t == "solar_term":
+        # Not implemented here (needs astronomical solar longitude).
+        return None
+
+    return None
+
 
 def hebrew_month_number(name: str, hy: int, rule: str | None) -> int:
     """Return convertdate's month number for this Hebrew year hy."""
@@ -127,16 +203,113 @@ def chinese_event_matches_gregorian(g: date, ev: dict) -> bool | None:
     return None
 
 
+# ---- Hebrew month labels with leap handling ----
+HEB_NAMES = {
+    1:"Nisan", 2:"Iyar", 3:"Sivan", 4:"Tammuz", 5:"Av", 6:"Elul",
+    7:"Tishrei", 8:"Cheshvan", 9:"Kislev", 10:"Tevet", 11:"Shevat",
+    # 12/13 depend on leap year
+}
+
+def hebrew_label_and_index(hy: int, hm: int) -> tuple[str, int]:
+    """
+    Return (display_label, sort_index) for the given Hebrew year+month.
+    In leap years: 12=Adar I, 13=Adar II; otherwise 12=Adar.
+    sort_index is ecclesiastical order: Nisan=1 ... Adar I/Adar=12 ... Adar II=13
+    """
+    if hm == 12:
+        if H.leap(hy):
+            return "Adar I", 12
+        else:
+            return "Adar", 12
+    if hm == 13:
+        return "Adar II", 13
+    return HEB_NAMES[hm], hm
+
+def hebrew_distribution_block(m_idx: int, d_m: int,
+                              start_iso_year: int = LONGRUN_START,
+                              end_iso_year: int   = LONGRUN_END) -> str:
+    if not HAVE_HEBREW:
+        return "<!-- Hebrew distribution skipped: convertdate.hebrew not available -->"
+
+    counts: dict[tuple[int, str, int], int] = {}   # key: (sort_idx, label, day)
+    tested = 0
+
+    for y in range(start_iso_year, end_iso_year + 1):
+        try:
+            g = zodiac_gregorian_for_iso_year(m_idx, d_m, y)
+            hy, hm, hd = H.from_gregorian(g.year, g.month, g.day)
+        except Exception:
+            # if conversion ever fails (rare), skip that year
+            continue
+        tested += 1
+        label, idx = hebrew_label_and_index(hy, hm)
+        key = (idx, label, hd)
+        counts[key] = counts.get(key, 0) + 1
+
+    lines = ['{| class="wikitable sortable"',
+             f'! Hebrew month-day !! Count !! Probability']
+    denom = tested if tested else 1
+    for (idx, label, day) in sorted(counts.keys()):
+        c = counts[(idx, label, day)]
+        lines.append(f"|-\n| {label} {day} || {c} || {c/denom:.2%}")
+    lines.append("|}")
+    return "\n".join(lines)
+
+
+def chinese_distribution_block(m_idx: int, d_m: int,
+                               start_iso_year: int = LONGRUN_START,
+                               end_iso_year: int   = LONGRUN_END) -> str:
+    if not HAVE_CHINESE:
+        return "<!-- Chinese distribution skipped: lunardate not available -->"
+
+    from collections import Counter
+    counts: Counter[tuple[int, bool, int]] = Counter()
+    years_tested = 0
+
+    for y in range(start_iso_year, end_iso_year + 1):
+        gdate = zodiac_gregorian_for_iso_year(m_idx, d_m, y)
+        try:
+            l = LunarDate.fromSolarDate(gdate.year, gdate.month, gdate.day)
+        except Exception:
+            # outside lunardate support -> skip this year (don’t dilute denominator)
+            continue
+
+        years_tested += 1
+        lunar_month  = int(getattr(l, "month"))
+        lunar_day    = int(getattr(l, "day"))
+        is_leap      = bool(getattr(l, "isLeapMonth", getattr(l, "leap", False)))
+
+        # sanity clamp: lunar day must be 1..30
+        if 1 <= lunar_day <= 30 and 1 <= lunar_month <= 12:
+            counts[(lunar_month, is_leap, lunar_day)] += 1
+
+    denom = years_tested if years_tested else 1
+
+    lines = ['{| class="wikitable sortable"',
+             f'! Chinese lunar month-day !! Count !! Probability']
+    # sort: month (1..12), non-leap before leap, day (1..30)
+    for (lm, leap_flag, lday) in sorted(counts.keys(), key=lambda k: (k[0], 1 if k[1] else 0, k[2])):
+        label = (f"Leap Month {lm} {lday}" if leap_flag else f"Month {lm} {lday}")
+        c = counts[(lm, leap_flag, lday)]
+        lines.append(f"|-\n| {label} || {c} || {c/denom:.2%}")
+    lines.append("|}")
+    return "\n".join(lines)
+
+
+
+
 # --- helper: append a category tag inline with the label when there’s a hit ---
 def label_with_category(name: str, hit_count: int) -> str:
     return f"{name} [[Category:Days that {name} falls on]]" if hit_count > 0 else name
 
 
+def label_with_category(name: str, hit_count: int) -> str:
+    return f"{name} [[Category:Days that {name} falls on]]" if hit_count > 0 else name
+
 def chinese_overlap_table(m_idx: int, d_m: int,
                           start_iso_year: int = LONGRUN_START, end_iso_year: int = LONGRUN_END) -> str:
-    if not HAVE_CONVERTDATE:
-        return ("''Chinese calendar section requires `convertdate`. "
-                "Install with `pip install convertdate`.''")
+    if not HAVE_CHINESE:
+        return "<!-- Chinese calendar section skipped: lunardate not available -->"
 
     total = end_iso_year - start_iso_year + 1
     rows = []
@@ -145,7 +318,7 @@ def chinese_overlap_table(m_idx: int, d_m: int,
         supported = True
         for y in range(start_iso_year, end_iso_year + 1):
             g = zodiac_gregorian_for_iso_year(m_idx, d_m, y)
-            res = chinese_event_matches_gregorian(g, ev)  # your existing matcher
+            res = chinese_event_matches_gregorian(g, ev)
             if res is None:
                 supported = False
                 break
@@ -153,14 +326,15 @@ def chinese_overlap_table(m_idx: int, d_m: int,
                 matches += 1
         prob = (matches / total) if supported else 0.0
         name = ev["name"] + ("" if supported else " (requires solar-term calc)")
-        name_cell = label_with_category(name, matches)
-        rows.append((name_cell, matches, total, prob))
+        name_cell = label_with_category(name, matches) if supported else name
+        rows.append((name_cell, matches if supported else 0, total if supported else total, prob))
 
     lines = ['{| class="wikitable sortable"', '! Event !! Matches !! Years !! Probability']
     for name_cell, c, t, p in rows:
         lines.append(f"|-\n| {name_cell} || {c} || {t} || {p:.2%}")
     lines.append("|}")
     return "\n".join(lines)
+
 
 
 # ---------- HEBREW MATCHERS ----------
@@ -180,7 +354,7 @@ def hebrew_event_matches_gregorian(g: date, ev: dict) -> bool:
 
 def hebrew_overlap_table(m_idx: int, d_m: int,
                          start_iso_year: int = LONGRUN_START, end_iso_year: int = LONGRUN_END) -> str:
-    if not HAVE_CONVERTDATE:
+    if not HAVE_HEBREW:
         return ("''Hebrew calendar section requires `convertdate`. "
                 "Install with `pip install convertdate`.''")
 
@@ -576,8 +750,15 @@ def build_page(m_idx: int, d_m: int) -> (str, str):
     parts.append("\n== Chinese calendar overlaps ==")
     parts.append(chinese_overlap_table(m_idx, d_m, LONGRUN_START, LONGRUN_END))
 
+    parts.append(f"\n== Chinese lunar date distribution ({LONGRUN_START}–{LONGRUN_END}) ==")
+    parts.append(chinese_distribution_block(m_idx, d_m, LONGRUN_START, LONGRUN_END))
+
     parts.append("\n== Hebrew calendar overlaps ==")
     parts.append(hebrew_overlap_table(m_idx, d_m, LONGRUN_START, LONGRUN_END))
+
+    parts.append(f"\n== Hebrew date distribution ({LONGRUN_START}–{LONGRUN_END}) ==")
+    parts.append(hebrew_distribution_block(m_idx, d_m, LONGRUN_START, LONGRUN_END))
+
 
 
     parts.append("\n== See also ==")
