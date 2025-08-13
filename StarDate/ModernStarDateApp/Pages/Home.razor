@@ -1,0 +1,128 @@
+@page "/"
+@using StarLib
+
+<PageTitle>Modern StarDate - Cosmic Calendar</PageTitle>
+
+<div class="hero-section">
+    <h1 class="cosmic-title">🌌 Gaian Cosmic Calendar</h1>
+    <p class="subtitle">Modern .NET 8 with ISO Week Alignment</p>
+</div>
+
+<div class="demo-grid">
+    <div class="card">
+        <h3>📅 Current Cosmic Date</h3>
+        <div class="current-date">
+            <div class="date-display">
+                <span class="palace">@currentDate.Palace宮</span>
+                <span class="day">@currentDate.Day日</span>
+                <span class="year">@currentDate.Year</span>
+            </div>
+            <div class="details">
+                <p><strong>Month:</strong> @currentDate.MonthName (@currentDate.MonthSymbol)</p>
+                <p><strong>ISO Week:</strong> @currentDate.WeekOfYear</p>
+                <p><strong>ISO Day:</strong> @currentDate.IsoDayOfWeek (@GetDayName(currentDate.IsoDayOfWeek))</p>
+                <p><strong>Gregorian:</strong> @currentDate.DateTime.ToString("yyyy-MM-dd")</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>🗓️ ISO Week Alignment</h3>
+        <div class="iso-demo">
+            <p><strong>Key Feature:</strong> 1宮1日 always equals ISO Week 1, Monday</p>
+            <div class="week-example">
+                <div class="week-day">1宮1日 = Mon</div>
+                <div class="week-day">1宮2日 = Tue</div>
+                <div class="week-day">1宮3日 = Wed</div>
+                <div class="week-day">1宮4日 = Thu</div>
+                <div class="week-day">1宮5日 = Fri</div>
+                <div class="week-day">1宮6日 = Sat</div>
+                <div class="week-day">1宮7日 = Sun</div>
+            </div>
+            <p><em>Perfect alignment with international business calendars!</em></p>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>⭐ Calendar Features</h3>
+        <ul class="features">
+            <li>13 months × 28 days = 364 days/year</li>
+            <li>Leap weeks as ISO Week 53 (Horus)</li>
+            <li>Fixed weekdays for all dates</li>
+            <li>Sidereal year alignment</li>
+            <li>Cosmic timescale support</li>
+            <li>Multi-cultural month names</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>🔄 Date Conversion</h3>
+        <div class="converter">
+            <label>Enter Gregorian Date:</label>
+            <input type="date" @bind="gregorianInput" />
+            <button @onclick="ConvertDate">Convert to Cosmic</button>
+            
+            @if (convertedDate != null)
+            {
+                <div class="converted-result">
+                    <strong>Cosmic Date:</strong><br>
+                    @convertedDate.Palace宮@convertedDate.Day日 @convertedDate.Year<br>
+                    <em>@convertedDate.MonthName @convertedDate.Day, @convertedDate.Year</em>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<div class="tech-info">
+    <h3>💻 Modern .NET 8 Features</h3>
+    <div class="tech-grid">
+        <div class="tech-item">
+            <strong>Multi-targeting:</strong> net8.0 + netstandard2.0
+        </div>
+        <div class="tech-item">
+            <strong>Nullable types:</strong> Enhanced null safety
+        </div>
+        <div class="tech-item">
+            <strong>Implicit usings:</strong> Cleaner code
+        </div>
+        <div class="tech-item">
+            <strong>Blazor 8.0:</strong> Latest web UI framework
+        </div>
+        <div class="tech-item">
+            <strong>System.Text.Json:</strong> High-performance serialization
+        </div>
+        <div class="tech-item">
+            <strong>AOT Ready:</strong> Future native compilation support
+        </div>
+    </div>
+</div>
+
+@code {
+    private StarDate currentDate = StarDate.Now;
+    private DateTime gregorianInput = DateTime.Today;
+    private StarDate? convertedDate;
+
+    protected override void OnInitialized()
+    {
+        // Update current date
+        currentDate = StarDate.Now;
+    }
+
+    private void ConvertDate()
+    {
+        convertedDate = new StarDate(gregorianInput);
+    }
+
+    private string GetDayName(int isoDayOfWeek) => isoDayOfWeek switch
+    {
+        1 => "Monday",
+        2 => "Tuesday", 
+        3 => "Wednesday",
+        4 => "Thursday",
+        5 => "Friday",
+        6 => "Saturday",
+        7 => "Sunday",
+        _ => "Unknown"
+    };
+}

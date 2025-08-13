@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StarLib.Calendar")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c13927a751b96e4a1895eca9fa8cd12863d2d093")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+88fee9932a5b7caca6c34a3e88c6ee100464b483")]
 [assembly: System.Reflection.AssemblyProductAttribute("StarLib.Calendar")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StarLib.Calendar")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

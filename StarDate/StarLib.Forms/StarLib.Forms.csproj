@@ -1,42 +1,44 @@
 <Project Sdk="Microsoft.NET.Sdk.Razor">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <RazorLangVersion>3.0</RazorLangVersion>
-    <Description>Web Library for using Star Calendar Forms</Description>
+    <TargetFramework>net8.0</TargetFramework>
+    <Description>Modern Blazor components for the Cosmic Calendar with ISO Week support</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <Company>Order of Life</Company>
     <Authors>Silicon Prophet</Authors>
     <PackageProjectUrl>https://order.life/software</PackageProjectUrl>
-    <PackageIcon>DNA Tree Logo.jpg</PackageIcon>
+    <PackageIcon>zodiac.ico</PackageIcon>
     <RepositoryType>Library</RepositoryType>
     <RepositoryUrl>https://github.com/siliconprophet/StarDate</RepositoryUrl>
-    <PackageTags>Order of Life, Calendar, StarDate</PackageTags>
-    <PackageReleaseNotes>Placeholder</PackageReleaseNotes>
+    <PackageTags>Order of Life, Calendar, StarDate, Blazor, ISO Week</PackageTags>
+    <PackageReleaseNotes>Version 2.0.0: Modern .NET 8 Blazor components with ISO Week alignment</PackageReleaseNotes>
     <PackageId>StarDate.Forms</PackageId>
-    <Version>1.0.1</Version>
+    <Version>2.0.0</Version>
+    
+    <!-- Modern .NET features -->
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
   </PropertyGroup>
 
-
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Components" Version="3.1.6" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="3.1.6" />
-    <PackageReference Include="Microsoft.PowerShell.5.ReferenceAssemblies" Version="1.1.0" />
+    <!-- Modern Blazor 8.0 components -->
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.8" />
   </ItemGroup>
-
 
   <ItemGroup>
     <ProjectReference Include="..\StarLib\StarLib.csproj" />
   </ItemGroup>
 
-
   <ItemGroup>
-    <None Include="..\..\..\..\Dropbox\branding images\DNA Tree Logo.jpg">
+    <None Include="..\LICENSE">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
-    <None Include="..\LICENSE">
+    <None Include="..\StarLib\zodiac.ico">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
