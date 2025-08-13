@@ -102,9 +102,9 @@ def add_refn_statement(session, qid, refn_value, csrf_token):
     return response.json()
 
 def main():
-    print("Starting quick REFN fixer continued from @I41026@...")
+    print("Starting quick REFN fixer continued from @I63331@...")
     
-    # Load mappings for I41026+
+    # Load mappings for I63331+
     mappings = {}
     with open('gedcom_to_qid_mapping.txt', 'r', encoding='utf-8') as f:
         for line in f:
@@ -113,11 +113,11 @@ def main():
                 if len(parts) == 2:
                     gedcom_id = parts[0]
                     qid = parts[1]
-                    # Only process I41026+
+                    # Only process I63331+
                     if gedcom_id.startswith('@I') and gedcom_id.endswith('@'):
                         try:
                             i_num = int(gedcom_id[2:-1])
-                            if i_num >= 41026:
+                            if i_num >= 63331:
                                 mappings[gedcom_id] = qid
                         except ValueError:
                             continue

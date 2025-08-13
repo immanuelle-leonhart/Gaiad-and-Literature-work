@@ -182,7 +182,7 @@ def create_or_update_notes_page(session, qid, notes_content, csrf_token):
     return 'edit' in result and result['edit'].get('result') == 'Success'
 
 def main():
-    print("Starting master GEDCOM notes pages creation...")
+    print("Starting master GEDCOM notes pages creation from @I36996@...")
     
     # Load mappings and notes data
     mappings = load_master_mappings()
@@ -202,8 +202,18 @@ def main():
     error_count = 0
     processed_count = 0
     
-    # Process all individuals with QID mappings
+    # Process all individuals with QID mappings starting from @I36996@
+    restart_from = 36996
     for gedcom_id, qid in mappings.items():
+        # Skip until we reach the restart point
+        if gedcom_id.startswith('@I') and gedcom_id.endswith('@'):
+            try:
+                i_num = int(gedcom_id[2:-1])
+                if i_num < restart_from:
+                    continue
+            except ValueError:
+                continue
+        
         processed_count += 1
         print(f"\nProcessing {gedcom_id} -> {qid} ({processed_count}/{len(mappings)})")
         
