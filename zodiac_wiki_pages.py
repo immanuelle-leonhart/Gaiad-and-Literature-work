@@ -14,8 +14,8 @@ USER_AGENT  = "ZodiacWikiBot/0.2 (User:Immanuelle; contact: you@example.com)"
 SUMMARY     = "Create/update zodiac date page"
 THROTTLE    = 0.6      # seconds between edits (be polite to the wiki)
 TITLE_PREFIX = ""      # e.g., "Calendar:" if you want them in a namespace
-LONGRUN_START = 1582   # per your spec
-LONGRUN_END   = 2582
+LONGRUN_START = 2001   # per your spec
+LONGRUN_END   = 2399
 
 # ------------- Page generator (minimal but complete) -------------
 
@@ -237,7 +237,6 @@ FIXED_DATE_EVENTS = {
     "Niiname-sai (新嘗祭)": (11, 23),
     "Kōrei-sai (皇霊祭)": (3, 21),
     "Shindensai (神殿祭)": (9, 21),
-    "Hinamatsuri": (3, 3),
     # Golden Week (7-day run you specified)
     "Shōwa Day (Golden Week 1)": (4, 29),
     "Golden Week 2": (4, 30),
@@ -249,8 +248,12 @@ FIXED_DATE_EVENTS = {
     # Other JP fixed
     "Tanabata": (7, 7),
     "Shichi-Go-San": (11, 15),
+    "Hinamatsuri": (3, 3),
 
     # North America (fixed)
+    "Ides of March": (3, 15),
+    "Bastille Day": (7, 14),
+    "Guy Fawkes Night": (11, 5),
     "New Year’s Eve": (12, 31),
     "Valentine’s Day": (2, 14),
     "Groundhog Day": (2, 2),
@@ -260,6 +263,16 @@ FIXED_DATE_EVENTS = {
     "Remembrance Day": (11, 11),
     "Christmas Day": (12, 25),
     "Boxing Day": (12, 26),
+    #Wiccan
+
+    "Yule (Winter Solstice)": (12, 21),
+    "Imbolc": (2, 1),
+    "Ostara (Spring Equinox)": (3, 20),
+    "Beltane": (5, 1),
+    "Litha (Summer Solstice)": (6, 21),
+    "Lughnasadh / Lammas": (8, 1),
+    "Mabon (Autumn Equinox)": (9, 22),
+    "Samhain": (10, 31)
 }
 
 def zodiac_possible_monthdays(m_idx: int, d_m: int,
