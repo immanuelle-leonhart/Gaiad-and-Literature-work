@@ -7,10 +7,12 @@ The StarDate Cosmic Calendar project has been **successfully upgraded** from leg
 ### ✅ **What Was Upgraded**
 
 #### Framework Targets
+- **ALL 19 PROJECTS** successfully upgraded to `.NET 9.0` 🎉
 - **StarLib**: `netstandard1.6` → `net9.0` + `netstandard2.0` (multi-targeting)
 - **StarLib.Forms**: `netstandard2.0` + Blazor 3.1 → `net9.0` + Blazor 9.0
-- **All Applications**: `netcoreapp3.1` → `net9.0`
+- **Applications**: `netcoreapp3.0/3.1` → `net9.0`
 - **Libraries**: Enhanced with multi-targeting for compatibility
+- **Legacy projects**: All updated from .NET Core 3.0/3.1 to .NET 9.0
 
 #### Modern .NET 9 Features
 - ✅ **Latest C# language version** (`<LangVersion>latest</LangVersion>`)

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StarLib.Dynamic")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+12c84b943187c92a095926434fd0559c40f2c8a4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bb4c4b8d3da5892400d8c1c25616bdd9696faf07")]
 [assembly: System.Reflection.AssemblyProductAttribute("StarLib.Dynamic")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StarLib.Dynamic")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

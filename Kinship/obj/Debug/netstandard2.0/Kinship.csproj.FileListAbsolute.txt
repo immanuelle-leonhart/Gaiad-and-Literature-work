@@ -7,3 +7,14 @@ C:\Users\SiliconProphet\Documents\GitHub\Order\StarDate\Kinship\obj\Debug\netsta
 C:\Users\SiliconProphet\Documents\GitHub\Order\StarDate\Kinship\obj\Debug\netstandard2.0\Kinship.csproj.CoreCompileInputs.cache
 C:\Users\SiliconProphet\Documents\GitHub\Order\StarDate\Kinship\obj\Debug\netstandard2.0\Kinship.dll
 C:\Users\SiliconProphet\Documents\GitHub\Order\StarDate\Kinship\obj\Debug\netstandard2.0\Kinship.pdb
+C:\Users\Immanuelle\Documents\Github\Gaiad-Genealogy\Kinship\bin\Debug\netstandard2.0\Kinship.deps.json
+C:\Users\Immanuelle\Documents\Github\Gaiad-Genealogy\Kinship\bin\Debug\netstandard2.0\Kinship.dll
+C:\Users\Immanuelle\Documents\Github\Gaiad-Genealogy\Kinship\bin\Debug\netstandard2.0\Kinship.pdb
+C:\Users\Immanuelle\Documents\Github\Gaiad-Genealogy\Kinship\obj\Debug\netstandard2.0\Kinship.csproj.AssemblyReference.cache
+C:\Users\Immanuelle\Documents\Github\Gaiad-Genealogy\Kinship\obj\Debug\netstandard2.0\Kinship.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Immanuelle\Documents\Github\Gaiad-Genealogy\Kinship\obj\Debug\netstandard2.0\Kinship.AssemblyInfoInputs.cache
+C:\Users\Immanuelle\Documents\Github\Gaiad-Genealogy\Kinship\obj\Debug\netstandard2.0\Kinship.AssemblyInfo.cs
+C:\Users\Immanuelle\Documents\Github\Gaiad-Genealogy\Kinship\obj\Debug\netstandard2.0\Kinship.csproj.CoreCompileInputs.cache
+C:\Users\Immanuelle\Documents\Github\Gaiad-Genealogy\Kinship\obj\Debug\netstandard2.0\Kinship.sourcelink.json
+C:\Users\Immanuelle\Documents\Github\Gaiad-Genealogy\Kinship\obj\Debug\netstandard2.0\Kinship.dll
+C:\Users\Immanuelle\Documents\Github\Gaiad-Genealogy\Kinship\obj\Debug\netstandard2.0\Kinship.pdb
