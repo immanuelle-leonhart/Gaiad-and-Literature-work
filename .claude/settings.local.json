@@ -154,7 +154,11 @@
       "Bash(do if rg -q \"(wbeditentity|wbcreateclaim|wbsetlabel|wbsetaliases|wbsetdescription|wbremoveclaims|''action'': ''edit'')\" \"$file\")",
       "Bash(dotnet --version)",
       "Bash(dotnet build:*)",
-      "Bash(dotnet run:*)"
+      "Bash(dotnet run:*)",
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" quick_refn_fixer_continued.py)",
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" gedcom_tools/quick_refn_fixer_continued.py)",
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" gedcom_tools/japanese_relationships_final.py)",
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" gedcom_tools/database_reviewer.py)"
     ],
     "deny": []
   }
