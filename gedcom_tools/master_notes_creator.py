@@ -149,7 +149,7 @@ def add_notes_page_property(session, qid, notes_url, csrf_token):
         'format': 'json',
         'token': csrf_token,
         'summary': 'Adding notes page URL (P46)',
-        'bot': True
+        'bot': 1
     }
     
     response = session.post('https://evolutionism.miraheze.org/w/api.php', data=params)
@@ -173,7 +173,7 @@ def create_or_update_notes_page(session, qid, notes_content, csrf_token):
         'token': csrf_token,
         'format': 'json',
         'summary': f'Creating/updating notes page for {qid}',
-        'bot': True
+        'bot': 1
     }
     
     response = session.post('https://evolutionism.miraheze.org/w/api.php', data=params)
