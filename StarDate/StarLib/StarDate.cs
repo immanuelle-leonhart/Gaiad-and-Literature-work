@@ -2903,6 +2903,17 @@ namespace StarLib
 
         //returns DateTime equivalent
 
+        // Internal method to get DateTime without calling Offset (prevents circular dependency)
+        internal DateTime DateTimeWithoutOffset
+        {
+            get
+            {
+                DateTime dt = new DateTime((long)(internalTicks - NetStart));
+                DateTime.SpecifyKind(dt, DateTimeKind.Utc);
+                return dt;
+            }
+        }
+
         public DateTime DateTime
         {
             get

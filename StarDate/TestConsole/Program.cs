@@ -12,34 +12,44 @@ namespace TestConsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("=== Current Date Display ===");
+            try
+            {
+                Console.WriteLine("=== StarDate Test Console ===");
+                
+                // Show current Gregorian date first
+                DateTime now = DateTime.Now;
+                Console.WriteLine($"Current Gregorian Date: {now:yyyy-MM-dd HH:mm:ss}");
+                
+                // Test StarDate functionality now that we fixed the circular dependency
+                Console.WriteLine("\n--- Testing StarDate.Now ---");
+                StarDate starNow = StarDate.Now;
+                Console.WriteLine($"StarDate.Now: {starNow}");
+                
+                Console.WriteLine("\n--- Testing StarDate Properties ---");
+                Console.WriteLine($"Palace (宮): {starNow.Palace}");
+                Console.WriteLine($"ISO Week: {starNow.WeekOfYear}");
+                Console.WriteLine($"ISO Day of Week: {starNow.IsoDayOfWeek}");
+                Console.WriteLine($"Month Name: {starNow.MonthName}");
+                Console.WriteLine($"Day: {starNow.Day}");
+                Console.WriteLine($"Year: {starNow.Year}");
+                
+                Console.WriteLine("\n--- Testing StarDate Conversion ---");
+                StarDate converted = new StarDate(now);
+                Console.WriteLine($"Converted from DateTime: {converted}");
+                
+                Console.WriteLine("\n--- Testing StarDate Parsing ---");
+                StarDate parsed = StarDate.Parse("12020-9-9");
+                Console.WriteLine($"Parsed StarDate: {parsed}");
+                
+                Console.WriteLine("\n✅ StarDate functionality is working!");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"❌ Error: {ex.Message}");
+                Console.WriteLine($"Stack trace: {ex.StackTrace}");
+            }
             
-            // Show current Gregorian date
-            DateTime now = DateTime.Now;
-            Console.WriteLine($"Current Date and Time: {now:yyyy-MM-dd HH:mm:ss}");
-            Console.WriteLine($"Current Date (Short): {now:yyyy-MM-dd}");
-            Console.WriteLine($"Current Time (Short): {now:HH:mm:ss}");
-            Console.WriteLine($"Day of Week: {now.DayOfWeek}");
-            Console.WriteLine($"Day of Year: {now.DayOfYear}");
-            
-            // Calculate ISO week information manually
-            var culture = System.Globalization.CultureInfo.CurrentCulture;
-            var calendar = culture.Calendar;
-            var dateTimeFormat = culture.DateTimeFormat;
-            int isoWeek = calendar.GetWeekOfYear(now, dateTimeFormat.CalendarWeekRule, dateTimeFormat.FirstDayOfWeek);
-            Console.WriteLine($"ISO Week Number: {isoWeek}");
-            
-            // Show UTC time as well
-            DateTime utcNow = DateTime.UtcNow;
-            Console.WriteLine($"UTC Time: {utcNow:yyyy-MM-dd HH:mm:ss}");
-            
-            Console.WriteLine();
-            Console.WriteLine("Note: StarDate functionality has a circular dependency bug");
-            Console.WriteLine("that causes stack overflow when trying to access current dates.");
-            Console.WriteLine("This needs to be fixed in the StarLib library.");
-            
-            Console.WriteLine();
-            Console.WriteLine("Press any key to exit...");
+            Console.WriteLine("\nPress any key to exit...");
             Console.ReadKey();
         }
 

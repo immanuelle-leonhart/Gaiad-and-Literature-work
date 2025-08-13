@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Web Library for using Star Calendar Forms")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.1.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.1+bb4c4b8d3da5892400d8c1c25616bdd9696faf07")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.1+c3ac7bf8fd16f016febc2a5a476e198980576152")]
 [assembly: System.Reflection.AssemblyProductAttribute("StarLib.Forms")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StarLib.Forms")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.1.0")]

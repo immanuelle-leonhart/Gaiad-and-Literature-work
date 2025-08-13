@@ -12,7 +12,7 @@
     <releaseNotes>Placeholder for dev</releaseNotes>
     <copyright>Order of Life 2020</copyright>
     <tags>Order of Life, Calendar, StarDate</tags>
-    <repository type="Library" url="https://github.com/siliconprophet/StarDate" commit="bb4c4b8d3da5892400d8c1c25616bdd9696faf07" />
+    <repository type="Library" url="https://github.com/siliconprophet/StarDate" commit="c3ac7bf8fd16f016febc2a5a476e198980576152" />
     <dependencies>
       <group targetFramework=".NETStandard1.6">
         <dependency id="Microsoft.Win32.Primitives" version="4.3.0" exclude="Build,Analyzers" />

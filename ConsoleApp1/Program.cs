@@ -8,6 +8,9 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+
+            Console.WriteLine(StarDate.Now);
+
             string path = "C:/Users/SiliconProphet/Documents/GitHub/Order/StarDate/ICAL/calendar.ical";
             string path2 = "C:/Users/SiliconProphet/Documents/GitHub/Order/StarDate/ICAL/";
             string[] p = path.Split('/');
