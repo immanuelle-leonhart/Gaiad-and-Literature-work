@@ -291,7 +291,8 @@ def add_statement_to_item(session, qid, property_pid, value, value_type, csrf_to
             'data': json.dumps(statement_data),
             'format': 'json',
             'token': csrf_token,
-            'summary': 'Adding data from Japanese GEDCOM file'
+            'summary': 'Adding data from Japanese GEDCOM file',
+            'bot': 1
         }
         
         response = session.post('https://evolutionism.miraheze.org/w/api.php', data=params, timeout=30)

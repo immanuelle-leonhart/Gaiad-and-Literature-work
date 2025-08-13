@@ -138,7 +138,13 @@
       "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_tools\\master_relationships_final.py\")",
       "Bash(git add:*)",
       "Bash(git subtree:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(for file in *.py)",
+      "Bash(do if rg -q \"(wbeditentity|wbcreateclaim|wbsetlabel|wbsetaliases|wbsetdescription|wbremoveclaims|''action'': ''edit'')\" \"$file\")",
+      "Bash(then if ! rg -q \"''bot'': 1\" \"$file\")",
+      "Bash(then echo \"NEEDS BOT FLAG: $file\")",
+      "Bash(for:*)",
+      "Bash(then echo \"$file\")"
     ],
     "deny": []
   }
