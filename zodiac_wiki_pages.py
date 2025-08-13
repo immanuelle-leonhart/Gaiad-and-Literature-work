@@ -5,6 +5,19 @@ import time
 from datetime import date, datetime, timedelta
 from datetime import date, timedelta
 
+# stdlib imports you need
+import time
+from datetime import date, datetime, timedelta
+
+# if your script makes HTTP calls (it does, for MediaWiki):
+import requests
+
+# optional, only if you’re using type hints in the file
+from typing import Dict, List, Tuple, Optional
+
+
+
+
 import requests
 
 API_URL     = "https://evolutionism.miraheze.org/w/api.php"
@@ -16,6 +29,171 @@ THROTTLE    = 0.6      # seconds between edits (be polite to the wiki)
 TITLE_PREFIX = ""      # e.g., "Calendar:" if you want them in a namespace
 LONGRUN_START = 2001   # per your spec
 LONGRUN_END   = 2399
+
+# --- Optional deps for non-Gregorian calendars ---
+try:
+    from convertdate import hebrew as H
+    from convertdate import chinese as C
+    HAVE_CONVERTDATE = True
+except Exception:
+    H = None
+    C = None
+    HAVE_CONVERTDATE = False
+
+# --- Your event lists (as you provided) ---
+CHINESE_EVENTS = [
+    {"name": "Chinese New Year", "type": "lunar", "month": 1, "day": 1},
+    {"name": "Chinese New Year's Eve", "type": "relative",
+     "anchor": {"type": "lunar", "month": 1, "day": 1}, "offset_days": -1},
+    {"name": "Lantern Festival", "type": "lunar", "month": 1, "day": 15},
+    {"name": "Qingming", "type": "solar_term", "term": "Qingming"},      # Sun λ=15° (requires astro)
+    {"name": "Dragon Boat Festival", "type": "lunar", "month": 5, "day": 5},
+    {"name": "Qixi", "type": "lunar", "month": 7, "day": 7},
+    {"name": "Ghost Festival", "type": "lunar", "month": 7, "day": 15},
+    {"name": "Mid-Autumn Festival", "type": "lunar", "month": 8, "day": 15},
+    {"name": "Double Ninth", "type": "lunar", "month": 9, "day": 9},
+    {"name": "Dongzhi", "type": "solar_term", "term": "Dongzhi"}          # Solstice (requires astro)
+]
+
+HEBREW_EVENTS = [
+    {"name": "Rosh Hashanah (Day 1)", "type": "hebrew", "month": "Tishrei", "day": 1},
+    {"name": "Yom Kippur", "type": "hebrew", "month": "Tishrei", "day": 10},
+    {"name": "Sukkot (First Day)", "type": "hebrew", "month": "Tishrei", "day": 15},
+    {"name": "Shemini Atzeret", "type": "hebrew", "month": "Tishrei", "day": 22},
+    {"name": "Simchat Torah (Diaspora)", "type": "hebrew", "month": "Tishrei", "day": 23, "optional": True},
+    {"name": "Hanukkah (Day 1)", "type": "hebrew", "month": "Kislev", "day": 25},
+    {"name": "Tu BiShvat", "type": "hebrew", "month": "Shevat", "day": 15},
+    {"name": "Purim", "type": "hebrew", "month": "Adar", "day": 14, "rule": "AdarII_in_leap_year"},
+    {"name": "Pesach (First Day)", "type": "hebrew", "month": "Nisan", "day": 15},
+    {"name": "Lag BaOmer", "type": "hebrew", "month": "Iyar", "day": 18},
+    {"name": "Shavuot", "type": "hebrew", "month": "Sivan", "day": 6},
+    {"name": "Tisha B'Av", "type": "hebrew", "month": "Av", "day": 9, "rule": "postpone_if_shabbat"}
+]
+
+# Hebrew month indices expected by convertdate (ECCLESIASTICAL numbering: Nisan=1… Adar=12/13)
+HEBREW_MONTH_INDEX = {
+    "nisan": 1, "iyyar": 2, "iyar": 2, "sivan": 3, "tammuz": 4, "av": 5, "elul": 6,
+    "tishrei": 7, "tishri": 7, "cheshvan": 8, "marcheshvan": 8, "marheshvan": 8,
+    "kislev": 9, "tevet": 10, "shevat": 11, "shvat": 11,
+    # Adar handling depends on leap year; see helper below
+}
+
+def hebrew_month_number(name: str, hy: int, rule: str | None) -> int:
+    """Return convertdate's month number for this Hebrew year hy."""
+    n = name.strip().lower()
+    if n.startswith("adar"):  # Adar / Adar I / Adar II
+        if rule == "AdarII_in_leap_year" and H.leap(hy):
+            return 13  # Adar II
+        # Non-leap: Adar = 12; Leap: 'Adar' often means Adar II, but rule above catches Purim
+        return 12
+    return HEBREW_MONTH_INDEX[n]
+
+
+# ---------- CHINESE MATCHERS ----------
+from datetime import date, timedelta
+
+def chinese_lunar_tuple(g: date):
+    # (cycle, year, month, is_leap, day)
+    return C.from_gregorian(g.year, g.month, g.day)
+
+def chinese_new_year_gregorian_for_cy(cyc: int, y: int) -> date:
+    # m=1, leap=False, d=1
+    y1, m1, d1 = C.to_gregorian(cyc, y, 1, False, 1)
+    return date(y1, m1, d1)
+
+def chinese_event_matches_gregorian(g: date, ev: dict) -> bool | None:
+    """Return True if matches, False if not, None if event type not supported."""
+    if ev["type"] == "lunar":
+        cyc, yy, m, leap, d = chinese_lunar_tuple(g)
+        want_m = ev["month"]; want_d = ev["day"]
+        # Most public festivals are in non-leap months; don't match leap months unless specified.
+        if ev.get("leap") is not None:
+            return (m == want_m) and (d == want_d) and (leap is bool(ev["leap"]))
+        else:
+            return (m == want_m) and (d == want_d) and (not leap)
+    elif ev["type"] == "relative":
+        # Only anchor supported here: another lunar date in the SAME Chinese year
+        cyc, yy, _, _, _ = chinese_lunar_tuple(g)
+        anch = ev["anchor"]
+        if anch["type"] != "lunar":
+            return None
+        ay, am, ad = C.to_gregorian(cyc, yy, anch["month"], bool(anch.get("leap", False)), anch["day"])
+        anchor_g = date(ay, am, ad)
+        target = anchor_g + timedelta(days=int(ev.get("offset_days", 0)))
+        return g == target
+    elif ev["type"] == "solar_term":
+        # Requires astro calc (sun ecliptic longitude). Left unimplemented to avoid heavy deps.
+        return None
+    return None
+
+def chinese_overlap_table(m_idx: int, d_m: int,
+                          start_iso_year: int = LONGRUN_START, end_iso_year: int = LONGRUN_END) -> str:
+    if not HAVE_CONVERTDATE:
+        return ("''Chinese calendar section requires `convertdate`. "
+                "Install with `pip install convertdate`.''")
+    total = end_iso_year - start_iso_year + 1
+    rows = []
+    for ev in CHINESE_EVENTS:
+        matches = 0
+        supported = True
+        for y in range(start_iso_year, end_iso_year + 1):
+            g = zodiac_gregorian_for_iso_year(m_idx, d_m, y)
+            res = chinese_event_matches_gregorian(g, ev)
+            if res is None:
+                supported = False
+                break
+            if res:
+                matches += 1
+        prob = (matches / total) if supported else 0.0
+        cat = f"[[Category:Days that {ev['name']} falls on]]" if matches > 0 else "—"
+        note = "" if supported else " (requires solar-term calc)"
+        rows.append((ev["name"] + note, matches, total, prob, cat))
+    # Build wiki table
+    lines = ['{| class="wikitable sortable"',
+             '! Event !! Matches !! Years !! Probability !! Category']
+    for name, c, t, p, cat in rows:
+        lines.append(f"|-\n| {name} || {c} || {t} || {p:.2%} || {cat}")
+    lines.append("|}")
+    return "\n".join(lines)
+
+# ---------- HEBREW MATCHERS ----------
+
+def hebrew_event_matches_gregorian(g: date, ev: dict) -> bool:
+    hy, hm, hd = H.from_gregorian(g.year, g.month, g.day)
+    # compute the *observed* Gregorian date of the event in this Hebrew year
+    tgt_month = hebrew_month_number(ev["month"], hy, ev.get("rule"))
+    # base day (e.g., 9 Av)
+    ty, tm, td = H.to_gregorian(hy, tgt_month, ev["day"])
+    observed = date(ty, tm, td)
+    # special rule: postpone Tisha B'Av if Shabbat
+    if ev.get("rule") == "postpone_if_shabbat":
+        if observed.weekday() == 5:  # Sat=5 in Python (Mon=0)
+            observed = observed + timedelta(days=1)
+    return g == observed
+
+def hebrew_overlap_table(m_idx: int, d_m: int,
+                         start_iso_year: int = LONGRUN_START, end_iso_year: int = LONGRUN_END) -> str:
+    if not HAVE_CONVERTDATE:
+        return ("''Hebrew calendar section requires `convertdate`. "
+                "Install with `pip install convertdate`.''")
+    total = end_iso_year - start_iso_year + 1
+    rows = []
+    for ev in HEBREW_EVENTS:
+        matches = 0
+        for y in range(start_iso_year, end_iso_year + 1):
+            g = zodiac_gregorian_for_iso_year(m_idx, d_m, y)
+            if hebrew_event_matches_gregorian(g, ev):
+                matches += 1
+        cat = f"[[Category:Days that {ev['name']} falls on]]" if matches > 0 else "—"
+        rows.append((ev["name"], matches, total, matches/total, cat))
+    lines = ['{| class="wikitable sortable"',
+             '! Event !! Matches !! Years !! Probability !! Category']
+    for name, c, t, p, cat in rows:
+        lines.append(f"|-\n| {name} || {c} || {t} || {p:.2%} || {cat}")
+    lines.append("|}")
+    return "\n".join(lines)
+
+
 
 # ------------- Page generator (minimal but complete) -------------
 
@@ -207,6 +385,39 @@ def nth_weekday_overlap_block(m_idx: int, d_m: int,
     lines.append("|}")
     return "\n".join(lines)
 
+def ordinal(n: int) -> str:
+    if 10 <= n % 100 <= 20: suf = "th"
+    else: suf = {1:"st", 2:"nd", 3:"rd"}.get(n % 10, "th")
+    return f"{n}{suf}"
+
+def weekday_name_from_iso(wd: int) -> str:
+    # ISO weekday: 1=Mon … 7=Sun
+    return ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"][wd-1]
+
+def build_description_block(m_idx: int, d_m: int) -> str:
+    """Returns the short description block you want, with categories + DEFAULTSORT."""
+    month_name = MONTHS[m_idx-1]
+    iso_week, iso_wd = zodiac_to_iso(m_idx, d_m)          # 1..52, 1..7
+    ord_year = ordinal_in_year(m_idx, d_m)                # 1..364
+    weekday_name = weekday_name_from_iso(iso_wd)
+    jp_informal = f"{m_idx}宮{d_m}日"
+
+    lines = []
+    lines.append(f"{month_name} {d_m} is the {ordinal(ord_year)} day of the year in the Gaiad calendar. "
+                 f"It is the {ordinal(d_m)} day of {month_name}, and it is a {weekday_name}. "
+                 f"It corresponds to ISO week {iso_week}, weekday {iso_wd}.")
+    lines.append("")
+    lines.append(f"Its informal Japanese name is {jp_informal}.")
+    lines.append("")
+    lines.append(f"On this day, [[Gaiad chapter {ord_year}|Chapter {ord_year}]] of the [[Gaiad]] is read.")
+    lines.append("")
+    lines.append(f"[[Category:Days with weekday {weekday_name}]]")
+    lines.append(f"[[Category:Days {d_m} of the Gaiad calendar]]")
+    lines.append(f"[[Category:Days of {month_name}]]")
+    lines.append(f"{{{{DEFAULTSORT:{jp_informal}}}}}")
+    return "\n".join(lines)
+
+
 def easter_offsets_block(m_idx: int, d_m: int,
                          start_iso_year: int = LONGRUN_START, end_iso_year: int = LONGRUN_END) -> str:
     counts = {}; total = end_iso_year - start_iso_year + 1
@@ -339,14 +550,7 @@ def build_page(m_idx: int, d_m: int) -> (str, str):
     next_title = f"{MONTHS[nm-1]} {nd}"
 
     parts = []
-    parts.append("{{Short description|Date in the 13×28 ISO-anchored zodiac calendar}}")
-    parts.append(f"{{DISPLAYTITLE:{base}}}\n")
-    parts.append(
-        f"'''{base}''' is the '''{ordinal(ord1)}''' day of the year in the 13×28 zodiac calendar "
-        f"(months: Sagittarius → … → Scorpio → Ophiuchus). "
-        f"It corresponds to ISO week '''{w}''', weekday '''{wd}''' (1=Mon … 7=Sun). "
-        f"On this day, {reading} is read."
-    )
+    parts.append(build_description_block(m_idx, d_m))
 
     parts.append("\n== Recent (±5 ISO years) ==")
     parts.append(recent_block(m_idx, d_m, span=5))
@@ -359,6 +563,13 @@ def build_page(m_idx: int, d_m: int) -> (str, str):
 
     parts.append("\n== Easter-relative distribution ==")
     parts.append(easter_offsets_block(m_idx, d_m, LONGRUN_START, LONGRUN_END))
+
+    parts.append("\n== Chinese calendar overlaps ==")
+    parts.append(chinese_overlap_table(m_idx, d_m, LONGRUN_START, LONGRUN_END))
+
+    parts.append("\n== Hebrew calendar overlaps ==")
+    parts.append(hebrew_overlap_table(m_idx, d_m, LONGRUN_START, LONGRUN_END))
+
 
     parts.append("\n== See also ==")
     parts.append(f"* [[{prev_title}]]")
