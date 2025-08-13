@@ -144,7 +144,12 @@
       "Bash(then if ! rg -q \"''bot'': 1\" \"$file\")",
       "Bash(then echo \"NEEDS BOT FLAG: $file\")",
       "Bash(for:*)",
-      "Bash(then echo \"$file\")"
+      "Bash(then echo \"$file\")",
+      "Bash(/bashes)",
+      "Bash(tasklist)",
+      "Bash(taskkill:*)",
+      "Bash(kill:*)",
+      "Bash(git pull:*)"
     ],
     "deny": []
   }
