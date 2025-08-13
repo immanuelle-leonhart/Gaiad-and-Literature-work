@@ -1,8 +1,9 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\SiliconProphet\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\SiliconProphet\\.nuget\\packages"
+      "C:\\Users\\Immanuelle\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Immanuelle\\.nuget\\packages",
+      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
     ]
   }
 }

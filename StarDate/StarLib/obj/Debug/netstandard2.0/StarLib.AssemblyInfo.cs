@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyDescriptionAttribute(("The Cosmic Calendar of the Order of Life - Updated for modern .NET with ISO Week " +
     "alignment"))]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("2.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.0.0+12c84b943187c92a095926434fd0559c40f2c8a4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.0.0+bb4c4b8d3da5892400d8c1c25616bdd9696faf07")]
 [assembly: System.Reflection.AssemblyProductAttribute("StarLib")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StarLib")]
 [assembly: System.Reflection.AssemblyVersionAttribute("2.0.0.0")]

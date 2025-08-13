@@ -9,7 +9,8 @@
       "ConsoleApp1/1.0.0": {
         "dependencies": {
           "Kinship": "1.0.0",
-          "StarDate": "1.0.7"
+          "StarDate": "1.0.7",
+          "StarLib": "1.0.7.0"
         },
         "runtime": {
           "ConsoleApp1.dll": {}
@@ -713,7 +714,10 @@
       },
       "Kinship/1.0.0": {
         "runtime": {
-          "Kinship.dll": {}
+          "Kinship.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "StarDate/1.0.7": {
@@ -731,7 +735,18 @@
           "System.Threading.Thread": "4.3.0"
         },
         "runtime": {
-          "StarLib.dll": {}
+          "StarLib.dll": {
+            "assemblyVersion": "1.0.7.0",
+            "fileVersion": "1.0.7.0"
+          }
+        }
+      },
+      "StarLib/1.0.7.0": {
+        "runtime": {
+          "StarLib.dll": {
+            "assemblyVersion": "1.0.7.0",
+            "fileVersion": "1.0.7.0"
+          }
         }
       }
     }
@@ -1316,6 +1331,11 @@
     },
     "StarDate/1.0.7": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StarLib/1.0.7.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

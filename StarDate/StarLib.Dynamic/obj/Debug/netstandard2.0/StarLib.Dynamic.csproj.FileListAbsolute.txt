@@ -22,3 +22,17 @@ C:\Users\SiliconProphet\Documents\GitHub\StarDate2\StarLib.Dynamic\obj\Debug\net
 C:\Users\SiliconProphet\Documents\GitHub\StarDate2\StarLib.Dynamic\obj\Debug\netstandard2.0\StarLib.Dynamic.csproj.CopyComplete
 C:\Users\SiliconProphet\Documents\GitHub\StarDate2\StarLib.Dynamic\obj\Debug\netstandard2.0\StarLib.Dynamic.dll
 C:\Users\SiliconProphet\Documents\GitHub\StarDate2\StarLib.Dynamic\obj\Debug\netstandard2.0\StarLib.Dynamic.pdb
+C:\Users\Immanuelle\Documents\Github\Gaiad-Genealogy\StarDate\StarLib.Dynamic\bin\Debug\netstandard2.0\StarLib.Dynamic.deps.json
+C:\Users\Immanuelle\Documents\Github\Gaiad-Genealogy\StarDate\StarLib.Dynamic\bin\Debug\netstandard2.0\StarLib.Dynamic.dll
+C:\Users\Immanuelle\Documents\Github\Gaiad-Genealogy\StarDate\StarLib.Dynamic\bin\Debug\netstandard2.0\StarLib.Dynamic.pdb
+C:\Users\Immanuelle\Documents\Github\Gaiad-Genealogy\StarDate\StarLib.Dynamic\bin\Debug\netstandard2.0\StarLib.dll
+C:\Users\Immanuelle\Documents\Github\Gaiad-Genealogy\StarDate\StarLib.Dynamic\bin\Debug\netstandard2.0\StarLib.pdb
+C:\Users\Immanuelle\Documents\Github\Gaiad-Genealogy\StarDate\StarLib.Dynamic\obj\Debug\netstandard2.0\StarLib.Dynamic.csproj.AssemblyReference.cache
+C:\Users\Immanuelle\Documents\Github\Gaiad-Genealogy\StarDate\StarLib.Dynamic\obj\Debug\netstandard2.0\StarLib.Dynamic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Immanuelle\Documents\Github\Gaiad-Genealogy\StarDate\StarLib.Dynamic\obj\Debug\netstandard2.0\StarLib.Dynamic.AssemblyInfoInputs.cache
+C:\Users\Immanuelle\Documents\Github\Gaiad-Genealogy\StarDate\StarLib.Dynamic\obj\Debug\netstandard2.0\StarLib.Dynamic.AssemblyInfo.cs
+C:\Users\Immanuelle\Documents\Github\Gaiad-Genealogy\StarDate\StarLib.Dynamic\obj\Debug\netstandard2.0\StarLib.Dynamic.csproj.CoreCompileInputs.cache
+C:\Users\Immanuelle\Documents\Github\Gaiad-Genealogy\StarDate\StarLib.Dynamic\obj\Debug\netstandard2.0\StarLib.Dynamic.sourcelink.json
+C:\Users\Immanuelle\Documents\Github\Gaiad-Genealogy\StarDate\StarLib.Dynamic\obj\Debug\netstandard2.0\StarLib..302D8FFD.Up2Date
+C:\Users\Immanuelle\Documents\Github\Gaiad-Genealogy\StarDate\StarLib.Dynamic\obj\Debug\netstandard2.0\StarLib.Dynamic.dll
+C:\Users\Immanuelle\Documents\Github\Gaiad-Genealogy\StarDate\StarLib.Dynamic\obj\Debug\netstandard2.0\StarLib.Dynamic.pdb

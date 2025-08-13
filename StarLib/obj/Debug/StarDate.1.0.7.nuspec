@@ -4,7 +4,6 @@
     <id>StarDate</id>
     <version>1.0.7</version>
     <authors>Silicon Prophet</authors>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="file">LICENSE</license>
     <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
     <icon>DNA Tree Logo.jpg</icon>
@@ -13,7 +12,7 @@
     <releaseNotes>Placeholder for dev</releaseNotes>
     <copyright>Order of Life 2020</copyright>
     <tags>Order of Life, Calendar, StarDate</tags>
-    <repository type="Library" url="https://github.com/siliconprophet/StarDate" />
+    <repository type="Library" url="https://github.com/siliconprophet/StarDate" commit="bb4c4b8d3da5892400d8c1c25616bdd9696faf07" />
     <dependencies>
       <group targetFramework=".NETStandard1.6">
         <dependency id="Microsoft.Win32.Primitives" version="4.3.0" exclude="Build,Analyzers" />
@@ -31,8 +30,8 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="C:\Users\SiliconProphet\Documents\GitHub\Order\StarDate\StarLib\bin\Debug\netstandard1.6\StarLib.dll" target="lib\netstandard1.6\StarLib.dll" />
-    <file src="C:\Users\SiliconProphet\Documents\Dropbox\branding images\DNA Tree Logo.jpg" target="DNA Tree Logo.jpg" />
-    <file src="C:\Users\SiliconProphet\Documents\GitHub\Order\StarDate\LICENSE" target="LICENSE" />
+    <file src="C:\Users\Immanuelle\Documents\Github\Gaiad-Genealogy\StarLib\bin\Debug\netstandard1.6\StarLib.dll" target="lib\netstandard1.6\StarLib.dll" />
+    <file src="C:\Users\Immanuelle\Dropbox\branding images\DNA Tree Logo.jpg" target="DNA Tree Logo.jpg" />
+    <file src="C:\Users\Immanuelle\Documents\Github\Gaiad-Genealogy\LICENSE" target="LICENSE" />
   </files>
 </package>
