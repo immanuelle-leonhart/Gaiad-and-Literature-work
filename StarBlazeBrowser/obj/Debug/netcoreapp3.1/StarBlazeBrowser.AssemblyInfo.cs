@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StarBlazeBrowser")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+12c84b943187c92a095926434fd0559c40f2c8a4")]
 [assembly: System.Reflection.AssemblyProductAttribute("StarBlazeBrowser")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StarBlazeBrowser")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -151,7 +151,9 @@
       "Bash(taskkill:*)",
       "Bash(kill:*)",
       "Bash(git pull:*)",
-      "Bash(do if rg -q \"(wbeditentity|wbcreateclaim|wbsetlabel|wbsetaliases|wbsetdescription|wbremoveclaims|''action'': ''edit'')\" \"$file\")"
+      "Bash(do if rg -q \"(wbeditentity|wbcreateclaim|wbsetlabel|wbsetaliases|wbsetdescription|wbremoveclaims|''action'': ''edit'')\" \"$file\")",
+      "Bash(dotnet --version)",
+      "Bash(dotnet build:*)"
     ],
     "deny": []
   }
