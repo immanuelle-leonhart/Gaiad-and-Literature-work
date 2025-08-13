@@ -231,29 +231,44 @@ def hebrew_distribution_block(m_idx: int, d_m: int,
     if not HAVE_HEBREW:
         return "<!-- Hebrew distribution skipped: convertdate.hebrew not available -->"
 
-    counts: dict[tuple[int, str, int], int] = {}   # key: (sort_idx, label, day)
-    tested = 0
+    from collections import Counter
+    counts: Counter[tuple[int, str, int]] = Counter()  # (sort_idx, label, day)
 
     for y in range(start_iso_year, end_iso_year + 1):
+        gdate = zodiac_gregorian_for_iso_year(m_idx, d_m, y)
         try:
-            g = zodiac_gregorian_for_iso_year(m_idx, d_m, y)
-            hy, hm, hd = H.from_gregorian(g.year, g.month, g.day)
+            hy, hm, hd = H.from_gregorian(gdate.year, gdate.month, gdate.day)
         except Exception:
-            # if conversion ever fails (rare), skip that year
             continue
-        tested += 1
-        label, idx = hebrew_label_and_index(hy, hm)
-        key = (idx, label, hd)
-        counts[key] = counts.get(key, 0) + 1
 
-    lines = ['{| class="wikitable sortable"',
-             f'! Hebrew month-day !! Count !! Probability']
-    denom = tested if tested else 1
-    for (idx, label, day) in sorted(counts.keys()):
-        c = counts[(idx, label, day)]
-        lines.append(f"|-\n| {label} {day} || {c} || {c/denom:.2%}")
+        # label + stable sort index (Nisan=1 … Adar/Adar I=12 … Adar II=13)
+        if hm == 12:
+            label, idx = ("Adar I", 12) if H.leap(hy) else ("Adar", 12)
+        elif hm == 13:
+            label, idx = ("Adar II", 13)
+        else:
+            HEB_NAMES = {
+                1:"Nisan", 2:"Iyar", 3:"Sivan", 4:"Tammuz", 5:"Av", 6:"Elul",
+                7:"Tishrei", 8:"Cheshvan", 9:"Kislev", 10:"Tevet", 11:"Shevat"
+            }
+            label, idx = (HEB_NAMES[hm], hm)
+
+        if 1 <= hd <= 30:
+            counts[(idx, label, hd)] += 1
+
+    total = sum(counts.values()) or 1  # denom = actually counted years
+
+    lines = [
+        '{| class="wikitable sortable"',
+        f'! Hebrew month-day !! Count !! Probability'
+    ]
+    for (idx, label, hday) in sorted(counts.keys()):
+        c = counts[(idx, label, hday)]
+        lines.append(f"|-\n| {label} {hday} || {c} || {c/total:.2%}")
     lines.append("|}")
+    lines.append(f"<small>Years tested: {total}</small>")
     return "\n".join(lines)
+
 
 
 def chinese_distribution_block(m_idx: int, d_m: int,
@@ -264,37 +279,38 @@ def chinese_distribution_block(m_idx: int, d_m: int,
 
     from collections import Counter
     counts: Counter[tuple[int, bool, int]] = Counter()
-    years_tested = 0
+    years_counted = 0  # years that successfully converted & were counted
 
     for y in range(start_iso_year, end_iso_year + 1):
         gdate = zodiac_gregorian_for_iso_year(m_idx, d_m, y)
         try:
             l = LunarDate.fromSolarDate(gdate.year, gdate.month, gdate.day)
         except Exception:
-            # outside lunardate support -> skip this year (don’t dilute denominator)
+            # year outside lunardate support -> skip (don’t dilute)
             continue
 
-        years_tested += 1
-        lunar_month  = int(getattr(l, "month"))
-        lunar_day    = int(getattr(l, "day"))
-        is_leap      = bool(getattr(l, "isLeapMonth", getattr(l, "leap", False)))
+        lunar_month = int(getattr(l, "month"))
+        lunar_day   = int(getattr(l, "day"))
+        is_leap     = bool(getattr(l, "isLeapMonth", getattr(l, "leap", False)))
 
-        # sanity clamp: lunar day must be 1..30
         if 1 <= lunar_day <= 30 and 1 <= lunar_month <= 12:
             counts[(lunar_month, is_leap, lunar_day)] += 1
+            years_counted += 1
 
-    denom = years_tested if years_tested else 1
+    total = sum(counts.values()) or 1  # denom = actually counted years
 
-    lines = ['{| class="wikitable sortable"',
-             f'! Chinese lunar month-day !! Count !! Probability']
-    # sort: month (1..12), non-leap before leap, day (1..30)
+    lines = [
+        '{| class="wikitable sortable"',
+        f'! Chinese lunar month-day !! Count !! Probability'
+    ]
     for (lm, leap_flag, lday) in sorted(counts.keys(), key=lambda k: (k[0], 1 if k[1] else 0, k[2])):
         label = (f"Leap Month {lm} {lday}" if leap_flag else f"Month {lm} {lday}")
         c = counts[(lm, leap_flag, lday)]
-        lines.append(f"|-\n| {label} || {c} || {c/denom:.2%}")
+        lines.append(f"|-\n| {label} || {c} || {c/total:.2%}")
     lines.append("|}")
+    # (Optional) add a one-line note showing the tested-year count:
+    lines.append(f"<small>Years tested: {total}</small>")
     return "\n".join(lines)
-
 
 
 
