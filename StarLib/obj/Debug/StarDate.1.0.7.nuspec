@@ -12,7 +12,7 @@
     <releaseNotes>Placeholder for dev</releaseNotes>
     <copyright>Order of Life 2020</copyright>
     <tags>Order of Life, Calendar, StarDate</tags>
-    <repository type="Library" url="https://github.com/siliconprophet/StarDate" commit="c3ac7bf8fd16f016febc2a5a476e198980576152" />
+    <repository type="Library" url="https://github.com/siliconprophet/StarDate" commit="070da7d324cedbac2ec41f09d9acafb957a8f718" />
     <dependencies>
       <group targetFramework=".NETStandard1.6">
         <dependency id="Microsoft.Win32.Primitives" version="4.3.0" exclude="Build,Analyzers" />
@@ -31,7 +31,6 @@
   </metadata>
   <files>
     <file src="C:\Users\Immanuelle\Documents\Github\Gaiad-Genealogy\StarLib\bin\Debug\netstandard1.6\StarLib.dll" target="lib\netstandard1.6\StarLib.dll" />
-    <file src="C:\Users\Immanuelle\Dropbox\branding images\DNA Tree Logo.jpg" target="DNA Tree Logo.jpg" />
     <file src="C:\Users\Immanuelle\Documents\Github\Gaiad-Genealogy\LICENSE" target="LICENSE" />
   </files>
 </package>
