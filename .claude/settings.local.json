@@ -150,7 +150,8 @@
       "Bash(tasklist)",
       "Bash(taskkill:*)",
       "Bash(kill:*)",
-      "Bash(git pull:*)"
+      "Bash(git pull:*)",
+      "Bash(do if rg -q \"(wbeditentity|wbcreateclaim|wbsetlabel|wbsetaliases|wbsetdescription|wbremoveclaims|''action'': ''edit'')\" \"$file\")"
     ],
     "deny": []
   }
