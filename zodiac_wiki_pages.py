@@ -3,6 +3,8 @@
 
 import time
 from datetime import date, datetime, timedelta
+from datetime import date, timedelta
+
 import requests
 
 API_URL     = "https://evolutionism.miraheze.org/w/api.php"
@@ -44,15 +46,60 @@ def reading_for_ordinal(ord1: int) -> str:
     return f"Chapter {ord1} of the Gaiad"
 
 def nth_weekday_of_month(year: int, month: int, weekday_mon0: int, n: int) -> date:
+    """weekday_mon0: 0=Mon .. 6=Sun; n>=1"""
     d = date(year, month, 1)
     delta = (weekday_mon0 - d.weekday()) % 7
     first = d + timedelta(days=delta)
     return first + timedelta(weeks=n-1)
 
+def last_weekday_of_month(year: int, month: int, weekday_mon0: int) -> date:
+    """weekday_mon0: 0=Mon .. 6=Sun"""
+    if month == 12:
+        d = date(year, 12, 31)
+    else:
+        d = date(year, month + 1, 1) - timedelta(days=1)
+    delta = (d.weekday() - weekday_mon0) % 7
+    return d - timedelta(days=delta)
+
 def nth_weekday_holidays_for_year(year: int):
-    return {
-        "U.S. Thanksgiving (4th Thu Nov)": nth_weekday_of_month(year, 11, weekday_mon0=3, n=4),
-    }
+    """
+    Returns {label: gregorian_date} for Nth-weekday style holidays.
+    Labels are explicit about country; US/CA Thanksgiving are separate.
+    """
+    rules = {}
+
+    # --- United States (federal) ---
+    rules["US Martin Luther King Jr. Day (3rd Mon Jan)"] = nth_weekday_of_month(year, 1, 0, 3)
+    rules["US Presidents Day (Washington’s Birthday, 3rd Mon Feb)"] = nth_weekday_of_month(year, 2, 0, 3)
+    rules["US Memorial Day (last Mon May)"] = last_weekday_of_month(year, 5, 0)
+    rules["US Labor Day (1st Mon Sep)"] = nth_weekday_of_month(year, 9, 0, 1)
+    rules["US Columbus Day / Indigenous Peoples’ Day (2nd Mon Oct)"] = nth_weekday_of_month(year, 10, 0, 2)
+    us_thanks = nth_weekday_of_month(year, 11, 3, 4)  # Thu=3
+    rules["US Thanksgiving (4th Thu Nov)"] = us_thanks
+
+    # Black Friday = day after US Thanksgiving
+    rules["US Black Friday (Fri after US Thanksgiving)"] = us_thanks + timedelta(days=1)
+
+    # --- United States (common observances) ---
+    rules["US Mother’s Day (2nd Sun May)"] = nth_weekday_of_month(year, 5, 6, 2)  # Sun=6
+    rules["US Father’s Day (3rd Sun Jun)"] = nth_weekday_of_month(year, 6, 6, 3)
+
+    # --- Canada (national/federal) ---
+    rules["Canada Labour Day (1st Mon Sep)"] = nth_weekday_of_month(year, 9, 0, 1)
+    rules["Canada Thanksgiving (2nd Mon Oct)"] = nth_weekday_of_month(year, 10, 0, 2)
+
+    # --- Canada (provincial examples) ---
+    rules["Canada Family Day (most prov., 3rd Mon Feb)"] = nth_weekday_of_month(year, 2, 0, 3)
+    rules["Canada Civic Holiday (1st Mon Aug)"] = nth_weekday_of_month(year, 8, 0, 1)
+    rules["Yukon Discovery Day (3rd Mon Aug)"] = nth_weekday_of_month(year, 8, 0, 3)
+
+    # --- Japan (national holidays via Happy Monday rules) ---
+    rules["Japan Coming of Age Day (2nd Mon Jan)"] = nth_weekday_of_month(year, 1, 0, 2)
+    rules["Japan Marine Day (3rd Mon Jul)"] = nth_weekday_of_month(year, 7, 0, 3)
+    rules["Japan Respect for the Aged Day (3rd Mon Sep)"] = nth_weekday_of_month(year, 9, 0, 3)
+    rules["Japan Sports Day (2nd Mon Oct)"] = nth_weekday_of_month(year, 10, 0, 2)
+
+    return rules
 
 def easter_sunday_gregorian(year: int) -> date:
     a = year % 19; b = year // 100; c = year % 100
