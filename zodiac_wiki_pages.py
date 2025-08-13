@@ -126,11 +126,18 @@ def chinese_event_matches_gregorian(g: date, ev: dict) -> bool | None:
         return None
     return None
 
+
+# --- helper: append a category tag inline with the label when there’s a hit ---
+def label_with_category(name: str, hit_count: int) -> str:
+    return f"{name} [[Category:Days that {name} falls on]]" if hit_count > 0 else name
+
+
 def chinese_overlap_table(m_idx: int, d_m: int,
                           start_iso_year: int = LONGRUN_START, end_iso_year: int = LONGRUN_END) -> str:
     if not HAVE_CONVERTDATE:
         return ("''Chinese calendar section requires `convertdate`. "
                 "Install with `pip install convertdate`.''")
+
     total = end_iso_year - start_iso_year + 1
     rows = []
     for ev in CHINESE_EVENTS:
@@ -138,23 +145,23 @@ def chinese_overlap_table(m_idx: int, d_m: int,
         supported = True
         for y in range(start_iso_year, end_iso_year + 1):
             g = zodiac_gregorian_for_iso_year(m_idx, d_m, y)
-            res = chinese_event_matches_gregorian(g, ev)
+            res = chinese_event_matches_gregorian(g, ev)  # your existing matcher
             if res is None:
                 supported = False
                 break
             if res:
                 matches += 1
         prob = (matches / total) if supported else 0.0
-        cat = f"[[Category:Days that {ev['name']} falls on]]" if matches > 0 else "—"
-        note = "" if supported else " (requires solar-term calc)"
-        rows.append((ev["name"] + note, matches, total, prob, cat))
-    # Build wiki table
-    lines = ['{| class="wikitable sortable"',
-             '! Event !! Matches !! Years !! Probability !! Category']
-    for name, c, t, p, cat in rows:
-        lines.append(f"|-\n| {name} || {c} || {t} || {p:.2%} || {cat}")
+        name = ev["name"] + ("" if supported else " (requires solar-term calc)")
+        name_cell = label_with_category(name, matches)
+        rows.append((name_cell, matches, total, prob))
+
+    lines = ['{| class="wikitable sortable"', '! Event !! Matches !! Years !! Probability']
+    for name_cell, c, t, p in rows:
+        lines.append(f"|-\n| {name_cell} || {c} || {t} || {p:.2%}")
     lines.append("|}")
     return "\n".join(lines)
+
 
 # ---------- HEBREW MATCHERS ----------
 
@@ -176,22 +183,24 @@ def hebrew_overlap_table(m_idx: int, d_m: int,
     if not HAVE_CONVERTDATE:
         return ("''Hebrew calendar section requires `convertdate`. "
                 "Install with `pip install convertdate`.''")
+
     total = end_iso_year - start_iso_year + 1
     rows = []
     for ev in HEBREW_EVENTS:
         matches = 0
         for y in range(start_iso_year, end_iso_year + 1):
             g = zodiac_gregorian_for_iso_year(m_idx, d_m, y)
-            if hebrew_event_matches_gregorian(g, ev):
+            if hebrew_event_matches_gregorian(g, ev):     # your existing matcher
                 matches += 1
-        cat = f"[[Category:Days that {ev['name']} falls on]]" if matches > 0 else "—"
-        rows.append((ev["name"], matches, total, matches/total, cat))
-    lines = ['{| class="wikitable sortable"',
-             '! Event !! Matches !! Years !! Probability !! Category']
-    for name, c, t, p, cat in rows:
-        lines.append(f"|-\n| {name} || {c} || {t} || {p:.2%} || {cat}")
+        name_cell = label_with_category(ev["name"], matches)
+        rows.append((name_cell, matches, total, matches/total))
+
+    lines = ['{| class="wikitable sortable"', '! Event !! Matches !! Years !! Probability']
+    for name_cell, c, t, p in rows:
+        lines.append(f"|-\n| {name_cell} || {c} || {t} || {p:.2%}")
     lines.append("|}")
     return "\n".join(lines)
+
 
 
 
