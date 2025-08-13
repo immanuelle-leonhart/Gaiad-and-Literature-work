@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Kinship")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+12c84b943187c92a095926434fd0559c40f2c8a4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Kinship")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Kinship")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

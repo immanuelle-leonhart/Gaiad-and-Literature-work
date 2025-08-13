@@ -1,18 +1,18 @@
 <Project Sdk="Microsoft.NET.Sdk.Razor">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <Description>Modern Blazor components for the Cosmic Calendar with ISO Week support</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <Company>Order of Life</Company>
     <Authors>Silicon Prophet</Authors>
     <PackageProjectUrl>https://order.life/software</PackageProjectUrl>
-    <PackageIcon>zodiac.ico</PackageIcon>
+    <!-- PackageIcon>zodiac.ico</PackageIcon -->
     <RepositoryType>Library</RepositoryType>
     <RepositoryUrl>https://github.com/siliconprophet/StarDate</RepositoryUrl>
     <PackageTags>Order of Life, Calendar, StarDate, Blazor, ISO Week</PackageTags>
-    <PackageReleaseNotes>Version 2.0.0: Modern .NET 8 Blazor components with ISO Week alignment</PackageReleaseNotes>
+    <PackageReleaseNotes>Version 2.0.0: Modern .NET 9 Blazor components with ISO Week alignment</PackageReleaseNotes>
     <PackageId>StarDate.Forms</PackageId>
     <Version>2.0.0</Version>
     
@@ -24,9 +24,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <!-- Modern Blazor 8.0 components -->
-    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.8" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.8" />
+    <!-- Modern Blazor 9.0 components -->
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="9.0.0" />
   </ItemGroup>
 
   <ItemGroup>

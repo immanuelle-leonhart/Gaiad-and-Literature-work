@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <!-- Multi-target for maximum compatibility -->
-    <TargetFrameworks>net8.0;netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>net9.0;netstandard2.0</TargetFrameworks>
     <PackageId>StarDate</PackageId>
     <Version>2.0.0</Version>
     <Authors>Silicon Prophet</Authors>
@@ -12,10 +12,10 @@
     <Copyright>Order of Life 2024</Copyright>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageProjectUrl>https://order.life/software</PackageProjectUrl>
-    <PackageIcon>zodiac.ico</PackageIcon>
+    <!-- PackageIcon>zodiac.ico</PackageIcon -->
     <RepositoryUrl>https://github.com/siliconprophet/StarDate</RepositoryUrl>
     <RepositoryType>Library</RepositoryType>
-    <PackageReleaseNotes>Version 2.0.0: Modern .NET 8 support, ISO Week alignment for 1宮1日, improved API</PackageReleaseNotes>
+    <PackageReleaseNotes>Version 2.0.0: Modern .NET 9 support, ISO Week alignment for 1宮1日, improved API</PackageReleaseNotes>
     <PackageTags>Order of Life, Calendar, StarDate, ISO Week, Cosmic Calendar</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <ApplicationIcon>zodiac.ico</ApplicationIcon>
@@ -40,15 +40,15 @@
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
-    <None Include="zodiac.ico">
+    <!-- None Include="zodiac.ico">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
-    </None>
+    </None -->
   </ItemGroup>
 
   <!-- Modern package references -->
   <ItemGroup>
-    <PackageReference Include="System.Text.Json" Version="8.0.4" />
+    <PackageReference Include="System.Text.Json" Version="9.0.0" />
     <!-- Keep Newtonsoft.Json for compatibility -->
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
