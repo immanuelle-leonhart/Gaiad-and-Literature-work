@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LazyDesktop")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c13927a751b96e4a1895eca9fa8cd12863d2d093")]
 [assembly: System.Reflection.AssemblyProductAttribute("LazyDesktop")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LazyDesktop")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

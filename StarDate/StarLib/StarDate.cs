@@ -3025,22 +3025,65 @@ namespace StarLib
             }
         }
 
-        // Returns the week-of-Year part of this StarDate. The returned value
-        // is an integer between 1 and 54.
+        // Returns the ISO week-of-Year part of this StarDate. The returned value
+        // is an integer between 1 and 53. Week 53 is the intercalary Horus week.
+        // 1宮1日 (Sagittarius 1) always falls on ISO Week 1, Day 1.
         //
 
         public int WeekOfYear
         {
             get
             {
-                Contract.Ensures(Contract.Result<int>() >= 1 && Contract.Result<int>() <= 54);
-                return (DayOfYear / 7) + 1;
+                Contract.Ensures(Contract.Result<int>() >= 1 && Contract.Result<int>() <= 53);
+                // For ISO alignment: 1宮1日 (Sagittarius 1) = ISO Week 1, Day 1
+                // Regular year: 52 weeks (weeks 1-52)
+                // Leap year: 53 weeks (weeks 1-52 + week 53 for Horus/intercalary)
+                
+                // Handle Horus week (intercalary) as ISO Week 53
+                if (Month == 14) // Horus month
+                {
+                    return 53;
+                }
+                
+                // Calculate standard week number (1-52)
+                // Since 1宮1日 is always ISO Week 1 Day 1, and each month has exactly 28 days (4 weeks),
+                // the calculation is straightforward
+                int weekNum = ((Month - 1) * 4) + ((Day - 1) / 7) + 1;
+                
+                return Math.Min(weekNum, 52);
             }
             set
             {
-                Contract.Ensures(value >= 1 && value <= (54));
+                Contract.Ensures(value >= 1 && value <= 53);
                 int diff = value - this.WeekOfYear;
                 this = this.AddWeeks(diff);
+            }
+        }
+
+        /// <summary>
+        /// Returns the Chinese/Japanese palace (宮) number. Sagittarius = 1宮, Capricorn = 2宮, etc.
+        /// </summary>
+        public int Palace
+        {
+            get
+            {
+                Contract.Ensures(Contract.Result<int>() >= 1 && Contract.Result<int>() <= 14);
+                return Month;
+            }
+        }
+
+        /// <summary>
+        /// Returns the ISO day of week (1=Monday, 7=Sunday) to align with ISO 8601 standard.
+        /// This ensures 1宮1日 (Sagittarius 1) always falls on Monday (ISO day 1).
+        /// </summary>
+        public int IsoDayOfWeek
+        {
+            get
+            {
+                Contract.Ensures(Contract.Result<int>() >= 1 && Contract.Result<int>() <= 7);
+                // Since 1宮1日 is always Monday (ISO day 1), we can calculate from there
+                // Day 1 of month = Monday, Day 2 = Tuesday, etc.
+                return ((Day - 1) % 7) + 1;
             }
         }
 

@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib\\StarLib.csproj": {}
+    "C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\StarDate\\StarLib\\StarLib.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib\\StarLib.csproj": {
+    "C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\StarDate\\StarLib\\StarLib.csproj": {
       "version": "1.0.7",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib\\StarLib.csproj",
+        "projectUniqueName": "C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\StarDate\\StarLib\\StarLib.csproj",
         "projectName": "StarDate",
-        "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib\\StarLib.csproj",
-        "packagesPath": "C:\\Users\\SiliconProphet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLib\\obj\\",
+        "projectPath": "C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\StarDate\\StarLib\\StarLib.csproj",
+        "packagesPath": "C:\\Users\\Immanuelle\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\StarDate\\StarLib\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\SiliconProphet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Immanuelle\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,6 +30,7 @@
         },
         "frameworks": {
           "netstandard1.6": {
+            "targetAlias": "netstandard1.6",
             "projectReferences": {}
           }
         },
@@ -33,10 +38,17 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "netstandard1.6": {
+          "targetAlias": "netstandard1.6",
           "dependencies": {
             "Microsoft.Win32.Primitives": {
               "target": "Package",
@@ -84,7 +96,7 @@
               "version": "[4.3.0, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
