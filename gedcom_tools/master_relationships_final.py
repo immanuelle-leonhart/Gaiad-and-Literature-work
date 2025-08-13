@@ -7,8 +7,6 @@ Uses correct property IDs that exist in Evolutionism Wikibase:
 - P48: Mother  
 - P42: Spouse
 - P20: Child
-
-Includes safeguards for missing spouses/children and a 6-hour startup delay.
 """
 
 import requests
@@ -125,27 +123,18 @@ def parse_master_gedcom():
     return individuals, families
 
 def parse_individual(lines):
-    individual = {'id': '', 'name': '', 'sex': ''}
+    individual = {'id': '', 'name': '', 'spouse_families': [], 'parent_family': ''}
     
     for line in lines:
         line = line.strip()
-        if not line:
-            continue
-            
-        parts = line.split(' ', 2)
-        if len(parts) < 2:
-            continue
-            
-        level = int(parts[0])
-        tag = parts[1]
-        value = parts[2] if len(parts) > 2 else ''
-        
-        if level == 0 and tag.startswith('@I') and tag.endswith('@'):
-            individual['id'] = tag
-        elif level == 1 and tag == 'NAME':
-            individual['name'] = value
-        elif level == 1 and tag == 'SEX':
-            individual['sex'] = value
+        if line.startswith('0 @I') and line.endswith('@ INDI'):
+            individual['id'] = line.split()[1]
+        elif line.startswith('1 NAME '):
+            individual['name'] = line[7:].strip()
+        elif line.startswith('1 FAMS '):
+            individual['spouse_families'].append(line[7:].strip())
+        elif line.startswith('1 FAMC '):
+            individual['parent_family'] = line[7:].strip()
     
     return individual
 
@@ -154,54 +143,24 @@ def parse_family(lines):
     
     for line in lines:
         line = line.strip()
-        if not line:
-            continue
-            
-        parts = line.split(' ', 2)
-        if len(parts) < 2:
-            continue
-            
-        level = int(parts[0])
-        tag = parts[1]
-        value = parts[2] if len(parts) > 2 else ''
-        
-        if level == 0 and tag.startswith('@F') and tag.endswith('@'):
-            family['id'] = tag
-        elif level == 1 and tag == 'HUSB':
-            family['husband'] = value
-        elif level == 1 and tag == 'WIFE':
-            family['wife'] = value
-        elif level == 1 and tag == 'CHIL':
-            family['children'].append(value)
+        if line.startswith('0 @F') and line.endswith('@ FAM'):
+            family['id'] = line.split()[1]
+        elif line.startswith('1 HUSB '):
+            family['husband'] = line[7:].strip()
+        elif line.startswith('1 WIFE '):
+            family['wife'] = line[7:].strip()
+        elif line.startswith('1 CHIL '):
+            family['children'].append(line[7:].strip())
     
     return family
 
-def add_relationship_using_wbeditentity(session, individual_qid, property_id, related_qid_list, csrf_token):
-    # Build claims for the property with multiple related individuals
-    claims = []
-    for related_qid in related_qid_list:
-        claims.append({
-            'mainsnak': {
-                'snaktype': 'value',
-                'property': property_id,
-                'datavalue': {
-                    'value': {'entity-type': 'item', 'numeric-id': int(related_qid[1:])},
-                    'type': 'wikibase-entityid'
-                }
-            },
-            'type': 'statement'
-        })
-    
-    statement_data = {
-        'claims': {
-            property_id: claims
-        }
-    }
-    
+def add_relationship(session, qid, property_id, value_qid, csrf_token):
     params = {
-        'action': 'wbeditentity',
-        'id': individual_qid,
-        'data': json.dumps(statement_data),
+        'action': 'wbcreateclaim',
+        'entity': qid,
+        'property': property_id,
+        'snaktype': 'value',
+        'value': json.dumps({'entity-type': 'item', 'numeric-id': int(value_qid[1:])}),
         'format': 'json',
         'token': csrf_token,
         'bot': 1
@@ -211,13 +170,6 @@ def add_relationship_using_wbeditentity(session, individual_qid, property_id, re
     return response.json()
 
 def main():
-    print("Master relationships script starting in 6 hours...")
-    print("Current time:", time.strftime('%Y-%m-%d %H:%M:%S'))
-    print("Will start at:", time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time() + 6*3600)))
-    
-    # Wait 6 hours (21600 seconds)
-    time.sleep(21600)
-    
     print("Starting Master relationships with correct property IDs...")
     print("Property mappings:")
     print("  P47: Father")
@@ -225,133 +177,94 @@ def main():
     print("  P42: Spouse")
     print("  P20: Child")
     
-    # Load mappings and parse GEDCOM
-    individual_mappings = load_existing_mappings()
-    individuals, families = parse_master_gedcom()
-    
-    print(f"Loaded {len(individual_mappings)} individual mappings")
-    print(f"Parsed {len(individuals)} individuals and {len(families)} families from GEDCOM")
-    
+    # Create session and login
     session = create_session()
     if not login_to_wiki(session):
-        print("Failed to login. Exiting.")
+        print("Login failed!")
         return
-    print("Successfully logged in!")
     
     csrf_token = get_csrf_token(session)
+    print("Login successful!")
     
+    # Load mappings and parse GEDCOM
+    print("Loading individual mappings...")
+    individual_mappings = load_existing_mappings()
+    print(f"Loaded {len(individual_mappings)} individual mappings")
+    
+    print("Parsing master GEDCOM file...")
+    individuals, families = parse_master_gedcom()
+    print(f"Parsed {len(individuals)} individuals and {len(families)} families")
+    
+    # Process families
     success_count = 0
-    error_count = 0
     skip_count = 0
     
     for family_id, family in families.items():
         print(f"\nProcessing family {family_id}")
         
-        # Get QIDs for family members (with safety checks)
-        husband_qid = None
-        wife_qid = None
-        child_qids = []
+        # Get QIDs for family members
+        husband_qid = individual_mappings.get(family['husband'])
+        wife_qid = individual_mappings.get(family['wife'])
         
-        if family['husband'] and family['husband'] in individual_mappings:
-            husband_qid = individual_mappings[family['husband']]
-        
-        if family['wife'] and family['wife'] in individual_mappings:
-            wife_qid = individual_mappings[family['wife']]
-        
-        for child_id in family['children']:
-            if child_id and child_id in individual_mappings:
-                child_qids.append(individual_mappings[child_id])
-        
-        # Add spouse relationships (only if both exist)
+        # Add spouse relationships
         if husband_qid and wife_qid:
             print(f"  Adding spouse relationship: {family['husband']} <-> {family['wife']}")
             
             # Add wife to husband's spouse property (P42)
-            result = add_relationship_using_wbeditentity(session, husband_qid, 'P42', [wife_qid], csrf_token)
+            result = add_relationship(session, husband_qid, 'P42', wife_qid, csrf_token)
             if 'success' in result:
+                print(f"    SUCCESS: Added wife to husband")
                 success_count += 1
-            else:
-                print(f"    Error adding wife to husband: {result}")
-                error_count += 1
-            
-            time.sleep(1)
+            time.sleep(0.5)
             
             # Add husband to wife's spouse property (P42)
-            result = add_relationship_using_wbeditentity(session, wife_qid, 'P42', [husband_qid], csrf_token)
+            result = add_relationship(session, wife_qid, 'P42', husband_qid, csrf_token)
             if 'success' in result:
+                print(f"    SUCCESS: Added husband to wife")
                 success_count += 1
-            else:
-                print(f"    Error adding husband to wife: {result}")
-                error_count += 1
-            
-            time.sleep(1)
-        else:
-            if not husband_qid and not wife_qid:
-                print(f"  Skipping spouse relationship: both husband and wife missing from mappings")
-            elif not husband_qid:
-                print(f"  Skipping spouse relationship: husband {family['husband']} missing from mappings")
-            else:
-                print(f"  Skipping spouse relationship: wife {family['wife']} missing from mappings")
-            skip_count += 1
+            time.sleep(0.5)
         
-        # Add parent-child relationships (only for children that exist)
-        for child_id in family['children']:
-            if not child_id or child_id not in individual_mappings:
-                print(f"  Skipping child {child_id}: not in mappings")
-                skip_count += 1
-                continue
+        # Add parent-child relationships
+        for child_gedcom in family['children']:
+            child_qid = individual_mappings.get(child_gedcom)
+            if child_qid:
+                print(f"  Adding parent-child relationships for {child_gedcom}")
                 
-            child_qid = individual_mappings[child_id]
-            print(f"  Adding parent-child relationships for {child_id}")
-            
-            # Add father relationship (P47) if husband exists
-            if husband_qid:
-                result = add_relationship_using_wbeditentity(session, child_qid, 'P47', [husband_qid], csrf_token)
-                if 'success' in result:
-                    success_count += 1
-                else:
-                    print(f"    Error adding father: {result}")
-                    error_count += 1
-                time.sleep(1)
+                # Add father relationship (P47) if husband exists
+                if husband_qid:
+                    result = add_relationship(session, child_qid, 'P47', husband_qid, csrf_token)
+                    if 'success' in result:
+                        print(f"    SUCCESS: Added father relationship")
+                        success_count += 1
+                    time.sleep(0.5)
+                    
+                    # Add child to father's children (P20)
+                    result = add_relationship(session, husband_qid, 'P20', child_qid, csrf_token)
+                    if 'success' in result:
+                        print(f"    SUCCESS: Added child to father")
+                        success_count += 1
+                    time.sleep(0.5)
                 
-                # Add child to father's children (P20)
-                result = add_relationship_using_wbeditentity(session, husband_qid, 'P20', [child_qid], csrf_token)
-                if 'success' in result:
-                    success_count += 1
-                else:
-                    print(f"    Error adding child to father: {result}")
-                    error_count += 1
-                time.sleep(1)
+                # Add mother relationship (P48) if wife exists
+                if wife_qid:
+                    result = add_relationship(session, child_qid, 'P48', wife_qid, csrf_token)
+                    if 'success' in result:
+                        print(f"    SUCCESS: Added mother relationship")
+                        success_count += 1
+                    time.sleep(0.5)
+                    
+                    # Add child to mother's children (P20)
+                    result = add_relationship(session, wife_qid, 'P20', child_qid, csrf_token)
+                    if 'success' in result:
+                        print(f"    SUCCESS: Added child to mother")
+                        success_count += 1
+                    time.sleep(0.5)
             else:
-                print(f"    Skipping father relationship: husband not in mappings")
-                skip_count += 1
-            
-            # Add mother relationship (P48) if wife exists
-            if wife_qid:
-                result = add_relationship_using_wbeditentity(session, child_qid, 'P48', [wife_qid], csrf_token)
-                if 'success' in result:
-                    success_count += 1
-                else:
-                    print(f"    Error adding mother: {result}")
-                    error_count += 1
-                time.sleep(1)
-                
-                # Add child to mother's children (P20)
-                result = add_relationship_using_wbeditentity(session, wife_qid, 'P20', [child_qid], csrf_token)
-                if 'success' in result:
-                    success_count += 1
-                else:
-                    print(f"    Error adding child to mother: {result}")
-                    error_count += 1
-                time.sleep(1)
-            else:
-                print(f"    Skipping mother relationship: wife not in mappings")
                 skip_count += 1
     
     print(f"\nMaster relationships creation complete!")
-    print(f"Success: {success_count}")
-    print(f"Errors: {error_count}")
-    print(f"Skipped: {skip_count}")
+    print(f"Successful relationships added: {success_count}")
+    print(f"Skipped (missing mappings): {skip_count}")
 
 if __name__ == '__main__':
     main()
