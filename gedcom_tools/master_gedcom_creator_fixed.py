@@ -295,7 +295,7 @@ def main():
     print(f"Parsed {len(individuals)} individuals from master GEDCOM")
     
     # Start from I62602 (after the last created I62601)
-    start_id = 62602
+    start_id = 77652
     started = False
     print(f"Starting from @I{start_id}@ onwards...")
     

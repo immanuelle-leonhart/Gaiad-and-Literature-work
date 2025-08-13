@@ -212,7 +212,7 @@ def main():
     print(f"Parsed {len(individuals)} individuals from master GEDCOM")
     
     # Start from I10000 (after the highest existing I9999)
-    start_id = 10000
+    start_id = 77652
     started = False
     print(f"Starting from @I{start_id}@ onwards...")
     
