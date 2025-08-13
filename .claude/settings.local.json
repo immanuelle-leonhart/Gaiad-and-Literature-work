@@ -138,7 +138,8 @@
       "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\gedcom_tools\\master_relationships_final.py\")",
       "Bash(git add:*)",
       "Bash(git subtree:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(git read-tree:*)"
     ],
     "deny": []
   }
