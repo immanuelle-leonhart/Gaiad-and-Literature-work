@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.6</TargetFramework>
+    <PackageId>StarDate</PackageId>
+    <Version>1.0.7</Version>
+    <Authors>Silicon Prophet</Authors>
+    <Company>Order of Life</Company>
+    <Product>StarLib</Product>
+    <Description>The Cosmic Calendar of the Order of Life</Description>
+    <Copyright>Order of Life 2020</Copyright>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageProjectUrl>https://order.life/software</PackageProjectUrl>
+    <PackageIcon>DNA Tree Logo.jpg</PackageIcon>
+    <RepositoryUrl>https://github.com/siliconprophet/StarDate</RepositoryUrl>
+    <RepositoryType>Library</RepositoryType>
+    <PackageReleaseNotes>Placeholder for dev</PackageReleaseNotes>
+    <PackageTags>Order of Life, Calendar, StarDate</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <ApplicationIcon>zodiac.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Dropbox\branding images\DNA Tree Logo.jpg">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Win32.Primitives" Version="4.3.0" />
+    <PackageReference Include="Microsoft.Win32.Registry" Version="4.7.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="System.Diagnostics.Contracts" Version="4.3.0" />
+    <PackageReference Include="System.Runtime" Version="4.3.1" />
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="4.7.1" />
+    <PackageReference Include="System.Runtime.InteropServices" Version="4.3.0" />
+    <PackageReference Include="System.Security.Cryptography.Cng" Version="4.7.0" />
+    <PackageReference Include="System.Security.Principal" Version="4.3.0" />
+    <PackageReference Include="System.Threading.Thread" Version="4.3.0" />
+  </ItemGroup>
+
+</Project>

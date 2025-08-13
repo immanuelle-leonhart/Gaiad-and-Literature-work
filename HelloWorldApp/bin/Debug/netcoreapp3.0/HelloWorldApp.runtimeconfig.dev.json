@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\SiliconProphet\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\SiliconProphet\\.nuget\\packages"
+    ]
+  }
+}
