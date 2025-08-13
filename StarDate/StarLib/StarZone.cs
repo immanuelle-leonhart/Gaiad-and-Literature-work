@@ -395,7 +395,8 @@ namespace StarLib
 
         internal Time Offset(StarDate now)
         {
-            return Offset(now.DateTime);
+            // Use DateTimeWithoutOffset to prevent circular dependency
+            return Offset(now.DateTimeWithoutOffset);
         }
 
         internal Time Offset(DateTime dateTime)
