@@ -12,8 +12,10 @@ The Celestial Calendar is a **sidereal leap week calendar** that tracks time fro
 
 - **Sidereal-based**: New year begins when Earth crosses between Sagittarius A* (galactic center, called "Chiron" in the Gaiad mythology) and the Sun
 - **13-month system**: Based on the 13-sign zodiac (12 classical signs plus Ophiuchus)
-- **Fixed weekday system**: Each month has exactly 28 days (4 weeks), with the 1st always falling on Monday
-- **Leap week system**: Every 6th year has a leap week; every 78th year has two leap weeks
+- **ISO Week Compliance**: **1宮1日 (Sagittarius 1)** always aligns with **ISO Week 1, Day 1** (Monday)
+- **Fixed weekday system**: Each month has exactly 28 days (4 weeks), ensuring consistent scheduling
+- **Leap week system**: Intercalary weeks are designated as **ISO Week 53** (Horus week)
+- **Palace numbering**: Chinese/Japanese month system using 宮 (palace) numbers: 1宮-14宮
 - **Cosmic timescale**: Supports both "short dates" (from agriculture ~12,000 years ago) and "long dates" (from Big Bang)
 
 ## Project Structure
@@ -67,11 +69,31 @@ The Celestial Calendar is a **sidereal leap week calendar** that tracks time fro
 - **13 months** per year, each with **28 days** (4 weeks)
 - **364 days** in a regular year
 - **Month names**: Based on zodiac signs (Sagittarius, Capricorn, Aquarius, Pisces, Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpio, Ophiuchus)
+- **ISO Week Alignment**: **1宮1日 (Sagittarius 1)** always falls on **ISO Week 1, Day 1** (Monday)
+- **Palace System**: Months are numbered as 宮 (palaces) in Chinese/Japanese: 1宮 = Sagittarius, 2宮 = Capricorn, etc.
 
 ### Leap System
-- **Every 6th year**: Adds one leap week (month of "Horus") between Ophiuchus and Sagittarius
-- **Every 78th year**: Adds two leap weeks (14 days)
+- **Every 6th year**: Adds one leap week (**Horus week** = **ISO Week 53**)
+- **Every 78th year**: Adds two leap weeks (14 days total)
 - **Maximum year length**: 378 days
+- **Intercalary week placement**: Horus week is designated as ISO Week 53, not inserted between months
+
+### ISO Week Alignment System
+
+#### Core Principle
+The calendar system has been modified to ensure **1宮1日 (Sagittarius 1)** always corresponds to **ISO Week 1, Day 1** (Monday). This creates perfect alignment between the cosmic calendar and international business/scheduling standards.
+
+#### Week Structure
+- **Regular months**: Each month contains exactly 4 weeks (weeks 1-52 distributed across months 1-13)
+- **Intercalary weeks**: Horus leap weeks are designated as **ISO Week 53**
+- **Day numbering**: Day 1 of every month = Monday, Day 2 = Tuesday, etc.
+- **Palace system**: 1宮1日 = "1st Palace, 1st Day" = Sagittarius 1st = ISO Week 1, Monday
+
+#### Benefits
+- **International compatibility**: Seamless integration with ISO 8601 business calendar systems
+- **Fixed scheduling**: Holidays and events always fall on the same day of the week
+- **Business alignment**: Week numbers correspond directly to international standards
+- **Cosmic significance**: Maintains astronomical anchoring while supporting practical usage
 
 ### Year Numbering Systems
 
@@ -118,6 +140,9 @@ StarDate.FromGreg(year, month, day, hour, minute, second)
 #### Key Properties
 - **Ticks**: 100-nanosecond intervals since Big Bang (BigInteger)
 - **Year/Month/Day**: Standard calendar components
+- **Palace**: Chinese/Japanese palace number (1宮-14宮)
+- **WeekOfYear**: ISO week number (1-53, where 53 = Horus intercalary week)
+- **IsoDayOfWeek**: ISO day of week (1=Monday, 7=Sunday)
 - **TimeZone**: StarZone object for location-specific time
 - **Error**: Margin of error for astronomical calculations
 - **MonthName/MonthSymbol**: Localized month names and zodiac symbols

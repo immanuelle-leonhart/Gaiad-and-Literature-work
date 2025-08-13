@@ -55,19 +55,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\SiliconProphet\\.nuget\\packages\\": {}
+    "C:\\Users\\Immanuelle\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLibDesktop\\LazyDesktop.csproj",
+      "projectUniqueName": "C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\StarDate\\StarLibDesktop\\LazyDesktop.csproj",
       "projectName": "LazyDesktop",
-      "projectPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLibDesktop\\LazyDesktop.csproj",
-      "packagesPath": "C:\\Users\\SiliconProphet\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SiliconProphet\\Documents\\GitHub\\Order\\StarDate\\StarLibDesktop\\obj\\",
+      "projectPath": "C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\StarDate\\StarLibDesktop\\LazyDesktop.csproj",
+      "packagesPath": "C:\\Users\\Immanuelle\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Immanuelle\\Documents\\Github\\Gaiad-Genealogy\\StarDate\\StarLibDesktop\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\SiliconProphet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Immanuelle\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -79,6 +84,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -86,10 +92,17 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "WebWindow": {
             "target": "Package",
@@ -102,16 +115,35 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.1.10, 3.1.10]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[3.1.32, 3.1.32]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[3.1.0, 3.1.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[3.1.0, 3.1.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
