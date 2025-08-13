@@ -1,0 +1,8 @@
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\DynamicCS\bin\Debug\netstandard2.0\DynamicCS.deps.json
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\DynamicCS\bin\Debug\netstandard2.0\DynamicCS.dll
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\DynamicCS\bin\Debug\netstandard2.0\DynamicCS.pdb
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\DynamicCS\obj\Debug\netstandard2.0\DynamicCS.AssemblyInfoInputs.cache
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\DynamicCS\obj\Debug\netstandard2.0\DynamicCS.AssemblyInfo.cs
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\DynamicCS\obj\Debug\netstandard2.0\DynamicCS.csproj.CoreCompileInputs.cache
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\DynamicCS\obj\Debug\netstandard2.0\DynamicCS.dll
+C:\Users\SiliconProphet\Documents\GitHub\StarDate\DynamicCS\obj\Debug\netstandard2.0\DynamicCS.pdb
