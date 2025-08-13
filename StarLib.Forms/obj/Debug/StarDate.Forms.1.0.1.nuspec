@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>StarDate.Forms</id>
+    <version>1.0.1</version>
+    <authors>Silicon Prophet</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="file">LICENSE</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <icon>DNA Tree Logo.jpg</icon>
+    <projectUrl>https://order.life/software</projectUrl>
+    <description>Web Library for using Star Calendar Forms</description>
+    <releaseNotes>Placeholder</releaseNotes>
+    <tags>Order of Life, Calendar, StarDate</tags>
+    <repository type="Library" url="https://github.com/siliconprophet/StarDate" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="StarDate" version="1.0.7" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Components" version="3.1.6" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Components.Web" version="3.1.6" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.PowerShell.5.ReferenceAssemblies" version="1.1.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\SiliconProphet\Documents\GitHub\Order\StarDate\StarLib.Forms\bin\Debug\netstandard2.0\StarLib.Forms.dll" target="lib\netstandard2.0\StarLib.Forms.dll" />
+    <file src="C:\Users\SiliconProphet\Documents\GitHub\Order\StarDate\StarLib.Forms\obj\Debug\netstandard2.0\staticwebassets\msbuild.StarDate.Forms.Microsoft.AspNetCore.StaticWebAssets.props" target="build\Microsoft.AspNetCore.StaticWebAssets.props" />
+    <file src="C:\Users\SiliconProphet\Documents\GitHub\Order\StarDate\StarLib.Forms\obj\Debug\netstandard2.0\staticwebassets\msbuild.build.StarDate.Forms.props" target="build\StarDate.Forms.props" />
+    <file src="C:\Users\SiliconProphet\Documents\GitHub\Order\StarDate\StarLib.Forms\obj\Debug\netstandard2.0\staticwebassets\msbuild.buildMultiTargeting.StarDate.Forms.props" target="buildMultiTargeting\StarDate.Forms.props" />
+    <file src="C:\Users\SiliconProphet\Documents\GitHub\Order\StarDate\StarLib.Forms\obj\Debug\netstandard2.0\staticwebassets\msbuild.buildTransitive.StarDate.Forms.props" target="buildTransitive\StarDate.Forms.props" />
+    <file src="C:\Users\SiliconProphet\Documents\GitHub\Order\StarDate\StarLib.Forms\wwwroot\background.png" target="staticwebassets\background.png" />
+    <file src="C:\Users\SiliconProphet\Documents\GitHub\Order\StarDate\StarLib.Forms\wwwroot\exampleJsInterop.js" target="staticwebassets\exampleJsInterop.js" />
+    <file src="C:\Users\SiliconProphet\Documents\GitHub\Order\StarDate\StarLib.Forms\wwwroot\styles.css" target="staticwebassets\styles.css" />
+    <file src="C:\Users\SiliconProphet\Documents\Dropbox\branding images\DNA Tree Logo.jpg" target="DNA Tree Logo.jpg" />
+    <file src="C:\Users\SiliconProphet\Documents\GitHub\Order\StarDate\LICENSE" target="LICENSE" />
+  </files>
+</package>
