@@ -1,37 +1,35 @@
-# zodiac_push_min.py
-# Minimal hard-coded bot that edits shinto.miraheze.org with a BotPassword
+# zodiac_push_all.py
+# Hard-coded bot that creates/overwrites ALL 13×28 pages on shinto.miraheze.org
 
-from datetime import date, datetime, timedelta
 import time
+from datetime import date, datetime, timedelta
 import requests
 
-API_URL   = "https://shinto.miraheze.org/w/api.php"
-USERNAME  = "Immanuelle"       # <-- BotPassword username (User@BotName)
-PASSWORD  = "1996ToOmega!"     # <-- BotPassword password (long random string)
-USER_AGENT = "ZodiacWikiBot/0.1 (User:Immanuelle; contact: you@example.com)"
-SUMMARY   = "Create/update zodiac date page"
-THROTTLE  = 1.0  # seconds between edits
+API_URL     = "https://evolutionism.miraheze.org/w/api.php"
+USERNAME    = "Immanuelle"      # <-- BotPassword username (User@BotName)
+PASSWORD    = "1996ToOmega!"    # <-- BotPassword password (long random string)
+USER_AGENT  = "ZodiacWikiBot/0.2 (User:Immanuelle; contact: you@example.com)"
+SUMMARY     = "Create/update zodiac date page"
+THROTTLE    = 0.6      # seconds between edits (be polite to the wiki)
+TITLE_PREFIX = ""      # e.g., "Calendar:" if you want them in a namespace
+LONGRUN_START = 1582   # per your spec
+LONGRUN_END   = 2582
 
-# --- choose what to publish ---
-GENERATE_ALL = False  # set True to push all 13×28 pages
-TITLE_PREFIX = ""     # e.g., "Calendar:" if you want a namespace
-
-# ====== TINY PAGE GENERATOR (kept minimal) ======
+# ------------- Page generator (minimal but complete) -------------
 
 MONTHS = [
     "Sagittarius","Capricorn","Aquarius","Pisces","Aries","Taurus",
     "Gemini","Cancer","Leo","Virgo","Libra","Scorpio","Ophiuchus"
 ]
-MONTH_INDEX = {m.lower(): i+1 for i, m in enumerate(MONTHS)}  # 1..13
-WD_ABBR = {1:"Mon",2:"Tue",3:"Wed",4:"Thu",5:"Fri",6:"Sat",7:"Sun"}
 MONTH_NAMES = ["January","February","March","April","May","June",
                "July","August","September","October","November","December"]
+WD_ABBR = {1:"Mon",2:"Tue",3:"Wed",4:"Thu",5:"Fri",6:"Sat",7:"Sun"}
 
 def zodiac_to_iso(m_idx: int, d_m: int):
     if not (1 <= m_idx <= 13 and 1 <= d_m <= 28):
         raise ValueError("month_index 1..13, day_of_month 1..28 required")
-    iso_week = (m_idx - 1) * 4 + ((d_m - 1) // 7) + 1      # 1..52
-    iso_wday = ((d_m - 1) % 7) + 1                         # 1..7 Mon..Sun
+    iso_week  = (m_idx - 1) * 4 + ((d_m - 1) // 7) + 1      # 1..52
+    iso_wday  = ((d_m - 1) % 7) + 1                         # 1..7 (Mon..Sun)
     return iso_week, iso_wday
 
 def ordinal_in_year(m_idx: int, d_m: int) -> int:
@@ -81,8 +79,7 @@ EASTER_OFFSET_LABELS = {
 }
 
 def recent_block(m_idx: int, d_m: int, span: int = 5) -> str:
-    today = datetime.now().date()
-    iso_year = today.isocalendar()[0]
+    iso_year = datetime.now().date().isocalendar()[0]
     y0, y1 = iso_year - span, iso_year + span
     w, wd = zodiac_to_iso(m_idx, d_m)
     lines = ['{| class="wikitable"', '! ISO year !! Gregorian date (weekday) !! ISO triple']
@@ -93,7 +90,7 @@ def recent_block(m_idx: int, d_m: int, span: int = 5) -> str:
     return "\n".join(lines)
 
 def gregorian_distribution_block(m_idx: int, d_m: int,
-                                 start_iso_year: int = 1582, end_iso_year: int = 2582) -> str:
+                                 start_iso_year: int = LONGRUN_START, end_iso_year: int = LONGRUN_END) -> str:
     counts = {}
     total = end_iso_year - start_iso_year + 1
     for y in range(start_iso_year, end_iso_year+1):
@@ -108,7 +105,7 @@ def gregorian_distribution_block(m_idx: int, d_m: int,
     return "\n".join(lines)
 
 def nth_weekday_overlap_block(m_idx: int, d_m: int,
-                              start_iso_year: int = 1582, end_iso_year: int = 2582) -> str:
+                              start_iso_year: int = LONGRUN_START, end_iso_year: int = LONGRUN_END) -> str:
     total = end_iso_year - start_iso_year + 1
     zd = {y: zodiac_gregorian_for_iso_year(m_idx, d_m, y) for y in range(start_iso_year, end_iso_year+1)}
     rules = set(); hits = {}
@@ -126,7 +123,7 @@ def nth_weekday_overlap_block(m_idx: int, d_m: int,
     return "\n".join(lines)
 
 def easter_offsets_block(m_idx: int, d_m: int,
-                         start_iso_year: int = 1582, end_iso_year: int = 2582) -> str:
+                         start_iso_year: int = LONGRUN_START, end_iso_year: int = LONGRUN_END) -> str:
     counts = {}; total = end_iso_year - start_iso_year + 1
     for y in range(start_iso_year, end_iso_year+1):
         z = zodiac_gregorian_for_iso_year(m_idx, d_m, y)
@@ -146,51 +143,50 @@ def ordinal(n: int) -> str:
     else: suf = {1:"st",2:"nd",3:"rd"}.get(n % 10, "th")
     return f"{n}{suf}"
 
-def build_page(month_name: str, day_of_month: int,
-               longrun_start: int = 1582, longrun_end: int = 2582) -> (str, str):
-    m_idx = MONTH_INDEX[month_name.lower()]
-    base_title = f"{MONTHS[m_idx-1]} {day_of_month}"
-    title = f"{TITLE_PREFIX}{base_title}" if TITLE_PREFIX else base_title
-    w, wd = zodiac_to_iso(m_idx, day_of_month)
-    ord1 = ordinal_in_year(m_idx, day_of_month)
+def build_page(m_idx: int, d_m: int) -> (str, str):
+    base = f"{MONTHS[m_idx-1]} {d_m}"
+    title = f"{TITLE_PREFIX}{base}" if TITLE_PREFIX else base
+    w, wd = zodiac_to_iso(m_idx, d_m)
+    ord1 = ordinal_in_year(m_idx, d_m)
     reading = reading_for_ordinal(ord1)
 
     # neighbors
-    pm, pd = (m_idx, day_of_month-1) if day_of_month>1 else ((13 if m_idx==1 else m_idx-1), 28)
-    nm, nd = (m_idx, day_of_month+1) if day_of_month<28 else ((1 if m_idx==13 else m_idx+1), 1)
+    pm, pd = (m_idx, d_m-1) if d_m>1 else ((13 if m_idx==1 else m_idx-1), 28)
+    nm, nd = (m_idx, d_m+1) if d_m<28 else ((1 if m_idx==13 else m_idx+1), 1)
     prev_title = f"{MONTHS[pm-1]} {pd}"
     next_title = f"{MONTHS[nm-1]} {nd}"
 
     parts = []
     parts.append("{{Short description|Date in the 13×28 ISO-anchored zodiac calendar}}")
-    parts.append(f"{{DISPLAYTITLE:{base_title}}}\n")
+    parts.append(f"{{DISPLAYTITLE:{base}}}\n")
     parts.append(
-        f"'''{base_title}''' is the '''{ordinal(ord1)}''' day of the year in the 13×28 zodiac calendar "
+        f"'''{base}''' is the '''{ordinal(ord1)}''' day of the year in the 13×28 zodiac calendar "
         f"(months: Sagittarius → … → Scorpio → Ophiuchus). "
         f"It corresponds to ISO week '''{w}''', weekday '''{wd}''' (1=Mon … 7=Sun). "
         f"On this day, {reading} is read."
     )
 
     parts.append("\n== Recent (±5 ISO years) ==")
-    parts.append(recent_block(m_idx, day_of_month, span=5))
+    parts.append(recent_block(m_idx, d_m, span=5))
 
-    parts.append(f"\n== Long-run Gregorian distribution (1582–2582) ==")
-    parts.append(gregorian_distribution_block(m_idx, day_of_month, 1582, 2582))
+    parts.append(f"\n== Long-run Gregorian distribution ({LONGRUN_START}–{LONGRUN_END}) ==")
+    parts.append(gregorian_distribution_block(m_idx, d_m, LONGRUN_START, LONGRUN_END))
 
     parts.append("\n== Nth-weekday holidays (overlap probabilities) ==")
-    parts.append(nth_weekday_overlap_block(m_idx, day_of_month, 1582, 2582))
+    parts.append(nth_weekday_overlap_block(m_idx, d_m, LONGRUN_START, LONGRUN_END))
 
     parts.append("\n== Easter-relative distribution ==")
-    parts.append(easter_offsets_block(m_idx, day_of_month, 1582, 2582))
+    parts.append(easter_offsets_block(m_idx, d_m, LONGRUN_START, LONGRUN_END))
 
     parts.append("\n== See also ==")
     parts.append(f"* [[{prev_title}]]")
     parts.append(f"* [[{next_title}]]")
-    parts.append("\n<!-- Generated by zodiac_push_min.py -->\n")
+    parts.append("\n<!-- Generated by zodiac_push_all.py -->\n")
 
     return title, "\n".join(parts)
 
-# ====== MINIMAL MEDIAWIKI CLIENT ======
+# ------------- Minimal MediaWiki client -------------
+
 class Wiki:
     def __init__(self, api_url: str):
         self.api = api_url
@@ -198,16 +194,24 @@ class Wiki:
         self.s.headers.update({"User-Agent": USER_AGENT})
         self.csrf = None
 
+    def _check(self, r):
+        try:
+            r.raise_for_status()
+        except requests.HTTPError:
+            print("HTTP", r.status_code, r.url)
+            print("Body:", r.text[:1000])
+            raise
+
     def get(self, **params):
         params.setdefault("format", "json")
         r = self.s.get(self.api, params=params, timeout=60)
-        r.raise_for_status()
+        self._check(r)
         return r.json()
 
     def post(self, **data):
         data.setdefault("format", "json")
-        r = self.s.post(self.api, data=data, timeout=60)
-        r.raise_for_status()
+        r = self.s.post(self.api, data=data, timeout=90)
+        self._check(r)
         return r.json()
 
     def login_bot(self, username: str, password: str):
@@ -220,27 +224,39 @@ class Wiki:
     def edit(self, title: str, text: str, summary: str):
         if not self.csrf:
             raise RuntimeError("Not logged in")
-        j = self.post(action="edit", title=title, text=text, token=self.csrf, summary=summary, bot="1", minor="1")
+        j = self.post(
+            action="edit",
+            title=title,
+            text=text,               # replaces content (create or overwrite)
+            token=self.csrf,
+            summary=summary,
+            bot="1",
+            minor="1",
+        )
         if "error" in j:
             raise RuntimeError(f"Edit failed for {title}: {j['error']}")
         return j.get("edit", {}).get("result", "OK")
 
-# ====== RUN ======
-def main():
-    # Build targets
-    if GENERATE_ALL:
-        targets = [(m, d) for m in MONTHS for d in range(1, 29)]
-    else:
-        targets = [("Sagittarius", 1)]  # start with one page; flip GENERATE_ALL when happy
+# ------------- Run all pages -------------
 
+def main():
     wiki = Wiki(API_URL)
     wiki.login_bot(USERNAME, PASSWORD)
 
-    for (month, day) in targets:
-        title, text = build_page(month, day)
-        res = wiki.edit(title, text, SUMMARY)
-        print(f"[{res}] {title}")
+    targets = [(m_idx, d) for m_idx in range(1, 14) for d in range(1, 29)]  # all 13×28
+    total = len(targets)
+    ok = 0
+    for i, (m_idx, d) in enumerate(targets, 1):
+        title, text = build_page(m_idx, d)
+        try:
+            res = wiki.edit(title, text, SUMMARY)
+            ok += 1
+            print(f"[{i}/{total}] [{res}] {title}")
+        except Exception as e:
+            print(f"[{i}/{total}] [ERROR] {title} :: {e}")
         time.sleep(THROTTLE)
+
+    print(f"Done. Success {ok}/{total}.")
 
 if __name__ == "__main__":
     main()
