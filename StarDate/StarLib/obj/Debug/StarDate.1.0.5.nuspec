@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>StarDate</id>
+    <version>1.0.5</version>
+    <authors>Silicon Prophet</authors>
+    <owners>Silicon Prophet</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="file">LICENSE</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <icon>DNA Tree Logo.jpg</icon>
+    <projectUrl>https://github.com/siliconprophet/StarDate</projectUrl>
+    <description>The Cosmic Calendar of the Order of Life</description>
+    <releaseNotes>Fixed Year Assignment Glitch</releaseNotes>
+    <copyright>Order of Life 2020</copyright>
+    <tags>Order of Life, Calendar, StarDate</tags>
+    <repository type="Library" url="https://github.com/siliconprophet/StarDate" />
+    <dependencies>
+      <group targetFramework=".NETStandard1.6">
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+        <dependency id="System.Diagnostics.Contracts" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\SiliconProphet\Documents\GitHub\StarDate\StarLib\bin\Debug\netstandard1.6\StarLib.dll" target="lib\netstandard1.6\StarLib.dll" />
+    <file src="C:\Users\SiliconProphet\Dropbox\branding images\DNA Tree Logo.jpg" target="DNA Tree Logo.jpg" />
+    <file src="C:\Users\SiliconProphet\Documents\GitHub\StarDate\LICENSE" target="LICENSE" />
+  </files>
+</package>

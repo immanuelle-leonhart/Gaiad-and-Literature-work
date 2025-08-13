@@ -139,6 +139,7 @@
       "Bash(git add:*)",
       "Bash(git subtree:*)",
       "Bash(git commit:*)",
+      "Bash(git read-tree:*)",
       "Bash(for file in *.py)",
       "Bash(do if rg -q \"(wbeditentity|wbcreateclaim|wbsetlabel|wbsetaliases|wbsetdescription|wbremoveclaims|''action'': ''edit'')\" \"$file\")",
       "Bash(then if ! rg -q \"''bot'': 1\" \"$file\")",
