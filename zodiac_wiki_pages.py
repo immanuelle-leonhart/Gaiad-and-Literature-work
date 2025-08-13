@@ -235,7 +235,11 @@ def hebrew_distribution_block(m_idx: int, d_m: int,
     counts: Counter[tuple[int, str, int]] = Counter()  # (sort_idx, label, day)
 
     for y in range(start_iso_year, end_iso_year + 1):
-        gdate = zodiac_gregorian_for_iso_year(m_idx, d_m, y)
+        try:
+            gdate = zodiac_gregorian_for_iso_year(m_idx, d_m, y)
+        except ValueError:
+            # Year doesn't have week 53, skip intercalary days
+            continue
         try:
             hy, hm, hd = H.from_gregorian(gdate.year, gdate.month, gdate.day)
         except Exception:
@@ -282,11 +286,15 @@ def chinese_distribution_block(m_idx: int, d_m: int,
     years_counted = 0  # years that successfully converted & were counted
 
     for y in range(start_iso_year, end_iso_year + 1):
-        gdate = zodiac_gregorian_for_iso_year(m_idx, d_m, y)
+        try:
+            gdate = zodiac_gregorian_for_iso_year(m_idx, d_m, y)
+        except ValueError:
+            # Year doesn't have week 53, skip intercalary days
+            continue
         try:
             l = LunarDate.fromSolarDate(gdate.year, gdate.month, gdate.day)
         except Exception:
-            # year outside lunardate support -> skip (don’t dilute)
+            # year outside lunardate support -> skip (don't dilute)
             continue
 
         lunar_month = int(getattr(l, "month"))
@@ -333,7 +341,10 @@ def chinese_overlap_table(m_idx: int, d_m: int,
         matches = 0
         supported = True
         for y in range(start_iso_year, end_iso_year + 1):
-            g = zodiac_gregorian_for_iso_year(m_idx, d_m, y)
+            try:
+                g = zodiac_gregorian_for_iso_year(m_idx, d_m, y)
+            except ValueError:
+                continue  # Year doesn't have week 53, skip intercalary days
             res = chinese_event_matches_gregorian(g, ev)
             if res is None:
                 supported = False
@@ -379,7 +390,10 @@ def hebrew_overlap_table(m_idx: int, d_m: int,
     for ev in HEBREW_EVENTS:
         matches = 0
         for y in range(start_iso_year, end_iso_year + 1):
-            g = zodiac_gregorian_for_iso_year(m_idx, d_m, y)
+            try:
+                g = zodiac_gregorian_for_iso_year(m_idx, d_m, y)
+            except ValueError:
+                continue  # Year doesn't have week 53, skip intercalary days
             if hebrew_event_matches_gregorian(g, ev):     # your existing matcher
                 matches += 1
         name_cell = label_with_category(ev["name"], matches)
@@ -398,25 +412,43 @@ def hebrew_overlap_table(m_idx: int, d_m: int,
 
 MONTHS = [
     "Sagittarius","Capricorn","Aquarius","Pisces","Aries","Taurus",
-    "Gemini","Cancer","Leo","Virgo","Libra","Scorpio","Ophiuchus"
+    "Gemini","Cancer","Leo","Virgo","Libra","Scorpio","Ophiuchus","Horus"
 ]
 MONTH_NAMES = ["January","February","March","April","May","June",
                "July","August","September","October","November","December"]
 WD_ABBR = {1:"Mon",2:"Tue",3:"Wed",4:"Thu",5:"Fri",6:"Sat",7:"Sun"}
 
 def zodiac_to_iso(m_idx: int, d_m: int):
-    if not (1 <= m_idx <= 13 and 1 <= d_m <= 28):
-        raise ValueError("month_index 1..13, day_of_month 1..28 required")
-    iso_week  = (m_idx - 1) * 4 + ((d_m - 1) // 7) + 1      # 1..52
-    iso_wday  = ((d_m - 1) % 7) + 1                         # 1..7 (Mon..Sun)
-    return iso_week, iso_wday
+    # Handle regular months (1-13)
+    if 1 <= m_idx <= 13 and 1 <= d_m <= 28:
+        iso_week  = (m_idx - 1) * 4 + ((d_m - 1) // 7) + 1      # 1..52
+        iso_wday  = ((d_m - 1) % 7) + 1                         # 1..7 (Mon..Sun)
+        return iso_week, iso_wday
+    # Handle Horus intercalary days (month 14, days 1-7)
+    elif m_idx == 14 and 1 <= d_m <= 7:
+        iso_week = 53  # Symbolic week for intercalary days
+        iso_wday = d_m  # Day 1-7 maps to Mon-Sun
+        return iso_week, iso_wday
+    else:
+        raise ValueError("month_index 1..14 (1-13 regular, 14=Horus), day_of_month 1..28 (1-7 for Horus)")
 
 def ordinal_in_year(m_idx: int, d_m: int) -> int:
+    if m_idx == 14:  # Horus intercalary days
+        return 364 + d_m  # Days 365-371
     w, wd = zodiac_to_iso(m_idx, d_m)
     return (w - 1) * 7 + wd  # 1..364
 
 def zodiac_gregorian_for_iso_year(m_idx: int, d_m: int, iso_year: int) -> date:
     w, wd = zodiac_to_iso(m_idx, d_m)
+    
+    # For intercalary days (Horus), only return date for 53-week years
+    if m_idx == 14:  # Horus intercalary days
+        try:
+            return date.fromisocalendar(iso_year, w, wd)
+        except ValueError:
+            # This year doesn't have week 53, so no intercalary days
+            raise ValueError(f"Year {iso_year} has no week 53 (no intercalary days)")
+    
     return date.fromisocalendar(iso_year, w, wd)
 
 def reading_for_ordinal(ord1: int) -> str:
@@ -524,12 +556,19 @@ EASTER_OFFSET_LABELS = {
 }
 
 def recent_block(m_idx: int, d_m: int, span: int = 5) -> str:
+    # For intercalary days (Horus), use a larger span since they're rarer
+    if m_idx == 14:
+        span = 25  # Use ±25 years for intercalary days
+    
     iso_year = datetime.now().date().isocalendar()[0]
     y0, y1 = iso_year - span, iso_year + span
     w, wd = zodiac_to_iso(m_idx, d_m)
     lines = ['{| class="wikitable"', '! ISO year !! Gregorian date (weekday) !! ISO triple']
     for y in range(y0, y1+1):
-        g = zodiac_gregorian_for_iso_year(m_idx, d_m, y)
+        try:
+            g = zodiac_gregorian_for_iso_year(m_idx, d_m, y)
+        except ValueError:
+            continue  # Year doesn't have week 53, skip intercalary days
         lines.append(f"|-\n| {y} || {g.isoformat()} ({WD_ABBR[g.isoweekday()]}) || {y}-W{w}-{wd}")
     lines.append("|}")
     return "\n".join(lines)
@@ -537,52 +576,70 @@ def recent_block(m_idx: int, d_m: int, span: int = 5) -> str:
 def gregorian_distribution_block(m_idx: int, d_m: int,
                                  start_iso_year: int = LONGRUN_START,
                                  end_iso_year: int   = LONGRUN_END) -> str:
-    # Count how often this zodiac date lands on each Gregorian month-day
-    counts = {}
-    total = end_iso_year - start_iso_year + 1
+    from collections import Counter
+    counts = Counter()
+    years_counted = 0
+
     for y in range(start_iso_year, end_iso_year + 1):
-        g = zodiac_gregorian_for_iso_year(m_idx, d_m, y)
-        key = (g.month, g.day)
-        counts[key] = counts.get(key, 0) + 1
+        try:
+            g = zodiac_gregorian_for_iso_year(m_idx, d_m, y)
+        except ValueError:
+            # e.g., Horus day (ISO week 53) in a year with only 52 ISO weeks
+            continue
+        counts[(g.month, g.day)] += 1
+        years_counted += 1
 
-    # Reverse index of fixed-date events: (month, day) -> [names]
-    fixed_index = {}
-    for name, (fm, fd) in FIXED_DATE_EVENTS.items():
-        fixed_index.setdefault((fm, fd), []).append(name)
+    total = sum(counts.values()) or 1  # denom = years where this zodiac day exists
 
-    # Build table
-    lines = [
-        '{| class="wikitable sortable"',
-        '! Month-day !! Count !! Probability !! Fixed-date holidays'
-    ]
+    lines = ['{| class="wikitable sortable"', '! Month-day !! Count !! Probability !! Fixed-date holidays']
     for (m, d) in sorted(counts.keys()):
         c = counts[(m, d)]
-        names = fixed_index.get((m, d), [])
-        holiday_cell = "<br/>".join(sorted(names)) if names else "—"
-        lines.append(
-            f"|-\n| {MONTH_NAMES[m-1]} {d} || {c} || {c/total:.2%} || {holiday_cell}"
-        )
+        fixed = fixed_holiday_labels_for(m, d)  # your existing helper that returns text (or "—")
+        lines.append(f"|-\n| {MONTH_NAMES[m-1]} {d} || {c} || {c/total:.2%} || {fixed}")
     lines.append("|}")
+    lines.append(f"<small>Years counted in range {start_iso_year}–{end_iso_year}: {years_counted}</small>")
     return "\n".join(lines)
+
 
 
 def nth_weekday_overlap_block(m_idx: int, d_m: int,
-                              start_iso_year: int = LONGRUN_START, end_iso_year: int = LONGRUN_END) -> str:
-    total = end_iso_year - start_iso_year + 1
-    zd = {y: zodiac_gregorian_for_iso_year(m_idx, d_m, y) for y in range(start_iso_year, end_iso_year+1)}
-    rules = set(); hits = {}
-    for y in range(start_iso_year, end_iso_year+1):
-        hol = nth_weekday_holidays_for_year(y)
-        rules |= hol.keys()
+                              start_iso_year: int = LONGRUN_START,
+                              end_iso_year: int   = LONGRUN_END) -> str:
+    # Build the zodiac-date-per-year map only for years where the date exists
+    zd = {}
+    for y in range(start_iso_year, end_iso_year + 1):
+        try:
+            zd[y] = zodiac_gregorian_for_iso_year(m_idx, d_m, y)
+        except ValueError:
+            continue  # skip non-occurrence years (e.g., no ISO week 53)
+
+    denom_years = len(zd) or 1  # <-- correct denominator
+
+    rules: set[str] = set()
+    hits: dict[str, int] = {}
+
+    for y in range(start_iso_year, end_iso_year + 1):
+        hol = nth_weekday_holidays_for_year(y)  # your existing function
+        rules |= set(hol.keys())
+        if y not in zd:
+            continue
+        if not hol:
+            continue
+        zy = zd[y]
         for name, d in hol.items():
-            if d == zd[y]:
+            if d == zy:
                 hits[name] = hits.get(name, 0) + 1
-    lines = ['{| class="wikitable sortable"', '! Holiday (rule) !! Matches !! Years !! Probability']
+
+    lines = ['{| class="wikitable sortable"', '! Holiday (rule) !! Matches !! Years considered !! Probability']
     for name in sorted(rules):
         c = hits.get(name, 0)
-        lines.append(f"|-\n| {name} || {c} || {total} || {c/total:.2%}")
+        lines.append(f"|-\n| {name} || {c} || {denom_years} || {c/denom_years:.2%}")
     lines.append("|}")
+    lines.append(f"<small>Years considered are only those where this zodiac day exists: {denom_years} "
+                 f"out of {end_iso_year - start_iso_year + 1} in {start_iso_year}–{end_iso_year}.</small>")
     return "\n".join(lines)
+
+
 
 def ordinal(n: int) -> str:
     if 10 <= n % 100 <= 20: suf = "th"
@@ -596,15 +653,23 @@ def weekday_name_from_iso(wd: int) -> str:
 def build_description_block(m_idx: int, d_m: int) -> str:
     """Returns the short description block you want, with categories + DEFAULTSORT."""
     month_name = MONTHS[m_idx-1]
-    iso_week, iso_wd = zodiac_to_iso(m_idx, d_m)          # 1..52, 1..7
-    ord_year = ordinal_in_year(m_idx, d_m)                # 1..364
+    iso_week, iso_wd = zodiac_to_iso(m_idx, d_m)          # 1..52, 1..7 (53 for Horus)
+    ord_year = ordinal_in_year(m_idx, d_m)                # 1..364 (365-371 for Horus)
     weekday_name = weekday_name_from_iso(iso_wd)
-    jp_informal = f"{m_idx}宮{d_m}日"
-
+    
     lines = []
-    lines.append(f"{month_name} {d_m} is the {ordinal(ord_year)} day of the year in the Gaiad calendar. "
-                 f"It is the {ordinal(d_m)} day of {month_name}, and it is a {weekday_name}. "
-                 f"It corresponds to ISO week {iso_week}, weekday {iso_wd}.")
+    
+    if m_idx == 14:  # Horus intercalary days
+        jp_informal = f"ホルス{d_m}日"
+        lines.append(f"{month_name} {d_m} is the {ordinal(ord_year)} day of the year in the Gaiad calendar. "
+                     f"It is an intercalary day, the {ordinal(d_m)} of the 7 days of {month_name}. "
+                     f"It falls on a {weekday_name} in intercalary week {iso_week}.")
+    else:  # Regular months
+        jp_informal = f"{m_idx}宮{d_m}日"
+        lines.append(f"{month_name} {d_m} is the {ordinal(ord_year)} day of the year in the Gaiad calendar. "
+                     f"It is the {ordinal(d_m)} day of {month_name}, and it is a {weekday_name}. "
+                     f"It corresponds to ISO week {iso_week}, weekday {iso_wd}.")
+    
     lines.append("")
     lines.append(f"Its informal Japanese name is {jp_informal}.")
     lines.append("")
@@ -619,9 +684,14 @@ def build_description_block(m_idx: int, d_m: int) -> str:
 
 def easter_offsets_block(m_idx: int, d_m: int,
                          start_iso_year: int = LONGRUN_START, end_iso_year: int = LONGRUN_END) -> str:
+    # Intercalary days (Horus) will only appear in 53-week years within the date range
+    
     counts = {}; total = end_iso_year - start_iso_year + 1
     for y in range(start_iso_year, end_iso_year+1):
-        z = zodiac_gregorian_for_iso_year(m_idx, d_m, y)
+        try:
+            z = zodiac_gregorian_for_iso_year(m_idx, d_m, y)
+        except ValueError:
+            continue  # Year doesn't have week 53, skip intercalary days
         e = easter_sunday_gregorian(y)
         off = (z - e).days
         counts[off] = counts.get(off, 0) + 1
@@ -689,9 +759,14 @@ def zodiac_possible_monthdays(m_idx: int, d_m: int,
                               start_iso_year: int = LONGRUN_START,
                               end_iso_year: int   = LONGRUN_END):
     """All Gregorian (month,day) this zodiac date can land on across the window."""
+    # Intercalary days (Horus) will only appear in 53-week years within the date range
+    
     s = set()
     for y in range(start_iso_year, end_iso_year+1):
-        g = zodiac_gregorian_for_iso_year(m_idx, d_m, y)
+        try:
+            g = zodiac_gregorian_for_iso_year(m_idx, d_m, y)
+        except ValueError:
+            continue  # Year doesn't have week 53, skip intercalary days
         s.add((g.month, g.day))
     return s
 
@@ -707,10 +782,15 @@ def categories_for_nth_weekday(m_idx: int, d_m: int,
                                start_iso_year: int = LONGRUN_START,
                                end_iso_year: int   = LONGRUN_END) -> list[str]:
     """Add a category for each weekday-rule holiday that ever coincides."""
+    # Intercalary days (Horus) will only appear in 53-week years within the date range
+    
     # Your script already defines nth_weekday_holidays_for_year(year)
     hits = set()
     for y in range(start_iso_year, end_iso_year+1):
-        z = zodiac_gregorian_for_iso_year(m_idx, d_m, y)
+        try:
+            z = zodiac_gregorian_for_iso_year(m_idx, d_m, y)
+        except ValueError:
+            continue  # Year doesn't have week 53, skip intercalary days
         for label, d in nth_weekday_holidays_for_year(y).items():
             if d == z:
                 hits.add(label)
@@ -720,11 +800,16 @@ def categories_for_easter_offsets(m_idx: int, d_m: int,
                                   start_iso_year: int = LONGRUN_START,
                                   end_iso_year: int   = LONGRUN_END) -> list[str]:
     """Add a category for each named feast (in EASTER_OFFSET_LABELS) that ever coincides."""
+    # Intercalary days (Horus) will only appear in 53-week years within the date range
+    
     cats = []
     # build offset counts once (you already have a function, keeping it inline)
     seen_offsets = set()
     for y in range(start_iso_year, end_iso_year+1):
-        z = zodiac_gregorian_for_iso_year(m_idx, d_m, y)
+        try:
+            z = zodiac_gregorian_for_iso_year(m_idx, d_m, y)
+        except ValueError:
+            continue  # Year doesn't have week 53, skip intercalary days
         e = easter_sunday_gregorian(y)
         off = (z - e).days
         seen_offsets.add(off)
@@ -850,7 +935,11 @@ def main():
     wiki = Wiki(API_URL)
     wiki.login_bot(USERNAME, PASSWORD)
 
-    targets = [(m_idx, d) for m_idx in range(1, 14) for d in range(1, 29)]  # all 13×28
+    # Regular months: 13×28 = 364 days
+    targets = [(m_idx, d) for m_idx in range(1, 14) for d in range(1, 29)]
+    # Add Horus intercalary days: 7 days
+    targets.extend([(14, d) for d in range(1, 8)])  # Horus 1-7
+    
     total = len(targets)
     ok = 0
     for i, (m_idx, d) in enumerate(targets, 1):
@@ -863,7 +952,7 @@ def main():
             print(f"[{i}/{total}] [ERROR] {title} :: {e}")
         time.sleep(THROTTLE)
 
-    print(f"Done. Success {ok}/{total}.")
+    print(f"Done. Success {ok}/{total}. (364 regular + 7 intercalary)")
 
 if __name__ == "__main__":
     main()
