@@ -786,7 +786,13 @@ FIXED_DATE_EVENTS = {
     "Litha (Summer Solstice)": (6, 21),
     "Lughnasadh / Lammas": (8, 1),
     "Mabon (Autumn Equinox)": (9, 22),
-    "Samhain": (10, 31)
+    "Samhain": (10, 31),
+
+    #Chinese
+
+    "Qingming Festival": (4, 5),   # Tomb-Sweeping Day
+    "Dongzhi Festival": (12, 22)  # Winter Solstice
+
 }
 
 def zodiac_possible_monthdays(m_idx: int, d_m: int,

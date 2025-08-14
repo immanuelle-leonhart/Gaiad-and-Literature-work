@@ -132,7 +132,7 @@ def main():
     
     csrf_token = get_csrf_token(session)
     
-    for i in range(45782, 160001):
+    for i in range(1, 160001):
         qid = f"Q{i}"
         print(f"Processing {qid}")
         
