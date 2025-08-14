@@ -177,7 +177,9 @@
       "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" trace_horus_error.py)",
       "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" find_53_week_years.py)",
       "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" gedcom_tools/long_notes_analyzer.py)",
-      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" gedcom_tools/substantial_notes_creator.py)"
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" gedcom_tools/substantial_notes_creator.py)",
+      "Bash(tasklist:*)",
+      "Bash(wmic:*)"
     ],
     "deny": []
   }
