@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-MASTER FAMILY RELATIONSHIPS - FINAL VERSION
+MASTER FAMILY RELATIONSHIPS - FROM START VERSION
 
+Starts from family 1 to ensure all relationships are properly added.
 Uses correct property IDs that exist in Evolutionism Wikibase:
 - P47: Father
 - P48: Mother  
@@ -18,7 +19,7 @@ from urllib3.util.retry import Retry
 def create_session():
     session = requests.Session()
     session.headers.update({
-        'User-Agent': 'Master Relationships Final/1.0 (https://github.com/Immanuelle/Gaiad-Genealogy; immanuelle@example.com)'
+        'User-Agent': 'Master Relationships From Start/1.0 (https://github.com/Immanuelle/Gaiad-Genealogy; immanuelle@example.com)'
     })
     retry_strategy = Retry(total=5, backoff_factor=2, status_forcelist=[429, 500, 502, 503, 504])
     adapter = HTTPAdapter(max_retries=retry_strategy)
@@ -202,7 +203,7 @@ def main():
     # Process families starting from @F35851@
     success_count = 0
     skip_count = 0
-    restart_from_family = 39258
+    restart_from_family = 1
     
     for family_id, family in families.items():
         # Skip until we reach the restart point
