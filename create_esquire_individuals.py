@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Create the final 7 missing individuals WITHOUT descriptions
+Create the remaining missing individuals with " Esquire" suffix
 """
 
 import requests
@@ -13,7 +13,7 @@ from urllib3.util.retry import Retry
 def create_session():
     session = requests.Session()
     session.headers.update({
-        'User-Agent': 'Final Missing Individuals Creator NO DESCRIPTIONS/1.0 (https://github.com/Immanuelle/Gaiad-Genealogy; immanuelle@example.com)'
+        'User-Agent': 'Esquire Missing Individuals Creator/1.0 (https://github.com/Immanuelle/Gaiad-Genealogy; immanuelle@example.com)'
     })
     retry_strategy = Retry(total=5, backoff_factor=2, status_forcelist=[429, 500, 502, 503, 504])
     adapter = HTTPAdapter(max_retries=retry_strategy)
@@ -160,12 +160,12 @@ def create_wikibase_item(session, csrf_token, individual_data):
         name_parts.append(individual_data['other_fields']['full_name'])
     
     if name_parts:
-        # Just use the plain name - no modifications
-        labels['en'] = {'language': 'en', 'value': ' '.join(name_parts)}
+        # Use " Esquire" suffix to force uniqueness and avoid wikibase duplicate detection
+        labels['en'] = {'language': 'en', 'value': ' '.join(name_parts) + ' Esquire'}
     else:
-        labels['en'] = {'language': 'en', 'value': f'Person {individual_data["gedcom_id"]}'}
+        labels['en'] = {'language': 'en', 'value': f'Person {individual_data["gedcom_id"]} Esquire'}
     
-    # NO DESCRIPTIONS - this was the problem!
+    descriptions = {'en': {'language': 'en', 'value': 'Gaiad character with Esquire title'}}
     
     claims = {
         'P39': [{
@@ -184,7 +184,7 @@ def create_wikibase_item(session, csrf_token, individual_data):
     
     item_data = {
         'labels': labels,
-        # No descriptions key at all
+        'descriptions': descriptions,
         'claims': claims
     }
     
@@ -283,7 +283,7 @@ def update_mapping_file(individual_id, qid):
         f.write(f"{individual_id}\t{qid}\n")
 
 def main():
-    print("Creating final 7 missing individuals WITHOUT descriptions...")
+    print("Creating remaining missing individuals with Esquire suffix...")
     
     session = create_session()
     if not login_to_wiki(session):
@@ -329,7 +329,7 @@ def main():
             error_count += 1
             time.sleep(2)
     
-    print(f"\nFinal missing individuals processing complete!")
+    print(f"\nEsquire individuals processing complete!")
     print(f"Successfully created: {success_count}")
     print(f"Errors: {error_count}")
 
