@@ -123,7 +123,7 @@ def set_description(session, qid, language, description, csrf_token):
     return response.json()
 
 def main():
-    print("Starting database review for Q1 to Q150000...")
+    print("Starting database review from Q45782 to Q160000...")
     
     session = create_session()
     if not login_to_wiki(session):
@@ -132,7 +132,7 @@ def main():
     
     csrf_token = get_csrf_token(session)
     
-    for i in range(30794, 150001):
+    for i in range(45782, 160001):
         qid = f"Q{i}"
         print(f"Processing {qid}")
         
