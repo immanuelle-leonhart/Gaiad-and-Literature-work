@@ -166,11 +166,15 @@ def add_relationship(session, qid, property_id, value_qid, csrf_token):
         'bot': 1
     }
     
-    response = session.post('https://evolutionism.miraheze.org/w/api.php', data=params)
-    return response.json()
+    try:
+        response = session.post('https://evolutionism.miraheze.org/w/api.php', data=params)
+        return response.json()
+    except Exception as e:
+        print(f"    Error adding relationship: {e}")
+        return {'error': str(e)}
 
 def main():
-    print("Starting Master relationships with correct property IDs...")
+    print("Starting Master relationships from @F35851@...")
     print("Property mappings:")
     print("  P47: Father")
     print("  P48: Mother") 
@@ -195,11 +199,21 @@ def main():
     individuals, families = parse_master_gedcom()
     print(f"Parsed {len(individuals)} individuals and {len(families)} families")
     
-    # Process families
+    # Process families starting from @F35851@
     success_count = 0
     skip_count = 0
+    restart_from_family = 35851
     
     for family_id, family in families.items():
+        # Skip until we reach the restart point
+        if family_id.startswith('@F') and family_id.endswith('@'):
+            try:
+                f_num = int(family_id[2:-1])
+                if f_num < restart_from_family:
+                    continue
+            except ValueError:
+                continue
+        
         print(f"\nProcessing family {family_id}")
         
         # Get QIDs for family members
@@ -215,6 +229,10 @@ def main():
             if 'success' in result:
                 print(f"    SUCCESS: Added wife to husband")
                 success_count += 1
+            elif 'error' in result and 'already has' in str(result.get('error', '')):
+                print(f"    SKIP: Wife already added to husband")
+            else:
+                print(f"    ERROR: Failed to add wife to husband - {result}")
             time.sleep(0.5)
             
             # Add husband to wife's spouse property (P42)
@@ -222,6 +240,10 @@ def main():
             if 'success' in result:
                 print(f"    SUCCESS: Added husband to wife")
                 success_count += 1
+            elif 'error' in result and 'already has' in str(result.get('error', '')):
+                print(f"    SKIP: Husband already added to wife")
+            else:
+                print(f"    ERROR: Failed to add husband to wife - {result}")
             time.sleep(0.5)
         
         # Add parent-child relationships
@@ -236,6 +258,10 @@ def main():
                     if 'success' in result:
                         print(f"    SUCCESS: Added father relationship")
                         success_count += 1
+                    elif 'error' in result and 'already has' in str(result.get('error', '')):
+                        print(f"    SKIP: Father relationship already exists")
+                    else:
+                        print(f"    ERROR: Failed to add father relationship - {result}")
                     time.sleep(0.5)
                     
                     # Add child to father's children (P20)
@@ -243,6 +269,10 @@ def main():
                     if 'success' in result:
                         print(f"    SUCCESS: Added child to father")
                         success_count += 1
+                    elif 'error' in result and 'already has' in str(result.get('error', '')):
+                        print(f"    SKIP: Child already added to father")
+                    else:
+                        print(f"    ERROR: Failed to add child to father - {result}")
                     time.sleep(0.5)
                 
                 # Add mother relationship (P48) if wife exists
@@ -251,6 +281,10 @@ def main():
                     if 'success' in result:
                         print(f"    SUCCESS: Added mother relationship")
                         success_count += 1
+                    elif 'error' in result and 'already has' in str(result.get('error', '')):
+                        print(f"    SKIP: Mother relationship already exists")
+                    else:
+                        print(f"    ERROR: Failed to add mother relationship - {result}")
                     time.sleep(0.5)
                     
                     # Add child to mother's children (P20)
@@ -258,6 +292,10 @@ def main():
                     if 'success' in result:
                         print(f"    SUCCESS: Added child to mother")
                         success_count += 1
+                    elif 'error' in result and 'already has' in str(result.get('error', '')):
+                        print(f"    SKIP: Child already added to mother")
+                    else:
+                        print(f"    ERROR: Failed to add child to mother - {result}")
                     time.sleep(0.5)
             else:
                 skip_count += 1

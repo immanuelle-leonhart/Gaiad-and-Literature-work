@@ -30,6 +30,12 @@ TITLE_PREFIX = ""      # e.g., "Calendar:" if you want them in a namespace
 LONGRUN_START = 2001   # per your spec
 LONGRUN_END   = 2399
 
+CHINESE_DIST_START = 1900
+CHINESE_DIST_END   = 2100
+
+
+
+
 # Robust convertdate import (avoids local shadowing and only logs to console)
 import os, sys, importlib
 
@@ -56,6 +62,8 @@ except Exception as e:
     LunarDate = None
     HAVE_CHINESE = False
     print("chinese: disabled ->", e)
+
+
 
 
 # --- Your event lists (as you provided) ---
@@ -276,49 +284,59 @@ def hebrew_distribution_block(m_idx: int, d_m: int,
 
 
 def chinese_distribution_block(m_idx: int, d_m: int,
-                               start_iso_year: int = LONGRUN_START,
-                               end_iso_year: int   = LONGRUN_END) -> str:
+                               start_year: int = CHINESE_DIST_START,
+                               end_year: int   = CHINESE_DIST_END) -> str:
+    """
+    Returns a wikitable showing how often this zodiac day maps to each Chinese lunar (month, day),
+    over a *fixed* range (default 1900–2100). We do not “probe” outside that range.
+    Denominator = number of ISO years in that range where this zodiac day actually exists.
+    """
     if not HAVE_CHINESE:
-        return "<!-- Chinese distribution skipped: lunardate not available -->"
+        return "<!-- Chinese calendar section skipped: lunardate not available -->"
+
+    # Clamp to supported window explicitly; no out-of-range probing.
+    sy = max(start_year, CHINESE_DIST_START)
+    sy = 1900
+    ey = min(end_year, CHINESE_DIST_END)
 
     from collections import Counter
-    counts: Counter[tuple[int, bool, int]] = Counter()
-    years_counted = 0  # years that successfully converted & were counted
+    counts = Counter()
+    years_considered = 0
 
-    for y in range(start_iso_year, end_iso_year + 1):
+    for y in range(sy, ey + 1):
+        # Compute the Gregorian date for this zodiac day in ISO year y.
         try:
-            gdate = zodiac_gregorian_for_iso_year(m_idx, d_m, y)
+            g = zodiac_gregorian_for_iso_year(m_idx, d_m, y)
         except ValueError:
-            # Year doesn't have week 53, skip intercalary days
-            continue
-        try:
-            l = LunarDate.fromSolarDate(gdate.year, gdate.month, gdate.day)
-        except Exception:
-            # year outside lunardate support -> skip (don't dilute)
+            # e.g., Horus day in a year without ISO week 53 -> this zodiac day does not occur in ISO year y.
             continue
 
-        lunar_month = int(getattr(l, "month"))
-        lunar_day   = int(getattr(l, "day"))
-        is_leap     = bool(getattr(l, "isLeapMonth", getattr(l, "leap", False)))
+        # Convert to Chinese lunar using lunardate
+        l = LunarDate.fromSolarDate(g.year, g.month, g.day)
+        # Different lunardate versions expose the leap flag slightly differently; cover both.
+        leap = bool(getattr(l, "leap", getattr(l, "isLeapMonth", False)))
+        counts[(leap, l.month, l.day)] += 1
+        years_considered += 1
 
-        if 1 <= lunar_day <= 30 and 1 <= lunar_month <= 12:
-            counts[(lunar_month, is_leap, lunar_day)] += 1
-            years_counted += 1
+    if years_considered == 0:
+        return f"== Chinese lunar date distribution ({sy}–{ey}) ==\n" \
+               f"<!-- No occurrence of this zodiac day in the chosen range. -->"
 
-    total = sum(counts.values()) or 1  # denom = actually counted years
+    def label(leap_m_d: tuple[bool, int, int]) -> str:
+        leap, m, d = leap_m_d
+        return f"{'Leap ' if leap else ''}Month {m} {d}"
 
-    lines = [
-        '{| class="wikitable sortable"',
-        f'! Chinese lunar month-day !! Count !! Probability'
-    ]
-    for (lm, leap_flag, lday) in sorted(counts.keys(), key=lambda k: (k[0], 1 if k[1] else 0, k[2])):
-        label = (f"Leap Month {lm} {lday}" if leap_flag else f"Month {lm} {lday}")
-        c = counts[(lm, leap_flag, lday)]
-        lines.append(f"|-\n| {label} || {c} || {c/total:.2%}")
+    lines = [f"== Chinese lunar date distribution ({sy}–{ey}) ==",
+             '{| class="wikitable sortable"',
+             '! Chinese lunar month-day !! Count !! Probability']
+    for key in sorted(counts.keys(), key=lambda t: (t[0], t[1], t[2])):
+        c = counts[key]
+        lines.append(f"|-\n| {label(key)} || {c} || {c/years_considered:.2%}")
     lines.append("|}")
-    # (Optional) add a one-line note showing the tested-year count:
-    lines.append(f"<small>Years tested: {total}</small>")
+    lines.append(f"<small>Years considered: {years_considered} (out of {ey - sy + 1} in range; "
+                 f"years where this zodiac day does not occur are excluded).</small>")
     return "\n".join(lines)
+
 
 
 
@@ -527,6 +545,8 @@ EASTER_OFFSET_LABELS = {
     -49: "Quinquagesima Sunday",
     -47: "Mardi Gras/Carnival",
     -46: "Ash Wednesday",
+    -35: "2nd Sunday in Lent",
+    -28: "3rd Sunday in Lent",
     -21: "Laetare Sunday",
     -14: "Passion Sunday (Fifth Sunday of Lent)",
     -7 : "Palm Sunday",
@@ -584,18 +604,18 @@ def gregorian_distribution_block(m_idx: int, d_m: int,
         try:
             g = zodiac_gregorian_for_iso_year(m_idx, d_m, y)
         except ValueError:
-            # e.g., Horus day (ISO week 53) in a year with only 52 ISO weeks
+            # e.g., Horus day in a year without ISO week 53
             continue
         counts[(g.month, g.day)] += 1
         years_counted += 1
 
-    total = sum(counts.values()) or 1  # denom = years where this zodiac day exists
+    total = sum(counts.values()) or 1  # denom = only years where this zodiac day exists
 
     lines = ['{| class="wikitable sortable"', '! Month-day !! Count !! Probability !! Fixed-date holidays']
     for (m, d) in sorted(counts.keys()):
         c = counts[(m, d)]
-        fixed = fixed_holiday_labels_for(m, d)  # your existing helper that returns text (or "—")
-        lines.append(f"|-\n| {MONTH_NAMES[m-1]} {d} || {c} || {c/total:.2%} || {fixed}")
+        fixed_col = "—"  # <--- If you have your own fixed-holiday label logic, use it here.
+        lines.append(f"|-\n| {MONTH_NAMES[m-1]} {d} || {c} || {c/total:.2%} || {fixed_col}")
     lines.append("|}")
     lines.append(f"<small>Years counted in range {start_iso_year}–{end_iso_year}: {years_counted}</small>")
     return "\n".join(lines)
@@ -605,7 +625,7 @@ def gregorian_distribution_block(m_idx: int, d_m: int,
 def nth_weekday_overlap_block(m_idx: int, d_m: int,
                               start_iso_year: int = LONGRUN_START,
                               end_iso_year: int   = LONGRUN_END) -> str:
-    # Build the zodiac-date-per-year map only for years where the date exists
+    # Build map only for years where this zodiac day exists
     zd = {}
     for y in range(start_iso_year, end_iso_year + 1):
         try:
@@ -613,18 +633,16 @@ def nth_weekday_overlap_block(m_idx: int, d_m: int,
         except ValueError:
             continue  # skip non-occurrence years (e.g., no ISO week 53)
 
-    denom_years = len(zd) or 1  # <-- correct denominator
+    denom_years = len(zd) or 1
 
     rules: set[str] = set()
     hits: dict[str, int] = {}
 
     for y in range(start_iso_year, end_iso_year + 1):
-        hol = nth_weekday_holidays_for_year(y)  # your existing function
-        rules |= set(hol.keys())
         if y not in zd:
             continue
-        if not hol:
-            continue
+        hol = nth_weekday_holidays_for_year(y)
+        rules |= set(hol.keys())
         zy = zd[y]
         for name, d in hol.items():
             if d == zy:
@@ -635,9 +653,10 @@ def nth_weekday_overlap_block(m_idx: int, d_m: int,
         c = hits.get(name, 0)
         lines.append(f"|-\n| {name} || {c} || {denom_years} || {c/denom_years:.2%}")
     lines.append("|}")
-    lines.append(f"<small>Years considered are only those where this zodiac day exists: {denom_years} "
-                 f"out of {end_iso_year - start_iso_year + 1} in {start_iso_year}–{end_iso_year}.</small>")
+    lines.append(f"<small>Years considered are only those where this zodiac day exists: "
+                 f"{denom_years} of {end_iso_year - start_iso_year + 1}.</small>")
     return "\n".join(lines)
+
 
 
 
@@ -653,23 +672,36 @@ def weekday_name_from_iso(wd: int) -> str:
 def build_description_block(m_idx: int, d_m: int) -> str:
     """Returns the short description block you want, with categories + DEFAULTSORT."""
     month_name = MONTHS[m_idx-1]
-    iso_week, iso_wd = zodiac_to_iso(m_idx, d_m)          # 1..52, 1..7 (53 for Horus)
-    ord_year = ordinal_in_year(m_idx, d_m)                # 1..364 (365-371 for Horus)
+    iso_week, iso_wd = zodiac_to_iso(m_idx, d_m)          # 1..52, 1..7 (53 for intercalary)
+    ord_year = ordinal_in_year(m_idx, d_m)                # 1..364 (365-371 for intercalary)
     weekday_name = weekday_name_from_iso(iso_wd)
-    
+
     lines = []
-    
-    if m_idx == 14:  # Horus intercalary days
-        jp_informal = f"ホルス{d_m}日"
-        lines.append(f"{month_name} {d_m} is the {ordinal(ord_year)} day of the year in the Gaiad calendar. "
-                     f"It is an intercalary day, the {ordinal(d_m)} of the 7 days of {month_name}. "
-                     f"It falls on a {weekday_name} in intercalary week {iso_week}.")
-    else:  # Regular months
+
+    # ALWAYS include the month template first — no f-strings, no format()
+    # If your 14th month is named "Horus" in templates but "Cetus" in MONTHS, map it here.
+    TEMPLATE_NAME_MAP = {
+        # "Cetus": "Horus",   # uncomment if MONTHS uses "Cetus" but your template is {{Horus}}
+        # otherwise leave this dict empty
+    }
+    tpl = TEMPLATE_NAME_MAP.get(month_name, month_name)
+    lines.append("{{" + tpl + "}}")
+
+    if m_idx == 14:  # intercalary block (rename in text if you use Cetus/Horus differently)
+        jp_informal = f"14宮{d_m}日"
+        lines.append(
+            f"{month_name} {d_m} is the {ordinal(ord_year)} day of the year in the [[Gaiad calendar]]. "
+            f"It is an intercalary day, the {ordinal(d_m)} of the 7 days of {month_name}. "
+            f"It falls on a {weekday_name} in intercalary week {iso_week}."
+        )
+    else:
         jp_informal = f"{m_idx}宮{d_m}日"
-        lines.append(f"{month_name} {d_m} is the {ordinal(ord_year)} day of the year in the Gaiad calendar. "
-                     f"It is the {ordinal(d_m)} day of {month_name}, and it is a {weekday_name}. "
-                     f"It corresponds to ISO week {iso_week}, weekday {iso_wd}.")
-    
+        lines.append(
+            f"{month_name} {d_m} is the {ordinal(ord_year)} day of the year in the [[Gaiad calendar]]. "
+            f"It is the {ordinal(d_m)} day of {month_name}, and it is a {weekday_name}. "
+            f"It corresponds to ISO week {iso_week}, weekday {iso_wd}."
+        )
+
     lines.append("")
     lines.append(f"Its informal Japanese name is {jp_informal}.")
     lines.append("")
@@ -678,8 +710,10 @@ def build_description_block(m_idx: int, d_m: int) -> str:
     lines.append(f"[[Category:Days with weekday {weekday_name}]]")
     lines.append(f"[[Category:Days {d_m} of the Gaiad calendar]]")
     lines.append(f"[[Category:Days of {month_name}]]")
-    lines.append(f"{{{{DEFAULTSORT:{jp_informal}}}}}")
+    lines.append(f"{{{{DEFAULTSORT:{jp_informal}}}}}")  # ok to use doubled braces in f-string here
+
     return "\n".join(lines)
+
 
 
 def easter_offsets_block(m_idx: int, d_m: int,
@@ -851,7 +885,7 @@ def build_page(m_idx: int, d_m: int) -> (str, str):
     parts.append("\n== Chinese calendar overlaps ==")
     parts.append(chinese_overlap_table(m_idx, d_m, LONGRUN_START, LONGRUN_END))
 
-    parts.append(f"\n== Chinese lunar date distribution ({LONGRUN_START}–{LONGRUN_END}) ==")
+    #parts.append(f"\n== Chinese lunar date distribution ({LONGRUN_START}–{LONGRUN_END}) ==")
     parts.append(chinese_distribution_block(m_idx, d_m, LONGRUN_START, LONGRUN_END))
 
     parts.append("\n== Hebrew calendar overlaps ==")
