@@ -1,926 +1,4 @@
 id,translation,label_en
-Q7224, Prince Oya (Asuka period), Da Zhai Wang (fei Niao Shi Dai)
-Q7251, Princess Ki Nagagi (daughter of Princess Ki), Ji Nai He Qi Niang (ji Da Ren Noniang)
-Q7397, Prince Kawachi (Nara period), He Nei Wang (nai Liang Shi Dai)
-Q7447, Daughter of Nakatomi Kunitari (wife of Tajihishima), Zhong Chen Guo Zu Noniang (duo Zhi Bi Dao Noqi)
-Q7707, Toko Fujiwara (Fujiwara Ceremony family), Teng Yuan Dong Zi (teng Yuan Shi Jia)
-Q7747, Daughter of Fujiwara Kiyokawa (mother of Fujiwara Uona), Teng Yuan Qing He Noniang (teng Yuan Yu Ming Nomu)
-Q7748, Lady Tsumori (wife of Fujiwara Uona), Jin Shou Shi (teng Yuan Yu Ming Noqi)
-Q7756, Daughter of Fujiwara Yoshitsugu (wife of Fujiwara Kaedemaro), Teng Yuan Liang Ji Noniang (teng Yuan Feng Ma Lu Noqi)
-Q7790, Daughter of Qin Chaoyuan (wife of Fujiwara Kiyonari), Qin Zhao Yuan Noniang (teng Yuan Qing Cheng Shi)
-Q7797, Daughter of Fujiwara Yoshitsugu (wife of Fujiwara Ieyori), Teng Yuan Liang Ji Noniang (teng Yuan Jia Yi Shi)
-Q7798, Daughter of Qin Chaoyuan (wife of Fujiwara Tsunade), Qin Zhao Yuan Noniang (teng Yuan Gang Shou Noqi)
-Q7828, Daughter of Fujiwara Mayu (wife of Fujiwara Bunzan), Teng Yuan Zhen You Noniang (teng Yuan Wen Shan Shi)
-Q7874, Daughter of Tachibana Shimada Maro (Wife of Harusumi Zennawa), Ju Dao Tian Ma Lu Noniang (chun Cheng Shan Nawa Shi)
-Q7875, Daughter of Tachibana Shimada Maro (Wife of Fujiwara Sadamoto), Ju Dao Tian Ma Lu Noniang (teng Yuan Zhen Ben Shi)
-Q7881, Daughter of Tachibana Kiyotomo (Wife of Fujiwara Manatsu), Ju Qing You Noniang (teng Yuan Zhen Xia Noqi)
-Q7884, Daughter of Fujiwara Mayutomo (Wife of Fujiwara Otokawa), Teng Yuan Zhen You Noniang (teng Yuan Di He Shi)
-Q7939, Kamitomono clan (court attendant of Emperor Saga), Shang Mao Ye Shi (court attendant of Emperor Saga)
-Q7944, Ki clan (court attendant of Emperor Saga), Ji Shi (court attendant of Emperor Saga)
-Q7946, Daughter of Nagaoka Okanari (court attendant of Emperor Saga), Chang Gang Gang Cheng Noniang (cuo E Tian Huang Nogong Ren)
-Q8004, Sugano clan (wife of Prince Nakano), Jian Ye Shi (zhong Ye Qin Wang Noqi)
-Q8020, Tanji clan (wife of Yoshimine Ansei), Dan Zhi Shi (liang Cen An Shi Qi)
-Q8054, Agata Inukai clan (wife of Fujiwara Kuromaro), Xian Quan Yang Shi (teng Yuan Hei Ma Lu Noqi)
-Q8070, Fujiwara Tadamune (Fujiwara Ceremonial Family), Teng Yuan Zhong Zong (teng Yuan Shi Jia)
-Q8177, Daughter of Ise Roujin (wife of Fujiwara Manatsu), Yi Shi Lao Ren Noniang (teng Yuan Zhen Xia Noqi) )
-Q8182, Daughter of Fujiwara Manatsu (wife of Fujiwara Aibatsu), Teng Yuan Zhen Xia Noniang (teng Yuan Ai Fa Shi)
-Q8186, Daughter of Fujiwara Manatsu (wife of Fujiwara Chikaminori), Teng Yuan Zhen Xia Noniang (teng Yuan Jin Cen Noqi)
-Q8196, Daughter of Fujiwara Aibatsu (wife of Prince Tsunesada), Teng Yuan Ai Fa Noniang (heng Zhen Qin Wang Fei)
-Q8246, Daughter of Baekje King Toyotsune (courtesan of Emperor Ninmyo), Bai Ji Wang Li Jun Noniang (ren Ming Tian Huang Nogong Ren)
-Q8270, Granddaughter of Fujiwara Taketomo (wife of Minamoto Tsune), Teng Yuan Xiong You Nosun Niang (yuan Chang Noqi)
-Q8297, Daughter of Taira Takamune (wife of Fujiwara Fusao), Ping Gao Dong Noniang (teng Yuan Fang Xiong Noqi)
-Q8300, daughter of Fujiwara no Koreo (mother of Taira no Takamochi), Teng Yuan Shi Xiong Noniang (ping Gao Wang Nomu)
-Q8311, daughter of King Takamochi (wife of Fujiwara no Iki), Gao Wang Wang Noniang (teng Yuan Wei Ji Shi)
-Q8367, daughter of Iitaka's disciple (wife of Fujiwara no Mimori), Fan Gao Di Zi Noniang (teng Yuan San Shou Noqi)
-Q8370, daughter of Fujiwara no Mimori (wife of Ono no Takamura), Teng Yuan San Shou Noniang (xiao Ye Huang Noshi)
-Q8377, Tachibana clan (wife of Fujiwara no Takahito), Ju Shi (teng Yuan Gao Ren Noqi)
-Q8470, daughter of Ship Vice Envoy Maro (wife of Fujiwara no Yoshiyo), Chuan Fu Shi Ma Lu Noniang (teng Yuan Liang Shi Shi)
-Q8478, Okinaga clan (wife of Fujiwara no Hamao), Xi Chang Shi (teng Yuan Bin Xiong Noqi)
-Q8522, Daughter of Ban clan (court attendant of Emperor Montoku), Ban Shi Nu (wen De Tian Huang Gong Ren)
-Q8523, Daughter of Taji clan (court attendant of Emperor Montoku), Duo Zhi Shi Noniang (wen De Tian Huang Nogong Ren)
-Q8524, Daughter of Kiyohara clan (court attendant of Emperor Montoku), Qing Yuan Shi Noniang (wen De Tian Huang Nogong Ren)
-Q8541, Daughter of Tanji clan (court attendant of Emperor Koko), Dan Zhi Shi (guang Xiao Tian Huang Nogong Ren)
-Q8581, Daifu (poet), Da Fu (ge Ren)
-Q8584, Daughter of Fujiwara no Monmune (wife of Minamoto no Noboru), Teng Yuan Men Zong Noniang (yuan Sheng Noqi)
-Q8596, Fujiwara Fusao (Fujiwara Southern Family), Teng Yuan Fang Xiong (teng Yuan Nan Jia)
-Q8684, Daughter of Prince Sadamoto (wife of Fujiwara Okitsugu), Zhen Yuan Qin Wang Noniang (teng Yuan Xing Si Noqi)
-Q8692, Daughter of Prince Koretaka (wife of Prince Sadazumi), Wei Qiao Qin Wang Noniang (zhen Chun Qin Wang Noqi)
-Q8738, Daughter of the Takebe clan (wife of Fujiwara Ariyoshi), Jian Bu Shi Noniang (teng Yuan You Nian Noqi)
-Q8749, Daughter of Fujiwara Mototsune (Wife of Prince Sadamoto), Teng Yuan Ji Jing Nonu (zhen Yuan Qin Wang Fei)
-Q8754, Hyoe (Woman of the Heian Period), Bing Wei (ping An Shi Dai Nonu Xing)
-Q8762, daughter of Minamoto no Sadaari (concubine of Fujiwara no Tsunesa), Yuan Ding You Noniang (teng Yuan Heng Zuo Noqie)
-Q8767, daughter of Miharu Toyomune (wife of Fujiwara no Toshiki), Yu Chun Li Zong Noniang (teng Yuan Li Ji Noqi)
-Q8786, daughter of Oe Gyokuen (wife of Minamoto no Munekai), Da Jiang Yu Yuan Noniang (yuan Zong Hai Noqi)
-Q8787, Oe Wei Ming (son of Oe no Senri), Da Jiang Wei Ming (da Jiang Qian Li Nozi)
-Q8790, Oe Wei Ming (son of Oe no Senko), Da Jiang Wei Ming (da Jiang Qian Gu Nozi)
-Q8828, daughter of Fujiwara no Tadafumi (wife of Minamoto no Kosen), Teng Yuan Zhong Wen Noniang (yuan Xiang Quan Noqi)
-Q8834, daughter of Fujiwara no Tadafumi (wife of Minamoto no Yoshimichi), Teng Yuan Zhong Wen Noniang (yuan You Dao Noqi)
-Q8840, daughter of Minamoto no Toshi (wife of Fujiwara no Tadakimi), Yuan Jun Noniang (teng Yuan Zhong Jun Noqi)
-Q8850, daughter of Minamoto no Tadashi (wife of Fujiwara no Reishige (Ashige)), Yuan Deng Noniang (teng Yuan Ling Mao (he Mao)shi)
-Q8863, daughter of Taira no Nakako (wife of Oe no Asatsuna), Ping Zhong Xing Noniang (da Jiang Zhao Gang Noqi)
-Q8866, daughter of Taira no Kimimasa (wife of Taira no Tadatsune), Ping Gong Ya Niang (ping Zhong Chang Zheng Shi)
-Q8867, daughter of Taira no Kimimasa (wife of Youdao Weihiro), Ping Gong Ya Noniang (you Dao Wei Guang Shi)
-Q8890, Sister of Taira Tadamichi (wife of Taira Masatsune), Ping Zhong Tong Zi Mei (ping Jiang Heng Shi)
-Q8893, Daughter of Taira Tadamichi (wife of Minamoto Tamemitsu), Ping Zhong Tong Noniang (yuan Wei Man Shi)
-Q8894, Daughter of Taira Tadamichi (wife of Taira Masatsune), Ping Zhong Tong Niang (ping Jiang Heng Ji Shi)
-Q8899, Daughter of the Hata clan (wife of Fujiwara Tamenori), Qin Shi Noniang (teng Yuan Wei Xian Noqi)
-Q8908, Daughter of Taira Sadafumi (wife of Fujiwara Fumiyuki), Ping Ding Wen Noniang (teng Yuan Wen Xing Noqi)
-Q9006, Daughter of Fujiwara Masamichi (wife of Fujiwara Yasuchika), Teng Yuan Zheng Lun Noniang (teng Yuan An Qin Noqi)
-Q9007, Daughter of Fujiwara no Kiyokane (wife of Fujiwara no Yasuchika), Teng Yuan Qing Jian Noniang (teng Yuan An Qin Noqi)
-Q9013, Daughter of Fujiwara no Yasuchika (wife of Fujiwara no Tomoya), Teng Yuan An Qin Noniang (teng Yuan Deng Zhao Noqi)
-Q9026, Daughter of Fujiwara no Sadakata (wife of Fujiwara no Tadakata), Teng Yuan Ding Fang Noniang (teng Yuan Yin Wen Shi)
-Q9027, Daughter of Fujiwara no Sadakata (wife of Taira no Tsutomu), Teng Yuan Ding Fang Noniang (ping Sui Shi Noqi)
-Q9028, Daughter of Fujiwara no Sadakata (wife of Minamoto no Tameyoshi), Teng Yuan Ding Fang Noniang (yuan Wei Shan Noqi)
-Q9076, Minamoto no Kanetada (son of Prince Sadamoto), Yuan Jian Z
-Q7224, Prince Oya (Asuka period), Da Zhai Wang (fei Niao Shi Dai)
-Q7251, Princess Ki Nagagi (daughter of Princess Ki), Ji Nai He Qi Niang (ji Da Ren Noniang)
-Q7397, Prince Kawachi (Nara period), He Nei Wang (nai Liang Shi Dai)
-Q7447, Daughter of Nakatomi Kunitari (wife of Tajihishima), Zhong Chen Guo Zu Noniang (duo Zhi Bi Dao Noqi)
-Q7707, Toko Fujiwara (Fujiwara Ceremony family), Teng Yuan Dong Zi (teng Yuan Shi Jia)
-Q7747, Daughter of Fujiwara Kiyokawa (mother of Fujiwara Uona), Teng Yuan Qing He Noniang (teng Yuan Yu Ming Nomu)
-Q7748, Lady Tsumori (wife of Fujiwara Uona), Jin Shou Shi (teng Yuan Yu Ming Noqi)
-Q7756, Daughter of Fujiwara Yoshitsugu (wife of Fujiwara Kaedemaro), Teng Yuan Liang Ji Noniang (teng Yuan Feng Ma Lu Noqi)
-Q7790, Daughter of Qin Chaoyuan (wife of Fujiwara Kiyonari), Qin Zhao Yuan Noniang (teng Yuan Qing Cheng Shi)
-Q7797, Daughter of Fujiwara Yoshitsugu (wife of Fujiwara Ieyori), Teng Yuan Liang Ji Noniang (teng Yuan Jia Yi Shi)
-Q7798, Daughter of Qin Chaoyuan (wife of Fujiwara Tsunade), Qin Zhao Yuan Noniang (teng Yuan Gang Shou Noqi)
-Q7828, Daughter of Fujiwara Mayu (wife of Fujiwara Bunzan), Teng Yuan Zhen You Noniang (teng Yuan Wen Shan Shi)
-Q7874, Daughter of Tachibana Shimada Maro (Wife of Harusumi Zennawa), Ju Dao Tian Ma Lu Noniang (chun Cheng Shan Nawa Shi)
-Q7875, Daughter of Tachibana Shimada Maro (Wife of Fujiwara Sadamoto), Ju Dao Tian Ma Lu Noniang (teng Yuan Zhen Ben Shi)
-Q7881, Daughter of Tachibana Kiyotomo (Wife of Fujiwara Manatsu), Ju Qing You Noniang (teng Yuan Zhen Xia Noqi)
-Q7884, Daughter of Fujiwara Mayutomo (Wife of Fujiwara Otokawa), Teng Yuan Zhen You Noniang (teng Yuan Di He Shi)
-Q7939, Kamitomono clan (court attendant of Emperor Saga), Shang Mao Ye Shi (court attendant of Emperor Saga)
-Q7944, Ki clan (court attendant of Emperor Saga), Ji Shi (court attendant of Emperor Saga)
-Q7946, Daughter of Nagaoka Okanari (court attendant of Emperor Saga), Chang Gang Gang Cheng Noniang (cuo E Tian Huang Nogong Ren)
-Q8004, Sugano clan (wife of Prince Nakano), Jian Ye Shi (zhong Ye Qin Wang Noqi)
-Q8020, Tanji clan (wife of Yoshimine Ansei), Dan Zhi Shi (liang Cen An Shi Qi)
-Q8054, Agata Inukai clan (wife of Fujiwara Kuromaro), Xian Quan Yang Shi (teng Yuan Hei Ma Lu Noqi)
-Q8070, Fujiwara Tadamune (Fujiwara Ceremonial Family), Teng Yuan Zhong Zong (teng Yuan Shi Jia)
-Q8177, Daughter of Ise Roujin (wife of Fujiwara Manatsu), Yi Shi Lao Ren Noniang (teng Yuan Zhen Xia Noqi) )
-Q8182, Daughter of Fujiwara Manatsu (wife of Fujiwara Aibatsu), Teng Yuan Zhen Xia Noniang (teng Yuan Ai Fa Shi)
-Q8186, Daughter of Fujiwara Manatsu (wife of Fujiwara Chikaminori), Teng Yuan Zhen Xia Noniang (teng Yuan Jin Cen Noqi)
-Q8196, Daughter of Fujiwara Aibatsu (wife of Prince Tsunesada), Teng Yuan Ai Fa Noniang (heng Zhen Qin Wang Fei)
-Q8246, Daughter of Baekje King Toyotsune (courtesan of Emperor Ninmyo), Bai Ji Wang Li Jun Noniang (ren Ming Tian Huang Nogong Ren)
-Q8270, Granddaughter of Fujiwara Taketomo (wife of Minamoto Tsune), Teng Yuan Xiong You Nosun Niang (yuan Chang Noqi)
-Q8297, Daughter of Taira Takamune (wife of Fujiwara Fusao), Ping Gao Dong Noniang (teng Yuan Fang Xiong Noqi)
-Q8300, daughter of Fujiwara no Koreo (mother of Taira no Takamochi), Teng Yuan Shi Xiong Noniang (ping Gao Wang Nomu)
-Q8311, daughter of King Takamochi (wife of Fujiwara no Iki), Gao Wang Wang Noniang (teng Yuan Wei Ji Shi)
-Q8367, daughter of Iitaka's disciple (wife of Fujiwara no Mimori), Fan Gao Di Zi Noniang (teng Yuan San Shou Noqi)
-Q8370, daughter of Fujiwara no Mimori (wife of Ono no Takamura), Teng Yuan San Shou Noniang (xiao Ye Huang Noshi)
-Q8377, Tachibana clan (wife of Fujiwara no Takahito), Ju Shi (teng Yuan Gao Ren Noqi)
-Q8470, daughter of Ship Vice Envoy Maro (wife of Fujiwara no Yoshiyo), Chuan Fu Shi Ma Lu Noniang (teng Yuan Liang Shi Shi)
-Q8478, Okinaga clan (wife of Fujiwara no Hamao), Xi Chang Shi (teng Yuan Bin Xiong Noqi)
-Q8522, Daughter of Ban clan (court attendant of Emperor Montoku), Ban Shi Nu (wen De Tian Huang Gong Ren)
-Q8523, Daughter of Taji clan (court attendant of Emperor Montoku), Duo Zhi Shi Noniang (wen De Tian Huang Nogong Ren)
-Q8524, Daughter of Kiyohara clan (court attendant of Emperor Montoku), Qing Yuan Shi Noniang (wen De Tian Huang Nogong Ren)
-Q8541, Daughter of Tanji clan (court attendant of Emperor Koko), Dan Zhi Shi (guang Xiao Tian Huang Nogong Ren)
-Q8581, Daifu (poet), Da Fu (ge Ren)
-Q8584, Daughter of Fujiwara no Monmune (wife of Minamoto no Noboru), Teng Yuan Men Zong Noniang (yuan Sheng Noqi)
-Q8596, Fujiwara Fusao (Fujiwara Southern Family), Teng Yuan Fang Xiong (teng Yuan Nan Jia)
-Q8684, Daughter of Prince Sadamoto (wife of Fujiwara Okitsugu), Zhen Yuan Qin Wang Noniang (teng Yuan Xing Si Noqi)
-Q8692, Daughter of Prince Koretaka (wife of Prince Sadazumi), Wei Qiao Qin Wang Noniang (zhen Chun Qin Wang Noqi)
-Q8738, Daughter of the Takebe clan (wife of Fujiwara Ariyoshi), Jian Bu Shi Noniang (teng Yuan You Nian Noqi)
-Q8749, Daughter of Fujiwara Mototsune (Wife of Prince Sadamoto), Teng Yuan Ji Jing Nonu (zhen Yuan Qin Wang Fei)
-Q8754, Hyoe (Woman of the Heian Period), Bing Wei (ping An Shi Dai Nonu Xing)
-Q8762, daughter of Minamoto no Sadaari (concubine of Fujiwara no Tsunesa), Yuan Ding You Noniang (teng Yuan Heng Zuo Noqie)
-Q8767, daughter of Miharu Toyomune (wife of Fujiwara no Toshiki), Yu Chun Li Zong Noniang (teng Yuan Li Ji Noqi)
-Q8786, daughter of Oe Gyokuen (wife of Minamoto no Munekai), Da Jiang Yu Yuan Noniang (yuan Zong Hai Noqi)
-Q8787, Oe Wei Ming (son of Oe no Senri), Da Jiang Wei Ming (da Jiang Qian Li Nozi)
-Q8790, Oe Wei Ming (son of Oe no Senko), Da Jiang Wei Ming (da Jiang Qian Gu Nozi)
-Q8828, daughter of Fujiwara no Tadafumi (wife of Minamoto no Kosen), Teng Yuan Zhong Wen Noniang (yuan Xiang Quan Noqi)
-Q8834, daughter of Fujiwara no Tadafumi (wife of Minamoto no Yoshimichi), Teng Yuan Zhong Wen Noniang (yuan You Dao Noqi)
-Q8840, daughter of Minamoto no Toshi (wife of Fujiwara no Tadakimi), Yuan Jun Noniang (teng Yuan Zhong Jun Noqi)
-Q8850, daughter of Minamoto no Tadashi (wife of Fujiwara no Reishige (Ashige)), Yuan Deng Noniang (teng Yuan Ling Mao (he Mao)shi)
-Q8863, daughter of Taira no Nakako (wife of Oe no Asatsuna), Ping Zhong Xing Noniang (da Jiang Zhao Gang Noqi)
-Q8866, daughter of Taira no Kimimasa (wife of Taira no Tadatsune), Ping Gong Ya Niang (ping Zhong Chang Zheng Shi)
-Q8867, daughter of Taira no Kimimasa (wife of Youdao Weihiro), Ping Gong Ya Noniang (you Dao Wei Guang Shi)
-Q8890, Sister of Taira Tadamichi (wife of Taira Masatsune), Ping Zhong Tong Zi Mei (ping Jiang Heng Shi)
-Q8893, Daughter of Taira Tadamichi (wife of Minamoto Tamemitsu), Ping Zhong Tong Noniang (yuan Wei Man Shi)
-Q8894, Daughter of Taira Tadamichi (wife of Taira Masatsune), Ping Zhong Tong Niang (ping Jiang Heng Ji Shi)
-Q8899, Daughter of the Hata clan (wife of Fujiwara Tamenori), Qin Shi Noniang (teng Yuan Wei Xian Noqi)
-Q8908, Daughter of Taira Sadafumi (wife of Fujiwara Fumiyuki), Ping Ding Wen Noniang (teng Yuan Wen Xing Noqi)
-Q9006, Daughter of Fujiwara Masamichi (wife of Fujiwara Yasuchika), Teng Yuan Zheng Lun Noniang (teng Yuan An Qin Noqi)
-Q9007, Daughter of Fujiwara no Kiyokane (wife of Fujiwara no Yasuchika), Teng Yuan Qing Jian Noniang (teng Yuan An Qin Noqi)
-Q9013, Daughter of Fujiwara no Yasuchika (wife of Fujiwara no Tomoya), Teng Yuan An Qin Noniang (teng Yuan Deng Zhao Noqi)
-Q9026, Daughter of Fujiwara no Sadakata (wife of Fujiwara no Tadakata), Teng Yuan Ding Fang Noniang (teng Yuan Yin Wen Shi)
-Q9027, Daughter of Fujiwara no Sadakata (wife of Taira no Tsutomu), Teng Yuan Ding Fang Noniang (ping Sui Shi Noqi)
-Q9028, Daughter of Fujiwara no Sadakata (wife of Minamoto no Tameyoshi), Teng Yuan Ding Fang Noniang (yuan Wei Shan Noqi)
-Q9076, Minamoto no Kanetada (son of Prince Sadamoto), Yuan Jian Zhong (zhen Yuan Qin Wang Nozi)
-Q9079, Daughter of Fujiwara no Tadamoto (wife of Fujiwara no Kaneie), Teng Yuan Zhong Gan Noniang (teng Yuan Jian Jia Noqi)
-Q9080, Daughter of Minamoto no Tsunemoto (wife of Fujiwara no Koretake), Yuan Jing Ji Noniang (teng Yuan Wei Yue Shi)
-Q9088, Daughter of Shigeno no Tsunekage (wife of Prince Sadayasu), Zi Ye Heng Yin Noniang (zhen Bao Qin Wang Noqi)
-Q9091, Daughter of Fujiwara no Arisato (wife of Fujiwara no Enryo), Teng Yuan You Xiang Noniang (teng Yuan Yuan Liang Shi)
-Q9111, Qing Yin (Tendai sect), Qing Yin (tian Tai Zong)
-Q9112, Daughter of the Ban clan (wife of Minamoto no Munekai), Ban Shi Noniang (yuan Zong) Hai Noqi)
-Q9114, Daughter of Fujiwara no Endadada (wife of Oe no Iritoki), Teng Yuan Yuan Zhong Noniang (da Jiang Wei Shi Noqi)
-Q9149, Daughter of Minamoto no Mitsunaka (wife of Minamoto no Atsushi), Yuan Man Zhong Noniang (yuan Dun Noqi)
-Q9172, Daughter of Sugawara no Arimune (wife of Prince Moriaki), Jian Yuan Zai Gong Noniang (sheng Ming Qin Wang Noqi)
-Q9196, Daughter of Fujiwara no Masamasa (wife of Taira no Isamu), Teng Yuan Ya Zheng Niang (ping Wei Jiang Shi)
-Q9216, Daughter of Musashi no Takeshiba (wife of Taira no Masatsune), Wu Zang Wu Zhi Niang (ping Jiang Heng Zheng Shi)
-Q9219, Daughter of Maruko no Kimikage (wife of Kamakura no Akina), Wan Zi Gong Jing Niang (lian Cang Zhang Ming Nozheng Shi)
-Q9220, Daughter of Miura Tamemichi? (Legal wife of Kamakura Kagemichi?), San Pu Wei Tong Noniang? (lian Cang Jing Tong Nozheng Shi?)
-Q9221, Kajiwara Kagehisa (Son of Kamakura Kagemichi), Wei Yuan Jing Jiu (lian Cang Jing Tong Nozi)
-Q9326, Daughter of Yoshishige Tamemasa (Wife of Fujiwara Tsunehira), Qing Zi Wei Zheng Noniang (teng Yuan Jing Heng Noqi)
-Q9369, Minamoto Nobutoki (Son of Minamoto Tokinaka), Yuan Xin Shi (yuan Shi Zhong Nozi)
-Q9374, Counterparty (Concubine of Regent Fujiwara Kaneie), Dui Yu Fang (she Zheng Teng Yuan Jian Jia Noqie)
-Q9376, Daughter of Minamoto Nokanetada (Fujiwara Kaneie's wife), Yuan Jian Zhong Noniang (teng Yuan Jian Jia Shi)
-Q9394, Daughter of Fujiwara Michitaka (wife of Taira Shigeyoshi), Teng Yuan Dao Long Niang (ping Zhong Yi Shi)
-Q9419, Fujiwara Moriko (daughter of Fujiwara Michinaga), Teng Yuan Sheng Zi (teng Yuan Dao Chang Noniang)
-Q9426, Daughter of Minamoto no Mitsunaka (wife of Fujiwara no Korenari), Yuan Man Zhong Noniang (teng Yuan Wei Cheng Noqi)
-Q9437, Fujiwara Yoshiko (daughter of Fujiwara no Tamesuke), Teng Yuan Shu Zi (teng Yuan Wei Fu Noniang)
-Q9460, Daughter of Fujiwara no Tametoki (wife of Fujiwara no Nobutsune), Teng Yuan Wei Shi Noniang (teng Yuan Xin Jing Noqi) )
-Q9464, Fujiwara Nobutsune (son of Fujiwara Tamenaga), Teng Yuan Xin Jing (teng Yuan Wei Chang Nozi)
-Q9465, Fujiwara Yoritsune (Kanshuji lineage), Teng Yuan Lai Jing (quan Xiu Si Liu)
-Q9472, Fujiwara Kanemitsu (commander of the Chinjufu), Teng Yuan Jian Guang (zhen Shou Fu Jiang Jun)
-Q9484, daughter of Minamoto no Kanetada (wife of Fujiwara no Saiji), Yuan Jian Zhong Noniang (teng Yuan Ji Shi Shi)
-Q9488, daughter of Fujiwara no Fuminori (wife of Minamoto no Hoseki), Teng Yuan Wen Xin Noniang (yuan Feng Zhi Noqi)
-Q9513, daughter of Sakurajima Tadanobu (wife of Oe no Narimitsu), Ying Dao Zhong Xin Noniang (da Jiang Qi Guang Noqi) )
-Q9538, Daughter of Tachibana Hiki (wife of Minamoto Nobuaki), Ju Mi Shu Noniang (yuan Xin Ming Noqi)
-Q9547, Daughter of Sugawara Masanori (wife of Sugawara Tamenori), Jian Yuan Ya Gui Noniang (jian Yuan Wei Ji Noqi)
-Q9561, Daughter of Minamoto Mitsunaka (wife of Fujiwara no Yorichika), Yuan Man Zhong Noniang (teng Yuan Lai Qin Shi)
-Q9562, Daughter of Minamoto Mitsunaka (wife of Fujiwara no Michitsuna), Yuan Man Zhong Noniang (teng Yuan Dao Gang Shi)
-Q9567, Minamoto no Yoriki (Settsu Genji), Yuan Lai Ji (she Jin Yuan Shi)
-Q9571, Eiju (Heian period), Yong Shou (ping An Shi Dai)
-Q9573, Daughter of Minamoto no Yorimitsu (wife of Oe no Kimisuke), Yuan Lai Guang Noniang (da Jiang Gong Zi Noqi)
-Q9575, daughter of Fujiwara no Korekaze (wife of Minamoto no Yorihira), Teng Yuan Wei Feng Noniang (yuan Lai Ping Noqi)
-Q9577, daughter of Minamoto no Yorihira (wife of Fujiwara no Suenaka), Yuan Lai Ping Noniang (teng Yuan Ji Zhong Noqi)
-Q9580, daughter of Fujiwara no Yoshitomo (wife of Fujiwara no Arikuni), Teng Yuan Yi You Noniang (teng Yuan You Guo Noqi)
-Q9581, daughter of Echizen no Kami Shinari or Fujiwara no Yoshitomo (wife of Fujiwara no Arikuni), Yue Qian Shou Si Cheng Matahateng Yuan Yi You Noniang (teng Yuan You Guo Noqi)
-Q9584, daughter of Fujiwara no Arikuni (wife of Minamoto no Kensada), Teng Yuan You Guo Noniang (yuan Xian Ding Shi) )
-Q9585, Fujiwara no Sadatsugu (son of Fujiwara no Arikuni), Teng Yuan Zhen Si (teng Yuan You Guo Nozi)
-Q9589, Daughter of Fujiwara no Arikuni (concubine of Minamoto no Yorisada), Teng Yuan You Guo Noniang (yuan Lai Ding Noqie)
-Q9593, Daughter of Fujiwara no Iyori (concubine of Fujiwara no Tamemitsu), Teng Yuan Yi Yin Noniang (teng Yuan Wei Guang Qie)
-Q9600, Daughter of Fujiwara no Tamemitsu (wife of Fujiwara no Takaie), Teng Yuan Wei Guang Noniang (teng Yuan Long Jia Shi)
-Q9610, Minamoto no Akisada (son of Prince Tamehira), Yuan Xian Ding (wei Ping Qin Wang Nozi)
-Q9620, Daughter of Yoshimine Eizai or Tachibana no Kohei (wife of Fujiwara no Atsunobu), Liang Cen Ying Cai Matahaju Heng Ping Noniang (teng Yuan Dun Xin Shi)
-Q9624, Fujiwara no Asatsune (eldest son of Fujiwara no Asamitsu), Teng Yuan Zhao Jing (teng Yuan Zhao Guang Nochang Nan)
-Q9633, Daughter of the Chichibu no Kuni no Miyatsuko (wife of Taira no Tsunemasa), Zhi Fu Guo Zao Niang (ping Chang Jiang Noqi)
-Q9637, Taira no Koremori (Province of Suruga), Ping Wei Sheng (jun He Shou)
-Q9642, Daughter of Taira no Masanori (wife of Fujiwara no Nagachika), Ping Zheng Du Noniang (teng Yuan Yong Qin Noqi)
-Q9643, Daughter of Minamoto no Yoriyoshi (wife of Taira no Masatsune), Yuan Lai Yi Noniang (ping Zheng Ji Noshi)
-Q9650, Princess Toku (daughter of Minamoto no Yoriyoshi?), De Ji (yuan Lai Yi Noniang) ?)
-Q9659, Daughter of Toi Enpei (wife of Ito Yuji), Tu Fei Yuan Ping Niang (yi Dong You Shi Shi )
-Q9660, Daughter of Toi Enpei (wife of Miura Yoshimura), Tu Fei Yuan Ping Noniang (san Pu Yi Cun Shi )
-Q9669, Eldest daughter of Minamoto no Arimitsu (wife of Taira no Taketsuna), Yuan You Guang Chang Nu (ping Wu Gang Zheng Shi )
-Q9677, Daughter of Tachibana no Sukemasa (wife of Minamoto no Yorisada), Ju Fu Zheng Noniang (yuan Lai Ding Noqi )
-Q9681, Daughter of Tachibana no Tamemasa (wife of Fujiwara no Yukinari), Ju Wei Zheng Noniang (teng Yuan Xing Cheng Noqi )
-Q9752, Daughter of Fujiwara no Iyori (wife of Fujiwara no Takaie), Teng Yuan Yi Yin Noniang (teng Yuan Long Jia Shi)
-Q9780, Daughter of Minamoto no Yorikuni (wife of Minamoto no Tomonobu), Yuan Lai Guo Noniang (yuan Zhao Ren Noqi)
-Q9782, Daughter of Minamoto no Tomonobu (wife of Fujiwara no Tsunetobu), Yuan Zhao Ren Niang (teng Yuan Jing Ren Shi)
-Q9795, Fujiwara no Akinaga (son of Fujiwara no Ise), Teng Yuan Xian Chang (teng Yuan Yi Zhou Nozi)
-Q9799, Second daughter of Fujiwara no Takaie (wife of Fujiwara no Kanetsugu), Teng Yuan Long Jia Noci Nu (teng Yuan Jian Jing Noqi)
-Q9810, Eldest daughter of Fujiwara no Kanetaka (wife of Prince Atsuhira), Teng Yuan Jian Long Nochang Nu (dun Ping Qin Wang Nofei)
-Q9866, Eldest daughter of Fujiwara no Tsunesuke (wife of Fujiwara no Tadaie), Teng Yuan Jing Fu Nochang Nu (teng Yuan Zhong Jia Shi)
-Q9867, Daughter of Fujiwara Atsushi (wife of Fujiwara Tadaie), Teng Yuan Dun Jia Noniang (teng Yuan Zhong Jia Noqi)
-Q9870, Kato Masaie (first head of the Kato clan of the Kiyomasa line), Jia Teng Zheng Jia (qing Zheng Xi Jia Teng Shi Chu Dai)
-Q9872, Lady of Bifukumon'in (Mistress of Minamoto Masamichi), Mei Fu Men Yuan Nu Fang (yuan Ya Tong Noqie)
-Q9886, Daughter of Minamoto Yoshimasa (wife of Fujiwara Noritoki), Yuan Neng Zheng Noniang (teng Yuan Ji Shi Noqi)
-Q9899, Daughter of Minamoto Norisada (wife of Minamoto Norimichi), Yuan Xian Ding Noniang (yuan Ze Li Noqi)
-Q9900, Daughter of Minamoto Norimichi (Wife of Prince Dunping), Yuan Ze Li Noniang (dun Ping Qin Wang Nofei)
-Q9921, Daughter of Tachibana Tadamochi (Wife of Tachibana Norinaga), Ju Zhong Wang Noniang (ju Ze Chang Noqi)
-Q9926, Daughter of Fujiwara Todo (Wife of Fujiwara Hironari), Teng Yuan Yuan Du Noniang (teng Yuan Guang Ye Noqi)
-Q9946, Eldest daughter of Fujiwara Yukinari (wife of Minamoto Akimoto), Teng Yuan Xing Cheng Nochang Nu (yuan Xian Ji Shi)
-Q9947, Second daughter of Fujiwara Yukinari (wife of Minamoto Tsuneyoshi), Teng Yuan Xing Cheng Noci Nu (yuan Jing Lai Shi)
-Q9953, Daughter of Minamoto Takamasa (Second wife of Fujiwara Tsunemichi), Yuan Gao Ya Noniang (teng Yuan Jing Tong Hou Shi)
-Q9957, Fujiwara Sukeyori (Onomiya lineage), Teng Yuan Zi Lai (xiao Ye Gong Liu)
-Q9958, Fujiwara Suketaka (Onomiya line), Teng Yuan Zi Gao (xiao Ye Gong Liu)
-Q9959, Daughter of Fujiwara no Kaihei (wife of Minamoto no Yukito), Teng Yuan Huai Ping Noniang (yuan Xing Ren Noqi)
-Q9968, Daughter of Sugawara no Koretsuna (wife of Fujiwara no Toshinobu), Jian Yuan Shi Gang Noniang (teng Yuan Jun Xin Noqi)
-Q9974, Daughter of Sagami no Kami Fujiwara no Kiyoie or Sugawara no Kiyofusa (wife of Fujiwara no Michitsune), Xiang Mo Shou Teng Yuan Qing Jia Moshikuhajian Yuan Qing Fang Noniang (teng Yuan Dao Jing Noqi)
-Q9980, Daughter of Minamoto no Yorinobu? (mother of Fujiwara no Sukeie), Yuan Lai Xin Noniang? (teng Yuan Zi Jia Nomu)
-Q9996, Daughter of Minamoto no Yorikuni (Fujiwara Akiie's wife), Yuan Lai Guo Noniang (teng Yuan Xian Jia Shi)
-Q9999, Daughter of Minamoto no Yorikunin (wife of Fujiwara no Moritsuna), Yuan Lai Guo Noniang (teng Yuan Sheng Gang Noqi)
-Q10000, Daughter of Minamoto no Yorikunin (wife of Fujiwara no Morizane), Yuan Lai Guo Noniang (teng Yuan Sheng Shi Noqi)
-Q10010, Daughter of Fujiwara no Sukenari (wife of Fujiwara no Atsumune), Teng Yuan Zi Ye Noniang (teng Yuan Dun Zong Noqi)
-Q10011, Daughter of Fujiwara no Sukenari (wet nurse of Emperor Shirakawa), Teng Yuan Zi Ye Noniang (bai He Tian Huang Noru Mu)
-Q10015, Daughter of Fujiwara no Kiminari (concubine of Fujiwara no Norimune), Teng Yuan Gong Ye Noniang (teng Yuan Ze Jing) Noqie)
-Q10016, Daughter of Fujiwara no Kinyo (wife of Fujiwara no Ietsune), Teng Yuan Gong Ye Noniang (teng Yuan Jia Jing Noqi)
-Q10043, Daughter of Taira no Saneshige (wife of Fujiwara no Akihira), Ping Shi Zhong Noniang (teng Yuan Ming Heng Noqi)
-Q10075, Daughter of Chokai no Tadahira (wife of Taira no Tsunekane), Niao Hai Zhong Heng Noniang (ping Chang Jian Noqi)
-Q10090, Daughter of Chichibu no Shigetsuna (wife of Miura no Yoshiaki), Zhi Fu Zhong Gang Noniang (san Pu Yi Ming Noqi)
-Q10095, Daughter of Miura no Yoshiaki (concubine of Minamoto no Yoshitomo), San Pu Yi Ming Niang (yuan Yi Zhao Ce Shi)
-Q10096, Daughter of Miura no Yoshiaki (wife of Hatakeyama Shigenobu), San Pu Yi Ming Noniang (cen Shan Zhong Neng Zheng Shi)
-Q10097, daughter of Miura Yoshiaki (wife of Nagae Yoshikage), San Pu Yi Ming Noniang (chang Jiang Yi Jing Zheng Shi)
-Q10100, daughter of Miura Yoshiaki (wife of Kaneda Yoritsugu), San Pu Yi Ming Noniang (jin Tian Lai Ci Noqi)
-Q10105, daughter of Ōba Kagemune (wife of Hatano Yoshitsune), Da Ting Jing Zong Noniang (bo Duo Ye Yi Chang Noshi)
-Q10108, daughter of Ono (wife of Chichibu Shigetsuna), Xiao Ye Shi Nu (zhi Fu Zhong Gang Zheng Shi)
-Q10109, daughter of Kodama Yukitsune (wife of Chichibu Shigetsuna), Er Yu Xing Jing Niang (zhi Fu Zhong Gang Noqi)
-Q10120, Daughter of Tachibana Noritaka (wife of Fujiwara no Michitsune), Ju Ze Long Noniang (teng Yuan Dao Jing Noqi)
-Q10138, Nakatsukasa (daughter of Taira no Sukeyuki), Zhong Wu (ping You Zhi Nu)
-Q10152, Princess Eishi (daughter of Koichijoin no Atsuakira), Rong Zi Nei Qin Wang (xiao Yi Tiao Yuan Dun Ming Qin Wang Noniang)
-Q10153, Daughter of Minamoto no Kanesuke (wife of Minamoto no Shigenobu), Yuan Jian Zi Noniang (yuan Cheng Xin Noqi)
-Q10155, Daughter of Sugano no Atsuyori (wife of Minamoto no Shigenobu), Jian Ye Dun Lai Noniang (yuan Cheng Lai Noqi)
-Q10157, Minamoto no Muneyori (ancestor of the Yamamoto clan), Yuan Zong Lai (shan Ben Shi Nozu)
-Q10160, Fujiwara no Motoie (Lord of Mutsu), Teng Yuan Ji Jia (lu Ao Shou)
-Q10163, Suzuki Shigetoyo's daughter (wife of Fujiwara no Sanekata), Ling Mu Zhong Li Noniang (teng Yuan Shi Fang Noqi)
-Q10164, Onaka no Omisukechika's daughter (wife of Fujiwara no Sanekata), Da Zhong Chen Fu Qin Noniang (teng Yuan Shi Fang Noqi)
-Q10167, Chang Kai (Kumano betto), Chang Kuai (xiong Ye Bie Dang)
-Q10168, Minamoto no Sadaaki's daughter (wife of Minamoto no Tsunenobu), Yuan Zhen Liang Noniang (yuan Jing Xin Noqi)
-Q10176, Fujiwara no Tsunetada (Takano Tsuneshigeiki), Teng Yuan Jing Zhong (gao Jie Jing Zhong Xi) )
-Q10177, Daughter of Takashina Tsuneshige (Fujiwara Yukifusa's chamberlain), Gao Jie Jing Zhong Noniang (teng Yuan Xing Fang Shi)
-Q10183, Daughter of Takashina Shigeaki (Fujiwara Michifusa's wet nurse), Gao Jie Cheng Zhang Noniang (teng Yuan Tong Fang Ru Mu)
-Q10187, Daughter of Takashina Shigeaki (wife of Fujiwara Michimune), Gao Jie Cheng Zhang Noniang (teng Yuan Tong Zong Noqi)
-Q10208, Daughter of Fujiwara Yoshimichi (wife of Fujiwara Ietsune), Teng Yuan Neng Tong Noniang (teng Yuan Jia Jing Noqi)
-Q10211, Daughter of Endo Eigen (mother of Endo Tametada), Yuan Teng Yong Yan Noniang (yuan Teng Wei Zhong Nomu)
-Q10215, Daughter of Fujiwara Sanemune (Wife of Minamoto no Nakafusa), Teng Yuan Shi Zong Noniang (yuan Zhong Fang Noqi)
-Q10225, Head of the Fujiwara clan (Son of Prince Atsutada), Teng Yuan Zong Jia (dun Zhen Qin Wang Nozi)
-Q10230, Kakusuke (Monk), Jue Zhu (seng)
-Q10233, Daughter of Fujiwara no Yoshiyori (Wife of Fujiwara no Motosada), Teng Yuan Liang Lai Noniang (teng Yuan Ji Zhen Shi)
-Q10234, Housewife (Wife of Fujiwara no Tsunesuke), Jia Nu Fang (teng Yuan Jing Fu Noqi)
-Q10257, Daughter of Fujiwara no Norihisa (Wife of Fujiwara no Tadatsuna), Teng Yuan Fan Yong Noniang (teng Yuan Zhong Gang Noqi)
-Q10258, Daughter of Fujiwara no Motosada (Wife of Fujiwara no Michizane), Teng Yuan Ji Zhen Niang (teng Yuan Shi Shi Shi)
-Q10260, Daughter of a parallel parent (wife of Fujiwara no Michizane), Ping Xing Qin Noniang (teng Yuan Shi Shi Noqi)
-Q10262, Daughter of Fujiwara no Tadatoshi (wife of Fujiwara no Michizane), Teng Yuan Zhong Jun Noniang (teng Yuan Shi Shi Noqi)
-Q10264, Daughter of Minamoto no Norishige (wife of Fujiwara no Michizane), Yuan Ze Cheng Noniang (teng Yuan Shi Shi Noqi)
-Q10265, Daughter of Seien or Yorien (wife of Fujiwara no Michizane), Qing Yuan Matahalai Yuan Noniang (teng Yuan Shi Shi Noqi)
-Q10274, Daughter of Fujiwara no Michizane (wife of Fujiwara no Mototaka), Teng Yuan Shi Shi Noniang (teng Yuan Ji Long Shi)
-Q10277, Fujiwara no Sadazane (Son of Fujiwara no Sadatsuna), Teng Yuan Ding Shi (teng Yuan Ding Gang Nozi)
-Q10279, Daughter of Fujiwara no Norihisa (Lady of Fujiwara no Yorimune), Teng Yuan Fan Yong Noniang (teng Yuan Lai Zong Nojia Nu Fang)
-Q10320, Daughter of Minamoto no Akimasa (Wife of Naniwa no Yoritsune), Yuan Xian Ya Noniang (nan Bo Lai Jing Zheng Shi)
-Q10321, Daughter of Minamoto no Kuniakira or daughter of Tameie (Wife of Minamoto no Nobumasa), 
-Q10322, Daughter of Minamoto no Kunifusa (Wife of Minamoto no Nobumasa), Yuan Guo Fang Noniang (yuan Xin Ya Shi)
-Q10325, Daughter of Minamoto no Nobumasa (Wife of Fujiwara no Mitsutada), Yuan Xin Ya Niang (teng Yuan Guang Zhong Shi)
-Q10329, Daughter of Fujiwara Sadanari (wife of Minamoto Akifusa), Teng Yuan Ding Cheng Noniang (yuan Xian Fang Noqi)
-Q10330, Daughter of Minamoto Shunsuke (wife of Minamoto Akinaka), Yuan Jun Fu Noniang (yuan Xian Zhong Noqi)
-Q10331, Minamoto Arifusa (son of Minamoto Akinaka), Yuan You Fang (yuan Xian Zhong Nozi)
-Q10337, Daughter of Minamoto Akinaka (wife of Minamoto Masamitsu), Yuan Xian Zhong Noniang (yuan Ya Guang Noqi)
-Q10339, Daughter of Takashina Yasunaka (wife/concubine of Minamoto Kuninobu), Gao Jie Tai Zhong Noniang (yuan Guo Xin Noqi *qie)
-Q10340, Daughter of Takashina Tsunenari (wife of Minamoto Kuninobu), Gao Jie Jing Cheng Noniang (Yuan Guo Xin Noqi)
-Q10700, Daughter of Minamoto no Morotada (wife of Minamoto no Morotada), Yuan Shi Zhong Noniang (yuan Shi Sh
-Q10700, Daughter of Minamoto no Morotada (wife of Minamoto no Morotada), Yuan Shi Zhong Noniang (yuan Shi Sh
-Q10700, Daughter of Minamoto no Morotada (wife of Minamoto no Morotada), Yuan Shi Zhong Noniang (yuan Shi Sh
-Q10342, Minamoto Nobutoki (son of Minamoto Kuninobu), Yuan Xin Shi (yuai Shi )
-Q10701, Daughter of Minamoto no Morotada (mother of Fujiwara no Morotsuna), Yuan Shi Zhong Noniang (teng Yuan Shi Gang Nomu )
-Q10707, Daughter of Fujiwara no Kiyotsuna (wife of Fujiwara no Tadanori), Teng Yuan Qing Gang Noniang (teng Yuan Zhong Jiao Noqi )
-Q10708, Daughter of Fujiwara no Kiyotsuna (wife of Minamoto no Toshiyori), Teng Yuan Qing Gang Noniang (yuan Jun Lai Nozheng Shi )
-Q10715, Fujiwara no Iemichi (Lord of the Imperial Household), Teng Yuan Jia Tong (gong Nei Qing )
-Q10717, Fujiwara no Kaneko (third rank in Iyo), Teng Yuan Jian Zi (yi Yu San Wei )
-Q10722, Naganori (chief of Kumano), Chang Fan (xiong Ye Bie Dang )
-Q10723, Daughter of Tachibana Atsutaka (second wife of Minamoto no Toshiyori), Ju Dun Long Noniang (yuan Jun Lai Noji Shi)
-Q10725, Daughter of Minamoto no Toshiyori (wife of Ryūkaku), Yuan Jun Lai Noniang (long Jue Noqi)
-Q10726, Daughter of Minamoto no Toshiyori (wife of Minamoto no Shitoshi), Yuan Jun Lai Noniang (yuan Shi Jun Noqi)
-Q10733, Daughter of Takashina Nagayoshi (wife of Fujiwara no Kinzane), Gao Jie Yong Ye Nu (teng Yuan Gong Shi Noqi)
-Q10738, Daughter of Takashina Tsunenari (wife of Fujiwara no Morizane), Gao Jie Jing Cheng Noniang (teng Yuan Sheng Shi Noqi)
-Q10742, Daughter of Takashina Tameie (wife of Minamoto no Iezane), Gao Jie Wei Jia Noniang (yuan Jia Shi Noqi) )
-Q10746, Daughter of Fujiwara no Yoshitsuna (wife of Takashina Yasunaka), Teng Yuan Liang Gang Noniang (gao Jie Tai Zhong Noqi)
-Q10758, Son of Fujiwara no Shigenobu (son of Fujiwara no Shigenobu), Teng Yuan Cheng Jia (teng Yuan Cheng Yin Nozi)
-Q10761, Daughter of Fujiwara no Noriyoshi (wife of Fujiwara no Kimimoto), Teng Yuan Fan Yong Noniang (teng Yuan Gong Ji Noqi)
-Q10774, Third daughter of Fujiwara no Akisue (wife of Sanjo), Teng Yuan Xian Ji San Nu (san Tiao Shi Xing Shi)
-Q10775, Daughter of Fujiwara no Akisue (wife of Minamoto no Masasada), Teng Yuan Xian Ji Noniang (yuan Ya Ding Zheng Shi)
-Q10776, Daughter of Fujiwara no Akisue (wife of Fujiwara no Atsushi), Teng Yuan Xian Ji Noniang (teng Yuan Dun Jian Shi)
-Q10778, Minamoto no Chikafusa (son of Minamoto no Nakafusa), Yuan Qin Fang (yuan Zhong Fang Nozi)
-Q10792, daughter of Fujiwara no Kofusa (wife of Fujiwara no Atsumune), Teng Yuan Gong Fang Noniang (teng Yuan Dun Zong Noqi)
-Q10803, daughter of Fujiwara no Yoshitsuna (wife of Fujiwara no Moronobu), Teng Yuan Liang Gang Noniang (teng Yuan Shi Xin Noqi)
-Q10809, daughter of Mashiko Masataka (wife of Fujiwara no Muneen), Yi Zi Zheng Long Noniang (teng Yuan Zong Yuan Nozheng Shi)
-Q10820, daughter of Fujiwara no Yoshitsuna (wife of Fujiwara no Michimichi), Teng Yuan Liang Gang Noniang (teng Yuan Shi Tong Noqi) )
-Q10826, Prince Fujiwara (daughter of Fujiwara no Kimizane), Teng Yuan Gong Zi (teng Yuan Gong Shi Noniang)
-Q10827, Tameko Fujiwara (daughter of Fujiwara no Tamefusa), Teng Yuan Wei Zi (teng Yuan Wei Fang Noniang)
-Q10828, Daughter of Fujiwara no Norikata (wife of Fujiwara no Tsunezane), Teng Yuan Xian Fang Noniang (teng Yuan Jing Shi Noqi)
-Q10833, Daughter of Fujiwara no Yoshizane (wife of Minamoto no Michiyori), Teng Yuan Neng Shi Nu (yuan Shi Lai Shi)
-Q10834, Daughter of Fujiwara no Yoshizane (wife of Fujiwara no Muneyoshi), Teng Yuan Neng Shi Noniang (teng Yuan Zong Neng Shi)
-Q10835, Daughter of Fujiwara no Yoshizane (wife of Minamoto no Michitaka), Teng Yuan Neng Shi Noniang (yuan Shi Long Shi) )
-Q10836, Daughter of Fujiwara Nozane (wife of Fujiwara Tadamune), Teng Yuan Neng Shi Nonu (teng Yuan Zhong Zong Shi)
-Q10838, Daughter of Fujiwara Tamefusa (second wife of Fujiwara Tadanori), Teng Yuan Wei Fang Noniang (teng Yuan Zhong Jiao Noji Shi)
-Q10839, Daughter of Oike Shiritsugu (wife of Fujiwara Tadanori), Da Chi Cheng Ji Noniang (teng Yuan Zhong Jiao Noqi)
-Q10842, Fujiwara Tadamoto (Naniwa family), Teng Yuan Zhong Ji (nan Bo Jia)
-Q10847, Daughter of Takashina Tameyuki (wife of Fujiwara Kiyotaka), Gao Jie Wei Xing Noniang (teng Yuan Qing Long Noqi)
-Q10851, Daughter of Fujiwara Sadanari (wife of Fujiwara Mototoshi), Teng Yuan Ding Cheng Noniang (teng Yuan Ji Jun Noqi)
-Q10853, Fujiwara Michimoto (Minister of Treasury), Teng Yuan Tong Ji (da Zang Qing)
-Q10861, Daughter of Fujiwara Munezane (wife of Fujiwara Nagatada), Teng Yuan Zong Shi Noniang (teng Yuan Chang Zhong Noqi)
-Q10862, Daughter of Fujiwara Nagatada (wife of Fujiwara Mototaka), Teng Yuan Chang Zhong Noniang (teng Yuan Ji Long Shi)
-Q10863, Daughter of Fujiwara Nagatada (wife of Fujiwara Tadanobu), Teng Yuan Chang Zhong Noniang (teng Yuan Zhong Neng Shi)
-Q10865, Daughter of Fujiwara Korenobu (wife of Minamoto no Akitoshi), Teng Yuan Wei Xin Noniang (yuan Xian Jun Noqi)
-Q10868, Fujiwara Munekane (son of Fujiwara Munezane), Teng Yuan Zong Jian (teng Yuan Zong Shi Nozi)
-Q10869, Daughter of Minamoto no Michiyori (wife of Minamoto no Motohira), Yuan Shi Lai Noniang (yuan Ji Ping Shi)
-Q10885, Fujiwara no Muneko (daughter of Fujiwara no Takamune), Teng Yuan Zong Zi (teng Yuan Long Zong Noniang)
-Q10891, Fujiwara no Kinyori (Kan'in lineage), Teng Yuan Gong Lai (xian Yuan Liu)
-Q10899, Daughter of Shinano no Kami Minamoto no Arifusa (wife of Minamoto no Yoshikuni), Xin Nong Shou Yuan You Fang Niang (yuan Yi Guo Shi)
-Q10900, Daughter of Minamoto no Arifusa (mother of Shinzei?), Yuan You Fang Nonu (xin Xi Nomu?)
-Q10911, Daughter of Fujiwara no Ienari (wife of Minamoto no Sadafusa), Teng Yuan Jia Cheng Noniang (yuan Ding Fang Shi)
-Q10913, daughter of Minamoto no Sadafusa (wife of Fujiwara no Tsunemune), Yuan Ding Fang Noniang (teng Yuan Jing Zong Shi)
-Q10914, daughter of Minamoto no Sadafusa (wife of Taira no Chikuni), Yuan Ding Fang Noniang (ping Qin Guo Shi)
-Q10915, daughter of Minamoto no Sadafusa (wife of Fujiwara no Sadatsune), Yuan Ding Fang Noniang (teng Yuan Ding Jing Shi)
-Q10916, daughter of Fujiwara no Mitsutada or Minamoto no Sadafusa (wife of Fujiwara no Tsuneka), Teng Yuan Guang Zhong Matahayuan Ding Fang Noniang (teng Yuan Jing Jia Shi)
-Q10918, daughter of Fujiwara no Ienari (wife of Minamoto no Masayori), Teng Yuan Jia Cheng Noniang (yuan Ya Lai Shi)
-Q10921, daughter of Minamoto no Masayori (wife of Nakain Michikata), Yuan Ya Lai Noniang (zhong Yuan Tong Fang Shi)
-Q10922, daughter of Minamoto no Masayori (wife of Saionji Kintsune), Yuan Ya Lai Noniang (xi Yuan Si Gong Jing Shi)
-Q10931, daughter of Fujiwara no Reiaki (wife of Minamoto no Michiyori), Teng Yuan Ling Ming Noniang (yuan Shi Lai Noqi)
-Q10932, daughter of Fujiwara no Michimune (wife of Minamoto no Michiyori), Teng Yuan Tong Zong Noniang (yuan Shi Lai Noqi)
-Q10934, Minamoto no Michimitsu (Murakami Genji), Yuan Shi Guang (cun Shang Yuan Shi)
-Q10935, daughter of Minamoto no Michiyori (wife of Fujiwara no Shigemichi), Yuan Shi Lai Noniang (teng Yuan Zhong Tong Shi)
-Q10936, daughter of Minamoto no Michiyori (Wife of Fujiwara Mitsutaka), Yuan Shi Lai Nu (teng Yuan Guang Long Shi)
-Q10937, Daughter of Minamoto no Michiyori (wife of Fujiwara no Tamemichi), Yuan Shi Lai Noniang (teng Yuan Wei Tong Noqi)
-Q10944, Daughter of Bitchu no Kami Tamemune (wife of Minamoto no Masatoshi), Bei Zhong Shou Wei Zong Noniang (yuan Ya Jun Noqi)
-Q10945, Daughter of Fujiwara no Kuniaki (wife of Minamoto no Masatoshi), Teng Yuan Guo Ming Noniang (yuan Ya Jun Noqi)
-Q10954, Fujiwara no Akinaga (third son of Fujiwara no Akinaga), Teng Yuan Xian Chang (teng Yuan Xian Long Nosan Nan)
-Q10957, Daughter of Fujiwara no Tadanari (concubine of Tokudaiji Kinnobu), Teng Yuan Zhong Cheng Noniang (de Da Si Gong Neng Noqie) )
-Q10958, Daughter of Fujiwara Tadanari (Mistress and wife of Emperor Mochihito), Teng Yuan Zhong Cheng Noniang (yi Ren Wang Noqie *qi )
-Q10959, Daughter of Fujiwara Tadanari (Wife of Jimyoin Motomune), Teng Yuan Zhong Cheng Noniang (chi Ming Yuan Ji Zong Noqi )
-Q10961, Daughter of Fujiwara Tametada (Wife of Fujiwara Toshinari), Teng Yuan Wei Zhong Nu (teng Yuan Jun Cheng Shi )
-Q10973, Lady Bomon (Daughter of Tokudaiji Kouno), Fang Men Dian (de Da Si Gong Neng Nu )
-Q10988, Daughter of Fujiwara Ieyasu (Wife of Minamoto Masamichi), Teng Yuan Jia Bao Noniang (yuan Ya Tong Noqi )
-Q10989, Daughter of Minamoto Masamichi (Wife of Fujiwara Sanemori), Yuan Ya Tong Noniang (teng Yuan Shi Shou Noqi)
-Q10990, Daughter of Kazanin Tadamasa (Concubine of Minamoto Michichika), Hua Shan Yuan Zhong Ya Noniang (Yuan Tong Qin Ce Shi)
-Q10991, Daughter of Taira Norimori or Taira Michimori (Wife of Minamoto Michichika), Ping Jiao Sheng Matahaping Tong Sheng Noniang (Yuan Tong Qin Shi)
-Q11001, Minamoto Parent and Child (Daughter of Minamoto Michichika or Michikata), Yuan Qin Zi (Yuan Tong Qin Matahatong Fang Noniang)
-Q11002, Daughter of Fujiwara no Nagasuke (Wife of Minamoto Michisuke), Teng Yuan Chang Fu Noniang (Yuan Tong Zi Shi)
-Q11005, Daughter of Minamoto Michisuke (Wife of Prince Koreaki), Yuan Tong Zi Noniang (Wei Ming Qin Wang Fei)
-Q11011, Daughter of Fujiwara no Norifusa (Wife of Minamoto Takazane), Teng Yuan Xian Fang Noniang (Yuan Gao Shi Noqi)
-Q11012, Daughter of Fujiwara Norifusa (Wife of Minamoto Akiyasu), Teng Yuan Xian Fang Noniang (Yuan Xian Kang Noqi)
-Q11017, Daughter of Minamoto Shigesuke (Wife of Minamoto Akichika), Yuan Zhong Zi Noniang (Yuan Xian Qin Shi)
-Q11022, Fujiwara Kincho (Son of Fujiwara Kosuke), Teng Yuan Gong Chang (Teng Yuan Gong Fu Nozi)
-Q11023, Fujiwara Yorinaga (Son of Fujiwara Kosuke), Teng Yuan Lai Chang (Teng Yuan Gong Fu Nozi)
-Q11024, Fujiwara Kinto (Son of Fujiwara Kosuke), Teng Yuan Gong Ren (Teng Yuan Gong Fu Nozi)
-Q11032, Fujiwara Sukeyori (Oinomikado line), Teng Yuan Zi Lai (da Chui Yu Men Liu)
-Q11053, Daughter of Fujiwara Toshinobu (wife of Fujiwara Arishige), Teng Yuan Jun Xin Noniang (teng Yuan You Cheng Noqi)
-Q11070, Daughter of Minamoto no Yoshiie (wife of Prince Sukehito), Yuan Yi Jia Nonu (fu Ren Qin Wang Noshi)
-Q11071, Daughter of Minamoto no Yoshiie (wife of Minamoto no Shigeto), Yuan Yi Jia Nonu (yuan Zhong Yuan Noshi)
-Q11074, Minamoto no Yoshinaka (fourth son of Minamoto no Yoshitsuna), Yuan Yi Zhong (yuan Yi Gang Nosi Nan)
-Q11081, Daughter of Kai no Kami Tomozane (wife of Minamoto no Yoshimitsu), Jia Fei Shou Zhi Shi Noniang (yuan Yi Guang Noqi)
-Q11106, Minamoto no Kunimoto (Nose Kunimoto), Yuan Guo Ji (neng Shi Guo Ji)
-Q11108, Daughter of Fujiwara no Morizane (Loyal Concubine of Fujiwara no Morizane), Teng Yuan Sheng Shi Nu (teng Yuan Zhong Shi Qie)
-Q11109, Daughter of Fujiwara no Morizane (Wife of Fujiwara no Itsutsu), Teng Yuan Sheng Shi Noniang (teng Yuan Yi Tong Shi)
-Q11110, Tosa (Wet Nurse of Fujiwara no Yorinaga), Tu Zuo (teng Yuan Lai Chang Ru Mu)
-Q11132, Eiko Fujiwara (Daughter of Fujiwara no Akitaka), Teng Yuan Rong Zi (teng Yuan Xian Long Nonu)
-Q11133, Eldest Daughter of Fujiwara no Akitaka (Wife of the Fujiwara Household), Teng Yuan Xian Long Nochang Nu (teng Yuan Jia Zheng Shi)
-Q11134, Daughter of Fujiwara no Akitaka (wife of Fujiwara no Saneyoshi), Teng Yuan Xian Long Niang (teng Yuan Shi Neng Shi)
-Q11135, Daughter of Fujiwara no Akitaka (wife of Fujiwara no Kiyotaka later wife of Fujiwara no Asataka), Teng Yuan Xian Long Noniang (teng Yuan Qing Long Shi
-Q11136, Daughter of Fujiwara no Akitaka (wife of Fujiwara no Norikata), Teng Yuan Xian Long Noniang (teng Yuan Xian Fang Noqi)
-Q11141, Daughter of Fujiwara no Morizane (wife of Fujiwara no Ietaka), Teng Yuan Sheng Shi Noniang (teng Yuan Jia Long Shi)
-Q11143, Daughter of Fujiwara no Morizane (wife of Ōnakatomi Morochika), Teng Yuan Sheng Shi Noniang (da Zhong Chen Shi Qin Noqi)
-Q11147, Daughter of Fujiwara no Akiken (Mother of Chang Xiu), Teng Yuan Xian Xian Noniang (chang Xiu Nomu)
-Q11148, Daughter of Tokudaiji Kinno (wife of Minamoto no Suke), De Da Si Gong Neng Noniang (yuan Zi Xian Shi)
-Q11149, Daughter of Fujiwara no Ienari (wife of Minamoto no Suke), Teng Yuan Jia Cheng Noniang (yuan Zi Xian Shi)
-Q11152, Daughter of Minamoto no Suke (wife of Fujiwara no Sadanori), Yuan Zi Xian Noniang (teng Yuan Ding Neng Shi)
-Q11153, Daughter of Minamoto no Suke (wife of Fujiwara no Kinkiyo), Yuan Zi Xian Noniang (teng Yuan Gong Qing Noqi)
-Q11159, Fujiwara no Sanemitsu (Hino family), Teng Yuan Shi Guang (ri Ye Jia)
-Q11164, Daughter of Fujiwara no Arisada (Wife of Fujiwara no Sanemitsu), Teng Yuan You Ding Noniang (teng Yuan Shi Guang Noshi)
-Q11165, Fujiwara no Munekane (son of Fujiwara no Atsumune), Teng Yuan Zong Jian (teng Yuan Dun Zong Nozi)
-Q11170, Daughter of Fujiwara no Yukiie (concubine of Fujiwara no Yoshikane), Teng Yuan Xing Jia Noniang (teng Yuan Liang Jian Noqie)
-Q11179, Daughter of Minamoto no Yoshitoshi (wife of Minamoto no Shino), Yuan Neng Jun Noniang (yuan Shi Neng Noqi)
-Q11184, Daughter of Fujiwara no Muneki (wife of Minamoto no Yoshikata), Teng Yuan Zong Ji Noniang (yuan Yi Xian Noqi)
-Q11185, Daughter of Ban Hirosada (wife of Fujiwara no Reimei), Ban Guang Zhen Noniang (teng Yuan Ling Ming Noqi) )
-Q11190, Daughter of Kenen (wife of Fujiwara no Nagamitsu), Xian Yuan Noniang (teng Yuan Chang Guang Noqi)
-Q11196, Daughter of Ishige Masamoto (wife of Chiba Tsuneshige), Shi Mao Zheng Gan Noniang (qian Xie Chang Zhong Noqi)
-Q11214, Daughter of Taira no Nagamori or daughter of Taira no Tadamasa (wife of Utsunomiya no Naritsuna), Ping Chang Sheng Niang Matahaping Zhong Zheng Niang (yu Du Gong Ye Gang Noshi)
-Q11217, Daughter of Fujiwara no Tametada (wife of Taira no Tadamori), Teng Yuan Wei Zhong Noniang (ping Zhong Sheng Shi)
-Q11222, Daughter of Taira no Tadamori (wife of Fujiwara no Chikamasa), Ping Zhong Sheng Noniang (teng Yuan Qin Zheng Zheng Shi)
-Q11223, Daughter of Taira no Tadamori (Minamoto Ari's chamberlain), Ping Zhong Sheng Noniang (yuan You Fang Shi)
-Q11226, Daughter of Taira Tadamori (wife of Fujiwara Takanori), Ping Zhong Sheng Noniang (teng Yuan Long Jiao Noqi)
-Q11238, Aunt of Sasaki Hideyoshi (wife of Fujiwara Hidehira), Zuo mu Xiu Yi Nobo Mu (teng Yuan Xiu Heng Nozheng Shi)
-Q11240, Daughter of Nobuo Sato (wife of Fujiwara Hidehira), Xin Fu Zuo Teng Shi Noniang (teng Yuan Xiu Heng Noqi)
-Q11263, Sister of Hatano Yoshimichi (concubine of Minamoto Yoshitomo), Bo Duo Ye Yi Tong Mei (yuan Yi Zhao Ce Shi)
-Q11274, Daughter of Ano Masanari (wife of Fujiwara no Kimisuke), A Ye Quan Cheng Noniang (teng Yuan Gong Zuo Noshi)
-Q11291, daughter of Masahiro (concubine of Minamoto no Yoriie), Chang Kuan Nonu (yuan Lai Jia Noce Shi)
-Q11292, daughter of Asuke Shigenaga (wife of Minamoto no Yoriie), Zu Zhu Zhong Chang Nonu (yuan Lai Jia Noshi)
-Q11302, daughter of Otomo Yoshinao (wife of Hojo Asatoki), Da You Neng Zhi Noniang (bei Tiao Zhao Shi Nozheng Shi)
-Q11306, daughter of Ipponbo Masahiro (wife of Miura Taneyoshi), Yi Pin Fang Chang Kuan Noniang (san Pu Yin Yi Nozheng Shi)
-Q11307, daughter of Miura Shigezumi or Miura Taneyoshi (wife of Hojo Masamura), San Pu Zhong Cheng Aruihasan Pu Yin Yi Noniang (bei Tiao Zheng Cun Nozheng Shi)
-Q11315, Hojo Tokinaga (Nagoshi Tokinaga), Bei Tiao Shi Chang (ming Yue Shi Chang)
-Q11324, Daughter of Taira Moritsuraji (wife of Fujiwara Sanetomo), Ping Sheng Lian Noniang (teng Yuan Shi Ren Noqi)
-Q11325, Daughter of Sahara Ietoraji (wife of Otomo Chikahide), Zuo Yuan Jia Lian Noniang (da You Qin Xiu Noqi)
-Q11326, Daughter of Yokoyama Tokishige (concubine of Wada Yoshimori), Heng Shan Shi Zhong Noniang (he Tian Yi Sheng Noce Shi)
-Q11338, Daughter of Hatakeyama Shigenobu (wife of Kasai Kiyoshige), Cen Shan Zhong Neng Noniang (ge Xi Qing Zhong Nozheng Shi)
-Q11341, Daughter of Adachi Tomoto (Wife of Hatakeyama Shigetada), Zu Li Yuan Yuan Noniang (cen Shan Zhong Zhong Qi)
-Q11342, Sixth daughter of Hojo Tokimasa (wife of Hatakeyama Shigetada later wife of Ashikaga Yoshizumi), Bei Tiao Shi Zheng Noliu Nu (cen Shan Zhong Zhong Nozheng Shi Nochizu Li Yi Chun Noqi)
-Q11347, Lady Sadaku (wife of Shimazu Tadahisa), Zhen Yue Fu Ren (dao Jin Zhong Jiu Noqi)
-Q11348, Daughter of Hatakeyama Shigetada (wife of Ashikaga Yoshizumi), Cen Shan Zhong Zhong Noniang (zu Li Yi Chun Noqi)
-Q11359, Daughter of Katsuragi Yoshitaka (wife of Shodai Yukihira), Ge Guan Neng Long Noniang (xiao Dai Xing Ping Noshi) )
-Q11367, daughter of Masayuki Fujita (wife of Shigenaga Edo), Teng Tian ZhenXing Noniang (jiang Hu Zhong Chang Noqi)
-Q11369, daughter of Edo Shigenaga (wife of Kono Michiari), Jiang Hu Zhong Chang Noniang (he Ye Tong You Noqi)
-Q11371, daughter of Yokoyama Tokihiro (wife of Shibuya Takashige), Heng Shan Shi Guang Noniang (shibui Gu Gao Zhong Noqi)
-Q11398, eldest daughter of Fujiwara Atsukane (wife of Fujiwara Shigenori), Teng Yuan Dun Jian Nochang Nu (teng Yuan Cheng Tong Shi)
-Q11399, daughter of Fujiwara Atsukane (wife of Fujiwara Akimori), Teng Yuan Dun Jian Noniang (teng Yuan Xian Sheng Shi)
-Q11409, Fujiwara Sanekane (Grand Empress Dowager Palace Lieutenant), Teng Yuan Shi Jian (tai Huang Tai Hou Gong Liang) )
-Q11413, Fujiwara no Sanekane (Kurando), Teng Yuan Shi Jian (zang Ren)
-Q11423, Daughter of Kazusa Hirotsune (wife of Yoshimine Takanari), Shang Zong Guang Chang Noniang (liang Cen Gao Cheng Noqi)
-Q11430, Daughter of Fujiwara no Shigetsune (wife of Oe Masafusa), Teng Yuan Zhong Jing Noniang (da Jiang Kuang Fang Noqi)
-Q11434, Daughter of Fujiwara no Suekane (mother of Nikaido Masayoshi), Teng Yuan Ji Jian Noniang (er Jie Tang Xing Zheng Nomu)
-Q11441, Daughter of Fujiwara no Ieyasu (wife of Fujiwara no Tadamune), Teng Yuan Jia Bao Nonu (teng Yuan Zhong Zong Shi)
-Q11445, Daughter of Fujiwara no Akisuke (wife of Konoe Motozane), Teng Yuan Xian Fu Noniang (jin Wei Ji Shi Shi)
-Q11446, daughter of Fujiwara Akisuke or Fujiwara Yorisuke (wife of Kujo Kanezane), Teng Yuan Xian Fu Matahateng Yuan Lai Fu Noniang (jiu Tiao Jian Shi Shi)
-Q11455, daughter of Fujiwara Kinzane (wife of Fujiwara Kasei), Teng Yuan Gong Shi Noniang (teng Yuan Jia Zheng Shi)
-Q11463, daughter of Fujiwara Ieko (daughter of Fujiwara Iefusa), Teng Yuan Jia Zi (teng Yuan Jia Fang Noniang)
-Q11469, daughter of Fujiwara Tsunetada (wife of Fujiwara Ienari), Teng Yuan Jing Zhong Nonu (teng Yuan Jia Cheng Shi)
-Q11478, daughter of Kasuga no Tsubone (daughter of Tokudaiji Saneyoshi), Chun Ri Ju (de Da Si Shi Neng Noniang) )
-Q11492, Daughter of Fujiwara Tadamune (wife of Sanjō Kinyuki), Teng Yuan Zhong Zong Noniang (san Tiao Gong Xing Shi)
-Q11498, Daughter of Fujiwara Iemasa (daughter of Fujiwara Iemasa), Teng Yuan Jia Zi (teng Yuan Jia Zheng Noniang)
-Q11503, Daughter of Fujiwara Kiyotaka (wife of Fujiwara Tsunemune), Teng Yuan Qing Long Noniang (teng Yuan Jing Zong Shi)
-Q11506, Daughter of Fujiwara Tsunemune (wife of Sanjō Sane), Teng Yuan Jing Zong Noniang (san Tiao Shi Fang Shi)
-Q11507, Daughter of Fujiwara Tsunemune (wife of Fujiwara Kanemune), Teng Yuan Jing Zong Noniang (teng Yuan Jian Fang Shi)
-Q11508, Daughter of Fujiwara Mitsutada (wife/concubine of Taira no Koremori), Teng Yuan Guang Zhong Niang (ping Wei Sheng Shi *qie)
-Q11509, Daughter of Fujiwara Mitsutada (wife of Fujiwara Muneyori), Teng Yuan Guang Zhong Noniang (teng Yuan Zong Lai Shi)
-Q11510, Daughter of Naniwa Yorisuke (wife of Fujiwara Tsuneie), Nan Bo Lai Fu Noniang (teng Yuan Jing Jia Shi)
-Q11511, Daughter of Fujiwara Kiyotaka (wife of Fujiwara Tadamoto), Teng Yuan Qing Long Noniang (teng Yuan Zhong Ji Shi)
-Q11512, Daughter of Fujiwara Tametada (wife of Fujiwara Tadamoto), Teng Yuan Wei Zhong Noniang (teng Yuan Zhong Ji Noqi)
-Q11513, Fujiwara Iemichi (provisional middle counselor), Teng Yuan Jia Tong (quan Zhong Na Yan)
-Q11514, Daughter of Fujiwara Tadamoto (Wife of Fujiwara no Kinshige), Teng Yuan Zhong Ji Noniang (teng Yuan Gong Zhong Noqi)
-Q11518, Daughter of Fujiwara no Noriyasu (Wife of Fujiwara no Sanemune), Teng Yuan Jiao Liang Noniang (teng Yuan Shi Zong Noqi)
-Q11520, Daughter of Fujiwara no Mototaka (Wife of Fujiwara no Shirimichi), Teng Yuan Ji Long Noniang (teng Yuan Cheng Tong Shi)
-Q11528, Daughter of Fujiwara no Michimoto (Wife of Fujiwara no Kimimichi), Teng Yuan Tong Ji Nu (teng Yuan Gong Tong Shi)
-Q11529, Daughter of Fujiwara no Michimoto (Wife of Fujiwara no Sanetsuna), Teng Yuan Tong Ji Niang (teng Yuan Shi Gang Shi)
-Q11531, Daughter of Fujiwara no Nobumichi (Wife of Fujiwara no Mitsutaka), Teng Yuan Xin Tong Nu (teng Yuan Guang Long Shi) )
-Q11536, Daughter of Fujiwara Shigenori (wife of Jimyoin Motomune), Teng Yuan Cheng Tong Noniang (chi Ming Yuan Ji Zong Noqi)
-Q11539, Daughter of Fujiwara Yoshisada (wife of the Fujiwara clan), Teng Yuan Neng Ding Noniang (teng Yuan Zong Jia Noqi)
-Q11540, Daughter of Fujiwara Ariyoshi (wife of Fujiwara Yoshitada), Teng Yuan You Ye Noniang (teng Yuan Neng Zhong Noqi)
-Q11541, Fujiwara Yasutada (son of Fujiwara Yoshitada), Teng Yuan Bao Zhong (teng Yuan Neng Zhong Nozi)
-Q11542, Daughter of Shonagon Fujiwara Yoshitada (wife of Taira Nobunori), Shao Na Yan Teng Yuan Neng Zhong Noniang (ping Xin Fan Nozheng Shi)
-Q11554, Corridor Officer (Taira clan), Lang Yu Fang (ping Jia)
-Q11557, Taira no Kiyomori's eldest daughter? (wife of Bomon Nobutaka), Ping Qing Sheng Nochang Nu? (fang Men Xin Long Shi)
-Q11558, Taira no Kiyomori's second daughter? (fiancée and wife of Fujiwara no Shigenori wife of Gokazanin Kanega), Ping Qing Sheng Noci Nu? (teng Yuan Cheng Xian Hun Yue Zhe *shi
-Q11560, Taira no Kiyomori's fifth daughter? (wife of Fujiwara no Nobuchika wife of Goreizei Takafusa), Ping Qing Sheng Nowu Nu? (teng Yuan Xin Qin Shi
-Q11567, Daughter of Oe no Hiromoto (wife of Asukai Masatsune), Da Jiang Guang Yuan Noniang (fei Niao Jing Ya) Jing Zheng Shi)
-Q11569, daughter of Asukai Masatsune (second wife of Adachi Yoshikage), Fei Niao Jing Ya Jing Noniang (an Da Yi Jing Ji Shi)
-Q11580, Minamoto Toshiko (daughter of Minamoto Akitoshi), Yuan Jun Zi (yuan Xian Jun Noniang)
-Q11585, daughter of Fujiwara Tadataka (wife of Konoe Motozane), Teng Yuan Zhong Long Noniang (jin Wei Ji Shi Shi)
-Q11586, daughter of Minamoto Moritsune (wife of Konoe Motozane), Yuan Sheng Jing Noniang (jin Wei Ji Shi Noqi)
-Q11590, daughter of Sanjo Kiminori (wife of Matsudono Motofusa), San Tiao Gong Jiao Noniang (song Dian Ji Fang Zheng Shi)
-Q11591, daughter of Sanjo Kiminori (wife of Matsudono Motofusa), San Tiao Gong Jiao Noniang (song Dian Ji Fang Shi)
-Q11592, Fujiwara Tadako (daughter of Fujiwara Tadamasa), Teng Yuan Zhong Zi (teng Yuan Zhong Ya Noniang)
-Q11594, daughter of Fujiwara Kinyasu (wife of Matsudono Motofusa), Teng Yuan Gong Bao Noniang (song Dian Ji Fang Shi)
-Q11595, Fujiwara Iko (daughter of Fujiwara Itsutsune), Teng Yuan Yi Zi (teng Yuan Yi Jing Noniang)
-Q11604, daughter of Fujiwara Akiyori (wife of Fujiwara Suenari), Teng Yuan Xian Lai Nu (teng Yuan Ji Cheng Shi)
-Q11606, daughter of Fujiwara Suenari (wife of Fujiwara Sanekuni), Teng Yuan Ji Cheng Noniang (teng Yuan Shi Guo Shi)
-Q11613, daughter of Fujiwara Sadanori (Wife of Minamoto no Sadatada), Teng Yuan Ding Neng Noniang (yuan Ding Zhong Noshi)
-Q11615, Daughter of Jimyoin Motoie (Wife of Minamoto no Kanetada), Chi Ming Yuan Ji Jia Noniang (yuan Jian Zhong Shi)
-Q11616, Daughter of Fujiwara no Sadayo (Wife of Minamoto no Kanetada), Teng Yuan Ding Neng Noniang (yuan Jian Zhong Shi)
-Q11620, Daughter of Taira no Motomori (Wife of Fujiwara no Tokiyoshi), Ping Ji Sheng Noniang (teng Yuan Ji Neng Shi)
-Q11621, Daughter of Fujiwara no Tokiyoshi (Wife of Fujiwara no Teika), Teng Yuan Ji Neng Noniang (teng Yuan Ding Jia Shi)
-Q11627, Daughter of Minamoto no Shisue (Wife of Tsuchimikado Michiyuki), Yuan Shi Ji Noniang (tu Yu Men Tong Xing Noqi) )
-Q11634, Fujiwara no Yasumichi (son of Fujiwara no Tamemichi), Teng Yuan Tai Tong (teng Yuan Wei Tong Nozi)
-Q11636, Minamoto no Arifusa (son of Minamoto no Michiyuki), Yuan You Fang (yuan Shi Xing Nozi)
-Q11637, Minamoto no Akichika's daughter (wife of Sanjo Kinyuki), Yuan Xian Qin Noniang (san Tiao Gong Xing Shi)
-Q11642, Fujiwara no Akiyori's daughter (wife of Fujiwara no Akinaga), Teng Yuan Xian Lai Noniang (teng Yuan Xian Chang Shi)
-Q11643, Fujiwara no Akinaga's daughter (wife of Tokudaiji Sanesada), Teng Yuan Xian Chang Noniang (de Da Si Shi Ding Noqi)
-Q11644, Fujiwara no Akinaga'sDaughter (wife of Fujiwara Masanaga), Teng Yuan Xian Chang Noniang (teng Yuan Ya Chang Shi)
-Q11645, Daughter of Adachi Tomoto (wife of Fujiwara Mitsuyoshi), Zu Li Yuan Yuan Noniang (teng Yuan Guang Neng Qi)
-Q11656, Daughter of Saionji Sanemune (wife of Fujiwara Teika), Xi Yuan Si Shi Zong Noniang (teng Yuan Ding Jia Shi)
-Q11660, Daughter of Fujiwara Teika (wife and concubine of Saionji Koso later wife of Hosshoji Gahei), Teng Yuan Ding Jia Noniang (xi Yuan Si Gong Xiang Noqi *qie
-Q11667, Daughter of Fujiwara Shigeko (daughter of Fujiwara Shirichika), Teng Yuan Cheng Zi (teng Yuan Cheng Qin Noniang) )
-Q11668, Daughter of Tokudaiji Kinnobu (wife of Fujiwara no Shicho), De Da Si Gong Neng Noniang (teng Yuan Shi Chang Shi)
-Q11669, Daughter of Tokudaiji Kinnobu (wife of Fujiwara no Michishige), De Da Si Gong Neng Noniang (teng Yuan Tong Zhong Shi)
-Q11670, Daughter of Fujiwara no Kinnobu (wife of Fujiwara no Kunitsuna), Teng Yuan Gong Neng Nonu (teng Yuan Bang Gang Shi)
-Q11672, Daughter of Fujiwara no Shicho (wife of Tokudaiji Sanesada), Teng Yuan Shi Chang Noniang (de Da Si Shi Ding Noqi)
-Q11674, Daughter of Fujiwara no Norikata (wife of the Fujiwara family), Teng Yuan Xian Fang Noniang (teng Yuan Shi Jia Noqi)
-Q11675, Daughter of Fujiwara no Asakata (wife of the Fujiwara family), Teng Yuan Zhao Fang Noniang (teng Yuan Shi Jia Noqi)
-Q11677, Daughter of Fujiwara no Morotsuna (wife of Hatano Togi), Teng Yuan Shi Gang Niang (bo Duo Ye Yuan Yi Shi)
-Q11678, Daughter of Fujiwara no Morotsuna (wife of Fujiwara no Asakata), Teng Yuan Shi Gang Noniang (teng Yuan Zhao Fang Noqi)
-Q11679, Daughter of Fujiwara no Shinzei (wife of Fujiwara no Nagakata), Teng Yuan Xin Xi Noniang (teng Yuan Chang Fang Noqi)
-Q11680, Daughter of Fujiwara no Morotsuna (wife of Fujiwara no Nagakata), Teng Yuan Shi Gao Noniang (teng Yuan Chang Fang Noqi)
-Q11681, Fujiwara no Munetaka (eldest son of Fujiwara no Nagakata), Teng Yuan Zong Long (teng Yuan Chang Fang Nochang Nan) )
-Q11684, Lady of Bifukumon'in (daughter of Fujiwara no Asataka), Mei Fu Men Yuan Nu Fang (teng Yuan Zhao Long Noniang)
-Q11686, Daughter of Fujiwara no Mitsufusa (wife of Nakayama Tadachika), Teng Yuan Guang Fang Noniang (zhong Shan Zhong Qin Shi)
-Q11687, Daughter of Taira no Noriie (wife of Yoshida Tsunefusa), Ping Fan Jia Noniang (ji Tian Jing Fang Shi)
-Q11689, Daughter of Yoshida Tsunefusa (wife of Shigenoi Kintoki), Ji Tian Jing Fang Noniang (zi Ye Jing Gong Shi Shi)
-Q11690, Daughter of Yoshida Tsunefusa (wife of Taira no Tokizane), Ji Tian Jing Fang Noniang (ping Shi Shi Noshi)
-Q11694, Daughter of Kujo Mitsunaga or Kaijuyama Nagafusa (wife of Fujiwara no Sukeie), Jiu Tiao Guang Chang Matahahai Zhu Shan Chang Fang Noniang (teng Yuan Zi Jia Noshi)
-Q11695, Naganori (son of Kujo Mitsunaga), Chang Fan (jiu Tiao Guang Chang Nozi)
-Q11697, daughter of Kujo Mitsunaga (wife of Hamuro Munekata), Jiu Tiao Guang Chang Noniang (xie Shi Zong Fang Noqi)
-Q11698, daughter of Kujo Mitsunaga (wife of Nakayama Tadasuki), Jiu Tiao Guang Chang Noniang (zhong Shan Zhong Ji Noqi)
-Q11699, Prince Fujiwara (daughter of Fujiwara Akiyori), Teng Yuan Gong Zi (teng Yuan Xian Lai Noniang)
-Q11700, daughter of Fujiwara Akiyori (wife of Fujiwara Ieaki), Teng Yuan Xian Lai Noniang (teng Yuan Jia Ming Shi) )
-Q11701, Daughter of Fujiwara no Akiyori (wife of Fujiwara no Nobuyori), Teng Yuan Xian Lai Noniang (teng Yuan Xin Lai Shi)
-Q11702, Daughter of Fujiwara no Akiyori (wife of Fujiwara no Asataka), Teng Yuan Xian Lai Noniang (teng Yuan Zhao Long Shi)
-Q11703, Daughter of Fujiwara no Akiyori (wife of Fujiwara no Toshinori), Teng Yuan Xian Lai Noniang (teng Yuan Jun Xian Shi)
-Q11704, Daughter of Fujiwara no Akiyori (wife of Fujiwara no Shigekata), Teng Yuan Xian Lai Noniang (teng Yuan Zhong Fang Shi)
-Q11710, Daughter of Fujiwara no Nobusuke (wife of Fujiwara no Korekata), Teng Yuan Xin Fu Noniang (teng Yuan Wei Fang Noqi)
-Q11712, Yoriko Fujiwara (ranked as chief priest of the Third Rank), Teng Yuan Lai Zi (bie Dang San Wei)
-Q11713, daughter of Fujiwara no Korekata (wife of Fujiwara no Tsunemichi), Teng Yuan Wei Fang Noniang (teng Yuan Jing Tong Noqi)
-Q11714, daughter of Fujiwara no Shigeko (daughter of Fujiwara no Kunitsuna), Teng Yuan Cheng Zi (teng Yuan Bang Gang Noniang)
-Q11720, daughter of Fujiwara no Ienari (wife of Fujiwara no Tadamasa), Teng Yuan Jia Cheng Noniang (teng Yuan Zhong Ya Shi)
-Q11726, daughter of Ichijo Yoshiyasu (wife of Nakain Michikata), Yi Tiao Neng Bao Noniang (zhong Yuan Tong Fang Shi)
-Q11732, daughter of Nakain Michikata (wife of Kazanin Michimasa), Zhong Yuan Tong Fang Noniang (hua Shan Yuan Tong Ya Noshi) )
-Q11733, Daughter of Fujiwara no Chikanobu (wife of Minamoto no Michimune), Teng Yuan Qin Xin Noniang (yuan Tong Zong Noshi)
-Q11736, Daughter of Fujiwara no Nobuko (daughter of Noen), Teng Yuan Xin Zi (neng Yuan Noniang)
-Q11740, Daughter of Fujiwara no Muneyori (wife of Kuga no Michimitsu), Teng Yuan Zong Lai Noniang (jiu Wo Tong Guang Shi)
-Q11742, Daughter of Fujiwara no Chikakane (wife of Kuga no Michimitsu), Teng Yuan Qin Jian Noniang (jiu Wo Tong Guang Noshi)
-Q11743, Sanjo (Seiren), San Tiao (xi Lian)
-Q11749, Daughter of Kuga no Michimitsu (wife of Prince Masanari), Jiu Wo Tong Guang Nonu (ya Cheng Qin Wang Nofei) )
-Q11754, daughter of Hamuro Mitsuchika (wife of Tsuchimikado Sadamichi), Xie Shi Guang Qin Noniang (tu Yu Men Ding Tong Noshi)
-Q11759, daughter of Hojo Yoshitoki (wife of Ichijo Sanemasa and Karahashi Michitoki), Bei Tiao Yi Shi Noniang (yi Tiao Shi Ya Oyobitang Qiao Tong Shi Noqi)
-Q11760, daughter of Hojo Saneyasu (wife of Karahashi Michitoki), Bei Tiao Shi Tai Noniang (tang Qiao Tong Shi Noqi)
-Q11761, daughter of Karahashi Michitoki or Hojo Yoshitoki (wife of Kuga Michitada), Tang Qiao Tong Shi Matahabei Tiao Yi Shi Noniang (jiu Wo Tong Zhong Noqi)
-Q11762, daughter of Fujiwara Atsunori (wife of Fujiwara Yukimori), Teng Yuan Dun Xian Noniang (teng Yuan Xing Sheng Noqi)
-Q11771, Daughter of Fujiwara no Kiyotaka (Sanjo no Kami class), Teng Yuan Qing Long Noniang (san Tiao Gong Jiao Shi)
-Q11773, Second daughter of Fujiwara no Kiyotaka (Taira no Nori family's wife), Teng Yuan Qing Long Noci Nu (ping Fan Jia Shi)
-Q11774, Daughter of Fujiwara no Kiyotaka (Fujiwara no Shigekata's wife), Teng Yuan Qing Long Noniang (teng Yuan Zhong Fang Shi)
-Q11780, Daughter of Fujiwara no Suetei (wife of Fujiwara no Sukeyori), Teng Yuan Ji Jing Noniang (teng Yuan Zi Lai Noqi)
-Q11783, Daughter of Fujiwara no Muneyoshi (wife of Fujiwara no Sueyuki), Teng Yuan Zong Neng Noniang (teng Yuan Ji Xing Noqi)
-Q11827, Daughter of Takashina Motozane (Wife of Minamoto Yoshichika), Gao Jie Ji Shi Noniang (Yuan Yi Qin Nozheng Shi)
-Q11831, Daughter of Ashikaga Shigetsuna (Concubine of Minamoto Yoshikuni), Zu Li Cheng Gang Noniang (Yuan Yi Guo Noce Shi)
-Q11834, Daughter of Rokujo Shigetoshi (Wife of Minamoto Tameyoshi), Liu Tiao Zhong Jun Noniang (Yuan Wei Yi Noqi)
-Q11835, Daughter of Minamoto Motozane (Wife of Minamoto Tameyoshi), Yuan Ji Shi Noniang (Yuan Wei Yi Noqi)
-Q11836, Courtesan of Eguchi (Wife of Minamoto Tameyoshi), Jiang Kou Noyou Nu (Yuan Wei Yi Noqi)
-Q11837, Daughter of Suzuki Shigetsuna (Wife of Minamoto Tameyoshi), Ling Mu Zhong Zhong Noniang (Yuan Wei Yi Noqi) )
-Q11838, Daughter of Minamoto no Tameyoshi (wife of Sasaki Hideyoshi), Yuan Wei Yi Noniang (wife of Fujiwara no Mitsutaka)
-Q11840, Minamoto no Yoshihiro (Mr. Shida Saburo), Yuan Yi Guang (wife of Fujiwara no Mitsutaka)
-Q11848, Daughter of Minamoto no Tameyoshi (wife of Fujiwara no Mitsutaka), Yuan Wei Yi Noniang (wife of Yuan Guang Long Shi)
-Q11852, Minamoto no Michimitsu (Yoshimitsu line of the Seiwa Genji clan), Yuan Shi Guang (wife of He Yuan Shi Yi Guang Liu)
-Q11854, Hiraga no Ariyoshi (son of Minamoto no Moriyoshi), Ping He You Yi (wife of Yuan Sheng Yi Nozi)
-Q11863, Daughter of Minamoto no Yorimasa (wife of Fujiwara no Takayasu), Yuan Lai Zheng Noniang (wife of Yuan Long Bao)
-Q11864, Daughter of Minamoto no Yorimasa (wife of Fujiwara no Kensada), Yuan Lai Zheng Noniang (teng Yuan Xian Ding Noshi)
-Q11865, Daughter of Minamoto no Yorimasa (wife of Minamoto no Tsuneyoshi), Yuan Lai Zheng Nonu (yuan Jing Ye Noshi)
-Q11867, Minamoto no Muneyori (ancestor of the Oguni clan), Yuan Zong Lai (xiao Guo Shi Nozu)
-Q11883, Daughter of Taira no Tokinobu (wife of Fujiwara no Chikataka), Ping Shi Xin Noniang (teng Yuan Qin Long Shi)
-Q11886, Daughter of Fujiwara no Chikataka (wife of Fujiwara no Iemichi), Teng Yuan Qin Long Noniang (teng Yuan Jia Tong Shi)
-Q11887, Daughter of Fujiwara no Chikataka (wife of Fujiwara no Shichika), Teng Yuan Qin Long Noniang (teng Yuan Cheng Qin Shi) )
-Q11889, Minister of the Left (wife of Taira no Michimori), Xiao Zai Xiang (ping Tong Sheng Noqi)
-Q11894, Daughter of Fujiwara no Nobusuke (wife of Fujiwara no Akitoki), Teng Yuan Xin Fu Noniang (teng Yuan Xian Shi Noqi)
-Q11895, Daughter of Fujiwara no Ariyoshi (wife of Fujiwara no Akitoki), Teng Yuan You Ye Noniang (teng Yuan Xian Shi Noqi)
-Q11898, Daughter of Fujiwara no Akitoki (wife of Fujiwara no Korenobu), Teng Yuan Xian Shi Niang (teng Yuan Shi Xian Shi)
-Q11903, Daughter of Fujiwara no Kintoshi (wife of Fujiwara no Kunitsuna), Teng Yuan Gong Jun Noniang (teng Yuan Bang Gang Noqi)
-Q11909, Daughter of Fujiwara no Kunitsuna (wife of Ogasawara no Nagakiyo), Teng Yuan Bang Gang Noniang (xiao Li Yuan Chang Qing Shi)
-Q11919, Fujiwara no Tsunetada (son of Fujiwara no Munemitsu), Teng Yuan Jing Yin (teng Yuan Zong Guang Nozi)
-Q11935, daughter of Minamoto no Chikahiro (wife of Minamoto no Yoshishige), Yuan Qin Hong Noniang (yuan Yi Zhong Nozheng Shi)
-Q11936, daughter of Nitta no Yoshishige (wife of Ashikaga no Yoshikiyo), Xin Tian Yi Zhong Noniang (zu Li Yi Qing Noshi)
-Q11937, daughter of Nitta no Yoshishige (wife of Takeda no Nobumitsu), Xin Tian Yi Zhong Noniang (wu Tian Xin Guang Noshi)
-Q11938, daughter of Nitta no Yoshishige (wife of Nasu no Yoichi), Xin Tian Yi Zhong Noniang (na Xu Yu Yi Noshi)
-Q11948, Sun's daughter (Onjoji Temple), Ri Yin (yuan Cheng Si)
-Q11954, Daughter of Kazusa Hirotsune (wife of Heiji), Shang Zong Guang Chang Niang (ping Shi Jia Shi)
-Q11955, Daughter of Kazusa Hirotsune (wife of Ogasawara Nagakiyo), Shang Zong Guang Chang Noniang (xiao Li Yuan Chang Qing Shi)
-Q11956, Daughter of Kazusa Hirotsune (mother of Chiba Shigetane), Shang Zong Guang Chang Noniang (qian Xie Cheng Yin Nomu)
-Q11960, Daughter of Taira Norifusa (wife of Fujiwara Noriyoshi), Ping Ye Fang Noniang (teng Yuan Fan Neng Noqi)
-Q11961, Daughter of Taira Norifusa (wife of Fujiwara Kanemitsu), Ping Ye Fang Noniang (teng Yuan Jian Guang Noqi)
-Q11962, Daughter of Taira Norifusa (Wife of Fujiwara no Munetaka), Ping Ye Fang Noniang (teng Yuan Zong Long Noqi)
-Q11969, Daughter of Taira no Iemori (wife of Harada Tanenao), Ping Jia Sheng Noniang (yuan Tian Zhong Zhi Noshi)
-Q11970, Daughter of Fujiwara no Sukenori (wife of Taira no Norimori), Teng Yuan Zi Xian Noniang (ping Jiao Sheng Noqi)
-Q11974, Daughter of Taira no Norimori (wife of Fujiwara no Naritsune), Ping Jiao Sheng Noniang (teng Yuan Cheng Jing Shi)
-Q11976, Daughter of Taira no Norimori (second wife of Taira no Munemori), Ping Jiao Sheng Noniang (ping Zong Sheng Ji Shi)
-Q11982, Daughter of Taira no Yorimori (wife of Fujiwara no Motoie), Ping Lai Sheng Noniang (teng Yuan Ji Jia Shi)
-Q11993, Kiyohara clan (Mother of Abe Muneto), Qing Yuan Shi (an Bei Zong Ren Nomu)
-Q12002, Daughter of Satake Masayoshi (wife of Yoshikawa Tsuneyoshi), Zuo Zhu Chang Yi Noniang (ji Chuan Jing Yi Nozheng Shi)
-Q12012, Hojo Tokikane (Hojo Suke), Bei Tiao Shi Jian (bei Tiao Jie)
-Q12014, Daughter of Hojo Tokimasa (wife of Hiraga Tomomasa wife of Minamoto Kunimichi), Bei Tiao Shi Zheng Noniang (ping He Zhao Ya Nozheng Shi
-Q12015, Daughter of Hojo Tokimasa (wife of Shigenoi Sanenobu), Bei Tiao Shi Zheng Noniang (zi Ye Jing Shi Xuan Noqi)
-Q12016, Daughter of Hojo Tokimasa (wife of Utsunomiya Yoritsuna), Bei Tiao Shi Zheng Noniang (yu Du Gong Lai Gang Noshi)
-Q12018, Daughter of Hojo Tokimasa (wife of Bomon Tadaakiyo), Bei Tiao Shi Zheng Noniang (fang Men Zhong Qing Noqi)
-Q12019, Daughter of Hojo Tokimasa (wife of Kono Tsunehisa), Bei Tiao Shi Zheng Noniang (he Ye Tong Xin Noqi)
-Q12025, Daughter of Isa Asamasa (concubine of Hojo Yoshitoki), Yi Zuo Zhao Zheng Noniang (bei Tiao Yi Shi Noce Shi)
-Q12031, Daughter of Hojo Yoshitoki (wife of Ichijo Saneari), Bei Tiao Yi Shi Noniang (yi Tiao Shi You Noqi)
-Q12032, Daughter of Hojo Yoshitoki (wife of Nakahara Suetoki), Bei Tiao Yi Shi Noniang (zhong Yuan Ji Shi Noqi) )
-Q12033, Daughter of Hojo Yoshitoki (wife of Sasaki Nobutsuna), Bei Tiao Yi Shi Noniang (zuo mu Xin Gang Nozheng Shi)
-Q12040, Daughter of Minamoto no Yukito (wife of Fujiwara no Suenori), Yuan Xing Yuan Noniang (teng Yuan Ji Fan Noqi)
-Q12043, Daughter of Fujiwara no Suenori (wife of Minamoto no Shitsune), Teng Yuan Ji Fan Noniang (yuan Shi Jing Noshi)
-Q12052, Daughter of Nijō Sadataka (wife of Kazanin Sadamasa), Er Tiao Ding Gao Noniang (hua Shan Yuan Ding Ya Noshi)
-Q12053, Daughter of Kasuya Yuki (concubine of Ichijō Takanori), Zao Wu You Ji Noniang (yi Tiao Gao Neng Ce Shi)
-Q12054, Daughter of Fujiwara no Kanemitsu (Wife of Ichijo Takanobu), Teng Yuan Jian Guang Noniang (yi Tiao Gao Neng Noqi)
-Q12055, Daughter of Shijo Takasue (Wife of Ichijo Takanobu), Si Tiao Long Ji Noniang (yi Tiao Gao Neng Noshi)
-Q12059, Daughter of Ichijo Takanobu (Wife of Kujo Motoie), Yi Tiao Gao Neng Noniang (jiu Tiao Ji Jia Noqi)
-Q12067, Daughter of Hamuro Muneyuki (Wife of Kazanin Tadatane), Xie Shi Zong Xing Noniang (hua Shan Yuan Zhong Jing Shi)
-Q12078, Daughter of Adachi Tomoto (Wife of Hojo Tokifusa), Zu Li Yuan Yuan Noniang (bei Tiao Shi Fang Nozheng Shi)
-Q12085, Daughter of Hojo Tokifusa (Wife of Ichijo Yoriuji), Bei Tiao Shi Fang Noniang (yi Tiao Lai Shi Qi)
-Q12086, Daughter of Hojo Tokifusa (second wife of Hojo Asatoki), Bei Tiao Shi Fang Noniang (bei Tiao Zhao Shi Noji Shi)
-Q12087, Daughter of Hojo Tokifusa (legal wife of Adachi Yoshikage later wife of Chiba Tokitane), Bei Tiao Shi Fang Noniang (an Da Yi Jing Nozheng Shi Nochiqian Xie Shi Yin Noqi)
-Q12088, Daughter of Hojo Tokifusa (wife of Nagai Tokihiro later wife of Fujiwara Sanetoshi), Bei Tiao Shi Fang Noniang (chang Jing Shi Guang Noqi
-Q12089, Daughter of Hojo Tokifusa (second wife of Chiba Hidetane), Bei Tiao Shi Fang Noniang (qian Xie Xiu Yin Noji Shi) )
-Q12091, Date Munemura (Kamakura period), Yi Da Zong Cun (lian Cang Shi Dai)
-Q12101, Daughter of Minamoto no Yoshinaka (mother of Takegosho), Yuan Yi Zhong Noniang (zhu Yu Suo Nomu)
-Q12112, Daughter of Otomo no Chikahide (wife of Hojo Suketoki), Da You Qin Xiu Noniang (bei Tiao Zi Shi Noqi)
-Q12121, Daughter of Anpo Sanekazu (second wife of Hojo Yasutoki), An Bao Shi Yuan Noniang (bei Tiao Tai Shi Noji Shi)
-Q12124, Daughter of Hojo Yasutoki (legal wife of Ashikaga Yoshiuji), Bei Tiao Tai Shi Noniang (zu Li Yi Shi Nozheng Shi)
-Q12125, Daughter of Hojo Yasutoki (second wife of Hojo Asanao), Bei Tiao Tai Shi Noniang (bei Tiao Zhao Zhi) Noji Shi)
-Q12126, Daughter of Hojo Yasutoki (wife of Hatakeyama Yasukuni), Bei Tiao Tai Shi Noniang (cen Shan Tai Guo Noqi)
-Q12132, Daughter of Hojo Tokiuji (wife of Ashikaga Yasuuji), Bei Tiao Shi Shi Noniang (zu Li Tai Shi Nozheng Shi)
-Q12133, Daughter of Hojo Tokiuji (wife of Hojo Tokisada), Bei Tiao Shi Shi Noniang (bei Tiao Shi Ding Nozheng Shi)
-Q12136, Daughter of Miura Moritoki (wife of Kasai Tokikiyo), San Pu Sheng Shi Noniang (ge Xi Shi Qing Nozheng Shi)
-Q12138, Daughter of Azuma Taneyori (wife of Toki Mitsuyuki), Dong Yin Lai Niang (tu Qi Guang Xing Noqi)
-Q12139, Daughter of Hojo Sadatoki (Toki Mitsusada's room), BeTiao Zhen Shi Noniang (tu Qi Guang Ding Noshi)
-Q12148, daughter of Mori Suemitsu (wife of Kazanin Morotsugu), Mao Li Ji Guang Noniang (hua Shan Yuan Shi Ji Noshi)
-Q12149, daughter of Mori Suemitsu (wife of Hojo Tokiyori), Mao Li Ji Guang Noniang (bei Tiao Shi Lai Nozheng Shi)
-Q12153, Hojo Tokikuni (son of Hojo Tokinaga), Bei Tiao Shi Guo (bei Tiao Shi Chang Nozi)
-Q12162, Daini no Tsubone (Kagami clan), Da Er Ju (jia He Mei Shi)
-Q12190, daughter of Inage Shigenari (wife and first wife of Utsunomiya Yoritsuna), Dao Mao Zhong Cheng Noniang (yu Du Gong Lai Gang Noshi *xian Qi )
-Q12191, Daughter of Inage Shigenari (wife of Ayakoji Shiki), Dao Mao Zhong Cheng Noniang (ling Xiao Lu Shi Ji Noshi)
-Q12203, Daughter of Abe Munenori (wife of Sasaki Tokisada), An Bei Zong Ren Noniang (zuo mu Ji Ding Noshi)
-Q12211, Daughter of Kano Shigemitsu (wife of Amano Tokage), Shou Ye Mao Guang Noniang (tian Ye Yuan Jing Noqi)
-Q12215, Daughter of Kudo Shigemitsu (wife of Tashiro Tametsuna), Gong Teng Mao Guang Noniang (tian Dai Wei Gang Noqi)
-Q12227, Daughter of Fujiwara Kaneko (daughter of Fujiwara Tokiyuki), Teng Yuan Jian Zi (teng Yuan Ji Xing Noniang)
-Q12229, Fujiwara Yoshiki (Okabe Daifu), Teng Yuan Neng Ji (xing Bu Da Fu)
-Q12230, daughter of Fujiwara no Sueyuki (wife of Fujiwara no Chikatsune), Teng Yuan Ji Xing Noniang (teng Yuan Qin Jing Noqi)
-Q12232, daughter of Tachibana Hirokata (wife of Suzuki Yoshishige), Ju Guang Fang Noniang (ling Mu Liang Shi Nozheng Shi)
-Q12238, daughter of Fujiwara no Sanekane (wife of Fujiwara no Mitsutaka), Teng Yuan Shi Jian Nu (teng Yuan Guang Long Shi)
-Q12242, daughter of Takashina Yasushige (wife of Taira no Chikanori), Gao Jie Tai Zhong Noniang (ping Qin Fan Noqi)
-Q12243, daughter of Nose Sukekuni (wife of Takashina Mitsukane), Neng Lai Zi Guo Noniang (gao Jie Guang Jian Noqi)
-Q12264, daughter of Fujiwara no Ienari (Wife of Fujiwara no Kimiyoshi), Teng Yuan Jia Cheng Niang (teng Yuan Gong Qin Shi)
-Q12265, Daughter of Fujiwara no Ienari (Wife of Sanjo Sanenaga), Teng Yuan Jia Cheng Noniang (san Tiao Shi Chang Shi)
-Q12266, Daughter of Fujiwara no Ienari (Wife of Shigenoi Sanekuni), Teng Yuan Jia Cheng Noniang (zi Ye Jing Shi Guo Shi)
-Q12267, Daughter of Fujiwara no Ienari (Wife of Fujiwara no Shigeie), Teng Yuan Jia Cheng Noniang (teng Yuan Zhong Jia Shi)
-Q12269, Daughter of Fujiwara no Ienari (Wife of Fujiwara no Nobuyori), Teng Yuan Jia Cheng Noniang (teng Yuan Xin Lai Shi)
-Q12272, Fujiwara no Akiie (Wife of the Rokujo Fujiwara family), Teng Yuan Xian Jia (liu Tiao Teng Jia) )
-Q12275, Fujiwara no Sukeie (son of Fujiwara no Shigeie), Teng Yuan Zi Jia (teng Yuan Zhong Jia Nozi)
-Q12276, daughter of Fujiwara no Shigeie (wife of Nakayama Kanemune), Teng Yuan Zhong Jia Noniang (zhong Shan Jian Zong Noqi)
-Q12282, Fujiwara no Sanetsuna (son of Sanjō Kiminori), Teng Yuan Shi Gang (san Tiao Gong Jiao Nozi)
-Q12283, daughter of Sanjō Kiminori (wife of Fujiwara no Toshinori), San Tiao Gong Jiao Noniang (teng Yuan Jun Xian Shi)
-Q12288, daughter of Yukihito (wife of Sanjō Nariyoshi), Xing Ren Noniang (san Tiao Cheng Ding Noqi)
-Q12291, daughter of Tachibana no Iemitsu (wife of Fujiwara no Nobusuke), Ju Jia Guang Noniang (teng Yuan Xin Fu) Noqi)
-Q12294, Daughter of Fujiwara Nobutsune (wife of Minamoto Masakata), Teng Yuan Xin Jing Noniang (yuan Ya Xian Noqi)
-Q12298, Daughter of Utsunomiya Asatsuna (wife of Nasu Suketaka), Yu Du Gong Zhao Gang Noniang (na Xu Zi Long Noqi)
-Q12299, Daughter of Utsunomiya Asatsuna (wife of Satake Hideyoshi), Yu Du Gong Zhao Gang Noniang (zuo Zhu Xiu Yi Noqi)
-Q12301, Lady Boumon (daughter of Taira Nobushige), Fang Men Ju (ping Xin Zhong Nonu)
-Q12315, Daughter of Taira Tokitada (wife of Nakayama Tadachika), Ping Shi Zhong Noniang (zhong Shan Zhong Qin Shi)
-Q12317, Eldest daughter of Nakayama Tadachika (wife of Sanjo Kofusa), Zhong Shan Zhong Qin Nochang Nu (san Tiao Gong Fang Shi)
-Q12318, daughter of Minamoto no Shitoshi (wife of Fujiwara no Yorinaga), Yuan Shi Jun Noniang (teng Yuan Lai Chang Shi)
-Q12319, daughter of Minamoto no Nobumasa (wife of Fujiwara no Yorinaga), Yuan Xin Ya Noniang (teng Yuan Lai Chang Shi)
-Q12327, Fujiwara no Kaneko (Lord's Office), Teng Yuan Jian Zi (qing Ju)
-Q12329, daughter of Fujiwara no Koreyuki (wife of Fujiwara no Yorizane), Teng Yuan Yi Xing Noniang (teng Yuan Lai Shi Noqi)
-Q12330, daughter of Taira no Tokitada (wife of Fujiwara no Yorizane), Ping Shi Zhong Noniang (teng Yuan Lai Shi Noqi)
-Q12334, daughter of Fujiwara no Mitsumasa (wife of Oinimikado Shikei), Teng Yuan Guang Ya Noniang (da Chui Yu Men Shi Jing Noshi)
-Q12344, daughter of Nakahara Shiyuan (wife of Fujiwara Kinshige), Zhong Yuan Shi Yuan Noniang (teng Yuan Gong Zhong Noqi)
-Q12350, daughter of Fujiwara Tadataka (wife of Fujiwara Takasue), Teng Yuan Zhong Long Noniang (teng Yuan Long Ji Shi)
-Q12354, daughter of Jimyoin Motoie (wife of Fujiwara Sanemune), Chi Ming Yuan Ji Jia Noniang (teng Yuan Shi Zong Shi)
-Q12355, daughter of Jimyoin Motoie (wife of Taira Sukemori), Chi Ming Yuan Ji Jia Noniang (ping Zi Sheng Zheng Shi)
-Q12356, daughter of Jimyoin Motoie (concubine of Prince Koreakira), Chi Ming Yuan Ji Jia Noniang (wei Ming Qin Wang Qie) )
-Q12359, Fujiwara Norikane's eldest daughter (wife of Fujiwara Izane), Teng Yuan Fan Jian Nochang Nu (teng Yuan Yi Shi Noqi)
-Q12366, Taira Nobunori's daughter (wife of Fujiwara Shuhan), Ping Xin Fan Noniang (teng Yuan Xiu Fan Noshi)
-Q12367, Taira Nobunori's daughter (wife of Fujiwara Sadanaga), Ping Xin Fan Noniang (teng Yuan Ding Chang Noshi)
-Q12369, Fujiwara Kinyasu's daughter (wife of Bomon Nobukiyo), Teng Yuan Gong Bao Noniang (fang Men Xin Qing Noqi)
-Q12371, Bomon no Tsubone (daughter of Heiji Nobunobu), Fang Men Ju (ping Shi Xin Niang)
-Q12378, Taira Shigemori's daughter (wife of Akiyama Mitsutomo), Ping Zhong Sheng Noniang (qiu Shan Guang Zhao Noqi)
-Q12382, Daughter of Taira Munemori (wife of Taira Michimori), Ping Zong Sheng Noniang (ping Tong Sheng Nozheng Shi)
-Q12389, Daughter of Taira Shigehira? (wife of Ogasawara Nagatsune), Ping Zhong Heng Noniang? (xiao Li Yuan Chang Jing Noshi)
-Q12392, Daughter of Fujiwara Kanemasa (wife of Fujiwara Yoshimichi), Teng Yuan Jian Ya Noniang (teng Yuan Liang Tong Noqi)
-Q12395, Daughter of Hojo Sanetoki or daughter of Minamoto Sadatada (wife of Asukai Norisada), Bei Tiao Shi Shi Noniang Matahayuan Ding Zhong Noniang (fei Niao Jing Jiao Ding Noqi)
-Q12397, Daughter of Asukai Norisada (wife of Nijō Tameuji), Fei Niao Jing Jiao Ding Noniang (er Tiao Wei Shi Noshi)
-Q12403, daughter of Fujiwara Noritada (wife of Ashikaga Yoshiyasu), Teng Yuan Fan Zhong Noniang (zu Li Yi Kang Nozheng Shi)
-Q12416, daughter of Fujiwara Michinori (wife of Fujiwara Takasue), Teng Yuan Tong Xian Noniang (teng Yuan Long Ji Shi)
-Q12417, daughter of Shinzei (wife of Fujiwara Chikanobu), Xin Xi Noniang (teng Yuan Qin Xin Nozheng Shi)
-Q12418, daughter of Shinzei (wife of Fujiwara Iefusa), Xin Xi Noniang (teng Yuan Jia Fang Noshi)
-Q12419, daughter of Shinzei (wife of Minamoto no Tamekuni), Xin Xi Noniang (yuan Wei Guo Noshi)
-Q12422, daughter of Fujiwara Narichika (wife of Fujiwara no Moronaga), Teng Yuan Cheng Qin Noniang (teng Yuan Shi Chang Nozheng Shi)
-Q12423, Daughter of Fujiwara no Shichika (wife of Taira no Kiyotsune), Teng Yuan Cheng Qin Noniang (ping Qing Jing Noshi)
-Q12424, Daughter of Fujiwara no Shichika (wife of Sanjo no Kinsada), Teng Yuan Cheng Qin Noniang (san Tiao Gong Ding Noshi)
-Q12425, Daughter of Fujiwara no Shichika (wife of Minamoto no Ietoshi), Teng Yuan Cheng Qin Noniang (yuan Jia Jun Noshi)
-Q12426, Daughter of Fujiwara no Shichika (wife of Itsuji Ietsugu), Teng Yuan Cheng Qin Noniang (wu Sip Jia Jing Noqi)
-Q12427, Daughter of Fujiwara no Chikazane (wife of Oe no Takamoto), Teng Yuan QinShi Noniang (da Jiang Gao Yuan Noqi)
-Q12429, daughter of Fujiwara no Chikazane (wife of Hirohashi Tsunemitsu), Teng Yuan Qin Shi Noniang (guang Qiao Jing Guang Noqi)
-Q12434, daughter of Fujiwara no Takasue (wife of Fujiwara no Kanefusa), Teng Yuan Long Ji Noniang (teng Yuan Jian Fang Shi)
-Q12437, daughter of Shigenoi Sanekuni (wife of Awataguchi Tadayoshi), Zi Ye Jing Shi Guo Noniang (su Tian Kou Zhong Liang Shi)
-Q12438, daughter of Fujiwara no Sadanobu (wife of Awataguchi Tadayoshi), Teng Yuan Ding Neng Noniang (su Tian Kou Zhong Liang Shi)
-Q12439, daughter of Fujiwara no Moronaga (wife of Awataguchi Tadayoshi), Teng Yuan Shi Chang Noniang (su Tian Kou Zhong Liang Noshi)
-Q12443, Daughter of Saishun (wife concubine, and lady-in-waiting of Konoe Motomichi)
-Q12450, Daughter of Fujiwara no Sanemune (wife of Fujiwara no Takatada), Teng Yuan Shi Zong Noniang (teng Yuan Long Zhong Shi)
-Q12451, Fujiwara no Mototada (non-councillor), Teng Yuan Ji Zhong (fei Can Yi)
-Q12452, Daughter of Fujiwara no Takatada (wife and wife of Sonomono), Teng Yuan Long Zhong Noniang (yuan Ji Shi Noqi *shi)
-Q12453, Daughter of Fujiwara no Takafusa (wife of Matsudono Shike), Teng Yuan Long Fang Noniang (song Dian Shi Jia Noshi)
-Q12456, Daughter of Jimyoin Yasuie (wife of Matsudono Tadafusa), Chi Ming Yuan Bao Jia Noniang (song Dian Zhong Fang Noshi)
-Q12460, daughter of Fujiwara Mitsutaka (wife of Taira Chikuni), Teng Yuan Guang Long Noniang (ping Qin Guo Shi)
-Q12463, daughter of Taira Chikanori (wife of Yoshida Sadatsune), Ping Qin Fan Noniang (ji Tian Ding Jing Shi)
-Q12466, daughter of Yoshida Sadatsune (wife of Minase Nobunari), Ji Tian Ding Jing Noniang (shui Wu Lai Xin Cheng Noqi)
-Q12467, daughter of Fujiwara Tsuneie (wife of Kujo Ryosuke), Teng Yuan Jing Jia Noniang (jiu Tiao Liang Fu Noshi)
-Q12471, daughter of Taira Chikamune (concubine of Saionji Kinkei), Ping Qin Zong Nonu (xi Yuan Si Gong Jing) Qie)
-Q12478, Second daughter of Saionji Kintsune (wife of Sanjo Sanechika), Xi Yuan Si Gong Jing Noci Nu (san Tiao Shi Qin Shi)
-Q12480, Prince Saionji (daughter of Saionji Kintsune), Xi Yuan Si Gong Zi (xi Yuan Si Gong Jing Noniang)
-Q12483, Daughter of Takashina Yasutsune (wife of Minamoto Akikane), Gao Jie Tai Jing Noniang (yuan Xian Jian Noqi)
-Q12489, Daughter of Hojo Shigetoki (wife of Minamoto no Kunchika), Bei Tiao Zhong Shi Noniang (yuan Ju Qin Noqi)
-Q12491, Fujiwara Mitsuko (daughter of Fujiwara Mitsutaka), Teng Yuan Guang Zi (teng Yuan Guang Long Noniang)
-Q12493, Daughter of Fujiwara Takasue (wife of Fujiwara Yasumichi), Teng Yuan Long Ji Noniang (teng Yuan Tai Tong Noshi)
-Q12494, Fujiwara Tsunemichi (Kamakura period), Teng Yuan Jing Tong (lian Cang Shi Dai)
-Q12495, Daughter of Fujiwara Yasumichi (wife of Fujiwara Kaneyoshi), Teng Yuan Tai Tong Noniang (teng Yuan Jian Liang Noshi)
-Q12496, Daughter of Fujiwara Yasumichi (wife of Masagimachi Sanjo no Kimiuji), Teng Yuan Tai Tong Noniang (zheng Qin Ting San Tiao Gong Shi Noshi)
-Q12499, Daughter of Hatano Tsuneie (wife of Nakahara Chikano), Bo Duo Ye Jing Jia Niang (zhong Yuan Qin Neng Noqi)
-Q12502, Daughter of Tada Hitoshi (wife of Oe Hiromoto), Duo Tian Ren Gang Noniang (da Jiang Guang Yuan Zheng Shi) )
-Q12506, Oe Masahiro (son of Oe Hiromoto), Da Jiang Zheng Guang (da Jiang Guang Yuan Nozi)
-Q12507, daughter of Oe Hiromoto (wife of Nakahara Shigyo), Da Jiang Guang Yuan Noniang (zhong Yuan Shi Ye Noqi)
-Q12508, daughter of Oe Hiromoto (wife of Fujiwara no Prince), Da Jiang Guang Yuan Noniang (teng Yuan Gong Guo Noqi)
-Q12510, Doson (Prince Mochihito), Dao Zun (yi Ren Wang Wang Zi)
-Q12512, daughter of Fujiwara no Sadanobu (wife of Jimyoin Ieyuki), Teng Yuan Ding Neng Noniang (chi Ming Yuan Jia Xing Shi)
-Q12514, Betto no Naishi (female attendant to Emperor Go-Horikawa), Bie Dang Dian Shi (hou Ku He Tian Huang) Nodian Shi)
-Q12515, Daughter of Jimyoin Ieyuki? (Wife of Fujiwara no Yoritsune), Chi Ming Yuan Jia Xing Noniang? (teng Yuan Lai Jing Noshi)
-Q12523, Daughter of Utsunomiya Yoritsuna (Wife of Fujiwara no Tameie), Yu Du Gong Lai Gang Noniang (teng Yuan Wei Jia Noshi)
-Q12528, Fujiwara no Tameshiko (Daughter of Fujiwara no Tameie), Teng Yuan Wei Zi (teng Yuan Wei Jia Noniang)
-Q12532, Daughter of Taira no Koremori (Wife of Shigenoi Sanenobu later wife of Taira no Chikuni), Ping Wei Sheng Noniang (zi Ye Jing Shi Xuan Noqi Nochiping Qin Guo Noqi)
-Q12534, Daughter of Sanjo Sanefusa (Wife of Tokudaiji Kintsugu), San Tiao Shi Fang Noniang (de Da Si Gong) Ji Noshi)
-Q12536, Daughter of Fujiwara no Sanemune (wife of Fujiwara no Prince), Teng Yuan Shi Zong Noniang (teng Yuan Gong Guo Noqi)
-Q12538, Fujiwara no Sanemitsu (Tokudaiji family), Teng Yuan Shi Guang (de Da Si Jia)
-Q12539, Daughter of Fujiwara no Prince (wife of Fujiwara no Ujimichi), Teng Yuan Gong Guo Noniang (teng Yuan Shi Tong Noqi)
-Q12540, Fujiwara no Asatsune (son of Fujiwara no Asakata), Teng Yuan Zhao Jing (teng Yuan Zhao Fang Nozi)
-Q12543, Daughter of Fujiwara no Sanenori (wife of Fujiwara no Munetaka), Teng Yuan Shi Jiao Noniang (teng Yuan Zong Long Noqi)
-Q12545, Daughter of Fujiwara no Masanaga (wife of Fujiwara no Kimitoshi and Fujiwara no Naga), Teng Yuan Ya Chang Niang (teng Yuan Gong Jun Ji Biteng Yuan Chang Jian Shi)
-Q12546, daughter of Fujiwara no Nagakane (wife of Kuga no Michimoto), Teng Yuan Chang Jian Noniang (jiu Wo Tong Ji Noqi)
-Q12552, daughter of Nijō Sadataka (wife of Anenokoji Akitomo), Er Tiao Ding Gao Noniang (zi Xiao Lu Xian Zhao Noshi)
-Q12553, daughter of Fujiwara no Sadataka (wife of Ichijō Sanetomo), Teng Yuan Ding Gao Noniang (yi Tiao Shi Jing Noshi)
-Q12554, daughter of Nijō Sadataka (wife of Yoshida Tametsune), Er Tiao Ding Gao Noniang (ji Tian Wei Jing Noshi)
-Q12559, daughter of Fujiwara no Shigekata (wife of Fujiwara no Mitsumasa), Teng Yuan Zhong Fang Noniang (teng Yuan Guang Ya Noshi)
-Q12562, daughter of Hamuro Mitsumasa (wife of Fujiwara Takafusa), Xie Shi Guang Ya Noniang (teng Yuan Long Fang Noshi)
-Q12563, daughter of Fujiwara Ietsuna (wife of Fujiwara Moronaga), Teng Yuan Jia Gang Noniang (teng Yuan Shi Chang Noqi)
-Q12564, daughter of Fujiwara Sanemori (wife of Fujiwara Akitoshi), Teng Yuan Shi Shou Noniang (teng Yuan Xian Jun Noqi)
-Q12570, daughter of Utsunomiya Yoritsuna (wife of Minamoto no Michinari), Yu Du Gong Lai Gang Noniang (yuan Tong Cheng Noshi)
-Q12574, daughter of Nakain Michinari (wife of Sanjō Saneshige), Zhong Yuan Tong Cheng Noniang (san Tiao Shi Zhong Nozheng Shi) )
-Q12575, Daughter of Kira Nagauji (wife of Tsuchimikado Akikata), Ji Liang Chang Shi Noniang (tu Yu Men Xian Fang Noshi)
-Q12576, Daughter of Fujiwara Chikatoshi (wife of Tsuchimikado Akikata), Teng Yuan Qin Jun Noniang (tu Yu Men Xian Fang Noqi)
-Q12582, Daughter of Horikawa Tomonori (wife of Prince Munetaka), Ku Chuan Ju Jiao Noniang (zong Zun Qin Wang Nofei)
-Q12586, Daughter of Minamoto no Sukemichi (wife of Minamoto no Masatada), Yuan Fu Tong Noniang (yuan Ya Zhong Noshi)
-Q12592, Daughter of Hamura Mitsuchika (wife of Kuga Michihira), Xie Shi Guang Qin Noniang (jiu Wo Tong Ping Nozheng Shi)
-Q12594, Daughter of Kuga Michiyoshi (Wife of Konoe Motohira), Jiu Wo Tong Neng Noniang (jin Wei Ji Ping Noqi)
-Q12596, Daughter of Fujiwara no Kintoki (Wife of Prince Koreakira), Teng Yuan Gong Shi Noniang (wei Ming Qin Wang Fei)
-Q12609, Daughter of Fujiwara no Yoshitada (Wife of Prince Akihiro), Teng Yuan Neng Zhong Noniang (xian Guang Wang Noqi)
-Q12642, Daughter of Fujiwara no Kiyotaka (Harem of Emperor Juntoku), Teng Yuan Qing Ji Noniang (shun De Tian Huang Nohou Gong)
-Q12649, Fujiwara no Tsuneko (Wife of Prince Yorihito), Teng Yuan Jing Zi (lai Ren Qin Wang Nofei)
-Q12659, Daughter of Minamoto no TametomoDaughter (wife of Asuke Shigenaga), Yuan Wei Zhao Nonu (zu Zhu Zhong Chang Noshi)
-Q12662, Daughter of Minamoto no Koreyoshi (wife of Fujiwara no Takatsuna), Yuan Wei Yi Noniang (teng Yuan Long Gang Noqi)
-Q12679, Son of Minamoto no Yoriaki (son of Minamoto no Korekaze), Yuan Lai Ming (yuan Wei Feng Nozi)
-Q12692, Daughter of Minamoto no Mitsumoto (wife of Fujiwara no Hidemune), Yuan Guang Ji Niang (teng Yuan Xiu Zong Shi)
-Q12695, Daughter of Taira no Noriie (wife of Fujiwara no Shuhan), Ping Fan Jia Noniang (teng Yuan Xiu Fan Shi)
-Q12697, Daughter of Taira no Noriie (wife of Fujiwara no Yoshinari), Ping Fan Jia Noniang (teng Yuan Neng Ye Noqi) )
-Q12698, Fujiwara no Yukifusa (Kanshuji line), Teng Yuan Xing Fang (quan Xiu Si Liu)
-Q12710, Daughter of Fujiwara no Sadanori (wife of Bomon Nobukiyo), Teng Yuan Ding Neng Noniang (fang Men Xin Qing Shi)
-Q12711, Fujiwara no Kanemitsu (Hino line of Manatsu line), Teng Yuan Jian Guang (zhen Xia Liu Ri Ye Jia)
-Q12725, Daughter of Yada Yoshikiyo (wife of Yamana Yoshinori), Shi Tian Yi Qing Noniang (shan Ming Yi Fan Noshi)
-Q12729, Daughter of Nose Sukekuni (wife and concubine of Taira Nobunori), Neng Lai Zi Guo Noniang (ping Xin Fan Noshi *qie)
-Q12730, Soma Yoshitane (second head of the family), Xiang Ma Yi Yin (er Dai Dang Zhu)
-Q12736, daughter of Kajiwara Kagetoki (wife of Utsunomiya Yoritsuna), Wei Yuan Jing Shi Noniang (yu Du Gong Lai Gang Noqi)
-Q12742, daughter of Utsunomiya Yoritsuna (wife of Sanjo Sanefusa), Yu Du Gong Lai Gang Noniang (san Tiao Shi Fang Noshi)
-Q12747, daughter of Taira Mitsumori (wife of Matsudono Mototsugu), Ping Guang Sheng Noniang (song Dian Ji Si Noqi)
-Q12752 wife of Abe Suito, member of the Matsuura clan Song Pu Shi (an Bei Ji Ren Noqi),
-Q12774, daughter of Hojo Asatoki (concubine of Ashikaga Yasuuji), Bei Tiao Zhao Shi Noniang (zu Li Tai Shi Noce Shi)
-Q12775, daughter of Hojo Asatoki (wife of Utsunomiya Yasutsuna), Bei Tiao Zhao Shi Noniang (yu Du Gong Tai Gang Noshi)
-Q12776, Daughter of Hojo Asatoki (wife of Hojo Tokizane), Bei Tiao Zhao Shi Noniang (bei Tiao Shi Shi Nozheng Shi)
-Q12778, Shonoagon (concubine of Hojo Shigetoki), Shao Na Yan (bei Tiao Zhong Shi Noce Shi)
-Q12791, Daughter of Kujo Yoritsune (wife of Hojo Masamura), Jiu Tiao Lai Jing Noniang (bei Tiao Zheng Cun Nozheng Shi)
-Q12793, Daughter of Hojo Masamura (wife of Hojo Sanetoki), Bei Tiao Zheng Cun Noniang (bei Tiao Shi Shi Nozheng Shi)
-Q12794, Daughter of Hojo Masamura (wife of Hojo Munemasa), Bei Tiao Zheng Cun Noniang (bei Tiao Zong Zheng Zheng Shi)
-Q12795, Daughter of Hojo Masamura (wife of Adachi Akimori), Bei Tiao Zheng Cun Noniang (an Da Xian Sheng Noshi)
-Q12796, Daughter of Hojo Masamura (wife of Hojo Narutoki), Bei Tiao Zheng Cun Noniang (bei Tiao Ye Shi Noshi)
-Q12797, Daughter of Hojo Masamura (wife of Hojo Tokishige), Bei Tiao Zheng Cun Noniang (bei Tiao Shi Mao Noshi)
-Q12798, Daughter of Hojo Masamura (mother of Hojo Tokimoto), Bei Tiao Zheng Cun Noniang (bei Tiao Shi Ji Nomu)
-Q12799, Daughter of Ichijo Saneari (mother of Hojo Saneyasu?), Yi Tiao Shi You Noniang (bei Tiao Shi Tai Nomu?)
-Q12800, Daughter of Amano Masakage (Wife of Hojo Saneyasu), Tian Ye Zheng Jing Noniang (bei Tiao Shi Tai Noqi)
-Q12802, Daughter of Hojo Saneyasu (wife of Oyama Nagamura), Bei Tiao Shi Tai Noniang (xiao Shan Chang Cun Noqi)
-Q12803, Daughter of Hojo Saneyasu (wife of Oe Hirotoki), Bei Tiao Shi Tai Noniang (da Jiang Guang Shi Noqi)
-Q12804, Daughter of Ichijo Saneari (wife of Konoe Motohira), Yi Tiao Shi You Noniang (jin Wei Ji Ping Noshi)
-Q12805, Daughter of Ichijo Saneari (wife of Takatsukasa Kanehira), Yi Tiao Shi You Noniang (ying Si Jian Ping Noshi)
-Q12806, Daughter of Ichijo Saneari (wife of Yotsutsuji Sanefuji), Yi Tiao Shi You Noniang (si Sip Shi Teng Noshi) )
-Q12807, daughter of Ichijo Saneari (wife of Shigenoi Kimimitsu), Yi Tiao Shi You Noniang (zi Ye Jing Gong Guang Noshi)
-Q12811, daughter of Indō Sukeaki (wife of Ikegami Yasumitsu), Yin Dong You Zhao Noniang (chi Shang Kang Guang Noqi)
-Q12812, daughter of Indō Sukeaki (wife of Hiraga Arikuni), Yin Dong You Zhao Noniang (ping He You Guo Noqi)
-Q12823, daughter of Ichijo Yoriuji (wife of Matsudono Yoshitsugu later wife of Takatsukasa Iyori), Yi Tiao Lai Shi Noniang (song Dian Liang Si Noshi
-Q12824, daughter of Ichijo Yoriuji (second wife of Toin Saneo), Yi Tiao Lai Shi Noniang (dong Yuan Shi Xiong Noji Shi) )
-Q12827, Daughter of Minamoto no Arimasa (wife of Kujo Michiie), Yuan You Ya Noniang (jiu Tiao Dao Jia Noshi)
-Q12842, Daughter of Fujiwara no Kinkage (mother of Sato Motoharu), Teng Yuan Gong Jing Noniang (zuo Teng Ji Zhi Nomu)
-Q12846, Daughter of Ashikaga Yoshikane (wife of Fujiwara no Chikakane), Zu Li Yi Jian Noniang (teng Yuan Qin Jian Noshi)
-Q12850, Daughter of Ashikaga Yoshiuji (wife of Nitta Masayoshi), Zu Li Yi Shi Noniang (xin Tian Zheng Yi Noshi)
-Q12852, Daughter of Ashikaga Yoshiuji (wife of Serada Yoriuji), Zu Li Yi Shi Noniang (shi Liang Tian Lai Shi Noshi)
-Q12856, Hojo Tokimune (son of Hojo Tokimori), Bei Tiao Shi Yuan (bei Tiao Shi Sheng Nozi)
-Q12858, Daughter of Hojo Tokimori (wife of Hojo Nagatoki), Bei Tiao Shi Sheng Noniang (bei Tiao Chang Shi Nozheng Shi)
-Q12859, Daughter of Hojo Tokimori (wife of Ashikaga Yoriuji), Bei Tiao Shi Sheng Noniang (zu Li Lai Shi Nozheng Shi)
-Q12862, Hojo Tokimitsu (son of Hojo Tokimori), Bei Tiao Shi Guang (bei Tiao Shi Sheng Nozi)
-Q12864, Daughter of Hojo Suketoki (wife of Hojo Tokihiro), Bei Tiao Zi Shi Noniang (bei Tiao Shi Guang Noqi)
-Q12865, Daughter of Hojo Suketoki (wife of Hatakeyama Yasukuni), Bei Tiao Zi Shi Noniang (cen Shan Tai Guo Noqi)
-Q12866, Daughter of Iga Mitsumune (Hojo Asanao's wife), Yi He Guang Zong Noniang (bei Tiao Zhao Zhi Nozheng Shi)
-Q12873, Daughter of Oe Nobumitsu (wife of Fujiwara Nakanori), Da Jiang Wei Guang Noniang (teng Yuan Zhong Jiao Noqi)
-Q12875, Daughter of Shibukawa Kanetada (wife of Hiki Yoshikazu), Shibui He Jian Zhong Noniang (bi Qi Neng Yuan Noqi)
-Q12879, Daughter of Hiki Yoshikazu (wife of Kasuya Yuki), Bi Qi Neng Yuan Noniang (zao Wu You Ji Shi)
-Q12883, Daughter of Bomon Nobukiyo (wife of Kujo Ryosuke), Fang Men Xin Qing Noniang (jiu Tiao Liang Fu Shi)
-Q12884, Daughter of Bomon Nobukiyo (wife of Shijo Takahira), Fang Men Xin Qing Noniang (si Tiao Long Heng Shi)
-Q12885, Daughter of Fujiwara no Chikayoshi (wife of Bomon Tadanobu later wife of Sanjo Kintoshi), Teng Yuan Qin Neng Noniang (fang Men Zhong Xin Noshi Nochisan Tiao Gong Jun Noshi)
-Q12889, Daughter of Otomo no Yoritsune (wife of Hojo Muneyasu), Da You Lai Tai Noniang (bei Tiao Zong Lai Noshi)
-Q12892, Daughter of Nikaido no Yukiari (wife of Hojo Tokiaki), Er Jie Tang Xing You Noniang (bei Tiao Shi Zhang Nozheng Shi)
-Q12900, Daughter of Aso Tametoki (wife of the Shiba clan), A Su Wei Shi Noniang (si Bo Jia Shi Nozheng Shi)
-Q12907, Daughter of Hojo Muneyasu (wife of Toki Yorisada), Bei Tiao Zong Lai Noniang (tu Qi Lai Zhen Noqi)
-Q12918, Daughter of Hojo Sanetoki (wife of Nagoshi Nagayori), Bei Tiao Shi Shi Noniang (ming Yue Chang Lai Noqi)
-Q12923, Daughter of Fujiwara Sanetomi (wife of Prince Moriyoshi), Teng Yuan Shi Ren Noniang (shou Liang Qin Wang Noyu Xi Suo)
-Q12930, Daughter of Oonakatomi (wife of Banno Tokinaga), Da Zhong Chen Shi Nu (ban Ye Shi Chang Noqi)
-Q12932, Daughter of Ogasawara Tokinaga (wife of Adachi Yoshikage), Xiao Li Yuan Shi Chang Noniang (an Da Yi Jing Shi)
-Q12945, Hatakeyama Kuniuji (Kamakura period), Cen Shan Guo Shi (lian Cang Shi Dai)
-Q12950, Daughter of Fujiwara Enmune (wife of Koremune Hirotomo), Teng YuAn Yuan Zong Noniang (Wei Zong Guang Yan Noqi)
-Q12964, Daughter of Chiba Shigetane (wife of Yuki Tomomitsu), Qian Xie Cheng Yin Noniang (Jie Cheng Zhao Guang Noshi)
-Q12968, Kasai Munekiyo (5th (6th)), Ge Xi Zong Qing (5th (6th))
-Q12969, Daughter of Kasai Tokikiyo (wife of Nagao Heinai Saemon), Ge Xi Shi Qing Noniang (Chang Wei Ping Nei Zuo Wei Men Nozheng Shi)
-Q12972, Daughter of Kono Michihisa (wife of Kono Michiari), He Ye Tong Jiu Noniang (He Ye Tong You Noqi)
-Q12982, Daughter of Gamou Korekata (wife of Sasaki Sadatsuna), Pu Sheng Wei Xian Noniang (zuo mu Ding Gang Noqi
-Q13004, daughter of Fujiwara no Koreyuki (wife of Fujiwara no Mitsutsuna), Teng Yuan Yi Xing Noniang (teng Yuan Guang Gang Noqi)
-Q13008, daughter of Takashina Yasutsune (wife of Jimyoin Yasuie), Gao Jie Tai Jing Noniang (chi Ming Yuan Bao Jia Noqi)
-Q13009, daughter of Takashina Yasutsune (wife of Fujiwara no Takafusa), Gao Jie Tai Jing Noniang (teng Yuan Long Fang Noqi)
-Q13010, daughter of Takashina Yasutsune (wife of Itsuji Iezumi), Gao Jie Tai Jing Noniang (wu Sip Jia Jing Noqi)
-Q13020, Gamo Toshitsuna (3rd generation), Pu Sheng Jun Gang (3rd generation)
-Q13025, daughter of the Hata clan (Wife of Nikaido Masayoshi), Qin Shi Noniang (er Jie Tang Xing Zheng Noqi)
-Q13028, Daughter of Nikaido Masayoshi (wife of Iga Tomomitsu), Er Jie Tang Xing Zheng Noniang (yi He Zhao Guang Noshi)
-Q13029, Fujiwara no Kinyori (Suemo lineage), Teng Yuan Gong Lai (mo Mao Liu)
-Q13030, Daughter of Fujiwara no Saneyoshi (wife of Fujiwara no Hanno), Teng Yuan Shi Jiao Noniang (teng Yuan Fan Neng Shi)
-Q13031, Daughter of Fujiwara no Saneyoshi (wife of Fujiwara no Kanemitsu), Teng Yuan Shi Jiao Noniang (teng Yuan Jian Guang Shi)
-Q13034, Daughter of Fujiwara no Saneyoshi (wife of Taira no Chikasuke), Teng Yuan Shi Jiao Noniang (ping Qin Fu Noqi) )
-Q13035, Daughter of Fujiwara no Muneshige (mother of Emperor Shirakawa Nariakira), Teng Yuan Zong Shi Noniang (bai Chuan Ye Xian Wang Nomu)
-Q13038, Daughter of Kujo Ryohei (wife of Ogura Kimio), Jiu Tiao Liang Ping Noniang (xiao Cang Gong Xiong Noshi)
-Q13046, Monk (wife of Taira no Chikamune), Seng Nu (ping Qin Zong Noqi)
-Q13052, Daughter of Fujiwara no Chikanobu (wife of Fujiwara no Asatsune), Teng Yuan Qin Xin Noniang (teng Yuan Zhao Jing Noqi)
-Q13053, Daughter of Fujiwara no Chikanobu (wife of Fujiwara no Asada), Teng Yuan Qin Xin Noniang (teng Yuan Zhao Ding Noqi)
-Q13056, Daughter of Nasu no Sukeyuki (wife of Nasu no Yorisuke), Na Xu Zi Zhi Noniang (na Xu Lai Zi Noshi)
-Q13058, Daughter of Iga Tomomitsu (wife of Yuki Tomomitsu), Yi He Zhao Guang Noniang (jie Cheng Zhao Guang Noshi)
-Q13069, Daughter of Sanjo Motosada (wife of Kujo Motoie), San Tiao Ji Ding Noniang (jiu Tiao Ji Jia Noqi)
-Q13072, Daughter of Bomon Ariyoshi or Oimikado Ietsugu (wife of Ichijo Sanetomo), Fang Men You Xin Matahada Chui Yu Men Jia Si Noniang (yi Tiao Shi Jing Noqi)
-Q13075, Daughter of Sanjo Kimifusa (daughter of Sanjo Kimifusa), Yu Xia Dian (san Tiao Gong Fang Noniang)
-Q13076, Daughter of Sanjo Kimifusa (wife of Kujo Tadaie), San Tiao Gong Fang Noniang (jiu Tiao Zhong Jia Nozheng Shi)
-Q13077, daughter of Fujiwara no Kanemitsu (wife of Anenokoji Kinnobu), Teng Yuan Jian Guang Noniang (zi Xiao Lu Gong Xuan Shi)
-Q13086, daughter of Sonomono Motoi (wife and wife of Saionji Kinso), Yuan Ji Shi Noniang (xi Yuan Si Gong Xiang Noqi *shi)
-Q13087, daughter of Sonomono Motoi (wife of Ichijo Saneyuki), Yuan Ji Shi Noniang (yi Tiao Shi Jing Noshi)
-Q13088, daughter of Sonomono Motoi (wife of Kazanin Michimasa), Yuan Ji Shi Noniang (hua Shan Yuan Tong Ya Noqi)
-Q13090, daughter of Fujiwara no Masataka (wife of Fujiwara no Ietaka), Teng Yuan Ya Long Noniang (teng Yuan Jia Long Noqi) )
-Q13100, Daughter of Fujiwara no Osamu (wife of Taira no Tadafusa), Teng Yuan Xiu Fan Noniang (ping Zhong Fang Nozheng Shi)
-Q13104, Daughter of Fujiwara no Norishige (wife of Shijō Takachika), Teng Yuan Fan Mao Noniang (si Tiao Long Qin Noshi)
-Q13111, Daughter of Takashina Tsunenaka (concubine of Shijō Takahira), Gao Jie Jing Zhong Noniang (si Tiao Long Heng Noqie)
-Q13117, Shijō Takamori (Takanobu), Si Tiao Long Sheng (long Xuan)
-Q13118, Daughter of Hojō Sanetoki (wife of Asukai Masaari), Bei Tiao Shi Shi Noniang (fei Niao Jing Ya You Noqi)
-Q13125, Daughter of Adachi no Yoshikage (wife of Nagai Tokihide), An Da Yi Jing Noniang (chang Jing Shi Xiu Noqi)
-Q13126, daughter of Adachi Yoshikage (wife of Utsunomiya Kagetsuna), An Da Yi Jing Noniang (yu Du Gong Jing Gang Nozheng Shi)
-Q13130, daughter of Ashikaga Yoshikiyo (wife of Satomi Yoshinari), Zu Li Yi Qing Noniang (li Jian Yi Cheng Noshi)
-Q13142, daughter of Kujo Kaneyoshi (concubine of Nijo Yoshizane), Jiu Tiao Jian Liang Noniang (er Tiao Liang Shi Noqie)
-Q13143, Grand Minister's Office (female attendant of Emperor Go-Horikawa), Da Na Yan Ju (hou Ku He Tian Huang Nodian Shi)
-Q13144, daughter of Fujiwara no Kinyori (wife/concubine of Fujiwara no Motoyoshi), Teng Yuan Gong Lai Noniang (teng Yuan Ji Liang Noshi *qie) )
-Q13147, Daughter of Fujiwara no Chikayoshi (wife of Kinugasa Ieyoshi), Teng Yuan Qin Neng Noniang (yi Li Jia Liang Noshi)
-Q13149, Daughter of Yoshinobu (wife of Ichijo Sanetoshi), Liang Xing Noniang (yi Tiao Shi Jing Noshi)
-Q13151, Takatsukasa Kanetada (son of Takatsukasa Kanemoto), Ying Si Jian Zhong (ying Si Jian Ji Nozi)
-Q13158, Daughter of Matsudono Kanetsugu (wife of Masagimachi Saneaki), Song Dian Jian Si Nonu (zheng Qin Ting Shi Ming Noshi)
-Q13162, Daughter of Fujiwara no Noriyoshi (wife of Yoshida Suketsune), Teng Yuan Fan Ji Noniang (ji Tian Zi Jing Noshi)
-Q13166, Daughter of Yoshida Suketsune (wife of Fujiwara no Chikatoshi), Ji Tian Zi Jing Noniang (teng Yuan Qin Jun Noqi)
-Q13184, daughter of Toin Saneo (wife of Konoe Motohira), Dong Yuan Shi Xiong Noniang (jin Wei Ji Ping Noshi)
-Q13185, daughter of Toin Saneo (wife of Takatsukasa Mototada), Dong Yuan Shi Xiong Noniang (ying Si Ji Zhong Noshi)
-Q13186, daughter of Toin Saneo (wife of Sanjo Kinchika), Dong Yuan Shi Xiong Noniang (san Tiao Gong Qin Noshi)
-Q13187, daughter of Yamashina Saneo (wife of Saionji Kinkage), Shan Jie Shi Xiong Noniang (xi Yuan Si Gong Yin Noqi)
-Q13192, daughter of Yotsutsuji Sanefuji (wife of Fujiwara no Kinmochi), Si Sip Shi Teng Noniang (teng Yuan Gong Chi Noqi) )
-Q13193, daughter of Yotsutsuji Sanefuji (wife of Rokujo Arifusa), Si Sip Shi Teng Noniang (liu Tiao You Fang Noqi)
-Q13203, daughter of Anenokoji Saneyo (court attendant of Emperor Gosaga), Zi Xiao Lu Shi Shi Noniang (hou Cuo E Tian Huang Nogong Ren)
-Q13205, great-grandson of Minamoto no Yorimasa (court attendant of Emperor Gosaga), Yuan Lai Zheng Noceng Sun (hou Cuo E Tian Huang Nogong Ren)
-Q13220, daughter of Oe no Koremitsu (wife of Fujiwara no Shigeyasu), Da Jiang Wei Guang Noniang (teng Yuan Zhong Bao Noqi)
-Q13226, daughter of Haidong Tadanari (wife of Nagai Yasushige), Hai Dong Zhong Cheng Noniang (chang Jing Tai Zhong Noqi) )
-Q13246, Daughter of Nijō Michiyoshi (wife of Kujō Tadanori), Er Tiao Dao Liang Noniang (jiu Tiao Zhong Jiao Noshi)
-Q13252, Daughter of Saionji Kōsō (wife of Konoe Motohira), Xi Yuan Si Gong Xiang Noniang (jin Wei Ji Ping Nozheng Shi)
-Q13253, Daughter of Saionji Kōsō (wife of Tokudaiji Jikkō), Xi Yuan Si Gong Xiang Noniang (de Da Si Shi Xiao Noshi)
-Q13254, Daughter of Saionji Kōsō (wife of Kujō Tadanori), Xi Yuan Si Gong Xiang Noniang (jiu Tiao Zhong Jiao Noshi)
-Q13255, Daughter of Saionji Kōki (wife of Saionji Jikken), Xi Yuan Si Gong Ji Noniang (xi Yuan Si Shi Xian Noshi) )
-Q13260, Daughter of Minamoto Arimasa (wife of Shigenoi Sanenobu), Yuan You Ya Noniang (Zi Ye Jing Shi Xuan Noqi)
-Q13264, daughter of Ichijo Sanetomo (wife of Ichijo Naizane), Yi Tiao Shi Jing Noniang (yi Tiao Nei Shi Noshi)
-Q13267, daughter of Hamuro Mitsuchika (wife of Hamuro Sukeyori), Xie Shi Guang Qin Noniang (xie Shi Zi Lai Noqi)
-Q13270, daughter of Hamuro Mitsuchika (wife of Fujiwara Takazane), Xie Shi Guang Qin Noniang (teng Yuan Gao Shi Noshi)
-Q13271, daughter of Hamuro Mitsuchika (adopted daughter of Oimikado Shitsune), Xie Shi Guang Qin Noniang (da Chui Yu Men Shi Jing Noyang Nu)
-Q13272, daughter of Hamuro Mitsuchika (wife of Shigenoi Kimikata), Xie Shi Guang Qin Noniang (zi Ye Jing Gong Xian Noshi)
-Q13277, Fujiwara Tokiko (Daughter of Fujiwara Noriyuki), Teng Yuan Ji Zi (teng Yuan Fan Ji Noniang)
-Q13280, Daughter of Imai Kanehira (mother of Kiso Yoshimoto), Jin Jing Jian Ping Noniang (mu Ceng Yi Ji Nomu)
-Q13286, Daughter of Anenokoji Akitomo (wife of Nakain Michiyori), Zi Xiao Lu Xian Zhao Noniang (zhong Yuan Tong Lai Noshi)
-Q13289, Daughter of Nakain Michiyori (wife of Takatsukasa Fuyuhira), Zhong Yuan Tong Lai Noniang (ying Si Dong Ping Nozheng Shi)
-Q13302, Daughter of Taira Motochika (wife of Fujiwara Chikakane), Ping Ji Qin Noniang (teng Yuan Qin Jian Noshi)
-Q13304, Daughter of Anenokoji Akitomo (wife of Kuga Michimoto), Zi Xiao Lu Xian Zhao Noniang (jiu Wo Tong Ji Nozheng Shi)
-Q13306, Kuga Michinobu (Kamakura period), Jiu Wo Tong Xuan (lian Cang Shi Dai)
-Q13309, Princess of Emperor Godaigo (wife of Rokujo Arifusa), Hou Ti Hu Tian Huang Nohuang Nu (liu Tiao You Fang Noshi)
-Q13312, Daughter of Rokujo Arifusa (wife of Kazanin Iesada), Liu Tiao You Fang Noniang (hua Shan Yuan Jia Ding Noshi)
-Q13315, Daughter of Konoe Motohira (wife of Takatsukasa Kanetada), Jin Wei Ji Ping Noniang (ying Si Jian Zhong Noshi)
-Q13369, Daughter of Fujiwara Noriyoshi (wife of Fujiwara Noriyoshi), Teng Yuan Fan Neng Noniang (teng Yuan Fan Ji Noqi) )
-Q13373, Daughter of Fujiwara Noriyuki (wife of Takashina Tsunenaka), Teng Yuan Fan Ji Noniang (gao Jie Jing Zhong Noqi)
-Q13375, Daughter of Fujiwara Norimune (wife of King Tadanari), Teng Yuan Fan Mao Noniang (zhong Cheng Wang Nofei)
-Q13385, Matsui Munenobu (son of Matsui Yoshimune), Song Jing Zong Xin (song Jing Yi Zong Nozi)
-Q13387, Sister of Fujiwara Hidemune (wife of Ōuchi Koreyoshi), Teng Yuan Xiu Zong Nomei (da Nei Wei Yi Nozheng Shi)
-Q13395, Minamoto no Yorito (son of Minamoto no Yoriaki), Yuan Lai Yuan (yuan Lai Ming Nozi)
-Q13397, Daughter of Ikeda Yasunaga (wife of Bitō Tokikage), Chi Tian Tai Yong Noniang (wei Teng Shi Jing Noqi)
-Q13407, Taira Muneko (daughter of Taira Munenobu), Ping Dong Zi (ping Dong Fan Noniang)
-Q13409, Daughter of Fujiwara Kanemitsu (wife of Hamuro Muneyuki), Teng Yuan Jian Guang Noniang (xie Shi Zong Xing Shi)
-Q13410, Daughter of Fujiwara Muneyuki (wife of King Yong Zi), Teng Yuan Zong Xing Noniang (ye Zi Wang Noqi)
-Q13411, Daughter of Hamuro Muneyuki (wife of King Zi Zi), Xie Shi Zong Xing Noniang (zi Zong Wang Shi)
-Q13415, Daughter of Uesugi Shigefusa (wife of Yamana Masauji), Shang Shan Zhong Fang Noniang (shan Ming Zheng Shi Noshi)
-Q13416, Daughter of Uesugi Shigefusa (concubine of Ashikaga Yoriuji), Shang Shan Zhong Fang Noniang (zu Li Lai Shi Noce Shi)
-Q13418, daughter of Fujiwara no Chikano (wife of Fujiwara no Iekiyo), Teng Yuan Qin Neng Noniang (teng Yuan Jia Qing Noshi)
-Q13432, daughter of Fujiwara no Hideyasu or Fujiwara no Hidemune (wife of Fujiwara no Ariyoshi), Teng Yuan Xiu Kang Matahateng Yuan Xiu Zong Noniang (teng Yuan You Neng Noqi)
-Q13436, Harada Tanenari (Dazai Daikan), Yuan Tian Zhong Cheng (da Zai Da Jian)
-Q13449, daughter of Hojo Munemasa (wife of Hojo Sadatoki), Bei Tiao Zong Zheng Noniang (bei Tiao Zhen Shi Nozheng Shi)
-Q13452, daughter of Hojo Muneyori (wife of Hojo Hisatoki), Bei Tiao Zong Lai Noniang (bei Tiao Jiu Shi Nozheng Shi)
-Q13455, Daughter of Hojo Sadatoki (wife of Hojo Tokimoto), Bei Tiao Zhen Shi Noniang (bei Tiao Shi Ji Nozheng Shi)
 Q13459, Daughter of Karita Tokitsugu (wife of the Ashikaga head family), Yi Tian Shi Ji Noniang (zu Li Zong Jia Nozheng Shi)
 Q13461, Daughter of Hojo Nagatoki (wife of Utsunomiya Sadatsuna), Bei Tiao Chang Shi Noniang (yu Du Gong Zhen Gang Noqi)
 Q13463, Daughter of Hojo Tokishige (wife of Hojo Munenobu), Bei Tiao Shi Mao Noniang (bei Tiao Zong Xuan Nozheng Shi)
@@ -4392,698 +3470,698 @@ Q25258,zh=楊詵,Q68097747,,,,,,,,,,
 Q25259,zh=楊綸,Q71057472,,,,,,,,,,
 Q25260,Dương Tập,Q71057652,zh=楊集,,,,,,,,,
 Q25263,zh=崔妃,Q11053522,,,,,,,,,,
-Q25404,,Q19825419 //,,,,,,,,,,
-Q25442,,Q56570138 //,,,,,,,,,,
-Q25478,,Q11077567 //,,,,,,,,,,
-Q25490,,Q10892706 //,,,,,,,,,,
-Q25492,,Q17060950 //,,,,,,,,,,
-Q25526,,Q10885372 //,,,,,,,,,,
-Q25528,,Q17034914 //,,,,,,,,,,
-Q25568,,Q11085111 //,,,,,,,,,,
-Q25570,,Q10885664 //,,,,,,,,,,
-Q25586,,Q9414526 //,,,,,,,,,,
-Q25590,,Q10049081 //,,,,,,,,,,
-Q25635,,Q16603347 //,,,,,,,,,,
-Q25637,,Q16603369 //,,,,,,,,,,
-Q25645,,Q11123824 //,,,,,,,,,,
-Q25656,,Q11073357 //,,,,,,,,,,
-Q25658,,Q10945267 //,,,,,,,,,,
-Q25664,,Q11091256 //,,,,,,,,,,
-Q25706,,Q6788905 //,,,,,,,,,,
-Q25710,,Q11180223 //,,,,,,,,,,
-Q25720,,Q10956933 //,,,,,,,,,,
-Q25754,,Q10297016 //,,,,,,,,,,
-Q25756,,Q4268335 //,,,,,,,,,,
-Q25758,,Q4243450 //,,,,,,,,,,
-Q25760,,Q10912798 //,,,,,,,,,,
-Q25762,,Q10912807 //,,,,,,,,,,
-Q25774,,Q16603426 //,,,,,,,,,,
-Q25776,,Q8249120 //,,,,,,,,,,
-Q25778,,Q10944984 //,,,,,,,,,,
-Q25784,,Q10916237 //,,,,,,,,,,
-Q25786,,Q11056896 //,,,,,,,,,,
-Q25831,,Q10912817 //,,,,,,,,,,
-Q25833,,Q614169 //,,,,,,,,,,
-Q25835,,Q10944053 //,,,,,,,,,,
-Q25859,,Q16603428 //,,,,,,,,,,
-Q25863,,Q6799232 //,,,,,,,,,,
-Q25865,,Q15935554 //,,,,,,,,,,
-Q25867,,Q10912822 //,,,,,,,,,,
-Q25869,,Q10944097 //,,,,,,,,,,
-Q25871,,Q10931592 //,,,,,,,,,,
-Q25875,,Q16076906 //,,,,,,,,,,
-Q25877,,Q16076897 //,,,,,,,,,,
-Q25881,,Q15945177 //,,,,,,,,,,
-Q25889,,Q16906702 //,,,,,,,,,,
-Q25891,,Q15952118 //,,,,,,,,,,
-Q25925,,Q16260581 //,,,,,,,,,,
-Q25931,,Q11062706 //,,,,,,,,,,
-Q25966,,Q10892681 //,,,,,,,,,,
-Q25968,,Q10892774 //,,,,,,,,,,
-Q25978,,Q17011385 //,,,,,,,,,,
-Q25980,,Q17011398 //,,,,,,,,,,
-Q25984,,Q15904952 //,,,,,,,,,,
-Q25986,,Q10945037 //,,,,,,,,,,
-Q25988,,Q10884563 //,,,,,,,,,,
-Q25990,,Q10912805 //,,,,,,,,,,
-Q25992,,Q10893025 //,,,,,,,,,,
-Q25994,,Q10945269 //,,,,,,,,,,
-Q25996,,Q10945268 //,,,,,,,,,,
-Q25998,,Q10945291 //,,,,,,,,,,
-Q26000,,Q15952711 //,,,,,,,,,,
-Q26002,,Q17028348 //,,,,,,,,,,
-Q26004,,Q15933037 //,,,,,,,,,,
-Q26033,,Q10944165 //,,,,,,,,,,
-Q26035,,Q10892698 //,,,,,,,,,,
-Q26053,,Q10104682 //,,,,,,,,,,
-Q26074,,Q16603453 //,,,,,,,,,,
-Q26119,,Q16603383 //,,,,,,,,,,
-Q26123,,Q10893000 //,,,,,,,,,,
-Q26127,,Q15936022 //,,,,,,,,,,
-Q26132,,Q67024496 //,,,,,,,,,,
-Q26133,,Q15938659 //,,,,,,,,,,
-Q26134,,Q10892578 //,,,,,,,,,,
-Q26137,,Q3602654 //,,,,,,,,,,
-Q26139,,Q15955388 //,,,,,,,,,,
-Q26143,,Q10892731 //,,,,,,,,,,
-Q26145,,Q10892707 //,,,,,,,,,,
-Q26217,,Q16603427 //,,,,,,,,,,
-Q26219,,Q10944101 //,,,,,,,,,,
-Q26220,,Q10944202 //,,,,,,,,,,
-Q26231,,Q16904113 //,,,,,,,,,,
-Q26242,,Q16603429 //,,,,,,,,,,
-Q26243,,Q15952993 //,,,,,,,,,,
-Q26263,,Q10912815 //,,,,,,,,,,
-Q26271,,Q67024509 //,,,,,,,,,,
-Q26277,,Q10945316 //,,,,,,,,,,
-Q26279,,Q10945280 //,,,,,,,,,,
-Q26283,,Q17011766 //,,,,,,,,,,
-Q26302,,Q16076176 //,,,,,,,,,,
-Q26324,,Q10892820 //,,,,,,,,,,
-Q26357,,Q10941194 //,,,,,,,,,,
-Q26359,,Q10892757 //,,,,,,,,,,
-Q26380,,Q17038243 //,,,,,,,,,,
-Q26383,,Q16603384 //,,,,,,,,,,
-Q26385,,Q10892999 //,,,,,,,,,,
-Q26386,,Q10892560 //,,,,,,,,,,
-Q26387,,Q10892927 //,,,,,,,,,,
-Q26388,,Q10893012 //,,,,,,,,,,
-Q26395,,Q15941820 //,,,,,,,,,,
-Q26399,,Q10912808 //,,,,,,,,,,
-Q26400,,Q10893026 //,,,,,,,,,,
-Q26402,,Q17011776 //,,,,,,,,,,
-Q26405,,Q10892797 //,,,,,,,,,,
-Q26415,,Q17030314 //,,,,,,,,,,
-Q26416,,Q10912820 //,,,,,,,,,,
-Q26417,,Q10912816 //,,,,,,,,,,
-Q26418,,Q10944161 //,,,,,,,,,,
-Q26441,,Q15897741 //,,,,,,,,,,
-Q26447,,Q16906539 //,,,,,,,,,,
-Q26462,,Q10910440 //,,,,,,,,,,
-Q26471,,Q17026079 //,,,,,,,,,,
-Q26474,,Q15912773 //,,,,,,,,,,
-Q26483,,Q11037215 //,,,,,,,,,,
-Q26489,,Q10892634 //,,,,,,,,,,
-Q26492,,Q16603367 //,,,,,,,,,,
-Q26495,,Q10892837 //,,,,,,,,,,
-Q26505,,Q15931824 //,,,,,,,,,,
-Q26541,,Q10892758 //,,,,,,,,,,
-Q26544,,Q10945784 //,,,,,,,,,,
-Q26553,,Q10892836 //,,,,,,,,,,
-Q26562,,Q9415227 //,,,,,,,,,,
-Q26568,,Q10945059 //,,,,,,,,,,
-Q26571,,Q10945190 //,,,,,,,,,,
-Q26577,,Q16903363 //,,,,,,,,,,
-Q26616,,Q17028170 //,,,,,,,,,,
-Q26622,,Q15933738 //,,,,,,,,,,
-Q26625,,Q10944204 //,,,,,,,,,,
-Q26650,,Q10892633 //,,,,,,,,,,
-Q26659,,Q16603348 //,,,,,,,,,,
-Q26674,,Q10485029 //,,,,,,,,,,
-Q26737,,Q16603353 //,,,,,,,,,,
-Q26743,,Q10941190 //,,,,,,,,,,
-Q26746,,Q10892781 //,,,,,,,,,,
-Q26749,,Q10916515 //,,,,,,,,,,
-Q26758,,Q10945168 //,,,,,,,,,,
-Q26803,,Q15941774 //,,,,,,,,,,
-Q27008,,Q30944879 //,,,,,,,,,,
-Q27027,,Q15933866 //,,,,,,,,,,
-Q27033,,Q8250452 //,,,,,,,,,,
-Q27075,,Q11071667 //,,,,,,,,,,
-Q27114,,Q16260212 //,,,,,,,,,,
-Q27126,,Q22813311 //,,,,,,,,,,
-Q27132,,Q10889525 //,,,,,,,,,,
-Q27135,,Q10879896 //,,,,,,,,,,
-Q27165,,Q15915439 //,,,,,,,,,,
-Q27304,,Q11094381 //,,,,,,,,,,
-Q27313,,Q11094378 //,,,,,,,,,,
-Q27316,,Q11094377 //,,,,,,,,,,
-Q27319,,Q11094350 //,,,,,,,,,,
-Q27322,,Q11094379 //,,,,,,,,,,
-Q27370,,Q11094564 //,,,,,,,,,,
-Q27373,,Q22829299 //,,,,,,,,,,
-Q27379,,Q11094943 //,,,,,,,,,,
-Q27382,,Q11094335 //,,,,,,,,,,
-Q27391,,Q11094854 //,,,,,,,,,,
-Q27397,,Q11094852 //,,,,,,,,,,
-Q27412,,Q11094792 //,,,,,,,,,,
-Q27415,,Q11094794 //,,,,,,,,,,
-Q27418,,Q11094070 //,,,,,,,,,,
-Q27421,,Q11094071 //,,,,,,,,,,
-Q27424,,Q11094802 //,,,,,,,,,,
-Q27430,,Q17164641 //,,,,,,,,,,
-Q27439,,Q11093576 //,,,,,,,,,,
-Q27442,,Q11094800 //,,,,,,,,,,
-Q27538,,Q22829245 //,,,,,,,,,,
-Q27541,,Q19825659 //,,,,,,,,,,
-Q27544,,Q6784879 //,,,,,,,,,,
-Q27547,,Q123329715 //,,,,,,,,,,
-Q27550,,Q31820862 //,,,,,,,,,,
-Q27553,,Q11094510 //,,,,,,,,,,
-Q27559,,Q16904451 //,,,,,,,,,,
-Q27562,,Q11094508 //,,,,,,,,,,
-Q27674,,Q17060090 //,,,,,,,,,,
-Q27780,,Q11094628 //,,,,,,,,,,
-Q27789,,Q11094937 //,,,,,,,,,,
-Q27792,,Q11094859 //,,,,,,,,,,
-Q27795,,Q11094858 //,,,,,,,,,,
-Q27798,,Q22829300 //,,,,,,,,,,
-Q27801,,Q11093654 //,,,,,,,,,,
-Q27804,,Q11094576 //,,,,,,,,,,
-Q27807,,Q11093554 //,,,,,,,,,,
-Q27810,,Q11094681 //,,,,,,,,,,
-Q27817,,Q18383888 //,,,,,,,,,,
-Q27823,,Q22829249 //,,,,,,,,,,
-Q27826,,Q11094790 //,,,,,,,,,,
-Q27829,,Q11093694 //,,,,,,,,,,
-Q27832,,Q20062731 //,,,,,,,,,,
-Q27835,,Q11093693 //,,,,,,,,,,
-Q27838,,Q11094544 //,,,,,,,,,,
-Q27841,,Q11093832 //,,,,,,,,,,
-Q27844,,Q11093831 //,,,,,,,,,,
-Q27847,,Q22829210 //,,,,,,,,,,
-Q27850,,Q11093964 //,,,,,,,,,,
-Q27856,,Q11094341 //,,,,,,,,,,
-Q27862,,Q22829238 //,,,,,,,,,,
-Q27868,,Q11093805 //,,,,,,,,,,
-Q27871,,Q17502317 //,,,,,,,,,,
-Q27874,,Q22829280 //,,,,,,,,,,
-Q27889,,Q16905134 //,,,,,,,,,,
-Q27898,,Q81226549 //,,,,,,,,,,
-Q27910,,Q10947786 //,,,,,,,,,,
-Q27916,,Q11094754 //,,,,,,,,,,
-Q27958,,Q10948800 //,,,,,,,,,,
-Q27982,,Q11094761 //,,,,,,,,,,
-Q28010,,Q22829246 //,,,,,,,,,,
-Q28013,,Q6784713 //,,,,,,,,,,
-Q28016,,Q11094753 //,,,,,,,,,,
-Q28019,,Q11094748 //,,,,,,,,,,
-Q28022,,Q11094745 //,,,,,,,,,,
-Q28025,,Q16904454 //,,,,,,,,,,
-Q28028,,Q11094746 //,,,,,,,,,,
-Q28031,,Q11094755 //,,,,,,,,,,
-Q28034,,Q22829204 //,,,,,,,,,,
-Q28040,,Q10296563 //,,,,,,,,,,
-Q28070,,Q10941192 //,,,,,,,,,,
-Q28074,,Q10892749 //,,,,,,,,,,
-Q28078,,Q10944080 //,,,,,,,,,,
-Q28081,,Q10892815 //,,,,,,,,,,
-Q28090,,Q10892804 //,,,,,,,,,,
-Q28093,,Q11060624 //,,,,,,,,,,
-Q28096,,Q22773901 //,,,,,,,,,,
-Q28124,,Q10887926 //,,,,,,,,,,
-Q28171,,Q10892791 //,,,,,,,,,,
-Q28174,,Q10892770 //,,,,,,,,,,
-Q28177,,Q10892718 //,,,,,,,,,,
-Q28290,,Q78123355 //,,,,,,,,,,
-Q28295,,Q11094879 //,,,,,,,,,,
-Q28299,,Q16904455 //,,,,,,,,,,
-Q28303,,Q11094876 //,,,,,,,,,,
-Q28311,,Q11094671 //,,,,,,,,,,
-Q28315,,Q11093885 //,,,,,,,,,,
-Q28323,,Q11094782 //,,,,,,,,,,
-Q28327,,Q11094783 //,,,,,,,,,,
-Q28331,,Q16904458 //,,,,,,,,,,
-Q28335,,Q11094120 //,,,,,,,,,,
-Q28347,,Q22829251 //,,,,,,,,,,
-Q28351,,Q11094065 //,,,,,,,,,,
-Q28355,,Q11094470 //,,,,,,,,,,
-Q28359,,Q11094471 //,,,,,,,,,,
-Q28363,,Q11094791 //,,,,,,,,,,
-Q28367,,Q11093753 //,,,,,,,,,,
-Q28371,,Q22829261 //,,,,,,,,,,
-Q28375,,Q11094764 //,,,,,,,,,,
-Q28379,,Q11094763 //,,,,,,,,,,
-Q28387,,Q22829241 //,,,,,,,,,,
-Q28399,,Q22829282 //,,,,,,,,,,
-Q28443,,Q11094523 //,,,,,,,,,,
-Q28546,,Q17362641 //,,,,,,,,,,
-Q28552,,Q16603747 //,,,,,,,,,,
-Q28555,,Q8250485 //,,,,,,,,,,
-Q28558,,Q30943741 //,,,,,,,,,,
-Q28561,,Q11094538 //,,,,,,,,,,
-Q28564,,Q11094514 //,,,,,,,,,,
-Q28567,,Q11094529 //,,,,,,,,,,
-Q28570,,Q11094532 //,,,,,,,,,,
-Q28576,,Q11094512 //,,,,,,,,,,
-Q28579,,Q11094539 //,,,,,,,,,,
-Q28582,,Q11094527 //,,,,,,,,,,
-Q28588,,Q6784846 //,,,,,,,,,,
-Q28591,,Q6784823 //,,,,,,,,,,
-Q28594,,Q11094518 //,,,,,,,,,,
-Q28597,,Q11094536 //,,,,,,,,,,
-Q28601,,Q11094515 //,,,,,,,,,,
-Q28605,,Q11094537 //,,,,,,,,,,
-Q28609,,Q22829206 //,,,,,,,,,,
-Q28666,,Q11066208 //,,,,,,,,,,
-Q28670,,Q11060544 //,,,,,,,,,,
-Q28674,,Q11060828 //,,,,,,,,,,
-Q28762,,Q11073237 //,,,,,,,,,,
-Q28766,,Q10892754 //,,,,,,,,,,
-Q28774,,Q16907302 //,,,,,,,,,,
-Q28778,,Q10892723 //,,,,,,,,,,
-Q28806,,Q18653756 //,,,,,,,,,,
-Q28810,,Q18653757 //,,,,,,,,,,
-Q28878,,Q11093796 //,,,,,,,,,,
-Q28886,,Q11094004 //,,,,,,,,,,
-Q28890,,Q11093705 //,,,,,,,,,,
-Q28894,,Q11094582 //,,,,,,,,,,
-Q28898,,Q11094580 //,,,,,,,,,,
-Q28903,,Q11094013 //,,,,,,,,,,
-Q28907,,Q11094656 //,,,,,,,,,,
-Q28915,,Q22829252 //,,,,,,,,,,
-Q28919,,Q11093890 //,,,,,,,,,,
-Q28923,,Q11094796 //,,,,,,,,,,
-Q28927,,Q11094482 //,,,,,,,,,,
-Q28931,,Q11094291 //,,,,,,,,,,
-Q28935,,Q22829263 //,,,,,,,,,,
-Q28939,,Q11093657 //,,,,,,,,,,
-Q28943,,Q11093656 //,,,,,,,,,,
-Q28947,,Q18653746 //,,,,,,,,,,
-Q28951,,Q18653745 //,,,,,,,,,,
-Q28959,,Q11094473 //,,,,,,,,,,
-Q28971,,Q19855834 //,,,,,,,,,,
-Q29271,,Q30943764 //,,,,,,,,,,
-Q29275,,Q11093674 //,,,,,,,,,,
-Q29279,,Q11093686 //,,,,,,,,,,
-Q29283,,Q30943756 //,,,,,,,,,,
-Q29287,,Q30943769 //,,,,,,,,,,
-Q29291,,Q8250321 //,,,,,,,,,,
-Q29295,,Q8250386 //,,,,,,,,,,
-Q29299,,Q30943782 //,,,,,,,,,,
-Q29311,,Q11093690 //,,,,,,,,,,
-Q29315,,Q11093687 //,,,,,,,,,,
-Q29319,,Q11093688 //,,,,,,,,,,
-Q29327,,Q6785433 //,,,,,,,,,,
-Q29331,,Q11093676 //,,,,,,,,,,
-Q29343,,Q11093681 //,,,,,,,,,,
-Q29412,,Q10944049 //,,,,,,,,,,
-Q29420,,Q16075492 //,,,,,,,,,,
-Q29472,,Q11094554 //,,,,,,,,,,
-Q29492,,Q11094730 //,,,,,,,,,,
-Q29496,,Q11094729 //,,,,,,,,,,
-Q29500,,Q11094731 //,,,,,,,,,,
-Q29508,,Q11094788 //,,,,,,,,,,
-Q29512,,Q11094985 //,,,,,,,,,,
-Q29516,,Q11094984 //,,,,,,,,,,
-Q29524,,Q11093592 //,,,,,,,,,,
-Q29528,,Q11093591 //,,,,,,,,,,
-Q29532,,Q11093593 //,,,,,,,,,,
-Q29536,,Q16904450 //,,,,,,,,,,
-Q29540,,Q8254662 //,,,,,,,,,,
-Q29548,,Q22829253 //,,,,,,,,,,
-Q29552,,Q11094674 //,,,,,,,,,,
-Q29560,,Q11093999 //,,,,,,,,,,
-Q29564,,Q11093998 //,,,,,,,,,,
-Q29568,,Q11094949 //,,,,,,,,,,
-Q29572,,Q11094947 //,,,,,,,,,,
-Q29576,,Q11094945 //,,,,,,,,,,
-Q29580,,Q11094667 //,,,,,,,,,,
-Q29584,,Q11094666 //,,,,,,,,,,
-Q29588,,Q22829305 //,,,,,,,,,,
-Q29965,,Q97351135 //,,,,,,,,,,
-Q29970,,Q97351134 //,,,,,,,,,,
-Q29974,,Q11094818 //,,,,,,,,,,
-Q29978,,Q22829212 //,,,,,,,,,,
-Q30034,,Q8250509 //,,,,,,,,,,
-Q30090,,Q8250315 //,,,,,,,,,,
-Q30094,,Q20062733 //,,,,,,,,,,
-Q30101,,Q11094821 //,,,,,,,,,,
-Q30105,,Q11094815 //,,,,,,,,,,
-Q30109,,Q11094829 //,,,,,,,,,,
-Q30113,,Q11094817 //,,,,,,,,,,
-Q30117,,Q11094816 //,,,,,,,,,,
-Q30121,,Q11094825 //,,,,,,,,,,
-Q30125,,Q11094820 //,,,,,,,,,,
-Q30129,,Q11094819 //,,,,,,,,,,
-Q30133,,Q6784685 //,,,,,,,,,,
-Q30137,,Q6784648 //,,,,,,,,,,
-Q30141,,Q11094823 //,,,,,,,,,,
-Q30149,,Q11094827 //,,,,,,,,,,
-Q30153,,Q8249068 //,,,,,,,,,,
-Q30210,,Q9384015 //,,,,,,,,,,
-Q30242,,Q15952963 //,,,,,,,,,,
-Q30246,,Q10944084 //,,,,,,,,,,
-Q30250,,Q10944145 //,,,,,,,,,,
-Q30302,,Q11094499 //,,,,,,,,,,
-Q30306,,Q11094498 //,,,,,,,,,,
-Q30314,,Q11093854 //,,,,,,,,,,
-Q30318,,Q11093584 //,,,,,,,,,,
-Q30322,,Q11094171 //,,,,,,,,,,
-Q30326,,Q11093607 //,,,,,,,,,,
-Q30331,,Q8254651 //,,,,,,,,,,
-Q30339,,Q22829254 //,,,,,,,,,,
-Q30343,,Q11094114 //,,,,,,,,,,
-Q30347,,Q11094128 //,,,,,,,,,,
-Q30351,,Q11094601 //,,,,,,,,,,
-Q30355,,Q11094602 //,,,,,,,,,,
-Q30359,,Q11094690 //,,,,,,,,,,
-Q30363,,Q11094694 //,,,,,,,,,,
-Q30367,,Q11094067 //,,,,,,,,,,
-Q30371,,Q18653755 //,,,,,,,,,,
-Q30375,,Q11094758 //,,,,,,,,,,
-Q30591,,Q27952689 //,,,,,,,,,,
-Q30595,,Q85983639 //,,,,,,,,,,
-Q30684,,Q11094636 //,,,,,,,,,,
-Q30688,,Q22829216 //,,,,,,,,,,
-Q30692,,Q133539104 //,,,,,,,,,,
-Q30773,,Q8250841 //,,,,,,,,,,
-Q30777,,Q8250571 //,,,,,,,,,,
-Q30781,,Q8250498 //,,,,,,,,,,
-Q30785,,Q8250627 //,,,,,,,,,,
-Q30789,,Q8250643 //,,,,,,,,,,
-Q30793,,Q30943749 //,,,,,,,,,,
-Q30797,,Q8250526 //,,,,,,,,,,
-Q30801,,Q30943663 //,,,,,,,,,,
-Q30809,,Q11094632 //,,,,,,,,,,
-Q30813,,Q11094644 //,,,,,,,,,,
-Q30817,,Q11094638 //,,,,,,,,,,
-Q30821,,Q11094645 //,,,,,,,,,,
-Q30825,,Q11094637 //,,,,,,,,,,
-Q30829,,Q11094649 //,,,,,,,,,,
-Q30833,,Q11094635 //,,,,,,,,,,
-Q30837,,Q11094639 //,,,,,,,,,,
-Q30845,,Q11094634 //,,,,,,,,,,
-Q30849,,Q11094641 //,,,,,,,,,,
-Q30853,,Q11094643 //,,,,,,,,,,
-Q30861,,Q10941170 //,,,,,,,,,,
-Q30940,,Q17163668 //,,,,,,,,,,
-Q30968,,Q16159585 //,,,,,,,,,,
-Q31012,,Q11094161 //,,,,,,,,,,
-Q31016,,Q22829221 //,,,,,,,,,,
-Q31020,,Q11094224 //,,,,,,,,,,
-Q31024,,Q11093962 //,,,,,,,,,,
-Q31028,,Q11093961 //,,,,,,,,,,
-Q31032,,Q11093569 //,,,,,,,,,,
-Q31036,,Q11094721 //,,,,,,,,,,
-Q31040,,Q11093982 //,,,,,,,,,,
-Q31044,,Q8254605 //,,,,,,,,,,
-Q31052,,Q132087523 //,,,,,,,,,,
-Q31056,,Q65052422 //,,,,,,,,,,
-Q31060,,Q11094723 //,,,,,,,,,,
-Q31069,,Q11093856 //,,,,,,,,,,
-Q31073,,Q11094593 //,,,,,,,,,,
-Q31077,,Q11094592 //,,,,,,,,,,
-Q31081,,Q11094708 //,,,,,,,,,,
-Q31085,,Q11094707 //,,,,,,,,,,
-Q31089,,Q11094706 //,,,,,,,,,,
-Q31093,,Q33113867 //,,,,,,,,,,
-Q31097,,Q11094420 //,,,,,,,,,,
-Q31101,,Q18653758 //,,,,,,,,,,
-Q31459,,Q11093951 //,,,,,,,,,,
-Q31463,,Q11093942 //,,,,,,,,,,
-Q31467,,Q28419028 //,,,,,,,,,,
-Q31575,,Q20062732 //,,,,,,,,,,
-Q31587,,Q11093954 //,,,,,,,,,,
-Q31591,,Q11093943 //,,,,,,,,,,
-Q31595,,Q11093949 //,,,,,,,,,,
-Q31599,,Q11071797 //,,,,,,,,,,
-Q31603,,Q22829227 //,,,,,,,,,,
-Q31607,,Q11093960 //,,,,,,,,,,
-Q31611,,Q11053068 //,,,,,,,,,,
-Q31615,,Q11093958 //,,,,,,,,,,
-Q31623,,Q11093945 //,,,,,,,,,,
-Q31627,,Q11093959 //,,,,,,,,,,
-Q31631,,Q11093946 //,,,,,,,,,,
-Q31635,,Q11093957 //,,,,,,,,,,
-Q31659,,Q17024893 //,,,,,,,,,,
-Q31664,,Q15939129 //,,,,,,,,,,
-Q31720,,Q11062822 //,,,,,,,,,,
-Q31724,,Q17030243 //,,,,,,,,,,
-Q31728,,Q8249256 //,,,,,,,,,,
-Q31752,,Q11094108 //,,,,,,,,,,
-Q31756,,Q11094109 //,,,,,,,,,,
-Q31760,,Q11093752 //,,,,,,,,,,
-Q31764,,Q11093901 //,,,,,,,,,,
-Q31768,,Q11093565 //,,,,,,,,,,
-Q31772,,Q16904341 //,,,,,,,,,,
-Q31776,,Q11093940 //,,,,,,,,,,
-Q31780,,Q11094786 //,,,,,,,,,,
-Q31784,,Q10884389 //,,,,,,,,,,
-Q31788,,Q11094983 //,,,,,,,,,,
-Q31792,,Q11094982 //,,,,,,,,,,
-Q31800,,Q130570307 //,,,,,,,,,,
-Q31808,,Q11094661 //,,,,,,,,,,
-Q31816,,Q11094658 //,,,,,,,,,,
-Q31820,,Q17025683 //,,,,,,,,,,
-Q31824,,Q11093798 //,,,,,,,,,,
-Q31828,,Q11094787 //,,,,,,,,,,
-Q31832,,Q11094136 //,,,,,,,,,,
-Q31836,,Q11093778 //,,,,,,,,,,
-Q31840,,Q11093777 //,,,,,,,,,,
-Q31844,,Q11093775 //,,,,,,,,,,
-Q31940,,Q12618180 //,,,,,,,,,,
-Q32013,,Q55737306 //,,,,,,,,,,
-Q32021,,Q21825102 //,,,,,,,,,,
-Q32025,,Q21710323 //,,,,,,,,,,
-Q32145,,Q11094446 //,,,,,,,,,,
-Q32149,,Q11094451 //,,,,,,,,,,
-Q32152,,Q11094452 //,,,,,,,,,,
-Q32156,,Q28419029 //,,,,,,,,,,
-Q32264,,Q8258965 //,,,,,,,,,,
-Q32317,,Q11094455 //,,,,,,,,,,
-Q32321,,Q11094447 //,,,,,,,,,,
-Q32325,,Q11094466 //,,,,,,,,,,
-Q32329,,Q11094453 //,,,,,,,,,,
-Q32333,,Q11094454 //,,,,,,,,,,
-Q32337,,Q11094460 //,,,,,,,,,,
-Q32341,,Q11094468 //,,,,,,,,,,
-Q32345,,Q11094467 //,,,,,,,,,,
-Q32349,,Q11094463 //,,,,,,,,,,
-Q32353,,Q11094459 //,,,,,,,,,,
-Q32369,,Q10892705 //,,,,,,,,,,
-Q32449,,Q11088788 //,,,,,,,,,,
-Q32478,,Q11094140 //,,,,,,,,,,
-Q32482,,Q16904453 //,,,,,,,,,,
-Q32486,,Q22829311 //,,,,,,,,,,
-Q32490,,Q11094545 //,,,,,,,,,,
-Q32494,,Q11051062 //,,,,,,,,,,
-Q32498,,Q11093588 //,,,,,,,,,,
-Q32502,,Q11094223 //,,,,,,,,,,
-Q32506,,Q11094979 //,,,,,,,,,,
-Q32510,,Q11094975 //,,,,,,,,,,
-Q32522,,Q11094673 //,,,,,,,,,,
-Q32526,,Q11094837 //,,,,,,,,,,
-Q32646,,Q61095336 //,,,,,,,,,,
-Q32650,,Q12604925 //,,,,,,,,,,
-Q32723,,Q11094105 //,,,,,,,,,,
-Q32819,,Q30943035 //,,,,,,,,,,
-Q32827,,Q8254614 //,,,,,,,,,,
-Q32843,,Q11094082 //,,,,,,,,,,
-Q32851,,Q11094106 //,,,,,,,,,,
-Q32855,,Q11094099 //,,,,,,,,,,
-Q32867,,Q11094086 //,,,,,,,,,,
-Q32871,,Q11094104 //,,,,,,,,,,
-Q32875,,Q11094095 //,,,,,,,,,,
-Q32899,,Q9415053 //,,,,,,,,,,
-Q32903,,Q10892769 //,,,,,,,,,,
-Q32907,,Q16078661 //,,,,,,,,,,
-Q32931,,Q8249226 //,,,,,,,,,,
-Q33044,,Q16075472 //,,,,,,,,,,
-Q33056,,Q11093824 //,,,,,,,,,,
-Q33064,,Q11094321 //,,,,,,,,,,
-Q33067,,Q11094068 //,,,,,,,,,,
-Q33071,,Q22829312 //,,,,,,,,,,
-Q33075,,Q11051064 //,,,,,,,,,,
-Q33079,,Q11094436 //,,,,,,,,,,
-Q33083,,Q10884433 //,,,,,,,,,,
-Q33087,,Q16904342 //,,,,,,,,,,
-Q33096,,Q15936528 //,,,,,,,,,,
-Q33148,,Q15139418 //,,,,,,,,,,
-Q33259,,Q133277936 //,,,,,,,,,,
-Q33275,,Q10955556 //,,,,,,,,,,
-Q33283,,Q30943766 //,,,,,,,,,,
-Q33295,,Q7664521 //,,,,,,,,,,
-Q33312,,Q8258364 //,,,,,,,,,,
-Q33324,,Q16260694 //,,,,,,,,,,
-Q33340,,Q13390144 //,,,,,,,,,,
-Q33372,,Q17036669 //,,,,,,,,,,
-Q33392,,Q10564879 //,,,,,,,,,,
-Q33400,,Q10129644 //,,,,,,,,,,
-Q33423,,Q11093855 //,,,,,,,,,,
-Q33427,,Q22829192 //,,,,,,,,,,
-Q33431,,Q22829313 //,,,,,,,,,,
-Q33435,,Q11094843 //,,,,,,,,,,
-Q33439,,Q11093597 //,,,,,,,,,,
-Q33483,,Q18381261 //,,,,,,,,,,
-Q33523,,Q133277945 //,,,,,,,,,,
-Q33531,,Q133277937 //,,,,,,,,,,
-Q33590,,Q10891057 //,,,,,,,,,,
-Q33659,,Q11093586 //,,,,,,,,,,
-Q33663,,Q22829314 //,,,,,,,,,,
-Q33683,,Q18815708 //,,,,,,,,,,
-Q33691,,Q12587644 //,,,,,,,,,,
-Q33803,,Q10950651 //,,,,,,,,,,
-Q33819,,Q24836542 //,,,,,,,,,,
-Q33832,,Q66311357 //,,,,,,,,,,
-Q33852,,Q22829315 //,,,,,,,,,,
-Q33856,,Q11094938 //,,,,,,,,,,
-Q34009,,Q64015590 //,,,,,,,,,,
-Q34025,,Q15912665 //,,,,,,,,,,
-Q34037,,Q66922824 //,,,,,,,,,,
-Q34053,,Q66311359 //,,,,,,,,,,
-Q34070,,Q22829316 //,,,,,,,,,,
-Q34102,,Q12604897 //,,,,,,,,,,
-Q34185,,Q61721598 //,,,,,,,,,,
-Q34193,,Q111431737 //,,,,,,,,,,
-Q34201,,Q13655983 //,,,,,,,,,,
-Q34205,,Q22812717 //,,,,,,,,,,
-Q34225,,Q15909868 //,,,,,,,,,,
-Q34257,,Q66311364 //,,,,,,,,,,
-Q34261,,Q66311369 //,,,,,,,,,,
-Q34277,,Q112027810 //,,,,,,,,,,
-Q34353,,Q61721601 //,,,,,,,,,,
-Q34357,,Q13668765 //,,,,,,,,,,
-Q34361,,Q13668817 //,,,,,,,,,,
-Q34369,,Q13671983 //,,,,,,,,,,
-Q34373,,Q26156554 //,,,,,,,,,,
-Q34405,,Q15931288 //,,,,,,,,,,
-Q34409,,Q15941239 //,,,,,,,,,,
-Q34413,,Q16075641 //,,,,,,,,,,
-Q34425,,Q10941103 //,,,,,,,,,,
-Q34429,,Q56271521 //,,,,,,,,,,
-Q34433,,Q66311366 //,,,,,,,,,,
-Q34522,,Q61721603 //,,,,,,,,,,
-Q34530,,Q13668769 //,,,,,,,,,,
-Q34534,,Q13668776 //,,,,,,,,,,
-Q34538,,Q13669039 //,,,,,,,,,,
-Q34546,,Q13672094 //,,,,,,,,,,
-Q34550,,Q26156555 //,,,,,,,,,,
-Q34554,,Q133697525 //,,,,,,,,,,
-Q34566,,Q13656186 //,,,,,,,,,,
-Q34667,,Q49252244 //,,,,,,,,,,
-Q34734,,Q61721605 //,,,,,,,,,,
-Q34742,,Q13669277 //,,,,,,,,,,
-Q34750,,Q13672044 //,,,,,,,,,,
-Q34754,,Q26156556 //,,,,,,,,,,
-Q34758,,Q133697524 //,,,,,,,,,,
-Q34954,,Q12586207 //,,,,,,,,,,
-Q34970,,Q6678012 //,,,,,,,,,,
-Q34974,,Q16178031 //,,,,,,,,,,
-Q35010,,Q61721606 //,,,,,,,,,,
-Q35014,,Q13669234 //,,,,,,,,,,
-Q35018,,Q133277873 //,,,,,,,,,,
-Q35038,,Q26156559 //,,,,,,,,,,
-Q35042,,Q133697523 //,,,,,,,,,,
-Q35130,,Q27953940 //,,,,,,,,,,
-Q35134,,Q27953939 //,,,,,,,,,,
-Q35227,,Q67591766 //,,,,,,,,,,
-Q35231,,Q65054219 //,,,,,,,,,,
-Q35259,,Q16179847 //,,,,,,,,,,
-Q35291,,Q12612821 //,,,,,,,,,,
-Q35323,,Q16179206 //,,,,,,,,,,
-Q35335,,Q12613118 //,,,,,,,,,,
-Q35385,,Q61721607 //,,,,,,,,,,
-Q35405,,Q22812726 //,,,,,,,,,,
-Q35433,,Q13671825 //,,,,,,,,,,
-Q35437,,Q26156562 //,,,,,,,,,,
-Q35457,,Q133277779 //,,,,,,,,,,
-Q35461,,Q133277785 //,,,,,,,,,,
-Q35573,,Q61091619 //,,,,,,,,,,
-Q35581,,Q16906177 //,,,,,,,,,,
-Q35649,,Q12585203 //,,,,,,,,,,
-Q35661,,Q65054100 //,,,,,,,,,,
-Q35794,,Q61721608 //,,,,,,,,,,
-Q35802,,Q134737646 //,,,,,,,,,,
-Q35810,,Q133313643 //,,,,,,,,,,
-Q35814,,Q22812727 //,,,,,,,,,,
-Q35871,,Q13669919 //,,,,,,,,,,
-Q35875,,Q13653206 //,,,,,,,,,,
-Q35879,,Q26156563 //,,,,,,,,,,
-Q35891,,Q133277782 //,,,,,,,,,,
-Q35895,,Q134778989 //,,,,,,,,,,
-Q35915,,Q10944294 //,,,,,,,,,,
-Q36174,,Q12610471 //,,,,,,,,,,
-Q36226,,Q28418427 //,,,,,,,,,,
-Q36230,,Q61721611 //,,,,,,,,,,
-Q36238,,Q134737649 //,,,,,,,,,,
-Q36246,,Q10944418 //,,,,,,,,,,
-Q36250,,Q133313567 //,,,,,,,,,,
-Q36254,,Q22812728 //,,,,,,,,,,
-Q36283,,Q132054396 //,,,,,,,,,,
-Q36303,,Q13671200 //,,,,,,,,,,
-Q36327,,Q10944413 //,,,,,,,,,,
-Q36331,,Q19825266 //,,,,,,,,,,
-Q36335,,Q133697494 //,,,,,,,,,,
-Q36378,,Q30944750 //,,,,,,,,,,
-Q36382,,Q16904067 //,,,,,,,,,,
-Q37029,,Q28418430 //,,,,,,,,,,
-Q37033,,Q61721612 //,,,,,,,,,,
-Q37053,,Q133313557 //,,,,,,,,,,
-Q37057,,Q22812729 //,,,,,,,,,,
-Q37160,,Q13670392 //,,,,,,,,,,
-Q37168,,Q13671429 //,,,,,,,,,,
-Q37172,,Q13670487 //,,,,,,,,,,
-Q37201,,Q133697551 //,,,,,,,,,,
-Q37205,,Q97350460 //,,,,,,,,,,
-Q37225,,Q16904072 //,,,,,,,,,,
-Q37389,,Q67591343 //,,,,,,,,,,
-Q37725,,Q80576456 //,,,,,,,,,,
-Q37737,,Q30947861 //,,,,,,,,,,
-Q38444,,Q61721613 //,,,,,,,,,,
-Q38456,,Q133277758 //,,,,,,,,,,
-Q38464,,Q133288661 //,,,,,,,,,,
-Q38468,,Q133313587 //,,,,,,,,,,
-Q38585,,Q134176918 //,,,,,,,,,,
-Q38609,,Q13655236 //,,,,,,,,,,
-Q38617,,Q13654732 //,,,,,,,,,,
-Q38621,,Q13655569 //,,,,,,,,,,
-Q38641,,Q133697547 //,,,,,,,,,,
-Q39001,,Q123329479 //,,,,,,,,,,
-Q39356,,Q79243783 //,,,,,,,,,,
-Q40249,,Q28419018 //,,,,,,,,,,
-Q40253,,Q61721614 //,,,,,,,,,,
-Q40257,,Q133277762 //,,,,,,,,,,
-Q40273,,Q114690252 //,,,,,,,,,,
-Q40293,,Q8979208 //,,,,,,,,,,
-Q40409,,Q13652505 //,,,,,,,,,,
-Q40413,,Q13652817 //,,,,,,,,,,
-Q40606,,Q61094755 //,,,,,,,,,,
-Q41205,,Q124261604 //,,,,,,,,,,
-Q41213,,Q24957857 //,,,,,,,,,,
-Q42570,,Q10944451 //,,,,,,,,,,
-Q42574,,Q28418230 //,,,,,,,,,,
-Q42578,,Q28418229 //,,,,,,,,,,
-Q42582,,Q61720099 //,,,,,,,,,,
-Q42586,,Q61721616 //,,,,,,,,,,
-Q42594,,Q134264697 //,,,,,,,,,,
-Q42598,,Q11069972 //,,,,,,,,,,
-Q42602,,Q133277702 //,,,,,,,,,,
-Q42610,,Q133288660 //,,,,,,,,,,
-Q42634,,Q130270614 //,,,,,,,,,,
-Q42731,,Q134176913 //,,,,,,,,,,
-Q42875,,Q28776434 //,,,,,,,,,,
-Q42895,,Q64708667 //,,,,,,,,,,
-Q42903,,Q64706210 //,,,,,,,,,,
-Q42907,,Q38963192 //,,,,,,,,,,
-Q42919,,Q38962821 //,,,,,,,,,,
-Q43144,,Q16078446 //,,,,,,,,,,
-Q43478,,Q17062423 //,,,,,,,,,,
-Q43482,,Q16603392 //,,,,,,,,,,
-Q43486,,Q16603574 //,,,,,,,,,,
-Q43518,,Q24957763 //,,,,,,,,,,
-Q43522,,Q24957939 //,,,,,,,,,,
-Q43586,,Q67881565 //,,,,,,,,,,
+Q25404,,Q19825419 ,,,,,,,,,,
+Q25442,,Q56570138 ,,,,,,,,,,
+Q25478,,Q11077567 ,,,,,,,,,,
+Q25490,,Q10892706 ,,,,,,,,,,
+Q25492,,Q17060950 ,,,,,,,,,,
+Q25526,,Q10885372 ,,,,,,,,,,
+Q25528,,Q17034914 ,,,,,,,,,,
+Q25568,,Q11085111 ,,,,,,,,,,
+Q25570,,Q10885664 ,,,,,,,,,,
+Q25586,,Q9414526 ,,,,,,,,,,
+Q25590,,Q10049081 ,,,,,,,,,,
+Q25635,,Q16603347 ,,,,,,,,,,
+Q25637,,Q16603369 ,,,,,,,,,,
+Q25645,,Q11123824 ,,,,,,,,,,
+Q25656,,Q11073357 ,,,,,,,,,,
+Q25658,,Q10945267 ,,,,,,,,,,
+Q25664,,Q11091256 ,,,,,,,,,,
+Q25706,,Q6788905 ,,,,,,,,,,
+Q25710,,Q11180223 ,,,,,,,,,,
+Q25720,,Q10956933 ,,,,,,,,,,
+Q25754,,Q10297016 ,,,,,,,,,,
+Q25756,,Q4268335 ,,,,,,,,,,
+Q25758,,Q4243450 ,,,,,,,,,,
+Q25760,,Q10912798 ,,,,,,,,,,
+Q25762,,Q10912807 ,,,,,,,,,,
+Q25774,,Q16603426 ,,,,,,,,,,
+Q25776,,Q8249120 ,,,,,,,,,,
+Q25778,,Q10944984 ,,,,,,,,,,
+Q25784,,Q10916237 ,,,,,,,,,,
+Q25786,,Q11056896 ,,,,,,,,,,
+Q25831,,Q10912817 ,,,,,,,,,,
+Q25833,,Q614169 ,,,,,,,,,,
+Q25835,,Q10944053 ,,,,,,,,,,
+Q25859,,Q16603428 ,,,,,,,,,,
+Q25863,,Q6799232 ,,,,,,,,,,
+Q25865,,Q15935554 ,,,,,,,,,,
+Q25867,,Q10912822 ,,,,,,,,,,
+Q25869,,Q10944097 ,,,,,,,,,,
+Q25871,,Q10931592 ,,,,,,,,,,
+Q25875,,Q16076906 ,,,,,,,,,,
+Q25877,,Q16076897 ,,,,,,,,,,
+Q25881,,Q15945177 ,,,,,,,,,,
+Q25889,,Q16906702 ,,,,,,,,,,
+Q25891,,Q15952118 ,,,,,,,,,,
+Q25925,,Q16260581 ,,,,,,,,,,
+Q25931,,Q11062706 ,,,,,,,,,,
+Q25966,,Q10892681 ,,,,,,,,,,
+Q25968,,Q10892774 ,,,,,,,,,,
+Q25978,,Q17011385 ,,,,,,,,,,
+Q25980,,Q17011398 ,,,,,,,,,,
+Q25984,,Q15904952 ,,,,,,,,,,
+Q25986,,Q10945037 ,,,,,,,,,,
+Q25988,,Q10884563 ,,,,,,,,,,
+Q25990,,Q10912805 ,,,,,,,,,,
+Q25992,,Q10893025 ,,,,,,,,,,
+Q25994,,Q10945269 ,,,,,,,,,,
+Q25996,,Q10945268 ,,,,,,,,,,
+Q25998,,Q10945291 ,,,,,,,,,,
+Q26000,,Q15952711 ,,,,,,,,,,
+Q26002,,Q17028348 ,,,,,,,,,,
+Q26004,,Q15933037 ,,,,,,,,,,
+Q26033,,Q10944165 ,,,,,,,,,,
+Q26035,,Q10892698 ,,,,,,,,,,
+Q26053,,Q10104682 ,,,,,,,,,,
+Q26074,,Q16603453 ,,,,,,,,,,
+Q26119,,Q16603383 ,,,,,,,,,,
+Q26123,,Q10893000 ,,,,,,,,,,
+Q26127,,Q15936022 ,,,,,,,,,,
+Q26132,,Q67024496 ,,,,,,,,,,
+Q26133,,Q15938659 ,,,,,,,,,,
+Q26134,,Q10892578 ,,,,,,,,,,
+Q26137,,Q3602654 ,,,,,,,,,,
+Q26139,,Q15955388 ,,,,,,,,,,
+Q26143,,Q10892731 ,,,,,,,,,,
+Q26145,,Q10892707 ,,,,,,,,,,
+Q26217,,Q16603427 ,,,,,,,,,,
+Q26219,,Q10944101 ,,,,,,,,,,
+Q26220,,Q10944202 ,,,,,,,,,,
+Q26231,,Q16904113 ,,,,,,,,,,
+Q26242,,Q16603429 ,,,,,,,,,,
+Q26243,,Q15952993 ,,,,,,,,,,
+Q26263,,Q10912815 ,,,,,,,,,,
+Q26271,,Q67024509 ,,,,,,,,,,
+Q26277,,Q10945316 ,,,,,,,,,,
+Q26279,,Q10945280 ,,,,,,,,,,
+Q26283,,Q17011766 ,,,,,,,,,,
+Q26302,,Q16076176 ,,,,,,,,,,
+Q26324,,Q10892820 ,,,,,,,,,,
+Q26357,,Q10941194 ,,,,,,,,,,
+Q26359,,Q10892757 ,,,,,,,,,,
+Q26380,,Q17038243 ,,,,,,,,,,
+Q26383,,Q16603384 ,,,,,,,,,,
+Q26385,,Q10892999 ,,,,,,,,,,
+Q26386,,Q10892560 ,,,,,,,,,,
+Q26387,,Q10892927 ,,,,,,,,,,
+Q26388,,Q10893012 ,,,,,,,,,,
+Q26395,,Q15941820 ,,,,,,,,,,
+Q26399,,Q10912808 ,,,,,,,,,,
+Q26400,,Q10893026 ,,,,,,,,,,
+Q26402,,Q17011776 ,,,,,,,,,,
+Q26405,,Q10892797 ,,,,,,,,,,
+Q26415,,Q17030314 ,,,,,,,,,,
+Q26416,,Q10912820 ,,,,,,,,,,
+Q26417,,Q10912816 ,,,,,,,,,,
+Q26418,,Q10944161 ,,,,,,,,,,
+Q26441,,Q15897741 ,,,,,,,,,,
+Q26447,,Q16906539 ,,,,,,,,,,
+Q26462,,Q10910440 ,,,,,,,,,,
+Q26471,,Q17026079 ,,,,,,,,,,
+Q26474,,Q15912773 ,,,,,,,,,,
+Q26483,,Q11037215 ,,,,,,,,,,
+Q26489,,Q10892634 ,,,,,,,,,,
+Q26492,,Q16603367 ,,,,,,,,,,
+Q26495,,Q10892837 ,,,,,,,,,,
+Q26505,,Q15931824 ,,,,,,,,,,
+Q26541,,Q10892758 ,,,,,,,,,,
+Q26544,,Q10945784 ,,,,,,,,,,
+Q26553,,Q10892836 ,,,,,,,,,,
+Q26562,,Q9415227 ,,,,,,,,,,
+Q26568,,Q10945059 ,,,,,,,,,,
+Q26571,,Q10945190 ,,,,,,,,,,
+Q26577,,Q16903363 ,,,,,,,,,,
+Q26616,,Q17028170 ,,,,,,,,,,
+Q26622,,Q15933738 ,,,,,,,,,,
+Q26625,,Q10944204 ,,,,,,,,,,
+Q26650,,Q10892633 ,,,,,,,,,,
+Q26659,,Q16603348 ,,,,,,,,,,
+Q26674,,Q10485029 ,,,,,,,,,,
+Q26737,,Q16603353 ,,,,,,,,,,
+Q26743,,Q10941190 ,,,,,,,,,,
+Q26746,,Q10892781 ,,,,,,,,,,
+Q26749,,Q10916515 ,,,,,,,,,,
+Q26758,,Q10945168 ,,,,,,,,,,
+Q26803,,Q15941774 ,,,,,,,,,,
+Q27008,,Q30944879 ,,,,,,,,,,
+Q27027,,Q15933866 ,,,,,,,,,,
+Q27033,,Q8250452 ,,,,,,,,,,
+Q27075,,Q11071667 ,,,,,,,,,,
+Q27114,,Q16260212 ,,,,,,,,,,
+Q27126,,Q22813311 ,,,,,,,,,,
+Q27132,,Q10889525 ,,,,,,,,,,
+Q27135,,Q10879896 ,,,,,,,,,,
+Q27165,,Q15915439 ,,,,,,,,,,
+Q27304,,Q11094381 ,,,,,,,,,,
+Q27313,,Q11094378 ,,,,,,,,,,
+Q27316,,Q11094377 ,,,,,,,,,,
+Q27319,,Q11094350 ,,,,,,,,,,
+Q27322,,Q11094379 ,,,,,,,,,,
+Q27370,,Q11094564 ,,,,,,,,,,
+Q27373,,Q22829299 ,,,,,,,,,,
+Q27379,,Q11094943 ,,,,,,,,,,
+Q27382,,Q11094335 ,,,,,,,,,,
+Q27391,,Q11094854 ,,,,,,,,,,
+Q27397,,Q11094852 ,,,,,,,,,,
+Q27412,,Q11094792 ,,,,,,,,,,
+Q27415,,Q11094794 ,,,,,,,,,,
+Q27418,,Q11094070 ,,,,,,,,,,
+Q27421,,Q11094071 ,,,,,,,,,,
+Q27424,,Q11094802 ,,,,,,,,,,
+Q27430,,Q17164641 ,,,,,,,,,,
+Q27439,,Q11093576 ,,,,,,,,,,
+Q27442,,Q11094800 ,,,,,,,,,,
+Q27538,,Q22829245 ,,,,,,,,,,
+Q27541,,Q19825659 ,,,,,,,,,,
+Q27544,,Q6784879 ,,,,,,,,,,
+Q27547,,Q123329715 ,,,,,,,,,,
+Q27550,,Q31820862 ,,,,,,,,,,
+Q27553,,Q11094510 ,,,,,,,,,,
+Q27559,,Q16904451 ,,,,,,,,,,
+Q27562,,Q11094508 ,,,,,,,,,,
+Q27674,,Q17060090 ,,,,,,,,,,
+Q27780,,Q11094628 ,,,,,,,,,,
+Q27789,,Q11094937 ,,,,,,,,,,
+Q27792,,Q11094859 ,,,,,,,,,,
+Q27795,,Q11094858 ,,,,,,,,,,
+Q27798,,Q22829300 ,,,,,,,,,,
+Q27801,,Q11093654 ,,,,,,,,,,
+Q27804,,Q11094576 ,,,,,,,,,,
+Q27807,,Q11093554 ,,,,,,,,,,
+Q27810,,Q11094681 ,,,,,,,,,,
+Q27817,,Q18383888 ,,,,,,,,,,
+Q27823,,Q22829249 ,,,,,,,,,,
+Q27826,,Q11094790 ,,,,,,,,,,
+Q27829,,Q11093694 ,,,,,,,,,,
+Q27832,,Q20062731 ,,,,,,,,,,
+Q27835,,Q11093693 ,,,,,,,,,,
+Q27838,,Q11094544 ,,,,,,,,,,
+Q27841,,Q11093832 ,,,,,,,,,,
+Q27844,,Q11093831 ,,,,,,,,,,
+Q27847,,Q22829210 ,,,,,,,,,,
+Q27850,,Q11093964 ,,,,,,,,,,
+Q27856,,Q11094341 ,,,,,,,,,,
+Q27862,,Q22829238 ,,,,,,,,,,
+Q27868,,Q11093805 ,,,,,,,,,,
+Q27871,,Q17502317 ,,,,,,,,,,
+Q27874,,Q22829280 ,,,,,,,,,,
+Q27889,,Q16905134 ,,,,,,,,,,
+Q27898,,Q81226549 ,,,,,,,,,,
+Q27910,,Q10947786 ,,,,,,,,,,
+Q27916,,Q11094754 ,,,,,,,,,,
+Q27958,,Q10948800 ,,,,,,,,,,
+Q27982,,Q11094761 ,,,,,,,,,,
+Q28010,,Q22829246 ,,,,,,,,,,
+Q28013,,Q6784713 ,,,,,,,,,,
+Q28016,,Q11094753 ,,,,,,,,,,
+Q28019,,Q11094748 ,,,,,,,,,,
+Q28022,,Q11094745 ,,,,,,,,,,
+Q28025,,Q16904454 ,,,,,,,,,,
+Q28028,,Q11094746 ,,,,,,,,,,
+Q28031,,Q11094755 ,,,,,,,,,,
+Q28034,,Q22829204 ,,,,,,,,,,
+Q28040,,Q10296563 ,,,,,,,,,,
+Q28070,,Q10941192 ,,,,,,,,,,
+Q28074,,Q10892749 ,,,,,,,,,,
+Q28078,,Q10944080 ,,,,,,,,,,
+Q28081,,Q10892815 ,,,,,,,,,,
+Q28090,,Q10892804 ,,,,,,,,,,
+Q28093,,Q11060624 ,,,,,,,,,,
+Q28096,,Q22773901 ,,,,,,,,,,
+Q28124,,Q10887926 ,,,,,,,,,,
+Q28171,,Q10892791 ,,,,,,,,,,
+Q28174,,Q10892770 ,,,,,,,,,,
+Q28177,,Q10892718 ,,,,,,,,,,
+Q28290,,Q78123355 ,,,,,,,,,,
+Q28295,,Q11094879 ,,,,,,,,,,
+Q28299,,Q16904455 ,,,,,,,,,,
+Q28303,,Q11094876 ,,,,,,,,,,
+Q28311,,Q11094671 ,,,,,,,,,,
+Q28315,,Q11093885 ,,,,,,,,,,
+Q28323,,Q11094782 ,,,,,,,,,,
+Q28327,,Q11094783 ,,,,,,,,,,
+Q28331,,Q16904458 ,,,,,,,,,,
+Q28335,,Q11094120 ,,,,,,,,,,
+Q28347,,Q22829251 ,,,,,,,,,,
+Q28351,,Q11094065 ,,,,,,,,,,
+Q28355,,Q11094470 ,,,,,,,,,,
+Q28359,,Q11094471 ,,,,,,,,,,
+Q28363,,Q11094791 ,,,,,,,,,,
+Q28367,,Q11093753 ,,,,,,,,,,
+Q28371,,Q22829261 ,,,,,,,,,,
+Q28375,,Q11094764 ,,,,,,,,,,
+Q28379,,Q11094763 ,,,,,,,,,,
+Q28387,,Q22829241 ,,,,,,,,,,
+Q28399,,Q22829282 ,,,,,,,,,,
+Q28443,,Q11094523 ,,,,,,,,,,
+Q28546,,Q17362641 ,,,,,,,,,,
+Q28552,,Q16603747 ,,,,,,,,,,
+Q28555,,Q8250485 ,,,,,,,,,,
+Q28558,,Q30943741 ,,,,,,,,,,
+Q28561,,Q11094538 ,,,,,,,,,,
+Q28564,,Q11094514 ,,,,,,,,,,
+Q28567,,Q11094529 ,,,,,,,,,,
+Q28570,,Q11094532 ,,,,,,,,,,
+Q28576,,Q11094512 ,,,,,,,,,,
+Q28579,,Q11094539 ,,,,,,,,,,
+Q28582,,Q11094527 ,,,,,,,,,,
+Q28588,,Q6784846 ,,,,,,,,,,
+Q28591,,Q6784823 ,,,,,,,,,,
+Q28594,,Q11094518 ,,,,,,,,,,
+Q28597,,Q11094536 ,,,,,,,,,,
+Q28601,,Q11094515 ,,,,,,,,,,
+Q28605,,Q11094537 ,,,,,,,,,,
+Q28609,,Q22829206 ,,,,,,,,,,
+Q28666,,Q11066208 ,,,,,,,,,,
+Q28670,,Q11060544 ,,,,,,,,,,
+Q28674,,Q11060828 ,,,,,,,,,,
+Q28762,,Q11073237 ,,,,,,,,,,
+Q28766,,Q10892754 ,,,,,,,,,,
+Q28774,,Q16907302 ,,,,,,,,,,
+Q28778,,Q10892723 ,,,,,,,,,,
+Q28806,,Q18653756 ,,,,,,,,,,
+Q28810,,Q18653757 ,,,,,,,,,,
+Q28878,,Q11093796 ,,,,,,,,,,
+Q28886,,Q11094004 ,,,,,,,,,,
+Q28890,,Q11093705 ,,,,,,,,,,
+Q28894,,Q11094582 ,,,,,,,,,,
+Q28898,,Q11094580 ,,,,,,,,,,
+Q28903,,Q11094013 ,,,,,,,,,,
+Q28907,,Q11094656 ,,,,,,,,,,
+Q28915,,Q22829252 ,,,,,,,,,,
+Q28919,,Q11093890 ,,,,,,,,,,
+Q28923,,Q11094796 ,,,,,,,,,,
+Q28927,,Q11094482 ,,,,,,,,,,
+Q28931,,Q11094291 ,,,,,,,,,,
+Q28935,,Q22829263 ,,,,,,,,,,
+Q28939,,Q11093657 ,,,,,,,,,,
+Q28943,,Q11093656 ,,,,,,,,,,
+Q28947,,Q18653746 ,,,,,,,,,,
+Q28951,,Q18653745 ,,,,,,,,,,
+Q28959,,Q11094473 ,,,,,,,,,,
+Q28971,,Q19855834 ,,,,,,,,,,
+Q29271,,Q30943764 ,,,,,,,,,,
+Q29275,,Q11093674 ,,,,,,,,,,
+Q29279,,Q11093686 ,,,,,,,,,,
+Q29283,,Q30943756 ,,,,,,,,,,
+Q29287,,Q30943769 ,,,,,,,,,,
+Q29291,,Q8250321 ,,,,,,,,,,
+Q29295,,Q8250386 ,,,,,,,,,,
+Q29299,,Q30943782 ,,,,,,,,,,
+Q29311,,Q11093690 ,,,,,,,,,,
+Q29315,,Q11093687 ,,,,,,,,,,
+Q29319,,Q11093688 ,,,,,,,,,,
+Q29327,,Q6785433 ,,,,,,,,,,
+Q29331,,Q11093676 ,,,,,,,,,,
+Q29343,,Q11093681 ,,,,,,,,,,
+Q29412,,Q10944049 ,,,,,,,,,,
+Q29420,,Q16075492 ,,,,,,,,,,
+Q29472,,Q11094554 ,,,,,,,,,,
+Q29492,,Q11094730 ,,,,,,,,,,
+Q29496,,Q11094729 ,,,,,,,,,,
+Q29500,,Q11094731 ,,,,,,,,,,
+Q29508,,Q11094788 ,,,,,,,,,,
+Q29512,,Q11094985 ,,,,,,,,,,
+Q29516,,Q11094984 ,,,,,,,,,,
+Q29524,,Q11093592 ,,,,,,,,,,
+Q29528,,Q11093591 ,,,,,,,,,,
+Q29532,,Q11093593 ,,,,,,,,,,
+Q29536,,Q16904450 ,,,,,,,,,,
+Q29540,,Q8254662 ,,,,,,,,,,
+Q29548,,Q22829253 ,,,,,,,,,,
+Q29552,,Q11094674 ,,,,,,,,,,
+Q29560,,Q11093999 ,,,,,,,,,,
+Q29564,,Q11093998 ,,,,,,,,,,
+Q29568,,Q11094949 ,,,,,,,,,,
+Q29572,,Q11094947 ,,,,,,,,,,
+Q29576,,Q11094945 ,,,,,,,,,,
+Q29580,,Q11094667 ,,,,,,,,,,
+Q29584,,Q11094666 ,,,,,,,,,,
+Q29588,,Q22829305 ,,,,,,,,,,
+Q29965,,Q97351135 ,,,,,,,,,,
+Q29970,,Q97351134 ,,,,,,,,,,
+Q29974,,Q11094818 ,,,,,,,,,,
+Q29978,,Q22829212 ,,,,,,,,,,
+Q30034,,Q8250509 ,,,,,,,,,,
+Q30090,,Q8250315 ,,,,,,,,,,
+Q30094,,Q20062733 ,,,,,,,,,,
+Q30101,,Q11094821 ,,,,,,,,,,
+Q30105,,Q11094815 ,,,,,,,,,,
+Q30109,,Q11094829 ,,,,,,,,,,
+Q30113,,Q11094817 ,,,,,,,,,,
+Q30117,,Q11094816 ,,,,,,,,,,
+Q30121,,Q11094825 ,,,,,,,,,,
+Q30125,,Q11094820 ,,,,,,,,,,
+Q30129,,Q11094819 ,,,,,,,,,,
+Q30133,,Q6784685 ,,,,,,,,,,
+Q30137,,Q6784648 ,,,,,,,,,,
+Q30141,,Q11094823 ,,,,,,,,,,
+Q30149,,Q11094827 ,,,,,,,,,,
+Q30153,,Q8249068 ,,,,,,,,,,
+Q30210,,Q9384015 ,,,,,,,,,,
+Q30242,,Q15952963 ,,,,,,,,,,
+Q30246,,Q10944084 ,,,,,,,,,,
+Q30250,,Q10944145 ,,,,,,,,,,
+Q30302,,Q11094499 ,,,,,,,,,,
+Q30306,,Q11094498 ,,,,,,,,,,
+Q30314,,Q11093854 ,,,,,,,,,,
+Q30318,,Q11093584 ,,,,,,,,,,
+Q30322,,Q11094171 ,,,,,,,,,,
+Q30326,,Q11093607 ,,,,,,,,,,
+Q30331,,Q8254651 ,,,,,,,,,,
+Q30339,,Q22829254 ,,,,,,,,,,
+Q30343,,Q11094114 ,,,,,,,,,,
+Q30347,,Q11094128 ,,,,,,,,,,
+Q30351,,Q11094601 ,,,,,,,,,,
+Q30355,,Q11094602 ,,,,,,,,,,
+Q30359,,Q11094690 ,,,,,,,,,,
+Q30363,,Q11094694 ,,,,,,,,,,
+Q30367,,Q11094067 ,,,,,,,,,,
+Q30371,,Q18653755 ,,,,,,,,,,
+Q30375,,Q11094758 ,,,,,,,,,,
+Q30591,,Q27952689 ,,,,,,,,,,
+Q30595,,Q85983639 ,,,,,,,,,,
+Q30684,,Q11094636 ,,,,,,,,,,
+Q30688,,Q22829216 ,,,,,,,,,,
+Q30692,,Q133539104 ,,,,,,,,,,
+Q30773,,Q8250841 ,,,,,,,,,,
+Q30777,,Q8250571 ,,,,,,,,,,
+Q30781,,Q8250498 ,,,,,,,,,,
+Q30785,,Q8250627 ,,,,,,,,,,
+Q30789,,Q8250643 ,,,,,,,,,,
+Q30793,,Q30943749 ,,,,,,,,,,
+Q30797,,Q8250526 ,,,,,,,,,,
+Q30801,,Q30943663 ,,,,,,,,,,
+Q30809,,Q11094632 ,,,,,,,,,,
+Q30813,,Q11094644 ,,,,,,,,,,
+Q30817,,Q11094638 ,,,,,,,,,,
+Q30821,,Q11094645 ,,,,,,,,,,
+Q30825,,Q11094637 ,,,,,,,,,,
+Q30829,,Q11094649 ,,,,,,,,,,
+Q30833,,Q11094635 ,,,,,,,,,,
+Q30837,,Q11094639 ,,,,,,,,,,
+Q30845,,Q11094634 ,,,,,,,,,,
+Q30849,,Q11094641 ,,,,,,,,,,
+Q30853,,Q11094643 ,,,,,,,,,,
+Q30861,,Q10941170 ,,,,,,,,,,
+Q30940,,Q17163668 ,,,,,,,,,,
+Q30968,,Q16159585 ,,,,,,,,,,
+Q31012,,Q11094161 ,,,,,,,,,,
+Q31016,,Q22829221 ,,,,,,,,,,
+Q31020,,Q11094224 ,,,,,,,,,,
+Q31024,,Q11093962 ,,,,,,,,,,
+Q31028,,Q11093961 ,,,,,,,,,,
+Q31032,,Q11093569 ,,,,,,,,,,
+Q31036,,Q11094721 ,,,,,,,,,,
+Q31040,,Q11093982 ,,,,,,,,,,
+Q31044,,Q8254605 ,,,,,,,,,,
+Q31052,,Q132087523 ,,,,,,,,,,
+Q31056,,Q65052422 ,,,,,,,,,,
+Q31060,,Q11094723 ,,,,,,,,,,
+Q31069,,Q11093856 ,,,,,,,,,,
+Q31073,,Q11094593 ,,,,,,,,,,
+Q31077,,Q11094592 ,,,,,,,,,,
+Q31081,,Q11094708 ,,,,,,,,,,
+Q31085,,Q11094707 ,,,,,,,,,,
+Q31089,,Q11094706 ,,,,,,,,,,
+Q31093,,Q33113867 ,,,,,,,,,,
+Q31097,,Q11094420 ,,,,,,,,,,
+Q31101,,Q18653758 ,,,,,,,,,,
+Q31459,,Q11093951 ,,,,,,,,,,
+Q31463,,Q11093942 ,,,,,,,,,,
+Q31467,,Q28419028 ,,,,,,,,,,
+Q31575,,Q20062732 ,,,,,,,,,,
+Q31587,,Q11093954 ,,,,,,,,,,
+Q31591,,Q11093943 ,,,,,,,,,,
+Q31595,,Q11093949 ,,,,,,,,,,
+Q31599,,Q11071797 ,,,,,,,,,,
+Q31603,,Q22829227 ,,,,,,,,,,
+Q31607,,Q11093960 ,,,,,,,,,,
+Q31611,,Q11053068 ,,,,,,,,,,
+Q31615,,Q11093958 ,,,,,,,,,,
+Q31623,,Q11093945 ,,,,,,,,,,
+Q31627,,Q11093959 ,,,,,,,,,,
+Q31631,,Q11093946 ,,,,,,,,,,
+Q31635,,Q11093957 ,,,,,,,,,,
+Q31659,,Q17024893 ,,,,,,,,,,
+Q31664,,Q15939129 ,,,,,,,,,,
+Q31720,,Q11062822 ,,,,,,,,,,
+Q31724,,Q17030243 ,,,,,,,,,,
+Q31728,,Q8249256 ,,,,,,,,,,
+Q31752,,Q11094108 ,,,,,,,,,,
+Q31756,,Q11094109 ,,,,,,,,,,
+Q31760,,Q11093752 ,,,,,,,,,,
+Q31764,,Q11093901 ,,,,,,,,,,
+Q31768,,Q11093565 ,,,,,,,,,,
+Q31772,,Q16904341 ,,,,,,,,,,
+Q31776,,Q11093940 ,,,,,,,,,,
+Q31780,,Q11094786 ,,,,,,,,,,
+Q31784,,Q10884389 ,,,,,,,,,,
+Q31788,,Q11094983 ,,,,,,,,,,
+Q31792,,Q11094982 ,,,,,,,,,,
+Q31800,,Q130570307 ,,,,,,,,,,
+Q31808,,Q11094661 ,,,,,,,,,,
+Q31816,,Q11094658 ,,,,,,,,,,
+Q31820,,Q17025683 ,,,,,,,,,,
+Q31824,,Q11093798 ,,,,,,,,,,
+Q31828,,Q11094787 ,,,,,,,,,,
+Q31832,,Q11094136 ,,,,,,,,,,
+Q31836,,Q11093778 ,,,,,,,,,,
+Q31840,,Q11093777 ,,,,,,,,,,
+Q31844,,Q11093775 ,,,,,,,,,,
+Q31940,,Q12618180 ,,,,,,,,,,
+Q32013,,Q55737306 ,,,,,,,,,,
+Q32021,,Q21825102 ,,,,,,,,,,
+Q32025,,Q21710323 ,,,,,,,,,,
+Q32145,,Q11094446 ,,,,,,,,,,
+Q32149,,Q11094451 ,,,,,,,,,,
+Q32152,,Q11094452 ,,,,,,,,,,
+Q32156,,Q28419029 ,,,,,,,,,,
+Q32264,,Q8258965 ,,,,,,,,,,
+Q32317,,Q11094455 ,,,,,,,,,,
+Q32321,,Q11094447 ,,,,,,,,,,
+Q32325,,Q11094466 ,,,,,,,,,,
+Q32329,,Q11094453 ,,,,,,,,,,
+Q32333,,Q11094454 ,,,,,,,,,,
+Q32337,,Q11094460 ,,,,,,,,,,
+Q32341,,Q11094468 ,,,,,,,,,,
+Q32345,,Q11094467 ,,,,,,,,,,
+Q32349,,Q11094463 ,,,,,,,,,,
+Q32353,,Q11094459 ,,,,,,,,,,
+Q32369,,Q10892705 ,,,,,,,,,,
+Q32449,,Q11088788 ,,,,,,,,,,
+Q32478,,Q11094140 ,,,,,,,,,,
+Q32482,,Q16904453 ,,,,,,,,,,
+Q32486,,Q22829311 ,,,,,,,,,,
+Q32490,,Q11094545 ,,,,,,,,,,
+Q32494,,Q11051062 ,,,,,,,,,,
+Q32498,,Q11093588 ,,,,,,,,,,
+Q32502,,Q11094223 ,,,,,,,,,,
+Q32506,,Q11094979 ,,,,,,,,,,
+Q32510,,Q11094975 ,,,,,,,,,,
+Q32522,,Q11094673 ,,,,,,,,,,
+Q32526,,Q11094837 ,,,,,,,,,,
+Q32646,,Q61095336 ,,,,,,,,,,
+Q32650,,Q12604925 ,,,,,,,,,,
+Q32723,,Q11094105 ,,,,,,,,,,
+Q32819,,Q30943035 ,,,,,,,,,,
+Q32827,,Q8254614 ,,,,,,,,,,
+Q32843,,Q11094082 ,,,,,,,,,,
+Q32851,,Q11094106 ,,,,,,,,,,
+Q32855,,Q11094099 ,,,,,,,,,,
+Q32867,,Q11094086 ,,,,,,,,,,
+Q32871,,Q11094104 ,,,,,,,,,,
+Q32875,,Q11094095 ,,,,,,,,,,
+Q32899,,Q9415053 ,,,,,,,,,,
+Q32903,,Q10892769 ,,,,,,,,,,
+Q32907,,Q16078661 ,,,,,,,,,,
+Q32931,,Q8249226 ,,,,,,,,,,
+Q33044,,Q16075472 ,,,,,,,,,,
+Q33056,,Q11093824 ,,,,,,,,,,
+Q33064,,Q11094321 ,,,,,,,,,,
+Q33067,,Q11094068 ,,,,,,,,,,
+Q33071,,Q22829312 ,,,,,,,,,,
+Q33075,,Q11051064 ,,,,,,,,,,
+Q33079,,Q11094436 ,,,,,,,,,,
+Q33083,,Q10884433 ,,,,,,,,,,
+Q33087,,Q16904342 ,,,,,,,,,,
+Q33096,,Q15936528 ,,,,,,,,,,
+Q33148,,Q15139418 ,,,,,,,,,,
+Q33259,,Q133277936 ,,,,,,,,,,
+Q33275,,Q10955556 ,,,,,,,,,,
+Q33283,,Q30943766 ,,,,,,,,,,
+Q33295,,Q7664521 ,,,,,,,,,,
+Q33312,,Q8258364 ,,,,,,,,,,
+Q33324,,Q16260694 ,,,,,,,,,,
+Q33340,,Q13390144 ,,,,,,,,,,
+Q33372,,Q17036669 ,,,,,,,,,,
+Q33392,,Q10564879 ,,,,,,,,,,
+Q33400,,Q10129644 ,,,,,,,,,,
+Q33423,,Q11093855 ,,,,,,,,,,
+Q33427,,Q22829192 ,,,,,,,,,,
+Q33431,,Q22829313 ,,,,,,,,,,
+Q33435,,Q11094843 ,,,,,,,,,,
+Q33439,,Q11093597 ,,,,,,,,,,
+Q33483,,Q18381261 ,,,,,,,,,,
+Q33523,,Q133277945 ,,,,,,,,,,
+Q33531,,Q133277937 ,,,,,,,,,,
+Q33590,,Q10891057 ,,,,,,,,,,
+Q33659,,Q11093586 ,,,,,,,,,,
+Q33663,,Q22829314 ,,,,,,,,,,
+Q33683,,Q18815708 ,,,,,,,,,,
+Q33691,,Q12587644 ,,,,,,,,,,
+Q33803,,Q10950651 ,,,,,,,,,,
+Q33819,,Q24836542 ,,,,,,,,,,
+Q33832,,Q66311357 ,,,,,,,,,,
+Q33852,,Q22829315 ,,,,,,,,,,
+Q33856,,Q11094938 ,,,,,,,,,,
+Q34009,,Q64015590 ,,,,,,,,,,
+Q34025,,Q15912665 ,,,,,,,,,,
+Q34037,,Q66922824 ,,,,,,,,,,
+Q34053,,Q66311359 ,,,,,,,,,,
+Q34070,,Q22829316 ,,,,,,,,,,
+Q34102,,Q12604897 ,,,,,,,,,,
+Q34185,,Q61721598 ,,,,,,,,,,
+Q34193,,Q111431737 ,,,,,,,,,,
+Q34201,,Q13655983 ,,,,,,,,,,
+Q34205,,Q22812717 ,,,,,,,,,,
+Q34225,,Q15909868 ,,,,,,,,,,
+Q34257,,Q66311364 ,,,,,,,,,,
+Q34261,,Q66311369 ,,,,,,,,,,
+Q34277,,Q112027810 ,,,,,,,,,,
+Q34353,,Q61721601 ,,,,,,,,,,
+Q34357,,Q13668765 ,,,,,,,,,,
+Q34361,,Q13668817 ,,,,,,,,,,
+Q34369,,Q13671983 ,,,,,,,,,,
+Q34373,,Q26156554 ,,,,,,,,,,
+Q34405,,Q15931288 ,,,,,,,,,,
+Q34409,,Q15941239 ,,,,,,,,,,
+Q34413,,Q16075641 ,,,,,,,,,,
+Q34425,,Q10941103 ,,,,,,,,,,
+Q34429,,Q56271521 ,,,,,,,,,,
+Q34433,,Q66311366 ,,,,,,,,,,
+Q34522,,Q61721603 ,,,,,,,,,,
+Q34530,,Q13668769 ,,,,,,,,,,
+Q34534,,Q13668776 ,,,,,,,,,,
+Q34538,,Q13669039 ,,,,,,,,,,
+Q34546,,Q13672094 ,,,,,,,,,,
+Q34550,,Q26156555 ,,,,,,,,,,
+Q34554,,Q133697525 ,,,,,,,,,,
+Q34566,,Q13656186 ,,,,,,,,,,
+Q34667,,Q49252244 ,,,,,,,,,,
+Q34734,,Q61721605 ,,,,,,,,,,
+Q34742,,Q13669277 ,,,,,,,,,,
+Q34750,,Q13672044 ,,,,,,,,,,
+Q34754,,Q26156556 ,,,,,,,,,,
+Q34758,,Q133697524 ,,,,,,,,,,
+Q34954,,Q12586207 ,,,,,,,,,,
+Q34970,,Q6678012 ,,,,,,,,,,
+Q34974,,Q16178031 ,,,,,,,,,,
+Q35010,,Q61721606 ,,,,,,,,,,
+Q35014,,Q13669234 ,,,,,,,,,,
+Q35018,,Q133277873 ,,,,,,,,,,
+Q35038,,Q26156559 ,,,,,,,,,,
+Q35042,,Q133697523 ,,,,,,,,,,
+Q35130,,Q27953940 ,,,,,,,,,,
+Q35134,,Q27953939 ,,,,,,,,,,
+Q35227,,Q67591766 ,,,,,,,,,,
+Q35231,,Q65054219 ,,,,,,,,,,
+Q35259,,Q16179847 ,,,,,,,,,,
+Q35291,,Q12612821 ,,,,,,,,,,
+Q35323,,Q16179206 ,,,,,,,,,,
+Q35335,,Q12613118 ,,,,,,,,,,
+Q35385,,Q61721607 ,,,,,,,,,,
+Q35405,,Q22812726 ,,,,,,,,,,
+Q35433,,Q13671825 ,,,,,,,,,,
+Q35437,,Q26156562 ,,,,,,,,,,
+Q35457,,Q133277779 ,,,,,,,,,,
+Q35461,,Q133277785 ,,,,,,,,,,
+Q35573,,Q61091619 ,,,,,,,,,,
+Q35581,,Q16906177 ,,,,,,,,,,
+Q35649,,Q12585203 ,,,,,,,,,,
+Q35661,,Q65054100 ,,,,,,,,,,
+Q35794,,Q61721608 ,,,,,,,,,,
+Q35802,,Q134737646 ,,,,,,,,,,
+Q35810,,Q133313643 ,,,,,,,,,,
+Q35814,,Q22812727 ,,,,,,,,,,
+Q35871,,Q13669919 ,,,,,,,,,,
+Q35875,,Q13653206 ,,,,,,,,,,
+Q35879,,Q26156563 ,,,,,,,,,,
+Q35891,,Q133277782 ,,,,,,,,,,
+Q35895,,Q134778989 ,,,,,,,,,,
+Q35915,,Q10944294 ,,,,,,,,,,
+Q36174,,Q12610471 ,,,,,,,,,,
+Q36226,,Q28418427 ,,,,,,,,,,
+Q36230,,Q61721611 ,,,,,,,,,,
+Q36238,,Q134737649 ,,,,,,,,,,
+Q36246,,Q10944418 ,,,,,,,,,,
+Q36250,,Q133313567 ,,,,,,,,,,
+Q36254,,Q22812728 ,,,,,,,,,,
+Q36283,,Q132054396 ,,,,,,,,,,
+Q36303,,Q13671200 ,,,,,,,,,,
+Q36327,,Q10944413 ,,,,,,,,,,
+Q36331,,Q19825266 ,,,,,,,,,,
+Q36335,,Q133697494 ,,,,,,,,,,
+Q36378,,Q30944750 ,,,,,,,,,,
+Q36382,,Q16904067 ,,,,,,,,,,
+Q37029,,Q28418430 ,,,,,,,,,,
+Q37033,,Q61721612 ,,,,,,,,,,
+Q37053,,Q133313557 ,,,,,,,,,,
+Q37057,,Q22812729 ,,,,,,,,,,
+Q37160,,Q13670392 ,,,,,,,,,,
+Q37168,,Q13671429 ,,,,,,,,,,
+Q37172,,Q13670487 ,,,,,,,,,,
+Q37201,,Q133697551 ,,,,,,,,,,
+Q37205,,Q97350460 ,,,,,,,,,,
+Q37225,,Q16904072 ,,,,,,,,,,
+Q37389,,Q67591343 ,,,,,,,,,,
+Q37725,,Q80576456 ,,,,,,,,,,
+Q37737,,Q30947861 ,,,,,,,,,,
+Q38444,,Q61721613 ,,,,,,,,,,
+Q38456,,Q133277758 ,,,,,,,,,,
+Q38464,,Q133288661 ,,,,,,,,,,
+Q38468,,Q133313587 ,,,,,,,,,,
+Q38585,,Q134176918 ,,,,,,,,,,
+Q38609,,Q13655236 ,,,,,,,,,,
+Q38617,,Q13654732 ,,,,,,,,,,
+Q38621,,Q13655569 ,,,,,,,,,,
+Q38641,,Q133697547 ,,,,,,,,,,
+Q39001,,Q123329479 ,,,,,,,,,,
+Q39356,,Q79243783 ,,,,,,,,,,
+Q40249,,Q28419018 ,,,,,,,,,,
+Q40253,,Q61721614 ,,,,,,,,,,
+Q40257,,Q133277762 ,,,,,,,,,,
+Q40273,,Q114690252 ,,,,,,,,,,
+Q40293,,Q8979208 ,,,,,,,,,,
+Q40409,,Q13652505 ,,,,,,,,,,
+Q40413,,Q13652817 ,,,,,,,,,,
+Q40606,,Q61094755 ,,,,,,,,,,
+Q41205,,Q124261604 ,,,,,,,,,,
+Q41213,,Q24957857 ,,,,,,,,,,
+Q42570,,Q10944451 ,,,,,,,,,,
+Q42574,,Q28418230 ,,,,,,,,,,
+Q42578,,Q28418229 ,,,,,,,,,,
+Q42582,,Q61720099 ,,,,,,,,,,
+Q42586,,Q61721616 ,,,,,,,,,,
+Q42594,,Q134264697 ,,,,,,,,,,
+Q42598,,Q11069972 ,,,,,,,,,,
+Q42602,,Q133277702 ,,,,,,,,,,
+Q42610,,Q133288660 ,,,,,,,,,,
+Q42634,,Q130270614 ,,,,,,,,,,
+Q42731,,Q134176913 ,,,,,,,,,,
+Q42875,,Q28776434 ,,,,,,,,,,
+Q42895,,Q64708667 ,,,,,,,,,,
+Q42903,,Q64706210 ,,,,,,,,,,
+Q42907,,Q38963192 ,,,,,,,,,,
+Q42919,,Q38962821 ,,,,,,,,,,
+Q43144,,Q16078446 ,,,,,,,,,,
+Q43478,,Q17062423 ,,,,,,,,,,
+Q43482,,Q16603392 ,,,,,,,,,,
+Q43486,,Q16603574 ,,,,,,,,,,
+Q43518,,Q24957763 ,,,,,,,,,,
+Q43522,,Q24957939 ,,,,,,,,,,
+Q43586,,Q67881565 ,,,,,,,,,,
 Q44677,zh=窦岩,Q56600496,,,,,,,,,,
 Q44705,zh=宇文韬,Q10145499,,,,,,,,,,
 Q44709,Vương Bi,Q67389051,zh=王罴,,,,,,,,,
@@ -5108,112 +4186,112 @@ Q45141,zh=秦姬,Q30943161,,,,,,,,,,
 Q45145,zh=王女节,Q15939663,,,,,,,,,,
 Q45173,zh=王姬,Q30943165,,,,,,,,,,
 Q45197,zh=陳孝寬,Q95142100,,,,,,,,,,
-Q45252,,Q28418232 //,,,,,,,,,,
-Q45256,,Q28418362 //,,,,,,,,,,
-Q45260,,Q61720085 //,,,,,,,,,,
-Q45264,,Q61721617 //,,,,,,,,,,
-Q45268,,Q11069798 //,,,,,,,,,,
-Q45272,,Q133277843 //,,,,,,,,,,
-Q45276,,Q133277848 //,,,,,,,,,,
-Q45288,,Q133277705 //,,,,,,,,,,
-Q45300,,Q133288773 //,,,,,,,,,,
+Q45252,,Q28418232 ,,,,,,,,,,
+Q45256,,Q28418362 ,,,,,,,,,,
+Q45260,,Q61720085 ,,,,,,,,,,
+Q45264,,Q61721617 ,,,,,,,,,,
+Q45268,,Q11069798 ,,,,,,,,,,
+Q45272,,Q133277843 ,,,,,,,,,,
+Q45276,,Q133277848 ,,,,,,,,,,
+Q45288,,Q133277705 ,,,,,,,,,,
+Q45300,,Q133288773 ,,,,,,,,,,
 Q45321,zh=長孫粲,Q133504169,,,,,,,,,,
 Q45325,Trưởng Tôn Tường,Q15942483,zh=长孙祥,,,,,,,,,
 Q45361,zh=韦子迁,Q15932438,,,,,,,,,,
 Q45369,Dương thị,Q83875288,zh=杨氏,,,,,,,,,
 Q45381,zh=郑僧覆,Q83875278,,,,,,,,,,
-Q45408,,Q13672556 //,,,,,,,,,,
+Q45408,,Q13672556 ,,,,,,,,,,
 Q45413,zh=韦琨,Q60991877,,,,,,,,,,
 Q45469,zh=杨婕妤 (唐),Q8251481,,,,,,,,,,
-Q45532,,Q84511436 //,,,,,,,,,,
-Q45596,,Q81746745 //,,,,,,,,,,
-Q45600,,Q81530181 //,,,,,,,,,,
-Q45604,,Q38963209 //,,,,,,,,,,
-Q45608,,Q38962839 //,,,,,,,,,,
-Q45624,,Q11095287 //,,,,,,,,,,
-Q45640,,Q16260831 //,,,,,,,,,,
-Q45648,,Q134097183 //,,,,,,,,,,
-Q45660,,Q16078087 //,,,,,,,,,,
-Q45664,,Q10947931 //,,,,,,,,,,
-Q45668,,Q10947945 //,,,,,,,,,,
-Q45672,,Q10947946 //,,,,,,,,,,
-Q45676,,Q10947947 //,,,,,,,,,,
-Q45688,,Q16603658 //,,,,,,,,,,
-Q45692,,Q30950334 //,,,,,,,,,,
-Q45696,,Q10947968 //,,,,,,,,,,
-Q45776,,Q109929580 //,,,,,,,,,,
-Q45784,,Q85884464 //,,,,,,,,,,
+Q45532,,Q84511436 ,,,,,,,,,,
+Q45596,,Q81746745 ,,,,,,,,,,
+Q45600,,Q81530181 ,,,,,,,,,,
+Q45604,,Q38963209 ,,,,,,,,,,
+Q45608,,Q38962839 ,,,,,,,,,,
+Q45624,,Q11095287 ,,,,,,,,,,
+Q45640,,Q16260831 ,,,,,,,,,,
+Q45648,,Q134097183 ,,,,,,,,,,
+Q45660,,Q16078087 ,,,,,,,,,,
+Q45664,,Q10947931 ,,,,,,,,,,
+Q45668,,Q10947945 ,,,,,,,,,,
+Q45672,,Q10947946 ,,,,,,,,,,
+Q45676,,Q10947947 ,,,,,,,,,,
+Q45688,,Q16603658 ,,,,,,,,,,
+Q45692,,Q30950334 ,,,,,,,,,,
+Q45696,,Q10947968 ,,,,,,,,,,
+Q45776,,Q109929580 ,,,,,,,,,,
+Q45784,,Q85884464 ,,,,,,,,,,
 Q45850,Võ Diên Thọ,Q67523825,zh=武延寿,,,,,,,,,
-Q45893,,Q19852028 //,,,,,,,,,,
-Q45933,,Q61014344 //,,,,,,,,,,
-Q45937,,Q61017906 //,,,,,,,,,,
-Q45941,,Q61018526 //,,,,,,,,,,
-Q45965,,Q61442648 //,,,,,,,,,,
-Q45969,,Q61054154 //,,,,,,,,,,
+Q45893,,Q19852028 ,,,,,,,,,,
+Q45933,,Q61014344 ,,,,,,,,,,
+Q45937,,Q61017906 ,,,,,,,,,,
+Q45941,,Q61018526 ,,,,,,,,,,
+Q45965,,Q61442648 ,,,,,,,,,,
+Q45969,,Q61054154 ,,,,,,,,,,
 Q46071,zh=庞同善,Q109347473,,,,,,,,,,
 Q46079,zh=杨妃,Q28413701,,,,,,,,,,
-Q46102,,Q60923089 //,,,,,,,,,,
-Q46106,,Q61330014 //,,,,,,,,,,
-Q46114,,Q61328617 //,,,,,,,,,,
-Q46279,,Q60925781 //,,,,,,,,,,
-Q46375,,Q12840668 //,,,,,,,,,,
-Q46525,,Q67522413 //,,,,,,,,,,
-Q46533,,Q10842171 //,,,,,,,,,,
-Q46540,,Q67522436 //,,,,,,,,,,
-Q46544,,Q124261613 //,,,,,,,,,,
-Q46548,,Q109438175 //,,,,,,,,,,
-Q46552,,Q124261570 //,,,,,,,,,,
-Q46564,,Q65048977 //,,,,,,,,,,
+Q46102,,Q60923089 ,,,,,,,,,,
+Q46106,,Q61330014 ,,,,,,,,,,
+Q46114,,Q61328617 ,,,,,,,,,,
+Q46279,,Q60925781 ,,,,,,,,,,
+Q46375,,Q12840668 ,,,,,,,,,,
+Q46525,,Q67522413 ,,,,,,,,,,
+Q46533,,Q10842171 ,,,,,,,,,,
+Q46540,,Q67522436 ,,,,,,,,,,
+Q46544,,Q124261613 ,,,,,,,,,,
+Q46548,,Q109438175 ,,,,,,,,,,
+Q46552,,Q124261570 ,,,,,,,,,,
+Q46564,,Q65048977 ,,,,,,,,,,
 Q46589,zh=恭顺皇后,Q8255081,,,,,,,,,,
 Q46774,zh=陸立素,Q133465252,,,,,,,,,,
 Q47130,zh=賀蘭初真,Q24836907,,,,,,,,,,
 Q47166,zh=李氏,Q76012422,,,,,,,,,,
-Q48434,,Q28418238 //,,,,,,,,,,
-Q48438,,Q28418390 //,,,,,,,,,,
-Q48442,,Q61720074 //,,,,,,,,,,
-Q48446,,Q61721620 //,,,,,,,,,,
-Q48450,,Q133277805 //,,,,,,,,,,
-Q48462,,Q134266600 //,,,,,,,,,,
-Q48479,,Q133288791 //,,,,,,,,,,
-Q48487,,Q11109164 //,,,,,,,,,,
-Q48491,,Q112966729 //,,,,,,,,,,
-Q48515,,Q133805204 //,,,,,,,,,,
-Q48519,,Q133858104 //,,,,,,,,,,
-Q48639,,Q133823632 //,,,,,,,,,,
-Q48643,,Q134176947 //,,,,,,,,,,
+Q48434,,Q28418238 ,,,,,,,,,,
+Q48438,,Q28418390 ,,,,,,,,,,
+Q48442,,Q61720074 ,,,,,,,,,,
+Q48446,,Q61721620 ,,,,,,,,,,
+Q48450,,Q133277805 ,,,,,,,,,,
+Q48462,,Q134266600 ,,,,,,,,,,
+Q48479,,Q133288791 ,,,,,,,,,,
+Q48487,,Q11109164 ,,,,,,,,,,
+Q48491,,Q112966729 ,,,,,,,,,,
+Q48515,,Q133805204 ,,,,,,,,,,
+Q48519,,Q133858104 ,,,,,,,,,,
+Q48639,,Q133823632 ,,,,,,,,,,
+Q48643,,Q134176947 ,,,,,,,,,,
 Q48680,Рюдзодзи N,Q134281382,,,,,,,,,,
-Q48799,,Q84511372 //,,,,,,,,,,
-Q48815,,Q38963222 //,,,,,,,,,,
-Q48819,,Q38962866 //,,,,,,,,,,
-Q48831,,Q10955145 //,,,,,,,,,,
-Q48836,,Q8258522 //,,,,,,,,,,
-Q48839,,Q8258488 //,,,,,,,,,,
-Q48935,,Q28415836 //,,,,,,,,,,
-Q48959,,Q10947919 //,,,,,,,,,,
-Q48963,,Q10947920 //,,,,,,,,,,
-Q48967,,Q16075399 //,,,,,,,,,,
-Q48976,,Q15934445 //,,,,,,,,,,
-Q48988,,Q16075429 //,,,,,,,,,,
-Q48992,,Q15954591 //,,,,,,,,,,
-Q48996,,Q16260145 //,,,,,,,,,,
-Q49041,,Q108802203 //,,,,,,,,,,
-Q49045,,Q122167652 //,,,,,,,,,,
-Q49133,,Q128693960 //,,,,,,,,,,
-Q49177,,Q47269866 //,,,,,,,,,,
-Q49189,,Q47268397 //,,,,,,,,,,
-Q49394,,Q61014434 //,,,,,,,,,,
-Q49398,,Q61313120 //,,,,,,,,,,
-Q49466,,Q61123600 //,,,,,,,,,,
-Q49559,,Q130638378 //,,,,,,,,,,
-Q49877,,Q85999528 //,,,,,,,,,,
-Q50001,,Q131139526 //,,,,,,,,,,
-Q50246,,Q12850204 //,,,,,,,,,,
-Q50405,,Q120668957 //,,,,,,,,,,
-Q50485,,Q16219772 //,,,,,,,,,,
-Q50530,,Q28413631 //,,,,,,,,,,
-Q50534,,Q124336288 //,,,,,,,,,,
-Q50542,,Q10788100 //,,,,,,,,,,
-Q50550,,Q10829349 //,,,,,,,,,,
+Q48799,,Q84511372 ,,,,,,,,,,
+Q48815,,Q38963222 ,,,,,,,,,,
+Q48819,,Q38962866 ,,,,,,,,,,
+Q48831,,Q10955145 ,,,,,,,,,,
+Q48836,,Q8258522 ,,,,,,,,,,
+Q48839,,Q8258488 ,,,,,,,,,,
+Q48935,,Q28415836 ,,,,,,,,,,
+Q48959,,Q10947919 ,,,,,,,,,,
+Q48963,,Q10947920 ,,,,,,,,,,
+Q48967,,Q16075399 ,,,,,,,,,,
+Q48976,,Q15934445 ,,,,,,,,,,
+Q48988,,Q16075429 ,,,,,,,,,,
+Q48992,,Q15954591 ,,,,,,,,,,
+Q48996,,Q16260145 ,,,,,,,,,,
+Q49041,,Q108802203 ,,,,,,,,,,
+Q49045,,Q122167652 ,,,,,,,,,,
+Q49133,,Q128693960 ,,,,,,,,,,
+Q49177,,Q47269866 ,,,,,,,,,,
+Q49189,,Q47268397 ,,,,,,,,,,
+Q49394,,Q61014434 ,,,,,,,,,,
+Q49398,,Q61313120 ,,,,,,,,,,
+Q49466,,Q61123600 ,,,,,,,,,,
+Q49559,,Q130638378 ,,,,,,,,,,
+Q49877,,Q85999528 ,,,,,,,,,,
+Q50001,,Q131139526 ,,,,,,,,,,
+Q50246,,Q12850204 ,,,,,,,,,,
+Q50405,,Q120668957 ,,,,,,,,,,
+Q50485,,Q16219772 ,,,,,,,,,,
+Q50530,,Q28413631 ,,,,,,,,,,
+Q50534,,Q124336288 ,,,,,,,,,,
+Q50542,,Q10788100 ,,,,,,,,,,
+Q50550,,Q10829349 ,,,,,,,,,,
 Q52020,zh=闼卢摸末,Q24836012,,,,,,,,,,
 Q52024,zh=成月公主,Q65058958,,,,,,,,,,
 Q52187,zh=杨爱敬,Q83875262,,,,,,,,,,
@@ -5246,55 +4324,55 @@ Q52925,zh=高买德,Q10566671,,,,,,,,,,
 Q52929,zh=高质钱,Q10566832,,,,,,,,,,
 Q52945,zh=于妃 (元愉),Q10880569,,,,,,,,,,
 Q53001,zh=若干鳳,Q48890048,,,,,,,,,,
-Q53091,,Q28418239 //,,,,,,,,,,
-Q53095,,Q28418391 //,,,,,,,,,,
-Q53099,,Q28418399 //,,,,,,,,,,
-Q53103,,Q61719994 //,,,,,,,,,,
-Q53107,,Q61721630 //,,,,,,,,,,
-Q53115,,Q133289745 //,,,,,,,,,,
-Q53135,,Q134265288 //,,,,,,,,,,
-Q53139,,Q134265139 //,,,,,,,,,,
-Q53143,,Q134079989 //,,,,,,,,,,
-Q53147,,Q134734302 //,,,,,,,,,,
-Q53171,,Q133288848 //,,,,,,,,,,
-Q53219,,Q133281447 //,,,,,,,,,,
+Q53091,,Q28418239 ,,,,,,,,,,
+Q53095,,Q28418391 ,,,,,,,,,,
+Q53099,,Q28418399 ,,,,,,,,,,
+Q53103,,Q61719994 ,,,,,,,,,,
+Q53107,,Q61721630 ,,,,,,,,,,
+Q53115,,Q133289745 ,,,,,,,,,,
+Q53135,,Q134265288 ,,,,,,,,,,
+Q53139,,Q134265139 ,,,,,,,,,,
+Q53143,,Q134079989 ,,,,,,,,,,
+Q53147,,Q134734302 ,,,,,,,,,,
+Q53171,,Q133288848 ,,,,,,,,,,
+Q53219,,Q133281447 ,,,,,,,,,,
 Q53222,Dương Ân,Q26209005,zh=杨恩,,,,,,,,,
 Q53246,Dương Văn Tư,Q10341916,zh=杨文思,,,,,,,,,
-Q53247,,Q133858105 //,,,,,,,,,,
+Q53247,,Q133858105 ,,,,,,,,,,
 Q53254,Dương Văn Tốn,Q15908834,zh=杨文愻,,,,,,,,,
 Q53321,zh=蕭圓普,Q95115357,,,,,,,,,,
 Q53325,zh=蕭圓滿,Q95139853,,,,,,,,,,
 Q53329,zh=蕭圓正,Q95139861,,,,,,,,,,
 Q53337,zh=郑元璹,Q56953036,,,,,,,,,,
-Q53387,,Q12602472 //,,,,,,,,,,
-Q53391,,Q28776587 //,,,,,,,,,,
-Q53395,,Q84511503 //,,,,,,,,,,
+Q53387,,Q12602472 ,,,,,,,,,,
+Q53391,,Q28776587 ,,,,,,,,,,
+Q53395,,Q84511503 ,,,,,,,,,,
 Q53401,Tiêu Huệ Mỹ,Q16603599,zh=萧惠媄,,,,,,,,,
 Q53453,sv=Liǔ Yǎn,Q26197838,Liễu Yển,zh=柳偃,,,,,,,,
 Q53457,zh=柳盼,Q38975293,,,,,,,,,,
 Q53465,công chúa Cối Kê Mục,Q14921935,zh=会稽穆公主,zh-cn=会稽穆公主,zh-hans=会稽穆公主,zh-hant=會稽穆公主,zh-hk=會稽穆公主,zh-tw=會稽穆公主,,,,
 Q53473,zh=安皇后,Q8257669,,,,,,,,,,
-Q53492,,Q134097223 //,,,,,,,,,,
-Q53532,,Q30950485 //,,,,,,,,,,
-Q53536,,Q30950482 //,,,,,,,,,,
+Q53492,,Q134097223 ,,,,,,,,,,
+Q53532,,Q30950485 ,,,,,,,,,,
+Q53536,,Q30950482 ,,,,,,,,,,
 Q53537,zh=豐安公主,Q16603636,,,,,,,,,,
 Q53541,zh=富陽公主,Q16603391,,,,,,,,,,
-Q53548,,Q10947914 //,,,,,,,,,,
-Q53556,,Q30950497 //,,,,,,,,,,
-Q53560,,Q30950503 //,,,,,,,,,,
-Q53564,,Q28413437 //,,,,,,,,,,
-Q53576,,Q30950406 //,,,,,,,,,,
-Q53580,,Q8253486 //,,,,,,,,,,
-Q53780,,Q25417923 //,,,,,,,,,,
-Q53784,,Q30948629 //,,,,,,,,,,
-Q53788,,Q48886508 //,,,,,,,,,,
+Q53548,,Q10947914 ,,,,,,,,,,
+Q53556,,Q30950497 ,,,,,,,,,,
+Q53560,,Q30950503 ,,,,,,,,,,
+Q53564,,Q28413437 ,,,,,,,,,,
+Q53576,,Q30950406 ,,,,,,,,,,
+Q53580,,Q8253486 ,,,,,,,,,,
+Q53780,,Q25417923 ,,,,,,,,,,
+Q53784,,Q30948629 ,,,,,,,,,,
+Q53788,,Q48886508 ,,,,,,,,,,
 Q53822,Trưởng Tôn Thủy,Q66233159,zh=長孫始,,,,,,,,,
 Q53858,zh=韦真憙,Q26208784,,,,,,,,,,
 Q53894,zh=郑祖育,Q83875277,,,,,,,,,,
-Q54056,,Q11921175 //,,,,,,,,,,
-Q54068,,Q112957458 //,,,,,,,,,,
-Q54211,,Q110254213 //,,,,,,,,,,
-Q54402,,Q28962878 //,,,,,,,,,,
+Q54056,,Q11921175 ,,,,,,,,,,
+Q54068,,Q112957458 ,,,,,,,,,,
+Q54211,,Q110254213 ,,,,,,,,,,
+Q54402,,Q28962878 ,,,,,,,,,,
 Q54455,zh=武氏,Q67523828,,,,,,,,,,
 Q54647,zh=李诗琐高,Q24834458,,,,,,,,,,
 Q54723,zh=庞卿恽,Q16904984,,,,,,,,,,
@@ -5307,21 +4385,21 @@ Q54847,nb=真定公主,Q16603542,zh=真定公主,,,,,,,,,
 Q54851,nb=章宁公主,Q16603556,zh=章宁公主,,,,,,,,,
 Q54855,nb=西平公主,Q16603625,zh=西平公主,,,,,,,,,
 Q55178,zh=郭味邱,Q66310096,,,,,,,,,,
-Q55375,,Q54233073 //,,,,,,,,,,
-Q55567,,Q22342997 //,,,,,,,,,,
-Q55583,,Q131445116 //,,,,,,,,,,
-Q55839,,Q131350750 //,,,,,,,,,,
-Q55843,,Q131350830 //,,,,,,,,,,
-Q55847,,Q131350865 //,,,,,,,,,,
-Q55987,,Q88163872 //,,,,,,,,,,
-Q56091,,Q7569679 //,,,,,,,,,,
-Q56095,,Q126058242 //,,,,,,,,,,
-Q56099,,Q44059398 //,,,,,,,,,,
-Q56103,,Q130389646 //,,,,,,,,,,
-Q56107,,Q130389802 //,,,,,,,,,,
-Q56111,,Q18226113 //,,,,,,,,,,
-Q56127,,Q130529662 //,,,,,,,,,,
-Q56131,,Q130529663 //,,,,,,,,,,
+Q55375,,Q54233073 ,,,,,,,,,,
+Q55567,,Q22342997 ,,,,,,,,,,
+Q55583,,Q131445116 ,,,,,,,,,,
+Q55839,,Q131350750 ,,,,,,,,,,
+Q55843,,Q131350830 ,,,,,,,,,,
+Q55847,,Q131350865 ,,,,,,,,,,
+Q55987,,Q88163872 ,,,,,,,,,,
+Q56091,,Q7569679 ,,,,,,,,,,
+Q56095,,Q126058242 ,,,,,,,,,,
+Q56099,,Q44059398 ,,,,,,,,,,
+Q56103,,Q130389646 ,,,,,,,,,,
+Q56107,,Q130389802 ,,,,,,,,,,
+Q56111,,Q18226113 ,,,,,,,,,,
+Q56127,,Q130529662 ,,,,,,,,,,
+Q56131,,Q130529663 ,,,,,,,,,,
 Q6465,Q10279892,常宜
 Q6486,Q10483675,老童
 Q6507,Q6842973,Ngô Hồi,吴回
