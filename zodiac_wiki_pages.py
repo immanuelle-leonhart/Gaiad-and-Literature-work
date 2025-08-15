@@ -882,29 +882,30 @@ def build_page(m_idx: int, d_m: int) -> (str, str):
 
     parts = []
     parts.append(build_description_block(m_idx, d_m))
+    parts.append("\n== Calculations ==")
 
-    parts.append("\n== Recent (±5 ISO years) ==")
-    parts.append(recent_block(m_idx, d_m, span=15))
+    parts.append("\n=== Recent (±5 ISO years) ===")
+    parts.append(recent_block(m_idx, d_m, span=5))
 
-    parts.append(f"\n== Long-run Gregorian distribution ({LONGRUN_START}–{LONGRUN_END}) ==")
+    parts.append(f"\n=== Long-run Gregorian distribution ({LONGRUN_START}–{LONGRUN_END}) ===")
     parts.append(gregorian_distribution_block(m_idx, d_m, LONGRUN_START, LONGRUN_END))
 
-    parts.append("\n== Nth-weekday holidays (overlap probabilities) ==")
+    parts.append("\n=== Nth-weekday holidays (overlap probabilities) ===")
     parts.append(nth_weekday_overlap_block(m_idx, d_m, LONGRUN_START, LONGRUN_END))
 
-    parts.append("\n== Easter-relative distribution ==")
+    parts.append("\n=== Easter-relative distribution ===")
     parts.append(easter_offsets_block(m_idx, d_m, LONGRUN_START, LONGRUN_END))
 
-    parts.append("\n== Chinese calendar overlaps ==")
+    parts.append("\n=== Chinese calendar overlaps ===")
     parts.append(chinese_overlap_table(m_idx, d_m, LONGRUN_START, LONGRUN_END))
 
     #parts.append(f"\n== Chinese lunar date distribution ({LONGRUN_START}–{LONGRUN_END}) ==")
     parts.append(chinese_distribution_block(m_idx, d_m, LONGRUN_START, LONGRUN_END))
 
-    parts.append("\n== Hebrew calendar overlaps ==")
+    parts.append("\n=== Hebrew calendar overlaps ===")
     parts.append(hebrew_overlap_table(m_idx, d_m, LONGRUN_START, LONGRUN_END))
 
-    parts.append(f"\n== Hebrew date distribution ({LONGRUN_START}–{LONGRUN_END}) ==")
+    parts.append(f"\n=== Hebrew date distribution ({LONGRUN_START}–{LONGRUN_END}) ===")
     parts.append(hebrew_distribution_block(m_idx, d_m, LONGRUN_START, LONGRUN_END))
 
 
