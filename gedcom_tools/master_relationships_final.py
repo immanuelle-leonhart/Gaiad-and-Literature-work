@@ -202,7 +202,7 @@ def main():
     # Process families starting from @F35851@
     success_count = 0
     skip_count = 0
-    restart_from_family = 39258
+    restart_from_family = 1
     
     for family_id, family in families.items():
         # Skip until we reach the restart point
