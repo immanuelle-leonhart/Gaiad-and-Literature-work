@@ -12,8 +12,10 @@ Uses correct property IDs that exist in Evolutionism Wikibase:
 import requests
 import json
 import time
+import random
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
+from requests.exceptions import RequestException, ConnectionError, Timeout
 
 def create_session():
     session = requests.Session()
@@ -26,21 +28,59 @@ def create_session():
     session.mount("https://", adapter)
     return session
 
+def retry_with_backoff(func, *args, max_base_delay=300, **kwargs):
+    """Retry function with exponential backoff, never giving up"""
+    attempt = 0
+    while True:
+        try:
+            return func(*args, **kwargs)
+        except (ConnectionError, Timeout, RequestException) as e:
+            attempt += 1
+            # Exponential backoff with jitter, capped at max_base_delay
+            base_delay = min(2 ** min(attempt - 1, 8), max_base_delay)
+            jitter = random.uniform(0.1, 0.3) * base_delay
+            delay = base_delay + jitter
+            
+            print(f"    Connection error on attempt {attempt}: {str(e)}")
+            print(f"    Retrying in {delay:.1f} seconds...")
+            time.sleep(delay)
+        except Exception as e:
+            # For non-connection errors, still retry but with different message
+            attempt += 1
+            base_delay = min(2 ** min(attempt - 1, 6), 60)  # Cap at 60s for other errors
+            jitter = random.uniform(0.1, 0.2) * base_delay
+            delay = base_delay + jitter
+            
+            print(f"    Error on attempt {attempt}: {str(e)}")
+            print(f"    Retrying in {delay:.1f} seconds...")
+            time.sleep(delay)
+
 def login_to_wiki(session):
-    token_params = {'action': 'query', 'meta': 'tokens', 'type': 'login', 'format': 'json'}
-    response = session.get('https://evolutionism.miraheze.org/w/api.php', params=token_params, timeout=30)
-    if response.status_code != 200:
-        return False
-    token_data = response.json()
-    login_token = token_data['query']['tokens']['logintoken']
+    def get_login_token():
+        token_params = {'action': 'query', 'meta': 'tokens', 'type': 'login', 'format': 'json'}
+        response = session.get('https://evolutionism.miraheze.org/w/api.php', params=token_params, timeout=30)
+        if response.status_code != 200:
+            raise ConnectionError(f"Failed to get login token: {response.status_code}")
+        token_data = response.json()
+        return token_data['query']['tokens']['logintoken']
     
-    login_data = {'action': 'login', 'lgname': 'Immanuelle', 'lgpassword': '1996ToOmega!', 'lgtoken': login_token, 'format': 'json'}
-    response = session.post('https://evolutionism.miraheze.org/w/api.php', data=login_data)
-    return response.json().get('login', {}).get('result') == 'Success'
+    def perform_login(login_token):
+        login_data = {'action': 'login', 'lgname': 'Immanuelle', 'lgpassword': '1996ToOmega!', 'lgtoken': login_token, 'format': 'json'}
+        response = session.post('https://evolutionism.miraheze.org/w/api.php', data=login_data)
+        return response.json().get('login', {}).get('result') == 'Success'
+    
+    print("    Getting login token...")
+    login_token = retry_with_backoff(get_login_token)
+    print("    Performing login...")
+    return retry_with_backoff(perform_login, login_token)
 
 def get_csrf_token(session):
-    response = session.get('https://evolutionism.miraheze.org/w/api.php', params={'action': 'query', 'meta': 'tokens', 'format': 'json'})
-    return response.json()['query']['tokens']['csrftoken']
+    def fetch_csrf_token():
+        response = session.get('https://evolutionism.miraheze.org/w/api.php', params={'action': 'query', 'meta': 'tokens', 'format': 'json'})
+        return response.json()['query']['tokens']['csrftoken']
+    
+    print("    Getting CSRF token...")
+    return retry_with_backoff(fetch_csrf_token)
 
 def load_existing_mappings():
     individual_mappings = {}
@@ -167,40 +207,43 @@ def parse_family(lines):
     return family
 
 def add_relationship_statement(session, individual_qid, related_qid, property_id, csrf_token):
-    """Add relationship using wbeditentity API"""
+    """Add relationship using wbeditentity API with retry logic"""
     
-    # Extract numeric ID from QID 
-    numeric_id = int(related_qid[1:])
+    def make_api_call():
+        # Extract numeric ID from QID 
+        numeric_id = int(related_qid[1:])
+        
+        datavalue = {
+            'value': {'entity-type': 'item', 'numeric-id': numeric_id},
+            'type': 'wikibase-entityid'
+        }
+        
+        statement_data = {
+            'claims': [
+                {
+                    'mainsnak': {
+                        'snaktype': 'value',
+                        'property': property_id,
+                        'datavalue': datavalue
+                    },
+                    'type': 'statement'
+                }
+            ]
+        }
+        
+        params = {
+            'action': 'wbeditentity',
+            'id': individual_qid,
+            'data': json.dumps(statement_data),
+            'format': 'json',
+            'token': csrf_token,
+            'bot': 1
+        }
+        
+        response = session.post('https://evolutionism.miraheze.org/w/api.php', data=params)
+        return response.json()
     
-    datavalue = {
-        'value': {'entity-type': 'item', 'numeric-id': numeric_id},
-        'type': 'wikibase-entityid'
-    }
-    
-    statement_data = {
-        'claims': [
-            {
-                'mainsnak': {
-                    'snaktype': 'value',
-                    'property': property_id,
-                    'datavalue': datavalue
-                },
-                'type': 'statement'
-            }
-        ]
-    }
-    
-    params = {
-        'action': 'wbeditentity',
-        'id': individual_qid,
-        'data': json.dumps(statement_data),
-        'format': 'json',
-        'token': csrf_token,
-        'bot': 1
-    }
-    
-    response = session.post('https://evolutionism.miraheze.org/w/api.php', data=params)
-    return response.json()
+    return retry_with_backoff(make_api_call)
 
 def main():
     print("Starting Japanese relationships with correct property IDs...")

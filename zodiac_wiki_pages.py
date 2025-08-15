@@ -91,6 +91,13 @@ HEBREW_EVENTS = [
     {"name": "Tu BiShvat", "type": "hebrew", "month": "Shevat", "day": 15},
     {"name": "Purim", "type": "hebrew", "month": "Adar", "day": 14, "rule": "AdarII_in_leap_year"},
     {"name": "Pesach (First Day)", "type": "hebrew", "month": "Nisan", "day": 15},
+    {"name": "Pesach (2nd Day)", "type": "hebrew", "month": "Nisan", "day": 16},
+    {"name": "Pesach (3rd Day)", "type": "hebrew", "month": "Nisan", "day": 17},
+    {"name": "Pesach (4th Day)", "type": "hebrew", "month": "Nisan", "day": 18},
+    {"name": "Pesach (5th Day)", "type": "hebrew", "month": "Nisan", "day": 19},
+    {"name": "Pesach (6th Day)", "type": "hebrew", "month": "Nisan", "day": 20},
+    {"name": "Pesach (7th Day)", "type": "hebrew", "month": "Nisan", "day": 21},
+    {"name": "Pesach (8th Day)", "type": "hebrew", "month": "Nisan", "day": 22},
     {"name": "Lag BaOmer", "type": "hebrew", "month": "Iyar", "day": 18},
     {"name": "Shavuot", "type": "hebrew", "month": "Sivan", "day": 6},
     {"name": "Tisha B'Av", "type": "hebrew", "month": "Av", "day": 9, "rule": "postpone_if_shabbat"}
@@ -877,7 +884,7 @@ def build_page(m_idx: int, d_m: int) -> (str, str):
     parts.append(build_description_block(m_idx, d_m))
 
     parts.append("\n== Recent (±5 ISO years) ==")
-    parts.append(recent_block(m_idx, d_m, span=5))
+    parts.append(recent_block(m_idx, d_m, span=15))
 
     parts.append(f"\n== Long-run Gregorian distribution ({LONGRUN_START}–{LONGRUN_END}) ==")
     parts.append(gregorian_distribution_block(m_idx, d_m, LONGRUN_START, LONGRUN_END))
