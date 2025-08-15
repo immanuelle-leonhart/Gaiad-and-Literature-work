@@ -221,8 +221,8 @@ def add_property_claim(session, qid, property_id, value, value_type='string', cs
     except Exception as e:
         return False, {'error': str(e)}
 
-def update_entity_labels_aliases(session, qid, new_label, csrf_token=None):
-    """Update entity: move current en label to alias, set new label"""
+def update_entity_labels_descriptions(session, qid, wikidata_info, csrf_token=None):
+    """Update entity: add all labels and descriptions from Wikidata in all languages"""
     if not csrf_token:
         csrf_token = get_csrf_token(session)
     
@@ -231,29 +231,47 @@ def update_entity_labels_aliases(session, qid, new_label, csrf_token=None):
     if not entity_data:
         return False, "Could not get entity data"
     
-    # Get current aliases and label
-    current_aliases = entity_data.get('aliases', {}).get('en', [])
-    current_label = entity_data.get('labels', {}).get('en', {}).get('value', '')
-    alias_values = [alias['value'] for alias in current_aliases]
-    
-    # Prepare update data
+    # Prepare update data with all languages
     entity_update = {
-        'labels': {
-            'en': {'language': 'en', 'value': new_label}
-        },
-        'aliases': {
-            'en': []
-        }
+        'labels': {},
+        'descriptions': {},
+        'aliases': {}
     }
     
-    # Add current label as alias if it exists and is different
-    if current_label and current_label not in alias_values and current_label != new_label:
-        entity_update['aliases']['en'].append({'language': 'en', 'value': current_label})
+    # Add all labels from Wikidata
+    if 'labels' in wikidata_info:
+        for lang_code, label_data in wikidata_info['labels'].items():
+            if 'value' in label_data:
+                entity_update['labels'][lang_code] = {
+                    'language': lang_code,
+                    'value': label_data['value']
+                }
+                
+                # For English, move current label to alias if different
+                if lang_code == 'en':
+                    current_aliases = entity_data.get('aliases', {}).get('en', [])
+                    current_label = entity_data.get('labels', {}).get('en', {}).get('value', '')
+                    alias_values = [alias['value'] for alias in current_aliases]
+                    
+                    entity_update['aliases']['en'] = []
+                    
+                    # Add current label as alias if it exists and is different
+                    if current_label and current_label not in alias_values and current_label != label_data['value']:
+                        entity_update['aliases']['en'].append({'language': 'en', 'value': current_label})
+                    
+                    # Add all existing aliases back
+                    for alias in current_aliases:
+                        if alias['value'] not in [label_data['value'], current_label]:
+                            entity_update['aliases']['en'].append(alias)
     
-    # Add all existing aliases back
-    for alias in current_aliases:
-        if alias['value'] not in [new_label, current_label]:
-            entity_update['aliases']['en'].append(alias)
+    # Add all descriptions from Wikidata
+    if 'descriptions' in wikidata_info:
+        for lang_code, desc_data in wikidata_info['descriptions'].items():
+            if 'value' in desc_data:
+                entity_update['descriptions'][lang_code] = {
+                    'language': lang_code,
+                    'value': desc_data['value']
+                }
     
     params = {
         'action': 'wbeditentity',
@@ -290,7 +308,8 @@ def repair_japanese_individual(session, individual, qid, csrf_token):
             print(f"    SUCCESS: Added sex: {sex_value}")
         else:
             error_count += 1
-            print(f"    ERROR: Failed to add sex: {result}")
+            error_msg = str(result).encode('utf-8', 'ignore').decode('utf-8')
+            print(f"    ERROR: Failed to add sex: {error_msg}")
         time.sleep(0.5)
     
     # 2. Add Wikidata ID (P44) from REFN if it looks like a Wikidata QID
@@ -308,27 +327,30 @@ def repair_japanese_individual(session, individual, qid, csrf_token):
                 print(f"    SUCCESS: Added described at URL: {wikidata_url}")
             else:
                 error_count += 1
-                print(f"    ERROR: Failed to add described at URL: {result2}")
+                error_msg = str(result2).encode('utf-8', 'ignore').decode('utf-8')
+                print(f"    ERROR: Failed to add described at URL: {error_msg}")
             time.sleep(0.5)
             
             # 4. Fetch Wikidata labels and descriptions
             wikidata_info = get_wikidata_info(individual['refn'])
             if wikidata_info:
-                # Update English label if available
-                if 'en' in wikidata_info['labels']:
-                    new_label = wikidata_info['labels']['en']['value']
-                    success3, result3 = update_entity_labels_aliases(session, qid, new_label, csrf_token)
-                    if success3:
-                        success_count += 1
-                        print(f"    SUCCESS: Updated label from Wikidata: {new_label}")
-                    else:
-                        error_count += 1
-                        print(f"    ERROR: Failed to update label: {result3}")
-                    time.sleep(0.5)
+                # Update all labels and descriptions in all languages
+                success3, result3 = update_entity_labels_descriptions(session, qid, wikidata_info, csrf_token)
+                if success3:
+                    success_count += 1
+                    label_count = len(wikidata_info.get('labels', {}))
+                    desc_count = len(wikidata_info.get('descriptions', {}))
+                    print(f"    SUCCESS: Added {label_count} labels and {desc_count} descriptions from Wikidata")
+                else:
+                    error_count += 1
+                    error_msg = str(result3).encode('utf-8', 'ignore').decode('utf-8')
+                    print(f"    ERROR: Failed to update labels/descriptions: {error_msg}")
+                time.sleep(0.5)
                 
         else:
             error_count += 1
-            print(f"    ERROR: Failed to add Wikidata ID: {result}")
+            error_msg = str(result).encode('utf-8', 'ignore').decode('utf-8')
+            print(f"    ERROR: Failed to add Wikidata ID: {error_msg}")
         time.sleep(0.5)
     
     return success_count, error_count
