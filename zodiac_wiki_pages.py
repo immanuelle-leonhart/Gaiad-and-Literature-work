@@ -83,11 +83,29 @@ CHINESE_EVENTS = [
 
 HEBREW_EVENTS = [
     {"name": "Rosh Hashanah (Day 1)", "type": "hebrew", "month": "Tishrei", "day": 1},
+    {"name": "Rosh Hashanah (Day 2)", "type": "hebrew", "month": "Tishrei", "day": 2},
+
     {"name": "Yom Kippur", "type": "hebrew", "month": "Tishrei", "day": 10},
     {"name": "Sukkot (First Day)", "type": "hebrew", "month": "Tishrei", "day": 15},
+    {"name": "Sukkot (Second Day)", "type": "hebrew", "month": "Tishrei", "day": 16},
+    {"name": "Sukkot (Third Day)", "type": "hebrew", "month": "Tishrei", "day": 17},
+    {"name": "Sukkot (Fourth Day)", "type": "hebrew", "month": "Tishrei", "day": 18},
+    {"name": "Sukkot (Fifth Day)", "type": "hebrew", "month": "Tishrei", "day": 19},
+    {"name": "Sukkot (Sixth Day)", "type": "hebrew", "month": "Tishrei", "day": 20},
+    {"name": "Sukkot (Seventh Day / Hoshana Rabbah)", "type": "hebrew", "month": "Tishrei", "day": 21},
+
     {"name": "Shemini Atzeret", "type": "hebrew", "month": "Tishrei", "day": 22},
     {"name": "Simchat Torah (Diaspora)", "type": "hebrew", "month": "Tishrei", "day": 23, "optional": True},
     {"name": "Hanukkah (Day 1)", "type": "hebrew", "month": "Kislev", "day": 25},
+    {"name": "Hanukkah (Day 2)", "type": "hebrew", "month": "Kislev", "day": 26},
+    {"name": "Hanukkah (Day 3)", "type": "hebrew", "month": "Kislev", "day": 27},
+    {"name": "Hanukkah (Day 4)", "type": "hebrew", "month": "Kislev", "day": 28},
+    {"name": "Hanukkah (Day 5)", "type": "hebrew", "month": "Kislev", "day": 29},
+    {"name": "Hanukkah (sometimes Day 6)", "type": "hebrew", "month": "Kislev", "day": 30},
+    {"name": "Hanukkah (Day 6 or 7)", "type": "hebrew", "month": "Tevet", "day": 1},
+    {"name": "Hanukkah (Day 7 or 8)", "type": "hebrew", "month": "Tevet", "day": 2},
+    {"name": "Hanukkah (sometimes Day 8)", "type": "hebrew", "month": "Tevet", "day": 3},
+
     {"name": "Tu BiShvat", "type": "hebrew", "month": "Shevat", "day": 15},
     {"name": "Purim", "type": "hebrew", "month": "Adar", "day": 14, "rule": "AdarII_in_leap_year"},
     {"name": "Pesach (First Day)", "type": "hebrew", "month": "Nisan", "day": 15},
@@ -795,6 +813,7 @@ FIXED_DATE_EVENTS = {
     "Remembrance Day": (11, 11),
     "Christmas Day": (12, 25),
     "Boxing Day": (12, 26),
+    "Yuri's Night": (4, 12),
     #Wiccan
 
     "Yule (Winter Solstice)": (12, 21),
@@ -963,7 +982,7 @@ def build_page(m_idx: int, d_m: int, wiki: 'Wiki' = None) -> (str, str):
     parts.append("\n== Calculations ==")
 
     parts.append("\n=== Recent (±10 ISO years) ===")
-    parts.append(recent_block(m_idx, d_m, span=5))
+    parts.append(recent_block(m_idx, d_m, span=10))
 
     parts.append(f"\n=== Long-run Gregorian distribution ({LONGRUN_START}–{LONGRUN_END}) ===")
     parts.append(gregorian_distribution_block(m_idx, d_m, LONGRUN_START, LONGRUN_END))
