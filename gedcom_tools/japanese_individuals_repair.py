@@ -343,14 +343,20 @@ def repair_japanese_individual(session, individual, qid, csrf_token):
                     print(f"    SUCCESS: Added {label_count} labels and {desc_count} descriptions from Wikidata")
                 else:
                     error_count += 1
-                    error_msg = str(result3).encode('utf-8', 'ignore').decode('utf-8')
-                    print(f"    ERROR: Failed to update labels/descriptions: {error_msg}")
+                    try:
+                        error_msg = str(result3).encode('utf-8', 'ignore').decode('utf-8')
+                        print(f"    ERROR: Failed to update labels/descriptions: {error_msg}")
+                    except UnicodeEncodeError:
+                        print("    ERROR: Failed to update labels/descriptions: [Unicode error in response]")
                 time.sleep(0.5)
                 
         else:
             error_count += 1
-            error_msg = str(result).encode('utf-8', 'ignore').decode('utf-8')
-            print(f"    ERROR: Failed to add Wikidata ID: {error_msg}")
+            try:
+                error_msg = str(result).encode('utf-8', 'ignore').decode('utf-8')
+                print(f"    ERROR: Failed to add Wikidata ID: {error_msg}")
+            except UnicodeEncodeError:
+                print("    ERROR: Failed to add Wikidata ID: [Unicode error in response]")
         time.sleep(0.5)
     
     return success_count, error_count
