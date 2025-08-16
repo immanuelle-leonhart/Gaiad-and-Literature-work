@@ -1,58 +1,83 @@
 #!/usr/bin/env python3
 """
-Test creating a single zodiac calendar page to debug the issue
+Test script to verify Overview section preservation for a single zodiac page
 """
 
 import sys
-sys.path.append('.')
-from zodiac_wiki_pages import build_page, Wiki, API_URL, USERNAME, PASSWORD, SUMMARY
+import os
+sys.path.append(os.path.dirname(__file__))
 
-def test_single_page():
-    print("=== TESTING SINGLE ZODIAC PAGE CREATION ===")
+from zodiac_wiki_pages import Wiki, build_page, extract_overview_section
+
+# Test configuration
+API_URL = "https://evolutionism.miraheze.org/w/api.php"
+USERNAME = "Immanuelle"
+PASSWORD = "1996ToOmega!"
+TEST_PAGE = "Sagittarius 1"  # Known page with Overview section
+
+def test_overview_extraction():
+    """Test the Overview section extraction"""
+    print("Testing Overview section extraction...")
     
-    # Test building page content for Sagittarius 1
-    print("\n1. Building page content for Sagittarius 1...")
-    try:
-        title, content = build_page(1, 1)  # Sagittarius 1
-        print(f"   Title: {title}")
-        print(f"   Content length: {len(content)} characters")
-        print(f"   Content preview: {content[:200]}...")
-    except Exception as e:
-        print(f"   [ERROR] Failed to build page: {e}")
-        return
+    wiki = Wiki(API_URL)
+    wiki.login_bot(USERNAME, PASSWORD)
     
-    # Test building page content for Horus 1 (intercalary)
-    print("\n2. Building page content for Horus 1...")
-    try:
-        title_horus, content_horus = build_page(14, 1)  # Horus 1
-        print(f"   Title: {title_horus}")
-        print(f"   Content length: {len(content_horus)} characters")
-        print(f"   Content preview: {content_horus[:200]}...")
-    except Exception as e:
-        print(f"   [ERROR] Failed to build Horus page: {e}")
-        return
+    # Get existing content
+    existing_content = wiki.get_page_content(TEST_PAGE)
+    print(f"Got page content: {len(existing_content)} characters")
     
-    # Test wiki connection and editing
-    print("\n3. Testing wiki page creation...")
-    try:
-        wiki = Wiki(API_URL)
-        wiki.login_bot(USERNAME, PASSWORD)
+    # Extract Overview section
+    overview_content = extract_overview_section(existing_content)
+    print(f"\nExtracted Overview section ({len(overview_content)} characters):")
+    print("=" * 50)
+    print(overview_content)
+    print("=" * 50)
+    
+    return overview_content
+
+def test_page_generation():
+    """Test page generation with Overview preservation"""
+    print("\nTesting page generation with Overview preservation...")
+    
+    wiki = Wiki(API_URL)
+    wiki.login_bot(USERNAME, PASSWORD)
+    
+    # Test with Sagittarius 1 (month_idx=1, day=1)
+    title, text = build_page(1, 1, wiki)
+    
+    print(f"Generated page title: {title}")
+    print(f"Generated content length: {len(text)} characters")
+    
+    # Check if Overview section is preserved
+    if "== Overview ==" in text:
+        print("✅ Overview section found in generated content")
         
-        # Try to create just one page
-        test_title = "User:Immanuelle/ZodiacTest"
-        result = wiki.edit(test_title, content[:500] + "...", "Testing zodiac page creation")
-        print(f"   Edit result: {result}")
-        
-        # Check if page was created by trying to read it
-        import requests
-        check_response = requests.get(f"https://evolutionism.miraheze.org/wiki/{test_title.replace(' ', '_')}")
-        if check_response.status_code == 200:
-            print(f"   [OK] Test page accessible at: https://evolutionism.miraheze.org/wiki/{test_title.replace(' ', '_')}")
-        else:
-            print(f"   [WARN] Test page not accessible (status: {check_response.status_code})")
-        
-    except Exception as e:
-        print(f"   [ERROR] Wiki test failed: {e}")
+        # Extract the overview from generated content to verify
+        overview_in_generated = extract_overview_section(text)
+        print(f"Overview in generated content ({len(overview_in_generated)} characters):")
+        print("-" * 30)
+        print(overview_in_generated)
+        print("-" * 30)
+    else:
+        print("❌ Overview section NOT found in generated content")
+    
+    return title, text
 
 if __name__ == "__main__":
-    test_single_page()
+    print("Testing zodiac page Overview preservation...")
+    
+    try:
+        # Test extraction
+        overview = test_overview_extraction()
+        
+        # Test generation
+        title, content = test_page_generation()
+        
+        print(f"\n✅ Tests completed successfully!")
+        print(f"   - Overview extraction: {'✅' if overview else '❌'}")
+        print(f"   - Page generation: {'✅' if '== Overview ==' in content else '❌'}")
+        
+    except Exception as e:
+        print(f"❌ Test failed: {e}")
+        import traceback
+        traceback.print_exc()

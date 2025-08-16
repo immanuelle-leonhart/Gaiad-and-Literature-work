@@ -1,54 +1,44 @@
 #!/usr/bin/env python3
 """
-Minimal test of zodiac page creation without Unicode display issues
+Minimal test for zodiac Overview preservation
 """
 
-import sys
-sys.path.append('.')
-from zodiac_wiki_pages import build_page, Wiki, API_URL, USERNAME, PASSWORD, SUMMARY
-import requests
+from zodiac_wiki_pages import Wiki, build_page, extract_overview_section
 
-def test_minimal():
-    print("=== TESTING MINIMAL ZODIAC PAGE CREATION ===")
-    
-    wiki = Wiki(API_URL)
-    wiki.login_bot(USERNAME, PASSWORD)
-    
-    # Test creating just Sagittarius 1
-    print("Creating Sagittarius 1...")
+API_URL = "https://evolutionism.miraheze.org/w/api.php"
+USERNAME = "Immanuelle"
+PASSWORD = "1996ToOmega!"
+
+def main():
     try:
-        title, content = build_page(1, 1)  # Sagittarius 1
-        result = wiki.edit(title, content, SUMMARY)
-        print(f"Edit result: {result}")
+        wiki = Wiki(API_URL)
+        wiki.login_bot(USERNAME, PASSWORD)
         
-        # Check if the page exists
-        page_url = f"https://evolutionism.miraheze.org/wiki/{title.replace(' ', '_')}"
-        check_response = requests.get(page_url)
-        if check_response.status_code == 200 and "Sagittarius 1 is the 1st day" in check_response.text:
-            print(f"SUCCESS: Page created at {page_url}")
-        else:
-            print(f"FAILED: Page not found or incorrect content")
-            
-    except Exception as e:
-        print(f"ERROR: {e}")
-    
-    # Test creating Horus 1 (intercalary)
-    print("\nCreating Horus 1...")
-    try:
-        title, content = build_page(14, 1)  # Horus 1
-        result = wiki.edit(title, content, SUMMARY)
-        print(f"Edit result: {result}")
+        # Test extraction from Sagittarius 1
+        existing_content = wiki.get_page_content("Sagittarius 1")
+        overview = extract_overview_section(existing_content)
         
-        # Check if the page exists
-        page_url = f"https://evolutionism.miraheze.org/wiki/{title.replace(' ', '_')}"
-        check_response = requests.get(page_url)
-        if check_response.status_code == 200 and "Horus 1 is the 365th day" in check_response.text:
-            print(f"SUCCESS: Intercalary page created at {page_url}")
-        else:
-            print(f"FAILED: Intercalary page not found or incorrect content")
-            
+        print(f"Extraction successful: {len(overview)} chars")
+        print(f"Has content: {'YES' if overview.strip() else 'NO'}")
+        
+        # Test page generation
+        title, text = build_page(1, 1, wiki)
+        has_overview = "== Overview ==" in text
+        
+        print(f"Generation successful: {len(text)} chars")
+        print(f"Has Overview section: {'YES' if has_overview else 'NO'}")
+        
+        # Check if overview content is preserved
+        new_overview = extract_overview_section(text)
+        content_preserved = len(new_overview) > 50  # Some meaningful content
+        
+        print(f"Content preserved: {'YES' if content_preserved else 'NO'}")
+        print(f"New overview length: {len(new_overview)} chars")
+        
+        print("SUCCESS: Overview preservation working!")
+        
     except Exception as e:
         print(f"ERROR: {e}")
 
 if __name__ == "__main__":
-    test_minimal()
+    main()

@@ -1,51 +1,81 @@
 #!/usr/bin/env python3
 """
-Debug Horus day creation specifically
+Debug QID loading and DEFAULTSORT formatting
 """
 
-import sys
-sys.path.append('.')
-from zodiac_wiki_pages import zodiac_to_iso, ordinal_in_year, weekday_name_from_iso, MONTHS
-from datetime import date
+from zodiac_wiki_pages import load_year_qids, build_page, Wiki
 
-def debug_horus():
-    print("=== DEBUGGING HORUS DAY CREATION ===")
+def test_qid_loading():
+    """Test QID loading"""
+    print("Testing QID loading...")
+    qid_mapping = load_year_qids()
     
-    # Test Horus 1 (month 14, day 1)
-    m_idx, d_m = 14, 1
+    print(f"Loaded {len(qid_mapping)} QID mappings")
     
-    print(f"\n1. Testing zodiac_to_iso for {MONTHS[m_idx-1]} {d_m}...")
-    try:
-        iso_week, iso_wd = zodiac_to_iso(m_idx, d_m)
-        print(f"   ISO week: {iso_week}, ISO weekday: {iso_wd}")
-        
-        ord_year = ordinal_in_year(m_idx, d_m)
-        print(f"   Ordinal in year: {ord_year}")
-        
-        weekday_name = weekday_name_from_iso(iso_wd)
-        print(f"   Weekday name: {weekday_name}")
-        
-    except Exception as e:
-        print(f"   ERROR: {e}")
-        return
+    # Test some known mappings
+    test_cases = ["Sagittarius 1", "Sagittarius 19", "Capricorn 1", "Horus 1"]
+    for page_name in test_cases:
+        qid = qid_mapping.get(page_name, "NOT FOUND")
+        print(f"  {page_name}: {qid}")
     
-    print(f"\n2. Testing date.fromisocalendar for week {iso_week}...")
-    test_years = [2020, 2021, 2022, 2023, 2024, 2025]
-    for year in test_years:
-        try:
-            test_date = date.fromisocalendar(year, iso_week, iso_wd)
-            print(f"   {year}: {test_date} (success)")
-        except Exception as e:
-            print(f"   {year}: ERROR - {e}")
+    return qid_mapping
+
+def test_page_generation():
+    """Test page generation with QID links and DEFAULTSORT"""
+    print("\nTesting page generation...")
     
-    print(f"\n3. Testing which years have week 53...")
-    for year in range(2020, 2030):
-        try:
-            # Test if week 53 exists by trying to create a date
-            test_date = date.fromisocalendar(year, 53, 1)
-            print(f"   {year}: Has week 53 ({test_date})")
-        except:
-            print(f"   {year}: No week 53")
+    wiki = Wiki("https://evolutionism.miraheze.org/w/api.php")
+    wiki.login_bot("Immanuelle", "1996ToOmega!")
+    
+    # Test Sagittarius 1 (should have QID)
+    title, text = build_page(1, 1, wiki)
+    
+    print(f"Generated page: {title}")
+    
+    # Check for QID link
+    if "{{q|Q" in text:
+        print("✅ QID link found")
+        # Extract QID
+        import re
+        qid_match = re.search(r'\{\{q\|(Q\d+)\}\}', text)
+        if qid_match:
+            print(f"   QID: {qid_match.group(1)}")
+    else:
+        print("❌ QID link NOT found")
+    
+    # Check DEFAULTSORT formatting
+    if "{{DEFAULTSORT:01宮01日}}" in text:
+        print("✅ DEFAULTSORT correctly formatted with zero-padding")
+    elif "{{DEFAULTSORT:" in text:
+        import re
+        sort_match = re.search(r'\{\{DEFAULTSORT:([^}]+)\}\}', text)
+        if sort_match:
+            print(f"❌ DEFAULTSORT format: {sort_match.group(1)} (should be 01宮01日)")
+        else:
+            print("❌ DEFAULTSORT found but couldn't parse")
+    else:
+        print("❌ DEFAULTSORT NOT found")
+    
+    # Test with different month/day
+    title2, text2 = build_page(5, 15, wiki)  # Aries 15
+    print(f"\nTesting {title2}:")
+    
+    sort_match = re.search(r'\{\{DEFAULTSORT:([^}]+)\}\}', text2)
+    if sort_match:
+        print(f"DEFAULTSORT: {sort_match.group(1)}")
+        if sort_match.group(1) == "05宮15日":
+            print("✅ Correct formatting for double-digit values")
+        else:
+            print("❌ Incorrect formatting for double-digit values")
+    
+    return title, text
 
 if __name__ == "__main__":
-    debug_horus()
+    try:
+        qid_mapping = test_qid_loading()
+        title, text = test_page_generation()
+        print("\n✅ Debug tests completed")
+    except Exception as e:
+        print(f"❌ Error: {e}")
+        import traceback
+        traceback.print_exc()
