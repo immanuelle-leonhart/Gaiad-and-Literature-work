@@ -676,7 +676,7 @@ def weekday_name_from_iso(wd: int) -> str:
     # ISO weekday: 1=Mon … 7=Sun
     return ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"][wd-1]
 
-def build_description_block(m_idx: int, d_m: int) -> str:
+def build_description_block(m_idx: int, d_m: int, qid_mapping: dict = None) -> str:
     """Returns the short description block you want, with categories + DEFAULTSORT."""
     month_name = MONTHS[m_idx-1]
     iso_week, iso_wd = zodiac_to_iso(m_idx, d_m)          # 1..52, 1..7 (53 for intercalary)
@@ -713,11 +713,22 @@ def build_description_block(m_idx: int, d_m: int) -> str:
     lines.append(f"Its informal Japanese name is {jp_informal}.")
     lines.append("")
     lines.append(f"On this day, [[Gaiad chapter {ord_year}|Chapter {ord_year}]] of the [[Gaiad]] is read.")
+    
+    # Add QID link if available
+    page_title = f"{month_name} {d_m}"
+    if qid_mapping and page_title in qid_mapping:
+        qid = qid_mapping[page_title]
+        lines.append("")
+        lines.append(f"To see structured data on this date see {{{{q|{qid}}}}}.")
+    
     lines.append("")
     lines.append(f"[[Category:Days with weekday {weekday_name}]]")
     lines.append(f"[[Category:Days {d_m} of the Gaiad calendar]]")
     lines.append(f"[[Category:Days of {month_name}]]")
-    lines.append(f"{{{{DEFAULTSORT:{jp_informal}}}}}")  # ok to use doubled braces in f-string here
+    
+    # Fixed DEFAULTSORT with zero-padding
+    jp_formatted = f"{m_idx:02d}宮{d_m:02d}日"
+    lines.append(f"{{{{DEFAULTSORT:{jp_formatted}}}}}")
 
     return "\n".join(lines)
 
@@ -867,7 +878,56 @@ def categories_for_easter_offsets(m_idx: int, d_m: int,
     return cats
 
 
-def build_page(m_idx: int, d_m: int) -> (str, str):
+def load_year_qids() -> dict:
+    """Load QID mappings from year_qids.txt file."""
+    qid_mapping = {}
+    try:
+        with open('year_qids.txt', 'r', encoding='utf-8') as f:
+            for line in f:
+                line = line.strip()
+                if line and '(' in line and ')' in line:
+                    # Parse line like "Sagittarius 1 (Q152000) (← links)"
+                    parts = line.split(' (')
+                    if len(parts) >= 2:
+                        page_name = parts[0].strip()
+                        qid_part = parts[1].split(')')[0].strip()
+                        if qid_part.startswith('Q') and qid_part[1:].isdigit():
+                            qid_mapping[page_name] = qid_part
+    except FileNotFoundError:
+        print("Warning: year_qids.txt not found, QID links will be skipped")
+    except Exception as e:
+        print(f"Error loading year_qids.txt: {e}")
+    
+    return qid_mapping
+
+def extract_overview_section(page_content: str) -> str:
+    """Extract the Overview section from existing page content."""
+    if not page_content:
+        return ""
+    
+    lines = page_content.split('\n')
+    overview_content = []
+    in_overview = False
+    
+    for line in lines:
+        if line.strip() == "== Overview ==":
+            in_overview = True
+            continue
+        elif line.startswith("== ") and in_overview:
+            # Found another section, stop extracting
+            break
+        elif in_overview:
+            overview_content.append(line)
+    
+    # Clean up the content - remove leading/trailing empty lines
+    while overview_content and not overview_content[0].strip():
+        overview_content.pop(0)
+    while overview_content and not overview_content[-1].strip():
+        overview_content.pop()
+    
+    return '\n'.join(overview_content)
+
+def build_page(m_idx: int, d_m: int, wiki: 'Wiki' = None) -> (str, str):
     base = f"{MONTHS[m_idx-1]} {d_m}"
     title = f"{TITLE_PREFIX}{base}" if TITLE_PREFIX else base
     w, wd = zodiac_to_iso(m_idx, d_m)
@@ -880,11 +940,29 @@ def build_page(m_idx: int, d_m: int) -> (str, str):
     prev_title = f"{MONTHS[pm-1]} {pd}"
     next_title = f"{MONTHS[nm-1]} {nd}"
 
+    # Get existing page content to preserve Overview section
+    overview_content = ""
+    if wiki:
+        existing_content = wiki.get_page_content(title)
+        overview_content = extract_overview_section(existing_content)
+
+    # Load QID mappings for structured data links
+    qid_mapping = load_year_qids()
+
     parts = []
-    parts.append(build_description_block(m_idx, d_m))
+    parts.append(build_description_block(m_idx, d_m, qid_mapping))
+    
+    # Add Overview section
+    if overview_content:
+        parts.append("\n== Overview ==")
+        parts.append(overview_content)
+    else:
+        parts.append("\n== Overview ==")
+        parts.append("<!-- Add custom content about this day here -->")
+    
     parts.append("\n== Calculations ==")
 
-    parts.append("\n=== Recent (±5 ISO years) ===")
+    parts.append("\n=== Recent (±10 ISO years) ===")
     parts.append(recent_block(m_idx, d_m, span=5))
 
     parts.append(f"\n=== Long-run Gregorian distribution ({LONGRUN_START}–{LONGRUN_END}) ===")
@@ -922,7 +1000,7 @@ def build_page(m_idx: int, d_m: int) -> (str, str):
     if category_lines:
         parts.append("\n".join(category_lines))
     parts.append("\n[[Category:Gaiad calendar days]]\n")
-    parts.append("\n<!-- Generated by zodiac_push_all.py -->\n")
+    parts.append("\n<!-- Generated by zodiac_wiki_pages.py.py -->\n")
     return title, "\n".join(parts)
 
 # ------------- Minimal MediaWiki client -------------
@@ -961,6 +1039,21 @@ class Wiki:
             raise RuntimeError(f"Login failed: {j}")
         self.csrf = self.get(action="query", meta="tokens", type="csrf")["query"]["tokens"]["csrftoken"]
 
+    def get_page_content(self, title: str) -> str:
+        """Get the raw wikitext content of a page."""
+        try:
+            j = self.get(action="query", titles=title, prop="revisions", rvprop="content", rvslots="main")
+            pages = j.get("query", {}).get("pages", {})
+            for page_id, page_data in pages.items():
+                if page_id == "-1":  # Page doesn't exist
+                    return ""
+                revisions = page_data.get("revisions", [])
+                if revisions:
+                    return revisions[0].get("slots", {}).get("main", {}).get("*", "")
+        except Exception as e:
+            print(f"Error fetching page content for {title}: {e}")
+        return ""
+
     def edit(self, title: str, text: str, summary: str):
         if not self.csrf:
             raise RuntimeError("Not logged in")
@@ -991,7 +1084,7 @@ def main():
     total = len(targets)
     ok = 0
     for i, (m_idx, d) in enumerate(targets, 1):
-        title, text = build_page(m_idx, d)
+        title, text = build_page(m_idx, d, wiki)
         try:
             res = wiki.edit(title, text, SUMMARY)
             ok += 1
