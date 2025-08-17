@@ -620,10 +620,22 @@ class DatabaseFixer:
         if primary_wikidata_qid and new_wikidata_qid:  # Only import if newly found
             geni_ids_from_wd = self.import_wikidata_labels_descriptions(qid, primary_wikidata_qid)
             
-        # Get current English label for CSV
-        en_label = ''
+        # Get current English label and aliases for CSV
+        en_labels = []
+        
+        # Add main English label
         if entity and 'labels' in entity and 'en' in entity['labels']:
-            en_label = entity['labels']['en']['value']
+            en_labels.append(entity['labels']['en']['value'])
+            
+        # Add English aliases
+        if entity and 'aliases' in entity and 'en' in entity['aliases']:
+            for alias in entity['aliases']['en']:
+                alias_value = alias['value']
+                if alias_value not in en_labels:  # Avoid duplicates
+                    en_labels.append(alias_value)
+        
+        # Join multiple labels with semicolons
+        combined_en_labels = ';'.join(en_labels) if en_labels else ''
         
         # Combine all Geni IDs (new + existing + from Wikidata)
         all_geni_ids = []
@@ -659,7 +671,7 @@ class DatabaseFixer:
             'local_qid': qid,
             'wikidata_qid': combined_wikidata_qids,
             'geni_id': combined_geni_ids,
-            'en_label': en_label
+            'en_label': combined_en_labels
         })
         
         # Add no identifiers instance if needed
