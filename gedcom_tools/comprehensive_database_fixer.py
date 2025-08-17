@@ -133,14 +133,17 @@ class DatabaseFixer:
             if value_type == 'item':
                 data['value'] = json.dumps({'entity-type': 'item', 'id': value})
             elif value_type == 'string':
-                data['value'] = json.dumps({'type': 'string', 'value': value})
+                data['value'] = json.dumps(value)
             elif value_type == 'time':
                 data['value'] = json.dumps(value)
             elif value_type == 'url':
-                data['value'] = json.dumps({'type': 'string', 'value': value})
+                data['value'] = json.dumps(value)
                 
             response = self.session.post(WIKI_API_URL, data=data)
             result = response.json()
+            
+            if 'success' not in result:
+                print(f"    Create claim failed: {result}")
             
             return 'success' in result
             
@@ -258,13 +261,59 @@ class DatabaseFixer:
             # P57 exists, just remove P8
             print(f"  Removing deprecated P8 (P57 exists) for {qid}")
             for claim in claims['P8']:
-                self.remove_claim(claim['id'])
-                print(f"    Removed deprecated death date")
+                if self.remove_claim(claim['id']):
+                    print(f"    Removed deprecated death date")
+                time.sleep(0.2)
                 
     def parse_bc_date(self, date_text):
-        """Parse BC date text into Wikibase time format"""
+        """Parse various date text formats into Wikibase time format"""
         try:
             import re
+            
+            # Month name mappings
+            months = {
+                'JAN': 1, 'FEB': 2, 'MAR': 3, 'APR': 4, 'MAY': 5, 'JUN': 6,
+                'JUL': 7, 'AUG': 8, 'SEP': 9, 'OCT': 10, 'NOV': 11, 'DEC': 12,
+                'JANUARY': 1, 'FEBRUARY': 2, 'MARCH': 3, 'APRIL': 4,
+                'JUNE': 6, 'JULY': 7, 'AUGUST': 8, 'SEPTEMBER': 9,
+                'OCTOBER': 10, 'NOVEMBER': 11, 'DECEMBER': 12
+            }
+            
+            # Handle "15 JUN 1301" format
+            day_month_year = re.search(r'(\d{1,2})\s+([A-Z]{3,9})\s+(\d{3,4})', date_text, re.IGNORECASE)
+            if day_month_year:
+                day = int(day_month_year.group(1))
+                month_name = day_month_year.group(2).upper()
+                year = int(day_month_year.group(3))
+                
+                if month_name in months:
+                    month = months[month_name]
+                    return {
+                        'time': f'+{year:04d}-{month:02d}-{day:02d}T00:00:00Z',
+                        'timezone': 0,
+                        'before': 0,
+                        'after': 0,
+                        'precision': 11,  # Day precision
+                        'calendarmodel': 'http://www.wikidata.org/entity/Q1985786'
+                    }
+            
+            # Handle "JUN 1301" format (month year)
+            month_year = re.search(r'([A-Z]{3,9})\s+(\d{3,4})', date_text, re.IGNORECASE)
+            if month_year:
+                month_name = month_year.group(1).upper()
+                year = int(month_year.group(2))
+                
+                if month_name in months:
+                    month = months[month_name]
+                    return {
+                        'time': f'+{year:04d}-{month:02d}-00T00:00:00Z',
+                        'timezone': 0,
+                        'before': 0,
+                        'after': 0,
+                        'precision': 10,  # Month precision
+                        'calendarmodel': 'http://www.wikidata.org/entity/Q1985786'
+                    }
+            
             # Handle formats like "97 B.C." or "48 BC"
             bc_match = re.search(r'(\d+)\s*B\.?C\.?', date_text, re.IGNORECASE)
             if bc_match:
@@ -332,8 +381,8 @@ class DatabaseFixer:
             return None, None
             
         print(f"  Processing REFN for {qid}")
-        wikidata_qid = None
-        geni_id = None
+        wikidata_qids = []
+        geni_ids = []
         
         for claim in entity['claims']['P41']:
             if 'datavalue' in claim['mainsnak']:
@@ -345,7 +394,7 @@ class DatabaseFixer:
                     if isinstance(value, str):
                         # Check for Wikidata QID (Q followed by numbers)
                         if re.match(r'^Q\d+$', value):
-                            wikidata_qid = value
+                            wikidata_qids.append(value)
                             print(f"    Creating P44 claim for {value}")
                             # Create Wikidata ID claim
                             if self.create_claim(qid, 'P44', 'string', value):
@@ -365,7 +414,7 @@ class DatabaseFixer:
                         # Check for Geni ID (geni: prefix)
                         elif value.startswith('geni:'):
                             geni_number = value[5:]  # Remove 'geni:' prefix
-                            geni_id = geni_number
+                            geni_ids.append(geni_number)
                             # Create Geni profile ID claim
                             if self.create_claim(qid, 'P43', 'string', geni_number):
                                 # Add described at URL
@@ -382,7 +431,7 @@ class DatabaseFixer:
                         text_value = value['text']
                         # Check for Wikidata QID
                         if re.match(r'^Q\d+$', text_value):
-                            wikidata_qid = text_value
+                            wikidata_qids.append(text_value)
                             if self.create_claim(qid, 'P44', 'string', text_value):
                                 wikidata_url = f"https://wikidata.org/wiki/{text_value}"
                                 self.create_claim(qid, 'P45', 'url', wikidata_url)
@@ -391,7 +440,7 @@ class DatabaseFixer:
                         # Check for Geni ID
                         elif text_value.startswith('geni:'):
                             geni_number = text_value[5:]
-                            geni_id = geni_number
+                            geni_ids.append(geni_number)
                             if self.create_claim(qid, 'P43', 'string', geni_number):
                                 geni_url = f"https://www.geni.com/profile/index/{geni_number}"
                                 self.create_claim(qid, 'P45', 'url', geni_url)
@@ -403,7 +452,10 @@ class DatabaseFixer:
                 except Exception as e:
                     print(f"    Error processing REFN: {e}")
                     
-        return wikidata_qid, geni_id
+        # Return first/primary IDs for compatibility, but all are processed
+        primary_wikidata = wikidata_qids[0] if wikidata_qids else None  
+        primary_geni = geni_ids[0] if geni_ids else None
+        return primary_wikidata, primary_geni
         
     def get_wikidata_entity(self, qid):
         """Get entity data from Wikidata"""
@@ -499,6 +551,27 @@ class DatabaseFixer:
             except Exception as e:
                 print(f"    Error adding image: {e}")
                 
+        # Import Geni IDs if available (P2600)
+        geni_ids_from_wd = []
+        if ('claims' in wd_entity and 'P2600' in wd_entity['claims']):
+            print(f"    Found Geni IDs in Wikidata")
+            for geni_claim in wd_entity['claims']['P2600']:
+                try:
+                    if 'datavalue' in geni_claim['mainsnak']:
+                        geni_id = geni_claim['mainsnak']['datavalue']['value']
+                        geni_ids_from_wd.append(geni_id)
+                        
+                        # Create Geni profile ID claim
+                        if self.create_claim(local_qid, 'P43', 'string', geni_id):
+                            # Add described at URL
+                            geni_url = f"https://www.geni.com/profile/index/{geni_id}"
+                            self.create_claim(local_qid, 'P45', 'url', geni_url)
+                            print(f"    Added Geni ID from Wikidata: {geni_id}")
+                except Exception as e:
+                    print(f"    Error adding Geni ID: {e}")
+                    
+        return geni_ids_from_wd
+                
     def add_no_identifiers_instance(self, qid):
         """Add instance of Q153720 for items with no identifiers"""
         if self.create_claim(qid, 'P39', 'item', 'Q153720'):
@@ -522,46 +595,123 @@ class DatabaseFixer:
         self.fix_notes_property(qid, entity)
         
         # Extract identifiers from REFN
-        wikidata_qid, geni_id = self.extract_identifiers_from_refn(qid, entity)
+        new_wikidata_qid, new_geni_id = self.extract_identifiers_from_refn(qid, entity)
+        
+        # Check for existing Wikidata IDs (P44) and Geni IDs (P43)
+        existing_wikidata_qids = []
+        existing_geni_ids = []
+        
+        claims = entity.get('claims', {})
+        if 'P44' in claims:
+            for claim in claims['P44']:
+                if 'datavalue' in claim['mainsnak']:
+                    existing_wikidata_qids.append(claim['mainsnak']['datavalue']['value'])
+                    
+        if 'P43' in claims:
+            for claim in claims['P43']:
+                if 'datavalue' in claim['mainsnak']:
+                    existing_geni_ids.append(claim['mainsnak']['datavalue']['value'])
+        
+        # Use primary Wikidata QID for import (new or existing)
+        primary_wikidata_qid = new_wikidata_qid or (existing_wikidata_qids[0] if existing_wikidata_qids else None)
         
         # Import Wikidata data if available
-        if wikidata_qid:
-            self.import_wikidata_labels_descriptions(qid, wikidata_qid)
+        geni_ids_from_wd = []
+        if primary_wikidata_qid and new_wikidata_qid:  # Only import if newly found
+            geni_ids_from_wd = self.import_wikidata_labels_descriptions(qid, primary_wikidata_qid)
             
         # Get current English label for CSV
         en_label = ''
         if entity and 'labels' in entity and 'en' in entity['labels']:
             en_label = entity['labels']['en']['value']
         
+        # Combine all Geni IDs (new + existing + from Wikidata)
+        all_geni_ids = []
+        if new_geni_id:
+            all_geni_ids.append(new_geni_id)
+        all_geni_ids.extend(existing_geni_ids)
+        all_geni_ids.extend(geni_ids_from_wd)
+        
+        # Remove duplicates while preserving order
+        unique_geni_ids = []
+        for gid in all_geni_ids:
+            if gid not in unique_geni_ids:
+                unique_geni_ids.append(gid)
+        
+        # Combine all Wikidata QIDs
+        all_wikidata_qids = []
+        if new_wikidata_qid:
+            all_wikidata_qids.append(new_wikidata_qid)
+        all_wikidata_qids.extend(existing_wikidata_qids)
+        
+        # Remove duplicates
+        unique_wikidata_qids = []
+        for wid in all_wikidata_qids:
+            if wid not in unique_wikidata_qids:
+                unique_wikidata_qids.append(wid)
+        
+        # Join multiple IDs with semicolons
+        combined_geni_ids = ';'.join(unique_geni_ids) if unique_geni_ids else ''
+        combined_wikidata_qids = ';'.join(unique_wikidata_qids) if unique_wikidata_qids else ''
+        
         # Add to correspondence data
         self.correspondence_data.append({
             'local_qid': qid,
-            'wikidata_qid': wikidata_qid or '',
-            'geni_id': geni_id or '',
+            'wikidata_qid': combined_wikidata_qids,
+            'geni_id': combined_geni_ids,
             'en_label': en_label
         })
         
         # Add no identifiers instance if needed
-        if not wikidata_qid and not geni_id:
+        if not combined_wikidata_qids and not combined_geni_ids:
             self.add_no_identifiers_instance(qid)
             
         time.sleep(0.5)  # Rate limiting
         
     def save_correspondence_csv(self):
         """Save correspondence data to CSV"""
+        import os
         filename = 'qid_correspondence.csv'
-        with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
+        
+        # Check if file exists to determine if we need headers
+        file_exists = os.path.exists(filename)
+        
+        # Read existing data to avoid duplicates
+        existing_qids = set()
+        if file_exists:
+            try:
+                with open(filename, 'r', encoding='utf-8') as csvfile:
+                    reader = csv.DictReader(csvfile)
+                    for row in reader:
+                        existing_qids.add(row['evolutionism_qid'])
+            except Exception as e:
+                print(f"Warning: Could not read existing CSV: {e}")
+        
+        # Open in append mode if file exists, write mode if new
+        mode = 'a' if file_exists else 'w'
+        with open(filename, mode, newline='', encoding='utf-8') as csvfile:
             fieldnames = ['evolutionism_qid', 'wikidata_qid', 'geni_id', 'en_label']
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             
-            writer.writeheader()
+            # Write header only for new files
+            if not file_exists:
+                writer.writeheader()
+                
+            # Write new data, updating existing entries
             for row in self.correspondence_data:
-                writer.writerow({
-                    'evolutionism_qid': row['local_qid'],
-                    'wikidata_qid': row['wikidata_qid'],
-                    'geni_id': row['geni_id'],
-                    'en_label': row['en_label']
-                })
+                qid = row['local_qid']
+                if qid in existing_qids:
+                    # For existing QIDs, we need to update the entire file
+                    # This is more complex, so for now just append new ones
+                    print(f"  Skipping {qid} (already exists in CSV)")
+                else:
+                    writer.writerow({
+                        'evolutionism_qid': row['local_qid'],
+                        'wikidata_qid': row['wikidata_qid'],
+                        'geni_id': row['geni_id'],
+                        'en_label': row['en_label']
+                    })
+                    print(f"  Added {qid} to CSV")
                 
         print(f"Saved correspondence data to {filename}")
         

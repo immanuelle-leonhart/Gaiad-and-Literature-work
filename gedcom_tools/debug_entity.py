@@ -57,4 +57,4 @@ def debug_entity(qid):
                 print(f"  [{i}] {claim['mainsnak']['snaktype']}")
 
 if __name__ == "__main__":
-    debug_entity("Q138402")
+    debug_entity("Q144935")
