@@ -116,19 +116,20 @@ The Five Easters represent the five zodiac days where Easter can fall, each with
 
 ### Enhanced Kinen-sai Associations (Capricorn 17-24)
 **Traditional Role**: Prayer for Abundant Harvest
-**Future Chapter Connection**: Chapters 68-77 (estimated) - Permian crisis and Triassic recovery, seed plant evolution
-**Geological Period**: Late Permian through Early Triassic (~260-237 MYA)
-**Thematic Focus**: Agricultural blessing, seed prayers, survival through catastrophe
+**Future Chapter Connection**: Chapters 140-160 (estimated) - Origin of plants, terrestrial colonization, first photosynthetic land life
+**Geological Period**: Silurian-Devonian (~440-360 MYA)
+**Thematic Focus**: Plant genesis, first terrestrial ecosystems, foundation of all future agriculture
 **Additional Correspondences**:
 - Celtic Lughnasadh elements (first fruits blessing)
 - Hindu Makar Sankranti (solar transition)
 - Persian Yalda Night themes (light triumph)
 - Nordic Dísablót (blessing of female spirits)
 **Ritual Elements**:
-- Agricultural blessing ceremonies
-- Seed blessing for coming year
-- Readings from Nectarius genealogy
-- Five-fold offering ceremony (representing five kingdoms)
+- Plant origin ceremonies (honoring first terrestrial life)
+- Blessing of seeds and growing things
+- Readings from plant genealogy chapters
+- Photosynthesis celebration (light into life)
+- Green offering ceremony (representing plant kingdom foundation)
 
 ### New Festival Proposals
 
