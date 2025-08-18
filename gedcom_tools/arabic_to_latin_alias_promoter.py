@@ -183,7 +183,7 @@ def main():
     # Wait 30 minutes to avoid race condition
     for i in range(30, 0, -1):
         print(f"  Starting in {i} minutes...")
-        time.sleep(60)  # Sleep for 1 minute
+        time.sleep(5)  # Sleep for 1 minute
     
     print("Starting Latin alias promotion...")
     print("Checking labels_greek_armenian_cyrillic.csv QIDs for better Latin script aliases...")
