@@ -236,7 +236,13 @@
       "Bash(docker-compose up:*)",
       "Bash(docker:*)",
       "Bash(where docker)",
-      "Bash(Get-Command docker -ErrorAction SilentlyContinue)"
+      "Bash(Get-Command docker -ErrorAction SilentlyContinue)",
+      "Bash(refreshenv)",
+      "Bash(export PATH=\"$PATH:/c/Program Files/Docker/Docker/resources/bin\")",
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" gedcom_tools/simple_xml_export.py)",
+      "Bash(curl:*)",
+      "Bash(net start:*)",
+      "Bash(\"C:\\Program Files\\Docker\\Docker\\Docker Desktop.exe\")"
     ],
     "deny": [],
     "defaultMode": "acceptEdits"

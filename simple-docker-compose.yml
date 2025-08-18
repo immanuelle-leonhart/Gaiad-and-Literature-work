@@ -1,0 +1,30 @@
+services:
+  mediawiki:
+    image: mediawiki:1.37
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    environment:
+      - MEDIAWIKI_DB_TYPE=mysql
+      - MEDIAWIKI_DB_HOST=db
+      - MEDIAWIKI_DB_NAME=mediawiki
+      - MEDIAWIKI_DB_USER=mediawiki
+      - MEDIAWIKI_DB_PASSWORD=password
+    depends_on:
+      - db
+    volumes:
+      - ./xml_imports:/xml_imports
+
+  db:
+    image: mariadb:10.6
+    restart: unless-stopped
+    environment:
+      MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
+      MYSQL_DATABASE: 'mediawiki'
+      MYSQL_USER: 'mediawiki' 
+      MYSQL_PASSWORD: 'password'
+    volumes:
+      - db-data:/var/lib/mysql
+
+volumes:
+  db-data:

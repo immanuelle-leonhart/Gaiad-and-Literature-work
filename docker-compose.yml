@@ -1,0 +1,87 @@
+version: '3.7'
+
+services:
+  wikibase:
+    image: wikibase/wikibase:1.37
+    restart: unless-stopped
+    ports:
+      - "8181:80"
+    environment:
+      - DB_SERVER=mysql.svc:3306
+      - MW_ELASTIC_HOST=elasticsearch.svc
+      - MW_ELASTIC_PORT=9200
+      - MW_WB_LOAD_DATA_FROM_API=http://wdqs-frontend.svc/proxy/wdqs/bigdata/namespace/wdq/sparql
+    depends_on:
+      - mysql
+      - elasticsearch
+    volumes:
+      - mediawiki-images-data:/var/www/html/images
+      - ./xml_imports:/xml_imports
+
+  mysql:
+    image: mariadb:10.6
+    restart: unless-stopped
+    environment:
+      MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
+      MYSQL_DATABASE: 'my_wiki'
+      MYSQL_USER: 'wikiuser'
+      MYSQL_PASSWORD: 'sqlpass'
+    volumes:
+      - mediawiki-mysql-data:/var/lib/mysql
+    container_name: mysql.svc
+
+  wdqs-frontend:
+    image: wikibase/wdqs-frontend:latest
+    restart: unless-stopped
+    ports:
+      - "8282:80"
+    environment:
+      - WIKIBASE_HOST=wikibase.svc
+    depends_on:
+      - wdqs-proxy
+    container_name: wdqs-frontend.svc
+
+  wdqs:
+    image: wikibase/wdqs:0.3.40
+    restart: unless-stopped
+    environment:
+      - WIKIBASE_HOST=wikibase.svc
+      - WDQS_HOST=wdqs.svc
+      - WDQS_PORT=9999
+    ports:
+      - "9999:9999"
+    depends_on:
+      - wdqs-proxy
+    container_name: wdqs.svc
+
+  wdqs-proxy:
+    image: wikibase/wdqs-proxy
+    restart: unless-stopped
+    environment:
+      - PROXY_PASS_HOST=wdqs.svc:9999
+    depends_on:
+      - wdqs-updater
+    container_name: wdqs-proxy.svc
+
+  wdqs-updater:
+    image: wikibase/wdqs:0.3.40
+    restart: unless-stopped
+    command: /runUpdate.sh
+    depends_on:
+      - wikibase
+    environment:
+      - WIKIBASE_HOST=wikibase.svc
+      - WDQS_HOST=wdqs.svc
+      - WDQS_PORT=9999
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:6.5.4
+    restart: unless-stopped
+    environment:
+      discovery.type: single-node
+      ES_JAVA_OPTS: "-Xms512m -Xmx512m"
+    container_name: elasticsearch.svc
+
+volumes:
+  mediawiki-mysql-data:
+  mediawiki-images-data:
