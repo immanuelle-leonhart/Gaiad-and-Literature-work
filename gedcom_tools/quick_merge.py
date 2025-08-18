@@ -230,23 +230,48 @@ def merge_entities(qid1, qid2):
     if not create_redirect(session, source_qid, target_qid, csrf_token):
         print(f"Redirect failed, entity {source_qid} cleared but not redirected")
     
-    print(f"Merge complete: {source_qid} → {target_qid}")
+    print(f"Merge complete: {source_qid} -> {target_qid}")
     return True
 
 def main():
-    if len(sys.argv) != 3:
-        print("Usage: python quick_merge.py Q12345 Q67890")
-        print("Merges the higher QID into the lower QID")
+    if len(sys.argv) < 3:
+        print("Usage: python quick_merge.py Q12345 Q67890 [Q54321 ...]")
+        print("Merges all QIDs into the lowest QID")
+        print("Example: python quick_merge.py Q100 Q50 Q75  # merges Q100 and Q75 into Q50")
         return
     
-    qid1 = sys.argv[1].upper()
-    qid2 = sys.argv[2].upper()
+    # Get all QIDs from command line
+    qids = []
+    for arg in sys.argv[1:]:
+        qid = arg.upper()
+        if not qid.startswith('Q'):
+            print(f"Error: '{arg}' is not a valid QID (must start with Q)")
+            return
+        qids.append(qid)
     
-    if not (qid1.startswith('Q') and qid2.startswith('Q')):
-        print("Error: Both arguments must be QIDs (e.g., Q12345)")
+    if len(qids) < 2:
+        print("Error: Need at least 2 QIDs to merge")
         return
     
-    merge_entities(qid1, qid2)
+    print(f"Merging {len(qids)} entities: {', '.join(qids)}")
+    
+    # Find the lowest QID (target)
+    target_qid = min(qids, key=lambda q: int(q[1:]))
+    source_qids = [q for q in qids if q != target_qid]
+    
+    print(f"Target (lowest): {target_qid}")
+    print(f"Sources to merge: {', '.join(source_qids)}")
+    
+    # Merge each source into the target
+    for source_qid in source_qids:
+        print(f"\n--- Merging {source_qid} -> {target_qid} ---")
+        success = merge_entities(source_qid, target_qid)
+        if not success:
+            print(f"Failed to merge {source_qid}")
+            return
+    
+    print(f"\n=== ALL MERGES COMPLETE ===")
+    print(f"All entities merged into {target_qid}")
 
 if __name__ == '__main__':
     main()
