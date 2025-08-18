@@ -220,7 +220,8 @@
       "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" gedcom_tools/specific_merger_q65705.py)",
       "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" gedcom_tools/comprehensive_database_fixer.py 1 160000)",
       "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" gedcom_tools/comprehensive_database_fixer.py 65705 65705)",
-      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" gedcom_tools/comprehensive_database_fixer.py 90309 90309)"
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" gedcom_tools/comprehensive_database_fixer.py 90309 90309)",
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" gedcom_tools/comprehensive_database_fixer.py 144936 144936)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits"
