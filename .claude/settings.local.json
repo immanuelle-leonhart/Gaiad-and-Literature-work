@@ -231,7 +231,12 @@
       "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" gedcom_tools/duplicate_checker.py)",
       "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" gedcom_tools/csv_duplicate_merger.py)",
       "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" gedcom_tools/wiki_xml_exporter.py)",
-      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" gedcom_tools/namespace_checker.py)"
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" gedcom_tools/namespace_checker.py)",
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" -c \"\nimport requests\nsession = requests.Session()\nsession.headers.update({''User-Agent'': ''Test''})\n\n# Check multiple namespaces for Q entities\nfor ns in [0, 860]:\n    params = {\n        ''action'': ''query'',\n        ''list'': ''allpages'',\n        ''apnamespace'': ns,\n        ''aplimit'': 5,\n        ''apprefix'': ''Q'',\n        ''format'': ''json''\n    }\n    \n    response = session.get(''https://evolutionism.miraheze.org/w/api.php'', params=params)\n    data = response.json()\n    \n    if ''query'' in data and ''allpages'' in data[''query'']:\n        pages = data[''query''][''allpages'']\n        if pages:\n            print(f''Namespace {ns}: Found {len(pages)} Q pages'')\n            for page in pages[:3]:\n                print(f''  {page[\"\"title\"\"]}'')\n        else:\n            print(f''Namespace {ns}: No Q pages found'')\n\")",
+      "Bash(docker-compose up:*)",
+      "Bash(docker:*)",
+      "Bash(where docker)",
+      "Bash(Get-Command docker -ErrorAction SilentlyContinue)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits"

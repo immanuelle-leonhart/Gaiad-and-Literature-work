@@ -47,8 +47,8 @@ def request_xml_export(session):
         if 'query' in data and 'allpages' in data['query']:
             for page in data['query']['allpages']:
                 title = page['title']
-                if title.startswith('Q') and title[1:].isdigit():
-                    all_pages.append(title)
+                # Add all items (they'll be like "Item:Q1", "Item:Q2", etc.)
+                all_pages.append(title)
         
         if 'continue' in data and 'apcontinue' in data['continue']:
             continue_param = data['continue']['apcontinue']
