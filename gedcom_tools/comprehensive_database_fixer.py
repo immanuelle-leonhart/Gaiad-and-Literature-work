@@ -376,9 +376,9 @@ class DatabaseFixer:
                     print(f"    Error processing notes: {e}")
                     
     def extract_identifiers_from_refn(self, qid, entity):
-        """Extract Wikidata QIDs and Geni IDs from GEDCOM REFN (P41)"""
+        """Extract Wikidata QIDs, Geni IDs, and UUID REFNs from GEDCOM REFN (P41)"""
         if 'P41' not in entity.get('claims', {}):
-            return None, None
+            return None, None, []
             
         print(f"  Processing REFN for {qid}")
         wikidata_qids = []
@@ -423,6 +423,15 @@ class DatabaseFixer:
                                 # Remove from REFN
                                 self.remove_claim(claim['id'])
                                 print(f"    Extracted Geni ID: {geni_number}")
+                        
+                        # Check for UUID-like strings (hex digits, likely UUIDs)
+                        elif re.match(r'^[A-F0-9]{32,40}$', value, re.IGNORECASE):
+                            uuid_refns.append(value)
+                            # Create UUID REFN claim (P60)
+                            if self.create_claim(qid, 'P60', 'string', value):
+                                # Remove from REFN
+                                self.remove_claim(claim['id'])
+                                print(f"    Extracted UUID REFN: {value}")
                         else:
                             print(f"    Unknown REFN format: {value}")
                             
@@ -446,6 +455,12 @@ class DatabaseFixer:
                                 self.create_claim(qid, 'P45', 'url', geni_url)
                                 self.remove_claim(claim['id'])
                                 print(f"    Extracted Geni ID: {geni_number}")
+                        # Check for UUID-like strings
+                        elif re.match(r'^[A-F0-9]{32,40}$', text_value, re.IGNORECASE):
+                            uuid_refns.append(text_value)
+                            if self.create_claim(qid, 'P60', 'string', text_value):
+                                self.remove_claim(claim['id'])
+                                print(f"    Extracted UUID REFN: {text_value}")
                                 
                     time.sleep(0.2)
                         
@@ -455,7 +470,7 @@ class DatabaseFixer:
         # Return first/primary IDs for compatibility, but all are processed
         primary_wikidata = wikidata_qids[0] if wikidata_qids else None  
         primary_geni = geni_ids[0] if geni_ids else None
-        return primary_wikidata, primary_geni
+        return primary_wikidata, primary_geni, uuid_refns
         
     def get_wikidata_entity(self, qid):
         """Get entity data from Wikidata"""
@@ -491,7 +506,10 @@ class DatabaseFixer:
             'en' in local_entity['labels']):
             current_label = local_entity['labels']['en']['value']
             # Add as alias (this would need alias API calls)
-            print(f"    Current label '{current_label}' should be moved to aliases")
+            try:
+                print(f"    Current label '{current_label}' should be moved to aliases")
+            except UnicodeEncodeError:
+                print(f"    Current label with non-ASCII characters should be moved to aliases")
             
         # Import labels from Wikidata
         if 'labels' in wd_entity:
@@ -595,11 +613,12 @@ class DatabaseFixer:
         self.fix_notes_property(qid, entity)
         
         # Extract identifiers from REFN
-        new_wikidata_qid, new_geni_id = self.extract_identifiers_from_refn(qid, entity)
+        new_wikidata_qid, new_geni_id, uuid_refns = self.extract_identifiers_from_refn(qid, entity)
         
-        # Check for existing Wikidata IDs (P44) and Geni IDs (P43)
+        # Check for existing Wikidata IDs (P44), Geni IDs (P43), and UUID REFNs (P60)
         existing_wikidata_qids = []
         existing_geni_ids = []
+        existing_uuid_refns = []
         
         claims = entity.get('claims', {})
         if 'P44' in claims:
@@ -611,6 +630,11 @@ class DatabaseFixer:
             for claim in claims['P43']:
                 if 'datavalue' in claim['mainsnak']:
                     existing_geni_ids.append(claim['mainsnak']['datavalue']['value'])
+                    
+        if 'P60' in claims:
+            for claim in claims['P60']:
+                if 'datavalue' in claim['mainsnak']:
+                    existing_uuid_refns.append(claim['mainsnak']['datavalue']['value'])
         
         # Use primary Wikidata QID for import (new or existing)
         primary_wikidata_qid = new_wikidata_qid or (existing_wikidata_qids[0] if existing_wikidata_qids else None)
@@ -661,21 +685,34 @@ class DatabaseFixer:
         for wid in all_wikidata_qids:
             if wid not in unique_wikidata_qids:
                 unique_wikidata_qids.append(wid)
+                
+        # Combine all UUID REFNs (new + existing)
+        all_uuid_refns = []
+        all_uuid_refns.extend(uuid_refns)
+        all_uuid_refns.extend(existing_uuid_refns)
+        
+        # Remove duplicates
+        unique_uuid_refns = []
+        for uid in all_uuid_refns:
+            if uid not in unique_uuid_refns:
+                unique_uuid_refns.append(uid)
         
         # Join multiple IDs with semicolons
         combined_geni_ids = ';'.join(unique_geni_ids) if unique_geni_ids else ''
         combined_wikidata_qids = ';'.join(unique_wikidata_qids) if unique_wikidata_qids else ''
+        combined_uuid_refns = ';'.join(unique_uuid_refns) if unique_uuid_refns else ''
         
-        # Add to correspondence data
+        # Add to correspondence data (ALWAYS add, regardless of identifiers)
         self.correspondence_data.append({
             'local_qid': qid,
             'wikidata_qid': combined_wikidata_qids,
             'geni_id': combined_geni_ids,
-            'en_label': combined_en_labels
+            'en_label': combined_en_labels,
+            'uuid': combined_uuid_refns
         })
         
         # Add no identifiers instance if needed
-        if not combined_wikidata_qids and not combined_geni_ids:
+        if not combined_wikidata_qids and not combined_geni_ids and not combined_uuid_refns:
             self.add_no_identifiers_instance(qid)
             
         time.sleep(0.5)  # Rate limiting
@@ -702,7 +739,7 @@ class DatabaseFixer:
         # Open in append mode if file exists, write mode if new
         mode = 'a' if file_exists else 'w'
         with open(filename, mode, newline='', encoding='utf-8') as csvfile:
-            fieldnames = ['evolutionism_qid', 'wikidata_qid', 'geni_id', 'en_label']
+            fieldnames = ['evolutionism_qid', 'wikidata_qid', 'geni_id', 'en_label', 'uuid']
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             
             # Write header only for new files
@@ -721,7 +758,8 @@ class DatabaseFixer:
                         'evolutionism_qid': row['local_qid'],
                         'wikidata_qid': row['wikidata_qid'],
                         'geni_id': row['geni_id'],
-                        'en_label': row['en_label']
+                        'en_label': row['en_label'],
+                        'uuid': row['uuid']
                     })
                     print(f"  Added {qid} to CSV")
                 
