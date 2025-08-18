@@ -782,7 +782,12 @@ class DatabaseFixer:
             
             if processed % 100 == 0:
                 print(f"Processed {processed} entities...")
+                # Save CSV every 100 entities
+                self.save_correspondence_csv()
+                # Clear correspondence data to save memory
+                self.correspondence_data = []
                 
+        # Final save
         self.save_correspondence_csv()
         print(f"Comprehensive fix complete! Processed {processed} entities.")
 
