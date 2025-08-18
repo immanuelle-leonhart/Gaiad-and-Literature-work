@@ -43,6 +43,13 @@ def debug_entity(qid):
         
     print(f"Labels: {list(entity.get('labels', {}).keys())}")
     print(f"Descriptions: {list(entity.get('descriptions', {}).keys())}")
+    print(f"Aliases: {list(entity.get('aliases', {}).keys())}")
+    
+    # Show aliases content
+    aliases = entity.get('aliases', {})
+    if aliases:
+        for lang, alias_list in aliases.items():
+            print(f"  {lang} aliases: {[alias['value'] for alias in alias_list[:3]]}")  # Show first 3
     
     claims = entity.get('claims', {})
     print(f"Properties found: {list(claims.keys())}")
@@ -57,4 +64,4 @@ def debug_entity(qid):
                 print(f"  [{i}] {claim['mainsnak']['snaktype']}")
 
 if __name__ == "__main__":
-    debug_entity("Q105603")
+    debug_entity("Q115039")
