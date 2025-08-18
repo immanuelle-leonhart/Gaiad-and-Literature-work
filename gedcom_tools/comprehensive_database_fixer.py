@@ -383,6 +383,7 @@ class DatabaseFixer:
         print(f"  Processing REFN for {qid}")
         wikidata_qids = []
         geni_ids = []
+        uuid_refns = []
         
         for claim in entity['claims']['P41']:
             if 'datavalue' in claim['mainsnak']:
