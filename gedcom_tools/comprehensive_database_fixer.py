@@ -62,12 +62,12 @@ class DatabaseFixer:
         
     def login(self):
         """Login to the wiki"""
-        print("Logging in...")
+        safe_print("Logging in...")
         
         token_params = {'action': 'query', 'meta': 'tokens', 'type': 'login', 'format': 'json'}
         response = self.session.get(self.wiki_api_url, params=token_params, timeout=30)
         if response.status_code != 200:
-            print(f"HTTP error: {response.status_code}")
+            safe_print(f"HTTP error: {response.status_code}")
             return False
         token_data = response.json()
         login_token = token_data['query']['tokens']['logintoken']
@@ -77,18 +77,18 @@ class DatabaseFixer:
         result = response.json().get('login', {}).get('result') == 'Success'
         
         if result:
-            print("Login successful")
+            safe_print("Login successful")
             self.get_csrf_token()
             return True
         else:
-            print("Login failed")
+            safe_print("Login failed")
             return False
             
     def get_csrf_token(self):
         """Get CSRF token"""
         response = self.session.get(self.wiki_api_url, params={'action': 'query', 'meta': 'tokens', 'format': 'json'})
         self.csrf_token = response.json()['query']['tokens']['csrftoken']
-        print("CSRF token obtained")
+        safe_print("CSRF token obtained")
         
     def get_entity_data(self, qid):
         """Get entity data"""
@@ -106,7 +106,7 @@ class DatabaseFixer:
                     return entity
             return None
         except Exception as e:
-            print(f"Error getting entity {qid}: {e}")
+            safe_print(f"Error getting entity {qid}: {e}")
             return None
             
     def remove_claim(self, claim_id):
@@ -126,7 +126,7 @@ class DatabaseFixer:
             return 'success' in result
             
         except Exception as e:
-            print(f"Error removing claim {claim_id}: {e}")
+            safe_print(f"Error removing claim {claim_id}: {e}")
             return False
             
     def create_claim(self, qid, property_id, value_type, value):
@@ -155,12 +155,12 @@ class DatabaseFixer:
             result = response.json()
             
             if 'success' not in result:
-                print(f"    Create claim failed: {result}")
+                safe_print(f"    Create claim failed: {result}")
             
             return 'success' in result
             
         except Exception as e:
-            print(f"Error creating claim: {e}")
+            safe_print(f"Error creating claim: {e}")
             return False
             
     def fix_sex_property(self, qid, entity):
@@ -168,7 +168,7 @@ class DatabaseFixer:
         if 'P11' not in entity.get('claims', {}):
             return
             
-        print(f"  Fixing sex property for {qid}")
+        safe_print(f"  Fixing sex property for {qid}")
         
         for claim in entity['claims']['P11']:
             if 'datavalue' in claim['mainsnak']:
@@ -627,7 +627,7 @@ class DatabaseFixer:
     def add_no_identifiers_instance(self, qid):
         """Add instance of Q153720 for items with no identifiers"""
         if self.create_claim(qid, 'P39', 'item', 'Q153720'):
-            print(f"  Added 'Item with no identifiers' instance to {qid}")
+            safe_print(f"  Added 'Item with no identifiers' instance to {qid}")
             
     def process_entity(self, qid):
         """Process a single entity"""
@@ -635,7 +635,7 @@ class DatabaseFixer:
         if not entity:
             return
             
-        print(f"Processing {qid}")
+        safe_print(f"Processing {qid}")
         
         # Fix sex property
         self.fix_sex_property(qid, entity)
@@ -787,10 +787,10 @@ class DatabaseFixer:
     def run_comprehensive_fix(self, start_qid=1, end_qid=50000):
         """Run comprehensive fix on range of QIDs"""
         if not self.login():
-            print("Login failed!")
+            safe_print("Login failed!")
             return
             
-        print(f"Starting comprehensive database fix from Q{start_qid} to Q{end_qid}")
+        safe_print(f"Starting comprehensive database fix from Q{start_qid} to Q{end_qid}")
         
         processed = 0
         for i in range(start_qid, end_qid + 1):
@@ -799,7 +799,7 @@ class DatabaseFixer:
             processed += 1
             
             if processed % 100 == 0:
-                print(f"Processed {processed} entities...")
+                safe_print(f"Processed {processed} entities...")
                 # Save CSV every 100 entities
                 self.save_correspondence_csv()
                 # Clear correspondence data to save memory
@@ -807,7 +807,7 @@ class DatabaseFixer:
                 
         # Final save
         self.save_correspondence_csv()
-        print(f"Comprehensive fix complete! Processed {processed} entities.")
+        safe_print(f"Comprehensive fix complete! Processed {processed} entities.")
 
 def main():
     import sys
