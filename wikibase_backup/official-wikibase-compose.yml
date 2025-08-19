@@ -1,0 +1,65 @@
+version: '3.4'
+
+x-common-variables: &wikibase_variables
+  DB_SERVER: mysql.svc:3306
+  DB_USER: mediawiki
+  DB_PASS: password
+  DB_NAME: mediawiki
+  MW_ADMIN_NAME: Immanuelle
+  MW_ADMIN_PASS: 1996ToOmega!
+  MW_ADMIN_EMAIL: immanuelle@example.com
+  MW_WG_SECRET_KEY: secretkey
+  MW_WG_UPGRADE_KEY: upgradekey
+  WIKIBASE_HOST: localhost:8080
+  MW_WG_ENABLE_UPLOADS: 1
+  MW_ELASTIC_HOST: "elasticsearch"
+  MW_ELASTIC_PORT: "9200"
+
+services:
+  wikibase:
+    image: wikibase/wikibase:1.35-bundle
+    links:
+      - mysql
+    ports:
+      - "8080:80"
+    volumes:
+      - ./xml_imports:/var/www/html/xml_imports
+      - mediawiki-data:/var/www/html/images
+    depends_on:
+    - mysql
+    networks:
+      default:
+        aliases:
+         - wikibase.svc
+    environment:
+      <<: *wikibase_variables
+
+  mysql:
+    image: mariadb:10.6
+    restart: unless-stopped
+    volumes:
+      - gaiad-genealogy_db-data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: toor
+      MYSQL_DATABASE: mediawiki
+      MYSQL_USER: mediawiki
+      MYSQL_PASSWORD: password
+    networks:
+      default:
+        aliases:
+         - mysql.svc
+
+  elasticsearch:
+    image: elasticsearch:6.8.23
+    environment:
+      - discovery.type=single-node
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    networks:
+      default:
+        aliases:
+         - elasticsearch.svc
+
+volumes:
+  mediawiki-data:
+  gaiad-genealogy_db-data:
+    external: true

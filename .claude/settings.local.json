@@ -249,7 +249,8 @@
       "Bash(head:*)",
       "Bash(php:*)",
       "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" gedcom_tools/comprehensive_database_fixer.py 18001 160000 Immanuelle \"1996ToOmega!\")",
-      "Bash(wsl:*)"
+      "Bash(wsl:*)",
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" gedcom_tools/property_exporter.py)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits"
