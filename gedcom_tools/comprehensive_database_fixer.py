@@ -31,7 +31,6 @@ USERNAME = "Immanuelle"
 PASSWORD = "1996ToOmega!"
 
 class DatabaseFixer:
-    def __init__(self):
     def __init__(self, wiki_api_url=None, username=None, password=None):
         self.wiki_api_url = wiki_api_url or "https://evolutionism.miraheze.org/w/api.php"
         self.username = username or USERNAME
