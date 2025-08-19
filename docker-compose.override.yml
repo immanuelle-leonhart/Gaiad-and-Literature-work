@@ -1,0 +1,10 @@
+services:
+  elasticsearch:
+    environment:
+      - discovery.type=single-node
+      - ES_JAVA_OPTS=-Xms1g -Xmx1g
+    mem_limit: 2g
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1

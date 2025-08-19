@@ -17,10 +17,13 @@ services:
       - MW_WG_ENABLE_UPLOADS=1
     depends_on:
       - mysql
+    volumes:
+      - ./xml_imports:/var/www/html/xml_imports
     deploy:
       resources:
         limits:
-          memory: 4G
+          memory: 8G
+          cpus: '4.0'
 
   mysql:
     image: mariadb:10.6

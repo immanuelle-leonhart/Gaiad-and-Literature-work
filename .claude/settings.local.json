@@ -248,7 +248,8 @@
       "Bash(do echo:*)",
       "Bash(head:*)",
       "Bash(php:*)",
-      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" gedcom_tools/comprehensive_database_fixer.py 18001 160000 Immanuelle \"1996ToOmega!\")"
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" gedcom_tools/comprehensive_database_fixer.py 18001 160000 Immanuelle \"1996ToOmega!\")",
+      "Bash(wsl:*)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits"

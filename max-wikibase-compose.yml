@@ -33,6 +33,8 @@ services:
       - MW_WG_MAX_UPLOAD_SIZE=209715200
       - MW_WG_MEMORY_LIMIT=512M
       - PHP_MEMORY_LIMIT=1024M
+      - MW_ELASTIC_HOST=
+      - MW_ELASTIC_PORT=
     networks:
       - wikibase-net
 
