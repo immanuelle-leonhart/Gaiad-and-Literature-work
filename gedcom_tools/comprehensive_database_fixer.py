@@ -759,16 +759,7 @@ class DatabaseFixer:
         # Check if file exists to determine if we need headers
         file_exists = os.path.exists(filename)
         
-        # Read existing data to avoid duplicates
-        existing_qids = set()
-        if file_exists:
-            try:
-                with open(filename, 'r', encoding='utf-8') as csvfile:
-                    reader = csv.DictReader(csvfile)
-                    for row in reader:
-                        existing_qids.add(row['evolutionism_qid'])
-            except Exception as e:
-                print(f"Warning: Could not read existing CSV: {e}")
+        # No duplication checking - always append new data
         
         # Open in append mode if file exists, write mode if new
         mode = 'a' if file_exists else 'w'
@@ -780,22 +771,16 @@ class DatabaseFixer:
             if not file_exists:
                 writer.writeheader()
                 
-            # Write new data, updating existing entries
+            # Write all data without duplication checking
             for row in self.correspondence_data:
-                qid = row['local_qid']
-                if qid in existing_qids:
-                    # For existing QIDs, we need to update the entire file
-                    # This is more complex, so for now just append new ones
-                    print(f"  Skipping {qid} (already exists in CSV)")
-                else:
-                    writer.writerow({
-                        'evolutionism_qid': row['local_qid'],
-                        'wikidata_qid': row['wikidata_qid'],
-                        'geni_id': row['geni_id'],
-                        'en_label': row['en_label'],
-                        'uuid': row['uuid']
-                    })
-                    print(f"  Added {qid} to CSV")
+                writer.writerow({
+                    'evolutionism_qid': row['local_qid'],
+                    'wikidata_qid': row['wikidata_qid'],
+                    'geni_id': row['geni_id'],
+                    'en_label': row['en_label'],
+                    'uuid': row['uuid']
+                })
+                print(f"  Added {row['local_qid']} to CSV")
                 
         print(f"Saved correspondence data to {filename}")
         
