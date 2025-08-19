@@ -252,7 +252,14 @@
       "Bash(wsl:*)",
       "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" gedcom_tools/property_exporter.py)",
       "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" gedcom_tools/comprehensive_database_fixer_resumable.py 18001 160000 Immanuelle \"1996ToOmega!\" http://localhost:8080)",
-      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" gedcom_tools/comprehensive_database_fixer.py 21001 160000 Immanuelle \"1996ToOmega!\" http://localhost:8080)"
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" gedcom_tools/comprehensive_database_fixer.py 21001 160000 Immanuelle \"1996ToOmega!\" http://localhost:8080)",
+      "Bash(where mongod)",
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" -m pip install pymongo python-Levenshtein)",
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" -c \"\nimport pymongo\ntry:\n    client = pymongo.MongoClient(''mongodb://localhost:27017/'', serverSelectionTimeoutMS=5000)\n    client.server_info()\n    print(''✓ MongoDB connection successful'')\n    print(''✓ Server info:'', client.server_info()[''version''])\n    client.close()\nexcept Exception as e:\n    print(''✗ MongoDB connection failed:'', e)\n\")",
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" -c \"\nimport pymongo\ntry:\n    client = pymongo.MongoClient(''mongodb://localhost:27017/'', serverSelectionTimeoutMS=5000)\n    client.server_info()\n    print(''MongoDB connection successful'')\n    print(''Server version:'', client.server_info()[''version''])\n    \n    # Test new database\n    db = client[''gaiad_processing_db'']\n    collection = db[''test'']\n    collection.insert_one({''test'': ''data''})\n    print(''Database gaiad_processing_db created successfully'')\n    client.close()\nexcept Exception as e:\n    print(''MongoDB connection failed:'', str(e))\n\")",
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" gedcom_tools/mongodb_pipeline.py)",
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" gedcom_tools/mongodb_xml_importer.py)",
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" gedcom_tools/debug_xml_parser.py)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits"
