@@ -1,0 +1,37 @@
+services:
+  wikibase:
+    image: wikibase/wikibase:1.35-bundle
+    ports:
+      - "8080:80"
+    environment:
+      - DB_SERVER=mysql:3306
+      - DB_USER=wikiuser
+      - DB_PASS=sqlpass
+      - DB_NAME=my_wiki
+      - MW_ADMIN_NAME=Immanuelle
+      - MW_ADMIN_PASS=1996ToOmega!
+      - MW_ADMIN_EMAIL=immanuelle@example.com
+      - MW_WG_SECRET_KEY=secretkey
+      - MW_WG_UPGRADE_KEY=upgradekey
+      - WIKIBASE_HOST=localhost:8080
+      - MW_WG_ENABLE_UPLOADS=1
+    depends_on:
+      - mysql
+    deploy:
+      resources:
+        limits:
+          memory: 4G
+
+  mysql:
+    image: mariadb:10.6
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: toor
+      MYSQL_DATABASE: my_wiki
+      MYSQL_USER: wikiuser
+      MYSQL_PASSWORD: sqlpass
+    volumes:
+      - simple-wikibase-db:/var/lib/mysql
+
+volumes:
+  simple-wikibase-db:

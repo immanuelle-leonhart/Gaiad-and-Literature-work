@@ -1,0 +1,66 @@
+services:
+  wikibase:
+    image: wikibase/wikibase:1.35-bundle
+    ports:
+      - "8080:80"
+    volumes:
+      - ./xml_imports:/var/www/html/xml_imports
+    deploy:
+      resources:
+        limits:
+          memory: 4G
+        reservations:
+          memory: 2G
+    environment:
+      - DB_SERVER=mysql.svc:3306
+      - DB_USER=wikiuser
+      - DB_PASS=sqlpass
+      - DB_NAME=my_wiki
+      - MW_ADMIN_NAME=Immanuelle
+      - MW_ADMIN_PASS=1996ToOmega!
+      - MW_ADMIN_EMAIL=immanuelle@example.com
+      - MW_WG_SECRET_KEY=secretkey
+      - MW_WG_UPGRADE_KEY=upgradekey
+      - WIKIBASE_HOST=localhost:8080
+      - MW_WG_ENABLE_UPLOADS=1
+      - MW_ELASTIC_HOST=elasticsearch
+      - MW_ELASTIC_PORT=9200
+    depends_on:
+    - mysql
+    - elasticsearch
+    networks:
+      default:
+        aliases:
+         - wikibase.svc
+
+  mysql:
+    image: mariadb:10.6
+    restart: unless-stopped
+    volumes:
+      - fresh-db-data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: toor
+      MYSQL_DATABASE: my_wiki
+      MYSQL_USER: wikiuser
+      MYSQL_PASSWORD: sqlpass
+    networks:
+      default:
+        aliases:
+         - mysql.svc
+
+  elasticsearch:
+    image: elasticsearch:6.8.23
+    environment:
+      - discovery.type=single-node
+      - "ES_JAVA_OPTS=-Xms1g -Xmx2g"
+    deploy:
+      resources:
+        limits:
+          memory: 3G
+    networks:
+      default:
+        aliases:
+         - elasticsearch.svc
+
+volumes:
+  fresh-db-data:
