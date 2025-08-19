@@ -593,8 +593,8 @@ class DatabaseFixer:
                     break
         
         if not has_identifiers:
-            # Add instance of "Item with no identifiers" (Q153720)
-            if self.create_claim(qid, 'P3', 'Q153720', 'wikibase-item'):
+            # Add instance of "Item with no identifiers" (Q153720) using P39
+            if self.create_claim(qid, 'P39', 'Q153720', 'wikibase-item'):
                 safe_print(f"  Added 'Item with no identifiers' instance to {qid}")
         
         # 7. Add to correspondence data

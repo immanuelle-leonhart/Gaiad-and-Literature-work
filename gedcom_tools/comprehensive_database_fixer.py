@@ -22,6 +22,15 @@ import csv
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
+def safe_print(text):
+    """Safely print text, handling Unicode encoding issues on Windows"""
+    try:
+        print(text)
+    except UnicodeEncodeError:
+        # Replace problematic characters with safe equivalents
+        safe_text = text.encode('ascii', 'replace').decode('ascii')
+        print(safe_text)
+
 # Wikibase configuration
 WIKI_API_URL = "https://evolutionism.miraheze.org/w/api.php"
 WIKIDATA_API_URL = "https://www.wikidata.org/w/api.php"
@@ -521,7 +530,7 @@ class DatabaseFixer:
             # Priority 1: English label
             if 'en' in wd_entity['labels']:
                 labels_to_import['en'] = wd_entity['labels']['en']
-                print(f"    Found English label: {wd_entity['labels']['en']['value']}")
+                safe_print(f"    Found English label: {wd_entity['labels']['en']['value']}")
             
             # Priority 2: If no English, use 'mul' (multilingual) as English
             elif 'mul' in wd_entity['labels']:
