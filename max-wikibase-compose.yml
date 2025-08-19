@@ -1,0 +1,73 @@
+version: '3.4'
+
+services:
+  wikibase:
+    image: wikibase/wikibase:1.35-bundle
+    ports:
+      - "8080:80"
+    volumes:
+      - ./xml_imports:/var/www/html/xml_imports
+      - wikibase-data:/var/www/html/images
+    depends_on:
+      - mysql
+    deploy:
+      resources:
+        limits:
+          memory: 8G
+          cpus: '4.0'
+        reservations:
+          memory: 4G
+          cpus: '2.0'
+    environment:
+      - DB_SERVER=mysql:3306
+      - DB_USER=wikiuser
+      - DB_PASS=sqlpass
+      - DB_NAME=my_wiki
+      - MW_ADMIN_NAME=Immanuelle
+      - MW_ADMIN_PASS=1996ToOmega!
+      - MW_ADMIN_EMAIL=immanuelle@example.com
+      - MW_WG_SECRET_KEY=secretkey
+      - MW_WG_UPGRADE_KEY=upgradekey
+      - WIKIBASE_HOST=localhost:8080
+      - MW_WG_ENABLE_UPLOADS=1
+      - MW_WG_MAX_UPLOAD_SIZE=209715200
+      - MW_WG_MEMORY_LIMIT=512M
+      - PHP_MEMORY_LIMIT=1024M
+    networks:
+      - wikibase-net
+
+  mysql:
+    image: mariadb:10.6
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: toor
+      MYSQL_DATABASE: my_wiki
+      MYSQL_USER: wikiuser
+      MYSQL_PASSWORD: sqlpass
+    volumes:
+      - mysql-data:/var/lib/mysql
+    deploy:
+      resources:
+        limits:
+          memory: 4G
+          cpus: '2.0'
+        reservations:
+          memory: 2G
+          cpus: '1.0'
+    command: >
+      --max-connections=1000
+      --innodb-buffer-pool-size=2G
+      --innodb-log-file-size=256M
+      --innodb-flush-log-at-trx-commit=2
+      --query-cache-size=256M
+      --key-buffer-size=256M
+    networks:
+      - wikibase-net
+
+volumes:
+  wikibase-data:
+  mysql-data:
+
+networks:
+  wikibase-net:
+    driver: bridge
