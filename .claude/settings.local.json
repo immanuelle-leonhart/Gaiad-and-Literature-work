@@ -250,7 +250,8 @@
       "Bash(php:*)",
       "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" gedcom_tools/comprehensive_database_fixer.py 18001 160000 Immanuelle \"1996ToOmega!\")",
       "Bash(wsl:*)",
-      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" gedcom_tools/property_exporter.py)"
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" gedcom_tools/property_exporter.py)",
+      "Bash(\"C:\\Users\\Immanuelle\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" gedcom_tools/comprehensive_database_fixer_resumable.py 18001 160000 Immanuelle \"1996ToOmega!\" http://localhost:8080)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits"
