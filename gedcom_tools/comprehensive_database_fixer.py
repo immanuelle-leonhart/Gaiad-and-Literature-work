@@ -32,6 +32,10 @@ PASSWORD = "1996ToOmega!"
 
 class DatabaseFixer:
     def __init__(self):
+    def __init__(self, wiki_api_url=None, username=None, password=None):
+        self.wiki_api_url = wiki_api_url or "https://evolutionism.miraheze.org/w/api.php"
+        self.username = username or USERNAME
+        self.password = password or PASSWORD
         self.session = requests.Session()
         self.wikidata_session = requests.Session()
         self.csrf_token = None
@@ -53,7 +57,7 @@ class DatabaseFixer:
         print("Logging in...")
         
         token_params = {'action': 'query', 'meta': 'tokens', 'type': 'login', 'format': 'json'}
-        response = self.session.get(WIKI_API_URL, params=token_params, timeout=30)
+        response = self.session.get(self.wiki_api_url, params=token_params, timeout=30)
         if response.status_code != 200:
             print(f"HTTP error: {response.status_code}")
             return False
@@ -61,7 +65,7 @@ class DatabaseFixer:
         login_token = token_data['query']['tokens']['logintoken']
         
         login_data = {'action': 'login', 'lgname': USERNAME, 'lgpassword': PASSWORD, 'lgtoken': login_token, 'format': 'json'}
-        response = self.session.post(WIKI_API_URL, data=login_data)
+        response = self.session.post(self.wiki_api_url, data=login_data)
         result = response.json().get('login', {}).get('result') == 'Success'
         
         if result:
@@ -74,14 +78,14 @@ class DatabaseFixer:
             
     def get_csrf_token(self):
         """Get CSRF token"""
-        response = self.session.get(WIKI_API_URL, params={'action': 'query', 'meta': 'tokens', 'format': 'json'})
+        response = self.session.get(self.wiki_api_url, params={'action': 'query', 'meta': 'tokens', 'format': 'json'})
         self.csrf_token = response.json()['query']['tokens']['csrftoken']
         print("CSRF token obtained")
         
     def get_entity_data(self, qid):
         """Get entity data"""
         try:
-            response = self.session.get(WIKI_API_URL, params={
+            response = self.session.get(self.wiki_api_url, params={
                 'action': 'wbgetentities',
                 'ids': qid,
                 'format': 'json'
@@ -108,7 +112,7 @@ class DatabaseFixer:
                 'bot': 1
             }
             
-            response = self.session.post(WIKI_API_URL, data=data)
+            response = self.session.post(self.wiki_api_url, data=data)
             result = response.json()
             
             return 'success' in result
@@ -139,7 +143,7 @@ class DatabaseFixer:
             elif value_type == 'url':
                 data['value'] = json.dumps(value)
                 
-            response = self.session.post(WIKI_API_URL, data=data)
+            response = self.session.post(self.wiki_api_url, data=data)
             result = response.json()
             
             if 'success' not in result:
@@ -493,7 +497,7 @@ class DatabaseFixer:
             return None
             
     def import_wikidata_labels_descriptions(self, local_qid, wikidata_qid):
-        """Import labels and descriptions from Wikidata"""
+        """Import labels and descriptions from Wikidata - OPTIMIZED VERSION"""
         print(f"  Importing Wikidata data for {local_qid} from {wikidata_qid}")
         
         wd_entity = self.get_wikidata_entity(wikidata_qid)
@@ -506,17 +510,36 @@ class DatabaseFixer:
         if (local_entity and 'labels' in local_entity and 
             'en' in local_entity['labels']):
             current_label = local_entity['labels']['en']['value']
-            # Add as alias (this would need alias API calls)
             try:
                 print(f"    Current label '{current_label}' should be moved to aliases")
             except UnicodeEncodeError:
                 print(f"    Current label with non-ASCII characters should be moved to aliases")
             
-        # Import labels from Wikidata
+        # OPTIMIZED LABEL IMPORT - Priority: en > mul > all languages
         if 'labels' in wd_entity:
-            for lang, label_data in wd_entity['labels'].items():
+            labels_to_import = {}
+            
+            # Priority 1: English label
+            if 'en' in wd_entity['labels']:
+                labels_to_import['en'] = wd_entity['labels']['en']
+                print(f"    Found English label: {wd_entity['labels']['en']['value']}")
+            
+            # Priority 2: If no English, use 'mul' (multilingual) as English
+            elif 'mul' in wd_entity['labels']:
+                labels_to_import['en'] = {
+                    'language': 'en',
+                    'value': wd_entity['labels']['mul']['value']
+                }
+                print(f"    Using mul label as English: {wd_entity['labels']['mul']['value']}")
+            
+            # Priority 3: If neither English nor mul exists, import all languages
+            else:
+                print(f"    No English or mul label found, importing all languages")
+                labels_to_import = wd_entity['labels']
+            
+            # Import the selected labels
+            for lang, label_data in labels_to_import.items():
                 try:
-                    # Set label
                     data = {
                         'action': 'wbsetlabel',
                         'id': local_qid,
@@ -527,7 +550,7 @@ class DatabaseFixer:
                         'bot': 1
                     }
                     
-                    response = self.session.post(WIKI_API_URL, data=data)
+                    response = self.session.post(self.wiki_api_url, data=data)
                     if 'success' in response.json():
                         print(f"    Set {lang} label: {label_data['value']}")
                     time.sleep(0.1)
@@ -535,28 +558,30 @@ class DatabaseFixer:
                 except Exception as e:
                     print(f"    Error setting {lang} label: {e}")
                     
-        # Clear and import descriptions
+        # OPTIMIZED DESCRIPTION IMPORT - Only English description
         if 'descriptions' in wd_entity:
-            for lang, desc_data in wd_entity['descriptions'].items():
+            if 'en' in wd_entity['descriptions']:
                 try:
-                    # Set description
+                    desc_data = wd_entity['descriptions']['en']
                     data = {
                         'action': 'wbsetdescription',
                         'id': local_qid,
-                        'language': lang,
+                        'language': 'en',
                         'value': desc_data['value'],
                         'token': self.csrf_token,
                         'format': 'json',
                         'bot': 1
                     }
                     
-                    response = self.session.post(WIKI_API_URL, data=data)
+                    response = self.session.post(self.wiki_api_url, data=data)
                     if 'success' in response.json():
-                        print(f"    Set {lang} description: {desc_data['value']}")
+                        print(f"    Set en description: {desc_data['value']}")
                     time.sleep(0.1)
                     
                 except Exception as e:
-                    print(f"    Error setting {lang} description: {e}")
+                    print(f"    Error setting en description: {e}")
+            else:
+                print(f"    No English description available")
                     
         # Import image if available
         if ('claims' in wd_entity and 'P18' in wd_entity['claims'] and
@@ -794,15 +819,25 @@ class DatabaseFixer:
 def main():
     import sys
     
-    fixer = DatabaseFixer()
-    
+    # Parse command line arguments: start_qid end_qid username password wiki_url
     if len(sys.argv) > 1:
         start_qid = int(sys.argv[1])
         end_qid = int(sys.argv[2]) if len(sys.argv) > 2 else start_qid + 1000
+        username = sys.argv[3] if len(sys.argv) > 3 else None
+        password = sys.argv[4] if len(sys.argv) > 4 else None
+        wiki_url = sys.argv[5] if len(sys.argv) > 5 else None
+        if wiki_url:
+            wiki_api_url = f"{wiki_url}/api.php"
+        else:
+            wiki_api_url = None
     else:
         start_qid = 1
         end_qid = 50000
+        username = None
+        password = None
+        wiki_api_url = None
         
+    fixer = DatabaseFixer(wiki_api_url=wiki_api_url, username=username, password=password)
     fixer.run_comprehensive_fix(start_qid, end_qid)
 
 if __name__ == "__main__":

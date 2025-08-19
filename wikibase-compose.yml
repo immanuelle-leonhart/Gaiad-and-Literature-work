@@ -1,0 +1,43 @@
+version: '3.7'
+
+services:
+  wikibase:
+    image: wikibase/wikibase:1.37
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    environment:
+      - DB_SERVER=mysql:3306
+      - MW_ELASTIC_HOST=elasticsearch
+      - MW_ELASTIC_PORT=9200
+    depends_on:
+      - mysql
+      - elasticsearch
+    volumes:
+      - type: bind
+        source: ./xml_imports
+        target: /var/www/html/xml_imports
+      - type: bind  
+        source: ./LocalSettings_clean.php
+        target: /var/www/html/LocalSettings.php
+
+  mysql:
+    image: mariadb:10.6
+    restart: unless-stopped
+    environment:
+      MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
+      MYSQL_DATABASE: 'my_wiki'
+      MYSQL_USER: 'wikiuser'
+      MYSQL_PASSWORD: 'sqlpass'
+    volumes:
+      - mediawiki-mysql-data:/var/lib/mysql
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:6.5.4
+    restart: unless-stopped
+    environment:
+      discovery.type: single-node
+      ES_JAVA_OPTS: "-Xms512m -Xmx512m"
+
+volumes:
+  mediawiki-mysql-data:

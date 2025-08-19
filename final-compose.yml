@@ -1,0 +1,37 @@
+services:
+  mediawiki:
+    image: wikibase/wikibase:1.35-bundle
+    ports:
+      - "8080:80"
+    environment:
+      - DB_SERVER=db:3306
+      - DB_NAME=mediawiki
+      - DB_USER=mediawiki
+      - DB_PASS=password
+      - MW_SITE_NAME=Local Evolutionism
+      - MW_SITE_LANG=en
+      - MW_ADMIN_NAME=Immanuelle
+      - MW_ADMIN_PASS=1996ToOmega!
+      - MW_ADMIN_EMAIL=immanuelle@example.com
+      - MW_WG_SECRET_KEY=local_secret_key_for_testing
+      - MW_ELASTIC_HOST=localhost
+      - MW_ELASTIC_PORT=9200
+      - WIKIBASE_HOST=localhost:8080
+    depends_on:
+      - db
+    volumes:
+      - ./xml_imports:/var/www/html/xml_imports
+
+  db:
+    image: mariadb:10.6
+    environment:
+      MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
+      MYSQL_DATABASE: 'mediawiki'
+      MYSQL_USER: 'mediawiki' 
+      MYSQL_PASSWORD: 'password'
+    volumes:
+      - gaiad-genealogy_db-data:/var/lib/mysql
+
+volumes:
+  gaiad-genealogy_db-data:
+    external: true

@@ -13,8 +13,12 @@ services:
     depends_on:
       - db
     volumes:
-      - ./xml_imports:/xml_imports
-      - ./LocalSettings_clean.php:/var/www/html/LocalSettings.php
+      - type: bind
+        source: ./xml_imports
+        target: /var/www/html/xml_imports
+      - type: bind
+        source: ./LocalSettings.php
+        target: /var/www/html/LocalSettings.php
 
   db:
     image: mariadb:10.6
