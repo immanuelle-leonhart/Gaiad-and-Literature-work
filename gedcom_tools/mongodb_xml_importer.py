@@ -69,19 +69,14 @@ class WikibaseXMLImporter:
             # Parse XML
             root = ET.fromstring(xml_content)
             
-            # Find all pages in the MediaWiki XML (handle namespace)
-            # The namespace is http://www.mediawiki.org/xml/export-0.11/
-            for page in root.iter():
-                if not page.tag.endswith('page'):
-                    continue
+            # Define namespace
+            namespace = {'mw': 'http://www.mediawiki.org/xml/export-0.11/'}
+            
+            # Find all pages in the MediaWiki XML
+            for page in root.findall('.//mw:page', namespace):
                 try:
-                    # Get page info - find title element (namespace-agnostic)
-                    title_elem = None
-                    for child in page:
-                        if child.tag.endswith('title'):
-                            title_elem = child
-                            break
-                    
+                    # Get page info
+                    title_elem = page.find('mw:title', namespace)
                     if title_elem is None or not title_elem.text:
                         continue
                         
@@ -105,23 +100,13 @@ class WikibaseXMLImporter:
                     else:
                         continue  # Skip non-entity pages
                     
-                    # Get revision content (namespace-agnostic)
-                    revision = None
-                    for child in page:
-                        if child.tag.endswith('revision'):
-                            revision = child
-                            break
-                    
+                    # Get revision content
+                    revision = page.find('mw:revision', namespace)
                     if revision is None:
                         continue
                         
                     # Find text element in revision
-                    text_elem = None
-                    for child in revision:
-                        if child.tag.endswith('text'):
-                            text_elem = child
-                            break
-                    
+                    text_elem = revision.find('mw:text', namespace)
                     if text_elem is None or text_elem.text is None:
                         continue
                     
@@ -161,43 +146,77 @@ class WikibaseXMLImporter:
                 "properties": {}
             }
             
-            # Extract labels
+            # Extract labels - handle both dict and list formats
             if 'labels' in data:
-                for lang, label_data in data['labels'].items():
-                    if isinstance(label_data, dict) and 'value' in label_data:
-                        entity['labels'][lang] = label_data['value']
+                labels_data = data['labels']
+                if isinstance(labels_data, dict):
+                    # Standard format: {"en": {"value": "Label", "language": "en"}}
+                    for lang, label_data in labels_data.items():
+                        if isinstance(label_data, dict) and 'value' in label_data:
+                            entity['labels'][lang] = label_data['value']
+                elif isinstance(labels_data, list):
+                    # List format: [{"value": "Label", "language": "en"}]
+                    for label_data in labels_data:
+                        if isinstance(label_data, dict) and 'value' in label_data and 'language' in label_data:
+                            entity['labels'][label_data['language']] = label_data['value']
             
-            # Extract descriptions
+            # Extract descriptions - handle both dict and list formats
             if 'descriptions' in data:
-                for lang, desc_data in data['descriptions'].items():
-                    if isinstance(desc_data, dict) and 'value' in desc_data:
-                        entity['descriptions'][lang] = desc_data['value']
+                descriptions_data = data['descriptions']
+                if isinstance(descriptions_data, dict):
+                    # Standard format: {"en": {"value": "Description", "language": "en"}}
+                    for lang, desc_data in descriptions_data.items():
+                        if isinstance(desc_data, dict) and 'value' in desc_data:
+                            entity['descriptions'][lang] = desc_data['value']
+                elif isinstance(descriptions_data, list):
+                    # List format: [{"value": "Description", "language": "en"}]
+                    for desc_data in descriptions_data:
+                        if isinstance(desc_data, dict) and 'value' in desc_data and 'language' in desc_data:
+                            entity['descriptions'][desc_data['language']] = desc_data['value']
             
-            # Extract aliases
+            # Extract aliases - handle both dict and list formats
             if 'aliases' in data:
-                for lang, alias_list in data['aliases'].items():
-                    if isinstance(alias_list, list):
-                        entity['aliases'][lang] = [alias['value'] for alias in alias_list if 'value' in alias]
+                aliases_data = data['aliases']
+                if isinstance(aliases_data, dict):
+                    # Standard format: {"en": [{"value": "Alias1"}, {"value": "Alias2"}]}
+                    for lang, alias_list in aliases_data.items():
+                        if isinstance(alias_list, list):
+                            entity['aliases'][lang] = [alias['value'] for alias in alias_list if isinstance(alias, dict) and 'value' in alias]
+                elif isinstance(aliases_data, list):
+                    # List format: [{"value": "Alias", "language": "en"}]
+                    alias_dict = {}
+                    for alias_data in aliases_data:
+                        if isinstance(alias_data, dict) and 'value' in alias_data and 'language' in alias_data:
+                            lang = alias_data['language']
+                            if lang not in alias_dict:
+                                alias_dict[lang] = []
+                            alias_dict[lang].append(alias_data['value'])
+                    entity['aliases'] = alias_dict
             
             # Extract properties/claims
             if 'claims' in data:
-                for prop_id, claims in data['claims'].items():
-                    entity['properties'][prop_id] = []
-                    
-                    for claim in claims:
-                        if 'mainsnak' in claim and 'datavalue' in claim['mainsnak']:
-                            datavalue = claim['mainsnak']['datavalue']
-                            claim_data = {
-                                'value': datavalue.get('value'),
-                                'type': datavalue.get('type'),
-                                'claim_id': claim.get('id')
-                            }
-                            entity['properties'][prop_id].append(claim_data)
+                claims_data = data['claims']
+                if isinstance(claims_data, dict):
+                    for prop_id, claims in claims_data.items():
+                        if isinstance(claims, list):
+                            entity['properties'][prop_id] = []
+                            
+                            for claim in claims:
+                                if isinstance(claim, dict) and 'mainsnak' in claim and 'datavalue' in claim['mainsnak']:
+                                    datavalue = claim['mainsnak']['datavalue']
+                                    claim_data = {
+                                        'value': datavalue.get('value'),
+                                        'type': datavalue.get('type'),
+                                        'claim_id': claim.get('id')
+                                    }
+                                    entity['properties'][prop_id].append(claim_data)
             
             return entity
             
         except Exception as e:
             print(f"Error parsing entity {qid}: {e}")
+            import traceback
+            traceback.print_exc()
             return None
     
     def import_xml_file(self, xml_file_path):
@@ -232,7 +251,7 @@ class WikibaseXMLImporter:
                     else:
                         stats['properties'] += 1
             
-            print(f"✓ {xml_file_path}: {inserted_count} entities imported")
+            print(f"OK {xml_file_path}: {inserted_count} entities imported")
             return inserted_count
             
         except pymongo.errors.BulkWriteError as e:
@@ -243,11 +262,11 @@ class WikibaseXMLImporter:
             with counter_lock:
                 stats['processed'] += inserted_count
                 
-            print(f"✓ {xml_file_path}: {inserted_count} new, {duplicate_count} duplicates")
+            print(f"OK {xml_file_path}: {inserted_count} new, {duplicate_count} duplicates")
             return inserted_count
             
         except Exception as e:
-            print(f"✗ Error importing {xml_file_path}: {e}")
+            print(f"ERROR importing {xml_file_path}: {e}")
             return 0
     
     def import_all_xml_files(self, xml_directory="xml_imports", max_workers=4):

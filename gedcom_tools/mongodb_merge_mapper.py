@@ -192,7 +192,7 @@ class MongoDBMergeMapper:
                     'PENDING'  # Default status
                 ])
         
-        print(f"✓ Generated {filename} with {len(unique_duplicates)} merge candidates")
+        print(f"OK Generated {filename} with {len(unique_duplicates)} merge candidates")
         return len(unique_duplicates)
     
     def apply_merge_mapping(self, mapping_file="merge_mapping.csv"):
@@ -239,7 +239,7 @@ class MongoDBMergeMapper:
                         applied_merges += 1
                         print(f"  Merged {secondary_qid} -> {primary_qid}")
         
-        print(f"✓ Applied {applied_merges} merges")
+        print(f"OK Applied {applied_merges} merges")
         return applied_merges
     
     def create_replacement_mapping(self, mapping_file="merge_mapping.csv", output_file="qid_replacements.csv"):
@@ -271,7 +271,7 @@ class MongoDBMergeMapper:
                     replacement['reason']
                 ])
         
-        print(f"✓ Created {output_file} with {len(replacements)} QID replacements")
+        print(f"OK Created {output_file} with {len(replacements)} QID replacements")
         return len(replacements)
     
     def close(self):

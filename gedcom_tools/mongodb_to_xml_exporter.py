@@ -211,7 +211,7 @@ class MongoDBToXMLExporter:
         with open(output_file, 'w', encoding='utf-8') as f:
             f.write(pretty_xml)
         
-        print(f"✓ Exported {processed:,} entities to {output_file}")
+        print(f"OK Exported {processed:,} entities to {output_file}")
         return processed
     
     def export_split_xml(self, output_dir="processed_xml", entities_per_file=5000):
@@ -248,7 +248,7 @@ class MongoDBToXMLExporter:
             self.write_xml_batch(current_entities, filename, file_count)
             print(f"  Exported part {file_count}: {entity_count:,} total entities")
         
-        print(f"✓ Exported {entity_count:,} entities to {file_count} XML files")
+        print(f"OK Exported {entity_count:,} entities to {file_count} XML files")
         return entity_count, file_count
     
     def write_xml_batch(self, entities, filename, batch_num):
