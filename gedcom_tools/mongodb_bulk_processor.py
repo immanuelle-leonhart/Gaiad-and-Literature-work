@@ -40,6 +40,7 @@ class MongoDBBulkProcessor:
             'date_fixes': 0,
             'wikidata_extractions': 0,
             'geni_extractions': 0,
+            'uuid_extractions': 0,
             'no_identifier_instances': 0,
             'note_cleanups': 0,
             'total_processed': 0
@@ -51,16 +52,19 @@ class MongoDBBulkProcessor:
         """Bulk fix sex properties: P11 string -> P55 with Q153718/Q153719"""
         print("Fixing sex properties in bulk...")
         
-        # Find entities with P11 properties
-        pipeline = [
-            {"$match": {"properties.P11": {"$exists": True}}},
-            {"$project": {"qid": 1, "properties.P11": 1}}
-        ]
-        
         bulk_operations = []
         count = 0
+        processed = 0
         
-        for entity in self.collection.aggregate(pipeline):
+        # Use manual iteration instead of aggregation pipeline
+        for entity in self.collection.find():
+            processed += 1
+            if processed % 10000 == 0:
+                print(f"  Processed {processed:,} entities, found {count} with P11...")
+                
+            properties = entity.get('properties', {})
+            if 'P11' not in properties:
+                continue
             qid = entity['qid']
             p11_claims = entity['properties']['P11']
             
@@ -122,68 +126,78 @@ class MongoDBBulkProcessor:
         
         count = 0
         bulk_operations = []
+        processed = 0
         
-        # Fix birth dates (P7 -> P56)
-        for entity in self.collection.find({"properties.P7": {"$exists": True}}):
+        # Process all entities manually to find P7/P8 properties
+        for entity in self.collection.find():
+            processed += 1
+            if processed % 10000 == 0:
+                print(f"  Processed {processed:,} entities, found {count} with dates...")
+            
+            properties = entity.get('properties', {})
             qid = entity['qid']
-            p7_claims = entity['properties']['P7']
+            entity_updated = False
+            updates = {}
             
-            p56_claims = []
-            for claim in p7_claims:
-                if claim.get('type') == 'string':
-                    # Convert string date to proper time format
-                    formatted_date = self.format_date_value(claim.get('value', ''))
-                    if formatted_date:
-                        p56_claims.append({
-                            'value': formatted_date,
-                            'type': 'time',
-                            'claim_id': claim.get('claim_id')
-                        })
-                elif claim.get('type') == 'time':
-                    # Already time format, just move it
-                    p56_claims.append(claim)
+            # Fix birth dates (P7 -> P56)
+            if 'P7' in properties:
+                p7_claims = properties['P7']
+                p56_claims = []
+                for claim in p7_claims:
+                    if claim.get('type') == 'string':
+                        # Convert string date to proper time format
+                        formatted_date = self.format_date_value(claim.get('value', ''))
+                        if formatted_date:
+                            p56_claims.append({
+                                'value': formatted_date,
+                                'type': 'time',
+                                'claim_id': claim.get('claim_id')
+                            })
+                    elif claim.get('type') == 'time':
+                        # Already time format, just move it
+                        p56_claims.append(claim)
+                
+                if p56_claims:
+                    updates["properties.P56"] = p56_claims
+                    updates["$unset"] = updates.get("$unset", {})
+                    updates["$unset"]["properties.P7"] = ""
+                    entity_updated = True
             
-            if p56_claims:
-                bulk_operations.append(
-                    pymongo.UpdateOne(
-                        {"_id": qid},
-                        {
-                            "$set": {"properties.P56": p56_claims},
-                            "$unset": {"properties.P7": ""}
-                        }
-                    )
-                )
+            # Fix death dates (P8 -> P57)  
+            if 'P8' in properties:
+                p8_claims = properties['P8']
+                p57_claims = []
+                for claim in p8_claims:
+                    if claim.get('type') == 'string':
+                        formatted_date = self.format_date_value(claim.get('value', ''))
+                        if formatted_date:
+                            p57_claims.append({
+                                'value': formatted_date,
+                                'type': 'time',
+                                'claim_id': claim.get('claim_id')
+                            })
+                    elif claim.get('type') == 'time':
+                        p57_claims.append(claim)
+                
+                if p57_claims:
+                    updates["properties.P57"] = p57_claims
+                    updates["$unset"] = updates.get("$unset", {})
+                    updates["$unset"]["properties.P8"] = ""
+                    entity_updated = True
+            
+            if entity_updated:
+                # Build the update operation
+                unset_ops = updates.pop("$unset", {})
+                update_op = {"$set": updates}
+                if unset_ops:
+                    update_op["$unset"] = unset_ops
+                    
+                bulk_operations.append(pymongo.UpdateOne({"_id": qid}, update_op))
                 count += 1
-        
-        # Fix death dates (P8 -> P57)
-        for entity in self.collection.find({"properties.P8": {"$exists": True}}):
-            qid = entity['qid']
-            p8_claims = entity['properties']['P8']
-            
-            p57_claims = []
-            for claim in p8_claims:
-                if claim.get('type') == 'string':
-                    formatted_date = self.format_date_value(claim.get('value', ''))
-                    if formatted_date:
-                        p57_claims.append({
-                            'value': formatted_date,
-                            'type': 'time',
-                            'claim_id': claim.get('claim_id')
-                        })
-                elif claim.get('type') == 'time':
-                    p57_claims.append(claim)
-            
-            if p57_claims:
-                bulk_operations.append(
-                    pymongo.UpdateOne(
-                        {"_id": qid},
-                        {
-                            "$set": {"properties.P57": p57_claims},
-                            "$unset": {"properties.P8": ""}
-                        }
-                    )
-                )
-                count += 1
+                
+                if len(bulk_operations) >= 1000:
+                    self.collection.bulk_write(bulk_operations)
+                    bulk_operations = []
         
         # Execute bulk operations
         if bulk_operations:
@@ -199,8 +213,18 @@ class MongoDBBulkProcessor:
         bulk_operations = []
         wikidata_count = 0
         geni_count = 0
+        uuid_count = 0
         
-        for entity in self.collection.find({"properties.P41": {"$exists": True}}):
+        processed = 0
+        
+        for entity in self.collection.find():
+            processed += 1
+            if processed % 10000 == 0:
+                print(f"  Processed {processed:,} entities...")
+            
+            properties = entity.get('properties', {})
+            if 'P41' not in properties:
+                continue
             qid = entity['qid']
             p41_claims = entity['properties']['P41']
             
@@ -234,12 +258,14 @@ class MongoDBBulkProcessor:
                     claims_to_remove.append(claim)
                     wikidata_count += 1
                 
-                # Check for Geni ID (numeric)
-                elif value.isdigit():
+                # Check for Geni ID (geni:XXXXX format or pure numeric)
+                elif value.startswith('geni:') or value.isdigit():
+                    geni_id = value.replace('geni:', '') if value.startswith('geni:') else value
+                    
                     if 'properties.P43' not in updates:
                         updates['properties.P43'] = []
                     updates['properties.P43'].append({
-                        'value': value,
+                        'value': geni_id,
                         'type': 'external-id',
                         'claim_id': claim.get('claim_id')
                     })
@@ -248,13 +274,26 @@ class MongoDBBulkProcessor:
                     if 'properties.P45' not in updates:
                         updates['properties.P45'] = []
                     updates['properties.P45'].append({
-                        'value': f"https://www.geni.com/people/{value}",
+                        'value': f"https://www.geni.com/people/{geni_id}",
                         'type': 'url',
                         'claim_id': claim.get('claim_id') + '_geni'
                     })
                     
                     claims_to_remove.append(claim)
                     geni_count += 1
+                
+                # Check for UUID-like values (hex strings 20+ chars)
+                elif re.match(r'^[A-F0-9]{20,}$', value.upper()):
+                    if 'properties.P60' not in updates:
+                        updates['properties.P60'] = []
+                    updates['properties.P60'].append({
+                        'value': value,
+                        'type': 'external-id',
+                        'claim_id': claim.get('claim_id')
+                    })
+                    
+                    claims_to_remove.append(claim)
+                    uuid_count += 1
             
             if updates:
                 # Remove processed REFN claims
@@ -271,14 +310,15 @@ class MongoDBBulkProcessor:
                 if len(bulk_operations) >= 1000:
                     self.collection.bulk_write(bulk_operations)
                     bulk_operations = []
-                    print(f"  Processed {wikidata_count} Wikidata, {geni_count} Geni extractions...")
+                    print(f"  Processed {wikidata_count} Wikidata, {geni_count} Geni, {uuid_count} UUID extractions...")
         
         if bulk_operations:
             self.collection.bulk_write(bulk_operations)
         
         self.stats['wikidata_extractions'] = wikidata_count
         self.stats['geni_extractions'] = geni_count
-        print(f"OK Extracted {wikidata_count} Wikidata QIDs, {geni_count} Geni IDs")
+        self.stats['uuid_extractions'] = uuid_count
+        print(f"OK Extracted {wikidata_count} Wikidata QIDs, {geni_count} Geni IDs, {uuid_count} UUID REFNs")
     
     def add_no_identifiers_instances_bulk(self):
         """Bulk add P39:Q153720 for items with no identifiers"""
@@ -454,6 +494,7 @@ class MongoDBBulkProcessor:
         print(f"Date property fixes: {self.stats['date_fixes']:,}")
         print(f"Wikidata ID extractions: {self.stats['wikidata_extractions']:,}")
         print(f"Geni ID extractions: {self.stats['geni_extractions']:,}")
+        print(f"UUID REFN extractions: {self.stats['uuid_extractions']:,}")
         print(f"No-identifier instances: {self.stats['no_identifier_instances']:,}")
         print(f"Total processing time: {duration:.2f} seconds")
         print(f"Processing rate: {total_entities / duration:.0f} entities/second")
