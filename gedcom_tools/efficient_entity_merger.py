@@ -187,8 +187,9 @@ class EfficientEntityMerger:
                         if alias not in merged_aliases[lang]:
                             merged_aliases[lang].append(alias)
                 
-                # Create redirect entry
+                # Create redirect entry (preserve _id for MongoDB)
                 redirect_updates[redirect_qid] = {
+                    '_id': redirect_qid,  # Preserve MongoDB _id
                     'qid': redirect_qid,
                     'entity_type': redirect_entity.get('entity_type', 'item'),
                     'properties': {
