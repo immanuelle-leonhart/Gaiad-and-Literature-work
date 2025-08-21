@@ -268,7 +268,7 @@ class WikibaseXMLExporter:
         # Contributor
         contributor = ET.SubElement(revision, "contributor")
         username = ET.SubElement(contributor, "username")
-        username.text = "MongoDBExporter"
+        username.text = "Immanuelle"
         
         # Comment
         comment = ET.SubElement(revision, "comment")
