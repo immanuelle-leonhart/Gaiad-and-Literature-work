@@ -176,19 +176,34 @@ class WikibaseXMLExporter:
                     "rank": "normal"
                 }
                 
-                # Handle different value types
-                if claim_type == "wikibase-item":
+                # Handle different value types - preserve MongoDB structure
+                if claim_type in ["wikibase-item", "wikibase-entityid"]:
                     # Entity reference
                     if isinstance(claim_value, dict) and 'id' in claim_value:
-                        entity_id = claim_value['id']
+                        # Use the existing dict structure from MongoDB
+                        wikibase_claim["mainsnak"]["datavalue"]["value"] = claim_value
+                        wikibase_claim["mainsnak"]["datavalue"]["type"] = "wikibase-entityid"
+                    elif isinstance(claim_value, str) and claim_value.startswith('Q'):
+                        # Convert string QID to proper wikibase-item format
+                        entity_id = claim_value
+                        wikibase_claim["mainsnak"]["datavalue"]["value"] = {
+                            "entity-type": "item",
+                            "numeric-id": int(entity_id[1:]) if entity_id.startswith('Q') else 0,
+                            "id": entity_id
+                        }
+                        wikibase_claim["mainsnak"]["datavalue"]["type"] = "wikibase-entityid"
                     else:
-                        entity_id = str(claim_value)
-                    
-                    wikibase_claim["mainsnak"]["datavalue"]["value"] = {
-                        "entity-type": "item",
-                        "numeric-id": int(entity_id[1:]) if entity_id.startswith('Q') else 0,
-                        "id": entity_id
-                    }
+                        # Invalid wikibase-item value - skip
+                        continue
+                elif claim_type == "monolingualtext":
+                    # Monolingualtext value - all are in English in current database
+                    if isinstance(claim_value, dict) and 'text' in claim_value and 'language' in claim_value:
+                        # Use the existing dict structure from MongoDB
+                        wikibase_claim["mainsnak"]["datavalue"]["value"] = claim_value
+                        wikibase_claim["mainsnak"]["datavalue"]["type"] = "monolingualtext"
+                    else:
+                        # Invalid monolingualtext value - skip
+                        continue
                 elif claim_type == "external-id":
                     # External identifier
                     wikibase_claim["mainsnak"]["datavalue"]["type"] = "string"
@@ -197,6 +212,7 @@ class WikibaseXMLExporter:
                     # Date/time value
                     if isinstance(claim_value, dict):
                         wikibase_claim["mainsnak"]["datavalue"]["value"] = claim_value
+                        wikibase_claim["mainsnak"]["datavalue"]["type"] = "time"
                     else:
                         # Simple date string - convert to Wikibase time format
                         wikibase_claim["mainsnak"]["datavalue"]["value"] = {
@@ -207,6 +223,7 @@ class WikibaseXMLExporter:
                             "precision": 11,
                             "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
                         }
+                        wikibase_claim["mainsnak"]["datavalue"]["type"] = "time"
                 else:
                     # String or other value
                     wikibase_claim["mainsnak"]["datavalue"]["type"] = "string"
