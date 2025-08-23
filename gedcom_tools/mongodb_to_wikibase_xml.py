@@ -1,499 +1,349 @@
 #!/usr/bin/env python3
 """
-MongoDB to Wikibase XML Exporter
+MongoDB → Wikibase XML Exporter (fixed)
 
-Exports the processed MongoDB genealogical database back to Wikibase XML format
-for re-import into a fresh Wikibase instance. This creates a complete export
-with all entities, properties, labels, descriptions, and relationships.
-
-The output format matches MediaWiki XML export structure compatible with:
-- MediaWiki XML import
-- Wikibase import tools
-- Direct database restoration
-
-Features:
-- Exports all active entities (skips redirects)
-- Preserves all properties and relationships
-- Includes labels, descriptions, and aliases in all languages
-- Maintains proper XML namespace structure
-- Creates chunked output files for large datasets
+Complete drop‑in replacement for your exporter. Key fixes:
+- Every statement gets a **valid GUID**: QID$UUIDv4
+- `mainsnak.datatype` is set for every claim (no more blank widgets)
+- Property entities include top‑level `datatype`
+- No <timestamp> written in revisions (let MW/Wikibase assign)
+- Minor hardening + consistent defaults
 """
 
+from __future__ import annotations
+import json
+import os
+import time
+import re
+import uuid
 import pymongo
 import xml.etree.ElementTree as ET
-import json
-import time
-import os
-import re
-from datetime import datetime, timezone
 
-import uuid, re
-
-_GUID_RE = re.compile(r'^Q[1-9]\d*\$[0-9A-F]{8}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{12}$')
-
-def _is_valid_guid(qid: str, guid: str) -> bool:
-    if not guid:
-        return False
-    g = guid.strip().upper()
-    return g.startswith(f'{qid}$') and bool(_GUID_RE.match(g))
-
-def _new_guid(qid: str) -> str:
-    return f'{qid}${str(uuid.uuid4()).upper()}'
-
-
-
-# MongoDB configuration
+# ---- Config ----
 MONGO_URI = "mongodb://localhost:27017/"
 DATABASE_NAME = "gaiad_processing_db"
 COLLECTION_NAME = "entities"
 
-# Output configuration
-OUTPUT_DIR = "wikibase_export"
-CHUNK_SIZE = 606  # Entities per XML file (true 240-part division)
+OUTPUT_DIR = os.environ.get("WIKIBASE_EXPORT_DIR", "wikibase_export")
+CHUNK_SIZE = 606  # ~240 parts for big sets
 XML_NAMESPACE = "http://www.mediawiki.org/xml/export-0.11/"
 
+
+# ---- Helpers ----
+_GUID_RE = re.compile(r"^Q[1-9]\d*\$[0-9A-F]{8}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{12}$")
+
+
+def _is_valid_guid_for(qid: str, guid: str | None) -> bool:
+    if not guid:
+        return False
+    g = guid.strip().upper()
+    return bool(_GUID_RE.match(g)) and g.startswith(f"{qid}$")
+
+
+def _new_guid(qid: str) -> str:
+    return f"{qid}${str(uuid.uuid4()).upper()}"
+
+
+def _datatype_for_claim_type(claim_type: str | None) -> str:
+    t = (claim_type or "string").lower()
+    mapping = {
+        "wikibase-item": "wikibase-item",
+        "wikibase-entityid": "wikibase-item",
+        "monolingualtext": "monolingualtext",
+        "external-id": "external-id",
+        "time": "time",
+        "quantity": "quantity",
+        "url": "url",
+        "string": "string",
+    }
+    return mapping.get(t, "string")
+
+
 class WikibaseXMLExporter:
-    def __init__(self, mongo_uri=MONGO_URI, output_dir=OUTPUT_DIR):
+    def __init__(self, mongo_uri: str = MONGO_URI, output_dir: str = OUTPUT_DIR):
         self.client = pymongo.MongoClient(mongo_uri)
         self.db = self.client[DATABASE_NAME]
         self.collection = self.db[COLLECTION_NAME]
         self.output_dir = output_dir
-        
-        # Create output directory
         os.makedirs(output_dir, exist_ok=True)
-        
         self.stats = {
-            'entities_processed': 0,
-            'entities_exported': 0,
-            'redirects_skipped': 0,
-            'files_created': 0,
-            'start_time': time.time()
+            "entities_processed": 0,
+            "entities_exported": 0,
+            "redirects_seen": 0,
+            "files_created": 0,
+            "start_time": time.time(),
         }
-        
-        print(f"Connected to MongoDB: {DATABASE_NAME}.{COLLECTION_NAME}")
-        print(f"Output directory: {output_dir}")
-    
-    def is_valid_guid(self, statement_id):
-        """Check if statement ID matches valid GUID format: ^Q[1-9]\\d*\\$[0-9A-Fa-f-]{36}$"""
-        if not statement_id:
-            return False
-        return bool(re.match(r'^Q[1-9]\d*\$[0-9A-Fa-f-]{36}$', statement_id))
-    
-    def _datatype_for_claim_type(self, claim_type: str) -> str:
-    # Map your internal claim "type" to Wikibase snak datatype
-        mapping = {
-            "wikibase-entityid": "wikibase-item",  # for item-valued statements
-            "wikibase-item": "wikibase-item",
-            "monolingualtext": "monolingualtext",
-            "external-id": "external-id",
-            "time": "time",
-            "quantity": "quantity",
-            "url": "url",
-            "string": "string",
-        }
-        return mapping.get(claim_type, "string")
+        print(f"Connected: {DATABASE_NAME}.{COLLECTION_NAME}")
+        print(f"Writing to: {os.path.abspath(self.output_dir)}")
 
-    
-    def sanitize_wikibase_json(self, wikibase_entity):
-        """Remove invalid statement IDs and hash fields from Wikibase JSON"""
-        if 'claims' not in wikibase_entity:
-            return wikibase_entity
-            
-        # Process each property's claims
-        for prop_id, claims in wikibase_entity['claims'].items():
-            sanitized_claims = []
-            
+    # ----------------- JSON shaping -----------------
+    def _copy_ldal(self, entity: dict, out: dict) -> None:
+        # labels
+        labels = entity.get("labels") or {}
+        out_labels = {}
+        for lang, val in labels.items():
+            if isinstance(val, dict) and {"language", "value"} <= set(val.keys()):
+                out_labels[lang] = {"language": val["language"], "value": val["value"]}
+            elif isinstance(val, str):
+                out_labels[lang] = {"language": lang, "value": val}
+        out["labels"] = out_labels
+        # descriptions
+        descs = entity.get("descriptions") or {}
+        out_descs = {}
+        for lang, val in descs.items():
+            if isinstance(val, dict) and {"language", "value"} <= set(val.keys()):
+                out_descs[lang] = {"language": val["language"], "value": val["value"]}
+            elif isinstance(val, str):
+                out_descs[lang] = {"language": lang, "value": val}
+        out["descriptions"] = out_descs
+        # aliases
+        aliases = entity.get("aliases") or {}
+        out_aliases = {}
+        for lang, vals in aliases.items():
+            norm = []
+            if isinstance(vals, list):
+                for v in vals:
+                    if isinstance(v, dict) and {"language", "value"} <= set(v.keys()):
+                        norm.append({"language": v["language"], "value": v["value"]})
+                    elif isinstance(v, str):
+                        norm.append({"language": lang, "value": v})
+            out_aliases[lang] = norm
+        out["aliases"] = out_aliases
+
+    def sanitize_wikibase_json(self, wikibase_entity: dict) -> dict:
+        # Remove snak hashes (Wikibase recomputes); keep valid GUIDs
+        for claims in wikibase_entity.get("claims", {}).values():
             for claim in claims:
-                # Create a copy of the claim to avoid modifying the original
-                sanitized_claim = claim.copy()
-                
-                # Remove invalid statement ID
-                if 'id' in sanitized_claim:
-                    if not self.is_valid_guid(sanitized_claim['id']):
-                        # Remove invalid statement ID - let Wikibase generate proper one
-                        del sanitized_claim['id']
-                
-                # Remove hash field from mainsnak if present
-                if 'mainsnak' in sanitized_claim and 'hash' in sanitized_claim['mainsnak']:
-                    del sanitized_claim['mainsnak']['hash']
-                
-                # Remove hash fields from qualifiers if present
-                if 'qualifiers' in sanitized_claim:
-                    for qual_prop, qual_snaks in sanitized_claim['qualifiers'].items():
-                        for snak in qual_snaks:
-                            if 'hash' in snak:
-                                del snak['hash']
-                
-                # Remove hash fields from references if present
-                if 'references' in sanitized_claim:
-                    for reference in sanitized_claim['references']:
-                        if 'hash' in reference:
-                            del reference['hash']
-                        if 'snaks' in reference:
-                            for ref_prop, ref_snaks in reference['snaks'].items():
-                                for snak in ref_snaks:
-                                    if 'hash' in snak:
-                                        del snak['hash']
-                
-                sanitized_claims.append(sanitized_claim)
-            
-            wikibase_entity['claims'][prop_id] = sanitized_claims
-        
+                ms = claim.get("mainsnak") or {}
+                ms.pop("hash", None)
+                for qlist in (claim.get("qualifiers") or {}).values():
+                    for snak in qlist:
+                        snak.pop("hash", None)
+                for ref in claim.get("references") or []:
+                    ref.pop("hash", None)
+                    for rlist in (ref.get("snaks") or {}).values():
+                        for snak in rlist:
+                            snak.pop("hash", None)
         return wikibase_entity
-    
-    def create_xml_header(self):
-        """Create the MediaWiki XML export header"""
-        # Create root mediawiki element with namespace
+
+    def entity_to_wikibase_json(self, entity: dict) -> dict:
+        qid = entity["qid"]
+        entity_type = entity.get("entity_type") or ("property" if qid.startswith("P") else "item")
+
+        out: dict = {"type": entity_type, "id": qid, "labels": {}, "descriptions": {}, "aliases": {}, "claims": {}}
+        self._copy_ldal(entity, out)
+
+        # Property pages must include datatype
+        if entity_type == "property":
+            out["datatype"] = entity.get("datatype") or entity.get("property_datatype") or "string"
+
+        used_ids: set[str] = set()
+        props = entity.get("properties") or {}
+        for prop_id, claims in props.items():
+            if not claims:
+                continue
+            wb_claims = []
+            for claim in claims:
+                ctype = (claim.get("type") or "string").lower()
+                cval = claim.get("value")
+                raw_id = claim.get("id") or claim.get("claim_id")
+
+                snak_datatype = _datatype_for_claim_type(ctype)
+                wb = {
+                    "mainsnak": {
+                        "snaktype": "value",
+                        "property": prop_id,
+                        "datatype": snak_datatype,
+                        "datavalue": {"type": "string", "value": None},  # will be set below
+                    },
+                    "type": "statement",
+                    "rank": "normal",
+                }
+
+                # value shaping
+                if snak_datatype == "wikibase-item":
+                    # accept dict {id:Q..} or string "Q.."
+                    tq = None
+                    if isinstance(cval, dict) and "id" in cval:
+                        tq = cval["id"]
+                    elif isinstance(cval, str) and cval.startswith("Q"):
+                        tq = cval
+                    if not tq:
+                        continue  # skip malformed
+                    val = {"entity-type": "item", "id": tq}
+                    if tq[1:].isdigit():
+                        val["numeric-id"] = int(tq[1:])
+                    wb["mainsnak"]["datavalue"] = {"type": "wikibase-entityid", "value": val}
+
+                elif snak_datatype == "monolingualtext":
+                    if isinstance(cval, dict) and {"text", "language"} <= set(cval.keys()):
+                        wb["mainsnak"]["datavalue"] = {"type": "monolingualtext", "value": {"text": cval["text"], "language": cval["language"]}}
+                    else:
+                        continue
+
+                elif snak_datatype in ("external-id", "string", "url"):
+                    wb["mainsnak"]["datavalue"] = {"type": "string", "value": "" if cval is None else str(cval)}
+
+                elif snak_datatype == "time":
+                    if isinstance(cval, dict):
+                        wb["mainsnak"]["datavalue"] = {"type": "time", "value": cval}
+                    else:
+                        wb["mainsnak"]["datavalue"] = {
+                            "type": "time",
+                            "value": {
+                                "time": str(cval),
+                                "timezone": 0,
+                                "before": 0,
+                                "after": 0,
+                                "precision": 11,
+                                "calendarmodel": "http://www.wikidata.org/entity/Q1985727",
+                            },
+                        }
+
+                elif snak_datatype == "quantity":
+                    if isinstance(cval, dict) and "amount" in cval:
+                        wb["mainsnak"]["datavalue"] = {"type": "quantity", "value": cval}
+                    else:
+                        wb["mainsnak"]["datavalue"] = {"type": "string", "value": str(cval)}
+
+                else:
+                    wb["mainsnak"]["datavalue"] = {"type": "string", "value": "" if cval is None else str(cval)}
+
+                # ensure a valid, unique GUID on every statement
+                if _is_valid_guid_for(qid, raw_id):
+                    cid = raw_id.strip().upper()
+                else:
+                    cid = _new_guid(qid)
+                while cid in used_ids:
+                    cid = _new_guid(qid)
+                used_ids.add(cid)
+                wb["id"] = cid
+
+                wb_claims.append(wb)
+
+            if wb_claims:
+                out["claims"][prop_id] = wb_claims
+
+        return self.sanitize_wikibase_json(out)
+
+    # ----------------- XML writing -----------------
+    def create_xml_header(self) -> ET.Element:
         root = ET.Element("mediawiki")
         root.set("xmlns", XML_NAMESPACE)
         root.set("xmlns:xsi", "http://www.w3.org/2001/XMLSchema-instance")
         root.set("xsi:schemaLocation", f"{XML_NAMESPACE} http://www.mediawiki.org/xml/export-0.11.xsd")
         root.set("version", "0.11")
         root.set("xml:lang", "en")
-        
-        # Add siteinfo
+
         siteinfo = ET.SubElement(root, "siteinfo")
-        sitename = ET.SubElement(siteinfo, "sitename")
-        sitename.text = "Gaiad Genealogy Wikibase"
-        
-        dbname = ET.SubElement(siteinfo, "dbname")
-        dbname.text = "gaiad_wikibase"
-        
-        base = ET.SubElement(siteinfo, "base")
-        base.text = "https://gaiad.example.com/"
-        
-        generator = ET.SubElement(siteinfo, "generator")
-        generator.text = "MongoDB to Wikibase XML Exporter"
-        
-        # Add case sensitivity
-        case = ET.SubElement(siteinfo, "case")
-        case.text = "first-letter"
-        
-        # Add namespaces
+        ET.SubElement(siteinfo, "sitename").text = "Gaiad Genealogy Wikibase"
+        ET.SubElement(siteinfo, "dbname").text = "gaiad_wikibase"
+        ET.SubElement(siteinfo, "base").text = "https://gaiad.example.com/"
+        ET.SubElement(siteinfo, "generator").text = "MongoDB→Wikibase Exporter"
+        ET.SubElement(siteinfo, "case").text = "first-letter"
+
         namespaces = ET.SubElement(siteinfo, "namespaces")
-        
-        # Main namespace
-        ns_main = ET.SubElement(namespaces, "namespace")
-        ns_main.set("key", "0")
-        ns_main.set("case", "first-letter")
-        ns_main.text = ""
-        
-        # Item namespace
-        ns_item = ET.SubElement(namespaces, "namespace")
-        ns_item.set("key", "860")
-        ns_item.set("case", "first-letter")
-        ns_item.text = "Item"
-        
-        # Property namespace
-        ns_prop = ET.SubElement(namespaces, "namespace")
-        ns_prop.set("key", "862")
-        ns_prop.set("case", "first-letter")
-        ns_prop.text = "Property"
-        
+        ns0 = ET.SubElement(namespaces, "namespace", key="0", case="first-letter"); ns0.text = ""
+        nsi = ET.SubElement(namespaces, "namespace", key="860", case="first-letter"); nsi.text = "Item"
+        nsp = ET.SubElement(namespaces, "namespace", key="862", case="first-letter"); nsp.text = "Property"
         return root
-    
-    def entity_to_wikibase_json(self, entity):
-        qid = entity['qid']
-        used_ids = set()
-        entity_type = entity.get('entity_type', 'item')
 
-        # Build base
-        wikibase_entity = {
-            "type": entity_type,
-            "id": qid,
-            "labels": {},
-            "descriptions": {},
-            "aliases": {},
-            "claims": {}
-        }
+    def create_page_element(self, entity: dict, parent: ET.Element) -> ET.Element:
+        qid = entity["qid"]
+        etype = entity.get("entity_type") or ("property" if qid.startswith("P") else "item")
+        props = entity.get("properties") or {}
+        is_redirect = "redirect" in props
 
-        # labels / descriptions / aliases (unchanged) ...
+        title = f"Item:{qid}" if etype == "item" else f"Property:{qid}"
+        page = ET.SubElement(parent, "page")
+        ET.SubElement(page, "title").text = title
+        ET.SubElement(page, "ns").text = "860" if etype == "item" else "862"
+        ET.SubElement(page, "id").text = qid[1:] if qid[1:].isdigit() else "0"
 
-        # ✅ NEW: Proper handling for Property entities
-        if entity_type == 'property':
-            # pull the datatype from your DB; common: 'string', 'external-id', 'wikibase-item', 'time', 'monolingualtext', 'quantity', etc.
-            datatype = (entity.get('datatype') or entity.get('property_datatype') or 'string')
-            wikibase_entity["datatype"] = datatype
-
-            # If you store property constraints as claims in Mongo, leave your existing
-            # conversion below to populate wikibase_entity['claims'] as needed.
-            # Otherwise, you can early return here to avoid accidental noise:
-            # return wikibase_entity
-            # (keeping your current claims conversion is fine)
-
-        # Convert properties/claims for ITEMS (and for property constraints if present)
-        properties = entity.get('properties', {})
-        for prop_id, claims in properties.items():
-            if not claims:
-                continue
-
-            wikibase_claims = []
-            for claim in claims:
-                claim_id = claim.get('claim_id')
-                claim_value = claim.get('value')
-                claim_type = claim.get('type', 'string')
-
-                wb_claim = {
-                    "mainsnak": {
-                        "snaktype": "value",
-                        "property": prop_id,
-                        "datavalue": {"type": claim_type}
-                    },
-                    "type": "statement",
-                    "rank": "normal"
-                }
-
-                wb_claim["mainsnak"]["datatype"] = self._datatype_for_claim_type(claim_type)
-
-
-                # keep real GUIDs only
-                if claim_id and self.is_valid_guid(claim_id):
-                    wb_claim["id"] = claim_id
-
-                # type-specific shaping (your existing logic)
-                if claim_type in ["wikibase-item", "wikibase-entityid"]:
-                    if isinstance(claim_value, dict) and 'id' in claim_value:
-                        wb_claim["mainsnak"]["datavalue"]["value"] = claim_value
-                        wb_claim["mainsnak"]["datavalue"]["type"] = "wikibase-entityid"
-                    elif isinstance(claim_value, str) and claim_value.startswith('Q'):
-                        wb_claim["mainsnak"]["datavalue"]["value"] = {
-                            "entity-type": "item",
-                            "numeric-id": int(claim_value[1:]),
-                            "id": claim_value
-                        }
-                        wb_claim["mainsnak"]["datavalue"]["type"] = "wikibase-entityid"
-                    else:
-                        continue
-                elif claim_type == "monolingualtext":
-                    if isinstance(claim_value, dict) and 'text' in claim_value and 'language' in claim_value:
-                        wb_claim["mainsnak"]["datavalue"]["value"] = claim_value
-                        wb_claim["mainsnak"]["datavalue"]["type"] = "monolingualtext"
-                    else:
-                        continue
-                elif claim_type == "external-id":
-                    wb_claim["mainsnak"]["datavalue"]["type"] = "string"
-                    wb_claim["mainsnak"]["datavalue"]["value"] = str(claim_value)
-                elif claim_type == "time":
-                    if isinstance(claim_value, dict):
-                        wb_claim["mainsnak"]["datavalue"]["value"] = claim_value
-                        wb_claim["mainsnak"]["datavalue"]["type"] = "time"
-                    else:
-                        wb_claim["mainsnak"]["datavalue"]["value"] = {
-                            "time": str(claim_value),
-                            "timezone": 0, "before": 0, "after": 0,
-                            "precision": 11,
-                            "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
-                        }
-                        wb_claim["mainsnak"]["datavalue"]["type"] = "time"
-                else:
-                    wb_claim["mainsnak"]["datavalue"]["type"] = "string"
-                    wb_claim["mainsnak"]["datavalue"]["value"] = str(claim_value)
-
-                wikibase_claims.append(wb_claim)
-
-            wikibase_entity['claims'][prop_id] = wikibase_claims
-
-        # keep your GUID/hash sanitization
-        wikibase_entity = self.sanitize_wikibase_json(wikibase_entity)
-        return wikibase_entity
-
-    
-    def create_page_element(self, entity, parent_element):
-        """Create a MediaWiki page element for an entity"""
-        qid = entity['qid']
-        entity_type = entity.get('entity_type', 'item')
-        properties = entity.get('properties', {})
-        
-        # Check if this is a redirect entity
-        is_redirect = 'redirect' in properties
-        
-        # Determine title based on entity type
-        if entity_type == 'item':
-            title = f"Item:{qid}"
-        else:
-            title = f"Property:{qid}"
-        
-        # Create page element
-        page = ET.SubElement(parent_element, "page")
-        
-        # Add title
-        title_elem = ET.SubElement(page, "title")
-        title_elem.text = title
-        
-        # Add namespace
-        ns = ET.SubElement(page, "ns")
-        ns.text = "860" if entity_type == 'item' else "862"
-        
-        # Add ID (use QID numeric part)
-        id_elem = ET.SubElement(page, "id")
-        id_elem.text = qid[1:] if qid.startswith(('Q', 'P')) else "0"
-        
-        # Add redirect element if this is a redirect
         if is_redirect:
-            redirect_target = properties['redirect'][0]['value']
-            redirect_elem = ET.SubElement(page, "redirect")
-            redirect_elem.set("title", f"Item:{redirect_target}")
-            
-            # For redirects, we don't need revision content - MediaWiki handles redirects at the page level
-            # Just return the page with the redirect element
+            redirect_target = props["redirect"][0]["value"]
+            ET.SubElement(page, "redirect").set("title", f"Item:{redirect_target}")
             return page
-        
-        # Add revision (only for non-redirect pages)
-        revision = ET.SubElement(page, "revision")
-        
-        # Revision ID
-        rev_id = ET.SubElement(revision, "id")
-        rev_id.text = qid[1:] if qid.startswith(('Q', 'P')) else "1"
-        
-        # Timestamp
-        
-        # Contributor
-        contributor = ET.SubElement(revision, "contributor")
-        username = ET.SubElement(contributor, "username")
-        username.text = "Immanuelle"
-        
-        # Comment
-        comment = ET.SubElement(revision, "comment")
-        comment.text = "Exported from MongoDB"
-        
-        # Content model
-        model = ET.SubElement(revision, "model")
-        model.text = "wikibase-item" if entity_type == 'item' else "wikibase-property"
-        
-        # Format
-        format_elem = ET.SubElement(revision, "format")
-        format_elem.text = "application/json"
-        
-        # Text content - only for regular entities
-        text = ET.SubElement(revision, "text")
-        text.set("bytes", "0")  # Will be updated after content creation
+
+        rev = ET.SubElement(page, "revision")
+        ET.SubElement(rev, "id").text = qid[1:] if qid[1:].isdigit() else "1"
+        # NOTE: deliberately no <timestamp> — MW will assign server time
+        contrib = ET.SubElement(rev, "contributor")
+        ET.SubElement(contrib, "username").text = "Immanuelle"
+        ET.SubElement(rev, "comment").text = "Exported from MongoDB"
+        ET.SubElement(rev, "model").text = "wikibase-item" if etype == "item" else "wikibase-property"
+        ET.SubElement(rev, "format").text = "application/json"
+
+        text = ET.SubElement(rev, "text")
+        text.set("bytes", "0")
         text.set("xml:space", "preserve")
-        
-        # Convert to Wikibase JSON
-        wikibase_json = self.entity_to_wikibase_json(entity)
-        json_text = json.dumps(wikibase_json, ensure_ascii=False, separators=(',', ':'))
-        
-        text.text = json_text
-        
-        # Update byte count
-        text.set("bytes", str(len(json_text.encode('utf-8'))))
-        
+        wb_json = self.entity_to_wikibase_json(entity)
+        jtxt = json.dumps(wb_json, ensure_ascii=False, separators=(",", ":"))
+        text.text = jtxt
+        text.set("bytes", str(len(jtxt.encode("utf-8"))))
         return page
-    
-    def export_chunk(self, entities, chunk_num):
-        """Export a chunk of entities to an XML file"""
+
+    def export_chunk(self, entities: list[dict], chunk_num: int) -> str | None:
         if not entities:
             return None
-            
-        filename = f"gaiad_wikibase_export_part_{chunk_num:03d}.xml"
-        filepath = os.path.join(self.output_dir, filename)
-        
-        print(f"Creating {filename} with {len(entities)} entities...")
-        
-        # Create XML structure
+        fname = f"gaiad_wikibase_export_part_{chunk_num:03d}.xml"
+        fpath = os.path.join(self.output_dir, fname)
+        print(f"Creating {fname} with {len(entities)} entities…")
         root = self.create_xml_header()
-        
-        # Add entities as pages
-        for entity in entities:
-            self.create_page_element(entity, root)
-        
-        # Write to file
+        for e in entities:
+            self.create_page_element(e, root)
         tree = ET.ElementTree(root)
-        ET.indent(tree, space="  ", level=0)  # Pretty formatting
-        
-        with open(filepath, 'wb') as f:
-            tree.write(f, encoding='utf-8', xml_declaration=True)
-        
-        self.stats['files_created'] += 1
-        print(f"  OK Saved {filename}")
-        
-        return filename
-    
-    def export_all_entities(self):
-        """Export all entities from MongoDB to XML files"""
-        print("=== MONGODB TO WIKIBASE XML EXPORT ===")
+        try:
+            ET.indent(tree, space="  ", level=0)  # Python 3.9+
+        except Exception:
+            pass
+        with open(fpath, "wb") as f:
+            tree.write(f, encoding="utf-8", xml_declaration=True)
+        self.stats["files_created"] += 1
+        print(f"  OK {fname}")
+        return fpath
+
+    def export_all_entities(self) -> None:
+        print("=== MongoDB → Wikibase XML Export ===\n")
+        total = self.collection.count_documents({})
+        redirects = self.collection.count_documents({"properties.redirect": {"$exists": True}})
+        print(f"Total entities: {total:,}")
+        print(f"Redirect pages: {redirects:,} (included)")
+        print(f"Output dir: {os.path.abspath(self.output_dir)}")
+        print(f"Chunk size: {CHUNK_SIZE}")
         print()
-        
-        # Get total count
-        total_entities = self.collection.count_documents({})
-        redirect_count = self.collection.count_documents({'properties.redirect': {'$exists': True}})
-        active_entities = total_entities - redirect_count
-        
-        print(f"Total entities in database: {total_entities:,}")
-        print(f"Redirect entities (will include): {redirect_count:,}")
-        print(f"Active entities: {active_entities:,}")
-        print(f"ALL entities to export: {total_entities:,}")
-        print(f"Chunk size: {CHUNK_SIZE:,} entities per file")
-        print(f"Estimated output files: {(total_entities + CHUNK_SIZE - 1) // CHUNK_SIZE}")
-        print()
-        
-        # Process entities in chunks
-        chunk_entities = []
-        chunk_num = 1
-        
-        print("Processing entities...")
-        
+
+        chunk, n = [], 1
         for entity in self.collection.find():
-            self.stats['entities_processed'] += 1
-            
-            if self.stats['entities_processed'] % 10000 == 0:
-                print(f"  Processed {self.stats['entities_processed']:,} entities...")
-            
-            # Track redirects but include them in export
-            if 'redirect' in entity.get('properties', {}):
-                self.stats['redirects_skipped'] += 1  # Track count but don't skip
-            
-            # Add ALL entities to chunks (including redirects)
-            chunk_entities.append(entity)
-            self.stats['entities_exported'] += 1
-            
-            # Export chunk when full
-            if len(chunk_entities) >= CHUNK_SIZE:
-                self.export_chunk(chunk_entities, chunk_num)
-                chunk_entities = []
-                chunk_num += 1
-        
-        # Export final chunk if it has entities
-        if chunk_entities:
-            self.export_chunk(chunk_entities, chunk_num)
-        
-        # Final statistics
-        duration = time.time() - self.stats['start_time']
-        
-        print()
-        print("=== EXPORT COMPLETE ===")
-        print(f"Entities processed: {self.stats['entities_processed']:,}")
-        print(f"Entities exported: {self.stats['entities_exported']:,}")
-        print(f"Redirects included: {self.stats['redirects_skipped']:,}")
-        print(f"Active entities included: {self.stats['entities_exported'] - self.stats['redirects_skipped']:,}")
-        print(f"XML files created: {self.stats['files_created']}")
-        print(f"Export duration: {duration:.1f} seconds")
-        print(f"Export rate: {self.stats['entities_exported'] / duration:.0f} entities/second")
-        print()
-        print(f"SUCCESS: Complete Wikibase XML export completed!")
-        print(f"Files saved to: {self.output_dir}/")
-        print()
-        print("IMPORTANT: This export includes ALL entities:")
-        print("- Active entities with full Wikibase JSON content")
-        print("- Redirect entities with proper redirect XML structure")
-        print("- Import will overwrite existing pages with redirects as needed")
-        print()
-        print("To import into Wikibase:")
-        print("1. Use MediaWiki importDump.php maintenance script")
-        print("2. Or import via Wikibase importers")
-        print("3. Files are in MediaWiki XML export format")
-    
-    def close(self):
-        """Close MongoDB connection"""
+            self.stats["entities_processed"] += 1
+            if "redirect" in (entity.get("properties") or {}):
+                self.stats["redirects_seen"] += 1
+            chunk.append(entity)
+            self.stats["entities_exported"] += 1
+            if len(chunk) >= CHUNK_SIZE:
+                self.export_chunk(chunk, n)
+                chunk, n = [], n + 1
+        if chunk:
+            self.export_chunk(chunk, n)
+
+        dur = time.time() - self.stats["start_time"]
+        print("\n=== DONE ===")
+        print(f"Processed: {self.stats['entities_processed']:,}")
+        print(f"Exported:  {self.stats['entities_exported']:,}")
+        print(f"Files:     {self.stats['files_created']}")
+        print(f"Rate:      {int(self.stats['entities_exported']/max(dur,1))} entities/s")
+
+    def close(self) -> None:
         self.client.close()
 
-def main():
+
+def main() -> None:
     exporter = WikibaseXMLExporter()
-    
     try:
         exporter.export_all_entities()
     finally:
         exporter.close()
+
 
 if __name__ == "__main__":
     main()
