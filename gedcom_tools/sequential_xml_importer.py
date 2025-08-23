@@ -13,8 +13,10 @@ import sys
 import time
 from pathlib import Path
 
+
+
 # Configuration
-EXPORTS_DIR = "exports_with_labels_240part"
+EXPORTS_DIR = "wikibase_export"
 USERNAME = "Immanuelle"
 PASSWORD = "1996ToOmega!"
 WIKIBASE_URL = "https://evolutionism.miraheze.org"

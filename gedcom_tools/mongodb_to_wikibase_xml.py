@@ -27,6 +27,21 @@ import os
 import re
 from datetime import datetime, timezone
 
+import uuid, re
+
+_GUID_RE = re.compile(r'^Q[1-9]\d*\$[0-9A-F]{8}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{12}$')
+
+def _is_valid_guid(qid: str, guid: str) -> bool:
+    if not guid:
+        return False
+    g = guid.strip().upper()
+    return g.startswith(f'{qid}$') and bool(_GUID_RE.match(g))
+
+def _new_guid(qid: str) -> str:
+    return f'{qid}${str(uuid.uuid4()).upper()}'
+
+
+
 # MongoDB configuration
 MONGO_URI = "mongodb://localhost:27017/"
 DATABASE_NAME = "gaiad_processing_db"
@@ -179,6 +194,7 @@ class WikibaseXMLExporter:
     
     def entity_to_wikibase_json(self, entity):
         qid = entity['qid']
+        used_ids = set()
         entity_type = entity.get('entity_type', 'item')
 
         # Build base
@@ -330,8 +346,6 @@ class WikibaseXMLExporter:
         rev_id.text = qid[1:] if qid.startswith(('Q', 'P')) else "1"
         
         # Timestamp
-        timestamp = ET.SubElement(revision, "timestamp")
-        timestamp.text = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
         
         # Contributor
         contributor = ET.SubElement(revision, "contributor")
