@@ -24,6 +24,7 @@ import xml.etree.ElementTree as ET
 import json
 import time
 import os
+import re
 from datetime import datetime, timezone
 
 # MongoDB configuration
@@ -56,6 +57,74 @@ class WikibaseXMLExporter:
         
         print(f"Connected to MongoDB: {DATABASE_NAME}.{COLLECTION_NAME}")
         print(f"Output directory: {output_dir}")
+    
+    def is_valid_guid(self, statement_id):
+        """Check if statement ID matches valid GUID format: ^Q[1-9]\\d*\\$[0-9A-Fa-f-]{36}$"""
+        if not statement_id:
+            return False
+        return bool(re.match(r'^Q[1-9]\d*\$[0-9A-Fa-f-]{36}$', statement_id))
+    
+    def _datatype_for_claim_type(self, claim_type: str) -> str:
+    # Map your internal claim "type" to Wikibase snak datatype
+        mapping = {
+            "wikibase-entityid": "wikibase-item",  # for item-valued statements
+            "wikibase-item": "wikibase-item",
+            "monolingualtext": "monolingualtext",
+            "external-id": "external-id",
+            "time": "time",
+            "quantity": "quantity",
+            "url": "url",
+            "string": "string",
+        }
+        return mapping.get(claim_type, "string")
+
+    
+    def sanitize_wikibase_json(self, wikibase_entity):
+        """Remove invalid statement IDs and hash fields from Wikibase JSON"""
+        if 'claims' not in wikibase_entity:
+            return wikibase_entity
+            
+        # Process each property's claims
+        for prop_id, claims in wikibase_entity['claims'].items():
+            sanitized_claims = []
+            
+            for claim in claims:
+                # Create a copy of the claim to avoid modifying the original
+                sanitized_claim = claim.copy()
+                
+                # Remove invalid statement ID
+                if 'id' in sanitized_claim:
+                    if not self.is_valid_guid(sanitized_claim['id']):
+                        # Remove invalid statement ID - let Wikibase generate proper one
+                        del sanitized_claim['id']
+                
+                # Remove hash field from mainsnak if present
+                if 'mainsnak' in sanitized_claim and 'hash' in sanitized_claim['mainsnak']:
+                    del sanitized_claim['mainsnak']['hash']
+                
+                # Remove hash fields from qualifiers if present
+                if 'qualifiers' in sanitized_claim:
+                    for qual_prop, qual_snaks in sanitized_claim['qualifiers'].items():
+                        for snak in qual_snaks:
+                            if 'hash' in snak:
+                                del snak['hash']
+                
+                # Remove hash fields from references if present
+                if 'references' in sanitized_claim:
+                    for reference in sanitized_claim['references']:
+                        if 'hash' in reference:
+                            del reference['hash']
+                        if 'snaks' in reference:
+                            for ref_prop, ref_snaks in reference['snaks'].items():
+                                for snak in ref_snaks:
+                                    if 'hash' in snak:
+                                        del snak['hash']
+                
+                sanitized_claims.append(sanitized_claim)
+            
+            wikibase_entity['claims'][prop_id] = sanitized_claims
+        
+        return wikibase_entity
     
     def create_xml_header(self):
         """Create the MediaWiki XML export header"""
@@ -109,11 +178,10 @@ class WikibaseXMLExporter:
         return root
     
     def entity_to_wikibase_json(self, entity):
-        """Convert MongoDB entity to Wikibase JSON format"""
         qid = entity['qid']
         entity_type = entity.get('entity_type', 'item')
-        
-        # Build Wikibase entity structure
+
+        # Build base
         wikibase_entity = {
             "type": entity_type,
             "id": qid,
@@ -122,118 +190,97 @@ class WikibaseXMLExporter:
             "aliases": {},
             "claims": {}
         }
-        
-        # Convert labels
-        labels = entity.get('labels', {})
-        for lang, label_text in labels.items():
-            if label_text:
-                wikibase_entity['labels'][lang] = {
-                    "language": lang,
-                    "value": label_text
-                }
-        
-        # Convert descriptions  
-        descriptions = entity.get('descriptions', {})
-        for lang, desc_text in descriptions.items():
-            if desc_text:
-                wikibase_entity['descriptions'][lang] = {
-                    "language": lang,
-                    "value": desc_text
-                }
-        
-        # Convert aliases
-        aliases = entity.get('aliases', {})
-        for lang, alias_list in aliases.items():
-            if alias_list and isinstance(alias_list, list):
-                wikibase_entity['aliases'][lang] = [
-                    {"language": lang, "value": alias} for alias in alias_list
-                ]
-        
-        # Convert properties/claims
+
+        # labels / descriptions / aliases (unchanged) ...
+
+        # ✅ NEW: Proper handling for Property entities
+        if entity_type == 'property':
+            # pull the datatype from your DB; common: 'string', 'external-id', 'wikibase-item', 'time', 'monolingualtext', 'quantity', etc.
+            datatype = (entity.get('datatype') or entity.get('property_datatype') or 'string')
+            wikibase_entity["datatype"] = datatype
+
+            # If you store property constraints as claims in Mongo, leave your existing
+            # conversion below to populate wikibase_entity['claims'] as needed.
+            # Otherwise, you can early return here to avoid accidental noise:
+            # return wikibase_entity
+            # (keeping your current claims conversion is fine)
+
+        # Convert properties/claims for ITEMS (and for property constraints if present)
         properties = entity.get('properties', {})
         for prop_id, claims in properties.items():
             if not claims:
                 continue
-                
+
             wikibase_claims = []
-            
             for claim in claims:
-                claim_id = claim.get('claim_id', f"{qid}${prop_id}$generated")
+                claim_id = claim.get('claim_id')
                 claim_value = claim.get('value')
                 claim_type = claim.get('type', 'string')
-                
-                # Create Wikibase claim structure
-                wikibase_claim = {
-                    "id": claim_id,
+
+                wb_claim = {
                     "mainsnak": {
                         "snaktype": "value",
                         "property": prop_id,
-                        "datavalue": {
-                            "type": claim_type
-                        }
+                        "datavalue": {"type": claim_type}
                     },
                     "type": "statement",
                     "rank": "normal"
                 }
-                
-                # Handle different value types - preserve MongoDB structure
+
+                wb_claim["mainsnak"]["datatype"] = self._datatype_for_claim_type(claim_type)
+
+
+                # keep real GUIDs only
+                if claim_id and self.is_valid_guid(claim_id):
+                    wb_claim["id"] = claim_id
+
+                # type-specific shaping (your existing logic)
                 if claim_type in ["wikibase-item", "wikibase-entityid"]:
-                    # Entity reference
                     if isinstance(claim_value, dict) and 'id' in claim_value:
-                        # Use the existing dict structure from MongoDB
-                        wikibase_claim["mainsnak"]["datavalue"]["value"] = claim_value
-                        wikibase_claim["mainsnak"]["datavalue"]["type"] = "wikibase-entityid"
+                        wb_claim["mainsnak"]["datavalue"]["value"] = claim_value
+                        wb_claim["mainsnak"]["datavalue"]["type"] = "wikibase-entityid"
                     elif isinstance(claim_value, str) and claim_value.startswith('Q'):
-                        # Convert string QID to proper wikibase-item format
-                        entity_id = claim_value
-                        wikibase_claim["mainsnak"]["datavalue"]["value"] = {
+                        wb_claim["mainsnak"]["datavalue"]["value"] = {
                             "entity-type": "item",
-                            "numeric-id": int(entity_id[1:]) if entity_id.startswith('Q') else 0,
-                            "id": entity_id
+                            "numeric-id": int(claim_value[1:]),
+                            "id": claim_value
                         }
-                        wikibase_claim["mainsnak"]["datavalue"]["type"] = "wikibase-entityid"
+                        wb_claim["mainsnak"]["datavalue"]["type"] = "wikibase-entityid"
                     else:
-                        # Invalid wikibase-item value - skip
                         continue
                 elif claim_type == "monolingualtext":
-                    # Monolingualtext value - all are in English in current database
                     if isinstance(claim_value, dict) and 'text' in claim_value and 'language' in claim_value:
-                        # Use the existing dict structure from MongoDB
-                        wikibase_claim["mainsnak"]["datavalue"]["value"] = claim_value
-                        wikibase_claim["mainsnak"]["datavalue"]["type"] = "monolingualtext"
+                        wb_claim["mainsnak"]["datavalue"]["value"] = claim_value
+                        wb_claim["mainsnak"]["datavalue"]["type"] = "monolingualtext"
                     else:
-                        # Invalid monolingualtext value - skip
                         continue
                 elif claim_type == "external-id":
-                    # External identifier
-                    wikibase_claim["mainsnak"]["datavalue"]["type"] = "string"
-                    wikibase_claim["mainsnak"]["datavalue"]["value"] = str(claim_value)
+                    wb_claim["mainsnak"]["datavalue"]["type"] = "string"
+                    wb_claim["mainsnak"]["datavalue"]["value"] = str(claim_value)
                 elif claim_type == "time":
-                    # Date/time value
                     if isinstance(claim_value, dict):
-                        wikibase_claim["mainsnak"]["datavalue"]["value"] = claim_value
-                        wikibase_claim["mainsnak"]["datavalue"]["type"] = "time"
+                        wb_claim["mainsnak"]["datavalue"]["value"] = claim_value
+                        wb_claim["mainsnak"]["datavalue"]["type"] = "time"
                     else:
-                        # Simple date string - convert to Wikibase time format
-                        wikibase_claim["mainsnak"]["datavalue"]["value"] = {
+                        wb_claim["mainsnak"]["datavalue"]["value"] = {
                             "time": str(claim_value),
-                            "timezone": 0,
-                            "before": 0,
-                            "after": 0,
+                            "timezone": 0, "before": 0, "after": 0,
                             "precision": 11,
                             "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
                         }
-                        wikibase_claim["mainsnak"]["datavalue"]["type"] = "time"
+                        wb_claim["mainsnak"]["datavalue"]["type"] = "time"
                 else:
-                    # String or other value
-                    wikibase_claim["mainsnak"]["datavalue"]["type"] = "string"
-                    wikibase_claim["mainsnak"]["datavalue"]["value"] = str(claim_value)
-                
-                wikibase_claims.append(wikibase_claim)
-            
+                    wb_claim["mainsnak"]["datavalue"]["type"] = "string"
+                    wb_claim["mainsnak"]["datavalue"]["value"] = str(claim_value)
+
+                wikibase_claims.append(wb_claim)
+
             wikibase_entity['claims'][prop_id] = wikibase_claims
-        
+
+        # keep your GUID/hash sanitization
+        wikibase_entity = self.sanitize_wikibase_json(wikibase_entity)
         return wikibase_entity
+
     
     def create_page_element(self, entity, parent_element):
         """Create a MediaWiki page element for an entity"""

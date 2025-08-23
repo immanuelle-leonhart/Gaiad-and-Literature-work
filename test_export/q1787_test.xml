@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.11/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.11/ http://www.mediawiki.org/xml/export-0.11.xsd" version="0.11" xml:lang="en">
+  <siteinfo>
+    <sitename>Gaiad Genealogy Wikibase</sitename>
+    <dbname>gaiad_wikibase</dbname>
+    <base>https://gaiad.example.com/</base>
+    <generator>MongoDB to Wikibase XML Exporter</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="0" case="first-letter" />
+      <namespace key="860" case="first-letter">Item</namespace>
+      <namespace key="862" case="first-letter">Property</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Item:Q1787</title>
+    <ns>860</ns>
+    <id>1787</id>
+    <revision>
+      <id>1787</id>
+      <timestamp>2025-08-23T21:21:48Z</timestamp>
+      <contributor>
+        <username>Immanuelle</username>
+      </contributor>
+      <comment>Exported from MongoDB</comment>
+      <model>wikibase-item</model>
+      <format>application/json</format>
+      <text bytes="2849" xml:space="preserve">{"type":"item","id":"Q1787","labels":{"en":{"language":"en","value":"[41] Sri Udayaditya Warmadewa son of NN (Keturunan ke-4 Balaputradewa)"}},"descriptions":{},"aliases":{},"claims":{"P3":[{"mainsnak":{"snaktype":"value","property":"P3","datavalue":{"type":"monolingualtext","value":{"text":"[41] Sri Udayaditya Warmadewa bin","language":"en"}}},"type":"statement","rank":"normal","id":"Q1787$1011C08A-ACB2-4603-8D16-52618D61AB5E"}],"P4":[{"mainsnak":{"snaktype":"value","property":"P4","datavalue":{"type":"monolingualtext","value":{"text":"NN (Keturunan ke-4 Balaputradewa)","language":"en"}}},"type":"statement","rank":"normal","id":"Q1787$2E7826C0-FC88-4CB2-9354-FFF5C5BF2972"}],"P5":[{"mainsnak":{"snaktype":"value","property":"P5","datavalue":{"type":"monolingualtext","value":{"text":"[41] Sri Udayaditya Warmadewa bin NN (Keturunan ke-4 Balaputradewa)","language":"en"}}},"type":"statement","rank":"normal","id":"Q1787$631A3558-2139-4523-8024-B54F685285D4"}],"P6":[{"mainsnak":{"snaktype":"value","property":"P6","datavalue":{"type":"monolingualtext","value":{"text":"NN (Keturunan ke-4 Balaputradewa) //","language":"en"}}},"type":"statement","rank":"normal","id":"Q1787$2CB22C44-C914-4ED1-9375-B6FE6C64BEAC"},{"mainsnak":{"snaktype":"value","property":"P6","datavalue":{"type":"monolingualtext","value":{"text":"Maharaja Sriwijaya XII - Sri Udayaditya Warmadewa (960–988) //","language":"en"}}},"type":"statement","rank":"normal","id":"Q1787$78298FDA-752E-4457-ACB3-3B45C5565E22"}],"P15":[{"mainsnak":{"snaktype":"value","property":"P15","datavalue":{"type":"string","value":"https://evolutionism.miraheze.org/wiki/Notes:Q1787"}},"type":"statement","rank":"normal","id":"Q1787$B14E9866-332D-45B7-B83D-143650EF5EC7"}],"P55":[{"mainsnak":{"snaktype":"value","property":"P55","datavalue":{"type":"wikibase-entityid","value":{"entity-type":"item","numeric-id":153718,"id":"Q153718"}}},"type":"statement","rank":"normal","id":"Q1787$844E9455-4D81-4984-B7E6-6AD0028F92C2"}],"P57":[{"mainsnak":{"snaktype":"value","property":"P57","datavalue":{"type":"time","value":{"time":"+0988-00-00T00:00:00Z","timezone":0,"before":0,"after":0,"precision":9,"calendarmodel":"http://www.wikidata.org/entity/Q1985786"}}},"type":"statement","rank":"normal","id":"Q1787$9D20E94F-0B35-490B-BE0A-FA37FAB61B93"}],"P39":[{"mainsnak":{"snaktype":"value","property":"P39","datavalue":{"type":"wikibase-entityid","value":{"entity-type":"item","numeric-id":153721,"id":"Q153721"}}},"type":"statement","rank":"normal"},{"mainsnak":{"snaktype":"value","property":"P39","datavalue":{"type":"wikibase-entityid","value":{"entity-type":"item","numeric-id":153722,"id":"Q153722"}}},"type":"statement","rank":"normal"}],"P61":[{"mainsnak":{"snaktype":"value","property":"P61","datavalue":{"type":"string","value":"6000000040978635984"}},"type":"statement","rank":"normal"}]}}</text>
+    </revision>
+  </page>
+</mediawiki>
