@@ -76,12 +76,19 @@ def main():
                 genealogy_ids.extend([claim.get('value', '') for claim in properties[prop]])
         
         # Check for family relationships
-        # NOTE: This database appears to contain NO family relationship properties
-        # All entities will be categorized as having no relatives
         fathers = []
         mothers = []
         children = []
         spouses = []
+        
+        if 'P20' in properties:
+            fathers = [claim.get('value', {}).get('id', '') for claim in properties['P20']]
+        if 'P42' in properties:
+            mothers = [claim.get('value', {}).get('id', '') for claim in properties['P42']]
+        if 'P47' in properties:
+            children = [claim.get('value', {}).get('id', '') for claim in properties['P47']]
+        if 'P48' in properties:
+            spouses = [claim.get('value', {}).get('id', '') for claim in properties['P48']]
         
         # Check for P39 special categories
         has_p39_no_identifiers = False

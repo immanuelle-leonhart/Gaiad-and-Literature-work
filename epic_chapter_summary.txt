@@ -1,0 +1,254 @@
+{| class="wikitable"
+|+ Gaiad Epic Chapter Summary
+!Chapter
+!Title
+!Summary
+|-
+|1
+|Aster and Andromeda
+|Aster the catgirl creates the universe from yarn and makes her companion Andromeda
+|-
+|2
+|The red green and blue strings of fate
+|Aster spins the fundamental forces and colors of reality
+|-
+|3
+|The Milky Way
+|Creation of the galaxy filled with Aster's cosmic milk
+|-
+|4
+|Rhodes and Marigold
+|Early stellar formation and the birth of star-children
+|-
+|5
+|Aster's seed
+|Aster makes "milk pregnant with cat seed" - fundamental life forces
+|-
+|6
+|The Shores of Hesper
+|Formation of planetary systems and cosmic shores
+|-
+|7
+|The three brothers
+|Introduction of three cosmic forces or deities
+|-
+|8
+|Legacies of the Cyborgs
+|Advanced technological civilizations and their heritage
+|-
+|9
+|Life on Phaestia
+|Life develops on the forge-world Phaestia
+|-
+|10
+|Serenitide
+|The peaceful moon and migration stories
+|-
+|11
+|Attle
+|Conflicts and battles in early cosmic history
+|-
+|12
+|Catalogue: The Speech on Pluto
+|Formal cosmic proclamation from the distant world
+|-
+|13
+|Sol's daughters
+|The children of the sun and solar system formation
+|-
+|14
+|Migration to Earth
+|The journey of life from other worlds to Earth
+|-
+|15
+|The Covenant with Usagi Luna
+|Sacred agreement with the moon rabbit deity
+|-
+|16
+|Arka and Bacta
+|Primordial life forms and bacterial evolution
+|-
+|17
+|Catalogue: The daughters of Bacta
+|Genealogy of early bacterial lineages
+|-
+|18
+|The failures of Kyoto and Paris
+|Environmental crises and failed climate agreements
+|-
+|19
+|The Euka Epic
+|Rise of eukaryotic cells and cellular organelles
+|-
+|20
+|The Legacy of Euka
+|Continuation of cellular biology and evolution
+|-
+|21
+|The Children of Nectarius
+|Division of eukaryotic kingdoms through Nectarius + Ambrosia → Animus, Plantus, Opima, Cortica
+|-
+|22
+|The Great Diversification
+|Detailed algae evolution, endosymbiotic theft, diatoms, kelp forests, protist diversification
+|-
+|23
+|The Gamma Ray Catastrophe
+|Mass extinction event, red→green plant transition, Rhizar's descendants
+|-
+|24
+|The Rise of Choanos
+|Choanoflagellate evolution, colonial organization, early multicellularity
+|-
+|25
+|Carcinoma's Revolution
+|Cancer biology, cellular revolution, Animal Kingdom establishment
+|-
+|26
+|The Three Patriarchs
+|Three patriarchs: Dutrus, Ectus, Spiralius with distinct evolutionary strategies
+|-
+|27
+|The Dutrus Innovation
+|Dutrus builds first coelom, hydrostatic movement innovation
+|-
+|28
+|The Reign of Proteus
+|Proteus dynasty, Cambrian diversification begins
+|-
+|29
+|The Cambrian Explosion
+|Major animal phyla radiation, complex ecosystems emerge
+|-
+|30
+|The Ediacaran Fall
+|Collapse of Ediacaran Empire, oxygenation, Cambrian transition
+|-
+|31
+|The Sons of Ectus
+|Ectus predatory innovations, mouth development, molting
+|-
+|32
+|The Ectus Legacy
+|Ectus descendants: Ishmael→Priapulids, Isaac→nematode radiation
+|-
+|33
+|The Conservative Path
+|Spiralius conservatism, Kimberella, Gnathifer jaw evolution
+|-
+|34
+|The Fortunian Dawn
+|Dutrus sons: Saccorhytus/Dietrich, chordate origins
+|-
+|35
+|The Tommotian Dawn
+|Cambrian ecosystem changes, Lobopodian houses, arthropod radiation
+|-
+|36
+|The Arthropod Radiation
+|Arthur Ironfoot's sons, trilobite dynasty, terrestrial colonization
+|-
+|37
+|The Circulatory Revolution
+|Closed circulatory systems, annelid radiation, segmentation
+|-
+|38
+|The Pentamerous Kingdom
+|Ambulus line, echinoderm evolution, five-fold symmetry
+|-
+|39
+|The Coast of Three Kingdoms
+|First terrestrial colonization, plant-fungi-animal meeting
+|-
+|40
+|The First Extinction and Mollusk Rise
+|End-Botomian extinction, Wiwaxius→mollusk radiation
+|-
+|41
+|The Marine Foundation
+|Marine ecosystem foundation, chordate evolution, plankton food webs
+|-
+|42
+|The Rise of Vertebrates
+|Vertebrate innovations: brain, blood, teeth, Conodont evolution
+|-
+|43
+|The Golden Age Begins
+|Ordovician radiation, Leviathan→reef ecosystems, GOBE event
+|-
+|44
+|The Crustacean Determination
+|Crustacean diversification under trilobite dominance
+|-
+|45
+|The Gastropod Glory
+|Gastropod radiation, shell architecture, Tyrian purple
+|-
+|46
+|The Echinoderm Wars
+|Echinoderm diversification, Luther's rebellion, starfish/urchin split
+|-
+|47
+|The Spiralian War
+|Brachiopod vs Bivalve conflict, Peter/Aphrodite lines
+|-
+|48
+|The Cephalopod Ascension
+|Cephalopod rise, Leviathan overthrow, Nautilus lineage, intelligence evolution
+|-
+|49
+|The Golden Age Ends
+|End-Ordovician extinction, plant colonization, phosphorus crisis
+|-
+|50
+|The Silurian Rise
+|Silur's opportunity, arachnid land colonization, tick evolution
+|-
+|51
+|The Eurypterid Empire
+|Eurypterid dominance, Scorpio's land conquest
+|-
+|52
+|The Jaw Revolution
+|Vertebrate jaw evolution, Vater's ampulla, predatory revolution
+|-
+|53
+|The Plant Revolution
+|Polycomb's rebellion, vascular plant evolution, wood wide web
+|-
+|54
+|The Devonian Dawn
+|Devon's innovations, fish radiation, Arthrodire dominance
+|-
+|55
+|The Forest Cathedral
+|Cycleichthys' story, ecosystem balance, predator-prey dynamics
+|-
+|56
+|The Settler King
+|Arboreus settlement, plant division between Lycos/Ginkgon
+|-
+|57
+|The Vertebrate Houses
+|Janusicthus→Kondricthus/Osticthus, three vertebrate houses
+|-
+|58
+|The Fungal Kingdom
+|Dikar's parasitic lineage, fungal evolution to symbionts
+|-
+|59
+|The Great Catastrophe
+|Kellwasser/Hangenberg apocalypse, Late Devonian extinction
+|-
+|60
+|The Carboniferous Dawn
+|Rhea's sons Romulus/Remus, insect evolution, flight development
+|-
+|61
+|The Land Bridge
+|Rhipidistius survival, lungfish/tetrapod split, vertebrate land adaptation
+|-
+|62
+|The Final Breath
+|Gastropod air-breathing evolution, diverse respiratory strategies
+|}

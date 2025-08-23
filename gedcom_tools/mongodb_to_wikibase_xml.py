@@ -33,7 +33,7 @@ COLLECTION_NAME = "entities"
 
 # Output configuration
 OUTPUT_DIR = "wikibase_export"
-CHUNK_SIZE = 5000  # Entities per XML file
+CHUNK_SIZE = 606  # Entities per XML file (true 240-part division)
 XML_NAMESPACE = "http://www.mediawiki.org/xml/export-0.11/"
 
 class WikibaseXMLExporter:
@@ -270,8 +270,12 @@ class WikibaseXMLExporter:
             redirect_target = properties['redirect'][0]['value']
             redirect_elem = ET.SubElement(page, "redirect")
             redirect_elem.set("title", f"Item:{redirect_target}")
+            
+            # For redirects, we don't need revision content - MediaWiki handles redirects at the page level
+            # Just return the page with the redirect element
+            return page
         
-        # Add revision
+        # Add revision (only for non-redirect pages)
         revision = ET.SubElement(page, "revision")
         
         # Revision ID
@@ -289,10 +293,7 @@ class WikibaseXMLExporter:
         
         # Comment
         comment = ET.SubElement(revision, "comment")
-        if is_redirect:
-            comment.text = "Redirect from MongoDB entity merger"
-        else:
-            comment.text = "Exported from MongoDB"
+        comment.text = "Exported from MongoDB"
         
         # Content model
         model = ET.SubElement(revision, "model")
@@ -300,28 +301,16 @@ class WikibaseXMLExporter:
         
         # Format
         format_elem = ET.SubElement(revision, "format")
-        if is_redirect:
-            format_elem.text = "application/json"
-        else:
-            format_elem.text = "application/json"
+        format_elem.text = "application/json"
         
-        # Text content
+        # Text content - only for regular entities
         text = ET.SubElement(revision, "text")
         text.set("bytes", "0")  # Will be updated after content creation
         text.set("xml:space", "preserve")
         
-        if is_redirect:
-            # For redirects, create simple JSON redirect structure
-            redirect_target = properties['redirect'][0]['value']
-            redirect_json = {
-                "entity": qid,
-                "redirect": redirect_target
-            }
-            json_text = json.dumps(redirect_json, ensure_ascii=False, separators=(',', ':'))
-        else:
-            # For regular entities, convert to Wikibase JSON
-            wikibase_json = self.entity_to_wikibase_json(entity)
-            json_text = json.dumps(wikibase_json, ensure_ascii=False, separators=(',', ':'))
+        # Convert to Wikibase JSON
+        wikibase_json = self.entity_to_wikibase_json(entity)
+        json_text = json.dumps(wikibase_json, ensure_ascii=False, separators=(',', ':'))
         
         text.text = json_text
         

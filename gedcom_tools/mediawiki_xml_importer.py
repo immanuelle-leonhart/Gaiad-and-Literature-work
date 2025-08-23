@@ -190,7 +190,7 @@ class MediaWikiImporter:
                     'action': 'import',
                     'format': 'json',
                     'token': csrf_token,
-                    'interwikiprefix': '',  # Import to local wiki
+                    'interwikiprefix': 'gaiad',  # Import with gaiad prefix
                     'summary': f'Automated import of Gaiad genealogical data - {filename}',
                     'namespace': '',  # Import to appropriate namespaces based on XML content
                     'assignknownusers': 1,  # Assign to known users
