@@ -7,11 +7,11 @@ from collections import defaultdict
 
 def categorize_identifier_value(value):
     """
-    Categorize P41 identifier value to determine proper property (P60, P61, P62)
+    Categorize P41 GEDCOM REFN identifier value to determine proper property (P60, P61, P62)
     
     Returns:
     - 'P61': Wikidata QID (Q followed by digits)
-    - 'P62': Geni ID (long numeric strings, typically 6+ digits)
+    - 'P62': Geni ID (geni: prefix or long numeric strings)
     - 'P60': UUID or other format
     """
     if not isinstance(value, str):
@@ -19,7 +19,11 @@ def categorize_identifier_value(value):
     
     value = value.strip()
     
-    # Wikidata QID pattern: Q followed by digits
+    # Handle geni: prefixed identifiers - remove prefix and categorize as P62
+    if value.lower().startswith('geni:'):
+        return 'P62'
+    
+    # Wikidata QID pattern: Q followed by digits (keep Q prefix)
     if re.match(r'^Q\d+$', value):
         return 'P61'
     
